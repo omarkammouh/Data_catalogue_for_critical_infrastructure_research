@@ -1,0 +1,136 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "BuildingsBench code (dataloaders, baselines, metrics)",
+      "url": "https://github.com/NatLabRockies/BuildingsBench"
+    },
+    {
+      "kind": "portal",
+      "label": "OEDI submission: Buildings-900K tar files and benchmark data",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.openei.org/submissions/5859"
+    },
+    {
+      "kind": "portal",
+      "label": "OEDI data lake (S3 viewer, buildings-bench prefix)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=buildings-bench"
+    },
+    {
+      "kind": "paper",
+      "label": "NeurIPS 2023 Datasets and Benchmarks paper (arXiv)",
+      "url": "https://arxiv.org/abs/2307.00142"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "synthetic_benchmark",
+    "demand_operation",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.25984/1986147",
+    "name": "buildingsbench buildings 900k synthetic load series and short term load forecasting benchmark",
+    "url": "https://data.openei.org/submissions/5859"
+  },
+  "description": "BuildingsBench is a dataset and benchmark for short-term load forecasting of buildings, published by the National Renewable Energy Laboratory (now the National Laboratory of the Rockies) through the Open Energy Data Initiative, with Patrick Emami and Peter Graf as creators. Its pretraining set, Buildings-900K, holds synthetic energy consumption time series for about 900,000 residential and commercial buildings extracted from the End-Use Load Profiles database (the pretraining files are named for ComStock and ResStock runs with AMY2018 and TMY3 weather), one series per building, and is described as statistically representative of the US building stock. The benchmark adds seven real building consumption datasets for zero-shot forecasting and transfer learning: ElectricityLoadDiagrams20112014, Building Data Genome Project-2, the Sceaux household power data, Borealis, SMART, IDEAL and Low Carbon London. Coverage: the United States building stock for the synthetic series; the evaluation sets come from several countries. Access: Parquet and CSV tar files on OEDI and its S3 data lake, with a pip-installable Python package providing PyTorch dataloaders, persistence to transformer baselines and metrics. Licence: the data is CC-BY-4.0 according to the OEDI submission page; the code is BSD-3-Clause; free. Caveats: the pretraining series are simulated, not metered, and the pretraining files are large. Simulation uses are training and testing building load forecasters that feed demand into grid and resilience models. Related records: the End-Use Load Profiles, ResStock and ComStock records.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid regulation",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.openei.org/submissions/5859",
+  "id": "data-buildingsbench-buildings-900k",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-11-07",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BuildingsBench: Buildings-900K synthetic load series and short-term load forecasting benchmark",
+  "notes": "The DataCite record gives 2018 as the issue year; the package release 2.0.0 is dated 2024-11-07 on PyPI.",
+  "provider": "National Renewable Energy Laboratory (now National Laboratory of the Rockies), Open Energy Data Initiative (OEDI); Patrick Emami and Peter Graf",
+  "related_ids": [
+    "data-end-use-load-profiles-us-building-stock",
+    "model-resstock",
+    "model-comstock"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "size": "About 110 GB for Buildings-900K; under 1 GB for the seven evaluation datasets",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators, publisher OEDI and NREL, description of Buildings-900K, ~110 GB, seven evaluation datasets",
+      "url": "https://api.datacite.org/dois/10.25984/1986147"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, OEDI download and S3 links, pretraining tar files (comstock and resstock amy2018 and tmy3), pip package, NeurIPS paper",
+      "url": "https://raw.githubusercontent.com/NREL/BuildingsBench/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD 3-Clause, 2023",
+      "url": "https://raw.githubusercontent.com/NREL/BuildingsBench/main/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 2.0.0 uploaded 2024-11-07",
+      "url": "https://pypi.org/pypi/buildings-bench/json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): BSD-3-Clause (basis: licence file in the GitHub repository)",
+      "url": "https://github.com/NatLabRockies/BuildingsBench/blob/main/LICENSE"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://api.datacite.org/dois/10.25984/1986147"
+    }
+  ],
+  "tags": [
+    "load forecasting",
+    "benchmark",
+    "Buildings-900K",
+    "End-Use Load Profiles",
+    "deep learning",
+    "OEDI"
+  ],
+  "title_en": "BuildingsBench: Buildings-900K synthetic load series and short-term load forecasting benchmark",
+  "type": "data"
+}

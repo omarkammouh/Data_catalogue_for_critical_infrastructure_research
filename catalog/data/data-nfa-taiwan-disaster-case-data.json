@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Disaster cases (CSV)",
+      "url": "https://portal2.emic.gov.tw/Pub/DIM2/OpenData/Disaster.csv"
+    },
+    {
+      "kind": "download",
+      "label": "Disaster cases (XML)",
+      "url": "https://portal2.emic.gov.tw/Pub/DIM2/OpenData/Disaster.xml"
+    },
+    {
+      "kind": "portal",
+      "label": "Dataset page on the government open data platform",
+      "url": "https://data.gov.tw/dataset/12851"
+    },
+    {
+      "kind": "portal",
+      "label": "National Fire Agency open data list",
+      "url": "https://www.nfa.gov.tw/cht/index.php?code=list&ids=32"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "TW"
+  ],
+  "data_family": [
+    "historical_events",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "taiwan disaster case data 災情案件資料 geolocated incident reports with casualties trapped missing and sheltered people during central emergency operation center activations",
+    "url": "https://data.gov.tw/dataset/12851"
+  },
+  "description": "This dataset is Taiwan's live record of individual disaster incidents reported while the Central Emergency Operation Center is activated. It is published by the National Fire Agency of the Ministry of the Interior. Each case has an identifier, time, county, township, place and coordinates, disaster category and subcategory, a description, its handling status and reporting unit, the numbers of people injured, dead, trapped, missing and sheltered, and flags for traffic obstruction and major cases. The current file holds the last seven days of an activation and is refreshed every 20 minutes, and yearly archive datasets for the 2022, 2023 and 2024 activations are listed alongside it. The data are free and available to download as CSV or XML under Taiwan's Open Government Data License. Caveats: the live file covers only the seven days of an activation, so history comes from the yearly archives, texts are in Chinese, and reports reflect what units logged during the emergency. Simulation uses: validating hazard impact and emergency response models against real incident locations and times, estimating the rescue and shelter demand that typhoons create, and mapping road obstructions. Related records: the NCDR public alert feed (data-ncdr-taiwan-cap-public-alerts) carries the warnings issued for the same events, and the San Francisco fire and EMS calls (data-sf-fire-ems-calls-for-service) are an example of call-level data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: National Fire Agency open data (TW, emergency_service)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "storm_wind",
+    "flood",
+    "landslide",
+    "earthquake",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://data.gov.tw/dataset/12851",
+  "id": "data-nfa-taiwan-disaster-case-data",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "licence": "Open Government Data License, version 1.0 (Taiwan)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://portal2.emic.gov.tw/Pub/DIM2/OpenData/Disaster.csv",
+      "https://portal2.emic.gov.tw/Pub/DIM2/OpenData/Disaster.xml",
+      "https://www.nfa.gov.tw/cht/index.php?code=list&ids=32"
+    ]
+  },
+  "maturity": "active",
+  "name": "Taiwan disaster case data (災情案件資料): geolocated incident reports with casualties, trapped, missing and sheltered people during Central Emergency Operation Center activations",
+  "provider": "National Fire Agency, Ministry of the Interior, Taiwan",
+  "related_ids": [
+    "data-ncdr-taiwan-cap-public-alerts",
+    "data-sf-fire-ems-calls-for-service"
+  ],
+  "schema_summary": "CASE_ID, CASE_DT (time), COUNTY_N, TOWN_N, CASE_LOC (place), GEOMETRY_TYPE, COORDINATE, DISASTER_MAIN_TYPE and DISASTER_SUB_TYPE (category and subcategory), CASE_DESCRIPTION, CASE_STATUS, CASE_TYPE, PERSON_ID (reporting unit), INJURED_NO, DEATH_NO, TRAPPED_NO, MISSING_NO, SHELTER_NO, IS_TRAFFIC (traffic obstruction), IS_SERIOUS (major case)",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Dataset 災情案件資料: disaster case data within 7 days during activation of the Central Emergency Operation Center; provider National Fire Agency; irregular updates; Open Government Data License version 1; free; listed 10 March 2015; metadata updated 31 Dec 2025; CSV and XML resources; related yearly datasets for 2022, 2023 and 2024 activations and fire incident data",
+      "url": "https://data.gov.tw/dataset/12851"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Resource description read in memory: data URL portal2.emic.gov.tw Disaster.csv, fields as in the schema summary, agency National Fire Agency, update every 20 minutes",
+      "url": "https://opdadm.moi.gov.tw/api/v1/no-auth/resource/api/dataset/066CCEC3-24ED-4E1C-AFC7-A60B80AD0CE5/resource/91293170-D03F-47C9-9EB9-035445EEA60C/download"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "National Fire Agency OPEN DATA list, linking the disaster case data; statistics pages for fire, emergency medical services, natural disasters and mountain and water rescue",
+      "url": "https://www.nfa.gov.tw/cht/index.php?code=list&ids=32"
+    }
+  ],
+  "spatial_resolution": "Incident point (coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "disaster incidents",
+    "typhoons",
+    "casualties",
+    "emergency operations",
+    "Taiwan"
+  ],
+  "temporal_coverage": "Rolling 7 days during activations; yearly archives for 2022 to 2024",
+  "temporal_resolution": "Event",
+  "temporal_resolution_class": "event",
+  "title_en": "Taiwan disaster case data : geolocated incident reports with casualties, trapped, missing and sheltered people during Central Emergency Operation Center activations",
+  "type": "data",
+  "update_frequency": "real_time"
+}

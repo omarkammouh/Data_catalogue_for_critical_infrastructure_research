@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Microdata Access Tool",
+      "url": "https://data.census.gov/mdat/"
+    },
+    {
+      "kind": "portal",
+      "label": "PUMS data (FTP and data.census.gov)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.census.gov/programs-surveys/acs/microdata/access.html"
+    },
+    {
+      "kind": "docs",
+      "label": "PUMS documentation (data dictionaries, ReadMe)",
+      "url": "https://www.census.gov/programs-surveys/acs/microdata/documentation.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "behavioural_social",
+    "demand_operation",
+    "social_vulnerability_equity"
+  ],
+  "data_kind": [
+    "survey",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "american community survey public use microdata sample acs pums",
+    "url": "https://census.gov/programs-surveys/acs/microdata.html"
+  },
+  "description": "The ACS Public Use Microdata Sample (PUMS) files, produced by the U.S. Census Bureau, contain untabulated records for individual people and housing units from the American Community Survey, with disclosure protection so that no person or unit can be identified. Each release has a housing file and a person file, carrying every ACS variable, for example heating fuel, vehicles, commuting mode and departure time, household composition, income, disability and internet access, with weights and replicate weights. Coverage: the United States and Puerto Rico; only the nation, regions, divisions, states and Public Use Microdata Areas (PUMAs, about 100,000 people each) are identified. 1-year and 5-year files exist from 2005; the latest listed on 2026-09-27 are the 2020-2024 5-year files. Format and access: CSV and SAS files by state on the Census Bureau FTP site, the Microdata Access Tool on data.census.gov and the Census microdata API; free and public domain. Caveats: geography stops at PUMA, sample sizes limit small-group estimates, and users must compute margins of error with the replicate weights. Simulation uses: the standard seed for synthetic population generation in agent-based transport, energy and evacuation models (for example iterative proportional fitting against ACS tables), and for household-level demand and vulnerability analysis. Related records: ACS estimates tables (the marginal totals), IPUMS International census microdata, the National Household Travel Survey and the American Time Use Survey.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; ACS program pages, Microdata section",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    }
+  ],
+  "formats": [
+    "csv",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/programs-surveys/acs/microdata.html",
+  "id": "data-us-census-acs-pums",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-31",
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "American Community Survey Public Use Microdata Sample (ACS PUMS)",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-american-community-survey-tables",
+    "data-ipums-international-census-microdata",
+    "data-nhts-national-household-travel-survey",
+    "data-american-time-use-survey-atus"
+  ],
+  "schema_summary": "Housing records and person records linked by serial number; all ACS variables with weights and 80 replicate weights",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "transport.road",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Purpose, disclosure protection, identified geographies (PUMA is the finest); page revised 2026-07-31",
+      "url": "https://www.census.gov/programs-surveys/acs/microdata.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "CSV and SAS files, housing and person files, 2005 to current on data.census.gov",
+      "url": "https://www.census.gov/programs-surveys/acs/microdata/access.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "2024 data release note: 2020-2024 5-year PUMS files",
+      "url": "https://www.census.gov/programs-surveys/acs.html"
+    }
+  ],
+  "spatial_resolution": "Public Use Microdata Area (PUMA), about 100,000 people",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "ACS",
+    "PUMS",
+    "microdata",
+    "synthetic population",
+    "PUMA",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "2005 to present",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2005
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "American Community Survey Public Use Microdata Sample (ACS PUMS)",
+  "type": "data",
+  "update_frequency": "multi_year"
+}

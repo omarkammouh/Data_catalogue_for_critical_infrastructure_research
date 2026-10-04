@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Trading details dashboard (state, APMC, commodity, date range)",
+      "url": "https://enam.gov.in/web/dashboard/trade-data"
+    },
+    {
+      "kind": "viewer",
+      "label": "e-NAM live price information",
+      "url": "https://enam.gov.in/dashboard/live_price"
+    },
+    {
+      "kind": "viewer",
+      "label": "Agmarknet price dashboard",
+      "url": "https://enam.gov.in/dashboard/agmarknet"
+    },
+    {
+      "kind": "docs",
+      "label": "e-NAM directory of markets (PDF)",
+      "url": "https://enam.gov.in/web/dashboard/assest/download/eNAM_Directory_20210720.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "IN"
+  ],
+  "data_family": [
+    "supply_chains_logistics",
+    "demand_operation",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "e nam trade data india daily prices and arrivals of farm commodities traded on the national electronic agriculture market by state market yard apmc and commodity",
+    "url": "https://enam.gov.in/web/dashboard/trade-data"
+  },
+  "description": "e-NAM is India's national electronic trading platform for regulated agricultural wholesale markets (mandis, run by Agricultural Produce Market Committees or APMCs). The trade data dashboard, published by the e-NAM project, gives for each state, market yard and commodity the minimum, modal and maximum price, the quantity arriving at the market and the quantity traded, with units and dates, for any chosen date range. Companion pages show live prices, the Agmarknet price dashboard, stakeholder counts and a directory of the markets on the platform. The dashboard is free and available without registration, but no bulk download or documented API was found in the pages read, and the site footer says all rights are reserved. Caveats: results are rendered by script and have to be read query by query, coverage is limited to the markets that have joined e-NAM, and arrivals recorded on the platform may not equal all produce entering a market. Simulation uses: tracing how food moves from producing districts to market yards, spotting supply shocks after floods, cyclones or transport disruption through arrivals and prices, and calibrating food supply network models. Related records: the Mexican SNIIM wholesale market data (data-sniim-mexico-wholesale-market-prices-and-inflows) and the Istanbul wholesale market flows (data-ibb-istanbul-wholesale-market-flows) are comparable, and the FAOSTAT food balances (data-faostat) give national supply.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: e-NAM (IN, wholesale_market)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://enam.gov.in/web/dashboard/trade-data",
+  "id": "data-enam-india-mandi-trade-data",
+  "languages": [
+    "en"
+  ],
+  "licence": "All rights reserved (site footer: Copyright 2023 National Agriculture Market Project)",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "e-NAM trade data (India): daily prices and arrivals of farm commodities traded on the national electronic agriculture market, by state, market yard (APMC) and commodity",
+  "provider": "National Agriculture Market (e-NAM) project, India",
+  "related_ids": [
+    "data-sniim-mexico-wholesale-market-prices-and-inflows",
+    "data-ibb-istanbul-wholesale-market-flows",
+    "data-faostat"
+  ],
+  "schema_summary": "Selectors: state, APMC (market yard), commodity, from and to dates. Columns: state, APMC, commodity, minimum price, modal price, maximum price, commodity arrivals, commodity traded, unit, date",
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Trading details dashboard with selectors for state, APMC, commodity and date range; result columns minimum, modal and maximum price, commodity arrivals, commodity traded, unit and date; menu links to live price information, ReMS price dissemination, Agmarknet price dashboard, eNAM vs Agmarknet dashboard, stakeholders data, e-NAM directory PDF and operational guidelines; footer Copyright 2023 National Agriculture Market Project, all rights reserved; results loaded by script, no export link found in the page markup",
+      "url": "https://enam.gov.in/web/dashboard/trade-data"
+    }
+  ],
+  "spatial_resolution": "Market yard (APMC)",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "wholesale markets",
+    "mandi",
+    "APMC",
+    "food prices",
+    "arrivals",
+    "India"
+  ],
+  "temporal_coverage": "Date range chosen in the dashboard",
+  "temporal_resolution": "Daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "E-NAM trade data (India): daily prices and arrivals of farm commodities traded on the national electronic agriculture market, by state, market yard (APMC) and commodity",
+  "type": "data",
+  "update_frequency": "daily"
+}

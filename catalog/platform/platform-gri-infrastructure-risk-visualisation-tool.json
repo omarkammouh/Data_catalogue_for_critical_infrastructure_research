@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Release v0.4.4 (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.15011304"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/nismod/infra-risk-vis"
+    },
+    {
+      "kind": "viewer",
+      "label": "Hosted instance",
+      "url": "https://global.infrastructureresilience.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "infrastructure risk visualisation tool infra risk vis gri risk viewer software",
+    "repo": "github.com/nismod/infra-risk-vis",
+    "url": "https://github.com/nismod/infra-risk-vis"
+  },
+  "deployment": [
+    "hosted_service",
+    "own_server"
+  ],
+  "description": "The Infrastructure Risk Visualisation Tool is open-source web software for interactive visualisation of infrastructure climate risk analysis results. It presents the infrastructure systems and hazards in an analysis, then shows results for whole systems at fine scale: regional summaries, detailed networks, hazard layers, attribute queries, the range of direct damages to assets and indirect economic losses from service disruption such as loss of power or access, and a cost-benefit analysis of adaptation options under uncertainty. The coverage depends on the data loaded; release v0.4.4 added JRC global river flood and World Bank/ARUP global landslide hazard maps and opportunity areas for nature-based solutions from a Global Center on Adaptation project. It runs as containerised services orchestrated with docker compose (Traefik proxy, nginx web server, tileserver-gl vector tiles, a Python backend with terracotta raster tiles, and PostGIS), with rasters as Cloud-Optimised GeoTIFFs and vectors as Mapbox vector tiles prepared by an ETL workflow. It is developed by Tom Russell, Maciej Ziarkowski, Fred Thomas, Raghav Pant and others at the University of Oxford, and v0.4.4 was released on 12 March 2025 under the MIT licence. Caveats: self-hosting needs prepared data and specific docker versions. It supports hazard exposure, cascading failure and climate adaptation communication; a related record is the infrastructure climate resilience data starter kits.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "nismod/infra-risk-vis (green physical)",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "landslide",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://github.com/nismod/infra-risk-vis",
+  "id": "platform-gri-infrastructure-risk-visualisation-tool",
+  "interfaces": [
+    "web_app",
+    "web_api"
+  ],
+  "interoperability": [
+    "Cloud-Optimised GeoTIFF",
+    "Mapbox Vector Tiles",
+    "PostGIS"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-03-12",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://global.infrastructureresilience.org/"
+    ]
+  },
+  "maturity": "active",
+  "name": "Infrastructure Risk Visualisation Tool (infra-risk-vis, GRI Risk Viewer software)",
+  "notes": "Reference: Russell, T., Ziarkowski, M., Thomas, F., et al. (2025). nismod/infra-risk-vis v0.4.4. Zenodo. doi:10.5281/zenodo.15011304",
+  "open_source": true,
+  "platform_kind": [
+    "gis_environment"
+  ],
+  "provider": "University of Oxford, Environmental Change Institute",
+  "related_ids": [
+    "data-infrastructure-climate-resilience-data-starter-kits"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "transport.road",
+    "transport.rail",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "cascading_failure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "v0.4.4, 2025-03-12, MIT; creators Russell, Ziarkowski, Thomas, Lemmen, Pant et al.; added JRC river flood and World Bank/ARUP landslide maps, NbS opportunity areas (GCA project)",
+      "url": "https://zenodo.org/api/records/15011304"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "interactive visualisation of risk analysis results; direct damages, indirect losses, adaptation CBA; containerised services Traefik, nginx, tileserver-gl, Python backend, PostGIS, terracotta; COG rasters and MVT; docker engine 20.10.16; MIT LICENSE Oxford Infrastructure",
+      "url": "https://raw.githubusercontent.com/nismod/infra-risk-vis/HEAD/README.md"
+    }
+  ],
+  "tags": [
+    "risk visualisation",
+    "web map",
+    "adaptation cost-benefit",
+    "docker",
+    "NISMOD",
+    "open source"
+  ],
+  "title_en": "Infrastructure Risk Visualisation Tool (infra-risk-vis, GRI Risk Viewer software)",
+  "type": "platform"
+}

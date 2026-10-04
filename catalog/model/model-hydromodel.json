@@ -1,0 +1,93 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/OuyangWenyu/hydromodel"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/OuyangWenyu/hydromodel/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Ouyang (2025). hydromodel: A Python Package for Hydrological Model Calibration. Repository software citation; underlying model references are listed in the README.",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hydromodel rainfall runoff model library",
+    "repo": "github.com/ouyangwenyu/hydromodel",
+    "url": "https://github.com/OuyangWenyu/hydromodel"
+  },
+  "description": "hydromodel is Wenyu Ouyang's Python package for calibrating, evaluating and running conceptual rainfall-runoff models. It implements XinAnJiang variants, GR models, HYMOD and other hydrological components, with several calibration algorithms and a YAML-configured workflow. Inputs include basin rainfall, evaporation or inflow series, parameter ranges and model settings; outputs include simulated runoff, fitted parameters and evaluation metrics in JSON and CSV. Geographic coverage is configurable through local or registered basin datasets, including applications relevant to China and global CAMELS collections. Public source and usage examples are free under GPL-3.0. A limitation is that multi-basin runs calibrate one basin at a time, and data access is delegated to separate packages. Chosen storage backends must be available; the workflow does not silently substitute another source. The models can provide inflow scenarios for reservoir and flood-infrastructure analysis, complementary to Delft3D FM (model-delft3d-fm). The README supplies calibration commands and a software citation. No catchment data, cloud credentials or model runs were obtained.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "ouyangwenyu/hydromodel linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/OuyangWenyu/hydromodel",
+  "id": "model-hydromodel",
+  "inputs": [
+    "Basin hydro-meteorological data",
+    "Model selection and parameter ranges"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "last_updated": "2026-08-18",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "hydromodel rainfall-runoff model library",
+  "notes": "G7 G7-0703. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Runoff simulations and calibrated parameters",
+    "JSON and CSV evaluation results"
+  ],
+  "provider": "Wenyu Ouyang and hydromodel contributors",
+  "related_ids": [
+    "model-delft3d-fm"
+  ],
+  "repository": "https://github.com/OuyangWenyu/hydromodel",
+  "sectors": [
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for OuyangWenyu/hydromodel: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/ouyangwenyu/hydromodel"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/ouyangwenyu/hydromodel/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for dams and flood defences",
+  "type": "model"
+}

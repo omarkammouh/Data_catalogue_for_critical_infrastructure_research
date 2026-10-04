@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Batch data downloads",
+      "url": "https://batch.openaddresses.io/data"
+    },
+    {
+      "kind": "api",
+      "label": "Batch data API (source list)",
+      "url": "https://batch.openaddresses.io/api/data"
+    },
+    {
+      "kind": "repo",
+      "label": "Source definitions (GitHub)",
+      "url": "https://github.com/openaddresses/openaddresses"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing page)",
+      "url": "https://openaddresses.io/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "reference_context",
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openaddresses global open collection of address points parcels building footprints and street centrelines",
+    "repo": "github.com/openaddresses/openaddresses",
+    "url": "https://batch.openaddresses.io/data"
+  },
+  "description": "OpenAddresses is a free global collection of authoritative address points, plus cadastral parcels, building footprints and street centrelines, gathered from thousands of government and open sources. It is produced by the OpenAddresses volunteer community: a GitHub repository holds one JSON source definition per jurisdiction and a weekly batch pipeline fetches, conforms and publishes each source. Coverage: worldwide but uneven, dense for North America, Europe and Australia and sparse elsewhere; a coverage report on the site shows where data exist. Each address row carries longitude, latitude, house number, street, unit, city, district, region, postcode and a hash; parcel and building layers carry geometries. Format and access: per-source GeoJSON line files and PMTiles previews from the batch service (batch.openaddresses.io) with a JSON API listing sources, layers, update dates and sizes, plus regional collections. Licence: the repository code is BSD-style, and each dataset keeps its source's licence, mostly requiring attribution only; users must check each source's terms. Caveats: completeness, update frequency and attribute quality vary by source, some sources lapse when publishers move their services, and bulk collections may need a free account. Simulation uses: geocoding and locating building and facility exposure for hazard exposure analysis, and demand points for capacity planning of networks. Related records: Overture Maps (data-overture-maps-catalogue) and its buildings theme (data-overture-maps-buildings) draw partly on OpenAddresses; the National Street Gazetteer (data-gb-national-street-gazetteer) is a national street counterpart.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source built_environment-openaddresses: provider pages read (round 2 register piece)",
+      "route": "R15",
+      "source": "built_environment-openaddresses"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "other_vector",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://batch.openaddresses.io/data",
+  "id": "data-openaddresses-global-address-collection",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "Per source (mostly attribution-only open licences); repository code BSD-style",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OpenAddresses: global open collection of address points, parcels, building footprints and street centrelines",
+  "provider": "OpenAddresses (volunteer project, OpenCollective sponsors)",
+  "related_ids": [
+    "data-overture-maps-catalogue",
+    "data-overture-maps-buildings",
+    "data-gb-national-street-gazetteer"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Home page: free and open global address collection; all data openly licensed, most sources require attribution only; coverage report",
+      "url": "https://openaddresses.io/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "README: references to address, parcel, building footprint and street centreline sources; weekly batch run; LICENSE BSD-style; last commit 2026-09-28",
+      "url": "https://raw.githubusercontent.com/openaddresses/openaddresses/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "API returned the New York City addresses layer (updated 2026-09-18, 36 MB) and buildings layer with pmtiles and preview outputs",
+      "url": "https://batch.openaddresses.io/api/data?source=us/ny/city_of_new_york"
+    }
+  ],
+  "spatial_resolution": "Address point, parcel and building footprint",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "addresses",
+    "geocoding",
+    "parcels",
+    "building footprints"
+  ],
+  "title_en": "OpenAddresses: global open collection of address points, parcels, building footprints and street centrelines",
+  "type": "data",
+  "update_frequency": "weekly"
+}

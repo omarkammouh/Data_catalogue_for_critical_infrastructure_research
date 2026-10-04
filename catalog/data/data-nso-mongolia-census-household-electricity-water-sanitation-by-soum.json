@@ -1,0 +1,157 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "PxWeb API folder 3_Infrastructure, housing",
+      "url": "https://data.1212.mn/api/v1/en/NSO/Population,%20household/3_Infrastructure,%20housing"
+    },
+    {
+      "kind": "api",
+      "label": "DT_NSO_3500_001V1 households by electricity source, soum and district",
+      "url": "https://data.1212.mn/api/v1/en/NSO/Population,%20household/3_Infrastructure,%20housing/DT_NSO_3500_001V1.px"
+    },
+    {
+      "kind": "api",
+      "label": "DT_NSO_3500_002V1 households by water supply type, soum and district",
+      "url": "https://data.1212.mn/api/v1/en/NSO/Population,%20household/3_Infrastructure,%20housing/DT_NSO_3500_002V1.px"
+    },
+    {
+      "kind": "api",
+      "label": "DT_NSO_3500_003V1 households with and without access to sanitation",
+      "url": "https://data.1212.mn/api/v1/en/NSO/Population,%20household/3_Infrastructure,%20housing/DT_NSO_3500_003V1.px"
+    },
+    {
+      "kind": "api",
+      "label": "DT_NSO_3500_006V1 households living in house, ger and other dwelling",
+      "url": "https://data.1212.mn/api/v1/en/NSO/Population,%20household/3_Infrastructure,%20housing/DT_NSO_3500_006V1.px"
+    },
+    {
+      "kind": "portal",
+      "label": "Former landing page (PxWeb folder)",
+      "url": "https://data.1212.mn/pxweb/en/NSO/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "MN"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nso mongolia census tables of households by electricity source water supply type sanitation access and dwelling type ger house apartment by aimag soum and district pxweb api",
+    "url": "https://data.1212.mn/pxweb/en/NSO/NSO__Population,%20household__3_Infrastructure,%20housing/DT_NSO_3500_001V1.px"
+  },
+  "description": "The National Statistics Office of Mongolia publishes census based housing and infrastructure tables in its PxWeb database, which has an open JSON API. The folder Infrastructure, housing holds nine tables. The most detailed go down to the 367 soums and districts: households by electricity source (central power system, diesel plant, renewable energy system, small generator or none), by water supply type (central or individual system, piped water kiosk, protected well or spring, bottled water, tanker truck, or river, lake and unprotected sources), the share with sanitation access, and households living in a ger, a house or other dwelling. Other tables give apartment households with central or independent engineering systems, and occupied housing by wall material. Coverage is national: for the year labelled 2020 the API returned 897,427 households, of which 732,494 were on the central power system and 151,999 used a renewable energy system; the table also has 2010 and 2025 columns. Format and access: free through the PxWeb API (JSON query, CSV or JSON output) and web interface, no registration. Licence: not stated on the pages read. Caveats: the 2025 values are labelled as census years in the tables but their source was not checked; area names mix levels in one list. Simulation uses: soum level grid connection, off grid solar and water source for rural electrification and water supply planning, and ger districts for exposure and heating demand. Related records: the Kazakhstan census 2021 housing utilities and the Mongolia mobile coverage map.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:MN:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "spreadsheet",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.1212.mn/pxweb/en/NSO/NSO__Population,%20household__3_Infrastructure,%20housing/DT_NSO_3500_001V1.px/",
+  "id": "data-nso-mongolia-census-household-electricity-water-sanitation-by-soum",
+  "languages": [
+    "en",
+    "mn"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NSO Mongolia census tables of households by electricity source, water supply type, sanitation access and dwelling type (ger, house, apartment) by aimag, soum and district (PxWeb API)",
+  "provider": "National Statistics Office of Mongolia (NSO)",
+  "related_ids": [
+    "data-bns-kazakhstan-census-2021-housing-characteristics-utilities",
+    "data-crc-mongolia-mobile-coverage-map-kml"
+  ],
+  "schema_summary": "Nine tables in folder 3_Infrastructure, housing: households by electricity source (central power system, diesel plant, renewable energy system, small generator, none); by water supply type (central or individual system, piped water kiosk, protected well or spring, bottled, tanker truck, river, lake or unprotected source); share with and without sanitation access; households in house, ger and other dwellings; apartment households with central or independent engineering systems; occupied housing by wall material; dwellings by rooms and floor material",
+  "sectors": [
+    "energy.electricity",
+    "water.drinking_water",
+    "water.wastewater",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: nine tables",
+      "url": "https://data.1212.mn/api/v1/en/NSO/Population,%20household/3_Infrastructure,%20housing"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: variables and national totals 2010, 2020, 2025",
+      "url": "https://data.1212.mn/api/v1/en/NSO/Population,%20household/3_Infrastructure,%20housing/DT_NSO_3500_001V1.px"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: 9 water supply classes, 367 areas",
+      "url": "https://data.1212.mn/api/v1/en/NSO/Population,%20household/3_Infrastructure,%20housing/DT_NSO_3500_002V1.px"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: years 2000 to 2025",
+      "url": "https://data.1212.mn/api/v1/en/NSO/Population,%20household/3_Infrastructure,%20housing/DT_NSO_3500_003V1.px"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://data.1212.mn/pxweb/en/NSO/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://data.1212.mn/api/v1/en/NSO/Population,%20household/3_Infrastructure,%20housing"
+    }
+  ],
+  "spatial_resolution": "country, regions, aimags and the capital, soums and districts (367 area values in the electricity and water tables)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "Mongolia",
+    "electricity access",
+    "water supply",
+    "sanitation",
+    "ger",
+    "soum",
+    "PxWeb"
+  ],
+  "temporal_coverage": "years labelled as census years 2000, 2010, 2020 and 2025, depending on the table",
+  "temporal_coverage_years": {
+    "end": 2025,
+    "start": 2000
+  },
+  "temporal_resolution": "census years",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "NSO Mongolia census tables of households by electricity source, water supply type, sanitation access and dwelling type (ger, house, apartment) by aimag, soum and district (PxWeb API)",
+  "type": "data"
+}

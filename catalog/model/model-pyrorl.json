@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/sisl/PyroRL"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation and quickstart",
+      "url": "https://sisl.github.io/PyroRL/"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package (pyrorl; earlier name wildfire-evac)",
+      "url": "https://pypi.org/project/wildfire-evac/"
+    },
+    {
+      "kind": "paper",
+      "label": "JOSS paper (2024)",
+      "url": "https://doi.org/10.21105/joss.06739"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.21105/joss.06739",
+    "name": "pyrorl reinforcement learning environment for wildfire evacuation",
+    "repo": "github.com/sisl/pyrorl",
+    "url": "https://github.com/sisl/PyroRL"
+  },
+  "description": "PyroRL is a simulation environment in which reinforcement learning agents learn when and by which routes to evacuate populated areas as a wildfire spreads across a grid. The producer is the Stanford Intelligent Systems Laboratory, and the environment is described in the Journal of Open Source Software (2024). Coverage is generic: users define the grid size, where people live, the evacuation paths and which areas may use them, so no particular region is built in. At each step the environment advances the fire, applies the agent's choice to evacuate an area along a path, closes paths that burn and returns a reward, with rendered animations of each episode. The code is available on GitHub and on PyPI (as pyrorl, earlier wildfire-evac) under the free MIT licence, with documentation and examples. Caveats: fire spread is a simple stochastic grid process, not a physical fire model, traffic congestion on paths is not represented, and the scenarios are synthetic unless users map real communities onto the grid. Simulation uses: training and comparing evacuation decision policies, teaching emergency managers how timing and route closure interact, and a test bed for coupling with detailed fire spread models. Related records: ELMFIRE (model-elmfire) and Cell2Fire (model-cell2fire) simulate fire spread physically, and JuPedSim (model-jupedsim) models pedestrian evacuation in detail.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "wildfire-evac",
+      "route": "R05",
+      "source": "pypi"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://github.com/sisl/PyroRL",
+  "id": "model-pyrorl",
+  "inputs": [
+    "Grid dimensions",
+    "Locations of populated areas",
+    "Evacuation paths and which areas may use them",
+    "Fire spread parameters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-04-01",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "optimisation"
+  ],
+  "name": "PyroRL: reinforcement learning environment for wildfire evacuation",
+  "outputs": [
+    "Stepwise grid states of fire, populated cells and paths",
+    "Rewards for evacuation policies",
+    "Rendered visualisations of episodes"
+  ],
+  "provider": "Stanford Intelligent Systems Laboratory (Joseph Guman, Joseph C. O'Brien, Christopher Pondoc and Mykel J. Kochenderfer)",
+  "related_ids": [
+    "model-elmfire",
+    "model-cell2fire",
+    "model-jupedsim"
+  ],
+  "repository": "https://github.com/sisl/PyroRL",
+  "runs_on": [
+    "Python 3.8 with Gymnasium"
+  ],
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "optimisation",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "wildfire-evac 0.0.15 uploaded 2023-11-11: an RL OpenAI Gym environment for wildfire evacuation; homepage github.com/sisl/wildfire",
+      "url": "https://pypi.org/pypi/wildfire-evac/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Repository now named PyroRL; pip install pyrorl; grid, populated areas, paths and paths_to_pops; docs at sisl.github.io/PyroRL; JOSS badge",
+      "url": "https://raw.githubusercontent.com/sisl/wildfire/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License, copyright 2024 Stanford Intelligent Systems Laboratory",
+      "url": "https://raw.githubusercontent.com/sisl/wildfire/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Shallow clone: last commit 2025-04-01; 41 files",
+      "url": "https://github.com/sisl/wildfire"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "PyroRL: A Reinforcement Learning Environment for Wildfire Evacuation, JOSS, 2024-09-18, four authors",
+      "url": "https://api.crossref.org/works/10.21105/joss.06739"
+    }
+  ],
+  "tags": [
+    "wildfire evacuation",
+    "reinforcement learning",
+    "Gymnasium",
+    "evacuation planning"
+  ],
+  "title_en": "PyroRL: reinforcement learning environment for wildfire evacuation",
+  "type": "model"
+}

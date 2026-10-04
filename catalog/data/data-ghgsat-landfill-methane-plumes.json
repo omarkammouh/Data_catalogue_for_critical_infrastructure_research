@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Plume table, rasters and script (Zenodo)",
+      "url": "https://zenodo.org/records/16641834"
+    },
+    {
+      "kind": "paper",
+      "label": "Nature article (2025)",
+      "url": "https://doi.org/10.1038/s41586-025-09683-8"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "environmental_impact",
+    "imagery_remote_sensing",
+    "service_performance"
+  ],
+  "data_kind": [
+    "tabular",
+    "raster",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.16641834",
+    "name": "ghgsat satellite observations of methane plumes at 151 landfills worldwide 2021 2022",
+    "url": "doi:10.5281/zenodo.16641834"
+  },
+  "description": "This data set lists satellite measurements of methane escaping from 151 landfills and dump sites around the world, including repeated looks at the same site, so that emissions can be compared with what countries and operators report. The producers are Matthieu Dogniaux, Joannes D. Maasakkers and Berend J. Schuit of SRON Netherlands Institute for Space Research with Marianne Girard, Dylan Jervis and Jason McKeever of the satellite company GHGSat, and the data underpin a 2025 Nature article on the uncertainty of landfill methane emissions. Coverage is 1,519 observations in 2021 and 2022, 1,085 of which detected a plume, at sites on every inhabited continent. Each row gives the site, source location, emission rate in tonnes per hour with its uncertainty, time, wind speed used and intermediate quantities, with plume rasters and a script that reproduces the rates. The files are available as a free download from Zenodo under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 licence. Caveats: snapshots at overpass times, rates depend on modelled wind, and non-detections are coded as zero, not missing. Simulation uses: checking landfill gas models, prioritising gas capture at large sites and estimating the emissions of waste disposal infrastructure. Related records: the EDF landfill methane map (data-edf-landfill-methane-map) and LandGEM (model-landgem) cover landfill emissions.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "GHGSat landfill methane plumes",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "csv",
+    "raster",
+    "source_code",
+    "plain_text"
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.16641834",
+  "id": "data-ghgsat-landfill-methane-plumes",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC BY-NC-SA 4.0",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "GHGSat satellite observations of methane plumes at 151 landfills worldwide (2021-2022)",
+  "provider": "Matthieu Dogniaux, Joannes D. Maasakkers and Berend J. Schuit (SRON Netherlands Institute for Space Research) with Marianne Girard, Dylan Jervis and Jason McKeever (GHGSat)",
+  "related_ids": [
+    "data-edf-landfill-methane-map",
+    "model-landgem"
+  ],
+  "schema_summary": "GHGSat_detected_plumes.csv: one row per observation (1,519, of which 1,085 with a detected plume) with site_ID, source latitude and longitude, emission rate and uncertainty (t CH4 per hour, IME method), UTC timestamp, observation and satellite identifiers, GEOS-FP 10 m wind speed, integrated mass enhancement, effective plume length and wind, unit conversion, manually pinned sources and plume raster file name; Plume_rasters.zip; script to reproduce rates",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators Dogniaux, Maasakkers, Schuit (SRON), Girard, Jervis, McKeever (GHGSat); CC BY-NC-SA 4.0; published 2025-11-05; files GHGSat_detected_plumes.csv, Plume_rasters.zip (18 MB), reproduce_GHGSat_rates_in_csv.py, requirements.txt; described by Nature article 10.1038/s41586-025-09683-8 'Global satellite survey reveals uncertainty in landfill methane emissions'; read in memory: 1,519 observations at 151 site IDs in 2021-2022, 1,085 with non-zero rates; sites span the Americas, Europe, Africa, Asia and Oceania",
+      "url": "https://zenodo.org/api/records/16641834"
+    }
+  ],
+  "spatial_resolution": "Individual waste disposal sites (151)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "landfill methane",
+    "satellite",
+    "GHGSat",
+    "emission rates",
+    "waste disposal sites"
+  ],
+  "temporal_coverage": "2021 to 2022",
+  "temporal_resolution": "Per satellite overpass",
+  "temporal_resolution_class": "event",
+  "title_en": "GHGSat satellite observations of methane plumes at 151 landfills worldwide (2021-2022)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

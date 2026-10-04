@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "NYC Open Data dataset page",
+      "url": "https://data.cityofnewyork.us/City-Government/DSNY-Monthly-Tonnage-Data/ebb7-mvp5"
+    },
+    {
+      "kind": "api",
+      "label": "Socrata API (JSON, CSV)",
+      "url": "https://data.cityofnewyork.us/resource/ebb7-mvp5.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "dsny monthly tonnage data new york city residential and institutional waste collection tonnages by community district since 1990",
+    "url": "https://data.cityofnewyork.us/City-Government/DSNY-Monthly-Tonnage-Data/ebb7-mvp5"
+  },
+  "description": "This table shows how many tons of rubbish, paper, metal-glass-plastic recycling and organic waste the New York City sanitation department collects from homes and institutions each month in every community district. It is published by the Department of Sanitation of New York City on the city's open data portal. Coverage runs from January 1990 to August 2026 for all 59 community districts in the five boroughs, giving 25,237 monthly rows. Each row records refuse, paper, metal-glass-plastic, residential organics, school organics, leaves, Christmas trees and other organics tonnages with borough and district codes. The data are available as a free download in CSV or JSON and through the Socrata API under the NYC Open Data terms, refreshed automatically on the first day of each month. Caveats: tonnages are collection totals, not generation, commercial waste handled by private carters is excluded, and programme changes such as the organics roll-out shift the series. Simulation uses: calibrating collection demand, seasonal peaks and diversion rates in municipal waste logistics and facility capacity models, including disruption after storms. Related records: the DSNY waste characterisation study (data-dsny-waste-characterization) gives the composition behind these tonnages.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: New York City Department of Sanitation (US, municipal_waste_department)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "city",
+  "hazards": [],
+  "homepage": "https://data.cityofnewyork.us/City-Government/DSNY-Monthly-Tonnage-Data/ebb7-mvp5",
+  "id": "data-dsny-monthly-tonnage",
+  "languages": [
+    "en"
+  ],
+  "licence": "NYC Open Data terms of use",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "DSNY Monthly Tonnage Data: New York City residential and institutional waste collection tonnages by community district since 1990",
+  "provider": "New York City Department of Sanitation (DSNY), via NYC Open Data",
+  "regions": [
+    "New York City"
+  ],
+  "related_ids": [
+    "data-dsny-waste-characterization"
+  ],
+  "schema_summary": "25,237 rows: MONTH (YYYY / MM), BOROUGH, COMMUNITYDISTRICT, BOROUGH_ID, REFUSETONSCOLLECTED, PAPERTONSCOLLECTED, MGPTONSCOLLECTED (metal, glass and plastic), RESORGANICSTONS, SCHOOLORGANICTONS, LEAVESORGANICTONS, XMASTREETONS, OTHERORGANICSTONS",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Dataset metadata: 'DSNY Monthly Tonnage Data provides monthly collection tonnages that the Department of Sanitation collects from NYC residences and institutions'; agency DSNY; made public 2/12/2014; update frequency monthly, automated, runs the first of every month; rows updated 2026-09-10; columns MONTH, BOROUGH, COMMUNITYDISTRICT, REFUSETONSCOLLECTED, PAPERTONSCOLLECTED, MGPTONSCOLLECTED, RESORGANICSTONS, SCHOOLORGANICTONS, LEAVESORGANICTONS, XMASTREETONS, OTHERORGANICSTONS, BOROUGH_ID",
+      "url": "https://data.cityofnewyork.us/api/views/ebb7-mvp5.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "API query: 25,237 rows from 1990 / 01 to 2026 / 08",
+      "url": "https://data.cityofnewyork.us/resource/ebb7-mvp5.json?$select=count(*),min(month),max(month)"
+    }
+  ],
+  "spatial_resolution": "Community district (59 districts in 5 boroughs)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "municipal solid waste",
+    "collection tonnage",
+    "recycling",
+    "organics",
+    "New York City",
+    "DSNY"
+  ],
+  "temporal_coverage": "January 1990 to August 2026",
+  "temporal_resolution": "Monthly",
+  "temporal_resolution_class": "monthly",
+  "title_en": "DSNY Monthly Tonnage Data: New York City residential and institutional waste collection tonnages by community district since 1990",
+  "type": "data",
+  "update_frequency": "monthly"
+}

@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "SPARQL Endpoint with graph preselection (SPARQL)",
+      "note": "Direct link from the the portal's CKAN API, 2026-10-01",
+      "url": "https://lindas.admin.ch/sparql/#query=PREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0A%0ASELECT%20*%0AFROM%20%3Chttps%3A%2F%2Flindas.admin.ch%2Felcom%2Felectricityprice%3E%0AWHERE%20%7B%0A%20%20%3Chttps%3A%2F%2Fenergy.ld.admin.ch%2Felcom%2Fsunshine%3E%20%3Fp%20%3Fo.%0A%7D%0A&endpoint=https%3A%2F%2Flindas.admin.ch%2Fquery&requestMethod=POST&tabTitle=Query%203&headers=%7B%7D&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&outputFormat=table"
+    },
+    {
+      "kind": "download",
+      "label": "Electricity tariff in Switzerland (SERVICE)",
+      "note": "Direct link from the the portal's CKAN API, 2026-10-01",
+      "url": "https://www.strompreis.elcom.admin.ch/"
+    },
+    {
+      "kind": "portal",
+      "label": "Provider data page",
+      "url": "https://opendata.swiss/en/dataset/indikatoren"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "data_family": [
+    "service_performance",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "elcom sunshine electricity network efficiency and reliability indicators",
+    "url": "https://opendata.swiss/en/dataset/indikatoren"
+  },
+  "description": "ElCom’s Sunshine collection publishes indicators for comparing Swiss electricity distribution operators. The official registry describes efficiency and price-trend indicators, and the public portal includes supply-reliability measures such as SAIDI and SAIFI. Four registry products expose operator indicators, category breakdowns and their corresponding medians; this record covers that named family. Registry temporal coverage is 2024–2026, while the exact observation year differs by indicator and should be checked before joining series. Data are public through portal exports and linked-data SPARQL distributions under the Swiss Open use terms, which allow commercial and non-commercial reuse with recommended attribution. A limitation is that public reliability comparisons cover only larger operators in the inspected map, leaving other service areas uncoloured. Aggregate indicators also do not identify individual outages, restoration trajectories or failure causes. Simulation uses include comparing distribution-system reliability and calibrating service-performance targets. No matching catalogue or first-review draft was found. The separate ElCom tariff collection provides annual prices, not this performance family. No CSV exports or SPARQL data payloads were retrieved.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "Curated-list traversal: rebase-energy/awesome-energy-datasets",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api",
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://opendata.swiss/en/dataset/indikatoren",
+  "id": "data-elcom-sunshine-network-indicators",
+  "languages": [
+    "de",
+    "fr",
+    "it",
+    "en"
+  ],
+  "last_updated": "2026-05-27",
+  "licence": "opendata.swiss Open use",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ElCom Sunshine electricity network efficiency and reliability indicators",
+  "notes": "G8; G8-0302. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "provider": "Swiss Federal Electricity Commission ElCom",
+  "related_ids": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity and access checked on its own provider page, following a GitHub curated-list link.",
+      "url": "https://opendata.swiss/en/dataset/indikatoren"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Sunshine export controls and reliability coverage caveat.",
+      "url": "https://www.prix-electricite.elcom.admin.ch/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Official registry identity and rights.",
+      "url": "https://opendata.swiss/api/3/action/package_show?id=indikatoren"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Definition of Open use.",
+      "url": "https://opendata.swiss/en/terms-of-use"
+    }
+  ],
+  "spatial_resolution": "Swiss distribution operators and comparison categories; incomplete reliability coverage.",
+  "spatial_resolution_class": "national",
+  "tags": [],
+  "temporal_coverage": "Registry coverage 2024–2026; observation periods vary by indicator.",
+  "temporal_resolution": "Indicator-specific annual comparisons; verify year definitions.",
+  "temporal_resolution_class": "annual",
+  "title_en": "ElCom Sunshine electricity network efficiency and reliability indicators",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

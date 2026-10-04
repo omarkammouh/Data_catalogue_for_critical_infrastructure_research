@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "FEMA NSS map service (open, closed and full shelters, population, accessibility layers)",
+      "url": "https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/MapServer"
+    },
+    {
+      "kind": "api",
+      "label": "Open Shelters map service",
+      "url": "https://gis.fema.gov/arcgis/rest/services/NSS/OpenShelters/MapServer"
+    },
+    {
+      "kind": "viewer",
+      "label": "American Red Cross open shelter map",
+      "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "emergency_management",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fema esf 6 shelter system formerly national shelter system open shelters service",
+    "url": "https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/MapServer"
+  },
+  "description": "The FEMA ESF#6 Shelter System, formerly the FEMA National Shelter System, is published as ArcGIS map services by FEMA with credit to FEMA Mass Care and the American Red Cross. The main service has point layers for open, closed, full and alert shelters, total population, shelter locations, population types, and wheelchair-accessible and ADA-compliant shelters; a separate Open Shelters service shows currently open shelters. The underlying ESF6-SS database is synchronised every morning with the American Red Cross shelter database, and FEMA GIS checks for updates every 20 minutes during the day. The Red Cross also shows open shelters and service sites on a public map, with tent pins for overnight shelters and notes that some sites are run by partner agencies. Coverage: the United States. Access: public ArcGIS REST services and the Red Cross map. Licence: US federal government data; free. Caveats: this is operational, time-varying data; it lists shelters opened during events, not every potential shelter, and the full shelter inventory is restricted to emergency managers. Simulation uses are evacuation and shelter capacity modelling during hurricanes, floods and wildfires, and validation of shelter demand models against observed populations. Related records: HIFLD Open.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.critical_facilities:emergency_management, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "kml",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "storm_wind",
+    "flood",
+    "wildfire",
+    "earthquake"
+  ],
+  "homepage": "https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/MapServer",
+  "id": "data-fema-esf6-shelter-system-open-shelters",
+  "languages": [
+    "en"
+  ],
+  "licence": "US federal government data",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "FEMA ESF#6 Shelter System (formerly National Shelter System) open shelters service",
+  "provider": "Federal Emergency Management Agency (FEMA) Mass Care, with the American Red Cross",
+  "related_ids": [
+    "data-hifld-open"
+  ],
+  "sectors": [
+    "built_environment.critical_facilities",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Service description (ESF#6 Shelter System, formerly NSS), credits, layer list",
+      "url": "https://gis.fema.gov/arcgis/rest/services/NSS/FEMA_NSS/MapServer?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "ESF6-SS sync with Red Cross each morning, 20-minute update checks",
+      "url": "https://gis.fema.gov/arcgis/rest/services/NSS/OpenShelters/MapServer?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Public open shelter map, pin meanings, partner-run sites",
+      "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html"
+    }
+  ],
+  "tags": [
+    "shelters",
+    "FEMA",
+    "American Red Cross",
+    "mass care",
+    "ESF-6",
+    "evacuation"
+  ],
+  "title_en": "FEMA ESF#6 Shelter System (formerly National Shelter System) open shelters service",
+  "type": "data",
+  "update_frequency": "real_time"
+}

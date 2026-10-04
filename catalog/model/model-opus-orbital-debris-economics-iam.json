@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/akhilrao/OPUS"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (arXiv 2309.10252)",
+      "url": "https://arxiv.org/abs/2309.10252"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Rao, A., Moretto, M., Holzinger, M., Kaffine, D., Weeden, B. (2023). OPUS: An Integrated Assessment Model for Satellites and Orbital Debris. arXiv:2309.10252",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opus integrated assessment model for satellites and orbital debris",
+    "repo": "github.com/akhilrao/opus",
+    "url": "https://github.com/akhilrao/OPUS"
+  },
+  "description": "OPUS (Orbital Debris Propagators Unified with Economic Systems) is an experimental integrated assessment model that combines the astrodynamics of the orbital population with the economic behaviour of space actors, to help policymakers test proposals for managing satellite congestion and large constellations. For a set of parameters it uses an astrodynamic propagator to compute the state of objects in orbit, then applies user-defined economic and policy parameters such as launch prices and disposal regulations to model how operators respond, iterating over time; the MIT Orbital Capacity Tool (MOCAT-4S) is the main propagator, with a Gaussian mixture probability hypothesis density filter shown as an alternative. It covers low Earth orbit scenarios set in CSV files, starting from historical two-line element data. It was described by Akhil Rao, Mark Moretto, Marcus Holzinger, Daniel Kaffine and Brian Weeden in arXiv 2309.10252 (September 2023), and the code is on GitHub, with the core solver in MATLAB, post-processing in R and Bash driver scripts. Licence: not stated for the resource; the describing article is CC-BY-SA-4.0. Caveats: the authors call it experimental, and results depend on the propagator and on assumed economic parameters. It supports optimisation and policy analysis of orbital capacity and collision cascade risk; a related record is the MIT Orbital Capacity Assessment Tool.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "orbital debris integrated assessment model (space agent-based)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://github.com/akhilrao/OPUS",
+  "id": "model-opus-orbital-debris-economics-iam",
+  "inputs": [
+    "historical TLE orbital population",
+    "scenario CSV files",
+    "launch prices",
+    "disposal regulations and other economic parameters"
+  ],
+  "language": [
+    "matlab"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-09-19",
+  "licence": "not stated for the resource; the describing article is CC-BY-SA-4.0",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "hybrid",
+    "economic"
+  ],
+  "name": "OPUS integrated assessment model for satellites and orbital debris",
+  "notes": "Last updated is the paper date; the repository has no tagged release.",
+  "outputs": [
+    "evolution of orbital population",
+    "collision probability",
+    "launch and disposal behaviour",
+    "welfare measures by scenario"
+  ],
+  "provider": "Akhil Rao, Mark Moretto, Marcus Holzinger, Daniel Kaffine and Brian Weeden (paper authors)",
+  "related_ids": [
+    "model-mocat-mit-orbital-capacity-assessment-tool"
+  ],
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "OPUS combines astrodynamics of the orbital population and economic behaviour; user-defined economic and policy parameters (launch prices, disposal regulations); MOCAT 4S primary propagator; GMPHD filter; experimental; authors Rao, Moretto, Holzinger, Kaffine, Weeden; 2023-09-19",
+      "url": "https://arxiv.org/abs/2309.10252"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MATLAB core simulation, R analytics; conductor.sh; iam_solver.m; MOCAT4S and GMPHD directories; x0_TLE historical data; scenarios CSV; no LICENSE file found",
+      "url": "https://raw.githubusercontent.com/akhilrao/OPUS/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated for the resource; the describing article is CC-BY-SA-4.0 (basis: article licence link on the provider page)",
+      "url": "https://github.com/akhilrao/OPUS/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://arxiv.org/abs/2309.10252"
+    }
+  ],
+  "tags": [
+    "orbital debris",
+    "integrated assessment model",
+    "space economics",
+    "policy",
+    "MOCAT",
+    "MATLAB"
+  ],
+  "title_en": "OPUS integrated assessment model for satellites and orbital debris",
+  "type": "model"
+}

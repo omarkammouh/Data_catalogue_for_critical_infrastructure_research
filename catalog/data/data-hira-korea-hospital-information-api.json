@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "건강보험심사평가원_병원정보서비스 (REST, XML) on the public data portal",
+      "url": "https://www.data.go.kr/data/15001698/openapi.do"
+    },
+    {
+      "kind": "portal",
+      "label": "HIRA healthcare big data open system",
+      "url": "https://opendata.hira.or.kr/"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "KR"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hira hospital information service south korea open api of all medical institutions reported to the health insurance review agency",
+    "url": "https://opendata.hira.or.kr"
+  },
+  "description": "This API gives the national list of medical institutions in South Korea as reported to the Health Insurance Review and Assessment Service (HIRA). Institutions report their details to HIRA under the National Health Insurance Act. The hospital information service returns institution records with an encrypted institution code that can be matched across HIRA services, and region and other codes documented in HIRA's open data system. It is free and available through the national public data portal as a REST API returning XML, after registering for a key that is approved automatically for development use (there is no bulk download file); the portal states the Korea Open Government Licence type 1, which requires attribution. Caveats: fields beyond those described on the portal were not read, institution codes are encrypted and cannot be decoded, and the HIRA open data site is rendered by script. Simulation uses: mapping hospitals and clinics for typhoon, flood and earthquake exposure analysis, locating emergency-capable institutions in response planning, and modelling access to care. Related records: the Japanese medical facility open data (data-mhlw-japan-medical-facility-open-data) and the US CMS provider data (data-cms-provider-data-hospitals) are comparable national registers.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: HIRA (KR, health_regulator_data_institute)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://opendata.hira.or.kr/",
+  "id": "data-hira-korea-hospital-information-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "Korea Open Government Licence type 1 (attribution), as stated on the public data portal",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://opendata.hira.or.kr/"
+    ]
+  },
+  "maturity": "active",
+  "name": "HIRA hospital information service (South Korea): open API of all medical institutions reported to the health insurance review agency",
+  "provider": "Health Insurance Review and Assessment Service (HIRA), South Korea",
+  "related_ids": [
+    "data-mhlw-japan-medical-facility-open-data",
+    "data-cms-provider-data-hospitals"
+  ],
+  "schema_summary": "Hospital information as reported by medical institutions to HIRA under the National Health Insurance Act (article 43) and its rules (article 12); encrypted institution code (matched one to one, not decryptable); region and other codes explained in the HIRA open data system code lookup",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "OpenAPI 건강보험심사평가원_병원정보서비스, provider HIRA big data office; service to look up hospital information managed by HIRA, compiled from reports by medical institutions under National Health Insurance Act article 43 and enforcement rule article 12; encrypted institution codes; codes documented in opendata.hira.or.kr; REST, XML; 9,371 applications; registered 29 Dec 2016, modified 12 May 2026; free; public work type 1 (attribution); development accounts approved automatically, 10,000 calls",
+      "url": "https://www.data.go.kr/data/15001698/openapi.do"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "HIRA healthcare big data open system; page is rendered by script, so its data lists were not read",
+      "url": "https://opendata.hira.or.kr/"
+    }
+  ],
+  "spatial_resolution": "Individual medical institution",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospitals",
+    "clinics",
+    "health facilities",
+    "health insurance",
+    "South Korea",
+    "API"
+  ],
+  "temporal_coverage": "Current register",
+  "temporal_resolution": "Snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "HIRA hospital information service (South Korea): open API of all medical institutions reported to the health insurance review agency",
+  "type": "data",
+  "update_frequency": "irregular"
+}

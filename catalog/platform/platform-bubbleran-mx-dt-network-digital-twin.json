@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "MX-DT announcement and architecture",
+      "url": "https://bubbleran.com/docs/blog/mx-digital-twin/"
+    }
+  ],
+  "access_restrictions": "on_request",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "on_request",
+  "countries": [
+    "FR"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bubbleran mx dt scalable digital twins of 5g and open ran networks",
+    "url": "https://bubbleran.com/docs/blog/mx-digital-twin"
+  },
+  "deployment": [
+    "own_server",
+    "hosted_service"
+  ],
+  "description": "MX-DT is BubbleRAN's network digital twin product, announced on 25 February 2025 as an extension of its MX-ORS Open RAN platform. It creates one or more copies of a live 5G network, covering radio access, transport and core, in which operators can run what-if analyses, test optimisations and train AI models without disturbing the physical network. Built on Kubernetes, the twin is managed by a Digital Twin Operator in a separate operator plane: a Perceptor collects network state (topology held as Kubernetes custom resources, xApp databases and traffic) from the physical network, Replicators redeploy that state into synchronised or unsynchronised replicas, and a timing agent called Horaion manages synchronisation and lets users rebuild past states for fault diagnosis. Traffic is mirrored packet by packet through a RAN packet sniffer xApp and an MQTT broker. Results return to the real network only through standard O-RAN and 3GPP channels, for example as A1 policies to xApps. BubbleRAN validated it on its Multi-x 5G reference system. Coverage: networks built on BubbleRAN's platform or with open interfaces. Format and access: commercial product with public documentation. Caveats: tied to BubbleRAN's Kubernetes-based stack; traffic channel mirroring was planned for a later release. Simulation uses: risk-free testing of reconfigurations, failures and recovery actions on a twin of a mobile network. Related records: the Colosseum Open RAN digital twin and the VIAVI Network Digital Twin are comparable.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "mobile network digital twin platform operator RAN digital twin software commercial open 5G network digital twin",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://bubbleran.com/docs/blog/mx-digital-twin/",
+  "hosted_models": [
+    "state replication",
+    "traffic mirroring"
+  ],
+  "id": "platform-bubbleran-mx-dt-network-digital-twin",
+  "interfaces": [
+    "other"
+  ],
+  "interoperability": [
+    "O-RAN",
+    "3GPP",
+    "Kubernetes",
+    "MQTT"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Proprietary",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BubbleRAN MX-DT: scalable digital twins of 5G and Open RAN networks",
+  "notes": "Blog page read with curl on 2026-09-26 (date, architecture, components, validation). BubbleRAN's French base is from recall.",
+  "open_source": false,
+  "platform_kind": [
+    "digital_twin"
+  ],
+  "provider": "BubbleRAN (France)",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "resilience",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "blog page",
+      "url": "https://bubbleran.com/docs/blog/mx-digital-twin/"
+    }
+  ],
+  "supported_sectors": [
+    "digital.telecom"
+  ],
+  "tags": [
+    "network digital twin",
+    "Open RAN",
+    "Kubernetes",
+    "5G",
+    "what-if analysis"
+  ],
+  "title_en": "BubbleRAN MX-DT: scalable digital twins of 5G and Open RAN networks",
+  "type": "platform"
+}

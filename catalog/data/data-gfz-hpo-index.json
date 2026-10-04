@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Hp30 and Hp60 pages",
+      "url": "https://kp.gfz.de/en/hp30-hp60"
+    },
+    {
+      "kind": "portal",
+      "label": "Data download options",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://kp.gfz.de/en/hp30-hp60/data"
+    },
+    {
+      "kind": "portal",
+      "label": "Hpo V3.0 DOI archive",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5880/HPO.0003"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [],
+  "cost": "free",
+  "data_family": [
+    "space_weather",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "geomagnetic hpo index hp30 and hp60 with ap30 and ap60 gfz",
+    "url": "https://kp.gfz.de/en/hp30-hp60"
+  },
+  "description": "The Hpo index is a Kp-like planetary geomagnetic activity index at half-hourly (Hp30) and hourly (Hp60) resolution, published with the linear ap30 and ap60 indices. Unlike Kp it is open-ended, not capped at 9, so it separates the strongest geomagnetic storms more finely. It is derived from near real-time data of the same 13 geomagnetic observatories that contribute to Kp. The index was developed in the H2020 project SWAMI and is produced by the GFZ Geomagnetic Observatory Niemegk; version 3.0 (Matzka and others, 2024) uses an improved algorithm for very high values and extends the series back to 1985. Data are accessible free through a web form (text or JSON), HTTPS files for the last 30 days, an FTP archive, a web-service API with Python and Matlab clients, and a DOI archive of yearly ASCII files updated monthly, under CC BY 4.0. GFZ also issues forecasts of Hpo, apo and Hs. Caveats: definitive yearly files are appended about a month late, the index is a global proxy that does not give local geoelectric fields, and users must cite the data publication and the Yamazaki et al. papers. It supports storm-intensity inputs and event selection at sub-3-hour resolution for geomagnetically induced current, satellite drag and HF propagation impact models; a related record is the GFZ Kp index.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "geomagnetic index (space weather sensor streams)",
+      "route": "R03",
+      "source": "b2find"
+    }
+  ],
+  "formats": [
+    "plain_text",
+    "json"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://kp.gfz.de/en/hp30-hp60",
+  "id": "data-gfz-hpo-index",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-01-01",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Geomagnetic Hpo index (Hp30 and Hp60, with ap30 and ap60), GFZ",
+  "notes": "Reference: Matzka, J., Bronkalla, O., da Silva, M. V., Kervalishvili, G., Rauberg, J., Korte, M. (2024). Geomagnetic Hpo index (V3.0). GFZ Data Services. doi:10.5880/HPO.0003",
+  "provider": "GFZ Helmholtz Centre for Geosciences, Geomagnetic Observatory Niemegk",
+  "related_ids": [
+    "data-gfz-kp-index"
+  ],
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Hp30 and Hp60 definition, open-ended, developed in H2020 SWAMI, Yamazaki et al. 2022; V3.0 back to January 1985; GFZ forecasts of Hpo, apo, Hs",
+      "url": "https://kp.gfz.de/en/hp30-hp60"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "web form txt/JSON, HTTPS last 30 days, DOI archive monthly update, FTP, web-service API clients",
+      "url": "https://kp.gfz.de/en/hp30-hp60/data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Hpo V3.0 2024, creators Matzka and others, CC BY 4.0, 13 contributing observatories as for Kp, yearly files updated monthly, produced by Geomagnetic Observatory Niemegk",
+      "url": "https://api.datacite.org/dois/10.5880/HPO.0003"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (doi 10.5880/HPO.0003 updated)",
+      "url": "https://kp.gfz.de/en/hp30-hp60"
+    }
+  ],
+  "tags": [
+    "geomagnetic index",
+    "Hp30",
+    "Hp60",
+    "open-ended index",
+    "SWAMI",
+    "GFZ"
+  ],
+  "temporal_coverage": "1985 to present (V3.0)",
+  "temporal_coverage_years": {
+    "start": 1985
+  },
+  "title_en": "Geomagnetic Hpo index (Hp30 and Hp60, with ap30 and ap60), GFZ",
+  "type": "data",
+  "update_frequency": "real_time"
+}

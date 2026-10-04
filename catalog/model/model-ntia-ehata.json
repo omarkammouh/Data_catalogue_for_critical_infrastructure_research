@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/NTIA/eHata"
+    },
+    {
+      "kind": "docs",
+      "label": "PropLib wiki",
+      "url": "https://ntia.github.io/propagation-library-wiki/"
+    },
+    {
+      "kind": "docs",
+      "label": "NTIA TR-15-517",
+      "url": "https://its.ntia.gov/publications/details?pub=2805"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "NTIA (2015) 3.5 GHz Exclusion Zone Analyses and Methodology. NTIA Technical Report TR-15-517.",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ntia extended hata ehata urban propagation model",
+    "repo": "github.com/ntia/ehata",
+    "url": "https://github.com/NTIA/eHata"
+  },
+  "description": "The Extended Hata (eHata) urban propagation model is a C++ reference implementation from the Institute for Telecommunication Sciences of the US National Telecommunications and Information Administration. It was developed for NTIA Technical Report TR-15-517, 3.5 GHz Exclusion Zone Analyses and Methodology, and extends the Hata-Okumura empirical model with terrain and environment corrections. Inputs are a terrain profile in the ITM format from mobile to base station, frequency, the heights of the mobile and the base station, an NLCD land-cover environment code and a reliability quantile; the output is path loss in dB, with an optional structure of intermediate values for debugging. Coverage: mobile paths in the United States, where NLCD codes apply, and elsewhere with equivalent land-cover classes. Format and access: source on GitHub, part of the ITS Propagation Library, releases up to v3.2; as a US Government work it is free of charge, with no US copyright and an NTIA disclaimer instead of a licence. Caveats: an empirical model with a stated frequency and distance range; urban clutter is statistical; documentation on the PropLib wiki is still being written. Simulation uses: coverage of mobile networks and exposure of base-station links to terrain and clutter, and spectrum sharing studies such as the 3.5 GHz CBRS exclusion zones. Related records: ITS ITM, P.528, P.2108 and LF/MF are the other PropLib models; SPLAT! and Signal-Server offer similar calculations.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "NTIA/ITS Propagation Library wiki: every model listed, followed from the LF/MF record",
+      "route": "R10",
+      "source": "digital-ntia-its-proplib"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/NTIA/eHata",
+  "id": "model-ntia-ehata",
+  "inputs": [
+    "terrain profile",
+    "frequency",
+    "mobile and base station heights",
+    "NLCD environment code",
+    "reliability"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-02-01",
+  "licence": "US Government work (not subject to copyright in the US, 15 USC 105) with NTIA software disclaimer",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical",
+    "physical"
+  ],
+  "name": "NTIA Extended Hata (eHata) urban propagation model",
+  "notes": "README read 2026-09-26; version tags from git (v3.0 to v3.2).",
+  "outputs": [
+    "path loss (dB)",
+    "intermediate values"
+  ],
+  "provider": "NTIA Institute for Telecommunication Sciences (ITS)",
+  "related_ids": [
+    "data-itu-r-dbsg3-propagation-databanks",
+    "data-fcc-antenna-structure-registration",
+    "model-ntia-itm",
+    "model-ntia-p2108"
+  ],
+  "repository": "https://github.com/NTIA/eHata",
+  "runs_on": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README inputs and outputs",
+      "url": "https://github.com/NTIA/eHata"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "PropLib package list",
+      "url": "https://ntia.github.io/propagation-library-wiki/"
+    }
+  ],
+  "tags": [
+    "radio propagation",
+    "Hata",
+    "urban path loss",
+    "CBRS",
+    "PropLib"
+  ],
+  "title_en": "NTIA Extended Hata (eHata) urban propagation model",
+  "type": "model"
+}

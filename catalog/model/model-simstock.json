@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "SimStock repository",
+      "url": "https://github.com/UCL/simstock"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation (Read the Docs)",
+      "url": "https://simstock.readthedocs.io/en/latest/index.html"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/simstock/"
+    }
+  ],
+  "access_note": "GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "simstock urban building energy modelling from geographic data to energyplus ucl",
+    "repo": "github.com/ucl/simstock",
+    "url": "https://github.com/UCL/simstock"
+  },
+  "description": "SimStock, developed at University College London by Ivan Korolija, Oliver Smith and Shyam Amrith, is a Python package that turns geographic and contextual building data into EnergyPlus models and runs thermal simulations, forming a layer between data sources and EnergyPlus so that urban building energy models can be run from tools such as QGIS. It performs geometric pre-processing so inputs meet EnergyPlus requirements, creates thermal zone objects, and runs simulations and handles results, through two objects: a SimstockDataframe extending pandas and an IDFmanager. Coverage: generic, any building stock with footprint data. Access: pip install simstock, with documentation on Read the Docs. Licence: MIT. Caveats: it requires Python 3.11 to 3.13 and an EnergyPlus 8.9 installation, an older EnergyPlus release. Simulation uses: stock-level heating, cooling and overheating studies from GIS data. Related records: EnergyPlus, CityBES and umi.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell model:built_environment.buildings:physical, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/UCL/simstock",
+  "id": "model-simstock",
+  "inputs": [
+    "Building footprints and attributes (CSV, GIS)",
+    "EnergyPlus settings and materials"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-23",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "SimStock: urban building energy modelling from geographic data to EnergyPlus (UCL)",
+  "outputs": [
+    "EnergyPlus thermal zones and IDF files",
+    "Simulation results"
+  ],
+  "provider": "University College London (Korolija, Smith, Amrith)",
+  "related_ids": [
+    "model-energyplus",
+    "model-citybes-city-building-energy-saver",
+    "model-umi-urban-modeling-interface",
+    "data-os-ngd-buildings-os-building-features",
+    "data-england-wales-energy-performance-certificates",
+    "data-climate-onebuilding-tmyx-weather-files"
+  ],
+  "repository": "https://github.com/UCL/simstock",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, steps, objects, requirements, installation",
+      "url": "https://raw.githubusercontent.com/UCL/simstock/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT licence",
+      "url": "https://raw.githubusercontent.com/UCL/simstock/main/LICENSE"
+    }
+  ],
+  "tags": [
+    "SimStock",
+    "urban building energy modelling",
+    "EnergyPlus",
+    "Python",
+    "UCL",
+    "QGIS"
+  ],
+  "title_en": "SimStock: urban building energy modelling from geographic data to EnergyPlus (UCL)",
+  "type": "model"
+}

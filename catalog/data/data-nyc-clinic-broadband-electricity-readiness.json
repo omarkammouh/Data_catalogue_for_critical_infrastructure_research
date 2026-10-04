@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "build_dataset.py",
+      "note": "Direct link from the Hugging Face API, 2026-10-01",
+      "url": "https://huggingface.co/datasets/Layered-Labs/nyc-clinic-ai-infrastructure/resolve/main/build_dataset.py"
+    },
+    {
+      "kind": "download",
+      "label": "join_fcc.py",
+      "note": "Direct link from the Hugging Face API, 2026-10-01",
+      "url": "https://huggingface.co/datasets/Layered-Labs/nyc-clinic-ai-infrastructure/resolve/main/join_fcc.py"
+    },
+    {
+      "kind": "download",
+      "label": "nyc_clinic_infrastructure.csv",
+      "note": "Direct link from the Hugging Face API, 2026-10-01",
+      "url": "https://huggingface.co/datasets/Layered-Labs/nyc-clinic-ai-infrastructure/resolve/main/nyc_clinic_infrastructure.csv"
+    },
+    {
+      "kind": "download",
+      "label": "requirements.txt",
+      "note": "Direct link from the Hugging Face API, 2026-10-01",
+      "url": "https://huggingface.co/datasets/Layered-Labs/nyc-clinic-ai-infrastructure/resolve/main/requirements.txt"
+    },
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/Layered-Labs/nyc-clinic-ai-infrastructure"
+    },
+    {
+      "kind": "portal",
+      "label": "Versioned dataset card",
+      "url": "https://huggingface.co/datasets/Layered-Labs/nyc-clinic-ai-infrastructure"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "service_performance",
+    "social_vulnerability_equity"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nyc clinic broadband and electricity readiness by zip",
+    "repo": "github.com/layered-labs/nyc-clinic-ai-infrastructure",
+    "url": "https://huggingface.co/datasets/Layered-Labs/nyc-clinic-ai-infrastructure/resolve/main/build_dataset.py"
+  },
+  "description": "Layered Labs publishes a ZIP-code table combining broadband and electricity conditions for clinic technology planning in New York City. Its 311 rows cover all city ZIP codes and contain ACS broadband subscription shares, FCC provider counts and advertised speeds, EIA commercial electricity rates and grid-reliability measures. The dataset card and repository README state CC-BY-4.0. Source years differ: ACS 2022, EIA 2023–2024 and FCC June 2025. The authors report FCC values for only 197 ZIP codes; the other 114 lack those values because of a ZIP-to-ZCTA boundary mismatch. Electricity measures are citywide, not clinic-specific. This review read the documentation, repository file list and registry metadata but did not inspect the CSV or run its pipeline. The fields describe service and cost proxies, not measured clinic uptime or a physical network topology. A modeller could use the ZIP-level indicators to compare digital and power constraints on healthcare service continuity, keeping missing FCC rows and mixed vintages explicit. Related catalogue resource data-fcc-form-477-fixed-broadband-deployment is a historical provider-report source; this dataset is a later derived, cross-sector NYC planning table.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"infrastructure\" \"dataset\"",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://huggingface.co/datasets/Layered-Labs/nyc-clinic-ai-infrastructure/resolve/main/build_dataset.py",
+  "id": "data-nyc-clinic-broadband-electricity-readiness",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-02-19",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NYC clinic broadband and electricity readiness by ZIP",
+  "notes": "G8; G8-0789. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Layered Labs. NYC Clinic AI Infrastructure dataset card and repository documentation, accessed 2026-09-28..",
+  "provider": "Layered Labs",
+  "regions": [
+    "New York City"
+  ],
+  "related_ids": [
+    "data-fcc-form-477-fixed-broadband-deployment"
+  ],
+  "schema_summary": "ZIP, borough, household broadband share, ISP count, fibre availability, advertised speed, commercial electricity rate and outage measures.",
+  "sectors": [
+    "digital.telecom",
+    "energy.electricity",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/Layered-Labs/nyc-clinic-ai-infrastructure/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/Layered-Labs/nyc-clinic-ai-infrastructure"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own registry dataset identity and CC-BY-4.0 metadata.",
+      "url": "https://huggingface.co/api/datasets/Layered-Labs/nyc-clinic-ai-infrastructure"
+    }
+  ],
+  "spatial_resolution": "All 311 NYC ZIP codes; FCC broadband values present for 197, missing for 114 due to ZCTA boundary mismatch.",
+  "spatial_resolution_class": "local_units",
+  "tags": [],
+  "temporal_coverage": "Mixed source vintages: ACS 2022, EIA 2023–2024, FCC June 2025.",
+  "temporal_coverage_years": {
+    "end": 2025,
+    "start": 2022
+  },
+  "temporal_resolution": "One New York City ZIP code per row; 311 rows.",
+  "temporal_resolution_class": "other",
+  "title_en": "NYC clinic broadband and electricity readiness by ZIP",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

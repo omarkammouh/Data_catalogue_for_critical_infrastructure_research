@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/IEE-TUGraz/GridTool"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352711023000109"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1016/j.softx.2023.101314"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gridtool",
+    "url": "https://github.com/iee-tugraz/gridtool"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "GridTool converts OpenStreetMap electricity-network data into simplified nodes and lines for power-system models. The IEE-TUGraz repository publishes MATLAB code that identifies grid nodes through spatial heuristics, reducing dependence on explicit relations in OpenStreetMap. Users supply an Overpass JSON export and choose voltage levels; the program creates two Excel files containing stations and lines. Coverage follows the selected map extract, with an Austrian transmission-grid example dated August 2022. It has no fixed temporal simulation step because it prepares network topology. Source code and usage instructions are available on GitHub under MIT, permitting free reuse of GridTool itself. A valid MATLAB licence is required, and the README also lists Microsoft Excel. The documentation warns that missing voltage tags can exclude lines and absent frequency tags default to 50 Hz. Users must check the outputs, supply electrical line parameters and add transformers before power-flow calculations. It can support network-model construction and capacity studies. Related records model-pypsa and model-pandapower model electricity systems, but no direct import interface was verified. No map data were downloaded and no conversion was executed.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "SoftwareX whole-index enumeration; 10.1016/j.softx.2023.101314; G5-LOCAL-079;G5-LOCAL-106",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/IEE-TUGraz/GridTool",
+  "id": "platform-gridtool",
+  "interfaces": [
+    "code_library"
+  ],
+  "language": [
+    "matlab"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-04-09",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.sciencedirect.com/science/article/pii/S2352711023000109"
+    ]
+  },
+  "maturity": "active",
+  "name": "GridTool",
+  "notes": "G5 G5-0027. Software checked through metadata and documentation, without installation or execution. Global scope means portability, not worldwide validation. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Graz University of Technology, Institute of Electricity Economics and Energy Innovation",
+  "related_ids": [
+    "model-pypsa",
+    "model-pandapower"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository identity and MIT licence.",
+      "url": "https://api.github.com/repos/IEE-TUGraz/GridTool"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Workflow, output formats, required software and limitations.",
+      "url": "https://raw.githubusercontent.com/IEE-TUGraz/GridTool/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Abstract and code metadata read in browser, including archived repository.",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352711023000109"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Paper-linked archived code repository, also checked against earlier records.",
+      "url": "https://api.github.com/repos/ElsevierSoftwareX/SOFTX-D-22-00275"
+    }
+  ],
+  "supported_sectors": [
+    "energy.electricity"
+  ],
+  "tags": [
+    "research software",
+    "SoftwareX"
+  ],
+  "title_en": "Gridtool electricity network data converter",
+  "type": "platform"
+}

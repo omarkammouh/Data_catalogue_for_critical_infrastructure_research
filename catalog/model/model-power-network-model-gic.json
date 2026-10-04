@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/TerminusEst/Power_Network"
+    },
+    {
+      "kind": "download",
+      "label": "Zenodo v0.8",
+      "url": "https://doi.org/10.5281/zenodo.1252432"
+    },
+    {
+      "kind": "paper",
+      "label": "Space Weather paper",
+      "url": "https://doi.org/10.1029/2018SW001926"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1029/2018sw001926",
+    "name": "power network model power network model generator for geomagnetically induced currents",
+    "repo": "github.com/terminusest/power_network",
+    "url": "https://github.com/TerminusEst/Power_Network"
+  },
+  "description": "Power_Network_Model is a Python program that builds power network models for calculating geomagnetically induced currents (GIC), the quasi-DC currents that geomagnetic storms drive through high-voltage grids and transformers. It was released in 2018 (version 0.8) by Seán Blake and used in a paper in the AGU journal Space Weather. From two CSV files, one describing transformers and one the connections between substations, it handles autotransformers and two-winding transformers, several transformers per substation, correct links between voltage levels and parallel connections, following a published method for GIC network modelling, and it includes plotting tools. The package ships the Horton et al. (2012) GIC benchmark test case as example data and installs with pip. Coverage is not tied to a place. The code is accessible on GitHub and Zenodo at no cost. Licence (read on the provider page on 2026-09-28): MIT. Simulation uses are space weather exposure analysis of transmission grids and transformer GIC risk screening. Related records: data-great-britain-grid-gic-open-data and model-powermodelsgmd-jl support GIC studies, and data-usgs-carrington-storm-geoelectric-fields gives storm fields. The underlying files were not downloaded, so their contents are not verified here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "nuclear power plant network model",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://github.com/TerminusEst/Power_Network",
+  "id": "model-power-network-model-gic",
+  "inputs": [
+    "CSV of substation transformers",
+    "CSV of connections between substations"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-08-25",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical",
+    "network"
+  ],
+  "name": "Power_Network_Model - power network model generator for geomagnetically induced currents",
+  "outputs": [
+    "Power network model for GIC calculation",
+    "network plots"
+  ],
+  "provider": "Seán Blake",
+  "related_ids": [
+    "data-great-britain-grid-gic-open-data",
+    "model-powermodelsgmd-jl",
+    "data-usgs-carrington-storm-geoelectric-fields"
+  ],
+  "repository": "https://github.com/TerminusEst/Power_Network",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, transformer handling, method paper, Space Weather paper, pip, Horton example data",
+      "url": "https://raw.githubusercontent.com/TerminusEst/Power_Network/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "v0.8 first release, Horton (2012) test case, 2018",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.1252432"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Head commit 2020-08-25; no LICENSE file (404)",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/TerminusEst/Power_Network/visit/latest/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): MIT (basis: GitHub README)",
+      "url": "https://github.com/TerminusEst/Power_Network/blob/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://api.crossref.org/works/10.1029/2018sw001926"
+    }
+  ],
+  "tags": [
+    "geomagnetically induced currents",
+    "space weather",
+    "GIC",
+    "transformers",
+    "Horton test case",
+    "Python"
+  ],
+  "title_en": "Power: Network: Model - power network model generator for geomagnetically induced currents",
+  "type": "model",
+  "validated_on": [
+    "Horton (2012) GIC test case"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code and documentation",
+      "url": "https://github.com/kunifujiwara/VoxCity"
+    },
+    {
+      "kind": "portal",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/voxcity/"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (arXiv 2504.13934)",
+      "url": "https://arxiv.org/abs/2504.13934"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Fujiwara, K. et al. (2025). VoxCity: A Seamless Framework for Open Geospatial Data Integration, Grid-Based Semantic 3D City Model Generation, and Urban Environment Simulation. arXiv:2504.13934",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "voxcity voxel based 3d city model generator and environmental simulator",
+    "repo": "github.com/kunifujiwara/voxcity",
+    "url": "https://github.com/kunifujiwara/VoxCity"
+  },
+  "description": "VoxCity is an open Python framework that builds voxel-based three-dimensional city models from open geospatial data and runs simple environmental simulations on them. It covers generation of building heights, tree canopy heights, land cover and terrain for a chosen area anywhere on Earth from open sources, and simulation of solar irradiance, sky and green view indices and landmark visibility on the resulting model; the paper demonstrates 8 cities. It was developed by Kunihiko Fujiwara and co-authors and described in arXiv 2504.13934 (April 2025). The code is available from the GitHub repository and as a PyPI package (version 1.6.3, August 2026) under the MIT licence, free of charge; models can be exported to ENVI-met INX input files for microclimate simulation and to PALM static drivers and OBJ meshes. Caveats: the quality of the model depends on the open data available for each place, and many data sources are served through Google Earth Engine, which needs an account. It is useful for preparing city geometry with trees and green cover for heat, microclimate and green infrastructure studies and for digital twin prototypes; a related record is the Copernicus Urban Atlas.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "3D city framework with green cover (green system description)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "extreme_heat"
+  ],
+  "homepage": "https://github.com/kunifujiwara/VoxCity",
+  "id": "model-voxcity-3d-city-generator-simulator",
+  "inputs": [
+    "open building footprints and heights",
+    "tree canopy height",
+    "land cover",
+    "terrain"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-22",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "VoxCity voxel-based 3D city model generator and environmental simulator",
+  "outputs": [
+    "voxel city model",
+    "solar irradiance maps",
+    "green view and sky view indices",
+    "ENVI-met INX",
+    "PALM and OBJ exports"
+  ],
+  "provider": "Kunihiko Fujiwara and co-authors",
+  "related_ids": [
+    "data-copernicus-urban-atlas"
+  ],
+  "sectors": [
+    "cross_cutting.green_blue",
+    "built_environment.buildings",
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "submitted 2025-04-15; voxel-based 3D city model generation from open data; simulation of solar radiation and view indices; export to ENVI-met INX and OBJ; demonstrated in 8 cities",
+      "url": "https://arxiv.org/abs/2504.13934"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 1.6.3 released 2026-08-22; MIT",
+      "url": "https://pypi.org/pypi/voxcity/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "generator downloads building heights, tree canopy heights, land cover and terrain; simulator for solar radiation, sky/green view index, landmark visibility; exports ENVI-met INX/EDB, PALM static driver, OBJ, VOX; many sources via Google Earth Engine; MIT licence badge",
+      "url": "https://raw.githubusercontent.com/kunifujiwara/VoxCity/main/README.md"
+    }
+  ],
+  "tags": [
+    "3D city model",
+    "voxel",
+    "ENVI-met",
+    "green view index",
+    "solar irradiance",
+    "Python"
+  ],
+  "title_en": "VoxCity voxel-based 3D city model generator and environmental simulator",
+  "type": "model"
+}

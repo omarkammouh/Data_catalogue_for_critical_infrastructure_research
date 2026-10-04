@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository (code and data)",
+      "url": "https://github.com/ss15859/Patient_Flow"
+    },
+    {
+      "kind": "portal",
+      "label": "Technion SEELab data (source of visit records)",
+      "url": "https://seelab.net.technion.ac.il/data/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "patient flow forecasting code and data for hourly emergency arrival forecasts at rambam medical center israel kalman filter lstm tbats",
+    "repo": "github.com/ss15859/patient_flow",
+    "url": "https://github.com/ss15859/Patient_Flow"
+  },
+  "description": "This repository contains the code and data for the study Enhancing Uncertain Demand Prediction in Hospitals Using Simple and Advanced Machine Learning by Hu, Stockman, Zhi, Wood, Wu and Chén. It forecasts hourly patient arrivals at the Rambam Medical Center in Haifa, Israel, three and seven days ahead, comparing a time-varying linear model estimated with a Kalman filter and LSTM neural networks against seasonal naive, RVAR and TBATS benchmarks. The data are per-patient visit records for 2004 to 2007 from the Technion's Service Enterprise Engineering Lab (SEELab), plus temperature from the Haifa Port weather station; 2004 and 2005 are used for training, 2006 is held out because the Lebanon war disrupted it, and January to October 2007 is the test period. Python scripts rebuild the hourly series, train each model and reproduce the paper's tables with paired bootstrap comparisons. Everything is free to download from GitHub. Caveats: no licence file was found, the data are nearly twenty years old, and they cover one hospital. Coverage is one hospital in Israel. Simulation uses: arrival forecasts as demand inputs to emergency department and bed capacity models. Related records: the ED simulation model (model-comses-emergency-department-simulation-italy) shows how such arrivals move through an emergency department.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "patient flow",
+      "route": "R05",
+      "source": "software-heritage"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://github.com/ss15859/Patient_Flow",
+  "id": "model-patient-flow-forecasting-rambam-hospital",
+  "inputs": [
+    "Per-patient visit records by month, 2004 to 2007 (from the Technion SEELab)",
+    "Haifa Port temperature records",
+    "Calendar covariates"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Patient flow forecasting: code and data for hourly emergency arrival forecasts at Rambam Medical Center, Israel (Kalman filter, LSTM, TBATS)",
+  "outputs": [
+    "Hourly arrival forecasts at 3-day and 7-day horizons",
+    "Error metrics with bootstrap confidence intervals"
+  ],
+  "provider": "Hu, Stockman, Zhi, Wood, Wu and Chén (paper authors); repository ss15859",
+  "related_ids": [
+    "model-comses-emergency-department-simulation-italy"
+  ],
+  "repository": "https://github.com/ss15859/Patient_Flow",
+  "runs_on": [
+    "Python"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README read in memory: code and data for 'Enhancing Uncertain Demand Prediction in Hospitals Using Simple and Advanced Machine Learning' (Hu, Stockman, Zhi, Wood, Wu, Chén); hourly patient arrivals at Rambam Medical Center, Israel, 2004-2007 forecast at 3- and 7-day horizons with a time-varying linear (Kalman filter) model and LSTM networks, benchmarked against seasonal naive, RVAR and TBATS; data folders of monthly visits.csv from the Technion SEELab, Haifa Port temperature, hourly feature tables; train 2004-2005, 2006 held out (Lebanon war), test January-October 2007; scripts listed (build_hourly_floor.py, train_lstm_floor.py, fit_tbats_floor.py, paired_bootstrap.py); no LICENSE file found",
+      "url": "https://raw.githubusercontent.com/ss15859/Patient_Flow/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://github.com/ss15859/Patient_Flow/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://seelab.net.technion.ac.il/data/"
+    }
+  ],
+  "tags": [
+    "patient arrivals",
+    "forecasting",
+    "LSTM",
+    "Kalman filter",
+    "Israel",
+    "emergency department"
+  ],
+  "title_en": "Patient flow forecasting: code and data for hourly emergency arrival forecasts at Rambam Medical Center, Israel (Kalman filter, LSTM, TBATS)",
+  "type": "model",
+  "validated_on": []
+}

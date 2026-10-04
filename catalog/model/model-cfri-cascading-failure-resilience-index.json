@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/AstroGuy1/CFRI"
+    },
+    {
+      "kind": "portal",
+      "label": "Version 1.0.1 (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.17807145"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Parajuli, N. (2025). CFRI Research Toolkit (v1.0.1). Zenodo. doi:10.5281/zenodo.17807145",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.17807145",
+    "name": "cfri cascading failure resilience index research toolkit",
+    "repo": "github.com/astroguy1/cfri",
+    "url": "doi:10.5281/zenodo.17807144"
+  },
+  "description": "The CFRI toolkit computes the Cascading-Failure Resilience Index for countries or regions, a hybrid metric that combines a static Structural Stability Index, built from normalised infrastructure indicators, with a Dynamic Propagation Index from discrete-time simulation of shocks spreading over a sector interdependency network. Version 1.0 covers seven sectors (power, telecom, water, transport, health, finance and public safety) and four resilience dimensions (redundancy, shielding, recovery and adaptivity); dimension scores set buffers for protection, redundancy, recovery speed and adaptivity, and scenario files set sector-specific initial losses and horizons. Dynamic outcomes such as cascade depth, deficit area, recovery time and reach are scaled and combined. The package includes a global 2025 example and a multi-country sample with indicator and edge tables per country, covering countries from Australia and Brazil to Chad. It was written by Nishanta Parajuli, and version 1.0.1 was released on Zenodo on 3 December 2025 under CC BY 4.0 (the repository LICENSE is MIT) as a Python package with a command-line interface and CSV and JSON inputs. Caveats: indicator values and interdependency weights are templates to be checked, relative scores depend on which regions are evaluated together, and the README cites the method paper without a journal or venue. It supports cascading failure and resilience comparison across nations; a related record is the Canadian critical infrastructure interdependency input-output metrics.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "CFRI research toolkit (multi physical)",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://doi.org/10.5281/zenodo.17807144",
+  "id": "model-cfri-cascading-failure-resilience-index",
+  "inputs": [
+    "sector indicators by region",
+    "interdependency edge tables",
+    "sector weights",
+    "shock scenarios",
+    "normalisation configuration"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-12-03",
+  "licence": "CC-BY-4.0 on Zenodo; repository LICENSE states MIT",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network",
+    "statistical"
+  ],
+  "name": "CFRI Cascading-Failure Resilience Index research toolkit",
+  "outputs": [
+    "Structural Stability Index",
+    "Dynamic Propagation Index",
+    "CFRI scores and rankings",
+    "cascade depth",
+    "recovery time"
+  ],
+  "provider": "Nishanta Parajuli (independent researcher)",
+  "related_ids": [
+    "data-canada-ci-interdependency-input-output-metrics"
+  ],
+  "repository": "https://github.com/AstroGuy1/CFRI",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "digital.telecom",
+    "water.drinking_water",
+    "transport.road",
+    "services.healthcare",
+    "industry.financial",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "CFRI hybrid metric SSI + DPI; seven sectors; four dimensions; hybrid normalisation; scenarios; cascade depth, deficit area, recovery time, reach; open source Python; multi-country sample; v1.0.1 2025-12-03; CC BY 4.0",
+      "url": "https://zenodo.org/api/records/17807145"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "research toolkit; Parajuli 2025 method paper cited without venue; CLI with indicators, edges, sector weights, scenarios, benchmarks, normalisation config; CSV and JSON inputs",
+      "url": "https://raw.githubusercontent.com/AstroGuy1/CFRI/HEAD/README.MD"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "224 files; data/global_2025 and global_sample per country (Australia, Brazil, Canada, Central African Republic, Chad ...); LICENSE MIT simplified",
+      "url": "https://zenodo.org/api/records/17807145/files/AstroGuy1/CFRI-v1.0.1.zip/container"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed language, repository.",
+      "url": "https://doi.org/10.5281/zenodo.17807144"
+    }
+  ],
+  "tags": [
+    "cascading failure",
+    "resilience index",
+    "interdependency network",
+    "national comparison",
+    "Python"
+  ],
+  "title_en": "CFRI Cascading-Failure Resilience Index research toolkit",
+  "type": "model"
+}

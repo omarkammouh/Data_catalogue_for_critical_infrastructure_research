@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "S3 bucket mit-supercloud-dataset (public, no sign-in)",
+      "note": "Direct link from the AWS Open Data registry, 2026-10-01",
+      "url": "https://mit-supercloud-dataset.s3.us-west-2.amazonaws.com/"
+    },
+    {
+      "kind": "portal",
+      "label": "Datacenter Challenge data",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://dcc.mit.edu/data"
+    },
+    {
+      "kind": "portal",
+      "label": "Registry of Open Data on AWS",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://registry.opendata.aws/dcc/"
+    },
+    {
+      "kind": "paper",
+      "label": "HPEC 2021 paper (arXiv)",
+      "url": "https://arxiv.org/abs/2108.02037"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "equipment_specifications"
+  ],
+  "data_kind": [
+    "time_series",
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "mit supercloud dataset datacenter challenge",
+    "url": "https://dcc.mit.edu/data"
+  },
+  "description": "The MIT Supercloud Dataset is a collection of parsed data-centre logs and hardware utilisation time series from the MIT Supercloud system, released to support research on workload classification, scheduling and energy use in data centres. It contains CPU and GPU utilisation, memory use, GPU power and temperature, snapshots of compute node state, file input and output, and the scheduler log, with users anonymised and data organised by job and node; most of it comes from the TX-Gaia cluster of 224 nodes, each with two 20-core Intel Xeon Gold 6248 processors and two NVIDIA V100 GPUs. It is maintained by the MIT Lincoln Laboratory Supercomputing Center, was described at the IEEE High Performance Extreme Computing conference in 2021, and underpins the MIT Datacenter Challenge and a later workload classification challenge. Coverage: one research data centre in Massachusetts, roughly February to October 2021, with GPU metrics at sub-minute intervals. Format and access: more than 2.1 TB of CSV and log files from the challenge website and the Registry of Open Data on AWS (bucket mit-supercloud-dataset, us-west-2, no sign-in needed), with documentation on GitHub; free of charge under CC BY-NC-ND 4.0. Caveats: the non-commercial, no-derivatives licence limits redistribution of processed versions; an academic cluster is not typical of commercial facilities; facility cooling and electrical data are not included. Simulation uses: workload and power profiles for data-centre capacity planning and digital twins, and energy-aware scheduling studies. Related records: Google, Alibaba and Azure traces cover commercial clouds, SURF Lisa traces a national HPC centre, and ExaDigiT can replay such telemetry.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ExaDigiT open source digital twin supercomputer RAPS ORNL code repository licence",
+      "route": "R22",
+      "source": "web-search"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "MIT SuperCloud dataset download telemetry GPU power Samsi 2021 datacenter challenge",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "other"
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://registry.opendata.aws/dcc/",
+  "id": "data-mit-supercloud-dataset",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021",
+  "licence": "CC-BY-NC-ND-4.0",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://github.com/MIT-AI-Accelerator/datacenter-challenge"
+    ],
+    "dead_since": "2026-09-27"
+  },
+  "maturity": "stale",
+  "name": "MIT Supercloud Dataset (Datacenter Challenge)",
+  "notes": "AWS Registry page (licence, bucket, update frequency, contact) read on 2026-09-26; contents, hardware and period from search results citing the arXiv paper 2108.02037. Period is approximate.",
+  "provider": "MIT Lincoln Laboratory Supercomputing Center and MIT (Siddharth Samsi, Vijay Gadepally and co-authors)",
+  "related_ids": [],
+  "schema_summary": "scheduler log; per-node CPU and memory time series; per-GPU utilisation, power, memory and temperature; node state snapshots; file I/O",
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "digital_twin",
+    "optimisation"
+  ],
+  "size": "over 2.1 TB",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "registry entry",
+      "url": "https://registry.opendata.aws/dcc/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: contents and hardware",
+      "url": "https://arxiv.org/abs/2108.02037"
+    }
+  ],
+  "spatial_resolution": "node and job",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "data centre telemetry",
+    "GPU power",
+    "HPC",
+    "workload traces",
+    "MIT"
+  ],
+  "temporal_coverage": "2021-02 to 2021-10 (approximate)",
+  "temporal_coverage_years": {
+    "end": 2021,
+    "start": 2021
+  },
+  "temporal_resolution": "sub-minute GPU metrics; per job logs",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "WITH Supercloud Dataset (Data Center Challenge)",
+  "type": "data",
+  "update_frequency": "annual"
+}

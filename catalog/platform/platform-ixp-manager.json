@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/inex/IXP-Manager"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://docs.ixpmanager.org/"
+    },
+    {
+      "kind": "api",
+      "label": "Grapher API documentation",
+      "url": "https://docs.ixpmanager.org/grapher/api/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "IE"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ixp manager open source management platform for internet exchange points",
+    "repo": "github.com/inex/ixp-manager",
+    "url": "https://ixpmanager.org"
+  },
+  "deployment": [
+    "own_server"
+  ],
+  "description": "IXP Manager is a full-stack management platform for internet exchange points (IXPs), developed by INEX in Ireland and used, according to its repository, by more than 250 exchanges worldwide. It keeps the exchange's records of members, contacts, switches, ports, cross connects and facilities, gives administrators and members their own portals, and provisions the network end to end: it generates route server, route collector and AS112 configurations with IRR and RPKI filtering, publishes the IX-F member export, supports PeeringDB, MANRS and looking glass integration, and offers a peering matrix and peering manager. Its Grapher module draws traffic graphs from MRTG, sFlow and Smokeping back ends and exposes them through an API: a URL per graph returns PNG images, log data or JSON with totals, current, average and maximum traffic for the exchange, infrastructures, locations, VLANs, switches, trunks and each member port, with public or restricted access set per graph type. Coverage: software, used by exchanges on every continent. Format and access: PHP (Laravel) application on GitHub, free under the GNU GPL v2, with documentation and community support. Caveats: self-hosted and needs operator effort; graph data are only as public as each exchange chooses. Simulation uses: a system of record for building digital twins of an exchange, traffic time series for capacity planning, and configuration generation for route-server test beds. Related records: the IX-F member export schema defines its export, and ARouteServer is an alternative route-server configuration tool.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "IXP real-time traffic API sFlow public live traffic graphs member statistics internet exchange JSON",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.ixpmanager.org/",
+  "hosted_models": [
+    "route server and collector configuration generation",
+    "traffic graphing (MRTG, sFlow)"
+  ],
+  "id": "platform-ixp-manager",
+  "interfaces": [
+    "web_app",
+    "web_api",
+    "code_library",
+    "command_line"
+  ],
+  "interoperability": [
+    "IX-F member export",
+    "PeeringDB",
+    "IRRDB and RPKI",
+    "BIRD"
+  ],
+  "language": [
+    "other"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "GPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "IXP Manager: open-source management platform for internet exchange points",
+  "notes": "Repository page read via fetch and Grapher API documentation read with curl on 2026-09-26 (feature list from the documentation menu). platform_kind digital_twin is the nearest vocabulary term for an operational system of record; route-server filtering details from recall.",
+  "open_source": true,
+  "platform_kind": [
+    "digital_twin"
+  ],
+  "provider": "INEX (Internet Neutral Exchange Association, Dublin) and contributors",
+  "related_ids": [],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "repository: licence, users, language",
+      "url": "https://github.com/inex/IXP-Manager"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Grapher API and feature list",
+      "url": "https://docs.ixpmanager.org/grapher/api/"
+    }
+  ],
+  "supported_sectors": [
+    "digital.internet_exchange"
+  ],
+  "tags": [
+    "IXP management",
+    "route servers",
+    "traffic graphs",
+    "INEX",
+    "open source"
+  ],
+  "title_en": "IXP Manager: open-source management platform for internet exchange points",
+  "type": "platform"
+}

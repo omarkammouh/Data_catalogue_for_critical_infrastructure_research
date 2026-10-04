@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Brückenstatistik (CSV)",
+      "url": "https://www.bast.de/DE/Publikationen/Statistik/Bruecken/Brueckenstatistik-csv.csv?__blob=publicationFile&v=5"
+    },
+    {
+      "kind": "download",
+      "label": "Brückenstatistik (Excel)",
+      "url": "https://www.bast.de/DE/Publikationen/Statistik/Bruecken/Brueckenstatistik-excel.xlsx?__blob=publicationFile&v=5"
+    },
+    {
+      "kind": "download",
+      "label": "Zustandsnoten der Brücken (Excel)",
+      "url": "https://www.bast.de/DE/Publikationen/Statistik/Bruecken/Zustandsnoten-excel.xlsx?__blob=publicationFile&v=5"
+    },
+    {
+      "kind": "docs",
+      "label": "Fokus: Brücken",
+      "url": "https://www.bast.de/DE/Themen/Digitales/HF_4/Massnahmen/brueckenstatistik/bruecken_hidden_node.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "system_description",
+    "condition_ageing"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bast bridge statistics and condition grades for german federal trunk roads bruckenstatistik zustandsnoten",
+    "url": "https://bast.de/fokusbruecken"
+  },
+  "description": "The Bundesanstalt für Straßen- und Verkehrswesen (BASt) publishes, on its 'Fokus: Brücken' page, statistics on every bridge of the German federal trunk roads (Bundesfernstraßen, the autobahns and federal roads) and a compilation of their condition grades. The bridge statistics come as a PDF evaluation, an Excel workbook (about 5 MB) and a CSV file (about 19 MB), and the condition grades as PDF and Excel. The CSV has one row per structure or part-structure with its id, structure type (for example slab bridge or closed frame), status (such as in service), road class and position, year built, length, width, deck area, load-bearing index, length class, material class (such as concrete or reinforced concrete), age class, and condition grade with its grade class. The data are dated March 2026 (CSV last modified 18 June 2026). Coverage: all bridges on German federal trunk roads. Format and access: CSV, XLSX and PDF downloads; free. Licence: CC BY 4.0, with the suggested citation 'Quelle der Daten: Bundesanstalt für Straßen- und Verkehrswesen (CC-BY 4.0)'. Caveats: bridge locations are not among the CSV columns read, so the data are an inventory, not a map; column names and values are in German; condition grades follow the German inspection scheme described in BASt's notes, which were not read. Simulation uses: an asset inventory with age, material and condition for bridge fragility, deterioration and network resilience studies. Related records: the smartBRIDGE Hamburg digital twin case (case_study-koehlbrand-bridge-smartbridge-digital-twin) concerns one German bridge.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-bast: provider pages read (round 2 register piece)",
+      "route": "R18",
+      "source": "transport-bast"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.bast.de/fokusbruecken",
+  "id": "data-bast-federal-trunk-road-bridge-statistics-condition-grades",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BASt bridge statistics and condition grades for German federal trunk roads (Brückenstatistik, Zustandsnoten)",
+  "provider": "Bundesanstalt für Straßen- und Verkehrswesen (BASt, German Federal Highway Research Institute)",
+  "related_ids": [
+    "case_study-koehlbrand-bridge-smartbridge-digital-twin"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Bridge statistics PDF, XLSX 5 MB, CSV 19 MB; condition grades PDF, XLSX; CC-BY 4.0 citation; Stand März 2026",
+      "url": "https://www.bast.de/DE/Themen/Digitales/HF_4/Massnahmen/brueckenstatistik/bruecken_hidden_node.html"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Header and two rows only: id_nr, bauwerk, bauwerksart_text, stadium_text, bwnr, tbwnr, jast_lage, baujahr, laenge, breite, flaeche, trag_l_idx, laengenklasse, baustoffklasse, altersklasse, zustandsnote, zustandsnotenklasse; last modified 2026-06-18",
+      "url": "https://www.bast.de/DE/Publikationen/Statistik/Bruecken/Brueckenstatistik-csv.csv?__blob=publicationFile&v=5"
+    }
+  ],
+  "tags": [
+    "bridges",
+    "condition rating",
+    "Germany",
+    "autobahn",
+    "asset inventory"
+  ],
+  "temporal_coverage": "status March 2026",
+  "title_en": "BASt bridge statistics and condition grades for German federal trunk roads (Brückenstatistik, Zustandsnoten)",
+  "type": "data"
+}

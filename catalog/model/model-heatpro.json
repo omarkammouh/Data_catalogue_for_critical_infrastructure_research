@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/CEA-Liten/HeatPro"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/CEA-Liten/HeatPro/blob/public/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Lamaison et al. (2019), https://doi.org/10.1016/j.energy.2019.07.044; Cuisinier et al. (2022), https://doi.org/10.1016/j.energy.2021.122773.",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "heatpro district heating demand profiles",
+    "repo": "github.com/cea-liten/heatpro",
+    "url": "https://github.com/CEA-Liten/HeatPro"
+  },
+  "description": "HeatPro is a CEA-Liten Python package for constructing representative district-heating demand profiles. It disaggregates annual or monthly heat quantities into hourly demand using an external-temperature series, with associated network supply and return temperatures. Inputs are aggregate loads, weather and profile assumptions; outputs provide time-resolved boundary conditions for production-plant simulations. Coverage is globally configurable at network or building-demand scale, with a user-selected year or other input period. Public package source, installation instructions and online documentation are free under CeCILL-B. A limitation is that disaggregation creates representative profiles, not recovering measured hourly behaviour. Their suitability depends on weather, building mix and temporal assumptions. The README describes applications to power-to-heat, biomass, storage and representation of heating networks in Antares, with linked 2019 and 2022 Energy papers. HeatPro can prepare demand for energy-system and flexibility simulations, complementary to PyPSA (model-pypsa). The documentation also advertises cooling-demand functions that were not evaluated here. No temperature series, demand files or application code was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "cea-liten/heatpro linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/CEA-Liten/HeatPro",
+  "id": "model-heatpro",
+  "inputs": [
+    "Monthly or annual heat demand",
+    "Hourly external temperature"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-15",
+  "licence": "CeCILL-B",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "HeatPro district-heating demand profiles",
+  "notes": "G7 G7-0610. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Hourly heat-demand profile",
+    "Supply and return temperatures"
+  ],
+  "provider": "CEA-Liten",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/CEA-Liten/HeatPro",
+  "sectors": [
+    "energy.district_heating_cooling",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for CEA-Liten/HeatPro: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/cea-liten/heatpro"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/cea-liten/heatpro/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Official documentation index with usage, disaggregation and demand-profile sections.",
+      "url": "https://cea-liten.github.io/HeatPro/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Statistical model for district heating and cooling and buildings",
+  "type": "model"
+}

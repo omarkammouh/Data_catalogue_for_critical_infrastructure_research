@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "HAI repository (CSV files)",
+      "url": "https://github.com/icsdataset/hai"
+    },
+    {
+      "kind": "portal",
+      "label": "Kaggle mirror",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.kaggle.com/datasets/icsdataset/hai-security-dataset"
+    },
+    {
+      "kind": "portal",
+      "label": "HAICon 2021 competition (DACON)",
+      "url": "https://dacon.io/en/competitions/official/235757/overview/description"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "KR"
+  ],
+  "data_family": [
+    "cyber_control",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hai security dataset hil augmented ics testbed time series with labelled attacks boiler turbine water treatment pumped storage",
+    "repo": "github.com/icsdataset/hai",
+    "url": "https://github.com/icsdataset/hai"
+  },
+  "description": "The HAI (HIL-based Augmented ICS) dataset is a series of time series datasets recorded from an industrial control system testbed under normal operation and during deliberate cyber attacks, built for research on anomaly and intrusion detection. It is produced by the Affiliated Institute of ETRI in Daejeon, South Korea. Coverage: one laboratory testbed that couples a GE turbine rig, an Emerson boiler rig and a FESTO water treatment rig through a hardware-in-the-loop simulator of thermal power and pumped-storage hydropower generation, with data gathered through an OPC UA gateway. Four date-numbered versions exist (HAI 20.07 to HAI 23.05, plus HAIEnd 23.05 with boiler control logic tags), each with training files of normal operation and test files containing labelled attacks; in HAI 23.05 each second holds 86 tag values and training files span about 80 hours each. Format and access: CSV files on GitHub and Kaggle with a technical details document, free. Licence: CC BY-SA 4.0. Caveats: the testbed is a scaled laboratory process, attacks were scripted by the authors, and versions differ in tags and attack scenarios, so results do not transfer directly between versions. The HAICon 2020 and 2021 competitions on DACON used HAI 21.03 and HAI 22.04 and published baseline and winning codes. Simulation uses: training and testing detectors for cascading failure and resilience studies of power plant and water treatment control. Related records: the IEC 104 intrusion detection dataset (data-iec104-scada-ids-dataset) and the ITI ICS packet captures (data-iti-ics-security-tools-pcaps) are network-level counterparts.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source hai-dataset: provider pages read (round 2 register piece)",
+      "route": "R50",
+      "source": "hai-dataset"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://github.com/icsdataset/hai",
+  "id": "data-hai-hil-augmented-ics-security-dataset",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC BY-SA 4.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "HAI security dataset: HIL-augmented ICS testbed time series with labelled attacks (boiler, turbine, water treatment, pumped storage)",
+  "provider": "The Affiliated Institute of ETRI (Daejeon, South Korea)",
+  "related_ids": [
+    "data-iec104-scada-ids-dataset",
+    "data-iti-ics-security-tools-pcaps"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: testbed with GE turbine, Emerson boiler, FESTO MPS water treatment combined by a HIL simulator of thermal and pumped-storage generation; four versions (HAI 20.07 to 23.05, HAIEnd 23.05); CSV files; Kaggle mirror; HAICon 2020 (HAI 21.03) and 2021 (HAI 22.04) on DACON; The Affiliated Institute of ETRI; CC BY-SA 4.0; last commit 2023-06-07",
+      "url": "https://raw.githubusercontent.com/icsdataset/hai/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "repository README: testbed, versions, attacks, format, licence",
+      "url": "https://raw.githubusercontent.com/icsdataset/hai/master/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Wave 1 integrator dedupe: merged duplicate record data-hai-ics-security-dataset (#20) into this record; its sources and extra access links were kept here.",
+      "url": "https://github.com/icsdataset/hai"
+    }
+  ],
+  "tags": [
+    "ICS security",
+    "anomaly detection",
+    "hardware-in-the-loop",
+    "testbed"
+  ],
+  "temporal_coverage": "Versions released 2020 to 2023",
+  "temporal_resolution": "1 second",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "HAI security dataset: HIL-augmented ICS testbed time series with labelled attacks (boiler, turbine, water treatment, pumped storage)",
+  "type": "data"
+}

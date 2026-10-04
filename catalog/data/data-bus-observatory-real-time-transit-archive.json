@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Bus Observatory archive sample (Parquet)",
+      "url": "https://busobservatory-lake.s3.amazonaws.com/feeds/nyct_mta_bus_gtfsrt/COMPACTED_nyct_mta_bus_gtfsrt_2025-01-24_18:03:14.parquet"
+    },
+    {
+      "kind": "portal",
+      "label": "Bus Observatory site and S3 bucket",
+      "url": "https://api.busobservatory.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "service_performance"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bus observatory public archive of real time transit vehicle data cornell tech",
+    "url": "https://api.busobservatory.org"
+  },
+  "description": "The Bus Observatory is a public archive of real-time data on transit vehicle movements and status, run by the Jacobs Urban Tech Hub at Cornell Tech since 2020. Transit agencies rarely keep public logs of position data, so the project retrieves systemwide snapshots about every minute (around 1,440 batches a day) and compacts them into one Parquet file per feed per day in a public AWS S3 bucket, with file names by feed and timestamp. For GTFS-Realtime feeds it parses vehicle positions, trip updates and service alerts; for other feeds such as NJ Transit and NYC Transit SIRI it parses position and status fields. A fall 2025 note says it now collects only the New York City Transit bus GTFS-RT feed, other feeds being suspended for lack of resources, while archived data stay available. Coverage: several systems, mainly in the US, for past years. Format and access: Parquet files via HTTPS, AWS CLI or boto3. Licence and cost: free; no licence is stated. Caveats: collection gaps and suspended feeds. It supports reliability and disruption studies for capacity planning and emergency response. It relates to CapMetrics, MTA open data and the GTFS specification in the catalogue.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "https://github.com/MobilityData/awesome-transit README read 2026-09-28 (analysis tools, archives, national data, formats, agency tools)",
+      "route": "R48",
+      "source": "awesome-transit"
+    }
+  ],
+  "formats": [
+    "parquet"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://api.busobservatory.org/",
+  "id": "data-bus-observatory-real-time-transit-archive",
+  "languages": [
+    "en"
+  ],
+  "licence": "Not stated (free public archive)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Bus Observatory: public archive of real-time transit vehicle data (Cornell Tech)",
+  "provider": "Jacobs Urban Tech Hub, Cornell Tech",
+  "related_ids": [
+    "data-capmetrics-austin-vehicle-locations",
+    "data-mta-open-data",
+    "data-gtfs-specification"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "purpose, Cornell Tech, 2020, sampling, Parquet, S3, fall 2025 status, parsed fields",
+      "url": "https://api.busobservatory.org/"
+    }
+  ],
+  "tags": [
+    "GTFS-RT",
+    "vehicle positions",
+    "archive",
+    "New York",
+    "Parquet",
+    "r2-fresh-transport"
+  ],
+  "temporal_coverage": "From 2020; only NYC Transit buses collected since fall 2025",
+  "title_en": "Bus Observatory: public archive of real-time transit vehicle data (Cornell Tech)",
+  "type": "data"
+}

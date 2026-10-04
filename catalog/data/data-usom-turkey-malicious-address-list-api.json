@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "API documentation (Swagger)",
+      "url": "https://siberguvenlik.gov.tr/api/"
+    },
+    {
+      "kind": "api",
+      "label": "Malicious address list endpoint",
+      "url": "https://siberguvenlik.gov.tr/api/address/index"
+    },
+    {
+      "kind": "api",
+      "label": "Security notices endpoint",
+      "url": "https://siberguvenlik.gov.tr/api/incident/index"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia",
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "TR"
+  ],
+  "data_family": [
+    "security_threat",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "event_record",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usom malicious address list and security notices api turkiye national cert now the cyber security directorate",
+    "url": "https://siberguvenlik.gov.tr/api"
+  },
+  "description": "USOM, Türkiye's national computer emergency response team (TR-CERT), has published a list of malicious domains, IP addresses and URLs since 2015. After the 2025 Cyber Security Law the service moved to the Cyber Security Directorate, which serves it through a documented public REST API (OpenAPI with Swagger UI). The address endpoint held 494,518 entries on 26 September 2026, from February 2015 to the same day. Each entry gives the address, its type (domain, IP or URL), a category (phishing, banking phishing, malware distribution domain or IP, and others), a source (TR-CERT, sector CERTs, public reports and others), a criticality level from 1 to 10, a connection type (APT, botnet or mobile command and control, exploit kit, malware download, mining, phishing) and a timestamp. Further endpoints give the category code lists, 7,989 security notices on vulnerabilities in named products (for example industrial printers, with CVE numbers), announcements and documents. The plain-text list files were withdrawn on 1 June 2026, so the API is the supported access route. Coverage: threats aimed at users and organisations in Türkiye, 2015 to present. Format and access: JSON over HTTPS, paged at up to 9,999 items, with no key needed. Caveats: this is a blocklist, not an incident count, so additions reflect reporting and detection effort; notices are in Turkish; licence terms were not found. Simulation uses: time series of phishing and malware infrastructure for cyber threat scenarios, and national-scale blocklist dynamics. Related records: the Traficom Autoreporter statistics, the CERT.br incident statistics and the JPCERT/CC quarterly incident reports give other national CERT views.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "visit of usom.gov.tr",
+      "route": "R50",
+      "source": "organisations.csv:TR:digital:cyber_security_agency"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://siberguvenlik.gov.tr/api/",
+  "id": "data-usom-turkey-malicious-address-list-api",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "last_updated": "2026-09",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "USOM malicious address list and security notices API (Türkiye national CERT, now the Cyber Security Directorate)",
+  "notes": "usom.gov.tr home page read on 2026-09-26 (move notice; text files ended 1 June 2026). The OpenAPI file and the first page of each endpoint were read for totals, fields and code lists; the list itself was not downloaded.",
+  "provider": "Siber Güvenlik Başkanlığı (Cyber Security Directorate of Türkiye), formerly USOM (TR-CERT)",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience"
+  ],
+  "size": "494,518 addresses and 7,989 notices (26 September 2026)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "move notice",
+      "url": "https://www.usom.gov.tr/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "API description",
+      "url": "https://siberguvenlik.gov.tr/api/openapi.yaml"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://siberguvenlik.gov.tr/api/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://siberguvenlik.gov.tr/api/address/index"
+    }
+  ],
+  "spatial_resolution": "not applicable (internet addresses)",
+  "spatial_resolution_class": "not_stated",
+  "tags": [
+    "blocklist",
+    "phishing",
+    "malware",
+    "command and control",
+    "CERT",
+    "Türkiye"
+  ],
+  "temporal_coverage": "February 2015 to present",
+  "temporal_resolution": "continuous (timestamped entries)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "USOM malicious address list and security notices API (Türkiye national CERT, now the Cyber Security Directorate)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

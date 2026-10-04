@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "OpenPLC Runtime v4",
+      "url": "https://github.com/autonomy-logic/openplc-runtime"
+    },
+    {
+      "kind": "repo",
+      "label": "OpenPLC Editor v4",
+      "url": "https://github.com/Autonomy-Logic/openplc-editor"
+    },
+    {
+      "kind": "repo",
+      "label": "OpenPLC Runtime v3 (end of life)",
+      "url": "https://github.com/thiagoralves/OpenPLC_v3"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openplc open source iec 61131 3 programmable logic controller runtime and editor",
+    "repo": "github.com/autonomy-logic/openplc-runtime",
+    "url": "https://autonomylogic.com"
+  },
+  "deployment": [
+    "desktop",
+    "own_server",
+    "mobile_embedded"
+  ],
+  "description": "OpenPLC is an open-source programmable logic controller: a runtime that executes IEC 61131-3 control programs on ordinary computers and embedded boards, and an editor for writing them. It is developed by Autonomy Logic, the company behind the OpenPLC Project started by Thiago Alves, and is widely used in research papers and security testbeds. Coverage: generic industrial automation software. OpenPLC Runtime v4 is a headless runtime with a real-time C/C++ execution core and a Python REST API server that the OpenPLC Editor v4 desktop application or the Autonomy Edge cloud uses to upload, compile and run programs in ladder logic, structured text, function block diagram and the other IEC 61131-3 languages; the earlier Runtime v3 ran on Linux, Windows and boards with Modbus and DNP3 communication. Format and access: source code on GitHub and a Docker image; free. Licence: MIT for Runtime v4; GPL-3.0 for the end-of-life Runtime v3. Caveats: it is not a certified safety controller, v3 is no longer maintained, and the project website now redirects to Autonomy Logic's commercial Autonomy Edge pages. Simulation uses: building low-cost control system testbeds and digital twins of water, power and process plants to study cascading failure and cyber resilience. Related records: GRFICSv3 (platform-grfics-ot-security-lab) and ICS-SimLab (model-ics-simlab-containerised-ics-simulation) use software PLCs of this kind in their testbeds.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source openplc: provider pages read (round 2 register piece)",
+      "route": "R50",
+      "source": "openplc"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://autonomylogic.com/",
+  "id": "platform-openplc",
+  "interfaces": [
+    "web_api",
+    "desktop_gui"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-23",
+  "licence": "MIT (Runtime v4); GPL-3.0 (Runtime v3)",
+  "licence_type": [
+    "copyleft_code",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OpenPLC: open-source IEC 61131-3 programmable logic controller runtime and editor",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "Autonomy Logic (OpenPLC Project, founded by Thiago Alves)",
+  "related_ids": [
+    "platform-grfics-ot-security-lab",
+    "model-ics-simlab-containerised-ics-simulation"
+  ],
+  "sectors": [
+    "industry.manufacturing_chemical",
+    "water.drinking_water",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: OpenPLC Runtime v4 headless runtime for IEC 61131-3 programs; REST API server (Python/Flask) and C/C++ runtime core; Docker image; MIT licence; last commit 2026-09-23",
+      "url": "https://raw.githubusercontent.com/autonomy-logic/openplc-runtime/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "README: Runtime v3 reached end of life, replaced by Runtime v4; low-cost industrial solution for automation and research; install on Linux or Windows; GPL-3.0",
+      "url": "https://raw.githubusercontent.com/thiagoralves/OpenPLC_v3/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Register address redirects to autonomylogic.com: free, open source OpenPLC Editor and virtual PLCs with Autonomy Edge; IEC 61131-3 for Windows, macOS, Linux",
+      "url": "https://openplcproject.com/"
+    }
+  ],
+  "tags": [
+    "PLC",
+    "IEC 61131-3",
+    "industrial control",
+    "testbed"
+  ],
+  "title_en": "OpenPLC: open-source IEC 61131-3 programmable logic controller runtime and editor",
+  "type": "platform"
+}

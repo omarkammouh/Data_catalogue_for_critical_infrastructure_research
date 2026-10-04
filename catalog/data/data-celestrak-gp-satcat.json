@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "SATCAT",
+      "url": "https://celestrak.org/satcat/search.php"
+    },
+    {
+      "kind": "api",
+      "label": "GP data query",
+      "url": "https://celestrak.org/NORAD/elements/gp.php"
+    },
+    {
+      "kind": "portal",
+      "label": "CelesTrak",
+      "url": "https://celestrak.org/"
+    },
+    {
+      "kind": "docs",
+      "label": "GP data formats",
+      "url": "https://celestrak.org/NORAD/documentation/gp-data-formats.php"
+    },
+    {
+      "kind": "portal",
+      "label": "Data page (landing)",
+      "url": "https://celestrak.org/NORAD/elements/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "celestrak orbital element sets gp and satellite catalogue satcat",
+    "url": "https://celestrak.org"
+  },
+  "description": "CelesTrak, run by Dr T.S. Kelso and operated as a non-profit since 2021, redistributes and documents the orbital data of objects in Earth orbit. Its general perturbations (GP) element sets are orbits fitted by the US Space Surveillance Network to its observations and meant for the SGP4 propagator; CelesTrak serves them for every catalogued object and in ready groups such as active satellites, GNSS constellations, communications and weather satellites and Starlink, together with the satellite catalogue (SATCAT) of launch, owner, orbit and decay information and supplemental GP sets (SupGP) derived from operator ephemerides for better accuracy. Coverage: all tracked objects worldwide, with GP data updated two to three times a day. Format and access: query URLs of the form celestrak.org/NORAD/elements/gp.php with catalogue number, designator, group or name, returning OMM in XML, KVN, JSON or CSV (CSV by default since May 2026) or legacy two-line element sets; free, with donations requested. Caveats: CelesTrak checks for new data only every two hours and blocks addresses that download more than 100 MB a day or repeat downloads within a cycle; classified objects are missing; element sets lose accuracy within days. Simulation uses: an asset inventory and positions of communication and navigation satellites for coverage, conjunction and space weather exposure studies. Related records: Space-Track gives the source catalogue, the UCS satellite database gives purposes and operators, and SatNOGS gives radio observations.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.satellite_positioning:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "xml",
+    "json",
+    "csv",
+    "other",
+    "domain_model_file"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://celestrak.org/NORAD/elements/",
+  "id": "data-celestrak-gp-satcat",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09",
+  "licence": "free public service (no formal licence; attribution requested)",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CelesTrak orbital element sets (GP) and satellite catalogue (SATCAT)",
+  "notes": "GP data format documentation read with the page-fetch tool on 2026-09-26 (curl gets an empty body). SATCAT start year from recall of the catalogue (first objects 1957).",
+  "provider": "CelesTrak (T.S. Kelso, non-profit)",
+  "related_ids": [],
+  "schema_summary": "OMM fields (epoch, mean motion, eccentricity, inclination, RAAN, argument of perigee, mean anomaly, BSTAR); SATCAT (catalogue number, designator, owner, launch, decay, orbit)",
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "data formats, query URLs, update and rate rules",
+      "url": "https://celestrak.org/NORAD/documentation/gp-data-formats.php"
+    }
+  ],
+  "spatial_resolution": "individual orbiting object",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "TLE",
+    "orbital elements",
+    "satellite catalogue",
+    "SGP4"
+  ],
+  "temporal_coverage": "current element sets; SATCAT since 1957",
+  "temporal_resolution": "2-3 updates per day",
+  "temporal_resolution_class": "daily",
+  "title_en": "CelesTrak orbital element sets (GP) and satellite catalogue (SATCAT)",
+  "type": "data",
+  "update_frequency": "sub_daily"
+}

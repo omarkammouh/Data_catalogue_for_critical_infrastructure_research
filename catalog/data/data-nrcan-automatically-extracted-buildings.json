@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Optimized Buildings Layer (GeoParquet)",
+      "url": "https://download-telecharger.services.geo.ca/pub/nrcan_rncan/extraction/auto_building/auto_building_opti_2/auto_building_opti_2.parquet"
+    },
+    {
+      "kind": "download",
+      "label": "Optimized Buildings Layer (GeoPackage)",
+      "url": "https://download-telecharger.services.geo.ca/pub/nrcan_rncan/extraction/auto_building/auto_building_opti_2/auto_building_opti_2.gpkg"
+    },
+    {
+      "kind": "portal",
+      "label": "Prepackaged GeoPackages by acquisition source",
+      "url": "https://download-telecharger.services.geo.ca/pub/nrcan_rncan/extraction/auto_building/gpkg"
+    },
+    {
+      "kind": "docs",
+      "label": "Product specifications (PDF)",
+      "url": "https://download-telecharger.services.geo.ca/pub/nrcan_rncan/extraction/auto_building/pdf/AutoExtractBuilding_en_Specifications.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "GeoParquet user guide",
+      "url": "https://nrcan.github.io/CanElevation/optimized_building_footprint/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CA"
+  ],
+  "data_family": [
+    "system_description",
+    "imagery_remote_sensing"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "automatically extracted buildings and optimized buildings layer natural resources canada",
+    "url": "https://open.canada.ca/data/en/dataset/7a5cda52-c7df-427f-9ced-26f19a8a64d6"
+  },
+  "description": "Automatically Extracted Buildings is a raw vector product from Natural Resources Canada that delineates building footprints extracted automatically from airborne lidar, high-resolution optical imagery or other sources. It has two feature classes. The first holds footprints by acquisition source, delivered to the extent of each source dataset, so a building may appear twice where sources overlap. The second, the Optimized Buildings Layer, assembles and harmonises those footprints to give one representation per building by removing duplicates and resolving overlaps. Coverage: the parts of Canada covered by the lidar and imagery sources used, with acquisitions from 2006; the footprints also feed the Canada Basemap vector tiles. Access: GeoPackage files per source and the Optimized Buildings Layer as a single GeoParquet or GeoPackage on the NRCan download server, with product specifications, a feature catalogue and a GeoParquet user guide. Licence: Open Government Licence - Canada; free. Caveats: this is a raw automatic extraction, so footprints are not validated against a building register and coverage follows the available sources; the record is updated as needed (last metadata change 4 September 2026). Simulation uses are a national footprint layer for flood, wildfire and seismic exposure where municipal footprints are missing. Related records: the Statistics Canada Open Database of Buildings and the Microsoft building footprints.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: Natural Resources Canada GeoBase / Open Maps homepage",
+      "route": "R10",
+      "source": "organisations.csv:CA:built_environment:mapping_agency"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "geopackage"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://open.canada.ca/data/en/dataset/7a5cda52-c7df-427f-9ced-26f19a8a64d6",
+  "id": "data-nrcan-automatically-extracted-buildings",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "last_updated": "2026-09-04",
+  "licence": "Open Government Licence - Canada",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://download-telecharger.services.geo.ca/pub/nrcan_rncan/extraction/auto_building/auto_building_opti_2/auto_building_opti_2.gpkg",
+      "https://download-telecharger.services.geo.ca/pub/nrcan_rncan/extraction/auto_building/auto_building_opti_2/auto_building_opti_2.parquet"
+    ]
+  },
+  "maturity": "active",
+  "name": "Automatically Extracted Buildings and Optimized Buildings Layer (Natural Resources Canada)",
+  "provider": "Natural Resources Canada (NRCan)",
+  "related_ids": [
+    "data-statcan-open-database-of-buildings",
+    "data-microsoft-global-ml-building-footprints"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Open Government catalogue record: description of both feature classes, OGL-Canada, resources (GeoParquet, GeoPackage, specifications, user guide), frequency as needed, coverage start 2006, modified 2026-09-04",
+      "url": "https://open.canada.ca/data/api/3/action/package_show?id=7a5cda52-c7df-427f-9ced-26f19a8a64d6"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Canada Basemap Transportation records list Automatically Extracted Buildings among their sources",
+      "url": "https://open.canada.ca/data/api/3/action/package_search?q=%22Automatically%20Extracted%20Buildings%22"
+    }
+  ],
+  "tags": [
+    "building footprints",
+    "lidar",
+    "automatic extraction",
+    "Canada",
+    "GeoParquet"
+  ],
+  "temporal_coverage": "Source acquisitions from 2006 onwards",
+  "title_en": "Automatically Extracted Buildings and Optimized Buildings Layer (Natural Resources Canada)",
+  "type": "data"
+}

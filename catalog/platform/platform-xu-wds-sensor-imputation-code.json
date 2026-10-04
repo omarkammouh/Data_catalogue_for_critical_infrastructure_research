@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Homepage",
+      "url": "https://zenodo.org/records/15039291"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.15039291",
+    "name": "xu water network sensor imputation code",
+    "repo": "github.com/ang-xu/wds-data-imputation",
+    "url": "https://zenodo.org/records/15039291"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "The Xu water-network imputation code release contains Python notebooks for filling missing flow and pressure sensor readings. Its repository names low-rank matrix or tensor completion methods, KNN, mean imputation and related baselines; the associated paper evaluates them on real and simulated water-distribution series. The paper cites a separate versioned Zenodo software DOI, whose metadata states a CC-BY-4.0 licence. The GitHub tree shows notebooks and example CSV paths, but this review did not inspect their execution results or download the 70 MB archived release. The tool requires sensor time series with compatible layout and missing-value conventions. Geographic scope follows a user’s network; the paper’s examples include an anonymised northern Chinese city and simulated networks. A modeller could prepare more complete pressure or demand traces before parameter calibration, then test whether the imputation method distorts peaks or faults. The methods are data preparation, not a hydraulic solver. Its companion data release is recorded separately as G8-0779. Related catalogue model model-wntr provides network simulation functions; this release addresses missing sensor inputs, not solving hydraulic states.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"water distribution\" \"data\"",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://zenodo.org/records/15039291",
+  "id": "platform-xu-wds-sensor-imputation-code",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "CSV sensor time series",
+    "Python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-03-17",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Xu water-network sensor imputation code",
+  "notes": "G8; G8-0780. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Ang Xu and coauthors",
+  "related_ids": [],
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/Ang-Xu/WDS-Data-Imputation/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/Ang-Xu/WDS-Data-Imputation"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own versioned software release, DOI and CC-BY-4.0 metadata; 70 MB archive not downloaded.",
+      "url": "https://zenodo.org/api/records/15039291"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Primary paper’s code-availability statement and method comparison.",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025WR040528"
+    }
+  ],
+  "tags": [],
+  "title_en": "Xu water-network sensor imputation code",
+  "type": "platform"
+}

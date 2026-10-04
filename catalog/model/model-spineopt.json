@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/spine-tools/SpineOpt.jl"
+    },
+    {
+      "kind": "docs",
+      "label": "Spine tools community",
+      "url": "https://www.tools-for-energy-system-modelling.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "spineopt jl",
+    "repo": "github.com/spine-tools/spineopt.jl",
+    "url": "https://github.com/spine-tools/SpineOpt.jl"
+  },
+  "description": "SpineOpt.jl is a Julia package containing an energy system optimisation model, part of the Spine toolset for energy system modelling. It builds optimisation problems from data held in a Spine database, with documented features for unit commitment, investment and multi-year investment, reserves, ramping, lossless nodal DC and PTDF-based power flows, pressure-driven gas transfer, hydro coupling, decomposition and modelling to generate alternatives, and is developed by the Spine tools community with support from the EU Horizon 2020 project Spine (2017 to 2021, grant 774629) and the Horizon Europe project Mopo (2023 to 2026, grant 101095998). The model is location independent: the systems, regions and time resolution are defined in the user's database. Code is on GitHub (version 1.0.3 in the package manifest, commits to September 2026) under the GNU GPL version 3, free of charge, with a mailing list, monthly user meetings and webinars. Caveats: version 1.0 introduced a new input data structure that renames most parameters, and although automatic database migration exists, the developers ask users to back up and check databases migrated from version 0.x; the README itself gives little technical description, so the documentation is needed. Simulation uses are capacity planning and optimisation of integrated energy systems. Related records: it compares with model-pypsa, model-oemof-solph and model-calliope.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry Spine Toolbox and SpineOpt",
+      "route": "R06",
+      "source": "energy-spine-tools"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/spine-tools/SpineOpt.jl",
+  "id": "model-spineopt",
+  "inputs": [
+    "Spine database of energy system objects",
+    "parameters and relationships"
+  ],
+  "language": [
+    "julia"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-17",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "SpineOpt.jl",
+  "outputs": [
+    "Optimal operation and investment of the modelled energy system"
+  ],
+  "provider": "Spine tools community (EU projects Spine 2017-2021 and Mopo 2023-2026)",
+  "related_ids": [
+    "model-pypsa",
+    "model-oemof-solph",
+    "model-calliope"
+  ],
+  "repository": "https://github.com/spine-tools/SpineOpt.jl",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity",
+    "energy.gas_hydrogen"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Energy system optimisation model; v1.0 data structure change and migration advice; community; EU funding Spine 774629, Mopo 101095998",
+      "url": "https://raw.githubusercontent.com/spine-tools/SpineOpt.jl/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU GPL version 3",
+      "url": "https://raw.githubusercontent.com/spine-tools/SpineOpt.jl/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 1.0.3",
+      "url": "https://raw.githubusercontent.com/spine-tools/SpineOpt.jl/HEAD/Project.toml"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Visit 2026-09-21; head commit 2026-09-17",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/spine-tools/SpineOpt.jl/visit/latest/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Documentation contents: unit commitment, investment, reserves, ramping, DC and PTDF power flow, pressure-driven gas transfer, decomposition, MGA",
+      "url": "https://spine-tools.github.io/SpineOpt.jl/latest/"
+    }
+  ],
+  "tags": [
+    "Julia",
+    "energy system optimisation",
+    "Spine Toolbox",
+    "Mopo"
+  ],
+  "title_en": "Spineopt julia package for energy system optimisation with multi-year investment",
+  "type": "model",
+  "validated_on": []
+}

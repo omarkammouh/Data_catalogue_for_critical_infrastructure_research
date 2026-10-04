@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/scikit-mobility/DeepGravity"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo archive",
+      "url": "https://zenodo.org/records/5573573"
+    },
+    {
+      "kind": "paper",
+      "label": "Nature Communications article",
+      "url": "https://doi.org/10.1038/s41467-021-26752-4"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "deep gravity a deep learning model for generating mobility flows scikit mobility",
+    "url": "https://github.com/scikit-mobility/DeepGravity"
+  },
+  "description": "Deep Gravity generates mobility flows between locations when observed flows are not available for a region. It extends the classic gravity model with a deep neural network that uses many features of each location extracted from OpenStreetMap, such as land use, the road network and transport, food and health facilities, to predict flow probabilities, and it explains the predictions with explainable AI techniques. The authors report experiments on flows in England, Italy and New York State with better performance than the gravity model, especially in densely populated areas, and generalisation to regions without training data; the method is published in Nature Communications (2021). It is generic and can be applied to any country given a tessellation, output areas, observed flows for training and a feature table. The code is available on GitHub and archived on Zenodo (version 1.1.0, 2021) under CC BY 4.0, free, written in Python with PyTorch, pandas, geopandas and scikit-mobility, and a New York example dataset is included. Caveats: it needs training flows from comparable regions, the pinned library versions date from 2021, and it generates flow probabilities, not route-level traffic. It supports demand generation for transport network flow and agent-based models, It is related to the classic gravity and radiation models it was compared with and uses OpenStreetMap features.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Deep Gravity",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/scikit-mobility/DeepGravity",
+  "id": "model-deep-gravity",
+  "inputs": [
+    "tessellation of the study area",
+    "output areas",
+    "observed origin-destination flows for training",
+    "location features from OpenStreetMap"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-08-03",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Deep Gravity, a deep learning model for generating mobility flows (scikit-mobility)",
+  "outputs": [
+    "origin-destination flow probabilities",
+    "feature explanations"
+  ],
+  "provider": "Simini, Barlacchi, Luca and Pappalardo (scikit-mobility)",
+  "related_ids": [],
+  "runs_on": [],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "MFDG model description; CC BY 4.0; version 1.1.0; 2021-08-03; GitHub v.1.0.0",
+      "url": "https://zenodo.org/api/records/5573573"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Nature Communications 12, 6576 (2021); experiments England, Italy, New York State; dependencies pytorch 1.7.1, geopandas, scikit-mobility 1.1.0; data files expected; New York example",
+      "url": "https://raw.githubusercontent.com/scikit-mobility/DeepGravity/master/README.md"
+    }
+  ],
+  "tags": [
+    "mobility flows",
+    "gravity model",
+    "deep learning",
+    "origin-destination",
+    "OpenStreetMap"
+  ],
+  "title_en": "Deep Gravity, a deep learning model for generating mobility flows (scikit-mobility)",
+  "type": "model",
+  "validated_on": [
+    "England",
+    "Italy",
+    "New York State"
+  ]
+}

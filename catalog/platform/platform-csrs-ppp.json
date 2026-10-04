@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "CSRS-PPP application",
+      "url": "https://webapp.csrs-scrs.nrcan-rncan.gc.ca/geod/tools-outils/ppp.php"
+    },
+    {
+      "kind": "docs",
+      "label": "Modernization and product notes",
+      "url": "https://webapp.csrs-scrs.nrcan-rncan.gc.ca/geod/tools-outils/ppp-info.php?locale=en"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "CA"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "csrs ppp natural resources canada online precise point positioning service",
+    "url": "https://webapp.csrs-scrs.nrcan-rncan.gc.ca/geod/tools-outils/ppp.php"
+  },
+  "deployment": [
+    "hosted_service"
+  ],
+  "description": "CSRS-PPP is the online precise point positioning service of the Canadian Geodetic Survey at Natural Resources Canada. Users sign in and upload GNSS observation files in RINEX format, and the service computes positions in static or kinematic mode using precise satellite orbit and clock products, without needing a nearby base station. It supports GPS, GLONASS and Galileo, with ultra-rapid products limited to GPS and GLONASS, and resolves integer ambiguities for dual-frequency GPS L1/L2 and Galileo E1/E5a observations. Results include a PDF report, summary, position, tropospheric delay, clock and residual files and CSV output, in NAD83(CSRS) or ITRF. Recent changes include version 3 with ambiguity resolution in October 2020, adoption of ITRF2020 and IGS20 from 27 November 2022, version 5 with Galileo in May 2025, and from 29 January 2026 the use of IGS Repro3 reanalysis products for observations before 27 November 2022. Coverage: worldwide, since it needs no local reference network. Format and access: web application after sign-in, free, with products and data under the Open Government Licence - Canada. Caveats: high-rate static files are decimated to 30 seconds; accuracy depends on session length and product latency. Simulation uses: precise positions and troposphere estimates for infrastructure digital twins, deformation monitoring and hazard mapping anywhere. Related records: OPUS and AUSPOS are relative-positioning services, and a comparison study found the authors preferred CSRS-PPP for batch work.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "online GNSS post-processing service PPP CSRS-PPP AUSPOS OPUS cloud positioning service free",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://webapp.csrs-scrs.nrcan-rncan.gc.ca/geod/tools-outils/ppp.php",
+  "hosted_models": [
+    "precise point positioning with ambiguity resolution"
+  ],
+  "id": "platform-csrs-ppp",
+  "interfaces": [
+    "web_app"
+  ],
+  "interoperability": [
+    "RINEX",
+    "IGS products",
+    "NAD83(CSRS) and ITRF2020"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-04",
+  "licence": "Open Government Licence - Canada",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CSRS-PPP: Natural Resources Canada online precise point positioning service",
+  "notes": "Application page read with curl and via fetch, and modernization page read via fetch on 2026-09-26 (constellations, outputs, dates). The page was modified on 2026-08-04.",
+  "open_source": false,
+  "platform_kind": [
+    "cloud_service"
+  ],
+  "provider": "Canadian Geodetic Survey, Natural Resources Canada",
+  "related_ids": [],
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "application page",
+      "url": "https://webapp.csrs-scrs.nrcan-rncan.gc.ca/geod/tools-outils/ppp.php"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "modernization notes",
+      "url": "https://webapp.csrs-scrs.nrcan-rncan.gc.ca/geod/tools-outils/ppp-info.php?locale=en"
+    }
+  ],
+  "supported_sectors": [
+    "digital.satellite_positioning"
+  ],
+  "tags": [
+    "precise point positioning",
+    "PPP-AR",
+    "GNSS post-processing",
+    "geodesy",
+    "Canada"
+  ],
+  "title_en": "CSRS-PPP: Natural Resources Canada online precise point positioning service",
+  "type": "platform"
+}

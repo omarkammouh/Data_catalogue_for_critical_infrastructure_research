@@ -1,0 +1,131 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "readme.txt (11.1 kB)",
+      "note": "Direct link from the OSF API, 2026-10-01",
+      "url": "https://osf.io/download/q589n/"
+    },
+    {
+      "kind": "download",
+      "label": "other.zip (489.6 MB)",
+      "note": "Direct link from the OSF API, 2026-10-01",
+      "url": "https://osf.io/download/a4e5v/"
+    },
+    {
+      "kind": "download",
+      "label": "metropolitan.zip (7.9 GB)",
+      "note": "Direct link from the OSF API, 2026-10-01",
+      "url": "https://osf.io/download/tnzgu/"
+    },
+    {
+      "kind": "download",
+      "label": "micropolitan.zip (494.8 MB)",
+      "note": "Direct link from the OSF API, 2026-10-01",
+      "url": "https://osf.io/download/frg8q/"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub gmuggs/OSM-Building-Classification",
+      "url": "https://github.com/gmuggs/OSM-Building-Classification"
+    },
+    {
+      "kind": "portal",
+      "label": "OSF project utgae (GeoPackage per county)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://osf.io/utgae/"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data 2024 (doi:10.1038/s41597-024-04046-w)",
+      "url": "https://www.nature.com/articles/s41597-024-04046-w"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "reference_context"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openstreetmap derived residential and non residential building classification for the united states",
+    "url": "https://osf.io/utgae"
+  },
+  "description": "This dataset labels every OpenStreetMap building footprint in the United States as residential or non-residential, using the footprint geometry and the OpenStreetMap tags and points of interest around it. Files are one GeoPackage per county or equivalent, named by state-county code and grouped by core-based statistical area so they link to official statistics, and each building keeps the OpenStreetMap information used to classify it, so sheds and garages can be filtered out. The authors validated the labels against authoritative land use data for selected counties and report high precision for non-residential buildings and high recall for residential ones. Coverage: the whole United States, limited to buildings present in OpenStreetMap. Access: free on OSF, with code on GitHub. Licence: CC BY 4.0 on the OSF project. Caveats: coverage follows OpenStreetMap completeness; data are in UTM zones, so counties must be reprojected before merging, and buildings on county borders appear twice. Simulation uses are population allocation to buildings, residential exposure counts for hazard models and synthetic populations for agent-based evacuation and mobility models. Related records: OpenStreetMap, the Microsoft US building footprints and FEMA USA Structures.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "OpenStreetMap buildings completeness crowdsourced building mapping dataset HOT",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "formats": [
+    "geopackage"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://osf.io/utgae/",
+  "id": "data-osm-us-building-classification-residential",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-05-15",
+  "licence": "CC BY 4.0 (OSF project)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OpenStreetMap-derived residential and non-residential building classification for the United States",
+  "provider": "Henrique F. de Arruda, Sandro M. Reia, Shiyang Ruan, Kuldip S. Atwal, Hamdi Kavak, Taylor Anderson, Dieter Pfoser",
+  "related_ids": [
+    "data-openstreetmap",
+    "data-microsoft-us-building-footprints",
+    "data-fema-usa-structures"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "agent_based",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "title, dates and CC BY 4.0 licence read",
+      "url": "https://api.osf.io/v2/nodes/utgae/?embed=license"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "abstract, data records, usage notes and code availability read",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1038/s41597-024-04046-w"
+    }
+  ],
+  "tags": [
+    "building classification",
+    "residential",
+    "OpenStreetMap",
+    "United States",
+    "footprints",
+    "GeoPackage"
+  ],
+  "temporal_coverage": "OpenStreetMap snapshot used for the 2024 paper; OSF project modified 15 May 2025",
+  "title_en": "OpenStreetMap-derived residential and non-residential building classification for the United States",
+  "type": "data"
+}

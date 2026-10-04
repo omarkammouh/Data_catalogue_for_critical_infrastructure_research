@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/NatLabRockies/reV"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/NatLabRockies/reV/blob/main/README.rst"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "NLR reV technical report. https://www.nlr.gov/docs/fy19osti/73067.pdf",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rev renewable energy potential and supply curve model",
+    "repo": "github.com/natlabrockies/rev",
+    "url": "https://github.com/NatLabRockies/reV"
+  },
+  "description": "reV is a national laboratory geospatial model for estimating renewable-energy technical potential, cost and supply curves. Python modules process resource time series, simulate generation, aggregate locations subject to land exclusions and combine transmission-cost tables with representative generation profiles. Technologies listed by the repository include solar photovoltaics, wind, geothermal and pumped storage. Inputs use the rex resource structure and HDF5 spatial-exclusion layers; command-line pipelines can run on high-performance computing systems. Geographic coverage, temporal resolution and study years follow the input data, with applications documented across several world regions, not one fixed dataset. Public source and installation instructions are free under BSD-3-Clause. Users must prepare compatible exclusion layers and transmission costs, sometimes using the separate reVX tools. These assumptions materially affect the resulting developable capacity and cost curves, and no universal accuracy is established in the README. The outputs can support regional siting and generation-expansion studies and inform resource constraints in PyPSA (model-pypsa). This review inspected documentation only and did not run an HPC workflow.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:NatLabRockies",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NatLabRockies/reV",
+  "id": "model-rev-renewable-potential",
+  "inputs": [
+    "Renewable resource time series",
+    "Land exclusions",
+    "Transmission cost tables"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "economic"
+  ],
+  "name": "reV renewable-energy potential and supply-curve model",
+  "notes": "G7 G7-0259. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Technical potential",
+    "Supply curves",
+    "Representative generation profiles"
+  ],
+  "provider": "National Laboratory of the Rockies and contributors",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/NatLabRockies/reV",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for NatLabRockies/reV: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3ANatLabRockies&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/natlabrockies/rev/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "ReV renewable-energy potential and supply-curve model",
+  "type": "model"
+}

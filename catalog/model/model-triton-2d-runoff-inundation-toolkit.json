@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "TRITON source repository (ORNL GitLab)",
+      "url": "https://code.ornl.gov/hydro/triton"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "triton two dimensional runoff inundation toolkit for operational needs",
+    "url": "https://code.ornl.gov/hydro/triton"
+  },
+  "description": "TRITON is an open-source, high-performance framework for two-dimensional flood simulation, produced by its developers on Oak Ridge National Laboratory's code server. Its core is a physics-based hydraulic model that solves the full 2D shallow water equations on a regular structured grid, forced by streamflow hydrographs, gridded runoff or both, and it outputs water depth, velocity and unit discharge maps and time series at chosen points. It is performance-portable through Kokkos and runs on one or many CPUs (OpenMP and MPI) and on GPUs (CUDA, HIP or SYCL). Coverage is any area with gridded terrain. The code is free under the 3-Clause BSD licence, with documentation, a regression test suite and a Docker image recipe in the repository. Caveats: it is built for Linux and Unix systems, needs a C++20 compiler, CMake 3.22 and MPI, and uses a uniform grid only. Simulation uses: large-area and high-resolution flood inundation for hazard mapping, dam and levee scenarios and emergency planning. Related records: LISFLOOD-FP (model-lisflood-fp) and Itzï (model-itzi-urban-flood).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "dam break inundation model open source software",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://code.ornl.gov/hydro/triton",
+  "id": "model-triton-2d-runoff-inundation-toolkit",
+  "inputs": [
+    "Topography on a uniform Cartesian grid (DEM or lidar)",
+    "Streamflow hydrographs, gridded runoff, or both as hydrological forcing"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "TRITON, Two-dimensional Runoff Inundation Toolkit for Operational Needs",
+  "outputs": [
+    "Water depth maps, 2D velocity maps and unit discharge, plus time series at user-defined points and intervals"
+  ],
+  "provider": "TRITON developers, hosted by Oak Ridge National Laboratory (code.ornl.gov)",
+  "related_ids": [
+    "model-lisflood-fp",
+    "model-itzi-urban-flood"
+  ],
+  "runs_on": [
+    "Linux"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README: description, Kokkos, CPU and GPU, inputs, outputs, Linux, requirements, BSD-3-Clause",
+      "url": "https://code.ornl.gov/hydro/triton"
+    }
+  ],
+  "tags": [
+    "2D flood model",
+    "shallow water equations",
+    "GPU",
+    "HPC",
+    "Kokkos",
+    "MPI",
+    "open source"
+  ],
+  "title_en": "TRITON, Two-dimensional Runoff Inundation Toolkit for Operational Needs",
+  "type": "model"
+}

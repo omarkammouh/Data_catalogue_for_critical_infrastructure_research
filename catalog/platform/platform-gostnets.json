@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://worldbank.github.io/GOSTnets/"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/GOSTnets/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "note": "Linked from the documentation; not opened from this session",
+      "url": "https://github.com/worldbank/GOSTnets"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gostnets",
+    "repo": "github.com/worldbank/gostnets",
+    "url": "https://github.com/worldbank/GOSTnets"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "GOSTnets is a Python library from the World Bank Geospatial Operations Support Team that builds, cleans and analyses spatial network graphs, mostly from OpenStreetMap road data. It is a convenience layer over networkx that works with geopandas, osmnx and rtree, snaps origins and destinations such as hospitals, schools or markets to a graph, computes travel times and origin-destination matrices, and converts graphs back to GeoDataFrames for mapping. The team produces it to support World Bank accessibility, connectivity and service-coverage analysis in client countries. Coverage is global wherever OpenStreetMap or another road network exists; resolution follows the input network. Access is by pip or conda install, with documentation, tutorials and API reference on the project site. Licence: MIT; the software is free of charge. Caveats: results inherit the gaps of OpenStreetMap road data, speeds are assumptions the user sets, and the documentation notes that gdal and geopandas may not install cleanly through pip on Windows. It prepares network inputs for network flow, resilience and emergency response accessibility studies, such as isolation of facilities after a road closure. Related catalogue records are OSMnx, which it builds on, and OSM-flex for extracting other OpenStreetMap infrastructure classes.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "OpenStreetMap infrastructure extraction tool python critical infrastructure networks from OSM",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/worldbank/GOSTnets",
+  "id": "platform-gostnets",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "networkx",
+    "geopandas",
+    "osmnx",
+    "OpenStreetMap"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-03",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GOSTnets",
+  "notes": "Round 2 fresh pass cross-cutting; covers the unswept cell platform:cross_cutting.multi_sector:data_preparation_tool.",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "World Bank Geospatial Operations Support Team (GOST)",
+  "related_ids": [
+    "model-osmnx",
+    "platform-osm-flex"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Documentation home: purpose, dependencies, install, MIT licence",
+      "url": "https://worldbank.github.io/GOSTnets/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "PyPI metadata: version 1.2.1, Python >=3.8, repository links",
+      "url": "https://pypi.org/pypi/GOSTnets/json"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2026-03-03)",
+      "url": "https://worldbank.github.io/GOSTnets/"
+    },
+    {
+      "accessed": "2026-10-02",
+      "note": "Follow-up check: landing page replaced by the provider page that holds the data (basis: git clone 2026-10-02)",
+      "url": "https://github.com/worldbank/GOSTnets"
+    }
+  ],
+  "supported_sectors": [
+    "transport.road",
+    "cross_cutting.multi_sector"
+  ],
+  "tags": [
+    "network analysis",
+    "accessibility",
+    "world bank"
+  ],
+  "title_en": "GOSTnets Python library for spatial network graph building",
+  "type": "platform"
+}

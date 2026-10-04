@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/CUBELeonwang/FNO-3DUM"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/CUBELeonwang/FNO-3DUM/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Peng et al. (2023). Fourier neural operator for real-time simulation of 3D dynamic urban microclimate. https://doi.org/10.1016/j.buildenv.2023.111063",
+  "cost": "free",
+  "countries": [
+    "JP"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fno 3dum urban wind surrogate model",
+    "repo": "github.com/cubeleonwang/fno-3dum",
+    "url": "https://github.com/CUBELeonwang/FNO-3DUM"
+  },
+  "description": "FNO-3DUM is the research team's Fourier neural-operator model for three-dimensional urban microclimate simulation, published with a Building and Environment study. PyTorch training and evaluation scripts use CityFFD-generated urban-wind fields for Niigata. Inputs are simulated wind arrays and training configurations; outputs are predicted three-dimensional fields and evaluation results for different wind directions. The documented data use 200 by 200 by 150 arrays, with 1,200 steps for west and north winds and 50 final steps for east and south winds. Source is free under GPL-3.0; the linked dataset has its own distribution page. A limitation is the narrow training geometry and directional coverage, so reported errors and speedups do not establish validity for other cities. FNO-3DUM can develop surrogates for built-environment wind simulations. OpenFOAM (model-openfoam) is related CFD software. No arrays or trained weights were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"urban microclimate\" simulation fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/CUBELeonwang/FNO-3DUM",
+  "id": "model-fno-3dum",
+  "inputs": [
+    "CityFFD urban wind arrays and model configuration"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-12-04",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "FNO-3DUM urban-wind surrogate model",
+  "notes": "G7 G7-1034. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Predicted three-dimensional wind fields and evaluation metrics"
+  ],
+  "provider": "Wenhui Peng and FNO-3DUM research team",
+  "related_ids": [
+    "model-openfoam"
+  ],
+  "repository": "https://github.com/CUBELeonwang/FNO-3DUM",
+  "sectors": [
+    "built_environment.public_space",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for CUBELeonwang/FNO-3DUM: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=%22urban+microclimate%22+simulation+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/cubeleonwang/fno-3dum/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Statistical model for public spaces and buildings",
+  "type": "model"
+}

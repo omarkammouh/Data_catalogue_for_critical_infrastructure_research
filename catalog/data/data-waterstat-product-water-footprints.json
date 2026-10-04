@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Industrial products (KAPSARC)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://datasource.kapsarc.org/explore/dataset/water-footprints-of-industrial-products-1996-2005/"
+    },
+    {
+      "kind": "portal",
+      "label": "Water Footprint Network interactive tools",
+      "url": "https://www.waterfootprint.org/resources/interactive-tools/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "waterstat product water footprints of industrial products and biofuels water footprint network",
+    "url": "https://datasource.kapsarc.org/explore/dataset/water-footprints-of-industrial-products-1996-2005"
+  },
+  "description": "WaterStat is the Water Footprint Network's global water footprint database, which the network describes as the most complete one and uses in its Water Footprint Assessment Tool. Two WaterStat product tables are mirrored on the KAPSARC data portal: water footprints of industrial products by country (1996 to 2005, 501 records, labelled public domain) and water footprints of biofuels for 2005 (118,426 records by region, crop and footprint type, under CC BY-SA 3.0). Values are split into green water (rainwater stored in soil and used by plants), blue water (surface or groundwater consumed) and grey water (fresh water needed to dilute pollutants to quality standards). KAPSARC serves them through its Opendatasoft portal with CSV, Excel and JSON exports and an API. Caveats: the Water Footprint Network's own WaterStat statistics page returned HTTP 404 on 26 September 2026, so facts were read on the KAPSARC mirror; the data are averages from around 2005 and national, not plant level. For simulation it gives water intensity factors by product and country, useful to translate industrial and biofuel output into water demand in drought and supply chain water risk models. Related catalogue records include the global industrial water use dataset and the semiconductor water withdrawals dataset.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"industrial plant\"",
+      "route": "R44",
+      "source": "kapsarc"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "\"agricultural water\"",
+      "route": "R44",
+      "source": "kapsarc"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://datasource.kapsarc.org/explore/dataset/water-footprints-of-industrial-products-1996-2005/",
+  "id": "data-waterstat-product-water-footprints",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-07-29",
+  "licence": "public domain label (industrial products) and CC-BY-SA-3.0 (biofuels), as shown on KAPSARC",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "WaterStat product water footprints of industrial products and biofuels (Water Footprint Network)",
+  "provider": "Water Footprint Network (WaterStat), mirrored on the KAPSARC data portal",
+  "schema_summary": "indicator, region, footprint type (green, blue, grey), value",
+  "sectors": [
+    "industry.manufacturing_chemical",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, fields, record count and licence read 2026-09-26",
+      "url": "https://datasource.kapsarc.org/api/explore/v2.1/catalog/datasets/water-footprints-of-industrial-products-1996-2005"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "WaterStat description read 2026-09-26",
+      "url": "https://www.waterfootprint.org/resources/interactive-tools/"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from the Opendatasoft data_processed field (datasource.kapsarc.org)",
+      "url": "https://datasource.kapsarc.org/explore/dataset/water-footprints-of-industrial-products-1996-2005/"
+    }
+  ],
+  "spatial_resolution": "country and region",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "water footprint",
+    "virtual water",
+    "biofuels",
+    "industrial products"
+  ],
+  "temporal_coverage": "1996 to 2005",
+  "title_en": "WaterStat product water footprints of industrial products and biofuels (Water Footprint Network)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

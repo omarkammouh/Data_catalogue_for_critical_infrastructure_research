@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/SACLabs/TransWorldNG"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/SACLabs/TransWorldNG/blob/dev/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "transworldng learned traffic simulator",
+    "repo": "github.com/saclabs/transworldng",
+    "url": "https://github.com/SACLabs/TransWorldNG"
+  },
+  "description": "TransWorldNG is a traffic simulation research codebase published by SAC Labs. It uses a heterogeneous graph and learned agent behaviour to represent traffic scenes and interactions, with scripts for generating examples through SUMO and running the trained simulation workflow. Users supply a road network, traffic scenarios and training or model parameters; outputs are simulated vehicle trajectories or traffic states for the configured network and period. Geographic coverage is a user-defined test area. The repository offers free use under Unlicense terms and gives dependency and run instructions. A limitation is that learned driving behaviour depends on the training cases, and the public README does not demonstrate calibration for a real city's demand or safety outcomes. TransWorldNG can support research comparisons of traffic control or network disruptions, not operational traffic forecasts without validation. The catalogue's model-sumo is the distinct simulator used to prepare some example data. No road network, trained weights or package was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "saclabs/transworldng linked by zachytong/awesome-traffic-simulation",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/SACLabs/TransWorldNG",
+  "id": "model-transworldng",
+  "inputs": [
+    "Road network and generated traffic scenarios",
+    "Learned behaviour model settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-10-09",
+  "licence": "Unlicense",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "agent_based",
+    "statistical"
+  ],
+  "name": "TransWorldNG learned traffic simulator",
+  "notes": "G7 G7-1510. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Simulated traffic states and trajectories"
+  ],
+  "provider": "SAC Labs traffic research contributors",
+  "related_ids": [
+    "model-sumo"
+  ],
+  "repository": "https://github.com/SACLabs/TransWorldNG",
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for SACLabs/TransWorldNG: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/saclabs/transworldng"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/saclabs/transworldng/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Agent-based model for road transport",
+  "type": "model"
+}

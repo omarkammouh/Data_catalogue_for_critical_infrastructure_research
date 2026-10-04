@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "CDS catalogue API record",
+      "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/projections-cmip6"
+    },
+    {
+      "kind": "portal",
+      "label": "CDS dataset page",
+      "url": "https://cds.climate.copernicus.eu/datasets/projections-cmip6"
+    }
+  ],
+  "access_note": "A free CDS account and acceptance of the CMIP6 terms are required.",
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "scenarios_projections",
+    "hazards"
+  ],
+  "data_kind": [
+    "raster",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.24381/cds.c866074c",
+    "name": "cmip6 climate projections copernicus climate data store",
+    "url": "https://cds.climate.copernicus.eu/datasets/projections-cmip6"
+  },
+  "description": "This Climate Data Store entry provides daily and monthly global climate projections from many experiments, models and periods of the sixth phase of the Coupled Model Intercomparison Project (CMIP6), which underpins the IPCC Sixth Assessment Report. It contains historical experiments, typically 1850 to 2014, and scenario projections combining Shared Socioeconomic Pathways and Representative Concentration Pathways, typically 2015 to 2100, with two- and three-dimensional variables such as temperature, precipitation and wind. The data are produced by the participating modelling institutes and served by the Copernicus Climate Change Service, which runs subsetting in the Earth System Grid Federation nodes where the data are held. Coverage is global at each model's native grid, from 1850 to 2100 and for some experiments to 2300. Access is through the CDS web form and API after free registration, under the CMIP6 data access terms of use, at no cost. Caveats: model grids are coarse (often 100 km or more), models differ in bias and sensitivity, so ensembles and bias adjustment are needed, and the set of models offered is a subset of CMIP6. It supplies scenario forcing for climate adaptation and future hazard exposure studies of infrastructure; related records are ERA5, ISIMIP, NEX-GDDP-CMIP6 and the Aqueduct flood hazard maps.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "climate model projections download",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "multi_hazard_climate_change",
+    "extreme_heat",
+    "flood",
+    "drought",
+    "sea_level_rise"
+  ],
+  "homepage": "https://cds.climate.copernicus.eu/datasets/projections-cmip6",
+  "id": "data-cmip6-climate-projections-cds",
+  "languages": [
+    "en"
+  ],
+  "licence": "CMIP6 data access terms of use (model-specific licences, mostly CC BY 4.0)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CMIP6 climate projections (Copernicus Climate Data Store)",
+  "notes": "\"Mostly CC BY 4.0\" and typical grid sizes are recalled; the terms-of-use PDF was not opened on 2026-09-26.",
+  "provider": "Copernicus Climate Change Service (C3S) at ECMWF, serving data from the CMIP6 modelling institutes via ESGF",
+  "related_ids": [],
+  "schema_summary": "experiment, model, variable, temporal and spatial subsets",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "purpose list, experiments and periods, ESGF subsetting, produced by CMIP6 institutes, extent 1860-2300, terms of use link, DOI 10.24381/cds.c866074c",
+      "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/projections-cmip6"
+    }
+  ],
+  "spatial_resolution": "native GCM grids (typically about 100 to 250 km)",
+  "spatial_resolution_class": "over_10km",
+  "tags": [
+    "CMIP6",
+    "climate projections",
+    "SSP",
+    "IPCC AR6",
+    "Copernicus"
+  ],
+  "temporal_coverage": "1850 to 2100 (some experiments to 2300)",
+  "temporal_coverage_years": {
+    "end": 2100,
+    "start": 1850
+  },
+  "temporal_resolution": "daily and monthly",
+  "temporal_resolution_class": "daily",
+  "title_en": "CMIP6 climate projections (Copernicus Climate Data Store)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/abrambeyer/cms_star_rating_hcahps_downloader"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cms archive hcahps and hospital rating joiner",
+    "repo": "github.com/abrambeyer/cms_star_rating_hcahps_downloader",
+    "url": "https://github.com/abrambeyer/cms_star_rating_hcahps_downloader"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This Python project prepares annual hospital quality tables from the CMS Hospital Compare archive. Its scripts select the most recent revised flat-file package for each archive year, read Hospital General Information and HCAHPS hospital files, align column names and types, and left-join the two series on facility ID and year. The documented output is one CSV per release year; 2014 and 2015 are excluded because their general-information files lack overall star ratings. The README warns that facility IDs must remain strings so leading zeroes survive. A modeller could use the joined hospital attributes to define facility classes or compare service-quality indicators in a healthcare-capacity study. The project publishes its Python scripts and instructions, but no prepared annual output files. The official CMS archive page returned only a JavaScript shell to this review, so the current ZIP selectors, data schema and successful execution were not verified. The MIT repository licence covers code; source-data terms remain those of CMS. Coverage is United States Medicare-certified hospitals in the archive years available to the script, subject to the exclusions and current CMS availability. For simulation, the joined attributes may inform hospital-service scenarios, but the script does not simulate patient flows. Related upstream resources are the two CMS source tables and their release documentation, whose current fields were not inspected here.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"hospital\" dataset created:2020-01-01..2021-12-31",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/abrambeyer/cms_star_rating_hcahps_downloader",
+  "id": "platform-cms-archive-hcahps-hospital-rating-joiner",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "CMS archived flat-file ZIP packages",
+    "CSV"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-06-01",
+  "licence": "MIT for repository code; the upstream CMS data terms are separate.",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "CMS archive HCAHPS and hospital-rating joiner",
+  "notes": "G8; G8-0848. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: CMS Star Rating HCAHPS Downloader repository documentation, accessed 2026-09-28. No describing paper identified..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "CMS Star Rating HCAHPS Downloader project",
+  "related_ids": [],
+  "sectors": [
+    "services.healthcare",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/abrambeyer/cms_star_rating_hcahps_downloader/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/abrambeyer/cms_star_rating_hcahps_downloader"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Official CMS archive entry returned HTTP 200 but exposed only a JavaScript shell to this metadata reader; individual current ZIP links were not checked.",
+      "url": "https://data.cms.gov/provider-data/archived-data/hospitals"
+    }
+  ],
+  "tags": [],
+  "title_en": "Cms archive hcahaps and hospital rating joiner",
+  "type": "platform"
+}

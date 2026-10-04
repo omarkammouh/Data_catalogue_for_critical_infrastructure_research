@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Eurostat data browser",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/env_wasship/default/table"
+    },
+    {
+      "kind": "api",
+      "label": "Eurostat API (JSON)",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_wasship?format=JSON&lang=EN"
+    },
+    {
+      "kind": "docs",
+      "label": "EU waste shipments policy page",
+      "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/waste-shipments_en"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "cross_border_flows",
+    "supply_chains_logistics"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "eurostat transboundary shipments of notified waste by partner hazardousness and treatment env wasship",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/env_wasship/default/table"
+  },
+  "description": "This dataset reports the imports and exports of notified waste between European countries and their partners, compiled by Eurostat from the reports that countries make under the EU Waste Shipment Regulation. Notified waste is waste whose shipment across borders needs the prior written consent of every authority concerned, which covers hazardous waste and some other flows. The table gives tonnes and kilograms per head by reporting country, partner country or group, hazardousness (hazardous, other, total) and waste management operation (recovery, disposal, and not allocated). Coverage is the EU member states and reporting partners annually from 2010 to 2024, last updated in August 2026. Data are free to browse and download as CSV, TSV or Excel or through the Eurostat JSON and SDMX API, reusable under the Eurostat copyright notice with attribution. Caveats: green-listed non-hazardous waste traded without notification is outside this table, exports and imports reported by the two partners do not always match, and national reporting practice differs. Simulation uses: building cross-border waste flow networks, testing how bans or disruptions to exports would load domestic treatment capacity, and checking hazardous waste logistics. Related records: Basel Convention national reporting data (data-basel-convention-national-reporting) cover global hazardous waste movements, and Eurostat municipal waste statistics (data-eurostat-env-wasmun) cover domestic treatment.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "transboundary waste shipments data Basel Convention exports dataset plastic waste trade",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "api",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://ec.europa.eu/eurostat/databrowser/view/env_wasship/default/table",
+  "id": "data-eurostat-env-wasship-transboundary-waste-shipments",
+  "languages": [
+    "en"
+  ],
+  "licence": "Eurostat reuse policy (free reuse with attribution)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Eurostat transboundary shipments of notified waste by partner, hazardousness and treatment (env_wasship)",
+  "provider": "Eurostat, from national reports under the EU Waste Shipment Regulation",
+  "related_ids": [
+    "data-basel-convention-national-reporting",
+    "data-eurostat-env-wasmun"
+  ],
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "API: label Transboundary shipments of notified waste by partner, hazardousness and waste management operations; updated 2026-08-06; dimensions stk_flow imports/exports, partner, hazard, wst_oper, unit tonne and kg per capita; years 2010 to 2024",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_wasship?format=JSON&lang=EN&geo=DE"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "EU law on waste shipment since 1993; prior consent of all authorities for notified shipments; new regulation rules for OECD and non-OECD exports",
+      "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/waste-shipments_en"
+    }
+  ],
+  "spatial_resolution": "Country",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "waste shipments",
+    "transboundary movements",
+    "hazardous waste",
+    "Eurostat"
+  ],
+  "temporal_coverage": "2010 to 2024",
+  "temporal_resolution": "Annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Eurostat transboundary shipments of notified waste by partner, hazardousness and treatment (env: wasship)",
+  "type": "data",
+  "update_frequency": "annual"
+}

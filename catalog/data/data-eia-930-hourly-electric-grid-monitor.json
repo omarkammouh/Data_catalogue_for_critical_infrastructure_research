@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Hourly Electric Grid Monitor",
+      "url": "https://www.eia.gov/electricity/gridmonitor/"
+    },
+    {
+      "kind": "api",
+      "label": "EIA API v2 (electricity/rto)",
+      "url": "https://api.eia.gov/v2/electricity/rto/region-data/"
+    },
+    {
+      "kind": "docs",
+      "label": "Survey forms list (EIA-930)",
+      "url": "https://www.eia.gov/survey/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "cross_border_flows",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "eia 930 hourly electric grid monitor hourly demand forecast generation and interchange by us balancing authority",
+    "url": "https://eia.gov/electricity/gridmonitor"
+  },
+  "description": "The Hourly Electric Grid Monitor publishes data collected on Form EIA-930, the Hourly and Daily Balancing Authority Operations Report, run by the U.S. Energy Information Administration. For each balancing authority, electricity region and the lower 48 states it gives hourly demand, day-ahead demand forecast, net generation, net generation by fuel type and by sub-balancing-authority region, and total and pairwise interchange between balancing authorities, with daily to yearly summaries including the peak demand hour. The respondents list read on the day has 68 active balancing authorities, 12 retired ones and 17 electricity regions. EIA API v2 serves the series hourly and in local time from January 2019, with the latest hour on 27 September 2026 when read. Coverage is the US grid by balancing authority. The data are accessible through the dashboard and the EIA API at no cost; as US government works they are in the public domain, and EIA asks users to acknowledge the source. Caveats: values are reported by the balancing authorities themselves and can be revised, and the API series read here start in 2019. Simulation uses are hourly demand and interchange inputs for grid models, and analysis of stress events such as heat waves and winter storms. Related records: data-open-grid-emissions and data-pudl process EIA electricity data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "EIA-930 hourly balancing authority operations data",
+      "route": "R40",
+      "source": "assistant recall"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv",
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.eia.gov/electricity/gridmonitor/",
+  "id": "data-eia-930-hourly-electric-grid-monitor",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-27",
+  "licence": "Public domain (US government work; EIA asks for acknowledgement)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://api.eia.gov/v2/electricity/rto/region-data/"
+    ]
+  },
+  "maturity": "active",
+  "name": "EIA-930 Hourly Electric Grid Monitor - hourly demand, forecast, generation and interchange by US balancing authority",
+  "provider": "U.S. Energy Information Administration (EIA)",
+  "related_ids": [
+    "data-open-grid-emissions",
+    "data-pudl",
+    "case_study-doe-national-transmission-needs-study-2026",
+    "data-eia-wholesale-electricity-natural-gas-market-data"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "EIA-930 Hourly and Daily Balancing Authority Operations Report; EIA-930A generator inventory",
+      "url": "https://www.eia.gov/survey/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Route list - hourly, interchange, fuel type, sub-BA, respondents, summary with peak demand hour",
+      "url": "https://www.eia.gov/electricity/930-api/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "68 active BAs, 12 retired BAs, 17 electricity regions (read 2026-09-26)",
+      "url": "https://www.eia.gov/electricity/930-api/respondents/data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Types D, DF, NG, TI; startPeriod 2019-01-01T00, endPeriod 2026-09-27T07; hourly and local-hourly",
+      "url": "https://api.eia.gov/v2/electricity/rto/region-data/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "US government publications are in the public domain; acknowledgement requested",
+      "url": "https://www.eia.gov/about/copyrights_reuse.php"
+    }
+  ],
+  "tags": [
+    "EIA-930",
+    "balancing authorities",
+    "hourly demand",
+    "interchange",
+    "real-time",
+    "United States"
+  ],
+  "title_en": "EIA-930 Hourly Electric Grid Monitor - hourly demand, forecast, generation and interchange by US balancing authority",
+  "type": "data"
+}

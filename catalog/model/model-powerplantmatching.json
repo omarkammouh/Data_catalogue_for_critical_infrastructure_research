@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/PyPSA/powerplantmatching"
+    },
+    {
+      "kind": "download",
+      "label": "Combined European power plant data (powerplants.csv)",
+      "url": "https://github.com/PyPSA/powerplantmatching/blob/master/powerplants.csv"
+    },
+    {
+      "kind": "paper",
+      "label": "Energy Strategy Reviews paper",
+      "url": "https://doi.org/10.1016/j.esr.2018.11.004"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1016/j.esr.2018.11.004",
+    "name": "powerplantmatching",
+    "repo": "github.com/pypsa/powerplantmatching",
+    "url": "https://github.com/PyPSA/powerplantmatching"
+  },
+  "description": "powerplantmatching is an open Python toolset that cleans, standardises and combines several power plant databases into one data set, and ships a ready-made merged data set for the European power system. It was first developed by the Renewable Energy Group at FIAS in Frankfurt and is now maintained by the Digital Transformation in Energy Systems group at TU Berlin, to build power plant inputs for PyPSA-based models; the method is described in a 2019 Energy Strategy Reviews paper by Gotzens, Heinrichs, Hörsch and Hofmann. It aggregates units into plants, compares and matches records across sources, lets users choose gross or net capacity, scales capacities to match national statistics, visualises the data and exports it to PyPSA models. The merged file can be updated as new input releases appear. Coverage is Europe for the default data set. The code is accessible on GitHub under the MIT licence and installable with pip or conda, and the default powerplants.csv output is downloadable under CC BY 4.0, both at no cost. Caveats: quality depends on the input databases, and coverage outside Europe needs user configuration. Simulation uses are building existing generation fleets for capacity expansion and dispatch models. Related records: model-pypsa-eur uses it, and data-open-power-system-data is one of its input sources.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "PyPSA ecosystem tools",
+      "route": "R06",
+      "source": "energy-pypsa"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://github.com/PyPSA/powerplantmatching",
+  "id": "model-powerplantmatching",
+  "inputs": [
+    "open power plant databases",
+    "country capacity statistics"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-20",
+  "licence": "MIT (code); CC-BY-4.0 (powerplants.csv)",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "powerplantmatching",
+  "outputs": [
+    "cleaned and merged power plant data set (powerplants.csv)",
+    "PyPSA model inputs"
+  ],
+  "provider": "PyPSA community (Digital Transformation in Energy Systems group, TU Berlin; originally FIAS Frankfurt)",
+  "related_ids": [
+    "model-pypsa-eur",
+    "data-open-power-system-data"
+  ],
+  "repository": "https://github.com/PyPSA/powerplantmatching",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, features, FIAS origin, TU Berlin maintainers, pip/conda, citation paper, MIT code and CC BY 4.0 data",
+      "url": "https://raw.githubusercontent.com/PyPSA/powerplantmatching/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Head commit 2026-09-20; 36 tags up to v0.8.x",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/PyPSA/powerplantmatching/visit/latest/"
+    }
+  ],
+  "tags": [
+    "power plants",
+    "data matching",
+    "PyPSA",
+    "Europe",
+    "open data"
+  ],
+  "title_en": "Powerplantmatching open Python toolset cleans standardises combines power plant databases",
+  "type": "model",
+  "validated_on": []
+}

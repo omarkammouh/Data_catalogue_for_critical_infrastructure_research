@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "CKAN API",
+      "url": "https://data.ibb.gov.tr/api/3/action/package_show?id=hourly-public-transport-data-set"
+    },
+    {
+      "kind": "portal",
+      "label": "Dataset page (İBB Open Data Portal)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.ibb.gov.tr/dataset/hourly-public-transport-data-set"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "TR"
+  ],
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "istanbul hourly public transport data set smart card passages and passengers by line and hour",
+    "url": "https://data.ibb.gov.tr/dataset/hourly-public-transport-data-set"
+  },
+  "description": "This dataset gives hourly counts of passages and passengers on Istanbul's public transport, built from electronic ticket validations. Each row carries the date and hour, transport type, road type, line code and name, transfer type, number of passages, number of passengers, product (card) kind, transaction type, district and a station or stop code. It is published by BELBİM Inc. on the open data portal of the Istanbul Metropolitan Municipality, where it was created in November 2020. Coverage is all of Istanbul, with one CSV file per month from January 2020; most files hold 0.35 to 1.8 GB. Access is free and needs no registration, through direct download and the portal's CKAN API, under the İBB Open Data Licence, which allows commercial reuse with attribution. Caveats: the files for August to October 2024 are much smaller than earlier months, those for November and December 2024 hold only the header row, the portal says the data will be updated later, and the counts are validations, not origin-destination trips. The data support demand analysis, network flow and capacity planning of bus, metro, rail and ferry lines, and resilience studies of ridership through disruptions such as the 2020 pandemic months; they complement the Istanbul transport demand model data catalogued here, which can be validated against them.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "toplu taşıma açık veri veri seti",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://data.ibb.gov.tr/dataset/hourly-public-transport-data-set",
+  "id": "data-istanbul-hourly-public-transport-ridership",
+  "languages": [
+    "en"
+  ],
+  "licence": "İBB Open Data Licence (attribution; commercial reuse allowed)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Istanbul hourly public transport data set (smart card passages and passengers by line and hour)",
+  "provider": "BELBİM Inc., published on the Istanbul Metropolitan Municipality (İBB) Open Data Portal",
+  "regions": [
+    "Istanbul"
+  ],
+  "related_ids": [
+    "data-istanbul-transport-demand-model-data"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "title; organisation BELBİM Inc.; licence ibb-license; created 2020-11-18, modified 2025-04-15; notes (hourly passenger and journey data; data will be updated later); 60 monthly CSV resources from Ocak 2020, sizes 0.19 to 1.8 GB, Kasım and Aralık 2024 187 bytes",
+      "url": "https://data.ibb.gov.tr/api/3/action/package_show?id=hourly-public-transport-data-set"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "first 600 bytes read in memory: header transition_date, transition_hour, transport_type_id, road_type, line, transfer_type, number_of_passage, number_of_passenger, product_kind, transaction_type_desc, town, line_name, station_poi_desc_cd",
+      "url": "https://data.ibb.gov.tr/dataset/a6855ce7-4092-40a5-82b5-34cf3c7e36e3/resource/ce9706cb-a0d1-4cc0-819f-791994978938/download/hourly_transportation_202512.csv"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "İBB Open Data Licence terms",
+      "url": "https://data.ibb.gov.tr/license"
+    }
+  ],
+  "spatial_resolution": "line and station or stop, with district",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "smart card",
+    "ridership",
+    "İstanbulkart",
+    "hourly",
+    "Istanbul"
+  ],
+  "temporal_coverage": "January 2020 to October 2024",
+  "temporal_resolution": "hourly",
+  "temporal_resolution_class": "hourly",
+  "title_en": "Istanbul hourly public transport data set (smart card passages and passengers by line and hour)",
+  "type": "data",
+  "update_frequency": "monthly"
+}

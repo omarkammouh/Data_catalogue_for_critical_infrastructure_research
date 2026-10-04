@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Yearly export grain inspection files (CSV, one per calendar year)",
+      "url": "https://fgisonline.ams.usda.gov/ExportGrainReport/"
+    },
+    {
+      "kind": "download",
+      "label": "Calendar year 2026 file",
+      "url": "https://fgisonline.ams.usda.gov/ExportGrainReport/CY2026.csv"
+    },
+    {
+      "kind": "docs",
+      "label": "Export port and region definitions",
+      "url": "https://fgisonline.ams.usda.gov/F_DEC/exportRegionDefinitionTables0801.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "supply_chains_logistics",
+    "cross_border_flows",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usda fgis export grain inspection records every officially inspected us grain export lot by carrier port destination and grade 1983 to date",
+    "url": "https://fgisonline.ams.usda.gov/ExportGrainReport"
+  },
+  "description": "These files record every lot of grain officially inspected for export from the United States, which makes them a shipment-level view of how the world's largest grain exporter moves food through its ports. They are published by the Federal Grain Inspection Service of the US Department of Agriculture's Agricultural Marketing Service. Coverage runs from 1983 to the current week, with one comma-separated file per calendar year. Each row is an inspection certificate giving the vessel, barge, rail or container carrier, grain, class and grade, weight in pounds, bushels and tonnes, destination country, export port, field office and region, marketing year, and measured grade factors such as moisture, protein, test weight, damage and aflatoxin. The files are available as a free download without registration, with port and region definitions alongside. Caveats: inspections are not the same as final export sales or customs records, destinations are the stated ones at loading, column names are terse codes that need the definitions, and older years use earlier destination names. Simulation uses: building port throughput and origin-destination flows for food supply chain and maritime network models, and testing the effect of a port or river closure (for example low water on the Mississippi) on world grain supply. Related records: the International Grains Council market report (data-igc-grain-market-report-supply-demand) gives the world balance these flows feed, and FAOSTAT trade (data-faostat) gives annual country totals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: USDA AMS (US, grain_terminal)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://fgisonline.ams.usda.gov/ExportGrainReport/",
+  "id": "data-usda-fgis-export-grain-inspections",
+  "languages": [
+    "en"
+  ],
+  "licence": "US Government work (public domain)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "USDA FGIS Export Grain Inspection records: every officially inspected US grain export lot by carrier, port, destination and grade (1983 to date)",
+  "provider": "US Department of Agriculture, Agricultural Marketing Service, Federal Grain Inspection Service (FGIS)",
+  "related_ids": [
+    "data-igc-grain-market-report-supply-demand",
+    "data-faostat"
+  ],
+  "schema_summary": "One row per inspected lot or sublot: week (Thursday), serial number, shipment and service type, certificate date, carrier type and name, grade, grain, class and subclass, pounds, 1000 bushels and metric tonnes, destination country, field office, export port, AMS and FGIS region, city and state, marketing year, and grade factors (test weight, moisture, protein, oil, damaged kernels, foreign material, aflatoxin and others)",
+  "sectors": [
+    "services.food_supply",
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Page 'Yearly Export Grain Totals': one CSV per calendar year from CY1983 to CY2026 ('Export Grain Inspection 2026 (last updated 9/21/2026)'); destinations follow US Census Bureau descriptions since 1 January 2021; links to export port and region definitions and the APS standard names system",
+      "url": "https://fgisonline.ams.usda.gov/ExportGrainReport/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Header and first rows read in memory: columns Thursday, Serial No., Type Shipm, Type Serv, Cert Date, Type Carrier, Carrier Name, Grade, Grain, Class, Pounds, Destination, Field Office, Port, AMS Reg, FGIS Reg, City, State, MKT YR, grade factor columns, 1000 Bushels, Metric Ton; about 18,900 lines for 2026 so far (for example corn to the United Kingdom loaded at New Orleans, Mississippi River, Gulf)",
+      "url": "https://fgisonline.ams.usda.gov/ExportGrainReport/CY2026.csv"
+    }
+  ],
+  "spatial_resolution": "Export port or interior inspection point and destination country",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "grain exports",
+    "export inspection",
+    "ports",
+    "food trade",
+    "FGIS",
+    "USDA"
+  ],
+  "temporal_coverage": "1983 to present",
+  "temporal_resolution": "Individual certificates, grouped by inspection week",
+  "temporal_resolution_class": "weekly",
+  "title_en": "USDA FGIS Export Grain Inspection records: every officially inspected US grain export lot by carrier, port, destination and grade (1983 to date)",
+  "type": "data",
+  "update_frequency": "weekly"
+}

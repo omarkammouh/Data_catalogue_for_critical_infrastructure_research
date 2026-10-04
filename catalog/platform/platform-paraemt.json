@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/NatLabRockies/ParaEMT_public"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/NatLabRockies/ParaEMT_public/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "paraemt electromagnetic transient simulator",
+    "repo": "github.com/natlabrockies/paraemt_public",
+    "url": "https://github.com/NatLabRockies/ParaEMT_public"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "ParaEMT is an open electromagnetic-transient simulator for inverter-rich power networks published by the national laboratory developers. Python and Numba code solves nodal network equations with trapezoidal integration and updates device states. The repository documents result down-sampling, saved simulation snapshots and test systems ranging from the Kundur two-area case to WECC 179- and 240-bus systems. Inputs include solved power-flow JSON files and device models; outputs are transient trajectories and restart snapshots. These are benchmark and user-configured networks, not a current inventory of the Western grid. Source and workflow documentation are public and free under BSD-3-Clause, with Python 3.7 or newer specified. A critical limitation is that the README says BBD parallel simulation was disabled because nxmetis is unmaintained. Several additional functions and a manual are described as forthcoming and are not treated here as available capabilities. The simulator supports fault and dynamic-response studies alongside steady-state tools such as pandapower (model-pandapower). Published benchmark claims were not reproduced, and no test-system archive was downloaded.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:NatLabRockies",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NatLabRockies/ParaEMT_public",
+  "id": "platform-paraemt",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "JSON",
+    "Pickle"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-15",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ParaEMT electromagnetic-transient simulator",
+  "notes": "G7 G7-0262. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability.  Cited as: Xiong et al. (2024). ParaEMT: an open source, parallelizable, and HPC-compatible EMT simulator for large-scale IBR-rich power grids. IEEE Transactions on Power Delivery 39(2), 911–921. https://ieeexplore.ieee.org/document/10356767.",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "National Laboratory of the Rockies and contributors",
+  "related_ids": [
+    "model-pandapower"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for NatLabRockies/ParaEMT_public: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3ANatLabRockies&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/natlabrockies/paraemt_public/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Simulation software for electricity",
+  "type": "platform"
+}

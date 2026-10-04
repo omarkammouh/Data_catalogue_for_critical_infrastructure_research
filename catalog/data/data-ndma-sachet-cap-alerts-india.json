@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "All-India CAP RSS feed",
+      "url": "https://sachet.ndma.gov.in/cap_public_website/rss/rss_india.xml"
+    },
+    {
+      "kind": "viewer",
+      "label": "SACHET portal (map, state-wise alerts)",
+      "url": "https://sachet.ndma.gov.in/"
+    },
+    {
+      "kind": "viewer",
+      "label": "SACHET dashboard",
+      "url": "https://sachet.ndma.gov.in/Dashboard"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "IN"
+  ],
+  "data_family": [
+    "historical_events",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "stream",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sachet national disaster alert feed india common alerting protocol warnings from imd cwc and state disaster authorities as an all india rss feed with cap xml per alert",
+    "url": "https://sachet.ndma.gov.in"
+  },
+  "description": "SACHET is India's national disaster alert portal, which gathers early warnings from the agencies that issue them and republishes them in the Common Alerting Protocol (CAP), the international standard for machine-readable alerts. It is run by the National Disaster Management Authority (NDMA) as a CAP-based integrated alert system for the whole country. The all-India RSS feed lists current alerts with their text, category, issuing agency, publication time and a link to the full CAP XML message for each alert. On the day it was read the feed carried 99 weather alerts from the Central Water Commission (CWC) and regional centres of the India Meteorological Department; the portal also shows state-wise alerts, a map and a dashboard. The feed is free and available without registration, marked public domain, and each CAP file can be downloaded by its identifier. Caveats: the feed holds current alerts only, so an archive has to be built by polling it; alert texts are often in Hindi or regional languages; and alert areas must be read from each CAP file. Simulation uses: driving emergency response and service disruption scenarios from real warnings, measuring warning lead times, and linking alerts to exposed hospitals and shelters. Related records: the US National Weather Service CAP alerts (data-nws-cap-alerts), the German NINA warnings API (data-bbk-nina-warnings-api) and the WMO register of alerting authorities (data-wmo-register-of-alerting-authorities).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: SACHET (NDMA) (IN, emergency_management_agency)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "storm_wind",
+    "extreme_heat",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://sachet.ndma.gov.in/",
+  "id": "data-ndma-sachet-cap-alerts-india",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (stated in the feed's copyright element)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "SACHET national disaster alert feed (India): Common Alerting Protocol warnings from IMD, CWC and state disaster authorities as an all-India RSS feed with CAP XML per alert",
+  "provider": "National Disaster Management Authority (NDMA), Government of India",
+  "related_ids": [
+    "data-nws-cap-alerts",
+    "data-bbk-nina-warnings-api",
+    "data-wmo-register-of-alerting-authorities"
+  ],
+  "schema_summary": "RSS 2.0 channel 'All India: CAP Disaster Alert Feeds'; per item: title (alert text, often in Hindi or a regional language), category (for example Met), link to the CAP XML file (FetchXMLFile?identifier=...), author (NDMA control room with the issuing agency, for example CWC or an IMD regional centre), guid (alert identifier), pubDate",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: RSS 2.0, title All India: CAP Disaster Alert Feeds, copyright public domain; 99 items, all category Met, authors including CWC (40), IMD Kolkata (14), IMD Dehradun (11) and other IMD regional centres; each item links a CAP XML file by identifier; latest pubDate 26 Sep 2026",
+      "url": "https://sachet.ndma.gov.in/cap_public_website/rss/rss_india.xml"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "SACHET National Disaster Alert Portal of NDMA: CAP based Integrated Alert System on a pan-India basis for near real-time geo-targeted dissemination of early warnings in multiple languages; menus Home, Dashboard, RSS Feed, State wise CAP alert, Forecast alert",
+      "url": "https://sachet.ndma.gov.in/"
+    }
+  ],
+  "spatial_resolution": "Alert area as defined in each CAP message",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "CAP",
+    "early warning",
+    "disaster alerts",
+    "IMD",
+    "CWC",
+    "India"
+  ],
+  "temporal_coverage": "Current and recent alerts",
+  "temporal_resolution": "Event (minutes)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "SACHET national disaster alert feed (India): Common Alerting Protocol warnings from IMD, CWC and state disaster authorities as an all-India RSS feed with CAP XML per alert",
+  "type": "data",
+  "update_frequency": "real_time"
+}

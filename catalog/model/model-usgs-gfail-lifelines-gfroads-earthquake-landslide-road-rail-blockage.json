@@ -1,0 +1,86 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "gfail_lifelines source",
+      "url": "https://code.usgs.gov/ghsc/esi/groundfailure/gfail_lifelines"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [],
+  "cost": "free",
+  "countries": [],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usgs gfail lifelines gfroads probability of road and rail blockage from earthquake triggered landslides",
+    "repo": "code.usgs.gov/ghsc/esi/groundfailure/gfail_lifelines",
+    "url": "https://code.usgs.gov/ghsc/esi/groundfailure/gfail_lifelines"
+  },
+  "description": "gfail_lifelines is a USGS Python package, published on code.usgs.gov, for estimating impacts on lifelines from earthquake-triggered ground failure in near real time. Contents: its one module, gfroads, combines the areal coverage estimates of the USGS earthquake-triggered landslide model (Nowicki Jessee et al. 2017) with road data from Overture Maps or OpenStreetMap to estimate the probability that each road segment is affected; a rail option uses Overture rail data instead. Two command line programs are provided: run_gfroads, which takes a USGS event id and writes KMZ and GeoJSON files of blockage probabilities, and osmgfr, which pre-filters an OSM PBF file to the road classes gfroads uses. Producer: USGS (repository group ghsc/esi/groundfailure). Coverage: any earthquake with a USGS ground failure product; the README examples use the 2003 M6.3 Lefkada earthquake. Format and access: open source Python installed in a conda environment; a QGIS style file is included; Overture releases can be pinned by date. Licence: CC0 1.0 (repository licence). Caveats: probabilities inherit the uncertainty of the landslide model's areal coverage; OSM use was tested only on macOS Mojave and WSL. Simulation uses: rapid estimates of road and rail link closures after earthquakes to seed network connectivity, routing and emergency access analyses. Related records: data-overture-maps-transportation and data-usgs-shakemap-scenario-catalog.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source code-usgs: provider pages read (round 2 register piece)",
+      "route": "R05",
+      "source": "code-usgs"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://code.usgs.gov/ghsc/esi/groundfailure/gfail_lifelines",
+  "id": "model-usgs-gfail-lifelines-gfroads-earthquake-landslide-road-rail-blockage",
+  "inputs": [
+    "USGS ground failure (landslide areal coverage) product for an event",
+    "Overture Maps or OpenStreetMap road or rail data"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "USGS gfail_lifelines (gfroads): probability of road and rail blockage from earthquake-triggered landslides",
+  "outputs": [
+    "road or rail segment blockage probabilities (KMZ, GeoJSON)"
+  ],
+  "provider": "U.S. Geological Survey",
+  "related_ids": [
+    "data-overture-maps-transportation",
+    "data-usgs-shakemap-scenario-catalog"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "README and project metadata (CC0, created 2020-12-18, activity 2026-08-28)",
+      "url": "https://code.usgs.gov/ghsc/esi/groundfailure/gfail_lifelines/-/raw/master/README.md"
+    }
+  ],
+  "tags": [
+    "USGS",
+    "earthquake",
+    "landslide",
+    "road blockage",
+    "lifelines"
+  ],
+  "title_en": "USGS gfail: lifelines (gfroads): probability of road and rail blockage from earthquake-triggered landslides",
+  "type": "model"
+}

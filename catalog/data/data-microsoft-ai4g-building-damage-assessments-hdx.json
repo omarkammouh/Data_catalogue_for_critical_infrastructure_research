@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Microsoft AI for Good Lab on HDX (22 datasets)",
+      "url": "https://data.humdata.org/organization/microsoft-ai4g-lab"
+    },
+    {
+      "kind": "download",
+      "label": "Example: Palisades fire January 2025 building damage",
+      "url": "https://data.humdata.org/dataset/palisades-fire-building-damage-assessment"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "imagery_remote_sensing",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "event_record",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "microsoft ai for good lab rapid building damage assessments on hdx",
+    "url": "https://data.humdata.org/organization/microsoft-ai4g-lab"
+  },
+  "description": "Microsoft's AI for Good Lab runs its building damage assessment models on post-event satellite and aerial imagery after disasters and publishes the per-building predictions on the Humanitarian Data Exchange, where its organisation held 22 datasets on 2026-09-26, all matching a search for damage. Events include the January 2025 Palisades and Eaton fires in Los Angeles, the March 2025 Myanmar earthquake in Mandalay and Naypyidaw, a March 2025 Arkansas tornado, Cyclone Chido in Mayotte, Hurricane Melissa in Jamaica, floods in Sumatra, Colombo and Hat Yai, and the 2026 Venezuela earthquakes around La Guaira and Catia La Mar. For the Palisades fire, three SkySat and Maxar scenes from 8 to 10 January 2025 were analysed over 18,538 structures, 6,803 of them predicted damaged, using Overture Maps footprints. The Jamaica set used Vantor and NOAA imagery. Coverage: event areas only, released within days. Access: GeoPackage files of predicted building damage, some with imagery masks. Licence: Creative Commons Attribution 4.0 for the datasets read; free. Caveats: the lab says the results are a preliminary first look that needs on-the-ground verification, and for Jamaica that any building with more than 0% predicted damage probably has debris nearby. Simulation uses are early building damage layers for response and recovery planning, and observations for testing fragility and loss models against events. Related records: the UNOSAT damage assessments, HOT disaster-response datasets and the Palisades fire structure loss GeoAI dataset.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "building damage survey",
+      "route": "R04",
+      "source": "hdx"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "building validation",
+      "route": "R04",
+      "source": "hdx"
+    }
+  ],
+  "formats": [
+    "geopackage",
+    "geojson"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake",
+    "wildfire",
+    "storm_wind",
+    "flood"
+  ],
+  "homepage": "https://data.humdata.org/organization/microsoft-ai4g-lab",
+  "id": "data-microsoft-ai4g-building-damage-assessments-hdx",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-11-06",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Microsoft AI for Good Lab rapid building damage assessments on HDX",
+  "provider": "Microsoft AI for Good Lab, using satellite and aerial imagery from Planet, Vantor (formerly Maxar) and others",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Scenes, 18,538 structures (11,735 not damaged, 6,803 damaged), Overture footprints, cc-by, caveat",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=palisades-fire-building-damage-assessment"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Mandalay, Planet imagery, GeoPackage, cc-by",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=myanmar-earthquake-building-damage-assessment-from-3-28-2025"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Vantor and NOAA NGS imagery, >0% damage caveat, modified 2025-11-06",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=hurricane-melissa-building-damage-assessment-in-jamaica"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "22 datasets (22 in the organisation)",
+      "url": "https://data.humdata.org/api/3/action/package_search?fq=organization:microsoft-ai4g-lab&q=damage&rows=0"
+    }
+  ],
+  "spatial_resolution": "Individual building footprints (Overture Maps footprints in the Palisades set) with predicted damage",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "damage assessment",
+    "AI",
+    "satellite imagery",
+    "Microsoft",
+    "wildfire",
+    "earthquake",
+    "hurricane",
+    "HDX"
+  ],
+  "title_en": "Microsoft AI for Good Lab rapid building damage assessments on HDX",
+  "type": "data"
+}

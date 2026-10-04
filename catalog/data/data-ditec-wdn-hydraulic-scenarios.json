@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "DiTEC-WDN dataset on Hugging Face (Parquet)",
+      "url": "https://huggingface.co/datasets/rugds/ditec-wdn"
+    },
+    {
+      "kind": "repo",
+      "label": "Generation code (Zenodo backup of the GitHub repository)",
+      "url": "https://zenodo.org/records/15649072"
+    },
+    {
+      "kind": "download",
+      "label": "Earlier benchmark release: 11 networks (Zenodo)",
+      "url": "https://zenodo.org/records/11353195"
+    },
+    {
+      "kind": "paper",
+      "label": "Truong et al. (2025), Scientific Data 12, 1733",
+      "url": "https://doi.org/10.1038/s41597-025-06026-0"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "synthetic_benchmark",
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "network_topology",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "doi": "10.57967/hf/6341",
+    "name": "ditec wdn large scale dataset of hydraulic scenarios across water distribution networks",
+    "url": "https://huggingface.co/datasets/rugds/ditec-wdn"
+  },
+  "description": "DiTEC-WDN is a large dataset of simulated hydraulic scenarios covering 36 water distribution networks, built by the DiTEC project at the University of Groningen for training and testing data-driven and graph machine learning models. Each network has 1,000 scenarios, each a time series of graphs whose nodes are reservoirs, junctions and tanks and whose edges are pipes, pumps and valves of specified types, with static parameters (pipe diameter, length and roughness, tank and pump properties) and time-varying demands and simulated hydraulic states. It is hosted on Hugging Face under CC BY 4.0 (73 subsets, 1 to 10 billion rows), with the generation code on GitHub and Zenodo under MIT, and is described in Scientific Data (Truong et al., 2025). An earlier release covered 11 networks, including L-Town, C-Town and Anytown, as 7.2 GB of CSV files. Caveats: all states are simulated from benchmark models, not measured, parameter ranges were chosen by the authors, and the full dataset is very large. Simulation uses: surrogate hydraulic models, state estimation for digital twins and optimisation of network operation. Related records: EPANET (model-epanet) and BattLeDIM (data-battledim-leakage-detection-benchmark). The paper excludes leak, pipe-break and other anomalous scenarios; these are normal-operation synthetic benchmarks.",
+  "description_checked": "2026-10-02",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"water distribution\" AND \"optimization\"",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "\"water distribution\" AND \"optimization\"",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://huggingface.co/datasets/rugds/ditec-wdn",
+  "id": "data-ditec-wdn-hydraulic-scenarios",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-11-25",
+  "licence": "CC-BY-4.0 (dataset); MIT (code)",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-02"
+  },
+  "maturity": "active",
+  "name": "DiTEC-WDN large-scale dataset of hydraulic scenarios across water distribution networks",
+  "notes": "The knowledge-graph conversion package (zenodo 17650540) is a companion tool and is covered by this record.",
+  "provider": "DiTEC project, Distributed Systems group, University of Groningen",
+  "related_ids": [
+    "model-epanet",
+    "data-battledim-leakage-detection-benchmark"
+  ],
+  "schema_summary": "per network 1,000 scenarios of spatiotemporal graphs: junctions, tanks, reservoirs, pipes, pumps and valves (PSV, PBV, FCV, TCV, GPV, PRV) with static parameters (diameter, length, roughness, elevation, pump curves), patterns and simulated heads, pressures, flows and demands",
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "36 networks, 1,000 scenarios each, components and parameters, CC-BY-4.0, 73 subsets, size 1B-10B",
+      "url": "https://huggingface.co/datasets/rugds/ditec-wdn"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "generation code v1.0.2, MIT, Scientific Data citation",
+      "url": "https://zenodo.org/records/15649072"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "earlier 11-network benchmark release, 7.2 GB, network list",
+      "url": "https://zenodo.org/records/11353195"
+    },
+    {
+      "accessed": "2026-10-02",
+      "note": "Read Data Records, availability and limitations: current Parquet dataset DOI 10.57967/hf/6341; Zenodo 15649072 is code, not the data.",
+      "url": "https://www.nature.com/articles/s41597-025-06026-0"
+    },
+    {
+      "accessed": "2026-10-02",
+      "note": "Public dataset card and licence metadata read; no Parquet file downloaded.",
+      "url": "https://huggingface.co/datasets/rugds/ditec-wdn"
+    }
+  ],
+  "spatial_resolution": "node and link level of 36 benchmark networks",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "water distribution",
+    "hydraulic simulation",
+    "graph machine learning",
+    "benchmark",
+    "EPANET",
+    "surrogate models"
+  ],
+  "temporal_coverage": "simulated scenarios",
+  "temporal_resolution": "per scenario time steps (snapshots)",
+  "temporal_resolution_class": "event",
+  "title_en": "DiTEC-WDN large-scale dataset of hydraulic scenarios across water distribution networks",
+  "type": "data",
+  "update_frequency": "irregular"
+}

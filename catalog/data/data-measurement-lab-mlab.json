@@ -1,0 +1,141 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Data overview",
+      "url": "https://www.measurementlab.net/data/"
+    },
+    {
+      "kind": "docs",
+      "label": "Data documentation",
+      "url": "https://www.measurementlab.net/data/docs/"
+    },
+    {
+      "kind": "api",
+      "label": "BigQuery quickstart",
+      "url": "https://www.measurementlab.net/data/docs/bq/quickstart/"
+    }
+  ],
+  "access_note": "BigQuery access at M-Lab's expense requires joining its discussion group with a Google account; raw archives are public on Google Cloud Storage.",
+  "access_restrictions": "registration",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "service_performance",
+    "sensor_realtime_streams",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "measurement lab m lab open internet measurement data",
+    "url": "https://measurementlab.net"
+  },
+  "description": "Measurement Lab (M-Lab) is an open platform of measurement servers and the archive of the tests run against them, described by the project as the largest open internet performance dataset. The main current test, the Network Diagnostic Tool (NDT, protocols ndt7, ndt5 and web100), measures throughput, latency and other characteristics of a TCP connection under heavy load between a user and a nearby M-Lab server; other hosted tests include the IP Route Survey of IP-level routing, Reverse Traceroute paths back to users, Wehe tests of application-specific traffic differentiation and the retired Neubot DASH test. M-Lab was founded in 2009 by New America's Open Technology Institute, the PlanetLab Consortium, Google and academic researchers, and is now led by teams at Superbloom and Google, so that consumers, operators, regulators, researchers and civil society can see how the internet performs. Coverage is worldwide wherever people run the tests, from 2009 to the present, at the level of individual tests with client location approximated from IP addresses. Raw archives are published on Google Cloud Storage and parsed results in Google BigQuery (project measurement-lab), usually at least 24 hours after collection; queries are free for members of M-Lab's discussion group. Licence (read on the provider page on 2026-09-28): CC0-1.0. Caveats: tests are user-initiated, so samples are biased towards people who test, often when they have problems, and server placement shapes the measured path. Simulation uses: service performance and outage baselines for internet access networks and interconnection, validation of resilience models. Related records: Ookla Open Data speed tiles and RIPE Atlas measurements.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.telecom:service_performance",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "database",
+    "archive"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.measurementlab.net/",
+  "id": "data-measurement-lab-mlab",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Measurement Lab (M-Lab) open internet measurement data",
+  "notes": "Data licence uncertain: only the site-content licence (CC BY-NC-SA 4.0) was found on 2026-09-26.",
+  "provider": "Measurement Lab (Superbloom, Google and partners)",
+  "related_ids": [
+    "data-ookla-open-data-performance-tiles"
+  ],
+  "sectors": [
+    "digital.telecom",
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Archival data on GCS, BigQuery, 24-hour delay; NDT, Neubot, Reverse Traceroute, Wehe, IPRS",
+      "url": "https://www.measurementlab.net/data/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Mission; founded 2009 by OTI, PlanetLab, Google and researchers; largest open dataset",
+      "url": "https://www.measurementlab.net/about/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BigQuery project measurement-lab; no charge for group members",
+      "url": "https://www.measurementlab.net/data/docs/bq/quickstart/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Original material licensed CC BY-NC-SA 4.0",
+      "url": "https://www.measurementlab.net/policies/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): CC0-1.0 (basis: M-Lab: all data collected by M-Lab tests available under the CC0 waiver)",
+      "url": "https://www.measurementlab.net/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    }
+  ],
+  "spatial_resolution": "Individual tests; client location approximated from IP address",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "internet performance",
+    "NDT",
+    "throughput",
+    "latency",
+    "traceroute",
+    "BigQuery",
+    "open measurement"
+  ],
+  "temporal_coverage": "2009 to present",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2009
+  },
+  "temporal_resolution": "Per test (continuous)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Measurement Lab (M-Lab) open internet measurement data",
+  "type": "data",
+  "update_frequency": "sub_daily"
+}

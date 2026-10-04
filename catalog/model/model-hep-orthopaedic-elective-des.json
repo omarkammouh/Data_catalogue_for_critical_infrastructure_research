@@ -1,0 +1,142 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "AliHarp/HEP-v1.0.1.zip (4 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/7951080/files/AliHarp/HEP-v1.0.1.zip?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "TomMonks/hep-deploy-v1.0.0.zip (2.9 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/8011462/files/TomMonks/hep-deploy-v1.0.0.zip?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "Model code and notebooks",
+      "url": "https://github.com/AliHarp/HEP"
+    },
+    {
+      "kind": "viewer",
+      "label": "Web app (Streamlit)",
+      "url": "https://hospital-efficiency-project.streamlit.app/"
+    },
+    {
+      "kind": "portal",
+      "label": "Model release (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.7951080"
+    },
+    {
+      "kind": "portal",
+      "label": "Docker deployment supplement (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.8011462"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.7951080",
+    "name": "hospital efficiency project hep discrete event simulation for orthopaedic elective theatre and ward planning",
+    "repo": "github.com/aliharp/hep",
+    "url": "https://github.com/AliHarp/HEP"
+  },
+  "description": "This simulation helps a hospital plan its planned (elective) orthopaedic surgery by testing how the operating theatre timetable, the number of ward beds and delayed discharges interact. The producers are Alison Harper, Thomas Monks and Martin Pitt of the University of Exeter, who built it in the Hospital Efficiency Project and report it using the STRESS guidelines for discrete-event simulation. The model represents patients for five types of elective orthopaedic surgery moving from theatre to ward, with lengths of stay and a share of patients whose discharge is delayed, and users can change the theatre schedule, bed numbers, lengths of stay and delay settings. Coverage is one orthopaedic service with parameters the user can change. The Python code is available free on GitHub and Zenodo under the MIT licence, with an online web app, a Binder notebook environment and a separate Docker deployment package. Caveats: built for one specialty, default parameters should be replaced with local data, and the Python environment is pinned to an older version (3.8). Simulation uses: sizing beds and theatre sessions for elective recovery, and showing how delayed discharges caused by shortages in community care block surgical capacity. Related records: the IPACS model (model-ipacs-discharge-to-assess-capacity) models the discharge pathways that cause those delays, and the SimPy healthcare models (model-simpy-streamlit-healthcare-des) come from the same group.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "simpy streamlit hospital model docker",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "site",
+  "hazards": [],
+  "homepage": "https://github.com/AliHarp/HEP",
+  "id": "model-hep-orthopaedic-elective-des",
+  "inputs": [
+    "Theatre schedule",
+    "Number of beds",
+    "Lengths of stay for five orthopaedic elective surgery types",
+    "Proportion of patients with delayed discharge and length of delay"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-05-19",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical",
+    "discrete_event"
+  ],
+  "name": "Hospital Efficiency Project (HEP): discrete-event simulation for orthopaedic elective theatre and ward planning",
+  "outputs": [
+    "Bed occupancy and utilisation",
+    "Throughput of elective surgery",
+    "Lost slots and effect of delayed discharge"
+  ],
+  "provider": "Alison Harper, Thomas Monks and Martin Pitt (University of Exeter)",
+  "related_ids": [
+    "model-ipacs-discharge-to-assess-capacity",
+    "model-simpy-streamlit-healthcare-des"
+  ],
+  "repository": "https://github.com/AliHarp/HEP",
+  "runs_on": [
+    "Python 3.8 (conda environment)",
+    "Streamlit web app",
+    "Binder",
+    "Docker"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README: Hospital Efficiency Project DES model for orthopaedic elective planning, MIT; reported with STRESS-DES; cite Harper A, Monks T, Hospital Efficiency Project Orthopaedic Planning Model DES (10.5281/zenodo.7951080); aim: support orthopaedic elective theatre and ward planning; experiment with theatre schedule, beds, lengths of stay for five surgery types, proportion with delayed discharge and length of delay; Python 3.8.12, conda environment; web app hospital-efficiency-project.streamlit.app; Binder; ORCIDs Harper, Monks, Pitt; shallow clone last commit 2024-07-01",
+      "url": "https://raw.githubusercontent.com/AliHarp/HEP/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Supplementary material: code for deploying the SimPy and Streamlit HEP model to DockerHub; creators Harper and Monks (University of Exeter); MIT; published 2023-06-06; linked book chapter Harper A, Monks T, Mansi S (2023) Deployable Healthcare Simulations; cites 10.5281/zenodo.7951080",
+      "url": "https://zenodo.org/api/records/8011462"
+    }
+  ],
+  "tags": [
+    "orthopaedics",
+    "elective surgery",
+    "discrete-event simulation",
+    "SimPy",
+    "Streamlit",
+    "bed planning"
+  ],
+  "title_en": "Hospital Efficiency Project (HEP): discrete-event simulation for orthopaedic elective theatre and ward planning",
+  "type": "model",
+  "validated_on": [
+    "Model reported with the STRESS-DES guidelines (Hospital Efficiency Project)"
+  ]
+}

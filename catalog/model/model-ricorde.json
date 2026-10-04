@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/NRCan/RICorDE"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/NRCan/RICorDE/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ricorde flood depth extrapolation",
+    "repo": "github.com/nrcan/ricorde",
+    "url": "https://github.com/NRCan/RICorDE"
+  },
+  "description": "RICorDE estimates a gridded flood-depth field from an inundation boundary. Natural Resources Canada's repository documents a height-above-nearest-drainage sub-model and cost-distance method that extrapolate water-depth values from edges into the flooded area. Users provide an inundation mask, terrain and drainage inputs; outputs are gridded depth estimates for the selected flood. Geographic coverage follows the input event and terrain. The licence file states Open Government Licence Canada terms. The README explains PyQGIS and WhiteboxTools setup and links a published method. A limitation is that uncertain flood extent or terrain can strongly alter inferred depths, and the method does not simulate dynamic flow velocity or levee failure. RICorDE can turn satellite flood maps into exposure inputs for roads, buildings or water facilities. The related catalogue QGIS platform is an execution dependency, not this flood-depth method. No flood rasters or software dependencies were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "nrcan/ricorde linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NRCan/RICorDE",
+  "id": "model-ricorde",
+  "inputs": [
+    "Flood inundation extent, terrain and drainage representation"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-08-06",
+  "licence": "Open Government Licence Canada",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "RICorDE flood-depth extrapolation",
+  "notes": "G7 G7-1698. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. QGIS and WhiteboxTools are separate dependencies with their own terms. ",
+  "outputs": [
+    "Gridded flood-water depth estimates"
+  ],
+  "provider": "Natural Resources Canada and RICorDE contributors",
+  "related_ids": [
+    "platform-qgis"
+  ],
+  "repository": "https://github.com/NRCan/RICorDE",
+  "sectors": [
+    "water.dams_flood_defences",
+    "transport.road",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for NRCan/RICorDE: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/nrcan/ricorde"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/nrcan/ricorde/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Ricorde gridded flood-depth estimates from inundation boundary",
+  "type": "model"
+}

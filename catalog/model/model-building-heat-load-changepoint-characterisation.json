@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/7692351"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/7692351"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Link supplied by Zenodo; repository contents not independently inspected.",
+      "url": "https://github.com/robgaray/Building_Heat_Load_Characterisation"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "EE"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.7692351",
+    "name": "heat load characterisation",
+    "repo": "github.com/robgaray/building_heat_load_characterisation",
+    "url": "https://zenodo.org/records/7692351"
+  },
+  "description": "Roberto Garay Martinez publishes a heat-load characterisation workflow using one building supplied by GREN Tartu and local University of Tartu weather data. The March 2023 Zenodo ZIP is free under CC BY 4.0, while the linked GitHub repository states GPL-3.0 for code. The documented sequence fits changepoint models, detects residual outliers, fills one-hour and five-hour gaps using neighbouring weeks, then refits and reports statistics. It can prepare demand inputs and calibrate building-heat simulations. The README warns that fitting 168 separate weekly-hour models produces roughly 600 parameters from about 8,000 observations, creating overfitting risk. Exact measurement dates and site identity are not established. No related catalogue record explicitly covers this implementation. Longer-gap imputation and improved forecasting are listed as future work. Code, source-data permissions and predictive performance were not independently tested.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "\"district heating\"",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://zenodo.org/records/7692351",
+  "id": "model-building-heat-load-changepoint-characterisation",
+  "inputs": [
+    "Measured building heat demand",
+    "Local weather observations"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-03-02",
+  "licence": "CC-BY-4.0 Zenodo deposit; GPL-3.0 linked code repository",
+  "licence_type": [
+    "attribution",
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "HEAT LOAD CHARACTERISATION",
+  "notes": "G6 item G6-0354. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "outputs": [
+    "Changepoint fits and residuals",
+    "Outlier flags and gap-filled demand"
+  ],
+  "provider": "Garay-Martinez, Roberto (Universidad de Deusto)",
+  "related_ids": [],
+  "repository": "https://github.com/robgaray/Building_Heat_Load_Characterisation",
+  "sectors": [
+    "energy.district_heating_cooling",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/7692351"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence cc-by-4.0, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/7692351"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "README establishes data origin, processing sequence and overfitting limitations.",
+      "url": "https://api.github.com/repos/robgaray/Building_Heat_Load_Characterisation/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository metadata state GPL-3.0.",
+      "url": "https://api.github.com/repos/robgaray/Building_Heat_Load_Characterisation"
+    }
+  ],
+  "tags": [],
+  "title_en": "Heat-load characterisation workflow with 168 models",
+  "type": "model"
+}

@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/LabSid-USP/RUBEM"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/LabSid-USP/RUBEM/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "rubem distributed rainfall runoff model",
+    "repo": "github.com/labsid-usp/rubem",
+    "url": "https://github.com/LabSid-USP/RUBEM"
+  },
+  "description": "RUBEM is a pixel-based hydrological model developed at the University of São Paulo for estimating surface and subsurface runoff. It applies monthly water-balance calculations to vegetated, bare, water and impervious land-cover fractions, with root and saturated zones and flow direction from a digital elevation model. Users provide raster rainfall, climate, land cover, terrain and configuration parameters; outputs are spatial water-balance states and accumulated streamflow for the chosen basin. Pixel size is flexible and the time step is monthly. Source is free under GPL-3.0-or-later, with installation guidance and documentation for Python, PCRaster and GDAL. A limitation is that monthly steps cannot resolve a short urban storm pulse or detailed sewer hydraulics. Performance also depends on terrain and remotely sensed vegetation inputs for the selected period. RUBEM supports basin supply and land-use change simulations. The catalogue's model-raven is a separate hydrological framework for comparison; no common basin run was checked. No raster data or package was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "labsid-usp/rubem linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/LabSid-USP/RUBEM",
+  "id": "model-rubem",
+  "inputs": [
+    "Rainfall, climate, land cover and terrain rasters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "RUBEM distributed rainfall-runoff model",
+  "notes": "G7 G7-1352. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Monthly runoff and pixel water-balance fields"
+  ],
+  "provider": "University of São Paulo LabSid",
+  "related_ids": [
+    "model-raven"
+  ],
+  "repository": "https://github.com/LabSid-USP/RUBEM",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.drinking_water",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for LabSid-USP/RUBEM: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/labsid-usp/rubem"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/labsid-usp/rubem/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for dams and flood defences, drinking water and stormwater drainage",
+  "type": "model"
+}

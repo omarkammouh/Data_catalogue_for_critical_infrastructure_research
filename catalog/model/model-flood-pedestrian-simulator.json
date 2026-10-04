@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/SahebSh/flood-pedestrian-simulator"
+    },
+    {
+      "kind": "download",
+      "label": "Release v1.3.0 (Zenodo)",
+      "url": "https://zenodo.org/records/4564288"
+    },
+    {
+      "kind": "docs",
+      "label": "User guide (Zenodo)",
+      "url": "https://zenodo.org/records/4672125"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Shirvani, M. and Kesserwani, G. (2021), Flood-pedestrian simulator v1.3.0, Zenodo, doi:10.5281/zenodo.4564288",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.4564288",
+    "name": "flood pedestrian simulator flamegpu",
+    "repo": "github.com/sahebsh/flood-pedestrian-simulator",
+    "url": "https://zenodo.org/records/4564288"
+  },
+  "description": "The flood-pedestrian simulator is an agent-based model that couples a hydrodynamic flood model with a pedestrian model, so that evacuees and floodwater interact in both directions during the evacuation of crowds from small urban areas. It was developed by Mohammad Shirvani and Georges Kesserwani at the University of Sheffield and runs in the FLAMEGPU framework, which simulates many interacting agents in parallel on graphics processors. Pedestrian agents represent evacuees and flood agents represent local floodwater; development and evaluation are described in articles in the Journal of Hydroinformatics (2020) and the Journal of Flood Risk Management (2021). Coverage: any small urban area that can be set up in the model; demonstrations cover two test cases. Access: source on GitHub, release v1.3.0 of 26 February 2021 on Zenodo and a user guide in a separate Zenodo record. Licence: GNU Affero GPL version 3; free. Caveats: requires an NVIDIA GPU with CUDA and FLAMEGPU; no release since 2021. Simulation uses: evacuation planning for flooded streets and public spaces, testing warning and routing strategies. Related records: JuPedSim and Vadere pedestrian models.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"pedestrian\" AND \"simulation\"",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://zenodo.org/records/4564288",
+  "id": "model-flood-pedestrian-simulator",
+  "inputs": [
+    "Terrain and flood hydrodynamic inputs",
+    "Pedestrian population and exits"
+  ],
+  "language": [
+    "c_cpp",
+    "other"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-10-09",
+  "licence": "AGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "physical"
+  ],
+  "name": "Flood-pedestrian simulator (FLAMEGPU)",
+  "notes": "GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "outputs": [
+    "Pedestrian trajectories and states",
+    "Floodwater depth and velocity fields",
+    "Evacuation times"
+  ],
+  "provider": "Mohammad Shirvani and Georges Kesserwani (University of Sheffield)",
+  "related_ids": [
+    "data-juelich-pedestrian-dynamics-data-archive",
+    "data-opentraj-human-trajectory-datasets"
+  ],
+  "repository": "https://github.com/SahebSh/flood-pedestrian-simulator",
+  "sectors": [
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Title, creators and affiliation, 2021-02-26, v1.3.0, AGPL-3.0, description, related user guide",
+      "url": "https://zenodo.org/api/records/4564288"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, FLAMEGPU, FloodPedestrian_2020 folder, papers",
+      "url": "https://raw.githubusercontent.com/SahebSh/flood-pedestrian-simulator/master/README.md"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2024-10-09)",
+      "url": "https://github.com/SahebSh/flood-pedestrian-simulator"
+    }
+  ],
+  "tags": [
+    "flood evacuation",
+    "pedestrian",
+    "agent-based",
+    "GPU",
+    "FLAMEGPU",
+    "hydrodynamic coupling"
+  ],
+  "title_en": "Agent-based model for public spaces",
+  "type": "model"
+}

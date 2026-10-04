@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Incident history",
+      "url": "https://status.cloud.google.com/summary"
+    },
+    {
+      "kind": "api",
+      "label": "JSON incident history",
+      "url": "https://status.cloud.google.com/incidents.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "historical_events",
+    "service_performance",
+    "recovery_restoration"
+  ],
+  "data_kind": [
+    "event_record",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "google cloud service health incident history with json feed",
+    "url": "https://status.cloud.google.com/summary"
+  },
+  "description": "Google Cloud Service Health publishes the incident history of Google Cloud products, from core services such as Compute Engine, Cloud Storage and BigQuery to AI services and many deprecated products. For each incident the page gives the affected products and locations, start and end times and duration, a series of status updates and, for significant incidents, a preliminary and a full incident report with root cause and remediation. Unlike most providers, Google offers the history as machine-readable feeds: a JSON history with a published schema, a JSON product catalogue and an RSS feed, alongside the web interface. Examples from 2026 include an error-rate incident on the Vertex AI Gemini API in February lasting almost two hours and a multi-product incident in the us-west1 region in August lasting from 41 minutes to nearly three hours depending on the service. Coverage: Google Cloud regions worldwide; the depth of history is not stated on the page. Format and access: web pages, JSON and RSS, free. Caveats: only incidents Google chose to post publicly; durations are per product and overlap. Simulation uses: failure and repair time statistics for cloud services, regional outage scenarios and dependency modelling for services hosted in data centres. Related records: the AWS and Azure archives are counterparts, and the Cloud Uptime Archive collects such reports as traces.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "cloud provider post-incident reviews archive AWS post-event summaries Azure status history PIR Google Cloud incident history data center recovery",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "web_page",
+    "json",
+    "xml"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://status.cloud.google.com/summary",
+  "id": "data-google-cloud-service-health-history",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09",
+  "licence": "Google copyright; free to read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Google Cloud Service Health incident history (with JSON feed)",
+  "notes": "Summary page read via fetch on 2026-09-26 (products, feeds, examples). The JSON feed URL incidents.json was checked with a header request (HTTP 200) on the same day; its content was not read.",
+  "provider": "Google Cloud",
+  "related_ids": [],
+  "schema_summary": "incident id, products, locations, begin and end times, severity, status updates, incident reports",
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "cascading_failure"
+  ],
+  "size": "not stated",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "page",
+      "url": "https://status.cloud.google.com/summary"
+    }
+  ],
+  "spatial_resolution": "Google Cloud region or global",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "cloud outages",
+    "status feed",
+    "Google Cloud",
+    "incident history",
+    "JSON"
+  ],
+  "temporal_coverage": "history depth not stated; incidents from 2026 seen",
+  "temporal_resolution": "per incident, with timestamps",
+  "temporal_resolution_class": "event",
+  "title_en": "Google Cloud Service Health incident history (with JSON feed)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

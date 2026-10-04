@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/synthetichealth/synthea"
+    },
+    {
+      "kind": "docs",
+      "label": "Wiki",
+      "url": "https://github.com/synthetichealth/synthea/wiki"
+    },
+    {
+      "kind": "docs",
+      "label": "ASPE synthetic health data generation engine project",
+      "url": "https://aspe.hhs.gov/synthetic-health-data-generation-engine-accelerate-patient-centered-outcomes-research"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "synthea synthetic patient population simulator",
+    "repo": "github.com/synthetichealth/synthea",
+    "url": "https://github.com/synthetichealth/synthea"
+  },
+  "description": "Synthea is an open-source simulator that generates realistic but not real patient populations and their health records. It follows each synthetic person from birth to death through a modular rule system of disease and care modules, producing primary care, emergency room and symptom-driven encounters with conditions, allergies, medications, vaccinations, observations, laboratory results, procedures and care plans. The provider is the MITRE Corporation, with support from the U.S. Office of the Assistant Secretary for Planning and Evaluation to extend the engine. Coverage is any U.S. population given demographic configuration, with Massachusetts census data as the default. The Java code is on GitHub under the Apache 2.0 licence, requires JDK 17 or newer, and exports HL7 FHIR, bulk FHIR, C-CDA, CSV and CPCDS; the latest tag read today is v4.0.0. Caveats: disease modules encode published statistics and expert rules, so utilisation patterns are plausible, not calibrated to a given hospital; there is no geography of facilities beyond configured providers, and disasters are not modelled. Simulation uses: synthetic demand streams for hospital and emergency department capacity models, test data for health information systems in resilience exercises, and privacy-safe inputs for patient-flow digital twins. Related records: CHIME (model-chime) and the NHS ambulance discrete-event model (model-ambulance-des-nhsx) consume demand of this kind.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Synthea synthetic patient generator",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://github.com/synthetichealth/synthea",
+  "id": "model-synthea",
+  "inputs": [
+    "Demographics configuration (default Massachusetts census data)",
+    "Disease and care modules (generic module framework)",
+    "Provider and payer settings"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://github.com/synthetichealth/synthea/wiki"
+    ]
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "statistical"
+  ],
+  "name": "Synthea synthetic patient population simulator",
+  "outputs": [
+    "Synthetic patient records: encounters (primary care, emergency room), conditions, medications, procedures, care plans",
+    "HL7 FHIR (R4, STU3, DSTU2), bulk FHIR ndjson, C-CDA, CSV and CPCDS exports"
+  ],
+  "provider": "The MITRE Corporation (SyntheticMass project)",
+  "regions": [
+    "Massachusetts (default)"
+  ],
+  "related_ids": [
+    "model-chime",
+    "model-ambulance-des-nhsx"
+  ],
+  "repository": "https://github.com/synthetichealth/synthea",
+  "runs_on": [
+    "Java JDK 17 or newer"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Features (birth to death lifecycle, modular rules, encounters, export formats), Java 17 requirement, Apache 2.0 licence, copyright MITRE 2017-2025",
+      "url": "https://raw.githubusercontent.com/synthetichealth/synthea/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Git tags read with git ls-remote: latest v4.0.0",
+      "url": "https://github.com/synthetichealth/synthea"
+    }
+  ],
+  "tags": [
+    "synthetic data",
+    "patients",
+    "electronic health records",
+    "FHIR",
+    "healthcare demand",
+    "agent-based"
+  ],
+  "title_en": "Synthea synthetic patient population simulator",
+  "type": "model",
+  "validated_on": []
+}

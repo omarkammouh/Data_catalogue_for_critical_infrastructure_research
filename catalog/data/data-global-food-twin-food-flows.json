@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Harvard Dataverse dataset, version 2",
+      "url": "https://doi.org/10.7910/DVN/BLVPFU"
+    },
+    {
+      "kind": "repo",
+      "label": "Methods and scripts (GitHub)",
+      "url": "https://github.com/Better-Planet-Laboratory/globalfoodtwin"
+    },
+    {
+      "kind": "viewer",
+      "label": "Global Food Twin web map",
+      "url": "https://foodtwin.theplotline.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "supply_chains_logistics",
+    "cross_border_flows",
+    "demand_operation",
+    "interdependencies"
+  ],
+  "data_kind": [
+    "tabular",
+    "raster",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "global food twin data modelled food flows and transport routes for 82 food groups between 3 787 subnational regions 2020",
+    "repo": "github.com/better-planet-laboratory/globalfoodtwin",
+    "url": "doi:10.7910/dvn/blvpfu"
+  },
+  "description": "The Global Food Twin dataset estimates how food moves from the regions that produce it to the regions that eat it, across the whole world. Better Planet Laboratory at the University of Colorado Boulder and Earth Genome combined food balance sheets, gridded production and demand, bilateral trade and multimodal transport networks, then routed flows along least-cost paths. The result covers 82 food groups and 3,787 subnational regions in 240 countries for the year 2020, with each flow broken into road, rail, inland waterway, port and shipping legs. The data are free to download from Harvard Dataverse under CC BY-SA 4.0: production and demand rasters, export and import allocations, transport costs, infrastructure line geometries and flow tables that give origin, destination, kilograms, mode, segment order and the network edges used. Methods and scripts are available on GitHub, and a web map shows the flows. Coverage is global for one reference year. Caveats: routes are modelled on a least-cost assumption, not observed; air freight is missing; some countries have incomplete transport networks; the full release is large, about 86 GB. Simulation uses: stress-testing food supply against port closures, corridor outages or regional harvest failures, and linking food flows to transport network models. Related records: the web application is catalogued as platform-global-food-twin, and the traceable food balance sheets (data-traceable-food-balance-sheets-gcamfaostat) are a national-level alternative.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Food Twin Zia Mehrabi global food transport network open data download",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "raster"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://doi.org/10.7910/DVN/BLVPFU",
+  "id": "data-global-food-twin-food-flows",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-06-26",
+  "licence": "CC BY-SA 4.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Global Food Twin data: modelled food flows and transport routes for 82 food groups between 3,787 subnational regions (2020)",
+  "provider": "Better Planet Laboratory (University of Colorado Boulder) and Earth Genome",
+  "related_ids": [
+    "platform-global-food-twin",
+    "data-traceable-food-balance-sheets-gcamfaostat"
+  ],
+  "schema_summary": "689 files (about 86 GB): production and demand rasters per food group (tonnage on GADM regions), downscaled export and import allocations, transport cost inputs, infrastructure edge geometries (rail and inland water, road, maritime) as hex-encoded line strings, and post-processed flow tables split into within-country, land domestic export, land re-export, sea domestic and sea re-export flows; flow columns from_id_admin, to_id_admin, flow_value (kg), mode, segment_order and paths (edge ids)",
+  "sectors": [
+    "services.food_supply",
+    "transport.road",
+    "transport.rail",
+    "transport.maritime_ports",
+    "transport.inland_waterways",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Dataverse metadata read in memory: title Global Food Twin, authors Better Planet Laboratory (University of Colorado Boulder) and Earth Genome, deposited 2025-06-13, version 2, licence CC BY-SA 4.0, 689 files totalling about 86 GB in Inputs and Outputs/PostProcessed folders",
+      "url": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/BLVPFU"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "README: 82 food groups, 3,787 subnational regions, maritime and land (rail, road, inland waterway) routes, least-cost routing constrained by trades; limitations: least-cost assumption, no air transport, gaps in some national networks; flow table columns",
+      "url": "https://raw.githubusercontent.com/Better-Planet-Laboratory/globalfoodtwin/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Earth Genome blog: built by Earth Genome and Better Planet Laboratory, web app by Development Seed, funded by ClimateWorks Foundation; 240 countries; normalised to 2020",
+      "url": "https://www.earthgenome.org/blog/global-food-twin-modeling-the-worlds-food-system"
+    }
+  ],
+  "spatial_resolution": "3,787 subnational administrative regions; production inputs at about 10 km",
+  "spatial_resolution_class": "over_10km",
+  "tags": [
+    "food flows",
+    "food trade",
+    "supply chain mapping",
+    "maritime shipping",
+    "rail",
+    "roads",
+    "digital twin",
+    "Global Food Twin"
+  ],
+  "temporal_coverage": "2020",
+  "temporal_resolution": "Annual (single year)",
+  "temporal_resolution_class": "annual",
+  "title_en": "Global Food Twin data: modelled food flows and transport routes for 82 food groups between 3,787 subnational regions (2020)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

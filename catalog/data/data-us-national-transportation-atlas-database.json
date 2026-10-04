@@ -1,0 +1,144 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "BTS geospatial data hub (NTAD)",
+      "url": "https://geodata.bts.gov/"
+    },
+    {
+      "kind": "api",
+      "label": "NTAD feature services (ArcGIS REST)",
+      "url": "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "national transportation atlas database ntad",
+    "url": "https://geodata.bts.gov"
+  },
+  "description": "The National Transportation Atlas Database (NTAD) is the Bureau of Transportation Statistics' collection of national geospatial datasets for the United States transport system, compiled from the modal agencies of the Department of Transportation and partners. On 26 September 2026 its geospatial hub listed 141 public items, including the National Highway System, Strategic Highway Network, National Highway Freight Network, National Highway Planning Network, Alternative Fuel Corridors, National Bridge and Tunnel Inventories, Highway Performance Monitoring System, North American Roads and Rail Network, rail yards, grade crossings and railroad bridges, Amtrak routes and stations, the National Transit Map built from GTFS feeds (67,588 routes), the Intercity Bus Atlas, ferry routes and terminals, aviation facilities and runways, principal ports, port areas, commercial strategic seaports, marine highways, the National Waterway Network, locks and link tonnages, intermodal freight facilities by type, the Intermodal Passenger Connectivity Database, truck stop parking, weigh-in-motion stations and the Freight Analysis Framework network. Each layer is served as an ArcGIS feature service (JSON, GeoJSON, PBF) with download and data dictionaries registered with DOIs. Most layers are US government works with no copyright and unrestricted use; a few carry other terms, such as CC BY 3.0 US for the National Transit Map. Caveats: layers come from different agencies, dates and scales, some are no longer updated (the connectivity database stops in 2022), and several are beta. NTAD supplies network topology and asset locations for national flow, accessibility, freight and hazard exposure models, and is related to the bridge inventory, HPMS, waterway network and FAF records.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "NTAD layers (transport P3 harvest)",
+      "route": "R11",
+      "source": "esri-living-atlas"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "National Transportation Atlas Database",
+      "route": "R10",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "HIFLD open transport layers",
+      "route": "R10",
+      "source": "dataverse-harvard"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "json",
+    "geojson",
+    "other_vector",
+    "esri_geodatabase",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://geodata.bts.gov/",
+  "id": "data-us-national-transportation-atlas-database",
+  "languages": [
+    "en"
+  ],
+  "licence": "US Government work, no copyright (17 U.S.C. 101); some layers CC BY 3.0 US",
+  "licence_type": [
+    "attribution",
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "National Transportation Atlas Database (NTAD)",
+  "provider": "U.S. Department of Transportation, Bureau of Transportation Statistics (BTS), with FHWA, FRA, FAA, USACE, MARAD and other contributing agencies",
+  "related_ids": [
+    "data-fhwa-national-bridge-inventory",
+    "data-fhwa-hpms",
+    "data-usace-national-waterway-network",
+    "data-freight-analysis-framework",
+    "data-hifld-open",
+    "data-north-american-rail-network"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.rail",
+    "transport.public_transit",
+    "transport.aviation",
+    "transport.maritime_ports",
+    "transport.inland_waterways",
+    "transport.logistics_freight",
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "141 public items with titles, sources, update dates and licence statements; US Government work, unrestricted public use; National Transit Map CC BY 3.0 US",
+      "url": "https://geodata.bts.gov/api/search/v1/collections/all/items?limit=100"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "STRAHNET is a subset of the National Highway System and part of NTAD; updated 8 August 2025 from FHWA",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/7603a3cef0e6415d9048f994805bd8a1?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "67,588 National Transit Map routes; compiled from GTFS Schedule data",
+      "url": "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_National_Transit_Map_Routes/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Intermodal Passenger Connectivity Database: nationwide passenger terminals with connections; no longer updated, latest 2022",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/25d9314da4ec44088f1db9e9e11a19d6?f=json"
+    }
+  ],
+  "spatial_resolution": "network segments and point facilities, typically 1:24,000 to 1:100,000",
+  "spatial_resolution_class": "10m_to_100m",
+  "tags": [
+    "NTAD",
+    "BTS",
+    "United States",
+    "national transport network",
+    "GIS",
+    "freight facilities",
+    "transit"
+  ],
+  "temporal_coverage": "current layers with release dates from 2021 to 2026; some archived series",
+  "title_en": "National Transportation Atlas Database (NTAD)",
+  "type": "data",
+  "update_frequency": "annual"
+}

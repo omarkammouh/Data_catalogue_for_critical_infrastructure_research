@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/google-research/skai"
+    },
+    {
+      "kind": "docs",
+      "label": "Setup instructions",
+      "url": "https://github.com/google-research/skai/blob/main/docs/setup.md"
+    },
+    {
+      "kind": "paper",
+      "label": "NeurIPS workshop paper (arXiv 2011.14004)",
+      "url": "https://arxiv.org/abs/2011.14004"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "skai machine learning building damage assessment from aerial and satellite imagery",
+    "repo": "github.com/google-research/skai",
+    "url": "https://github.com/google-research/skai"
+  },
+  "description": "SKAI is a machine learning tool that finds damaged and destroyed buildings in aerial or satellite images taken after a disaster. It compares imagery before and after the event for each building and labels its damage, cutting the time and labour needed for the damage assessments that tell responders how many people may be unsheltered or trapped and what rebuilding will cost. The provider is Google Research, which developed it with the United Nations World Food Programme Innovation Accelerator and the InstaDeep AI for Social Good team. Coverage is worldwide wherever suitable imagery exists; the README reports agreement with expert assessments on 85 to 98 percent of buildings in past hurricanes, earthquakes and wildfires. The Python code is on GitHub under the Apache 2.0 licence and is designed to run on Google Cloud, using Dataflow for pre-processing and Vertex AI for labelling, training and inference; the latest tag read today is v0.4. Caveats: users need cloud accounts and imagery rights, accuracy drops for cloud cover, off-nadir views or building types unlike the training data, and a new event usually needs some labelled examples. Simulation uses: rapid damage inputs for response and recovery models, including damage to health facilities after earthquakes, and validation of fragility-based damage predictions. Related records: xBD (data-xbd-building-damage) is a benchmark of labelled damage imagery.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "post-disaster health facility damage remote sensing model open source",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake",
+    "storm_wind",
+    "wildfire"
+  ],
+  "homepage": "https://github.com/google-research/skai",
+  "id": "model-skai",
+  "inputs": [
+    "Pre- and post-disaster aerial or satellite imagery",
+    "Building footprints or detected building locations",
+    "Labelled examples for training"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-03",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "SKAI: machine learning building damage assessment from aerial and satellite imagery",
+  "outputs": [
+    "Damage label per building",
+    "Maps of damaged and destroyed buildings"
+  ],
+  "provider": "Google Research, with the WFP Innovation Accelerator and InstaDeep",
+  "regions": [],
+  "related_ids": [
+    "data-xbd-building-damage"
+  ],
+  "repository": "https://github.com/google-research/skai",
+  "runs_on": [
+    "Google Cloud (Dataflow, Vertex AI)"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "ML tool for automatic building damage assessment on aerial imagery; agreement with experts 85-98% in past disasters; collaborators WFP Innovation Accelerator and InstaDeep AI4SG",
+      "url": "https://raw.githubusercontent.com/google-research/skai/HEAD/docs/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Designed to run on Google Cloud: Dataflow for pre-processing, Vertex AI for labelling, training and inference",
+      "url": "https://raw.githubusercontent.com/google-research/skai/HEAD/docs/setup.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Apache License 2.0",
+      "url": "https://raw.githubusercontent.com/google-research/skai/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: latest tag v0.4; shallow clone: last commit 2026-07-03, 127 Python files",
+      "url": "https://github.com/google-research/skai"
+    }
+  ],
+  "tags": [
+    "building damage",
+    "remote sensing",
+    "machine learning",
+    "disaster assessment",
+    "WFP",
+    "humanitarian"
+  ],
+  "title_en": "SKAI: machine learning building damage assessment from aerial and satellite imagery",
+  "type": "model",
+  "validated_on": [
+    "Past hurricanes, earthquakes and wildfires reported in the README (85 to 98 percent agreement with experts)"
+  ]
+}

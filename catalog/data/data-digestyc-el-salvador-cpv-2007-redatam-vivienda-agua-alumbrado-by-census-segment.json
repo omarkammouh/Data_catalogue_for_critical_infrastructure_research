@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "REDATAM online processing for the 2007 census",
+      "url": "https://onec.bcr.gob.sv/servers/redatam/htdocs/CPV2007S/index.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Full variable dictionary",
+      "url": "https://onec.bcr.gob.sv/cgibin/RpWebEngine.exe/Dictionary?&BASE=CPV2007SEGM&ITEM=DICALL"
+    },
+    {
+      "kind": "docs",
+      "label": "Census questionnaire (PDF)",
+      "url": "https://onec.bcr.gob.sv/servers/redatam/htdocs/CPV2007S/Docs/BOLETA.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "Final results report (PDF)",
+      "url": "https://onec.bcr.gob.sv/servers/redatam/htdocs/CPV2007S/Docs/RESULTADOS_FINALES.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "SV"
+  ],
+  "data_family": [
+    "system_description",
+    "vulnerability_fragility"
+  ],
+  "data_kind": [
+    "tabular",
+    "survey"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "el salvador 2007 population and housing census redatam database with walls roof floor sanitation grey water water source and days of supply per week lighting and household equipment by department municipality canton and census segment",
+    "url": "https://onec.bcr.gob.sv/servers/redatam/htdocs/CPV2007S/index.html"
+  },
+  "description": "El Salvador's 2007 Population and Housing Census is online as a REDATAM database on the statistics office server, built by the former DIGESTYC with UNFPA and ECLAC-CELADE. Dwelling records carry dwelling type and the materials of outer walls, roof and floor. Household records give the type of sanitation and whether it is shared, how grey water is disposed of, where the water comes from and on how many days a week it arrives, cooking fuel, type of lighting, refuse disposal and household equipment such as fixed and mobile telephones and computers. The geography nests department, municipality, canton and census segment, so tables can go below municipal level. Format and access: free online frequencies, cross tabulations, area lists and predefined indicators, a downloadable REDATAM dictionary, the questionnaire, the enumerator manual and the final results report. Licence: not stated on the pages read. Caveats: data are from 2007 and have been superseded by the 2024 census, whose results are published through the central bank geoportal; the pages use an older character encoding. Simulation uses: the days-per-week water supply variable is a direct measure of intermittent supply, and segment level roof and wall materials support earthquake and storm exposure models. Related records: the 2024 census dwelling indicators table and the ECLAC REDATAM hub.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:SV:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "web_page",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://onec.bcr.gob.sv/servers/redatam/htdocs/CPV2007S/index.html",
+  "id": "data-digestyc-el-salvador-cpv-2007-redatam-vivienda-agua-alumbrado-by-census-segment",
+  "languages": [
+    "es"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "El Salvador 2007 Population and Housing Census REDATAM database with walls, roof, floor, sanitation, grey water, water source and days of supply per week, lighting and household equipment, by department, municipality, canton and census segment",
+  "provider": "Dirección General de Estadística y Censos (DIGESTYC), now ONEC at the Banco Central de Reserva, with UNFPA and ECLAC-CELADE",
+  "related_ids": [
+    "data-bcr-onec-el-salvador-cnpv-2024-dwelling-services-by-district-arcgis-table",
+    "data-eclac-redatam-census-microdata-and-online-processing-hub"
+  ],
+  "schema_summary": "Entities CPV2007 > DEPTO > MUNIC > CANTON > SEGMENTO > VIVIENDA > HOGAR > persons. Dwelling V01 type, V02 outer walls, V03 roof, V05 floor. Household H05 sanitation type, H06 shared use, H07 grey water disposal, H08 water source, H09 days per week water arrives, H10 cooking fuel, H11 lighting, H12 refuse, H13 equipment including fixed and mobile telephone and computer.",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "energy.electricity",
+    "digital.telecom",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: menu and document links",
+      "url": "https://onec.bcr.gob.sv/servers/redatam/htdocs/CPV2007S/CPV2007_Index.htm"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: entity hierarchy and variables",
+      "url": "https://onec.bcr.gob.sv/cgibin/RpWebEngine.exe/Dictionary?&BASE=CPV2007SEGM&ITEM=DICALL"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://onec.bcr.gob.sv/servers/redatam/htdocs/CPV2007S/index.html"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://onec.bcr.gob.sv/cgibin/RpWebEngine.exe/Dictionary?&BASE=CPV2007SEGM&ITEM=DICALL"
+    }
+  ],
+  "spatial_resolution": "14 departments, 262 municipalities, cantons and census segments, with an urban and rural flag",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "census",
+    "El Salvador",
+    "REDATAM",
+    "census segment",
+    "intermittent water supply",
+    "lighting",
+    "Central America"
+  ],
+  "temporal_coverage": "census 2007",
+  "temporal_coverage_years": {
+    "end": 2007,
+    "start": 2007
+  },
+  "temporal_resolution": "single census",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "El Salvador 2007 Population and Housing Census REDATAM database with walls, roof, floor, sanitation, grey water, water source and days of supply per week, lighting and household equipment, by department, municipality, canton and census segment",
+  "type": "data"
+}

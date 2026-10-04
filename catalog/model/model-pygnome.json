@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/NOAA-ORR-ERD/PyGnome"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/NOAA-ORR-ERD/PyGnome/blob/main/README.rst"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pygnome coastal spill model",
+    "repo": "github.com/noaa-orr-erd/pygnome",
+    "url": "https://github.com/NOAA-ORR-ERD/PyGnome"
+  },
+  "description": "PyGNOME is NOAA's Python interface to the General NOAA Operational Modeling Environment for coastal oil spills and particle transport. It composes release definitions, current or wind movers, weathering processes and output writers. Inputs include spill location, timing, substance properties, environmental forcing and model duration; outputs include particle trajectories, maps and NetCDF, shapefile or KML representations. Geographic coverage and time steps follow the configured coastal domain. Public source is free under an explicit public-domain dedication. A limitation is that environmental forcing and oil properties constrain the calculation, and the repository states that this development code and its outputs are not officially endorsed NOAA products. Supported installation uses compiled dependencies through the documented package environment. PyGNOME can support spill-response and coastal-infrastructure simulations, complementary to Delft3D FM (model-delft3d-fm). The scripting guide includes a fully specified passive-tracer example. No circulation data, spill database or executable was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "noaa-orr-erd/pygnome linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NOAA-ORR-ERD/PyGnome",
+  "id": "model-pygnome",
+  "inputs": [
+    "Spill release and substance properties",
+    "Currents winds and weathering settings"
+  ],
+  "language": [
+    "python",
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-02",
+  "licence": "Public domain with explicit worldwide dedication and unrestricted reuse terms",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "PyGNOME coastal spill model",
+  "notes": "G7 G7-0763. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Particle trajectories and spill maps"
+  ],
+  "provider": "NOAA Office of Response and Restoration",
+  "related_ids": [
+    "model-delft3d-fm"
+  ],
+  "repository": "https://github.com/NOAA-ORR-ERD/PyGnome",
+  "sectors": [
+    "energy.oil_fuels",
+    "transport.maritime_ports",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for NOAA-ORR-ERD/PyGnome: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/noaa-orr-erd/pygnome"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/noaa-orr-erd/pygnome/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Explicit public-domain dedication.",
+      "url": "https://api.github.com/repos/noaa-orr-erd/pygnome/license"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Model inputs, movement and weathering components, output formats and example.",
+      "url": "https://api.github.com/repos/noaa-orr-erd/pygnome/contents/py_gnome/documentation/source/scripting/scripting_intro.rst"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for oil and fuels, ports and maritime transport and emergency services",
+  "type": "model"
+}

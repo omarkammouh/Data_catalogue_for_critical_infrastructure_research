@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Municipality key results (CSV)",
+      "url": "https://data.statistik.gv.at/data/OGDEXT_AEST_GEMTAB_1.csv"
+    },
+    {
+      "kind": "portal",
+      "label": "Open data catalogue of Statistik Austria",
+      "url": "https://data.statistik.gv.at/web/catalog.jsp"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "AT"
+  ],
+  "data_family": [
+    "reference_context",
+    "demand_operation",
+    "behavioural_social"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "austria register based census and labour market statistics key results for all municipalities since 2011 statistik austria ogd",
+    "url": "https://data.statistik.gv.at/web/meta.jsp?dataset=OGDEXT_AEST_GEMTAB_1"
+  },
+  "description": "This single open table from Statistik Austria gives key results of the register-based census (Registerzählung) and the annual register-based labour market statistics (Abgestimmte Erwerbsstatistik) for every Austrian municipality, for each reference date of 31 October since 2011. Columns include total population, shares of children and people over 65, foreign nationals, employment and unemployment rates, education level, the share of employed residents who commute out of the municipality, the number and average size of private households, families, enterprises, local units (workplaces) and the employees working at them. Statistik Austria produces it by linking administrative registers instead of a field census, so it is a complete count each year. Coverage is all municipalities of Austria in the territorial structure of each reference date. Format and access: one CSV file (about 30,000 rows) downloadable without registration from the open data portal. Licence: CC BY 4.0, free. Caveats: municipality boundaries change between years, so time series need the Gemeinde code crosswalk; education data were revised for 2015; origin-destination commuting matrices are not included and must be requested or taken from STATcube. Simulation uses: resident and workplace populations per municipality for exposure estimates, commuter shares for transport demand and agent-based population synthesis. Related records: the Austrian housing census building and dwelling table, the Swiss GWR and the Zensus 2022 grid.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:AT:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.statistik.gv.at/web/meta.jsp?dataset=OGDEXT_AEST_GEMTAB_1",
+  "id": "data-austria-register-census-municipality-key-results",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Austria register-based census and labour market statistics, key results for all municipalities since 2011 (Statistik Austria OGD)",
+  "provider": "Statistik Austria",
+  "related_ids": [
+    "data-austria-housing-census-buildings-dwellings-by-district",
+    "data-zensus-2022-grid-cells-buildings-dwellings"
+  ],
+  "schema_summary": "year, municipality code and name, population, shares under 15 and over 65, foreign nationals, employment and unemployment rates, education, out-commuter share, private households, household size, families, enterprises, local units, employees at local units",
+  "sectors": [
+    "built_environment.buildings",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "agent_based",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Metadata: indicators on demography, employment, education, households, families, enterprises and local units per municipality; keywords include Pendeln; CC BY 4.0",
+      "url": "https://data.statistik.gv.at/web/meta.jsp?dataset=OGDEXT_AEST_GEMTAB_1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Header read: JAHR, GCD, GEM_NAME, BEV_ABSOLUT, ..., AUSPENDLER, PHH, HH_SIZE, FAMILIEN, UNT, AST, BESCH_AST; about 30,700 lines",
+      "url": "https://data.statistik.gv.at/data/OGDEXT_AEST_GEMTAB_1.csv"
+    }
+  ],
+  "spatial_resolution": "municipality (Gemeinde, about 2,100 units)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "census",
+    "register-based census",
+    "commuting",
+    "households",
+    "workplaces",
+    "municipalities",
+    "Austria"
+  ],
+  "temporal_coverage": "annual reference date 31 October, 2011 to latest",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2011
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Austria register-based census and labour market statistics, key results for all municipalities since 2011 (Statistik Austria OGD)",
+  "type": "data",
+  "update_frequency": "annual"
+}

@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/PowerGrids/PowerGrids"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/PowerGrids/PowerGrids/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Bartolini, Casella and Guironnet (2019). Towards Pan-European Power Grid Modelling in Modelica: Design Principles and a Prototype for a Reference Power System Library. Proceedings of the 13th International Modelica Conference.",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "powergrids modelica library",
+    "repo": "github.com/powergrids/powergrids",
+    "url": "https://github.com/PowerGrids/PowerGrids"
+  },
+  "description": "PowerGrids is a Modelica library for electromechanical simulation of electricity generation and transmission systems. RTE developed it with Dynamica and collaborators to express component equations declaratively, using complex numbers and physical units. It includes electrical components, control blocks, examples and a UsersGuide tutorial. Initial equations support power-flow-based and steady-state initialisation, with homotopy and scaling used to help numerical solution. The models use a phasor approximation, so they are not detailed electromagnetic-transient models. Geographic extent, network size and time horizon are defined by the user's system; the README describes small and medium-sized networks, not a fixed geographic dataset. Public Modelica source can be downloaded from GitHub and is free under MPL-2.0. The library was developed and tested with OpenModelica, while compatibility with other Modelica tools is conditional on support for the required language and solver features. A caveat is that larger models can be assembled using scripts, and tool-specific numerical options may be necessary. The library supports power-system dynamic and control studies using the catalogue's OpenModelica environment (platform-openmodelica). No simulation or cross-tool compatibility test was performed in this review.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:power-systems fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/PowerGrids/PowerGrids",
+  "id": "model-powergrids-modelica",
+  "inputs": [
+    "Generation and transmission component models",
+    "Power-flow initial conditions",
+    "Control parameters"
+  ],
+  "language": [
+    "modelica"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-13",
+  "licence": "MPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "PowerGrids Modelica library",
+  "notes": "G7 G7-0030. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. Candidate zenodo-731481b4be concerns ComplexNetTSP power-grid topology data, not this Modelica library. ",
+  "outputs": [
+    "Electromechanical trajectories"
+  ],
+  "provider": "RTE, Dynamica and PowerGrids contributors",
+  "related_ids": [
+    "platform-openmodelica"
+  ],
+  "repository": "https://github.com/PowerGrids/PowerGrids",
+  "runs_on": [
+    "platform-openmodelica"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for PowerGrids/PowerGrids: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Apower-systems+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/PowerGrids/PowerGrids/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "PowerGrids Modelica library for electromechanical simulation of electricity generation and transmission systems",
+  "type": "model",
+  "validated_on": []
+}

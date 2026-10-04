@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "EWDS historical data",
+      "url": "https://ewds.climate.copernicus.eu/datasets/cems-glofas-historical"
+    },
+    {
+      "kind": "download",
+      "label": "EWDS forecast data",
+      "url": "https://ewds.climate.copernicus.eu/datasets/cems-glofas-forecast"
+    },
+    {
+      "kind": "api",
+      "label": "EWDS catalogue API record",
+      "url": "https://ewds.climate.copernicus.eu/api/catalogue/v1/collections/cems-glofas-historical"
+    },
+    {
+      "kind": "viewer",
+      "label": "GloFAS web viewer",
+      "url": "https://global-flood.emergency.copernicus.eu/"
+    }
+  ],
+  "access_note": "A free account on the Early Warning Data Store and acceptance of the CEMS-FLOODS licence are required.",
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "hazards",
+    "sensor_realtime_streams",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "raster",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.24381/cds.a4fdd6b9",
+    "name": "global flood awareness system glofas river discharge data",
+    "url": "https://global-flood.emergency.copernicus.eu"
+  },
+  "description": "GloFAS provides gridded global river discharge and related hydrological variables (soil wetness in the root zone, snow water equivalent and runoff) from the open-source LISFLOOD hydrological model, with ancillary upstream area and elevation files. The historical dataset is forced with ERA5 reanalysis at a 24-hour time step, as intermediate data from near-real-time ERA5T updated daily and consolidated data updated monthly; companion datasets give ensemble medium-range forecasts to 30 days from ECMWF forcing, reforecasts, and seasonal forecasts. It is part of the operational flood forecasting of the Copernicus Emergency Management Service, which the European Commission's Joint Research Centre manages, and exists to give early warning of floods worldwide. Coverage spans land between about 70 degrees south and 70 degrees north, from 1979 for the historical simulation and from November 2019 for the archived forecasts. Data are downloadable from the Early Warning Data Store through a web form and API after free registration under the CEMS-FLOODS datasets licence, at no cost, and flood alerts are shown on the GloFAS web viewer. Caveats: discharge is modelled, not observed, skill varies by basin, and small catchments are poorly resolved. It serves riverine flood hazard exposure and emergency response for multi-sector infrastructure; related records are ERA5, the Global Flood Database, GDACS and the Aqueduct flood hazard maps.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "global flood forecasting river discharge data",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://global-flood.emergency.copernicus.eu/",
+  "id": "data-glofas",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-01-26",
+  "licence": "CEMS-FLOODS datasets licence",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://global-flood.emergency.copernicus.eu/"
+    ]
+  },
+  "maturity": "active",
+  "name": "Global Flood Awareness System (GloFAS) river discharge data",
+  "notes": "The 0.05 degree grid and the GRIB and NetCDF formats are recalled, not read on 2026-09-26; the GloFAS web pages returned no readable text. Deep check A4 (2026-10-01) corrected: last_updated .",
+  "provider": "Copernicus Emergency Management Service (CEMS), managed by the European Commission Joint Research Centre, computed by ECMWF",
+  "related_ids": [],
+  "schema_summary": "river discharge, soil wetness index, snow water equivalent, runoff; upstream area and elevation",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "variables, LISFLOOD forced with ERA5, intermediate and consolidated, companion datasets, CEMS and JRC, 1979 to present, CEMS-FLOODS licence, DOI 10.24381/cds.a4fdd6b9",
+      "url": "https://ewds.climate.copernicus.eu/api/catalogue/v1/collections/cems-glofas-historical"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "ensemble forecast to 30 days, from 2019-11-05, DOI 10.24381/cds.ff1aef77",
+      "url": "https://ewds.climate.copernicus.eu/api/catalogue/v1/collections/cems-glofas-forecast"
+    }
+  ],
+  "spatial_resolution": "global grid (see EWDS documentation; about 0.05 degree in version 4)",
+  "spatial_resolution_class": "1km_to_10km",
+  "tags": [
+    "flood forecasting",
+    "river discharge",
+    "LISFLOOD",
+    "Copernicus Emergency Management Service"
+  ],
+  "temporal_coverage": "1979 to present (historical); forecasts from 2019-11-05",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1979
+  },
+  "temporal_resolution": "daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "Global Flood Awareness System (GloFAS) river discharge data",
+  "type": "data",
+  "update_frequency": "daily"
+}

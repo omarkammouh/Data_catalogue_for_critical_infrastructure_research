@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "USGS code repository",
+      "url": "https://code.usgs.gov/cawsc/modflow-api-ag-package"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub mirror",
+      "url": "https://github.com/jlarsen-usgs/mf6api_ag"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper in Groundwater",
+      "url": "https://doi.org/10.1111/gwat.13367"
+    },
+    {
+      "kind": "portal",
+      "label": "Original landing page",
+      "url": "https://doi.org/10.5066/P9K6UW9F"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5066/p9k6uw9f",
+    "name": "agricultural water use package for the modflow 6 api mf6api ag usgs",
+    "repo": "code.usgs.gov/cawsc/modflow-api-ag-package",
+    "url": "doi:10.5066/p9k6uw9f"
+  },
+  "description": "A Python package that simulates irrigated agriculture in MODFLOW 6 groundwater models through the MODFLOW application programming interface. The README says its ModflowApiAg class overrides the MODFLOW 6 water mover package and calculates irrigation demand from potential and actual evapotranspiration in the soil zone, with wells, streams (SFR), multi-aquifer wells and lakes as supported water sources and the unsaturated zone package (UZF) as the receiver. It needs Python 3.8 or later, flopy, modflowapi, numpy and pandas and runs on Windows, Linux and macOS, with a quickstart and example problems. The USGS software release is dated 2023, and the method is described in Larsen, Langevin, Hughes and Niswonger (2023) in Groundwater. Licence (read on the provider page on 2026-09-28): Unlicense. Access is free of charge. Coverage is any MODFLOW 6 model. Caveats: the repository shows no activity after September 2023. For simulation it links farm irrigation demand to groundwater and stream depletion, so drought scenarios can show how pumping for crops draws down wells and rivers that towns and power plants also use. A related catalogue record is the USGS Water Data APIs.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((crop OR agricultural OR agriculture OR farm OR livestock OR irrigation) AND (cloud OR \"web service\" OR API OR platform OR dashboard))",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "drought"
+  ],
+  "homepage": "https://github.com/jlarsen-usgs/mf6api_ag",
+  "id": "model-modflow-api-agricultural-water-use-package",
+  "inputs": [
+    "MODFLOW 6 model",
+    "crop and soil-zone evapotranspiration",
+    "water source packages"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-09-25",
+  "licence": "Unlicense",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Agricultural water use package for the MODFLOW 6 API (mf6api_ag, USGS)",
+  "outputs": [
+    "irrigation demand and applied water",
+    "groundwater and stream flows"
+  ],
+  "provider": "U.S. Geological Survey, California Water Science Center (Joshua D. Larsen)",
+  "sectors": [
+    "industry.agriculture",
+    "water.irrigation"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "purpose, packages, requirements and platforms read 2026-09-26",
+      "url": "https://code.usgs.gov/cawsc/modflow-api-ag-package/-/raw/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "creation and last activity dates read 2026-09-26",
+      "url": "https://code.usgs.gov/api/v4/projects/cawsc%2Fmodflow-api-ag-package"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "paper title, authors and date read 2026-09-26",
+      "url": "https://api.crossref.org/works/10.1111/gwat.13367"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): Unlicense (basis: licence file in the GitHub repository)",
+      "url": "https://github.com/jlarsen-usgs/mf6api_ag/blob/main/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://api.crossref.org/works/10.1111/gwat.13367"
+    }
+  ],
+  "tags": [
+    "MODFLOW",
+    "irrigation",
+    "groundwater",
+    "agricultural water use",
+    "USGS",
+    "flopy"
+  ],
+  "title_en": "Agricultural water use package for the MODFLOW 6 API (mf6api: ag, USGS)",
+  "type": "model"
+}

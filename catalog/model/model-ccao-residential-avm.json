@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository (one branch per assessment year, 2021 to 2025)",
+      "url": "https://github.com/ccao-data/model-res-avm"
+    },
+    {
+      "kind": "repo",
+      "label": "Earlier CAMA code on GitLab",
+      "url": "https://gitlab.com/ccao-data-science---modeling/ccao_sf_cama_dev"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cook county assessor residential automated valuation model model res avm",
+    "repo": "github.com/ccao-data/model-res-avm",
+    "url": "https://github.com/ccao-data/model-res-avm"
+  },
+  "description": "This is the open code the Cook County Assessor's Office uses to estimate the market value of every single-family and small multi-family home in the county for property tax assessment. Written in R with the Tidymodels framework, it has used a county-wide LightGBM gradient boosting model since 2021, trained on arm's-length sales and parcel characteristics with location, proximity and time features. The README documents a seven-stage pipeline (ingest, train, assess, evaluate, interpret, finalise, export), the features used, how sales are filtered, and how condominiums are handled by a separate repository. Coverage: residential parcels in Cook County, Illinois, with a branch for each assessment year from 2021 to 2025. Access: public GitHub repository with reproducible pipeline and data retrieval steps; earlier CAMA code sits on GitLab. Licence: AGPL-3.0; free. Caveats: the model predicts assessed market value, not rebuild cost, and runs need the office's data from the open data portal or its own warehouse. Simulation uses are property value surfaces for loss and investment appraisal studies and a worked example of transparent mass appraisal. Related records: the Cook County Assessor open data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: Cook County Assessor's Office homepage",
+      "route": "R10",
+      "source": "organisations.csv:US:built_environment:tax_assessor"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://github.com/ccao-data/model-res-avm",
+  "id": "model-ccao-residential-avm",
+  "inputs": [
+    "Parcel sales",
+    "Single and multi-family building characteristics",
+    "Location and proximity features",
+    "Assessment year parameters"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-11",
+  "licence": "AGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical",
+    "economic"
+  ],
+  "name": "Cook County Assessor residential automated valuation model (model-res-avm)",
+  "outputs": [
+    "Predicted market values for single and multi-family homes",
+    "Sales ratio and assessment performance statistics",
+    "Model diagnostics and feature importance"
+  ],
+  "provider": "Cook County Assessor's Office Data Department",
+  "regions": [
+    "Cook County, Illinois"
+  ],
+  "related_ids": [
+    "data-cook-county-assessor-open-data-parcels-sales-characteristics"
+  ],
+  "repository": "https://github.com/ccao-data/model-res-avm",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, LightGBM since 2021, Tidymodels, seven pipeline stages, features, assessment-year branches",
+      "url": "https://raw.githubusercontent.com/ccao-data/model-res-avm/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU Affero General Public License v3",
+      "url": "https://raw.githubusercontent.com/ccao-data/model-res-avm/master/LICENSE"
+    }
+  ],
+  "tags": [
+    "automated valuation model",
+    "mass appraisal",
+    "LightGBM",
+    "property tax",
+    "Cook County",
+    "R"
+  ],
+  "title_en": "Cook County Assessor residential automated valuation model (model-res-avm)",
+  "type": "model"
+}

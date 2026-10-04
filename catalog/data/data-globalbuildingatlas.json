@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Part I: GBA.ODbLPolygon (Hugging Face)",
+      "url": "https://huggingface.co/datasets/zhu-xlab/GBA.ODbLPolygon"
+    },
+    {
+      "kind": "download",
+      "label": "Part II: GBA.LoD1 (Hugging Face)",
+      "url": "https://huggingface.co/datasets/zhu-xlab/GBA.LoD1"
+    },
+    {
+      "kind": "download",
+      "label": "GBA.Height (mediaTUM)",
+      "url": "https://mediatum.ub.tum.de/1782307"
+    },
+    {
+      "kind": "repo",
+      "label": "Repository with licence notice, FAQ and usage instructions",
+      "url": "https://github.com/zhu-xlab/GlobalBuildingAtlas"
+    },
+    {
+      "kind": "viewer",
+      "label": "Web viewer (visualisation only)",
+      "url": "https://tubvsig-so2sat-vm1.srv.mwn.de"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "crs": "EPSG:3857",
+  "data_family": [
+    "system_description",
+    "imagery_remote_sensing"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5194/essd-17-6647-2025",
+    "name": "globalbuildingatlas",
+    "url": "https://huggingface.co/datasets/zhu-xlab/GBA.LoD1"
+  },
+  "description": "GlobalBuildingAtlas is an open global dataset of building polygons, building heights and level-of-detail 1 (LoD1) 3D building models, derived by machine learning from satellite imagery and combined with existing footprint sources such as OpenStreetMap and Microsoft Global ML Building Footprints. It is produced by the Technical University of Munich group of Xiao Xiang Zhu and described in Earth System Science Data (volume 17, 2025). Coverage aims at every country, territory and city, although some areas are absent or lack heights because of data-quality limits. Access: three parts, ODbL-derived polygons and LoD1 files on Hugging Face and height maps on mediaTUM, with scripts in the repository to assemble LoD1 GeoJSON; polygons are in EPSG:3857; a web viewer is for visualisation only and must not be scraped. Licence: the dataset is split because of licence conflicts, with ODbL polygons and CC BY-NC 4.0 polygons, LoD1 models and height maps; combining them may have licence implications, and downloading implies acceptance of the terms of use. Free for non-commercial use of the NC parts. Caveats: heights and footprints are machine-derived and contain errors; the non-commercial licence limits some uses. Simulation uses are global building exposure with height for hazard and resilience studies and LoD1 city models for digital twins. Related records: Microsoft Global ML Building Footprints and Overture Maps buildings.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "json",
+    "raster",
+    "image"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://huggingface.co/datasets/zhu-xlab/GBA.LoD1",
+  "id": "data-globalbuildingatlas",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-06",
+  "licence": "ODbL-1.0 (GBA.ODbLPolygon); CC-BY-NC-4.0 (GBA.Polygon, GBA.LoD1, GBA.Height)",
+  "licence_type": [
+    "non_commercial",
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GlobalBuildingAtlas",
+  "notes": "Repository HEAD commit 2026-07-06. Citation: Zhu X.X., Chen S., Zhang F., Shi Y., Wang Y. (2025), ESSD 17, 6647. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date). Deep check A4 (2026-10-01) corrected: dedupe_keys, homepage .",
+  "provider": "Technical University of Munich, Chair of Data Science in Earth Observation (Zhu group)",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "digital_twin",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Licence notice (ODbL and CC BY-NC 4.0 parts), coverage FAQ, CRS EPSG:3857, access via Hugging Face and mediaTUM, viewer terms, citation ESSD 17 6647 (2025)",
+      "url": "https://raw.githubusercontent.com/zhu-xlab/GlobalBuildingAtlas/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: HEAD commit 2026-07-06",
+      "url": "https://github.com/zhu-xlab/GlobalBuildingAtlas"
+    }
+  ],
+  "spatial_resolution": "Individual building polygons with LoD1 height; gridded height maps",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "LoD1",
+    "building height",
+    "3D",
+    "global",
+    "machine learning"
+  ],
+  "temporal_resolution": "none (snapshot)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "GlobalBuildingAtlas dataset of building polygons and 3D models",
+  "type": "data"
+}

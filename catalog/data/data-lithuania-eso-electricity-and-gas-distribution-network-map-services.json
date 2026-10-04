@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "ESO electricity network view service",
+      "url": "https://www.geoportal.lt/mapproxy/rest/services/ESO_DB_Public/MapServer"
+    },
+    {
+      "kind": "viewer",
+      "label": "ESO gas network view service",
+      "url": "https://www.geoportal.lt/mapproxy/rest/services/ESO_DUJOS_Public/MapServer"
+    },
+    {
+      "kind": "docs",
+      "label": "Metadata catalogue record (geoportal.lt)",
+      "url": "https://www.geoportal.lt/metadata-catalog/rest/document?id=%7B7BD9F3C4-A186-42A9-99BB-E095428413FC%7D"
+    }
+  ],
+  "access_restrictions": "restricted",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "LT"
+  ],
+  "data_family": [
+    "system_description",
+    "planned_future_infrastructure"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "lithuania eso electricity and gas distribution network map services on geoportal lt lines of all voltages substations gas pipelines and fittings",
+    "url": "https://geoportal.lt/mapproxy/rest/services/ESO_DB_Public/MapServer"
+  },
+  "description": "The Lithuanian spatial information portal geoportal.lt publishes two ArcGIS view services from Energijos skirstymo operatorius (ESO), the national electricity and gas distribution system operator. Contents: the electricity service (ESO_DB_Public) shows overhead lines and cables of all voltages (0.4 kV, 6 to 10 kV and 35 kV), 110 and 35 kV substations, transformer substations and distribution cabinets, planned network elements (cables, substations and cabinets under design), radio relay towers and communication cables; the gas service (ESO_DUJOS_Public) has 39 layers covering distribution pipelines and disused pipelines, pressure regulating installations, shut-off valves, condensate collectors, manholes, protective casings and the cathodic corrosion protection system (anodes, cathodic protection units, test posts). Producer: ESO, with the portal run by the Construction Sector Development Agency. Coverage: the ESO service territory, which is nearly all of Lithuania. Format and access: ArcGIS MapServer view services proxied by geoportal.lt; the metadata states the electricity data are refreshed weekly, overnight from Wednesday to Thursday; the map layers can be viewed and displayed in GIS software, but feature queries and downloads are switched off at the proxy. Licence: displayed under ESO and portal copyright; no open licence is stated. Caveats: view only, so vector geometry and attributes cannot be extracted without a data request to ESO; the transmission grid (Litgrid) and gas transmission (Amber Grid) are not included. Simulation uses: checking distribution network layouts for resilience and hazard studies, siting and connection analysis, and gas network corrosion protection context. Related records: the RRT mobile coverage and fixed network development data (data-rrt-lithuania-mobile-coverage-and-fixed-network-development) cover Lithuanian telecom networks.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source lt-sdi-geoportal-lt: provider pages read (round 2 register piece)",
+      "route": "R04",
+      "source": "lt-sdi-geoportal-lt"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "image"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.geoportal.lt/mapproxy/rest/services/ESO_DB_Public/MapServer",
+  "id": "data-lithuania-eso-electricity-and-gas-distribution-network-map-services",
+  "languages": [
+    "lt"
+  ],
+  "licence": "proprietary (ESO copyright), view only",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Lithuania ESO electricity and gas distribution network map services on geoportal.lt (lines of all voltages, substations, gas pipelines and fittings)",
+  "provider": "AB Energijos skirstymo operatorius (ESO), published through the Lithuanian spatial information portal (geoportal.lt, VšĮ Statybos sektoriaus vystymo agentūra)",
+  "related_ids": [
+    "data-rrt-lithuania-mobile-coverage-and-fixed-network-development"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "energy.gas_hydrogen"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "metadata: lines of all voltages and transformer stations, weekly update, service URL",
+      "url": "https://www.geoportal.lt/metadata-catalog/rest/document?id=%7B7BD9F3C4-A186-42A9-99BB-E095428413FC%7D"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "39 gas layers; capabilities Map,Query but query returns 'not supported'",
+      "url": "https://www.geoportal.lt/mapproxy/rest/services/ESO_DUJOS_Public/MapServer?f=json"
+    }
+  ],
+  "tags": [
+    "Lithuania",
+    "ESO",
+    "distribution network",
+    "gas pipelines",
+    "substations",
+    "geoportal.lt"
+  ],
+  "title_en": "Lithuania ESO electricity and gas distribution network map services on geoportal.lt (lines of all voltages, substations, gas pipelines and fittings)",
+  "type": "data"
+}

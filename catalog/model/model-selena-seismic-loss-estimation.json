@@ -1,0 +1,118 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "SELENA-RISe Open Risk Package on SourceForge",
+      "url": "https://sourceforge.net/p/selena/"
+    },
+    {
+      "kind": "docs",
+      "label": "NGI / ICG project page",
+      "url": "https://www.ngi.no/en/projects/icg---international-center-for-geohazards/sp-3---earthquake-hazard-risk-and-loss/seismic-risk-and-loss-analysis-software-selena/"
+    }
+  ],
+  "access_note": "SourceForge web pages returned 403 here; project metadata was read through the SourceForge REST API.",
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-09-28",
+  "dedupe_keys": {
+    "name": "selena seismic loss estimation using a logic tree approach with rise",
+    "url": "https://sourceforge.net/p/selena"
+  },
+  "description": "SELENA computes earthquake damage and loss scenarios for urban areas with the capacity spectrum method, following the principles of FEMA's HAZUS, and adds a logic tree that weights input parameters so that confidence intervals can be computed. NORSAR developed it as a stand-alone tool usable anywhere, because HAZUS was then hard to use outside the United States, and has offered it as open source since January 2007, spreading it through research collaborations with India, Central America and EU projects, according to an NGI project page from 2023. It is packaged with RISe, the Risk Illustrator for SELENA, as the SELENA-RISe Open Risk Package on SourceForge, registered in 2010 with developers including Sergio Molina and Dominik Lang; the latest release file there dates from 1 October 2010. Coverage: generic. Access: free download. Licence: GNU GPL version 2. Caveats: the package is marked beta and has had no recent releases. Simulation uses: scenario damage and loss estimates for building stocks with explicit uncertainty. Related records: the GEM global vulnerability model and SYNER-G fragility functions.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell model:built_environment.buildings:fragility, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "SELENA SEismic Loss EstimatioN using a logic tree Approach NORSAR software download",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake"
+  ],
+  "homepage": "https://sourceforge.net/p/selena/",
+  "id": "model-selena-seismic-loss-estimation",
+  "inputs": [
+    "Building inventory by type and design level",
+    "Capacity and fragility curves",
+    "Ground motion and site parameters with logic tree weights"
+  ],
+  "language": [
+    "matlab",
+    "c_cpp",
+    "dotnet"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2010-10-01",
+  "licence": "GPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-09-28",
+    "unverified": [
+      "https://sourceforge.net/p/selena/"
+    ]
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "fragility",
+    "statistical"
+  ],
+  "name": "SELENA: Seismic Loss Estimation using a logic tree approach (with RISe)",
+  "outputs": [
+    "Damage probabilities by structure type",
+    "Economic losses and casualties with confidence intervals"
+  ],
+  "provider": "NORSAR and the University of Alicante, through the International Centre for Geohazards (ICG)",
+  "related_ids": [
+    "data-gem-global-vulnerability-model",
+    "data-syner-g-fragility-functions-and-manager"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Project description, developers, licence GPLv2, status beta, languages",
+      "url": "https://sourceforge.net/rest/p/selena"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Latest release file dated 1 Oct 2010",
+      "url": "https://sourceforge.net/projects/selena/best_release.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Motivation, open source since 2007, collaborations",
+      "url": "https://www.ngi.no/en/projects/icg---international-center-for-geohazards/sp-3---earthquake-hazard-risk-and-loss/seismic-risk-and-loss-analysis-software-selena/"
+    }
+  ],
+  "tags": [
+    "SELENA",
+    "seismic loss",
+    "capacity spectrum method",
+    "logic tree",
+    "NORSAR",
+    "open source"
+  ],
+  "title_en": "SELENA: Seismic Loss Estimation using a logic tree approach (with RISe)",
+  "type": "model"
+}

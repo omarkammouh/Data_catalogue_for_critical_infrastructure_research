@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo record",
+      "url": "https://zenodo.org/records/17435058"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "data_family": [
+    "cyber_control",
+    "security_threat",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.17435058",
+    "name": "industrial control system data from battery manufacturing electrode slurry mixing under normal and attack conditions",
+    "url": "doi:10.5281/zenodo.17435058"
+  },
+  "description": "This dataset holds control system data from a battery manufacturing process, the mixing of electrode slurries, recorded under normal operation and under attack. The Zenodo record gives no description, so its content was read from the files: one zip of about 10.7 MB (about 44 MB unpacked, 40 files) holding PLC variable histories for a \"Batt-TDS Mixing Machine\" in one folder per experiment (named for example expCI1, expCI2 and expDoS1, suggesting command injection and denial-of-service runs), with tables of machines, processes, sessions, ports and PLC variables, a PCAP folder and ICS syslog records from a virtual router named vIOS-Core-I (October 2025). It was published on 24 October 2025 (version 1.0) by Billal Mokhtari of the Conservatoire National des Arts et Métiers, free under CC BY 4.0. Coverage is one mixing process. Caveats: the experiment names are read from folder names only, the testbed may be emulated, and no labels or documentation are given on the page read. For simulation it gives process variable traces under attack for anomaly detection and for models of how control-system attacks disrupt battery production. Related catalogue records include the ICS-ADD smart industry testbed data and the ICS-NAD real-world attack dataset.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((industrial OR industry OR factory OR factories OR \"chemical plant\" OR \"chemical plants\" OR refinery OR refineries OR manufacturing OR petrochemical) AND (conflict OR theft OR terrorism OR security OR sabotage OR fraud OR attack))",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "csv",
+    "domain_model_file",
+    "archive"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://doi.org/10.5281/zenodo.17435058",
+  "id": "data-battery-manufacturing-ics-normal-attack",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-10-24",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Industrial control system data from battery manufacturing (electrode slurry mixing) under normal and attack conditions",
+  "provider": "Billal Mokhtari (Conservatoire National des Arts et Métiers), via Zenodo",
+  "sectors": [
+    "industry.manufacturing_chemical"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "digital_twin"
+  ],
+  "size": "about 10.7 MB (zip), about 44 MB unpacked",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "creator, affiliation, file, size, version and licence read 2026-09-26",
+      "url": "https://zenodo.org/api/records/17435058"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "file listing and table headers read 2026-09-26",
+      "url": "https://zenodo.org/api/records/17435058/files/data.zip/content"
+    }
+  ],
+  "spatial_resolution": "one machine",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "battery manufacturing",
+    "PLC",
+    "command injection",
+    "denial of service",
+    "ICS"
+  ],
+  "temporal_coverage": "experiments run in October 2025",
+  "temporal_resolution": "PLC history record",
+  "temporal_resolution_class": "other",
+  "title_en": "Industrial control system data from battery manufacturing (electrode slurry mixing) under normal and attack conditions",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

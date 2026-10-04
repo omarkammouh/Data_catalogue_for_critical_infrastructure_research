@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/FraunhoferIVI/INFRA-3DRC-Dataset"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1109/ACCESS.2024.3373310"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "calibration_validation",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "imagery",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.24406/fordatis/297",
+    "name": "infra 3drc roadside radar camera and lidar scenes",
+    "repo": "github.com/fraunhoferivi/infra-3drc-dataset",
+    "url": "https://fordatis.fraunhofer.de/handle/fordatis/355"
+  },
+  "description": "INFRA-3DRC publishes synchronized observations from a movable roadside sensing installation for infrastructure-based road perception. Fraunhofer IVI and the named study authors provide 25 scenes with 2,768 frames for each sensor type. Camera images have two-dimensional bounding boxes, radar points have traffic-user labels, and accompanying LiDAR frames are unlabelled. Six object categories cover people and selected vehicle types. Scenes include traffic-light junctions and open parking areas under daylight, twilight and night conditions. Geographic coverage and exact acquisition dates are not established in the inspected documentation. Fordatis provides scene archives or a combined archive containing PNG, PCD and JSON files. Access is free under CC BY-NC 4.0. A limitation is that the download instructions require calibration corrections for every scene and additional replacement metadata for scenes 18 and 20. Ignoring those corrections can invalidate geometric alignment. Simulation uses include calibrating roadside perception and comparing synthetic sensor observations with recorded scenes. No catalogue simulator was established as a direct dependency. The repository’s Python SDK was not installed, and neither archive contents nor annotation quality were tested.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"infrastructure\" \"dataset\"",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "image",
+    "other",
+    "json",
+    "archive"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://fordatis.fraunhofer.de/handle/fordatis/355",
+  "id": "data-infra-3drc-roadside-sensor-scenes",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-05-24",
+  "licence": "CC-BY-NC-4.0",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "INFRA-3DRC roadside radar, camera and LiDAR scenes",
+  "notes": "G8; G8-0186. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations. ",
+  "provider": "Fraunhofer IVI; Shiva Agrawal, Savankumar Bhanderi and Gordon Elger",
+  "related_ids": [],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/FraunhoferIVI/INFRA-3DRC-Dataset/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/FraunhoferIVI/INFRA-3DRC-Dataset"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Canonical resource DOI and scene archive manifest.",
+      "url": "https://fordatis.fraunhofer.de/handle/fordatis/355"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Scene descriptions and required calibration/metadata corrections.",
+      "url": "https://github.com/FraunhoferIVI/INFRA-3DRC-Dataset/blob/main/docs/DOWNLOAD_DATASET.md"
+    }
+  ],
+  "spatial_resolution": "Roadside junction and parking scenes; exact site coverage not established.",
+  "spatial_resolution_class": "not_stated",
+  "tags": [],
+  "temporal_coverage": "Fordatis release 2023; exact acquisition dates not established.",
+  "temporal_resolution": "2,768 synchronized frames per sensor; rate not established.",
+  "temporal_resolution_class": "not_stated",
+  "title_en": "INFRA-3DRC roadside radar, camera and LiDAR scenes",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

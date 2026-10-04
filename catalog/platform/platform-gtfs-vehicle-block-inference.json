@@ -1,0 +1,85 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/laxopy/gtfs-block-inference"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gtfs vehicle block inference from historical trips",
+    "repo": "github.com/laxopy/gtfs-block-inference",
+    "url": "https://github.com/laxopy/gtfs-block-inference"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "GTFS Block Inference is a Python preparation pipeline for transit feeds that lack vehicle block assignments. Its author documents combining trips.txt and stop_times.txt with a historical CSV containing trip, vehicle, service and date identifiers. The code selects a reference day for each service, checks for overlapping trip chains and writes trips_with_blocks.txt with inferred block_id values. No agency, geography, observed time span or example history is included; users supply their own data, so those details depend on the feed. The README states MIT and the code is publicly available without cost, though GitHub licence metadata is empty and no separate licence file was found. A transit modeller could use the inferred blocks to represent vehicle circulation, layovers and fleet requirements in a schedule simulation. This review did not execute the pipeline or verify inference accuracy. The example run command appears to duplicate the word python. Related resources are the supplied GTFS feed and historical vehicle observations. Spatial coverage and temporal coverage therefore come from the supplied feed and vehicle-history file.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "gtfs dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/laxopy/gtfs-block-inference",
+  "id": "platform-gtfs-vehicle-block-inference",
+  "interfaces": [
+    "command_line",
+    "code_library"
+  ],
+  "interoperability": [
+    "GTFS trips.txt",
+    "GTFS stop_times.txt",
+    "historical trip CSV"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-03-27",
+  "licence": "MIT stated in README; GitHub licence metadata is empty and no LICENSE file appears in the tree.",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GTFS vehicle block inference from historical trips",
+  "notes": "G8; G8-0885. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: GTFS Block Inference repository README, accessed 2026-09-28. No describing paper identified..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "GTFS Block Inference project",
+  "related_ids": [],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/laxopy/gtfs-block-inference/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/laxopy/gtfs-block-inference"
+    }
+  ],
+  "tags": [],
+  "title_en": "GTFS vehicle block inference from historical trips",
+  "type": "platform"
+}

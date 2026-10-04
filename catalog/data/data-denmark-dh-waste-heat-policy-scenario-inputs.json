@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/juanjerezm/WHR-policy-design-bilevel"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1016/j.apenergy.2025.126517"
+    }
+  ],
+  "access_note": "Input CSVs are public; reproducing GAMS model outputs requires separate GAMS software access.",
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "DK"
+  ],
+  "data_family": [
+    "economic_financial",
+    "scenarios_projections"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "denmark district heating waste heat policy scenario inputs",
+    "repo": "github.com/juanjerezm/whr-policy-design-bilevel",
+    "url": "https://github.com/juanjerezm/WHR-policy-design-bilevel"
+  },
+  "description": "Jerez Monsalves and coauthors publish input tables for a Danish district-heating waste-heat policy study. The GitHub repository contains GAMS-ready generator, policy and other CSV files, configurable time-series folders, model-run outputs and scripts to extract result summaries. The describing Applied Energy paper evaluates operating or capital subsidies, carbon taxes and combinations under decarbonisation and consumer-cost limits. The repository README explains its directory structure and scenario flags, but exact CSV units and time step were not checked because payloads were not downloaded. It claims Apache-2.0 while its referenced LICENSE file is absent from the inspected tree; dataset reuse terms therefore need confirmation. Reading the tables is free, but rerunning the optimisation requires GAMS access. Geographic coverage is the study’s Denmark case, not a generic map of all Danish heat networks. A modeller could use the input structure to test alternative waste-heat availability or policy-cost scenarios after checking units and solver assumptions. Related catalogue resource data-district-heating-long-term-unit-commitment-instances provides a separate heat-system optimisation benchmark, not this policy input set.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "district heating data",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "domain_model_file"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/juanjerezm/WHR-policy-design-bilevel",
+  "id": "data-denmark-dh-waste-heat-policy-scenario-inputs",
+  "languages": [
+    "en"
+  ],
+  "licence": "Apache-2.0 claimed in repository README, but the linked LICENSE file is absent from the inspected tree; dataset rights are uncertain.",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "Denmark district-heating waste-heat policy scenario inputs",
+  "notes": "G8; G8-0797. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations. ",
+  "provider": "Jerez Monsalves and coauthors",
+  "related_ids": [],
+  "schema_summary": "GAMS-ready generator, policy and other CSV parameters; configurable time-series folders and exported scenario summaries.",
+  "sectors": [
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/juanjerezm/WHR-policy-design-bilevel/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/juanjerezm/WHR-policy-design-bilevel"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Primary article abstract confirms Denmark case and policy scenarios.",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0306261925012474"
+    }
+  ],
+  "spatial_resolution": "Denmark case study; model-specific district-heating system representation.",
+  "spatial_resolution_class": "local_units",
+  "tags": [],
+  "temporal_coverage": "Policy scenarios and model time series for the 2025 study; exact input-year dates not checked in data files.",
+  "temporal_resolution": "Generator and other scenario input tables, with configurable timeseries; time-step not verified.",
+  "temporal_resolution_class": "event",
+  "title_en": "Denmark district-heating waste-heat policy scenario inputs",
+  "type": "data",
+  "update_frequency": "irregular"
+}

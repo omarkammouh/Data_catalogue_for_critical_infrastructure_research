@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/TeodorCioata/wdn-anomaly-pipeline"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/TeodorCioata/wdn-anomaly-pipeline/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "wdn anomaly pipeline",
+    "repo": "github.com/teodorcioata/wdn-anomaly-pipeline",
+    "url": "https://github.com/TeodorCioata/wdn-anomaly-pipeline"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "WDN Anomaly Pipeline is a Python tool for generating labelled water-distribution-network time series with EPANET and WNTR. Its README documents YAML configuration, a command-line runner, packaged network cases, tests and a batch driver. Users choose a network, demand patterns, leak events and sensor faults such as drift, bias or dropout; outputs include per-timestep labels and simulated measurements in Parquet, CSV or DuckDB. Coverage is synthetic and follows the selected network topology, including standard Hanoi and Net3 cases. GitHub metadata states MIT licensing for the pipeline. A limitation is that generated faults follow the configured simulator and sensor assumptions, and uncommitted external network files must be supplied by a user. Synthetic anomaly performance therefore cannot be read as measured utility performance. The tool can prepare leak-detection benchmarks and stress-test digital-twin pipelines for drinking-water systems. No generated dataset or network archive was downloaded. The related model-wntr and model-epanet catalogue records describe the underlying water simulators; this pipeline adds fault injection and labelled output.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "water network dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "water distribution dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/TeodorCioata/wdn-anomaly-pipeline",
+  "id": "platform-wdn-anomaly-pipeline",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-17",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "WDN Anomaly Pipeline",
+  "notes": "G7 G7-1972. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool",
+    "modelling_suite"
+  ],
+  "provider": "WDN Anomaly Pipeline contributors",
+  "related_ids": [
+    "model-wntr",
+    "model-epanet"
+  ],
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for TeodorCioata/wdn-anomaly-pipeline: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=water+network+dataset&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/TeodorCioata/wdn-anomaly-pipeline/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/TeodorCioata/wdn-anomaly-pipeline/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/TeodorCioata/wdn-anomaly-pipeline"
+    }
+  ],
+  "tags": [],
+  "title_en": "Wdn anomaly pipeline for water distribution networks",
+  "type": "platform"
+}

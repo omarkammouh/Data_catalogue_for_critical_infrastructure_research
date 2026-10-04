@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "ODHF version 1.1 (zipped CSV)",
+      "url": "https://www150.statcan.gc.ca/n1/en/pub/13-26-0001/2020001/ODHF_v1.1.zip"
+    },
+    {
+      "kind": "docs",
+      "label": "Metadata document (concepts, methodology, data dictionary)",
+      "url": "https://www.statcan.gc.ca/en/lode/databases/odhf/metadata"
+    },
+    {
+      "kind": "viewer",
+      "label": "Linkable Open Data Environment viewer",
+      "url": "https://www150.statcan.gc.ca/n1/pub/71-607-x/71-607-x2020014-eng.htm"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CA"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "open database of healthcare facilities odhf canada names types and locations of about 7 000 hospitals clinics care homes and other facilities",
+    "url": "https://statcan.gc.ca/en/lode/databases/odhf"
+  },
+  "description": "The ODHF is a single national list of Canada's healthcare facilities, harmonised from the open lists published by provinces, territories, regional health authorities, municipalities and professional bodies. It was compiled by the Data Exploration and Integration Lab of Statistics Canada as part of its Linkable Open Data Environment. Version 1.1 (August 2020) covers 7,033 facilities, each with its name, the type given by its source, a harmonised ODHF facility type (such as hospitals, ambulatory care, and nursing and residential care), address, geocoded location and census subdivision; a metadata document gives the data dictionary and lists every source with its last update date. The database is free and available to download as zipped CSV under the Open Government Licence - Canada. Caveats: the database has not been updated since 2020, reference dates differ by source, coverage of outpatient clinics depends on what each jurisdiction publishes, and bed counts are not included. Simulation uses: mapping hospitals and care homes against flood, wildfire and ice storm hazards, locating residents who may need evacuation support, and modelling travel time to care across Canada. Related records: Healthsites.io (data-healthsites-io) gives an open global map of facilities, and the US CMS provider data (data-cms-provider-data-hospitals) is the neighbouring national register.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hand-off to the services piece (integrator list handoffs/services.csv): Canada Open Database of Healthcare Facilities",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://www.statcan.gc.ca/en/lode/databases/odhf",
+  "id": "data-statcan-odhf-healthcare-facilities",
+  "languages": [
+    "en"
+  ],
+  "licence": "Open Government Licence - Canada",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Open Database of Healthcare Facilities (ODHF, Canada): names, types and locations of about 7,000 hospitals, clinics, care homes and other facilities",
+  "provider": "Statistics Canada, Data Exploration and Integration Lab (Linkable Open Data Environment)",
+  "related_ids": [
+    "data-healthsites-io",
+    "data-cms-provider-data-hospitals"
+  ],
+  "schema_summary": "index (serial id), facility_name, source_facility_type (as assigned by the source), ODHF facility type (harmonised), address fields, provider, geocoded coordinates and census subdivision (municipality), as described in the data dictionary",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "ODHF, catalogue 13260001, issue 2020001: open data with names, types and locations of healthcare facilities across Canada under the Open Government Licence - Canada; compiled from regional health authorities, provincial, territorial and municipal governments and public and professional health bodies; part of LODE; download ODHF_v1.1.zip",
+      "url": "https://www.statcan.gc.ca/en/lode/databases/odhf"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Metadata v1.1, 7 August 2020: version 1.1 contains 7,033 facilities; first version April 2020; reference dates vary by provider; coverage not quantitatively assessed but many sources list all institutions of a type within a jurisdiction; data dictionary (index, facility_name, source_facility_type, ODHF facility type and further fields); appendices list the open and other sources",
+      "url": "https://www.statcan.gc.ca/en/lode/databases/odhf/metadata"
+    }
+  ],
+  "spatial_resolution": "Individual facility (geocoded)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "health facilities",
+    "hospitals",
+    "long-term care",
+    "Canada",
+    "open data"
+  ],
+  "temporal_coverage": "Source data as last updated by each provider before August 2020",
+  "temporal_resolution": "Snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Open Database of Healthcare Facilities (ODHF, Canada): names, types and locations of about 7,000 hospitals, clinics, care homes and other facilities",
+  "type": "data",
+  "update_frequency": "irregular"
+}

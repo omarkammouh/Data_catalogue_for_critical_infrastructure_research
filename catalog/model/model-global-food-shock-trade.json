@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Model code (Zenodo)",
+      "url": "https://zenodo.org/records/12598597"
+    },
+    {
+      "kind": "docs",
+      "label": "AGRODEP spatial equilibrium model used for the demo",
+      "url": "https://www.agrodep.org/models/agrodep-spatial-equilibrium-model"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.12598597",
+    "name": "global food shock and trade model spatial price equilibrium polycrisis grain study",
+    "url": "https://zenodo.org/records/12598597"
+  },
+  "description": "This model simulates global grain trade as a spatial price equilibrium and uses it to study how several shocks together change grain availability and prices across countries. The code calibrates trade cost constants for each trade flow so that the model reproduces the present-day trade network of each crop, then simulates 54 years of baseline yield variability alone and combined with the Ukraine war supply shock, an energy price shock, trade bans, and all shocks at once. The provider is Jasper Verschuur and co-authors from the University of Oxford and IIASA, who released it on Zenodo in June 2024 to support a study of the impacts of polycrisis on global grain availability and prices. Coverage is global at country level for the modelled grains. The code is published under CC-BY-4.0, written in Python with Pyomo and solved with HSL MA27 or Ipopt; calibration takes one to two hours per crop and shocks about fifteen minutes per modelled year, and a small demo based on the IFPRI AGRODEP spatial equilibrium model is included. Caveats: the accompanying paper was under review when the code was deposited, the solver needs a separate HSL licence or the slower Ipopt, and there is no maintained repository. Simulation uses: stress tests of food import dependence, and price transmission when export bans cascade. Related records: PyTradeShifts (model-pytradeshifts) is a lighter network approach, and WFP global food prices (data-wfp-global-food-prices) gives observed market prices.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "global food shock trade model code Zenodo",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://zenodo.org/records/12598597",
+  "id": "model-global-food-shock-trade",
+  "inputs": [
+    "Present-day bilateral trade network per crop",
+    "Yield variability series (54 years)",
+    "Shock scenarios: Ukraine war supply shock, energy price shock, trade bans"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-06-30",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.agrodep.org/models/agrodep-spatial-equilibrium-model"
+    ]
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "economic",
+    "optimisation"
+  ],
+  "name": "Global food shock and trade model (spatial price equilibrium, polycrisis grain study)",
+  "outputs": [
+    "Calibrated trade cost constants per flow",
+    "Grain availability and prices by country under each shock and combined shocks"
+  ],
+  "provider": "Jasper Verschuur and co-authors (University of Oxford and IIASA)",
+  "regions": [],
+  "related_ids": [
+    "model-pytradeshifts",
+    "data-wfp-global-food-prices"
+  ],
+  "runs_on": [
+    "Python 3.9 with Pyomo and the HSL MA27 or Ipopt solver"
+  ],
+  "sectors": [
+    "services.food_supply",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Title, creators (Verschuur, Murgatroyd, Vittis, Mosnier, Obersteiner, Godfray, Hall), published 2024-06-30, CC-BY-4.0, contents (calibration per crop, five shock sets), Pyomo with HSL MA27 or Ipopt, Python 3.9.12, runtimes, AGRODEP demo",
+      "url": "https://zenodo.org/api/records/12598597"
+    }
+  ],
+  "tags": [
+    "spatial price equilibrium",
+    "grain trade",
+    "polycrisis",
+    "food prices",
+    "Pyomo",
+    "Ukraine war",
+    "trade bans"
+  ],
+  "title_en": "Global food shock and trade model (spatial price equilibrium, polycrisis grain study)",
+  "type": "model",
+  "validated_on": []
+}

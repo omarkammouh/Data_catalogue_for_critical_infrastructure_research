@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "MSR public search",
+      "url": "https://portaal.agri.ee/avalik/#/maaparandus/msr/systeemi-otsing"
+    },
+    {
+      "kind": "api",
+      "label": "Drainage areas WFS (INSPIRE)",
+      "url": "https://inspire.geoportaal.ee/geoserver/GE_maaparandusala/wfs?service=WFS&version=2.0.0&request=GetCapabilities"
+    },
+    {
+      "kind": "api",
+      "label": "Recipient watercourses WFS",
+      "url": "https://inspire.geoportaal.ee/geoserver/HY_eesvoolud/wfs?service=WFS&version=2.0.0&request=GetCapabilities"
+    },
+    {
+      "kind": "docs",
+      "label": "Metadata record",
+      "url": "https://metadata.geoportaal.ee/geonetwork/srv/est/catalog.search#/metadata/20d3d1d6-a29f-438d-a33b-66049425cff1"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "EE"
+  ],
+  "data_family": [
+    "system_description",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "estonia land improvement drainage systems register maaparandussusteemide register with drainage areas and main ditches",
+    "url": "https://portaal.agri.ee/avalik"
+  },
+  "description": "The Maaparandussüsteemide register (MSR) records planned, built and existing land improvement systems in Estonia, which are mostly agricultural and forest drainage networks with ditches, subsurface drains, culverts and dams, together with the procedures around them. Contents: system areas and regulating network areas, 18,722 polygons in the INSPIRE layer on 29 September 2026, recipient watercourses (eesvoolud), 14,023 features, and the state-maintained shared recipients, plus register records searchable by system with construction and ownership information. Producer: the Agriculture and Food Board as register keeper, with INSPIRE services on the national geoportal. Coverage: all of Estonia; the current register opened in March 2017 and holds older system data migrated from earlier registers. Format and access: a public search application in the agriculture portal and INSPIRE WFS and WMS layers for drainage areas and recipients; metadata in the national catalogue. Free; the portal entry states no licence. Caveats: the condition of many Soviet-era systems is poor and not always reflected, and detailed drain lines are held as design documents, not in the WFS layers. Simulation uses: drainage network geometry for pluvial flood and runoff models, maintenance prioritisation and assessment of how drainage failure affects roads and farmland. Related records: the Estonian Topographic Database (data-estonia-etak-topographic-database) and the map layer of dams and fish passes (data-estonia-dams-fish-passes-map-layer).",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source ee-portal-andmed-eesti-ee: provider pages read (round 2 register piece)",
+      "route": "R02",
+      "source": "ee-portal-andmed-eesti-ee"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "gml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://inspire.geoportaal.ee/geoserver/GE_maaparandusala/wfs?service=WFS&version=2.0.0&request=GetCapabilities",
+  "id": "data-estonia-land-improvement-drainage-systems-register",
+  "languages": [
+    "et"
+  ],
+  "licence": "not stated",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Estonia land improvement (drainage) systems register (Maaparandussüsteemide register) with drainage areas and main ditches",
+  "provider": "Põllumajandus- ja Toiduamet (Estonian Agriculture and Food Board); INSPIRE services by Maa- ja Ruumiamet",
+  "related_ids": [
+    "data-estonia-etak-topographic-database",
+    "data-estonia-dams-fish-passes-map-layer"
+  ],
+  "sectors": [
+    "water.stormwater_drainage",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "portal entry: purpose, 2017 register, links",
+      "url": "https://andmed.eesti.ee/api/datasets?search=Maaparandus%C3%BCsteemide%20register"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "18722 drainage areas; 14023 recipient watercourses",
+      "url": "https://inspire.geoportaal.ee/geoserver/GE_maaparandusala/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=GE_maaparandusala:GE.GeomorphologicFeature.Anthropogenic&resultType=hits"
+    }
+  ],
+  "tags": [
+    "Estonia",
+    "land drainage",
+    "maaparandus",
+    "ditches",
+    "INSPIRE"
+  ],
+  "title_en": "Estonia land improvement (drainage) systems register (Maaparandussüsteemide register) with drainage areas and main ditches",
+  "type": "data"
+}

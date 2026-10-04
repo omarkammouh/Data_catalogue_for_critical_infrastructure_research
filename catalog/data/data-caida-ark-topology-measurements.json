@@ -1,0 +1,133 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "IPv4 Routed /24 Topology",
+      "url": "https://www.caida.org/catalog/datasets/ipv4_routed_24_topology_dataset/"
+    },
+    {
+      "kind": "docs",
+      "label": "Ark IPv6 Topology",
+      "url": "https://www.caida.org/catalog/datasets/ipv6_allpref_topology_dataset/"
+    },
+    {
+      "kind": "download",
+      "label": "Public topology data",
+      "url": "https://publicdata.caida.org/datasets/topology/ark/"
+    },
+    {
+      "kind": "docs",
+      "label": "Border mapping (bdrmap)",
+      "url": "https://catalog.caida.org/dataset/bdrmap"
+    }
+  ],
+  "access_note": "the most recent year of IPv4 data needs a request (academic, US government or CAIDA member)",
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "north_america",
+    "south_america",
+    "asia",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "service_performance"
+  ],
+  "data_kind": [
+    "network_topology",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "caida archipelago ark ipv4 and ipv6 traceroute topology datasets",
+    "url": "https://caida.org/catalog/datasets/ipv4_routed_24_topology_dataset"
+  },
+  "description": "CAIDA at UC San Diego runs the Archipelago (Ark) measurement infrastructure, a globally distributed set of monitors that trace paths across the internet continuously with scamper using the Paris traceroute technique. The IPv4 Routed /24 Topology Dataset probes a random address in every routed IPv4 /24 prefix about every 24 hours (team probing, since 13 September 2007), recording each hop's address, round-trip time, TTL, ICMP type and MPLS extensions. The Ark IPv6 Topology Dataset probes every announced IPv6 prefix from each monitor once per cycle since 12 December 2008. Companion datasets give DNS names of the addresses seen (IPv6 since June 2014), border router maps (bdrmap) of networks hosting monitors, AS links and the TNT MPLS topology. Coverage: global, continuous. Format and access: warts files read with the scamper tools, and text files. IPv6 data and IPv4 data older than one year are free of charge to download under the CAIDA Acceptable Use Agreement; the latest year of IPv4 data needs an academic, government or member request. Caveats: traceroute sees interfaces, not routers; coverage depends on monitor placement; destinations change between cycles. Simulation uses: router and AS level topology for failure and attack studies, detection of outages and path changes, and exposure of internet paths to regional hazards. Related records: the CAIDA Internet Topology Data Kit is built from these traces; CAIDA AS Relationships, RIPE Atlas and BGPStream complement them.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "DataCite data harvest of the digital piece; candidate datacite-d07f92cce5, read in full on second reading",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "DataCite data harvest of the digital piece; candidate datacite-addfe733d7, read in full on second reading",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "other",
+    "plain_text"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure",
+    "cyber_attack"
+  ],
+  "homepage": "https://www.caida.org/catalog/datasets/ipv4_routed_24_topology_dataset/",
+  "id": "data-caida-ark-topology-measurements",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09",
+  "licence": "CAIDA Acceptable Use Agreement for publicly accessible datasets",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CAIDA Archipelago (Ark) IPv4 and IPv6 traceroute topology datasets",
+  "notes": "CAIDA dataset pages for IPv4 Routed /24 and IPv6 topology read 2026-09-26; DataCite records of the IPv6 DNS names and bdrmap datasets read in the candidate harvest. The last_updated month and archive size are inferred from continuous collection, not read.",
+  "provider": "CAIDA (Center for Applied Internet Data Analysis), University of California San Diego",
+  "related_ids": [],
+  "schema_summary": "per trace: monitor, destination, hops with address, RTT, TTL, IPID, ICMP type and code, MPLS labels; DNS names per address; border router lists",
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "size": "terabytes over the full archive",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "method, start date, access tiers",
+      "url": "https://www.caida.org/catalog/datasets/ipv4_routed_24_topology_dataset/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "method, public access, list of free datasets",
+      "url": "https://www.caida.org/catalog/datasets/ipv6_allpref_topology_dataset/"
+    }
+  ],
+  "spatial_resolution": "IP interface and prefix",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "traceroute",
+    "Archipelago",
+    "internet topology",
+    "IPv6",
+    "CAIDA"
+  ],
+  "temporal_coverage": "IPv4 since 2007-09-13, IPv6 since 2008-12-12",
+  "temporal_coverage_years": {
+    "start": 2007
+  },
+  "temporal_resolution": "daily probing cycles",
+  "temporal_resolution_class": "daily",
+  "title_en": "CAIDA Archipelago (Ark) IPv4 and IPv6 traceroute topology datasets",
+  "type": "data",
+  "update_frequency": "real_time"
+}

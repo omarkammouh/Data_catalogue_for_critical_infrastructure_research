@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "RIPE NCC case study",
+      "url": "https://www.ripe.net/about-us/news/youtube-hijacking-a-ripe-ncc-ris-case-study/"
+    },
+    {
+      "kind": "docs",
+      "label": "MENOG presentation",
+      "url": "https://www.menog.org/presentations/menog-3/dranse-youtube-menog3.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "Google Research publication page",
+      "url": "https://research.google/pubs/youtube-hijacking-february-24th-2008-analysis-of-bgp-routing-dynamics/"
+    }
+  ],
+  "access_restrictions": "none",
+  "case_study_kind": [
+    "post_event_analysis"
+  ],
+  "continents": [
+    "asia",
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "PK",
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pakistan telecom s accidental global hijack of youtube routes 2008",
+    "url": "https://ripe.net/about-us/news/youtube-hijacking-a-ripe-ncc-ris-case-study"
+  },
+  "description": "This post-event case is the best-known example of a route hijack spreading across the global internet. On 24 February 2008 Pakistan Telecom (AS17557), ordered by the government to block YouTube inside Pakistan, announced a more specific route, 208.65.153.0/24, for part of YouTube's address space and pointed it at nothing. Its upstream provider PCCW Global (AS3491) passed the announcement on without filtering, and because routers prefer the most specific route, much of the world's YouTube traffic went to Pakistan. The RIPE NCC's case study, built on its Routing Information Service collectors, gives the timeline: the hijack began at 18:47 UTC; YouTube (AS36561) announced the same /24 at 20:07 and two more specific /25 routes at 20:18; and PCCW withdrew the Pakistan Telecom routes at 21:01, about 3 hours 14 minutes after the start. The hijacked route reached 105 of the peers that saw YouTube's /22. The study concludes that proper route filtering stops such announcements, and the event is widely cited in arguments for RPKI route origin validation. Coverage: global routing, one evening. Format and access: RIPE NCC web page, free; the underlying RIS data are open. Caveats: effects on users are inferred from routing, not measured traffic. Simulation uses: propagation of false routes in the BGP network, filtering policies and cascading reachability loss. Related records: RIPE RIS and RouteViews hold the data, BGPStream and BGPy can replay or simulate such hijacks, and the Rostelecom hijack of 2020 is a later case.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Pakistan Telecom YouTube BGP hijack February 2008 RIPE NCC case study analysis",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://www.ripe.net/about-us/news/youtube-hijacking-a-ripe-ncc-ris-case-study/",
+  "id": "case_study-pakistan-telecom-youtube-hijack-2008",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2008",
+  "licence": "RIPE NCC copyright; free to read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Pakistan Telecom's accidental global hijack of YouTube routes (2008)",
+  "notes": "RIPE NCC case study page read via fetch on 2026-09-26. RouteViews, BGPStream and BGPy are related resources, not used by RIPE.",
+  "organisations": [
+    "RIPE NCC",
+    "Pakistan Telecom",
+    "PCCW Global",
+    "YouTube"
+  ],
+  "outcomes": "A mis-scoped block announcement diverted YouTube traffic worldwide for about 3 hours 14 minutes until the upstream withdrew it; the case set out the need for route filtering and RPKI.",
+  "provider": "RIPE NCC (RIS case study); Pakistan Telecom, PCCW Global and YouTube (networks involved)",
+  "related_ids": [],
+  "resources_used": [
+    "data-ripe-ris"
+  ],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "timeline and data",
+      "url": "https://www.ripe.net/about-us/news/youtube-hijacking-a-ripe-ncc-ris-case-study/"
+    }
+  ],
+  "study_period": "2008-02",
+  "tags": [
+    "BGP hijack",
+    "route filtering",
+    "RPKI",
+    "YouTube",
+    "RIS"
+  ],
+  "title_en": "Pakistan Telecom's accidental global hijack of YouTube routes (2008)",
+  "type": "case_study"
+}

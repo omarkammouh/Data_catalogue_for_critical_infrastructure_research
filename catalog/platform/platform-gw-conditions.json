@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/DOI-USGS/gw-conditions"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/DOI-USGS/gw-conditions/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usgs groundwater conditions indicator pipeline",
+    "repo": "github.com/doi-usgs/gw-conditions",
+    "url": "https://github.com/DOI-USGS/gw-conditions"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "gw-conditions is code for calculating and displaying daily groundwater conditions at United States observation wells. The US Geological Survey README describes an R pipeline that compares each well's current level with its historical percentile and a Vue/D3 animation that maps the result. Users select the observation network and update period; outputs are percentile indicators and a visual map. Geographic coverage is the US wells included by the provider. GitHub metadata states CC0-1.0 for the repository. A limitation is that a percentile relative to a well's history is not an absolute aquifer-storage estimate, and short or changed records can distort it. The pipeline can prepare drought indicators for water-supply and agricultural groundwater simulations. The related EPANET catalogue model addresses distribution hydraulics, not aquifer condition. No well measurements, map build or software package was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "doi-usgs/gw-conditions linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/DOI-USGS/gw-conditions",
+  "id": "platform-gw-conditions",
+  "interfaces": [
+    "code_library",
+    "web_app"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-06-11",
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "USGS groundwater-conditions indicator pipeline",
+  "notes": "G7 G7-1798. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool",
+    "gis_environment"
+  ],
+  "provider": "US Geological Survey",
+  "related_ids": [
+    "model-epanet"
+  ],
+  "sectors": [
+    "water.drinking_water",
+    "water.irrigation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for DOI-USGS/gw-conditions: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/doi-usgs/gw-conditions"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/doi-usgs/gw-conditions/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Gw-conditions: code for calculating and displaying daily groundwater conditions at United States observation wells",
+  "type": "platform"
+}

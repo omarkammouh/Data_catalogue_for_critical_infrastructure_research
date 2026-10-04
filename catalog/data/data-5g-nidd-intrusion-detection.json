@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Fairdata Etsin record",
+      "url": "https://etsin.fairdata.fi/dataset/9d13ef28-2ca7-44b0-9950-225359afac65"
+    },
+    {
+      "kind": "download",
+      "label": "IEEE DataPort",
+      "url": "https://ieee-dataport.org/documents/5g-nidd-comprehensive-network-intrusion-detection-dataset-generated-over-5g-wireless"
+    },
+    {
+      "kind": "docs",
+      "label": "NetsLab dataset page",
+      "url": "https://netslab.ucd.ie/5g-nidd/"
+    },
+    {
+      "kind": "paper",
+      "label": "Preprint (arXiv 2212.01298)",
+      "url": "https://arxiv.org/pdf/2212.01298"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FI"
+  ],
+  "data_family": [
+    "cyber_control",
+    "security_threat",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "tabular",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "5g nidd network intrusion detection dataset from a 5g test network",
+    "url": "https://etsin.fairdata.fi/dataset/9d13ef28-2ca7-44b0-9950-225359afac65"
+  },
+  "description": "5G-NIDD is a labelled dataset of benign and attack traffic captured on a working 5G network, made for training and testing intrusion detection systems for mobile networks. It was generated on a testbed attached to the 5G Test Network at the University of Oulu in Finland, with two base stations serving several benign 5G users and attacker nodes. The attacks include denial-of-service floods (ICMP, UDP, SYN and HTTP floods and slow-rate DoS) and port scans (SYN, TCP connect and UDP scans). Files are provided at several stages of processing, from raw packet captures in pcapng through to encoded CSV feature tables ready for machine learning. The dataset was first described in a 2022 preprint and then in a 2025 IEEE Data Descriptions article by Siriwardhana and colleagues. Coverage: one 5G test network in Oulu, a single collection campaign. Format and access: pcapng and CSV files from the Finnish Fairdata service (Etsin) and IEEE DataPort; free, CC BY 4.0 according to the research.fi record, with citation of the descriptor requested. Caveats: attacks are on the user plane and IP layer, not on signalling protocols such as SS7, Diameter or PFCP; a small testbed may not reflect operator networks. Simulation uses: cyber-attack scenarios on mobile access networks, training detectors in digital twins of 5G networks, and security testing. Related records: the EU 5G coordinated risk assessment frames the threats, and ENISA telecom security incident reports record real incidents.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "5G-NIDD dataset network intrusion detection 5G University of Oulu download licence",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "domain_model_file",
+    "csv"
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://etsin.fairdata.fi/dataset/9d13ef28-2ca7-44b0-9950-225359afac65",
+  "id": "data-5g-nidd-intrusion-detection",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-07-13",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "5G-NIDD: network intrusion detection dataset from a 5G test network",
+  "notes": "NetsLab page read via fetch on 2026-09-26; licence from the search result summary of the research.fi record. Collection date approximate from the 2022 preprint.",
+  "provider": "University of Oulu (5G Test Network Finland) with University College Dublin NetsLab (Yushan Siriwardhana and co-authors)",
+  "related_ids": [],
+  "schema_summary": "packet captures and flow features labelled benign or by attack type (ICMP, UDP, SYN, HTTP floods, slow-rate DoS, SYN, TCP connect and UDP scans)",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "digital_twin"
+  ],
+  "size": "not stated",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "dataset page",
+      "url": "https://netslab.ucd.ie/5g-nidd/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: licence",
+      "url": "https://research.fi/en/results/dataset/9d13ef28-2ca7-44b0-9950-225359afac65"
+    }
+  ],
+  "spatial_resolution": "testbed with two base stations",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "5G",
+    "intrusion detection",
+    "DoS",
+    "network security",
+    "testbed"
+  ],
+  "temporal_coverage": "single collection campaign (about 2022)",
+  "temporal_resolution": "per packet and per flow",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "5G-NIDD: network intrusion detection dataset from a 5G test network",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

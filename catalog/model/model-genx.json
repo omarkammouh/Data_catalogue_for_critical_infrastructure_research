@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/GenXProject/GenX"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://genxproject.github.io/GenX.jl/stable/"
+    },
+    {
+      "kind": "download",
+      "label": "Zenodo DOI",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.10846069"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "genx",
+    "repo": "github.com/genxproject/genx",
+    "url": "https://genxproject.github.io/GenX.jl/stable"
+  },
+  "description": "GenX is a configurable electricity resource capacity expansion model. It is a constrained linear or mixed-integer linear optimisation that determines the portfolio of generation, storage, transmission and demand-side resource investments and operational decisions needed to meet electricity demand in one or more future planning years at least cost, subject to power system operating constraints, resource availability limits and environmental, market design and policy constraints. It was originally developed by Jesse D. Jenkins and Nestor A. Sepulveda at the Massachusetts Institute of Technology and is now maintained jointly by teams at the Princeton University ZERO Lab, MIT, New York University and Binghamton University. The model is location independent: users supply zones, resources and hourly time series for any system, from a single state to a continent. It is written in Julia with JuMP and is available from its GitHub repository with documentation on GitHub Pages and an archived Zenodo release (version 0.4.6 in the package manifest); it is free under the GNU GPL version 2. Caveats: the README recommends Julia 1.9 because of a performance decline observed with Julia 1.10, and results depend on the chosen solver and on user-prepared input data. Simulation uses are capacity planning and optimisation of decarbonising power systems. Related records: it is an alternative to model-switch, model-gridpath and model-pypsa for capacity expansion planning.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry GenX",
+      "route": "R06",
+      "source": "energy-genx"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://genxproject.github.io/GenX.jl/stable/",
+  "id": "model-genx",
+  "inputs": [
+    "Resource",
+    "demand",
+    "fuel and network CSV input files per planning zone",
+    "Time series of demand and variable renewable availability",
+    "Policy constraints (carbon",
+    "clean energy standards)"
+  ],
+  "language": [
+    "julia"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-09",
+  "licence": "GPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "GenX",
+  "outputs": [
+    "Least-cost portfolio of generation",
+    "storage",
+    "transmission and demand-side investments",
+    "Hourly operational decisions",
+    "Prices and emissions"
+  ],
+  "provider": "GenX team at Princeton University ZERO Lab, MIT, NYU and Binghamton University",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/GenXProject/GenX",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Overview, developers and maintaining institutions, Julia + JuMP, v0.4.6, Julia 1.9 recommendation",
+      "url": "https://raw.githubusercontent.com/GenXProject/GenX/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU GPL version 2",
+      "url": "https://raw.githubusercontent.com/GenXProject/GenX/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 0.4.6",
+      "url": "https://raw.githubusercontent.com/GenXProject/GenX/HEAD/Project.toml"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Software Heritage visit 2026-04-20; default-branch head commit dated 2026-01-10",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/GenXProject/GenX/visit/latest/"
+    }
+  ],
+  "tags": [
+    "capacity expansion",
+    "Julia",
+    "JuMP",
+    "decarbonisation",
+    "electricity planning"
+  ],
+  "title_en": "GenX model for electricity resource capacity expansion",
+  "type": "model",
+  "validated_on": [
+    "Example systems shipped in the repository"
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "SDMX REST data query for DF_HHCOUNTS, household counts, population and average household size (CSV or SDMX-JSON)",
+      "url": "https://stats-sdmx-disseminate.pacificdata.org/rest/data/SPC,DF_HHCOUNTS,1.0/all?format=csv"
+    },
+    {
+      "kind": "api",
+      "label": "SDMX REST data query for DF_ENERGY, including percent of households with electricity, grid and off-grid",
+      "url": "https://stats-sdmx-disseminate.pacificdata.org/rest/data/SPC,DF_ENERGY,1.0/all?format=csv"
+    },
+    {
+      "kind": "api",
+      "label": "SDMX dataflow list (127 dataflows, including DF_WASH and census food security tables)",
+      "url": "https://stats-sdmx-disseminate.pacificdata.org/rest/dataflow/all/all/latest"
+    },
+    {
+      "kind": "portal",
+      "label": "PDH.Stat data explorer",
+      "url": "https://stats.pacificdata.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "AS",
+    "CK",
+    "FJ",
+    "FM",
+    "GU",
+    "KI",
+    "MH",
+    "MP",
+    "NC",
+    "NR",
+    "NU",
+    "PF",
+    "PG",
+    "PN",
+    "PW",
+    "SB",
+    "TK",
+    "TO",
+    "TV",
+    "VU",
+    "WF",
+    "WS"
+  ],
+  "data_family": [
+    "reference_context",
+    "social_vulnerability_equity",
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pacific community spc pacific data hub stat sdmx dataflows with census household counts and average household size by first sub national level for 22 pacific island countries and territories plus household electricity access grid and off grid and wash indicators",
+    "url": "https://stats.pacificdata.org"
+  },
+  "description": "The Pacific Community (SPC) runs PDH.Stat, a .Stat data explorer with an open SDMX REST API that holds 127 dataflows for its member countries and territories. The DF_HHCOUNTS dataflow gives the number of households, population and average household size from reported census figures down to the first sub-national level, such as the states of Micronesia, for 22 Pacific island countries and territories and census rounds from 2009 to 2019. The DF_ENERGY dataflow adds the percent of households with access to electricity, split into grid-connected and off-grid supply and urban and rural areas, next to installed capacity and supply reliability indices; for Micronesia it shows 68 percent of households with electricity in 2018, with 55 percent on the grid. Coverage is regional for Oceania. Format and access: open SDMX queries returning CSV or JSON, no registration. Licence: not stated on the pages read. Caveats: household counts are totals, not dwelling characteristics; energy indicators are compiled by SPC from mixed sources; the Pacific microdata library and several national office sites could not be opened from the cloud. Simulation uses: household baselines for island energy and water planning. Related records: none for SPC in the catalogue.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:None:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "analysis_package_file",
+    "json"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://stats-sdmx-disseminate.pacificdata.org/rest/data/SPC,DF_ENERGY,1.0/all?format=csv",
+  "id": "data-spc-pacific-data-hub-stat-census-household-counts-by-subnational-area-and-household-electricity-access",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Pacific Community (SPC) Pacific Data Hub .Stat SDMX dataflows with census household counts and average household size by first sub-national level for 22 Pacific island countries and territories, plus household electricity access (grid and off-grid) and WASH indicators",
+  "provider": "Pacific Community (SPC), Statistics for Development Division and Geoscience, Energy and Maritime Division",
+  "schema_summary": "DF_HHCOUNTS dimensions FREQ, GEO_PICT (219 codes, countries and sub-national areas such as FM-1), INDICATOR (NHH number of households, POP population, HHSZ average household size), TIME_PERIOD, OBS_VALUE; 637 observations. DF_ENERGY dimensions FREQ, GEO_PICT, TOPIC, INDICATOR (38 codes, including ENERGY_IND_001 to 005 household access to electricity, grid, off-grid, urban and rural, installed capacity, SAIFI and SAIDI). DF_WASH has 58 JMP-based indicators for households and health care facilities.",
+  "sectors": [
+    "energy.electricity",
+    "water.drinking_water",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: dataflow list",
+      "url": "https://stats-sdmx-disseminate.pacificdata.org/rest/dataflow/all/all/latest"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: structure and codelists",
+      "url": "https://stats-sdmx-disseminate.pacificdata.org/rest/dataflow/SPC/DF_HHCOUNTS/latest?references=all"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: full data",
+      "url": "https://stats-sdmx-disseminate.pacificdata.org/rest/data/SPC,DF_HHCOUNTS,1.0/all?format=csv"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: Micronesia rows",
+      "url": "https://stats-sdmx-disseminate.pacificdata.org/rest/data/SPC,DF_ENERGY,1.0/A.FM..ENERGY_IND_001+ENERGY_IND_002+ENERGY_IND_003?format=csv"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://stats.pacificdata.org/"
+    }
+  ],
+  "spatial_resolution": "country and first sub-national level (states, provinces, islands or island groups) for household counts; country, urban and rural for energy access",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "census",
+    "Pacific",
+    "SPC",
+    "SDMX",
+    "household counts",
+    "electricity access",
+    "off-grid",
+    "Oceania"
+  ],
+  "temporal_coverage": "census rounds 2009 to 2019 for household counts; energy indicators from 2010",
+  "temporal_coverage_years": {
+    "end": 2019,
+    "start": 2009
+  },
+  "temporal_resolution": "census rounds (annual series where available)",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "Pacific Community (SPC) Pacific Data Hub .Stat SDMX dataflows with census household counts and average household size by first sub-national level for 22 Pacific island countries and territories, plus household electricity access (grid and off-grid) and WASH indicators",
+  "type": "data"
+}

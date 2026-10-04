@@ -1,0 +1,140 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "2026 Planning Database Block Group Data",
+      "note": "file linked from the record homepage (2026-10-01); found on https://www.census.gov/topics/research/guidance/planning-databases.html",
+      "url": "https://www2.census.gov/adrm/PDB/2026/pdb2026bg.csv"
+    },
+    {
+      "kind": "download",
+      "label": "2026 Planning Database Tract Data",
+      "note": "file linked from the record homepage (2026-10-01); found on https://www.census.gov/topics/research/guidance/planning-databases.html",
+      "url": "https://www2.census.gov/adrm/PDB/2026/pdb2026tr.csv"
+    },
+    {
+      "kind": "download",
+      "label": "2026 PDB File Layout",
+      "note": "file linked from the record homepage (2026-10-01); found on https://www.census.gov/topics/research/guidance/planning-databases.html",
+      "url": "https://www2.census.gov/adrm/PDB/2026/2026_PDB_File_Layout.xlsx"
+    },
+    {
+      "kind": "api",
+      "label": "Planning Database API",
+      "note": "API key required",
+      "url": "https://www.census.gov/data/developers/data-sets/planning-database.html"
+    },
+    {
+      "kind": "portal",
+      "label": "Planning Database downloads",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.census.gov/topics/research/guidance/planning-databases.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "social_vulnerability_equity",
+    "demand_operation",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "census planning database pdb tract and block group",
+    "url": "https://census.gov/topics/research/guidance/planning-databases.html"
+  },
+  "description": "The Planning Database (PDB) of the U.S. Census Bureau is a ready-made table of selected operational, housing, demographic and socio-economic statistics from the decennial census and the American Community Survey 5-year files, for every census tract and block group in the country. It includes the Low Response Score, a predicted rate of not self-responding to a census, plus variables such as housing units, vacancy, renter occupancy, crowding, language, age, income and internet access. The 2026 PDB, published on 4 August 2026 and reissued on 17 September 2026 after an error in the Low Response Score was fixed, uses 2020-2024 ACS 5-year estimates, 2020 Census operational variables and 2020 tract and block group geographies; the tract file has 85,396 rows and 531 columns and the block group file 242,336 rows and 385 columns. Vintages exist for 2015, 2016 and 2018 to 2026. Access: CSV downloads and the Census Data API (pdb group); free and public domain. The Response Outreach Area Mapper shows key PDB statistics on a map. Caveats: designed for survey planning, it repeats ACS estimates without their full margins of error; Excel may truncate the wide files. Simulation uses: a convenient single table of small-area housing and population characteristics for exposure and vulnerability layers, hard-to-reach population mapping for emergency communication, and quick demand baselines. Related records: ACS tables, the 2020 Census DHC and the Community Resilience Estimates.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; research topic pages, Planning Database",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): api.census.gov/data.json dataset list, group pdb",
+      "route": "R35",
+      "source": "census-data-api"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/topics/research/guidance/planning-databases.html",
+  "id": "data-us-census-planning-database",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-17",
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Census Planning Database (PDB), tract and block group",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-american-community-survey-tables",
+    "data-us-census-2020-census-demographic-housing-characteristics",
+    "data-us-census-community-resilience-estimates"
+  ],
+  "schema_summary": "GEOID with ACS 5-year and census operational variables, Low Response Score",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "size": "2026 tract file 85,396 rows x 531 columns; block group file 242,336 rows x 385 columns",
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Contents, Low Response Score, 2026 PDB release 2026-08-04 and reissue 2026-09-17, file sizes",
+      "url": "https://www.census.gov/topics/research/guidance/planning-databases.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "API list: Planning Database (2015, 2016, 2018-2026)",
+      "url": "https://www.census.gov/data/developers.html"
+    }
+  ],
+  "spatial_resolution": "Census tract and block group",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "planning database",
+    "block group",
+    "low response score",
+    "hard to count",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "Vintages 2015, 2016, 2018-2026 (2026 uses 2020-2024 ACS)",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2015
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Census Planning Database (PDB), tract and block group",
+  "type": "data",
+  "update_frequency": "annual"
+}

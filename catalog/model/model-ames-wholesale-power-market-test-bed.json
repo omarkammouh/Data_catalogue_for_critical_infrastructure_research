@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "AMES Market Package page with versions V2.07 to V5.0 and downloads",
+      "url": "https://www2.econ.iastate.edu/tesfatsi/AMESMarketHome.htm"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (ZIP)",
+      "note": "Checked 2026-10-01: returns application/zip directly.",
+      "url": "https://www2.econ.iastate.edu/tesfatsi/AMESMarket.V2.07-src.zip"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-09-29",
+  "dedupe_keys": {
+    "name": "ames wholesale power market test bed agent based simulation of iso managed electricity markets",
+    "repo": "www2.econ.iastate.edu/tesfatsi/amesmarkethome.htm",
+    "url": "https://www2.econ.iastate.edu/tesfatsi/AMESMarketHome.htm"
+  },
+  "description": "AMES (Agent-based Modeling of Electricity Systems) is an open-source computational laboratory for studying centrally managed wholesale power markets, developed by Leigh Tesfatsion and collaborators at Iowa State University to follow the market design proposed by the U.S. Federal Energy Regulatory Commission in 2003: an independent system operator, a two-settlement day-ahead and real-time structure, locational marginal pricing for congestion and market power oversight. Generating companies and load-serving entities are agents, and the model simulates day-ahead and real-time markets with generator learning implemented through a reinforcement learning module and the operator's DC optimal power flow solved by DCOPFJ. The page documents versions V2.07 (Java), V3.0, V4.0 with an eight-zone ISO-NE test system, and V5.0 with an ERCOT test system, with slide sets, manuals and source downloads. Coverage is generic markets with test systems for two U.S. regions. Access: zip downloads and GitHub repositories linked from the page; licence stated for V2.07 is GPL, the software is unsupported and provided as-is, and cost is free. Caveats: research code with a Java 17 toolchain for V2.07, and results depend on the chosen learning and bidding behaviour. It suits market design, market power and grid-integration studies, and pairs with the PSST power system toolbox catalogued here.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "assistant recall, written down before searching: electricity: models, platforms and case studies known before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://www2.econ.iastate.edu/tesfatsi/AMESMarketHome.htm",
+  "id": "model-ames-wholesale-power-market-test-bed",
+  "inputs": [
+    "Test-system grid data (buses, lines), generator cost and capacity attributes, load-serving-entity demand, market rules (day-ahead and real-time settlement, locational marginal pricing)"
+  ],
+  "language": [
+    "java",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-04-21",
+  "licence": "GPL (AMES V2.07 stated as free open-source under the GNU General Public License; terms of later versions, hosted on GitHub repositories, were not read)",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "economic"
+  ],
+  "name": "AMES Wholesale Power Market Test Bed, agent-based simulation of ISO-managed electricity markets",
+  "outputs": [
+    "Locational marginal prices, dispatch and commitment by generator, congestion, agent profits and learning trajectories, market power indicators"
+  ],
+  "provider": "Leigh Tesfatsion and collaborators, Iowa State University",
+  "regions": [
+    "ERCOT",
+    "ISO New England"
+  ],
+  "related_ids": [
+    "model-power-system-simulation-toolbox-psst",
+    "model-matpower"
+  ],
+  "repository": "https://www2.econ.iastate.edu/tesfatsi/AMESMarketHome.htm",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "versions V2.07 to V5.0, test systems, GPL licence for V2.07, disclaimer, DCOPFJ and learning module, last updated 21 April 2025",
+      "url": "https://www2.econ.iastate.edu/tesfatsi/AMESMarketHome.htm"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): added 1 verified direct data link(s) from the provider's resource list. Verified: https://www2.econ.iastate.edu/tesfatsi/AMESMarket.V2.07-src.zip -> verified by fetch during the check",
+      "url": "https://www2.econ.iastate.edu/tesfatsi/AMESMarket.V2.07-src.zip"
+    }
+  ],
+  "tags": [
+    "wholesale power market",
+    "locational marginal pricing",
+    "agent-based computational economics",
+    "ISO",
+    "r2-fresh-energy"
+  ],
+  "title_en": "AMES Wholesale Power Market Test Bed, agent-based simulation of ISO-managed electricity markets",
+  "type": "model",
+  "validated_on": [
+    "Test cases for the ERCOT and eight-zone ISO-NE systems released with the package",
+    "not validated against market outcomes on the page"
+  ]
+}

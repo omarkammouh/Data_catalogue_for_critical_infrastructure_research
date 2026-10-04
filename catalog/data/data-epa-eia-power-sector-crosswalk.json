@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/USEPA/camd-eia-crosswalk"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/USEPA/camd-eia-crosswalk/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "epa eia power sector data crosswalk",
+    "repo": "github.com/usepa/camd-eia-crosswalk",
+    "url": "https://github.com/USEPA/camd-eia-crosswalk"
+  },
+  "description": "EPA's Clean Air Markets Division publishes this crosswalk to connect US power-sector combustion-unit and generator identifiers. It matches CAMD and EIA records through exact, fuzzy and manually checked relationships, with additional options for Facility Registry Service and NEEDS identifiers. The repository supplies CSV/XLSX outputs and an R Markdown generation workflow. Coverage is national and unit-level, but the underlying sources differ: CAMD generally covers fossil generating units above 25 MW, while EIA includes generators at grid-connected plants above 1 MW. The README documents a version 0.3 update in October 2022 and an illustrative 2018 analysis; it does not establish that every published mapping is current today. Public files and code are free under MIT. Limitations include unmatched units, many-to-many boiler/generator relationships and changing source APIs. Regeneration requires source access, including a CAMD API registration, whereas the published crosswalk is public. It supports linking generation and emissions inputs for infrastructure simulations, directly complementing EIA-860 (data-eia-860-annual-electric-generator-report) and CAMPD (data-epa-campd-power-sector-emissions). No crosswalk spreadsheet or power-sector observations were downloaded.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:USEPA",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "document",
+    "source_code"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/USEPA/camd-eia-crosswalk",
+  "id": "data-epa-eia-power-sector-crosswalk",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-10-09",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "EPA–EIA power-sector data crosswalk",
+  "notes": "G7 G7-0409. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability.  Cited as: Huetteman, Tafoya, Johnson and Schreifels (2021). EPA-EIA Power Sector Data Crosswalk. https://www.epa.gov/airmarkets/power-sector-data-crosswalk.",
+  "provider": "US Environmental Protection Agency, Clean Air Markets Division",
+  "related_ids": [
+    "data-eia-860-annual-electric-generator-report",
+    "data-epa-campd-power-sector-emissions"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for USEPA/camd-eia-crosswalk: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3AUSEPA&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/usepa/camd-eia-crosswalk/readme"
+    }
+  ],
+  "spatial_resolution": "Power plants, combustion units and generators",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "README describes October 2022 v0.3 update and 2018 example; full current vintage not established",
+  "temporal_resolution": "Identifier crosswalk; source observations have separate hourly/monthly/annual resolutions",
+  "temporal_resolution_class": "hourly",
+  "title_en": "EPA–EIA power-sector data crosswalk",
+  "type": "data"
+}

@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/22961301"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/22961301"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Link supplied by Zenodo; repository contents not independently inspected.",
+      "url": "https://github.com/Matt-haug/loadcast/tree/v0.1.0"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.22961301",
+    "name": "loadcast synthetic multi carrier industrial energy demand profiles",
+    "repo": "github.com/matt-haug/loadcast",
+    "url": "https://zenodo.org/records/22961301"
+  },
+  "description": "The loadcast developer publishes a Python generator of synthetic heat, cooling and electricity demand for an industrial site. Zenodo archives version 0.1.0 under MIT and links a public repository. Its README shows annual energy, heat-to-cold ratio, electricity share, process class, cross-carrier correlation and carrier lag as inputs, returning 8,760 hourly or quarter-hourly heat, cold and electricity values. These profiles can supply coordinated multi-carrier loads to storage, district-energy or plant-electrification simulations when measured site data are unavailable. No related catalogue record explicitly covers this generator. A limitation is that simulated profiles reflect parameter choices and generic process classes, not measured operations of a particular factory. Reported correlations and lags should be checked after generation, especially for boundary conditions and seasonal regimes. The linked documentation shows an example but this review did not inspect unit tests or sample outputs. The archive was not downloaded, and no profile was generated.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "title:(\"demand\" OR \"load\" OR \"consumption\" OR \"load profile\" OR \"traffic volume\" OR \"ridership\" OR \"throughput\" OR \"flow\" OR \"dispatch\" OR \"generation\" OR \"operating data\" OR \"operations log\" OR \"utilisation\" OR \"occupancy\" OR \"patronage\" OR \"water use\" OR \"call volume\" OR \"hourly load\" OR \"metered consumption\" OR \"traffic counts\" OR \"passenger numbers\" OR \"generation by unit\" OR \"operational statistics\" OR \"capacity utilisation\") AND (\"infrastructure\" OR \"electricity\" OR \"power grid\" OR \"water supply\" OR \"wastewater\" OR \"stormwater\" OR \"transport\" OR \"railway\" OR \"road network\" OR \"telecommunication\" OR \"building\" OR \"hospital\" OR \"emergency response\" OR \"waste management\" OR \"food supply\" OR \"manufacturing\" OR \"mining\" OR \"flood\" OR \"drought\" OR \"earthquake\")",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://zenodo.org/records/22961301",
+  "id": "model-loadcast-synthetic-industrial-heat-cold-electricity-demand",
+  "inputs": [
+    "Annual energy, carrier shares and process class",
+    "Cross-carrier correlation and lag"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "loadcast: synthetic multi-carrier industrial energy demand profiles",
+  "notes": "G6 item G6-2058. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "outputs": [
+    "Hourly or quarter-hourly heat, cold and electricity profiles"
+  ],
+  "provider": "Hauglustaine, Matteo (UCLouvain)",
+  "related_ids": [],
+  "repository": "https://github.com/Matt-haug/loadcast/tree/v0.1.0",
+  "sectors": [
+    "industry.manufacturing_chemical",
+    "energy.electricity",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/22961301"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence mit-license, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/22961301"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README inspected for generator inputs, outputs and MIT metadata.",
+      "url": "https://github.com/Matt-haug/loadcast/blob/main/README.md"
+    }
+  ],
+  "tags": [],
+  "title_en": "Loadcast: synthetic multi-carrier industrial energy demand profiles",
+  "type": "model"
+}

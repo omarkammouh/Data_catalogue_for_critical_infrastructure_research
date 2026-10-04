@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource",
+      "url": "https://github.com/eantonini/climapower"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-024-04129-8"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Scientific Data. 10.1038/s41597-024-04129-8",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "climapower climate to energy conversion models",
+    "url": "https://github.com/eantonini/climapower"
+  },
+  "description": "The Climapower research team provides Python models that convert climate variables into energy-system time series. Documented routines calculate wind and solar capacity factors, hydropower inflows, and heating and cooling demand, with calibration procedures where observations are available. The repository supplies separate environments for retrieving weather data and converting them, including modified atlite code. Source access is public and free under GPL 3.0. Examples cover European countries using historical and projected weather and can prepare inputs for model-pypsa simulations. A caveat is that external weather services, geographic inputs and user-managed access credentials are required for some retrieval steps. Technology assumptions and calibration choices affect the resulting profiles. The README still calls the associated paper under review, although its descriptor is published. No model run or external data retrieval was attempted.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G1-Q-BACKFILL-ENERGY-11; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://github.com/eantonini/climapower",
+  "id": "model-climapower-climate-energy-conversion",
+  "inputs": [
+    "ERA5 or EURO-CORDEX climate variables",
+    "country geography",
+    "energy technology parameters",
+    "calibration observations"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-10-09",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid"
+  ],
+  "name": "Climapower climate-to-energy conversion models",
+  "notes": "G1 G1-0416. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-31.json. Related-resource uses are not tested interfaces. ",
+  "outputs": [
+    "wind and solar capacity factors",
+    "hydropower inflows",
+    "heating and cooling demand"
+  ],
+  "provider": "Climapower research team",
+  "related_ids": [
+    "model-pypsa",
+    "data-era5-reanalysis"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/eantonini/climapower"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/eantonini/climapower/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-024-04129-8"
+    }
+  ],
+  "tags": [],
+  "title_en": "Hybrid model for electricity and buildings",
+  "type": "model"
+}

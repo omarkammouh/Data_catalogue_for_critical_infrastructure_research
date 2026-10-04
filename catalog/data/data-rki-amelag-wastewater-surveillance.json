@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "AMELAG dataset repository (TSV files, documentation, R scripts)",
+      "url": "https://github.com/robert-koch-institut/Abwassersurveillance_AMELAG"
+    },
+    {
+      "kind": "download",
+      "label": "Versioned dataset on Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22916182"
+    },
+    {
+      "kind": "viewer",
+      "label": "AMELAG weekly report",
+      "url": "https://robert-koch-institut.github.io/Abwassersurveillance_AMELAG_-_Wochenbericht/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "health_impacts",
+    "sensor_realtime_streams",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.22916182",
+    "name": "wastewater surveillance amelag germany",
+    "url": "https://github.com/robert-koch-institut/Abwassersurveillance_AMELAG"
+  },
+  "description": "AMELAG (Abwassermonitoring für die epidemiologische Lagebewertung) is Germany's national wastewater surveillance dataset, published by the Robert Koch Institute and the German Environment Agency. A nationwide network of wastewater treatment plants, laboratories and local authorities has sampled raw sewage since February 2022, generally as two 24-hour composite samples a week taken after the grit chamber, with flow, pH and temperature. Laboratories quantify SARS-CoV-2 (at least two gene targets), influenza A and B and RSV by digital or quantitative PCR. The dataset gives each plant's measured viral load in gene copies per litre, a flow-normalised load for SARS-CoV-2 (scaled by the ratio of current to median inflow), a smoothed GAM prediction with 95% bounds and the number of connected inhabitants, and a national weekly curve weighted by connected population once at least ten sites report. It is updated weekly on GitHub under CC BY 4.0, versioned on Zenodo, with R scripts that reproduce the weekly report. Caveats: laboratories and target genes differ between sites, values below the quantification limit are set to half of it, heavy rain and tourism affect loads, publication lags sampling by up to two weeks, and loads cannot be converted into case numbers. Simulation uses: an operational wastewater stream for epidemic early warning and for digital twins of sewer and treatment systems, with plant-level connected population and inflow normalisation. Related records: the US NWSS (data-cdc-nwss-wastewater-surveillance) and the Catalan sewage network (data-catalan-sarsaigua-wastewater-surveillance).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"wastewater\" AND \"DER\"",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "\"wastewater\" AND \"DER\"",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "software_package"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://github.com/robert-koch-institut/Abwassersurveillance_AMELAG",
+  "id": "data-rki-amelag-wastewater-surveillance",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Wastewater Surveillance AMELAG (Germany)",
+  "notes": "The Zenodo concept record harvested (10.5281/zenodo.10782701) and the 2022-2024 paper dataset (10.5281/zenodo.17959185) are versions or derivatives of this dataset. The related polio pilot (PIA, Polioviren im Abwasser) is a separate RKI study and is not included.",
+  "provider": "Robert Koch Institute (RKI) and German Environment Agency (UBA)",
+  "related_ids": [
+    "data-cdc-nwss-wastewater-surveillance",
+    "data-catalan-sarsaigua-wastewater-surveillance"
+  ],
+  "schema_summary": "per plant: site, federal state, sampling date, viral load (gene copies/L), flow-normalised load, GAM prediction with 95% bounds, connected inhabitants, laboratory change flag, virus type, below-quantification flag; national curve: week, number of sites, share of population connected, weighted loads and GAM bounds",
+  "sectors": [
+    "water.wastewater",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "repository files, last update 2026-09-23, CC-BY-4.0 licence",
+      "url": "https://github.com/robert-koch-institut/Abwassersurveillance_AMELAG"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "project history, sampling, laboratory methods, normalisation, aggregation, variables, limitations, Zenodo DOI",
+      "url": "https://raw.githubusercontent.com/robert-koch-institut/Abwassersurveillance_AMELAG/main/Readme.en.md"
+    }
+  ],
+  "spatial_resolution": "individual wastewater treatment plants (named site and federal state), plus a national aggregate",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "wastewater-based epidemiology",
+    "SARS-CoV-2",
+    "influenza",
+    "RSV",
+    "wastewater treatment plants",
+    "Germany",
+    "public health surveillance"
+  ],
+  "temporal_coverage": "February 2022 to present",
+  "temporal_resolution": "samples about twice a week per plant; national curve weekly",
+  "temporal_resolution_class": "weekly",
+  "title_en": "Wastewater Surveillance AMELAG (Germany)",
+  "type": "data",
+  "update_frequency": "weekly"
+}

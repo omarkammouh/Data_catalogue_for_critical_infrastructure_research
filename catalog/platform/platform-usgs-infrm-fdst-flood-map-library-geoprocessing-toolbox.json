@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Toolbox source and examples",
+      "url": "https://code.usgs.gov/water/OTWSC/infrm-fdst-toolbox"
+    },
+    {
+      "kind": "portal",
+      "label": "InFRM site",
+      "url": "https://webapps.usgs.gov/infrm/"
+    },
+    {
+      "kind": "paper",
+      "label": "Software release DOI",
+      "url": "https://doi.org/10.5066/P92EAYSO"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5066/p92eayso",
+    "name": "usgs infrm fdst geoprocessing toolbox preparing hec ras flood inundation map libraries for the flood decision support toolbox",
+    "repo": "code.usgs.gov/water/otwsc/infrm-fdst-toolbox",
+    "url": "https://code.usgs.gov/water/OTWSC/infrm-fdst-toolbox"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This USGS software release (Wallace and Thompson 2022, v1.0.1, DOI 10.5066/P92EAYSO) provides geoprocessing tools that prepare flood inundation map libraries for upload to the Interagency Flood Risk Management (InFRM) Flood Decision Support Toolbox (FDST). Contents: an Esri Python Toolbox for ArcMap, ArcCatalog and ArcGIS Pro and an open source Python script with a GUI, both built to process HEC-RAS RASMapper output into the FDST format: a JSON metadata file, a readme, a shapefile of the map extent keyed to an 8-digit USGS streamgage number, and GeoTIFF depth rasters at 0.5-foot steps from National Weather Service flood stage to the maximum expected flood. The tools censor depths below 0.1 foot, remove hydraulically disconnected cells, reproject to Web Mercator and store depths as scaled 16-bit integers. Producer: USGS Oklahoma-Texas Water Science Center (David Wallace, Florence Thompson). Coverage: streamgage map libraries for the InFRM partner basins. Format and access: code, example inputs and outputs and FDST submission guidance on code.usgs.gov. Licence (read on 2026-09-29): CC0-1.0, stated in the repository LICENSE.md with the USGS software user rights notice; free. Caveats: tied to HEC-RAS RASMapper output and the FDST submission rules; last updated in 2022. Simulation uses: building stage-indexed inundation libraries for flood emergency response and for exposure of roads and facilities at forecast stages. Related records: model-hec-ras.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source code-usgs: provider pages read (round 2 register piece)",
+      "route": "R05",
+      "source": "code-usgs"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://code.usgs.gov/water/OTWSC/infrm-fdst-toolbox",
+  "id": "platform-usgs-infrm-fdst-flood-map-library-geoprocessing-toolbox",
+  "interfaces": [
+    "desktop_gui",
+    "code_library"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://webapps.usgs.gov/infrm/"
+    ]
+  },
+  "maturity": "stale",
+  "name": "USGS InFRM FDST geoprocessing toolbox: preparing HEC-RAS flood inundation map libraries for the Flood Decision Support Toolbox",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "U.S. Geological Survey, Oklahoma-Texas Water Science Center",
+  "related_ids": [
+    "model-hec-ras"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "readme and project metadata (licence Other, created 2022-02-08, last activity 2022-07-05)",
+      "url": "https://code.usgs.gov/water/OTWSC/infrm-fdst-toolbox/-/raw/master/readme.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Licence read by the wave 1 integrator (LICENSE.md in the repository states CC0 plus the USGS software user rights notice); replaces \"not named (repository metadata: Other)\".",
+      "url": "https://code.usgs.gov/water/OTWSC/infrm-fdst-toolbox/-/raw/master/LICENSE.md"
+    }
+  ],
+  "tags": [
+    "USGS",
+    "flood inundation",
+    "HEC-RAS",
+    "InFRM"
+  ],
+  "title_en": "USGS InFRM FDST geoprocessing toolbox: preparing HEC-RAS flood inundation map libraries for the Flood Decision Support Toolbox",
+  "type": "platform"
+}

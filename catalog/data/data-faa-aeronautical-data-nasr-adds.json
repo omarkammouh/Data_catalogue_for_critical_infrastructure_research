@@ -1,0 +1,152 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Aeronautical data portal",
+      "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/"
+    },
+    {
+      "kind": "portal",
+      "label": "28-day NASR subscription",
+      "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/"
+    },
+    {
+      "kind": "portal",
+      "label": "Aeronautical Data Delivery Service (ADDS)",
+      "url": "https://adds-faa.opendata.arcgis.com/"
+    },
+    {
+      "kind": "docs",
+      "label": "National security UAS flight restrictions service",
+      "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/arcgis/rest/services/DoD_Mar_13/FeatureServer"
+    },
+    {
+      "kind": "portal",
+      "label": "Provider data page (follow-up search)",
+      "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-10-01"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "governance_regulation",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "faa aeronautical data nasr subscription and aeronautical data delivery service",
+    "url": "https://faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription"
+  },
+  "description": "The Federal Aviation Administration's Aeronautical Data Team collects, validates and publishes the aeronautical information that describes the physical layout, position, operating characteristics and status of every component of the US National Airspace System, following ICAO standards and the 28-day AIRAC cycle. The main national product is the 28-day National Airspace System Resources (NASR) subscription, downloadable free as TXT and CSV subscriber files for each cycle with an archive of past cycles; it covers airports and runways, navaids, fixes, airways, airspace, frequencies, location identifiers and related records, and changed format from the 3 September 2026 cycle. The Aeronautical Data Delivery Service (ADDS) publishes the same data as open GIS layers (73 items on 26 September 2026): airports, runways, airport mapping features such as aprons, taxiways and hotspots, ATS routes, airspace classes and boundaries, special use airspace, navaid and ILS systems, holding patterns, obstacles, VFR chart areas and pending versions of each, and the FAA also publishes UAS facility maps and national security UAS flight restrictions. Data are public, provided as is. Caveats: pending layers show future changes, several ADDS items are copies republished by others, and the files are not certified for navigation outside official products. The data give airport and airspace geometry for network flow, capacity planning and resilience studies of air traffic, airport capacity and airspace disruption models; OurAirports is a crowdsourced global counterpart.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.aviation",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "FAA aeronautical layers (transport P3 harvest)",
+      "route": "R11",
+      "source": "esri-living-atlas"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "aeronautical data open download",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "plain_text",
+    "csv",
+    "geojson",
+    "ogc_map_service",
+    "shapefile"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/",
+  "id": "data-faa-aeronautical-data-nasr-adds",
+  "languages": [
+    "en"
+  ],
+  "licence": "US Government work, public use (provided as is)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "FAA aeronautical data (NASR subscription and Aeronautical Data Delivery Service)",
+  "provider": "U.S. Federal Aviation Administration (FAA), Aeronautical Information Services",
+  "related_ids": [
+    "data-ourairports",
+    "data-us-national-transportation-atlas-database"
+  ],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "product list (28 Day NASR Subscription, airport data, ADDS, UDDS); Aeronautical Data Team role; ICAO standards and AIRAC cycle",
+      "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "TXT and CSV subscriber files; format change from the 3 Sept 2026 cycle; current, preview and archived cycles",
+      "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "73 ADDS items (airports, runways, AM features, ATS routes, airspace, navaids, obstacles, pending layers); 'The data provided is for public use'",
+      "url": "https://adds-faa.opendata.arcgis.com/api/search/v1/collections/all/items?limit=100"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "national security UAS flight restrictions under 14 CFR 99.7, surface to 400 ft AGL; FAA Aeronautical Information Services",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/0270b9d8a5d34217856cc03aaf833309?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "UAS facility maps: permissible altitudes for Part 107 authorisations (copy republished by Maryland DOT)",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/9f406e7d79824d4d822c928df6ce5940?f=json"
+    }
+  ],
+  "spatial_resolution": "individual airports, runways, navaids, fixes, route segments and airspace polygons",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "aeronautical information",
+    "NASR",
+    "AIRAC",
+    "airspace",
+    "ATS routes",
+    "UAS",
+    "airports"
+  ],
+  "temporal_coverage": "current and pending AIRAC cycles, archive of past subscription cycles",
+  "title_en": "FAA aeronautical data (NASR subscription and Aeronautical Data Delivery Service)",
+  "type": "data",
+  "update_frequency": "monthly"
+}

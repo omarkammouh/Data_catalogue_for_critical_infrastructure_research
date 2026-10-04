@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/FUMD-AI/fumd-ai-preprocessing-workflow"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fumd ai sumo and omnet handover data preparation workflow",
+    "repo": "github.com/fumd-ai/fumd-ai-preprocessing-workflow",
+    "url": "https://github.com/FUMD-AI/fumd-ai-preprocessing-workflow"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "FUMD-AI prepares labelled vehicle and cellular-network observations from coupled simulation outputs. The university collaboration publishes Python notebooks that parse SUMO trajectory XML and OMNeT++ vectors, construct lagged features, align vehicle identifiers and label stable serving-cell changes. A master notebook runs the sequence, with an optional diagnostic step and a pure-Python vector extractor. Coverage and sampling resolution depend on the user’s simulations; the bundled example has two synthetic vehicles over eight simulated seconds. Public code is free under MIT, while explanatory text and figures use CC BY 4.0 and input data retain separate terms. A limitation is that exact-time merging can keep only a small fraction of higher-frequency radio samples when trajectories are recorded less often. The pipeline also fills never-recorded metrics with zero, which is a modelling choice requiring scrutiny. Simulation uses include preparing handover-prediction benchmarks and checking coupled traffic/telecom outputs. It relates to model-sumo, platform-omnet-plus-plus and model-simu5g. The provider documents fixes for reused vehicle identifiers and swapped event labels; its larger validation runs were not independently reproduced. No simulator, notebook or example data was run or downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"cellular\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/FUMD-AI/fumd-ai-preprocessing-workflow",
+  "id": "platform-fumd-ai-sumo-omnet-handover-preparation",
+  "interfaces": [
+    "code_library",
+    "other"
+  ],
+  "interoperability": [
+    "SUMO FCD XML",
+    "OMNeT++ VEC",
+    "Simu5G",
+    "VEINS identifier mapping",
+    "CSV"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-26",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "FUMD-AI SUMO and OMNeT++ handover-data preparation workflow",
+  "notes": "G8; G8-0231. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Bernad, C., Filiposka, S. and Gilly, K. FUMD-AI Preprocessing Workflow. Repository documentation; WorkflowHub DOI is still a placeholder..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "FUMD-AI collaboration, Miguel Hernández University and Ss. Cyril and Methodius University",
+  "related_ids": [
+    "model-sumo",
+    "platform-omnet-plus-plus",
+    "model-simu5g"
+  ],
+  "sectors": [
+    "digital.telecom",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/FUMD-AI/fumd-ai-preprocessing-workflow/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/FUMD-AI/fumd-ai-preprocessing-workflow"
+    }
+  ],
+  "tags": [],
+  "title_en": "FUMD-AI SUMO and OMNeT++ handover-data preparation workflow",
+  "type": "platform"
+}

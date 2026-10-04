@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/sogno-platform/proloaf"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/sogno-platform/proloaf/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "proloaf probabilistic electricity load forecasting",
+    "repo": "github.com/sogno-platform/proloaf",
+    "url": "https://github.com/sogno-platform/proloaf"
+  },
+  "description": "ProLoaF is a Python forecasting package for electricity-system time series. RWTH Aachen University contributors publish a recurrent encoder-decoder model, installation instructions and tutorials. A user supplies historical load, photovoltaic or wind-generation data and selects a prediction horizon; the package trains a forecasting model and returns probabilistic future profiles for the chosen target. Geographic coverage, sampling interval and forecast window follow the supplied series, not a fixed territory. Apache-2.0 source is available from GitHub and a linked university code service. A limitation is that predictive skill depends on the training series and how changing demand or generation conditions are represented. Forecasts are inputs to infrastructure simulations, not guarantees of future supply. The tool supports power-system dispatch and adequacy scenarios. The catalogue's model-pandapower can analyse a network built from such profiles, but this data link was not tested. No training data were fetched and no model was fit.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "sogno-platform/proloaf linked by rebase-energy/awesome-energy-models",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/sogno-platform/proloaf",
+  "id": "model-proloaf",
+  "inputs": [
+    "Historical electrical load or generation time series",
+    "Forecast horizon and training configuration"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-02",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "ProLoaF probabilistic electricity-load forecasting",
+  "notes": "G7 G7-1389. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Probabilistic load or generation forecasts"
+  ],
+  "provider": "RWTH Aachen University Institute for Automation of Complex Power Systems",
+  "related_ids": [
+    "model-pandapower"
+  ],
+  "repository": "https://github.com/sogno-platform/proloaf",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for sogno-platform/proloaf: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/sogno-platform/proloaf"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/sogno-platform/proloaf/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://acs.pages.rwth-aachen.de/public/automation/plf/proloaf/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Statistical model for electricity",
+  "type": "model"
+}

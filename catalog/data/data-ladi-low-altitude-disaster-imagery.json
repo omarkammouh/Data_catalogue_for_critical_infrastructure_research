@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "LADI v2 on Hugging Face",
+      "url": "https://huggingface.co/datasets/MITLL/LADI-v2-dataset"
+    },
+    {
+      "kind": "repo",
+      "label": "LADI overview repository",
+      "url": "https://github.com/LADI-Dataset/ladi-overview"
+    },
+    {
+      "kind": "paper",
+      "label": "LADI v2 technical write-up (arXiv)",
+      "url": "https://arxiv.org/abs/2406.02780"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "imagery_remote_sensing",
+    "historical_events",
+    "vulnerability_fragility"
+  ],
+  "data_kind": [
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ladi v2 low altitude disaster imagery with fema damage labels civil air patrol aerial photos",
+    "repo": "github.com/ladi-dataset/ladi-overview",
+    "url": "https://github.com/LADI-Dataset/ladi-overview"
+  },
+  "description": "The Low Altitude Disaster Imagery (LADI) dataset provides annotated aerial photographs taken after disasters from small aircraft, for training computer vision models that find damaged buildings, roads and hazards. It is produced by MIT Lincoln Laboratory with the US Civil Air Patrol (CAP); version 1 was funded by a NIST public safety innovation accelerator. Coverage: US disasters photographed by CAP aircraft, such as hurricanes and floods. Version 1 holds over 40,000 CAP images labelled by crowd workers with a hierarchical class set (infrastructure, damage, hazards such as floods and debris) and was used in the NIST TRECVID challenges of 2020 to 2022; version 2 relabels a new image set by CAP volunteers trained in FEMA damage assessment, using the FEMA Preliminary Damage Assessment scale (unaffected, affected, minor, major, destroyed), and adds pretrained classifiers. Format and access: images and labels on Hugging Face (MITLL/LADI-v2-dataset) loaded with the datasets library, in resized and full-resolution configurations, plus code on GitHub; free. Licence: CC BY 4.0 for the dataset, MIT for the code. Caveats: labels are image-level, not per building, oblique photos vary in altitude and angle, and version 1 labels are inconsistent. Simulation uses: rapid post-event damage mapping for emergency response and for validating hazard exposure and fragility estimates of buildings and roads. Related records: xBD (data-xbd-building-damage) is the satellite-based counterpart, and SKAI (model-skai) is a damage assessment model trained on such imagery.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source services-ladi-dataset: provider pages read (round 2 register piece)",
+      "route": "R17",
+      "source": "services-ladi-dataset"
+    }
+  ],
+  "formats": [
+    "image",
+    "parquet"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "storm_wind",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://github.com/LADI-Dataset/ladi-overview",
+  "id": "data-ladi-low-altitude-disaster-imagery",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-03-13",
+  "licence": "CC BY 4.0 (dataset); MIT (code)",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "LADI v2: Low Altitude Disaster Imagery with FEMA damage labels (Civil Air Patrol aerial photos)",
+  "provider": "MIT Lincoln Laboratory, with Civil Air Patrol volunteers; version 1 funded by NIST",
+  "related_ids": [
+    "data-xbd-building-damage",
+    "model-skai"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "transport.road",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: v1 over 40k CAP images crowd-labelled, used in TRECVID 2020-2022; v2 labelled by CAP volunteers trained in FEMA PDA scale; pretrained classifiers; Hugging Face MITLL/LADI-v2-dataset with v2, v2a, resized, v1_damage, v1_infra configurations; MIT licence (MIT 2024); last commit 2025-03-13",
+      "url": "https://raw.githubusercontent.com/LADI-Dataset/ladi-overview/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Dataset card licence cc-by-4.0; last modified 2024-06-25",
+      "url": "https://huggingface.co/api/datasets/MITLL/LADI-v2-dataset"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2025-03-13)",
+      "url": "https://huggingface.co/datasets/MITLL/LADI-v2-dataset"
+    }
+  ],
+  "tags": [
+    "aerial imagery",
+    "damage assessment",
+    "computer vision",
+    "Civil Air Patrol"
+  ],
+  "title_en": "LADI v2: Low Altitude Disaster Imagery with FEMA damage labels (Civil Air Patrol aerial photos)",
+  "type": "data"
+}

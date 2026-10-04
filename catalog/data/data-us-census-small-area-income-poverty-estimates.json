@@ -1,0 +1,131 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "SAIPE API (timeseries/poverty)",
+      "note": "API key required",
+      "url": "https://www.census.gov/data/developers/data-sets/Poverty-Statistics.html"
+    },
+    {
+      "kind": "viewer",
+      "label": "SAIPE interactive data tool",
+      "url": "https://www.census.gov/data-tools/demo/saipe/"
+    },
+    {
+      "kind": "portal",
+      "label": "SAIPE datasets",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.census.gov/programs-surveys/saipe/data/datasets.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing page)",
+      "note": "kept as secondary link by deep check A4",
+      "url": "https://www.census.gov/programs-surveys/saipe.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "social_vulnerability_equity",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "small area income and poverty estimates saipe",
+    "url": "https://census.gov/programs-surveys/saipe/data/datasets.html"
+  },
+  "description": "The Small Area Income and Poverty Estimates (SAIPE) program of the U.S. Census Bureau produces single-year estimates of median household income and poverty for all states and counties, and of school-age children in poverty for all 13,000-plus school districts. Its main purpose is the administration of federal programmes and the allocation of funds to local jurisdictions, such as Title I education grants. The estimates are model-based: for counties and states they combine American Community Survey data with population estimates and administrative records (federal tax data and SNAP benefits), which gives more precise annual county figures than ACS 1-year estimates alone. Coverage: states, counties and school districts of the United States, annual, with 2024 estimates available on 2026-09-27; series back to the 1990s. Access: downloadable files, an interactive Income and Poverty data tool, and the Census Data API (timeseries/poverty, free key); free and public domain. Caveats: county is the finest level for the general poverty rate; the estimates are not direct counts and carry confidence intervals. Simulation uses: an annual county poverty and income layer for social vulnerability weighting in risk, resilience and affordability analysis (for example energy burden or water tariff studies) where tract detail is not needed. Related records: ACS tables, the Community Resilience Estimates and the CDC/ATSDR Social Vulnerability Index.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; All Surveys and Programs list, entry SAIPE",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): api.census.gov/data.json dataset list, group timeseries/poverty",
+      "route": "R35",
+      "source": "census-data-api"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "plain_text",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/programs-surveys/saipe/data/datasets.html",
+  "id": "data-us-census-small-area-income-poverty-estimates",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Small Area Income and Poverty Estimates (SAIPE)",
+  "notes": "The start year of the county series (1995 in temporal_coverage_years) is approximate; the SAIPE data pages list county estimates from the 1990s. Deep check A4 (2026-10-01) corrected: access_links, dedupe_keys, homepage .",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-american-community-survey-tables",
+    "data-us-census-community-resilience-estimates",
+    "data-cdc-atsdr-social-vulnerability-index"
+  ],
+  "schema_summary": "Poverty counts and rates (all ages, under 18, 5-17), median household income with 90% confidence intervals by state, county and school district",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Scope (states, counties, 13,000+ school districts), 2024 school district estimates",
+      "url": "https://www.census.gov/programs-surveys/saipe.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Purpose, estimates produced, model-based method",
+      "url": "https://www.census.gov/programs-surveys/saipe/about.html"
+    }
+  ],
+  "spatial_resolution": "County and school district",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "poverty",
+    "income",
+    "SAIPE",
+    "small area estimates",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "1990s to 2024",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1995
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Small Area Income and Poverty Estimates (SAIPE)",
+  "type": "data",
+  "update_frequency": "annual"
+}

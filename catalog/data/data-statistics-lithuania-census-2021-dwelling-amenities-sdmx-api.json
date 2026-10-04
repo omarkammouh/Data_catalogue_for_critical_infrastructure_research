@@ -1,0 +1,141 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "SDMX REST dataflow list (9,503 dataflows)",
+      "url": "https://osp-rs.stat.gov.lt/rest_xml/dataflow/"
+    },
+    {
+      "kind": "api",
+      "label": "S3R788 conventional dwellings with sewerage, census 2021 (SDMX XML)",
+      "url": "https://osp-rs.stat.gov.lt/rest_xml/data/S3R788_GBS031000_1"
+    },
+    {
+      "kind": "api",
+      "label": "S3R786 conventional dwellings by type and useful floor area, census 2021 (SDMX XML)",
+      "url": "https://osp-rs.stat.gov.lt/rest_xml/data/S3R786_GBS030700_1"
+    },
+    {
+      "kind": "api",
+      "label": "S3R787 conventional dwellings with electricity supply, census 2021 (SDMX XML)",
+      "url": "https://osp-rs.stat.gov.lt/rest_xml/data/S3R787_GBS031000_1"
+    },
+    {
+      "kind": "api",
+      "label": "S3R792 conventional dwellings with water supply, census 2021 (SDMX XML)",
+      "url": "https://osp-rs.stat.gov.lt/rest_xml/data/S3R792_GBS031000_1"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "LT"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "statistics lithuania population and housing census 2001 2011 and 2021 conventional dwellings by amenities electricity water supply sewerage hot water flush toilet bath and floor area by municipality sdmx api",
+    "url": "https://osp.stat.gov.lt"
+  },
+  "description": "Statistics Lithuania publishes its census results in the official statistics portal, whose SDMX REST API lists 9,503 dataflows and returns data without registration. The census dataflows, with structure codes GBS03xxxx, count conventional dwellings and those with electricity supply, water supply, sewerage, hot water supply, a flush toilet, a bath or shower, or all conveniences, for 2001 and 2011 in one set of flows and for 2021 in another. Each flow is split by administrative territory, urban or rural place of residence and dwelling type (single dwelling, two dwelling or multi dwelling building, or non residential building); a separate flow gives dwellings by useful floor area. Coverage is national: for 2021 the API returned 1,437,680 conventional dwellings and 1,420,401 conventional dwellings with sewerage. Format and access: free SDMX XML and JSON through the REST API. The portal web pages returned a Cloudflare challenge (HTTP 403) from the cloud, so the tables could only be read through the API. Licence: not stated on the pages read. Caveats: territory codes need the codelist from the data structure definition; the definition of sewerage was not read. Simulation uses: municipal counts of dwellings on water, sewer and electricity networks by building type for capacity planning, and floor area for exposure. Related records: the Estonia REL2021 dwelling amenities tables and the Hungary census 2022 dwelling series.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:LT:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "analysis_package_file",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://osp.stat.gov.lt/",
+  "id": "data-statistics-lithuania-census-2021-dwelling-amenities-sdmx-api",
+  "languages": [
+    "en",
+    "lt"
+  ],
+  "licence": "not stated (provider pages not readable from the cloud on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://osp.stat.gov.lt/"
+    ]
+  },
+  "maturity": "active",
+  "name": "Statistics Lithuania Population and Housing Census 2001, 2011 and 2021 conventional dwellings by amenities (electricity, water supply, sewerage, hot water, flush toilet, bath) and floor area by municipality, SDMX API",
+  "provider": "State Data Agency, Statistics Lithuania",
+  "related_ids": [
+    "data-statistics-estonia-rel2021-dwellings-amenities-and-commuting-tables",
+    "data-ksh-hungary-census-2022-dwelling-equipment-and-heating-series-by-county"
+  ],
+  "schema_summary": "Census dataflows with structure codes GBS03xxxx: S3R786 conventional dwellings (by type, occupancy, ownership, useful floor area), S3R787 with electricity supply, S3R788 with sewerage, S3R789 with hot water supply, S3R790 with conveniences, S3R791 with flush toilet, S3R792 with water supply, S3R793 with bath or shower; dimensions administrative territory, place of residence (total, urban, rural), dwelling type (single, two dwelling, multi dwelling, non residential)",
+  "sectors": [
+    "energy.electricity",
+    "water.drinking_water",
+    "water.wastewater",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: 9,503 dataflows, census flows S3R786 to S3R793",
+      "url": "https://osp-rs.stat.gov.lt/rest_xml/dataflow/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: 1,095 observations, dimensions, national total 1,420,401",
+      "url": "https://osp-rs.stat.gov.lt/rest_xml/data/S3R788_GBS031000_1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: national total 1,437,680",
+      "url": "https://osp-rs.stat.gov.lt/rest_xml/data/S3R786_GBS030700_1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: Cloudflare challenge, HTTP 403",
+      "url": "https://osp.stat.gov.lt/gyventoju-ir-bustu-surasymai1"
+    }
+  ],
+  "spatial_resolution": "73 administrative territory codes including the country total and municipalities, split by urban and rural place of residence",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "Lithuania",
+    "census 2021",
+    "sewerage",
+    "water supply",
+    "electricity",
+    "SDMX",
+    "municipality"
+  ],
+  "temporal_coverage": "census years 2001, 2011 and 2021 (separate dataflows for 2001 to 2011 and for 2021)",
+  "temporal_coverage_years": {
+    "end": 2021,
+    "start": 2001
+  },
+  "temporal_resolution": "census years",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "Statistics Lithuania Population and Housing Census 2001, 2011 and 2021 conventional dwellings by amenities (electricity, water supply, sewerage, hot water, flush toilet, bath) and floor area by municipality, SDMX API",
+  "type": "data"
+}

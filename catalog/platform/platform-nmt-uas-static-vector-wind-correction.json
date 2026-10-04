@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/13309036"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/13309036"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Link supplied by Zenodo; repository contents not independently inspected.",
+      "url": "https://github.com/jfdoolster/nmt_uas_wind_direction"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.5194/amt-17-5091-2024"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.13309036",
+    "name": "nmt uas wind direction",
+    "repo": "github.com/jfdoolster/nmt_uas_wind_direction",
+    "url": "https://zenodo.org/records/13309036"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "Jonathan Dooley at New Mexico Institute of Mining and Technology publishes a minimal working example for correcting vector winds measured by a UAV-mounted Trisonica anemometer. The August 2024 Zenodo archive and linked GitHub repository provide Python code free under GPL 3.0. Inputs include measured wind components, vehicle velocity, pressure, temperature and heading. Outputs contain one-second averaged winds, horizontal errors, density, transect normals and cross-wind components. These quantities can prepare airborne methane measurements for industrial-emission and waste-facility dispersion simulations. Coverage depends on the user’s flight observations, not a fixed geographic grid. No related catalogue record explicitly covers this routine. Vehicle velocity must use East-North-Up coordinates, which may differ from the aircraft default; heading selection also changes processing. The README documents development with Python 3.11 but does not establish every package version. Sensor uncertainty and transformed-wind accuracy were not independently tested, and no code was executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "Follow explicit resource link from https://amt.copernicus.org/articles/17/5091/2024/ to https://zenodo.org/records/13309036",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://zenodo.org/records/13309036",
+  "id": "platform-nmt-uas-static-vector-wind-correction",
+  "interfaces": [
+    "command_line",
+    "code_library",
+    "file_exchange"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-08-14",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "nmt_uas_wind_direction",
+  "notes": "G6 item G6-0778. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Dooley, Jonathan F (New Mexico Institute of Mining and Technology)",
+  "related_ids": [],
+  "sectors": [
+    "energy.gas_hydrogen",
+    "energy.oil_fuels",
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/13309036"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence gpl-3.0, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/13309036"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Coordinate conventions, input units, heading selection and returned wind-error fields.",
+      "url": "https://api.github.com/repos/jfdoolster/nmt_uas_wind_direction/readme"
+    }
+  ],
+  "supported_sectors": [
+    "energy.gas_hydrogen",
+    "energy.oil_fuels",
+    "services.waste",
+    "water.wastewater"
+  ],
+  "tags": [],
+  "title_en": "Wind direction correction for UAV anemometer measurements",
+  "type": "platform"
+}

@@ -1,0 +1,147 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Activations viewer",
+      "url": "https://mapping.emergency.copernicus.eu/activations/"
+    },
+    {
+      "kind": "api",
+      "label": "CEMS Mapping API (activations)",
+      "url": "https://mapping.emergency.copernicus.eu/activations/api/activations/"
+    },
+    {
+      "kind": "docs",
+      "label": "How to harvest CEMS Mapping data",
+      "url": "https://mapping.emergency.copernicus.eu/about/how-to-harvest-cems-mapping-data/"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing page)",
+      "note": "kept as secondary link by deep check A4",
+      "url": "https://mapping.emergency.copernicus.eu/"
+    }
+  ],
+  "access_note": "Sensitive activations are restricted to registered authorised users; only authorised users can request an activation.",
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "emergency_management",
+    "historical_events",
+    "imagery_remote_sensing",
+    "recovery_restoration"
+  ],
+  "data_kind": [
+    "event_record",
+    "imagery",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "copernicus emergency management service on demand mapping rapid mapping and risk and recovery mapping",
+    "url": "https://mapping.emergency.copernicus.eu/activations/api/activations"
+  },
+  "description": "Copernicus EMS On-Demand Mapping produces satellite-based maps and geospatial data for natural and man-made disasters anywhere in the world, on request of authorised users. Rapid Mapping works 24 hours a day and delivers event extent (flooded or burnt area) and grading of damage to buildings, transport and facilities within hours or days; the Risk and Recovery portfolios give pre-disaster and post-disaster analyses. Each activation carries an EMSR code, event metadata, areas of interest and products. The producer is the Copernicus Emergency Management Service of the European Union Space Programme. Coverage is global and event-driven, from very high resolution optical and radar imagery. Products are downloadable as zip packages, geodatabases, GeoJSON and TIFF, served as ArcGIS REST layers, and listed by an OpenAPI activations API. Licence: free, full and open access under Regulation (EU) 2021/696, with reproduction, distribution and adaptation allowed; sensitive activations are restricted to registered users. Caveats: only activated events are mapped; impacts can be underestimated or missed because of resolution, image timing, clouds, viewing angle or sensor type; the first available image is often suboptimal. Simulation uses: observed flood and damage footprints to validate hazard and damage models, event data for emergency response exercises, and recovery monitoring for resilience studies. Related records: EM-DAT and GDACS are catalogued by the cross-cutting piece.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "satellite rapid damage mapping disaster activations (register services-copernicus-ems)",
+      "route": "R40",
+      "source": "assistant recall"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "esri_geodatabase",
+    "raster",
+    "source_code",
+    "ogc_map_service",
+    "api"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "storm_wind",
+    "wildfire",
+    "earthquake",
+    "landslide",
+    "tsunami",
+    "volcanic",
+    "technological_failure"
+  ],
+  "homepage": "https://mapping.emergency.copernicus.eu/activations/api/activations/",
+  "id": "data-copernicus-ems-on-demand-mapping",
+  "languages": [
+    "en"
+  ],
+  "licence": "Copernicus free, full and open access under Regulation (EU) 2021/696 (CEMS terms and conditions)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Copernicus Emergency Management Service On-Demand Mapping (Rapid Mapping and Risk and Recovery Mapping)",
+  "notes": "Deep check A4 (2026-10-01) corrected: access_links, dedupe_keys, homepage .",
+  "provider": "Copernicus Emergency Management Service, European Commission (EU Space Programme)",
+  "related_ids": [],
+  "schema_summary": "Per activation (EMSR code): event, countries, category, dates, areas of interest; products: delineation (event extent), grading (damage to buildings, transport and facilities), reference maps, with metadata and download links",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Free mapping of natural and man-made disasters worldwide; Preparedness, Rapid Mapping and Recovery portfolios; public viewing and download except sensitive activations",
+      "url": "https://mapping.emergency.copernicus.eu/about/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "OpenAPI activations API, product download formats, ArcGIS REST layers",
+      "url": "https://mapping.emergency.copernicus.eu/about/how-to-harvest-cems-mapping-data/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Resolution, timing, clouds, viewing angle and sensor limits can cause under-detection",
+      "url": "https://mapping.emergency.copernicus.eu/about/limitations-when-using-earth-observation-data/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Free, full and open access under Regulation (EU) 2021/696; some data restricted under article 53",
+      "url": "https://mapping.emergency.copernicus.eu/terms-and-conditions/"
+    }
+  ],
+  "spatial_resolution": "Area of interest, from satellite imagery (very high resolution optical and SAR)",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "disaster mapping",
+    "damage assessment",
+    "satellite",
+    "rapid mapping",
+    "flood extent",
+    "burnt area",
+    "Copernicus"
+  ],
+  "temporal_coverage": "Activations since the service began (973 listed in the API sample); ongoing",
+  "temporal_resolution": "Per activation, within hours or days of an event",
+  "temporal_resolution_class": "hourly",
+  "title_en": "Copernicus Emergency Management Service On-Demand Mapping (Rapid Mapping and Risk and Recovery Mapping)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

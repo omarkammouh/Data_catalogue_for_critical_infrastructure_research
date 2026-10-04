@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/Uchit1/Topology-informed_Gap-time_Pipe_failures"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Topology-informed recurrent survival modelling of water pipe failures, as named in repository documentation. Publication DOI not verified.",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "topology informed recurrent survival model for water pipe failures",
+    "repo": "github.com/uchit1/topology-informed_gap-time_pipe_failures",
+    "url": "https://github.com/Uchit1/Topology-informed_Gap-time_Pipe_failures"
+  },
+  "description": "This Python workflow models recurrent water-distribution pipe failures with topology features and a Random Survival Forest. Its public repository supplies the entry script, graph-feature, embedding-alignment, gap-time preparation and survival-training modules, plus a synthetic Net3 demonstration input. The documented input combines pipe geometry from a GeoPackage, an EPANET Net3 network and pipe attributes with yearly synthetic failure indicators from 2007 through 2024. The model trains on recurrent gap-time intervals through 2019 and estimates each eligible pipe’s chance of at least one failure during the fixed 2020–2024 window. Its stated outputs include pipe-level predictions, survival curves, Harrell C-index, top-20-percent recall and permutation importance. A modeller could adapt this workflow to asset and break histories when assessing water-network maintenance strategies. The README says the source utility observations are confidential and the included numerical results are synthetic demonstrations, not measured real-world accuracy. It names output folders and two capitalized script paths absent from the inspected tree; the top-level run script was not executed. BSD-3-Clause is stated for the repository, while the Net3 example has upstream EPANET attribution. This supports risk-based maintenance planning and resilience simulations, but measured local histories are needed for real calibration.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"water distribution\" \"data\"",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://github.com/Uchit1/Topology-informed_Gap-time_Pipe_failures",
+  "id": "model-net3-topology-pipe-failure-survival",
+  "inputs": [
+    "Net3 EPANET INP network",
+    "Net3 pipe geometries GeoPackage",
+    "synthetic pipe attributes and annual failure indicators CSV"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-28",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical",
+    "network"
+  ],
+  "name": "Topology-informed recurrent survival model for water pipe failures",
+  "notes": "G8; G8-0916. G8; G8-0916. Distinct synthetic input collection is G8-0917. Neither code nor data were executed. Simulation and maintenance uses are curator interpretations. ",
+  "outputs": [
+    "pipe-level five-year failure risk",
+    "survival curves",
+    "holdout evaluation metrics"
+  ],
+  "provider": "Uchit1 repository author",
+  "related_ids": [
+    "model-epanet"
+  ],
+  "repository": "https://github.com/Uchit1/Topology-informed_Gap-time_Pipe_failures",
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/Uchit1/Topology-informed_Gap-time_Pipe_failures/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/Uchit1/Topology-informed_Gap-time_Pipe_failures"
+    }
+  ],
+  "tags": [],
+  "title_en": "Topology-informed recurrent survival model for water pipe failures",
+  "type": "model"
+}

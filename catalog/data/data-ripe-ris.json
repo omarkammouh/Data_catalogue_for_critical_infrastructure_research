@@ -1,0 +1,136 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "MRT archive",
+      "url": "https://data.ris.ripe.net/"
+    },
+    {
+      "kind": "api",
+      "label": "RIS Live streaming",
+      "url": "https://ris.ripe.net/docs/ris-live/"
+    },
+    {
+      "kind": "docs",
+      "label": "RIS documentation",
+      "url": "https://ris.ripe.net/docs/"
+    },
+    {
+      "kind": "docs",
+      "label": "MRT file naming and intervals",
+      "url": "https://ris.ripe.net/docs/mrt/"
+    },
+    {
+      "kind": "docs",
+      "label": "Route collectors",
+      "url": "https://ris.ripe.net/docs/route-collectors/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "sensor_realtime_streams",
+    "system_description",
+    "historical_events"
+  ],
+  "data_kind": [
+    "stream",
+    "network_topology",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ripe ncc routing information service ris",
+    "url": "https://ripe.net/analyse/internet-measurements/routing-information-service-ris"
+  },
+  "description": "The Routing Information Service (RIS) of the RIPE NCC, the Regional Internet Registry for Europe, the Middle East and parts of Central Asia, is a platform that collects and archives Border Gateway Protocol (BGP) routing data, the announcements through which networks tell each other which address blocks they can reach. Route collectors named RRC00 onwards, using AS12654, receive full or partial routing tables from peering networks; most sit on internet exchange peering LANs (for example LINX, AMS-IX, DE-CIX, NAP Africa, IX.br and Equinix Miami) and a few multi-hop collectors (RRC00, RRC24, RRC25) take feeds from networks anywhere. The purpose is visibility of the state and history of global routing for operators and researchers, including debugging and post-mortems of routing events. The archive at data.ris.ripe.net holds MRT files per collector from September 1999 to the present: routing table dumps (bview) every 8 hours and update files every 5 minutes, gzip-compressed and free to download; RIS Live streams updates in near real time over a WebSocket, and the data also feed RIPEstat. Tools such as bgpdump, CAIDA BGPStream and BGPKit parse the files. Use is free under the RIPE NCC terms of service. Caveats: the view depends on which networks peer with the collectors, so it is incomplete and biased towards networks at the hosting exchanges; collectors are added or retired over time, and MRT processing needs specialist tools. Simulation uses: reconstructing AS-level topology and paths, detecting and replaying routing outages, hijacks and cable-cut effects, and validating resilience and cascading-failure models of interdomain routing. Related records: RouteViews, the CAIDA AS Relationships Dataset and PeeringDB.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.internet_exchange:sensor_realtime_streams",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "archive",
+    "api"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris/",
+  "id": "data-ripe-ris",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "RIPE NCC Terms of Service (free use)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "RIPE NCC Routing Information Service (RIS)",
+  "provider": "RIPE NCC",
+  "related_ids": [
+    "data-caida-as-relationships",
+    "data-peeringdb",
+    "data-routeviews"
+  ],
+  "schema_summary": "BGP RIB entries and update messages per peer: prefix, AS path, next hop, communities, timestamps",
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "RIS is a BGP routing data collection platform",
+      "url": "https://ris.ripe.net/docs/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "AS12654, RRC collectors at IXPs, list of collectors and sponsors",
+      "url": "https://ris.ripe.net/docs/route-collectors/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MRT naming, bview every 8 hours, updates every 5 minutes, multi-hop RRC00/24/25, parsers",
+      "url": "https://ris.ripe.net/docs/mrt/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Monthly folders from 1999.09 to 2026.09",
+      "url": "https://data.ris.ripe.net/rrc00/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Near real-time streaming",
+      "url": "https://ris.ripe.net/docs/ris-live/"
+    }
+  ],
+  "tags": [
+    "BGP",
+    "route collectors",
+    "MRT",
+    "internet routing",
+    "RIPE"
+  ],
+  "temporal_coverage": "September 1999 to present",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1999
+  },
+  "temporal_resolution": "Dumps every 8 hours, updates every 5 minutes, live stream",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "RIPE NCC Routing Information Service (RIS)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

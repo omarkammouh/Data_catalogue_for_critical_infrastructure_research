@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Construcción: GeoPackage, GeoJSON, DXF and Shapefile, monthly versions",
+      "url": "https://datosabiertos.bogota.gov.co/dataset/construccion"
+    },
+    {
+      "kind": "api",
+      "label": "Construcción ArcGIS REST, WMS and WFS",
+      "url": "https://serviciosgis.catastrobogota.gov.co/arcgis/rest/services/catastro/construccion/MapServer/0"
+    },
+    {
+      "kind": "download",
+      "label": "Predios (property units): CSV and DBF, monthly versions",
+      "url": "https://datosabiertos.bogota.gov.co/dataset/predios-bogota"
+    },
+    {
+      "kind": "viewer",
+      "label": "Mapas Bogotá",
+      "url": "https://mapas.bogota.gov.co/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CO"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bogota cadastral constructions and property lots uaecd open data",
+    "url": "https://datosabiertos.bogota.gov.co/dataset/construccion"
+  },
+  "description": "Bogotá's cadastral office, the UAECD, publishes the city's cadastral building and property layers as open data each month. The Construcción layer outlines built areas with a permanent roof associated with a lot, across urban and rural Bogotá; its service lists a construction code, number of floors, basements and semi-basement, overhangs, height, elevation and the lot code, and it held 2,422,230 features on 26 September 2026. The Predios dataset lists property units as defined by IGAC resolution 070 of 2011, including condominiums and horizontal property, public land and improvements on others' land, as CSV and DBF tables. Coverage: the Capital District of Bogotá. Access: monthly GeoPackage, GeoJSON, DXF and Shapefile files for constructions and CSV and DBF for property units on the Bogotá open data portal, plus ArcGIS REST, WMS and WFS services and the Mapas Bogotá viewer. Licence: CC BY 4.0; free. Caveats: the attributes are cadastral descriptors, not structural systems or construction years, and each monthly release supersedes the previous one, although earlier files stay listed. Simulation uses are building footprints with floor counts and heights for seismic and landslide exposure, population distribution and urban digital twins in Bogotá. Related records: the Bogotá urban parks inventory.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: Catastro Bogotá (UAECD) homepage",
+      "route": "R10",
+      "source": "organisations.csv:CO:built_environment:tax_assessor"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: IDECA Bogotá homepage",
+      "route": "R10",
+      "source": "organisations.csv:CO:built_environment:municipal_planning"
+    }
+  ],
+  "formats": [
+    "geopackage",
+    "geojson",
+    "cad_bim_3d",
+    "shapefile",
+    "csv",
+    "analysis_package_file",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://datosabiertos.bogota.gov.co/dataset/construccion",
+  "id": "data-bogota-uaecd-cadastral-constructions-and-lots",
+  "languages": [
+    "es"
+  ],
+  "last_updated": "2026-09-07",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Bogotá cadastral constructions and property lots (UAECD open data)",
+  "provider": "Unidad Administrativa Especial de Catastro Distrital (UAECD), Bogotá",
+  "regions": [
+    "Bogotá D.C."
+  ],
+  "related_ids": [
+    "data-bogota-urban-parks-property-inventory"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Construcción: definition, urban and rural extent, CC BY 4.0, resources (REST, WMS, WFS, GPKG, GeoJSON, DXF, SHP by month), modified 2026-09-03",
+      "url": "https://datosabiertos.bogota.gov.co/api/3/action/package_show?id=construccion"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Fields CONCODIGO, CONNPISOS, CONTSEMIS, CONNSOTANO, LOTECODIGO, CONMEJORA, CONVOLADIZ, CONALTURA, CONELEVACI; count query 2,422,230",
+      "url": "https://serviciosgis.catastrobogota.gov.co/arcgis/rest/services/catastro/construccion/MapServer/0?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Predios: definition under IGAC resolution 070/2011, CC BY 4.0, CSV and DBF monthly versions, modified 2026-09-07",
+      "url": "https://datosabiertos.bogota.gov.co/api/3/action/package_show?id=predios-bogota"
+    }
+  ],
+  "tags": [
+    "cadastre",
+    "buildings",
+    "Bogotá",
+    "Colombia",
+    "floors",
+    "property lots"
+  ],
+  "temporal_coverage": "Monthly releases; files kept for earlier months of 2026",
+  "title_en": "Bogotá cadastral constructions and property lots (UAECD open data)",
+  "type": "data"
+}

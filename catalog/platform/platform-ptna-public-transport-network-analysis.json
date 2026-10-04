@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "PTNA website with daily analyses",
+      "url": "https://ptna.openstreetmap.de/"
+    },
+    {
+      "kind": "docs",
+      "label": "OSM wiki page",
+      "url": "https://wiki.openstreetmap.org/wiki/Public_Transport_Network_Analysis"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/osm-ToniE/ptna"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ptna public transport network analysis for openstreetmap",
+    "repo": "github.com/osm-tonie/ptna",
+    "url": "https://wiki.openstreetmap.org/wiki/Public_Transport_Network_Analysis"
+  },
+  "deployment": [
+    "hosted_service",
+    "own_server"
+  ],
+  "description": "PTNA (Public Transport Network Analysis) is an open-source quality-assurance system for public transport routes mapped in OpenStreetMap. Every day it analyses route and route_master relations, aggregates them per network and area, and compares them with target lists of lines supplied as CSV, flagging missing routes and errors such as gaps in itineraries; it also aggregates GTFS feeds and displays them in a readable way with shapes on a map, so mappers and analysts can compare the OSM network with the operator's timetable data. It was created and is maintained by the OpenStreetMap contributor ToniE and runs at ptna.openstreetmap.de. Coverage: the networks and areas configured on the site, across several countries; the wiki page does not list them. Access: website with an overview page, daily results and on-demand analysis. Licence and cost: GNU GPL for the software, free; OSM data are ODbL. Caveats: it focuses on the PTv2 tagging scheme and only checks what mappers and target lists provide, so a clean report does not prove the network is complete. It helps prepare verified transit network topology for network flow models and transit digital twins, and links OpenStreetMap to the GTFS feeds described by the GTFS specification record.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "https://github.com/MobilityData/awesome-transit README read 2026-09-28 (analysis tools, archives, national data, formats, agency tools)",
+      "route": "R48",
+      "source": "awesome-transit"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://wiki.openstreetmap.org/wiki/Public_Transport_Network_Analysis",
+  "id": "platform-ptna-public-transport-network-analysis",
+  "interfaces": [
+    "web_app",
+    "other",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "OpenStreetMap route and route_master relations (PTv2 and PTv1)",
+    "GTFS feeds",
+    "CSV route lists"
+  ],
+  "language": [
+    "other"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-3.0 (software); OpenStreetMap data under ODbL",
+  "licence_type": [
+    "share_alike",
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "PTNA, Public Transport Network Analysis for OpenStreetMap",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "ToniE (OpenStreetMap contributor), hosted on openstreetmap.de",
+  "related_ids": [
+    "data-openstreetmap",
+    "data-gtfs-specification"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "daily analysis of route and route_master relations per network and area; CSV target lists; GTFS aggregation with map overlay; created by ToniE; GNU GPL; PTv2 focus",
+      "url": "https://wiki.openstreetmap.org/wiki/Public_Transport_Network_Analysis"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "GNU GPL version 3",
+      "url": "https://raw.githubusercontent.com/osm-ToniE/ptna/master/LICENSE"
+    }
+  ],
+  "supported_sectors": [
+    "transport.public_transit"
+  ],
+  "tags": [
+    "public transport",
+    "OpenStreetMap",
+    "GTFS",
+    "quality assurance",
+    "r2-fresh-transport"
+  ],
+  "title_en": "PTNA, Public Transport Network Analysis for OpenStreetMap",
+  "type": "platform"
+}

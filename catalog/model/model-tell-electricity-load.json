@@ -1,0 +1,139 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/IMMM-SFA/tell"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.04472"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/IMMM-SFA/tell/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.21105/joss.04472",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "tell total electricity load model",
+    "url": "https://github.com/immm-sfa/tell"
+  },
+  "description": "tell is the Total Electricity Load model developed by the IMMM-SFA project to create spatially consistent electricity-demand projections. It uses multilayer perceptron models trained on weather and historical loads for 54 balancing authorities, then redistributes and scales projections to match annual state-level GCAM-USA demand. Inputs include hourly meteorology and population projections. The Python model outputs hourly demand at county, state and balancing-authority scales across the conterminous United States, in yearly increments through 2100. The repository and detailed user guide are public and the code is free under BSD-2-Clause. These profiles can drive unit-commitment or dispatch simulations and test sensitivity to climate and population change. A limitation is that the documented training uses 2015 to 2019 observations and the model is not immediately portable to another country. County allocation also assumes population-based load shares within service areas. No directly related existing catalogue record was established for the complete model. Documentation was checked without running projections or downloading climate inputs.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "JOSS whole-index enumeration; 10.21105/joss.04472; G5-LOCAL-079;G5-LOCAL-085;G5-LOCAL-086;G5-LOCAL-089;G5-LOCAL-096;G5-LOCAL-100;G5-LOCAL-103;G5-LOCAL-106",
+      "route": "R07",
+      "source": "metadata-review"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "immm-sfa/tell linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/IMMM-SFA/tell",
+  "id": "model-tell-electricity-load",
+  "inputs": [
+    "Hourly meteorological projections",
+    "Population projections and annual GCAM-USA state loads",
+    "Historical weather and electricity loads for training"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-07-08",
+  "licence": "BSD-2-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "tell Total Electricity Load model",
+  "notes": "G5 G5-0148. Software checked through metadata and documentation, without installation or execution. Geographic scope follows the documented application or software portability; it does not imply validation throughout that area. ",
+  "outputs": [
+    "Hourly county, state and balancing-authority electricity-demand projections"
+  ],
+  "provider": "IMMM-SFA tell developers",
+  "related_ids": [],
+  "repository": "https://github.com/IMMM-SFA/tell",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Describing article and software availability.",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.04472"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository identity and licence metadata.",
+      "url": "https://api.github.com/repos/IMMM-SFA/tell"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own documented purpose, interfaces, examples and limits.",
+      "url": "https://raw.githubusercontent.com/IMMM-SFA/tell/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own model workflow, geographical limits, resolutions, training period and outputs.",
+      "url": "https://immm-sfa.github.io/tell/user_guide.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Published article summary reviewed in XML; article text not saved.",
+      "url": "https://raw.githubusercontent.com/openjournals/joss-papers/master/joss.04472/10.21105.joss.04472.jats"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for IMMM-SFA/tell: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/immm-sfa/tell"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/immm-sfa/tell/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://immm-sfa.github.io/tell/tell_quickstarter.html"
+    }
+  ],
+  "tags": [
+    "research software",
+    "JOSS"
+  ],
+  "title_en": "Tell Total Electricity Load model",
+  "type": "model"
+}

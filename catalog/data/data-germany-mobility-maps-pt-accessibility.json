@@ -1,0 +1,118 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo (latest version)",
+      "url": "https://doi.org/10.5281/zenodo.14772646"
+    },
+    {
+      "kind": "viewer",
+      "label": "Mobility Maps Explorer",
+      "url": "https://mobility.dbvis.de"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (IEEE VDS 2024)",
+      "url": "https://doi.org/10.1109/VDS63897.2024.00006"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download",
+      "note": "Checked 2026-10-01: returns application/octet-stream directly.",
+      "url": "https://zenodo.org/records/19455654/files/MOBILITY_MAPS_v2025-07-09_v2.parquet?download=1"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "service_performance",
+    "social_vulnerability_equity"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.14772646",
+    "name": "mobility maps housing level public transport accessibility for germany optimap",
+    "url": "https://mobility.dbvis.de"
+  },
+  "description": "MOBILITY MAPS, first released as OPTIMAP, gives public transport accessibility for every registered building in Germany. For each house coordinate it lists the walking distance in metres to the nearest public transport stop, computed with Dijkstra's algorithm on OpenStreetMap paths to the ten nearest stops, and an overall score of public transport quality for daily use. The score comes from a scenario-based simulation of weighted travel and waiting times and connection frequency to typical destinations such as train stations, schools, doctors, supermarkets and parks, weighted by demography; it is in an artificial time unit, not real minutes. Inputs are the DELFI NeTEx timetable from Germany's national access point (July 2025), house coordinates from the 16 federal states (late 2024) and OpenStreetMap (July 2025). It was produced by M. T. Fischer and colleagues at the University of Konstanz, with an interactive explorer at mobility.dbvis.de. The latest version (2025-07-09_v2, April 2026) is a 588 MB Parquet file with a data card, free on Zenodo under the Datenlizenz Deutschland Namensnennung 2.0. Caveats: scores are relative and depend on the chosen scenarios and weights, timetables are a single July 2025 snapshot, and walking uses OSM paths only. The data support capacity planning and equity analysis of transit networks; related records are the Mobility Database and Conveyal R5.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "handed over by another piece",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://mobility.dbvis.de",
+  "id": "data-germany-mobility-maps-pt-accessibility",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-07",
+  "licence": "dl-de-by-2.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "MOBILITY MAPS - housing-level public transport accessibility for Germany (OPTIMAP)",
+  "provider": "University of Konstanz, Data Analysis and Visualization group (Fischer, Fürst, Metz, Schmidt, Rauscher, Keim)",
+  "related_ids": [
+    "data-mobility-database",
+    "model-conveyal-r5"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "MOBILITY MAPS v2025-07-09: columns lat, lng, MinDistanceWalking, scores_OVERALL; methodology (DELFI NeTEx July 2025, state house coordinates late 2024, OSM July 2025, Dijkstra, scenario-weighted score in artificial time unit); licence dl-de-by/2.0; University of Konstanz; explorer mobility.dbvis.de; supplement to 10.1109/VDS63897.2024.00006",
+      "url": "https://zenodo.org/records/15878460"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "latest version 2025-07-09_v2 published 2026-04-07, parquet 588 MB and data card; concept DOI 10.5281/zenodo.14772646 resolves here",
+      "url": "https://zenodo.org/records/19455654"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): added 1 verified direct data link(s) from the provider's resource list. Verified: https://zenodo.org/records/19455654/files/MOBILITY_MAPS_v2025-07-09_v2 -> verified by fetch during the check",
+      "url": "https://zenodo.org/records/19455654/files/MOBILITY_MAPS_v2025-07-09_v2.parquet?download=1"
+    }
+  ],
+  "tags": [
+    "public transport accessibility",
+    "walking distance",
+    "Germany",
+    "NeTEx",
+    "household level"
+  ],
+  "temporal_coverage": "timetable July 2025; house coordinates late 2024",
+  "title_en": "MOBILITY MAPS - housing-level public transport accessibility for Germany (OPTIMAP)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

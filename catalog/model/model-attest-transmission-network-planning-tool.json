@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo (source code)",
+      "url": "https://doi.org/10.5281/zenodo.10055002"
+    },
+    {
+      "kind": "portal",
+      "label": "ATTEST project",
+      "url": "https://attest-project.eu/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "attest optimisation tool for transmission network planning wp3 t3 2",
+    "url": "doi:10.5281/zenodo.10055001"
+  },
+  "description": "This is the optimisation tool for transmission network planning developed in work package 3 of the EU-funded ATTEST project. It was published on Zenodo in October 2023 by Kong Wangwei, Andrey Churkin, José Nicolás Melchor Gutiérrez and Eduardo Alejandro Martínez Ceseña. The tool uses a three-stage, scenario-based stochastic optimisation to minimise network reinforcement and operating costs, decomposing the problem into investment and operation models, with a screening model that pre-selects candidate investments. Flexibility offered by distribution networks at the transmission-distribution interfaces is included, a stochastic operation model finds worst-case short-term conditions, and security-constrained AC optimal power flow checks N-1 security. Inputs are network cases with future scenarios, Excel time series of demand, generation and flexibility, contingency lists and intervention costs; examples use a Portuguese 2030 transmission network. It runs from a Python command-line interface. Coverage is not tied to a place. The code is downloadable from Zenodo under the EUPL 1.2 at no cost. Caveats: it is a project release without ongoing maintenance, and defaults are used when inputs are missing. Simulation uses are transmission reinforcement planning under uncertainty with flexibility and N-1 security. Related records: data-attest-networks gives the ATTEST test networks.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "gas network optimization model",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://doi.org/10.5281/zenodo.10055001",
+  "id": "model-attest-transmission-network-planning-tool",
+  "inputs": [
+    "network data with future scenarios and generation costs (MATPOWER-style .m)",
+    "demand, generation and flexibility time series (Excel)",
+    "contingency lists",
+    "intervention lists and costs"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-10-30",
+  "licence": "EUPL-1.2",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "optimisation",
+    "network"
+  ],
+  "name": "ATTEST optimisation tool for transmission network planning (WP3 T3.2)",
+  "outputs": [
+    "screening results of candidate investments",
+    "investment plans minimising investment and operation cost"
+  ],
+  "provider": "ATTEST project (Kong Wangwei, Andrey Churkin, José Nicolás Melchor Gutiérrez, Eduardo Alejandro Martínez Ceseña)",
+  "related_ids": [
+    "data-attest-networks"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract: three-stage stochastic formulation, screening, TSO-DSO flexibility, SC AC OPF; EUPL-1.2; published 2023-10-30",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.10055002"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "README inside the archive (read on Zenodo's file preview) - inputs, outputs, cli.py commands, Portuguese example files",
+      "url": "https://zenodo.org/api/records/10055002/files/T3.2%20-%20Optimization%20tool%20for%20transmission%20network%20planning.zip/container/ATTEST-WP-3.2-Transmission_network_planning-master/README.md"
+    }
+  ],
+  "tags": [
+    "ATTEST",
+    "transmission planning",
+    "stochastic optimisation",
+    "flexibility",
+    "N-1 security",
+    "AC OPF"
+  ],
+  "title_en": "ATTEST optimisation tool for transmission network planning (WP3 T3.2)",
+  "type": "model",
+  "validated_on": [
+    "Portuguese transmission network 2030 scenario (example)"
+  ]
+}

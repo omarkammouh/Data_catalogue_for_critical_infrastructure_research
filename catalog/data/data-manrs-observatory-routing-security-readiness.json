@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "MANRS Observatory",
+      "url": "https://observatory.manrs.org/"
+    },
+    {
+      "kind": "docs",
+      "label": "Observatory overview",
+      "url": "https://manrs.org/manrs-observatory/"
+    },
+    {
+      "kind": "docs",
+      "label": "Observatory data sources",
+      "url": "https://manrs.org/manrs-observatory/data-sources/"
+    },
+    {
+      "kind": "api",
+      "label": "MANRS API registration",
+      "url": "https://observatory.manrs.org/register"
+    }
+  ],
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "security_threat",
+    "service_performance",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "manrs observatory routing security readiness scores per network region and economy",
+    "url": "https://observatory.manrs.org"
+  },
+  "description": "The MANRS Observatory is a public platform that measures the MANRS readiness of every network taking part in internet routing, as an indicator of the state of routing security, and presents consolidated routing security data for regions and economies with their evolution over time. Readiness shows how well each of the four MANRS actions (filtering, anti-spoofing, coordination and quality of routing information) is implemented, computed from metrics M1 to M9. Coverage: global, all autonomous systems seen in routing; inputs are RIPE RIS routing dumps (route leaks, hijacks and bogons), daily ROA snapshots from the five RIR RPKI trust anchors (routes not covered or invalidated by a ROA), route objects from the major internet routing registries (AFRINIC, APNIC, ARIN, LACNIC, RIPE, RADB, NTT, Level 3, JPIRR and others), APNIC Labs route origin validation filtering rates, and CAIDA Spoofer source address validation tests. Format and access: interactive web observatory; the data are also available through the MANRS API after registration, and members get per-ASN history reports in a members dashboard. Licence: not stated on the pages read; site terms and a content-sharing page exist but were not read. Caveats: readiness scores are derived measurements, not incident records; access to the API and research data needs registration or a partner request; the API documentation itself sits behind registration and was not read. Simulation uses: network-level routing security scores to weight hijack and route-leak exposure in internet resilience and cascading failure studies. Related records: the MANRS initiative case study (case_study-manrs-routing-security-initiative), the MANRS IXP validation tool (model-manrs-ixp-validation-tool) and Cloudflare's validated RPKI snapshot (data-cloudflare-rpki-portal-validated-roa-aspa-snapshot).",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source digital-manrs-observatory: provider pages read (round 2 register piece)",
+      "route": "R30",
+      "source": "digital-manrs-observatory"
+    }
+  ],
+  "formats": [
+    "web_page",
+    "api",
+    "document"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://observatory.manrs.org/",
+  "id": "data-manrs-observatory-routing-security-readiness",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated on the pages read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "MANRS Observatory: routing security readiness scores per network, region and economy",
+  "provider": "MANRS (Mutually Agreed Norms for Routing Security), supported by the Global Cyber Alliance",
+  "related_ids": [
+    "case_study-manrs-routing-security-initiative",
+    "model-manrs-ixp-validation-tool",
+    "data-cloudflare-rpki-portal-validated-roa-aspa-snapshot"
+  ],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Single-page app; description of MANRS and its four programmes",
+      "url": "https://observatory.manrs.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Public platform measuring MANRS readiness; regions and economies over time; MANRS API after registration; members dashboard; readiness definition",
+      "url": "https://manrs.org/manrs-observatory/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Sources: RIPE RIS, RIR RPKI ROAs, IRRs, APNIC Labs ROV, CAIDA Spoofer; metrics M1-M9 by action",
+      "url": "https://manrs.org/manrs-observatory/data-sources/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Redirects to the observatory registration page",
+      "url": "https://manrs.org/resources/api/"
+    }
+  ],
+  "tags": [
+    "MANRS",
+    "routing security",
+    "BGP",
+    "RPKI",
+    "IRR",
+    "anti-spoofing"
+  ],
+  "title_en": "MANRS Observatory: routing security readiness scores per network, region and economy",
+  "type": "data"
+}

@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "DATA.GOV.HK dataset page",
+      "url": "https://data.gov.hk/en-data/dataset/hk-ofca-ofca-ofca-dataset-15"
+    },
+    {
+      "kind": "download",
+      "label": "Coverage database (CSV, English)",
+      "url": "https://www.ofca.gov.hk/filemanager/ofca/common/datagovhk/dtt_coverage_en.csv"
+    },
+    {
+      "kind": "api",
+      "label": "CSDI ArcGIS feature service",
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/ofca_rcd_1698822054257_68630/FeatureServer"
+    },
+    {
+      "kind": "docs",
+      "label": "CSDI metadata record",
+      "url": "https://portal.csdi.gov.hk/geoportal/rest/metadata/item/ofca_rcd_1698822054257_68630"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "HK"
+  ],
+  "data_family": [
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ofca digital terrestrial television dtt coverage database modelled rooftop coverage for about 140 000 buildings in hong kong",
+    "url": "https://data.gov.hk/en-data/dataset/hk-ofca-ofca-ofca-dataset-15"
+  },
+  "description": "The Digital Terrestrial Television (DTT) Coverage Database gives OFCA's estimate of whether DTT services reach residential buildings, commercial buildings and standalone houses in Hong Kong. The estimate comes from computer simulation of the propagation of DTT signals in the UHF band and assumes reception at the rooftop with a suitably oriented antenna, so it does not apply to indoor reception or to other floors; OFCA verifies actual coverage by on-site measurement where cases warrant and then updates the estimate. Each record is a point with the street number, building, estate, street and district in English and Chinese, a coverage estimate value, and latitude and longitude; the current layer, dated 6 November 2025, holds 140,410 points. Coverage: Hong Kong. Format and access: CSV files in English, Traditional and Simplified Chinese (the English file is about 6.4 MB) on the government open data portal, plus an ArcGIS feature service, WFS, WMS and GeoJSON on the Common Spatial Data Infrastructure portal, free under the portal's terms with attribution. Caveats: modelled, not measured; blockage and reflections from buildings can change actual reception. Simulation uses: building-level exposure of households to loss of broadcast TV, for example when a transmitter fails, and a public baseline for emergency broadcast reach. Related records: the OFCA communications open data cover licensees and frequency tables, and the OFCA public WiFi access point locations cover another access network.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "DATA.GOV.HK package list for OFCA",
+      "route": "R10",
+      "source": "organisations.csv:HK:digital:broadband_mapping"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geojson",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://data.gov.hk/en-data/dataset/hk-ofca-ofca-ofca-dataset-15",
+  "id": "data-ofca-dtt-coverage-estimate-hong-kong",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "last_updated": "2025-11",
+  "licence": "DATA.GOV.HK terms and conditions (free commercial and non-commercial use with attribution)",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://portal.csdi.gov.hk/server/rest/services/common/ofca_rcd_1698822054257_68630/FeatureServer"
+    ]
+  },
+  "maturity": "active",
+  "name": "OFCA Digital Terrestrial Television (DTT) Coverage Database: modelled rooftop coverage for about 140,000 buildings in Hong Kong",
+  "notes": "DATA.GOV.HK CKAN metadata, CSDI metadata record (description, keywords, dates, services), feature layer schema and feature count, and CSV HTTP headers read on 2026-09-26; the data were not downloaded. The meaning of the coverage estimate values was not checked.",
+  "provider": "Office of the Communications Authority (OFCA), Hong Kong",
+  "related_ids": [],
+  "sectors": [
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "size": "140,410 points; English CSV about 6.4 MB",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "DATA.GOV.HK metadata",
+      "url": "https://data.gov.hk/en-data/api/3/action/package_show?id=hk-ofca-ofca-ofca-dataset-15"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "CSDI metadata",
+      "url": "https://portal.csdi.gov.hk/geoportal/rest/metadata/item/ofca_rcd_1698822054257_68630"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "layer schema",
+      "url": "https://portal.csdi.gov.hk/server/rest/services/common/ofca_rcd_1698822054257_68630/FeatureServer/0?f=json"
+    }
+  ],
+  "spatial_resolution": "individual buildings (points)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "digital terrestrial television",
+    "broadcast coverage",
+    "buildings",
+    "UHF",
+    "Hong Kong"
+  ],
+  "temporal_coverage": "current estimate (layer of 6 November 2025)",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "OFCA Digital Terrestrial Television (DTT) Coverage Database: modelled rooftop coverage for about 140,000 buildings in Hong Kong",
+  "type": "data",
+  "update_frequency": "irregular"
+}

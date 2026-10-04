@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Live map and products",
+      "url": "https://www.adsbexchange.com/"
+    },
+    {
+      "kind": "download",
+      "label": "Free first-of-month samples",
+      "url": "https://www.adsbexchange.com/data-products/sample-data/"
+    }
+  ],
+  "access_note": "First day of each month free for evaluation; bulk, historical and commercial use by subscription.",
+  "access_restrictions": "registration",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "freemium",
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "stream",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ads b exchange flight tracking data",
+    "url": "https://adsbexchange.com"
+  },
+  "description": "ADS-B Exchange is a global, independent flight data network that connects more than 25,000 active community receivers of ADS-B, MLAT and Mode S aircraft broadcasts and shows all aircraft as received, without filtering, on a live map. Since March 2020 it has archived aircraft positions and the related broadcast parameters worldwide every five seconds, with snapshots every 60 seconds back to July 2016, both as snapshots of all airborne traffic and as one trace file per aircraft per day; further products are high-resolution traces at two samples per second, complete origin-to-destination flight records, TCAS/ACAS alerts and airport operations with the runway used. Coverage is worldwide where receivers exist. Access: live positions update every 500 milliseconds through enterprise APIs and daily bulk data pulled from cloud buckets under commercial subscription; a personal-use API costs 10 US dollars a month through RapidAPI; the complete data for the first day of each month are free for evaluation on samples.adsbexchange.com as JSON files. Caveats: coverage depends on volunteer receivers and is thin over oceans and remote land, and commercial use needs a licence. The data are used to reconstruct traffic flows, calibrate airspace and airport capacity models, study disruptions and support accident investigations. It complements the OpenSky Network and the OpenAP aircraft performance model.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ADS-B Exchange",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "json",
+    "api"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.adsbexchange.com/",
+  "id": "data-adsb-exchange",
+  "languages": [
+    "en"
+  ],
+  "licence": "proprietary",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ADS-B Exchange flight tracking data",
+  "provider": "ADS-B Exchange",
+  "related_ids": [
+    "data-opensky-network",
+    "model-openap"
+  ],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "global independent network; over 25K active receivers; 500 ms updates; live and daily enterprise products; community platform",
+      "url": "https://www.adsbexchange.com/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "archive since March 2020 at 5-second intervals (readsb-hist from May 2020; 60-second from July 2016); traces, hires traces, flights, ACAS, operations; 1st of each month free; commercial pull or push to cloud",
+      "url": "https://www.adsbexchange.com/data-products/sample-data/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "personal-use API 10 USD a month via RapidAPI, 10,000 requests; enterprise for commercial use",
+      "url": "https://www.adsbexchange.com/community/developer-hub/"
+    }
+  ],
+  "spatial_resolution": "individual aircraft positions",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "ADS-B",
+    "flight tracking",
+    "trajectories",
+    "air traffic"
+  ],
+  "temporal_coverage": "from July 2016 (60-second snapshots), five-second archive from 2020",
+  "title_en": "ADS-B Exchange flight tracking data",
+  "type": "data",
+  "update_frequency": "real_time"
+}

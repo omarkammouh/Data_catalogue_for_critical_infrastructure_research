@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/LandanT/comstock-data-pipeline"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "comstock data pipeline for end use savings summaries",
+    "repo": "github.com/landant/comstock-data-pipeline",
+    "url": "https://github.com/LandanT/comstock-data-pipeline"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "ComStock Data Pipeline extracts building simulation results from the public OEDI data lake and prepares end-use and upgrade summaries. LandanT publishes a Python command-line tool and API for selecting building types, vintages, climate zones, states and upgrade scenarios. The workflow discovers input schemas, reads selected Parquet columns, filters stock records and computes weighted summaries and optional building-level energy-use intensities. Outputs include CSV, Parquet, XLSX and Markdown reports. Coverage is the United States building stock represented in selected ComStock or ResStock releases; the README reports testing on ComStock 2025 release 3 and 2024 release 2. It summarizes annual model outputs, not observed hourly meter data. The MIT code is free, and its public S3 input path needs no AWS credentials. A limitation is that the faster aggregate-file mode gives approximate utility-bill statistics; the detailed per-sample mode is the documented default. Simulation uses include selecting stock scenarios and comparing end-use savings. The tool processes outputs associated with model-comstock, model-resstock and data-end-use-load-profiles-us-building-stock. No extraction or numerical calculation was executed.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "\"building stock\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/LandanT/comstock-data-pipeline",
+  "id": "platform-comstock-data-pipeline",
+  "interfaces": [
+    "command_line",
+    "code_library"
+  ],
+  "interoperability": [
+    "OEDI S3 Parquet",
+    "CSV",
+    "Parquet",
+    "XLSX"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-07",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ComStock Data Pipeline for end-use savings summaries",
+  "notes": "G8; G8-0060. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "LandanT",
+  "related_ids": [
+    "model-comstock",
+    "model-resstock",
+    "data-end-use-load-profiles-us-building-stock"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/LandanT/comstock-data-pipeline/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/LandanT/comstock-data-pipeline"
+    }
+  ],
+  "tags": [],
+  "title_en": "ComStock Data Pipeline for end-use savings summaries",
+  "type": "platform"
+}

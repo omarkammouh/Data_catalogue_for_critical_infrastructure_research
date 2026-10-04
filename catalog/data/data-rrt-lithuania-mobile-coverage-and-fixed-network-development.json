@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Mobile operator coverage data (GeoTIFF)",
+      "url": "https://data.gov.lt/datasets/5178/"
+    },
+    {
+      "kind": "download",
+      "label": "Fixed technology by address (CSV)",
+      "url": "https://data.gov.lt/datasets/5969/"
+    },
+    {
+      "kind": "download",
+      "label": "Fixed-line networks in 1 km grid (CSV)",
+      "url": "https://data.gov.lt/datasets/3835/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "LT"
+  ],
+  "data_family": [
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-09-27",
+  "dedupe_keys": {
+    "name": "rrt lithuania mobile operator coverage rasters and fixed network technology by building and 1 km grid",
+    "url": "https://data.gov.lt/datasets/5178"
+  },
+  "description": "The Communications Regulatory Authority of Lithuania publishes three open datasets on where networks reach. Mobile operator coverage data, issued in April 2026, holds 15 GeoTIFF rasters for the three mobile network operators, Telia Lithuania, Tele2 and Bite (Bee Lithuania): GSM, 4G and 5G coverage, and modelled network speed at 10 percent and 50 percent cell load. Fixed communication technology development by address, updated in September 2026, lists building address codes from the national address register and flags, per technology, whether operators report a fixed network connected at that address (1 yes, 0 no). A companion dataset gives the geographical and technological development of fixed-line networks in 1 km grid cells from 2023, refreshed each April. Coverage: Lithuania, by operator, building and grid cell. Format and access: GeoTIFF and CSV files on the national open data portal data.gov.lt, free; the portal lists CC BY 4.0 for RRT data. Caveats: coverage and speed are operator-declared or modelled, not measured; the speed rasters assume stated load levels; address codes need the address register to be mapped; the portal returned server errors to automated file requests, so file sizes and raster resolution were not checked. Simulation uses: operator-level mobile coverage and speed surfaces, and building-level fixed access, for Lithuanian service and hazard exposure models. Related records: the RRT mobile quality drive measurements give measured performance; the Nordic and Baltic telecom market statistics and the Digital Decade DESI indicators give national totals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "data.europa.eu search (ryšių)",
+      "route": "R02",
+      "source": "organisations.csv:LT:digital:broadband_mapping"
+    }
+  ],
+  "formats": [
+    "raster",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.gov.lt/datasets/5178/",
+  "id": "data-rrt-lithuania-mobile-coverage-and-fixed-network-development",
+  "languages": [
+    "lt",
+    "en"
+  ],
+  "last_updated": "2026-09",
+  "licence": "CC BY 4.0 (as listed for RRT datasets on data.gov.lt)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-09-27"
+  },
+  "maturity": "active",
+  "name": "RRT Lithuania mobile operator coverage rasters and fixed network technology by building and 1 km grid",
+  "notes": "Metadata read through the data.europa.eu search API on 2026-09-26 (datasets 5178, 5969 and 3835 of data.gov.lt). data.gov.lt and get.data.gov.lt returned HTTP 500 to curl, so the licence of dataset 5178 and file details were not confirmed. Bee Lithuania is read as the brand of Bite; this is inferred.",
+  "provider": "Communications Regulatory Authority of the Republic of Lithuania (RRT, Ryšių reguliavimo tarnyba)",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "size": "15 GeoTIFF rasters plus two CSV tables",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "coverage rasters metadata",
+      "url": "https://data.europa.eu/data/datasets/https-data-gov-lt-datasets-5178-"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "fixed technology by address metadata",
+      "url": "https://data.europa.eu/data/datasets/https-data-gov-lt-datasets-5969-"
+    }
+  ],
+  "spatial_resolution": "raster grid; building address; 1 km cells",
+  "spatial_resolution_class": "1km_to_10km",
+  "tags": [
+    "coverage",
+    "5G",
+    "fixed broadband",
+    "address level",
+    "Lithuania"
+  ],
+  "temporal_coverage": "current coverage (2026); grid series from 2023",
+  "temporal_resolution": "annual snapshots",
+  "temporal_resolution_class": "annual",
+  "title_en": "RRT Lithuania mobile operator coverage rasters and fixed network technology by building and 1 km grid",
+  "type": "data",
+  "update_frequency": "annual"
+}

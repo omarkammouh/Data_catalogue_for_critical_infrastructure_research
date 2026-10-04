@@ -1,0 +1,143 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Data overview",
+      "url": "https://opensky-network.org/data"
+    },
+    {
+      "kind": "api",
+      "label": "REST API documentation",
+      "url": "https://openskynetwork.github.io/opensky-api/"
+    },
+    {
+      "kind": "download",
+      "label": "Scientific datasets",
+      "url": "https://opensky-network.org/data/scientific"
+    },
+    {
+      "kind": "docs",
+      "label": "Terms of use",
+      "url": "https://opensky-network.org/about/terms-of-use"
+    },
+    {
+      "kind": "api",
+      "label": "OpenSky REST API, live state vectors (example bounding box)",
+      "url": "https://opensky-network.org/api/states/all?lamin=45.8&lomin=5.9&lamax=47.8&lomax=10.5"
+    }
+  ],
+  "access_note": "Historical Trino database for university researchers, governmental organisations and aviation authorities; for-profit entities need a written licence.",
+  "access_restrictions": "registration",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "sensor_realtime_streams",
+    "crowdsourced_public_reports"
+  ],
+  "data_kind": [
+    "time_series",
+    "stream",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opensky network air traffic data",
+    "url": "https://opensky-network.org/data"
+  },
+  "description": "The OpenSky Network is a crowdsourced network of ADS-B, Mode S, FLARM and other receivers that records aircraft surveillance messages worldwide and makes them available for research. Data products include a live and recent REST API of aircraft state vectors, the full historical database queried through Trino, curated scientific datasets (weekly 24-hour state-vector samples, raw data, the COVID-19 flight dataset, in-flight emergency and climbing aircraft datasets, an ADS-C dataset) and an aircraft metadata database downloadable as CSV in monthly snapshots. The network was initiated in 2012 by researchers from armasuisse Science and Technology and partner universities and is now a non-profit association in Switzerland; receivers are hosted by volunteers, companies and institutions. Coverage is global but best in Europe and the United States, with generally no data before 2013. Access: the REST API is for non-profit research and education, the Trino history is granted free to university researchers, governments and aviation authorities, and any for-profit use needs a written licence. Caveats: coverage gaps over oceans and sparse regions, and the metadata database is only updated irregularly. OpenSky trajectories feed network flow, capacity planning, resilience and emissions studies and are processed with the traffic library and OpenAP, the latter catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.aviation",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry",
+      "route": "R30",
+      "source": "opensky"
+    }
+  ],
+  "formats": [
+    "api",
+    "database",
+    "csv",
+    "parquet"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://opensky-network.org/data",
+  "id": "data-opensky-network",
+  "languages": [
+    "en"
+  ],
+  "licence": "OpenSky Network terms of use (non-profit research and education; commercial licence required)",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OpenSky Network air traffic data",
+  "provider": "OpenSky Network (non-profit association based in Switzerland)",
+  "related_ids": [
+    "model-openap",
+    "model-bluesky"
+  ],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Trino history, REST API, scientific datasets list, data tools, aircraft database monthly snapshots updated irregularly",
+      "url": "https://opensky-network.org/data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "initiated 2012 by armasuisse S+T researchers; non-profit association in Switzerland",
+      "url": "https://opensky-network.org/about/about-us"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "no data before 2013; best coverage Europe and US",
+      "url": "https://opensky-network.org/about/faq"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "non-profit research and education; REST API non-profit only; for-profit entities need written licence",
+      "url": "https://opensky-network.org/about/terms-of-use"
+    }
+  ],
+  "spatial_resolution": "individual aircraft positions",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "ADS-B",
+    "Mode S",
+    "flight trajectories",
+    "air traffic"
+  ],
+  "temporal_coverage": "from 2013 to present",
+  "temporal_resolution": "seconds (state vectors)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "OpenSky Network air traffic data",
+  "type": "data",
+  "update_frequency": "real_time"
+}

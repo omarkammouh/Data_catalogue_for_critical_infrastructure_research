@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/metno/snap"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/metno/snap/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "snap radioactive release dispersion model",
+    "repo": "github.com/metno/snap",
+    "url": "https://github.com/metno/snap"
+  },
+  "description": "SNAP, the Severe Nuclear Accident Programme, is a Lagrangian atmospheric dispersion model maintained by the Norwegian Meteorological Institute. It represents movement and deposition of radioactive material after a configured release. Users supply release timing and material, gridded meteorological fields in NetCDF and simulation settings; outputs are pollutant trajectories and deposition or concentration fields over the chosen domain and period. Geographic coverage depends on the weather grid. GPL-3.0 source, build instructions, example settings and tagged releases are public. A limitation is that results depend strongly on weather forcing and source-term uncertainty; an illustrative run is not an emergency decision forecast without operational checks. SNAP can support nuclear-facility emergency exercises and infrastructure exposure analysis. The catalogue's data-era5-reanalysis is a distinct possible historical meteorological source, not necessarily in the model's required vertical format. No meteorological input, model build or release archive was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "metno/snap linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://github.com/metno/snap",
+  "id": "model-snap-dispersion",
+  "inputs": [
+    "Radioactive release source term",
+    "Three-dimensional meteorological fields"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-11",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "SNAP radioactive-release dispersion model",
+  "notes": "G7 G7-1477. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Atmospheric dispersion and deposition fields"
+  ],
+  "provider": "Norwegian Meteorological Institute",
+  "related_ids": [
+    "data-era5-reanalysis"
+  ],
+  "repository": "https://github.com/metno/snap",
+  "sectors": [
+    "energy.nuclear",
+    "services.emergency_services",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for metno/snap: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/metno/snap"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/metno/snap/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for nuclear energy, emergency services and green and blue infrastructure",
+  "type": "model"
+}

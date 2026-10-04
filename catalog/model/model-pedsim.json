@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "pedsim repository (libpedsim and examples)",
+      "url": "https://github.com/chgloor/pedsim"
+    }
+  ],
+  "access_note": "The documentation site pedsim.silmaril.org did not resolve here. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pedsim and libpedsim microscopic pedestrian crowd simulation",
+    "repo": "github.com/chgloor/pedsim",
+    "url": "https://github.com/chgloor/pedsim"
+  },
+  "description": "PEDSIM is a microscopic pedestrian crowd simulation system by Christian Gloor for crowd studies such as indoor evacuation and large outdoor simulations, where quantities like pedestrian density or evacuation time matter. Its individual trajectories are smooth enough for large crowd animations in films or architectural visualisation, and the system is described as easy to use and extend, making it a starting point for science projects. The core library, libpedsim, is written in C++, and ROS packages for robot navigation build on extended versions of it. Coverage: generic. Access: free source code. Licence: GPL for the system and LGPL for libpedsim, which the author says allows use in commercial and proprietary projects. Caveats: the documentation site no longer resolves, and the model is a social force approach that needs calibration for specific settings. Simulation uses: evacuation and crowd flow experiments and embedding pedestrian agents in other simulators. Related records: Menge, Vadere and the Jülich pedestrian dynamics archive.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell model:built_environment.public_space:agent_based, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "PEDSIM pedestrian crowd simulation library libpedsim Christian Gloor",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/chgloor/pedsim",
+  "id": "model-pedsim",
+  "inputs": [
+    "Scene obstacles, waypoints and agents"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-12-26",
+  "licence": "GPL for PEDSIM; LGPL for the core library libpedsim",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "agent_based"
+  ],
+  "name": "PEDSIM and libpedsim: microscopic pedestrian crowd simulation",
+  "outputs": [
+    "Agent trajectories, densities and evacuation times"
+  ],
+  "provider": "Christian Gloor",
+  "related_ids": [
+    "model-menge-crowd-simulation",
+    "model-vadere",
+    "data-juelich-pedestrian-dynamics-data-archive"
+  ],
+  "repository": "https://github.com/chgloor/pedsim",
+  "sectors": [
+    "built_environment.public_space",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, uses, licence",
+      "url": "https://raw.githubusercontent.com/chgloor/pedsim/master/README.md"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2022-12-26)",
+      "url": "https://github.com/chgloor/pedsim"
+    }
+  ],
+  "tags": [
+    "PEDSIM",
+    "libpedsim",
+    "pedestrian simulation",
+    "social force",
+    "evacuation",
+    "LGPL"
+  ],
+  "title_en": "PEDSIM and libpedsim: microscopic pedestrian crowd simulation",
+  "type": "model"
+}

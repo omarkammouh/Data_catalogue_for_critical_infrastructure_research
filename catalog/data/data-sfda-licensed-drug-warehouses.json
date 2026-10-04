@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "List of licensed pharmaceutical and cosmetic warehouses (XLSX)",
+      "url": "https://www.sfda.gov.sa/sites/default/files/2023-12/%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%A6%D9%8A%D8%A9-%D9%88-%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D8%AE%D8%B5%D8%A9.xlsx"
+    },
+    {
+      "kind": "portal",
+      "label": "SFDA open data page",
+      "url": "https://www.sfda.gov.sa/en/open-data"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "SA"
+  ],
+  "data_family": [
+    "supply_chains_logistics",
+    "critical_facilities"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sfda open data licensed pharmaceutical and cosmetic warehouses in saudi arabia with province city and district",
+    "url": "https://sfda.gov.sa/en/open-data"
+  },
+  "description": "This list gives every warehouse licensed by the Saudi Food and Drug Authority (SFDA) to store and distribute medicines and cosmetics, part of the wholesale layer of the medicine supply chain in Saudi Arabia. It is one of a small set of open data files the authority publishes, alongside registers of veterinary medicines, feed products, medical devices and cosmetics. Each of its 1,736 rows gives the warehouse name in Arabic and English, the province, the city and the district where it is located; a company operating several sites appears once per site. The file is free and available to download as an Excel sheet from the SFDA open data page, which states that its open data may be used without technical, financial or legal restrictions, and further data can be requested through a form. Caveats: the file dates from the end of 2023 and has not been refreshed on the page since March 2024, it has no coordinates, licence type or storage capacity, and pharmaceutical and cosmetic warehouses are not separated. Simulation uses: building the distribution node layer of medicine supply chain models for Saudi Arabia, and testing how the loss of warehouses in one city, for example from flash floods, affects supply. Related records: the Italian medicine distribution sites (data-italy-medicine-distribution-sites) are a comparable national register with daily updates.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Saudi Food and Drug Authority (SFDA) (SA, food_safety_agency)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://www.sfda.gov.sa/en/open-data",
+  "id": "data-sfda-licensed-drug-warehouses",
+  "languages": [
+    "en"
+  ],
+  "licence": "SFDA open data (free use without technical, financial or legal restrictions, as stated on the page)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "SFDA open data: licensed pharmaceutical and cosmetic warehouses in Saudi Arabia with province, city and district",
+  "provider": "Saudi Food and Drug Authority (SFDA)",
+  "related_ids": [
+    "data-italy-medicine-distribution-sites"
+  ],
+  "schema_summary": "WarehouseArabicName, WarehouseEnglishName, WarehouseProvince, WarehouseCity, Area (district); 1,736 rows",
+  "sectors": [
+    "services.healthcare",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Open data is data usable freely without technical, financial or legal restrictions; data sharing request form; files dated 2024-03-22: licensed pharmaceutical and cosmetic warehouses, registered veterinary medicines (local and non-local) 2023, energy drink products 2023, feed products 2023, low-risk non-local medical devices 2023, cosmetics factories 2022, local cosmetic products 2022; page last updated 19 August 2026",
+      "url": "https://www.sfda.gov.sa/en/open-data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: sheet Data, 1,737 rows including header; columns WarehouseArabicName, WarehouseEnglishName, WarehouseProvince, WarehouseCity, Area; first rows in Riyadh and Jeddah",
+      "url": "https://www.sfda.gov.sa/sites/default/files/2023-12/%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%A6%D9%8A%D8%A9-%D9%88-%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D8%AE%D8%B5%D8%A9.xlsx"
+    }
+  ],
+  "spatial_resolution": "Warehouse (city and district, no coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "pharmaceutical warehouses",
+    "medicine distribution",
+    "supply chain",
+    "Saudi Arabia"
+  ],
+  "temporal_coverage": "Snapshot published 22 March 2024 (file dated December 2023)",
+  "temporal_resolution": "Snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "SFDA open data: licensed pharmaceutical and cosmetic warehouses in Saudi Arabia with province, city and district",
+  "type": "data",
+  "update_frequency": "irregular"
+}

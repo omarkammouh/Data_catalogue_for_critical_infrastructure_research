@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "WFS service (credentials needed)",
+      "url": "https://geo.rijkswaterstaat.nl/services/ogc/gdr/kabels_en_leidingen_noordzee/ows?service=WFS&request=getcapabilities&version=2.0.0"
+    },
+    {
+      "kind": "portal",
+      "label": "Entry in the Dutch national data register",
+      "url": "https://data.overheid.nl/dataset/59104-kabels-en-leidingen---elektra--telecom-kabels-op-de-noordzee"
+    },
+    {
+      "kind": "docs",
+      "label": "Metadata in the Nationaal Georegister",
+      "url": "https://www.nationaalgeoregister.nl/geonetwork?uuid=66bacf5b-b5fa-4dce-aa31-1938f37f11c7"
+    }
+  ],
+  "access_restrictions": "restricted",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL",
+    "GB",
+    "BE",
+    "DE",
+    "DK",
+    "NO"
+  ],
+  "data_family": [
+    "system_description",
+    "cross_border_flows"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rijkswaterstaat cables and pipelines in the north sea telecom and power cable routes netherlands",
+    "url": "https://data.overheid.nl/dataset/59104-kabels-en-leidingen---elektra--telecom-kabels-op-de-noordzee"
+  },
+  "description": "Rijkswaterstaat keeps a geographic dataset of the electricity and telecom cables lying on the bed of the North Sea, focused on the Dutch continental shelf; cables outside it are included only as a background layer. At the latest revision some cables were corrected with information from their owners, and loops laid around obstacles are now included for the corrected cables. A companion dataset in the same service covers pipelines within and outside the Dutch shelf (except the British shelf), including planned, active and abandoned ones. The national data register lists web map and web feature services and exports of the telecom cable and electricity cable layers as CSV, GML, GeoJSON, shapefile and GeoPackage, with records dating from 2010 and a modification date of July 2026. Coverage: the North Sea, especially the Dutch continental shelf. Format and access: WMS and WFS services with vector exports; the register marks access as restricted and the licence as unknown, and the service answered HTTP 401 without credentials in this session. Caveats: routes are as reported by owners and may be approximate; cables outside the Dutch shelf are indicative only; access must be requested from Rijkswaterstaat. Simulation uses: mapping subsea telecom and power cable routes against anchoring, fishing, dredging and offshore wind construction to estimate exposure of cross-border links. Related records: the TeleGeography submarine cable map gives global routes and landings, and AMS-IX traffic statistics describe the Dutch interconnection hub.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "data.overheid.nl search for telecom",
+      "route": "R48",
+      "source": "organisations.csv:NL:digital:subsea_cable_consortium"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "csv",
+    "gml",
+    "geojson",
+    "shapefile",
+    "geopackage"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://data.overheid.nl/dataset/59104-kabels-en-leidingen---elektra--telecom-kabels-op-de-noordzee",
+  "id": "data-rijkswaterstaat-north-sea-cables",
+  "languages": [
+    "nl"
+  ],
+  "last_updated": "2026-07",
+  "licence": "not stated (data.overheid.nl: 'Onbekende licentie'; access restricted)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://geo.rijkswaterstaat.nl/services/ogc/gdr/kabels_en_leidingen_noordzee/ows?service=WFS&request=getcapabilities&version=2.0.0",
+      "https://www.nationaalgeoregister.nl/geonetwork?uuid=66bacf5b-b5fa-4dce-aa31-1938f37f11c7"
+    ]
+  },
+  "maturity": "active",
+  "name": "Rijkswaterstaat cables and pipelines in the North Sea: telecom and power cable routes (Netherlands)",
+  "notes": "data.overheid.nl CKAN metadata read on 2026-09-26 (description, resources, access rights, dates); the WFS GetCapabilities request returned HTTP 401. Countries other than NL are listed for cables crossing to neighbouring shelves (inferred).",
+  "provider": "Rijkswaterstaat (Dutch Ministry of Infrastructure and Water Management)",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow",
+    "resilience"
+  ],
+  "size": "not stated",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "register metadata",
+      "url": "https://data.overheid.nl/data/api/3/action/package_show?id=59104-kabels-en-leidingen---elektra--telecom-kabels-op-de-noordzee"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated (data.overheid.nl: 'Onbekende licentie'; access restricted) (basis: data.overheid.nl dataset page)",
+      "url": "https://data.overheid.nl/dataset/59104-kabels-en-leidingen---elektra--telecom-kabels-op-de-noordzee"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://standaarden.overheid.nl/owms/terms/licentieonbekend"
+    }
+  ],
+  "spatial_resolution": "cable routes (vector lines)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "subsea cables",
+    "North Sea",
+    "continental shelf",
+    "telecom cables",
+    "power cables"
+  ],
+  "temporal_coverage": "from 2010 (temporal start in metadata)",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Rijkswaterstaat cables and pipelines in the North Sea: telecom and power cable routes (Netherlands)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

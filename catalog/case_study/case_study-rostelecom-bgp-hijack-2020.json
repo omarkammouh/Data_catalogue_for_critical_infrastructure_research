@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "MANRS analysis",
+      "url": "https://manrs.org/2020/04/not-just-another-bgp-hijack/"
+    },
+    {
+      "kind": "docs",
+      "label": "ThousandEyes analysis",
+      "url": "https://www.thousandeyes.com/blog/rostelecom-route-hijack-highlights-bgp-security"
+    },
+    {
+      "kind": "docs",
+      "label": "MANRS: BGP incidents in 2020",
+      "url": "https://manrs.org/2021/03/a-regional-look-into-bgp-incidents-in-2020/"
+    }
+  ],
+  "access_restrictions": "none",
+  "case_study_kind": [
+    "post_event_analysis"
+  ],
+  "continents": [
+    "europe",
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "RU"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rostelecom route hijack of cloud and cdn prefixes april 2020",
+    "url": "https://manrs.org/2020/04/not-just-another-bgp-hijack"
+  },
+  "description": "This post-event case covers the route hijack of 1 April 2020, when Rostelecom (AS12389), Russia's state-controlled operator, announced more than 8,000 prefixes belonging to major cloud and content networks, including Amazon, Akamai, Cloudflare, Google, Facebook, Digital Ocean and Hetzner. The MANRS analysis, drawing on Qrator Radar, BGPMon, Isolario bgpdumps and RIPE RIS, counted 4,569 unique hijacked prefixes, of which 4,255 belonged to Amazon and 85 to Akamai, starting at 19:28 UTC and lasting about 10 minutes in the collector data, though some reports say nearly an hour. The routes were passed through Rostelecom's customer Rascom (AS20764) and then by Cogent (AS174) and Level 3 (AS3356), and some more specific routes were accepted by Hurricane Electric. MANRS found that 4,040 of the hijacked prefixes had valid Route Origin Authorizations, so networks doing RPKI route origin validation would have dropped them, and argued for strict filtering by upstream providers. Whether the event was an accident or deliberate was not settled. Coverage: global routing on one evening. Format and access: MANRS blog post and security press, free. Caveats: counts vary between sources (4,569 against more than 8,000); intent is unknown, so the hazard is recorded as a technical failure. Simulation uses: BGP hijack propagation, value of RPKI filtering and cascading unreachability of cloud services. Related records: the Pakistan YouTube hijack of 2008, the MANRS initiative, RIPE RIS and BGPy.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Rostelecom BGP hijack April 2020 Akamai Cloudflare prefixes MANRS analysis",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure",
+    "cyber_attack"
+  ],
+  "homepage": "https://manrs.org/2020/04/not-just-another-bgp-hijack/",
+  "id": "case_study-rostelecom-bgp-hijack-2020",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020",
+  "licence": "MANRS copyright; free to read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.thousandeyes.com/blog/rostelecom-route-hijack-highlights-bgp-security"
+    ]
+  },
+  "maturity": "stale",
+  "name": "Rostelecom route hijack of cloud and CDN prefixes (April 2020)",
+  "notes": "MANRS post read via fetch on 2026-09-26. The 8,000 figure is from security press in search results. cyber_attack is listed because intent was debated, not established.",
+  "organisations": [
+    "MANRS",
+    "Internet Society",
+    "Rostelecom"
+  ],
+  "outcomes": "Thousands of cloud and CDN prefixes were hijacked for minutes; 4,040 of 4,569 had valid ROAs, showing RPKI validation and upstream filtering would have stopped the spread.",
+  "provider": "MANRS (Internet Society) analysis; Rostelecom (AS12389) as originating network",
+  "related_ids": [],
+  "resources_used": [
+    "data-ripe-ris"
+  ],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "analysis",
+      "url": "https://manrs.org/2020/04/not-just-another-bgp-hijack/"
+    }
+  ],
+  "study_period": "2020-04",
+  "tags": [
+    "BGP hijack",
+    "RPKI",
+    "Rostelecom",
+    "cloud",
+    "MANRS"
+  ],
+  "title_en": "Rostelecom route hijack of cloud and CDN prefixes (April 2020)",
+  "type": "case_study"
+}

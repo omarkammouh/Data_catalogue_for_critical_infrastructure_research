@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "PxWeb API folder MAS Number of dwellings (tables MAS010 to MAS080)",
+      "url": "https://data.stat.gov.lv/api/v1/en/OSP_PUB/POP/MA/MAS"
+    },
+    {
+      "kind": "api",
+      "label": "MAS080 conventional dwellings and persons by year of construction and facilities (PxWeb API, POST query returns CSV)",
+      "url": "https://data.stat.gov.lv/api/v1/en/OSP_PUB/POP/MA/MAS/MAS080"
+    },
+    {
+      "kind": "api",
+      "label": "MAS070 conventional dwellings and persons by type of building and year of construction",
+      "url": "https://data.stat.gov.lv/api/v1/en/OSP_PUB/POP/MA/MAS/MAS070"
+    },
+    {
+      "kind": "portal",
+      "label": "Official Statistics Portal database, housing tables",
+      "url": "https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__MA__MAS/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "LV"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "official statistics portal of latvia population and housing census 2011 and 2021 dwelling tables piped water flush toilet central heating by period of construction for regions municipalities and riga neighbourhoods pxweb api",
+    "url": "https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__MA__MAS"
+  },
+  "description": "The Central Statistical Bureau of Latvia publishes the housing results of the 2011 and 2021 population and housing censuses in the PxWeb database of the Official Statistics Portal. Eight tables in the folder Number of dwellings cover living quarters, floor space, density, ownership, persons per dwelling, type of building and year of construction. Table MAS080 counts conventional dwellings and the persons living in them by occupancy status, period of construction and amenities: flush toilet, piped water, fixed bath or shower and central heating, each with a no and a not stated class. Every table goes down to 211 territorial units, including the cities and municipalities as they were before the 2021 administrative reform and 84 neighbourhoods. Coverage is national: for 2021 the API returned 1,063,939 conventional dwellings, of which 938,526 had piped water, 867,304 a flush toilet and 747,519 central heating. Format and access: free, no registration; the PxWeb API accepts a JSON query and returns CSV, JSON or PX. Licence: not stated on the pages read. Caveats: municipalities follow the pre 2021 boundaries; central heating is not split by heat source in this table. Simulation uses: neighbourhood and municipal counts of dwellings on piped water, flush toilets and central heat for network planning and heat demand models, and building age for exposure. Related records: the Estonia REL2021 dwelling amenities tables and the Lithuania census 2021 dwelling amenities API.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:LV:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "spreadsheet",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__MA__MAS/",
+  "id": "data-csp-latvia-census-2011-2021-dwellings-by-amenities-and-neighbourhood",
+  "languages": [
+    "en",
+    "lv"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Official Statistics Portal of Latvia, Population and Housing Census 2011 and 2021 dwelling tables (piped water, flush toilet, central heating by period of construction) for regions, municipalities and Riga neighbourhoods, PxWeb API",
+  "provider": "Central Statistical Bureau of Latvia (CSP)",
+  "related_ids": [
+    "data-statistics-estonia-rel2021-dwellings-amenities-and-commuting-tables",
+    "data-statistics-lithuania-census-2021-dwelling-amenities-sdmx-api"
+  ],
+  "schema_summary": "MAS010 living quarters and persons; MAS020 inhabited conventional dwellings by useful floor space; MAS030 by density standard; MAS040 by ownership; MAS050 by persons; MAS060 households by ownership; MAS070 dwellings and persons by type of building and year of construction; MAS080 dwellings and persons by occupancy status, period of construction (before 1919 to after 2015) and amenities (flush toilet, piped water, fixed bath or shower, central heating, each with none and not stated)",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "energy.district_heating_cooling",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: folder MAS with tables MAS010 to MAS080",
+      "url": "https://data.stat.gov.lv/api/v1/en/OSP_PUB/POP/MA"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: variables (211 areas, 13 amenity classes, 2011 and 2021) and 2021 national values",
+      "url": "https://data.stat.gov.lv/api/v1/en/OSP_PUB/POP/MA/MAS/MAS080"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__MA__MAS/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__MA__MAA/?tablelist=true"
+    }
+  ],
+  "spatial_resolution": "211 territorial units - country, planning regions and regions, 119 cities and municipalities as before the 2021 reform, and 84 neighbourhoods",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "census",
+    "Latvia",
+    "census 2021",
+    "piped water",
+    "central heating",
+    "neighbourhood",
+    "PxWeb"
+  ],
+  "temporal_coverage": "census years 2011 and 2021",
+  "temporal_coverage_years": {
+    "end": 2021,
+    "start": 2011
+  },
+  "temporal_resolution": "census years",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "Official Statistics Portal of Latvia, Population and Housing Census 2011 and 2021 dwelling tables (piped water, flush toilet, central heating by period of construction) for regions, municipalities and Riga neighbourhoods, PxWeb API",
+  "type": "data"
+}

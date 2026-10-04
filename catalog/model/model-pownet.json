@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/pownet/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/Critical-Infrastructure-Systems-Lab/PowNet"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://pownet.readthedocs.io/en/latest"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pownet",
+    "repo": "github.com/critical-infrastructure-systems-lab/pownet",
+    "url": "https://pownet.readthedocs.io/en/latest"
+  },
+  "description": "PowNet is an open-source production cost model framework in Python that simulates the operational scheduling of large regional or national power systems by solving unit commitment and economic dispatch, as used for day-ahead market simulation. It is developed by the Critical Infrastructure Systems Lab, with code by Phumthep Bunnak and contributors, for analysts who want to study grid operations without building models from scratch. It models generator techno-economic constraints and network limits with linearised DC power flow, supports hydro, wind and solar, and includes features for water-energy nexus analysis such as drought effects on thermal units; earlier versions shipped data for Cambodia. The method is location-independent and inputs are simple CSV files, with examples in a model library. It is installed from PyPI (version 2.3.0, June 2025) and uses Gurobi or the open HiGHS solver, under the MIT licence at no cost. Caveats: DC power flow ignores voltage and reactive power, and column names must match the examples exactly. Simulation uses are operational optimisation, renewable integration and climate and drought impact studies on power systems. Related records: none linked on the provider's pages read on the day.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "nuclear power plant network model",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "nuclear power plant economic model",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "gas network network model",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://pownet.readthedocs.io/en/latest",
+  "id": "model-pownet",
+  "inputs": [
+    "CSV files of generators, network, demand and renewable availability"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-19",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network"
+  ],
+  "name": "PowNet",
+  "outputs": [
+    "Unit commitment and economic dispatch schedules",
+    "Line flows",
+    "Costs"
+  ],
+  "provider": "Critical Infrastructure Systems Lab (Phumthep Bunnak and contributors)",
+  "related_ids": [],
+  "repository": "https://github.com/Critical-Infrastructure-Systems-Lab/PowNet",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "PCM framework, UC/ED, DC power flow, VRE, Gurobipy and HiGHS, water-energy nexus, CSV inputs, docs link",
+      "url": "https://raw.githubusercontent.com/Critical-Infrastructure-Systems-Lab/PowNet/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT, Phumthep Bunnak 2024",
+      "url": "https://raw.githubusercontent.com/Critical-Infrastructure-Systems-Lab/PowNet/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "2.3.0 uploaded 2025-06-03; Python >=3.10",
+      "url": "https://pypi.org/pypi/pownet/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "PowNet v1.3 with data for Cambodia",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.4688309"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Visit 2026-06-15; head commit 2026-01-19",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/Critical-Infrastructure-Systems-Lab/PowNet/visit/latest/"
+    }
+  ],
+  "tags": [
+    "production cost model",
+    "unit commitment",
+    "economic dispatch",
+    "water-energy nexus",
+    "Python"
+  ],
+  "title_en": "Pownet open-source production cost model framework",
+  "type": "model",
+  "validated_on": [
+    "Model library examples including Cambodia (earlier versions)"
+  ]
+}

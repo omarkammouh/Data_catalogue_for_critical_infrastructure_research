@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/GreenScheduler/cats"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.08251"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.21105/joss.08251",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cats climate aware compute task scheduler",
+    "url": "https://github.com/greenscheduler/cats"
+  },
+  "description": "CATS is a Python scheduler that delays compute tasks to periods when forecast electricity carbon intensity is lower. The JOSS paper frames this as reducing the emissions of research computing; the own README documents Great Britain grid forecasts and a European source as default regions. GitHub identifies MIT terms, so the scheduling code is free. Inputs are a task length, feasible execution window and carbon-intensity forecast. Outputs are a proposed run time and estimated carbon difference against immediate execution. Geographic and temporal coverage follow the forecast providers and scheduling horizon. Infrastructure modellers could use it to study flexible data-centre workloads or to run their own simulations at lower-carbon times. A caveat is that forecast errors and operational deadlines can erase expected savings; shifting load can also move, not reduce system emissions. The earlier candidate was rejected under an energy GIS query, which did not fit its actual function. No directly related catalogue record was confirmed. No job was scheduled or executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "JOSS whole-index enumeration; 10.21105/joss.08251; G5-LOCAL-113",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/GreenScheduler/cats",
+  "id": "model-cats-climate-aware-task-scheduling",
+  "inputs": [
+    "Task duration and scheduling constraints",
+    "Forecast electricity-grid carbon intensity"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-02",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "CATS climate-aware compute task scheduler",
+  "notes": "G5 G5-0903. Software checked through metadata and documentation, without installation or execution. Geographic scope follows the documented application or software portability; it does not imply validation throughout that area. ",
+  "outputs": [
+    "Recommended task start time and estimated carbon savings"
+  ],
+  "provider": "GreenScheduler CATS developers",
+  "related_ids": [],
+  "repository": "https://github.com/GreenScheduler/cats",
+  "sectors": [
+    "digital.data_centres",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "JOSS article and named resource.",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.08251"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Published summary or statement of need read in memory.",
+      "url": "https://raw.githubusercontent.com/openjournals/joss-papers/master/joss.08251/paper.jats/10.21105.joss.08251.jats"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository identity and licence classification.",
+      "url": "https://api.github.com/repos/GreenScheduler/cats"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own software documentation.",
+      "url": "https://raw.githubusercontent.com/GreenScheduler/cats/main/README.md"
+    }
+  ],
+  "tags": [
+    "research software",
+    "JOSS"
+  ],
+  "title_en": "Cats python scheduler compute task scheduling",
+  "type": "model"
+}

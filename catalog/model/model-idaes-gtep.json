@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/IDAES/idaes-gtep"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/IDAES/idaes-gtep/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "idaes generation and transmission expansion planning",
+    "repo": "github.com/idaes/idaes-gtep",
+    "url": "https://github.com/IDAES/idaes-gtep"
+  },
+  "description": "IDAES-GTEP is a Pyomo-based generation and transmission expansion-planning model from the IDAES developers. Its generalised disjunctive programming formulation separates investment stages, commitment periods and dispatch decisions. Users load Prescient-formatted network data and cost assumptions, configure model options in Python or TOML, apply transformations and call a solver. Documented outputs include JSON and CSV results and plots. Coverage, planning horizon and temporal aggregation are configurable; the repository supplies benchmark examples, not a complete observed grid inventory. Public source and installation instructions are free under the IDAES BSD-style licence with its stated enhancement clause. Solvers have their own terms, with HiGHS and Gurobi named in the examples. Documentation lists errors or missing data in several legacy drivers, so the presence of an example does not establish that every supplied case runs. The model supports capacity expansion and operating-cost studies comparable in purpose to PyPSA (model-pypsa). The first review's generic IDAES process-platform records do not name this separate power-infrastructure planning model. No optimisation was executed here.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:IDAES",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/IDAES/idaes-gtep",
+  "id": "model-idaes-gtep",
+  "inputs": [
+    "Prescient-formatted network data",
+    "Technology and fuel costs",
+    "TOML model configuration"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-16",
+  "licence": "IDAES BSD-style licence with enhancement clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network"
+  ],
+  "name": "IDAES Generation and Transmission Expansion Planning",
+  "notes": "G7 G7-0282. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Investment and dispatch results",
+    "JSON and CSV",
+    "Plots"
+  ],
+  "provider": "IDAES GTEP developers",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/IDAES/idaes-gtep",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for IDAES/idaes-gtep: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3AIDAES&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/idaes/idaes-gtep/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Full licence read; redistribution permitted under stated attribution and enhancement terms.",
+      "url": "https://api.github.com/repos/idaes/idaes-gtep/license"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Data loading, model construction and result processing.",
+      "url": "https://api.github.com/repos/idaes/idaes-gtep/contents/gtep/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "TOML options, solvers and documented failures of legacy drivers.",
+      "url": "https://api.github.com/repos/idaes/idaes-gtep/contents/gtep/examples/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Prescient data structure and component parameters.",
+      "url": "https://api.github.com/repos/idaes/idaes-gtep/contents/docs/source/data.rst"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Package installation instructions.",
+      "url": "https://api.github.com/repos/idaes/idaes-gtep/contents/docs/source/installation.rst"
+    }
+  ],
+  "tags": [],
+  "title_en": "Idaes-gtep pyomo based generation and transmission expansion planning model",
+  "type": "model"
+}

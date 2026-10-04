@@ -1,0 +1,147 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "presas_sih.csv (dams of the hydrological information system)",
+      "url": "https://www.datos.gob.mx/dataset/ea2fb2bc-3974-4025-b814-a8f3e4443b67/resource/35e8d001-6195-45c7-9a1c-58a8594fb3a1/download/presas_sih.csv"
+    },
+    {
+      "kind": "api",
+      "label": "CKAN API",
+      "url": "https://www.datos.gob.mx/api/3/action/package_show?id=estaciones_sistema_informacion_hidrologica"
+    },
+    {
+      "kind": "portal",
+      "label": "Estaciones del Sistema de Información Hidrológica: climatological and hydrometric stations and dams (CSV)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.datos.gob.mx/dataset/estaciones_sistema_informacion_hidrologica"
+    },
+    {
+      "kind": "portal",
+      "label": "Aguas subterráneas: 653 aquifers, availability, groundwater regulations, piezometric network (SHP, CSV)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.datos.gob.mx/dataset/aguas_subterraneas"
+    },
+    {
+      "kind": "portal",
+      "label": "Programa Nacional Contra la Sequía (PRONACOSE): municipal drought and vulnerability (CSV)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.datos.gob.mx/dataset/programa_nacional_contra_sequia_pronacose"
+    },
+    {
+      "kind": "portal",
+      "label": "BANDAS national surface water data bank (not reachable from the cloud session)",
+      "url": "https://app.conagua.gob.mx/bandas/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "MX"
+  ],
+  "data_family": [
+    "system_description",
+    "hazards",
+    "social_vulnerability_equity",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "conagua open data on datos gob mx hydrological information system stations and dams aquifers and piezometric network drought programme",
+    "url": "https://datos.gob.mx/dataset/estaciones_sistema_informacion_hidrologica"
+  },
+  "description": "CONAGUA, Mexico's national water commission, publishes four datasets on the national open data portal datos.gob.mx. The hydrological information system (SIH) dataset lists the conventional and automatic climatological and hydrometric stations of CONAGUA and other federal agencies and about 210 dams, each with key, name, coordinates, altitude, state, municipality, availability basin and hydrological region. The groundwater dataset gives the boundaries and mean annual availability of the country's 653 aquifers, groundwater regulations and the piezometric network with static water levels, and the drought programme dataset characterises drought and its environmental, economic and social vulnerability by municipality. Coverage is Mexico. All are free downloads as CSV or shapefile under CC BY 4.0, also through the CKAN API. Caveats: the station and dam files are catalogues without the observed series, which sit in CONAGUA's BANDAS and SINA systems that could not be reached from the cloud session. Simulation uses: dam and gauge locations for hazard exposure, aquifer availability for capacity planning of water supply and irrigation, and municipal drought vulnerability for climate adaptation. Related records: the Mexican water utility indicators PIGOO (data-mexico-pigoo-water-utility-performance-indicators).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: CONAGUA BANDAS (national surface water data bank) (MX, hydrological_service) https://app.conagua.gob.mx/bandas/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "shapefile"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "drought",
+    "flood"
+  ],
+  "homepage": "https://www.datos.gob.mx/dataset/estaciones_sistema_informacion_hidrologica",
+  "id": "data-mexico-conagua-open-data-hydrological-stations-dams-aquifers",
+  "languages": [
+    "es"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://app.conagua.gob.mx/bandas/"
+    ]
+  },
+  "maturity": "active",
+  "name": "CONAGUA open data on datos.gob.mx (hydrological information system stations and dams, aquifers and piezometric network, drought programme)",
+  "provider": "Comisión Nacional del Agua (CONAGUA), Mexico",
+  "related_ids": [
+    "data-mexico-pigoo-water-utility-performance-indicators"
+  ],
+  "schema_summary": "dams: number, key, name, latitude, longitude, altitude, state, municipality, availability basin, hydrological region; hydrometric and climatological station lists; 653 aquifer boundaries with mean annual groundwater availability, groundwater regulations (vedas, reserves, suspensions), piezometric network static water levels, groundwater study library; municipal drought status and environmental, economic and social drought vulnerability",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.drinking_water",
+    "water.irrigation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "CC-BY-4.0, three CSV resources; header row of presas_sih.csv read",
+      "url": "https://www.datos.gob.mx/api/3/action/package_show?id=estaciones_sistema_informacion_hidrologica"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "653 aquifers, availability, regulations, piezometric network",
+      "url": "https://www.datos.gob.mx/api/3/action/package_show?id=aguas_subterraneas"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "municipal drought and vulnerability CSV",
+      "url": "https://www.datos.gob.mx/api/3/action/package_show?id=programa_nacional_contra_sequia_pronacose"
+    }
+  ],
+  "spatial_resolution": "station and dam points; aquifers; municipalities",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "CONAGUA",
+    "Mexico",
+    "dams",
+    "hydrometric stations",
+    "aquifers",
+    "piezometric network",
+    "drought",
+    "PRONACOSE"
+  ],
+  "temporal_coverage": "current catalogues (stations and dams updated 2025; groundwater 2026; drought January 2026)",
+  "temporal_resolution": "static catalogues; monthly drought characterisation",
+  "temporal_resolution_class": "monthly",
+  "title_en": "CONAGUA open data on datos.gob.mx (hydrological information system stations and dams, aquifers and piezometric network, drought programme)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "GNSS Data Centre documentation",
+      "url": "https://data.gnss.ga.gov.au/docs/home/index.html"
+    },
+    {
+      "kind": "api",
+      "label": "RINEX File Query API",
+      "url": "https://data.gnss.ga.gov.au/docs/rinex-file-query/v1.0/web-api-access.html"
+    },
+    {
+      "kind": "download",
+      "label": "S3 bucket browse page",
+      "url": "https://ga-gnss-data-rinex-v1.s3.amazonaws.com/index.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "oceania",
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "system_description"
+  ],
+  "data_kind": [
+    "time_series",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "geoscience australia gnss data centre cors rinex files station metadata and real time streams",
+    "url": "https://gnss.ga.gov.au"
+  },
+  "description": "The Geoscience Australia GNSS Data Centre is the national repository for data from Continuously Operating Reference Stations (CORS) that contribute to the Asia-Pacific Reference Frame, and publishes observation files, station metadata and GNSS products through documented interfaces. Coverage: Australia and contributing CORS networks in the Asia-Pacific region; RINEX observation and navigation files as daily 24-hour files at 30-second sampling from all stations, hourly files at 30 seconds and 15-minute high-rate observation files at 1 second from a subset, all gzip compressed and Hatanaka compressed for observations; current and historical site metadata on ownership, location and equipment for every station; real-time CORS data in RTCM 3 through the AUSCORS NTRIP broadcaster. Format and access: anonymous download by SFTP (sftp.data.gnss.ga.gov.au), an S3 bucket (ga-gnss-data-rinex-v1) with a browse page, a RINEX File Query web API returning JSON download links, GeodesyML site logs through a metadata API, and the GNSS Site Manager web app; free for open stations. Licence: the documentation site links Creative Commons Attribution 3.0 Australia in its footer; a licence statement for the data files was not read. Caveats: most data are open, but some stations are closed and need authenticated access requested from GA; the query API can also return files that have not passed metadata quality checks; the number of stations was not read. Simulation uses: positioning reference data for testing GNSS outage and space weather effects on timing and navigation dependent infrastructure. Related records: GA's Ginan precise positioning toolkit (model-ginan) and the AUSPOS online processing service (platform-auspos) use these observations.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source digital-geoscience-australia-gnss: provider pages read (round 2 register piece)",
+      "route": "R10",
+      "source": "digital-geoscience-australia-gnss"
+    }
+  ],
+  "formats": [
+    "domain_model_file",
+    "other",
+    "json"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://gnss.ga.gov.au/",
+  "id": "data-geoscience-australia-gnss-data-centre-cors",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-3.0-AU on the documentation site (data file licence not read)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://metadata.gnss.ga.gov.au/api/siteLogs/"
+    ],
+    "dead_since": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Geoscience Australia GNSS Data Centre: CORS RINEX files, station metadata and real-time streams",
+  "provider": "Geoscience Australia (Positioning Australia)",
+  "related_ids": [
+    "model-ginan",
+    "platform-auspos"
+  ],
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Documentation site: holdings station information, GNSS data, products; restricted data by email request; footer CC BY 3.0 AU link",
+      "url": "https://data.gnss.ga.gov.au/docs/home/index.html"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "RINEX daily, hourly and high-rate files; compression; SFTP, S3, web API, browse app; AUSCORS NTRIP RTCM 3; submission for APREF contributors",
+      "url": "https://data.gnss.ga.gov.au/docs/home/gnss-data.html"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Site metadata via SFTP (IGS text), GeodesyML API and GNSS Site Manager",
+      "url": "https://data.gnss.ga.gov.au/docs/home/metadata.html"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Query API: open vs closed data, metadataStatus parameter, JSON response with download links",
+      "url": "https://data.gnss.ga.gov.au/docs/rinex-file-query/v1.0/web-api-access.html"
+    }
+  ],
+  "tags": [
+    "GNSS",
+    "CORS",
+    "RINEX",
+    "NTRIP",
+    "APREF",
+    "Geoscience Australia"
+  ],
+  "title_en": "Geoscience Australia GNSS Data Centre: CORS RINEX files, station metadata and real-time streams",
+  "type": "data"
+}

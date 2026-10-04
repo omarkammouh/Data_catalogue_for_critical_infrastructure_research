@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "SensorThings API Part 1: Sensing 1.1 (18-088)",
+      "url": "https://docs.ogc.org/is/18-088/18-088.html"
+    },
+    {
+      "kind": "docs",
+      "label": "SensorThings API Part 2: Tasking Core (17-079r1)",
+      "url": "https://docs.ogc.org/is/17-079r1/17-079r1.html"
+    },
+    {
+      "kind": "docs",
+      "label": "STAplus extension (22-022r1)",
+      "url": "https://docs.ogc.org/is/22-022r1/22-022r1.html"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (TXT)",
+      "note": "Checked 2026-10-01: returns text/plain directly.",
+      "url": "https://www.ietf.org/rfc/rfc5023.txt"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "standards_ontologies",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "document"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ogc sensorthings api part 1 sensing 1 1 part 2 tasking and extensions",
+    "url": "https://ogc.org/standards/sensorthings"
+  },
+  "description": "The OGC SensorThings API is an open standard that defines RESTful interfaces for connecting internet-of-things sensors, their observations and metadata, and is widely used by city, water and environmental monitoring platforms to publish live sensor feeds. Part 1 Sensing version 1.1 (document 18-088, editors S. Liang, T. Khalafbeigi and H. van der Schaaf; approved 26 November 2020, published 4 August 2021) is mostly backwards compatible with version 1.0 (15-078r6). Coverage: the data model has eight entities, Thing, Location, HistoricalLocation, Datastream, Sensor, ObservedProperty, Observation and FeatureOfInterest, mapped to ISO/OGC Observations and Measurements; the service follows OASIS OData conventions for filtering, and extensions cover create-update-delete, batch requests, multi-datastreams, data arrays and MQTT publish and subscribe. Version 1.1 adds a free-form properties field to almost every entity. Related OGC documents are Part 2 Tasking Core (17-079r1), the STAplus extension (22-022r1) and a WebSub extension (24-032r1). Format and access: HTML standards on docs.ogc.org; implementations expose JSON over HTTP and MQTT, often at a path such as /FROST-Server/v1.1; free. Licence: OGC copyright with the OGC licence agreement allowing free implementation, copying and redistribution with notices kept. Caveats: this is an interface standard, not a dataset; the endpoints that use it are separate resources and were not listed here. Simulation uses: a uniform way to pull live sensor streams into digital twins and emergency response dashboards. Related records: the OGC WaterML 2 standards (data-ogc-waterml-2) and FIWARE smart data models (data-fiware-smart-data-models-streetlighting) are neighbouring observation and IoT data models.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source sensorthings: provider pages read (round 2 register piece)",
+      "route": "R08",
+      "source": "sensorthings"
+    }
+  ],
+  "formats": [
+    "json",
+    "web_page"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.ogc.org/standards/sensorthings/",
+  "id": "data-ogc-sensorthings-api-iot-observation-standard",
+  "languages": [
+    "en"
+  ],
+  "licence": "OGC licence agreement (royalty free; copyright OGC)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OGC SensorThings API (Part 1 Sensing 1.1, Part 2 Tasking and extensions)",
+  "provider": "Open Geospatial Consortium (OGC)",
+  "related_ids": [
+    "data-ogc-waterml-2",
+    "data-fiware-smart-data-models-streetlighting"
+  ],
+  "sectors": [
+    "water.drinking_water",
+    "water.stormwater_drainage",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Standard page: RESTful interfaces for IoT sensors and observations; links to 18-088, 15-078r6, 17-079r1, 22-022r1, 24-032r1",
+      "url": "https://www.ogc.org/standards/sensorthings/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Version 1.1: approved 2020-11-26, published 2021-08-04; editors; entities; O&M and OData mapping; MQTT and other extensions; changes in 1.1; OGC licence agreement",
+      "url": "https://docs.ogc.org/is/18-088/18-088.html"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): added 1 verified direct data link(s) from the provider's resource list. Verified: https://www.ietf.org/rfc/rfc5023.txt -> verified by fetch during the check",
+      "url": "https://www.ietf.org/rfc/rfc5023.txt"
+    }
+  ],
+  "tags": [
+    "OGC",
+    "SensorThings",
+    "IoT",
+    "OData",
+    "MQTT",
+    "FROST-Server"
+  ],
+  "temporal_coverage": "version 1.1 published 2021 (version 1.0 is 15-078r6)",
+  "title_en": "OGC SensorThings API (Part 1 Sensing 1.1, Part 2 Tasking and extensions)",
+  "type": "data"
+}

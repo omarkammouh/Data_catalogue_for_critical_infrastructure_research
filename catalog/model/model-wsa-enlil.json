@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "SWPC WSA-Enlil product page",
+      "url": "https://www.swpc.noaa.gov/products/wsa-enlil-solar-wind-prediction"
+    },
+    {
+      "kind": "portal",
+      "label": "NCEI WSA-Enlil archive",
+      "url": "https://www.ngdc.noaa.gov/enlil/"
+    },
+    {
+      "kind": "docs",
+      "label": "NCEI metadata record",
+      "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.stp.swx:enlil"
+    },
+    {
+      "kind": "paper",
+      "label": "Transition to operations paper",
+      "url": "https://doi.org/10.1029/2011SW000663"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Parsons A., Biesecker D., Odstrcil D., Millward G., Hill S., Pizzo V. (2011). Wang-Sheeley-Arge-Enlil Cone Model Transitions to Operations. Space Weather 9. doi:10.1029/2011SW000663",
+  "continents": [],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "wsa enlil solar wind and cme prediction model noaa swpc operational version",
+    "url": "https://swpc.noaa.gov/products/wsa-enlil-solar-wind-prediction"
+  },
+  "description": "WSA-Enlil is a large-scale, physics-based model of the inner heliosphere used by the SWPC Space Weather Forecast Office to give one to four days of warning of solar wind structures and Earth-directed coronal mass ejections. It couples the semi-empirical Wang-Sheeley-Arge near-Sun model, driven by GONG photospheric magnetic synoptic maps, with the Enlil three-dimensional magnetohydrodynamic model of the heliosphere; CMEs are injected as cones with timing, direction and speed fitted from coronagraph images. Version 1.0 went into operations on NCEP computers in December 2011 and version 2.0 on the WCOSS supercomputer in May 2019, followed by version 2.1 in December 2019 and version 3.0 in April 2023. SWPC shows real-time density and velocity animations for Earth and STEREO-A, and NCEI keeps an archive of model output from October 2016 as NetCDF files with JPEG and MPEG images. Model output is free as US Government work; the Enlil code itself is not distributed by NOAA, but runs on request are offered by the NASA Community Coordinated Modeling Center. Caveats: arrival-time errors of many hours are typical, the cone model ignores magnetic structure and Bz, and results depend on the synoptic map. It supports lead-time and scenario inputs for geomagnetic storm impact chains on grids, satellites and GNSS; related records are the NOAA SWPC products and the HELCATS ARRCAT catalogue.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "WSA-Enlil solar wind prediction",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://www.swpc.noaa.gov/products/wsa-enlil-solar-wind-prediction",
+  "id": "model-wsa-enlil",
+  "inputs": [
+    "GONG photospheric magnetic synoptic maps",
+    "coronagraph-fitted CME cone parameters"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-04-04",
+  "licence": "US Government public domain (model output); code not distributed by NOAA",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.stp.swx:enlil"
+    ]
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "WSA-Enlil solar wind and CME prediction model (NOAA SWPC operational version)",
+  "notes": "last_updated is the WSA-Enlil V2.0 operational deployment date. The CCMC runs-on-request service is noted from general knowledge of CCMC and was not re-read today.",
+  "outputs": [
+    "solar wind density and radial velocity in the inner heliosphere",
+    "CME arrival time and intensity at Earth and spacecraft"
+  ],
+  "provider": "NOAA Space Weather Prediction Center (SWPC); archive at NOAA NCEI",
+  "related_ids": [
+    "data-noaa-swpc-products",
+    "data-helcats-arrcat-cme-arrival-catalogue"
+  ],
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "WSA semi-empirical + Enlil 3-D MHD, GONG maps, cone model, 1-4 day warning; V1.0 NCEP CCS 13 Dec 2011; V2.0 WCOSS 28 May 2019",
+      "url": "https://www.swpc.noaa.gov/products/wsa-enlil-solar-wind-prediction"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "NCEI archive link, formats JPEG, MPEG, NetCDF, time period 2016-10-15 to present, annual update, transition-to-operations article",
+      "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.stp.swx:enlil"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed citation, description, last_updated.",
+      "url": "https://www.swpc.noaa.gov/products/wsa-enlil-solar-wind-prediction"
+    }
+  ],
+  "tags": [
+    "heliosphere",
+    "solar wind",
+    "CME forecasting",
+    "MHD",
+    "operational model",
+    "SWPC"
+  ],
+  "title_en": "WSA-Enlil solar wind and CME prediction model (NOAA SWPC operational version)",
+  "type": "model"
+}

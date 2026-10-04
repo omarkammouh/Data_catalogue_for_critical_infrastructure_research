@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "SatNOGS DB",
+      "url": "https://db.satnogs.org/"
+    },
+    {
+      "kind": "api",
+      "label": "SatNOGS DB API",
+      "url": "https://db.satnogs.org/api/"
+    },
+    {
+      "kind": "docs",
+      "label": "API documentation (wiki)",
+      "url": "https://wiki.satnogs.org/SatNOGS_DB/API"
+    },
+    {
+      "kind": "docs",
+      "label": "SatNOGS Network",
+      "url": "https://network.satnogs.org/"
+    },
+    {
+      "kind": "api",
+      "label": "SatNOGS DB API: satellites",
+      "url": "https://db.satnogs.org/api/satellites/?format=json"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "equipment_specifications",
+    "crowdsourced_public_reports",
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "satnogs db crowdsourced satellite and transmitter database",
+    "url": "https://db.satnogs.org"
+  },
+  "description": "SatNOGS DB is a crowdsourced, machine-readable database of artificial objects in space, aiming to be a unified global catalogue of satellites and spacecraft together with their radio transmitters. Each satellite entry carries the NORAD catalogue number, names, status, decay, launch and deployment dates, operator, countries, website and telemetry decoders, and transmitter entries give downlink and uplink frequencies, modes and status; the API returned about 2,780 satellites and about 5,020 transmitters on 26 September 2026. It is developed, hosted and maintained by the Libre Space Foundation since 2014, and every piece of information is contributed, reviewed and edited by volunteers and mission operators. The companion SatNOGS Network schedules observations on a global network of open-source ground stations (about 4,490 registered, about 300 online at reading) and publishes the resulting observations. All data are public and freely accessible online under CC BY-SA 4.0 through the web interface, exports and a REST API with JSON output. Caveats: crowdsourced entries vary in completeness, frequency data are not authoritative coordination records, and most registered stations are offline at any time. It supports asset inventories of satellite communication infrastructure and interference or outage analysis under space weather; related records are the UCS Satellite Database and Space-Track SATCAT.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "open satellite database transmitters ground stations",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://db.satnogs.org/api/satellites/?format=json",
+  "id": "data-satnogs-db",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-SA-4.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "SatNOGS DB crowdsourced satellite and transmitter database",
+  "provider": "Libre Space Foundation (SatNOGS project)",
+  "related_ids": [],
+  "schema_summary": "satellite (sat_id, norad_cat_id, names, status, decayed, launched, deployed, operator, countries, telemetries, updated); transmitter (frequencies, mode, status)",
+  "sectors": [
+    "cross_cutting.space",
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "About page: holistic global database, API, CC BY-SA 4.0, volunteer contributions, Libre Space Foundation, 2014",
+      "url": "https://db.satnogs.org/about/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "API count 2,780 satellites and field list",
+      "url": "https://db.satnogs.org/api/satellites/?format=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "API count 5,021 transmitters",
+      "url": "https://db.satnogs.org/api/transmitters/?format=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "SatNOGS Network about page and CC BY-SA observations; stations API 4,492 stations, 305 online",
+      "url": "https://network.satnogs.org/about/"
+    }
+  ],
+  "tags": [
+    "satellites",
+    "transmitters",
+    "ground stations",
+    "open data",
+    "crowdsourcing"
+  ],
+  "temporal_coverage": "2014 to present",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2014
+  },
+  "title_en": "SatNOGS DB crowdsourced satellite and transmitter database",
+  "type": "data",
+  "update_frequency": "real_time"
+}

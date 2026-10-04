@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Offene Daten Köln",
+      "url": "https://www.offenedaten-koeln.de/"
+    },
+    {
+      "kind": "api",
+      "label": "DKAN search API",
+      "url": "https://www.offenedaten-koeln.de/api/1/search"
+    },
+    {
+      "kind": "docs",
+      "label": "API description",
+      "url": "https://www.offenedaten-koeln.de/api"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "crs": "ETRS89 / UTM 32N for many geodata",
+  "data_family": [
+    "system_description",
+    "demand_operation",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "tabular",
+    "asset_inventory",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "offene daten koln city of cologne open data portal transport fire service infrastructure and planning datasets",
+    "url": "https://offenedaten-koeln.de"
+  },
+  "description": "Offene Daten Köln is the open data portal of the City of Cologne and its partners, relaunched on a new DKAN (Drupal) base. On 28 September 2026 its search API listed 502 datasets, with 80 tagged transport and traffic, 72 infrastructure, 106 geodata and 59 building and housing. Infrastructure-relevant datasets include the street network, street sections and junctions, traffic lights, road works and traffic disruptions, car counting stations and values, bicycle counters by year, public transport stops, lifts and escalators of the KVB network with their outages, the VRS GTFS timetable, park and ride sites, car park occupancy, filling stations, siren locations, the fire service call-out records by year (2014 to 2023), accident atlases, the tree cadastre, the real estate cadastre, zoning plans and statistical districts. Coverage is the city of Cologne; resolution is feature or counting-station level. Format and access: CSV (most distributions), JSON, XML, ZIP shapefiles, KMZ, GeoJSON, WMS and WFS services, with a DCAT-AP.de API. Licence: set per dataset, mostly Datenlizenz Deutschland Zero 2.0, some Namensnennung 2.0 and CC BY. Free. Caveats: many series are yearly files, not continuous feeds, and some datasets are old snapshots. Simulation uses: urban road and transit network models, traffic and emergency response analysis, and hazard exposure of city assets. Related records: the NRW municipal heat planning data and the NRW central water supply installations cover the surrounding state.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "api/1/search keyword filters (round 2 cloud worklist)",
+      "route": "R02",
+      "source": "offenedaten-koeln.de DKAN API"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "xml",
+    "shapefile",
+    "kml",
+    "geojson",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "city",
+  "hazards": [],
+  "homepage": "https://www.offenedaten-koeln.de/",
+  "id": "data-offene-daten-koeln-city-open-data-portal",
+  "languages": [
+    "de"
+  ],
+  "last_updated": "2026",
+  "licence": "Per dataset; mostly dl-de/zero-2-0, some dl-de/by-2-0 and CC BY",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Offene Daten Köln: City of Cologne open data portal (transport, fire service, infrastructure and planning datasets)",
+  "notes": "Round 2 cloud worklist: round 1 cross-cutting could not reach the portal (organisation walk); it answered on 2026-09-28. Individual datasets are not catalogued separately.",
+  "provider": "Stadt Köln (City of Cologne) and partners",
+  "related_ids": [
+    "data-nrw-municipal-heat-planning-data-lanuk",
+    "data-nrw-wasserversorgungsanlagen"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.public_transit",
+    "services.emergency_services",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "portal of the City of Cologne and partners; new design and technical base",
+      "url": "https://www.offenedaten-koeln.de/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "502 datasets in total; facet counts; 80 transport datasets listed by title; distribution licences dl-zero-de 200, dl-by-de 20, cc-by 2; formats CSV 130, JSON 35, XML 11, ZIP 10, WMS 5, WFS 4",
+      "url": "https://www.offenedaten-koeln.de/api/1/search?page-size=100&keyword=Transport%20und%20Verkehr"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "licence terms are set per dataset",
+      "url": "https://www.offenedaten-koeln.de/nutzungsbedingungen"
+    }
+  ],
+  "spatial_resolution": "Feature or station level",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "city open data",
+    "DKAN",
+    "traffic",
+    "GTFS",
+    "fire service",
+    "Cologne"
+  ],
+  "temporal_coverage": "Varies by dataset (about 2009 to 2026)",
+  "temporal_resolution": "Varies",
+  "temporal_resolution_class": "varies",
+  "title_en": "Offene Daten Köln: City of Cologne open data portal (transport, fire service, infrastructure and planning datasets)",
+  "type": "data",
+  "update_frequency": "varies"
+}

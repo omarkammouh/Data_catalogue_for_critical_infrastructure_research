@@ -1,0 +1,148 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Orekit website",
+      "url": "https://www.orekit.org/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source (GitHub mirror)",
+      "url": "https://github.com/CS-SI/Orekit"
+    },
+    {
+      "kind": "download",
+      "label": "Maven Central",
+      "url": "https://mvnrepository.com/artifact/org.orekit/orekit"
+    },
+    {
+      "kind": "docs",
+      "label": "Orekit forum",
+      "url": "https://forum.orekit.org/"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/CS-SI/Orekit"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://www.orekit.org/doc-maven.html"
+    },
+    {
+      "kind": "contact",
+      "label": "Forum",
+      "url": "https://forum.orekit.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Maisonobe L., Pommier V., Parraud P. (2010) Orekit: an open source library for operational flight dynamics applications. ICATT.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.7249096",
+    "name": "orekit space flight dynamics library",
+    "repo": "github.com/cs-si/orekit",
+    "url": "https://orekit.org"
+  },
+  "description": "Orekit is a low-level space flight dynamics library written in Java, meant for uses from quick studies to critical operations. It provides orbits, dates, attitudes and reference frames and algorithms to convert and propagate them: analytical, semi-analytical, numerical and TLE-based propagation, Cartesian, Keplerian, circular and equinoctial orbit types, attitude laws such as nadir and target pointing, event detectors for eclipses and ground station visibility, impulse and continuous manoeuvres, precise time scales with leap seconds, orbit determination with parameter estimation and measurement processing, and Earth shape and potential models. Coverage is global, for Earth-centred orbits and frames. It reads and writes common space data formats. Inputs are initial orbits or measurements plus physical data such as Earth orientation parameters, loaded from the separate orekit-data repository; outputs are propagated states, events and estimated orbits. It is used through Maven (latest listed release 13.0.3) with JDK 8 or later, is openly accessible online as source on GitLab and GitHub under the Apache 2.0 licence at no cost, and has a Zenodo DOI and a user forum. Caveats: it is a library, not an application, so users must write Java (or use wrappers), and results depend on up-to-date physical data. It supports satellite visibility, conjunction and space weather exposure studies of space infrastructure; related records are Space-Track SATCAT, SatNOGS DB and GMAT.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "open source orbit propagation library",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for model:digital.satellite_positioning:physical",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://www.orekit.org/",
+  "id": "model-orekit",
+  "inputs": [
+    "initial orbit or TLE",
+    "tracking measurements",
+    "Earth orientation parameters and leap seconds (orekit-data)",
+    "force and attitude models"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://mvnrepository.com/artifact/org.orekit/orekit"
+    ]
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Orekit space flight dynamics library",
+  "notes": "Orekit's origin at CS GROUP and its start year are recalled, not read; the website sits behind an Anubis bot challenge and could not be read on 2026-09-26.",
+  "outputs": [
+    "propagated orbit states",
+    "detected events such as eclipse and station visibility",
+    "estimated orbits and parameters"
+  ],
+  "provider": "Orekit open-source project (repository mirrored under CS-SI on GitHub)",
+  "related_ids": [
+    "data-celestrak-gp-satcat",
+    "data-igs-gnss-products",
+    "model-gmat-general-mission-analysis-tool"
+  ],
+  "repository": "https://github.com/CS-SI/Orekit",
+  "sectors": [
+    "cross_cutting.space",
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README: Java library, features list, Apache 2.0, JDK 8, Maven, orekit-data, Zenodo DOI, forum",
+      "url": "https://raw.githubusercontent.com/CS-SI/Orekit/develop/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "latest version 13.0.3",
+      "url": "https://search.maven.org/solrsearch/select?q=g:org.orekit+AND+a:orekit&rows=1&wt=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "README, licence and tags",
+      "url": "https://github.com/CS-SI/Orekit"
+    }
+  ],
+  "tags": [
+    "orbit propagation",
+    "flight dynamics",
+    "orbit determination",
+    "Java",
+    "open source",
+    "GNSS"
+  ],
+  "title_en": "Orekit space flight dynamics library",
+  "type": "model"
+}

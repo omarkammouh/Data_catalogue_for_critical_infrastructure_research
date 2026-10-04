@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Open data portal entry",
+      "url": "https://dadosabertos.bcb.gov.br/dataset/pix"
+    },
+    {
+      "kind": "api",
+      "label": "OData API",
+      "url": "https://olinda.bcb.gov.br/olinda/servico/Pix_DadosAbertos/versao/v1/odata/"
+    },
+    {
+      "kind": "docs",
+      "label": "API documentation",
+      "url": "https://olinda.bcb.gov.br/olinda/servico/Pix_DadosAbertos/versao/v1/documentacao"
+    },
+    {
+      "kind": "repo",
+      "label": "pixbr Python client",
+      "url": "https://doi.org/10.5281/zenodo.21366255"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "BR"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "banco central do brasil pix open data statistics estatisticas do pix transactions by municipality keys users and fraud med odata api",
+    "repo": "doi.org/10.5281/zenodo.21366255",
+    "url": "https://dadosabertos.bcb.gov.br/dataset/pix"
+  },
+  "description": "Official statistics on Pix, Brazil's instant payment system, published by the central bank. The open data portal says the dataset covers keys and users registered in the Directory of Transactional Account Identifiers (DICT), fraud statistics recorded in the Special Return Mechanism (MED), and transactions settled in the Instant Payment System (SPI), consolidated by municipality and by nature, age, type of person, region, initiation method and purpose. Resources include monthly Pix transactions by municipality for payers and receivers split into people and firms, monthly transaction counts and values, stocks of Pix keys by participant, DICT users and MED fraud statistics, all downloadable through the Olinda OData API in JSON, with Swagger documentation and a data browser. It is free under the Open Database License (ODbL); the portal entry was last modified on 11 September 2026, and a call made today returned municipal rows for months from December 2021 to August 2026. Coverage is Brazil, every municipality. Caveats: Pix settled on a participant's own books is excluded from the transaction statistics, and the API syntax is non-standard, which the pixbr Python client hides. For simulation it gives the geographic load and fraud baseline of a national payment system. A related catalogue record is PixSim.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((bank OR banking OR payment OR financial OR insurance OR fintech) AND (cloud OR \"web service\" OR API OR platform OR dashboard))",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((bank OR banking OR payment OR financial OR insurance OR fintech) AND (cloud OR \"web service\" OR API OR platform OR dashboard))",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "json",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://dadosabertos.bcb.gov.br/dataset/pix",
+  "id": "data-bcb-pix-open-data-statistics",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-15",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Banco Central do Brasil Pix open data statistics (Estatísticas do Pix) - transactions by municipality, keys, users and fraud (MED), OData API",
+  "provider": "Banco Central do Brasil, Departamento de Competição e de Estrutura do Mercado Financeiro (Decem)",
+  "regions": [
+    "Brazil",
+    "by municipality"
+  ],
+  "sectors": [
+    "industry.financial"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "size": "not stated on the page read",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, resources, licence, maintainer and modification date read 2026-09-26",
+      "url": "https://dadosabertos.bcb.gov.br/api/3/action/package_show?id=pix"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "municipal transaction rows for 2021-12 and 2026-08 returned 2026-09-26",
+      "url": "https://olinda.bcb.gov.br/olinda/servico/Pix_DadosAbertos/versao/v1/odata/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "pixbr client description, version and licence read 2026-09-26",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.21366255"
+    }
+  ],
+  "spatial_resolution": "municipality",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "Pix",
+    "instant payments",
+    "Brazil",
+    "central bank",
+    "open data",
+    "fraud",
+    "MED",
+    "DICT"
+  ],
+  "temporal_coverage": "December 2021 to August 2026 in the municipal rows returned (other series not checked)",
+  "temporal_resolution": "monthly",
+  "temporal_resolution_class": "monthly",
+  "title_en": "Central Bank of Brazil Pix open data statistics: transactions by municipality, keys, users, and fraud (MED), OData API",
+  "type": "data",
+  "update_frequency": "monthly"
+}

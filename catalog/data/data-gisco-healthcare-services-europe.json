@@ -1,0 +1,149 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Healthcare services files (CSV, GeoJSON, GeoPackage by country and EU-wide)",
+      "url": "https://gisco-services.ec.europa.eu/pub/healthcare/"
+    },
+    {
+      "kind": "docs",
+      "label": "Metadata (PDF)",
+      "url": "https://gisco-services.ec.europa.eu/pub/healthcare/metadata.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "GISCO basic services page",
+      "url": "https://ec.europa.eu/eurostat/web/gisco/geodata/basic-services"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "AL",
+    "AT",
+    "BE",
+    "BG",
+    "CH",
+    "CY",
+    "CZ",
+    "DK",
+    "EE",
+    "GR",
+    "ES",
+    "FI",
+    "FR",
+    "HR",
+    "HU",
+    "IE",
+    "IT",
+    "LT",
+    "LU",
+    "LV",
+    "ME",
+    "MT",
+    "NL",
+    "NO",
+    "PL",
+    "PT",
+    "RO",
+    "RS",
+    "SE",
+    "SI",
+    "SK"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gisco healthcare services in europe hospital locations harmonised from national official sources with beds emergency service and public or private status reference years 2020 and 2023",
+    "url": "https://ec.europa.eu/eurostat/web/gisco/geodata/basic-services"
+  },
+  "description": "This data set maps Europe's hospitals on one common schema, built from each country's official lists. It is produced by GISCO, the geographic information service of Eurostat, which retrieves national sources such as health ministry registers, harmonises them automatically and republishes them. Each hospital site has a national identifier where one exists, name, address, coordinates with a geolocation quality flag, whether it provides emergency services, capacity as beds, practitioners or rooms where reported, the national facility type, public or private status, recognised specialties and contact details, with reference and publication dates. Coverage is 31 countries, including EU Member States and Albania, Switzerland, Montenegro, Norway and Serbia, for reference years 2020 and 2023, plus an EU-wide file of about 14,000 sites. The files are free and available to download as CSV, GeoJSON or GeoPackage. Caveats: the definition of a hospital and the attributes filled in vary by country, the licence of several national sources is marked to be determined, and data may contain inconsistencies that Eurostat asks users to report. Simulation uses: pan-European exposure analysis of hospitals to floods, heat and earthquakes, locating emergency departments for response planning, and cross-border access modelling. Related records: the Spanish national hospital catalogue (data-spain-catalogo-nacional-hospitales) is one of the national sources of this kind, and Healthsites.io (data-healthsites-io) is a global open alternative.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hand-off to the services piece (integrator list handoffs/services.csv): EU healthcare services (GISCO)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geojson",
+    "geopackage"
+  ],
+  "geographic_scope": "continental",
+  "hazards": [],
+  "homepage": "https://ec.europa.eu/eurostat/web/gisco/geodata/basic-services",
+  "id": "data-gisco-healthcare-services-europe",
+  "languages": [
+    "en"
+  ],
+  "licence": "Per national source as listed in the metadata (several marked TBD); Eurostat GISCO terms",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GISCO healthcare services in Europe: hospital locations harmonised from national official sources, with beds, emergency service and public or private status (reference years 2020 and 2023)",
+  "provider": "Eurostat, GISCO (Geographic Information System of the Commission)",
+  "related_ids": [
+    "data-spain-catalogo-nacional-hospitales",
+    "data-healthsites-io"
+  ],
+  "schema_summary": "id (national code where available), hospital_name, site_name, lat, lon, street, house_number, postcode, address, city, cntr_id, emergency (yes or no), cap_beds, cap_prac, cap_rooms, facility_type (national classification), public_private, list_specs (EU recognised specialties), tel, email, url, ref_date, pub_date, geo_qual (geolocation quality), comments",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Directory listing: folders 2020 and 2023 with versions v2024_07 and v2025_11, metadata PDFs; 2023 CSV folder holds 31 country files plus EU.csv (14,045 lines read in memory including header)",
+      "url": "https://gisco-services.ec.europa.eu/pub/healthcare/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory, 7 pages: integration of EU Member States official data on the location of healthcare services, priority on governmental sources, harmonised with a common simple schema, produced by automated processes; covers services considered hospitals by Member States; attribute table as in the schema summary; per-country source, reference date, update frequency and licence (several TBD, France Open Licence); version notes up to v2026_04",
+      "url": "https://gisco-services.ec.europa.eu/pub/healthcare/metadata.pdf"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GISCO basic services page of Eurostat",
+      "url": "https://ec.europa.eu/eurostat/web/gisco/geodata/basic-services"
+    }
+  ],
+  "spatial_resolution": "Individual hospital site (point)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospitals",
+    "health facilities",
+    "Europe",
+    "GISCO",
+    "Eurostat",
+    "emergency departments"
+  ],
+  "temporal_coverage": "Reference years 2020 and 2023",
+  "temporal_resolution": "Versioned releases",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "GISCO healthcare services in Europe: hospital locations harmonised from national official sources, with beds, emergency service and public or private status (reference years 2020 and 2023)",
+  "type": "data",
+  "update_frequency": "annual"
+}

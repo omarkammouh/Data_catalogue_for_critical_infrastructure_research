@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Public IPv4 ITDK releases",
+      "url": "https://publicdata.caida.org/datasets/topology/ark/ipv4/itdk/"
+    },
+    {
+      "kind": "docs",
+      "label": "Dataset page",
+      "url": "https://www.caida.org/catalog/datasets/internet-topology-data-kit/"
+    },
+    {
+      "kind": "docs",
+      "label": "Acceptable Use Agreement",
+      "url": "https://www.caida.org/about/legal/aua/public_aua/"
+    }
+  ],
+  "access_note": "Releases under one year old need a request and CAIDA approval; older releases are public.",
+  "access_restrictions": "on_request",
+  "cost": "free",
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "caida macroscopic internet topology data kit itdk",
+    "url": "https://caida.org/catalog/datasets/internet-topology-data-kit"
+  },
+  "description": "The Internet Topology Data Kit (ITDK) from CAIDA at the University of California San Diego is a router-level map of a large cross-section of the global internet. Each release can contain IPv4 and IPv6 router-level topologies (nodes, each a router with its interface addresses, and links between them), node-to-AS assignments, router geolocation, the target lists of addresses probed for aliases and DNS lookups of those addresses. It is built from traceroutes run on CAIDA's Archipelago (Ark) measurement infrastructure, from the IPv4 Routed /24 and Ark IPv6 topology datasets, with alias resolution by MIDAR, iffinder, speedtrap and SNMPv3 probing, and it serves research on internet topology, routing and resilience. Coverage is global, at router and interface level; releases appear a few times a year, and the public IPv4 directory held 27 releases from 2010-01 to 2025-08 on 26 September 2026. Files are compressed text available for download, as documented in the README packaged with each release. Releases less than one year old require a request and approval; older releases are public on publicdata.caida.org at no cost under CAIDA's Acceptable Use Agreement. Caveats: alias resolution and geolocation are inferred and imperfect, non-responding hops appear as placeholder nodes, and traceroute visibility depends on monitor placement, so the map is a sample, not a complete inventory. Simulation uses: router-level network models for failure propagation, targeted-attack and resilience studies, and mapping internet infrastructure against hazards. Related records: CAIDA AS Relationships Dataset and PeeringDB.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.internet_exchange:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "plain_text"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.caida.org/catalog/datasets/internet-topology-data-kit/",
+  "id": "data-caida-internet-topology-data-kit",
+  "languages": [
+    "en"
+  ],
+  "licence": "CAIDA Acceptable Use Agreement",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CAIDA Macroscopic Internet Topology Data Kit (ITDK)",
+  "provider": "CAIDA (Center for Applied Internet Data Analysis, UC San Diego)",
+  "related_ids": [
+    "data-caida-as-relationships",
+    "data-peeringdb"
+  ],
+  "schema_summary": "nodes, links, node-to-AS, node geolocation, alias-probe targets, DNS names",
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Contents, Ark sources, alias methods, releases under one year restricted",
+      "url": "https://www.caida.org/catalog/datasets/internet-topology-data-kit/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "27 public release directories, 2010-01 to 2025-08",
+      "url": "https://publicdata.caida.org/datasets/topology/ark/ipv4/itdk/"
+    }
+  ],
+  "spatial_resolution": "Router level with inferred geolocation",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "router-level topology",
+    "traceroute",
+    "Ark",
+    "alias resolution",
+    "internet map"
+  ],
+  "temporal_coverage": "Releases from 2010",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2010
+  },
+  "temporal_resolution": "Snapshot per release",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "CAIDA Macroscopic Internet Topology Data Kit (ITDK)",
+  "type": "data",
+  "update_frequency": "annual"
+}

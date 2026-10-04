@@ -1,0 +1,87 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/derhuerst/extract-gtfs-shapes"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gtfs shapes to geojson extraction tool",
+    "repo": "github.com/derhuerst/extract-gtfs-shapes",
+    "url": "https://github.com/derhuerst/extract-gtfs-shapes"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This Node.js package extracts route geometries from the shapes.txt table of a GTFS feed. Its command-line interface writes per-shape GeoJSON files, and the JavaScript function can pass each geometry to a caller for further processing. The README documents installation, a concurrency option and a strict input ordering by shape_id and shape_pt_sequence; unsorted feeds must be prepared first. A modeller could use the resulting geometries for spatial transit-network checks, corridor exposure overlays or route-level capacity scenarios. This is a conversion tool, not a GTFS timetable or observed movement dataset. The repository includes a small test table, but no citywide feed or validated transit model. This review checked the documentation and file tree without installing npm, running the extractor or inspecting generated GeoJSON. GitHub metadata classifies the repository as ISC-licensed, with a licence file listed. Input feed terms remain with their original providers, and geographic coverage depends entirely on the chosen GTFS source. Related resources are those feeds and any derived network layers.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "gtfs dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/derhuerst/extract-gtfs-shapes",
+  "id": "platform-gtfs-shapes-geojson-extractor",
+  "interfaces": [
+    "command_line",
+    "code_library"
+  ],
+  "interoperability": [
+    "GTFS shapes.txt",
+    "GeoJSON"
+  ],
+  "language": [
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-05-20",
+  "licence": "ISC",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "GTFS shapes-to-GeoJSON extraction tool",
+  "notes": "G8; G8-0839. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: extract-gtfs-shapes repository documentation, accessed 2026-09-28. No describing paper identified..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "extract-gtfs-shapes project",
+  "related_ids": [],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/derhuerst/extract-gtfs-shapes/blob/main/readme.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/derhuerst/extract-gtfs-shapes"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for public transport",
+  "type": "platform"
+}

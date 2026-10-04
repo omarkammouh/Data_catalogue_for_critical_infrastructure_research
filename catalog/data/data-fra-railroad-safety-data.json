@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "FRA safety data",
+      "url": "https://safetydata.fra.dot.gov/"
+    },
+    {
+      "kind": "portal",
+      "label": "Crossing inventory (current)",
+      "url": "https://datahub.transportation.gov/d/m2f8-22s6"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "historical_events",
+    "system_description",
+    "interdependencies"
+  ],
+  "data_kind": [
+    "event_record",
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fra railroad safety data accidents highway rail crossing incidents and crossing inventory",
+    "url": "https://safetydata.fra.dot.gov"
+  },
+  "description": "The Federal Railroad Administration publishes railroad safety data: summary reports and full datasets on train accidents and rail equipment incidents, highway-rail grade crossing incidents, the highway-rail crossing inventory, casualties, trespassers, quiet zones and operational data, and tools such as the Grade Crossing Accident Prediction System and the Grade Crossing Inventory System. The crossing inventory holds one record for every public and private highway-rail crossing reported by railroads and state departments of transportation on Form FRA F 6180.71, each with its US DOT crossing identifier, railroad, reporting agency, state, county and city and many physical and traffic attributes; the current table on the US DOT data hub has about 439,000 rows, with a historical table and a raw source table alongside. Coverage is national (United States). The data are public domain and free, available to download as CSV and through the Socrata API, with a data dictionary; the safety data site was updated in September 2026 and a new safety data page was released in December 2024. Caveats: inventory data are reported by railroads and states and can be out of date for individual crossings. The data support crossing risk analysis, rail and road interdependency studies, and historical event analysis of rail accidents. They complement the North American Rail Network and are related to the Canadian National Railway Network with its grade crossings.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Crossing Inventory Data Form 71",
+      "route": "R01",
+      "source": "socrata-discovery"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://safetydata.fra.dot.gov/",
+  "id": "data-fra-railroad-safety-data",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public Domain",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "FRA railroad safety data (accidents, highway-rail crossing incidents and crossing inventory)",
+  "provider": "US Federal Railroad Administration (FRA)",
+  "related_ids": [
+    "data-canada-national-railway-network-nrwn"
+  ],
+  "sectors": [
+    "transport.rail",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "last update Friday, September 25, 2026; new safety data page December 2024; report and dataset categories; GXAPS, GCIS, AF/FP tools",
+      "url": "https://safetydata.fra.dot.gov/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Crossing Inventory Data (Form 71) - Current; FRA Safe Team; Public Domain; rows updated 2026-09-25; definition; historical and source tables; data dictionary; columns",
+      "url": "https://datahub.transportation.gov/api/views/m2f8-22s6.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "438,853 rows",
+      "url": "https://datahub.transportation.gov/resource/m2f8-22s6.json?$select=count(*)"
+    }
+  ],
+  "spatial_resolution": "individual crossings and incidents",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "FRA",
+    "railroad safety",
+    "grade crossings",
+    "accidents",
+    "United States"
+  ],
+  "temporal_coverage": "current inventory and historical incident records",
+  "title_en": "FRA railroad safety data (accidents, highway-rail crossing incidents and crossing inventory)",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

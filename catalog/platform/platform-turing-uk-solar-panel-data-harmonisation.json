@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/alan-turing-institute/solar-panel-detection"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "turing uk solar panel data harmonisation pipeline",
+    "repo": "github.com/alan-turing-institute/solar-panel-detection",
+    "url": "https://github.com/alan-turing-institute/solar-panel-detection"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "The Turing solar-panel pipeline reconciles UK photovoltaic assets reported by OpenStreetMap, the Renewable Energy Planning Database, Ofgem Feed-in Tariff reports and machine-vision observations. The Alan Turing Institute and collaborators publish Python preprocessing scripts, PostgreSQL database construction and documented matching rules. Outputs link source identifiers in a match table and retain the rule used for each association. The documented inputs include the September 2019 FiT report and March 2020 REPD release, with Great Britain OSM coverage. These are asset records without a common observation time step. Code is publicly available under BSD 3-Clause; each input source retains its own terms. A limitation is that the machine-vision input was not public when the documentation was written, and manual cleaning and source-path changes are required. The original project ceased active development in April 2020 and points to an Open Climate Fix continuation. Simulation uses include assembling PV asset inventories for renewable-generation and nowcasting models. It relates to data-openstreetmap. This record covers reusable matching software, not a verified complete UK installation census. The code and resulting match accuracy were not tested.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Curated-list traversal: rebase-energy/awesome-energy-datasets; follow solar-power-mapping-data upstream",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/alan-turing-institute/solar-panel-detection",
+  "id": "platform-turing-uk-solar-panel-data-harmonisation",
+  "interfaces": [
+    "code_library",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "OpenStreetMap",
+    "REPD",
+    "Ofgem FiT",
+    "PostgreSQL"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "BSD-3-Clause code; input datasets retain their own terms",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "Turing UK solar-panel data harmonisation pipeline",
+  "notes": "G8; G8-0114. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Alan Turing Institute, Dan Stowell and collaborators",
+  "related_ids": [
+    "data-openstreetmap"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/alan-turing-institute/solar-panel-detection/blob/master/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/alan-turing-institute/solar-panel-detection"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Explicit BSD 3-Clause software licence.",
+      "url": "https://github.com/alan-turing-institute/solar-panel-detection/blob/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Sequential matching rules, thresholds and retained source identifiers.",
+      "url": "https://github.com/alan-turing-institute/solar-panel-detection/blob/master/doc/matching.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Documented manual preprocessing and required input filenames.",
+      "url": "https://github.com/alan-turing-institute/solar-panel-detection/blob/master/doc/preprocessing.md"
+    }
+  ],
+  "tags": [],
+  "title_en": "Turing solar panel asset reconciliation",
+  "type": "platform"
+}

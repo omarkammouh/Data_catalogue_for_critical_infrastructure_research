@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/offgridai-us/cost-calculator"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/offgridai-us/cost-calculator/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "offgridai data centre power cost model",
+    "repo": "github.com/offgridai-us/cost-calculator",
+    "url": "https://github.com/offgridai-us/cost-calculator"
+  },
+  "description": "OffGridAI's calculator models a data centre supplied by solar generation, batteries and gas generators. Its README describes fetching weather for a chosen latitude and longitude, simulating power flow among equipment and a specified data-centre load, then calculating annual cash flows and levelised cost of energy. Users set location, equipment capacities, operating and capital costs; outputs include LCOE, renewable share and scenario tables or a Pareto frontier. Geographic coverage is any location supported by its weather source and inputs. GitHub metadata states MIT licensing. A limitation is that fuel cost, reliability, generator emissions and interconnection constraints depend on user assumptions; a cost result is not a vetted site design. The model can compare hybrid supply configurations for digital infrastructure scenarios. The related OSeMOSYS catalogue model handles broader energy-system pathways. No weather data, CSV scenario output or application package was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "offgridai-us/cost-calculator linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/offgridai-us/cost-calculator",
+  "id": "model-offgridai-cost",
+  "inputs": [
+    "Site weather, data-centre load, generation and battery capacities, costs"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-02-22",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "economic"
+  ],
+  "name": "OffGridAI data-centre power cost model",
+  "notes": "G7 G7-1809. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Power-flow schedule, annual cash flow and LCOE"
+  ],
+  "provider": "OffGridAI contributors",
+  "related_ids": [
+    "model-osemosys"
+  ],
+  "repository": "https://github.com/offgridai-us/cost-calculator",
+  "sectors": [
+    "digital.data_centres",
+    "energy.electricity",
+    "energy.oil_fuels"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for offgridai-us/cost-calculator: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/offgridai-us/cost-calculator"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/offgridai-us/cost-calculator/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "OffGridAI data-centre power cost model",
+  "type": "model"
+}

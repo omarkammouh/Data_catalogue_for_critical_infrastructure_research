@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/Jacob-ZHANG-2025/HotGPU"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "synthetic_benchmark",
+    "calibration_validation",
+    "equipment_specifications"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hotgpu immersion cooling thermal profiles and validation traces",
+    "repo": "github.com/jacob-zhang-2025/hotgpu",
+    "url": "https://github.com/Jacob-ZHANG-2025/HotGPU"
+  },
+  "description": "HotGPU provides thermal profiles for single-GPU immersion cooling. The maintainer publishes six CFD-generated cases combining NVIDIA H100 or B200 hardware with FC-72, Noah-2100A or Novec-7100 coolant. Three additional cases pair simulated traces with measured RTX 3090 or RTX 2060S observations. Published files include CSV profiles and original measurement TXT records. Documented variables include elapsed seconds, power in watts, average and peak temperatures in Celsius, bubble fraction and kernel category. Coverage is a small collection of device-and-coolant cases, with no established geographic sample, acquisition dates or common sampling interval. Files are publicly accessible free under CC BY 4.0. A limitation is that validation hardware differs from the main target GPUs, and thermal bias correction is part of the data-generation procedure. The reported temperature errors are provider results and were not reproduced. Simulation uses include thermal surrogate calibration and workload-scheduling experiments under cooling constraints. No related catalogue model was established as a direct input dependency. The file tree confirms the named case files, although some README validation paths include an extra directory prefix. No traces were downloaded and no CFD solver was run.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"datacenter\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "plain_text"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/Jacob-ZHANG-2025/HotGPU",
+  "id": "data-hotgpu-immersion-cooling-thermal-profiles",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-30",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "HotGPU immersion-cooling thermal profiles and validation traces",
+  "notes": "G8; G8-0165. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "provider": "Repository maintainer Jacob-ZHANG-2025",
+  "related_ids": [],
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/Jacob-ZHANG-2025/HotGPU/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/Jacob-ZHANG-2025/HotGPU"
+    }
+  ],
+  "spatial_resolution": "Single-GPU cooling cases; experiment location not stated.",
+  "spatial_resolution_class": "not_stated",
+  "tags": [],
+  "temporal_coverage": "Simulation and measurement traces; acquisition calendar not stated.",
+  "temporal_resolution": "Elapsed seconds recorded; sampling interval not specified.",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "HotGPU immersion-cooling thermal profiles and validation traces",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

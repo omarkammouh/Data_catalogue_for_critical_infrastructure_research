@@ -1,0 +1,152 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Census Dissemination platform (Census 2022, 2011, 2001, 1996)",
+      "url": "https://census.statssa.gov.za/"
+    },
+    {
+      "kind": "api",
+      "label": "Dissemination API, e.g. access to piped water, Census 2022, national (JSON)",
+      "url": "https://disseminationapi-a2f6fff8f7a3f3ff.z01.azurefd.net/api/DsAccessToPipedWaters/getDsAccessToPipedWatersReport/1/1/National"
+    },
+    {
+      "kind": "api",
+      "label": "Dissemination API, energy for lighting, Census 2022, Eastern Cape province (JSON)",
+      "url": "https://disseminationapi-a2f6fff8f7a3f3ff.z01.azurefd.net/api/DsEnergyForLightings/getDsEnergyForLightingsReport/1/2/2"
+    },
+    {
+      "kind": "api",
+      "label": "Dissemination API list of census rounds (JSON)",
+      "url": "https://disseminationapi-a2f6fff8f7a3f3ff.z01.azurefd.net/api/TimeSerieses/getAll/"
+    },
+    {
+      "kind": "api",
+      "label": "Dissemination API list of geographic levels (JSON)",
+      "url": "https://disseminationapi-a2f6fff8f7a3f3ff.z01.azurefd.net/api/GeoLevels/getAll/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa"
+  ],
+  "cost": "free",
+  "countries": [
+    "ZA"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "statistics south africa census dissemination platform and its json api with household access to piped water main water source toilet facility refuse disposal energy for lighting and cooking and dwelling type for censuses 1996 to 2022 by national province district municipality and main place",
+    "url": "https://census.statssa.gov.za"
+  },
+  "description": "Statistics South Africa (Stats SA) disseminates results of Census 2022 and the earlier 2011, 2001 and 1996 censuses through a web platform that draws on a public JSON API. The API returns household counts and percentages by category for topics that describe services: access to piped water, main water source, toilet facility, refuse disposal, energy for lighting and cooking, dwelling type, tenure and household goods, for the nation, provinces and districts, and the platform also offers municipalities and main places. In Census 2022, 10,638,247 households had piped water inside the dwelling, 4,043,778 in the yard and 1,559,558 had no access to piped water; 16,882,396 households (94.7 percent) used mains electricity for lighting. Format and access: free JSON without a key; the platform itself needs JavaScript. Licence: not stated on the pages read. Caveats: the API is undocumented, its address and parameters were read from the platform script and may change, some topic and level combinations, including internet access, returned empty lists, and www.statssa.gov.za itself sat behind a bot check. Simulation uses: district counts of households without piped water or mains electricity for service backlogs and exposure. Related records: the Kenya 2019 census amenities and the Tanzania 2022 building census.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:ZA:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://census.statssa.gov.za/",
+  "id": "data-statssa-south-africa-census-2022-dissemination-api-household-services-by-district",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Statistics South Africa Census Dissemination platform and its JSON API with household access to piped water, main water source, toilet facility, refuse disposal, energy for lighting and cooking and dwelling type, for censuses 1996 to 2022 by national, province, district, municipality and main place",
+  "provider": "Statistics South Africa (Stats SA)",
+  "related_ids": [
+    "data-knbs-kenya-kphc-2019-volume-4-household-amenities-by-sub-county",
+    "data-nbs-tanzania-building-census-2022-regional-reports-buildings-services-by-ward"
+  ],
+  "schema_summary": "Report endpoints api/Ds{Topic}/getDs{Topic}Report/{timeSeriesId}/{geoLevelId}/{geoLevelValue}; timeSeriesId 1 = Census 2022, 2 = 2011, 4 = 2001, 5 = 1996; geoLevelId 1 National, 2 Province (provinceId), 3 Municipality, 4 Main place, 5 District (MDB code). Each row: census, geography, category label, count and percentage. Topics include AccessToPipedWaters, MainSourceOfWaters, MainToiletFacilitys, RefuseDisposals, EnergyForLightings, EnergyForCookings, AccessToInternets, TypeOfMainDwellings, TenureStatuses, HouseholdGoods and AgriculturalActivities",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: page and application script with API base and endpoints",
+      "url": "https://census.statssa.gov.za/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: census rounds",
+      "url": "https://disseminationapi-a2f6fff8f7a3f3ff.z01.azurefd.net/api/TimeSerieses/getAll/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: geographic levels",
+      "url": "https://disseminationapi-a2f6fff8f7a3f3ff.z01.azurefd.net/api/GeoLevels/getAll/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: national piped water counts",
+      "url": "https://disseminationapi-a2f6fff8f7a3f3ff.z01.azurefd.net/api/DsAccessToPipedWaters/getDsAccessToPipedWatersReport/1/1/National"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: district query result",
+      "url": "https://disseminationapi-a2f6fff8f7a3f3ff.z01.azurefd.net/api/DsEnergyForLightings/getDsEnergyForLightingsReport/1/5/BUF"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://census.statssa.gov.za/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://disseminationapi-a2f6fff8f7a3f3ff.z01.azurefd.net/api/DsAccessToPipedWaters/getDsAccessToPipedWatersReport/1/1/National"
+    }
+  ],
+  "spatial_resolution": "national, 9 provinces and districts answered by query; municipality and main place levels (about 14,000 main places) offered in the platform",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "South Africa",
+    "Census 2022",
+    "piped water",
+    "electricity access",
+    "sanitation",
+    "district",
+    "API"
+  ],
+  "temporal_coverage": "censuses 1996, 2001, 2011 and 2022",
+  "temporal_coverage_years": {
+    "end": 2022,
+    "start": 1996
+  },
+  "temporal_resolution": "census years",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "Infrastructure systems data",
+  "type": "data"
+}

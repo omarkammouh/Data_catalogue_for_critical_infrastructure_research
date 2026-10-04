@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "RIPE Labs article",
+      "url": "https://labs.ripe.net/author/emileaben/does-the-internet-route-around-damage-in-2018/"
+    },
+    {
+      "kind": "docs",
+      "label": "APNIC blog copy",
+      "url": "https://blog.apnic.net/2018/04/17/does-the-internet-route-around-damage-in-2018/"
+    },
+    {
+      "kind": "docs",
+      "label": "ThousandEyes analysis",
+      "url": "https://www.thousandeyes.com/blog/network-monitoring-de-cix-outage"
+    }
+  ],
+  "access_restrictions": "none",
+  "case_study_kind": [
+    "post_event_analysis"
+  ],
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "de cix frankfurt outage after a data centre power failure and how the internet routed around it 2018",
+    "url": "https://labs.ripe.net/author/emileaben/does-the-internet-route-around-damage-in-2018"
+  },
+  "description": "This post-event case covers the loss of part of DE-CIX Frankfurt, one of the largest internet exchanges, when a power failure hit Interxion's FRA5 data centre on 9 April 2018, and a measurement study of what happened to traffic. The switch in FRA5 went down with the building, cutting many networks off from the distributed exchange; power failed twice, from about 19:30 to 23:30 UTC on 9 April and from 02:00 to 04:00 UTC on 10 April, and DE-CIX's own mail systems were affected, leaving social media to reach customers. Using RIPE Atlas traceroutes, the RIPE NCC selected 43,143 source and destination pairs, from 5,108 probes to 1,051 destinations, whose paths normally crossed DE-CIX Frankfurt, and followed them through the event, checking outage windows against BGP data from Packet Clearing House route collectors. It found that about 40 per cent of networks connected to the route server were disconnected, that most affected paths found other routes, and that more than 10 per cent of paths stayed rerouted a day later. Coverage: one exchange and its users worldwide, April 2018. Format and access: RIPE Labs article with charts; the underlying RIPE Atlas data are open, free. Caveats: the view is limited to where Atlas probes sit; the cause inside the data centre was not detailed. Simulation uses: cascading failure from data-centre power to internet exchange, network rerouting and resilience of interconnection. Related records: RIPE Atlas and PCH IXP data, the AMS-IX loop outages and a 2021 RIPE Labs study of LINX.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "DE-CIX Frankfurt outage April 2018 power failure data centre Interxion root cause",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "city",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://labs.ripe.net/author/emileaben/does-the-internet-route-around-damage-in-2018/",
+  "id": "case_study-de-cix-frankfurt-power-outage-2018",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2018",
+  "licence": "RIPE NCC copyright; free to read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.thousandeyes.com/blog/network-monitoring-de-cix-outage"
+    ]
+  },
+  "maturity": "stale",
+  "name": "DE-CIX Frankfurt outage after a data-centre power failure and how the internet routed around it (2018)",
+  "notes": "RIPE Labs article read via fetch on 2026-09-26. PCH route collector data were used; the PCH IXP directory record is the nearest catalogue record.",
+  "organisations": [
+    "RIPE NCC",
+    "DE-CIX",
+    "Interxion"
+  ],
+  "outcomes": "About 40 per cent of route-server networks were cut off during two power failures; most of 43,143 measured paths rerouted, and over 10 per cent stayed on new paths a day later.",
+  "provider": "RIPE NCC (analysis by Emile Aben); DE-CIX and Interxion (affected operators)",
+  "related_ids": [],
+  "resources_used": [
+    "data-ripe-atlas",
+    "data-pch-ixp-directory"
+  ],
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "method and findings",
+      "url": "https://labs.ripe.net/author/emileaben/does-the-internet-route-around-damage-in-2018/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: cause",
+      "url": "https://www.capacitymedia.com/article/29ota593u7c7lkmjbg7b4/news/de-cix-down-at-frankfurt-after-power-failure-at-interxion"
+    }
+  ],
+  "study_period": "2018-04",
+  "tags": [
+    "internet exchange",
+    "power failure",
+    "rerouting",
+    "RIPE Atlas",
+    "Frankfurt"
+  ],
+  "title_en": "DE-CIX Frankfurt outage after a data-centre power failure and how the internet routed around it (2018)",
+  "type": "case_study"
+}

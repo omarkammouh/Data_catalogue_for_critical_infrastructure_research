@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/NOAA-OWP/SoilFreezeThaw"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/NOAA-OWP/SoilFreezeThaw/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "noaa soil freeze thaw heat model",
+    "repo": "github.com/noaa-owp/soilfreezethaw",
+    "url": "https://github.com/NOAA-OWP/SoilFreezeThaw"
+  },
+  "description": "SoilFreezeThaw is a one-dimensional soil heat-transport model from NOAA's Office of Water Prediction. It solves a vertical diffusion equation with implicit interior steps and semi-implicit surface and bottom boundaries. Users provide soil properties, moisture profiles and weather or boundary forcing; outputs are changing soil-temperature and freeze-thaw conditions by depth and time. Geographic coverage is a selected site or grid column. Apache-2.0 source, an INSTALL guide and standalone and framework examples are public. The README describes coupling to the NextGen water framework as well as synthetic and real forcing tests. A limitation is that a single column omits lateral heat and water movement, so roadbed or pipeline applications need site-specific checks. The model can support freeze-related stress analysis for water lines, roads and foundations. The related catalogue Alaska permafrost record is a separate exposure dataset, not a SoilFreezeThaw run. No forcing, compiler binary or output was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "noaa-owp/soilfreezethaw linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NOAA-OWP/SoilFreezeThaw",
+  "id": "model-noaa-soilfreezethaw",
+  "inputs": [
+    "Soil properties, moisture and thermal boundary forcing"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-11",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "NOAA soil freeze-thaw heat model",
+  "notes": "G7 G7-1572. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Vertical soil-temperature and freeze-thaw profiles"
+  ],
+  "provider": "NOAA Office of Water Prediction",
+  "related_ids": [
+    "data-sirius-alaska-permafrost-critical-infrastructure"
+  ],
+  "repository": "https://github.com/NOAA-OWP/SoilFreezeThaw",
+  "sectors": [
+    "transport.road",
+    "water.drinking_water",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for NOAA-OWP/SoilFreezeThaw: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/noaa-owp/soilfreezethaw"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/noaa-owp/soilfreezethaw/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "NOAA soil freeze-thaw heat model",
+  "type": "model"
+}

@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Web simulator",
+      "url": "https://khp-informatics.github.io/patient-flow-simulator"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/KHP-Informatics/patient-flow-simulator"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "khp informatics patient flow simulator hospital patient flow teaching tool",
+    "repo": "github.com/khp-informatics/patient-flow-simulator",
+    "url": "https://khp-informatics.github.io/patient-flow-simulator"
+  },
+  "description": "The Patient Flow Simulator is a small browser-based model of a hospital in which the user manages wards and watches how patients move from the emergency department (A&E) through wards to discharge. Users set beds, resources and staff per ward, choose how resources are distributed, pick queue policies (first come first served, highest or lowest need first), and decide when to allow overflow and boarding; the simulation then reports daily waiting times, occupancy, queue lengths and delays, and draws the flow of patients as a network whose betweenness centrality shows the wards that affect most patients. The provider is the KHP Informatics group on GitHub, which built it as a healthcare management teaching tool. Coverage is a single stylised hospital, not a real site. The JavaScript code is on GitHub under the Apache 2.0 licence and runs as a static web page; the latest tag is v3.0 and the last commit was in November 2018, so the tool is stale. Caveats: parameters are illustrative, there is no calibration to real data, and the tool is intended for teaching, not planning. Simulation uses: explaining how bed shortages propagate into emergency department crowding, and exploring queue and overflow rules before building a calibrated model. Related records: the SimPy and Streamlit tutorial models (model-simpy-streamlit-healthcare-des) cover the same ground with editable Python code.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "patient flow simulator hospital open source web",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "site",
+  "hazards": [],
+  "homepage": "https://khp-informatics.github.io/patient-flow-simulator",
+  "id": "model-khp-patient-flow-simulator",
+  "inputs": [
+    "Wards with beds, resources and staff",
+    "Resource distribution and queue policies",
+    "Overflow and boarding rules",
+    "Patient arrivals per step (generated or preset)"
+  ],
+  "language": [
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2018-11-09",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "discrete_event",
+    "network"
+  ],
+  "name": "KHP Informatics Patient Flow Simulator (hospital patient flow teaching tool)",
+  "outputs": [
+    "A&E waiting times",
+    "Ward occupancy, queue lengths and delays by day",
+    "Patient flow network with betweenness centrality"
+  ],
+  "provider": "KHP Informatics (GitHub organisation KHP-Informatics)",
+  "regions": [],
+  "related_ids": [
+    "model-simpy-streamlit-healthcare-des"
+  ],
+  "repository": "https://github.com/KHP-Informatics/patient-flow-simulator",
+  "runs_on": [
+    "Web browser (static GitHub Pages site)"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Teaching tool for patient flow; A&E waiting times, ward occupancy and network analysis; workflows with generated or preset patients",
+      "url": "https://raw.githubusercontent.com/KHP-Informatics/patient-flow-simulator/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Apache License 2.0",
+      "url": "https://raw.githubusercontent.com/KHP-Informatics/patient-flow-simulator/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Hosted simulator answered 200; ward management, queue policies, overflow and boarding settings",
+      "url": "https://khp-informatics.github.io/patient-flow-simulator"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote tags v1.0 and v3.0; shallow clone: last commit 2018-11-09, 31 JavaScript files",
+      "url": "https://github.com/KHP-Informatics/patient-flow-simulator"
+    }
+  ],
+  "tags": [
+    "patient flow",
+    "hospital",
+    "A&E",
+    "ward occupancy",
+    "teaching",
+    "browser simulation"
+  ],
+  "title_en": "KHP Informatics Patient Flow Simulator (hospital patient flow teaching tool)",
+  "type": "model",
+  "validated_on": []
+}

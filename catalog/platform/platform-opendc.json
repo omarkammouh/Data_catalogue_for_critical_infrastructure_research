@@ -1,0 +1,140 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "atlarge-research/opendc-simulator-sc18.zip (258.8 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/1343616/files/atlarge-research/opendc-simulator-sc18.zip?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/atlarge-research/opendc"
+    },
+    {
+      "kind": "portal",
+      "label": "SC18 software artefact (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/records/1343616"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://opendc.org/learn/category/documentation"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opendc open source cloud datacenter simulator",
+    "repo": "github.com/atlarge-research/opendc",
+    "url": "https://opendc.org"
+  },
+  "deployment": [
+    "desktop",
+    "own_server",
+    "hosted_service"
+  ],
+  "description": "OpenDC is a free and open-source platform for cloud datacenter simulation, developed by the AtLarge Research group of Vrije Universiteit Amsterdam and TU Delft since about 2017. Its discrete-event engine models compute workloads, allocation and scheduling policies, power draw, energy use, carbon emissions and embodied carbon, checkpointing and failures of hosts in a datacenter topology. Failures can be switched off, replayed from a failure trace, taken from prefabricated models or sampled from three custom distributions, so availability and recovery under faults can be studied. Experiments are JSON files that name a topology, a workload trace, policies and export settings; results are Parquet files per host, task, power source and service, and the web interface gives automated plots. Coverage: any datacenter a user describes, with sample topologies and traces shipped for tutorials. Format and access: Kotlin and Java source on GitHub under the MIT licence, with documentation at opendc.org; releases up to v2.4u and commits in September 2026. Caveats: results depend on the traces and power models supplied; there is no physical cooling or electrical network model, and the web version needs a login. Simulation uses: capacity planning, energy and carbon scenarios, scheduling optimisation and resilience of datacenters to host failures. Related records: CloudSim Plus, CloudSim and SimGrid are other cloud and distributed-system simulators; the 2018 SC18 artefact on Zenodo is an early OpenDC release.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "zenodo software harvest of the digital piece; candidate zenodo-686475726a (Zenodo record 1343616)",
+      "route": "R05",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "DataCite software harvest of the digital piece; candidate datacite-c35591b343",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://opendc.org/",
+  "hosted_models": [
+    "power models",
+    "carbon models",
+    "failure models",
+    "checkpointing models",
+    "allocation policies"
+  ],
+  "id": "platform-opendc",
+  "interfaces": [
+    "command_line",
+    "web_app",
+    "code_library"
+  ],
+  "interoperability": [
+    "JSON experiment files",
+    "Parquet outputs",
+    "workload traces in Parquet"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-23",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OpenDC: open-source cloud datacenter simulator",
+  "notes": "README, docs/index.md and docs/reference/input/failures.md and output-columns.md read from a shallow clone on 2026-09-26 (last commit 23 September 2026); latest version tag v2.4u from git. The Zenodo SC18 artefact (zenodo-686475726a and two DataCite copies) is marked duplicate of this record.",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "AtLarge Research (Vrije Universiteit Amsterdam and TU Delft)",
+  "related_ids": [],
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "resilience",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README, licence, docs sources, tags",
+      "url": "https://github.com/atlarge-research/opendc"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "project site",
+      "url": "https://opendc.org/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "SC18 artefact metadata",
+      "url": "https://zenodo.org/api/records/1343616"
+    }
+  ],
+  "supported_sectors": [
+    "digital.data_centres"
+  ],
+  "tags": [
+    "datacenter simulation",
+    "cloud",
+    "carbon",
+    "failures",
+    "discrete-event"
+  ],
+  "title_en": "OpenDC: open-source cloud datacenter simulator",
+  "type": "platform"
+}

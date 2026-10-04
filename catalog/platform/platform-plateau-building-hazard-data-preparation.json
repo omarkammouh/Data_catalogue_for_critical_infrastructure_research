@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/pixelx-jp/plateau-bridge"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "JP"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "plateau building and hazard data preparation pipeline",
+    "repo": "github.com/pixelx-jp/plateau-bridge",
+    "url": "https://github.com/pixelx-jp/plateau-bridge"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This Python pipeline converts Project PLATEAU 3D city data into per-building tables that can support hazard-exposure analysis in Japan. It extracts building identities and attributes from CityGML, intersects buildings with river flood, inland flood, tsunami, storm-surge and landslide layers, and writes GeoParquet plus map-friendly PMTiles and FlatGeobuf. The README stresses a coverage flag: a building outside a surveyed zone must remain unknown, not being treated as safe. A modeller could query the resulting table with DuckDB to select vulnerable buildings or construct scenario inputs. The project authors document 29 prebuilt city bundles, but this record covers the reusable preparation code; the separate data release has its own draft. Building and hazard coverage varies by city and dataset year. This review checked documentation, repository metadata and release listings, not the geometry, numerical intersections or pipeline execution. The software is MIT-licensed. Original PLATEAU data and redistributed derived bundles are CC BY 4.0 with attribution, while any separately joined OSM database may create additional obligations. Related resources are the source CityGML and the distinct prebuilt bundle collection.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "repo:pixelx-jp/plateau-bridge",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/pixelx-jp/plateau-bridge",
+  "id": "platform-plateau-building-hazard-data-preparation",
+  "interfaces": [
+    "command_line",
+    "code_library",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "CityGML",
+    "GeoParquet",
+    "PMTiles",
+    "FlatGeobuf",
+    "DuckDB"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-15",
+  "licence": "MIT for code; Project PLATEAU and derived city bundles are CC BY 4.0 with attribution.",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "PLATEAU building and hazard data preparation pipeline",
+  "notes": "G8; G8-0815. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: plateau-bridge repository documentation, accessed 2026-09-28. No describing paper verified in inspected metadata..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Yodo Labs / PixelX",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/pixelx-jp/plateau-bridge/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/pixelx-jp/plateau-bridge"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own input/output provenance and separate code/data licence.",
+      "url": "https://github.com/pixelx-jp/plateau-bridge/blob/main/docs/DATA.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Bundle structure and checksum-verified release distribution.",
+      "url": "https://github.com/pixelx-jp/plateau-bridge/blob/main/docs/DISTRIBUTION.md"
+    }
+  ],
+  "tags": [],
+  "title_en": "PLATEAU building and hazard data preparation pipeline",
+  "type": "platform"
+}

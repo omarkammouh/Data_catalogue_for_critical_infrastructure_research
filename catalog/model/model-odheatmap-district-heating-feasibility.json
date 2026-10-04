@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/dismaps/ODHeatMap"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Repository links the describing paper at https://doi.org/10.54337/ijsepm.8812; article full text was not read.",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "odheatmap open data district heating feasibility model",
+    "repo": "github.com/dismaps/odheatmap",
+    "url": "https://github.com/dismaps/ODHeatMap"
+  },
+  "description": "ODHeatMap estimates building heat demand and district-heating potential from open geographic data. Diana Moreno at Aalborg University publishes the model as a notebook with four documented stages: retrieve building footprints, estimate building-envelope surface area, estimate heat demand and aggregate district-heating potential to a grid. The workflow targets places where detailed local heat-demand data are unavailable. It is intended for global application where suitable inputs exist, but the inspected README does not specify a default grid size, reference year or update interval. Outputs are written as GeoPackage files. The code is freely available through GitHub under MIT; the licence file separately lists ODbL, Copernicus terms and CC BY 4.0 for different input sources. Users must retain those data-specific conditions. Building geometry and estimated demand are screening inputs, not verified heat-meter observations or a hydraulic pipe model. Simulation uses include district-heating capacity planning and identifying candidate service areas. The model relates to data-hotmaps-building-stock-and-heat-density-maps and data-openstreetmap. Its notebook was not executed, so geographic completeness and the accuracy of derived demand were not independently tested.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "district heating data",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/dismaps/ODHeatMap",
+  "id": "model-odheatmap-district-heating-feasibility",
+  "inputs": [
+    "Building footprints",
+    "Open geographic and environmental inputs selected in the notebook"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-11-13",
+  "licence": "MIT for tool; input datasets have separate licences",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "ODHeatMap: open-data district-heating feasibility model",
+  "notes": "G8; G8-0017. Input-data terms are distinct from the MIT software licence. No notebook or model archive was downloaded or executed. Geographic and temporal detail depend on selected inputs. ",
+  "outputs": [
+    "Estimated building surface area",
+    "Building heat demand",
+    "Gridded district-heating potential in GeoPackage"
+  ],
+  "provider": "Diana Moreno, Aalborg University Sustainable Energy Planning and Management group",
+  "related_ids": [
+    "data-hotmaps-building-stock-and-heat-density-maps",
+    "data-openstreetmap"
+  ],
+  "repository": "https://github.com/dismaps/ODHeatMap",
+  "sectors": [
+    "energy.district_heating_cooling",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/dismaps/ODHeatMap/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/dismaps/ODHeatMap"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "MIT licence for the tool and separate source-data licence statements.",
+      "url": "https://github.com/dismaps/ODHeatMap/blob/main/LICENSE.md"
+    }
+  ],
+  "tags": [],
+  "title_en": "ODHeatMap: open-data district-heating feasibility model",
+  "type": "model"
+}

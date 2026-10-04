@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/NVlabs/sionna"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://nvlabs.github.io/sionna/"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI",
+      "url": "https://pypi.org/project/sionna/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Hoydis J. et al. (2023) Sionna RT: differentiable ray tracing for radio propagation modeling. IEEE Globecom Workshops.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sionna",
+    "repo": "github.com/nvlabs/sionna",
+    "url": "https://nvlabs.github.io/sionna"
+  },
+  "description": "Sionna is an open-source Python library for research on communication systems, made of three packages: Sionna RT, a fast stand-alone ray tracer for radio propagation modelling built on the Mitsuba 3 renderer; Sionna PHY, a link-level simulator for wireless and optical communication systems; and Sionna SYS, a system-level simulator based on physical-layer abstraction. Its components are differentiable and GPU accelerated, so propagation and link models can be used inside machine-learning training loops. It is developed by NVIDIA research (NVlabs) to support 5G and 6G research; the current release is 2.1, which requires Python 3.11 or later and PyTorch 2.9 or later. Coverage: any scene the user supplies, from rooms to city districts, typically imported from 3D building models such as OpenStreetMap extrusions; results are at the resolution of the scene mesh. Format and access: pip-installable Python packages and source on GitHub, with extensive documentation and tutorials; free of charge under the Apache 2.0 licence. Caveats: ray tracing needs detailed 3D scenes and material properties; a GPU is strongly recommended; large urban scenes are memory hungry. Simulation uses: coverage and hazard exposure studies of mobile networks, capacity planning of base stations, and radio digital twins of cities. Related records: NVIDIA Aerial Omniverse Digital Twin builds on it, ns-3 3.48 includes a Sionna RT channel model, and Wireless InSite is a commercial ray-tracing alternative.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for model:digital.telecom:physical",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://nvlabs.github.io/sionna/",
+  "id": "model-sionna",
+  "inputs": [
+    "3D scene with materials",
+    "antenna arrays and transmitter positions",
+    "waveform and system parameters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Sionna",
+  "outputs": [
+    "channel impulse responses",
+    "coverage maps",
+    "bit and block error rates",
+    "system-level throughput"
+  ],
+  "provider": "NVIDIA (NVlabs)",
+  "related_ids": [
+    "data-5g-macrocell-signal-complex-terrain",
+    "data-vienna-4g-5g-drive-test-dataset",
+    "model-remcom-wireless-insite",
+    "platform-nvidia-aodt"
+  ],
+  "repository": "https://github.com/NVlabs/sionna",
+  "runs_on": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README, LICENSE and tags",
+      "url": "https://github.com/NVlabs/sionna"
+    }
+  ],
+  "tags": [
+    "ray tracing",
+    "radio propagation",
+    "6G",
+    "link-level simulation",
+    "differentiable",
+    "GPU"
+  ],
+  "title_en": "Sionna python library for communication systems research",
+  "type": "model",
+  "validated_on": []
+}

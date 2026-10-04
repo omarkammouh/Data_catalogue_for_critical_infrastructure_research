@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitLab repository",
+      "url": "https://gitlab.com/Nikita2060/EvacuationSimulator"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "evacuationsimulator agent based fire evacuation model with fire spread fields and risk weighted a routing for public buildings",
+    "repo": "gitlab.com/nikita2060/evacuationsimulator",
+    "url": "https://gitlab.com/Nikita2060/EvacuationSimulator"
+  },
+  "description": "EvacuationSimulator is a program for finding the best evacuation routes out of public buildings during a fire, with its documentation in Russian. It combines a simple fire spread model, which tracks temperature, carbon monoxide, oxygen and visibility across the floor plan, with an agent-based model of adults, elderly people and children. Each agent routes with a modified A* algorithm whose cost adds fire risk and crowd density to distance, with a heuristic restricted by direction, and re-plans locally when parts of the building become blocked. Users draw walls, exits, fire sources and people in an interactive editor, watch evacuation, density and risk plots in real time and run batches of experiments, ten scenarios in three series. The code is available as a free download from GitLab. Caveats: it is a single-author project created in 2026, no licence is stated, the programming language and validation are not described in the README, and the fire model is simplified. Coverage is general. Simulation uses: comparing evacuation routing strategies for building fires, alongside established egress tools. Related records: the PrioritEvac model (model-comses-prioritevac-building-fire-evacuation) simulates evacuation from a real nightclub fire.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "evacuation",
+      "route": "R05",
+      "source": "gitlab"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://gitlab.com/Nikita2060/EvacuationSimulator",
+  "id": "model-evacuationsimulator-fire-evacuation-astar",
+  "inputs": [
+    "Floor plan drawn in the editor (walls, exits, fire sources, agents)",
+    "Agent types (adult, elderly, child)"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-29",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "physical"
+  ],
+  "name": "EvacuationSimulator: agent-based fire evacuation model with fire spread fields and risk-weighted A* routing for public buildings",
+  "outputs": [
+    "Evacuation routes and times",
+    "Crowd density and fire risk plots",
+    "Batch experiment results"
+  ],
+  "provider": "Nikita2060 (GitLab)",
+  "related_ids": [
+    "model-comses-prioritevac-building-fire-evacuation"
+  ],
+  "repository": "https://gitlab.com/Nikita2060/EvacuationSimulator",
+  "runs_on": [
+    "Desktop application"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README read in memory (Russian): software for finding optimal evacuation routes from public buildings in a fire, based on a modified A* algorithm accounting for fire risk, flow density and a directionally constrained heuristic; interactive floor plan editor; fire spread model with four physical fields (temperature, CO, O2, visibility); agents of three types (adult, elderly, child); weight function W = d + a*r + b*rho; local re-planning when sections are blocked; real-time plots; batch experiments (10 scenarios, 3 series); GitLab metadata: created 2026-05-29, no licence detected",
+      "url": "https://gitlab.com/Nikita2060/EvacuationSimulator"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://gitlab.com/Nikita2060/EvacuationSimulator"
+    }
+  ],
+  "tags": [
+    "fire evacuation",
+    "A*",
+    "agent-based",
+    "fire spread",
+    "public buildings"
+  ],
+  "title_en": "EvacuationSimulator: agent-based fire evacuation model with fire spread fields and risk-weighted A* routing for public buildings",
+  "type": "model",
+  "validated_on": []
+}

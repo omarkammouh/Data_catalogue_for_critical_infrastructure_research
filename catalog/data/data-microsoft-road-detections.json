@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Repository and download links",
+      "url": "https://github.com/microsoft/RoadDetections"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "microsoft road detections worldwide roads mined from aerial imagery",
+    "url": "https://github.com/microsoft/RoadDetections"
+  },
+  "description": "Microsoft Road Detections is a worldwide dataset of roads extracted by machine learning from Bing Maps imagery, including Maxar and Airbus images. It contains 54.2 million km of detected roads, split into files by United Nations geoscheme region, from 12.99 million km in Northern America to 0.15 million km in Eastern Asia. Each row gives a country code and a GeoJSON line with an approximate road width in metres. Roads were found by a convolutional network based on U-Net and ResNet that segments road pixels, followed by geometry generation that thins, connects and builds a road graph; the README reports pixel precision of 85 percent and recall of 83 percent, and 95 percent precision for roads pushed into Microsoft Maps after quality control. Coverage is global. The data are free to download under the Open Data Commons Open Database License (ODbL), about 16.6 GB in total. Caveats: the imagery is a composite, so the date of each road is unknown, the roads carry no names or classes, and the model and geometry code had not been released when the README was written. The dataset supports filling gaps in road networks for hazard exposure and accessibility studies, especially where OpenStreetMap is incomplete. It complements the GRIP global roads inventory and the Overture transportation theme catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.road",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/microsoft/RoadDetections",
+  "id": "data-microsoft-road-detections",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-10-27",
+  "licence": "ODbL-1.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Microsoft Road Detections, worldwide roads mined from aerial imagery",
+  "provider": "Microsoft (Bing Maps)",
+  "related_ids": [
+    "data-grip-global-roads-inventory",
+    "data-overture-maps-transportation"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "54.2M km worldwide; Bing imagery incl. Maxar and Airbus; ODbL; region table (N America 12990.6, E Asia 153.9 thousand km; world 16564 MB); TSV with Alpha-3 and GeoJSON, WidthMeters; UNet/ResNet; pixel 85.24/82.81, APLS 87.53/79.33; 95% precision in production; vintage unknown; code release planned 2025",
+      "url": "https://raw.githubusercontent.com/microsoft/RoadDetections/main/README.md"
+    }
+  ],
+  "spatial_resolution": "road centre lines",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "road extraction",
+    "aerial imagery",
+    "machine learning",
+    "global roads",
+    "road width"
+  ],
+  "temporal_coverage": "vintage of Bing imagery (mixed dates)",
+  "title_en": "Microsoft Road Detections, worldwide roads mined from aerial imagery",
+  "type": "data",
+  "update_frequency": "irregular"
+}

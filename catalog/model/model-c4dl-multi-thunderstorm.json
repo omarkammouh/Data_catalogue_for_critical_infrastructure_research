@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/MeteoSwiss/c4dl-multi"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/MeteoSwiss/c4dl-multi/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "meteoswiss multi hazard thunderstorm nowcasting code",
+    "repo": "github.com/meteoswiss/c4dl-multi",
+    "url": "https://github.com/MeteoSwiss/c4dl-multi"
+  },
+  "description": "c4dl-multi publishes machine-learning code for thunderstorm nowcasting using multiple hazard-related data sources. The MeteoSwiss README lists Python dependencies, installation commands, training and plotting scripts, and separate Zenodo DOIs for input data and pretrained models. Users supply the specified weather inputs and model files; outputs are short-lead forecasts and analysis figures for convective conditions. Coverage follows the contributing meteorological datasets and deployment domain, not a fixed global grid. GitHub metadata states BSD-3-Clause licensing for code; linked Zenodo data and weights have separate terms. A limitation is that neither weights nor training data were inspected, and the paper-linked method may require older TensorFlow dependencies. Forecast skill for a new location or sensor mix therefore remains unverified. The code can supply storm-hazard scenarios to electricity, rail or emergency-response models. The catalogue's ERA5 record supplies reanalysis context, not this nowcasting model. No data, weights or code package was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "multi hazard model",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "storm_wind"
+  ],
+  "homepage": "https://github.com/MeteoSwiss/c4dl-multi",
+  "id": "model-c4dl-multi-thunderstorm",
+  "inputs": [
+    "Multi-source meteorological fields and pretrained weights"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-02-21",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "MeteoSwiss multi-hazard thunderstorm nowcasting code",
+  "notes": "G7 G7-1993. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Thunderstorm nowcasts and evaluation plots"
+  ],
+  "provider": "MeteoSwiss c4dl-multi contributors",
+  "related_ids": [
+    "data-era5-reanalysis"
+  ],
+  "repository": "https://github.com/MeteoSwiss/c4dl-multi",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for MeteoSwiss/c4dl-multi: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=multi+hazard+model&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/MeteoSwiss/c4dl-multi/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Machine learning code for thunderstorm nowcasting",
+  "type": "model"
+}

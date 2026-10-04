@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "IWA MIA benchmarking page: descriptions, influent and noise files",
+      "url": "https://iwa-mia.org/benchmarking/"
+    },
+    {
+      "kind": "docs",
+      "label": "BSM2 technical report no. 3 (draft general description)",
+      "url": "https://iwa-mia.org/wp-content/uploads/2018/01/BSM_TG_Tech_Report_no_3_BSM2_General_Description.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "WaterTAP implementation of BSM2",
+      "url": "https://watertap.readthedocs.io/en/latest/technical_reference/flowsheets/BSM2.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "IWA Task Group on Benchmarking of Control Strategies for WWTPs. BSM Technical Reports (BSM1, BSM2); benchmark developed from 1998 under COST Actions 682 and 624.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "iwa benchmark simulation models bsm1 bsm1lt bsm2",
+    "url": "https://iwa-mia.org/benchmarking"
+  },
+  "description": "The Benchmark Simulation Models are simulation environments for evaluating control strategies for activated sludge wastewater treatment plants. Each benchmark defines a plant layout, a process model, influent loads, test procedures and evaluation criteria, so that once a user has validated their simulation code any control strategy can be compared fairly. BSM1 is a five-compartment reactor with anoxic zone and secondary settler combining nitrification and predenitrification, evaluated over 14 days of dry, rainy and stormy weather; BSM1LT extends it to 609 days with faults such as toxic events and sensor and actuator failures; BSM2 adds sludge treatment with a primary settler, thickener, anaerobic digester and dewatering. Licence: not stated for the benchmark models; the WaterTAP implementation is BSD-3-Clause. Access is free of charge. They describe a generic municipal plant, not any real site. Implementations exist in several tools, including a steady-state BSM2 flowsheet in WaterTAP. Caveats: the page's BSM2 report is marked draft, and results depend on the implementation used. Simulation uses: optimisation and control design of treatment plants, capacity studies and testing digital-twin controllers against a shared reference. Related: WaterTAP (model-watertap).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "wastewater treatment plant simulation model open source activated sludge BSM2",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://iwa-mia.org/benchmarking/",
+  "id": "model-iwa-benchmark-simulation-models",
+  "inputs": [
+    "Benchmark influent files (dry, rain and storm weather; 609-day series for BSM1LT) with ASM1 state variables and flow",
+    "Sensor noise files, plant layout and controller definitions"
+  ],
+  "language": [
+    "matlab",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated for the benchmark models; the WaterTAP implementation is BSD-3-Clause",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "IWA Benchmark Simulation Models (BSM1, BSM1LT, BSM2)",
+  "outputs": [
+    "Effluent quality, operating cost and control performance indices",
+    "Plant state trajectories for activated sludge and sludge treatment units"
+  ],
+  "provider": "IWA Modelling and Integrated Assessment Specialist Group (Benchmarking Task Group)",
+  "related_ids": [
+    "model-watertap"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "benchmark definition, BSM1/BSM1LT/BSM2, history from 1998, COST 682 and 624, IWA task group, downloads",
+      "url": "https://iwa-mia.org/benchmarking/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "WaterTAP BSM2 flowsheet, steady state only",
+      "url": "https://watertap.readthedocs.io/en/latest/technical_reference/flowsheets/BSM2.html"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated for the benchmark models; the WaterTAP implementation is BSD-3-Clause (basis: licence file in the WaterTAP GitHub repository)",
+      "url": "https://github.com/watertap-org/watertap/blob/main/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://iwa-mia.org/benchmarking/"
+    }
+  ],
+  "tags": [
+    "wastewater treatment",
+    "activated sludge",
+    "ASM1",
+    "ADM1",
+    "control benchmark",
+    "BSM2",
+    "IWA"
+  ],
+  "title_en": "IWA Benchmark Simulation Models (BSM1, BSM1LT, BSM2)",
+  "type": "model",
+  "validated_on": []
+}

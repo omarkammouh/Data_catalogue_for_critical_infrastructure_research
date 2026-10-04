@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code and documentation",
+      "url": "https://github.com/greglucas/bezpy"
+    },
+    {
+      "kind": "portal",
+      "label": "Release archive (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.22104720"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bezpy geomagnetic geoelectric and impedance analysis in python",
+    "repo": "github.com/greglucas/bezpy",
+    "url": "https://github.com/greglucas/bezpy"
+  },
+  "description": "bezpy is an open-source Python library for analysing geomagnetic (B), geoelectric (E) and magnetotelluric impedance (Z) data, used to estimate how geomagnetic storms induce electric fields and voltages on power transmission lines. It calculates the geoelectric field from the geomagnetic field in several ways and integrates that field along transmission lines, with tutorials for storm maps, storm catalogues, continuous scans to hazard maps, line voltages and gridded impedance, plus a reproducibility guide mapping published papers to the current interface. It is written by Greg M. Lucas with contributors and builds on pandas, NumPy and SciPy. The method is location-independent; examples include the Halloween 2003 storm in Japan and North China impedance data. Version 0.2.0 (August 2026) is on GitHub and Zenodo under the MIT licence at no cost and needs Python 3.12 or later. Caveats: version 0.2.0 fixed Delaunay interpolation weights, so line voltages computed that way change by a few percent against published 2019 and 2020 workflows, and results depend on the quality of impedance data. Simulation uses are space weather hazard exposure and resilience assessment of transmission grids against geomagnetically induced currents. Related records: none linked on the provider's pages read on the day.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid network model",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://github.com/greglucas/bezpy",
+  "id": "model-bezpy",
+  "inputs": [
+    "Geomagnetic field time series",
+    "Magnetotelluric impedance tensors",
+    "Transmission line geometry"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-26",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "bezpy - geomagnetic, geoelectric and impedance analysis in Python",
+  "outputs": [
+    "Geoelectric fields",
+    "Line voltages from geomagnetic disturbances",
+    "Hazard maps"
+  ],
+  "provider": "Greg M. Lucas and contributors",
+  "related_ids": [],
+  "repository": "https://github.com/greglucas/bezpy",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, features, tutorials, example scripts (Japan Halloween 2003, China May 2024), reproducibility guide",
+      "url": "https://raw.githubusercontent.com/greglucas/bezpy/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT, Python >=3.12",
+      "url": "https://raw.githubusercontent.com/greglucas/bezpy/HEAD/pyproject.toml"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "v0.2.0 2026-08-26; Delaunay weight fix changes voltages by a few percent",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.22104720"
+    }
+  ],
+  "tags": [
+    "geomagnetically induced currents",
+    "space weather",
+    "geoelectric field",
+    "magnetotellurics",
+    "transmission lines"
+  ],
+  "title_en": "Bezpy - geomagnetic, geoelectric and impedance analysis in Python",
+  "type": "model",
+  "validated_on": [
+    "Historical storms such as the Halloween 2003 storm at Japanese observatories (example scripts)"
+  ]
+}

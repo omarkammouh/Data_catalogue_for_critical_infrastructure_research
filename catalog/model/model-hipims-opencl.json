@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/lukeshope/hipims-ocl"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/lukeshope/hipims-ocl/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hipims opencl flood simulator",
+    "repo": "github.com/lukeshope/hipims-ocl",
+    "url": "https://github.com/lukeshope/hipims-ocl"
+  },
+  "description": "HiPIMS OpenCL is a hydraulic and hydrological flood simulator published by Luke Smith and contributors for research use. It models river, tidal and direct-rainfall flooding over city or regional domains using finite-volume schemes and configurable boundary conditions. Inputs can include rainfall, imposed water levels, discharges and sewer surcharge; outputs are raster water depths and velocities through time. Coverage is globally configurable, with resolution and time steps controlled by the model and numerical stability. Public code and command-line instructions are free under GPL-3.0. A limitation is that domain decomposition and independently advancing subdomains are marked experimental. OpenCL support and suitable runtimes are required, and the README explicitly asks users to validate models against observations. The associated model builder has a narrower pluvial and numerical-test scope. HiPIMS supports flood-exposure and drainage studies, complementary to Delft3D FM (model-delft3d-fm). The first-review CHANS-HiPIMS-FLAMEGPU item is a separate coupled platform, not this OpenCL implementation. No binaries, test cases or flood rasters were obtained.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "hydraulic model fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://github.com/lukeshope/hipims-ocl",
+  "id": "model-hipims-opencl",
+  "inputs": [
+    "Terrain and boundary conditions",
+    "Rainfall and flow settings"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2018-05-05",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "HiPIMS OpenCL flood simulator",
+  "notes": "G7 G7-0572. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Depth and velocity rasters"
+  ],
+  "provider": "Luke Smith and HiPIMS contributors",
+  "related_ids": [
+    "model-delft3d-fm"
+  ],
+  "repository": "https://github.com/lukeshope/hipims-ocl",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for lukeshope/hipims-ocl: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=hydraulic+model+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/lukeshope/hipims-ocl/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for dams and flood defences and stormwater drainage",
+  "type": "model"
+}

@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/HewlettPackard/sustain-lc"
+    },
+    {
+      "kind": "paper",
+      "label": "LC-Opt paper (arXiv)",
+      "url": "https://arxiv.org/abs/2511.00116"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "LC-Opt: Benchmarking Reinforcement Learning and Agentic AI for End-to-End Liquid Cooling Optimization in Data Centers (2025), arXiv 2511.00116.",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "sustain lc liquid cooling control benchmark frontier",
+    "repo": "github.com/hewlettpackard/sustain-lc",
+    "url": "https://github.com/HewlettPackard/sustain-lc"
+  },
+  "description": "Sustain-LC is a benchmarking environment for end-to-end control of the liquid cooling of a large data centre, built on a Modelica model of the cooling system of the Frontier supercomputer at Oak Ridge National Laboratory. The Modelica plant is compiled as FMU 2.0 units and co-simulated through PyFMI, and agents control pump speeds, temperature set points, valve positions and cooling-tower settings across blade groups and cabinets while being scored on energy, temperatures and constraint violations. It includes reinforcement learning agents based on PPO with multi-agent and multi-head variants, a conventional controller following ASHRAE Guideline 36, policy distillation into decision trees, and explainable agents built on open large language models. It was released by Hewlett Packard Enterprise as part of the high-performance supercomputing digital twin led by ORNL, and is linked to the LC-Opt paper on benchmarking reinforcement learning and agentic AI for liquid cooling (arXiv 2511.00116, 2025). Coverage: one reference system, Frontier's cooling plant, driven by workload power and weather. Format and access: Python code, FMUs and notebooks on GitHub; free of charge under the MIT licence. Caveats: the plant model is specific to Frontier and HPE Cray cooling; training agents is computationally heavy; results in the paper are simulations, not field trials. Simulation uses: optimisation and digital-twin control of data-centre cooling, and exposure of cooling capacity to hot weather or equipment faults. Related records: ExaDigiT provides the digital twin, SustainDC covers air-cooled facilities, AlphaDataCenterCooling models a chilled-water plant.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "SustainDC HewlettPackard dc-rl benchmark data center github licence",
+      "route": "R22",
+      "source": "web-search"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "ExaDigiT open source digital twin supercomputer RAPS ORNL code repository licence",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "extreme_heat",
+    "technological_failure"
+  ],
+  "homepage": "https://github.com/HewlettPackard/sustain-lc",
+  "id": "model-sustain-lc",
+  "inputs": [
+    "workload power per cabinet",
+    "weather",
+    "control set points"
+  ],
+  "language": [
+    "python",
+    "modelica"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-08-07",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid"
+  ],
+  "name": "Sustain-LC liquid-cooling control benchmark (Frontier)",
+  "notes": "LICENSE (MIT) present and README summarised via fetch on 2026-09-26 (63 commits). The link to the LC-Opt paper comes from web search results; authors not checked.",
+  "outputs": [
+    "coolant temperatures and flows",
+    "pump and tower energy",
+    "controller rewards"
+  ],
+  "provider": "Hewlett Packard Enterprise with Oak Ridge National Laboratory (ExaDigiT project)",
+  "related_ids": [
+    "data-nlr-genai-workload-power-profiles",
+    "model-sustaindc"
+  ],
+  "repository": "https://github.com/HewlettPackard/sustain-lc",
+  "runs_on": [],
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "digital_twin",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README and LICENSE",
+      "url": "https://github.com/HewlettPackard/sustain-lc"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: paper title",
+      "url": "https://arxiv.org/pdf/2511.00116"
+    }
+  ],
+  "tags": [
+    "liquid cooling",
+    "reinforcement learning",
+    "Modelica",
+    "FMU",
+    "Frontier",
+    "benchmark"
+  ],
+  "title_en": "Sustain-LC liquid cooling control benchmark",
+  "type": "model",
+  "validated_on": [
+    "Frontier cooling model from the ExaDigiT project"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "ORNL GitLab",
+      "url": "https://code.ornl.gov/exadigit"
+    },
+    {
+      "kind": "repo",
+      "label": "RAPS on GitHub",
+      "url": "https://github.com/ExaDigiT/RAPS"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://exadigit.readthedocs.io/en/latest/"
+    },
+    {
+      "kind": "docs",
+      "label": "DOE CODE record",
+      "url": "https://www.osti.gov/doecode/biblio/127899"
+    },
+    {
+      "kind": "paper",
+      "label": "SC24 paper (arXiv)",
+      "url": "https://arxiv.org/abs/2410.05133"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "exadigit digital twin framework for liquid cooled supercomputers",
+    "repo": "code.ornl.gov/exadigit",
+    "url": "https://exadigit.readthedocs.io/en/latest"
+  },
+  "deployment": [
+    "own_server",
+    "desktop"
+  ],
+  "description": "ExaDigiT is an open-source framework for building digital twins of large liquid-cooled supercomputers and their data-centre plant. It has three modules: RAPS, the Resource Allocator and Power Simulator, which schedules synthetic workloads or replays job telemetry and estimates dynamic system power and conversion losses at set intervals; a transient thermo-fluid cooling model written in Modelica and run as a Functional Mock-up Unit, covering the path from cooling towers to cold plates and fed with power at the level of cooling distribution units; and a visual analytics layer in Unreal Engine 5 with augmented reality and a web dashboard. It was developed at Oak Ridge National Laboratory for the Frontier exascale system, described in an SC24 paper, and is used with partner centres; RAPS ships loaders for open telemetry of Marconi100 (CINECA) and Adastra (CINES) from Zenodo. Coverage: specific supercomputers and their cooling plants, with Frontier as the reference system and job traces from 2020 onward. Format and access: Python code (RAPS, Python 3.12 or later) on ORNL GitLab and GitHub with online documentation; free of charge, RAPS dual-licensed MIT or Apache 2.0. Caveats: configuring a new site needs detailed plant data; the cooling model is tailored to HPE Cray liquid cooling; visual modules need game-engine tools. Simulation uses: digital twin of data-centre power and cooling, capacity planning of power and plant upgrades, what-if tests of cooling failures and heat waves, and grid interaction of large computing loads. Related records: Sustain-LC uses its Frontier cooling model for control benchmarks, the Marconi100 ExaMon telemetry is a replay input, SustainDC is a lighter data-centre simulator.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ExaDigiT open source digital twin supercomputer RAPS ORNL code repository licence",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "extreme_heat",
+    "technological_failure"
+  ],
+  "homepage": "https://exadigit.readthedocs.io/en/latest/",
+  "hosted_models": [
+    "RAPS resource allocator and power simulator",
+    "Modelica thermo-fluid cooling model (FMU)",
+    "Unreal Engine visual analytics"
+  ],
+  "id": "platform-exadigit",
+  "interfaces": [
+    "command_line",
+    "web_app",
+    "other"
+  ],
+  "interoperability": [
+    "FMI 2.0 (FMU co-simulation)",
+    "Slurm job telemetry",
+    "Parquet job tables"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-18",
+  "licence": "MIT OR Apache-2.0 (RAPS)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ExaDigiT digital twin framework for liquid-cooled supercomputers",
+  "notes": "RAPS README read from GitHub on 2026-09-26 (Frontier, Marconi100 and Adastra loaders, FMU interface). Licence and module list from search results citing DOE CODE and readthedocs; partner list from the documentation page.",
+  "open_source": true,
+  "platform_kind": [
+    "digital_twin",
+    "simulation_engine"
+  ],
+  "provider": "Oak Ridge National Laboratory with partner centres (LLNL, LANL, Pawsey, LUMI, CINES, CINECA) and HPE",
+  "related_ids": [],
+  "sectors": [
+    "digital.data_centres",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "capacity_planning",
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README",
+      "url": "https://github.com/ExaDigiT/RAPS"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "modules and partners",
+      "url": "https://exadigit.readthedocs.io/en/latest/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: licence",
+      "url": "https://www.osti.gov/doecode/biblio/127899"
+    }
+  ],
+  "supported_sectors": [
+    "digital.data_centres"
+  ],
+  "tags": [
+    "digital twin",
+    "supercomputer",
+    "liquid cooling",
+    "Modelica",
+    "power simulation",
+    "Frontier"
+  ],
+  "title_en": "ExaDigiT digital twin framework for liquid-cooled supercomputers",
+  "type": "platform"
+}

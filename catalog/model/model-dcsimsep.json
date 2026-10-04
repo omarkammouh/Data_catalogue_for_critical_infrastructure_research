@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/phines/dcsimsep"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/phines/dcsimsep/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Eppstein and Hines (2012). A Random Chemistry Algorithm for Identifying Collections of Multiple Contingencies that Initiate Cascading Failure. IEEE Transactions on Power Systems 27(3). Rezaei et al. (2015): https://arxiv.org/abs/1405.4213",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "dcsimsep cascading separation model",
+    "repo": "github.com/phines/dcsimsep",
+    "url": "https://github.com/phines/dcsimsep"
+  },
+  "description": "DCSIMSEP is the University of Vermont-led DC power-flow simulator for cascading separation in electric power networks. It supports research on multiple initiating contingencies, including the Random Chemistry studies cited by the authors. Inputs are network and contingency definitions used by the MATLAB test cases; outputs are simulated cascade and separation outcomes for the chosen system. Geographic extent and simulation horizon are case-dependent, and the repository does not publish a single operational-grid coverage claim. Source is free under GPL-2.0, with path setup and test-running instructions. A limitation is the DC load-flow approximation, which does not represent the full AC voltage and reactive-power dynamics; MATLAB also has separate licence requirements. DCSIMSEP can screen cascading-failure scenarios and estimate infrastructure disruption risk. ACSIMSEP (model-acsimsep) supplies a related AC formulation. The README links the methodological studies and test entry point. No test networks, datasets or model archives were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"power system\" simulator fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/phines/dcsimsep",
+  "id": "model-dcsimsep",
+  "inputs": [
+    "Power-network case and initiating contingencies"
+  ],
+  "language": [
+    "matlab"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2018-10-24",
+  "licence": "GPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network"
+  ],
+  "name": "DCSIMSEP cascading separation model",
+  "notes": "G7 G7-1008. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Cascading separation outcomes"
+  ],
+  "provider": "University of Vermont; Paul Hines and collaborators",
+  "related_ids": [
+    "model-acsimsep"
+  ],
+  "repository": "https://github.com/phines/dcsimsep",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for phines/dcsimsep: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=%22power+system%22+simulator+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/phines/dcsimsep/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Network model for electricity",
+  "type": "model"
+}

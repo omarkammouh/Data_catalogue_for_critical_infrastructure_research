@@ -1,0 +1,181 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "SourceForge project (EPRI distribution)",
+      "url": "https://sourceforge.net/projects/electricdss/"
+    },
+    {
+      "kind": "download",
+      "label": "Installers, manuals and licence files",
+      "url": "https://sourceforge.net/projects/electricdss/files/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code (SVN trunk)",
+      "url": "https://sourceforge.net/p/electricdss/code/HEAD/tree/"
+    },
+    {
+      "kind": "docs",
+      "label": "Wiki and documentation",
+      "url": "https://sourceforge.net/p/electricdss/wiki/Home/"
+    },
+    {
+      "kind": "portal",
+      "label": "EPRI OpenDSS page",
+      "note": "EPRI's web application firewall blocks automated readers (shell, headless browser and page-fetch tool all refused on 2026-09-24); open it in a normal browser",
+      "url": "https://www.epri.com/pages/sa/opendss"
+    },
+    {
+      "kind": "repo",
+      "label": "DSS-Extensions (cross-platform bindings, not EPRI)",
+      "url": "https://github.com/dss-extensions/dss_capi"
+    },
+    {
+      "kind": "download",
+      "label": "OpenDSSDirect.py on PyPI",
+      "url": "https://pypi.org/project/OpenDSSDirect.py/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opendss",
+    "url": "https://sourceforge.net/projects/electricdss"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "OpenDSS is EPRI's open-source electric power Distribution System Simulator, built to support distribution planning for the interconnection of distributed generation and grid modernisation. It solves n-phase unbalanced distribution circuits in the frequency domain: snapshot and quasi-static sequential-time power flow, harmonics as a native capability, fault studies, dynamics of generator swings, n-phase multi-winding transformers, distributed energy resource and protection models, and Monte Carlo studies driven from other programs. EPRI distributes it through SourceForge as a Windows installer with 32-bit and 64-bit engines, documentation and example circuits; the current release is version 11.0.0.1 (Charlottesville) of 30 January 2026, and the source code in the project's Subversion repository was last updated on 5 September 2026. The program is developed in Delphi, with a C++ version kept in step, and version 11 notes improved Linux support. Circuits are described in DSS script files; the engine is driven through a graphical interface, the OpenDSSCmd command line, a COM interface callable from Excel VBA, MATLAB, Python and R, DLLs for user models, and, since version 10.2, Python-defined elements (pyControl). Independent DSS-Extensions projects (DSS C-API, DSS-Python, OpenDSSDirect.py and bindings for Julia, MATLAB and .NET) provide cross-platform use; they track older OpenDSS versions (DSS C-API 0.14 is based on v9.8.0.1) and are not supported by EPRI. The licence is BSD-3-Clause and use is free. Caveats: the SourceForge wiki lost its MediaWiki pages, and EPRI's own product page blocks automated readers. It is location independent and serves network flow, capacity planning and resilience studies of distribution feeders. Related records: pandapower (model-pandapower) imports OpenDSS feeders, and HELICS (platform-helics) couples OpenDSS through OpenDSSDirect.py.",
+  "description_checked": "2026-09-24",
+  "discovery_routes": [
+    {
+      "date": "2026-09-23",
+      "query": "EPRI open-source distribution system simulator OpenDSS",
+      "route": "R40",
+      "source": "assistant recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://sourceforge.net/projects/electricdss/",
+  "hosted_models": [
+    "IEEE test feeders and EPRI example circuits (e.g. Ckt5, Ckt7) shipped with the installer",
+    "model-pandapower"
+  ],
+  "id": "platform-opendss",
+  "interfaces": [
+    "desktop_gui",
+    "command_line",
+    "code_library"
+  ],
+  "interoperability": [
+    "DSS script files",
+    "COM interface",
+    "OpenDSSDirect.py",
+    "HELICS federate via OpenDSSDirect.py and PyDSS",
+    "pandapower from_opendss converter"
+  ],
+  "language": [
+    "other"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-05",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://sourceforge.net/p/electricdss/code/HEAD/tree/",
+      "https://sourceforge.net/p/electricdss/wiki/Home/",
+      "https://sourceforge.net/projects/electricdss/",
+      "https://sourceforge.net/projects/electricdss/files/"
+    ]
+  },
+  "maturity": "active",
+  "name": "OpenDSS",
+  "notes": "Audit 2026-09-24: re-read on EPRI's SourceForge project (summary, file listing, wiki home page, licence and README.txt of release 11.0.0.1), the DSS C-API README and tags, and PyPI. Corrections to round 1: EPRI maintains a C++ version alongside the Delphi code and notes Linux support in version 11, so 'the official build is Windows only' and 'written in Delphi and Free Pascal' were inaccurate (the installer remains Windows only); the Subversion trunk was updated on 2026-09-05 (revision r4176), later than the 2026-01-30 installer; pyControl (Python elements) added in 10.2. Confirmed: BSD 3-Clause (copyright 2008 EPRI), version 11.0.0.1 Charlottesville, 32- and 64-bit engines, harmonics, dynamics, quasi-static simulation, COM from Excel VBA, MATLAB, Python and R, DLL user models; DSS C-API 0.14.x based on OpenDSS v9.8.0.1 (latest tag 0.14.5); OpenDSSDirect.py 0.9.4 (2024-03-29). Not verified: EPRI's own page, whose firewall refuses every automated channel.",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "Electric Power Research Institute (EPRI)",
+  "related_ids": [
+    "model-pandapower",
+    "platform-helics",
+    "platform-psat-power-system-analysis-toolbox"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-24",
+      "note": "Project summary: OpenDSS, EPRI Distribution System Simulator, BSD License, last update 2026-09-05 (page-fetch tool)",
+      "url": "https://sourceforge.net/projects/electricdss/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Files: OpenDSSInstaller_1100_1.exe of 2026-01-30, version 11.0.0.1 (page-fetch tool)",
+      "url": "https://sourceforge.net/projects/electricdss/files/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Subversion tree: latest entry r4176 of 2026-09-05 (page-fetch tool)",
+      "url": "https://sourceforge.net/p/electricdss/code/HEAD/tree/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "BSD 3-Clause, copyright 2008 Electric Power Research Institute (page-fetch tool)",
+      "url": "https://sourceforge.net/p/electricdss/code/HEAD/tree/License.txt?format=raw"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Quasi-static, dynamics, native harmonics, COM from Excel VBA, MATLAB, Python, R; DLL models; MediaWiki discontinued (page-fetch tool)",
+      "url": "https://sourceforge.net/p/electricdss/wiki/Home/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "README of 11.0.0.1: Charlottesville, Linux support, C++ version, pyControl in 10.2, 32- and 64-bit engines, purpose",
+      "url": "https://master.dl.sourceforge.net/project/electricdss/README.txt"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "DSS C-API 0.14.x based on OpenDSS revision 3723 (v9.8.0.1); alternative implementation",
+      "url": "https://raw.githubusercontent.com/dss-extensions/dss_capi/master/README.md"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "OpenDSSDirect.py 0.9.4 uploaded 2024-03-29",
+      "url": "https://pypi.org/pypi/OpenDSSDirect.py/json"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Refused: 'Blocked by WAF' in Chromium, empty in the page-fetch tool",
+      "url": "https://www.epri.com/pages/sa/opendss"
+    }
+  ],
+  "supported_sectors": [
+    "energy.electricity"
+  ],
+  "tags": [
+    "distribution system",
+    "quasi-static time series",
+    "harmonics",
+    "DER",
+    "COM interface",
+    "EPRI"
+  ],
+  "title_en": "OpenDSS electric power Distribution System Simulator",
+  "type": "platform"
+}

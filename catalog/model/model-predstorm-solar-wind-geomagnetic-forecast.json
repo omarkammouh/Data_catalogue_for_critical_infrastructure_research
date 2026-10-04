@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/helioforecast/Predstorm"
+    },
+    {
+      "kind": "viewer",
+      "label": "Real-time output",
+      "url": "https://helioforecast.space/solarwind"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "predstorm solar wind and geomagnetic storm prediction code",
+    "url": "https://github.com/helioforecast/Predstorm"
+  },
+  "description": "PREDSTORM is Python code for space weather prediction research that forecasts the background solar wind, high-speed streams and magnetic flux ropes of solar storms from monitors at the Sun-Earth L1 and L5 points and from any spacecraft east of the Sun-Earth line within about 1 AU. The Helioforecast group led by Christian Moestl develops it, with the copyright held by IWF-helio since 2019. From the predicted solar wind it derives the geomagnetic Dst index, Kp and auroral power, and a version for L5 and recurrence data runs in real time on the helioforecast.space site. Coverage is the near-Earth environment. Format and access: a public repository with conda environment files, relying on the Helio4Cast package for NOAA real-time files. Licence: MIT; free, and the authors ask to be contacted before results are used in peer-reviewed work. Caveats: it is research code, last updated in 2023, and forecast skill depends on upstream monitors. Dst and Kp forecasts feed geomagnetically induced current and satellite drag assessments for power grids and space assets. Related catalogue records are the OMNI solar wind data and the WSA-Enlil operational model.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "tool to download and preprocess space weather data python package OMNI solar wind geomagnetic indices",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather",
+    "storm_wind"
+  ],
+  "homepage": "https://github.com/helioforecast/Predstorm",
+  "id": "model-predstorm-solar-wind-geomagnetic-forecast",
+  "inputs": [
+    "Solar wind monitor data at L1 and L5",
+    "Spacecraft data east of the Sun-Earth line",
+    "NOAA real-time solar wind files"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "PREDSTORM: solar wind and geomagnetic storm prediction code",
+  "outputs": [
+    "Background and high-speed solar wind predictions",
+    "Magnetic flux rope predictions",
+    "Dst and Kp index predictions",
+    "Auroral power"
+  ],
+  "provider": "Helioforecast group (Christian Moestl and co-authors; IWF Graz origin)",
+  "related_ids": [
+    "data-omniweb-omni-solar-wind",
+    "model-wsa-enlil"
+  ],
+  "sectors": [
+    "cross_cutting.space",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "README: scope, outputs, real-time link, dependencies, last update",
+      "url": "https://raw.githubusercontent.com/helioforecast/Predstorm/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "MIT licence, copyright IWF-helio 2019",
+      "url": "https://raw.githubusercontent.com/helioforecast/Predstorm/HEAD/LICENSE"
+    }
+  ],
+  "tags": [
+    "solar wind",
+    "Dst",
+    "forecasting"
+  ],
+  "title_en": "PREDSTORM: solar wind and geomagnetic storm prediction code",
+  "type": "model"
+}

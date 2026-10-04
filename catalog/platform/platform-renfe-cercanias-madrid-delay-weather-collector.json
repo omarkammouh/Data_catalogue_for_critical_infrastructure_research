@@ -1,0 +1,93 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/I-Bovingdon/Renfe-delay-pipeline"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "ES"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cercanias madrid delay and weather collection pipeline",
+    "repo": "github.com/i-bovingdon/renfe-delay-pipeline",
+    "url": "https://github.com/I-Bovingdon/Renfe-delay-pipeline"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This repository publishes a Python pipeline that captures Renfe Cercanías Madrid GTFS-Realtime trip updates and vehicle positions and AEMET weather observations. Its README says the train feeds are polled every sixty seconds, weather hourly, raw JSON stored immutably, and nightly jobs compact the history to Parquet. The team states collection has run since 13 June 2026 because Renfe does not publish a historical delay archive; this review did not verify the running deployment or access its accumulated private backup. The code is MIT, while Renfe and AEMET source data retain their own terms. Coverage is the Madrid commuter-rail network, selected corridor weather stations and a time period that extends only as far as the collector actually operated. The repository documents matching real-time train IDs to static GTFS when route_id is missing, with a claimed 99.9 percent match rate that was not reproduced. Simulation use includes preparing observed delay distributions or weather-conditioned service disruptions. It complements data-transitland by creating historical performance inputs, not a static timetable. No feed payload, private backup or code execution was inspected.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "gtfs dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://github.com/I-Bovingdon/Renfe-delay-pipeline",
+  "id": "platform-renfe-cercanias-madrid-delay-weather-collector",
+  "interfaces": [
+    "code_library",
+    "file_exchange"
+  ],
+  "interoperability": [],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-15",
+  "licence": "MIT code; Renfe CC BY 4.0 and AEMET source terms separate.",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Cercanías Madrid delay and weather collection pipeline",
+  "notes": "G8; G8-0684. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Cercanías Madrid data-capture repository. UCM master-project documentation, 2026; thesis publication not independently verified..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "I-Bovingdon and UCM master-project team",
+  "regions": [
+    "Madrid"
+  ],
+  "related_ids": [
+    "data-transitland"
+  ],
+  "sectors": [
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/I-Bovingdon/Renfe-delay-pipeline/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/I-Bovingdon/Renfe-delay-pipeline"
+    }
+  ],
+  "tags": [],
+  "title_en": "Cercanías Madrid delay and weather collection pipeline",
+  "type": "platform"
+}

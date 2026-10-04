@@ -1,0 +1,158 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/patientflow/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code and notebooks",
+      "url": "https://github.com/zmek/patientflow"
+    },
+    {
+      "kind": "portal",
+      "label": "Anonymised UCLH emergency department data (Zenodo, restricted, CC BY-NC-ND 4.0)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/records/14866057"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://ucl-coru.github.io/patientflow/"
+    },
+    {
+      "kind": "paper",
+      "label": "JOSS paper (2025)",
+      "url": "https://doi.org/10.21105/joss.09187"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.21105/joss.09187",
+    "name": "patientflow real time prediction of hospital bed demand from current and incoming patients",
+    "repo": "github.com/zmek/patientflow",
+    "url": "https://github.com/zmek/patientflow"
+  },
+  "description": "patientflow is a Python package that predicts how many hospital beds will be needed in the next few hours, from patients already in the emergency department and from patients expected to arrive. The producers are Zella King and colleagues at University College London, who first built it for University College London Hospitals to forecast emergency admissions over an eight-hour window from real-time electronic health record data, and published it in the Journal of Open Source Software in 2025. Coverage: the method was developed and validated at one London hospital trust, but the package is written to take any hospital's patient snapshots. It turns each patient's record at a prediction time into a probability of admission, aggregates these into a probability distribution of bed counts by specialty, adds expected arrivals from past patterns, and evaluates the forecasts. The code is available on GitHub and PyPI under the free MIT licence, with notebooks and a synthetic data set; an anonymised UCLH data set is on Zenodo with restricted access. Caveats: a hospital must extract its own EHR snapshots, the models are statistical, not simulations of physical flow, and results from one trust may not transfer. Simulation uses: short-term bed capacity planning, testing how surges in emergency demand fill beds, and feeding hospital capacity into disaster or heatwave scenarios. Related records: the KHP patient flow simulator (model-khp-patient-flow-simulator) and the SimPy healthcare models (model-simpy-streamlit-healthcare-des) simulate hospital flow as queues.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "patientflow",
+      "route": "R05",
+      "source": "pypi"
+    }
+  ],
+  "geographic_scope": "site",
+  "hazards": [],
+  "homepage": "https://github.com/zmek/patientflow",
+  "id": "model-patientflow",
+  "inputs": [
+    "Patient snapshots extracted from an electronic health record at set prediction times (location, observations, lab orders and results, consult requests)",
+    "Past arrival patterns to the emergency department",
+    "Synthetic data set bundled with the repository"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-12",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "patientflow: real-time prediction of hospital bed demand from current and incoming patients",
+  "outputs": [
+    "Probability distributions of the number of beds needed in a prediction window, by specialty or other group",
+    "Predicted discharges",
+    "Evaluation plots of predicted against observed demand"
+  ],
+  "provider": "Zella King and co-authors (University College London), with University College London Hospitals NHS Foundation Trust",
+  "regions": [
+    "London"
+  ],
+  "related_ids": [
+    "model-khp-patient-flow-simulator",
+    "model-simpy-streamlit-healthcare-des"
+  ],
+  "repository": "https://github.com/zmek/patientflow",
+  "runs_on": [
+    "Python 3.10 or newer"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 1.8.7 uploaded 2026-09-12; summary; author Zella King (UCL); requires Python 3.10 or newer",
+      "url": "https://pypi.org/pypi/patientflow/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Summary: built for UCLH to predict emergency admissions in the next eight hours from EHR snapshots; current and incoming patients; probability distributions of beds; synthetic data in repo, anonymised UCLH data on Zenodo; citation to JOSS and Zenodo 10.5281/zenodo.15722296",
+      "url": "https://raw.githubusercontent.com/zmek/patientflow/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License, copyright 2024 Zella King",
+      "url": "https://raw.githubusercontent.com/zmek/patientflow/main/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Shallow clone: last commit 2026-09-12; 704 files",
+      "url": "https://github.com/zmek/patientflow"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "JOSS paper, six authors, published 2025-12-18",
+      "url": "https://api.crossref.org/works/10.21105/joss.09187"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Patient visits to the ED of an acute hospital, provided by UCLH; access restricted; CC BY-NC-ND 4.0; dates shifted by whole weeks",
+      "url": "https://zenodo.org/api/records/14866057"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2026-09-12)",
+      "url": "https://pypi.org/project/patientflow/"
+    }
+  ],
+  "tags": [
+    "bed management",
+    "patient flow",
+    "emergency admissions",
+    "hospital capacity",
+    "forecasting",
+    "EHR"
+  ],
+  "title_en": "Patientflow: real-time prediction of hospital bed demand from current and incoming patients",
+  "type": "model",
+  "validated_on": [
+    "University College London Hospitals emergency department and same day emergency care unit"
+  ]
+}

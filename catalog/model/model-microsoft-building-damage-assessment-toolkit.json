@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub microsoft/building-damage-assessment",
+      "url": "https://github.com/microsoft/building-damage-assessment"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub microsoft/building-damage-assessment-cnn-siamese",
+      "url": "https://github.com/microsoft/building-damage-assessment-cnn-siamese"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "microsoft building damage assessment toolkits satellite imagery and damage proxy maps",
+    "repo": "github.com/microsoft/building-damage-assessment",
+    "url": "https://github.com/microsoft/building-damage-assessment"
+  },
+  "description": "Two Microsoft repositories give tools for assessing building damage after disasters from remote sensing. The building-damage-assessment toolkit fine-tunes a damage model end to end, with a labelling tool, scripts to make segmentation masks, training and inference, and was used for the 2023 Turkey and Syria earthquakes and the 2023 tornadoes in Rolling Fork, Mississippi; it also analyses damage proxy maps made from pre- and post-event SAR coherence by NASA JPL's ARIA project and the Earth Observatory of Singapore. The siamese CNN repository, a Microsoft AI for Humanitarian Action project with the Netherlands Red Cross 510 initiative, segments building footprints and classifies each building's damage, trained on the public xBD dataset, and runs in Docker. Coverage: any area with suitable imagery. Access: free on GitHub. Licence: MIT. Caveats: models need local fine-tuning and labels for new events. Simulation uses are rapid post-event damage estimates that feed shelter needs, recovery modelling and validation of fragility curves. Related records: the Microsoft AI for Good building damage assessments on HDX.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "building damage assessment",
+      "route": "R05",
+      "source": "software-heritage"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake",
+    "storm_wind",
+    "flood"
+  ],
+  "homepage": "https://github.com/microsoft/building-damage-assessment",
+  "id": "model-microsoft-building-damage-assessment-toolkit",
+  "inputs": [
+    "Pre- and post-event satellite or aerial imagery",
+    "SAR damage proxy maps (e.g. from NASA JPL ARIA)",
+    "Building footprints",
+    "xBD training data"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-14",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Microsoft building damage assessment toolkits (satellite imagery and damage proxy maps)",
+  "outputs": [
+    "Building footprint segmentation",
+    "Damage level per building",
+    "Aggregated damage maps"
+  ],
+  "provider": "Microsoft, with the Netherlands Red Cross 510 initiative",
+  "related_ids": [
+    "data-microsoft-ai4g-building-damage-assessments-hdx"
+  ],
+  "repository": "https://github.com/microsoft/building-damage-assessment",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "README read; HEAD commit 2026-08-14 and MIT licence read through git. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+      "url": "https://raw.githubusercontent.com/microsoft/building-damage-assessment/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "README read; HEAD commit 2026-08-11 and MIT licence read through git. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+      "url": "https://raw.githubusercontent.com/microsoft/building-damage-assessment-cnn-siamese/main/README.md"
+    }
+  ],
+  "tags": [
+    "building damage assessment",
+    "satellite imagery",
+    "deep learning",
+    "SAR",
+    "xBD",
+    "humanitarian"
+  ],
+  "title_en": "Microsoft building damage assessment toolkits (satellite imagery and damage proxy maps)",
+  "type": "model"
+}

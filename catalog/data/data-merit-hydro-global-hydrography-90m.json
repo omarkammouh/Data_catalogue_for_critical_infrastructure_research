@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "MERIT Hydro page with registration and download",
+      "url": "https://global-hydrodynamics.github.io/MERIT_Hydro/"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "hazards",
+    "system_description"
+  ],
+  "data_kind": [
+    "raster",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "merit hydro global hydrography map at 3 arc seconds flow direction upstream area river width hand",
+    "url": "https://global-hydrodynamics.github.io/MERIT_Hydro"
+  },
+  "description": "MERIT Hydro is a global hydrography dataset from the Global Hydrodynamics Lab at the University of Tokyo, built on the MERIT DEM and water body maps (G1WBM, GSWO and OpenStreetMap) with a near-automatic river network algorithm and minimal hand editing. It gives flow direction, hydrologically adjusted elevation, upstream drainage area, upstream gradient, river channel width and height above nearest drainage at 3 arc-seconds, designed for large-scale hydrodynamic and flood simulation; the page reports a relative drainage area error below 0.05 for 90% of the basins compared. Coverage is global from 90 degrees north to 60 degrees south. Access is free as GeoTIFF tiles after registration through a form with a licence agreement, with a password sent by email, and there is an Earth Engine viewer. The data are dual-licensed under CC BY-NC 4.0 or ODbL 1.0. Caveats: the current version v1.0.1 dates from June 2019, and the non-commercial option restricts some uses. Simulation uses: river network topology and flood inundation modelling, catchment delineation for dams and water intakes, and HAND-based flood exposure. Related records: HydroSHEDS (data-hydrosheds-hydrorivers-hydrobasins) and GOODD (data-goodd-global-georeferenced-dams).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review doi:10.5194/essd-14-1869-2022 (data paper reviewing dam datasets)",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "formats": [
+    "raster"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://global-hydrodynamics.github.io/MERIT_Hydro/",
+  "id": "data-merit-hydro-global-hydrography-90m",
+  "languages": [
+    "en"
+  ],
+  "licence": "dual CC BY-NC 4.0 or ODbL 1.0, at the user's choice",
+  "licence_type": [
+    "non_commercial",
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "MERIT Hydro, global hydrography map at 3 arc-seconds (flow direction, upstream area, river width, HAND)",
+  "provider": "Global Hydrodynamics Lab (Yamazaki Lab), Institute of Industrial Science, University of Tokyo",
+  "related_ids": [
+    "data-hydrosheds-hydrorivers-hydrobasins",
+    "data-goodd-global-georeferenced-dams"
+  ],
+  "schema_summary": "layers dir (flow direction, int8), elv (hydrologically adjusted elevation, m), upa (upstream area, km2), upg (upstream gradient), wth (river channel width), hnd (height above nearest drainage); 5x5 degree tiles bundled in 30x30 degree tar packages; WGS84 and EGM96",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "features, method, registration, version, format, layers, dual licence",
+      "url": "https://global-hydrodynamics.github.io/MERIT_Hydro/"
+    }
+  ],
+  "spatial_resolution": "3 arc-seconds (about 90 m)",
+  "spatial_resolution_class": "10m_to_100m",
+  "tags": [
+    "hydrography",
+    "flow direction",
+    "river network",
+    "HAND",
+    "MERIT DEM",
+    "global flood modelling"
+  ],
+  "title_en": "MERIT Hydro, global hydrography map at 3 arc-seconds (flow direction, upstream area, river width, HAND)",
+  "type": "data"
+}

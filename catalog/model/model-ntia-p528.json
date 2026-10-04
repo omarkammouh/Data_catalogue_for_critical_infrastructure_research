@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/NTIA/p528"
+    },
+    {
+      "kind": "repo",
+      "label": "GUI",
+      "url": "https://github.com/NTIA/p528-gui"
+    },
+    {
+      "kind": "docs",
+      "label": "PropLib wiki",
+      "url": "https://ntia.github.io/propagation-library-wiki/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "ITU-R (2021) Recommendation ITU-R P.528-5: A propagation prediction method for aeronautical mobile and radionavigation services using the VHF, UHF and SHF bands.",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.5081071",
+    "name": "recommendation itu r p 528 us reference implementation air to ground propagation",
+    "repo": "github.com/ntia/p528",
+    "url": "https://github.com/NTIA/p528"
+  },
+  "description": "This is the US reference software implementation of Recommendation ITU-R P.528, maintained by the Institute for Telecommunication Sciences of the US National Telecommunications and Information Administration. P.528 predicts basic transmission loss from 100 to 30,000 MHz for aeronautical mobile and radionavigation services, and the code implements Annex 2, the step-by-step method for air-to-ground paths. Inputs are great-circle distance, the heights of the low and high terminals (1.5 to 20,000 metres), frequency, polarisation and time percentage; outputs include basic transmission loss, free-space loss, the propagation mode (line of sight, diffraction or troposcatter) and warnings. Coverage: any air-to-ground or air-to-air path, worldwide. Format and access: C++ source on GitHub with a citable Zenodo DOI (10.5281/zenodo.5081071) and a companion GUI; part of the ITS Propagation Library, releases up to v5.1; as a US Government work it is free of charge, with no US copyright and an NTIA disclaimer instead of a licence. Caveats: a smooth-Earth statistical method without terrain; outside its height and frequency limits the results are not valid. Simulation uses: coverage of aeronautical, drone and high-altitude platform links and of satellite-to-ground geometry, and spectrum sharing studies. Related records: ITS ITM and eHata cover terrestrial paths, P.2108 adds clutter loss.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "NTIA/ITS Propagation Library wiki: every model listed, followed from the LF/MF record",
+      "route": "R10",
+      "source": "digital-ntia-its-proplib"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NTIA/p528",
+  "id": "model-ntia-p528",
+  "inputs": [
+    "path distance",
+    "terminal heights",
+    "frequency",
+    "polarisation",
+    "time percentage"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-02-01",
+  "licence": "US Government work (not subject to copyright in the US, 15 USC 105) with NTIA software disclaimer",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "Recommendation ITU-R P.528: US reference implementation (air-to-ground propagation)",
+  "notes": "README read 2026-09-26; version tags from git (v4.3, v5.0, v5.1).",
+  "outputs": [
+    "basic transmission loss",
+    "free-space loss",
+    "propagation mode"
+  ],
+  "provider": "NTIA Institute for Telecommunication Sciences (ITS)",
+  "related_ids": [
+    "data-itu-r-dbsg3-propagation-databanks",
+    "model-pycraf"
+  ],
+  "repository": "https://github.com/NTIA/p528",
+  "runs_on": [],
+  "sectors": [
+    "digital.telecom",
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README",
+      "url": "https://github.com/NTIA/p528"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "PropLib package list",
+      "url": "https://ntia.github.io/propagation-library-wiki/"
+    }
+  ],
+  "tags": [
+    "radio propagation",
+    "aeronautical",
+    "ITU-R P.528",
+    "air-to-ground",
+    "PropLib"
+  ],
+  "title_en": "Recommendation ITU-R P.528: US reference implementation (air-to-ground propagation)",
+  "type": "model"
+}

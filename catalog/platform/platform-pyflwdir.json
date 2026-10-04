@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Deltares/pyflwdir"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Deltares/pyflwdir/blob/main/README.rst"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pyflwdir",
+    "repo": "github.com/deltares/pyflwdir",
+    "url": "https://github.com/Deltares/pyflwdir"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "PyFlwDir is a Deltares Python package for processing gridded elevation and flow-direction data. Its methods derive drainage directions, delineate basins and floodplains, calculate stream order and height above nearest drainage, trace upstream or downstream paths and vectorise streams. Iterative Hydrography Upscaling transfers fine-resolution drainage directions to a coarser model grid. The inputs and outputs are terrain and drainage representations, with global applicability and resolution determined by the selected elevation data. There is no common observation period or fixed catchment dataset. Public source, installation guidance and a reference API are free under MIT. Numba accelerates the Python calculations, but this review did not reproduce any performance claim. A limitation is that inferred drainage structure and upscaled flow paths depend on source terrain quality and the chosen flow-direction convention. The tool prepares topographic and catchment inputs for flood and water-resource simulations, complementing hydraulic engines such as Delft3D FM (model-delft3d-fm). The package itself does not simulate water levels or establish calibrated infrastructure flood risk.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:Deltares",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://github.com/Deltares/pyflwdir",
+  "id": "platform-pyflwdir",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "Gridded elevation and flow-direction arrays"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-29",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "PyFlwDir",
+  "notes": "G7 G7-0289. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Deltares",
+  "related_ids": [
+    "model-delft3d-fm"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Deltares/pyflwdir: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3ADeltares&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/deltares/pyflwdir/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "PyFlwDir gridded elevation flow-direction data processor",
+  "type": "platform"
+}

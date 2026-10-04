@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Learn more about Conveyal Analysis",
+      "url": "https://conveyal.com/learn"
+    },
+    {
+      "kind": "portal",
+      "label": "Product page",
+      "url": "https://www.conveyal.com/analysis"
+    }
+  ],
+  "access_restrictions": "registration",
+  "cost": "paid",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "conveyal analysis",
+    "url": "https://conveyal.com"
+  },
+  "deployment": [
+    "hosted_service"
+  ],
+  "description": "Conveyal Analysis is a web-based platform that computes accessibility indicators for multi-modal transport networks, showing who can reach which destinations and how reliably. Users load full GTFS schedules, OpenStreetMap road and path networks and opportunity data such as jobs or population on grids or points, then sketch alternative route alignments or schedules in a built-in scenario editor and compare travel times, isochrones and access to opportunities on the map. It is run by Conveyal LLC for urban planners, transit operators, researchers, public agencies, advocacy groups and consultants. Coverage: any region for which the user supplies GTFS and OSM data. Access: a secure online workspace; results can be published to a public engagement website. Licence and cost: a paid subscription service, while the core routing engine R5 is published under an open-source licence and can be downloaded free. Caveats: the method uses many departure times to capture schedule variation, so results are distributions, not single numbers, and outputs are only as good as the GTFS and OSM inputs. It supports scenario testing of network changes, including the accessibility loss when a line or bridge is closed, and runs on the R5 engine (model-conveyal-r5) catalogued separately, alongside OpenTripPlanner.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "assistant recall, written down before searching: transport public transit and active mobility, all four types",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://conveyal.com/",
+  "hosted_models": [
+    "model-conveyal-r5"
+  ],
+  "id": "platform-conveyal-analysis",
+  "interfaces": [
+    "web_app",
+    "desktop_gui",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "GTFS schedules",
+    "OpenStreetMap networks",
+    "gridded or point opportunity data"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "proprietary subscription service; the R5 routing engine is open source (MIT)",
+  "licence_type": [
+    "permissive_code",
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Conveyal Analysis",
+  "open_source": false,
+  "platform_kind": [
+    "cloud_service",
+    "modelling_suite"
+  ],
+  "provider": "Conveyal LLC",
+  "related_ids": [
+    "model-conveyal-r5",
+    "model-opentripplanner",
+    "data-gtfs-specification"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.active_mobility",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "accessibility indicators; scenario editor; GTFS, OSM and opportunity inputs; R5 engine; secure online workspace; public engagement website; users",
+      "url": "https://conveyal.com/learn"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "paid web-based software; open-source routing engine",
+      "url": "https://conveyal.com/"
+    }
+  ],
+  "supported_sectors": [
+    "transport.public_transit",
+    "transport.active_mobility",
+    "transport.road"
+  ],
+  "tags": [
+    "accessibility",
+    "transit scenario planning",
+    "isochrones",
+    "R5",
+    "r2-fresh-transport"
+  ],
+  "title_en": "Cloud service for public transport, cycling and walking and road transport",
+  "type": "platform"
+}

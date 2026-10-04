@@ -1,0 +1,137 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "HydroRIVERS river lines",
+      "url": "https://www.hydrosheds.org/products/hydrorivers"
+    },
+    {
+      "kind": "download",
+      "label": "HydroBASINS nested sub-basin polygons",
+      "url": "https://www.hydrosheds.org/products/hydrobasins"
+    },
+    {
+      "kind": "download",
+      "label": "HydroSHEDS v2 (TanDEM-X, 1 arc-second, Americas)",
+      "url": "https://www.hydrosheds.org/products/hydrosheds-v2"
+    },
+    {
+      "kind": "docs",
+      "label": "Products and downloads",
+      "url": "https://www.hydrosheds.org/products"
+    },
+    {
+      "kind": "paper",
+      "label": "Lehner and Grill 2013, Hydrological Processes",
+      "url": "https://doi.org/10.1002/hyp.9740"
+    },
+    {
+      "kind": "docs",
+      "label": "Previous landing page (description)",
+      "url": "https://www.hydrosheds.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "reference_context",
+    "hazards"
+  ],
+  "data_kind": [
+    "raster",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hydrosheds global hydrography core grids hydrorivers river network hydrobasins nested catchments hydrolakes",
+    "url": "https://hydrosheds.org"
+  },
+  "description": "HydroSHEDS is a suite of continuous global hydrographic layers: core grids of conditioned elevation, flow direction and flow accumulation, and derived vector products including HydroRIVERS, a line network of 8.5 million river reaches (35.9 million km) with length, river order and an estimate of long-term discharge, HydroBASINS, one million sub-basins nested in 12 Pfafstetter levels for up- and downstream analysis, and HydroLAKES, all co-registered by shared IDs. World Wildlife Fund US started the project in 2006; version 1 was derived mainly from SRTM at 3 arc-seconds (with coarser HYDRO1k data above 60 degrees north), and version 2, from TanDEM-X at 1 arc-second, is released for the Americas. Coverage is global. The layers are a free download as geodatabases, shapefiles and grids, for scientific, educational and commercial use under the HydroSHEDS licence agreement with attribution. Caveats: it does not reach the accuracy of local high-resolution river and catchment maps, and attributes on HydroRIVERS and HydroBASINS are mostly geometric. Simulation uses: river and catchment topology for routing flows to and from dams, intakes and wastewater outfalls, and for flood and drought exposure. Related records: HydroWASTE (data-hydrowaste), which is co-registered to HydroRIVERS, and GRanD (data-grand-global-reservoir-and-dam-database).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "sanitation",
+      "route": "R04",
+      "source": "hdx"
+    }
+  ],
+  "formats": [
+    "esri_geodatabase",
+    "shapefile",
+    "raster"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "drought"
+  ],
+  "homepage": "https://www.hydrosheds.org/products/hydrorivers",
+  "id": "data-hydrosheds-hydrorivers-hydrobasins",
+  "languages": [
+    "en"
+  ],
+  "licence": "HydroSHEDS licence agreement (free for scientific, educational and commercial use, with attribution)",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "HydroSHEDS global hydrography (core grids, HydroRIVERS river network, HydroBASINS nested catchments, HydroLAKES)",
+  "provider": "HydroSHEDS project (initiated by World Wildlife Fund US)",
+  "related_ids": [
+    "data-hydrowaste",
+    "data-grand-global-reservoir-and-dam-database"
+  ],
+  "schema_summary": "conditioned elevation, flow direction and flow accumulation grids; 8.5 million river reaches with length, distances to headwater and outlet, river order and long-term discharge estimate; 1.0 million sub-basins in 12 Pfafstetter levels with area and topology; lake polygons; all co-registered by shared IDs",
+  "sectors": [
+    "water.dams_flood_defences",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "suite of layers, free in standard GIS formats, v2 for the Americas",
+      "url": "https://www.hydrosheds.org/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "WWF US 2006, product categories, v1 SRTM 3 arc-second and HYDRO1k above 60N, v2 TanDEM-X 1 arc-second, accuracy caveat",
+      "url": "https://www.hydrosheds.org/about"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "8.5 million reaches, 35.9 million km, attributes, licence, geodatabase downloads, Lehner and Grill 2013",
+      "url": "https://www.hydrosheds.org/products/hydrorivers"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "1.0 million sub-basins, 12 Pfafstetter levels, pour points",
+      "url": "https://www.hydrosheds.org/products/hydrobasins"
+    }
+  ],
+  "spatial_resolution": "3 arc-second core grids (v1, about 90 m) and 1 arc-second (v2, about 30 m); HydroRIVERS and HydroBASINS from 15 arc-second layers",
+  "spatial_resolution_class": "10m_to_100m",
+  "tags": [
+    "hydrography",
+    "river network",
+    "catchments",
+    "flow direction",
+    "HydroRIVERS",
+    "HydroBASINS",
+    "HydroLAKES",
+    "global"
+  ],
+  "temporal_coverage": "static (v1 from SRTM; v2 from TanDEM-X)",
+  "title_en": "HydroSHEDS global hydrography (core grids, HydroRIVERS river network, HydroBASINS nested catchments, HydroLAKES)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

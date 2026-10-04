@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Portal catalogue API (CKAN package_search for the shelter title)",
+      "url": "https://data.gov.ua/api/3/action/package_search?q=title:%22%D0%B7%D0%B0%D1%85%D0%B8%D1%81%D0%BD%D0%B8%D1%85%20%D1%81%D0%BF%D0%BE%D1%80%D1%83%D0%B4%20%D1%86%D0%B8%D0%B2%D1%96%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B7%D0%B0%D1%85%D0%B8%D1%81%D1%82%D1%83%22&rows=5"
+    },
+    {
+      "kind": "portal",
+      "label": "Dataset page on the open data portal",
+      "url": "https://data.gov.ua/dataset/668528f0-15b8-4b4e-8344-9a50918af1eb"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (CSV)",
+      "note": "Checked 2026-10-01: returns starts directly.",
+      "url": "https://data.gov.ua/dataset/0d7c0b92-8178-4ba4-a5c4-bc2b73f83b3e/resource/ea5acaba-7b9e-4c1b-9b4e-edf38b64dc86/download/shelters.csv"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "UA"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ukraine civil protection shelters published by local councils data gov ua 147 datasets",
+    "url": "https://data.gov.ua/dataset/668528f0-15b8-4b4e-8344-9a50918af1eb"
+  },
+  "description": "Local councils (village, town and city communities) of Ukraine, via data.gov.ua publishes a common-format series of datasets titled \"data on the location of civil protection shelters\" (захисних споруд цивільного захисту), each published by one local council for the protective structures in communal ownership; the example read has one row per structure with an identifier, type (for example a simplest shelter), the address split into administrative units, street and building, latitude and longitude, ownership form, the balance holder name and identifier, renter, peacetime purpose and responsible person; the portal search showed 147 datasets with this title on 2026-09-29, from communities such as Chohodarivka, Novoborysivka, Bilohorodka, Lubny and Chornomorske. Coverage: the communities of the publishing councils only (a partial, uneven national patchwork), with portal modification dates from November 2024 to September 2026 among the first results. Format and access: CSV, JSON or XLSX files, free and without registration from data.gov.ua; the portal catalogue is queryable through a public CKAN API. Licence (read on the portal page on 2026-09-29): Creative Commons Attribution (as shown by the portal records); cost: free. Caveats: coverage depends on which councils publish, formats vary between CSV, JSON and XLSX, only one dataset was opened and its columns are assumed to repeat, and the datasets cover only structures in communal ownership, so state, private and departmental structures are not included. Simulation uses: shelter and protective-structure location layers for civilian evacuation, sheltering-capacity and emergency-response models in conflict and hazard settings. Related catalogue records: Ukraine connectivity of schools, hospitals and libraries: locations, fibre and internet connection, providers and school speed tests (Ministry of Digital Transformation, 2020 to 2021) (data-mintsyfra-ukraine-social-institutions-fibre-connectivity); OpenStreetMap (data-openstreetmap).",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "portal API search: data.gov.ua civil protection shelters, state property register",
+      "route": "R02",
+      "source": "r2-no-public-data"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://data.gov.ua/dataset/668528f0-15b8-4b4e-8344-9a50918af1eb",
+  "id": "data-ukraine-civil-protection-shelters-published-by-local-councils",
+  "languages": [
+    "uk"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "Creative Commons Attribution (as shown by the portal records)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Ukraine civil protection shelters published by local councils (data.gov.ua, 147 datasets)",
+  "notes": "Round 2 piece 14 (no-public-data visits): round 1 marked \"Ukraine open data portal (urban observatory)\" as publishing no data; the portal was read on 2026-09-29.",
+  "provider": "Local councils (village, town and city communities) of Ukraine, via data.gov.ua",
+  "related_ids": [
+    "data-mintsyfra-ukraine-social-institutions-fibre-connectivity",
+    "data-openstreetmap"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "dataset metadata (title, description, licence, resources, modification date 2026-09-25) read from the portal page and its public API",
+      "url": "https://data.gov.ua/dataset/668528f0-15b8-4b4e-8344-9a50918af1eb"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): added 1 verified direct data link(s) from the provider's resource list. Verified: https://data.gov.ua/dataset/0d7c0b92-8178-4ba4-a5c4-bc2b73f83b3e/resou -> verified by fetch during the check",
+      "url": "https://data.gov.ua/dataset/0d7c0b92-8178-4ba4-a5c4-bc2b73f83b3e/resource/ea5acaba-7b9e-4c1b-9b4e-edf38b64dc86/download/shelters.csv"
+    }
+  ],
+  "tags": [
+    "shelters",
+    "civil protection",
+    "Ukraine",
+    "local councils"
+  ],
+  "title_en": "Ukraine civil protection shelters published by local councils (data.gov.ua, 147 datasets)",
+  "type": "data"
+}

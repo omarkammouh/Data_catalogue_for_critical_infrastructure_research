@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/ClimateImpactLab/downscaleCMIP6"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/ClimateImpactLab/downscaleCMIP6/blob/master/README.rst"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.5194/gmd-17-191-2024"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "scenarios_projections",
+    "hazards"
+  ],
+  "data_kind": [
+    "raster",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "global downscaled projections for climate impacts research",
+    "repo": "github.com/climateimpactlab/downscalecmip6",
+    "url": "https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir"
+  },
+  "description": "GDPCIR is the Climate Impact Lab's global dataset of bias-corrected and downscaled CMIP6 projections. It supplies daily minimum and maximum surface air temperature and precipitation from 25 climate models on a quarter-degree grid, for historical conditions and four SSP scenarios. Historical series cover 1950–2014; projections run from 2015 to 2099 or 2100, depending on the source model, without leap days. Partitioned Zarr stores use time, latitude and longitude dimensions. Data are free under CC0-1.0 or CC-BY-4.0 according to the model collection; the repository's processing code is MIT. A limitation is that not all model-scenario-variable combinations exist, and statistical downscaling preserves selected distributions without resolving local infrastructure geometry. GDPCIR can supply forcing for climate-adaptation simulations. ERA5 (data-era5-reanalysis) supplies its bias-correction reference. This record also covers the documented downscaleCMIP6 production workflow. Only repository and STAC collection metadata were inspected; no climate arrays were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "climateimpactlab/downscalecmip6 linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://planetarycomputer.microsoft.com/dataset/group/cil-gdpcir",
+  "id": "data-gdpcir",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-05-28",
+  "licence": "CC0-1.0 or CC-BY-4.0 by climate-model collection; MIT processing code",
+  "licence_type": [
+    "public_domain",
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Global Downscaled Projections for Climate Impacts Research",
+  "notes": "G7 G7-1003. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "provider": "Climate Impact Lab; Microsoft Planetary Computer hosts the data",
+  "related_ids": [
+    "data-era5-reanalysis"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for ClimateImpactLab/downscaleCMIP6: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/climateimpactlab/downscalecmip6"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/climateimpactlab/downscalecmip6/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/cil-gdpcir-cc0"
+    }
+  ],
+  "spatial_resolution": "0.25 degrees",
+  "spatial_resolution_class": "over_10km",
+  "tags": [],
+  "temporal_coverage": "1950–2014 historical; 2015–2099 or 2100 scenarios",
+  "temporal_resolution": "daily, no leap days",
+  "temporal_resolution_class": "daily",
+  "title_en": "Global Downscaled Projections for Climate Impacts Research",
+  "type": "data"
+}

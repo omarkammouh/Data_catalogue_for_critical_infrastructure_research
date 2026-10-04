@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "Frontiers in Water, doi 10.3389/frwa.2024.1310182",
+      "url": "https://www.frontiersin.org/journals/water/articles/10.3389/frwa.2024.1310182/full"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (ZIP)",
+      "note": "Checked 2026-10-01: returns application/zip directly.",
+      "url": "https://www.geodaten.sachsen.de/download/Shape_km2_33_UTM.zip"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "https://doi.org/10.3389/frwa.2024.1310182",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.3389/frwa.2024.1310182",
+    "name": "rim2d gpu accelerated urban pluvial inundation model with sewer capacity drainage",
+    "url": "https://frontiersin.org/journals/water/articles/10.3389/frwa.2024.1310182/full"
+  },
+  "description": "RIM2D is a parsimonious, GPU-accelerated hydraulic model for urban pluvial flood simulation, described in a 2024 Frontiers in Water article. It treats built-up areas as flow obstacles and represents urban drainage with capacity-based approaches, infiltration on pervious surfaces and sewer drainage from roofs and sealed surfaces, not a full sewer network model. The authors validate it on eight heavy rainfall events in a Dresden test area with detailed sewer discharge measurements, and find it reproduces the temporal dynamics and volumes of sewer discharge within acceptable ranges; deviations look caused by the rainfall input, not model simplification. They conclude it is a valid urban inundation tool and that short runtimes allow probabilistic risk assessment and forecasting. Coverage: any urban area with terrain data, validated in one German test area. Access: open-access article; model distribution and the model licence were not stated on the page read; the article is CC BY. Caveats: sewer drainage is capacity-based, so surcharge and backwater effects are not simulated. It supports rapid pluvial flood hazard and forecasting studies, and relates to EPA SWMM in the catalogue as a full sewer-network alternative.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "urban flood model open source hydrodynamic GPU sewer coupling",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://www.frontiersin.org/journals/water/articles/10.3389/frwa.2024.1310182/full",
+  "id": "model-rim2d-urban-pluvial-inundation-model-dresden",
+  "inputs": [
+    "Terrain, buildings as flow obstacles, rainfall, capacity-based infiltration and sewer drainage parameters"
+  ],
+  "language": [
+    "not_stated"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-03-27",
+  "licence": "not stated for the RIM2D model code; the Frontiers article is CC-BY",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "RIM2D GPU-accelerated urban pluvial inundation model with sewer capacity drainage",
+  "outputs": [
+    "Urban pluvial inundation depth and extent, simulated sewer discharge and volume"
+  ],
+  "provider": "Frontiers in Water paper on RIM2D (German research groups; validated in Dresden)",
+  "regions": [
+    "Dresden"
+  ],
+  "related_ids": [
+    "model-epa-swmm"
+  ],
+  "sectors": [
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "abstract: RIM2D design, sewer capacity approach, Dresden 8 events, conclusions",
+      "url": "https://www.frontiersin.org/journals/water/articles/10.3389/frwa.2024.1310182/full"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "licence re-check at wave 2 integration: licence read on the provider page",
+      "url": "https://www.frontiersin.org/journals/water/articles/10.3389/frwa.2024.1310182/full"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): added 1 verified direct data link(s) from the provider's resource list. Verified: https://www.geodaten.sachsen.de/download/Shape_km2_33_UTM.zip -> verified by fetch during the check",
+      "url": "https://www.geodaten.sachsen.de/download/Shape_km2_33_UTM.zip"
+    }
+  ],
+  "tags": [
+    "pluvial flooding",
+    "GPU",
+    "sewer drainage",
+    "Dresden",
+    "flood forecasting",
+    "r2-fresh-water"
+  ],
+  "title_en": "RIM2D GPU-accelerated urban pluvial inundation model with sewer capacity drainage",
+  "type": "model",
+  "validated_on": [
+    "8 heavy rainfall events in a Dresden test area with measured sewer discharge"
+  ]
+}

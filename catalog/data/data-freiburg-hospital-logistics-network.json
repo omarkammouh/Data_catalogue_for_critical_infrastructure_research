@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo (GraphML, CSV, README)",
+      "url": "https://zenodo.org/records/19085901"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation",
+    "supply_chains_logistics"
+  ],
+  "data_kind": [
+    "network_topology",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.19085901",
+    "name": "healthcare logistics dataset graphml pathway network and transport requests university medical center freiburg",
+    "url": "doi:10.5281/zenodo.19085901"
+  },
+  "description": "This data set describes how goods move around the central campus of the University Medical Center Freiburg in Germany: a network of every corridor, lift, bridge, tunnel and outdoor path, and three months of real requests to carry items such as blood bags and medicines from one place to another. The producers are Anna Hess and Dominik Stampa of the FZI Research Center for Information Technology, who used it to simulate an autonomous transport system for the hospital. Coverage is the whole central campus, with its buildings and the public paths and streets between them, and transport requests from August to October 2023. The GraphML network has nodes for wards, departments, corridor points and lift access with their floor, and directed edges with path type, length in metres and the number of lifts in each group; the CSV gives each request's time and start and end nodes. The files are available as a free download from Zenodo under the Creative Commons Attribution 4.0 licence. Caveats: identities are pseudonymised, slopes are not modelled, and only small and medium goods are included. Simulation uses: testing hospital internal logistics, lift failures and robot or porter fleets, and studying how loss of a building link disrupts supply of blood and medicines. Related records: BloodPath (model-bloodpath) models blood supply to hospitals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "healthcare logistics network hospital",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "domain_model_file",
+    "csv"
+  ],
+  "geographic_scope": "site",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.19085901",
+  "id": "data-freiburg-hospital-logistics-network",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "Healthcare logistics dataset: GraphML pathway network and transport requests, University Medical Center Freiburg",
+  "provider": "Anna Hess and Dominik Stampa (FZI Research Center for Information Technology), with the University Medical Center Freiburg",
+  "regions": [
+    "Freiburg"
+  ],
+  "related_ids": [
+    "model-bloodpath"
+  ],
+  "schema_summary": "Network.graphml: nodes (wards, departments, corridor and street points, elevator access) with level; directed edges with path_type (PATH, ELEVATOR, LEVEL_CHANGE), distance in metres and number of elevators per group. Orders.csv: one transport request per row with timestamp, start node, end node and further attributes",
+  "sectors": [
+    "services.healthcare",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators Hess and Stampa (FZI); CC BY 4.0; published 2026-03-20; Network.graphml 2.2 MB, Orders.csv 1.2 MB, README; pseudonymised pathway network of the central campus (buildings, public paths and streets): corridors, elevators, bridges, underground connections, outdoor paths; transport requests for medium-sized goods such as blood products and medications, August to October 2023; basis of a simulation of an autonomous transport system",
+      "url": "https://zenodo.org/api/records/19085901"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Node attribute level; edge attributes path_type (PATH, ELEVATOR, LEVEL_CHANGE), distance in metres, num_resources for elevator groups; GraphML 1.0; Orders.csv: datetime (UTC+2) = when known and earliest start, start_node_id, end_node_id",
+      "url": "https://zenodo.org/records/19085901/files/README.md"
+    }
+  ],
+  "spatial_resolution": "Corridor and room level on one hospital campus",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospital logistics",
+    "internal transport",
+    "GraphML",
+    "autonomous transport",
+    "blood products",
+    "Freiburg"
+  ],
+  "temporal_coverage": "August to October 2023",
+  "temporal_resolution": "Individual requests",
+  "temporal_resolution_class": "event",
+  "title_en": "Healthcare logistics dataset: GraphML pathway network and transport requests, University Medical Center Freiburg",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

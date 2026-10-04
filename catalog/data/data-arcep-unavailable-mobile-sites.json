@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "data.gouv.fr dataset",
+      "url": "https://www.data.gouv.fr/datasets/sites-indisponibles"
+    },
+    {
+      "kind": "api",
+      "label": "data.gouv.fr API metadata",
+      "url": "https://www.data.gouv.fr/api/1/datasets/sites-indisponibles/"
+    },
+    {
+      "kind": "viewer",
+      "label": "Network status map",
+      "url": "https://arcep-dev.github.io/siteshs/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "historical_events",
+    "recovery_restoration",
+    "service_performance"
+  ],
+  "data_kind": [
+    "event_record",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "arcep unavailable mobile sites daily history of mobile antennas out of service",
+    "url": "https://data.gouv.fr/datasets/sites-indisponibles"
+  },
+  "description": "This dataset gives the day-by-day history of mobile antenna sites that French operators declare unavailable because of a failure or maintenance, published by the telecom regulator Arcep under the transparency commitments of the 2018 New Deal mobile, which operators' licences made binding. Each daily file lists the sites of Orange, SFR, Bouygues Telecom and Free Mobile that are out of service, with the ANFR station identifier, location, technologies affected (voice, SMS, 2G, 3G, 4G, 5G data), the kind of unavailability and its start and expected end; the data also feed Arcep's map of network status, whose code is public on GitHub. Coverage: metropolitan France and overseas territories, site by site, daily since 7 October 2020. Format and access: about 2,400 daily files in CSV, JSON and GeoJSON (around 1.2 GB in total) on data.gouv.fr; free under the Licence Ouverte (Etalab). Caveats: declarations come from operators and are not audited in real time; short outages may be missing; schema details changed over time. Simulation uses: a rare public record of telecom asset failures for historical event analysis, recovery and restoration times after storms, floods and power cuts, and calibration of cascading failure models linking the power grid and mobile networks. Related records: ANFR radio installations give the equipment behind each station id, Mon Réseau Mobile gives coverage, and outage case studies such as the Rogers and Optus reviews give single events.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ARCEP organisation dataset listing on data.gouv.fr (organization 534fff58a3a7292c64a77cf6)",
+      "route": "R31",
+      "source": "digital-arcep-open-data"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.data.gouv.fr/datasets/sites-indisponibles",
+  "id": "data-arcep-unavailable-mobile-sites",
+  "languages": [
+    "fr"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "etalab-1.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Arcep unavailable mobile sites (daily history of mobile antennas out of service)",
+  "notes": "Metadata read through the data.gouv.fr API on 2026-09-26 (created 2020-10-06, last update 2026-09-25, frequency daily, licence fr-lo); description translated and summarised from the French dataset page.",
+  "provider": "Autorité de régulation des communications électroniques, des postes et de la distribution de la presse (Arcep)",
+  "related_ids": [],
+  "schema_summary": "per day: operator, ANFR station id, location, affected services and technologies, cause category, start and expected end",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "cascading_failure",
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "size": "about 1.2 GB over about 2,400 daily files",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "dataset metadata, description and resource list",
+      "url": "https://www.data.gouv.fr/api/1/datasets/sites-indisponibles/"
+    }
+  ],
+  "spatial_resolution": "individual site (coordinates, ANFR station id)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "mobile network outages",
+    "unavailable sites",
+    "New Deal mobile",
+    "restoration",
+    "France"
+  ],
+  "temporal_coverage": "daily since 2020-10-07",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2020
+  },
+  "temporal_resolution": "daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "Arcep unavailable mobile sites (daily history of mobile antennas out of service)",
+  "type": "data",
+  "update_frequency": "daily"
+}

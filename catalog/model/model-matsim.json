@@ -1,0 +1,180 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Releases",
+      "url": "https://github.com/matsim-org/matsim-libs/releases"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code (matsim-libs)",
+      "url": "https://github.com/matsim-org/matsim-libs"
+    },
+    {
+      "kind": "portal",
+      "label": "Maven repository (releases and snapshots)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://repo.matsim.org/"
+    },
+    {
+      "kind": "portal",
+      "label": "Project website",
+      "url": "https://www.matsim.org/"
+    },
+    {
+      "kind": "docs",
+      "label": "Example project",
+      "url": "https://github.com/matsim-org/matsim-example-project"
+    },
+    {
+      "kind": "docs",
+      "label": "Contribs overview",
+      "url": "https://github.com/matsim-org/matsim-libs/blob/main/contribs/README.md"
+    },
+    {
+      "kind": "paper",
+      "label": "The MATSim Book (open access, CC-BY 4.0)",
+      "url": "https://doi.org/10.5334/baw"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Horni, A., Nagel, K., Axhausen, K.W. (eds.) (2016). The Multi-Agent Transport Simulation MATSim. London: Ubiquity Press. doi:10.5334/baw (CC-BY 4.0)",
+  "cost": "free",
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "matsim",
+    "repo": "github.com/matsim-org/matsim-libs",
+    "url": "https://matsim.org"
+  },
+  "description": "MATSim is an open-source Java framework for large-scale agent-based transport simulation. Its toolbox of modules, which can be combined or replaced, covers demand modelling, an agent-based mobility simulation of traffic flow on road and public transport networks, re-planning of agents' daily plans, a controller that iterates simulations until behaviour settles, and output analysis; whole days are simulated second by second for car, transit, walking, cycling and demand-responsive modes. Community-maintained contribs add accessibility, bicycle, carsharing, demand-responsive transport, electric vehicles, emissions, freight, noise, parking, road pricing, signals, shared mobility, rail operation (railsim) and calibration (cadyts). It is developed by the MATSim contributors and the MATSim Association on GitHub as matsim-org, with TU Berlin's VSP group among the core developers, and released under the GNU General Public License version 2 or later at no cost. Annual releases (2024.0, 2025.0, 2026.0 on 10 April 2026) are complemented by weekly and pull-request builds on the MATSim Maven repository; official Python tools are on PyPI. The framework is location independent: scenarios for any city or country are built from a network, a synthetic population with daily plans and optionally a transit schedule; operators such as Swiss Federal Railways run national models. Caveats: building and calibrating a scenario is a substantial effort, contribs are maintained by individual community members without guarantees, and the reference book dates from 2016, updated only in yearly user-guide chapters. Simulation uses are agent-based simulation, network flow, capacity planning and emergency response, including evacuation planning described in the MATSim book. No other catalogued records relate directly yet.",
+  "description_checked": "2026-09-24",
+  "discovery_routes": [
+    {
+      "date": "2026-09-23",
+      "query": "agent-based transport simulation framework MATSim",
+      "route": "R40",
+      "source": "assistant recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.matsim.org/",
+  "id": "model-matsim",
+  "inputs": [
+    "Network XML (e.g. converted from OpenStreetMap)",
+    "Population and plans XML",
+    "Transit schedule and vehicles XML (e.g. from GTFS via pt2matsim)",
+    "Config XML",
+    "Facilities, counts and vehicle definitions"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-10",
+  "licence": "GPL-2.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "network"
+  ],
+  "name": "MATSim (Multi-Agent Transport Simulation)",
+  "notes": "Audit 2026-09-24: re-read on matsim.org (home page, The MATSim Book page), the matsim-libs README, core LICENSE and contribs list, Crossref, PyPI and git tags. Corrections to round 1: the book citation, from recall before, is confirmed on the provider's book page (its preferred citation) and in Crossref; the emergency-response use, recalled before, is now supported by the book chapter 'Evacuation Planning: An Integrated Approach' (Lämmel and Dobler, doi 10.5334/baw.41); the rail sector was missing although the railsim contrib simulates railway operation; 'strong groups at TU Berlin' is replaced by what the sources show (TU Berlin VSP publishes the official Python tools; the MATSim class is taught at TU Berlin). Release 2026.0 is confirmed by its git tag (2026-04-10). The website's search does not work for scripts, so evacuation was checked through the literature.",
+  "outputs": [
+    "Events files per iteration",
+    "Executed and scored plans",
+    "Link statistics and travel times",
+    "Scores and mode statistics",
+    "Emissions and contrib-specific outputs"
+  ],
+  "provider": "MATSim contributors and the MATSim Association (matsim-org), with TU Berlin (VSP) among the core developers",
+  "related_ids": [],
+  "repository": "https://github.com/matsim-org/matsim-libs",
+  "runs_on": [],
+  "sectors": [
+    "transport.active_mobility",
+    "transport.logistics_freight",
+    "transport.public_transit",
+    "transport.rail",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "network_flow",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-24",
+      "note": "Open-source framework for large-scale agent-based transport simulations; modes car, transit, walk, bike, drt; second-by-second; SBB national model; MATSim Association",
+      "url": "https://www.matsim.org/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Official reference; preferred citation Horni, Nagel, Axhausen (eds.) 2016, Ubiquity Press, doi 10.5334/baw, CC-BY 4.0; yearly User Guide updates",
+      "url": "https://www.matsim.org/the-book/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Edited book, Ubiquity Press, 2016-08-10",
+      "url": "https://api.crossref.org/works/10.5334/baw"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Book chapter 'Evacuation Planning: An Integrated Approach', doi 10.5334/baw.41 (Lämmel, Dobler)",
+      "url": "https://api.crossref.org/works?query.bibliographic=MATSim+evacuation+simulation"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Toolbox modules; binaries on repo.matsim.org; weekly and PR releases; example project",
+      "url": "https://raw.githubusercontent.com/matsim-org/matsim-libs/main/README.md"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "GNU GPL version 2 or (at your option) any later version; copyright 2006-2026 the MATSim contributors",
+      "url": "https://raw.githubusercontent.com/matsim-org/matsim-libs/main/matsim/LICENSE"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Contribs list incl. railsim, drt, ev, emissions, freight, noise, parking, signals; maintained by single community members without guarantee",
+      "url": "https://raw.githubusercontent.com/matsim-org/matsim-libs/main/contribs/README.md"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "git tags 2024.0, 2025.0, 2026.0; tag 2026.0 commit dated 2026-04-10",
+      "url": "https://github.com/matsim-org/matsim-libs"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "'official python tools', author VSP-Berlin, 0.0.22 of 2026-03-03",
+      "url": "https://pypi.org/pypi/matsim-tools/json"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Maven repository answers (200)",
+      "url": "https://repo.matsim.org/"
+    }
+  ],
+  "tags": [
+    "agent-based",
+    "transport",
+    "traffic simulation",
+    "Java",
+    "activity-based demand",
+    "GTFS"
+  ],
+  "title_en": "Agent-based model for infrastructure systems",
+  "type": "model",
+  "validated_on": [
+    "Counts-based calibration via the cadyts contrib"
+  ]
+}

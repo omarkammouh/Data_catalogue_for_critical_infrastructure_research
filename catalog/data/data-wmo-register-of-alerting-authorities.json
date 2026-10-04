@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Example authority entry (Norway)",
+      "url": "https://alertingauthority.wmo.int/authorities.php?recId=121"
+    },
+    {
+      "kind": "portal",
+      "label": "Register home (select a country)",
+      "url": "https://alertingauthority.wmo.int/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "catalogues_registries",
+    "emergency_management",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "wmo register of alerting authorities official issuers of public hazard alerts per country with their cap feed urls",
+    "url": "https://alertingauthority.wmo.int"
+  },
+  "description": "This register lists, country by country, which organisations are officially authorised to issue public warnings about hazards and where their machine-readable alert feeds can be read. It is maintained by the Public Weather Services programme of the World Meteorological Organization from entries supplied by its Members. Coverage is worldwide, with national meteorological services and, where Members have registered them, other civil protection or sub-national issuers. Each entry gives an object identifier, the issuing organisation, the hazard categories it covers under the Common Alerting Protocol (geophysical, meteorological, fire, health, infrastructure and others), the legal basis of its authority, feed addresses in each language, a forecasts page and the bounding box of its alerting area. The register is available free on the web, with an RSS and ATOM feed of changes, but offers no bulk download, so a table must be compiled from the entry pages. Caveats: completeness depends on Members registering all their issuers, many entries cover only weather services, and feed addresses change. Simulation uses: building the alert-dissemination layer of emergency response and evacuation models and harvesting live alerts for multi-country monitoring. Related records: the US National Weather Service alert feed (data-nws-cap-alerts) is one of the feeds listed.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: WMO (001, alert_authority)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "web_page",
+    "xml"
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://alertingauthority.wmo.int/",
+  "id": "data-wmo-register-of-alerting-authorities",
+  "languages": [
+    "en"
+  ],
+  "licence": "WMO website terms (no open licence stated)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "WMO Register of Alerting Authorities: official issuers of public hazard alerts per country with their CAP feed URLs",
+  "provider": "World Meteorological Organization (WMO), Public Weather Services",
+  "related_ids": [
+    "data-nws-cap-alerts"
+  ],
+  "schema_summary": "One entry per alerting authority: OID, WMO Member, ISO 3166 codes, issuing organisation, hazard categories (Geo, Met, Safety, Security, Rescue, Fire, Health, Env, Transport, Infra, CBRNE), authorisation basis, CAP feed URLs by language, forecasts URL, alerting area bounding box and map view; RSS and ATOM feed of register updates",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Register established by WMO Public Weather Services 'of information about alerting authorities as identified by Members'; country list from Afghanistan to Zimbabwe plus EUMETNET; RSS or ATOM news feed of updates",
+      "url": "https://alertingauthority.wmo.int/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Example entry: OID 2.49.0.0.578.0, WMO Member Norway, issuing organisation Norwegian Meteorological Institute, hazard categories Geo Met Fire Env Transport CBRNE, authorisation basis, CAP feed URLs https://alert.met.no/feed?lang=no and ?lang=en, alerting area bounding box and map; definitions of the eleven CAP hazard categories",
+      "url": "https://alertingauthority.wmo.int/authorities.php?recId=121"
+    }
+  ],
+  "spatial_resolution": "Alerting authority (national or sub-national area)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "alerting authority",
+    "Common Alerting Protocol",
+    "CAP feeds",
+    "early warning",
+    "WMO"
+  ],
+  "temporal_coverage": "Current register",
+  "temporal_resolution": "Updated as Members change entries",
+  "temporal_resolution_class": "other",
+  "title_en": "WMO Register of Alerting Authorities: official issuers of public hazard alerts per country with their CAP feed URLs",
+  "type": "data",
+  "update_frequency": "real_time"
+}

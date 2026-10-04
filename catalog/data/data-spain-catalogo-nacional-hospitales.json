@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Catálogo Nacional de Hospitales 2025 (XLSX)",
+      "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/ofertaRecursos/hospitales/docs/CNH_2025.xlsx"
+    },
+    {
+      "kind": "portal",
+      "label": "Catalogue page with PDF, interactive search and previous years",
+      "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/ofertaRecursos/hospitales/home.htm"
+    },
+    {
+      "kind": "portal",
+      "label": "Microdata downloads",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.sanidad.gob.es/estadisticas/microdatos.do"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "ES"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "system_description",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "catalogo nacional de hospitales spain directory of all hospitals in operation with beds class ownership and address",
+    "url": "https://sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/ofertaRecursos/hospitales/home.htm"
+  },
+  "description": "The national hospital catalogue lists every hospital operating in Spain at the end of each year, public and private, with its number of installed beds, type and owner. It is published annually by the Spanish Ministry of Health as part of the National Health System information system; the 2025 edition describes hospitals in operation on 31 December 2024. The Excel file has a directory of about 850 hospitals with national codes, name, address, municipality, province and autonomous community, postcode, bed count, class of centre (such as general hospitals), functional dependency (regional health services, other public bodies or private owners) and membership of hospital complexes, plus sheets listing openings and closures during the year and code tables. The catalogue is free and available as an Excel download or PDF, with microdata files and an interactive search of hospitals, health centres and out-of-hospital urgent care centres. Caveats: there are no coordinates, bed counts are the only capacity measure, and some hospitals are grouped into complexes that span several sites. Simulation uses: building the hospital inventory for hazard exposure and accessibility analysis, sizing regional bed capacity, and planning evacuation or surge in emergencies. Related records: the Spain hospital accessibility data (data-spain-hospital-accessibility-census-tracts) builds travel times to hospitals, and the French SAE (data-drees-sae-hospital-annual-statistics) is a neighbouring national inventory.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Ministerio de Sanidad (ES, health_ministry_service)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://www.sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/ofertaRecursos/hospitales/home.htm",
+  "id": "data-spain-catalogo-nacional-hospitales",
+  "languages": [
+    "es"
+  ],
+  "licence": "Ministerio de Sanidad terms (reuse of public sector information)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Catálogo Nacional de Hospitales (Spain): directory of all hospitals in operation with beds, class, ownership and address",
+  "provider": "Ministerio de Sanidad (Spain)",
+  "related_ids": [
+    "data-spain-hospital-accessibility-census-tracts",
+    "data-drees-sae-hospital-annual-statistics"
+  ],
+  "schema_summary": "Directory sheet: CCN and CNH codes, centre name, address, telephone, municipality, province and autonomous community codes and names, postcode, beds (CAMAS), class of centre (for example general hospital), functional dependency (public body or private), complex membership, date added and email; sheets for functional structure, closures, openings and code tables",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Catálogo Nacional de Hospitales 2025 (updated to 31 December 2024): hospitals in operation at 31 December each year; PDF; Excel download including related tables and harmonised region codes; microdata files; interactive search of health centres, out-of-hospital urgent care centres and hospitals; previous years",
+      "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/ofertaRecursos/hospitales/home.htm"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: sheets DIRECTORIO DE HOSPITALES (about 850 rows), ESTRUCTURA FUNCIONAL, BAJAS, ALTAS, CCAA, PROVINCIAS, MUNICIPIOS, CLASE DE CENTRO, DEPENDENCIA FUNCIONAL; directory columns CCN, CODCNH, name, address, phone, municipality, province, region, postcode, CAMAS, class, functional dependency, complex, ALTA, email",
+      "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/ofertaRecursos/hospitales/docs/CNH_2025.xlsx"
+    }
+  ],
+  "spatial_resolution": "Hospital (address)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospitals",
+    "hospital beds",
+    "health facilities",
+    "Spain"
+  ],
+  "temporal_coverage": "Hospitals in operation at 31 December 2024 (2025 edition); previous years available",
+  "temporal_resolution": "Annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "National Hospital Catalog (Spain): directory of all hospitals in operation with beds, class, ownership and address",
+  "type": "data",
+  "update_frequency": "annual"
+}

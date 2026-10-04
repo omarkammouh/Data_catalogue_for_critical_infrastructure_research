@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "GPS constellation status",
+      "url": "https://www.navcen.uscg.gov/gps-constellation"
+    },
+    {
+      "kind": "docs",
+      "label": "GPS.gov",
+      "url": "https://www.gps.gov/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "system_description",
+    "historical_events",
+    "service_performance"
+  ],
+  "data_kind": [
+    "tabular",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "uscg navcen gps constellation status and notice advisories to navstar users nanus",
+    "url": "https://navcen.uscg.gov/gps-constellation"
+  },
+  "description": "The US Coast Guard Navigation Center publishes the current status of the GPS constellation as a table with, for each satellite, its orbital plane and slot, space vehicle number (SVN), pseudo-random noise code (PRN), block type (such as IIR, IIR-M, IIF and III), clock in use, and the latest Notice Advisory to Navstar Users (NANU) with its type, such as a forecast outage (FCSTDV) or outage summary (FCSTSUMM), start date and subject. A slant chart shows plane and slot assignments. NANUs announce planned maintenance, unplanned outages and satellite decommissioning, and NAVCEN keeps them as a searchable archive. Coverage: the whole GPS constellation, about 31 satellites, current status with NANU history. Format and access: web tables and NANU text messages, free. Caveats: plane and slot are no longer given in operational advisories since a 2018 interface change, so the chart is kept by hand; status of a satellite is not the signal quality a user sees. Simulation uses: satellite outages and constellation changes as inputs to GNSS availability and timing resilience scenarios. This record answers the GPS.gov applications and status item: the gps.gov status page moved and NAVCEN is its data source. Related records: data-navcen-gps-problem-reports-guide gives user reports of GPS problems; case_study-gps-utc-offset-anomaly-january-2016 describes a constellation-wide timing error; data-igs-gnss-products gives orbits and clocks.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "GPS.gov applications and status (cited in doi:10.1016/j.procs.2025.01.323); candidate crossref-86a9ea5243 on the integrator's must-have list (musthave/digital.csv)",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "formats": [
+    "web_page",
+    "plain_text"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.navcen.uscg.gov/gps-constellation",
+  "id": "data-navcen-gps-constellation-status-nanu",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09",
+  "licence": "public domain (US Government)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "USCG NAVCEN GPS constellation status and Notice Advisories to Navstar Users (NANUs)",
+  "notes": "NAVCEN constellation page read on 2026-09-26 (columns, NANU types, the 2018 interface change). gps.gov/systems/gps/space returned 404. The NANU archive and satellite count are from recall.",
+  "provider": "US Coast Guard Navigation Center (NAVCEN), with the US Space Force GPS operations; GPS.gov is the US Government information site",
+  "related_ids": [],
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "hazard_exposure"
+  ],
+  "size": "about 31 satellites",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "constellation status page",
+      "url": "https://www.navcen.uscg.gov/gps-constellation"
+    }
+  ],
+  "spatial_resolution": "satellite",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "GPS",
+    "constellation",
+    "NANU",
+    "NAVCEN",
+    "outages"
+  ],
+  "temporal_coverage": "current status; NANU archive over many years",
+  "temporal_resolution": "per NANU",
+  "temporal_resolution_class": "event",
+  "title_en": "USCG NAVCEN GPS constellation status and Notice Advisories to Navstar Users (NANUs)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Global exposure model repository and release ZIP files",
+      "url": "https://github.com/gem/global_exposure_model"
+    },
+    {
+      "kind": "docs",
+      "label": "GEM Global Risk Model documentation",
+      "url": "https://docs.openquake.org/global_risk_model/"
+    },
+    {
+      "kind": "contact",
+      "label": "Licence request for spatially disaggregated models",
+      "url": "https://www.globalquakemodel.org/license-request/global-exposure-model"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gem global exposure model v2026 0 0",
+    "repo": "github.com/gem/global_exposure_model",
+    "url": "https://github.com/gem/global_exposure_model"
+  },
+  "description": "The Global Exposure Model of the GEM Foundation describes residential, commercial and industrial buildings in 215 countries and territories for earthquake risk assessment; version v2026.0.0 is the official 2026 global release, following releases in 2018, 2022, 2023 and 2025. For each country it gives CSV summaries at national, first administrative and taxonomy levels, and exposure models with asset counts, GEM taxonomy strings, occupancy classes, replacement costs and day, night and transit occupants, disaggregated at 0.01 degrees (about 1 km) for many countries, together with a vulnerability mapping file for use with the OpenQuake engine. Headline figures on the page include an estimated $304 trillion total building replacement cost and that more than 70% of the world's population lives in buildings without seismic provisions. Coverage: 215 countries and territories. Access: release ZIP files and tagged versions on GitHub; some disaggregated models by licence request. Licence: free for non-commercial use as published; commercial use needs a specific agreement with GEM. Caveats: asset points are the output of a disaggregation algorithm and represent groups of buildings, not individual buildings. Simulation uses are the exposure layer for earthquake and multi-hazard loss models and for comparing building stock vulnerability between countries. Related records: the GEM Building Taxonomy and the OpenQuake engine.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:system_description, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake"
+  ],
+  "homepage": "https://github.com/gem/global_exposure_model",
+  "id": "data-gem-global-exposure-model",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-08",
+  "licence": "Open for non-commercial use per the repository; commercial use requires a licence agreement with GEM",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GEM Global Exposure Model (v2026.0.0)",
+  "notes": "GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "provider": "Global Earthquake Model (GEM) Foundation",
+  "related_ids": [
+    "data-gem-building-taxonomy"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "v2026.0.0, 215 countries, data structure, fields, versions, licence request and commercial terms, headline figures",
+      "url": "https://raw.githubusercontent.com/gem/global_exposure_model/main/README.md"
+    }
+  ],
+  "spatial_resolution": "Admin 1 aggregates; disaggregated at 0.01 degrees (about 1 km) for many countries",
+  "spatial_resolution_class": "1km_to_10km",
+  "tags": [
+    "GEM",
+    "exposure model",
+    "building stock",
+    "earthquake risk",
+    "replacement cost",
+    "OpenQuake"
+  ],
+  "title_en": "GEM Global Exposure Model (v2026.0.0)",
+  "type": "data"
+}

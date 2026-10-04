@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Access NFIRS data",
+      "url": "https://www.usfa.fema.gov/nfirs/access-data/"
+    },
+    {
+      "kind": "portal",
+      "label": "NERIS, the successor system",
+      "url": "https://www.usfa.fema.gov/nfirs/neris/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "historical_events",
+    "service_performance",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "national fire incident reporting system nfirs public data release",
+    "url": "https://usfa.fema.gov/nfirs/access-data"
+  },
+  "description": "The NFIRS Public Data Release is the annual compilation of incidents reported by U.S. fire departments to the National Fire Incident Reporting System. It is a relational database of 20 tables linked by incident keys: a basic module for every incident (type, alarm and arrival times, actions taken, property use, losses) and modules for fires, structure fires, civilian and firefighter casualties, emergency medical calls, hazardous materials, wildland fires and arson. The producer is the U.S. Fire Administration, part of FEMA. Coverage is national at incident level, from 1980 to 2024: fire incidents only before 1999, all incidents for 1999–2003 and since 2014. Files are zipped CSV (dBASE before 2013), free of charge and published through OpenFEMA; no licence is stated, as a federal work. Caveats: reporting is voluntary, so not all states or departments take part each year and records can be incomplete; USFA warns that raw counts must not be used as national totals of fires, deaths or losses; the data need a database and SQL skills. NFIRS is being replaced by the National Emergency Response Information System (NERIS), launched in November 2024. Simulation uses: incident demand, response times and fire-loss distributions for fire and EMS station planning, and structure fire and wildland records for hazard exposure models. Related records: OpenFEMA (data-openfema) hosts the files, and the National Fire Department Registry (data-usfa-national-fire-department-registry) lists the reporting departments.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "NFIRS public data release fire incidents download",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "other"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "wildfire",
+    "technological_failure"
+  ],
+  "homepage": "https://www.usfa.fema.gov/nfirs/access-data/",
+  "id": "data-usfa-nfirs-public-data-release",
+  "languages": [
+    "en"
+  ],
+  "licence": "U.S. federal government work, free of charge (no licence stated; public domain inferred)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "National Fire Incident Reporting System (NFIRS) Public Data Release",
+  "provider": "U.S. Fire Administration (USFA), FEMA",
+  "related_ids": [
+    "data-openfema",
+    "data-usfa-national-fire-department-registry"
+  ],
+  "schema_summary": "Relational database of 20 tables linked by a 2-, 5- or 6-variable key: basic incident module (incident type, times, actions, property use, losses), fire, structure fire, civilian and fire service casualty, EMS, hazardous materials, wildland and arson modules; reference guides included",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "PDR 1980-2024 on OpenFEMA, 20 relational tables, CSV after 2012 and dBASE before, voluntary system disclaimer",
+      "url": "https://www.usfa.fema.gov/nfirs/access-data/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "NERIS launched November 2024 to replace NFIRS; core data schemas released with FSRI and DHS S&T",
+      "url": "https://www.usfa.fema.gov/nfirs/neris/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://www.usfa.fema.gov/nfirs/access-data/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.usfa.fema.gov/nfirs/neris/"
+    }
+  ],
+  "spatial_resolution": "Incident address within reporting fire department",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "fire incidents",
+    "NFIRS",
+    "fire departments",
+    "EMS",
+    "hazardous materials",
+    "casualties",
+    "NERIS"
+  ],
+  "temporal_coverage": "1980 to 2024: fire incidents 1980–1998, all incidents 1999–2003, fire and hazmat 2004–2024, all incidents 2014–2024",
+  "temporal_resolution": "Individual incidents with timestamps",
+  "temporal_resolution_class": "event",
+  "title_en": "National Fire Incident Reporting System (NFIRS) Public Data Release",
+  "type": "data",
+  "update_frequency": "annual"
+}

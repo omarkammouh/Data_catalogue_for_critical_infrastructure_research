@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Segments 2024-2026",
+      "url": "https://data.cityofchicago.org/d/4g9f-3jbs"
+    },
+    {
+      "kind": "portal",
+      "label": "Segments 2018-2023",
+      "url": "https://data.cityofchicago.org/d/sxs8-h27x"
+    },
+    {
+      "kind": "portal",
+      "label": "Regions 2018-2026",
+      "url": "https://data.cityofchicago.org/d/kf7e-cur8"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "chicago traffic tracker congestion estimates segments and regions",
+    "url": "https://data.cityofchicago.org/d/4g9f-3jbs"
+  },
+  "description": "The Chicago Traffic Tracker estimates congestion on Chicago's arterial (non-freeway) streets in real time by continuously analysing GPS traces from Chicago Transit Authority buses. Every 10 minutes it produces estimates for traffic segments, giving observed speed on a street in one direction for about 300 miles of principal arterials, and for 29 traffic regions of two or three community areas that together cover the city except the O'Hare area. The Chicago Data Portal keeps the current estimate per segment and historical archives split by period: segments 2011-2018, 2018-2023 (over 1,000 segments) and 2024-2026, and regions 2013-2018 and 2018-2026, the latest updated in 2026. Coverage is city-wide. Access: free CSV, JSON and Socrata API downloads under the portal's terms of use. Caveats: segment speeds are volatile because of signals, transit movements and short segment lengths, and estimates cover arterials only, not freeways. The data support calibration of urban network flow models, congestion and resilience analysis and the effect of disruptions on arterial speeds. They complement the Chicago mobility demand grid and Caltrans PeMS catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review doi:10.3390/s22103708 (journal review)",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://data.cityofchicago.org/d/4g9f-3jbs",
+  "id": "data-chicago-traffic-tracker-congestion",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-06",
+  "licence": "Chicago Data Portal terms of use",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Chicago Traffic Tracker congestion estimates (segments and regions)",
+  "provider": "City of Chicago, Department of Transportation, via the Chicago Data Portal",
+  "related_ids": [
+    "data-chicago-mobility-demand-mesh-grid",
+    "data-caltrans-pems"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "over 1,000 segments 2018-2023; CTA bus GPS; every 10 minutes; segments and regions; See Terms of Use",
+      "url": "https://data.cityofchicago.org/api/views/sxs8-h27x.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "about 300 miles principal arterials; 29 regions; volatility caveat",
+      "url": "https://data.cityofchicago.org/api/views/4g9f-3jbs.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "archives 2011-2018, 2018-2023, 2024-2026 segments; regions 2013-2018, 2018-2026 updated 2026-08-06",
+      "url": "https://data.cityofchicago.org/api/catalog/v1?q=traffic%20tracker%20historical"
+    }
+  ],
+  "spatial_resolution": "street segments and 29 regions",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "congestion",
+    "Chicago",
+    "bus GPS",
+    "arterial speeds"
+  ],
+  "temporal_coverage": "2011 onwards",
+  "title_en": "Chicago Traffic Tracker congestion estimates (segments and regions)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

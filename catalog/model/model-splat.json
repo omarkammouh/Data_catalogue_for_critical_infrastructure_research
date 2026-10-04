@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Author page and downloads",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.qsl.net/kd2bd/splat.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Magliacane J.A. SPLAT! A Terrestrial RF Path Analysis Application For Linux/Unix, version 1.4.2 (2014).",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "splat rf signal propagation loss and terrain analysis tool",
+    "repo": "qsl.net/kd2bd/splat.html",
+    "url": "https://qsl.net/kd2bd/splat.html"
+  },
+  "description": "SPLAT! is a terrestrial radio-frequency path analysis program for frequencies between 20 MHz and 20 GHz. From transmitter and receiver site files and digital elevation data (USGS and SRTM), it computes great-circle distances and bearings, antenna elevation and depression angles, heights above terrain, obstructions, Fresnel-zone clearance, and path loss and field strength with the Longley-Rice Irregular Terrain Model or the Terrain With Obstructions model (ITWOM v3.0), and it draws annotated topographic maps of line-of-sight paths and expected coverage areas for one or several transmitters. It was written by the radio amateur John Magliacane for site engineering, wireless network design, frequency coordination and broadcast television and radio planning; the last release is version 1.4.2 of 8 December 2014. Coverage: anywhere with elevation data, at the resolution of the terrain model (for example 3 or 1 arc-seconds). Format and access: C and C++ source for Linux and Unix, downloaded as a tar archive from the author's page; free of charge under the GNU GPL version 2. Caveats: no longer developed since 2014; single-threaded and slow for large areas; clutter and buildings are not modelled. Simulation uses: coverage and hazard exposure of radio and broadcast networks, capacity planning of transmitter sites, and emergency communications planning. Related records: Signal-Server forked it for server use, the NTIA Irregular Terrain Model is its propagation core, and the FCC and Ofcom transmitter datasets give site inputs.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for model:digital.telecom:physical",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.qsl.net/kd2bd/splat.html",
+  "id": "model-splat",
+  "inputs": [
+    "transmitter and receiver site files",
+    "SRTM or USGS elevation data",
+    "frequency, polarisation and ground parameters"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2014-12-08",
+  "licence": "GPL-2.0-only",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "SPLAT! RF Signal Propagation, Loss, And Terrain analysis tool",
+  "outputs": [
+    "path loss and field strength",
+    "coverage and line-of-sight maps",
+    "path profile reports"
+  ],
+  "provider": "John A. Magliacane (KD2BD)",
+  "related_ids": [
+    "data-itu-r-dbsg3-propagation-databanks",
+    "data-fcc-lms-cdbs-broadcast-station-databases",
+    "data-fcc-antenna-structure-registration",
+    "model-signal-server",
+    "model-ntia-itm"
+  ],
+  "repository": "https://www.qsl.net/kd2bd/splat.html",
+  "runs_on": [],
+  "sectors": [
+    "digital.broadcasting",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "author page: features, licence, release date",
+      "url": "https://www.qsl.net/kd2bd/splat.html"
+    }
+  ],
+  "tags": [
+    "radio propagation",
+    "Longley-Rice",
+    "ITWOM",
+    "coverage map",
+    "terrain analysis"
+  ],
+  "title_en": "SPLAT! RF Signal Propagation, Loss, And Terrain analysis tool",
+  "type": "model",
+  "validated_on": [
+    "Longley-Rice ITM reference behaviour"
+  ]
+}

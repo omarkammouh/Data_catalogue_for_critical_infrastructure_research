@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "DCD report",
+      "url": "https://www.datacenterdynamics.com/en/news/microsofts-slow-outage-recovery-in-sydney-due-to-insufficient-staff-on-site/"
+    },
+    {
+      "kind": "docs",
+      "label": "The Register on the incident report",
+      "url": "https://www.theregister.com/2023/09/04/microsoft_australia_outage_incident_report/"
+    },
+    {
+      "kind": "docs",
+      "label": "WattClarity on AEMO impacts",
+      "url": "https://wattclarity.com.au/articles/2023/08/30aug-powersurge-azure-aemo-gr/"
+    }
+  ],
+  "access_restrictions": "none",
+  "case_study_kind": [
+    "post_event_analysis",
+    "recovery_restoration"
+  ],
+  "continents": [
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "microsoft azure australia east outage after a power sag stopped chillers sydney august 2023",
+    "url": "https://datacenterdynamics.com/en/news/microsofts-slow-outage-recovery-in-sydney-due-to-insufficient-staff-on-site"
+  },
+  "description": "This post-event and recovery case covers the outage of part of Microsoft's Azure Australia East region on 30 August 2023. An electrical storm caused a utility power sag in Sydney that tripped the cooling units of two data halls in one availability zone; all five running chillers faulted and could not be restarted because the chilled-water loop had become too hot, only one of the two standby chillers started, and Microsoft had to shut down servers to reduce heat, leaving services such as Azure SQL databases unavailable for more than eight hours for some customers, including the Australian electricity market operator. Microsoft's post-incident review said that pumps had not received run signals from the chillers, that only three staff were on site at night, too few to restart chillers manually in time, and that it would raise night staffing, improve automation against voltage sags and restart the highest-load servers and their chillers first. Coverage: one Azure availability zone in Sydney, 30 to 31 August 2023. Format and access: Microsoft's review was published on its status history page and summarised free in the press. Caveats: the account is the operator's own; the facility is not named. Simulation uses: cascading failure from grid disturbances into data-centre cooling, recovery and staffing needs after cooling loss, and ride-through design of chiller controls. Related records: the Singapore Equinix and London heatwave cases are other cooling failures, and the NERC Virginia event shows the reverse effect of data centres on the grid.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Microsoft Azure Australia East outage August 2023 post incident review power sag chillers Sydney",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "storm_wind",
+    "technological_failure"
+  ],
+  "homepage": "https://www.datacenterdynamics.com/en/news/microsofts-slow-outage-recovery-in-sydney-due-to-insufficient-staff-on-site/",
+  "id": "case_study-azure-australia-east-cooling-outage-2023",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-09",
+  "licence": "News articles, all rights reserved",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://wattclarity.com.au/articles/2023/08/30aug-powersurge-azure-aemo-gr/",
+      "https://www.datacenterdynamics.com/en/news/microsofts-slow-outage-recovery-in-sydney-due-to-insufficient-staff-on-site/"
+    ]
+  },
+  "maturity": "stale",
+  "name": "Microsoft Azure Australia East outage after a power sag stopped chillers (Sydney, August 2023)",
+  "notes": "Facts from search results citing DCD, Network World, The Register and WattClarity, read on 2026-09-26. The Azure status history entry itself was not opened.",
+  "organisations": [
+    "Microsoft",
+    "Australian Energy Market Operator"
+  ],
+  "outcomes": "Cooling loss forced server shutdowns and outages of over eight hours for some services; Microsoft committed to more night staff and better chiller restart automation.",
+  "provider": "Microsoft Azure (post-incident review), reported by the press",
+  "related_ids": [],
+  "resources_used": [],
+  "sectors": [
+    "digital.data_centres",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: chiller and staffing findings",
+      "url": "https://www.networkworld.com/article/957256/microsoft-blames-aussie-data-center-outage-on-staff-strength-failed-automation.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: duration",
+      "url": "https://www.brentozar.com/archive/2023/09/why-australian-azure-sql-dbs-went-down-for-8-hours/"
+    }
+  ],
+  "study_period": "2023-08 to 2023-09",
+  "tags": [
+    "cloud outage",
+    "chillers",
+    "power sag",
+    "Azure",
+    "Sydney"
+  ],
+  "title_en": "Microsoft Azure Australia East outage after a power sag stopped chillers (Sydney, August 2023)",
+  "type": "case_study"
+}

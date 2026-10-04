@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/lanl-ansi/GasModels.jl"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gasmodels jl",
+    "repo": "github.com/lanl-ansi/gasmodels.jl",
+    "url": "https://github.com/lanl-ansi/GasModels.jl"
+  },
+  "description": "GasModels.jl is a Julia/JuMP package for steady-state gas network optimisation, built to evaluate emerging gas network formulations and algorithms on a common platform. Following the design of PowerModels.jl, it separates problem specifications, gas flow, expansion planning and load shedding, from formulations that differ in how the physics of natural gas flow is represented, from exact non-convex forms to linear approximations such as LRWP; valves make problems mixed integer because their controls are discrete, and the README tabulates which formulations support steady-state and transient problems. It is developed at Los Alamos National Laboratory within the Multi Infrastructure Control and Optimization Toolkit (MICOT). The package is location independent and applies to any gas network, in any country, described in its data format. Code is on GitHub (version 0.13.4, commits to September 2026) under a BSD-style licence held by Triad National Security, free of charge. Caveats: results depend on the chosen formulation and on external solvers, and approximations trade physical accuracy for tractability. Simulation uses are network flow, optimisation and expansion planning of gas systems. Related records: it is the gas counterpart of model-powermodels-jl and an alternative to model-pandapipes.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry GasModels.jl",
+      "route": "R06",
+      "source": "energy-gasmodels-jl"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/lanl-ansi/GasModels.jl",
+  "id": "model-gasmodels-jl",
+  "inputs": [
+    "Gas network data (pipes",
+    "compressors",
+    "valves",
+    "junctions",
+    "receipts and deliveries)"
+  ],
+  "language": [
+    "julia"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-02",
+  "licence": "BSD-3-Clause (Triad National Security copyright, MICOT LA-CC-13-108)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network",
+    "physical"
+  ],
+  "name": "GasModels.jl",
+  "outputs": [
+    "Steady-state gas flows and pressures",
+    "Expansion planning and load shedding decisions"
+  ],
+  "provider": "Los Alamos National Laboratory (LANL), Advanced Network Science Initiative (lanl-ansi)",
+  "related_ids": [
+    "model-powermodels-jl"
+  ],
+  "repository": "https://github.com/lanl-ansi/GasModels.jl",
+  "runs_on": [],
+  "sectors": [
+    "energy.gas_hydrogen"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Steady-state gas network optimisation; problem specifications gf, ne, ls; formulations table incl. LRWP; valves make MI problems",
+      "url": "https://raw.githubusercontent.com/lanl-ansi/GasModels.jl/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MICOT LA-CC-13-108, copyright 2016 Triad National Security, LANL contract",
+      "url": "https://raw.githubusercontent.com/lanl-ansi/GasModels.jl/HEAD/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 0.13.4",
+      "url": "https://raw.githubusercontent.com/lanl-ansi/GasModels.jl/HEAD/Project.toml"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Visit 2026-09-19; head commit 2026-09-02",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/lanl-ansi/GasModels.jl/visit/latest/"
+    }
+  ],
+  "tags": [
+    "gas network",
+    "optimisation",
+    "Julia",
+    "JuMP",
+    "LANL"
+  ],
+  "title_en": "Gasmodels julia juump package for steady state gas network optimisation",
+  "type": "model",
+  "validated_on": []
+}

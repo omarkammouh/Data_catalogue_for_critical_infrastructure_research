@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Hydrology-IFH/roger"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Hydrology-IFH/roger/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Schwemmle et al. (2024). RoGeR v3.0.5: a process-based hydrological toolbox model in Python. Geoscientific Model Development 17, 5249-5262. https://doi.org/10.5194/gmd-17-5249-2024",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "roger runoff generation model",
+    "repo": "github.com/hydrology-ifh/roger",
+    "url": "https://github.com/Hydrology-IFH/roger"
+  },
+  "description": "RoGeR is a process-based Python model for runoff generation developed at the University of Freiburg. It represents hydrological processes from a plot to a catchment and offers NumPy and JAX backends, with optional MPI parallel execution. A modeller supplies terrain, land and meteorological drivers with soil and process parameters; outputs are time-resolved runoff and water-flux states. The README illustrates 25-square-metre resolved simulations for the Eberbaechle catchment in Germany during 2019–2022, while other spatial and temporal setups are user-defined. Its MIT-licensed source and documentation are freely available. A practical caveat is that large distributed runs require suitable computational resources and local parameterisation; example results are not universal calibration. RoGeR can supply flow estimates for flood exposure and water-availability simulations. The catalogue's data-era5-reanalysis could provide weather context after spatial and temporal preparation, but that use was not tested. The repository's scientific paper documents version 3.0.5. No code was executed in this review.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "hydrology-ifh/roger linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/Hydrology-IFH/roger",
+  "id": "model-roger-runoff",
+  "inputs": [
+    "Meteorological forcing, soil and land parameters",
+    "Spatial catchment setup"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-20",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "RoGeR runoff generation model",
+  "notes": "G7 G7-1283. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Runoff and water-flux time series or fields"
+  ],
+  "provider": "University of Freiburg hydrology group",
+  "related_ids": [
+    "data-era5-reanalysis"
+  ],
+  "repository": "https://github.com/Hydrology-IFH/roger",
+  "sectors": [
+    "water.dams_flood_defences",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Hydrology-IFH/roger: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/hydrology-ifh/roger"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/hydrology-ifh/roger/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://roger.readthedocs.io/en/latest/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for dams and flood defences and green and blue infrastructure",
+  "type": "model"
+}

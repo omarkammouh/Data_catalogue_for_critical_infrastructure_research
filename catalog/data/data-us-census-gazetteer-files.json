@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Gazetteer files download",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Gazetteer record layouts",
+      "url": "https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/gaz-record-layouts.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "u s gazetteer files and geography information api",
+    "url": "https://census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html"
+  },
+  "description": "The U.S. Gazetteer Files of the U.S. Census Bureau list every geographic area of selected types with its identifier codes, name, land and water area, and a representative latitude and longitude (internal point). The 2026 files cover the 120th congressional districts, American Indian, Alaska Native and Native Hawaiian areas, census tracts, counties, county subdivisions, places, school districts, state legislative districts, states, 2020 Census urban areas and ZIP Code Tabulation Areas for the 50 states, the District of Columbia and Puerto Rico, matching the geography of the 2026 American Community Survey; earlier years back to the 1990 Census are also listed. The Census Data API's Geography Information dataset (geoinfo) serves comparable attributes. Format and access: pipe-delimited text files, one national file per geography type, free to download; public domain. Record layouts are documented, including the fully qualified GEOID used to join data.census.gov tables. Caveats: no population or housing counts, the Island Areas are excluded, and codes and names change between years, so the files should be matched to the vintage of the data; an internal point is not a population-weighted centroid. Simulation uses: quick coordinates and areas for census units, for example to build distance matrices between tracts or places, compute densities, or place nodes for zone-based network and gravity models without handling polygons. Related records: TIGER/Line boundaries and blocks (the polygons), Cartographic Boundary Files, ACS tables and the Census Data API.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; Data Tools and Applications list, entry U.S. Gazetteer",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): api.census.gov/data.json dataset list, group geoinfo",
+      "route": "R35",
+      "source": "census-data-api"
+    }
+  ],
+  "formats": [
+    "csv",
+    "plain_text",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html",
+  "id": "data-us-census-gazetteer-files",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "U.S. Gazetteer Files (and Geography Information API)",
+  "notes": "The 1990 start year is from the gazetteer page's year tabs; the geoinfo API group (2023 Geography Information) is in the Census Data API dataset list.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-tiger-line-boundaries-blocks",
+    "data-us-census-cartographic-boundary-files",
+    "data-us-census-data-api"
+  ],
+  "schema_summary": "USPS, GEOID, GEOIDFQ, ANSICODE, NAME, ALAND, AWATER, ALAND_SQMI, AWATER_SQMI, INTPTLAT, INTPTLONG",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "2026 geography types, pipe-delimited format, no counts, Island Areas excluded, 120th Congress",
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Record layout fields incl. GEOIDFQ, areas and internal point coordinates",
+      "url": "https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/gaz-record-layouts.html"
+    }
+  ],
+  "spatial_resolution": "Census tract and larger units; ZCTA",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "gazetteer",
+    "centroids",
+    "land area",
+    "reference files",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "1990 to 2026 editions",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1990
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "U.S. Gazetteer Files (and Geography Information API)",
+  "type": "data",
+  "update_frequency": "annual"
+}

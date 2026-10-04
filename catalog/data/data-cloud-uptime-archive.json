@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/atlarge-research/cloud-uptime-archive"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (arXiv 2504.09476)",
+      "url": "https://arxiv.org/abs/2504.09476"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "north_america",
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "service_performance",
+    "historical_events",
+    "crowdsourced_public_reports",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "event_record",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cloud uptime archive failure traces of web cloud and gaming services",
+    "repo": "github.com/atlarge-research/cloud-uptime-archive",
+    "url": "https://github.com/atlarge-research/cloud-uptime-archive"
+  },
+  "description": "The Cloud Uptime Archive is an open repository of failure and availability records for online services, proposed as a standard place to collect cloud uptime data. It is populated from two kinds of source: incident reports published by service operators on their status pages, and user-reported outages gathered from public outage-report websites, covering cloud platforms, web services and online games. The authors of AtLarge Research, led by Alexandru Iosup, described it in an April 2025 arXiv paper, where they analyse mean time between failures, mean time to repair, time-of-day and weekly patterns, severity and symptoms, and find that high-level user-facing services fail less often than the low-level infrastructure services beneath them. Cleaned traces give the start time, end time and a severity score between 0 and 1 for each failure, and the repository also holds processing scripts, analysis code and configurations for the OpenDC data-centre simulator; raw data are kept on Zenodo. Coverage: many public online services over recent years. Format and access: CSV traces on GitHub, free; code under the MIT licence and the paper under CC BY 4.0. Caveats: user reports reflect perception and depend on who reports; operator status pages under-report; the exact number of services is not stated in the documentation. Simulation uses: failure models for data-centre and cloud simulation, reliability benchmarks and dependency studies between infrastructure and services. Related records: the Uptime Institute outage analysis and IODA cover outages from other angles.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "crowdsourced mobile network outage reports dataset Downdetector social media outage open data telecom real-time network status feed",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/atlarge-research/cloud-uptime-archive",
+  "id": "data-cloud-uptime-archive",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025",
+  "licence": "MIT (code and traces); paper CC BY 4.0",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Cloud Uptime Archive: failure traces of web, cloud and gaming services",
+  "notes": "arXiv abstract and GitHub README read via fetch on 2026-09-26. Continents are a guess from the services named; the traces are per service, not per location.",
+  "provider": "AtLarge Research, Vrije Universiteit Amsterdam and TU Delft (Sacheendra Talluri, Dante Niewenhuis, Xiaoyu Chu, Jakob Kyselica, Mehmet Cetin, Alexander Balgavy and Alexandru Iosup)",
+  "related_ids": [
+    "data-axis-cloud-outage-tracker-2026"
+  ],
+  "schema_summary": "per-service failure traces with start time, end time and severity (0 to 1)",
+  "sectors": [
+    "digital.data_centres",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "digital_twin",
+    "optimisation"
+  ],
+  "size": "not stated",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "abstract and authors",
+      "url": "https://arxiv.org/abs/2504.09476"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "repository contents and licence",
+      "url": "https://github.com/atlarge-research/cloud-uptime-archive"
+    }
+  ],
+  "spatial_resolution": "service",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "cloud outages",
+    "availability",
+    "failure traces",
+    "OpenDC",
+    "status pages"
+  ],
+  "temporal_coverage": "recent years up to 2025 (span not stated)",
+  "temporal_resolution": "per incident, start and end timestamps",
+  "temporal_resolution_class": "event",
+  "title_en": "Cloud Uptime Archive: failure traces of web, cloud and gaming services",
+  "type": "data",
+  "update_frequency": "irregular"
+}

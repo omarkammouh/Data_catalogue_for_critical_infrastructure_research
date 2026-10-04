@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Farmacie (CSV, XML, JSON; daily file)",
+      "url": "https://www.dati.salute.gov.it/it/dataset/farmacie"
+    },
+    {
+      "kind": "download",
+      "label": "CSV file of 26 September 2026",
+      "url": "https://www.dati.salute.gov.it/sites/default/files/opendata/FRM_FARMA_5_20260926.csv"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IT"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "italian ministry of health open data register of all pharmacies open to the public with address type and coordinates daily",
+    "url": "https://dati.salute.gov.it/it/dataset/farmacie"
+  },
+  "description": "This register lists every pharmacy in Italy that is open to the public, including branch pharmacies and seasonal dispensaries, which are often the nearest point of health care for small communities. It is published by the Italian Ministry of Health as part of its medicine traceability system and refreshed every day. Each row gives the ministry code and local health authority code, name, VAT number, full address down to hamlet, municipality, province and region codes, the type of outlet, latitude and longitude where known, and the start and end dates of validity, so closed or changed pharmacies remain in the file. The register is available as a free daily download in CSV, XML and JSON under the Italian Open Data Licence, with a data dictionary. Caveats: some coordinates are missing or taken from OpenStreetMap, historical rows must be filtered by validity dates to get the current network, and opening hours and staffing are not included. Simulation uses: mapping access to medicines and first-line health services, testing exposure of pharmacies to floods, earthquakes or power cuts, and planning emergency medicine distribution. Related records: the Italian medicine distribution sites (data-italy-medicine-distribution-sites) cover the wholesale layer that supplies these pharmacies, and the Italian hospital bed data (data-italy-hospital-beds-by-structure-2010-2017) cover hospitals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Ministero della Salute (IT, health_ministry_service)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "xml",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://www.dati.salute.gov.it/it/dataset/farmacie",
+  "id": "data-italy-pharmacies-register",
+  "languages": [
+    "en"
+  ],
+  "licence": "Italian Open Data Licence v2.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.dati.salute.gov.it/it/dataset/farmacie",
+      "https://www.dati.salute.gov.it/sites/default/files/opendata/FRM_FARMA_5_20260926.csv"
+    ]
+  },
+  "maturity": "active",
+  "name": "Italian Ministry of Health open data: register of all pharmacies open to the public with address, type and coordinates (daily)",
+  "provider": "Ministero della Salute, Direzione generale dei dispositivi medici e del servizio farmaceutico (Italy)",
+  "related_ids": [
+    "data-italy-medicine-distribution-sites",
+    "data-italy-hospital-beds-by-structure-2010-2017"
+  ],
+  "schema_summary": "cod_farmacia, cod_farmacia_asl, indirizzo, descrizione_farmacia, p_iva, cap, cod_comune, comune, frazione, cod_provincia, sigla_provincia, provincia, cod_regione, regione, data_inizio_validita, data_fine_validita, descrizione_tipologia and codice_tipologia (ordinary pharmacy, branch, dispensary, seasonal dispensary), latitudine, longitudine, localizzazione; validity periods keep closed and changed rows",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Complete list of pharmacies open to the public including branches, dispensaries and seasonal dispensaries: ministry identifier, name, VAT number, ASL pharmacy code, full address (street, postcode, hamlet, municipality, province, region); data dictionary; some coordinates from OpenStreetMap contributors; Italian Open Data Licence v2.0; CSV (more than 200,000 downloads), XML, JSON; daily update; loaded 11 May 2012, last updated 26 September 2026",
+      "url": "https://www.dati.salute.gov.it/it/dataset/farmacie"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: about 59,100 lines (current and historical validity rows); semicolon-separated header listed in the schema summary",
+      "url": "https://www.dati.salute.gov.it/sites/default/files/opendata/FRM_FARMA_5_20260926.csv"
+    }
+  ],
+  "spatial_resolution": "Individual pharmacy (address, coordinates where available)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "pharmacies",
+    "medicine supply",
+    "health facilities",
+    "Italy"
+  ],
+  "temporal_coverage": "2012 to present with validity dates",
+  "temporal_resolution": "Daily snapshot",
+  "temporal_resolution_class": "daily",
+  "title_en": "Italian Ministry of Health open data: register of all pharmacies open to the public with address, type and coordinates (daily)",
+  "type": "data",
+  "update_frequency": "daily"
+}

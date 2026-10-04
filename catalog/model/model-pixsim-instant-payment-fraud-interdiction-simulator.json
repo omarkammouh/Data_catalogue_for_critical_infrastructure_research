@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo release v1.0.0",
+      "url": "https://zenodo.org/records/22948895"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/BashirZeimarani/pixsim_public"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "BR"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.22948894",
+    "name": "pixsim calibrated simulator of instant payment fraud recovery and interdiction on brazil s pix under analyst capacity limits",
+    "repo": "github.com/bashirzeimarani/pixsim_public",
+    "url": "doi:10.5281/zenodo.22948894"
+  },
+  "description": "A research simulator of payer-side fraud control on Pix, Brazil's instant payment rail, where settlement cannot be reversed. The README says it generates a population of accounts, legitimate traffic and fraud events with mule dispersal chains, scores each transfer from what the paying institution can see, routes alerts through an analyst queue with holds, blocks and expiries, and runs the recovery clock of the Special Return Mechanism (MED) under three regulatory regimes: the 2025 rules, the February 2026 rules and the May 2026 layered tracing. Full-scale runs use 1.08 million accounts in 155 parts; a demo runs 30,000 accounts for 30 days, and calibration targets and raw public sources are included. Version 1.0.0 of 25 September 2026 is a free downloadable ZIP of about 9 MB under the Apache 2.0 licence, with 78 tests and a frozen configuration. Coverage is the Brazilian Pix system as a synthetic population. Caveats: the payer side only, with receiving-side detection taken as inputs, and a full scenario takes about 50 minutes and 19 GB per part. For simulation it tests how a payment system and its operators absorb a surge of fraud under capacity limits. A related catalogue record is the Brazil central bank Pix open data statistics.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((bank OR banking OR payment OR financial OR insurance OR fintech) AND (simulator OR \"simulation engine\" OR \"simulation framework\" OR \"discrete event\"))",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((bank OR banking OR payment OR financial OR insurance OR fintech) AND (simulator OR \"simulation engine\" OR \"simulation framework\" OR \"discrete event\"))",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://doi.org/10.5281/zenodo.22948894",
+  "id": "model-pixsim-instant-payment-fraud-interdiction-simulator",
+  "inputs": [
+    "calibration targets from public Pix and MED statistics",
+    "scenario configuration files"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "statistical"
+  ],
+  "name": "PixSim - calibrated simulator of instant-payment fraud, recovery and interdiction on Brazil's Pix under analyst capacity limits",
+  "outputs": [
+    "fraud losses",
+    "recoveries",
+    "alert queue metrics and value waterfalls per policy and regime"
+  ],
+  "provider": "Bashir Zeimarani (Instituto CERTI Amazônia), Alireza Khatib and Somayeh Mousavinasr (Universidade Federal do Amazonas) and Carlos Maurício Serodio Figueiredo (Universidade do Estado do Amazonas), via Zenodo and GitHub",
+  "sectors": [
+    "industry.financial"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "version, date, authors, affiliations, file size and licence read 2026-09-26",
+      "url": "https://zenodo.org/api/records/22948895"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "scope, regimes, scales, layout, tests and run cost read 2026-09-26",
+      "url": "https://raw.githubusercontent.com/BashirZeimarani/pixsim_public/v1.0.0/README.md"
+    }
+  ],
+  "tags": [
+    "Pix",
+    "instant payments",
+    "fraud",
+    "simulation",
+    "MED",
+    "Brazil",
+    "payment system"
+  ],
+  "title_en": "PixSim - calibrated simulator of instant-payment fraud, recovery and interdiction on Brazil's Pix under analyst capacity limits",
+  "type": "model"
+}

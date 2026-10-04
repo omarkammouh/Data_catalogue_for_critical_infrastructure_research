@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Socrata SODA API",
+      "url": "https://data.cityofnewyork.us/resource/t7p9-n9dy.json"
+    },
+    {
+      "kind": "docs",
+      "label": "Incident type definitions",
+      "url": "https://www1.nyc.gov/site/911reporting/reports/definitions.page"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "service_performance",
+    "demand_operation",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nyc 911 end to end response time data",
+    "url": "https://data.cityofnewyork.us/Public-Safety/911-End-to-End-Data/t7p9-n9dy"
+  },
+  "description": "The NYC 911 End-to-End Data set breaks New York City emergency response time into its segments for each first-responding agency: the police (NYPD), the fire department (FDNY) and emergency medical services. For each week, agency and final incident type it gives the number of incidents and average and median seconds from call to first pickup, calltaker handoff, fire and EMS pickup, job creation, dispatch, travel and arrival, including first arrival at multi-agency incidents. The producer is the Mayor's Office of Operations of the City of New York, published on NYC Open Data. Coverage is citywide and weekly, from November 2013 to August 2026 as read today, updated monthly. Data are downloadable as CSV or JSON and queryable through the Socrata API without registration, under the NYC Open Data terms of use; no licence is named in the metadata. Caveats: values are weekly aggregates, not individual calls; there is no location breakdown; incident type definitions changed over time and are documented on a separate page. Simulation uses: calibration and validation of call-handling, dispatch and travel-time distributions in emergency medical and fire service simulation models, and benchmarking of response performance during disruptions such as storms or pandemic surges. Related records: the San Francisco fire and EMS calls for service (data-sf-fire-ems-calls-for-service) give call-level times for another city.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "NYC Open Data 911 end-to-end response time data",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "city",
+  "hazards": [],
+  "homepage": "https://data.cityofnewyork.us/Public-Safety/911-End-to-End-Data/t7p9-n9dy",
+  "id": "data-nyc-911-end-to-end-response-times",
+  "languages": [
+    "en"
+  ],
+  "licence": "NYC Open Data terms of use (no licence named in the metadata)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NYC 911 End-to-End Response Time Data",
+  "provider": "Mayor's Office of Operations, City of New York (NYC Open Data)",
+  "related_ids": [
+    "data-sf-fire-ems-calls-for-service"
+  ],
+  "schema_summary": "Per week, agency (NYPD, FDNY, EMS) and final incident type (for example critical, serious): number of incidents and average and median seconds for each call segment: pickup, calltaker handoff, FDNY and EMS pickup, job creation, dispatch, travel and first arrival",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Metadata: description, columns, agency, monthly update, made public 8/7/2019",
+      "url": "https://data.cityofnewyork.us/api/views/t7p9-n9dy.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Date range 2013-11-18 to 2026-08-24",
+      "url": "https://data.cityofnewyork.us/resource/t7p9-n9dy.json?$select=min(date),max(date)"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): only a site copyright notice on this page (© City of New York)",
+      "url": "https://data.cityofnewyork.us/Public-Safety/911-End-to-End-Data/t7p9-n9dy"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.nyc.gov:443/site/911reporting/reports/definitions.page"
+    }
+  ],
+  "spatial_resolution": "Citywide",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "911",
+    "response times",
+    "NYPD",
+    "FDNY",
+    "EMS",
+    "dispatch",
+    "call handling"
+  ],
+  "temporal_coverage": "Weeks from 18 November 2013 to 24 August 2026 (as read)",
+  "temporal_resolution": "Weekly",
+  "temporal_resolution_class": "weekly",
+  "title_en": "NYC 911 End-to-End Response Time Data",
+  "type": "data",
+  "update_frequency": "monthly"
+}

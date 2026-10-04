@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Samgöngustofa WFS (slysaskra, dronemap)",
+      "url": "https://gis.is/geoserver/samgongustofa/wfs?request=GetCapabilities&service=WFS"
+    },
+    {
+      "kind": "docs",
+      "label": "Samgöngustofa",
+      "url": "https://island.is/s/samgongustofa"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IS"
+  ],
+  "data_family": [
+    "historical_events"
+  ],
+  "data_kind": [
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "iceland road traffic accident register map layer samgongustofa slysaskra and drone restriction zones",
+    "url": "https://gis.is/geoserver/samgongustofa/wfs?request=GetCapabilities&service=WFS"
+  },
+  "description": "The Icelandic Transport Authority (Samgöngustofa) publishes its road traffic accident register as a map layer on the shared national GeoServer. Contents: 126,596 geolocated accidents on 29 September 2026, each with date, time, place name, year, accident type and type group, and injury severity code; the same workspace carries drone restriction zones around airports and other sensitive sites as geometry and JSON. Producer: Samgöngustofa, from police accident reports. Coverage: Iceland, with records spanning many years (the sample record dates from 2013). Format and access: WFS and WMS services at gis.is (GML, GeoJSON, shapefile, CSV output) that can be queried by year or type; Samgöngustofa also publishes yearly accident statistics on its website. Free; no licence is stated on the service. Caveats: codes for accident type and severity need the authority's code list, locations are approximate for older records, and minor property-damage crashes are under-reported. Simulation uses: road safety and hotspot analysis, calibration of accident risk in network models, and studies of weather-related crashes on exposed Icelandic roads; the drone zones inform UAV use for infrastructure inspection. Related records: Vegagerðin road and traffic data services (data-vegagerdin-road-data-services) and the IS 50V road network (data-iceland-is50v-topographic-database).",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source is-nma-natt-is: provider pages read (round 2 register piece)",
+      "route": "R10",
+      "source": "is-nma-natt-is"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "gml",
+    "geojson",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://gis.is/geoserver/samgongustofa/wfs?request=GetCapabilities&service=WFS",
+  "id": "data-iceland-samgongustofa-road-accident-register-map-layer",
+  "languages": [
+    "is"
+  ],
+  "licence": "not stated",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Iceland road traffic accident register map layer (Samgöngustofa slysaskrá) and drone restriction zones",
+  "provider": "Samgöngustofa (Icelandic Transport Authority)",
+  "related_ids": [
+    "data-vegagerdin-road-data-services",
+    "data-iceland-is50v-topographic-database"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "numberMatched 126596; sample fields date, time, severity, type, place, year",
+      "url": "https://gis.is/geoserver/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=samgongustofa:slysaskra&resultType=hits"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "samgongustofa workspace: slysaskra, dronemap layers",
+      "url": "https://gis.is/geoserver/wfs?service=WFS&version=2.0.0&request=GetCapabilities"
+    }
+  ],
+  "tags": [
+    "Iceland",
+    "road accidents",
+    "road safety",
+    "drone zones"
+  ],
+  "title_en": "Iceland road traffic accident register map layer (Icelandic Transport Authority accident registry) and drone restriction zones",
+  "type": "data"
+}

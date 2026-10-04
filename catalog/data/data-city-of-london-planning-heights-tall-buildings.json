@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "INSPIRE download service (WFS)",
+      "url": "https://www.mapping.cityoflondon.gov.uk/arcgis/services/INSPIRE/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+    },
+    {
+      "kind": "api",
+      "label": "INSPIRE view service (WMS)",
+      "url": "https://www.mapping.cityoflondon.gov.uk/arcgis/services/INSPIRE/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "governance_regulation",
+    "system_description",
+    "planned_future_infrastructure"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "city of london planning layers protected view heights lvmf and tall buildings",
+    "url": "https://mapping.cityoflondon.gov.uk/arcgis/services/INSPIRE/MapServer/WFSServer?maxFeatures=1&request=GetFeature&service=WFS&typeName=INSPIRE%3ATall_Buildings"
+  },
+  "description": "These City of London planning layers record where building heights are constrained and where tall buildings stand or are planned in the Square Mile. They are published by the City of London Corporation through its INSPIRE web services and listed on data.gov.uk. The Heights layer supports the London View Management Framework, which protects key views of London from parks and other public spaces: it records height limits at 25-metre intervals along the protected vistas within the City, by view type, designated view, assessment point, landmark and distance, for use with related vista, sightline and landmark layers under Local Plan policy CS13. The Tall Buildings layer holds polygons of all buildings over 50 metres above ordnance datum, including proposed ones by site boundary, with name, address, ground level, heights, storeys, main use, status and planning dates. Coverage is the City of London. Access: WFS and WMS services. Licence: not stated on the data.gov.uk entries; free. Caveats: the entries were last modified in April 2025. Simulation uses: 3D city models, wind and daylight studies, and development capacity. Related records: the England conservation areas and Historic Environment Scotland designations.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"public space\" \"plan\"",
+      "route": "R02",
+      "source": "data-gov-uk"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "\"building\" \"planning applications\"",
+      "route": "R02",
+      "source": "data-gov-uk"
+    }
+  ],
+  "formats": [
+    "ogc_map_service"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://www.mapping.cityoflondon.gov.uk/arcgis/services/INSPIRE/MapServer/WFSServer?service=WFS&request=GetFeature&maxFeatures=1&typeName=INSPIRE:Tall_Buildings",
+  "id": "data-city-of-london-planning-heights-tall-buildings",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-04-24",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.mapping.cityoflondon.gov.uk/arcgis/services/INSPIRE/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+    ]
+  },
+  "maturity": "active",
+  "name": "City of London planning layers: protected view heights (LVMF) and tall buildings",
+  "provider": "City of London Corporation",
+  "regions": [
+    "City of London"
+  ],
+  "related_ids": [],
+  "schema_summary": "Tall buildings: UPRN, report references, name, address, ground level, height above ground and AOD, status, planning application, floors, main use, permission, start and completion dates. Heights: view type, designated view, assessment point, landmark, distance, height limits",
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "LVMF heights description, fields, WFS and WMS, modified 2025-04-24",
+      "url": "https://ckan.publishing.service.gov.uk/api/3/action/package_show?id=heights2"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Tall buildings over 50 m AOD, field list, modified 2025-04-24",
+      "url": "https://ckan.publishing.service.gov.uk/api/3/action/package_show?id=tall-buildings4"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://www.mapping.cityoflondon.gov.uk/arcgis/services/INSPIRE/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.mapping.cityoflondon.gov.uk/arcgis/services/INSPIRE/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+    }
+  ],
+  "spatial_resolution": "Buildings and 25 m points along protected vistas",
+  "spatial_resolution_class": "10m_to_100m",
+  "tags": [
+    "tall buildings",
+    "protected views",
+    "LVMF",
+    "building heights",
+    "City of London",
+    "planning"
+  ],
+  "temporal_resolution": "Updated with development surveys",
+  "temporal_resolution_class": "event",
+  "title_en": "City of London planning layers: protected view heights (LVMF) and tall buildings",
+  "type": "data"
+}

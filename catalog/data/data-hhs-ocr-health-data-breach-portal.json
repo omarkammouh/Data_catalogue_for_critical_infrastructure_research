@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Breach Portal (view HIPAA breach reports)",
+      "url": "https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf"
+    },
+    {
+      "kind": "portal",
+      "label": "2013 to 2017 research snapshot (Dryad, mirrored on Zenodo)",
+      "url": "https://zenodo.org/records/5009749"
+    },
+    {
+      "kind": "docs",
+      "label": "Breach notification rule",
+      "url": "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "security_threat",
+    "historical_events",
+    "cyber_control"
+  ],
+  "data_kind": [
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hhs office for civil rights breach portal breaches of protected health information affecting 500 or more individuals",
+    "url": "https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf"
+  },
+  "description": "The Breach Portal of the US Department of Health and Human Services lists every reported breach of patients' health information that affected 500 or more people, making it the main public record of cyber attacks, thefts and other failures that expose data held by hospitals, clinics, health insurers and their contractors. The producer is the department's Office for Civil Rights, which receives these reports under the HIPAA breach notification rule and investigates them. Coverage is national. Each entry gives the organisation, state, type of entity, number of individuals affected, submission date, type of breach such as hacking or unauthorised disclosure, where the data were held such as email or paper records, and whether a business associate was involved. The listing is available free on the portal without registration; a snapshot of 2013 to 2017 with 1,512 breaches affecting over 154 million records is also available as a CC0 CSV from Dryad. Caveats: only breaches of 500 or more individuals are listed publicly, entries describe data exposure, not service outages, and causes are coarse categories. Simulation uses: estimating the frequency and scale of cyber incidents in health care for risk models, and tracking the growth of hacking and ransomware. Related records: the Gaza hospital attacks data (data-gaza-attacks-on-hospitals-2023-2025) cover physical attacks on hospitals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "health IT hacking data breaches",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "HHS OCR breach portal",
+      "route": "R31",
+      "source": "operator"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf",
+  "id": "data-hhs-ocr-health-data-breach-portal",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-05-29",
+  "licence": "US government public data (snapshot CC0 1.0)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html"
+    ]
+  },
+  "maturity": "stale",
+  "name": "HHS Office for Civil Rights Breach Portal: breaches of protected health information affecting 500 or more individuals",
+  "provider": "US Department of Health and Human Services, Office for Civil Rights",
+  "related_ids": [
+    "data-gaza-attacks-on-hospitals-2023-2025"
+  ],
+  "schema_summary": "One row per reported breach: name of covered entity, state, covered entity type, individuals affected, breach submission date, type of breach (such as hacking or IT incident, or unauthorised access or disclosure), location of breached information (such as email or paper and films), business associate present",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "HHS OCR Breach Portal: OCR investigates all breaches of protected health information and Part 2 records affecting 500 or more individuals; pages to file and to view HIPAA breach reports and 42 CFR Part 2 breach reports",
+      "url": "https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Dryad DOI 10.5061/dryad.24275c6, CC0; Ronquillo and co-authors (Western Michigan University); HHS_BreachDataset_JAMIAO.csv 158 KB; all reported breaches 2013 to 2017 from the federal database: 1,512 breaches affecting 154,415,257 records; hacking under 25% of breaches but nearly 85% of affected records; columns Name of Covered Entity, State, Covered Entity Type, Individuals Affected, Breach Submission Date, Type of Breach, Location of Breached Information, Business Associate Present",
+      "url": "https://zenodo.org/api/records/5009749"
+    }
+  ],
+  "spatial_resolution": "Covered entity (state)",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "data breaches",
+    "HIPAA",
+    "ransomware",
+    "hacking",
+    "health IT",
+    "cybersecurity"
+  ],
+  "temporal_coverage": "Reports currently listed on the portal; research snapshot 2013 to 2017",
+  "temporal_resolution": "Event",
+  "temporal_resolution_class": "event",
+  "title_en": "HHS Office for Civil Rights Breach Portal: breaches of protected health information affecting 500 or more individuals",
+  "type": "data",
+  "update_frequency": "real_time"
+}

@@ -1,0 +1,131 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "processing_scripts.zip (13 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/18266153/files/processing_scripts.zip?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "agrimate_model.zip (161.3 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/18266153/files/agrimate_model.zip?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "input.zip (3.1 GB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/18266153/files/input.zip?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "output.zip (4.9 GB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/18266153/files/output.zip?download=1"
+    },
+    {
+      "kind": "portal",
+      "label": "Model, inputs, outputs and scripts (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/records/18266153"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.18266153",
+    "name": "agrimate agent based global wheat market model with the russian 2010 wheat failure attribution runs",
+    "url": "doi:10.5281/zenodo.18266153"
+  },
+  "description": "This model simulates how a bad wheat harvest in one exporting country ripples through world trade, prices and food consumption, and the deposit applies it to Russia's 2010 heat and drought failure. The producer of the deposit is Kilian Kuhla of the Potsdam Institute for Climate Impact Research, for a study attributing the food security impacts of that failure to human-caused climate change; the model code was written by Patryk Kubiczek. Agrimate is an agent-based market model in Julia in which producer and consumer agents in world regions trade, store and consume wheat 24 times a year, starting from 2007 to 2009 trade flows and reacting to harvest shocks and export bans. Coverage is the global wheat market, with 1,008 factual and 1,008 counterfactual harvest realisations and two export policy cases, with or without Russia's 2010 to 2011 ban. The model code, inputs, raw and processed outputs and scripts are available as a free download from Zenodo under the Creative Commons Attribution 4.0 licence. Caveats: one crop, macro regions, not countries, and very large input and output archives. Simulation uses: testing how export restrictions and stocks buffer food supply shocks and propagating harvest failures into regional food availability. Related records: the global food shock trade model (model-global-food-shock-trade) and PyTradeShifts (model-pytradeshifts) also model trade disruption.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Agrimate Russian wheat failure food security",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought",
+    "extreme_heat",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://doi.org/10.5281/zenodo.18266153",
+  "id": "model-agrimate-wheat-market",
+  "inputs": [
+    "Wheat harvest anomalies and trends by region (FAO based)",
+    "Baseline food balance and bilateral trade flows (2007-2009)",
+    "Historical export restrictions 2007-2011",
+    "Consumption and demand elasticities and storage-to-use ratios",
+    "Population and historical wheat prices"
+  ],
+  "language": [
+    "julia",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "economic"
+  ],
+  "name": "Agrimate agent-based global wheat market model with the Russian 2010 wheat failure attribution runs",
+  "outputs": [
+    "Harvest, consumption and prices by macro region at 24 time steps per year",
+    "World market wheat prices and regional consumption in calories per person for 2010 to 2012"
+  ],
+  "provider": "Kilian Kuhla (Potsdam Institute for Climate Impact Research); model code authored by Patryk Kubiczek",
+  "related_ids": [
+    "model-global-food-shock-trade",
+    "model-pytradeshifts"
+  ],
+  "repository": "https://zenodo.org/records/18266153",
+  "runs_on": [
+    "Julia with DrWatson project environment"
+  ],
+  "sectors": [
+    "services.food_supply",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creator Kuhla (PIK); CC BY 4.0; published 2026-01-19, updated 2026-02-04; files agrimate_model.zip, input.zip (3.1 GB), output.zip (4.9 GB), processing_scripts.zip; factual and counterfactual harvest scenarios with 1,008 realisations each; policies: historical export restrictions and no Russian restrictions July 2010 to June 2011; inputs: harvest anomalies and trends (FAO since 2005), food balance and trade flows 2007-2009, export restrictions 2007-2011, elasticities and storage-to-use ratios, population, HRW wheat price; outputs at 24 time steps per year with a 4-year spin-up; processed CSVs of harvests, world market prices 2010-2012 and regional consumption. agrimate_model.zip read in memory: Julia project (DrWatson) authored by Patryk Kubiczek with producer and consumer agents, producer optimisation, baseline trade initialisation and tests",
+      "url": "https://zenodo.org/api/records/18266153"
+    }
+  ],
+  "tags": [
+    "wheat",
+    "food trade",
+    "export restrictions",
+    "agent-based model",
+    "climate attribution",
+    "PIK"
+  ],
+  "title_en": "Agrimate agent-based global wheat market model with the Russian 2010 wheat failure attribution runs",
+  "type": "model",
+  "validated_on": [
+    "Historical wheat market perturbations from 2005 onward, including the 2010 Russian harvest failure"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "CKAN API",
+      "url": "https://onderwijsdata.duo.nl/api/3/action/package_search?q=adressen"
+    },
+    {
+      "kind": "portal",
+      "label": "Primary school addresses (institutions, locations, boards)",
+      "url": "https://onderwijsdata.duo.nl/dataset/adressen_bo"
+    },
+    {
+      "kind": "portal",
+      "label": "Secondary school addresses",
+      "url": "https://onderwijsdata.duo.nl/dataset/adressen_vo"
+    },
+    {
+      "kind": "portal",
+      "label": "Special education addresses",
+      "url": "https://onderwijsdata.duo.nl/dataset/adressen_so"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "duo open education data addresses of schools locations and boards netherlands",
+    "url": "https://onderwijsdata.duo.nl"
+  },
+  "description": "DUO, the Dutch education executive agency, publishes address files for state-funded education on its open data portal, drawn from the Registratie Instellingen en Opleidingen (RIO). Separate datasets cover primary, secondary, special, vocational (mbo) and higher education, each with files of main institutions, all active locations and governing boards. The primary school locations file had 6,096 rows when read, with province, board, institution and location codes, name, street address, postcode, municipality, denomination, website and regional classifications such as COROP, labour market and education areas. Related datasets give pupil numbers per location and postcode area and the full RIO extracts through an API. Coverage: state-funded Dutch schools active on the extract date. Access: CSV downloads with readme files and a CKAN API. Licence: CC BY; free. Caveats: the files carry addresses, not coordinates, so geocoding against the BAG is needed, and quality follows the RIO registrations. Simulation uses are school locations and pupil counts for shelter planning, flood exposure and education continuity studies. Related records: the BAG address register and the French education directory.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: DUO open onderwijsdata homepage",
+      "route": "R10",
+      "source": "organisations.csv:NL:built_environment:facility_register_health_education"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://onderwijsdata.duo.nl/",
+  "id": "data-duo-netherlands-school-addresses",
+  "languages": [
+    "nl"
+  ],
+  "last_updated": "2026-09-04",
+  "licence": "CC BY",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "DUO open education data: addresses of schools, locations and boards (Netherlands)",
+  "provider": "Dienst Uitvoering Onderwijs (DUO), from the Registratie Instellingen en Opleidingen (RIO)",
+  "related_ids": [
+    "data-bag-netherlands",
+    "data-france-annuaire-education-schools"
+  ],
+  "sectors": [
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Address datasets for mbo, ho, bo, so and vo, CC BY, updated 2026-09-04; pupil datasets; RIO API dataset",
+      "url": "https://onderwijsdata.duo.nl/api/3/action/package_search?q=adressen&rows=10"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Readme: RIO source, selection of active funded schools, quality note, three CSV files",
+      "url": "https://onderwijsdata.duo.nl/api/3/action/package_show?id=adressen_bo"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Header and row count (6,096 locations) read",
+      "url": "https://onderwijsdata.duo.nl/dataset/786f12ea-6224-42fd-ab72-de4d7d879535/resource/dcc9c9a5-6d01-410b-967f-810557588ba4/download/vestigingenbo.csv"
+    }
+  ],
+  "tags": [
+    "schools",
+    "education facilities",
+    "Netherlands",
+    "RIO",
+    "addresses"
+  ],
+  "title_en": "DUO open education data: addresses of schools, locations and boards (Netherlands)",
+  "type": "data"
+}

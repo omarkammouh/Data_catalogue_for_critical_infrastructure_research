@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/HopkinsICARUS/ICARUS-DC-Dataset"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "icarus data center dataset icarus dc",
+    "repo": "github.com/hopkinsicarus/icarus-dc-dataset",
+    "url": "https://github.com/HopkinsICARUS/ICARUS-DC-Dataset"
+  },
+  "description": "ICARUS-DC describes United States data centres for analysing their relationship to electricity demand and regional power systems. The Johns Hopkins ICARUS initiative publishes facility CSV files for its full collection, PJM and New York, together with cleaning and imputation code. Documented attributes include operator, city, state, reported or estimated power capacity, floor area, type, construction year, UPS and cooling system. Spatial resolution is the facility and associated administrative location. The repository citation is dated 2025, but the observation dates of individual facility attributes are not established in the inspected documentation. Data are freely accessible on GitHub under CC BY 4.0, while the software uses MIT. The tree confirms raw facility CSV files; it does not contain the cleaned and imputed CSV outputs described in the overview, so those require generation. Price, capacity-market and load directories are explicitly excluded from the public release. Missing values and estimated capacities limit direct use as measured loads. Simulation uses include data-centre electricity-demand allocation and capacity-planning scenarios. The dataset complements case_study-jlarc-data-centers-in-virginia-2024 as a separate source for facility-level electricity-demand scenarios; agreement between their inventories was not tested.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "power grid dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "source_code"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/HopkinsICARUS/ICARUS-DC-Dataset",
+  "id": "data-icarus-us-data-centers",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-28",
+  "licence": "CC-BY-4.0 for data; MIT for software",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ICARUS Data Center Dataset (ICARUS-DC)",
+  "notes": "G8; G8-0016. The README describes cleaned/imputed data folders that currently contain documentation rather than output CSVs. Raw facility CSVs exist. Some source-method documentation is unfinished. Licence was read directly because GitHub reports NOASSERTION for the combined licence file.  Cited as: Reed, O.; Khanal, S.; Yao, B.; Combariza, D.; Klemun, M.; Dvorkin, Y. (2025). ICARUS Data Center Dataset (ICARUS-DC). Johns Hopkins ICARUS Research Initiative. https://github.com/HopkinsICARUS/ICARUS-DC-Dataset..",
+  "provider": "Johns Hopkins ICARUS Research Initiative and Johns Hopkins Applied Physics Laboratory",
+  "related_ids": [
+    "case_study-jlarc-data-centers-in-virginia-2024",
+    "data-electric-choice-us-data-center-tracker"
+  ],
+  "sectors": [
+    "digital.data_centres",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/HopkinsICARUS/ICARUS-DC-Dataset/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/HopkinsICARUS/ICARUS-DC-Dataset"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Data CC BY 4.0 and software MIT are stated separately.",
+      "url": "https://github.com/HopkinsICARUS/ICARUS-DC-Dataset/blob/main/LICENSE"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Facility schema and units. Source-method section contains an unfinished placeholder.",
+      "url": "https://github.com/HopkinsICARUS/ICARUS-DC-Dataset/blob/main/raw_data/raw_data.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Documents imputation assumptions and generation of output CSVs.",
+      "url": "https://github.com/HopkinsICARUS/ICARUS-DC-Dataset/blob/main/data/imputed_data_center_dataset/imputation_process.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Complete tree lists raw_data/data_centers/DCS_Full.csv, DCS_New_York.csv and DCS_PJM.csv. Cleaned/imputed outputs are absent from this public tree.",
+      "url": "https://api.github.com/repos/HopkinsICARUS/ICARUS-DC-Dataset/git/trees/main?recursive=1"
+    }
+  ],
+  "spatial_resolution": "Facility records with city/state and regional subsets for PJM and New York.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Repository citation and documentation dated 2025; individual observation dates not established.",
+  "temporal_resolution": "Static facility attributes; no published demand time series verified.",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "ICARUS Data Center Dataset (ICARUS-DC)",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

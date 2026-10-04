@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Event filter service (JSON)",
+      "url": "https://deprem.afad.gov.tr/apiv2/event/filter?start=2026-09-20T00:00:00&end=2026-09-26T00:00:00"
+    },
+    {
+      "kind": "portal",
+      "label": "Latest earthquakes (AFAD)",
+      "url": "https://deprem.afad.gov.tr/last-earthquakes.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Disaster statistics (AFAD)",
+      "url": "https://www.afad.gov.tr/afet-istatistikleri"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia",
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "TR"
+  ],
+  "data_family": [
+    "historical_events",
+    "hazards",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "event_record",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "afad earthquake catalogue and event service for turkiye",
+    "url": "https://deprem.afad.gov.tr/last-earthquakes.html"
+  },
+  "description": "AFAD, Türkiye's disaster and emergency management authority, publishes the national earthquake catalogue from its seismic network: a live list of the latest 100 earthquakes and a filterable event service that returns, for each event, time, latitude, longitude, depth, magnitude type and value, and the province, district and neighbourhood, with records back to at least 1990. AFAD also publishes yearly one-page statistics of nature-caused events compiled from its disaster management decision support system (AYDES); the 2024 summary counts 7,767 events, including 5,321 forest fires, 1,818 floods, 332 landslides and 194 earthquakes of magnitude 4 or more. The data are available free on the AFAD websites; no licence is named on the pages read. Caveats: the event service is undocumented and magnitude types vary over time, and the yearly statistics are counts only. It supports hazard catalogues for seismic scenario and exposure analysis of Turkish infrastructure; a related record is the USGS ComCat earthquake catalogue.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "AFAD earthquake event list and statistics (handed over from another piece)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "json",
+    "web_page",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "earthquake",
+    "wildfire",
+    "flood",
+    "landslide"
+  ],
+  "homepage": "https://deprem.afad.gov.tr/last-earthquakes.html",
+  "id": "data-afad-turkiye-earthquake-catalogue",
+  "languages": [
+    "tr"
+  ],
+  "licence": "not stated (AFAD websites)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "AFAD earthquake catalogue and event service for Türkiye",
+  "provider": "Afet ve Acil Durum Yönetimi Başkanlığı (AFAD, Disaster and Emergency Management Presidency), Türkiye",
+  "related_ids": [
+    "data-usgs-comcat-earthquake-catalog"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "last 100 earthquakes; date, lat, lon, depth, type, magnitude, place, event id",
+      "url": "https://deprem.afad.gov.tr/last-earthquakes.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "JSON events 1990 with province, district, neighborhood fields",
+      "url": "https://deprem.afad.gov.tr/apiv2/event/filter?start=1990-01-01T00:00:00&end=1990-12-31T00:00:00&minmag=5"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "2024 nature-caused event statistics dated 10.10.2025 from AYDES; total 7,767; forest fire 5,321; flood 1,818; landslide 332; earthquake 194 (M>4); avalanche/snow 83; mine accident 19",
+      "url": "https://www.afad.gov.tr/kurumlar/afad.gov.tr/e_Kutuphane/Istatistikler/2024-Yili-Doga-Kaynakli-Olay-Istatistikleri.pdf"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://deprem.afad.gov.tr/last-earthquakes.html"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://servisnet.afad.gov.tr/apigateway/deprem/apiv2/event/filter?start=2026-09-20T00:00:00&end=2026-09-26T00:00:00"
+    }
+  ],
+  "tags": [
+    "earthquake catalogue",
+    "Türkiye",
+    "AFAD",
+    "disaster statistics",
+    "seismic network"
+  ],
+  "temporal_coverage": "catalogue from at least 1990 to present; yearly statistics 2020 and 2022-2024",
+  "title_en": "AFAD earthquake catalogue and event service for Türkiye",
+  "type": "data",
+  "update_frequency": "real_time"
+}

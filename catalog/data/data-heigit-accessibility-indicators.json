@@ -1,0 +1,139 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "KEN_education_access.gpkg (Geopackage / 416.9 MB)",
+      "note": "Direct link from the the portal's CKAN API, 2026-10-01; first 4 of 9 files",
+      "url": "https://hot.storage.heigit.org/heigit-hdx-public/access/ken/KEN_education_access.gpkg"
+    },
+    {
+      "kind": "download",
+      "label": "KEN_education_access_long.csv (CSV / 663.4 kB)",
+      "note": "Direct link from the the portal's CKAN API, 2026-10-01; first 4 of 9 files",
+      "url": "https://hot.storage.heigit.org/heigit-hdx-public/access/ken/KEN_education_access_long.csv"
+    },
+    {
+      "kind": "download",
+      "label": "KEN_education_access_wide.csv (CSV / 375.9 kB)",
+      "note": "Direct link from the the portal's CKAN API, 2026-10-01; first 4 of 9 files",
+      "url": "https://hot.storage.heigit.org/heigit-hdx-public/access/ken/KEN_education_access_wide.csv"
+    },
+    {
+      "kind": "download",
+      "label": "KEN_hospitals_access.gpkg (Geopackage / 139.4 MB)",
+      "note": "Direct link from the the portal's CKAN API, 2026-10-01; first 4 of 9 files",
+      "url": "https://hot.storage.heigit.org/heigit-hdx-public/access/ken/KEN_hospitals_access.gpkg"
+    },
+    {
+      "kind": "portal",
+      "label": "HeiGIT organisation page on HDX (one data set per country)",
+      "url": "https://data.humdata.org/organization/heidelberg-institute-for-geoinformation-technology"
+    },
+    {
+      "kind": "portal",
+      "label": "Example: Kenya Accessibility Indicators",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.humdata.org/dataset/kenya-accessibility-indicators"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "critical_facilities",
+    "social_vulnerability_equity",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "heigit accessibility indicators population within travel time of hospitals and distance of schools 195 countries hdx",
+    "url": "https://data.humdata.org/organization/heidelberg-institute-for-geoinformation-technology"
+  },
+  "description": "This series gives, for 195 countries, how many people live within given driving times of a hospital and given distances of a school, summarised by administrative area. The producer is HeiGIT, the Heidelberg Institute for Geoinformation Technology, which publishes one data set per country on the Humanitarian Data Exchange. Coverage is global, at country level and, where boundaries exist, down to the fourth administrative level. Travel-time isochrones by car are computed with openrouteservice on OpenStreetMap roads from OpenStreetMap hospitals and overlaid on WorldPop 100 m population, giving population counts in bands from 10 to 120 minutes for hospitals and 5 to 50 km for schools. The files are available as free downloads in GeoPackage and CSV, under a Creative Commons Attribution-ShareAlike licence, refreshed about every six months. Caveats: results depend on how completely OpenStreetMap maps roads and facilities, which varies strongly between countries, so access can be underestimated; only car travel is modelled; facility capacity and service level are ignored. Simulation uses: a baseline of access to hospitals before a disaster, checking which districts lose access when roads or hospitals fail, and prioritising where to add health capacity. Related records: the Malaria Atlas Project travel time maps (data-map-travel-time-to-healthcare) give gridded travel time, and healthsites.io (data-healthsites-io) is a facility source built on OpenStreetMap.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hospital accessibility",
+      "route": "R04",
+      "source": "hdx"
+    }
+  ],
+  "formats": [
+    "geopackage",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://data.humdata.org/dataset/kenya-accessibility-indicators",
+  "id": "data-heigit-accessibility-indicators",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-02-25",
+  "licence": "CC BY-SA",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "HeiGIT Accessibility Indicators: population within travel time of hospitals and distance of schools (195 countries, HDX)",
+  "provider": "HeiGIT (Heidelberg Institute for Geoinformation Technology)",
+  "related_ids": [
+    "data-map-travel-time-to-healthcare",
+    "data-healthsites-io"
+  ],
+  "schema_summary": "Per administrative unit (country and, where available, ADM1 to ADM4): name, ISO3, id, admin level, category (hospitals or education), and population counts and shares within car travel-time bands of 10 to 120 minutes to hospitals and within 5 to 50 km of schools; GeoPackage with unit geometries and CSV in long and wide layouts",
+  "sectors": [
+    "services.healthcare",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "HeiGIT; CC BY-SA; created with openrouteservice and OpenStreetMap; car isochrones overlaid on WorldPop 100 m; 10 to 120 minutes to hospitals, 5 to 50 km to schools; geoboundaries units with ADM1 to ADM4; data structure; caveats on OSM completeness and population estimates; update every 180 days; GeoPackage and CSV resources",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=kenya-accessibility-indicators"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "804 HeiGIT data sets on HDX, of which 195 titled Accessibility Indicators and 135 Risk Assessment Indicators",
+      "url": "https://data.humdata.org/api/3/action/package_search?fq=organization:heidelberg-institute-for-geoinformation-technology&rows=1000&fl=title,name"
+    }
+  ],
+  "spatial_resolution": "Administrative units (ADM0 to ADM4)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "accessibility",
+    "travel time",
+    "hospitals",
+    "openrouteservice",
+    "OpenStreetMap",
+    "WorldPop",
+    "isochrones"
+  ],
+  "temporal_coverage": "Current OpenStreetMap and WorldPop at processing (country files dated 2026)",
+  "temporal_resolution": "Snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "HeiGIT Accessibility Indicators: population within travel time of hospitals and distance of schools (195 countries, HDX)",
+  "type": "data",
+  "update_frequency": "several_per_year"
+}

@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Stable input data sets (Zenodo v0.2.0)",
+      "url": "https://doi.org/10.5281/zenodo.20843067"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/modelblocks-org/module_powerplants"
+    },
+    {
+      "kind": "docs",
+      "label": "Modelblocks documentation",
+      "url": "https://modelblocks.readthedocs.io/en/latest/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "modelblocks module powerplants global power plant capacity workflow",
+    "repo": "github.com/modelblocks-org/module_powerplants",
+    "url": "https://github.com/modelblocks-org/module_powerplants"
+  },
+  "description": "module_powerplants is an open data workflow that estimates power plant capacities for any region of the world at any resolution, for use in energy system models. It is a modular Snakemake workflow from the Modelblocks project, developed by Ivan Ruiz Manuel and Stefan Pfenninger, with tagged releases up to v0.1.2 and a companion Zenodo deposit of stable input data sets (version 0.2.0, June 2026). The workflow downloads version-controlled global data from the Global Energy Monitor trackers, the TransitionZero Solar Asset Mapper, GloHydroRES and national EIA statistics, sorts plants into bioenergy, fossil, geothermal, hydropower, nuclear, large solar and wind categories, matches satellite-detected solar farms to tracker records, selects plants inside a user shapefile, and completes start and end dates. Coverage is global. The code is accessible on GitHub under the Apache 2.0 licence at no cost; the archived inputs carry their sources' licences, including CC BY 4.0 and CC BY-NC 4.0 parts. Caveats: results inherit gaps in the source trackers, and a Snakemake setup is needed. Simulation uses are building existing capacity inputs for capacity expansion and dispatch models. Related records: data-global-power-plant-database is another global plant list.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid asset condition",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/modelblocks-org/module_powerplants",
+  "id": "model-modelblocks-powerplants-module",
+  "inputs": [
+    "Global Energy Monitor power plant trackers",
+    "TransitionZero Solar Asset Mapper",
+    "GloHydroRES hydropower data",
+    "EIA international statistics",
+    "user shapefile of regions"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-07",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Modelblocks module_powerplants - global power plant capacity workflow",
+  "outputs": [
+    "power plant capacities per technology for user regions"
+  ],
+  "provider": "Modelblocks project (Ivan Ruiz Manuel, Stefan Pfenninger)",
+  "related_ids": [
+    "data-global-power-plant-database"
+  ],
+  "repository": "https://github.com/modelblocks-org/module_powerplants",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity",
+    "energy.nuclear"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, Snakemake module, data sources, technology categories, solar matching, shapefile selection",
+      "url": "https://raw.githubusercontent.com/modelblocks-org/module_powerplants/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Apache License 2.0; CITATION.cff authors; tags v0.1.0 to v0.1.2",
+      "url": "https://raw.githubusercontent.com/modelblocks-org/module_powerplants/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Input data deposit v0.2.0 issued 2026-06-25; creators Ruiz Manuel and Pfenninger; source licences",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.20843067"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Head commit 2026-08-07",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/modelblocks-org/module_powerplants/visit/latest/"
+    }
+  ],
+  "tags": [
+    "Modelblocks",
+    "Snakemake",
+    "power plants",
+    "Global Energy Monitor",
+    "capacity",
+    "energy system models"
+  ],
+  "title_en": "Modelblocks module: powerplants - global power plant capacity workflow",
+  "type": "model",
+  "validated_on": []
+}

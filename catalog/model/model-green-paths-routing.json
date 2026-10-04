@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/DigitalGeographyLab/green-path-server"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://openresearchsoftware.metajnl.com/articles/10.5334/jors.400"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.5334/jors.400",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "green paths routing server",
+    "url": "https://github.com/digitalgeographylab/green-path-server"
+  },
+  "description": "Green Paths is a Python routing service developed by the University of Helsinki Digital Geography Lab. It computes walking and cycling routes that account for air pollution, noise or greenery as well as travel distance. Inputs include a GraphML street graph and environmental attributes; the public example covers the Helsinki metropolitan area and links hourly air-quality inputs. The service exposes routing requests through a web API and returns spatial route results. Users can build networks for other regions, with coverage and detail set by OpenStreetMap and the available environmental layers. The server code is free under MIT, while source datasets retain their own terms. It can support active-mobility planning and comparisons of travel exposure, alongside conventional shortest-path models. A limitation is that the README describes a proof of concept, not a production service, and transferring regions requires custom data preparation. No server was started, environmental files downloaded or route estimates independently checked.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "JORS whole-index enumeration; 10.5334/jors.400; G5-LOCAL-018;G5-LOCAL-081",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/DigitalGeographyLab/green-path-server",
+  "id": "model-green-paths-routing",
+  "inputs": [
+    "OpenStreetMap-derived GraphML network",
+    "Noise, air-quality and greenery attributes",
+    "Walking or cycling origin and destination"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-09-03",
+  "licence": "MIT (server code; input data retain separate terms)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network"
+  ],
+  "name": "Green Paths route planning software",
+  "notes": "G5 G5-0029. Software checked through metadata and documentation, without installation or execution. Geographic scope follows the documented application or software portability; it does not imply validation throughout that area. Refreshed 2026-09-28; repeat check G5-0206 is a duplicate. ",
+  "outputs": [
+    "Exposure-sensitive routes and travel-time exposure summaries"
+  ],
+  "provider": "Digital Geography Lab, University of Helsinki",
+  "related_ids": [],
+  "repository": "https://github.com/DigitalGeographyLab/green-path-server",
+  "sectors": [
+    "transport.active_mobility",
+    "built_environment.public_space",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Abstract and published code availability/reference read.",
+      "url": "https://openresearchsoftware.metajnl.com/articles/10.5334/jors.400"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository identity and metadata.",
+      "url": "https://api.github.com/repos/DigitalGeographyLab/green-path-server"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own documented inputs, purpose, output and reuse constraints.",
+      "url": "https://github.com/DigitalGeographyLab/green-path-server/blob/master/README.md"
+    }
+  ],
+  "tags": [
+    "research software",
+    "JORS"
+  ],
+  "title_en": "Python routing service for walking and cycling routes with environmental considerations",
+  "type": "model"
+}

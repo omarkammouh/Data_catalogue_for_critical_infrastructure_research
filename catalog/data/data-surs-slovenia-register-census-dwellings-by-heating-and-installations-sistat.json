@@ -1,0 +1,147 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "SiStat PxWeb API (table list and POST queries, CSV or JSON)",
+      "url": "https://pxweb.stat.si/SiStatData/api/v1/en/Data"
+    },
+    {
+      "kind": "portal",
+      "label": "SiStat table 0861140S dwellings and occupants by municipality and installations",
+      "url": "https://pxweb.stat.si/SiStatData/pxweb/en/Data/-/0861140S.px/"
+    },
+    {
+      "kind": "portal",
+      "label": "SiStat table 0861120S dwellings by municipality and type of heating",
+      "url": "https://pxweb.stat.si/SiStatData/pxweb/en/Data/-/0861120S.px/"
+    },
+    {
+      "kind": "portal",
+      "label": "SiStat table 0871205S dwellings by settlement and type of heating",
+      "url": "https://pxweb.stat.si/SiStatData/pxweb/en/Data/-/0871205S.px/"
+    },
+    {
+      "kind": "docs",
+      "label": "SURS copyright and terms of reuse",
+      "url": "https://www.stat.si/StatWeb/en/StaticPages/Index/Copyright"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "SI"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "statistical office of slovenia register based census sistat tables of dwellings by type of heating and by missing water electricity central heating and public sewer connection by municipality and settlement 2011 to 2021",
+    "url": "https://pxweb.stat.si/SiStatData/pxweb/en/Data/-/0861140S.px"
+  },
+  "description": "The Statistical Office of the Republic of Slovenia (SURS) publishes results of its register-based population and housing censuses in the SiStat database. Several tables are directly useful for utility networks: dwellings and occupants by municipality with counts of dwellings without central heating, without water, without electricity and without connection to a public sewage system; dwellings and useful floor space by type of heating, separating dwellings connected to a community heating centre from individual central heating, other heating and no heating; and a settlement-level table of dwellings by heating. Coverage is national for 2011, 2015, 2018 and 2021; on 1 January 2021 Slovenia had 864,323 dwellings, of which 120,625 were connected to a community heating centre, 359,106 had no public sewer connection and 15,297 had no water installation. Format and access: free PxWeb tables with CSV, XLSX and PX export and an open API that answers POST queries. Licence: SURS data may be reused for any purpose, including commercial, if SURS is acknowledged as the source. Caveats: the census is compiled from registers, not a field enumeration, and the settlement table merges heating types into two groups. Simulation uses: sizing district heating and sewer extensions by municipality or settlement and locating dwellings off the public networks. Related records: the Croatia census 2021 housing installations and the Serbia census 2022 dwelling installations.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:SI:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "analysis_package_file",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://pxweb.stat.si/SiStatData/pxweb/en/Data/-/0861140S.px/",
+  "id": "data-surs-slovenia-register-census-dwellings-by-heating-and-installations-sistat",
+  "languages": [
+    "sl",
+    "en"
+  ],
+  "licence": "free reuse including commercial with SURS acknowledged as source (SURS copyright statement)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Statistical Office of Slovenia register-based census SiStat tables of dwellings by type of heating and by missing water, electricity, central heating and public sewer connection, by municipality and settlement, 2011 to 2021",
+  "provider": "Statistical Office of the Republic of Slovenia (SURS)",
+  "related_ids": [
+    "data-dzs-croatia-census-2021-housing-units-and-installations-by-municipality",
+    "data-sors-serbia-census-2022-dwelling-installations-and-buildings-by-municipality"
+  ],
+  "schema_summary": "Table 0861140S: municipality x occupancy status (total, occupied, unoccupied conventional dwellings) x year x measure (dwellings total; without central heating; without water; without electricity; without connection to a public sewage system; and the same five counts for occupants). Table 0861120S: municipality x occupancy status x type of heating (connected to a community heating centre, central heating, other, none) x year x dwellings and useful floor space m2. Table 0871205S: settlement x heating (central or community, other or none) x year x dwellings and floor space",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "energy.electricity",
+    "energy.district_heating_cooling",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: full table list (4,815 tables), dwelling and census tables identified",
+      "url": "https://pxweb.stat.si/SiStatData/api/v1/en/Data"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: metadata and 2021 Slovenia totals by POST query",
+      "url": "https://pxweb.stat.si/SiStatData/api/v1/en/Data/0861140S.px"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: metadata and 2021 Slovenia totals by heating type",
+      "url": "https://pxweb.stat.si/SiStatData/api/v1/en/Data/0861120S.px"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: metadata, 6,252 settlement rows",
+      "url": "https://pxweb.stat.si/SiStatData/api/v1/en/Data/0871205S.px"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: reuse terms",
+      "url": "https://www.stat.si/StatWeb/en/StaticPages/Index/Copyright"
+    }
+  ],
+  "spatial_resolution": "Slovenia, statistical regions, 212 municipalities; heating also by settlement (about 6,000 settlements)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "Slovenia",
+    "register-based census",
+    "district heating",
+    "sewer connection",
+    "municipality",
+    "settlement",
+    "PxWeb"
+  ],
+  "temporal_coverage": "register-based censuses 2011, 2015, 2018 and 2021 (as of 1 January)",
+  "temporal_coverage_years": {
+    "end": 2021,
+    "start": 2011
+  },
+  "temporal_resolution": "census years 2011, 2015, 2018, 2021",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "Statistical Office of Slovenia register-based census SiStat tables of dwellings by type of heating and by missing water, electricity, central heating and public sewer connection, by municipality and settlement, 2011 to 2021",
+  "type": "data"
+}

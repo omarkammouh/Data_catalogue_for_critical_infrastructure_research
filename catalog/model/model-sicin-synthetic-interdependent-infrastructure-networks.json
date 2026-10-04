@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Code and data repository",
+      "url": "https://github.com/YuWVandy/Infrastructure-network-simulation"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper preprint (arXiv 2111.12742)",
+      "note": "Published in IEEE Systems Journal, doi 10.1109/JSYST.2021.3126308",
+      "url": "https://arxiv.org/abs/2111.12742"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america",
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "US",
+    "CN"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "sicin synthetic interdependent critical infrastructure networks generator",
+    "url": "https://github.com/YuWVandy/Infrastructure-network-simulation"
+  },
+  "description": "SICIN generates synthetic systems of interdependent gas, power and water networks as test cases for vulnerability and restoration studies when real network data are confidential. It places facilities with a modified simulated annealing algorithm, links them with degree sequences learned from real networks, creates interdependent links, and initialises flows with a non-linear optimisation solved by IPOPT. Yu Wang, Jin-Zhu Yu and Hiba Baroud of Vanderbilt University developed it and published it in the IEEE Systems Journal in 2021, benchmarking against the real Shelby County, Tennessee networks and a system in Xiamen; SICIN's networks came closest to the real ones on most topology metrics over 300 realisations. Coverage is any area with tract population data. Format and access: Python scripts for topology and Julia for flow optimisation on a public code repository with the data used. Licence: no licence file found; free to read. Caveats: without a licence reuse terms are unclear, and the repository is not maintained as a package. It supports network flow, cascading failure and restoration testbeds. Related catalogue records are the I2Sim simulator and the IN-CORE interdependency functionality.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "synthetic city testbed interdependent infrastructure benchmark dataset power water gas networks virtual city",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/YuWVandy/Infrastructure-network-simulation",
+  "id": "model-sicin-synthetic-interdependent-infrastructure-networks",
+  "inputs": [
+    "Study area bounds",
+    "Census tract population",
+    "Facility counts and degree sequences",
+    "Flow parameters"
+  ],
+  "language": [
+    "julia"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-09-11",
+  "licence": "No licence file in the repository (LICENSE not found)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network",
+    "optimisation"
+  ],
+  "name": "SICIN: Synthetic Interdependent Critical Infrastructure Networks generator",
+  "outputs": [
+    "Synthetic gas, power and water networks with interdependent links",
+    "Optimised network flows"
+  ],
+  "provider": "Vanderbilt University (Yu Wang, Jin-Zhu Yu, Hiba Baroud)",
+  "regions": [
+    "Shelby County, Tennessee",
+    "Xiamen (synthetic test)"
+  ],
+  "related_ids": [
+    "model-i2sim-infrastructure-interdependencies-simulator",
+    "model-in-core-network-cascading-interdependency-functionality"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "energy.gas_hydrogen",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Paper: method, Shelby County and Xiamen benchmarks, code link",
+      "url": "https://arxiv.org/pdf/2111.12742"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "README: framework, inputs, scripts; LICENSE file returned 404",
+      "url": "https://raw.githubusercontent.com/YuWVandy/Infrastructure-network-simulation/HEAD/README.md"
+    }
+  ],
+  "tags": [
+    "synthetic networks",
+    "interdependent infrastructure",
+    "testbeds"
+  ],
+  "title_en": "SICIN: Synthetic Interdependent Critical Infrastructure Networks generator",
+  "type": "model"
+}

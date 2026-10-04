@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "National CSV endpoint",
+      "url": "https://apps.usfa.fema.gov/registry/api/download/national"
+    },
+    {
+      "kind": "api",
+      "label": "Station CSV endpoint",
+      "url": "https://apps.usfa.fema.gov/registry/api/download/station"
+    },
+    {
+      "kind": "portal",
+      "label": "Download departments (national, state and station CSV)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://apps.usfa.fema.gov/registry/download"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "system_description",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usfa national fire department registry",
+    "url": "https://apps.usfa.fema.gov/registry"
+  },
+  "description": "The National Fire Department Registry is the U.S. Fire Administration's list of fire departments in the United States, compiled from departments that register themselves. Each entry gives the Fire Department Identifier (FDID), name, headquarters and mailing address, county, department type (career, combination or volunteer), organisation type, number of stations, counts of active career, volunteer and paid-per-call firefighters and of non-firefighting staff, and whether the department is the primary emergency management agency; a station file lists every station address. The producer is the U.S. Fire Administration, part of FEMA. Coverage is national, about 27,000 department rows in the national file read today. Files are CSV, downloadable nationally or by state from the registry web application without registration; no licence is stated, as a federal work. Caveats: registration is voluntary, so some departments are missing or out of date; station addresses are not geocoded; staffing counts are self-reported. Simulation uses: an inventory of fire and rescue capacity for coverage and response-time models, location-allocation of stations, and surge planning when stations sit in hazard zones. Related records: HIFLD Open (data-hifld-open) carries geocoded fire and EMS station layers, and NFIRS (data-usfa-nfirs-public-data-release) uses the same FDID keys.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "USFA National Fire Department Registry download",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://apps.usfa.fema.gov/registry/",
+  "id": "data-usfa-national-fire-department-registry",
+  "languages": [
+    "en"
+  ],
+  "licence": "U.S. federal government work (no licence stated; public domain inferred)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "USFA National Fire Department Registry",
+  "provider": "U.S. Fire Administration (USFA), FEMA",
+  "related_ids": [
+    "data-hifld-open",
+    "data-usfa-nfirs-public-data-release"
+  ],
+  "schema_summary": "Per department: FDID, name, headquarters and mailing address, county, department type (career, combination, volunteer), organisation type, website, number of stations, active career, volunteer and paid-per-call firefighters, non-firefighting staff, primary agency for emergency management; station file adds station name and address",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Download page: comma-separated file of U.S. fire departments listed in the registry, national, per state and station files",
+      "url": "https://apps.usfa.fema.gov/registry/download"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Header and first rows read to confirm fields; about 27,000 lines",
+      "url": "https://apps.usfa.fema.gov/registry/api/download/national"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://apps.usfa.fema.gov/registry/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://apps.usfa.fema.gov/registry/download"
+    }
+  ],
+  "spatial_resolution": "Fire department and station address",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "fire departments",
+    "fire stations",
+    "firefighters",
+    "volunteer",
+    "registry",
+    "FDID"
+  ],
+  "temporal_coverage": "Current registry snapshot",
+  "temporal_resolution": "Snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "USFA National Fire Department Registry",
+  "type": "data",
+  "update_frequency": "real_time"
+}

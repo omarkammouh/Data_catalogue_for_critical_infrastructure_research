@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "AUSPOS page",
+      "url": "https://www.ga.gov.au/scientific-topics/positioning-navigation/geodesy/auspos"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "oceania",
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "auspos geoscience australia online gps processing service",
+    "url": "https://ga.gov.au/scientific-topics/positioning-navigation/geodesy/auspos"
+  },
+  "deployment": [
+    "hosted_service"
+  ],
+  "description": "AUSPOS is a free online GPS data processing service run by Geoscience Australia. Users submit dual-frequency geodetic-quality GPS observations recorded in static mode, as RINEX version 2, 3 or 4 files with L1 and L2 carrier phase and pseudorange, together with the antenna type and height; files need at least one hour of data, six hours or more are recommended for centimetre-level accuracy, and data from the current UTC day cannot be processed until after 03:00 UTC the next day. The service computes a network solution with a double-difference strategy using about 15 of the nearest reference stations of the International GNSS Service and the Asia-Pacific Reference Frame, and emails a report, usually within ten minutes, with coordinates in GDA2020, GDA94 and ITRF2020, derived Australian Height Datum heights and quality statistics. Version 3.0, introduced on 13 August 2024, aligned results with ITRF2020 and IGS20 products. Coverage: worldwide in principle, best where reference stations are dense, especially Australia and the Asia-Pacific. Format and access: web submission, free. Caveats: GPS only; a comparison study found that it occasionally reports very large standard deviations for poor solutions. Simulation uses: precise positioning of assets and survey marks for digital twins and hazard maps in Australia and the region. Related records: OPUS and CSRS-PPP are the US and Canadian services, and SouthPAN is Australia's augmentation system.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "online GNSS post-processing service PPP CSRS-PPP AUSPOS OPUS cloud positioning service free",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.ga.gov.au/scientific-topics/positioning-navigation/geodesy/auspos",
+  "hosted_models": [
+    "double-difference network solution"
+  ],
+  "id": "platform-auspos",
+  "interfaces": [
+    "web_app",
+    "other"
+  ],
+  "interoperability": [
+    "RINEX 2, 3 and 4",
+    "IGS and APREF stations",
+    "GDA2020 and ITRF2020"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-08-13",
+  "licence": "Australian Government service; free",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "AUSPOS: Geoscience Australia online GPS processing service",
+  "notes": "Service page read via fetch on 2026-09-26 (curl returned no response from ga.gov.au). The occasional large standard deviations come from the NOAA-hosted comparison study.",
+  "open_source": false,
+  "platform_kind": [
+    "cloud_service"
+  ],
+  "provider": "Geoscience Australia",
+  "related_ids": [],
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "service description",
+      "url": "https://www.ga.gov.au/scientific-topics/positioning-navigation/geodesy/auspos"
+    }
+  ],
+  "supported_sectors": [
+    "digital.satellite_positioning"
+  ],
+  "tags": [
+    "GNSS post-processing",
+    "geodesy",
+    "GDA2020",
+    "Australia",
+    "surveying"
+  ],
+  "title_en": "AUSPOS: Geoscience Australia online GPS processing service",
+  "type": "platform"
+}

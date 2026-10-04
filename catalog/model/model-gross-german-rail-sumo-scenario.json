@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/ethz-coss/GROSS"
+    },
+    {
+      "kind": "paper",
+      "label": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2606.03282"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gross german rail open source sumo scenario pipeline",
+    "url": "https://github.com/ethz-coss/GROSS"
+  },
+  "description": "GROSS is an open pipeline that builds rail traffic simulation scenarios for the SUMO microscopic simulator from OpenStreetMap railway infrastructure and GTFS timetables, up to the scale of all of Germany. A seven-stage shell pipeline prepares OSM and GTFS data, parses them with C++ tools, builds the SUMO network with netconvert, maps GTFS stops to the network with a topology-aware hierarchical station model, routes trains with validation and repair, assembles trips and runs the simulation. It was presented by Juri Penell and Damian Dailisan in an arXiv preprint of June 2026 for the SUMO Conference 2026. Coverage is Germany and its regions, and other Geofabrik countries can be passed. Licence: not stated for the resource; the describing article is CC-BY-4.0. Access is free of charge. Caveats: timetable metadata and dispatching are simplified, long delays remain, and a Germany-wide run needs significant computing resources. The paper reports 1.7 to 76.8 times fewer teleports per vehicle than the vanilla SUMO pipeline and a Germany-wide scenario with 35,925 trips compared with operator delay statistics. It supports network-wide delay propagation, disruption scenarios and digital twins of rail operations. It complements Eclipse SUMO and is related to the Deutsche Bahn open data and APIs.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "German rail SUMO scenario open source",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/ethz-coss/GROSS",
+  "id": "model-gross-german-rail-sumo-scenario",
+  "inputs": [
+    "OpenStreetMap railway data",
+    "GTFS timetables"
+  ],
+  "language": [
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06",
+  "licence": "not stated for the resource; the describing article is CC-BY-4.0",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "network"
+  ],
+  "name": "GROSS, German Rail Open-Source SUMO Scenario pipeline",
+  "outputs": [
+    "SUMO rail network",
+    "train routes and trips",
+    "simulated delays"
+  ],
+  "provider": "ETH Zurich Computational Social Science (Juri Penell, Damian Dailisan)",
+  "related_ids": [
+    "model-sumo",
+    "data-deutsche-bahn-open-data-and-apis"
+  ],
+  "runs_on": [
+    "Linux",
+    "Docker"
+  ],
+  "sectors": [
+    "transport.rail",
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "submitted 2 June 2026; OSM plus GTFS nation-scale rail scenarios for SUMO; topology-aware stop mapping; teleports reduced 1.7-76.8x; Germany-wide 35,925 trips vs operator delay statistics; limitations timetable metadata and dispatch",
+      "url": "https://arxiv.org/abs/2606.03282"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "7-stage pipeline (prepare, parse C++, netconvert, match, route, assemble, simulate); Linux; run.sh with Docker; country and region options (Geofabrik); SUMO Conference 2026 citation; LICENSE file returns 404",
+      "url": "https://raw.githubusercontent.com/ethz-coss/GROSS/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated for the resource; the describing article is CC-BY-4.0 (basis: article licence link on the provider page)",
+      "url": "https://github.com/ethz-coss/GROSS/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://arxiv.org/abs/2606.03282"
+    }
+  ],
+  "tags": [
+    "SUMO",
+    "rail simulation",
+    "GTFS",
+    "OpenStreetMap",
+    "Germany",
+    "delay propagation"
+  ],
+  "title_en": "GROSS, German Rail Open-Source SUMO Scenario pipeline",
+  "type": "model",
+  "validated_on": [
+    "operator-reported delay statistics for Germany"
+  ]
+}

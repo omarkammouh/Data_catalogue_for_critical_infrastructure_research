@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2603.13803"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "altis sentinel 1 sar pipeline for property level flood damage triage",
+    "url": "https://arxiv.org/abs/2603.13803"
+  },
+  "description": "ALTIS, Automated Loss Triage and Impact Scoring, is a five-stage pipeline that turns Sentinel-1 radar imagery into property-level flood impact scores within 24 to 48 hours of the flood peak, aimed at insurance claims triage. Stages: multi-temporal SAR change detection using dual-polarisation intensity and InSAR coherence; physics-informed flood depth estimation that fuses flood extent with high-resolution elevation data; property-level zonal statistics from parcel footprints; depth-damage calibration against National Flood Insurance Program claims, with default Hazus parameters when claims are not yet available; and confidence-scored ranking. The authors define Insurance-Grade Flood Triage and two metrics, the Inspection Reduction Rate and Triage Efficiency Score. Using Hurricane Harvey (2017) in Harris County, Texas, they report preliminary results suggesting an inspection reduction rate of about 0.52 at 90% recall of high-severity claims. The preprint is marked preliminary, with full end-to-end validation ongoing. Access: paper only (CC BY 4.0); no code link found. Inputs come from open sources: Sentinel-1, OpenFEMA claims, USGS high-water marks and county parcel data. It builds on the Hazus method in the catalogue, and serves exposure and emergency response planning.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "depth-damage functions buildings flood damage database open residential commercial vulnerability curves",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://arxiv.org/abs/2603.13803",
+  "id": "model-altis-sentinel-1-property-flood-damage-triage",
+  "inputs": [
+    "Sentinel-1 GRD and SLC radar imagery, high-resolution DEMs, parcel footprints, NFIP claims for calibration (Hazus default parameters otherwise)"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-14",
+  "licence": "CC-BY-4.0 (the paper, as linked on its arXiv abstract page)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "fragility",
+    "hybrid"
+  ],
+  "name": "ALTIS: Sentinel-1 SAR pipeline for property-level flood damage triage",
+  "outputs": [
+    "Ranked, confidence-scored list of properties by flood impact for claims triage within 24 to 48 hours of the flood peak"
+  ],
+  "provider": "Amogh Vinaykumar and Prem Kamasani (paper authors)",
+  "regions": [
+    "Harris County, Texas"
+  ],
+  "related_ids": [
+    "model-hazus-flood-assessment-structure-tool-fast"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "arXiv 2603.13803 v1: five stages, Hurricane Harvey Harris County, IRR 0.52 at 90% recall, preliminary results, comment 27 pages; PDF: data sources OpenFEMA NFIP, USGS STN, Harris County parcels, Hazus default parameters",
+      "url": "https://arxiv.org/abs/2603.13803"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "licence re-check at wave 2 integration: licence read on the provider page",
+      "url": "https://arxiv.org/abs/2603.13803"
+    }
+  ],
+  "tags": [
+    "SAR",
+    "flood insurance",
+    "claims triage",
+    "depth-damage",
+    "Hurricane Harvey",
+    "r2-fresh-built-environment"
+  ],
+  "title_en": "ALTIS: Sentinel-1 SAR pipeline for property-level flood damage triage",
+  "type": "model"
+}

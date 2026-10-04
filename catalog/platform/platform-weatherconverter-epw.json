@@ -1,0 +1,93 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/jywang2016/weatherConverteR"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/jywang2016/weatherConverteR/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "weatherconverter epw weather preparation",
+    "repo": "github.com/jywang2016/weatherconverter",
+    "url": "https://github.com/jywang2016/weatherConverteR"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "weatherConverteR is an R workflow published by the jywang2016 maintainer for replacing weather and location information in EnergyPlus Weather files. It reuses read_epw and write_epw functions from an earlier eplusr version and calls CoolProp to calculate dew-point temperature. Users organise their own weather observations in R and write an EPW file for a building simulation. Geographic coverage, observation dates and measurement frequency therefore depend on the supplied weather series, with no fixed source dataset. Public R source and a short function-level README are free under MIT. A limitation is dependence on extracted functions from an old eplusr fork and a CoolProp DLL path; compatibility with current packages and platforms is not established by the README. The documentation explains the preparation chain but does not provide an independent quality assessment of the generated weather files. The resource supports local weather-input preparation for EnergyPlus (model-energyplus). It complements a simulation engine by translating user records, not producing a calibrated building model. No weather records or binary library were downloaded.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:energyplus fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/jywang2016/weatherConverteR",
+  "id": "platform-weatherconverter-epw",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "EPW",
+    "CoolProp",
+    "Legacy eplusr functions"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2018-04-18",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "weatherConverteR EPW weather preparation",
+  "notes": "G7 G7-0399. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "jywang2016 repository maintainers",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for jywang2016/weatherConverteR: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aenergyplus+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/jywang2016/weatherconverter/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for buildings",
+  "type": "platform"
+}

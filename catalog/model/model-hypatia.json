@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/snkas/hypatia"
+    },
+    {
+      "kind": "paper",
+      "label": "IMC 2020 paper",
+      "url": "https://doi.org/10.1145/3419394.3423635"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Kassing S., Bhattacherjee D., Águas A.B., Saethre J.E., Singla A. (2020) Exploring the 'Internet from space' with Hypatia. ACM Internet Measurement Conference.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1145/3419394.3423635",
+    "name": "hypatia leo satellite network simulation framework",
+    "repo": "github.com/snkas/hypatia",
+    "url": "https://github.com/snkas/hypatia"
+  },
+  "description": "Hypatia is a simulation framework for low-Earth-orbit satellite networks. It pre-calculates the network state over time, meaning satellite positions, inter-satellite and ground-to-satellite links and forwarding routes, then runs packet-level simulations of those time-varying networks in ns-3 and produces visualisations. Its components are satgenpy, a Python framework that generates LEO constellations such as Starlink, Kuiper and Telesat and their routing over time with analysis tools; ns3-sat-sim, the ns-3 based packet simulator; and satviz, which renders constellations and paths in 3D. It was developed at ETH Zurich and published at the ACM Internet Measurement Conference in 2020 by Kassing, Bhattacherjee, Águas, Saethre and Singla. Coverage: global constellations with ground stations placed at chosen cities, at time steps the user sets (typically 100 ms). Format and access: source on GitHub; satgenpy and satviz are MIT licensed and ns3-sat-sim is GPL-2.0, all free of charge. Caveats: research code with a single tagged release (v1) and limited maintenance; constellation parameters are public filings, not operator data; radio-layer effects are simplified. Simulation uses: network flow and capacity planning of satellite internet backbones, resilience to satellite or ground-station failures, and latency comparisons with terrestrial cables. Related records: builds on ns-3, SNS3 reuses its inter-satellite routing, and the TeleGeography submarine cable map gives the terrestrial counterpart.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for model:digital.satellite_positioning:network",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/snkas/hypatia",
+  "id": "model-hypatia",
+  "inputs": [
+    "constellation parameters (shells, inclination, altitude)",
+    "ground station list",
+    "traffic pairs"
+  ],
+  "language": [
+    "python",
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-10-10",
+  "licence": "GPL-2.0-only (ns3-sat-sim); MIT (satgenpy, satviz)",
+  "licence_type": [
+    "copyleft_code",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network"
+  ],
+  "name": "Hypatia LEO satellite network simulation framework",
+  "notes": "README, LICENSE and tags (v1) read on 2026-09-26. Paper authors and DOI from recall; check against the repository's citation section.",
+  "outputs": [
+    "time-varying topologies and routes",
+    "packet-level throughput and RTT",
+    "3D visualisations"
+  ],
+  "provider": "ETH Zurich (Simon Kassing and co-authors)",
+  "related_ids": [
+    "data-celestrak-gp-satcat",
+    "model-starperf",
+    "model-sns3",
+    "platform-esa-scne-satellite-constellation-network-emulator",
+    "platform-xeoverse-leo-mega-constellation-simulator"
+  ],
+  "repository": "https://github.com/snkas/hypatia",
+  "runs_on": [
+    "platform-ns-3"
+  ],
+  "sectors": [
+    "digital.satellite_positioning",
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README and LICENSE",
+      "url": "https://github.com/snkas/hypatia"
+    }
+  ],
+  "tags": [
+    "LEO",
+    "satellite networks",
+    "Starlink",
+    "ns-3",
+    "routing"
+  ],
+  "title_en": "Hypatia LEO satellite network simulation framework",
+  "type": "model",
+  "validated_on": []
+}

@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource",
+      "url": "https://github.com/GeeeHesso/PowerData"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-025-04479-x"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "powerdata grid time series generator",
+    "url": "https://github.com/GeeeHesso/PowerData"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "HES-SO Valais-Wallis publishes PowerData as a toolset for generating power-system time series for machine-learning and simulation studies. The repository combines a Python module for synthetic series based on historical inputs with a linked Julia temperate optimal-power-flow package. It supplies usage notebooks, a continental European grid model and examples restricted to individual countries. Coverage and duration follow the selected network and source series; the published demonstration generates hourly European profiles. Source is free on GitHub under MIT. The workflow can create load and dispatch scenarios for network simulations and exchange model data with model-powermodels-jl. A caveat is that statistical similarity to historical aggregates does not establish that every synthetic trajectory is a realised operating condition. Reproduction requires matching network, input and dispatch settings, and the Julia solver has its own dependencies. No generator, dispatch computation or notebook was executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G1-Q-TITLE-ENERGY-01; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/GeeeHesso/PowerData",
+  "id": "platform-powerdata-synthetic-grid-series",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "TemperateOptimalPowerFlow.jl",
+    "PowerModels JSON",
+    "CSV"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-30",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "PowerData grid time-series generator",
+  "notes": "G1 G1-0196. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-20.json. Related-resource uses are not tested interfaces. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool",
+    "modelling_suite"
+  ],
+  "provider": "HES-SO Valais-Wallis",
+  "related_ids": [
+    "model-powermodels-jl"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/GeeeHesso/PowerData"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/GeeeHesso/PowerData/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://zenodo.org/api/records/13378476"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-025-04479-x"
+    }
+  ],
+  "supported_sectors": [
+    "energy.electricity"
+  ],
+  "tags": [],
+  "title_en": "Toolset for generating power-system time series",
+  "type": "platform"
+}

@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Cartographic Boundary Files download page",
+      "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Cartographic Boundary File description",
+      "url": "https://www.census.gov/programs-surveys/geography/technical-documentation/naming-convention/cartographic-boundary-file.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "crs": "NAD83 geographic",
+  "data_family": [
+    "reference_context"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cartographic boundary files generalised census boundaries",
+    "url": "https://census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+  },
+  "description": "The Cartographic Boundary Files of the U.S. Census Bureau are simplified representations of selected geographic areas from the MAF/TIGER database, designed for small-scale thematic mapping. They include states, counties, county subdivisions, places, tracts, block groups, congressional and legislative districts, metropolitan areas, American Indian areas and, on the 2020 tab, PUMAs, urban areas, voting districts and ZCTAs, at three scales: 1:500,000, 1:5,000,000 and 1:20,000,000. Generalisation keeps the hierarchy and alignment of geographies within one year, uses fewer vertices, drops some small holes and parts, and clips areas to a simplified U.S. shoreline. Coverage: the United States and Puerto Rico, annual since the 1990s; the whole dataset per scale can be downloaded in one file, for example 312 MB of shapefiles at 1:500,000. Format and access: shapefile, file geodatabase and KML since 2019 and GeoPackage since 2024, on the web page and FTP site; free and public domain. Since 2023 the attribute GEOIDFQ joins the files to data.census.gov tables. Caveats: not suitable for area or perimeter calculation or precise overlay, some small areas are excluded, and offshore areas may be missing; boundaries may not align between years. Simulation uses: light-weight boundaries for dashboards, national maps of exposure and vulnerability, and quick joins of census statistics where full TIGER detail is not needed. Related records: TIGER/Line boundaries and blocks (the full-resolution source), ACS tables, and TIGERweb.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; TIGER Data Products Guide, Cartographic Boundary Files",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "esri_geodatabase",
+    "kml",
+    "geopackage"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html",
+  "id": "data-us-census-cartographic-boundary-files",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Cartographic Boundary Files (generalised census boundaries)",
+  "notes": "Start year 1990 is approximate (older editions on the archive pages); CRS assumed GCS NAD83 like TIGER/Line, not re-read on the cartographic pages.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-tiger-line-boundaries-blocks",
+    "data-us-census-american-community-survey-tables",
+    "data-us-census-tigerweb-services"
+  ],
+  "schema_summary": "GEOID, GEOIDFQ, NAME, LSAD, ALAND, AWATER per entity",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "size": "Whole 1:500,000 set 312 MB (shapefile), 186 MB (geodatabase), 334 MB (GeoPackage)",
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Purpose, formats by year (KML/geodatabase 2019, GeoPackage 2024), GEOIDFQ, whole-set sizes, scales 1:500,000/5m/20m",
+      "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Generalisation method, clipping to shoreline, appropriate and inappropriate uses",
+      "url": "https://www.census.gov/programs-surveys/geography/technical-documentation/naming-convention/cartographic-boundary-file.html"
+    }
+  ],
+  "spatial_resolution": "1:500,000, 1:5,000,000 and 1:20,000,000",
+  "spatial_resolution_class": "1km_to_10km",
+  "tags": [
+    "cartographic boundary files",
+    "generalised boundaries",
+    "thematic mapping",
+    "GeoPackage",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "Annual editions (older files on the shapefile and KML archive pages)",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1990
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Cartographic Boundary Files (generalised census boundaries)",
+  "type": "data",
+  "update_frequency": "annual"
+}

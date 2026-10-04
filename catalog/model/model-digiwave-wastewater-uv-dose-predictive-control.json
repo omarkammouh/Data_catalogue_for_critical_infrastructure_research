@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/21882855"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/21882855"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Repository metadata and README independently inspected; code not executed.",
+      "url": "https://github.com/KWB-R/digiwave-modelling"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.21882855",
+    "name": "digiwave predictive uv dose control for wastewater disinfection",
+    "repo": "github.com/kwb-r/digiwave-modelling",
+    "url": "https://zenodo.org/records/21882855"
+  },
+  "description": "Wolfgang Seis at Kompetenzzentrum Wasser Berlin publishes DigiWave for predictive ultraviolet dosing at a wastewater-treatment plant. Zenodo archives R code, anonymised plant data and fitted models under MIT. The linked README describes prediction of incoming E. coli from sensor signals, a UV dose-response relation and calculation of the minimum dose meeting a discharge limit. Reproducible stages compare that policy with constant dosing and estimate energy savings. The model can support disinfection-control simulations at plants with comparable measurements. No related catalogue record explicitly covers DigiWave. Coverage is one anonymised effluent UV stage, not all wastewater plants. A limitation is that sensor features were affine-transformed with withheld coefficients; absolute raw units and retraining inputs cannot be recovered from this public release. Cleaning and fitting stages require confidential data, while later stages run from sanitized artifacts. The code was not downloaded or run, and neither pathogen reduction nor energy saving was independently validated.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "title:(\"wastewater\" OR \"sewerage\" OR \"sewer network\" OR \"sewer system\" OR \"combined sewer\" OR \"separate sewer\" OR \"sewer pipe\" OR \"manhole\" OR \"sewage pumping station\" OR \"lift station\" OR \"wastewater treatment plant\" OR \"sewage treatment works\" OR \"treatment capacity\" OR \"combined sewer overflow\" OR \"CSO\" OR \"outfall\" OR \"effluent discharge\" OR \"sludge\" OR \"sanitation\" OR \"septic tank\" OR \"sewer model\" OR \"hydraulic sewer model\" OR \"infiltration inflow\" OR \"sewer condition\" OR \"pipe age\")",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://zenodo.org/records/21882855",
+  "id": "model-digiwave-wastewater-uv-dose-predictive-control",
+  "inputs": [
+    "Anonymised plant sensor features",
+    "E. coli observations",
+    "UV dose-response and discharge limit"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-11",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical",
+    "optimisation"
+  ],
+  "name": "DigiWave — Predictive UV-dose control for wastewater disinfection",
+  "notes": "G6 item G6-1811. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "outputs": [
+    "Predicted inlet concentration",
+    "Recommended UV dose",
+    "Energy-saving comparison"
+  ],
+  "provider": "Seis, Wolfgang (Kompetenzzentrum Wasser Berlin)",
+  "related_ids": [],
+  "repository": "https://github.com/KWB-R/digiwave-modelling",
+  "sectors": [
+    "water.wastewater",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/21882855"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence mit-license, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/21882855"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README inspected for stages, anonymisation and withheld sensor transform.",
+      "url": "https://github.com/KWB-R/digiwave-modelling/blob/main/README.md"
+    }
+  ],
+  "tags": [],
+  "title_en": "DigiWave , Predictive UV-dose control for wastewater disinfection",
+  "type": "model"
+}

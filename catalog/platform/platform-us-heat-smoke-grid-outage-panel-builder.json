@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/jamesafful/heat-smoke-grid-risk"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "us county heat smoke and grid outage panel pipeline",
+    "repo": "github.com/jamesafful/heat-smoke-grid-risk",
+    "url": "https://github.com/jamesafful/heat-smoke-grid-risk"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This Python pipeline builds US county-day panels that join heat or smoke conditions to electricity outages. It names EPA AirData PM2.5, NOAA HMS smoke polygons, EAGLE-I interval outage counts and Census county geometry as inputs. A published dictionary defines FIPS and date keys, county smoke-area fractions, PM2.5 means and daily customer-outage fields with units. The repository includes small sample CSVs and a sample-run command, while full public-source fetchers are off by default. A modeller could use the panel builder to prepare hazard-exposure or grid-resilience inputs after obtaining the original data. The sample data do not establish national coverage or model performance, and EAGLE-I raw interval observations are not redistributed by this repository. The own rights note warns that EAGLE-I redistribution may be restricted. This review inspected documentation, licences and file metadata but did not run the pipeline, download full source data or check output numbers. The code has an MIT licence; source datasets retain separate terms. Related resources are the EPA, NOAA and EAGLE-I providers, not the small test samples.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "topic:power-grid",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "extreme_heat"
+  ],
+  "homepage": "https://github.com/jamesafful/heat-smoke-grid-risk",
+  "id": "platform-us-heat-smoke-grid-outage-panel-builder",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "interoperability": [
+    "EPA AirData CSV",
+    "NOAA HMS smoke polygons",
+    "EAGLE-I CSV",
+    "Parquet"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-12-02",
+  "licence": "MIT for code; EAGLE-I raw outage redistribution may be restricted.",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "US county heat, smoke and grid-outage panel pipeline",
+  "notes": "G8; G8-0817. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Heat, Smoke, and Grid Reliability repository documentation and data dictionary v1.0, accessed 2026-09-28. A local data-paper draft is not treated as published..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Heat, Smoke, and Grid Reliability project",
+  "related_ids": [],
+  "sectors": [
+    "energy.electricity",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/jamesafful/heat-smoke-grid-risk/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/jamesafful/heat-smoke-grid-risk"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own MIT licence text.",
+      "url": "https://github.com/jamesafful/heat-smoke-grid-risk/blob/main/LICENSE"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Source rights and EAGLE-I raw-data restriction.",
+      "url": "https://github.com/jamesafful/heat-smoke-grid-risk/blob/main/DATA_LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "County-day output schema, units and source provenance.",
+      "url": "https://github.com/jamesafful/heat-smoke-grid-risk/blob/main/DATA_DICTIONARY.md"
+    }
+  ],
+  "tags": [],
+  "title_en": "US county heat, smoke and grid-outage panel pipeline",
+  "type": "platform"
+}

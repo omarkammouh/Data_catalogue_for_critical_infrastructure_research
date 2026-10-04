@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository",
+      "url": "https://github.com/aidotse/PASEOS"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://paseos.readthedocs.io/en/latest/"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper",
+      "url": "https://arxiv.org/abs/2302.02659"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Gómez et al. (2023), arXiv:2302.02659",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "paseos paseos simulates the environment for operating multiple spacecraft",
+    "repo": "github.com/aidotse/paseos",
+    "url": "https://github.com/aidotse/PASEOS"
+  },
+  "description": "PASEOS is a Python module that simulates the operational environment of multiple spacecraft, each treated as an actor with its own orbit, power supply, thermal state, radiation exposure and communication devices, so that users can test what activities, such as onboard processing or data exchange, are feasible under those constraints. It was created by Φ-lab@Sweden, a collaboration of ESA's Φ-lab and AI Sweden, and is described in a 2023 arXiv paper. The simulation is fully decentralised: one instance runs on every node and tracks the other known actors, including ground stations, with custom models and central bodies possible. Coverage is any orbit or constellation. Format and access: open source code in a public repository, installable with conda from conda-forge or with pip on Linux, with documentation on Read the Docs. Licence: GPL-3.0; free. Caveats: the README warns that it is under development and to use it at one's own risk, and the pip wheels are limited to Python 3.8. It supports agent-based simulation and capacity planning of satellite constellations and their ground links. Related catalogue records are the Basilisk spacecraft simulation framework and the StarPerf constellation network simulator.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "read list: awesome-space-systems-simulation and orbitalindex awesome-space (README)",
+      "route": "R48",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/aidotse/PASEOS",
+  "id": "model-paseos-spacecraft-operations-simulator",
+  "inputs": [
+    "Spacecraft and ground station actors",
+    "Orbits",
+    "Power, thermal, radiation and communication device parameters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-22",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "physical"
+  ],
+  "name": "PASEOS (PAseos Simulates the Environment for Operating multiple Spacecraft)",
+  "outputs": [
+    "Time-stepped operational state of each actor (battery, temperature, line of sight, communication windows)",
+    "Activity feasibility under constraints"
+  ],
+  "provider": "ESA Φ-lab and AI Sweden (Φ-lab@Sweden: Pablo Gómez, Gabriele Meoni and others)",
+  "related_ids": [
+    "platform-basilisk-spacecraft-simulation-framework",
+    "model-starperf"
+  ],
+  "repository": "https://github.com/aidotse/PASEOS",
+  "sectors": [
+    "cross_cutting.space",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "README: purpose, actors, physical models, installation, GPL-3.0, authors (github.com refuses the cloud session)",
+      "url": "https://raw.githubusercontent.com/aidotse/PASEOS/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2026-08-22)",
+      "url": "https://github.com/aidotse/PASEOS"
+    }
+  ],
+  "tags": [
+    "spacecraft constellation",
+    "onboard operations",
+    "decentralised simulation"
+  ],
+  "title_en": "PASEOS (PAseos Simulates the Environment for Operating multiple Spacecraft)",
+  "type": "model"
+}

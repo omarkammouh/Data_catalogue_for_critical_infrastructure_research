@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "gcamfaostat source (GitHub)",
+      "url": "https://github.com/JGCRI/gcamfaostat"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo record (SUA and traceable FBS files, mapping and metadata)",
+      "url": "https://zenodo.org/records/14649510"
+    },
+    {
+      "kind": "docs",
+      "label": "gcamfaostat R package documentation",
+      "url": "https://jgcri.github.io/gcamfaostat/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "traceable and scalable food balance sheets from faostat supply and utilisation accounts 2010 2022 built with the gcamfaostat r package",
+    "repo": "github.com/jgcri/gcamfaostat",
+    "url": "https://zenodo.org/records/14649510"
+  },
+  "description": "This dataset rebuilds food balance sheets for every country from FAO's detailed supply and utilisation accounts in a way that can be traced item by item and scaled to any level of aggregation. It was produced by Xin Zhao, Maksym Chepeliev and Neus Escobar Lanzuela with gcamfaostat, an open R package from the Joint Global Change Research Institute that prepares and harmonises FAOSTAT data for the GCAM model. The Zenodo record holds supply and utilisation accounts for 2010 to 2022, a version with food calories and macronutrients, the nested mapping from detailed commodities to balance-sheet aggregates, and metadata. The files are free to download, and the package, available under a BSD-2-Clause licence, lets users regenerate them when FAOSTAT is updated. Caveats: figures inherit FAOSTAT's gaps and estimates, the process depends on FAOSTAT releases, and users need R to rebuild or extend it. Coverage is global. Simulation uses: consistent production, trade, stocks and food-use accounts for food supply network and shock propagation models, and the agricultural input data for integrated assessment scenarios. Related records: the WFP global food prices database (data-wfp-global-food-prices) complements these quantity accounts with prices.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have list from published reviews (integrator musthave/services.csv): Traceable food balance sheets (Zhao et al.) and gcamfaostat",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "source_code"
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://zenodo.org/records/14649510",
+  "id": "data-traceable-food-balance-sheets-gcamfaostat",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-01-15",
+  "licence": "Open dataset on Zenodo (licence shown on the record); gcamfaostat under BSD-2-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Traceable and scalable food balance sheets from FAOSTAT supply and utilisation accounts (2010-2022), built with the gcamfaostat R package",
+  "provider": "Xin Zhao (Joint Global Change Research Institute, PNNL), Maksym Chepeliev (Purdue University), Neus Escobar Lanzuela (Basque Centre for Climate Change)",
+  "related_ids": [
+    "data-wfp-global-food-prices"
+  ],
+  "schema_summary": "Files include SUA_2010_2022.csv.gz (supply and utilisation accounts by region, item and element), SUA_Food_Calorie_Macronutrient_2010_2022.csv.gz, Nested_Mapping_SUA_To_Traceable_FBS.csv (mapping of SUA items into traceable food balance sheet aggregates) and Metadata_GCAMFAOSTAT_Traceable_FBS.csv",
+  "sectors": [
+    "services.food_supply",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Zenodo record read in memory: Traceable and Scalable Food Balance Sheets from Agricultural Commodity Supply and Utilization Accounts, published 15 January 2025, version v001.2025.1.14, open dataset; creators Zhao, Chepeliev, Escobar Lanzuela; data for 2010-2022 with the process described as live; files as in the schema summary; accompanies a Scientific Data submission",
+      "url": "https://zenodo.org/records/14649510"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Package site read in memory: gcamfaostat v1.0.0, an R package to prepare, process and synthesise FAOSTAT agroeconomic data for global economic and multisector dynamic models such as GCAM with transparency, traceability and reproducibility; BSD-2-Clause licence; prebuilt data and a preparing-data vignette",
+      "url": "https://jgcri.github.io/gcamfaostat/"
+    }
+  ],
+  "spatial_resolution": "Country and region",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "food balance sheets",
+    "FAOSTAT",
+    "supply and utilisation accounts",
+    "GCAM",
+    "food supply",
+    "traceability"
+  ],
+  "temporal_coverage": "2010 to 2022",
+  "temporal_resolution": "Annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Traceable and scalable food balance sheets from FAOSTAT supply and utilisation accounts (2010-2022), built with the gcamfaostat R package",
+  "type": "data",
+  "update_frequency": "real_time"
+}

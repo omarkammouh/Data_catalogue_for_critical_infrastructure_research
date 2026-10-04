@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "ScienceDB original",
+      "url": "https://www.scidb.cn/en/detail?dataSetId=60dfb844a69842c1b7e7ca3ba8e09791"
+    },
+    {
+      "kind": "portal",
+      "label": "Validated version 1 (Zenodo)",
+      "url": "https://zenodo.org/records/22143264"
+    },
+    {
+      "kind": "repo",
+      "label": "Validation code",
+      "url": "https://github.com/davidfit21/energy_telemetry_validation"
+    },
+    {
+      "kind": "paper",
+      "label": "Energy Informatics article",
+      "url": "https://doi.org/10.1186/s42162-024-00327-1"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "TH"
+  ],
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "energy meter data of the kasetsart university data centre thailand 2018 to 2022",
+    "repo": "github.com/davidfit21/energy_telemetry_validation",
+    "url": "https://scidb.cn/en/detail?dataSetId=60dfb844a69842c1b7e7ca3ba8e09791"
+  },
+  "description": "Kasetsart University in Bangkok designed and installed an energy data collection system for its existing data centre, described by Chatlatanagulchai and Chantrapornchai in Energy Informatics (April 2024), and published the readings as 'Energy Meter Data of Data Center in a University' on the ScienceDB repository. 25 meters log the power use of the computer room air conditioners (CRAC), server racks, the UPS and the network room, from July 2018 to April 2022, as CSV files per meter. A cleaned and validated version, with 24 Parquet datasets that passed physics- and topology-based checks, was published on Zenodo and Hugging Face by David Fit in August 2026 with the code on GitHub. Coverage: one university data centre in Thailand, almost four years. Format and access: CSV on ScienceDB and Parquet on Zenodo (about 2.7 GB), free of charge. Caveats: one small enterprise facility; meter placement follows the building's electrical layout; the licence of the ScienceDB copy was not read. Simulation uses: long records of IT and cooling power for data centre energy models, cooling behaviour in a hot climate and power supply dependence. Related records: the CINECA Marconi and SURF Lisa telemetry cover HPC centres; the cloud data centre logs of the UCC 2023 study cover hosts.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Zenodo data harvest of the digital piece; candidate zenodo-966a59fca6, read in full on second reading",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "Kasetsart University data center dataset electrical energy telemetry CRAC UPS open dataset",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "parquet"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "extreme_heat",
+    "technological_failure"
+  ],
+  "homepage": "https://www.scidb.cn/en/detail?dataSetId=60dfb844a69842c1b7e7ca3ba8e09791",
+  "id": "data-kasetsart-university-datacenter-energy-meters",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-27",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Energy meter data of the Kasetsart University data centre, Thailand (2018 to 2022)",
+  "notes": "Zenodo record 22143264 read 2026-09-26 (derived version, files, links); Crossref record of the article read (authors, date, 25 meters); period and meter types from a search snippet of the ScienceDB page, whose API refused access. Given names of the authors and the schema fields are from recall and inference.",
+  "provider": "Kasetsart University, Bangkok (Chantana Chantrapornchai, Wichai Chatlatanagulchai)",
+  "related_ids": [],
+  "schema_summary": "per meter: time, voltage, current, active power, energy",
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "size": "about 2.7 GB (validated Parquet)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "validated version",
+      "url": "https://zenodo.org/api/records/22143264"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "article metadata and abstract",
+      "url": "https://api.crossref.org/works/10.1186/s42162-024-00327-1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): MIT (basis: licence file in the GitHub repository)",
+      "url": "https://github.com/davidfit21/energy_telemetry_validation/blob/main/LICENSE"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://api.crossref.org/works/10.1186/s42162-024-00327-1"
+    }
+  ],
+  "spatial_resolution": "meter (CRAC, rack, UPS, network room)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "data centre energy",
+    "CRAC",
+    "UPS",
+    "Thailand",
+    "meters"
+  ],
+  "temporal_coverage": "2018-07 to 2022-04",
+  "temporal_coverage_years": {
+    "end": 2022,
+    "start": 2018
+  },
+  "temporal_resolution": "meter logging intervals",
+  "temporal_resolution_class": "other",
+  "title_en": "Energy meter data of the Kasetsart University data centre, Thailand (2018 to 2022)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

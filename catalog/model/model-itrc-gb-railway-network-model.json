@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/itrcrisks/GB-railway-network-model"
+    },
+    {
+      "kind": "repo",
+      "label": "Software Heritage archive",
+      "url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/itrcrisks/GB-railway-network-model"
+    },
+    {
+      "kind": "paper",
+      "label": "Method paper (EJTIR 2016)",
+      "url": "https://doi.org/10.18757/ejtir.2016.16.1.3120"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gb railway network model with topology and daily passenger flows itrc university of oxford",
+    "url": "https://github.com/itrcrisks/GB-railway-network-model"
+  },
+  "description": "This open-source model represents the Great Britain railway network as a GIS network of nodes and edges and estimates daily passenger flows on it. The script rail_od_flows.py combines 2019 train timetables from ATOC, annual station usage estimates for 2017/18 from the Office of Rail and Road and the network to build a 24-hour origin-destination matrix of passenger trips, and assemble_flows.py aggregates the flows onto every node and edge. The network of stations and routes, the matches between ATOC, ORR and network identifiers and the outputs are the authors' own, cleaned from OpenStreetMap and Ordnance Survey open data. It was developed at the University of Oxford within ITRC, and users are asked to cite the vulnerability framework of Pant, Hall and Blainey (2016). Coverage is national (Great Britain). The Python code is free under the MIT licence and available in a GitHub repository, archived by Software Heritage (last change September 2023); the timetable must be downloaded separately from ATOC with a free account. Caveats: it needs Python 3.6, uses one year of timetables and station usage, and the failure analysis was still in progress. It supports network flow and cascading failure analysis of rail disruption, such as flood or asset failures on passenger trips. It complements the Network Rail open data feeds and is related to the SUMO simulator for rail operations.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"railway\" AND \"network model\"",
+      "route": "R05",
+      "source": "software-heritage"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "technological_failure"
+  ],
+  "homepage": "https://github.com/itrcrisks/GB-railway-network-model",
+  "id": "model-itrc-gb-railway-network-model",
+  "inputs": [
+    "ATOC train timetables",
+    "ORR station usage estimates",
+    "GB rail network nodes and edges",
+    "identifier matches"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-09-03",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network"
+  ],
+  "name": "GB railway network model with topology and daily passenger flows (ITRC, University of Oxford)",
+  "outputs": [
+    "daily origin-destination passenger matrix",
+    "passenger flows on nodes and edges"
+  ],
+  "provider": "University of Oxford, Infrastructure Transitions Research Consortium (ITRC); Raghav Pant",
+  "related_ids": [
+    "data-network-rail-open-data-feeds",
+    "model-sumo"
+  ],
+  "runs_on": [
+    "conda"
+  ],
+  "sectors": [
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "archived visit 2023-09-27; revision of 2023-09-03 'rail paths and analysis script update'; files README, LICENSE, assemble_flows.py, rail_od_flows.py, rail_failure_analysis.py, GB_rail_data",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/itrcrisks/GB-railway-network-model/visit/latest/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "README: GB network with topology and passenger daily flows; Python 3.6, miniconda; ATOC 2019 timetables (free login), ORR 2017/18 station usage, own network from OSM and OS open data; OD matrix and node and edge flows; cite Pant, Hall and Blainey 2016; work in progress, failure analysis to be added; Oxford, ITRC; MIT",
+      "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:63196d3636cc8a4ea4394626cb1560e0fea2f8fe/raw/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "EJTIR 2016 framework for national vulnerability analysis of interdependent infrastructures demonstrated for GB rail (random failure and flood outcomes)",
+      "url": "https://doi.org/10.18757/ejtir.2016.16.1.3120"
+    }
+  ],
+  "tags": [
+    "Great Britain",
+    "railway",
+    "passenger flows",
+    "OD matrix",
+    "ITRC"
+  ],
+  "title_en": "GB railway network model with topology and daily passenger flows (ITRC, University of Oxford)",
+  "type": "model",
+  "validated_on": []
+}

@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/b3nn0/EpexPredictor"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/b3nn0/EpexPredictor/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "DE",
+    "AT",
+    "FR",
+    "BE",
+    "NL",
+    "SE",
+    "DK",
+    "ES",
+    "PT"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "epex day ahead price predictor",
+    "repo": "github.com/b3nn0/epexpredictor",
+    "url": "https://github.com/b3nn0/EpexPredictor"
+  },
+  "description": "EpexPredictor is the repository maintainer's LightGBM model for European day-ahead electricity prices. Its two-stage formulation first predicts each market separately, then uses neighbouring-market forecasts as additional features. Inputs include weather, calendar effects, prices and optional ENTSO-E demand and gas-price information; outputs are price forecasts served through FastAPI or a self-hosted Docker setup. The README lists nine countries and Swedish and Danish bidding zones, with models tuned for 15-minute pricing and a 180-day training window. Source is free under BSD-3-Clause; upstream data services have separate terms. A limitation is that reported backtests use historical weather, so they do not measure the additional error from weather forecasts. Some regions need ENTSO-E API access, and the public service has no availability guarantee. Forecasts can drive storage and charging simulations. evcc (platform-evcc) documents an integration. No forecast service was executed. Related catalogue records are not yet linked.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "b3nn0/epexpredictor linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://github.com/b3nn0/EpexPredictor",
+  "id": "model-epexpredictor",
+  "inputs": [
+    "Weather and calendar features",
+    "Historical electricity prices and optional load/gas data"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-23",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "EPEX day-ahead price predictor",
+  "notes": "G7 G7-1053. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Regional day-ahead electricity-price forecasts"
+  ],
+  "provider": "b3nn0 EpexPredictor maintainers",
+  "related_ids": [],
+  "repository": "https://github.com/b3nn0/EpexPredictor",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for b3nn0/EpexPredictor: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/b3nn0/epexpredictor"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/b3nn0/epexpredictor/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "EpexPredictor is the repository maintainer's LightGBM model for European day-ahead electricity prices",
+  "type": "model"
+}

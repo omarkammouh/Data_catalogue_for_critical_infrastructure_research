@@ -1,0 +1,131 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "SGIS data provision list",
+      "url": "https://sgis.mods.go.kr/view/pss/openDataIntrcn"
+    },
+    {
+      "kind": "docs",
+      "label": "SGIS data provision service guide",
+      "url": "https://sgis.mods.go.kr/view/pss/dataProvdIntrcn"
+    },
+    {
+      "kind": "portal",
+      "label": "KOSIS statistical database (English)",
+      "url": "https://kosis.kr/eng/"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "KR"
+  ],
+  "crs": "UTM-K (GRS80), EPSG:5179",
+  "data_family": [
+    "system_description",
+    "reference_context",
+    "behavioural_social"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sgis census spatial statistics for korea population households and housing by output area jipgyegu and grid 2000 to 2024",
+    "url": "https://sgis.mods.go.kr/view/pss/openDataIntrcn"
+  },
+  "description": "The Statistical Geographic Information Service (SGIS) of Statistics Korea supplies census spatial statistics as files. Its data provision list offers tables of population, households and housing by census output area (jipgyegu) and by administrative district for 2000, 2005, 2010, 2015 and each year from 2016 to 2024, and the same three themes as grid statistics for 2000, 2005, 2010 and 2015 to 2024, all as CSV, national and free. Establishment and worker counts are offered by output area and grid for 2000 to 2024, and census administrative boundaries from 1975 to 2025. The boundaries are in UTM-K on the GRS80 ellipsoid (EPSG:5179). Format and access: users join SGIS, log in, accept the terms of use, choose the files and download them from the request page; guides for QGIS, ArcGIS, Python and R are provided. Licence: not stated on the pages read, beyond the terms accepted at request; free. Caveats: to protect confidentiality, population values below 5 in an output area are replaced by N/A, worker counts are withheld where there are 2 or fewer establishments, and the pages and file names are in Korean. Simulation uses: small-area and grid housing and population counts for exposure analysis, demand disaggregation, facility siting and synthetic populations. Related records: IPUMS International and the WorldPop and GHSL population grids.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:KR:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "shapefile"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://sgis.mods.go.kr/view/pss/openDataIntrcn",
+  "id": "data-statistics-korea-sgis-census-output-area-and-grid-statistics",
+  "languages": [
+    "ko"
+  ],
+  "licence": "not stated on the pages read (SGIS terms of use accepted when requesting data)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://sgis.mods.go.kr/view/pss/openDataIntrcn"
+    ]
+  },
+  "maturity": "active",
+  "name": "SGIS census spatial statistics for Korea, population, households and housing by output area (jipgyegu) and grid, 2000 to 2024",
+  "provider": "Statistics Korea (Ministry of Data and Statistics), Statistical Geographic Information Service (SGIS)",
+  "related_ids": [
+    "data-ipums-international-census-microdata",
+    "data-worldpop-global-gridded-population",
+    "data-copernicus-ghsl-built-up-population"
+  ],
+  "schema_summary": "Tables per output area or grid cell for population, households and housing (dwellings), and for establishments and workers; census administrative boundaries 1975 to 2025; values below 5 are suppressed as N/A",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Data provision list: output area and administrative statistics (population, households, housing) 2000-2024 CSV free national; grid statistics; establishment and worker statistics; census boundaries 1975-2025; UTM-K EPSG:5179; values below 5 suppressed",
+      "url": "https://sgis.mods.go.kr/view/pss/openDataIntrcn"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Procedure: join SGIS, log in, accept terms, select data, download; guides for QGIS, ArcGIS, Python and R",
+      "url": "https://sgis.mods.go.kr/view/pss/dataProvdIntrcn"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): only a site copyright notice on this page (Copyright Ministry of Data and Statistics)",
+      "url": "https://sgis.mods.go.kr/view/pss/openDataIntrcn"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://sgis.mods.go.kr/view/pss/dataProvdIntrcn"
+    }
+  ],
+  "spatial_resolution": "census output areas (jipgyegu), administrative districts to eup-myeon-dong, and statistical grid cells",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "Korea",
+    "output areas",
+    "grid",
+    "housing",
+    "households",
+    "SGIS"
+  ],
+  "temporal_coverage": "2000 to 2024 (5-yearly to 2015, annual from 2015 or 2016)",
+  "temporal_coverage_years": {
+    "end": 2024,
+    "start": 2000
+  },
+  "temporal_resolution": "annual from 2015 onwards, five-yearly before",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "SGIS census spatial statistics for Korea, population, households and housing by output area (jipgyegu) and grid, 2000 to 2024",
+  "type": "data"
+}

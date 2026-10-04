@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/eeveetza/Py1812"
+    },
+    {
+      "kind": "docs",
+      "label": "Recommendation ITU-R P.1812",
+      "url": "https://www.itu.int/rec/R-REC-P.1812/en"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "py1812 python implementation of recommendation itu r p 1812",
+    "repo": "github.com/eeveetza/py1812",
+    "url": "https://github.com/eeveetza/Py1812"
+  },
+  "description": "Py1812 is a Python implementation of Recommendation ITU-R P.1812-8, the ITU's path-specific propagation prediction method for point-to-area terrestrial services between 30 MHz and 6,000 MHz, used for broadcasting, land mobile and fixed wireless coverage and interference. It computes basic transmission loss and field strength along a terrain profile between a transmitter and a receiver, taking account of line of sight, diffraction, tropospheric scatter, ducting and clutter at both ends. The package is installed from GitHub with pip; before use, the user downloads the refractivity maps (N050 and DN50) that form part of the ITU Recommendation and runs a script to convert them, because ITU digital products may not be redistributed. The repository includes validation terrain profiles and results for checking implementations. It is written by Ivica Stevanovic of the Swiss Federal Office of Communications, who also publishes implementations of P.452, P.1546, P.2001, P.528 and other ITU-R models in several languages; its MATLAB counterpart is the reference version published by ITU-R Study Group 3. Coverage: any terrestrial path worldwide. Format and access: Python source on GitHub, free under a permissive licence written for the code. Caveats: requires terrain and clutter profiles from the user; the README marks this Python port as not necessarily identical to the approved reference code. Simulation uses: coverage and interference planning for broadcast and mobile networks and exposure of links to anomalous propagation. Related records: Py1546 implements the simpler P.1546 curves, and pycraf implements P.452.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "radio propagation path loss model open source implementation ray tracing ITU-R P.1812 P.452 python library",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/eeveetza/Py1812",
+  "id": "model-py1812",
+  "inputs": [
+    "terrain profile with clutter",
+    "frequency, time and location percentages",
+    "antenna heights and polarisation",
+    "ITU refractivity maps"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-28",
+  "licence": "Permissive licence written for the code (modification and redistribution allowed)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Py1812: Python implementation of Recommendation ITU-R P.1812",
+  "notes": "README and licence read from raw GitHub and the author's profile read via fetch on 2026-09-26. last_updated taken from the P.1812-8 zip date (2025-09) that the README points to. The list of propagation mechanisms is from recall of the Recommendation.",
+  "outputs": [
+    "basic transmission loss",
+    "field strength"
+  ],
+  "provider": "Ivica Stevanovic (Swiss Federal Office of Communications, OFCOM), GitHub user eeveetza",
+  "related_ids": [
+    "data-itu-r-dbsg3-propagation-databanks",
+    "data-itu-r-p833-attenuation-in-vegetation",
+    "data-ofcom-broadcast-transmitter-parameters",
+    "model-py1546",
+    "model-ntia-p2108",
+    "model-itu-r-p-1546",
+    "model-itu-r-p-1812",
+    "platform-fresnelpath-rf-planning"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "digital.broadcasting",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README",
+      "url": "https://raw.githubusercontent.com/eeveetza/Py1812/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "author profile",
+      "url": "https://github.com/eeveetza"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2026-08-28)",
+      "url": "https://github.com/eeveetza/Py1812"
+    }
+  ],
+  "tags": [
+    "ITU-R P.1812",
+    "propagation",
+    "coverage",
+    "broadcasting",
+    "interference"
+  ],
+  "title_en": "Py1812: Python implementation of Recommendation ITU-R P.1812",
+  "type": "model",
+  "validated_on": [
+    "ITU-R validation profiles"
+  ]
+}

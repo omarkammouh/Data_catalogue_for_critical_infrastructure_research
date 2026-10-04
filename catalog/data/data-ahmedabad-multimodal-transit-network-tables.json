@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/notnamansinha/ahmedabad-transit-gtfs-pipeline"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "IN"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "network_topology",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ahmedabad multimodal transit network and fare tables",
+    "repo": "github.com/notnamansinha/ahmedabad-transit-gtfs-pipeline",
+    "url": "https://github.com/notnamansinha/ahmedabad-transit-gtfs-pipeline"
+  },
+  "description": "The Ahmedabad multimodal collection combines municipal buses, Janmarg bus rapid transit and GMRC metro into linked network and fare tables. Naman Kumar Sinha publishes CSV, GeoJSON, JSON and SQLite outputs with a documented relational model for stops, directed route variants, ordered stop sequences, fares and segment times. The README reports 5,411 stops, 881 route variants and 50,291 fare entries; these counts were not recomputed. Coverage is Ahmedabad and represented metro corridors, with mixed source dates and no verified common service period. Interchange groups use a 150-metre radius, and transfer generation documents walking assumptions. Public access is free. The repository uses MIT, while its NOTICE preserves ODbL for OpenStreetMap-derived coordinates and data. A known limitation is that the GTFS specification marks intermediate stop times, headways and other required feed components unfinished. Therefore the published tables should not be treated as an operational GTFS feed. Simulation uses include multimodal graph construction, fare scenarios and transfer-accessibility studies after checking timing assumptions. It relates to data-openstreetmap and data-gtfs-specification. No pipeline or routing example was executed.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "gtfs dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geojson",
+    "json",
+    "database"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/notnamansinha/ahmedabad-transit-gtfs-pipeline",
+  "id": "data-ahmedabad-multimodal-transit-network-tables",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-27",
+  "licence": "MIT repository; OpenStreetMap-derived data subject to ODbL",
+  "licence_type": [
+    "share_alike",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Ahmedabad multimodal transit network and fare tables",
+  "notes": "G8; G8-0079. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "provider": "Naman Kumar Sinha",
+  "regions": [
+    "Ahmedabad"
+  ],
+  "related_ids": [
+    "data-openstreetmap",
+    "data-gtfs-specification"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/notnamansinha/ahmedabad-transit-gtfs-pipeline/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/notnamansinha/ahmedabad-transit-gtfs-pipeline"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Entity schema and transfer assumptions.",
+      "url": "https://github.com/notnamansinha/ahmedabad-transit-gtfs-pipeline/blob/main/docs/DATA_MODEL.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Documents missing components of full GTFS conversion.",
+      "url": "https://github.com/notnamansinha/ahmedabad-transit-gtfs-pipeline/blob/main/data/processed/transit_future/gtfs/GTFS_SPEC.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "ODbL conditions on OpenStreetMap-derived data.",
+      "url": "https://github.com/notnamansinha/ahmedabad-transit-gtfs-pipeline/blob/main/NOTICE"
+    }
+  ],
+  "spatial_resolution": "Ahmedabad stops and directed routes; 150-metre interchange clustering.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Documentation updated 2026; common source/service interval not verified.",
+  "temporal_resolution": "Static route and fare tables; terminal schedules and estimated segment timing.",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Ahmedabad multimodal transit network and fare tables",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

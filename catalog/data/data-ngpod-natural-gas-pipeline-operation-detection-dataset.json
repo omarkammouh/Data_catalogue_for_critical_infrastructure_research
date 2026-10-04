@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "Early prediction of natural gas pipeline leaks using the MKTCN model (arXiv 2411.06214)",
+      "url": "https://arxiv.org/abs/2411.06214"
+    }
+  ],
+  "access_restrictions": "on_request",
+  "cost": "free",
+  "data_family": [
+    "sensor_realtime_streams",
+    "historical_events",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ngpod natural gas pipeline operation detection dataset transmission pipeline sensor time series",
+    "url": "https://arxiv.org/abs/2411.06214"
+  },
+  "description": "NGPOD (Natural Gas Pipeline Operation Detection) is a dataset of real sensor measurements from natural gas transmission pipelines, used to train and test leak detection and early leak prediction models; it is described in a November 2024 arXiv paper by Xuguang Li, Zhonglin Zuo, Zheng Dong and Yang Yang and in earlier work by Zuo and Liang. Coverage: pipelines with a total length of 17.95 km passing through four processing stations, from 1 September to 25 December 2020. Contents: temperature and pressure at each station's inlet and outlet (the first station has only an outlet and the last only an inlet) and flow rate at the first outlet and last inlet, recorded every 20 seconds, labelled as 364,613 normal and 12,244 abnormal samples, so it is highly imbalanced. Format and access: multivariate time series; the paper does not say where the data can be downloaded, so access probably needs the authors. Licence and cost: not stated. Caveats: the pipeline operator and location are not named, and the abnormal classes are not described in detail. The labelled series can train and validate anomaly and leak detection for digital twin and hazard exposure work on gas pipelines. It relates to the PHMSA incident data in the catalogue.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "pipeline leak detection dataset open sensor pressure flow time series benchmark",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "other"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://arxiv.org/abs/2411.06214",
+  "id": "data-ngpod-natural-gas-pipeline-operation-detection-dataset",
+  "languages": [
+    "en"
+  ],
+  "licence": "Not stated on the pages read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "NGPOD Natural Gas Pipeline Operation Detection dataset (transmission pipeline sensor time series)",
+  "provider": "Researchers publishing on pipeline leak prediction (Zuo et al. 2022-2023, Liang et al. 2023); described by Xuguang Li, Zhonglin Zuo, Zheng Dong and Yang Yang",
+  "related_ids": [
+    "data-phmsa-pipeline-incident-accident-data"
+  ],
+  "sectors": [
+    "transport.pipelines",
+    "energy.gas_hydrogen"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "authors, date, abstract",
+      "url": "https://arxiv.org/abs/2411.06214"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "dataset section: origin references, 17.95 km, four stations, sensors, dates, 20 s, sample counts, imbalance",
+      "url": "https://arxiv.org/html/2411.06214"
+    }
+  ],
+  "tags": [
+    "leak detection",
+    "gas transmission",
+    "SCADA",
+    "anomaly detection",
+    "machine learning",
+    "r2-fresh-transport"
+  ],
+  "temporal_coverage": "1 September 2020 to 25 December 2020",
+  "title_en": "NGPOD Natural Gas Pipeline Operation Detection dataset (transmission pipeline sensor time series)",
+  "type": "data"
+}

@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository with README, scripts and FAQ",
+      "url": "https://github.com/microsoft/GlobalMLBuildingFootprints"
+    },
+    {
+      "kind": "download",
+      "label": "dataset-links.csv (download table by country and quadkey, 2026-08-13)",
+      "url": "https://bfppub.blob.core.windows.net/%24web/2026-08-13/dataset-links.csv"
+    },
+    {
+      "kind": "download",
+      "label": "Coverage layer (GeoJSON)",
+      "url": "https://minedbuildings.z5.web.core.windows.net/global-buildings/buildings-coverage.geojson"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "imagery_remote_sensing"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "microsoft global ml building footprints",
+    "url": "https://github.com/microsoft/GlobalMLBuildingFootprints"
+  },
+  "description": "Microsoft Global ML Building Footprints is an open dataset of building footprint polygons detected by deep neural networks in Bing Maps imagery (Maxar, Airbus, IGN France and Vexcel) captured between 2014 and 2025. Microsoft reports 1.4 billion detected buildings; the published files hold about 999 million polygons, many with a height estimate in metres and a detection confidence score. Microsoft releases it to support the OpenStreetMap ecosystem; it is offered in the HOT Tasking Manager through the Rapid editor. Coverage is 30,340 tiles in 225 regions worldwide; the global set was refreshed on 13 August 2026, with incremental additions for the United States, Europe and elsewhere through 2026. Access: line-delimited GeoJSON in gzipped files partitioned by country and level-9 quadkey, listed in dataset-links.csv, which moved to a new blob host in July 2026. Licence: Community Data License Agreement Permissive 2.0, free. Caveats: quality varies by place; published recall on evaluation sets ranges from about 71 percent in Africa to 86 percent in Europe, with precision of 92 to 97 percent, and Microsoft warns against blind import into OSM. Simulation uses are exposure models for hazard and resilience analysis and emergency response planning. Related records: Microsoft US Building Footprints (earlier US release), Google Open Buildings and Overture Maps buildings, which conflates this dataset.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R30",
+      "source": "microsoft-building-footprints"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "csv",
+    "software_package"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+  "id": "data-microsoft-global-ml-building-footprints",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-13",
+  "licence": "CDLA-Permissive-2.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Microsoft Global ML Building Footprints",
+  "notes": "Older download host minedbuildings.z5.web.core.windows.net is not migrated for older versions (README, 2026-07-24 update). Also on Planetary Computer (candidate). Repository HEAD commit 2026-08-14. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "provider": "Microsoft (Bing Maps)",
+  "related_ids": [
+    "data-odc-global-building-footprints-in-cambodia"
+  ],
+  "schema_summary": "Polygon geometry; height in metres (-1 when not estimated); confidence score 0-1 (-1 for older releases)",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Counts, imagery, licence CDLA Permissive 2.0, update log to 2026-08-13, format, height and confidence, evaluation metrics, OSM guidance",
+      "url": "https://raw.githubusercontent.com/microsoft/GlobalMLBuildingFootprints/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: HEAD commit 2026-08-14",
+      "url": "https://github.com/microsoft/GlobalMLBuildingFootprints"
+    }
+  ],
+  "spatial_resolution": "Individual building polygons from high-resolution imagery",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "building footprints",
+    "machine learning",
+    "Bing Maps",
+    "height",
+    "global"
+  ],
+  "temporal_coverage": "Imagery 2014-2025; updates 2022-2026",
+  "temporal_resolution": "none (snapshot, periodic updates)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Microsoft Global ML Building Footprints",
+  "type": "data"
+}

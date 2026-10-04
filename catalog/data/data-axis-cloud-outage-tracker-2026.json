@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Cloud Outage Tracker with CSV download",
+      "url": "https://axis-intelligence.com/cloud-outage-tracker/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "service_performance"
+  ],
+  "data_kind": [
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cloud outage tracker 2026 axis intelligence operator postmortem log of major cloud incidents",
+    "url": "https://axis-intelligence.com/cloud-outage-tracker"
+  },
+  "description": "The Cloud Outage Tracker logs major public-cloud and core-internet-infrastructure outages for which the operator has published its own post-incident document. Contents: nine incidents at the 9 August 2026 update, spanning AWS, Microsoft Azure, Google Cloud, Cloudflare and DENIC, six of which carry a computed Diagnostic Lag Ratio (the share of customer impact time before the operator knew what had broken) with a mean of 0.27 and a median of 0.10. Examples on the page: Microsoft's West US network outage of 23 July 2026, where engineers correlated the anomaly 2 hours 35 minutes after impact began, and a Google europe-west4-a incident on 15 July 2026 in which hall temperatures reached 44 degrees Celsius after a voltage drop cascaded into a cooling failure, causing a 14 hour 55 minute interruption. Producer: Axis Intelligence Research, updated weekly; the inclusion rules require an operator-published document stating at least start time and cause. Coverage: global, five providers. Access: a public page with a free CSV download. Licence and cost: free; the tracker page states CC BY 4.0 for the CSV. Caveats: a small, curated commercial log with a self-defined metric, two entries flagged as not fully verified, and AWS entries only up to October 2025. Simulation uses: incident causes, durations and cascades inform data centre and cloud resilience scenarios. Related records: Azure status history (data-azure-status-history-post-incident-reviews) and the cloud uptime archive (data-cloud-uptime-archive).",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "cloud regions data centre availability zones outage history dataset AWS Azure incident postmortems",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "web_page",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://axis-intelligence.com/cloud-outage-tracker/",
+  "id": "data-axis-cloud-outage-tracker-2026",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-09",
+  "licence": "CC-BY-4.0 (the CSV, as stated on the tracker page)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Cloud Outage Tracker 2026 (Axis Intelligence): operator-postmortem log of major cloud incidents",
+  "provider": "Axis Intelligence Research",
+  "related_ids": [
+    "data-azure-status-history-post-incident-reviews",
+    "data-cloud-uptime-archive",
+    "data-incidenthub-h1-2026-cloud-saas-reliability-report"
+  ],
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "nine incidents, diagnostic lag ratio statistics, example incidents, inclusion rules, weekly update cadence, last update Aug 9 2026",
+      "url": "https://axis-intelligence.com/cloud-outage-tracker/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "licence re-check at wave 2 integration: licence read on the provider page",
+      "url": "https://axis-intelligence.com"
+    }
+  ],
+  "tags": [
+    "cloud outages",
+    "post-incident reviews",
+    "diagnostic lag ratio",
+    "AWS",
+    "Azure",
+    "Google Cloud",
+    "r2-fresh-digital"
+  ],
+  "temporal_coverage": "2025 to 2026",
+  "title_en": "Cloud Outage Tracker 2026 (Axis Intelligence): operator-postmortem log of major cloud incidents",
+  "type": "data",
+  "update_frequency": "weekly"
+}

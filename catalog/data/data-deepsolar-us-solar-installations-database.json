@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "DeepSolar website",
+      "url": "https://deepsolar.web.app/"
+    },
+    {
+      "kind": "download",
+      "label": "DeepSolar database (census tract level, CSV)",
+      "url": "https://web.stanford.edu/group/deepsolar/deepsolar_tract.csv"
+    },
+    {
+      "kind": "download",
+      "label": "Residential solar installations panel data, contiguous US (CSV)",
+      "url": "https://opendatasharing.s3.us-west-2.amazonaws.com/DeepSolar2/data/residential_solar_installations_panel_data_contiguous_US.csv"
+    },
+    {
+      "kind": "repo",
+      "label": "DeepSolar code repository",
+      "url": "https://github.com/wangzhecheng/DeepSolar"
+    },
+    {
+      "kind": "paper",
+      "label": "Joule paper (2018)",
+      "url": "https://doi.org/10.1016/j.joule.2018.11.021"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "distributed_flexible_resources",
+    "imagery_remote_sensing"
+  ],
+  "data_kind": [
+    "tabular",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1016/j.joule.2018.11.021",
+    "name": "deepsolar us solar panel installation database from satellite imagery census tract level and county panel data",
+    "repo": "github.com/wangzhecheng/deepsolar",
+    "url": "https://deepsolar.web.app"
+  },
+  "description": "DeepSolar is a Stanford Sustainable Systems Lab project that identifies solar panels across the United States from satellite imagery with deep learning. The code repository describes household-level panel identification using an Inception-v3 image classifier with greedy layerwise training for segmentation, reports 88.9 percent recall and 93.2 percent precision on its test set, and notes that training and test images cannot be shared because of source restrictions. The project website links two free CSV downloads: the DeepSolar database at census tract level, and residential solar installation panel data from the later time-lapse work, for 420 counties and for all counties of the contiguous United States. It also offers zip-code and state maps of spatial and temporal installation data, a search of cumulative installations, incentives, income and saturation by zip code and year, and links to papers in Joule from 2018 and 2022 and to the PyTorch time-lapse repository. Coverage is the contiguous United States. Licence (read on the provider page on 2026-09-28): MIT. Simulation uses are distributed PV adoption by tract or county for distribution network hosting capacity, demand and equity studies.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:distributed_flexible_resources, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://deepsolar.web.app/",
+  "id": "data-deepsolar-us-solar-installations-database",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-03-24",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "DeepSolar - US solar panel installation database from satellite imagery (census tract level and county panel data)",
+  "provider": "Stanford University, Stanford Sustainable Systems Lab",
+  "related_ids": [
+    "data-lbnl-tracking-the-sun"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Site content read from its application bundle (tract CSV, panel data CSV links, maps, zip code search, papers, repositories)",
+      "url": "https://deepsolar.web.app/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Method, accuracy figures, data restriction, Python 2.7",
+      "url": "https://raw.githubusercontent.com/wangzhecheng/DeepSolar/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): MIT (basis: licence file in the GitHub repository)",
+      "url": "https://github.com/wangzhecheng/DeepSolar/blob/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://api.crossref.org/works/10.1016/j.joule.2018.11.021"
+    }
+  ],
+  "tags": [
+    "rooftop solar",
+    "satellite imagery",
+    "deep learning",
+    "United States"
+  ],
+  "title_en": "DeepSolar - US solar panel installation database from satellite imagery (census tract level and county panel data)",
+  "type": "data"
+}

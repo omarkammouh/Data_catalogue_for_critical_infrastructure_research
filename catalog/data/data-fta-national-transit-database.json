@@ -1,0 +1,147 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "NTD programme pages",
+      "url": "https://www.transit.dot.gov/ntd"
+    },
+    {
+      "kind": "portal",
+      "label": "NTD data on the USDOT open data portal",
+      "url": "https://data.transportation.gov/browse?q=National%20Transit%20Database"
+    },
+    {
+      "kind": "api",
+      "label": "Maintenance facilities table (API)",
+      "url": "https://data.transportation.gov/resource/9yj4-fiiz.json"
+    },
+    {
+      "kind": "docs",
+      "label": "FTA NTD data products",
+      "url": "https://www.transit.dot.gov/ntd/ntd-data"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance",
+    "system_description",
+    "historical_events",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series",
+    "event_record",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "national transit database ntd",
+    "url": "https://data.transportation.gov/resource/ekg5-frzt.json"
+  },
+  "description": "The National Transit Database is the Federal Transit Administration's national reporting system for public transport in the United States: transit agencies that receive FTA grants report their service, finances, assets and safety every year, and ridership and safety events every month. FTA publishes the results as NTD data tables on the USDOT open data portal, where about 80 datasets were listed on 26 September 2026, among them annual metrics, service data and operating expenses by agency and by mode as time series, monthly unlinked passenger trips, funding sources, employees, breakdowns, stations and facilities by mode and age, maintenance facilities with capacity and ownership (2022 to 2024 report years), demand response service areas, weekly transit service reference data, and major and non-major safety and security events reported monthly by agency and mode. Tables are downloadable as CSV or queryable through the Socrata API, and as US government works they carry the public domain licence; related layers such as NTD agency information appear on ArcGIS. Caveats: only agencies receiving FTA funds report, rural reporters give less detail (facility size fields may be null), definitions change between report years and some values are flagged questionable. The NTD supports capacity planning, service performance benchmarking, asset condition and safety analysis of US transit systems, and complements the National Transit Map in the NTAD record.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.public_transit",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "National Transit Database (transport P3 harvest)",
+      "route": "R11",
+      "source": "esri-living-atlas"
+    },
+    {
+      "date": "2026-09-29",
+      "query": "README section: Public Data Resources > Transportation",
+      "route": "R06",
+      "source": "APA-Technology-Division/urban-and-regional-planning-resources-readme"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.transportation.gov/resource/ekg5-frzt.json",
+  "id": "data-fta-national-transit-database",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (US Government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.transit.dot.gov/ntd"
+    ]
+  },
+  "maturity": "active",
+  "name": "National Transit Database (NTD)",
+  "provider": "U.S. Department of Transportation, Federal Transit Administration (FTA)",
+  "related_ids": [
+    "data-us-national-transportation-atlas-database"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "80 matching datasets; NTD annual data tables, monthly trips, safety events; attribution Federal Transit Administration; licence Public Domain U.S. Government",
+      "url": "https://data.transportation.gov/api/catalog/v1?q=National%20Transit%20Database&limit=40&only=datasets"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "maintenance facilities 2022-2024; rural reporters not required to report facility size; earlier years on the NTD programme website; questionable flags",
+      "url": "https://data.transportation.gov/api/views/9yj4-fiiz.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "non-major safety and security events reported monthly by agency and mode",
+      "url": "https://data.transportation.gov/api/views/urir-txqm.json"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Urban and Regional Planning Resources (APA Technology Division) listing read on 2026-09-29: name, link, section, tags and any blurb; the linked page itself was not opened",
+      "url": "https://github.com/APA-Technology-Division/urban-and-regional-planning-resources/blob/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-10-03",
+      "note": "FTA National Transit Database data page checked 2026-10-03; confirms current annual, monthly ridership and safety data products.",
+      "url": "https://www.transit.dot.gov/ntd/ntd-data"
+    }
+  ],
+  "spatial_resolution": "transit agency, mode and urbanised area",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "public transit",
+    "ridership",
+    "transit agencies",
+    "safety events",
+    "United States",
+    "FTA"
+  ],
+  "temporal_coverage": "annual report years (tables from 2015; current series 2022 to 2024); monthly ridership and safety events",
+  "title_en": "National Transit Database (NTD)",
+  "type": "data",
+  "update_frequency": "monthly"
+}

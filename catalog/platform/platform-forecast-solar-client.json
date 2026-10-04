@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/home-assistant-libs/forecast_solar"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/home-assistant-libs/forecast_solar/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "forecast solar pv forecast api client",
+    "repo": "github.com/home-assistant-libs/forecast_solar",
+    "url": "https://github.com/home-assistant-libs/forecast_solar"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "forecast_solar is a Python client for retrieving photovoltaic generation forecasts from the forecast.solar service. A user supplies site location, panel orientation and system details to the service through the library; it returns expected solar generation for upcoming days. Geographic coverage follows locations accepted by the upstream service. The repository README documents asynchronous calls and installation, and GitHub metadata states MIT licensing for the client. A limitation is that this licence applies to the code, not necessarily to the upstream forecast data or its rate limits. Forecast accuracy also depends on weather inputs and the quality of panel configuration. The client can supply short-term rooftop PV scenarios to grid or building-energy simulations. The related catalogue ERA5 record is an independent weather reanalysis, not this forecast service or client. No service account, forecast data or Python package was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "home-assistant-libs/forecast_solar linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/home-assistant-libs/forecast_solar",
+  "id": "platform-forecast-solar-client",
+  "interfaces": [
+    "code_library"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-21",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "forecast_solar PV forecast API client",
+  "notes": "G7 G7-1652. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. Client source is MIT; upstream forecast.solar service terms and any request limits require separate checking. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "forecast_solar client contributors",
+  "related_ids": [
+    "data-era5-reanalysis"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for home-assistant-libs/forecast_solar: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/home-assistant-libs/forecast_solar"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/home-assistant-libs/forecast_solar/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Forecast: solar PV forecast API client",
+  "type": "platform"
+}

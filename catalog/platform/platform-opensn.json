@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Project page",
+      "url": "https://opensn-library.github.io/"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/OpenSN-Library/OpenSN-Library"
+    },
+    {
+      "kind": "paper",
+      "label": "TPDS paper (IEEE Xplore)",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11021408"
+    },
+    {
+      "kind": "paper",
+      "label": "Preprint (arXiv 2507.03248)",
+      "url": "https://www.arxiv.org/abs/2507.03248"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "CN"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1145/3663408.3663430",
+    "name": "opensn open source library for emulating leo satellite networks",
+    "repo": "github.com/opensn-library/opensn-library",
+    "url": "https://opensn-library.github.io"
+  },
+  "deployment": [
+    "own_server"
+  ],
+  "description": "OpenSN is an open-source library for emulating large low Earth orbit (LEO) satellite networks such as Starlink, developed at Beihang University in Beijing and presented at the Asia-Pacific Workshop on Networking in 2024 and in IEEE Transactions on Parallel and Distributed Systems in 2025. Unlike Mininet-based emulators such as LeoEM, it runs each satellite and ground station as a container, so that real distributed routing software can run on every node, and it scales horizontally across several machines. Compared with the container-based StarryNet it streamlines calls to the Docker interface and avoids unnecessary creation of virtual links, and it keeps user configuration apart from container network management through a key-value database. The authors report building mega-constellations five to ten times faster than StarryNet and updating link states two to four times faster than Mininet. The code includes a Go daemon, a Python SDK and topology configurators, a web console and container images for satellite routers and ground stations, relying on Docker, etcd and InfluxDB. Coverage: software for any constellation design. Format and access: GitHub repository, free under the MIT licence. Caveats: research software; orbital dynamics and radio links are simplified to link delays and states. Simulation uses: digital twins of satellite networks to test routing, failures and recovery, and integrated satellite and terrestrial network studies. Related records: Hypatia and StarPerf simulate LEO networks, and LeoEM emulates them with Mininet.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "LEO satellite constellation network routing simulator open source inter-satellite links network model StarPerf",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/OpenSN-Library/OpenSN-Library",
+  "hosted_models": [
+    "container-based satellite and ground station routers"
+  ],
+  "id": "platform-opensn",
+  "interfaces": [
+    "code_library",
+    "web_app",
+    "command_line"
+  ],
+  "interoperability": [
+    "Docker",
+    "etcd",
+    "InfluxDB"
+  ],
+  "language": [
+    "rust_go"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-29",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OpenSN: open-source library for emulating LEO satellite networks",
+  "notes": "Project page read with curl, repository page via fetch and APNet 2024 metadata from Crossref on 2026-09-26. The ACM page refused automated fetches.",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine",
+    "digital_twin"
+  ],
+  "provider": "Beihang University and Zhongguancun Laboratory (Wenhao Lu, Zhiyuan Wang, Hefan Zhang, Shan Zhang, Hongbin Luo)",
+  "related_ids": [
+    "platform-esa-scne-satellite-constellation-network-emulator",
+    "platform-xeoverse-leo-mega-constellation-simulator"
+  ],
+  "sectors": [
+    "digital.satellite_positioning",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "abstract and papers",
+      "url": "https://opensn-library.github.io/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "licence and components",
+      "url": "https://github.com/OpenSN-Library/OpenSN-Library"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed last_updated.",
+      "url": "https://opensn-library.github.io/"
+    }
+  ],
+  "supported_sectors": [
+    "digital.satellite_positioning",
+    "digital.telecom"
+  ],
+  "tags": [
+    "LEO satellite network",
+    "emulation",
+    "containers",
+    "Starlink",
+    "routing"
+  ],
+  "title_en": "OpenSN: open-source library for emulating LEO satellite networks",
+  "type": "platform"
+}

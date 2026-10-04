@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Reproducibility package (Zenodo)",
+      "url": "https://zenodo.org/records/22646179"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/tinyboy1993/MSW-optimization"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "CN"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.22646179",
+    "name": "msw optimization multi city nsga ii and topsis framework for allocating municipal solid waste to treatment pathways china",
+    "repo": "github.com/tinyboy1993/msw-optimization",
+    "url": "doi:10.5281/zenodo.22646179"
+  },
+  "description": "This software works out how Chinese cities could split their household waste between landfill, incineration, composting, anaerobic digestion and recycling, and which limit holds each city back from a more circular system. The producers are Tianyong Wu and Chunyuan Zhang of Hubei Polytechnic University, and the package accompanies their manuscript on a multi-city decision-support framework. It uses the NSGA-II genetic algorithm to find trade-offs between cost, emissions and resource recovery, then picks a preferred allocation with entropy-weighted TOPSIS. Coverage is four cities, Xiamen, Fuzhou, Ningbo and Huangshi, under four policy scenarios: a baseline, mandatory waste classification, pricing of externalities, and both combined. The package contains city parameters with notes on their public sources, all experiment scripts including sensitivity, capacity and carbon price sweeps, benchmark logs and the published figures, and is available as a free download from Zenodo, with the code under MIT and data under Creative Commons Attribution 4.0, plus a GitHub copy. Caveats: the manuscript was not yet published when read, and parameters are city averages compiled from literature and statistics. Simulation uses: planning treatment capacity mixes and testing classification and pricing policies for municipal waste systems. Related records: SWOLFPy (model-swolfpy) optimises waste systems with life cycle models.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "multi-city decision support municipal solid waste optimisation",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.22646179",
+  "id": "model-msw-optimization-multi-city-nsga2",
+  "inputs": [
+    "City parameter vectors (waste generation, composition, capacities, costs and emission factors) compiled from public sources",
+    "Policy scenario settings: baseline, waste classification, externality pricing, combined"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-09",
+  "licence": "MIT (code); CC BY 4.0 (data and figures)",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "MSW-optimization: multi-city NSGA-II and TOPSIS framework for allocating municipal solid waste to treatment pathways (China)",
+  "outputs": [
+    "Pareto fronts of waste allocation across landfill, incineration, composting, anaerobic digestion and recycling",
+    "Preferred allocation per scenario by entropy-weighted TOPSIS",
+    "Sensitivity, capacity and carbon price sweeps"
+  ],
+  "provider": "Tianyong Wu and Chunyuan Zhang (Hubei Polytechnic University)",
+  "regions": [
+    "Xiamen",
+    "Fuzhou",
+    "Ningbo",
+    "Huangshi"
+  ],
+  "related_ids": [
+    "model-swolfpy"
+  ],
+  "repository": "https://github.com/tinyboy1993/MSW-optimization",
+  "runs_on": [
+    "Python 3.12 with numpy, scipy, pandas, matplotlib and pymoo"
+  ],
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators Wu (Hubei Key Laboratory of Mining Environmental Pollution Control and Remediation; School of Environmental Science and Engineering, Hubei Polytechnic University), Zhang (School of Artificial Intelligence, Hubei Polytechnic University); published 2026-09-07; MSW-optimization.zip (8.7 MB); NSGA-II with simplex repair over five pathways, entropy-weighted TOPSIS; four cities (Xiamen, Fuzhou, Ningbo, Huangshi), scenarios S1 baseline, S2 classification, S3 externality pricing, S4 combined; folders data/, experiment/, Workspace/experiments/, cross_platform_rerun/, archived_outputs_windows/, manuscript_figures/; MIT code, CC BY 4.0 data; companion GitHub tinyboy1993/MSW-optimization",
+      "url": "https://zenodo.org/api/records/22646179"
+    }
+  ],
+  "tags": [
+    "municipal solid waste",
+    "multi-objective optimisation",
+    "NSGA-II",
+    "TOPSIS",
+    "circular economy",
+    "China"
+  ],
+  "title_en": "MSW-optimization: multi-city NSGA-II and TOPSIS framework for allocating municipal solid waste to treatment pathways (China)",
+  "type": "model",
+  "validated_on": [
+    "30-run MOEA benchmark protocol and cross-platform re-runs in the package"
+  ]
+}

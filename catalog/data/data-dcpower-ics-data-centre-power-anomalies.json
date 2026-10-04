@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/20358618"
+    },
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/vheydari/DCPower-ICS"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.5281/zenodo.20358618"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "synthetic_benchmark",
+    "cyber_control",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.20358618",
+    "name": "dcpower ics labelled data centre power anomaly dataset",
+    "repo": "github.com/vheydari/dcpower-ics",
+    "url": "https://zenodo.org/records/20358618"
+  },
+  "description": "DCPower-ICS is a fully synthetic anomaly-detection dataset for data-centre power infrastructure. Vahid Heydari generates utility feed, breakers, automatic transfer, backup generation, batteries, UPS, computing, cooling and sheddable-load variables with a reduced-order simulator. The documented release contains separate 24-hour training and test CSVs sampled at 1 Hz, each with 86,400 rows and 43 columns: time, 40 numeric process variables, a label and a scenario identifier. Twenty-two fault or disturbance scenarios cover maintenance mistakes, commissioning faults, cyber-physical anomalies and operational disturbances. Planned maintenance appears in training data and is labelled normal. The open May 2026 Zenodo release is free under CC BY 4.0; generation and baseline code has a separate MIT archive. There is no real facility location or measured historical period. A limitation is the simplified synthetic physics and deliberately constructed scenario frequencies, which cannot estimate real outage likelihoods. Simulation uses include validating fault detection and maintenance-mode false alarms in data-centre power models. It complements data-atlas-global-data-center-map with controlled operational traces, not facility locations. The earlier rejection solely for being synthetic conflicts with the current reuse rule. No files were downloaded or simulations executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "industrial benchmark dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "title:(\"data centre\" OR \"data center\" OR \"colocation\" OR \"cloud region\" OR \"availability zone\" OR \"server farm\" OR \"hyperscale data centre\" OR \"edge data centre\" OR \"data centre location\" OR \"data centre capacity\" OR \"IT load\" OR \"power usage effectiveness\" OR \"PUE\" OR \"cooling\" OR \"data centre outage\" OR \"data centre map\" OR \"data centre inventory\" OR \"rack\" OR \"facility tier\" OR \"data centre energy use\" OR \"data centre water use\" OR \"backup generator\" OR \"UPS\")",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://zenodo.org/records/20358618",
+  "id": "data-dcpower-ics-data-centre-power-anomalies",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-29",
+  "licence": "CC-BY-4.0 for dataset; MIT for generation code",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "DCPower-ICS labelled data-centre power anomaly dataset",
+  "notes": "G8; G8-0354. G8; own metadata and documentation checked. Data files, archives and software execution were not inspected. Simulation uses are curator interpretations. ",
+  "provider": "Vahid Heydari, Morgan State University",
+  "related_ids": [
+    "data-atlas-global-data-center-map"
+  ],
+  "sectors": [
+    "digital.data_centres",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/vheydari/DCPower-ICS/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/vheydari/DCPower-ICS"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Concept resolves to open version 20358618; CC BY 4.0 and three-file manifest.",
+      "url": "https://zenodo.org/api/records/20358617"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Separate code archive resolves to 20358594, v1.0.0, MIT.",
+      "url": "https://zenodo.org/api/records/20358593"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/20358618"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence cc-by-4.0, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/20358618"
+    }
+  ],
+  "spatial_resolution": "Generic data-centre power system; no real facility coordinates.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Synthetic 24-hour training and 24-hour test windows; release 2026-05-23.",
+  "temporal_resolution": "1 Hz.",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "DCPower-ICS labelled data-centre power anomaly dataset",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

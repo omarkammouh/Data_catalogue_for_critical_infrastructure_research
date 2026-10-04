@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Data download",
+      "url": "https://kp.gfz.de/en/data"
+    },
+    {
+      "kind": "docs",
+      "label": "Kp homepage",
+      "url": "https://kp.gfz.de/en/"
+    },
+    {
+      "kind": "portal",
+      "label": "GFZ space weather forecasts",
+      "url": "https://spaceweather.gfz.de/products-data/forecasts"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "space_weather",
+    "historical_events"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "geomagnetic kp index and hpo indices gfz",
+    "url": "https://kp.gfz.de/en"
+  },
+  "description": "The Kp index is the three-hourly planetary geomagnetic activity index introduced by Julius Bartels in 1949 and now derived and published by the GFZ Helmholtz Centre for Geosciences in Potsdam, which contributes it to the International Service of Geomagnetic Indices. It measures the energy input from the solar wind to the Earth and is the standard measure of geomagnetic storm strength. The site provides Kp together with its derived indices (ap, Ap, Cp, C9), the newer half-hourly and hourly Hp30 and Hp60 indices, interactive figures, documentation, and forecasts of Kp, ap and ks on GFZ's space weather site. Data are downloaded through a web form, HTTPS and FTP servers and a web service API with Python and MATLAB clients, in the WDC text format or JSON; the WDC format gives definitive values by default. Kp and its figures are licensed CC BY 4.0, free of charge, with GFZ cited as source. Caveats: Kp is a planetary three-hour average that smooths local extremes relevant for geomagnetically induced currents, and nowcast values are preliminary until made definitive. It is used as a driver and scenario variable in space weather hazard exposure and resilience studies for power grids, satellites and GNSS, and complements INTERMAGNET observatory data and NOAA SWPC forecasts.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "geomagnetic Kp index data",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "plain_text",
+    "json"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://kp.gfz.de/en/",
+  "id": "data-gfz-kp-index",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Geomagnetic Kp index and Hpo indices (GFZ)",
+  "provider": "GFZ Helmholtz Centre for Geosciences, Potsdam",
+  "related_ids": [],
+  "schema_summary": "Kp, ap, Ap, Cp, C9, Hp30, Hp60 per interval; definitive flag",
+  "sectors": [
+    "cross_cutting.space",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Kp introduced by Bartels 1949; CC BY 4.0; Hp30 and Hp60; forecasts; download via webform, HTTPS, FTP, API (Python, Matlab)",
+      "url": "https://kp.gfz.de/en/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Formats WDC and JSON (Kp, ap, Ap, Cp, C9); WDC definitive values by default",
+      "url": "https://kp.gfz.de/en/data"
+    }
+  ],
+  "spatial_resolution": "planetary index",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "Kp",
+    "geomagnetic index",
+    "GFZ",
+    "space weather"
+  ],
+  "temporal_coverage": "long historical record to present (Kp series)",
+  "temporal_resolution": "3-hourly (Kp), 30 and 60 minutes (Hp30, Hp60)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Geomagnetic Kp index and Hpo indices (GFZ)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

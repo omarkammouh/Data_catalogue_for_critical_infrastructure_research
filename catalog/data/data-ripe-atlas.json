@@ -1,0 +1,139 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "RIPE Atlas",
+      "url": "https://atlas.ripe.net/"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://atlas.ripe.net/docs/"
+    },
+    {
+      "kind": "api",
+      "label": "REST API v2 (probes, measurements, results)",
+      "url": "https://atlas.ripe.net/api/v2/root/"
+    },
+    {
+      "kind": "docs",
+      "label": "Daily result dumps",
+      "url": "https://data-store.ripe.net/datasets/atlas-daily-dumps/"
+    },
+    {
+      "kind": "docs",
+      "label": "About RIPE Atlas",
+      "url": "https://www.ripe.net/analyse/internet-measurements/ripe-atlas/"
+    }
+  ],
+  "access_note": "Public results can be read without an account; custom measurements need a RIPE NCC Access account and credits.",
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "sensor_realtime_streams",
+    "service_performance",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "stream",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ripe atlas",
+    "url": "https://atlas.ripe.net"
+  },
+  "description": "RIPE Atlas is a global network of measurement devices, hardware and software probes hosted by volunteers in homes and networks and more stable anchors installed in data centres, that actively measure internet connectivity. Probes run built-in and user-defined ping, traceroute, DNS, TLS certificate, NTP and HTTP measurements, and the results record reachability, latency and paths between thousands of vantage points and targets. The network is operated by the RIPE NCC, the Regional Internet Registry for Europe, the Middle East and parts of Central Asia, so that operators and researchers can troubleshoot networks, study connectivity and improve the internet. The RIPE NCC page states over 14,000 probes; the public API listed 15,131 connected probes on 26 September 2026, spread across all continents with the densest coverage in Europe and North America. Results of public measurements are open: they are served as JSON through the REST API (v2), streamed live, and published as daily dump files on data-store.ripe.net, which on 26 September 2026 held a rolling window of recent days. Reading results is free of charge; creating custom measurements uses a credit system earned by hosting probes, and requires a RIPE NCC Access account. Use is under the RIPE Atlas terms and conditions. Caveats: probe placement is uneven and volunteer-driven, probes in home networks go offline, and measurements show the paths chosen at the time, not the full topology. Simulation uses: observed latency and reachability for validating network models, detecting and characterising outages and cable cuts, and resilience studies of internet paths and DNS. Related records: RIPE RIS routing data, CAIDA topology datasets and the M-Lab measurement archive.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.internet_exchange:sensor_realtime_streams",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "api",
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://atlas.ripe.net/",
+  "id": "data-ripe-atlas",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "RIPE Atlas terms and conditions; public measurement results openly available",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "RIPE Atlas",
+  "provider": "RIPE NCC",
+  "related_ids": [
+    "data-ripe-ris",
+    "data-caida-internet-topology-data-kit",
+    "data-measurement-lab-mlab"
+  ],
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "network_flow",
+    "emergency_response"
+  ],
+  "size": "15,131 connected probes (API, 2026-09-26)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Probes and anchors, volunteers, over 14,000 probes, credits system",
+      "url": "https://www.ripe.net/analyse/internet-measurements/ripe-atlas/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "count 15,131 connected probes",
+      "url": "https://atlas.ripe.net/api/v2/probes/?status=1&page_size=1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Daily dump folders, recent days",
+      "url": "https://data-store.ripe.net/datasets/atlas-daily-dumps/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Documentation: API, probe and anchor versions, Sagan parsing library",
+      "url": "https://atlas.ripe.net/docs/"
+    }
+  ],
+  "spatial_resolution": "Probe locations (approximate coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "active measurement",
+    "probes",
+    "anchors",
+    "traceroute",
+    "ping",
+    "DNS",
+    "latency"
+  ],
+  "temporal_resolution": "Minutes (per measurement interval)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Ripe atlas internet connectivity measurement network",
+  "type": "data",
+  "update_frequency": "real_time"
+}

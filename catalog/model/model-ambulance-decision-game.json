@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "PyPI package ambulance_game",
+      "url": "https://pypi.org/project/ambulance_game/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/11michalis11/AmbulanceDecisionGame"
+    },
+    {
+      "kind": "portal",
+      "label": "Archived release v0.0.4 (Zenodo)",
+      "url": "https://zenodo.org/records/5795778"
+    },
+    {
+      "kind": "paper",
+      "label": "European Journal of Operational Research article (2023)",
+      "url": "https://doi.org/10.1016/j.ejor.2022.07.001"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1016/j.ejor.2022.07.001",
+    "name": "ambulance decision game queueing markov chain and game theoretic model of the ambulance and emergency department interface",
+    "repo": "github.com/11michalis11/ambulancedecisiongame",
+    "url": "https://github.com/11michalis11/AmbulanceDecisionGame"
+  },
+  "description": "Ambulance Decision Game is a Python library that models what happens when ambulances queue to hand patients over at hospital emergency departments, and how departments and the ambulance service behave strategically when they face waiting-time targets. The producer is Michalis Panayides at Cardiff University; the method is published in the European Journal of Operational Research (2023) as a game theoretic model of behavioural gaming at the interface between emergency medical services and emergency departments. Coverage is generic: the model is parameterised by arrival and service rates, not tied to one region. It contains a discrete-event simulation of a queue with two waiting spaces where ambulance patients can be blocked, the equivalent Markov chain for exact results, and a three-player game between two departments and an ambulance distributor that finds equilibrium routing. The code is available on GitHub and PyPI under the free MIT licence, with a release archived on Zenodo. Caveats: the last commit was in December 2022, the models assume stationary Markovian arrivals, and no real-world data set is bundled. Simulation uses: studying ambulance handover delays and their knock-on effect on response capacity, testing capacity or target changes at emergency departments, and representing hospital blocking in wider emergency response models. Related records: the NHSX ambulance simulation (model-ambulance-des-nhsx) and OpenEMS (model-openems-ambulance-deployment) cover ambulance dispatch and location.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ambulance_game",
+      "route": "R05",
+      "source": "pypi"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://github.com/11michalis11/AmbulanceDecisionGame",
+  "id": "model-ambulance-decision-game",
+  "inputs": [
+    "Arrival rates of ambulance and other patients",
+    "Service rates and numbers of servers in each emergency department",
+    "Capacities of the waiting spaces (ambulance holding and department)",
+    "Target times and payoff parameters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-12-20",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "discrete_event",
+    "economic"
+  ],
+  "name": "Ambulance Decision Game: queueing, Markov chain and game theoretic model of the ambulance and emergency department interface",
+  "outputs": [
+    "Waiting-time and blocking-time distributions from simulation and Markov chain",
+    "Proportion of patients within target",
+    "Equilibrium strategies for two emergency departments and an ambulance distributor"
+  ],
+  "provider": "Michalis Panayides (Cardiff University)",
+  "related_ids": [
+    "model-ambulance-des-nhsx",
+    "model-openems-ambulance-deployment"
+  ],
+  "repository": "https://github.com/11michalis11/AmbulanceDecisionGame",
+  "runs_on": [
+    "Python 3.8 or newer"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 0.0.7 uploaded 2022-12-20; author Michalis Panayides, Cardiff University; README: discrete event simulation of a two-waiting-space queue with blocking, equivalent Markov chain, game between two EDs and an EMS distributor",
+      "url": "https://pypi.org/pypi/ambulance_game/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License, copyright 2021 Michalis Panayides",
+      "url": "https://raw.githubusercontent.com/11michalis11/AmbulanceDecisionGame/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Shallow clone: last commit 2022-12-20; 376 files",
+      "url": "https://github.com/11michalis11/AmbulanceDecisionGame"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Release v0.0.4 archived 2021-12-21 (record 5795778)",
+      "url": "https://zenodo.org/api/records?q=AmbulanceDecisionGame"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "A game theoretic model of the behavioural gaming that takes place at the EMS - ED interface, EJOR, March 2023",
+      "url": "https://api.crossref.org/works?query.bibliographic=game+theoretic+model+behavioural+gaming+EMS+ED+interface"
+    }
+  ],
+  "tags": [
+    "ambulance handover",
+    "emergency department",
+    "queueing",
+    "Markov chain",
+    "game theory",
+    "blocking"
+  ],
+  "title_en": "Ambulance Decision Game: queueing, Markov chain and game theoretic model of the ambulance and emergency department interface",
+  "type": "model"
+}

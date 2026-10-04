@@ -1,0 +1,148 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/covasim/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/starsimhub/covasim"
+    },
+    {
+      "kind": "viewer",
+      "label": "Web application",
+      "url": "https://app.covasim.org"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://docs.covasim.org"
+    },
+    {
+      "kind": "paper",
+      "label": "Kerr et al. (2021), PLOS Computational Biology",
+      "url": "https://doi.org/10.1371/journal.pcbi.1009149"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Kerr, C.C. et al. (2021). Covasim: an agent-based model of COVID-19 dynamics and interventions. PLOS Computational Biology 17(7): e1009149. https://doi.org/10.1371/journal.pcbi.1009149",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "doi": "10.1371/journal.pcbi.1009149",
+    "name": "covasim",
+    "repo": "github.com/starsimhub/covasim",
+    "url": "https://docs.covasim.org"
+  },
+  "description": "Covasim is a stochastic agent-based simulator for COVID-19. Each simulated person has an age and belongs to household, school, workplace and community contact layers; the model tracks infection, symptoms, severity, hospitalisation, critical care and death, with an immunity module for vaccines and variants. It projects indicators such as numbers of infections and peak hospital demand and explores the impact of interventions including social distancing, school closures, testing, contact tracing, quarantine and vaccination. The Institute for Disease Modeling developed it with the University of Copenhagen, the Burnet Institute, GitHub and Microsoft, and described it in PLOS Computational Biology (2021); it has been applied to many countries. Coverage is any population the user configures, with age-structured defaults for many countries; resolution is the individual and the day. It is a Python package on PyPI (version 3.1.8, May 2026) with source on GitHub, documentation and a web application. Licence: MIT (copyright Bill & Melinda Gates Foundation), free. Caveats: it is specific to COVID-19; the developers now direct new agent-based work to the general Starsim framework, and results depend strongly on calibration. Simulation uses: agent-based modelling of epidemics, capacity planning of hospital and ICU beds, and pandemic emergency response. Related: CHIME, COVID-19 Scenarios and EpiModel (catalogued as model-chime, model-covid19-scenarios and model-epimodel).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "agent-based COVID-19 model hospital demand (register services-starsim-covasim)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry",
+      "route": "R06",
+      "source": "services-starsim-covasim (register)"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "covasim JSON API",
+      "route": "R05",
+      "source": "pypi"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://docs.covasim.org",
+  "id": "model-covasim",
+  "inputs": [
+    "Population size and age structure",
+    "Contact networks (households, schools, workplaces, community)",
+    "Disease parameters, variants and immunity",
+    "Interventions: distancing, school closure, testing, tracing, quarantine, vaccination"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-29",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based"
+  ],
+  "name": "Covasim",
+  "outputs": [
+    "Infections, hospitalisations and deaths over time",
+    "Peak hospital demand",
+    "Intervention impact"
+  ],
+  "provider": "Institute for Disease Modeling (Gates Foundation), with the Starsim community",
+  "related_ids": [
+    "model-chime",
+    "model-covid19-scenarios",
+    "model-epimodel"
+  ],
+  "repository": "https://github.com/starsimhub/covasim",
+  "runs_on": [],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Stochastic agent-based COVID-19 simulator, peak hospital demand, interventions, citation, IDM, now part of Starsim",
+      "url": "https://raw.githubusercontent.com/starsimhub/covasim/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT, copyright Bill & Melinda Gates Foundation",
+      "url": "https://raw.githubusercontent.com/starsimhub/covasim/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 3.1.8 uploaded 2026-05-29",
+      "url": "https://pypi.org/pypi/covasim/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Documentation home: stochastic agent-based simulator written in Python",
+      "url": "https://docs.covasim.org"
+    }
+  ],
+  "tags": [
+    "COVID-19",
+    "agent-based",
+    "hospital demand",
+    "interventions",
+    "vaccination",
+    "Starsim",
+    "IDM"
+  ],
+  "title_en": "Covasim model for COVID-19 infection and hospital demand",
+  "type": "model",
+  "validated_on": []
+}

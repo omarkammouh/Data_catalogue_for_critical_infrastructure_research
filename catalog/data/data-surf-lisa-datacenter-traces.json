@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Generic and ML workloads (2024)",
+      "url": "https://zenodo.org/records/13685426"
+    },
+    {
+      "kind": "download",
+      "label": "Beneath the SURFace (2020)",
+      "url": "https://zenodo.org/records/3878143"
+    },
+    {
+      "kind": "repo",
+      "label": "SURFace scripts",
+      "url": "https://github.com/sara-nl/SURFace"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "data_family": [
+    "demand_operation",
+    "equipment_specifications"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "surf lisa data centre hardware power and workload traces netherlands",
+    "repo": "github.com/sara-nl/surface",
+    "url": "https://zenodo.org/records/13685426"
+  },
+  "description": "Two open trace archives describe the operation of Lisa, a cluster at the Dutch national e-infrastructure provider SURF used by universities and researchers. 'Beneath the SURFace' (2020, Vrije Universiteit Amsterdam, Leiden University and SURFsara) gives very fine-grained low-level metrics from the nodes together with scheduler logs, described in USENIX ;login: in July 2020, with scripts on GitHub. 'Generic and ML Workloads in an HPC Datacenter' (2024, VU Amsterdam, TU Wien and SURF) covers 338 nodes, about 15 percent with GPUs: SLURM job records for about ten months (December 2021 to November 2022) and Prometheus monitoring for five months (June to November 2022) with more than 90 attributes sampled every 30 seconds, including CPU and GPU power and temperature, network input and output and memory use, almost 130 million records, plus node hardware and a joined job and node table. Coverage: one Dutch data centre cluster. Format and access: Parquet files in archives of about 22 GB and 17 GB on Zenodo, free of charge under CC BY 4.0. Caveats: a research cluster, not a commercial cloud; the 2020 archive is encrypted Parquet with instructions in its documentation. Simulation uses: power and thermal load of compute nodes for data centre energy, cooling and failure models, and workload patterns for capacity planning. Related records: the Google, Alibaba and Azure cluster traces cover commercial clouds; OpenDC simulates data centres.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Zenodo data harvest of the digital piece; candidate zenodo-f0050f791e, read in full on second reading",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "Zenodo data harvest of the digital piece; candidate zenodo-d233c59953, read in full on second reading",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "archive"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "extreme_heat",
+    "technological_failure"
+  ],
+  "homepage": "https://zenodo.org/records/13685426",
+  "id": "data-surf-lisa-datacenter-traces",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-09-04",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "SURF Lisa data-centre hardware, power and workload traces (Netherlands)",
+  "notes": "Zenodo records 13685426 and 3878143 read 2026-09-26 (descriptions, files, affiliations). The 2019 to 2020 span of the SURFace traces is inferred from the July 2020 article.",
+  "provider": "SURF (formerly SURFsara), with Vrije Universiteit Amsterdam, Leiden University and TU Wien",
+  "related_ids": [],
+  "schema_summary": "node hardware; jobs (start, end, resources, exit state); per-node metrics (CPU and GPU power, temperature, utilisation, memory, network, storage)",
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "digital_twin",
+    "resilience"
+  ],
+  "size": "about 22 GB and 17 GB",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "2024 archive",
+      "url": "https://zenodo.org/api/records/13685426"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "2020 archive",
+      "url": "https://zenodo.org/api/records/3878143"
+    }
+  ],
+  "spatial_resolution": "node",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "data centre traces",
+    "HPC",
+    "power",
+    "SLURM",
+    "SURF"
+  ],
+  "temporal_coverage": "2019 to 2020 (SURFace) and 2021-12 to 2022-11 (Lisa)",
+  "temporal_coverage_years": {
+    "end": 2022,
+    "start": 2019
+  },
+  "temporal_resolution": "30 s metrics; per job",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "SURF Lisa data-centre hardware, power and workload traces (Netherlands)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

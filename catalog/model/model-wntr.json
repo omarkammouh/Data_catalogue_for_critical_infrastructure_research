@@ -1,0 +1,141 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "WNTR documentation",
+      "url": "https://usepa.github.io/WNTR/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source repository (USEPA organisation)",
+      "url": "https://github.com/USEPA/WNTR"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package wntr",
+      "url": "https://pypi.org/project/wntr/"
+    },
+    {
+      "kind": "paper",
+      "label": "Klise et al. (2017), Environmental Modelling and Software 95",
+      "url": "https://doi.org/10.1016/j.envsoft.2017.06.022"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Klise, K.A., Bynum, M., Moriarty, D., Murray, R. (2017). A software framework for assessing the resilience of drinking water systems to disasters with an example earthquake case study. Environmental Modelling and Software 95, 420-431. doi:10.1016/j.envsoft.2017.06.022",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1016/j.envsoft.2017.06.022",
+    "name": "water network tool for resilience wntr",
+    "repo": "github.com/usepa/wntr",
+    "url": "https://usepa.github.io/WNTR"
+  },
+  "description": "WNTR is a Python package that simulates and analyses the resilience of drinking water distribution networks to disasters. It reads and writes EPANET input files, lets users build or modify network structure and operations, and adds disruptive events such as pipe leaks, power outages, damage to tanks, valves and pumps, contaminant injection and environmental change, with component failure drawn from fragility curves. Repair and response strategies can then be applied, and the network is simulated with demand-driven or pressure-dependent hydraulics and water quality through EPANET or WNTR's own Python simulator. Results are summarised with topographic, hydraulic, water quality and security, and economic resilience metrics and plotted. The U.S. Environmental Protection Agency's Office of Research and Development developed it with Sandia National Laboratories to bring the main pieces of water-system resilience modelling into one framework. It is generic: any network, anywhere, described as an EPANET model can be studied, and the repository ships example networks. It is distributed through the USEPA GitHub organisation, PyPI and conda-forge; version 1.5.0 was released on 1 July 2026. Licence: Revised BSD, free to use. Caveats: results depend on the quality of the utility's EPANET model and of the fragility curves supplied, which WNTR does not provide for a specific place. Simulation uses: resilience analysis, network flow, cascading failure through power dependencies, emergency response and hazard exposure such as earthquakes. It builds on the EPANET engine catalogued as model-epanet and complements network-optimisation packages such as WaterModels.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "WNTR water network tool for resilience python package",
+      "route": "R22",
+      "source": "google-search"
+    },
+    {
+      "date": "2026-09-24",
+      "query": "named in model-epanet notes as a candidate",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake",
+    "technological_failure",
+    "physical_attack_sabotage"
+  ],
+  "homepage": "https://usepa.github.io/WNTR/",
+  "id": "model-wntr",
+  "inputs": [
+    "EPANET INP network file (EPANET 2.00.12 and 2.2 compatible)",
+    "Disruptive-event definitions (pipe leaks, power outages, damage to tanks, valves and pumps, contaminant injection)",
+    "Fragility curves for component failure"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-01",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "network",
+    "fragility"
+  ],
+  "name": "Water Network Tool for Resilience (WNTR)",
+  "notes": "Also named in the audit notes of model-epanet (2026-09-24) as a candidate for its own record. Release 1.5.0 tag confirmed with git ls-remote on 2026-09-26.",
+  "outputs": [
+    "Pressures, flows, demands and water quality over time (demand-driven or pressure-dependent)",
+    "Topographic, hydraulic, water quality and security, and economic resilience metrics",
+    "Graphics of network state"
+  ],
+  "provider": "U.S. Environmental Protection Agency and Sandia National Laboratories",
+  "related_ids": [
+    "model-epanet"
+  ],
+  "repository": "https://github.com/USEPA/WNTR",
+  "runs_on": [],
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "network_flow",
+    "cascading_failure",
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "capabilities, installation via PyPI and conda-forge, Revised BSD licence, citations, contacts at Sandia and EPA",
+      "url": "https://raw.githubusercontent.com/USEPA/WNTR/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "EPANET compatible, version 1.5.0 available, EPA ORD and Sandia interagency agreement",
+      "url": "https://usepa.github.io/WNTR/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "EPANET 2.00.12 and 2.2 compatibility; disruptive events; fragility curves; metric classes",
+      "url": "https://usepa.github.io/WNTR/overview.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 1.5.0 uploaded 2026-07-01; licence Revised BSD",
+      "url": "https://pypi.org/pypi/wntr/json"
+    }
+  ],
+  "tags": [
+    "resilience",
+    "water distribution",
+    "EPANET",
+    "fragility curves",
+    "pressure dependent demand",
+    "disaster scenarios",
+    "Python package"
+  ],
+  "title_en": "Water Network Tool for Resilience (WNTR)",
+  "type": "model",
+  "validated_on": []
+}

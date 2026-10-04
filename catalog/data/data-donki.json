@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Web service API documentation",
+      "url": "https://ccmc.gsfc.nasa.gov/tools/DONKI/#donki-webservice-calls-api"
+    },
+    {
+      "kind": "viewer",
+      "label": "DONKI Dash",
+      "url": "https://kauai.ccmc.gsfc.nasa.gov/DONKI-dashboard/"
+    },
+    {
+      "kind": "portal",
+      "label": "DONKI search",
+      "url": "https://kauai.ccmc.gsfc.nasa.gov/DONKI/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "space_weather",
+    "historical_events"
+  ],
+  "data_kind": [
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "donki space weather database of notifications knowledge information",
+    "url": "https://kauai.ccmc.gsfc.nasa.gov/DONKI"
+  },
+  "description": "DONKI, the Space Weather Database Of Notifications, Knowledge, Information, was developed at NASA's Community Coordinated Modeling Center (CCMC) as an online tool for space weather forecasters, scientists and the wider space science community. It records space weather activity worldwide and its interpretation: coronal mass ejections with their analyses and model runs, solar flares, solar energetic particle events, geomagnetic storms, interplanetary shocks, radiation belt enhancements, high-speed streams and magnetopause crossings, together with the notifications issued by forecasters and the links between causes and effects. Records can be searched and browsed online, explored visually in the DONKI Dash dashboard, and retrieved through a web service API that returns JSON. The service is free; the API is also offered through NASA's public API gateway. Caveats: the coronal mass ejection catalogue reaches back to 2010, event entries reflect forecaster analyses, not a homogenised catalogue, and impacts on ground infrastructure are not recorded. It is used to select historical storm scenarios and event chains for hazard exposure, emergency response exercises and resilience studies of power grids and satellites, and relates to the NASA CCMC platform and NOAA SWPC products catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "space weather event database API",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "json",
+    "web_page"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://ccmc.gsfc.nasa.gov/tools/DONKI/",
+  "id": "data-donki",
+  "languages": [
+    "en"
+  ],
+  "licence": "US government work, public domain",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "DONKI (Space Weather Database Of Notifications, Knowledge, Information)",
+  "notes": "Event types and JSON output confirmed by calling the web service endpoints CME, GST, FLR, SEP, IPS, RBE, HSS, MPC and notifications on 2026-09-26.",
+  "provider": "NASA Community Coordinated Modeling Center (CCMC)",
+  "related_ids": [
+    "platform-nasa-ccmc",
+    "data-noaa-swpc-products"
+  ],
+  "schema_summary": "event type (CME, FLR, SEP, GST, IPS, RBE, HSS, MPC), times, Kp values for storms, source location, analyses, linked events, notifications",
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "DONKI developed at CCMC; comprehensive online tool; webservice API; DONKI Dash",
+      "url": "https://kauai.ccmc.gsfc.nasa.gov/DONKI/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "CME records from April 2010 returned as JSON",
+      "url": "https://kauai.ccmc.gsfc.nasa.gov/DONKI/WS/get/CME?startDate=2010-04-01&endDate=2010-04-05"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Geomagnetic storm of May 2024 with Kp values; FLR, SEP, IPS, RBE, HSS, MPC, notifications endpoints also answered",
+      "url": "https://kauai.ccmc.gsfc.nasa.gov/DONKI/WS/get/GST?startDate=2024-05-09&endDate=2024-05-12"
+    }
+  ],
+  "spatial_resolution": "event level",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "CME",
+    "solar flare",
+    "geomagnetic storm",
+    "event database",
+    "NASA"
+  ],
+  "temporal_coverage": "2010 (CME catalogue) to present",
+  "temporal_resolution": "event",
+  "temporal_resolution_class": "event",
+  "title_en": "DONKI (Space Weather Database Of Notifications, Knowledge, Information)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

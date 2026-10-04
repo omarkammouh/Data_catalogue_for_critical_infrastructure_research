@@ -1,0 +1,94 @@
+{
+  "id": "data-synth-transit-feeds",
+  "type": "data",
+  "name": "Example Transit Feed Registry",
+  "provider": "Example Mobility Foundation",
+  "description": "The Example Transit Feed Registry is a catalogue of fictitious public transport schedule feeds in GTFS format, listing 250 feeds from bus, tram and ferry operators with their download URLs, licence, last modification date and validation status. It is produced by the Example Mobility Foundation, a non-profit, to make operator feeds discoverable in one place. Coverage is global with feeds concentrated in Europe and North America; the registry itself is refreshed daily, while the feeds it points to are published by each operator on its own schedule. Access is through a REST API returning JSON and a CSV dump of the whole registry, both free under CC0, without registration. Caveats: the registry records only what operators publish, so coverage of small operators is incomplete, and about a fifth of the feeds fail validation at any time. Simulation uses include network flow, agent-based mobility models and emergency response planning that needs timetables. It complements the Example Traffic Agent Model, which consumes GTFS feeds as an input.",
+  "homepage": "https://transit.example.org/registry",
+  "access_links": [
+    {
+      "label": "Registry",
+      "url": "https://transit.example.org/registry",
+      "kind": "portal"
+    },
+    {
+      "label": "API",
+      "url": "https://api.transit.example.org/v1/feeds",
+      "kind": "api"
+    }
+  ],
+  "licence": "CC0-1.0",
+  "cost": "free",
+  "access_restrictions": "none",
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "geographic_scope": "global",
+  "simulation_uses": [
+    "network_flow",
+    "agent_based",
+    "emergency_response"
+  ],
+  "maturity": "active",
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-09-23",
+  "description_checked": "2026-09-23",
+  "related_ids": [
+    "model-synth-traffic-abm"
+  ],
+  "tags": [],
+  "sources": [
+    {
+      "url": "https://transit.example.org/registry",
+      "accessed": "2026-09-23",
+      "note": "synthetic fixture"
+    }
+  ],
+  "discovery_routes": [
+    {
+      "route": "R11",
+      "source": "operator-list",
+      "query": "GTFS feed registry",
+      "date": "2026-09-23"
+    },
+    {
+      "route": "R30",
+      "source": "sector-hub-transport",
+      "query": "transit feeds",
+      "date": "2026-09-23"
+    }
+  ],
+  "dedupe_keys": {
+    "url": "https://transit.example.org/registry",
+    "name": "example transit feed registry"
+  },
+  "languages": [
+    "en"
+  ],
+  "data_family": [
+    "demand_operation",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "tabular",
+    "stream"
+  ],
+  "formats": [
+    "GTFS",
+    "JSON",
+    "CSV"
+  ],
+  "continents": [
+    "europe",
+    "north_america"
+  ],
+  "temporal_coverage": "2019-",
+  "temporal_resolution": "daily",
+  "update_frequency": "daily",
+  "temporal_coverage_years": {
+    "start": 2019,
+    "end": null
+  },
+  "size_bytes": 500000000,
+  "spatial_resolution_m": 1
+}

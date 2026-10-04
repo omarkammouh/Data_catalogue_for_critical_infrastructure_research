@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "FLEXPART website",
+      "url": "https://www.flexpart.eu/"
+    },
+    {
+      "kind": "repo",
+      "label": "Version 11 source code",
+      "url": "https://gitlab.phaidra.org/flexpart/flexpart"
+    },
+    {
+      "kind": "docs",
+      "label": "Version 11 documentation",
+      "url": "https://flexpart.img.univie.ac.at/docs/"
+    },
+    {
+      "kind": "download",
+      "label": "Version 10 releases",
+      "url": "https://git.nilu.no/flexpart/flexpart/-/releases"
+    },
+    {
+      "kind": "paper",
+      "label": "Version 11 paper (Bakels et al. 2024, GMD)",
+      "url": "https://doi.org/10.5194/gmd-17-7595-2024"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Bakels, L. et al. (2024). FLEXPART version 11. Geoscientific Model Development 17, 7595-7627. doi:10.5194/gmd-17-7595-2024",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5194/gmd-17-7595-2024",
+    "name": "flexpart lagrangian particle dispersion model",
+    "repo": "gitlab.phaidra.org/flexpart/flexpart",
+    "url": "https://flexpart.eu"
+  },
+  "description": "FLEXPART, the FLEXible PARTicle dispersion model, is a Lagrangian transport and dispersion model for a large range of atmospheric transport processes. The website read on 2026-09-26 says it simulates transport, turbulent diffusion, dry and wet deposition, decay and linear chemistry, runs forward or backward with prescribed sources or receptors or in domain-filling mode, and covers scales from local to global. Version 11 for ECMWF and NCEP GFS input is on the University of Vienna Phaidra GitLab with documentation and the Bakels and co-authors 2024 paper in Geoscientific Model Development; version 10 is on the NILU GitLab with the Pisso and co-authors 2019 paper, and a family page lists versions for WRF, AROME, COSMO, HIRLAM and NorESM input. The code has been free and open from the start, and the version 11 repository carries the GNU GPL version 3. Caveats: the model needs meteorological input data obtained separately and technical set-up, and its results depend on the source term assumed. Simulation uses include hazard exposure and emergency response studies of radionuclide releases from nuclear plants, as in accident consequence modelling, and of other atmospheric releases from industrial sites. Related records: data-iaea-pris-power-reactor-information-system lists reactor sites that such releases start from, and platform-pctran-nuclear-plant-simulator includes a dose dispersion module.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review https://www-pub.iaea.org/MTCD/publications/PDF/p15792-DOC-010-496_web.pdf (IAEA Technical Reports Series 496 (2025), review)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://www.flexpart.eu/",
+  "id": "model-flexpart-lagrangian-dispersion",
+  "inputs": [
+    "meteorological fields from ECMWF or NCEP GFS (other versions take WRF, AROME, COSMO, HIRLAM, NorESM)",
+    "source terms or receptor locations"
+  ],
+  "language": [
+    "fortran"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "FLEXPART Lagrangian particle dispersion model",
+  "outputs": [
+    "gridded concentrations and deposition",
+    "source-receptor relationships in backward mode"
+  ],
+  "provider": "FLEXPART developer community (version 11 hosted at the University of Vienna, version 10 at NILU)",
+  "related_ids": [
+    "data-iaea-pris-power-reactor-information-system",
+    "platform-pctran-nuclear-plant-simulator"
+  ],
+  "repository": "https://gitlab.phaidra.org/flexpart/flexpart",
+  "sectors": [
+    "energy.nuclear"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Model description, version 11 and 10 download locations, papers, free and open licence statement",
+      "url": "https://www.flexpart.eu/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU GPL version 3 licence file of version 11",
+      "url": "https://gitlab.phaidra.org/flexpart/flexpart/-/raw/master/LICENSE"
+    }
+  ],
+  "tags": [
+    "atmospheric dispersion",
+    "Lagrangian particle model",
+    "radionuclide transport",
+    "emergency response",
+    "open source"
+  ],
+  "title_en": "FLEXPART Lagrangian particle dispersion model",
+  "type": "model"
+}

@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/metadriverse/trafficgen"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/metadriverse/trafficgen/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Feng et al. (2023). TrafficGen: Learning to Generate Diverse and Realistic Traffic Scenarios. ICRA, 3567-3575. https://arxiv.org/abs/2210.06609",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "trafficgen traffic scenario generation",
+    "repo": "github.com/metadriverse/trafficgen",
+    "url": "https://github.com/metadriverse/trafficgen"
+  },
+  "description": "TrafficGen is Feng, Li, Peng, Tan and Zhou's learned model for generating road-traffic scenarios. The repository provides vehicle-placement and trajectory-generation models, preprocessing instructions, sample tests and an interface that exports generated scenarios to MetaDrive. Inputs include road layouts, traffic observations and model settings; outputs are synthetic vehicle placements, trajectories and scenario pickle files. Spatial extent and time sampling follow the source scenes, with Waymo motion data documented for training. Source is free under Apache-2.0; external driving data require separate registration and terms. A limitation is that generated traffic reflects its training distribution and does not establish real-world safety. TrafficGen can prepare diverse road simulations and reinforcement-learning environments. SUMO (model-sumo) is related traffic simulation software. Public instructions describe training and inference, but no driving data, pretrained weights or simulation environment was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "metadriverse/trafficgen linked by zachytong/awesome-traffic-simulation",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/metadriverse/trafficgen",
+  "id": "model-trafficgen",
+  "inputs": [
+    "Road layout and traffic observations",
+    "Trained placement and trajectory models"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-07-30",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "TrafficGen traffic scenario generation",
+  "notes": "G7 G7-0942. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Synthetic traffic scenarios",
+    "Vehicle trajectories and MetaDrive scenario files"
+  ],
+  "provider": "TrafficGen authors and MetaDriverse contributors",
+  "related_ids": [
+    "model-sumo"
+  ],
+  "repository": "https://github.com/metadriverse/trafficgen",
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for metadriverse/trafficgen: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/metadriverse/trafficgen"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/metadriverse/trafficgen/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Statistical model for road transport",
+  "type": "model"
+}

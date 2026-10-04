@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/aquacropos/geoaquacrop_preprocess"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "geoaquacrop gridded input preparation pipeline",
+    "repo": "github.com/aquacropos/geoaquacrop_preprocess",
+    "url": "https://github.com/aquacropos/geoaquacrop_preprocess"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "GeoAquaCrop preprocess assembles spatial inputs for running FAO AquaCrop across a user-selected polygon and time period. The aquacropos project documents Python modules that obtain daily AgERA5 or NEX-GDDP-CMIP6 climate, SoilGrids texture and organic matter, GGCMI crop calendars and SPAM crop areas. It reprojects and harmonises these inputs to a common grid and writes compressed NetCDF files. Native resolutions range from 250 metres for soil to half a degree for crop calendars; the default output grid is 0.05 degrees, which does not create finer source information. Geographic coverage depends on the requested area and source availability. Source code is free under Apache 2.0. Historical AgERA5 retrieval requires a separate Copernicus account and acceptance of dataset terms; source data have their own licences. No account access or retrieval was needed for this metadata review. A limitation is the documentation’s automatic climate-source selection outside its historical interval, which users must inspect for their requested years. Simulation uses include preparing crop-water and irrigation-demand scenarios for model-fao-aquacrop. No pipeline steps were executed or output grids tested.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "\"irrigation\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/aquacropos/geoaquacrop_preprocess",
+  "id": "platform-geoaquacrop-gridded-input-preparation",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "interoperability": [
+    "GeoJSON polygon",
+    "NetCDF",
+    "Copernicus CDS API"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-23",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GeoAquaCrop gridded input preparation pipeline",
+  "notes": "G8; G8-0090. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "aquacropos contributors",
+  "related_ids": [
+    "model-fao-aquacrop"
+  ],
+  "sectors": [
+    "water.irrigation",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/aquacropos/geoaquacrop_preprocess/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/aquacropos/geoaquacrop_preprocess"
+    }
+  ],
+  "tags": [],
+  "title_en": "GeoAquaCrop preprocess for spatial inputs across polygon and time",
+  "type": "platform"
+}

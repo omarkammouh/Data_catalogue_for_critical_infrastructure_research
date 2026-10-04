@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/pyatmos/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "pyatmos 1.2.7 on PyPI",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pyatmos atmospheric density models exponential coesa76 nrlmsise 00 jb2008",
+    "url": "https://pypi.org/project/pyatmos"
+  },
+  "description": "pyatmos is a Python package that estimates the vertical structure of the atmosphere with several density models: an exponential model and COESA76 from sea level to 1,000 km, NRLMSISE-00 up to 2,000 km, and the Jacchia-Bowman JB2008 model from 90 to 2,500 km. It is written by Chunxiao Li as an archive of scientific routines, and its documentation explains the drivers of each model: NRLMSISE-00 uses F10.7 solar flux and the Ap geomagnetic index, while JB2008, developed by Space Environment Technologies and the US Air Force Space Command, uses the Dst index and is more accurate during high solar activity and geomagnetic storms. Coverage is global, by altitude. Format and access: binary wheels on PyPI for Linux, macOS and Windows (version 1.2.7, November 2024, Python 3.10 or later). Licence: MIT; free. Caveats: a beta package by one maintainer that re-implements published models, so results should be checked against the reference codes. It supports hazard exposure studies of satellite drag and orbit decay during storms. Related catalogue records are the NRLMSIS and JB2008 models it implements.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "thermosphere density model satellite drag open source NRLMSIS download",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://pypi.org/project/pyatmos/",
+  "id": "model-pyatmos-atmospheric-density-models",
+  "inputs": [
+    "Altitude, location and time",
+    "F10.7 solar flux and Ap or Dst indices (downloaded by the package)"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-11-05",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "pyatmos (atmospheric density models: Exponential, COESA76, NRLMSISE-00, JB2008)",
+  "outputs": [
+    "Atmospheric density, temperature and composition"
+  ],
+  "provider": "Chunxiao Li",
+  "regions": [
+    "Earth's atmosphere up to 2,500 km"
+  ],
+  "related_ids": [
+    "model-nrlmsis",
+    "model-jb2008"
+  ],
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "PyPI page: models and ranges, drivers, installation, version 1.2.7 of 2024-11-05, MIT, author",
+      "url": "https://pypi.org/project/pyatmos/"
+    }
+  ],
+  "tags": [
+    "thermospheric density",
+    "satellite drag",
+    "NRLMSISE-00"
+  ],
+  "title_en": "Pyatmos (atmospheric density models: Exponential, COESA76, NRLMSISE-00, JB2008)",
+  "type": "model"
+}

@@ -1,0 +1,155 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "NWPS map services",
+      "url": "https://maps.water.noaa.gov/server"
+    },
+    {
+      "kind": "viewer",
+      "label": "National Water Prediction Service",
+      "url": "https://water.noaa.gov/"
+    },
+    {
+      "kind": "docs",
+      "label": "About the National Water Model",
+      "url": "https://water.noaa.gov/about/nwm"
+    },
+    {
+      "kind": "docs",
+      "label": "NWPS data and web services catalogue",
+      "url": "https://water.noaa.gov/about/data-and-web-services-catalog"
+    }
+  ],
+  "access_note": "Guidance, flood inundation maps, shapefiles (including NWM hydrofabric and parameters) and GIS web services are public; the operational model runs on NOAA supercomputers.",
+  "access_restrictions": "none",
+  "citation": "NOAA Office of Water Prediction, National Water Model description (water.noaa.gov/about/nwm)",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "noaa national water model nwm wrf hydro based",
+    "url": "https://water.noaa.gov/about/nwm"
+  },
+  "description": "The National Water Model (NWM) of NOAA's Office of Water Prediction is a hydrologic modelling framework that simulates observed and forecast streamflow over the continental United States, southern Alaska, Hawaii, Puerto Rico and the US Virgin Islands. Its core is the NCAR-supported WRF-Hydro model with the Noah-MP land surface model, diffusive wave surface routing, subsurface routing on a 250 m grid and Muskingum-Cunge channel routing on the National Hydrography Dataset, with over 5,000 reservoirs and assimilation of USGS and USACE streamflow observations. Configurations run analyses and deterministic or ensemble forecasts from 18 hours to 30 days, producing streamflow for over 2.7 million river reaches and gridded land surface output; since version 3.0 it couples to the SCHISM coastal-estuary model for total water level guidance on the coasts. The model complements official river forecasts at about 4,000 points, and its outputs, flood inundation maps (covering nearly the whole country by September 2026) and hydrofabric shapefiles are free through the National Water Prediction Service; no licence is stated on the model page. Caveats: it is an operational national system, not a package users run locally, reach-scale guidance is not an official forecast, and performance varies in small, regulated or snow-dominated basins. Simulation uses: forecast flows and inundation for water infrastructure digital twins, flood exposure of treatment plants, dams and roads, reservoir operations, and coastal compound flooding. Related records: the USGS Water Data APIs (data-usgs-water-data-apis).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: NOAA National Water Prediction Service (US, meteorological_service) https://water.noaa.gov/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge",
+    "drought"
+  ],
+  "homepage": "https://water.noaa.gov/about/nwm",
+  "id": "model-noaa-national-water-model",
+  "inputs": [
+    "radar-gauge precipitation (MRMS",
+    "Stage IV MPE)",
+    "numerical weather prediction forcing (HRRR",
+    "RAP",
+    "NAM-Nest",
+    "GFS",
+    "CFS",
+    "NBM)",
+    "USGS and USACE streamflow observations (data assimilation)",
+    "reservoir parameters and RFC reservoir outflow forecasts",
+    "National Hydrography Dataset river network",
+    "ocean boundary conditions (STOFS",
+    "P-SURGE)"
+  ],
+  "language": [],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-24",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "NOAA National Water Model (NWM, WRF-Hydro based)",
+  "notes": "The source code repository and the cloud archive of NWM output were not verified from the provider pages visited.",
+  "outputs": [
+    "streamflow for over 2.7 million river reaches",
+    "land surface states on 1 km and 250 m / 100 m grids",
+    "analyses and short-",
+    "medium- and long-range forecasts",
+    "total water level guidance on coasts",
+    "flood inundation maps"
+  ],
+  "provider": "NOAA National Weather Service, Office of Water Prediction (National Water Center)",
+  "related_ids": [
+    "data-usgs-water-data-apis",
+    "data-usace-national-inventory-of-dams",
+    "data-noaa-national-water-model-conus-retrospective",
+    "model-inunda-gpu-differentiable-flood-inundation-solver"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage",
+    "water.drinking_water",
+    "water.irrigation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "digital_twin",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "domains, WRF-Hydro and Noah-MP core, routing, forcings, 5,000 reservoirs, data assimilation, configurations, 2.7 million reaches, 4,000 forecast points, version 3.0 SCHISM coupling, FIM update 24 September",
+      "url": "https://water.noaa.gov/about/nwm"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "downloads: forecast and observed shapefiles, QPE, long-range flood risk, NWM hydrofabric and parameter shapefiles, GIS web services",
+      "url": "https://water.noaa.gov/about/data-and-web-services-catalog"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://water.noaa.gov/about/nwm"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://water.noaa.gov/about/data-and-web-services-catalog"
+    }
+  ],
+  "tags": [
+    "National Water Model",
+    "WRF-Hydro",
+    "Noah-MP",
+    "streamflow forecasting",
+    "flood inundation mapping",
+    "total water level",
+    "SCHISM",
+    "NOAA",
+    "United States"
+  ],
+  "title_en": "NOAA National Water Model (NWM, WRF-Hydro based)",
+  "type": "model",
+  "validated_on": []
+}

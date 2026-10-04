@@ -1,0 +1,147 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "VicEmergency events GeoJSON feed",
+      "url": "https://emergency.vic.gov.au/public/events-geojson.json"
+    },
+    {
+      "kind": "api",
+      "label": "Incident RSS feed",
+      "url": "https://data.emergency.vic.gov.au/Show?pageId=getIncidentRSS"
+    },
+    {
+      "kind": "portal",
+      "label": "DataVic listing of CFA feeds (incidents, total fire bans, fire danger ratings)",
+      "url": "https://discover.data.vic.gov.au/dataset/cfa-data-feeds-for-incidents-total-fire-bans-fire-danger-ratings-and-latest-news"
+    },
+    {
+      "kind": "viewer",
+      "label": "VicEmergency map",
+      "url": "https://emergency.vic.gov.au/respond/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "emergency_management",
+    "hazards"
+  ],
+  "data_kind": [
+    "event_record",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "vicemergency incident and warning feeds victoria australia",
+    "url": "https://discover.data.vic.gov.au/dataset/cfa-data-feeds-for-incidents-total-fire-bans-fire-danger-ratings-and-latest-news"
+  },
+  "description": "The VicEmergency feeds publish the incidents and warnings shown on Victoria's official emergency website, VicEmergency, such as bushfires and their warnings. The producer is Emergency Management Victoria, whose feed names the source agency of each item; the Country Fire Authority lists its incident, total fire ban and fire danger rating feeds on the DataVic portal. Coverage is the state of Victoria, Australia, for current events only. The GeoJSON feed gives each incident or warning with point and polygon geometry, category and Common Alerting Protocol event, status, size, source agency and update times; the RSS feeds give incidents and daily fire danger ratings by district. Both are available free without registration; the DataVic listing states a Creative Commons Attribution 4.0 licence, while the GeoJSON feed itself states none. Caveats: only live events are served, so an archive must be built by polling, feed structures are undocumented and may change, and incident sizes and statuses are provisional. Simulation uses: real-time inputs to emergency response dashboards and digital twins, building event catalogues of incidents for demand modelling, and validating hazard exposure models against reported impacts. Related records: the United States NWS CAP alerts (data-nws-cap-alerts) are a comparable warning feed.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "aio-geojson-vicemergency-incidents",
+      "route": "R05",
+      "source": "pypi"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "VicEmergency feed",
+      "route": "R02",
+      "source": "services-data-vic"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "xml"
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://discover.data.vic.gov.au/dataset/cfa-data-feeds-for-incidents-total-fire-bans-fire-danger-ratings-and-latest-news",
+  "id": "data-vicemergency-incident-feeds",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "VicEmergency incident and warning feeds (Victoria, Australia)",
+  "provider": "Emergency Management Victoria, with the Country Fire Authority",
+  "related_ids": [
+    "data-nws-cap-alerts"
+  ],
+  "schema_summary": "GeoJSON features with point and polygon geometry; properties include feed type (incident or warning), category, CAP block (category, event), name, location, status, size, source organisation, source feed, created and updated times, and web headline and body; RSS items give incident name, location, status and a link",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "FeatureCollection with 23 features at time of reading (22 incidents, 1 warning); property keys listed; example source organisation EMV, category Fire",
+      "url": "https://emergency.vic.gov.au/public/events-geojson.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "RSS 2.0 incident updates for Victoria, pubDate 2026-09-26",
+      "url": "https://data.emergency.vic.gov.au/Show?pageId=getIncidentRSS"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Country Fire Authority, CC BY 4.0, updated daily; 12 RSS resources; feeds conform to RSS 2.0 and update every minute",
+      "url": "https://discover.data.vic.gov.au/api/3/action/package_show?id=cfa-data-feeds-for-incidents-total-fire-bans-fire-danger-ratings-and-latest-news"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Third-party async GeoJSON client (2024) that led to the feed",
+      "url": "https://pypi.org/pypi/aio-geojson-vicemergency-incidents/json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): CC-BY-4.0 (basis: CKAN dataset metadata (license_title))",
+      "url": "https://discover.data.vic.gov.au/api/3/action/package_show?id=cfa-data-feeds-for-incidents-total-fire-bans-fire-danger-ratings-and-latest-news"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://discover.data.vic.gov.au/dataset/cfa-data-feeds-for-incidents-total-fire-bans-fire-danger-ratings-and-latest-news"
+    }
+  ],
+  "spatial_resolution": "Incident points and warning polygons",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "incidents",
+    "warnings",
+    "bushfire",
+    "VicEmergency",
+    "CAP",
+    "live feed",
+    "Victoria"
+  ],
+  "temporal_coverage": "Current incidents and warnings only",
+  "temporal_resolution": "Near real time (RSS updated every minute per the listing)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "VicEmergency incident and warning feeds (Victoria, Australia)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

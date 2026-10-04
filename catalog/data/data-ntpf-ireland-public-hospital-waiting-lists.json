@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/Shreyash-Sheth/Irish-Healthcare-Waiting-Times-Dashboard"
+    },
+    {
+      "kind": "portal",
+      "label": "NTPF canonical open-data download page",
+      "url": "https://www.ntpf.ie/waiting-list-data/open-data/"
+    },
+    {
+      "kind": "docs",
+      "label": "NTPF waiting-list definitions",
+      "url": "https://www.ntpf.ie/waiting-list-data/waiting-list-protocols-and-data-definitions/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "IE"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ireland ntpf public hospital waiting list open data",
+    "repo": "github.com/shreyash-sheth/irish-healthcare-waiting-times-dashboard",
+    "url": "https://ntpf.ie/waiting-list-data/open-data"
+  },
+  "description": "The National Treatment Purchase Fund publishes downloadable CSV tables of people waiting for public-hospital outpatient appointments and inpatient or day-case procedures in Ireland. The provider page groups files by year from 2014 through 2026 and identifies hospital and specialty breakdowns, adult and child analyses, and GI endoscopy lists. The figures are monthly counts of people still waiting, not numbers treated or removed during a month. The provider aggregates groups smaller than 20 into a Small Volume category to reduce identification risk. A GitHub Power BI dashboard led this review to the source, but its 2023 to July 2025 workbook copies are narrower than the maintained NTPF collection and are not the canonical delivery route. The NTPF allows free reuse in any format subject to attribution, accurate reproduction and other stated conditions. This review inspected the provider pages and link list, not the CSV rows, so exact field names and missing months still need checking before modelling. Capacity planners could use the monthly backlog counts to test demand-pressure scenarios, while avoiding the false inference that a change in stock measures treatment throughput. The series covers Irish public hospitals and does not by itself describe individual patient journeys or available beds. Related hospital-bed inventories describe available supply; this waiting-list series describes unresolved demand.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"hospital\" dataset created:2025-01-01..2025-12-31",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.ntpf.ie/waiting-list-data/open-data/",
+  "id": "data-ntpf-ireland-public-hospital-waiting-lists",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-08-26",
+  "licence": "NTPF website re-use terms: free use in any format with source and copyright acknowledgement, accurate reproduction, no misleading use, and no use primarily for product advertising.",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Ireland NTPF public hospital waiting-list open data",
+  "notes": "G8; G8-0764. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: National Treatment Purchase Fund. Waiting List Data: Open Data. Provider portal, accessed 2026-09-28..",
+  "provider": "National Treatment Purchase Fund",
+  "related_ids": [],
+  "schema_summary": "Waiting-list category, month, hospital or specialty where released, adult/child or inpatient/outpatient distinctions where available, and counts in waiting-duration bands.",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/Shreyash-Sheth/Irish-Healthcare-Waiting-Times-Dashboard/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/Shreyash-Sheth/Irish-Healthcare-Waiting-Times-Dashboard"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Primary provider page lists outpatient, inpatient/day-case and GI endoscopy downloads by year, 2014–2026, and states disclosure controls and monthly waiting-count scope.",
+      "url": "https://www.ntpf.ie/waiting-list-data/open-data/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Primary provider conditions permit free reuse with attribution and stated restrictions.",
+      "url": "https://www.ntpf.ie/information-re-use/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider definitions and protocols for interpreting waiting-list series.",
+      "url": "https://www.ntpf.ie/waiting-list-data/waiting-list-protocols-and-data-definitions/"
+    }
+  ],
+  "spatial_resolution": "National totals, hospital groups and named hospitals or specialties where available; small cells are aggregated.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Annual download groups from 2014 through 2026 on the provider page; monthly observations within the published tables.",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2014
+  },
+  "temporal_resolution": "Monthly patient counts by waiting-list category.",
+  "temporal_resolution_class": "monthly",
+  "title_en": "Ireland NTPF public hospital waiting-list open data",
+  "type": "data",
+  "update_frequency": "monthly"
+}

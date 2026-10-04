@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Dataset page on the City of Toronto Open Data portal",
+      "url": "https://open.toronto.ca/dataset/fire-station-locations/"
+    },
+    {
+      "kind": "api",
+      "label": "Portal metadata API (CKAN package_show)",
+      "url": "https://ckan0.cf.opendata.inter.prod-toronto.ca/api/3/action/package_show?id=fire-station-locations"
+    },
+    {
+      "kind": "portal",
+      "label": "Ambulance Station Locations dataset page",
+      "url": "https://open.toronto.ca/dataset/ambulance-station-locations/"
+    },
+    {
+      "kind": "portal",
+      "label": "Police Facility Locations dataset page",
+      "url": "https://open.toronto.ca/dataset/police-facility-locations/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CA"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "toronto fire ambulance and police facility locations",
+    "url": "https://open.toronto.ca/dataset/fire-station-locations"
+  },
+  "description": "City of Toronto publishes three point layers of emergency facilities: all active fire stations and fire-related facilities (latitude and longitude), the ambulance stations and district offices (with address point identifier, name and coordinates), and the police facilities; the ambulance page notes that ambulance stations are not the origin point for most dispatches. Coverage: the City of Toronto; each portal record says updates \"as available\", last modified 2026-02-20 for fire and police and 2026-07-29 for ambulance. Format and access: GeoJSON, GeoPackage, CSV, Shapefile, downloadable without registration from the City of Toronto Open Data portal; the portal also serves the metadata through a public API. Licence (read on the portal page on 2026-09-29): Open Government Licence - Toronto, as shown on the dataset page (the CKAN API licence field reads \"License not specified\"); cost: free. Caveats: the layers are locations only, without staffing, apparatus or response areas; the CKAN API licence field does not carry the Open Government Licence - Toronto shown on the pages; the files were not opened; the record is anchored to the fire facility page and links the other two. Simulation uses: emergency-service coverage and response-time models, critical-facility exposure in flood and outage studies, and station siting analysis. Related catalogue records: Urban Form Toronto: built environment and walkability measures on a 100 m hexagon grid (data-toronto-urban-form-hex-measures); City of Toronto watermain breaks 1990 to 2016 (data-toronto-watermain-breaks); OpenStreetMap (data-openstreetmap).",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "portal API search: City of Toronto open data CKAN, buildings, schools, heritage, emergency facilities, flooding",
+      "route": "R02",
+      "source": "r2-no-public-data"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "geopackage",
+    "csv",
+    "shapefile"
+  ],
+  "geographic_scope": "city",
+  "hazards": [],
+  "homepage": "https://open.toronto.ca/dataset/fire-station-locations/",
+  "id": "data-toronto-fire-ambulance-and-police-facility-locations",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-02-20",
+  "licence": "Open Government Licence - Toronto (shown on the open.toronto.ca dataset page; the CKAN API licence field reads \"License not specified\")",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Toronto fire, ambulance and police facility locations",
+  "notes": "Round 2 piece 14 (no-public-data visits): round 1 marked \"City of Toronto open data (municipal planning)\" as publishing no data; the portal was read on 2026-09-29.",
+  "provider": "City of Toronto",
+  "related_ids": [
+    "data-toronto-urban-form-hex-measures",
+    "data-toronto-watermain-breaks",
+    "data-openstreetmap"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "dataset metadata (title, description, licence, resources, modification date 2026-02-20) read from the portal page and its public API",
+      "url": "https://open.toronto.ca/dataset/fire-station-locations/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "licence re-check at wave 2 integration: licence read on the provider page",
+      "url": "https://open.toronto.ca/dataset/fire-station-locations/"
+    }
+  ],
+  "tags": [
+    "fire stations",
+    "ambulance stations",
+    "police",
+    "Toronto"
+  ],
+  "title_en": "Toronto fire, ambulance and police facility locations",
+  "type": "data"
+}

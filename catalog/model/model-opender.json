@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/epri-dev/OpenDER"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/epri-dev/OpenDER/blob/main/README.rst"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "EPRI (2024). IEEE 1547-2018 OpenDER Model: Version 2.2. Report 3002030962. https://www.epri.com/research/products/000000003002030962",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "epri opender inverter based resource model",
+    "repo": "github.com/epri-dev/opender",
+    "url": "https://github.com/epri-dev/OpenDER"
+  },
+  "description": "OpenDER is EPRI's Python model of photovoltaic and battery-storage inverter behaviour for distribution-network studies. It represents steady-state and dynamic responses associated with IEEE 1547-2018 capabilities, informed by observed commercial equipment. Inputs include grid conditions and configured resource settings; outputs include power and trip or service-entry behaviour. Spatial coverage is an individual distributed resource coupled to a chosen network, and temporal resolution follows the snapshot, quasi-static time-series or dynamic experiment. Free BSD-3-Clause source includes installation instructions and notebooks. The example alternates grid voltage over roughly ten-minute intervals to demonstrate tripping and reconnection. A limitation is that represented interconnection functions and parameter choices must match the equipment being studied; software reuse does not certify a particular inverter. OpenDER supports distribution planning and resilience simulations. A separately linked interface connects it with OpenDSS (platform-opendss). No circuit or model was executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:EPRI-dev",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/epri-dev/OpenDER",
+  "id": "model-opender",
+  "inputs": [
+    "Inverter resource settings",
+    "Grid voltage and other operating conditions"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-04-15",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "EPRI OpenDER inverter-based resource model",
+  "notes": "G7 G7-1077. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "DER power and operating-state responses"
+  ],
+  "provider": "Electric Power Research Institute (EPRI)",
+  "related_ids": [
+    "platform-opendss"
+  ],
+  "repository": "https://github.com/epri-dev/OpenDER",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for epri-dev/OpenDER: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3AEPRI-dev&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/epri-dev/opender/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "EPRI OpenDER inverter-based resource model",
+  "type": "model"
+}

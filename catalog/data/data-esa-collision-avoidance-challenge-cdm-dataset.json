@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Kelvins data page",
+      "url": "https://kelvins.esa.int/collision-avoidance-challenge/data/"
+    },
+    {
+      "kind": "paper",
+      "label": "Competition paper (arXiv 2008.03069)",
+      "url": "https://arxiv.org/abs/2008.03069"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "security_threat",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "esa spacecraft collision avoidance challenge dataset of conjunction data messages",
+    "url": "https://kelvins.esa.int/collision-avoidance-challenge/data"
+  },
+  "description": "This dataset holds conjunction data messages (CDMs) describing close approaches between ESA-operated satellites and other orbiting objects, released by the European Space Agency in October 2019 for the Spacecraft Collision Avoidance Challenge, a machine learning competition to predict the final collision risk of an event from the messages received days before closest approach. The training set has 162,634 rows for 13,154 unique close-approach events (about 12 CDMs per event) and the test set 24,484 rows for 2,167 events, each row carrying the features of one CDM such as time to closest approach and computed risk. It covers events collected from 2015 to 2019. The test set was hand-picked to over-represent high-risk events and only keeps events whose last CDM is within a day of closest approach, with no CDMs inside two days. The competition ran from 16 October to 16 December 2019 on ESA's Kelvins platform, and its design and results are described by Uriot and co-authors (arXiv 2008.03069). The zip and CSV files are free to download from the Kelvins page, which offers GitHub login for participation; no licence is stated on the page read. Caveats: sampling is deliberately biased, object identities are not given, and the data stop in 2019. It supports resilience and hazard exposure analysis of satellites to collisions and the development of risk prediction models; a related record is the Kessler machine learning library for collision avoidance.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "spacecraft collision avoidance CDM dataset (space security threat)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "archive"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://kelvins.esa.int/collision-avoidance-challenge/data/",
+  "id": "data-esa-collision-avoidance-challenge-cdm-dataset",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (Kelvins page: Copyright © European Space Agency 2021); the describing arXiv preprint is under the arXiv non-exclusive distribution licence",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "ESA Spacecraft Collision Avoidance Challenge dataset of conjunction data messages",
+  "provider": "European Space Agency (Kelvins competition platform)",
+  "related_ids": [
+    "model-kessler-spacecraft-collision-avoidance-ml"
+  ],
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "competition Oct 16 to Dec 16 2019, over; train_data.zip and test_data.csv; training 162,634 rows and 13,154 events; testing 24,484 rows and 2,167 events; test hand-picked to over-represent high risk; latest CDM within 1 day of TCA; no CDMs within 2 days",
+      "url": "https://kelvins.esa.int/collision-avoidance-challenge/data/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Spacecraft Collision Avoidance Challenge: ESA released in October 2019 a curated dataset of CDMs collected from 2015 to 2019; competition to predict final collision risk",
+      "url": "https://arxiv.org/abs/2008.03069"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated (Kelvins page: Copyright © European Space Agency 2021); the describing arXiv preprint is under the arXiv non-exclusive distribution licence (basis: Kelvins data page and arXiv)",
+      "url": "https://kelvins.esa.int/collision-avoidance-challenge/data/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://arxiv.org/abs/2008.03069"
+    }
+  ],
+  "tags": [
+    "conjunction data messages",
+    "collision avoidance",
+    "space debris",
+    "machine learning",
+    "Kelvins"
+  ],
+  "temporal_coverage": "close approach events 2015 to 2019",
+  "temporal_coverage_years": {
+    "end": 2019,
+    "start": 2015
+  },
+  "title_en": "ESA Spacecraft Collision Avoidance Challenge dataset of conjunction data messages",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

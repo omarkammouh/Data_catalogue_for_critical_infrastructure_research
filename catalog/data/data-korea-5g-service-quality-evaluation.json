@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "5G quality evaluation details (NIA, CSV)",
+      "url": "https://www.data.go.kr/data/15120591/fileData.do"
+    },
+    {
+      "kind": "download",
+      "label": "5G speed by detailed type (MSIT, CSV)",
+      "url": "https://www.data.go.kr/data/15105757/fileData.do"
+    },
+    {
+      "kind": "download",
+      "label": "5G speed by region (MSIT, CSV)",
+      "url": "https://www.data.go.kr/data/15105755/fileData.do"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "KR"
+  ],
+  "data_family": [
+    "service_performance"
+  ],
+  "data_kind": [
+    "survey",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "korea 5g service quality evaluation measured speeds success rates and latency by carrier and district msit and nia",
+    "url": "https://data.go.kr/data/15120591/fileData.do"
+  },
+  "description": "South Korea's Ministry of Science and ICT evaluates the quality of mobile communication services every year and publishes the results as open data on the national public data portal. The detailed 5G results from the National Information Society Agency give, for each measured area down to city, district and neighbourhood (eup, myeon, dong), the download and upload transmission speed, connection success rate, transmission success rate, rate of fallback to LTE, connection time, average latency and average loss rate; the file for the 2025 evaluation has 600 rows. Companion files from the ministry give 5G speeds by carrier and detailed place type, measured across 85 cities and 430 areas, and 5G speeds by region, all updated annually in July. Coverage: South Korea, three mobile carriers. Format and access: CSV files and XML or JSON through an open API on data.go.kr, free under Korea Public Nuri licences type 2 (attribution, non-commercial) and type 4 (also no derivatives). Caveats: measurements are sampled at chosen places and times; the non-commercial and no-derivatives terms limit reuse; earlier years' files and LTE results were not checked. Simulation uses: measured service levels by district and carrier as baselines for degraded-service scenarios and for checking coverage models. Related records: the KCA mountain-area base station data give site locations, and TRAI drive tests and Breitbandmessung are comparable measurement sources.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "data.go.kr search for telecom service quality evaluation",
+      "route": "R15",
+      "source": "organisations.csv:KR:digital:crowdsourced_coverage"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.data.go.kr/data/15120591/fileData.do",
+  "id": "data-korea-5g-service-quality-evaluation",
+  "languages": [
+    "ko"
+  ],
+  "last_updated": "2026-08",
+  "licence": "Korea Public Nuri licence type 2 or 4 (attribution, non-commercial)",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Korea 5G service quality evaluation: measured speeds, success rates and latency by carrier and district (MSIT and NIA)",
+  "notes": "data.go.kr search and dataset pages read via fetch on 2026-09-26 (titles, columns, rows, licences, update cycles); curl to data.go.kr and msit.go.kr failed (tunnel closed). The number of carriers and the start of the series are from recall.",
+  "provider": "Ministry of Science and ICT (MSIT) and National Information Society Agency (NIA), Republic of Korea",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "capacity_planning"
+  ],
+  "size": "600 rows (detailed results); 33 rows (by type)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "NIA dataset page",
+      "url": "https://www.data.go.kr/data/15120591/fileData.do"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MSIT dataset page",
+      "url": "https://www.data.go.kr/data/15105757/fileData.do"
+    }
+  ],
+  "spatial_resolution": "eup/myeon/dong (neighbourhood) for the detailed results",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "5G",
+    "quality evaluation",
+    "latency",
+    "measured speeds",
+    "South Korea"
+  ],
+  "temporal_coverage": "annual evaluations (2025 edition read)",
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Korea 5G service quality evaluation: measured speeds, success rates and latency by carrier and district (MSIT and NIA)",
+  "type": "data",
+  "update_frequency": "annual"
+}

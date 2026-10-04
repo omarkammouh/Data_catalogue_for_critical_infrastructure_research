@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code and pipeline",
+      "url": "https://github.com/catalyst-cooperative/pudl"
+    },
+    {
+      "kind": "portal",
+      "label": "AWS Open Data Registry",
+      "url": "https://registry.opendata.aws/catalyst-cooperative-pudl/"
+    },
+    {
+      "kind": "portal",
+      "label": "Kaggle dataset",
+      "url": "https://www.kaggle.com/datasets/catalystcooperative/pudl-project"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo DOI",
+      "url": "https://doi.org/10.5281/zenodo.3404014"
+    },
+    {
+      "kind": "docs",
+      "label": "Data access documentation",
+      "url": "https://docs.catalyst.coop/pudl/en/nightly/data_access.html"
+    },
+    {
+      "kind": "portal",
+      "label": "Former landing page (description or portal)",
+      "url": "https://catalyst.coop/pudl/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation",
+    "economic_financial",
+    "environmental_impact",
+    "planning_regulatory_documents"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pudl public utility data liberation project",
+    "repo": "github.com/catalyst-cooperative/pudl",
+    "url": "https://catalyst.coop/pudl"
+  },
+  "description": "PUDL, the Public Utility Data Liberation Project, is an open-source data pipeline and the resulting database that make US energy data easier to use. It takes spreadsheets, CSV files and databases published by US agencies and turns them into unified, cleaned tables, including EIA Forms 860, 860m, 861, 923 and 930 and parts of the Annual Energy Outlook, EPA Continuous Emissions Monitoring System data, FERC Forms 1, 714, 2, 6 and 60 and Electric Quarterly Reports, PHMSA natural gas annual reports, USDA Rural Utilities Service forms obtained by FOIA request, NREL's Annual Technology Baseline and other sources. It is built by Catalyst Cooperative for researchers, activists, journalists, policy makers and small businesses who cannot afford commercial data. Coverage is the United States, with nightly builds. Outputs are distributed as Parquet, DuckDB, SQLite and JSON through the AWS Open Data Registry, Kaggle and Zenodo, with raw input archives also kept on Zenodo. Data and documentation are under CC-BY-4.0 and the code under MIT, free of charge. Caveats: some sources are marked work in progress or only partly processed, and the README advises using the Parquet or DuckDB outputs, not the SQLite file for some uses. Simulation uses are capacity planning, optimisation and network flow modelling of the US power system. Related records: the PowerGenome input tool reads a PUDL database to prepare inputs for model-genx.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry PUDL (Catalyst Cooperative)",
+      "route": "R30",
+      "source": "energy-pudl"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "database",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://doi.org/10.5281/zenodo.3404014",
+  "id": "data-pudl",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "CC-BY-4.0 (data and documentation); MIT (code)",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "PUDL (Public Utility Data Liberation Project)",
+  "provider": "Catalyst Cooperative",
+  "related_ids": [
+    "model-genx"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "energy.gas_hydrogen"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "What is PUDL; audience; source list (EIA, EPA CEMS, FERC, PHMSA, USDA RUS, SEC, NREL ATB, GridPath RA toolkit, VCE, Census); outputs Parquet, DuckDB, SQLite, JSON; Zenodo, Kaggle, AWS; licensing",
+      "url": "https://raw.githubusercontent.com/catalyst-cooperative/pudl/HEAD/README.rst"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT, Catalyst Cooperative 2017-2026",
+      "url": "https://raw.githubusercontent.com/catalyst-cooperative/pudl/HEAD/LICENSE.txt"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote tags: nightly-2026-09-26",
+      "url": "https://github.com/catalyst-cooperative/pudl"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "PowerGenome uses a PUDL database (PUDL_DB setting) and writes GenX inputs",
+      "url": "https://raw.githubusercontent.com/PowerGenome/PowerGenome/HEAD/README.md"
+    }
+  ],
+  "tags": [
+    "EIA",
+    "FERC",
+    "EPA CEMS",
+    "United States",
+    "open data pipeline"
+  ],
+  "title_en": "PUDL (Public Utility Data Liberation Project)",
+  "type": "data",
+  "update_frequency": "daily"
+}

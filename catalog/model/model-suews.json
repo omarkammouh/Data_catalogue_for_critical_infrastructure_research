@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/UMEP-dev/SUEWS"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/UMEP-dev/SUEWS/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Järvi, Grimmond and Christen (2011). The Surface Urban Energy and Water Balance Scheme: evaluation in Los Angeles and Vancouver. Journal of Hydrology 411, 219-237.",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "suews urban energy and water balance model",
+    "repo": "github.com/umep-dev/suews",
+    "url": "https://github.com/UMEP-dev/SUEWS"
+  },
+  "description": "SUEWS simulates neighbourhood-scale urban radiation, energy and water balances. The UMEP development group publishes a Fortran physics engine with the SuPy Python interface, tutorials and an input-output reference. Users provide meteorology and the fractions of paved surfaces, buildings, trees, grass, bare soil and water, together with surface and soil parameters. Outputs describe heat, evaporation, interception and soil-water states over the simulated period. Geographic coverage is a configured neighbourhood or local urban area, and time resolution follows its weather inputs. MPL-2.0 source and documentation are freely available. A limitation is that the seven surface classes aggregate diverse real materials and drainage layouts, so local calibration matters. SUEWS can supply urban heat and runoff conditions for building and stormwater resilience studies. The catalogue's model-energyplus treats building energy use at a different scale; no coupling was checked. No sample meteorology or simulation was run.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "umep-dev/suews linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/UMEP-dev/SUEWS",
+  "id": "model-suews",
+  "inputs": [
+    "Local meteorology and surface-cover fractions",
+    "Urban surface and soil parameters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "MPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "SUEWS urban energy and water balance model",
+  "notes": "G7 G7-1415. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Urban heat, water and evaporation balance series"
+  ],
+  "provider": "UMEP development team",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/UMEP-dev/SUEWS",
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.public_space",
+    "water.stormwater_drainage",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for UMEP-dev/SUEWS: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/umep-dev/suews"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/umep-dev/suews/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://docs.suews.io/stable/"
+    }
+  ],
+  "tags": [],
+  "title_en": "SUEWS urban energy and water balance model",
+  "type": "model"
+}

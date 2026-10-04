@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "rpki.json validated snapshot",
+      "url": "https://rpki.cloudflare.com/rpki.json"
+    },
+    {
+      "kind": "viewer",
+      "label": "RPKI Portal",
+      "url": "https://rpki.cloudflare.com/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "security_threat",
+    "governance_regulation",
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cloudflare rpki portal validated roa and aspa snapshot across the five rir trust anchors",
+    "url": "https://rpki.cloudflare.com"
+  },
+  "description": "The Cloudflare RPKI Portal is a web view over a routinely rebuilt snapshot of the Resource Public Key Infrastructure, the signed statements that tie internet address blocks to the autonomous systems allowed to announce them. Behind the portal sits a single JSON file, rpki.json, produced by an rpki-client deployment that validates the repositories of all five regional internet registries. Coverage: global; the build read on 28 September 2026 (build time 23:50 UTC) used the AFRINIC, APNIC, ARIN, LACNIC and RIPE NCC trust anchor files, fetched 121 repositories and reported 396,286 ROAs (7 failed), 1,030,117 validated ROA payloads, 3,299 ASPA objects, 55,032 certificates and 99 non-functional certificate authorities. Each ROA entry gives the origin ASN, prefix, maximum length, trust anchor and expiry time. Format and access: a JSON file of about 106 MB at rpki.cloudflare.com/rpki.json, served with a four-hour cache lifetime, plus the browser portal; free, no registration. Licence: no licence or terms statement was found on the portal or in the file header read. Caveats: the file is a current snapshot with no history on the pages read; only the header and the first ROA entries were read, not the full file. Simulation uses: prefix-to-origin authorisation data for modelling route-hijack exposure, routing-security adoption and cascading reachability loss in internet interdependency studies. Related records: RIR allocation data (data-nro-delegated-extended-stats), Cloudflare Radar traffic and routing views (data-cloudflare-radar) and route-server RPKI filtering checks (model-manrs-ixp-validation-tool).",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source digital-cloudflare-rpki: provider pages read (round 2 register piece)",
+      "route": "R30",
+      "source": "digital-cloudflare-rpki"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://rpki.cloudflare.com/rpki.json",
+  "id": "data-cloudflare-rpki-portal-validated-roa-aspa-snapshot",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (not found on the pages read)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Cloudflare RPKI Portal: validated ROA and ASPA snapshot across the five RIR trust anchors",
+  "provider": "Cloudflare",
+  "related_ids": [
+    "data-nro-delegated-extended-stats",
+    "data-cloudflare-radar",
+    "model-manrs-ixp-validation-tool"
+  ],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Single-page app titled RPKI Portal; no text without scripts",
+      "url": "https://rpki.cloudflare.com/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Header only (byte range): rpki-client build 2026-09-28T23:50:10Z; five RIR TALs; 121 repositories; 396,286 ROAs; 1,030,117 VRPs; 3,299 ASPAs; ROA fields asn, prefix, maxLength, ta, expires; Content-Length 105,736,823; cache max-age 14400",
+      "url": "https://rpki.cloudflare.com/rpki.json"
+    }
+  ],
+  "tags": [
+    "RPKI",
+    "ROA",
+    "ASPA",
+    "BGP",
+    "routing security",
+    "rpki-client"
+  ],
+  "temporal_coverage": "current snapshot, rebuilt continually (build 2026-09-28 23:50 UTC read)",
+  "title_en": "Cloudflare RPKI Portal: validated ROA and ASPA snapshot across the five RIR trust anchors",
+  "type": "data"
+}

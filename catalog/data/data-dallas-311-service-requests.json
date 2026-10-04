@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Socrata API (SODA)",
+      "url": "https://www.dallasopendata.com/resource/gc4d-8a49.json"
+    },
+    {
+      "kind": "portal",
+      "label": "Dataset page",
+      "url": "https://www.dallasopendata.com/Services/311-Service-Requests/gc4d-8a49"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "crowdsourced_public_reports",
+    "condition_ageing",
+    "service_performance"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "dallas 311 service requests",
+    "url": "https://dallasopendata.com/Services/311-Service-Requests/gc4d-8a49"
+  },
+  "description": "Dallas publishes every request logged in its 311 system, which covers more than 400 request types affecting quality of life, among them high weeds, junk vehicles and other code compliance issues, street and pothole repair, and environmental complaints. Each row gives the service request number, address, city council district, responsible department, request type, estimated response time, due date, status, created, updated and closed dates, outcome, priority, the channel through which it was received and a latitude and longitude. Coverage: the City of Dallas; on 2026-09-26 the table held 34,953 rows with created dates from 1 October 2020 to that day. Access: free Socrata table with CSV export and API, marked official data with hourly automated updates. Licence: Open Data Commons PDDL. Caveats: the row count suggests the live table does not hold every request since 2020, and categories mix public-realm defects with nuisance complaints. Simulation uses: detecting public-space and street-asset defects, modelling municipal response times and linking complaint surges to storms or heat. Related records: NYC 311 service requests and the Open311 GeoReport standard.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "311 service requests open data public space complaints potholes graffiti dataset",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://www.dallasopendata.com/Services/311-Service-Requests/gc4d-8a49",
+  "id": "data-dallas-311-service-requests",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "ODC-PDDL-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Dallas 311 service requests",
+  "provider": "City of Dallas, 311 Customer Service (Dallas OpenData)",
+  "regions": [
+    "Dallas, Texas"
+  ],
+  "related_ids": [
+    "data-nyc-311-service-requests",
+    "data-open311-georeport-v2-standard"
+  ],
+  "sectors": [
+    "built_environment.public_space",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, columns, PDDL licence, hourly update, dates",
+      "url": "https://www.dallasopendata.com/api/views/gc4d-8a49.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Row count and created-date range",
+      "url": "https://www.dallasopendata.com/resource/gc4d-8a49.json?$select=count(*),min(created_date),max(created_date)"
+    }
+  ],
+  "tags": [
+    "311",
+    "service requests",
+    "Dallas",
+    "code compliance",
+    "potholes",
+    "public realm"
+  ],
+  "temporal_coverage": "created dates from 2020-10-01 in the live table",
+  "title_en": "Dallas 311 service requests",
+  "type": "data",
+  "update_frequency": "sub_daily"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "data-synth-grid-topology",
+  "type": "data",
+  "name": "Synthetic Grid Topology Set",
+  "provider": "Example Grid Lab",
+  "description": "The Synthetic Grid Topology Set contains twelve fictitious transmission network cases with buses, lines, transformers and generator records, published as a benchmark for power-flow and contingency studies. It is produced by the Example Grid Lab, a university research group, to give modellers a shared test bed that carries no confidential operator data. Coverage is global in the sense that the cases mimic continental-scale systems of 200 to 10,000 buses; there is no temporal dimension beyond a single snapshot per case. Files are distributed as CSV tables and a JSON manifest from the landing page, with a GitHub repository holding the generator scripts. The licence is CC-BY-4.0 and there is no cost or registration. Caveats: impedances are drawn from typical ranges rather than measured, and load profiles are not included, so studies of demand dynamics need another source. Simulation uses include network flow, cascading failure and capacity planning. The set is the reference case for the Synthetic Power Flow Solver model catalogued here.",
+  "homepage": "https://data.example.org/synthetic-grid-topology/",
+  "access_links": [
+    {
+      "label": "Landing page",
+      "url": "https://data.example.org/synthetic-grid-topology/",
+      "kind": "portal"
+    },
+    {
+      "label": "Download bundle",
+      "url": "https://data.example.org/synthetic-grid-topology/v3.zip",
+      "kind": "download"
+    },
+    {
+      "label": "Generator scripts",
+      "url": "https://github.com/example-grid-lab/synthetic-grid-topology",
+      "kind": "repo"
+    }
+  ],
+  "licence": "CC-BY-4.0",
+  "cost": "free",
+  "access_restrictions": "none",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "geographic_scope": "global",
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "capacity_planning"
+  ],
+  "maturity": "active",
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-09-23",
+  "related_ids": [
+    "model-synth-power-flow"
+  ],
+  "tags": [
+    "benchmark",
+    "transmission"
+  ],
+  "sources": [
+    {
+      "url": "https://data.example.org/synthetic-grid-topology/",
+      "accessed": "2026-09-23",
+      "note": "synthetic fixture"
+    }
+  ],
+  "discovery_routes": [
+    {
+      "route": "R05",
+      "source": "github-search",
+      "query": "synthetic grid topology",
+      "date": "2026-09-23"
+    },
+    {
+      "route": "R17",
+      "source": "benchmark-list",
+      "query": "power system test cases",
+      "date": "2026-09-23"
+    },
+    {
+      "route": "R07",
+      "source": "openalex",
+      "query": "synthetic transmission network benchmark",
+      "date": "2026-09-23"
+    }
+  ],
+  "dedupe_keys": {
+    "url": "https://data.example.org/synthetic-grid-topology",
+    "repo": "github.com/example-grid-lab/synthetic-grid-topology",
+    "name": "synthetic grid topology set"
+  },
+  "languages": [
+    "en"
+  ],
+  "data_family": [
+    "system_description",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "network_topology",
+    "tabular"
+  ],
+  "formats": [
+    "CSV",
+    "JSON"
+  ],
+  "continents": [
+    "europe",
+    "north_america"
+  ],
+  "spatial_resolution": "bus level",
+  "temporal_coverage": "snapshot",
+  "temporal_resolution": "none",
+  "update_frequency": "yearly",
+  "last_updated": "2026",
+  "link_health": {
+    "checked": "2026-09-20"
+  },
+  "size_bytes": 2500000000,
+  "title_en": "Electricity-grid topology with substations and power lines"
+}

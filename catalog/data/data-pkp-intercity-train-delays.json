@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo record",
+      "url": "https://zenodo.org/records/21700869"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "PL"
+  ],
+  "data_family": [
+    "demand_operation",
+    "system_description"
+  ],
+  "data_kind": [
+    "event_record",
+    "network_topology",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pkp intercity delays open dataset of polish long distance train operations disruptions and weather 2026",
+    "url": "https://zenodo.org/records/21700869"
+  },
+  "description": "This open dataset covers passenger train operations of PKP Intercity, the main Polish long-haul passenger carrier, together with recorded infrastructure disruptions and co-located weather, from 1 March to 19 May 2026. It holds raw operational tables (schedules, actual arrival and departure times, delays, occupancy and dispatcher disruption reports with causes and locations), infrastructure tables on line speeds by track and direction, temporary speed restrictions, planned track closures and the mapping of services to physical line segments derived from PKP PLK network statements, hourly Open-Meteo weather assigned to station clusters, a processed 57-feature table, station and track graphs, route sequences and fixed benchmark splits (23,531 training, 5,042 validation and 5,044 test runs). It was deposited by Marek Kostrz in August 2026, collected by automated pipelines from public passenger information services (Portal Pasażera and intercity.pl). Coverage is national (Poland). The data are free under CC BY 4.0 as a 64 MB zip of CSV and Parquet files with a Python loader. Caveats: the period is under three months and the operational data were scraped from passenger information, not supplied by the operator. The dataset supports delay propagation and disruption analysis on a rail network, weather impact studies and benchmarking of delay prediction models. It complements the PKP PLK open rail data API and the RIDE Belgian delay dataset catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"train\" AND \"hazard\"",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "csv",
+    "parquet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://zenodo.org/records/21700869",
+  "id": "data-pkp-intercity-train-delays",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-03",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "PKP Intercity delays, open dataset of Polish long-distance train operations, disruptions and weather (2026)",
+  "provider": "Marek Kostrz (Zenodo deposit)",
+  "related_ids": [
+    "data-poland-pkp-plk-open-rail-data-api",
+    "data-ride-belgian-train-delay-benchmark"
+  ],
+  "sectors": [
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "network_flow",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "PKP Intercity operations, infrastructure disruptions, weather 2026-03-01 to 2026-05-19; raw tables incl. line_speeds, service_line_segments, track_closures (SHZT), speed_warnings (WOS), weather (Open-Meteo); processed 57 features; graph and sequences; splits 23,531/5,042/5,044; sources Portal Pasażera, intercity.pl, PKP PLK network statements; CC BY 4.0; published 2026-08-03; zip 64 MB; creator Kostrz",
+      "url": "https://zenodo.org/api/records/21700869"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (doi 10.5281/zenodo.21700869 updated)",
+      "url": "https://zenodo.org/records/21700869"
+    }
+  ],
+  "spatial_resolution": "stations, track segments and train runs",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "train delays",
+    "Poland",
+    "disruptions",
+    "weather",
+    "benchmark"
+  ],
+  "temporal_coverage": "1 March to 19 May 2026",
+  "title_en": "PKP Intercity delays, open dataset of Polish long-distance train operations, disruptions and weather (2026)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository (deprecated)",
+      "url": "https://github.com/NHERI-SimCenter/BRAILS"
+    },
+    {
+      "kind": "docs",
+      "label": "Online documentation",
+      "url": "https://nheri-simcenter.github.io/BRAILS-Documentation"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/BRAILS/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "brails building and infrastructure recognition using ai at large scale",
+    "repo": "github.com/nheri-simcenter/brails",
+    "url": "https://github.com/NHERI-SimCenter/BRAILS"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "BRAILS, short for Building and Infrastructure Recognition using AI at Large-Scale, is a set of Python modules from the NHERI SimCenter that use deep learning and computer vision to extract building attributes from satellite and street-level images. The framework also offers turn-key applications that combine modules to find several attributes in one pass, and lets users train their own image classification, object detection or semantic segmentation models. Its InventoryGenerator method builds a regional inventory from a location, given as a region name, a bounding box or a GeoJSON file: it downloads footprints from OpenStreetMap, the Microsoft Global Building Footprints or FEMA USA Structures, can start from the National Structure Inventory, and returns attributes such as number of stories, roof shape and building height as a GeoJSON file. Running the generate step needs a Google API key. The work was supported by National Science Foundation grants CMMI 1612843 and CMMI 2131111. Licence and cost: BSD 3-Clause, free. Caveats: the README states that the repository is deprecated and no longer supported, pointing users to the BRAILS++ repository, so this record covers the older release (v3.1.1 on Zenodo). It serves as a data preparation step for regional earthquake, wind and flood risk simulation, where building inventories are the missing input.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "assistant recall, written down before searching: buildings models, platforms and case studies known before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NHERI-SimCenter/BRAILS",
+  "id": "platform-brails-nheri-simcenter-building-inventory-ai",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "Reads OpenStreetMap, Microsoft Global Building Footprints and FEMA USA Structures footprints, and the National Structure Inventory",
+    "writes GeoJSON inventories"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-01-30",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "BRAILS (Building and Infrastructure Recognition using AI at Large-Scale)",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "NHERI SimCenter (University of California, Berkeley and partners)",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "README: deprecated notice, purpose, InventoryGenerator, footprint sources, Google API key, NSF grants, v3.1.1 Zenodo DOI 10.5281/zenodo.10606032",
+      "url": "https://raw.githubusercontent.com/NHERI-SimCenter/BRAILS/master/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "BSD 3-Clause, Regents of the University of California",
+      "url": "https://raw.githubusercontent.com/NHERI-SimCenter/BRAILS/master/LICENSE"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings"
+  ],
+  "tags": [
+    "building inventory",
+    "computer vision",
+    "street view",
+    "regional hazard simulation",
+    "SimCenter",
+    "r2-fresh-built-environment"
+  ],
+  "title_en": "BRAILS (Building and Infrastructure Recognition using AI at Large-Scale)",
+  "type": "platform"
+}

@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Flight database (CSV)",
+      "url": "https://data.gov.il/dataset/flydata"
+    },
+    {
+      "kind": "api",
+      "label": "CKAN package",
+      "url": "https://data.gov.il/api/3/action/package_show?id=flydata"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "IL"
+  ],
+  "data_family": [
+    "demand_operation",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "stream",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "israel airports authority flight database arrivals and departures updated every 15 minutes",
+    "url": "https://data.gov.il/dataset/flydata"
+  },
+  "description": "The Israel Airports Authority publishes its live flight database on the national open data portal. Contents: scheduled and actual arrivals and departures at Israeli international airports, mainly Ben Gurion, with airline code and name, flight number, scheduled and updated times, terminal, check-in counters, origin or destination city and country, and status (landed, departed, delayed, cancelled and so on). Producer: the Israel Airports Authority from its flight information display system. Coverage: current and near-term flights at Israeli airports; the file is a rolling snapshot, refreshed about every 15 minutes, not an archive; it held 3,353 flights on 29 September 2026. Format and access: a CSV resource on data.gov.il that is also served through the CKAN datastore API, so it can be polled programmatically. Free under the portal's open terms. Caveats: historical flights drop out of the file, so building a time series means collecting snapshots over time; status wording is in Hebrew and English; security-related disruptions can change schedules at short notice. Simulation uses: airport operations and disruption monitoring, delay and cancellation statistics during crises, and inputs to passenger flow or ground access models for Ben Gurion airport. Related records: the Ministry of Transport planning layers (data-israel-ministry-of-transport-planning-gis-layers) cover the rail and road access network.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source il-portal-data-gov-il: provider pages read (round 2 register piece)",
+      "route": "R02",
+      "source": "il-portal-data-gov-il"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.gov.il/dataset/flydata",
+  "id": "data-israel-airports-authority-flight-database",
+  "languages": [
+    "he",
+    "en"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "data.gov.il other open licence",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Israel Airports Authority flight database: arrivals and departures updated every 15 minutes",
+  "provider": "Israel Airports Authority, on data.gov.il",
+  "related_ids": [
+    "data-israel-ministry-of-transport-planning-gis-layers"
+  ],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "updated every 15 minutes; created 2017; modified 2026-09-29",
+      "url": "https://data.gov.il/api/3/action/package_show?id=flydata"
+    }
+  ],
+  "tags": [
+    "Israel",
+    "Ben Gurion airport",
+    "flights",
+    "real-time",
+    "airport operations"
+  ],
+  "title_en": "Israel Airports Authority flight database: arrivals and departures updated every 15 minutes",
+  "type": "data"
+}

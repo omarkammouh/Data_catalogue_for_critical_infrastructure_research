@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "Frontiers in Sustainable Food Systems article (open access)",
+      "url": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1084728/full"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Tomasella, Martins and Shrestha (2023) An open-source tool for improving on-farm yield forecasting systems. Frontiers in Sustainable Food Systems 7. doi:10.3389/fsufs.2023.1084728",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.3389/fsufs.2023.1084728",
+    "name": "aqf fortran version of the aquacrop crop model for on farm yield forecasting",
+    "url": "https://frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1084728/full"
+  },
+  "description": "AQF is a Fortran version of FAO's AquaCrop crop productivity model, built to run many simulations quickly inside operational yield forecasting and early warning systems, where the graphical AquaCrop program is limited to one field at a time. It assesses the effects of climate and soil fertility on crop yield gaps and water needs. It was developed by Tomasella, Martins and Shrestha, of Brazil's disaster monitoring centre CEMADEN, the national space research institute INPE and the International Water Management Institute, and published on 11 July 2023. It was tested against reference experiments in Tunis and field observations in Chitwan, Nepal, and Araripina, Brazil, reproducing the original model with r2 above 0.93 and normalised error under 11% in all but one experiment, at better computational speed. The article is open access under CC BY; the page read describes the tool as open source but does not say where the code is or under which licence. Caveats: the authors warn that code changes need expert knowledge of Fortran and crop physics, and seasonal water requirements came out about 11% lower than the original program. For simulation it lets drought and climate forecasts drive large ensembles of crop yield runs for food security and farm water planning. It is related to the FAO AquaCrop model record in this catalogue, the original model it reimplements.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "crop yield statistical model county yield regression weather model open source tool",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought"
+  ],
+  "homepage": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1084728/full",
+  "id": "model-aqf-fortran-aquacrop-yield-forecasting",
+  "inputs": [
+    "daily weather",
+    "soil properties (wilting point, field capacity, saturation, hydraulic conductivity)",
+    "crop and management settings including soil fertility stress"
+  ],
+  "language": [
+    "fortran"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Article CC BY; software licence not stated on the page read",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "not_stated",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "AQF: Fortran version of the AquaCrop crop model for on-farm yield forecasting",
+  "outputs": [
+    "crop yield and seasonal irrigation requirement per simulation unit"
+  ],
+  "provider": "CEMADEN and INPE (Brazil) with the International Water Management Institute (Tomasella, Martins and Shrestha)",
+  "related_ids": [
+    "model-fao-aquacrop"
+  ],
+  "sectors": [
+    "industry.agriculture",
+    "water"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "article page: title, 11 July 2023, CEMADEN/INPE/IWMI affiliations, CC BY copyright Tomasella, Martins and Shrestha, methods and test sites, results r2 > 0.93, RMSEn < 11%, Fortran, caution on code changes",
+      "url": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1084728/full"
+    }
+  ],
+  "tags": [
+    "crop model",
+    "yield forecasting",
+    "AquaCrop"
+  ],
+  "title_en": "AQF: Fortran version of the AquaCrop crop model for on-farm yield forecasting",
+  "type": "model",
+  "validated_on": [
+    "reference experiments in Tunis",
+    "observational experiments in Chitwan (Nepal) and Araripina (Brazil)"
+  ]
+}

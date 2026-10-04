@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/asti74/Dataset-for-Outlier-Detection-Based-on-Encoder-Masks-Inflation-and-Quasi-dynamic-Thresholding"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "IT"
+  ],
+  "data_family": [
+    "demand_operation",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sampled telecom italia activity benchmark for encoder mask outlier detection",
+    "repo": "github.com/asti74/dataset-for-outlier-detection-based-on-encoder-masks-inflation-and-quasi-dynamic-thresholding",
+    "url": "https://github.com/asti74/Dataset-for-Outlier-Detection-Based-on-Encoder-Masks-Inflation-and-Quasi-dynamic-Thresholding"
+  },
+  "description": "This benchmark republishes processed training and evaluation inputs for cellular-network outlier detection. The study maintainers derive them from Telecom Italia’s urban activity release, sampling one percent of grid cells for training and another one percent for testing. Documented variables include grid identifier, time block, local or international destination, incoming and outgoing calls or SMS and internet activity. The source period is reported as 1 November 2013 to 1 January 2014, with the first 16 days selected for training and ten-minute aggregation. Two Parquet files are public and free under ODbL 1.0. A limitation is that missing activity is replaced with zero and continuous values are normalised, so these processed values should not be interpreted as raw traffic volumes. The README reports 8,920 time blocks but does not reconcile that total with its stated daily-file count. Simulation uses include reproducing anomaly-detection inputs and testing sensitivity to preprocessing. It relates to data-telecom-italia-big-data-challenge as the original source; the existing parent does not identify this particular train/evaluation split. The geographic subset and random seed are not fully documented. No Parquet payload or neural model was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"cellular\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "parquet"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://github.com/asti74/Dataset-for-Outlier-Detection-Based-on-Encoder-Masks-Inflation-and-Quasi-dynamic-Thresholding",
+  "id": "data-telecom-italia-encoder-mask-outlier-benchmark",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-05-05",
+  "licence": "ODbL-1.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Sampled Telecom Italia activity benchmark for encoder-mask outlier detection",
+  "notes": "G8; G8-0234. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Outlier Detection for Cellular Networks Data Based on Encoder Masks Inflation and Quasi-dynamic Thresholding. Describing study named by repository. Underlying data: Barlacchi et al. (2015), A multi-source dataset of urban life in the city of Milan and the Province of Trentino..",
+  "provider": "Encoder-mask outlier-detection study maintainers",
+  "related_ids": [
+    "data-telecom-italia-big-data-challenge"
+  ],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/asti74/Dataset-for-Outlier-Detection-Based-on-Encoder-Masks-Inflation-and-Quasi-dynamic-Thresholding/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/asti74/Dataset-for-Outlier-Detection-Based-on-Encoder-Masks-Inflation-and-Quasi-dynamic-Thresholding"
+    }
+  ],
+  "spatial_resolution": "Sampled grids from Telecom Italia urban data; precise retained subset not stated.",
+  "spatial_resolution_class": "not_stated",
+  "tags": [],
+  "temporal_coverage": "Source period reported 2013-11-01–2014-01-01; training first 16 days.",
+  "temporal_resolution": "10-minute blocks; exact block total and date limits need reconciliation.",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Sampled Telecom Italia activity benchmark for encoder-mask outlier detection",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

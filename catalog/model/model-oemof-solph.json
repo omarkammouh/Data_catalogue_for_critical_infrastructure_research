@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/oemof.solph/"
+    },
+    {
+      "kind": "download",
+      "label": "oemof/oemof-solph-v0.6.6a1.zip (12.5 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/23016627/files/oemof/oemof-solph-v0.6.6a1.zip?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/oemof/oemof-solph"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo concept DOI",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.596235"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://oemof-solph.readthedocs.io/"
+    },
+    {
+      "kind": "paper",
+      "label": "Software Impacts paper",
+      "url": "https://doi.org/10.1016/j.simpa.2020.100028"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing link)",
+      "url": "https://oemof.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Krien, U., Schönfeldt, P., Launer, J., Hilpert, S., Kaldemeyer, C., Pleßmann, G. (2020). oemof.solph - A model generator for linear and mixed-integer linear optimisation of energy systems. Software Impacts 6, 100028. doi:10.1016/j.simpa.2020.100028",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1016/j.simpa.2020.100028",
+    "name": "oemof solph",
+    "repo": "github.com/oemof/oemof-solph",
+    "url": "https://oemof.org"
+  },
+  "description": "oemof.solph is a model generator for energy system modelling and optimisation, the core package of the Open Energy Modelling Framework (oemof). Users describe an energy system as a graph of buses, converters, sources, sinks and storage components, and the package builds and solves a linear or mixed-integer linear programme for least-cost dispatch and, optionally, investment in components, covering electricity, heat, gas and other carriers in one model. It is developed and maintained by the oemof e.V. association and a community of contributors from universities and research institutes. The tool is generic and location independent: coverage and time resolution are set by the user's data, from a single building or district heating network to a national system. It is available as a Python package on PyPI (version 0.6.5, September 2026, Python 3.10 or newer), with source code on GitHub and documentation on read-the-docs, under the MIT licence at no cost. Caveats: an optimisation solver must be installed separately (open-source and commercial solvers both work), and the package formulates flows between components as a linear or mixed-integer programme, so it does not compute electrical power flow physics. Simulation uses are capacity planning and optimisation of multi-carrier systems, including district heating. Related records: it is an alternative to model-pypsa and model-calliope for energy system optimisation.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry oemof",
+      "route": "R06",
+      "source": "energy-oemof"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://pypi.org/project/oemof.solph/",
+  "id": "model-oemof-solph",
+  "inputs": [
+    "Energy system graph of buses",
+    "converters",
+    "sources",
+    "sinks and storages",
+    "Time series of demand and supply",
+    "Cost and efficiency parameters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-07",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "oemof.solph",
+  "outputs": [
+    "Optimal dispatch (LP/MILP)",
+    "Optimal investment in components",
+    "Flow results per component and time step"
+  ],
+  "provider": "oemof e.V. and contributors (Open Energy Modelling Framework)",
+  "related_ids": [
+    "model-pypsa",
+    "model-calliope"
+  ],
+  "repository": "https://github.com/oemof/oemof-solph",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity",
+    "energy.district_heating_cooling",
+    "energy.gas_hydrogen"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Model generator for energy system modelling and optimisation (LP/MILP); part of oemof; MIT; citation DOIs",
+      "url": "https://raw.githubusercontent.com/oemof/oemof-solph/dev/README.rst"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 0.6.5 uploaded 2026-09-07; MIT; Python >=3.10",
+      "url": "https://pypi.org/pypi/oemof.solph/json"
+    }
+  ],
+  "tags": [
+    "energy system optimisation",
+    "MILP",
+    "sector coupling",
+    "district heating",
+    "oemof"
+  ],
+  "title_en": "Oemof.solph model generator for energy system modelling and optimisation",
+  "type": "model",
+  "validated_on": []
+}

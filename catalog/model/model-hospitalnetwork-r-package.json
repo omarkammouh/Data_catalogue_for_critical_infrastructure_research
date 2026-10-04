@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "CRAN package",
+      "url": "https://CRAN.R-project.org/package=HospitalNetwork"
+    },
+    {
+      "kind": "repo",
+      "label": "Source (GitHub)",
+      "url": "https://github.com/PascalCrepey/HospitalNetwork"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation site",
+      "url": "https://pascalcrepey.github.io/HospitalNetwork/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hospitalnetwork r package for building networks of hospitals from patient transfer data",
+    "repo": "github.com/pascalcrepey/hospitalnetwork",
+    "url": "https://pascalcrepey.github.io/HospitalNetwork"
+  },
+  "description": "HospitalNetwork is an R package that builds networks of hospitals from records of patients who are transferred between them. It is maintained by Pascal Crépey at the French School of Public Health (EHESP) with Tjibbe Donker, Clément Massonnaud and Michael Lydeamore, and its methods were used in published studies of hospital networks in the Netherlands and France. The workflow first checks and repairs an admission database, verifying identifiers, dates and overlapping stays, and then turns patient movements into a directed network of facilities whose links are weighted by transfers; network measures and plots follow. The project was partly supported by the NeWIS surveillance initiative and the French Sphinx project. Version 0.9.4 (December 2024) is free to install from CRAN under the GPL-3 licence, and the source is available on GitHub with a documentation site. Caveats: users need their own patient-level admission data, which is usually restricted, and the package describes the network, not simulating capacity. Coverage is general, for any country's hospital system. Simulation uses: mapping how hospitals depend on one another through transfers, so that the effects of closing or overloading one facility can be traced across the system. Related records: the HCUP databases (data-ahrq-hcup-hospital-utilization-databases) are one source of the admission records it needs.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hospital simulation",
+      "route": "R05",
+      "source": "cran"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://pascalcrepey.github.io/HospitalNetwork/",
+  "id": "model-hospitalnetwork-r-package",
+  "inputs": [
+    "Hospital admission database with patient, facility, admission and discharge dates"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-3",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network",
+    "statistical"
+  ],
+  "name": "HospitalNetwork: R package for building networks of hospitals from patient transfer data",
+  "outputs": [
+    "Directed hospital network weighted by patient transfers, network metrics and plots"
+  ],
+  "provider": "Pascal Crépey (EHESP), Tjibbe Donker, Clément Massonnaud, Michael Lydeamore",
+  "related_ids": [
+    "data-ahrq-hcup-hospital-utilization-databases"
+  ],
+  "repository": "https://github.com/PascalCrepey/HospitalNetwork",
+  "runs_on": [
+    "R"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "CRAN page read in memory: version 0.9.4 published 2024-12-22; tools to build hospital networks from data on hospitalised patients transferred between hospitals; methods used in Donker et al. 2010 (PLoS Comput Biol) and Nekkab et al. 2020 (Sci Rep); authors Crépey, Donker, Massonnaud, Lydeamore; GPL-3; in the NetworkAnalysis task view",
+      "url": "https://cran.r-project.org/web/packages/HospitalNetwork/index.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "README read in memory: aim is a common framework to build and analyse hospital networks; partly supported by the NeWIS initiative (JPIAMR) and the Sphinx project (ANR); checkBase() validates and repairs the admission database before the network is built",
+      "url": "https://raw.githubusercontent.com/PascalCrepey/HospitalNetwork/master/README.md"
+    }
+  ],
+  "tags": [
+    "hospital network",
+    "patient transfers",
+    "R package",
+    "surveillance"
+  ],
+  "title_en": "HospitalNetwork: R package for building networks of hospitals from patient transfer data",
+  "type": "model",
+  "validated_on": []
+}

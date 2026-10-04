@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Noise tile services (NTAD_Noise_*)",
+      "url": "https://tiles.arcgis.com/tiles/xOi1kZaI0eWDREZv/arcgis/rest/services"
+    },
+    {
+      "kind": "portal",
+      "label": "Population exposed to aviation noise (BTS data)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.bts.gov/d/iqwy-f8z4"
+    },
+    {
+      "kind": "docs",
+      "label": "National Transportation Noise Map page",
+      "url": "https://www.bts.gov/geospatial/national-transportation-noise-map"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "environmental_impact",
+    "health_impacts"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "national transportation noise map us",
+    "url": "https://bts.gov/geospatial/national-transportation-noise-map"
+  },
+  "description": "The National Transportation Noise Map models potential transportation noise across the United States for an average annual day, published by the Bureau of Transportation Statistics as part of the National Transportation Atlas Database. Releases exist for 2016, 2018, 2020 and 2022; the 2022 map, released in May 2026, uses 2022 aviation and rail data and 2023 road data. Noise is expressed as a 24-hour equivalent A-weighted sound level (LAeq) in separate aviation, rail and road layers and a combined layer, and BTS derives estimates of the population potentially exposed to aviation and road noise. The rasters are served as ArcGIS tile services (names beginning NTAD_Noise_) with downloads from the BTS page and metadata documents on the geospatial hub; as US government works they are free for unrestricted use. Caveats: BTS states the data are meant for tracking national trends by mode and over time and should not be used to evaluate noise at individual locations or specific times, and the model rests on average traffic, not measurements. The map supports environmental impact and exposure analysis of highways, railways and airports, alongside the NTAD networks from which it is modelled.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "transportation noise (transport P3 harvest)",
+      "route": "R11",
+      "source": "esri-living-atlas"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "aviation noise exposure",
+      "route": "R10",
+      "source": "socrata-discovery"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "raster",
+    "image",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.bts.gov/geospatial/national-transportation-noise-map",
+  "id": "data-bts-national-transportation-noise-map",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-06-22",
+  "licence": "US Government work, no copyright (17 U.S.C. 101)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.bts.gov/geospatial/national-transportation-noise-map"
+    ]
+  },
+  "maturity": "stale",
+  "name": "National Transportation Noise Map (US)",
+  "provider": "U.S. Department of Transportation, Bureau of Transportation Statistics (BTS)",
+  "related_ids": [
+    "data-us-national-transportation-atlas-database"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.rail",
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "2016, 2018, 2020 and 2022 Noise Data items; 2022 release May 2026 (aviation and rail 2022, roads 2023); LAeq 24-hour; trends only, not individual locations; tile services NTAD_Noise_2022; US Government work",
+      "url": "https://geodata.bts.gov/api/search/v1/collections/all/items?limit=100"
+    }
+  ],
+  "spatial_resolution": "national raster grid of modelled noise levels",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "transport noise",
+    "LAeq",
+    "aviation",
+    "road",
+    "rail",
+    "environmental exposure"
+  ],
+  "temporal_coverage": "2016, 2018, 2020 and 2022 releases",
+  "title_en": "National Transportation Noise Map (US)",
+  "type": "data",
+  "update_frequency": "multi_year"
+}

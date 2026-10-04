@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "DCRNN repository and data links",
+      "url": "https://github.com/liyaguang/DCRNN"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper",
+      "url": "https://arxiv.org/abs/1707.01926"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "synthetic_benchmark",
+    "calibration_validation",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "metr la and pems bay traffic forecasting benchmarks dcrnn",
+    "url": "https://github.com/liyaguang/DCRNN"
+  },
+  "description": "METR-LA (Los Angeles) and PEMS-BAY (San Francisco Bay Area) are the traffic data files released with the Diffusion Convolutional Recurrent Neural Network (DCRNN) paper at ICLR 2018, and have become standard benchmarks for graph-based traffic forecasting. The repository gives metr-la.h5 and pems-bay.h5, each a pandas data frame in HDF5 with one column per sensor and one row per timestamp at 5-minute steps, plus scripts that generate train, validation and test splits, and a TensorFlow implementation of DCRNN. Coverage is two metropolitan road networks. Access: the files are free on Google Drive or Baidu Yun linked from the README; the code is under the MIT licence, and the README states no separate data licence. Caveats: the README does not describe the collection periods or how sensors were chosen, and results tuned to these benchmarks may not transfer to other networks. They support calibration and validation of traffic state models and network flow forecasts. They complement Caltrans PeMS, the Seattle loop detector data set and UTD19 catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review doi:10.3390/s22103708 (journal review)",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://github.com/liyaguang/DCRNN",
+  "id": "data-metr-la-pems-bay-traffic-benchmarks",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-12-09",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "METR-LA and PEMS-BAY traffic forecasting benchmarks (DCRNN)",
+  "provider": "Yaguang Li, Rose Yu, Cyrus Shahabi and Yan Liu (DCRNN authors), GitHub liyaguang",
+  "related_ids": [
+    "data-caltrans-pems",
+    "data-seattle-loop-detector-dataset",
+    "data-utd19-multi-city-loop-detectors"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "DCRNN ICLR 2018; METR-LA and PEMS-BAY h5 files on Google Drive or Baidu Yun; pandas DataFrame in HDF5, sensors as columns, 5-minute timestamps in the example; generate_training_data scripts; TensorFlow",
+      "url": "https://raw.githubusercontent.com/liyaguang/DCRNN/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License",
+      "url": "https://raw.githubusercontent.com/liyaguang/DCRNN/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): MIT (basis: licence file in the GitHub repository)",
+      "url": "https://github.com/liyaguang/DCRNN/blob/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://arxiv.org/abs/1707.01926"
+    }
+  ],
+  "spatial_resolution": "individual freeway sensors",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "traffic forecasting",
+    "benchmark",
+    "graph neural networks",
+    "loop detectors"
+  ],
+  "temporal_coverage": "fixed historical periods",
+  "title_en": "METR-LA and PEMS-BAY traffic forecasting benchmarks (DCRNN)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

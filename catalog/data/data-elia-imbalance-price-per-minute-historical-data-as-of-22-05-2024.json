@@ -1,0 +1,84 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Provider page",
+      "url": "https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods133"
+    }
+  ],
+  "access_note": "Public open-data metadata accessed without registration. Dataset contents and completeness were not downloaded or tested.",
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "BE"
+  ],
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "elia imbalance price per minute historical data as of 22 05 2024",
+    "url": "https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods133"
+  },
+  "description": "Elia: Imbalance price per minute (Historical data as of 22/05/2024), published by Elia Transmission Belgium, archives one-minute imbalance indicators. Coverage: The product concerns the Belgian transmission system, its generating units or bidding-zone borders as specified by its fields. Provider granularity: 1 minute. Declared refresh interval: Daily. These are metadata statements, not an independently checked completeness period. The linked provider API exposes the product metadata and field definitions. The review did not retrieve observation rows or bulk exports. Elia labels the product with its Elia Open Data Licence. The metadata is publicly accessible without a login; licence conditions still govern reuse. Limitations: These one-minute indicators are never validated and are indicative; they must not be substituted for quarter-hour settlement values. For catalogue screening, its documented functions support network flow, capacity planning studies; this is an assessment of possible use, not a claim of validated performance. Related records: No directly related catalogue record was established from the reviewed sources.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Individually open manually selected distinct network, operations, generation, outage, balancing and cross-border series from POWER-Q142",
+      "route": "R11",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods133",
+  "id": "data-elia-imbalance-price-per-minute-historical-data-as-of-22-05-2024",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-06-26",
+  "licence": "Elia Open Data Licence",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Elia: Imbalance price per minute (Historical data as of 22/05/2024)",
+  "notes": "The Elia provider API confirms this distinct national electricity product by dataset identifier, description and schema. No matching catalogue/candidate address or explicitly covering parent was found. It is a national operational series or inventory, not a local-instance policy choice. Original discovery: A1/A1-0175. Geography and simulation-use tags are screening classifications. ",
+  "provider": "Elia Transmission Belgium",
+  "regions": [],
+  "related_ids": [],
+  "schema_summary": "datetime (datetime); resolutioncode (text); quarterhour (datetime); qualitystatus (text); ace (double); systemimbalance (double); alpha (double); alpha_prime (double); marginalincrementalprice (double); marginaldecrementalprice (double); imbalanceprice (double)",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Provider metadata or documentation read for E01",
+      "url": "https://opendata.elia.be/api/explore/v2.1/catalog/datasets/ods133"
+    }
+  ],
+  "spatial_resolution": "Per unit, electrical zone, border or system aggregate according to the published field schema",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "From 22 May 2024; final observation date not independently checked",
+  "temporal_resolution": "1 minute",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Elia: Imbalance price per minute (Historical data as of 22/05/2024)",
+  "type": "data",
+  "update_frequency": "daily"
+}

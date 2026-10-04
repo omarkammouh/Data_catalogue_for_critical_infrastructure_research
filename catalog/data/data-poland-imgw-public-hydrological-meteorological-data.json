@@ -1,0 +1,152 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Public data service",
+      "url": "https://danepubliczne.imgw.pl/"
+    },
+    {
+      "kind": "api",
+      "label": "API description",
+      "url": "https://danepubliczne.imgw.pl/pl/apiinfo"
+    },
+    {
+      "kind": "download",
+      "label": "Hydrological observation archive (files)",
+      "url": "https://danepubliczne.imgw.pl/data/dane_pomiarowo_obserwacyjne/dane_hydrologiczne/"
+    },
+    {
+      "kind": "docs",
+      "label": "Data reuse terms (regulamin)",
+      "url": "https://danepubliczne.imgw.pl/docs/regulamin_udostepniania_danych.pdf"
+    },
+    {
+      "kind": "viewer",
+      "label": "Hydrological monitoring map",
+      "url": "https://hydro.imgw.pl/"
+    }
+  ],
+  "access_note": "Files and API are open without registration; data not published online can be requested with a reuse application form.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "PL"
+  ],
+  "data_family": [
+    "weather_observations",
+    "sensor_realtime_streams",
+    "hazards"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "imgw pib public hydrological and meteorological data danepubliczne imgw pl",
+    "url": "https://danepubliczne.imgw.pl"
+  },
+  "description": "The public data service of IMGW-PIB, the Polish Institute of Meteorology and Water Management, publishes hydrological and meteorological observations for Poland as files and through an API. The file archive holds daily hydrological data from 1951 to 2025 organised by hydrological year, which runs from 1 November, with daily, monthly and half-yearly files of water stage, discharge and water temperature per station, a station list and change log, plus meteorological and actinometric archives, yearbooks and bulletins. The API returns current synoptic, hydrological and meteorological readings and meteorological and hydrological warnings in JSON, XML, CSV or HTML, by station id or name. Data are free public sector information reusable under the Polish Open Data Act, on condition that IMGW-PIB is named as source and processing is disclosed; other data can be requested with a reuse form. Caveats: the rules warn of legal liability when attribution is missing, file formats use comma separators with Polish headers, older file access moved during a site change, and station coverage per year must be checked in the content maps. Simulation uses: discharge and water level series for flood frequency, reservoir and dam operation, drought and low flows for water supply and irrigation, hydrological warnings for emergency response, and climate trend analysis. Related record: the ISOK Hydroportal flood maps (data-poland-isok-hydroportal-flood-hazard-risk-maps) give flood extents that these series help calibrate.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: IMGW-PIB public data (PL, meteorological_service) https://danepubliczne.imgw.pl/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "xml",
+    "web_page",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "drought",
+    "extreme_heat"
+  ],
+  "homepage": "https://danepubliczne.imgw.pl/",
+  "id": "data-poland-imgw-public-hydrological-meteorological-data",
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "last_updated": "2026-08-31",
+  "licence": "Reuse of public sector information under the Polish Open Data Act 2021 with mandatory attribution to IMGW-PIB (and a note when data are processed)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "IMGW-PIB public hydrological and meteorological data (danepubliczne.imgw.pl)",
+  "notes": "Only directory listings and the readme text were read; no data files were downloaded.",
+  "provider": "Instytut Meteorologii i Gospodarki Wodnej – Państwowy Instytut Badawczy (IMGW-PIB)",
+  "related_ids": [
+    "data-poland-isok-hydroportal-flood-hazard-risk-maps"
+  ],
+  "schema_summary": "API endpoints /api/data/synop, /hydro, /meteo, /warningsmeteo, /warningshydro, /product (JSON by default, xml, csv or html; by station id or name); hydrological files codz_YYYY_MM.csv (daily), mies_YYYY.csv (monthly), polr_H/Q/T_YYYY.csv (half-yearly water stage, discharge, water temperature), zjaw_YYYY.csv (phenomena); station list lista_stacji_hydro.csv; hydrological year from 1 November",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.drinking_water",
+    "water.irrigation",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "climate_adaptation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "reuse rules: legal basis, attribution wording, requests, liability",
+      "url": "https://danepubliczne.imgw.pl/pl/introduction"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "API endpoints and formats",
+      "url": "https://danepubliczne.imgw.pl/pl/apiinfo"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "directory listing: daily 1951 to 2025, monthly, station list; readme hydrologia_info_ogolne.txt on file naming and hydrological year (read, no data files downloaded)",
+      "url": "https://danepubliczne.imgw.pl/data/dane_pomiarowo_obserwacyjne/dane_hydrologiczne/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed last_updated.",
+      "url": "https://danepubliczne.imgw.pl/"
+    }
+  ],
+  "spatial_resolution": "hydrological and meteorological stations (station list CSV and station maps)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hydrology",
+    "water level",
+    "discharge",
+    "water temperature",
+    "meteorology",
+    "warnings",
+    "open data",
+    "API",
+    "Poland",
+    "IMGW"
+  ],
+  "temporal_coverage": "daily hydrological data by hydrological year from 1951 to 2025; current synoptic, hydro and meteo readings via API",
+  "temporal_resolution": "daily, monthly and half-yearly archives; current observations via API",
+  "temporal_resolution_class": "daily",
+  "title_en": "IMWM-PIB public hydrological and meteorological data (danepubliczne.imgw.pl)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

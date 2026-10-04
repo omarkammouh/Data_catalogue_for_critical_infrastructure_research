@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/Azure/AzurePublicDataset"
+    },
+    {
+      "kind": "download",
+      "label": "Releases (data files)",
+      "url": "https://github.com/Azure/AzurePublicDataset/releases"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "time_series",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "azure public dataset microsoft azure cloud traces",
+    "repo": "github.com/azure/azurepublicdataset",
+    "url": "https://github.com/Azure/AzurePublicDataset"
+  },
+  "description": "The Azure Public Dataset contains public releases of Microsoft Azure traces for research. VM traces from 2017 and 2019 describe about 2 million and 2.6 million virtual machines with 1.2 and 1.9 billion utilisation readings from the first-party workload in one Azure region, with notebooks showing they are representative; a 2020 trace of VM requests supports packing algorithms; Azure Functions traces cover two weeks of 2019 invocations, a 2021 invocation trace and 2020 blob accesses; LLM inference traces from November 2023 and May 2024 and a 2024 multimodal trace record tokens and timings; VM benchmark noise data span May 2023 to September 2024; and a 2023 dataset supports designing lower-carbon servers. Microsoft publishes each trace with the paper that used it, such as Resource Central (SOSP 2017) and Serverless in the Wild (ATC 2020). Coverage: Azure regions (not identified), periods of weeks to months, at five-minute to millisecond resolution. Format and access: CSV files as assets on the repository's GitHub releases, with documentation per dataset; free of charge under the Creative Commons Attribution 4.0 licence, with citation of the related paper requested. Caveats: sanitised subsets, normalised resource values and anonymised identifiers; no facility power or location data. Simulation uses: demand and operation inputs for data-centre capacity planning, VM placement and serverless optimisation, energy studies and synthetic benchmarks. Related records: the Google cluster workload traces and the Alibaba Cluster Trace Program are comparable; CloudSim and CloudSim Plus can replay the VM traces.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.data_centres:demand_operation",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/Azure/AzurePublicDataset",
+  "id": "data-azure-public-dataset",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Azure Public Dataset (Microsoft Azure cloud traces)",
+  "provider": "Microsoft Azure (Microsoft Research and Azure)",
+  "related_ids": [],
+  "schema_summary": "VM table (created, deleted, category, cores, memory) and utilisation readings; function invocations per minute and durations; LLM request tokens and timestamps",
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README and LICENSE via raw.githubusercontent.com",
+      "url": "https://github.com/Azure/AzurePublicDataset"
+    }
+  ],
+  "spatial_resolution": "virtual machine and function",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "cloud traces",
+    "virtual machines",
+    "serverless",
+    "LLM inference",
+    "Azure"
+  ],
+  "temporal_coverage": "2017-2024 traces",
+  "temporal_coverage_years": {
+    "end": 2024,
+    "start": 2017
+  },
+  "temporal_resolution": "5 minutes (VM utilisation) to milliseconds (functions)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Azure Public Dataset (Microsoft Azure cloud traces)",
+  "type": "data",
+  "update_frequency": "other"
+}

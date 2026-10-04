@@ -1,0 +1,82 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Verified provider documentation",
+      "url": "https://ccmc.gsfc.nasa.gov/models/A-EFFort~1.0/"
+    }
+  ],
+  "access_note": "The cited metadata or documentation page was public. Executable, data-access and reuse terms were not inferred from page access. cost=on_request means ask the provider because charges were not established, not a verified pricing policy.",
+  "access_restrictions": "none",
+  "cost": "on_request",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "athens effective solar flare forecasting",
+    "url": "https://ccmc.gsfc.nasa.gov/models/A-EFFort~1.0"
+  },
+  "description": "A-EFFort estimates solar-flare probabilities from magnetic-field complexity. It combines an effective connected-field measure with Bayesian probability calculations and returns four flare thresholds for individual active regions and the full solar disk. The resource is documented by Academy of Athens. The documented physical domain is Solar; grid spacing, supported periods and cadence depend on this version and its chosen configuration. The documentation links Continuous/RT Run (Flare Scoreboard). A software licence and any external distribution charge are not stated. The forecast uses specified solar-disk longitude limits; it is not a direct infrastructure damage model. The documented space-weather effects make it a potential environmental input for infrastructure hazard exposure and resilience simulations. It is related to platform-nasa-ccmc in this catalogue. The cited documentation is available online; underlying files were not downloaded. Spatial and temporal resolution were not independently established.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Complete model catalogue; select one version per model with stated space-weather infrastructure impacts",
+      "route": "R51",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://ccmc.gsfc.nasa.gov/models/A-EFFort~1.0/",
+  "id": "model-a-effort",
+  "inputs": [
+    "Latest SDO/HMI full-disk line-of-sight magnetograms. Uses an algorithm to find active regions, calculate Bz, and use that to calculate Beff, which is a proxy for magnetic free energy and magnetic"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "not_stated",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Athens Effective Solar Flare Forecasting",
+  "notes": "Preparation item P03365; found by A4; original findings: A4-0374. Classification and possible simulation uses are curator interpretations grounded in the cited technical description. Draft only; date_catalogued is the preparation date, not proof of catalogue addition. ",
+  "outputs": [
+    "24-hour probability of flaring in 4 regimes: M1.0+, M5.0+, X1.0+, X5.0+ These are refreshed precisely every 3 hours (UTC 00:00, 03:00, 06:00, 09:00, 12:00, 15:00, 18:00, 21:00)."
+  ],
+  "provider": "Academy of Athens",
+  "related_ids": [
+    "platform-nasa-ccmc"
+  ],
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Provider metadata read today; identity, purpose and technical description. Unstated fields remain explicitly uncertain.",
+      "url": "https://ccmc.gsfc.nasa.gov/models/A-EFFort~1.0/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://ccmc.gsfc.nasa.gov/models/A-EFFort~1.0/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Athens Effective Solar Flare Forecasting",
+  "type": "model"
+}

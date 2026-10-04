@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Model page and access request",
+      "url": "https://www.faa.gov/airports/planning_capacity/runwaysimulator"
+    }
+  ],
+  "access_note": "Access to the software is given after a request and completion of the FAA training programme; the licence currently covers US domestic use only.",
+  "access_restrictions": "on_request",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "runwaysimulator airport capacity model faa and mitre",
+    "url": "https://faa.gov/airports/planning_capacity/runwaysimulator"
+  },
+  "description": "runwaySimulator is the airport capacity model that the Federal Aviation Administration has used for several years and that the FAA and MITRE, its developer, now make available for airport planning. It simulates arriving and departing traffic at an airport, the runway assignment and sequencing decisions and the flight operations, with a randomised traffic sample that reflects the airport's aircraft mix. Separation standards from FAA Order 7110.65 are coded as rules between pairs of operations and adjusted for common pilot and controller behaviour, the runway configuration and use restrictions are set by the analyst, and a heuristic assigns runways and sequences traffic. To estimate capacity it keeps constant demand on the runways and simulates several hundred hours of steady state for each arrival-departure mix, giving the airport's capacity curve (a Pareto frontier). It replaces the FAA's older Airfield Capacity Model and supports the FAA Airport Capacity Profiles and FACT3 studies. The software is written in Java on MITRE's Tortuga simulation framework and Aviation Data Library, reads airport layouts and procedures in AIXM XML with ARINC 424 leg types, and is available on request with required training; the MITRE licence is for US domestic use and access is free. Coverage is any single airport, with US airports as the licensed scope. Limitations: it does not evaluate most non-runway constraints such as taxiways, gates, terminal airspace congestion or heat limits on climb rates. A validation report compares results with observed arrival and departure rates at busy airports. It serves capacity planning and runway resilience studies, and relates to the airport surface and flight data catalogued here, such as OurAirports and the OpenSky Network.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "aviation aéroport simulation modèle",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.faa.gov/airports/planning_capacity/runwaysimulator",
+  "id": "model-faa-runwaysimulator",
+  "inputs": [
+    "airport layout and procedures in AIXM XML with ARINC 424 legs",
+    "runway configuration and use restrictions",
+    "aircraft fleet mix",
+    "separation rules"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "MITRE software licence for US domestic use",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "optimisation"
+  ],
+  "name": "runwaySimulator airport capacity model (FAA and MITRE)",
+  "outputs": [
+    "runway throughput by arrival-departure mix",
+    "airport capacity curves",
+    "aircraft separations and speed profiles",
+    "simulation visualisations"
+  ],
+  "provider": "Federal Aviation Administration (FAA), developed by MITRE",
+  "related_ids": [
+    "data-ourairports",
+    "data-opensky-network"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "developed by MITRE, now publicly available; replaces Airfield Capacity Model; request access and training; MITRE licence for US domestic use; simulation method (FAA Order 7110.65 separations, heuristic runway assignment, several hundred hours, capacity curve Pareto frontier); limitations (taxiway, gate, terminal airspace, ATC TMIs, high temperatures); Java, Tortuga framework, Aviation Data Library, Java Flight Model, AIXM XML, ARINC 424; Airport Capacity Profiles, FACT3, ACRP Report 79; validation report; last updated 2024-07-15",
+      "url": "https://www.faa.gov/airports/planning_capacity/runwaysimulator"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): MITRE software licence for US domestic use (basis: faa.gov)",
+      "url": "https://www.faa.gov/airports/planning_capacity/runwaysimulator"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.faa.gov/licenses_certificates/vintage_experimental"
+    }
+  ],
+  "tags": [
+    "airport capacity",
+    "runway simulation",
+    "MITRE",
+    "FAA",
+    "fast-time simulation"
+  ],
+  "title_en": "RunwaySimulator airport capacity model (FAA and MITRE)",
+  "type": "model",
+  "validated_on": [
+    "observed arrival and departure rates at busy US airports (FAA validation report)"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "SEAPATH GitHub organisation",
+      "url": "https://github.com/seapath"
+    },
+    {
+      "kind": "repo",
+      "label": "Ansible deployment (example repository)",
+      "url": "https://github.com/seapath/ansible"
+    },
+    {
+      "kind": "portal",
+      "label": "Original landing page",
+      "url": "https://lfenergy.org/projects/seapath/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "lf energy seapath real time high availability hypervisor for virtualised substation protection and control",
+    "repo": "github.com/seapath",
+    "url": "https://lfenergy.org/projects/seapath"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "SEAPATH is an open-source reference platform for running virtualised protection, automation and control (vPAC) applications in IEC 61850 digital substations. It is developed as an LF Energy project by grid operators, vendors and integrators under the Digital Substation special interest group. Coverage: generic, for any utility substation. The platform combines a real-time Linux hypervisor, a high-availability cluster with Ceph shared storage and cyber security hardening, built either as Yocto images or as a Debian installer image, and configured with Ansible playbooks (network and cluster set-up) onto standard servers. Format and access: source code, build recipes and documentation in the seapath GitHub organisation; free. Licence: Apache 2.0. Caveats: SEAPATH is an infrastructure layer, not a protection application; users must bring vPAC software and qualified hardware, and real-time performance depends on careful tuning. Simulation uses: building hardware-in-the-loop and digital twin testbeds of virtualised substations to study resilience and cascading failure of control functions under faults or cyber attack. Related records: LF Energy CoMPAS (platform-lf-energy-compas-iec61850) produces the IEC 61850 configurations that such substations run, and SANDI-2024 substation traffic (data-sandi-2024-substation-intrusion-detection) is data from a substation testbed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source energy-seapath: provider pages read (round 2 register piece)",
+      "route": "R25",
+      "source": "energy-seapath"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://github.com/seapath/ansible",
+  "id": "platform-lf-energy-seapath",
+  "interfaces": [
+    "code_library",
+    "other",
+    "command_line"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://github.com/seapath"
+    ]
+  },
+  "maturity": "active",
+  "name": "LF Energy SEAPATH: real-time high-availability hypervisor for virtualised substation protection and control",
+  "open_source": true,
+  "platform_kind": [
+    "digital_twin"
+  ],
+  "provider": "LF Energy (Linux Foundation), Digital Substation special interest group",
+  "related_ids": [
+    "platform-lf-energy-compas-iec61850",
+    "data-sandi-2024-substation-intrusion-detection"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "resilience",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Project page: high availability real-time hypervisor for hosting digital substation vPAC applications; designed for IEC 61850 digital substation automation systems; interoperability, real-time performance, high availability, cybersecurity",
+      "url": "https://lfenergy.org/projects/seapath/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Ansible repository README: images generated in yocto-bsp and build_debian_iso; Ansible configures network and the high-availability cluster; SEAPATH wiki; repository licence Apache 2.0 (README CC BY 4.0); last commit 2026-09-16 (Ceph RBD mount helper)",
+      "url": "https://raw.githubusercontent.com/seapath/ansible/main/README.adoc"
+    }
+  ],
+  "tags": [
+    "digital substation",
+    "virtualisation",
+    "vPAC",
+    "LF Energy"
+  ],
+  "title_en": "LF Energy SEAPATH: real-time high-availability hypervisor for virtualised substation protection and control",
+  "type": "platform"
+}

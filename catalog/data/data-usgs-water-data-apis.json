@@ -1,0 +1,160 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "USGS Water Data APIs home",
+      "url": "https://api.waterdata.usgs.gov/"
+    },
+    {
+      "kind": "api",
+      "label": "OGC API endpoint catalogue",
+      "url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections?f=html"
+    },
+    {
+      "kind": "docs",
+      "label": "OGC API documentation (keys, queries)",
+      "url": "https://api.waterdata.usgs.gov/docs/ogcapi/"
+    },
+    {
+      "kind": "docs",
+      "label": "Get an API key",
+      "url": "https://api.waterdata.usgs.gov/signup/"
+    },
+    {
+      "kind": "portal",
+      "label": "Water Data for the Nation explorer",
+      "url": "https://waterdata.usgs.gov/"
+    },
+    {
+      "kind": "viewer",
+      "label": "National Water Dashboard",
+      "url": "https://dashboard.waterdata.usgs.gov/app/nwd/"
+    }
+  ],
+  "access_note": "Open without registration; a free API key raises rate limits. Legacy NWISWeb pages and WaterServices are being retired from November 2026 to February 2027.",
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "demand_operation",
+    "hazards",
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "time_series",
+    "stream",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usgs water data for the nation apis streamflow gage height groundwater and water quality",
+    "url": "https://api.waterdata.usgs.gov"
+  },
+  "description": "The USGS Water Data APIs are the modern machine-readable route to the water data of the U.S. Geological Survey, replacing the legacy NWISWeb pages and WaterServices, which are being retired between November 2026 and February 2027. OGC API endpoints serve monitoring location metadata, time-series metadata with thresholds and units, real-time continuous measurements of streamflow, gage height and hundreds of other parameters, daily summary values for streams, lakes and wells, and field measurements; related APIs give USGS discrete water quality samples, the multi-agency Water Quality Portal, statistics on the historical record, gage camera imagery, and Real-Time Flood Impact locations where roads, bridges, embankments and buildings have been surveyed against nearby streamgages. Data are USGS public domain, free and open without registration, with a free API key for higher rate limits, and are also viewable in the Water Data for the Nation explorer and National Water Dashboard. Caveats: the platform is mid-migration so older scripts and URLs will break, provisional real-time data can be revised, and record length and parameters differ widely between sites. Simulation uses: real-time inputs for flood warning and water system digital twins, flood impact thresholds for roads and bridges, long flow and groundwater series for supply and drought planning, and calibration of hydrological and water quality models. Related records: the USACE National Inventory of Dams (data-usace-national-inventory-of-dams) and the NOAA National Water Model (model-noaa-national-water-model).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: USGS Water Data for the Nation (US, hydrological_service) https://waterdata.usgs.gov/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "ogc_map_service",
+    "json",
+    "csv",
+    "api",
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "drought"
+  ],
+  "homepage": "https://api.waterdata.usgs.gov/",
+  "id": "data-usgs-water-data-apis",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (USGS-authored data)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "USGS Water Data for the Nation APIs (streamflow, gage height, groundwater and water quality)",
+  "notes": "No data endpoints were called.",
+  "provider": "U.S. Geological Survey (USGS) Water Resources Mission Area",
+  "related_ids": [
+    "data-usace-national-inventory-of-dams",
+    "model-noaa-national-water-model"
+  ],
+  "schema_summary": "monitoring locations (name, identifier, responsible agency, establishment date, site type, state, county, latitude and longitude, HUC); time-series metadata (parameter, statistic, thresholds, units, first and last observation); continuous values; daily values (mean, median, maximum, minimum); field measurements; discrete water quality samples; statistics on the historical record; Real-Time Flood Impact locations (roads, bridges, embankments, buildings surveyed against nearby gages); gage camera imagery",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "water.stormwater_drainage",
+    "water.irrigation",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "digital_twin",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "API list and descriptions: continuous, daily, monitoring locations, time series, OGC, Water Quality Portal, Samples, statistics, RTFI, NIMS",
+      "url": "https://api.waterdata.usgs.gov/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "OGC API structure and API keys for higher rate limits",
+      "url": "https://api.waterdata.usgs.gov/docs/ogcapi/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "NWISWeb and WaterServices retirement November 2026 to February 2027",
+      "url": "https://waterdata.usgs.gov/blog/nwisweb-decommission-campaign3/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "USGS-authored data are U.S. public domain",
+      "url": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits"
+    }
+  ],
+  "spatial_resolution": "individual monitoring locations (streams, lakes, wells) with state, county, coordinates and hydrologic unit code",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "streamflow",
+    "gage height",
+    "groundwater levels",
+    "water quality",
+    "real-time",
+    "OGC API",
+    "NWIS",
+    "USGS",
+    "flood impacts",
+    "United States"
+  ],
+  "temporal_coverage": "historical daily values and current continuous measurements; record length varies by site",
+  "temporal_resolution": "continuous (real-time) measurements and daily statistics",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "USGS Water Data for the Nation APIs (streamflow, gage height, groundwater and water quality)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

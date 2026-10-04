@@ -1,0 +1,146 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Dataset list (JSON)",
+      "url": "https://lisgis.gov.lr/api/datasets"
+    },
+    {
+      "kind": "api",
+      "label": "DCAT catalogue with JSON, CSV and XLSX distributions",
+      "url": "https://lisgis.gov.lr/api/dcat"
+    },
+    {
+      "kind": "download",
+      "label": "Household deprivation status by indicator, gender, residence and county, 2022 census (CSV)",
+      "url": "https://lisgis.gov.lr/api/datasets/census-poverty-household-indicators/2022.csv"
+    },
+    {
+      "kind": "download",
+      "label": "Households without public-grade electricity, projection 2022 to 2042 (CSV)",
+      "url": "https://lisgis.gov.lr/api/datasets/lisgis-population-projection-table-5-19/2022.csv"
+    },
+    {
+      "kind": "portal",
+      "label": "LISGIS microdata catalogue (NADA)",
+      "url": "https://microdata.lisgis.gov.lr/index.php/catalog/"
+    },
+    {
+      "kind": "api",
+      "label": "LISGIS open data API, household deprivation indicators (JSON)",
+      "url": "https://lisgis.gov.lr/api/datasets/census-poverty-household-indicators"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa"
+  ],
+  "cost": "free",
+  "countries": [
+    "LR"
+  ],
+  "data_family": [
+    "social_vulnerability_equity",
+    "system_description",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular",
+    "survey"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "lisgis liberia open data api with 2022 population and housing census tables including household deprivation in electricity safe drinking water improved sanitation improved floor and clean cooking fuel by county urban or rural and sex and projected households without public grade electricity to 2042",
+    "url": "https://lisgis.gov.lr"
+  },
+  "description": "LISGIS, the statistics office of Liberia, runs an open data API that serves tables from the 2022 Population and Housing Census as JSON, CSV and XLSX under CC BY 4.0, with a DCAT catalogue. The census poverty workbook table gives, for each of 15 counties, urban and rural areas and male or female heads, the share of households deprived of access to electricity, safe drinking water, improved sanitation, an improved floor and clean cooking fuel. It reports 61.7 percent of households nationally deprived of electricity, from 32.3 percent in Montserrado to 90.2 percent in Bong. Projection tables derived from the census estimate households needing sanitation and households without public-grade electricity up to 2042 in three variants. Other census tables give households, household size, population, land area and density by county, and the API also serves county, district and clan boundaries. Coverage is national. Format and access: free, no registration. Licence: CC BY 4.0 on each dataset. Caveats: the census tables are aggregates copied from LISGIS workbooks; projections are derived requirements, not observed counts. Simulation uses: county electrification and water gaps for grid extension and service planning.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:LR:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://lisgis.gov.lr/",
+  "id": "data-lisgis-liberia-open-data-api-census-2022-household-deprivation-electricity-water-sanitation-floor-cooking-by-county",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC BY 4.0 (licence field on each dataset)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "LISGIS Liberia open data API with 2022 Population and Housing Census tables, including household deprivation in electricity, safe drinking water, improved sanitation, improved floor and clean cooking fuel by county, urban or rural and sex, and projected households without public-grade electricity to 2042",
+  "provider": "Liberia Institute of Statistics and Geo-Information Services (LISGIS)",
+  "schema_summary": "census-poverty-household-indicators (264 rows): breakdown_type (gender, locality, county), breakdown_value, geo_code, indicator (access to electricity, safe drinking water, improved sanitation, improved floor, clean cooking fuel, health facility, primary education, school attendance and attainment, cellphone, radio, mattress), total_households, not_deprived_pct, deprived_pct. Other census tables: households and household size by county, population by county, land area and density. Projection tables 5-18 and 5-19: households requiring sanitation and households without public-grade electricity, 2022 to 2042, low, medium and high variants.",
+  "sectors": [
+    "energy.electricity",
+    "water.drinking_water",
+    "water.wastewater",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: dataset list and licences",
+      "url": "https://lisgis.gov.lr/api/datasets"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: catalogue and distributions",
+      "url": "https://lisgis.gov.lr/api/dcat"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: rows",
+      "url": "https://lisgis.gov.lr/api/datasets/census-poverty-household-indicators/2022.csv"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: dataset description",
+      "url": "https://lisgis.gov.lr/api/datasets/lisgis-population-projection-table-5-19"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: catalogue list",
+      "url": "https://microdata.lisgis.gov.lr/index.php/catalog/?page=1&ps=15"
+    }
+  ],
+  "spatial_resolution": "county (15), urban or rural, national; boundary layers to district and clan in the same API",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "Liberia",
+    "Africa",
+    "electricity access",
+    "sanitation",
+    "open data API",
+    "county"
+  ],
+  "temporal_coverage": "census 2022; projections to 2042",
+  "temporal_coverage_years": {
+    "end": 2042,
+    "start": 2022
+  },
+  "temporal_resolution": "census at irregular intervals (1984, 2008, 2022); projections by year to 2042",
+  "temporal_resolution_class": "event",
+  "title_en": "Infrastructure systems data",
+  "type": "data"
+}

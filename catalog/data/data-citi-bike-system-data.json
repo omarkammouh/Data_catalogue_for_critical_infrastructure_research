@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Get the GBFS feed here",
+      "note": "file linked from the record homepage (2026-10-01); found on https://citibikenyc.com/system-data",
+      "url": "https://gbfs.citibikenyc.com/gbfs/2.3/gbfs.json"
+    },
+    {
+      "kind": "portal",
+      "label": "System data",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://citibikenyc.com/system-data"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "behavioural_social"
+  ],
+  "data_kind": [
+    "tabular",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "citi bike system data trip histories gbfs feed and operating reports new york city",
+    "url": "https://citibikenyc.com/system-data"
+  },
+  "description": "Citi Bike, New York City's bike share system, publishes downloadable trip history files together with a real-time feed and monthly operating reports. Each trip record gives the ride identifier, rideable type, start and end times, start and end station names and identifiers, start and end coordinates, and whether the rider is a member or casual user; older files used a format with trip duration, bike identifier, user type, gender and year of birth. Trips by staff servicing the system, trips to or from test stations and trips under 60 seconds are removed, and months with more than a million trips are split into several CSV files. Coverage is one city, New York City. The data are free under the NYCBS Data Use Policy and available to download as compressed CSV files, with real-time station status in the General Bikeshare Feed Specification (GBFS) and monthly operating reports prepared for the NYC Department of Transportation. Caveats: trips are docked-station records without routes, and the data use policy sets the terms of reuse. The trip data support demand modelling, station capacity planning, rebalancing optimisation and analysis of disruptions such as storms or transit outages. It is related to the GBFS specification and complements the city's other bicycling data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Citi Bike system data",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv",
+    "transit_feed",
+    "json"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://citibikenyc.com/system-data",
+  "id": "data-citi-bike-system-data",
+  "languages": [
+    "en"
+  ],
+  "licence": "NYCBS Data Use Policy",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Citi Bike system data (trip histories, GBFS feed and operating reports), New York City",
+  "provider": "Citi Bike (NYC Bike Share)",
+  "related_ids": [
+    "data-gbfs-specification"
+  ],
+  "sectors": [
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "trip history fields (current and previous formats); cleaning rules including test stations June-July 2013 and trips under 60 s; split CSVs; GBFS real-time; monthly operating reports to NYC DOT; NYCBS Data Use Policy",
+      "url": "https://citibikenyc.com/system-data"
+    }
+  ],
+  "spatial_resolution": "stations and trip start and end points",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "New York",
+    "bike share",
+    "trips",
+    "micromobility",
+    "GBFS"
+  ],
+  "temporal_coverage": "from 2013",
+  "title_en": "Citi Bike system data (trip histories, GBFS feed and operating reports), New York City",
+  "type": "data",
+  "update_frequency": "monthly"
+}

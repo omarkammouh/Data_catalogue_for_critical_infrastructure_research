@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/mrohnonen/finnish-dh-forecasting"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.5281/zenodo.20118487"
+    }
+  ],
+  "access_note": "Repository scripts are public. Fetching original Fingrid and ENTSO-E inputs requires separately obtained API keys; the code licence statements conflict.",
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "FI"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "finnish chp district heating forecast data pipeline",
+    "repo": "github.com/mrohnonen/finnish-dh-forecasting",
+    "url": "https://github.com/mrohnonen/finnish-dh-forecasting"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This Python workflow assembles hourly inputs for forecasting Finnish combined-heat-and-power district heating. Its tree lists fetch scripts for Fingrid CHP heat production, Open-Meteo weather and ENTSO-E electricity prices, then a script to merge the sources and engineer features. The README describes a 2016–2024 national series and a final table of roughly 78,000 rows, but that table is not committed in the inspected tree. A modeller could use the code to construct comparable heat-demand inputs or study forecast sensitivity during plant-fleet transition. The repository also lists model-training and evaluation scripts, whose reported errors were not reproduced here. Fingrid and ENTSO-E require separately obtained API keys, and the upstream feeds have their own terms. The repository LICENSE and GitHub metadata say CC0-1.0, while its README and badge say CC BY 4.0 for code. This conflict remains unresolved; the cited Zenodo item is a working paper. No source data were downloaded and no pipeline or model was run. Related resources are the original Fingrid, Open-Meteo and ENTSO-E feeds.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "district heating data",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/mrohnonen/finnish-dh-forecasting",
+  "id": "platform-finnish-chp-district-heating-forecast-data-pipeline",
+  "interfaces": [
+    "code_library",
+    "other"
+  ],
+  "interoperability": [
+    "Fingrid API",
+    "Open-Meteo Archive API",
+    "ENTSO-E API",
+    "CSV"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-11",
+  "licence": "CC0-1.0 in repository LICENSE and GitHub metadata, but README says CC BY 4.0 for code; unresolved. Upstream data terms are separate.",
+  "licence_type": [
+    "public_domain",
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Finnish CHP district-heating forecast data pipeline",
+  "notes": "G8; G8-0870. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Finnish CHP Forecasting project",
+  "related_ids": [],
+  "sectors": [
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/mrohnonen/finnish-dh-forecasting/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/mrohnonen/finnish-dh-forecasting"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Named Zenodo item is a CC BY 4.0 working paper, not a licence resolution for the GitHub code.",
+      "url": "https://zenodo.org/api/records/20118487"
+    }
+  ],
+  "tags": [],
+  "title_en": "Finnish CHP district-heating forecast data pipeline",
+  "type": "platform"
+}

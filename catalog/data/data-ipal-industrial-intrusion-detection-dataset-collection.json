@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "IPAL datasets (transcription scripts)",
+      "url": "https://github.com/ipal-ids/ipal_datasets"
+    },
+    {
+      "kind": "repo",
+      "label": "IPAL documentation and tutorial",
+      "url": "https://github.com/ipal-ids/ipal"
+    },
+    {
+      "kind": "repo",
+      "label": "IPAL IDS framework",
+      "url": "https://github.com/ipal-ids/ipal_ids_framework"
+    },
+    {
+      "kind": "paper",
+      "label": "Wolsing et al., RAID 2022",
+      "url": "https://doi.org/10.1145/3545948.3545968"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "cyber_control"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1145/3545948.3545968",
+    "name": "ipal datasets 19 industrial control system security datasets transcribed to a common protocol independent format",
+    "repo": "github.com/ipal-ids/ipal_datasets",
+    "url": "https://github.com/ipal-ids/ipal_datasets"
+  },
+  "description": "IPAL datasets is an open collection of scripts that convert 19 published industrial control system intrusion detection datasets into the Industrial Protocol Abstraction Layer (IPAL), a common message format that lets detection methods run regardless of the underlying industrial protocol. It is part of the IPAL project, whose scripts are copyright FKIE-CAD, described by Wolsing, Wagner, Saillard and Henze at RAID 2022. Coverage: state-based datasets such as BATADAL and WADI (water distribution), SWaT (water treatment), HAI, TEP-PASAD (Tennessee Eastman process) and Morris DS1, and packet captures in Modbus, S7, IEC 60870-5-104, IEC 61850 GOOSE and DNP3 from ELEGANT, Electra, a WATTSON energy trace, GeekLounge, the IEC 61850 security dataset, Lemay, Morris DS4, PowerDuck, three QUT datasets, Sherlock and WDT. Format and access: Python transcription scripts and placeholders on GitHub, with notes on each dataset's quirks and links to the original publishers; the companion transcriber and IDS framework repositories implement the format and several detectors; free. Licence: MIT for the scripts (copyright FKIE-CAD); each original dataset keeps its publisher's terms. Caveats: the repository holds no data, so every dataset must be obtained from its publisher under that publisher's access terms, and some transcriptions lack fields or add synthetic attacks, as the notes state. Simulation uses: benchmarking intrusion detection for water, power and process control systems in cascading failure and digital twin studies of cyber-physical attacks. Related records: BATADAL (data-batadal-attack-detection-datasets) and HAI (data-hai-hil-augmented-ics-security-dataset) are two of the source datasets.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source water-ipal-datasets: provider pages read (round 2 register piece)",
+      "route": "R50",
+      "source": "water-ipal-datasets"
+    }
+  ],
+  "formats": [
+    "json",
+    "domain_model_file",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/ipal-ids/ipal_datasets",
+  "id": "data-ipal-industrial-intrusion-detection-dataset-collection",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-13",
+  "licence": "MIT (scripts); original datasets under their publishers' terms",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "IPAL datasets: 19 industrial control system security datasets transcribed to a common protocol-independent format",
+  "provider": "IPAL project (Konrad Wolsing, Eric Wagner, Martin Henze and co-authors; scripts copyright FKIE-CAD)",
+  "related_ids": [
+    "data-batadal-attack-detection-datasets",
+    "data-hai-hil-augmented-ics-security-dataset"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "water.drinking_water",
+    "industry.manufacturing_chemical"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "19-dataset table with types and notes; scripts only, placeholders, no raw data; publications RAID 2022 and CCS 2020 poster; LICENSE MIT (c) 2021 FKIE-CAD; last commit 2026-08-13",
+      "url": "https://raw.githubusercontent.com/ipal-ids/ipal_datasets/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "IPAL idea: standard message format decoupling IDS from industrial protocols (Modbus, CIP, S7)",
+      "url": "https://raw.githubusercontent.com/ipal-ids/ipal/main/README.md"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2026-08-13)",
+      "url": "https://github.com/ipal-ids/ipal_datasets"
+    }
+  ],
+  "tags": [
+    "intrusion detection",
+    "ICS security",
+    "Modbus",
+    "benchmark"
+  ],
+  "title_en": "IPAL datasets: 19 industrial control system security datasets transcribed to a common protocol-independent format",
+  "type": "data"
+}

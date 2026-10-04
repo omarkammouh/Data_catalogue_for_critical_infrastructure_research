@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zipped CSV of approved building permits",
+      "url": "https://datos-abiertos.montevideo.gub.uy/permisos_construccion.zip"
+    },
+    {
+      "kind": "docs",
+      "label": "Field description (TXT)",
+      "url": "https://datos-abiertos.montevideo.gub.uy/permisos_construccion_descripcion.txt"
+    },
+    {
+      "kind": "api",
+      "label": "Uruguay CKAN API",
+      "url": "https://catalogodatos.gub.uy/api/3/action/package_show?id=permisos-de-construccion-aprobados"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "UY"
+  ],
+  "data_family": [
+    "system_description",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "montevideo approved building permits intendencia de montevideo open data",
+    "url": "https://catalogodatos.gub.uy/dataset/permisos-de-construccion-aprobados"
+  },
+  "description": "This dataset from the Intendencia de Montevideo lists the building permits it has approved, by year and month, with the cadastral parcel number (padrón) and street address of each. The field description gives the parcel number, the intended use of the construction (housing, commerce, industry and so on), the area to be built, street name, door number and letter, year and month of approval, and, since March 2015, the file number of the procedure and the type of works. Coverage: the Department of Montevideo, for all approved permits up to two months before the month of download; for a download in December the file runs to 31 October. Access: one zipped CSV and a plain text field description, listed on the national open data catalogue with the CKAN API; the catalogue entry was last modified on 25 February 2025. Licence: the Uruguayan open data licence of the e-government agency (AGESIC); free. Caveats: there are no coordinates, so locating permits needs a join to the cadastral parcel layer by padrón; the fields added in 2015 are empty for older permits; the pages are in Spanish. Simulation uses are tracking new construction and changes in building use for exposure models and urban growth or capacity planning. Related records: the Montevideo cadastral parcels with land-use plan attributes; the NYC building permit issuance dataset.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: Catálogo de Datos Abiertos homepage",
+      "route": "R10",
+      "source": "organisations.csv:UY:built_environment:urban_observatory"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: Intendencia de Montevideo homepage",
+      "route": "R10",
+      "source": "organisations.csv:UY:built_environment:municipal_planning"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://catalogodatos.gub.uy/dataset/permisos-de-construccion-aprobados",
+  "id": "data-montevideo-approved-building-permits",
+  "languages": [
+    "es"
+  ],
+  "last_updated": "2025-02-25",
+  "licence": "Licencia de Datos Abiertos de Uruguay (DAG), as tagged on catalogodatos.gub.uy",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Montevideo approved building permits (Intendencia de Montevideo open data)",
+  "provider": "Intendencia de Montevideo, Uruguay",
+  "regions": [
+    "Montevideo"
+  ],
+  "related_ids": [
+    "data-montevideo-cadastral-parcels-land-use-plan",
+    "data-nyc-dob-permit-issuance"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Publisher Intendencia de Montevideo, licence Licencia de DAG de Uruguay, modified 2025-02-25, two-month lag, 2015 field additions, CSV zip and TXT resources",
+      "url": "https://catalogodatos.gub.uy/api/3/action/package_show?id=permisos-de-construccion-aprobados"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Fields PADRON, DESTINO, AREA, CALLE, PUERTA, LETRA, ANIO, MES, EXPEDIENTE, TIPO_OBRA",
+      "url": "https://datos-abiertos.montevideo.gub.uy/permisos_construccion_descripcion.txt"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Licence id odc-uy, Licencia de DAG de Uruguay, linking the AGESIC open data licence PDF",
+      "url": "https://catalogodatos.gub.uy/api/3/action/license_list"
+    }
+  ],
+  "tags": [
+    "building permits",
+    "Montevideo",
+    "Uruguay",
+    "construction activity",
+    "open data"
+  ],
+  "temporal_coverage": "All approved permits up to two months before the download month",
+  "title_en": "Montevideo approved building permits (Intendencia de Montevideo open data)",
+  "type": "data"
+}

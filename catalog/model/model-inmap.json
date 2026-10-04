@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/spatialmodel/inmap"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/spatialmodel/inmap/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "InMAP contributors. Intervention Model for Air Pollution source and documentation. https://github.com/spatialmodel/inmap",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "inmap emissions to health impact model",
+    "repo": "github.com/spatialmodel/inmap",
+    "url": "https://github.com/spatialmodel/inmap"
+  },
+  "description": "InMAP is the Spatial Model project's model of how emissions changes affect fine-particle concentrations and population exposure. It contains an annual-average atmospheric calculation with smaller cells in urban areas and larger cells in rural areas. Inputs include pollutant-emission shapefiles, optional stack characteristics, baseline chemistry and TOML settings; outputs are configurable concentration and health-impact fields in shapefiles. Geographic extent follows the prepared domain, and the main calculation represents annual-average conditions. Go source and command-line instructions are free under GPL-3.0. A limitation is the loss of short-term variability relative to a full chemical-transport model. A new domain requires suitable meteorology and chemistry preprocessing. InMAP supports comparison of power, industrial and transport emission scenarios relevant to infrastructure planning. GEOS-Chem (model-geos-chem) is one supported upstream model for preprocessing. Mortality estimates additionally depend on selected population data and response assumptions. No emissions dataset or executable was downloaded. Related catalogue records are not yet linked.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "spatialmodel/inmap linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/spatialmodel/inmap",
+  "id": "model-inmap",
+  "inputs": [
+    "Emissions shapefiles and stack characteristics",
+    "Baseline atmospheric chemistry and population",
+    "TOML configuration"
+  ],
+  "language": [
+    "rust_go"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-24",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "InMAP emissions-to-health impact model",
+  "notes": "G7 G7-1122. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Pollutant concentrations",
+    "Population exposure and health-impact estimates"
+  ],
+  "provider": "Spatial Model project and InMAP contributors",
+  "related_ids": [],
+  "repository": "https://github.com/spatialmodel/inmap",
+  "sectors": [
+    "energy.electricity",
+    "transport.road",
+    "industry.manufacturing_chemical",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for spatialmodel/inmap: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/spatialmodel/inmap"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/spatialmodel/inmap/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for infrastructure systems",
+  "type": "model"
+}

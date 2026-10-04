@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "NIST analysis (PDF)",
+      "url": "https://tf.nist.gov/general/pdf/2886.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "RNT Foundation case study (PDF)",
+      "url": "https://rntfnd.org/wp-content/uploads/26-January-2016-GPS-Event.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "The Register report on UK impacts",
+      "url": "https://www.theregister.com/offbeat/2016/02/03/lights-out-for-space-vehicle-number-23-uk-smacked-when-us-sat-threw-gps-out-of-whack/705717"
+    }
+  ],
+  "access_restrictions": "none",
+  "case_study_kind": [
+    "post_event_analysis"
+  ],
+  "cost": "free",
+  "countries": [
+    "US",
+    "GB"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gps utc offset anomaly after svn 23 decommissioning january 2016",
+    "url": "https://tf.nist.gov/general/pdf/2886.pdf"
+  },
+  "description": "This post-event case documents the timing anomaly of 25 to 26 January 2016, when the removal from service of the oldest GPS satellite, SVN 23 (PRN 32, launched in 1990), triggered a software bug in the GPS ground control segment. Three parameters used to relate GPS time to Coordinated Universal Time were uploaded wrongly, and 15 satellites, half the constellation, broadcast a UTC offset about 13 microseconds in error for between 5 and 13.5 hours, while positioning itself was unaffected. Timing users saw the effects: in the United Kingdom, DAB digital radio transmitters that lock to GPS lost synchronisation and listeners lost reception, and telecommunications operators and timing-equipment makers such as Chronos reported alarms and outages while holdover clocks carried some networks through. NIST measured the anomaly on monitored GPS clocks and published an analysis, and the Resilient Navigation and Timing Foundation wrote it up as a case study on dependence on GPS time. Coverage: worldwide GPS timing users, with documented impacts in the UK, 25 to 26 January 2016. Format and access: free NIST paper, foundation case study and trade press. Caveats: impacts are known from anecdotes and vendor statements, not systematic data; the US Air Force summary of the root cause is brief. Simulation uses: cascading failure from satellite timing into broadcasting and telecom networks, resilience of holdover clocks, and hazard scenarios of erroneous, not absent signals. Related records: the Galileo outage of July 2019 is a comparable ground-segment failure, and IGS products give independent clock data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "GPS SVN 23 decommissioning January 2016 UTC offset 13 microseconds error impact telecom DAB timing report",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://tf.nist.gov/general/pdf/2886.pdf",
+  "id": "case_study-gps-utc-offset-anomaly-january-2016",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2016",
+  "licence": "NIST publication (US Government work); other documents all rights reserved",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "GPS UTC offset anomaly after SVN 23 decommissioning, January 2016",
+  "notes": "Facts from search results citing the NIST paper (tf.nist.gov 2886), the RNT Foundation PDF and The Register, read on 2026-09-26; the PDFs themselves were not opened.",
+  "organisations": [
+    "US Air Force 2nd Space Operations Squadron",
+    "NIST",
+    "Resilient Navigation and Timing Foundation",
+    "BBC"
+  ],
+  "outcomes": "Half the GPS constellation broadcast a UTC offset 13 microseconds wrong for up to 13.5 hours; DAB radio and some telecom networks in the UK lost synchronisation.",
+  "provider": "NIST Time and Frequency Division; Resilient Navigation and Timing Foundation case study; US Air Force GPS operations",
+  "related_ids": [],
+  "resources_used": [
+    "data-igs-gnss-products"
+  ],
+  "sectors": [
+    "digital.satellite_positioning",
+    "digital.broadcasting",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: anomaly parameters and durations",
+      "url": "https://tf.nist.gov/general/pdf/2886.pdf"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: UK DAB and telecom impacts",
+      "url": "https://www.theregister.com/offbeat/2016/02/03/lights-out-for-space-vehicle-number-23-uk-smacked-when-us-sat-threw-gps-out-of-whack/705717"
+    }
+  ],
+  "study_period": "2016-01-25 to 2016-01-26",
+  "tags": [
+    "GPS",
+    "timing",
+    "UTC offset",
+    "DAB",
+    "telecom synchronisation"
+  ],
+  "title_en": "GPS UTC offset anomaly after SVN 23 decommissioning, January 2016",
+  "type": "case_study"
+}

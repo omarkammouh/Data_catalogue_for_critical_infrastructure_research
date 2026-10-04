@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo release 1.0",
+      "url": "https://zenodo.org/records/12784190"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/raphael-portmann/202403_crop_hail_damage_footprint"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (EGUsphere preprint)",
+      "url": "https://doi.org/10.5194/egusphere-2023-2598"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.12784189",
+    "name": "crop hail damage footprint model from single polarisation radar meshs for field crops and grapevine switzerland climada",
+    "repo": "github.com/raphael-portmann/202403_crop_hail_damage_footprint",
+    "url": "doi:10.5281/zenodo.12784189"
+  },
+  "description": "Scripts that apply and verify a model predicting which crop fields are damaged by hail, from the operational radar product Maximum Expected Severe Hail Size (MESHS). The README says they reproduce the paper by Portmann, Schmid, Villiger, Bresch and Calanca (EGUsphere preprint 10.5194/egusphere-2023-2598), and the paper abstract says the model combines radar data with geospatial data on agricultural land use and geo-referenced damage data from a crop insurer for 12 recent hail events in Switzerland, for wheat, maize, barley, rapeseed and grapevine, with skill for field crops rising as resolution drops from 1 km to 8 km and a MESHS threshold of 20 to 40 mm trading false alarms against detection. The code needs CLIMADA 4.0.1 or later and Python 3.9, and uses hazard, exposure and damage data from the CLIMADA Data API. Version 1.0 of 19 July 2024 is a free downloadable ZIP (2.2 MB) under CC BY 4.0. Coverage is Switzerland. Caveats: some figures need netcdf files that are available on request only, and the damage data come from one insurer. For simulation it is a validated hazard-to-damage step for hail on crops that can feed farm loss, insurance and food supply models. A related catalogue record is CLIMADA.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((crop OR agricultural OR agriculture OR farm OR livestock OR irrigation) AND (fragility OR vulnerability OR damage OR \"risk assessment\"))",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((crop OR agricultural OR agriculture OR farm OR livestock OR irrigation) AND (fragility OR vulnerability OR damage OR \"risk assessment\"))",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "storm_wind",
+    "hail"
+  ],
+  "homepage": "https://doi.org/10.5281/zenodo.12784189",
+  "id": "model-crop-hail-damage-footprint-radar-switzerland",
+  "inputs": [
+    "MESHS radar hail fields",
+    "crop land-use exposure",
+    "insurer damage claims"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-07-19",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "fragility",
+    "statistical"
+  ],
+  "name": "Crop hail damage footprint model from single-polarisation radar (MESHS) for field crops and grapevine, Switzerland (CLIMADA)",
+  "outputs": [
+    "predicted crop hail damage footprints",
+    "verification scores"
+  ],
+  "provider": "Raphael Portmann (Agroscope), Timo Schmid and Leonie Villiger (ETH Zurich), via Zenodo and GitHub",
+  "sectors": [
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "version, date, authors, affiliations, file size and licence read 2026-09-26",
+      "url": "https://zenodo.org/api/records/12784190"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "paper, requirements, scripts, data sources and on-request note read 2026-09-26",
+      "url": "https://raw.githubusercontent.com/raphael-portmann/202403_crop_hail_damage_footprint/1.0/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "abstract with crops, 12 Swiss events and skill results read 2026-09-26",
+      "url": "https://api.crossref.org/works/10.5194/egusphere-2023-2598"
+    }
+  ],
+  "tags": [
+    "hail",
+    "crop damage",
+    "radar",
+    "MESHS",
+    "CLIMADA",
+    "Switzerland",
+    "damage footprint"
+  ],
+  "title_en": "Crop hail damage footprint model from single-polarisation radar (MESHS) for field crops and grapevine, Switzerland (CLIMADA)",
+  "type": "model"
+}

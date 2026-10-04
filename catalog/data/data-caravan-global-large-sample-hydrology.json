@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Caravan netCDF version (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.6522634"
+    },
+    {
+      "kind": "download",
+      "label": "Caravan CSV version (Zenodo)",
+      "url": "https://zenodo.org/records/15530021"
+    },
+    {
+      "kind": "repo",
+      "label": "Caravan code and community hub",
+      "url": "https://github.com/kratzert/Caravan"
+    },
+    {
+      "kind": "paper",
+      "label": "Kratzert et al. 2023, Scientific Data",
+      "url": "https://doi.org/10.1038/s41597-023-01975-w"
+    },
+    {
+      "kind": "paper",
+      "label": "Caravan MultiMet extension (arXiv)",
+      "url": "https://arxiv.org/abs/2411.09459"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "sensor_realtime_streams",
+    "reference_context"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.6522634",
+    "name": "caravan global community dataset of streamflow meteorological forcing and catchment attributes 6 830 catchments",
+    "repo": "github.com/kratzert/caravan",
+    "url": "https://github.com/kratzert/Caravan"
+  },
+  "description": "Caravan is an open, global community dataset for large-sample hydrology that standardises and aggregates existing CAMELS-style catchment datasets, together with open-source code to extend it to new basins. It was introduced by Frederik Kratzert, Grey Nearing, Nans Addor and co-authors as a Data Descriptor in Scientific Data in 2023, and the GitHub repository serves as its code base and community hub. Coverage: at release, meteorological forcing, streamflow and static catchment attributes (geophysical, sociological and climatological) for 6,830 catchments from seven existing large-sample datasets, derived with the same variables and procedures everywhere; community extensions add further regions, and the MultiMet extension adds nowcasts (CPC, IMERG, CHIRPS), forecasts (ECMWF IFS HRES, GraphCast, CHIRPS-GEFS) and ERA5-Land for all basins. Format and access: two Zenodo records, one in netCDF and one in CSV (since version 1.6), MultiMet data as zarr on Zenodo and a public Google Cloud bucket, and Google Earth Engine code to derive forcing and attributes for new catchments; free. Licence: data under open licences (the paper states all data are public with an open licence and is itself CC-BY-4.0); code BSD-3-Clause. Caveats: original Caravan data are in local time while MultiMet is in UTC, streamflow quality depends on each source dataset, and extensions vary in coverage; the Zenodo pages were not read. Simulation uses: training and benchmarking rainfall-runoff and flood forecasting models that feed hazard exposure, reservoir capacity planning and climate adaptation of water infrastructure. Related records: GRDC (data-grdc-global-runoff-database) is a global discharge archive, and Google's Flood Forecasting API (data-google-flood-hub-flood-forecasting-api) serves forecasts from models of this kind. Licence (read on 2026-09-29): CC-BY-4.0 (Zenodo dataset); code BSD-3-Clause.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source water-caravan: provider pages read (round 2 register piece)",
+      "route": "R17",
+      "source": "water-caravan"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "drought"
+  ],
+  "homepage": "https://github.com/kratzert/Caravan",
+  "id": "data-caravan-global-large-sample-hydrology",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-07-24",
+  "licence": "CC-BY-4.0 (Zenodo dataset); code BSD-3-Clause",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Caravan: global community dataset of streamflow, meteorological forcing and catchment attributes (6,830+ catchments)",
+  "provider": "Frederik Kratzert, Grey Nearing, Nans Addor and co-authors (Caravan community)",
+  "related_ids": [
+    "data-grdc-global-runoff-database",
+    "data-google-flood-hub-flood-forecasting-api"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Open community dataset of forcing, attributes, discharge; code to extend in the cloud; Zenodo netCDF and CSV since v1.6; MultiMet extension (CPC, IMERG v07 Early, CHIRPS, IFS HRES, GraphCast, CHIRPS-GEFS, ERA5-Land; zarr; UTC-0); LICENSE BSD-3-Clause (c) 2022 Frederik Kratzert; last commit 2025-07-24",
+      "url": "https://raw.githubusercontent.com/kratzert/Caravan/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Abstract: standardises seven large-sample datasets, 6,830 catchments; forcing, streamflow, static attributes; extensible via Google Earth Engine; all data public with open licence; article CC BY 4.0; authors Kratzert, Nearing, Addor, ...",
+      "url": "https://www.nature.com/articles/s41597-023-01975-w"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Licence read by the wave 1 integrator (DataCite rights list of the Zenodo record; repository LICENSE); replaces \"open data licences per the paper (details on Zenodo, not read); code BSD-3-Clause\".",
+      "url": "https://doi.org/10.5281/zenodo.6522634"
+    }
+  ],
+  "tags": [
+    "large-sample hydrology",
+    "CAMELS",
+    "streamflow",
+    "catchment attributes"
+  ],
+  "title_en": "Caravan: global community dataset of streamflow, meteorological forcing and catchment attributes (6,830+ catchments)",
+  "type": "data"
+}

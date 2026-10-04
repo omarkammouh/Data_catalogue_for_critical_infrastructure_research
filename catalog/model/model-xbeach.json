@@ -1,0 +1,141 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code (Deltares Subversion, public)",
+      "url": "https://svn.oss.deltares.nl/repos/xbeach/trunk"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub mirror",
+      "url": "https://github.com/openearth/xbeach"
+    },
+    {
+      "kind": "portal",
+      "label": "Executables v1.24 Halloween (login needed)",
+      "url": "https://download.deltares.nl/xbeach"
+    },
+    {
+      "kind": "docs",
+      "label": "Manual (Read the Docs)",
+      "url": "https://xbeach.readthedocs.io/en/latest/"
+    }
+  ],
+  "access_note": "Source code is public without login; precompiled Windows executables (v1.24 Halloween) need a free Deltares download account.",
+  "access_restrictions": "registration",
+  "citation": "XBeach manual (Read the Docs) and XBeach source repository, Deltares open source software",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "xbeach nearshore storm impact model",
+    "url": "https://oss.deltares.nl/web/xbeach"
+  },
+  "description": "XBeach is an open source two-dimensional model of wave propagation, long (infragravity) waves, mean flow, sediment transport and morphological change on beaches, dunes and back-barrier areas during storms. It was first funded by the US Army Corps of Engineers and the US Geological Survey to assess hurricane impacts on sandy beaches, then extended by Rijkswaterstaat for dune safety assessments of Dutch flood defences and validated with EU support on beaches around European seas; it is maintained by Deltares with UNESCO-IHE, TU Delft and the University of Miami. It has a hydrostatic mode that resolves wave groups and a more demanding non-hydrostatic mode, and includes vegetation damping, hard structures, overwash, inundation, avalanching and breaching, and it has been applied to coral reefs and gravel beaches. Code is public in the Deltares Subversion repository with a GitHub mirror under the GNU Lesser GPL, a Read the Docs manual and Matlab and Python tools; Windows builds of release 1.24 need a free login. Caveats: the domain is kilometres and storm time scales, so it does not replace regional surge models, and results depend on calibrated sediment and wave settings. Simulation uses: dune and dike erosion during design storms, overwash and breaching of barrier islands, safety assessment of sandy flood defences, and sea level rise adaptation of coasts. Related records: Delft3D FM (model-delft3d-fm) provides regional surge and wave boundary conditions, and TELEMAC-MASCARET (model-telemac-mascaret) is an alternative coastal suite.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Deltares open source community portal (NL, open_source_community) https://oss.deltares.nl/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "coastal_flood_storm_surge",
+    "sea_level_rise",
+    "flood"
+  ],
+  "homepage": "https://oss.deltares.nl/web/xbeach",
+  "id": "model-xbeach",
+  "inputs": [
+    "nearshore bathymetry and topography grids",
+    "offshore wave spectra or parameters",
+    "tide and surge water levels",
+    "sediment grain sizes",
+    "vegetation and hard structure layers",
+    "parameter file"
+  ],
+  "language": [
+    "fortran",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2018-06-25",
+  "licence": "LGPL (LICENSE file in the source tree is LGPL-2.1; the COPYING file carries LGPL-3.0)",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "XBeach nearshore storm impact model",
+  "notes": "last_updated is the date the public repository was read (revision 6167); the revision date itself was not shown. Licence version is ambiguous because the source tree carries both LGPL 2.1 and LGPL 3 texts.",
+  "outputs": [
+    "wave heights and infragravity waves",
+    "water levels and currents",
+    "runup and overwash",
+    "sediment transport",
+    "bed level change",
+    "dune erosion and breaching"
+  ],
+  "provider": "Deltares with UNESCO-IHE, Delft University of Technology and the University of Miami",
+  "related_ids": [
+    "model-delft3d-fm",
+    "model-telemac-mascaret"
+  ],
+  "repository": "https://svn.oss.deltares.nl/repos/xbeach/trunk",
+  "runs_on": [],
+  "sectors": [
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "purpose, public-domain status, funders and consortium",
+      "url": "https://oss.deltares.nl/web/xbeach"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "processes, hydrostatic and non-hydrostatic modes, funding history, applications to reefs and gravel beaches",
+      "url": "https://xbeach.readthedocs.io/en/latest/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "public source tree at revision 6167 with LICENSE (LGPL-2.1 text) and COPYING (LGPL-3 text); README names the GitHub mirror",
+      "url": "https://svn.oss.deltares.nl/repos/xbeach/trunk/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "v1.24 Halloween executables, login needed",
+      "url": "https://download.deltares.nl/xbeach"
+    }
+  ],
+  "tags": [
+    "XBeach",
+    "coastal morphology",
+    "dune erosion",
+    "overwash",
+    "breaching",
+    "storm impact",
+    "infragravity waves",
+    "sandy coasts",
+    "open source",
+    "Deltares"
+  ],
+  "title_en": "XBeach nearshore storm impact model",
+  "type": "model",
+  "validated_on": []
+}

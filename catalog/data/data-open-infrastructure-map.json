@@ -1,0 +1,197 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Interactive map",
+      "url": "https://openinframap.org/"
+    },
+    {
+      "kind": "portal",
+      "label": "Statistics pages",
+      "url": "https://openinframap.org/stats"
+    },
+    {
+      "kind": "api",
+      "label": "Power vector tiles",
+      "note": "Tile URL template; layers power, petroleum, telecoms, water, other_pipeline and solar_heatmap all answered on 2026-09-24",
+      "url": "https://openinframap.org/map/power/{z}/{x}/{y}.pbf"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/openinframap/openinframap"
+    },
+    {
+      "kind": "docs",
+      "label": "Architecture documentation",
+      "url": "https://github.com/openinframap/openinframap/blob/main/docs/architecture.md"
+    },
+    {
+      "kind": "docs",
+      "label": "Copyright and licences",
+      "url": "https://openinframap.org/copyright"
+    },
+    {
+      "kind": "docs",
+      "label": "About: how to access the data",
+      "url": "https://openinframap.org/about"
+    }
+  ],
+  "access_note": "Viewer, statistics and tiles are free; bulk GIS exports are sold by Infrageomatics; small extracts through Overpass Turbo.",
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania",
+    "antarctica"
+  ],
+  "cost": "free",
+  "crs": "WGS 84 (OpenStreetMap source); tiles in Web Mercator",
+  "data_family": [
+    "system_description",
+    "crowdsourced_public_reports"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "open infrastructure map",
+    "repo": "github.com/openinframap/openinframap",
+    "url": "https://openinframap.org"
+  },
+  "description": "Open Infrastructure Map (OpenInfraMap) is a world map of the infrastructure mapped in OpenStreetMap, built because these features are not shown on the default OpenStreetMap map. It renders the power grid (lines, cables, substations, plants and generators), petroleum and other pipelines, telecoms and water infrastructure, plus a solar heatmap, from a PostGIS database that Imposm 3 populates continuously from the OpenStreetMap replication feed, served as vector tiles by Tegola to a MapLibre web interface. The project is an open-source codebase on GitHub maintained by its contributors, with the interface translated through Weblate. Coverage is global at the resolution of OpenStreetMap: individual mapped assets with coordinates, complete where mappers are active and sparse elsewhere; the statistics pages summarise, for example, power line length by voltage band and warn that many countries are incomplete. Access is through the interactive viewer, the statistics pages and the vector tile endpoints the viewer uses (for example https://openinframap.org/map/power/{z}/{x}/{y}.pbf and equivalents for petroleum, telecoms, water, other pipelines and the solar heatmap). The site points to Overpass Turbo for small extracts in GeoJSON, to raw OpenStreetMap data for large ones, and to paid Shapefile and GeoPackage exports from Infrageomatics, which supports the project. Licences: map data are OpenStreetMap data under the Open Database License (attribution and share-alike); the map design and analyses are CC-BY 4.0; the code is BSD-3-Clause. Caveats: tiles are a rendering, not a bulk download; changes to the mapping rules need a re-import that is done only irregularly. It serves as a system description for network flow, cascading failure, hazard exposure and resilience studies where no official inventory exists, and as a check of OpenStreetMap completeness. No other catalogued records relate directly yet.",
+  "description_checked": "2026-09-24",
+  "discovery_routes": [
+    {
+      "date": "2026-09-23",
+      "query": "OpenStreetMap-derived power infrastructure map, OpenInfraMap",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-23",
+      "query": "openinframap repository and tile endpoints",
+      "route": "R15",
+      "source": "github.com/openinframap"
+    }
+  ],
+  "formats": [
+    "other_vector",
+    "geojson",
+    "geopackage",
+    "shapefile"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://openinframap.org/",
+  "id": "data-open-infrastructure-map",
+  "languages": [
+    "af",
+    "ar",
+    "be",
+    "bg",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en"
+  ],
+  "last_updated": "2026-09-23",
+  "licence": "ODbL-1.0 (OpenStreetMap data); CC-BY-4.0 (map design and analysis); BSD-3-Clause (code)",
+  "licence_type": [
+    "attribution",
+    "share_alike",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Open Infrastructure Map",
+  "notes": "Audit 2026-09-24: re-read on openinframap.org (About, Copyright, Stats), the repository README, LICENSE and architecture documentation, the OpenStreetMap copyright page, and a request to each of the six tile layers (all answered with Mapbox vector tiles; nothing stored). Corrections to round 1: 'no explicit terms of use for the tile endpoints were found' was wrong; the site's copyright page licenses map data under ODbL and design and analysis under CC-BY 4.0; data access routes named by the provider (Overpass Turbo, raw OSM data, paid Infrageomatics exports) were missing; the tile server is Tegola; 'dozens of languages' was not supported by any page and was removed. Latest commit on main dated 2026-09-23. Round 1 chose this over Geofabrik because Geofabrik could not be reached then; Geofabrik is now a separate candidate. The water layer spans supply, treatment and pipelines, hence the sector group without a sub-sector.",
+  "provider": "Open Infrastructure Map contributors",
+  "related_ids": [],
+  "schema_summary": "OpenStreetMap power, pipeline, telecoms and water tags as imported by the project's Imposm mapping: lines, cables, substations, plants, generators, pipelines, towers, treatment works",
+  "sectors": [
+    "energy.electricity",
+    "energy.oil_fuels",
+    "energy.gas_hydrogen",
+    "digital.telecom",
+    "water"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-24",
+      "note": "Purpose; data sourced from OSM; Overpass Turbo for small extracts; Infrageomatics commercial exports; PostGIS, Imposm3, Tegola, MapLibre",
+      "url": "https://openinframap.org/about"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Map data ODbL; design and analysis CC-BY 4.0; MarineRegions EEZ data CC-BY; trademarks under licence from OSMF",
+      "url": "https://openinframap.org/copyright"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Power line length by voltage band; caution that many countries are incomplete",
+      "url": "https://openinframap.org/stats"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Repository; translations on Weblate",
+      "url": "https://raw.githubusercontent.com/openinframap/openinframap/main/README.md"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "BSD 3-Clause (code)",
+      "url": "https://raw.githubusercontent.com/openinframap/openinframap/main/LICENSE"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Imposm 3 from replication feed; irregular re-imports; Tegola; daily low-zoom seeding",
+      "url": "https://raw.githubusercontent.com/openinframap/openinframap/main/docs/architecture.md"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "OpenStreetMap data under ODbL",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Tile layers power, petroleum, telecoms, water, other_pipeline, solar_heatmap answered 200 application/vnd.mapbox-vector-tile",
+      "url": "https://openinframap.org/map/power/4/8/5.pbf"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "git: main last commit 2026-09-23",
+      "url": "https://github.com/openinframap/openinframap"
+    }
+  ],
+  "spatial_resolution": "Individual mapped assets (OpenStreetMap geometry)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "OpenStreetMap",
+    "power grid",
+    "pipelines",
+    "telecoms",
+    "vector tiles",
+    "crowdsourced"
+  ],
+  "temporal_coverage": "Current state of OpenStreetMap; no history",
+  "temporal_resolution": "Snapshot (no time step)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Open Infrastructure Map",
+  "type": "data",
+  "update_frequency": "real_time"
+}

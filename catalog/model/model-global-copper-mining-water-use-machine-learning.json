@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "fineprint-global/global-copper-water-v2.0.zip (63.3 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/20309878/files/fineprint-global/global-copper-water-v2.0.zip?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/fineprint-global/global-copper-water"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo software record",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/records/20309878"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.16763786",
+    "name": "machine learning for estimating water use in global copper mining fineprint global copper water r",
+    "repo": "github.com/fineprint-global/global-copper-water",
+    "url": "doi:10.5281/zenodo.16763786"
+  },
+  "description": "R code that estimates total and raw water use at copper mines worldwide from site characteristics with machine learning. The GitHub README says inputs per mine include location, region, production, by-product group, mine type (underground, open pit or combined), ore body group, processing route (pyro or hydro) and ore grade, with production and water use for 2015 to 2019, plus public SEDAC layers for freshwater availability trends and a water mask. Four scripts prepare data, train models (nested cross-validation across glmnet, earth, random forest and cubist, with leave-one-region and leave-one-country checks), predict water use with uncertainty and a Bayesian trend model, and write maps and site-level tables for about 500 mines. The original mine data are proprietary, so users must supply their own table. Version 2.0 (20 May 2026) adds feature engineering, predictor selection and uncertainty estimates; it is a free download under GPL 3.0, with an renv lock file for R 4.4. Coverage is global copper mines. Caveats: results depend on a licensed mine database. For simulation it estimates mine water demand where it is not reported, to test competition for water in drought-prone mining basins. A related catalogue record is the Maus global-scale mining polygons.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((mine OR mining OR tailings OR mineral OR smelter) AND (statistical OR regression OR \"machine learning\" OR forecasting OR prediction))",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((mine OR mining OR tailings OR mineral OR smelter) AND (statistical OR regression OR \"machine learning\" OR forecasting OR prediction))",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((mine OR mining OR tailings OR mineral OR smelter) AND (statistical OR regression OR \"machine learning\" OR forecasting OR prediction))",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((mine OR mining OR tailings OR mineral OR smelter) AND (statistical OR regression OR \"machine learning\" OR forecasting OR prediction))",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://doi.org/10.5281/zenodo.16763786",
+  "id": "model-global-copper-mining-water-use-machine-learning",
+  "inputs": [
+    "mine-level production",
+    "ore grade",
+    "mine type",
+    "processing route",
+    "reported water use 2015-2019",
+    "SEDAC freshwater trend and water mask"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-16",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Machine learning for estimating water use in global copper mining (FINEPRINT global-copper-water, R)",
+  "outputs": [
+    "predicted total and raw water use per mine with uncertainty",
+    "water use trend classes",
+    "maps"
+  ],
+  "provider": "Victor Maus (Vienna University of Economics and Business, FINEPRINT), via Zenodo and GitHub",
+  "sectors": [
+    "industry.mining_materials",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "version, date, creator, file and licence read 2026-09-26",
+      "url": "https://zenodo.org/api/records/20309878"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "README requirements, inputs, scripts, outputs and data notes read 2026-09-26 (rendered in Chromium)",
+      "url": "https://github.com/fineprint-global/global-copper-water"
+    }
+  ],
+  "tags": [
+    "copper mining",
+    "water use",
+    "machine learning",
+    "random forest",
+    "FINEPRINT"
+  ],
+  "title_en": "Machine learning for estimating water use in global copper mining (FINEPRINT global-copper-water, R)",
+  "type": "model"
+}

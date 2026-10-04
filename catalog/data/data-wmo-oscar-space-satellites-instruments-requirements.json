@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "OSCAR/Space satellites API (JSON)",
+      "url": "https://space.oscar.wmo.int/api/v1/satellites?format=json"
+    },
+    {
+      "kind": "docs",
+      "label": "API documentation",
+      "url": "https://space.oscar.wmo.int/apidoc/"
+    },
+    {
+      "kind": "viewer",
+      "label": "OSCAR/Space web application",
+      "url": "https://space.oscar.wmo.int/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "catalogues_registries",
+    "planned_future_infrastructure"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "wmo oscar space and oscar requirements database of earth observation satellites instruments and observation requirements",
+    "url": "https://space.oscar.wmo.int"
+  },
+  "description": "OSCAR, the Observing Systems Capability Analysis and Review Tool, is the World Meteorological Organization's official WIGOS database of Earth observation satellites and instruments, space-based capabilities and quantitative observation requirements for weather, water and climate applications. It supports the WMO Rolling Requirements Review by comparing what is required with what is, or will be, available, to find gaps in the global observing system. Coverage: global; on 28 September 2026 the OSCAR/Space API listed 1,052 satellites and 1,245 instruments, with each satellite record giving agency, status, orbit, launch date, end of life, altitude, equator crossing time, a data access link and its instruments with dates, status and latency; the Requirements module holds user-defined requirements per variable and application area, and a separate OSCAR/Surface module covers surface-based stations. Format and access: web application with gap analyses, and a RESTful JSON API (documentation at /apidoc, API version 3.0.0 alpha; OSCAR/Space software 2.7 released 6 July 2022), plus PDF user manuals; free, with a login for editors. Licence: not stated on the pages read; WMO copyright 2011-2026 and a disclaimer page. Caveats: satellite records are curated by WMO and focal points and may lag real missions; the API documentation renders by script and was not read in full. Simulation uses: satellite availability and mission timelines for studies of dependence of weather, flood and hazard forecasting on space infrastructure, and of observing system outages. Related records: GCAT (data-gcat-general-catalog-artificial-space-objects) and CelesTrak (data-celestrak-gp-satcat) catalogue all space objects and orbits, while OSCAR focuses on Earth observation missions.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source cross_cutting-wmo-oscar: provider pages read (round 2 register piece)",
+      "route": "R09",
+      "source": "cross_cutting-wmo-oscar"
+    }
+  ],
+  "formats": [
+    "json",
+    "web_page",
+    "document"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://space.oscar.wmo.int/",
+  "id": "data-wmo-oscar-space-satellites-instruments-requirements",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (WMO copyright)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "WMO OSCAR/Space and OSCAR/Requirements: database of Earth observation satellites, instruments and observation requirements",
+  "provider": "World Meteorological Organization (WMO), WIGOS",
+  "related_ids": [
+    "data-gcat-general-catalog-artificial-space-objects",
+    "data-celestrak-gp-satcat"
+  ],
+  "sectors": [
+    "cross_cutting.space",
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "OSCAR purpose, modules, Rolling Requirements Review, REST API returning JSON, manuals, WMO 2011-2026, API 3.0.0 alpha, OSCAR/Space 2.7 released 2022-07-06",
+      "url": "https://space.oscar.wmo.int/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "1,052 satellites (36 pages of 30); record fields incl. agency, status, orbit, launch date, EoL, altitude, ECT, data access link, instruments",
+      "url": "https://space.oscar.wmo.int/api/v1/satellites?format=json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "1,245 instruments",
+      "url": "https://space.oscar.wmo.int/api/v1/instruments?format=json"
+    }
+  ],
+  "tags": [
+    "WMO",
+    "OSCAR",
+    "WIGOS",
+    "Earth observation satellites",
+    "observation requirements"
+  ],
+  "title_en": "WMO OSCAR/Space and OSCAR/Requirements: database of Earth observation satellites, instruments and observation requirements",
+  "type": "data"
+}

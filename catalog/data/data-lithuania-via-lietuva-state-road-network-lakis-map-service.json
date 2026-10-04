@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "LAKIS road information MapServer",
+      "url": "https://arcgis.vialietuva.lt/arcgis/rest/services/LakisKelioInfo/MapServer"
+    },
+    {
+      "kind": "viewer",
+      "label": "eismoinfo.lt traffic information map",
+      "url": "https://eismoinfo.lt/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "LT"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "lithuania state road network from via lietuva s lakis road information service 9 522 road segments 11 305 technical category sections with repair dates and 38 612 kilometre markers arcgis rest",
+    "url": "https://arcgis.vialietuva.lt/arcgis/rest/services/LakisKelioInfo/MapServer"
+  },
+  "description": "Via Lietuva, which manages Lithuania's state roads and runs the eismoinfo.lt traffic information site that serves as the country's national access point, exposes its road information system (LAKIS) as a public ArcGIS map service used by that site. Contents: three layers: the state road network with 9,522 polyline segments (road number, name, road type and form, direction, status, start and end kilometres, validity dates), 11,305 technical category sections (road number, kilometre range, length, maintaining company, last repair date, technical category, minimum carriageway width and protection zone width) and 38,612 kilometre marker points with road side, measured coordinates and validity. Producer: Via Lietuva. Coverage: Lithuania's national and regional state roads. Format and access: ArcGIS REST MapServer with query enabled, so features can be exported as JSON or GeoJSON; no registration. Licence: none stated on the service. Caveats: the service is an application back end, not a published dataset, it lacks traffic volumes and pavement condition scores, and layer names and fields are in Lithuanian. Simulation uses: building a routable state road graph with category and width attributes, locating assets by road and kilometre for incident and maintenance models, and exposure of road sections to floods and winter hazards. Related records: the Lithuanian ESO network map services (data-lithuania-eso-electricity-and-gas-distribution-network-map-services) cover utility networks from the same national geoportal walk.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source transport-napcore: provider pages read (round 2 register piece)",
+      "route": "R01",
+      "source": "transport-napcore"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://arcgis.vialietuva.lt/arcgis/rest/services/LakisKelioInfo/MapServer",
+  "id": "data-lithuania-via-lietuva-state-road-network-lakis-map-service",
+  "languages": [
+    "lt"
+  ],
+  "licence": "not stated",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://eismoinfo.lt/"
+    ]
+  },
+  "maturity": "active",
+  "name": "Lithuania state road network from Via Lietuva's LAKIS road information service: 9,522 road segments, 11,305 technical category sections with repair dates and 38,612 kilometre markers (ArcGIS REST)",
+  "notes": "Deep check A4 (2026-10-01) corrected: dedupe_keys, homepage .",
+  "provider": "Via Lietuva (state road manager, formerly the Lithuanian Road Administration)",
+  "related_ids": [
+    "data-lithuania-eso-electricity-and-gas-distribution-network-map-services"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "layers KilometriniaiZenklai (38,612 points), KeliuTinklas_M (9,522 lines), TechnineKategorija_GL (11,305 lines); capabilities Map, Query, Data; no copyright text",
+      "url": "https://arcgis.vialietuva.lt/arcgis/rest/services/LakisKelioInfo/MapServer?f=json"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "site script calls arcgis.vialietuva.lt services",
+      "url": "https://eismoinfo.lt/scripts/scripts.b4e8032d.js"
+    }
+  ],
+  "tags": [
+    "Lithuania",
+    "Via Lietuva",
+    "state roads",
+    "LAKIS",
+    "eismoinfo"
+  ],
+  "title_en": "Lithuania state road network from Via Lietuva's LAKIS road information service: 9,522 road segments, 11,305 technical category sections with repair dates and 38,612 kilometre markers (ArcGIS REST)",
+  "type": "data"
+}

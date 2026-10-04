@@ -1,0 +1,141 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "2011 census REDATAM online processing",
+      "url": "https://prod.redatam.org/bintto/RpWebEngine.exe/Portal?BASE=PHC2011"
+    },
+    {
+      "kind": "docs",
+      "label": "Database dictionary (municipality, community, ED, building, dwelling, household, person)",
+      "url": "https://prod.redatam.org/bintto/RpWebStats.exe/Dictionary?BASE=PHC2011&ITEM=DICALL&lang=ENG"
+    },
+    {
+      "kind": "portal",
+      "label": "2000 census REDATAM database",
+      "url": "https://prod.redatam.org/bintto/RpWebEngine.exe/Portal?BASE=PHC2K"
+    },
+    {
+      "kind": "portal",
+      "label": "CSO website",
+      "url": "https://cso.gov.tt/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "TT"
+  ],
+  "data_family": [
+    "system_description",
+    "vulnerability_fragility"
+  ],
+  "data_kind": [
+    "tabular",
+    "survey"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "central statistical office of trinidad and tobago 2011 housing and population census redatam database with building type year built wall and roof material water supply source and frequency of public water supply toilet lighting and fuel by municipality community and enumeration district",
+    "url": "https://prod.redatam.org/bintto/RpWebEngine.exe/Portal?BASE=PHC2011"
+  },
+  "description": "The Central Statistical Office (CSO) of Trinidad and Tobago published its 2011 Housing and Population Census as a REDATAM database on the ECLAC-CELADE webserver, with the 2000 census in a second base. The database keeps a building level, with building type, year built and outer wall and roof material, and a dwelling level with tenure, rooms, source of water supply, how often the public water supply runs, toilet facilities, type of lighting and fuel. Coverage is national; the geography nests municipalities, communities and enumeration districts, so tables can be produced for named communities. The frequency of public water supply variable is uncommon in censuses and describes intermittent supply directly. Format and access: free online frequencies, cross tabulations and area lists without registration. Licence: not stated on the pages read. Caveats: building and dwelling records carry weights, which suggests some adjustment, and the 2011 base is now more than a decade old; newer census products were not identified on the pages read. Simulation uses: community-level intermittent water supply for network reliability and demand studies, and building age and materials for hurricane and earthquake exposure. Related records: the ECLAC REDATAM hub and the Saint Lucia 2022 census database with water supply continuity.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:TT:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://prod.redatam.org/bintto/RpWebEngine.exe/Portal?BASE=PHC2011",
+  "id": "data-cso-trinidad-tobago-census-2011-redatam-buildings-water-supply-frequency-by-community",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (only a site copyright notice on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://cso.gov.tt/"
+    ]
+  },
+  "maturity": "active",
+  "name": "Central Statistical Office of Trinidad and Tobago 2011 Housing and Population Census REDATAM database with building type, year built, wall and roof material, water supply source and frequency of public water supply, toilet, lighting and fuel, by municipality, community and enumeration district",
+  "provider": "Central Statistical Office (CSO) of Trinidad and Tobago, hosted on the ECLAC-CELADE REDATAM webserver",
+  "related_ids": [
+    "data-eclac-redatam-census-microdata-and-online-processing-hub",
+    "data-cso-saint-lucia-census-2022-redatam-water-continuity-lighting-by-enumeration-district"
+  ],
+  "schema_summary": "Entities TT2011 > MUNICIP > COMMUN (community) > ED > BUILDING (type, year built, outer wall and roof material, weight) > DWELLING (type, tenure, land tenure, rent, occupancy, rooms, bedrooms, source of water supply, frequency of public water supply, toilet facilities and sharing, type of lighting, type of fuel) > HHOLD > PERSON",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: directory entry",
+      "url": "https://redatam.org/procesar-en-linea/caribe/trinidad-y-tobago"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: portal frames and menu",
+      "url": "https://prod.redatam.org/bintto/RpWebEngine.exe/Portal?BASE=PHC2011"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: entities and variables",
+      "url": "https://prod.redatam.org/bintto/RpWebStats.exe/Dictionary?BASE=PHC2011&ITEM=DICALL&lang=ENG"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): only a site copyright notice on this page (all rights reserved)",
+      "url": "https://prod.redatam.org/bintto/RpWebEngine.exe/Portal?BASE=PHC2011"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://prod.redatam.org/bintto/RpWebStats.exe/Dictionary?BASE=PHC2011&ITEM=DICALL&lang=ENG"
+    }
+  ],
+  "spatial_resolution": "country, municipalities, communities and enumeration districts; buildings and dwellings are entities",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "census",
+    "Trinidad and Tobago",
+    "REDATAM",
+    "water supply frequency",
+    "community",
+    "building age",
+    "Caribbean"
+  ],
+  "temporal_coverage": "census 2011, with the 2000 census in a separate base",
+  "temporal_coverage_years": {
+    "end": 2011,
+    "start": 2000
+  },
+  "temporal_resolution": "census years",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "Central Statistical Office of Trinidad and Tobago 2011 Housing and Population Census REDATAM database with building type, year built, wall and roof material, water supply source and frequency of public water supply, toilet, lighting and fuel, by municipality, community and enumeration district",
+  "type": "data"
+}

@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "GHO OData API, hospital beds (WHS6_102)",
+      "url": "https://ghoapi.azureedge.net/api/WHS6_102"
+    },
+    {
+      "kind": "api",
+      "label": "GHO OData API, hospital density (DEVICES00)",
+      "url": "https://ghoapi.azureedge.net/api/DEVICES00"
+    },
+    {
+      "kind": "api",
+      "label": "GHO OData API, formal pre-hospital care system (RS_237)",
+      "url": "https://ghoapi.azureedge.net/api/RS_237"
+    },
+    {
+      "kind": "docs",
+      "label": "WHO data terms and conditions",
+      "url": "https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "critical_facilities",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "who global health observatory health infrastructure indicators hospital beds hospital density pre hospital care",
+    "url": "https://who.int/data/gho/data/indicators/indicator-details/GHO/hospital-beds-(per-10-000-population)"
+  },
+  "description": "The WHO Global Health Observatory publishes country indicators of health infrastructure capacity. The main one is hospital beds per 10,000 population, compiled from WHO regional offices and national sources such as health ministries and statistical offices for 193 countries between 2000 and 2023. Related indicators give the density of hospitals per 100,000 people by level (district or rural, provincial, specialised) for 137 countries around 2013–2014, whether a country has a formal pre-hospital emergency care system and a universal emergency telephone number (174 countries, 2007), and beds in mental hospitals. The producer is the World Health Organization. Coverage is global at country level. Data are served as JSON through the GHO OData API and as CSV or Excel exports, free without registration, under WHO's data terms: royalty-free use for public health purposes with attribution to WHO and the reporting countries, and no use to promote commercial products. Caveats: national bed definitions differ, some years are missing, the hospital density and pre-hospital care series are one-off surveys, and population denominators come from UN estimates that may differ from national figures. Simulation uses: country baselines of inpatient capacity for surge and pandemic capacity planning, and cross-country comparison of health system resilience. Related records: Healthsites.io (data-healthsites-io) gives facility locations, and the sub-Saharan Africa public health facility list (data-ssa-public-health-facilities) covers one region at facility level.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "WHO GHO hospital beds per 10 000 population indicator",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "api",
+    "web_page",
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/hospital-beds-(per-10-000-population)",
+  "id": "data-who-gho-health-infrastructure-indicators",
+  "languages": [
+    "en"
+  ],
+  "licence": "WHO Datasets terms and conditions (royalty-free use for public health purposes, attribution, no commercial promotion)",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "WHO Global Health Observatory health infrastructure indicators (hospital beds, hospital density, pre-hospital care)",
+  "provider": "World Health Organization (WHO)",
+  "related_ids": [
+    "data-healthsites-io",
+    "data-ssa-public-health-facilities"
+  ],
+  "schema_summary": "Per country and year: hospital beds per 10,000 population (WHS6_102); density of hospitals per 100,000 by level (DEVICES00 total, DEVICES03 district or rural, DEVICES04 provincial, DEVICES05 specialised); existence of a formal pre-hospital care system (RS_237) and of a universal access telephone number (RS_238); mental hospital beds (MH_16)",
+  "sectors": [
+    "services.healthcare",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Definition, method (regional offices and country sources, UN WPP population), dissemination every 2-3 years, no global norm",
+      "url": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/hospital-beds-(per-10-000-population)"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Indicator codes WHS6_102, DEVICES00/03/04/05, RS_237, RS_238; coverage counted from the API",
+      "url": "https://ghoapi.azureedge.net/api/Indicator"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Licensed use for public health purposes; attribution format; prohibited commercial promotion",
+      "url": "https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions"
+    }
+  ],
+  "spatial_resolution": "Country",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "hospital beds",
+    "health system capacity",
+    "hospital density",
+    "pre-hospital care",
+    "WHO",
+    "GHO"
+  ],
+  "temporal_coverage": "Hospital beds 2000–2023 for 193 countries; hospital density 2013–2014 (137 countries); pre-hospital care 2007 (174 countries)",
+  "temporal_resolution": "Annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "WHO Global Health Observatory health infrastructure indicators (hospital beds, hospital density, pre-hospital care)",
+  "type": "data",
+  "update_frequency": "multi_year"
+}

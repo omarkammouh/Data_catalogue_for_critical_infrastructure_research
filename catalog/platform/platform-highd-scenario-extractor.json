@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/CXY118/highD-scenario-extractor"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/CXY118/highD-scenario-extractor/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "highd traffic scenario extractor",
+    "repo": "github.com/cxy118/highd-scenario-extractor",
+    "url": "https://github.com/CXY118/highD-scenario-extractor"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "highD-scenario-extractor is a Python workflow for turning highD vehicle trajectories into road-traffic scenarios. Its README lists separate steps for cut-in and lane-change manoeuvres, including trajectory extraction, speed filtering, surrounding-vehicle selection and initial-state preparation. Users supply a licensed copy of the highD data; outputs are vehicle positions, speeds and spacing formatted for HighwayEnv scenario initialisation. Geographic coverage follows the German highway recordings in highD, while the code can be applied to compatible trajectories elsewhere after adaptation. GitHub metadata states MIT licensing for the extractor, not for the source highD dataset. A limitation is that the workflow focuses on two manoeuvre classes and was not executed in this review. It can create repeatable interaction cases for microscopic road-traffic and automated-driving simulations. The tool is distinct from the underlying trajectory dataset and from a simulation engine. No source trajectories or generated scenarios were downloaded. The related model-sumo catalogue record is a road-traffic simulator; this extractor prepares HighwayEnv inputs, and G7 did not establish SUMO compatibility.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "traffic trajectory dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://github.com/CXY118/highD-scenario-extractor",
+  "id": "platform-highd-scenario-extractor",
+  "interfaces": [
+    "code_library"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-15",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "highD traffic scenario extractor",
+  "notes": "G7 G7-1976. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "highD scenario extractor contributors",
+  "related_ids": [
+    "model-sumo"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for CXY118/highD-scenario-extractor: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=traffic+trajectory+dataset&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/CXY118/highD-scenario-extractor/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for road transport",
+  "type": "platform"
+}

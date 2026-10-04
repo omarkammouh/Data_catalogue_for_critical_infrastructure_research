@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Library home, user guide and downloads",
+      "url": "https://simulationresearch.lbl.gov/modelica/"
+    },
+    {
+      "kind": "repo",
+      "label": "Development repository",
+      "url": "https://github.com/lbl-srg/modelica-buildings"
+    },
+    {
+      "kind": "docs",
+      "label": "Licence",
+      "url": "https://simulationresearch.lbl.gov/modelica/license.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Wetter M., Zuo W., Nouidui T.S., Pang X. (2014). Modelica Buildings library. Journal of Building Performance Simulation 7(4), 253-270. doi:10.1080/19401493.2013.765506",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "modelica buildings library",
+    "repo": "github.com/lbl-srg/modelica-buildings",
+    "url": "https://simulationresearch.lbl.gov/modelica"
+  },
+  "description": "The Modelica Buildings Library is a free, open-source library of dynamic simulation models for building and district energy and control systems. It contains models of HVAC systems, thermal and electrical storage, controls including a reference implementation of ASHRAE Standard 231P, heat transfer in rooms either natively or coupled at run time to EnergyPlus (Spawn of EnergyPlus), multizone airflow and contaminant transport, single-zone CFD, and two- and three-phase electrical systems, plus templates for district energy and data-centre cooling. Lawrence Berkeley National Laboratory develops it with DOE funding to support design and operation of energy systems, controls verification and export of digital twins for fault detection and diagnostics. Coverage is generic; time resolution is continuous with variable-step solvers. It is written in Modelica and runs in Modelica simulation tools; version 13.0.0 was tagged in May 2026. Licence: a BSD-style licence from LBNL, free of charge. Caveat: it needs a Modelica simulation environment and Modelica skills, and not every model runs in every tool. Simulation uses are system sizing and capacity planning, control optimisation, district heating network flow and building digital twins. Related records: Modelica IBPSA Library (its core), AixLib, IDEAS and BuildingSystems (sister libraries), EnergyPlus and OpenModelica.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell model:built_environment.buildings:physical",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R06",
+      "source": "modelica-buildings"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://simulationresearch.lbl.gov/modelica/",
+  "id": "model-modelica-buildings-library",
+  "inputs": [
+    "Component and system parameters (HVAC, storage, envelope, controls)",
+    "Weather data (TMY3/EPW via reader)",
+    "Optional EnergyPlus model through Spawn"
+  ],
+  "language": [
+    "modelica"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-04",
+  "licence": "BSD-3-Clause (LBNL modified BSD)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Modelica Buildings Library",
+  "notes": "Tag v13.0.0 commit dated 2026-05-04 (shallow fetch). GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "outputs": [
+    "Dynamic time series of temperatures, flows, pressures, energy and control signals",
+    "Exported FMUs"
+  ],
+  "provider": "Lawrence Berkeley National Laboratory (LBNL) with the Modelica Association and IBPSA",
+  "related_ids": [
+    "data-boptest-building-emulator-test-cases",
+    "data-climate-onebuilding-tmyx-weather-files"
+  ],
+  "repository": "https://github.com/lbl-srg/modelica-buildings",
+  "runs_on": [],
+  "sectors": [
+    "built_environment.buildings",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "digital_twin",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Library scope, model families, uses, projects (Spawn, OpenBuildingControl), open-source licence link",
+      "url": "https://simulationresearch.lbl.gov/modelica/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Licence text: copyright 1998-2026 Modelica Association, IBPSA, LBNL; DOE notice",
+      "url": "https://raw.githubusercontent.com/lbl-srg/modelica-buildings/master/Buildings/legal.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: tag v13.0.0, commit 2026-05-04",
+      "url": "https://github.com/lbl-srg/modelica-buildings"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Citation metadata: Wetter, Zuo, Nouidui, Pang, J. Building Performance Simulation 7, 253-270",
+      "url": "https://api.crossref.org/works/10.1080/19401493.2013.765506"
+    }
+  ],
+  "tags": [
+    "Modelica",
+    "HVAC",
+    "district energy",
+    "controls",
+    "Spawn of EnergyPlus",
+    "FMU"
+  ],
+  "title_en": "Dynamic simulation models for building and district energy and control systems",
+  "type": "model",
+  "validated_on": []
+}

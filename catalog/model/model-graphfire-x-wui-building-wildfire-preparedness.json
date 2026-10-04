@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.20813"
+    },
+    {
+      "kind": "paper",
+      "label": "Journal article, Computer-Aided Civil and Infrastructure Engineering 2026",
+      "url": "https://doi.org/10.1016/j.cacaie.2026.100085"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1016/j.cacaie.2026.100085",
+    "name": "graphfire x graph attention and gradient boosting for building scale wildfire preparedness",
+    "url": "https://arxiv.org/abs/2512.20813"
+  },
+  "description": "GraphFire-X is a dual-specialist model for building-scale wildfire risk at the wildland-urban interface, described in a 2025 arXiv preprint and a 2026 journal article by Miguel Esparza, Vamshi Battal and Ali Mostafavi. One stream is an environmental specialist: a graph attention network that treats a community as a directed contagion graph whose edges are weighted by physics-informed convection, radiation and ember-spread probabilities and whose nodes carry Google AlphaEarth Foundation embeddings. The other is a structural specialist: an XGBoost model that isolates asset-level fragility. The two are combined by logistic stacking. Applied to the January 2025 Eaton Fire, the authors find that neighbourhood-scale environmental pressure dominates intrinsic structural features in defining propagation, and that eaves are the main ingress point at the micro scale. Coverage: one fire in California, so transfer to other places is untested. Access: paper only; no code or data link was found on the preprint page read; the paper carries the arXiv non-exclusive distribution licence. Useful for wildfire exposure and vulnerability studies of buildings, and to prioritise vegetation management and hardening. It relates to the CAL FIRE damage inspection record in the catalogue, the usual source of building loss labels.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "wildfire home hardening building ignition vulnerability dataset structures destroyed damage inspection program DINS",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://arxiv.org/abs/2512.20813",
+  "id": "model-graphfire-x-wui-building-wildfire-preparedness",
+  "inputs": [
+    "Building inventory with structural attributes, vegetation and fire spread physics terms (convection, radiation, embers), Google AlphaEarth Foundation embeddings",
+    "Eaton Fire outcomes"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-12-23",
+  "licence": "arXiv non-exclusive distribution licence (the paper; no open reuse licence)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network",
+    "statistical"
+  ],
+  "name": "GraphFire-X: graph attention and gradient boosting for building-scale wildfire preparedness",
+  "outputs": [
+    "Building-level probability of loss, environmental contagion and structural fragility scores, a risk topology for mitigation targeting"
+  ],
+  "provider": "Miguel Esparza, Vamshi Battal and Ali Mostafavi (paper authors)",
+  "regions": [
+    "Eaton Fire, California"
+  ],
+  "related_ids": [
+    "data-cal-fire-damage-inspection-dins-database"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "arXiv 2512.20813 v1: abstract, authors, DOI 10.1016/j.cacaie.2026.100085, Eaton Fire, GNN and XGBoost, eaves finding; PDF searched for code or data availability statement, none found",
+      "url": "https://arxiv.org/abs/2512.20813"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "licence re-check at wave 2 integration: licence read on the provider page",
+      "url": "https://arxiv.org/abs/2512.20813"
+    }
+  ],
+  "tags": [
+    "wildland-urban interface",
+    "graph neural network",
+    "XGBoost",
+    "Eaton Fire",
+    "structure loss",
+    "r2-fresh-built-environment"
+  ],
+  "title_en": "GraphFire-X: graph attention and gradient boosting for building-scale wildfire preparedness",
+  "type": "model"
+}

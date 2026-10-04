@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "TODS repository (MobilityData)",
+      "url": "https://github.com/MobilityData/transit-operational-data-standard"
+    },
+    {
+      "kind": "docs",
+      "label": "TODS specification site",
+      "url": "https://tods-transit.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "standards_ontologies"
+  ],
+  "data_kind": [
+    "document"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "tods transit operational data standard extending gtfs with runs deadheads and personnel",
+    "repo": "github.com/mobilitydata/transit-operational-data-standard",
+    "url": "https://tods-transit.org"
+  },
+  "description": "The Transit Operational Data Standard (TODS) is an open standard for describing how scheduled transit service is operated, so that runs, driver assignments and non-revenue movements can be moved between scheduling software, computer-aided dispatch and automatic vehicle location systems and between agencies. It was developed in 2021 and 2022 by a working group of agencies and vendors with resources from the California Integrated Travel Project (Cal-ITP), which also funded the TODS Board through 2025; the specification is hosted in MobilityData's GitHub. Coverage: generic standard, used by several software vendors and transit agencies, mainly in North America. TODS extends GTFS Schedule with files for deadheads (non-revenue trips and their stops), runs and run events, personnel assignments and supplemental changes, keeping GTFS identifiers so rider data and operational data stay linked; version 2.0 and later revisions are managed through a change process with a board and contributor licence agreement. Format and access: CSV-based specification with reference, examples and implementation guide on the TODS website and GitHub; free. Licence: Apache 2.0 for the repository content. Caveats: TODS datasets themselves are usually kept private to protect internal operations data, so the standard rarely comes with public data. Simulation uses: representing vehicle blocks, driver runs and deadheads in transit operations and capacity planning models, and in emergency response re-planning of bus service. Related records: the GTFS specification (data-gtfs-specification) is the base it extends, and the Cal-ITP transit data (data-cal-itp-california-transit-gtfs-analyses) come from the same state programme.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-tods: provider pages read (round 2 register piece)",
+      "route": "R08",
+      "source": "transport-tods"
+    }
+  ],
+  "formats": [
+    "csv",
+    "document"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/MobilityData/transit-operational-data-standard",
+  "id": "data-tods-transit-operational-data-standard",
+  "languages": [
+    "en"
+  ],
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "TODS: Transit Operational Data Standard extending GTFS with runs, deadheads and personnel",
+  "provider": "TODS Board of Directors, hosted by MobilityData; initially developed with Cal-ITP",
+  "related_ids": [
+    "data-gtfs-specification",
+    "data-cal-itp-california-transit-gtfs-analyses",
+    "data-tides-transit-its-data-exchange-specification"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Home: open standard for scheduled transit operations; extends GTFS with personnel and non-revenue service (deadheads, runs); TODS data typically not published to preserve privacy of internal operations data",
+      "url": "https://tods-transit.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Developed 2021-2022 by the TODS Working Group with Cal-ITP resources; Cal-ITP monetary support for the Board through 2025; TODS v1.0 used by several vendors and agencies as of 2024",
+      "url": "https://tods-transit.org/about/about/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository licence: Copyright 2024 ODS Board of Directors, Apache 2.0; last commit 2026-09-25",
+      "url": "https://raw.githubusercontent.com/MobilityData/transit-operational-data-standard/main/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "definition, GTFS extension, personnel and non-revenue service",
+      "url": "https://tods-transit.org/"
+    }
+  ],
+  "tags": [
+    "transit operations",
+    "GTFS",
+    "scheduling",
+    "data standard",
+    "operations",
+    "runs",
+    "deadheads",
+    "r2-fresh-transport"
+  ],
+  "temporal_coverage": "Specification",
+  "title_en": "TODS: Transit Operational Data Standard extending GTFS with runs, deadheads and personnel",
+  "type": "data"
+}

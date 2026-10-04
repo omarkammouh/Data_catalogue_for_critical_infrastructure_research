@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "figshare dataset",
+      "url": "https://figshare.com/articles/dataset/PowerGraph/22820534"
+    },
+    {
+      "kind": "repo",
+      "label": "PowerGraph code on GitHub",
+      "url": "https://github.com/PowerGraph-Datasets"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "synthetic_benchmark",
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "powergraph graph datasets of power flow optimal power flow and cascading failures for gnn benchmarking ieee24 ieee39 ieee118 uk texas",
+    "repo": "github.com/powergraph-datasets",
+    "url": "doi:10.6084/m9.figshare.22820534"
+  },
+  "description": "PowerGraph is a graph dataset for machine learning on power systems, created by Anna Varbella and Kenza Amara. Power flow and optimal power flow cases were generated with MATPOWER, and cascading failure events with the physics-based Cascades model, which propagates failures through the grid and records unmet demand. Each grid state is a graph with buses as nodes and lines and transformers as edges; power flow and optimal power flow are posed as node-level regression, while cascades carry graph-level labels for multi-class and binary classification and regression, with ground-truth explanations so the set can benchmark explainability of graph neural networks. Power flow and optimal power flow data cover the IEEE 24, 39 and 118 bus systems, a UK system and a Texas system; cascading failure data cover the IEEE 24, 39, 118 and UK systems, with raw Texas cascades in a separate archive. The files, about 0.8 GB, 58 MB and 4.7 GB, are available for free download from figshare under CC BY 4.0, version 5 of November 2024, with code linked on GitHub. Coverage is test and synthetic grids. Caveats: results come from simulation models, not observed outages. Simulation uses are training and benchmarking surrogate models for power flow and cascading failure screening. Related records: data-columbia-synthetic-grid-western-interconnection is another synthetic grid.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"bus\" AND \"cascading\"",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "archive"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://doi.org/10.6084/m9.figshare.22820534",
+  "id": "data-powergraph-gnn-power-flow-cascading-failure-benchmark",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-11-05",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://github.com/PowerGraph-Datasets"
+    ]
+  },
+  "maturity": "active",
+  "name": "PowerGraph - graph datasets of power flow, optimal power flow and cascading failures for GNN benchmarking (IEEE24, IEEE39, IEEE118, UK, Texas)",
+  "provider": "A. Varbella and K. Amara, via figshare",
+  "related_ids": [
+    "data-columbia-synthetic-grid-western-interconnection"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description (MATPOWER, Cascades, tasks, grid systems), creators, CC BY 4.0",
+      "url": "https://api.datacite.org/dois/10.6084/m9.figshare.22820534"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 5, modified 2024-11-05, files and sizes, GitHub reference",
+      "url": "https://api.figshare.com/v2/articles/22820534"
+    }
+  ],
+  "tags": [
+    "graph neural networks",
+    "cascading failures",
+    "optimal power flow",
+    "benchmark"
+  ],
+  "title_en": "PowerGraph - graph datasets of power flow, optimal power flow and cascading failures for GNN benchmarking (IEEE24, IEEE39, IEEE118, UK, Texas)",
+  "type": "data"
+}

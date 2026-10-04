@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Project website",
+      "url": "https://ameliacmu.github.io"
+    },
+    {
+      "kind": "download",
+      "label": "Amelia42-Mini (Hugging Face)",
+      "url": "https://huggingface.co/datasets/AmeliaCMU/Amelia42-Mini"
+    },
+    {
+      "kind": "download",
+      "label": "Amelia-10 benchmark (Hugging Face)",
+      "url": "https://huggingface.co/datasets/AmeliaCMU/Amelia-10"
+    },
+    {
+      "kind": "repo",
+      "label": "SWIM collection tools (GitHub)",
+      "url": "https://github.com/AmeliaCMU/AmeliaSWIM"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (arXiv)",
+      "url": "https://arxiv.org/abs/2407.21185"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "sensor_realtime_streams",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "amelia 42 airport surface movement dataset and amelia10 bench benchmark",
+    "url": "https://ameliacmu.github.io"
+  },
+  "description": "Amelia-42 is a large collection of raw airport surface movement reports streamed through the Federal Aviation Administration's System Wide Information Management (SWIM) programme, covering more than two years of aircraft and vehicle position data (about 9.19 TB) at 42 US airports and their terminal radar facilities. Amelia42-Mini, a fully processed sample of 15 randomly chosen days per airport, is filtered with 3D geofences to reports below 2,000 ft above ground, interpolated and resampled to 1 Hz, and given as per-hour, per-airport CSV files with spatial, temporal and kinematic attributes and airport map assets; Amelia10-Bench uses 292 days at 10 airports for multi-agent trajectory forecasting. It was built by the Bot Intelligence Group and AirLab at Carnegie Mellon University and described at the AIAA Aviation Forum 2024 and in an arXiv paper (version 4, October 2025). Coverage is national, at airport scale, from Atlanta to Honolulu. The processed data are free on Hugging Face under the BSD 2-Clause licence (Amelia42-Mini version 1.0.0 of 16 May 2025), with SWIM, map, data and model tools on GitHub. Caveats: raw reports are irregular and noisy, and the full raw archive is far larger than the released sample. The data support capacity planning and agent-based safety studies of runways and taxiways, such as runway incursion analysis, and complement the Amelia-TF forecasting model released alongside it.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "airport aviation scenarios projections synthetic benchmark dataset",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://ameliacmu.github.io",
+  "id": "data-amelia-airport-surface-movement",
+  "languages": [
+    "en"
+  ],
+  "licence": "BSD-2-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Amelia-42 airport surface movement dataset and Amelia10-Bench benchmark",
+  "provider": "Carnegie Mellon University, Bot Intelligence Group and AirLab (Ingrid Navarro, Pablo Ortega-Kral, Jay Patrikar and colleagues; principal investigators Jean Oh and Sebastian Scherer)",
+  "related_ids": [],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "abstract (SWIM, over two years, ~9.19 TB, 42 airports, Amelia42-Mini 15 days, Amelia10-Bench 292 days at 10 airports, Amelia-TF); v4 of 3 Oct 2025",
+      "url": "https://arxiv.org/abs/2407.21185"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "42 airports and TRACON facilities; code repositories (SWIM, Maps, DataTools, Scenes, TF, Inference); team CMU BIG and AirLab; AIAA Aviation 2024 paper doi 10.2514/6.2024-4251",
+      "url": "https://ameliacmu.github.io"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD-2-Clause; version 1.0.0, published 2025-05-16; airport list KATL to PHNL; 3D geofence 2000 ft AGL; 1 Hz; per-hour per-airport CSV; not gated",
+      "url": "https://huggingface.co/datasets/AmeliaCMU/Amelia42-Mini"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD 2-Clause 2024; tag v1.0.1; last commit 2026-01-10",
+      "url": "https://raw.githubusercontent.com/AmeliaCMU/AmeliaSWIM/main/LICENSE"
+    }
+  ],
+  "spatial_resolution": "individual aircraft and vehicle positions within 3D geofences of 42 airports",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "airport surface movement",
+    "trajectories",
+    "SWIM",
+    "trajectory forecasting",
+    "benchmark",
+    "United States"
+  ],
+  "temporal_coverage": "more than two years of SWIM reports (raw); 15 days per airport (Mini); 292 days at 10 airports (benchmark)",
+  "temporal_resolution": "1 Hz (processed)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Amelia-42 airport surface movement dataset and Amelia10-Bench benchmark",
+  "type": "data",
+  "update_frequency": "irregular"
+}

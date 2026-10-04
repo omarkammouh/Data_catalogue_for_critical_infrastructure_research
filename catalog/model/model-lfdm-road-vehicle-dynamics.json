@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/uwsbel/low-fidelity-dynamic-models"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.06548"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.21105/joss.06548",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "lower fidelity dynamic models vehicle library",
+    "url": "https://github.com/uwsbel/low-fidelity-dynamic-models"
+  },
+  "description": "The Lower Fidelity Dynamic Models library provides fast road-vehicle dynamics models with 11, 18 or 24 degrees of freedom. C++ models can run on CPUs, CUDA versions support NVIDIA GPUs, and a Python wrapper exposes the C++ interface. Users supply vehicle parameters, an initial state and normalized throttle, steering and brake inputs. The solvers advance vehicle position and velocity through time, using models of chassis, tires and driveline components at different levels of detail. Geographic coverage and simulation duration depend on the road or driving scenario supplied; the library contains no street network. The public repository is MIT licensed and documents building, integration and example runs. It can support large traffic-agent experiments, controller tests and what-if analysis of road-vehicle behaviour. The simplifications that permit speed also omit detailed vehicle physics, so users must judge which model fidelity is sufficient for a safety or infrastructure question. GPU support has a specific NVIDIA requirement. No directly related catalogue record was established. Source metadata and documentation were checked without compiling the library or measuring its performance.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "JOSS whole-index enumeration; 10.21105/joss.06548; G5-LOCAL-011;G5-LOCAL-071;G5-LOCAL-108",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/uwsbel/low-fidelity-dynamic-models",
+  "id": "model-lfdm-road-vehicle-dynamics",
+  "inputs": [
+    "Vehicle dimensions, mass and tire parameters",
+    "Initial vehicle state",
+    "Throttle, steering and brake signals"
+  ],
+  "language": [
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-07-12",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Lower Fidelity Dynamic Models vehicle library",
+  "notes": "G5 G5-0658. Software checked through metadata and documentation, without installation or execution. Geographic scope follows the documented application or software portability; it does not imply validation throughout that area. ",
+  "outputs": [
+    "Vehicle position, orientation and velocity trajectories",
+    "Sensitivity results for selected CPU models"
+  ],
+  "provider": "University of Wisconsin Simulation-Based Engineering Lab",
+  "related_ids": [],
+  "repository": "https://github.com/uwsbel/low-fidelity-dynamic-models",
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "JOSS article and software link.",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.06548"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "JOSS summary read in memory.",
+      "url": "https://raw.githubusercontent.com/openjournals/joss-papers/master/joss.06548/paper.jats/10.21105.joss.06548.jats"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository identity and licence metadata.",
+      "url": "https://api.github.com/repos/uwsbel/low-fidelity-dynamic-models"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own capabilities and usage documentation.",
+      "url": "https://raw.githubusercontent.com/uwsbel/low-fidelity-dynamic-models/main/README.md"
+    }
+  ],
+  "tags": [
+    "research software",
+    "JOSS"
+  ],
+  "title_en": "The lower fidelity dynamic models library",
+  "type": "model"
+}

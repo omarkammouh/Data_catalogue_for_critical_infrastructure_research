@@ -1,0 +1,133 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Atendimentos por Tipo de Urgência Hospitalar (API)",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/atendimentos-por-tipo-de-urgencia-hospitalar-link"
+    },
+    {
+      "kind": "api",
+      "label": "Atendimentos em Urgência Hospitalar por Triagem de Manchester (API)",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/atendimentos-em-urgencia-triagem-manchester"
+    },
+    {
+      "kind": "api",
+      "label": "Caracterização das Valências de Urgência (API)",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/caracterizacao-das-valencias-de-urgencia"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "PT"
+  ],
+  "data_family": [
+    "demand_operation",
+    "critical_facilities"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "portugal sns transparency monthly hospital emergency department attendances by type and manchester triage colour and emergency department characteristics",
+    "url": "https://transparencia.sns.gov.pt/explore/dataset/atendimentos-por-tipo-de-urgencia-hospitalar-link"
+  },
+  "description": "These datasets describe demand on Portugal's public hospital emergency departments and how each department is organised. They are published by the Executive Directorate of the National Health Service (SNS) on its Transparency portal. One gives monthly attendances per hospital from January 2013, split into general, paediatric, obstetric and psychiatric emergencies. A second gives the same attendances by Manchester triage colour, from red to blue and white, which shows the urgency mix arriving at each hospital. A third lists every emergency service with its hospital, address, parish and coordinates, the type of emergency service, the specialities it offers, the age range served and the permitted access routes, such as self-referral or referral by the SNS 24 phone line. All three are free and available to download from the portal in CSV, JSON, Excel, Parquet and GeoJSON, and through its open API. Caveats: counts are monthly and per hospital, not per visit, waiting times are not included, the latest two months are provisional, and only hospitals reporting to the SNS are covered. Simulation uses: setting emergency department demand by hospital, urgency and season, testing closures or diversion of obstetric and paediatric emergencies, and linking to bed capacity. Related records: the SNS bed data (data-sns-portugal-hospital-beds-and-occupancy), the INEM pre-hospital data (data-inem-portugal-prehospital-emergency-activity) and the French emergency department visits (data-drees-emergency-department-daily-visits-2017-2023).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: SNS Transparência (PT, health_ministry_service)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "spreadsheet",
+    "parquet",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://transparencia.sns.gov.pt/explore/dataset/atendimentos-por-tipo-de-urgencia-hospitalar-link/",
+  "id": "data-sns-portugal-emergency-department-attendances",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "not stated (portal metadata: license null)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Portugal SNS Transparency: monthly hospital emergency department attendances by type and Manchester triage colour, and emergency department characteristics",
+  "provider": "Direção Executiva do Serviço Nacional de Saúde (DE-SNS), Portugal",
+  "related_ids": [
+    "data-sns-portugal-hospital-beds-and-occupancy",
+    "data-inem-portugal-prehospital-emergency-activity",
+    "data-drees-emergency-department-daily-visits-2017-2023"
+  ],
+  "schema_summary": "By type: tempo, region, institution, location, general, paediatric, obstetric and psychiatric emergency attendances and total (6,481 rows). By triage: period, region, institution, location, attendances by Manchester colour (red, orange, yellow, green, blue, white) and without triage (6,420 rows). Characterisation: region, legal nature, hospital group, hospital unit, location, address, postcode, parish, emergency service name, emergency type, speciality, age range, and access routes (self-referral, SNS 24 line, primary care, emergency or hospital doctors) (1,077 rows)",
+  "sectors": [
+    "services.healthcare",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Monthly emergency attendances by type (general, paediatric, obstetric, psychiatric), month and hospital; 6,481 records; periods 2013-01 to 2026-06; month n-2 provisional; publisher DE-SNS; modified 31 August 2026",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/atendimentos-por-tipo-de-urgencia-hospitalar-link"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Monthly attendances by Manchester triage colour per hospital; 6,420 records; fields listed in the schema summary",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/atendimentos-em-urgencia-triagem-manchester"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Resources characterising the emergency service specialities of each hospital; 1,077 records; modified 17 June 2026; fields listed in the schema summary; export formats CSV, JSON, JSONL, XLSX, Parquet, GeoJSON, Shapefile and RDF exports listed by the portal API",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/caracterizacao-das-valencias-de-urgencia"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated (portal metadata: license null) (basis: transparencia.sns.gov.pt dataset metadata)",
+      "url": "https://transparencia.sns.gov.pt/explore/assets/atendimentos-por-tipo-de-urgencia-hospitalar-link/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://transparencia.sns.gov.pt/pages/termos-e-condicoes/"
+    }
+  ],
+  "spatial_resolution": "Hospital (coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "emergency department",
+    "A&E attendances",
+    "Manchester triage",
+    "SNS",
+    "Portugal"
+  ],
+  "temporal_coverage": "January 2013 to June 2026",
+  "temporal_resolution": "Monthly",
+  "temporal_resolution_class": "monthly",
+  "title_en": "Portugal SNS Transparency: monthly hospital emergency department attendances by type and Manchester triage colour, and emergency department characteristics",
+  "type": "data",
+  "update_frequency": "monthly"
+}

@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/usda-ars-ussl/rosetta-soil"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/usda-ars-ussl/rosetta-soil/blob/main/README.rst"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Schaap et al. (2001), https://doi.org/10.1016/S0022-1694(01)00466-8; Zhang and Schaap (2017), https://doi.org/10.1016/j.jhydrol.2017.01.004.",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rosetta soil hydraulic parameter package",
+    "repo": "github.com/usda-ars-ussl/rosetta-soil",
+    "url": "https://github.com/usda-ars-ussl/rosetta-soil"
+  },
+  "description": "rosetta-soil implements the Rosetta neural-network pedotransfer functions through a Python package published by the USDA Agricultural Research Service US Salinity Laboratory. Users provide sand, silt and clay fractions, optionally bulk density and water-retention measurements. Outputs estimate seven van Genuchten hydraulic parameters with uncertainty summaries and model codes. Coverage is globally configurable at soil-sample level; it is a parameter-estimation tool, not a gridded soil map or observation time series. Public source, pip installation and a linked web interface are free under CC0-1.0, verified from the licence file. A limitation is that predictions depend on the available input variables and selected Rosetta calibration. The documentation distinguishes arithmetic, logarithmic and geometric estimates, and uses the same auxiliary conductivity model across versions. Rosetta can parameterise infiltration and soil-water behaviour in flood or irrigation simulations, complementary to Delft3D FM (model-delft3d-fm). The repository cites the 2001, 2004 and 2017 model papers. No soil data were downloaded and predictive accuracy was not tested.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "hydraulic model fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/usda-ars-ussl/rosetta-soil",
+  "id": "model-rosetta-soil",
+  "inputs": [
+    "Soil texture",
+    "Optional density and retention measurements"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-09",
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Rosetta soil hydraulic parameter package",
+  "notes": "G7 G7-0562. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Hydraulic parameter estimates and uncertainty"
+  ],
+  "provider": "USDA Agricultural Research Service, US Salinity Laboratory",
+  "related_ids": [
+    "model-delft3d-fm"
+  ],
+  "repository": "https://github.com/usda-ars-ussl/rosetta-soil",
+  "sectors": [
+    "water.irrigation",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for usda-ars-ussl/rosetta-soil: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=hydraulic+model+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/usda-ars-ussl/rosetta-soil/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository terms identify CC0-1.0 despite unclassified GitHub licence metadata.",
+      "url": "https://api.github.com/repos/usda-ars-ussl/rosetta-soil/license"
+    }
+  ],
+  "tags": [],
+  "title_en": "Rosetta soil hydraulic parameter package",
+  "type": "model"
+}

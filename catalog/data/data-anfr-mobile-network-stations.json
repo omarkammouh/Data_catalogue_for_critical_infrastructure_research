@@ -1,0 +1,137 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "data.gouv.fr dataset",
+      "url": "https://www.data.gouv.fr/datasets/donnees-sur-les-reseaux-mobiles"
+    },
+    {
+      "kind": "download",
+      "label": "observatoireod-20260924-observatoire-2g-3g-4g-5g.zip (20.1 MB)",
+      "note": "Direct link from the data.gouv.fr API, 2026-10-01; first 3 of 9 files",
+      "url": "https://www.data.gouv.fr/api/1/datasets/r/6a73d180-c72c-4553-9a33-ffbc9bc7aad2"
+    },
+    {
+      "kind": "download",
+      "label": "observatoireod-20260922-observatoire-2g-3g-4g-5g.zip (20.1 MB)",
+      "note": "Direct link from the data.gouv.fr API, 2026-10-01; first 3 of 9 files",
+      "url": "https://www.data.gouv.fr/api/1/datasets/r/efc26410-7ccc-4f9b-862c-b9511e92fac3"
+    },
+    {
+      "kind": "download",
+      "label": "observatoireOd_20260917.zip (20 MB)",
+      "note": "Direct link from the data.gouv.fr API, 2026-10-01; first 3 of 9 files",
+      "url": "https://www.data.gouv.fr/api/1/datasets/r/2fe93fbf-7581-4729-a843-e70fdbe4470e"
+    },
+    {
+      "kind": "portal",
+      "label": "ANFR observatory dataset",
+      "url": "https://data.anfr.fr/visualisation/information/?id=observatoire_2g_3g_4g"
+    },
+    {
+      "kind": "docs",
+      "label": "ANFR monthly observatory",
+      "url": "https://www.anfr.fr/gestion-des-frequences-sites/lobservatoire/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "system_description",
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "anfr mobile network stations donnees sur les reseaux mobiles",
+    "url": "https://data.gouv.fr/datasets/donnees-sur-les-reseaux-mobiles"
+  },
+  "description": "This dataset of the French spectrum agency ANFR lists the radio stations of the public mobile networks operated in France by Orange, SFR, Bouygues Telecom and Free Mobile, with the operator, the systems and generations deployed (2G, 3G, 4G, 5G) and their frequency bands, the support structure and its height, the address, commune, département and coordinates, the date each system was brought into service, the technical status of the station (authorised, in service, technically operational) and the antenna azimuths. ANFR builds it from the authorisations operators must obtain for each site, and it is the data behind the agency's monthly observatory of mobile network deployment, which counts sites by generation and band. Coverage: metropolitan France and overseas territories, station level with coordinates, updated weekly; the new dataset was opened on data.gouv.fr in September 2026 as a successor to the observatory files on data.anfr.fr. Format and access: ZIP archives of CSV tables (about 175 MB across nine files) on data.gouv.fr and the data.anfr.fr portal; free under the Licence Ouverte 2.0 (Etalab). Caveats: authorised is not the same as in service, so the status field matters; locations are those declared by operators; the data.gouv.fr copy is new and its history is short. Simulation uses: an asset inventory of mobile base stations for network flow and capacity planning, exposure of sites to storms, floods and wildfire, and resilience of coverage when stations fail. Related records: ANFR radio installations give every transmitter over 5 watts, Arcep unavailable sites give daily outages by the same station ids, and Arcep Mon Réseau Mobile gives coverage.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ANFR organisation dataset listing on data.gouv.fr (organization 551d00efc751df60500cd89f)",
+      "route": "R31",
+      "source": "digital-anfr-open-data"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "ANFR données installations radioélectriques de plus de 5 watts data.gouv.fr",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "archive"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.data.gouv.fr/datasets/donnees-sur-les-reseaux-mobiles",
+  "id": "data-anfr-mobile-network-stations",
+  "languages": [
+    "fr"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "etalab-2.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.data.gouv.fr/datasets/donnees-sur-les-reseaux-mobiles"
+    ]
+  },
+  "maturity": "active",
+  "name": "ANFR mobile network stations (Données sur les réseaux mobiles)",
+  "notes": "Metadata read through the data.gouv.fr API on 2026-09-26 (created 2026-09-22, weekly, licence lov2); the observatory link comes from the R22 search.",
+  "provider": "Agence nationale des fréquences (ANFR)",
+  "related_ids": [
+    "data-anfr-radio-installations",
+    "data-arcep-unavailable-mobile-sites",
+    "data-arcep-mon-reseau-mobile"
+  ],
+  "schema_summary": "station id, operator, system and generation, band, support type and height, address and commune, coordinates, service date, technical status, azimuths",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "size": "about 175 MB over 9 archives",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "dataset metadata and resource list",
+      "url": "https://www.data.gouv.fr/api/1/datasets/donnees-sur-les-reseaux-mobiles/"
+    }
+  ],
+  "spatial_resolution": "station (coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "mobile base stations",
+    "2G 3G 4G 5G",
+    "deployment observatory",
+    "France"
+  ],
+  "temporal_coverage": "current stations with service dates; weekly updates",
+  "temporal_resolution": "weekly snapshots",
+  "temporal_resolution_class": "weekly",
+  "title_en": "ANFR mobile network stations (Data on mobile networks)",
+  "type": "data",
+  "update_frequency": "weekly"
+}

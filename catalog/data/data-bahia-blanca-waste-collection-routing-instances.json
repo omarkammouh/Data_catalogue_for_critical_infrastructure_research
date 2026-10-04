@@ -1,0 +1,148 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Dataset.zip (96.1 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/17986740/files/Dataset.zip?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "Dataset_Waste_Collection_Problem.zip (49.9 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/17989831/files/Dataset_Waste_Collection_Problem.zip?download=1"
+    },
+    {
+      "kind": "portal",
+      "label": "Periodic routing and facility location instances (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/records/17986740"
+    },
+    {
+      "kind": "portal",
+      "label": "Scatter search waste collection instances (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/records/17989831"
+    },
+    {
+      "kind": "paper",
+      "label": "Annals of Operations Research article (2025)",
+      "url": "https://doi.org/10.1007/s10479-025-06626-4"
+    },
+    {
+      "kind": "paper",
+      "label": "Urban Science article (2024)",
+      "url": "https://doi.org/10.3390/urbansci8040240"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "AR"
+  ],
+  "data_family": [
+    "synthetic_benchmark",
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "tabular",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.17986740",
+    "name": "bahia blanca argentina municipal solid waste collection routing and bin location instances",
+    "url": "doi:10.5281/zenodo.17986740"
+  },
+  "description": "These benchmark files describe where household waste is generated along streets in an Argentine city, how long trucks take between collection points, and which bin sizes can be installed, so that routing and bin placement methods can be tested on real geography. The producers are Begoña González Landín and Máximo Méndez of the Universidad de Las Palmas de Gran Canaria, Diego Rossit of the Universidad Nacional del Sur and Mariano Frutos of CONICET, who used them in a 2025 Annals of Operations Research paper on combined periodic routing and bin location and a 2024 Urban Science paper on a scatter search method. Coverage is 19 instances from 12 to 163 collection points; the coordinates fall in Bahía Blanca, which this entry infers from the coordinates and the Universidad Nacional del Sur affiliation. Each instance lists points with daily waste volume, a travel time matrix in minutes, and a shared catalogue of bin combinations with capacity, service time and weekly cost. Both deposits are available as a free download from Zenodo under the Creative Commons Attribution 4.0 licence. Caveats: coordinates appear in longitude, latitude order despite the readme, and volumes are modelled, not weighed. Simulation uses: testing vehicle routing, collection frequency and bin location models for municipal waste. Related records: the Saltillo two-echelon instances (data-saltillo-waste-collection-2ecvrp-if-instances) offer a Mexican benchmark.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "waste collection problem Argentine case study",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "periodic vehicle routing capacitated facility location solid waste collection",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "other_vector",
+    "plain_text",
+    "archive"
+  ],
+  "geographic_scope": "city",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.17986740",
+  "id": "data-bahia-blanca-waste-collection-routing-instances",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-12-19",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "Bahía Blanca (Argentina) municipal solid waste collection routing and bin location instances",
+  "provider": "Begoña González Landín and Máximo Méndez (Universidad de Las Palmas de Gran Canaria), Diego Rossit (Universidad Nacional del Sur) and Mariano Frutos (CONICET)",
+  "regions": [
+    "Bahía Blanca"
+  ],
+  "related_ids": [
+    "data-saltillo-waste-collection-2ecvrp-if-instances"
+  ],
+  "schema_summary": "Per instance: waste.txt (collection point id, coordinates and daily waste generation in cubic metres), times.txt (from-to travel time matrix in minutes); shared containers.txt (bin combinations with capacity, service time and weekly cost in US dollars). 9 instances of 12 to 163 points with a depot (periodic routing and location) and 10 instances of 15 to 100 points (scatter search)",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators González Landín (ULPGC), Rossit (Universidad Nacional del Sur), Méndez (ULPGC), Frutos (CONICET); CC BY 4.0; published 2025-12-19; Dataset.zip with instances for the Ann Oper Res 350, 979-1015 (2025) paper on integrated periodic vehicle routing and capacitated facility location in solid waste collection; read in memory: 9 folders (i.12.1 to i.12.5, i.40.1, i.80.1, i.120.1, i.163.1), waste.txt starts with a Depot row at -62.25, -38.72",
+      "url": "https://zenodo.org/api/records/17986740"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Same creators; CC BY 4.0; published 2025-12-19; instances for 'Scatter Search Algorithm for a Waste Collection Problem in an Argentine Case Study' (Urban Sci. 2024, 8, 240); read in memory: 10 folders (15, 30, 50 and 100 points); each has waste.txt, times.txt, containers.txt; the coordinates in waste.txt appear as longitude then latitude although the README says latitude, longitude",
+      "url": "https://zenodo.org/api/records/17989831"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (doi 10.5281/zenodo.17986740 updated)",
+      "url": "https://zenodo.org/records/17986740/files/Dataset.zip?download=1"
+    }
+  ],
+  "spatial_resolution": "Collection points (street level)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "waste collection",
+    "vehicle routing",
+    "facility location",
+    "bins",
+    "benchmark instances",
+    "Argentina"
+  ],
+  "temporal_coverage": "Instances published 2025",
+  "temporal_resolution": "Daily generation rates",
+  "temporal_resolution_class": "daily",
+  "title_en": "Bahía Blanca (Argentina) municipal solid waste collection routing and bin location instances",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

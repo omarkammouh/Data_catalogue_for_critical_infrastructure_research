@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/genthalili/searoute-py"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/searoute/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "searoute python sea route generator",
+    "repo": "github.com/genthalili/searoute-py",
+    "url": "https://github.com/genthalili/searoute-py"
+  },
+  "description": "searoute is a Python package that generates the shortest sea route between two points on Earth over a global maritime network graph (Marnet) with a companion ports graph; points on land are snapped to the nearest sea point. It returns the route as GeoJSON with its length, can restrict named passages such as canals and straits, lets users bring their own nodes and edges, and runs on networkx or, optionally, the faster igraph backend. It is developed by Gent Halili with contributors on GitHub. The network has global coverage at the level of shipping lanes, not detailed charts. It is distributed on PyPI (version 1.6.0 of 17 May 2026) under the Apache-2.0 licence, free. Caveats: the author states it is not for routing purposes and was built to produce realistic-looking routes for visualisation, not for navigation, so distances are approximations. It is useful in network flow and cascading failure studies of maritime trade, for example rerouting when a canal or strait is closed, and in resilience analysis combined with port activity data such as IMF PortWatch, catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.maritime_ports",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/genthalili/searoute-py",
+  "id": "model-searoute",
+  "inputs": [
+    "origin and destination coordinates",
+    "optional passage restrictions",
+    "optional custom network"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-17",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "searoute (Python sea route generator)",
+  "outputs": [
+    "route geometry as GeoJSON",
+    "route length"
+  ],
+  "provider": "Gent Halili and contributors",
+  "related_ids": [
+    "data-imf-portwatch"
+  ],
+  "repository": "https://github.com/genthalili/searoute-py",
+  "runs_on": [],
+  "sectors": [
+    "transport.maritime_ports",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "shortest sea route; not for routing purposes; Marnet and Ports graphs; passage restrictions; networkx or igraph",
+      "url": "https://raw.githubusercontent.com/genthalili/searoute-py/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 1.6.0 uploaded 2026-05-17; Apache-2.0",
+      "url": "https://pypi.org/pypi/searoute/json"
+    }
+  ],
+  "tags": [
+    "sea routes",
+    "shortest path",
+    "maritime network",
+    "Python"
+  ],
+  "title_en": "Searoute generates shortest sea routes",
+  "type": "model",
+  "validated_on": []
+}

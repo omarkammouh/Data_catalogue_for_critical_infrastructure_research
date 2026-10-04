@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Archive",
+      "url": "https://archive.routeviews.org/"
+    },
+    {
+      "kind": "docs",
+      "label": "Archive formats and intervals",
+      "url": "https://www.routeviews.org/routeviews/archive/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "sensor_realtime_streams",
+    "system_description",
+    "historical_events"
+  ],
+  "data_kind": [
+    "network_topology",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "university of oregon routeviews",
+    "url": "https://routeviews.org/routeviews"
+  },
+  "description": "RouteViews archives Border Gateway Protocol (BGP) routing data from thousands of networks worldwide through route collectors placed at internet exchange points and partner networks. It describes itself as the oldest and most complete BGP data archive, documenting the evolution of the internet's routing system from the 1990s to today; data from 1997 to March 2001 were collected by NLANR/MOAT. The project is supported by the Network Startup Resource Center at the University of Oregon and coordinates with RIPE RIS to give redundant views of global routing, so that operators, researchers, educators and policy makers can analyse, troubleshoot and secure the internet's core. The archive at archive.routeviews.org holds routing tables and updates per collector: FRR-format routing table snapshots every two hours and update files rotated every 15 minutes, and older Cisco 'show ip bgp' text dumps every two hours. Current tables are also available through command-line access, a looking glass and newer interfaces. Downloads are free and need no account; the website is under CC BY 4.0, and the pages read did not state a separate licence for the archive. Caveats: visibility is limited to networks that peer with the collectors, collector crashes or maintenance leave gaps or truncated files, and the formats need specialist parsers such as bgpdump or BGPStream. Simulation uses: interdomain topology and path reconstruction, post-event analysis of outages, hijacks and cable cuts, and calibration of network flow and cascading-failure models of the internet. Related records: RIPE RIS, the CAIDA AS Relationships Dataset and PeeringDB.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.internet_exchange:sensor_realtime_streams",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "other",
+    "plain_text"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.routeviews.org/routeviews/",
+  "id": "data-routeviews",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "University of Oregon RouteViews",
+  "notes": "Data licence not stated on the pages read on 2026-09-26.",
+  "provider": "RouteViews, Network Startup Resource Center, University of Oregon",
+  "related_ids": [
+    "data-ripe-ris",
+    "data-caida-as-relationships",
+    "data-peeringdb"
+  ],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, oldest BGP archive, NSRC University of Oregon, coordination with RIS, website CC BY 4.0",
+      "url": "https://www.routeviews.org/routeviews/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "archive.routeviews.org, NLANR/MOAT 1997-2001, Cisco and FRR formats and intervals",
+      "url": "https://www.routeviews.org/routeviews/archive/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): CC-BY-4.0 (basis: RouteViews: data licensed under CC BY 4.0)",
+      "url": "https://www.routeviews.org/routeviews/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "tags": [
+    "BGP",
+    "route collectors",
+    "internet routing",
+    "MRT",
+    "archive"
+  ],
+  "temporal_coverage": "1997 to present",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1997
+  },
+  "temporal_resolution": "RIBs every 2 hours, updates every 15 minutes",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "University of Oregon RouteViews",
+  "type": "data",
+  "update_frequency": "real_time"
+}

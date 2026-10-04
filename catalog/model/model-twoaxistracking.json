@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/pvlib/twoaxistracking"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/pvlib/twoaxistracking/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Jensen, Sifnaios and Anderson (2022). twoaxistracking: a Python package for simulating self-shading of two-axis tracking solar collectors. MethodsX 9, 101876. https://doi.org/10.1016/j.mex.2022.101876",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "twoaxistracking solar collector shading model",
+    "repo": "github.com/pvlib/twoaxistracking",
+    "url": "https://github.com/pvlib/twoaxistracking"
+  },
+  "description": "twoaxistracking simulates self-shading among solar collectors that track the sun on two axes. The pvlib-linked research team publishes a Python package, online documentation and a MethodsX paper describing the calculation. A user supplies collector geometry, field layout, solar position and site latitude; the package estimates mutual shading and the effect of spacing and aperture shape over a selected sun-position series. Geography is a user-selected collector field, and temporal resolution follows the provided sun angles or weather series. The source is free under BSD-3-Clause and installable from PyPI. A limitation is that shading estimates are one part of energy yield and do not replace electrical or thermal equipment models. The package supports solar farm layout and output simulations. The catalogue's model-energyplus can account for whole-building energy use but is a different scale of model; no connection was tested. No weather series or example was run.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "pvlib/twoaxistracking linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/pvlib/twoaxistracking",
+  "id": "model-twoaxistracking",
+  "inputs": [
+    "Collector geometry and field layout",
+    "Solar-position or irradiance time series"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-30",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "twoaxistracking solar collector shading model",
+  "notes": "G7 G7-1397. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Self-shading factors for two-axis collectors"
+  ],
+  "provider": "pvlib and solar-energy research contributors",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/pvlib/twoaxistracking",
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for pvlib/twoaxistracking: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/pvlib/twoaxistracking"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/pvlib/twoaxistracking/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://twoaxistracking.readthedocs.io/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Twoaxistracking solar collector shading model",
+  "type": "model"
+}

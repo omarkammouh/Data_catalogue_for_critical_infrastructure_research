@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Versorgungsbilanz Getreide (CSV and XLSX)",
+      "url": "https://open-data.ble.de/dataset/versorgungsbilanz-getreide"
+    },
+    {
+      "kind": "download",
+      "label": "Versorgungsbilanz Fleisch",
+      "url": "https://open-data.ble.de/dataset/versorgungsbilanz-fleisch"
+    },
+    {
+      "kind": "api",
+      "label": "CKAN API of the BLE open data portal",
+      "url": "https://open-data.ble.de/api/3/action/package_search?rows=100"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "supply_chains_logistics",
+    "demand_operation",
+    "cross_border_flows"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ble versorgungsbilanzen german food supply balances production trade stocks consumption self sufficiency for 17 commodity groups",
+    "url": "https://open-data.ble.de/dataset?tags=Ern%C3%A4hrung+und+Versorgung"
+  },
+  "description": "These supply balances show, for each major food commodity, how much Germany produces, imports, exports, stores and consumes each year, and therefore how self-sufficient the country is in grain, meat, milk, vegetables, sugar and other foods. They are compiled and published by the Bundesanstalt für Landwirtschaft und Ernährung (BLE), the federal office for agriculture and food, on its open data portal. Seventeen commodity groups are covered, from grain, potatoes and vegetables to eggs, fish, meat, oils and fats, beer and wine, with the grain balance running from 1991 and the latest year provisional. Each balance gives usable production, imports and exports with the EU share, opening and closing stocks, total use and food use, consumption per head and the self-sufficiency rate. All balances are available as a free download in CSV and Excel under the Datenlizenz Deutschland Zero licence, and the portal offers a CKAN API. Caveats: figures are national totals by marketing year, positions differ between commodities, and definitions change occasionally (for example glucose removed from grain food use from 2012/13). Simulation uses: setting domestic supply, import dependence and stock buffers in food system resilience models, and testing trade or harvest shocks on German food availability. Related records: FAOSTAT food balances (data-faostat) give the international equivalent, and the IGC grain market report (data-igc-grain-market-report-supply-demand) the world grain balance.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit follow-up: BLE (DE, agriculture_food_ministry)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://open-data.ble.de/dataset/?tags=Ern%C3%A4hrung+und+Versorgung",
+  "id": "data-ble-food-supply-balances-germany",
+  "languages": [
+    "en"
+  ],
+  "licence": "Datenlizenz Deutschland Zero 2.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BLE Versorgungsbilanzen: German food supply balances (production, trade, stocks, consumption, self-sufficiency) for 17 commodity groups",
+  "provider": "Bundesanstalt für Landwirtschaft und Ernährung (BLE), Germany",
+  "related_ids": [
+    "data-faostat",
+    "data-igc-grain-market-report-supply-demand"
+  ],
+  "schema_summary": "Per commodity and marketing or calendar year: usable production, imports and exports (total and EU 27), opening and closing stocks, total consumption, food use (human consumption), consumption per head in kg, and self-sufficiency rate in percent; commodities grain, potatoes, vegetables, pulses, milk and dairy, oilseeds, oilcake and meal, cocoa, fruit, sugar, honey, eggs, oils and fats, beer, wine, fish and meat (pork, beef and veal and others)",
+  "sectors": [
+    "services.food_supply",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "38 datasets on the BLE open data portal, including Versorgungsbilanz datasets for grain, potatoes, vegetables, pulses, milk and dairy, oilseeds, oilcake and meal, cocoa, fruit, sugar, honey, eggs, oils and fats, beer, wine, fish and meat, tagged 'Ernährung und Versorgung'",
+      "url": "https://open-data.ble.de/api/3/action/package_search?rows=100"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Versorgungsbilanz Getreide: supply balance for grain and grain products for production, exports and imports, stock change, consumption, self-sufficiency rate and consumption per head from 1991; last year provisional; CSV and XLSX; Datenlizenz Deutschland Zero 2.0; modified 1 September 2026",
+      "url": "https://open-data.ble.de/dataset/versorgungsbilanz-getreide"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Versorgungsbilanz Fleisch: gross own production, live animal imports and exports, net production, opening and closing stocks, imports and exports (total and EU 27), total consumption and per head, human consumption total and per head, self-sufficiency percent, by meat type; Datenlizenz Deutschland Zero 2.0",
+      "url": "https://open-data.ble.de/dataset/versorgungsbilanz-fleisch"
+    }
+  ],
+  "spatial_resolution": "Germany",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "food supply balance",
+    "self-sufficiency",
+    "food security",
+    "Germany",
+    "BLE"
+  ],
+  "temporal_coverage": "1991 to present (grain)",
+  "temporal_resolution": "Annual (marketing year)",
+  "temporal_resolution_class": "annual",
+  "title_en": "BLE supply balances: German food supply balances (production, trade, stocks, consumption, self-sufficiency) for 17 commodity groups",
+  "type": "data",
+  "update_frequency": "annual"
+}

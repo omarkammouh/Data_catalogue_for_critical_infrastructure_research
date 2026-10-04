@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository (no longer updated)",
+      "url": "https://github.com/nhrap-hazus/FAST"
+    },
+    {
+      "kind": "portal",
+      "label": "Current version on the FEMA Map Service Center Hazus page",
+      "url": "https://msc.fema.gov/portal/resources/hazus"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hazus flood assessment structure tool fast",
+    "repo": "github.com/nhrap-hazus/fast",
+    "url": "https://github.com/nhrap-hazus/FAST"
+  },
+  "description": "The Hazus Flood Assessment Structure Tool, known as FAST, calculates building-level flood impacts from a building inventory and a flood depth grid supplied by the user. It applies the Hazus Flood model method: each building is assigned a depth-damage function from its occupancy type, first floor elevation, foundation type and number of stories, flood depth is read from the raster at each building, and the function returns the loss in dollars. Flood-generated debris is estimated from building area. Users can pick Riverine, CoastalA or CoastalV flooding and can change the damage functions. Building data must be a CSV in the layout given in the help folder, and the depth data a TIFF raster; sample data for Honolulu, Hawaii are included. The tool is built on the Hazus Python package and runs from an Anaconda environment on the user's machine. It was developed by the Hazus team of FEMA, building on an early tool from the Oregon Department of Geology and Mineral Industries. Licence and cost: GPL-3.0, free. Caveats: the README states that the GitHub repository is no longer receiving updates and that the latest version is on the FEMA Map Service Center Hazus page, so the code here is a frozen copy. It suits flood exposure and loss estimates for individual buildings and portfolios of homes, offices and public buildings, and pairs with hazard grids and asset inventories. Coverage: the United States by design, though any place with inputs can be run.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "assistant recall, written down before searching: buildings models, platforms and case studies known before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://github.com/nhrap-hazus/FAST",
+  "id": "model-hazus-flood-assessment-structure-tool-fast",
+  "inputs": [
+    "Building inventory as a CSV (occupancy type, first floor elevation, foundation type, number of stories, area) and a flood depth raster in TIFF format"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-03-29",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "model_kind": [
+    "fragility"
+  ],
+  "name": "Hazus Flood Assessment Structure Tool (FAST)",
+  "outputs": [
+    "Building-level flood losses in dollars and estimated flood-generated debris"
+  ],
+  "provider": "FEMA Hazus team (nhrap-hazus)",
+  "related_ids": [
+    "data-hurricane-michael-hazus-damage-validation",
+    "model-altis-sentinel-1-property-flood-damage-triage"
+  ],
+  "repository": "https://github.com/nhrap-hazus/FAST",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "README: purpose, depth-damage method, inputs CSV and TIFF, Riverine/CoastalA/CoastalV, Honolulu sample data, HazPy, repository no longer receiving updates, latest version at FEMA MSC",
+      "url": "https://raw.githubusercontent.com/nhrap-hazus/FAST/master/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "GNU General Public License version 3",
+      "url": "https://raw.githubusercontent.com/nhrap-hazus/FAST/master/LICENSE"
+    }
+  ],
+  "tags": [
+    "Hazus",
+    "depth-damage functions",
+    "flood loss",
+    "FEMA",
+    "building inventory",
+    "r2-fresh-built-environment"
+  ],
+  "title_en": "Hazus Flood Assessment Structure Tool (FAST)",
+  "type": "model"
+}

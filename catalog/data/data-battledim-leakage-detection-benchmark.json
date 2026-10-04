@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Reproducible capsule with L-TOWN.inp, competition data and scoring algorithm (Code Ocean)",
+      "url": "https://codeocean.com/capsule/2366240/tree/v1"
+    },
+    {
+      "kind": "portal",
+      "label": "BattLeDIM site with dataset download, rules and results",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://battledim.ucy.ac.cy/"
+    },
+    {
+      "kind": "paper",
+      "label": "Vrachimis et al. (2022), Journal of Water Resources Planning and Management 148(12)",
+      "url": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001601"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "synthetic_benchmark",
+    "sensor_realtime_streams",
+    "historical_events",
+    "system_description"
+  ],
+  "data_kind": [
+    "time_series",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1061/(asce)wr.1943-5452.0001601",
+    "name": "battledim 2020 battle of the leakage detection and isolation methods dataset and l town network",
+    "url": "https://battledim.ucy.ac.cy"
+  },
+  "description": "BattLeDIM 2020, the Battle of the Leakage Detection and Isolation Methods, is a benchmark competition for detecting and locating leaks in water distribution networks from SCADA flow and pressure measurements. It is built on L-Town, a hypothetical small town whose EPANET model and SCADA data were generated from a real distribution network in a city in Cyprus and which suffers many pipe breaks and water losses. Participants received a historical SCADA dataset for 2018 and an evaluation dataset for 2019 and had to report the time and location of the leaks that occurred in 2019. The site offers the dataset as a download, with rules, results and workshop material; a Code Ocean capsule (v1.1, November 2024) holds the L-TOWN input file, the competition data, the true leakages and the scoring algorithm. It was organised by the KIOS centre at the University of Cyprus with TU Delft, Technion and Tsinghua, and is described by Vrachimis et al. (2022) with a special collection of papers. Caveats: the network and data are simulated, the competition is closed and no licence name was shown on the pages read. Simulation uses: testing leak detection for water digital twins, hydraulic network models and sensor placement. Related records: BATADAL (data-batadal-attack-detection-datasets), LeakDB (data-leakdb) and EPANET (model-epanet).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"water distribution\" AND \"machine learning\"",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "domain_model_file",
+    "csv",
+    "spreadsheet",
+    "source_code"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://doi.org/10.1061/(ASCE)WR.1943-5452.0001601",
+  "id": "data-battledim-leakage-detection-benchmark",
+  "languages": [
+    "en"
+  ],
+  "licence": "licence file in the Code Ocean capsule (not named on the pages read)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "BattLeDIM 2020 (Battle of the Leakage Detection and Isolation Methods) dataset and L-Town network",
+  "notes": "Sensor types and 5-minute resolution in schema_summary and temporal_resolution are from assistant recall of the BattLeDIM paper, not read on the pages.",
+  "provider": "KIOS Research and Innovation Center of Excellence, University of Cyprus, with the BattLeDIM organising committee",
+  "related_ids": [
+    "data-batadal-attack-detection-datasets",
+    "data-leakdb",
+    "model-epanet",
+    "case_study-water-sector-cybersecurity-incidents-review-fifteen-cases"
+  ],
+  "schema_summary": "L-TOWN EPANET model; SCADA time series of pressures, flows, tank levels and automated meter reading demands for 2018 and 2019; list of leakage events with pipe, start time and leak size; scoring algorithm",
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "network_flow",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "aim, L-Town based on a real network in Cyprus, 2018 and 2019 datasets, key dates, citation, downloads",
+      "url": "https://battledim.ucy.ac.cy/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "capsule files (L-TOWN.inp, competition_data, competition_leakages, scoring), version 1.1 of 30 November 2024, organisers",
+      "url": "https://codeocean.com/capsule/2366240/tree/v1"
+    }
+  ],
+  "spatial_resolution": "L-Town network with flow, pressure, tank level and consumption sensors",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "leak detection",
+    "leak localisation",
+    "SCADA",
+    "L-Town",
+    "water distribution network",
+    "benchmark competition",
+    "Cyprus"
+  ],
+  "temporal_coverage": "simulated years 2018 (historical) and 2019 (evaluation)",
+  "temporal_resolution": "5-minute SCADA readings",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "BattLeDIM 2020 (Battle of the Leakage Detection and Isolation Methods) dataset and L-Town network",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

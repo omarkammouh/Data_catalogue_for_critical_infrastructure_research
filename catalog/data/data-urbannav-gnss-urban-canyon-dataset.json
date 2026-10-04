@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/weisongwen/UrbanNavDataset"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "HK",
+    "JP"
+  ],
+  "data_family": [
+    "calibration_validation",
+    "sensor_realtime_streams",
+    "service_performance"
+  ],
+  "data_kind": [
+    "time_series",
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "urbannav multisensor positioning dataset for urban canyons hong kong and tokyo",
+    "repo": "github.com/weisongwen/urbannavdataset",
+    "url": "https://github.com/weisongwen/UrbanNavDataset"
+  },
+  "description": "UrbanNav is an open dataset for testing satellite positioning where tall buildings block and reflect signals, released by the Intelligent Positioning and Navigation Laboratory of the Hong Kong Polytechnic University and presented at the ION GNSS+ 2021 conference by Li-Ta Hsu and co-authors. It contains three drives: one in Tokyo in December 2018 and two in Hong Kong in April 2019 and March 2020, through dense urban canyons where multipath and signals received without a direct line of sight make GNSS positions unreliable. The vehicle carried several GNSS receivers of different grades (u-blox M8T and F9P and a Trimble NetR9), inertial measurement units, 32-beam LiDAR scanners and a camera, and a reference GNSS and inertial system (NovAtel SPAN-CPT or Applanix POS LV620) provides ground truth with about 5 cm error. Data are supplied as ROS bag files, RINEX GNSS observations and CSV tables for inertial data and ground truth, with calibration files. Coverage: parts of Tokyo and Hong Kong, 2018 to 2020. Format and access: GitHub page with download links, free for research; the authors ask to be contacted about commercial use and no formal licence is stated. Caveats: few sequences; ground truth itself degrades in the deepest canyons. Simulation uses: calibration and validation of GNSS error models in cities, testing receiver and sensor fusion algorithms, and quantifying how urban form reduces positioning service. Related records: the Google smartphone GNSS datasets cover phones on open roads, and the Vienna drive-test data cover mobile radio signals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "GNSS positioning under forest canopy multipath urban canyon measurement dataset open vegetation obstruction ground station site",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "domain_model_file",
+    "csv"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/weisongwen/UrbanNavDataset",
+  "id": "data-urbannav-gnss-urban-canyon-dataset",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021",
+  "licence": "Free for research; contact authors for commercial use",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "UrbanNav: multisensor positioning dataset for urban canyons (Hong Kong and Tokyo)",
+  "notes": "GitHub README read via fetch on 2026-09-26 (institution, sequences, sensors, formats, licence note, citation). GNSS sampling rate is typical, not checked.",
+  "provider": "Hong Kong Polytechnic University, Intelligent Positioning and Navigation Laboratory (Li-Ta Hsu, Weisong Wen, Feng Huang and co-authors)",
+  "related_ids": [],
+  "schema_summary": "GNSS raw observations from several receivers, IMU, LiDAR point clouds, camera images, reference trajectory",
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "optimisation"
+  ],
+  "size": "three sequences",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README",
+      "url": "https://github.com/weisongwen/UrbanNavDataset"
+    }
+  ],
+  "spatial_resolution": "vehicle track",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "urban canyon",
+    "GNSS multipath",
+    "sensor fusion",
+    "Hong Kong",
+    "Tokyo"
+  ],
+  "temporal_coverage": "2018-12 to 2020-03 (three drives)",
+  "temporal_resolution": "sensor rates (GNSS 1 Hz and above)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "UrbanNav: multisensor positioning dataset for urban canyons (Hong Kong and Tokyo)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

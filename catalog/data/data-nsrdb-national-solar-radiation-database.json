@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "NSRDB data viewer",
+      "url": "https://nsrdb.nlr.gov/"
+    },
+    {
+      "kind": "api",
+      "label": "NSRDB Data Downloads API",
+      "url": "https://developer.nlr.gov/docs/solar/nsrdb/"
+    },
+    {
+      "kind": "docs",
+      "label": "API data download guide",
+      "url": "https://developer.nlr.gov/docs/solar/nsrdb/guide/"
+    }
+  ],
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "resource_potential",
+    "weather_observations"
+  ],
+  "data_kind": [
+    "time_series",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nsrdb national solar radiation database satellite derived ghi dni dhi and meteorology time series and typical years",
+    "url": "https://nsrdb.nlr.gov"
+  },
+  "description": "The National Solar Radiation Database is a serially complete collection of satellite-derived solar radiation, namely global horizontal, direct normal and diffuse horizontal irradiance, with other meteorological data, published by the US national laboratory formerly known as NREL. The developer network states that the data are publicly available at no cost and offers download endpoints per satellite product: GOES aggregated data from 1998 at 4 km and 30 minutes, GOES CONUS from 2018 at 2 km and 5 minutes, GOES full disc from 2018 at 2 km and 10 minutes, GOES typical meteorological, global and direct years at 4 km hourly, Himawari for 2011 to 2020, Meteosat Indian Ocean and Prime Meridian products, and a polar typical year above 60 degrees north; 2025 GOES data for the western hemisphere were announced. Access is through an API that needs a free key from the developer signup form, with limits of 2,000 requests a day and separate CSV downloads for one site and one year per request; a data query endpoint lists the nearest datasets for a location. Coverage spans the Americas and the regions seen by the Himawari and Meteosat satellites. Caveats: licence terms are not stated on the pages read, and the main viewer needs JavaScript. Simulation uses are irradiance and typical-year inputs for PV yield, building energy and weather-driven power system models.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:weather_observations, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://nrel-pds-nsrdb.s3.amazonaws.com/?prefix=GOES/&delimiter=/",
+  "id": "data-nsrdb-national-solar-radiation-database",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated on the pages read (publicly available at no cost)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NSRDB - National Solar Radiation Database (satellite-derived GHI, DNI, DHI and meteorology, time series and typical years)",
+  "provider": "National Laboratory of the Rockies (NLR, formerly NREL), US Department of Energy",
+  "related_ids": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, free public availability, product list with periods and resolutions, 2025 GOES announcement, data query and polar TMY",
+      "url": "https://developer.nlr.gov/docs/solar/nsrdb/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "API key use, rate limits (2000 per day, CSV one site-year per request), request weights, contact",
+      "url": "https://developer.nlr.gov/docs/solar/nsrdb/guide/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://nsrdb.nlr.gov/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://developer.nlr.gov/docs/solar/nsrdb/"
+    }
+  ],
+  "tags": [
+    "solar radiation",
+    "satellite",
+    "typical meteorological year",
+    "API"
+  ],
+  "title_en": "NSRDB - National Solar Radiation Database (satellite-derived GHI, DNI, DHI and meteorology, time series and typical years)",
+  "type": "data"
+}

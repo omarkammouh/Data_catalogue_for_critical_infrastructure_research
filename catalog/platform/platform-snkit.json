@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/nismod/snkit"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/nismod/snkit/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "snkit spatial networks toolkit",
+    "repo": "github.com/nismod/snkit",
+    "url": "https://github.com/nismod/snkit"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "snkit is a Python toolkit for cleaning spatial network data before graph-based analysis. Its initial development took place at the University of Oxford's Environmental Change Institute within the MISTRAL programme and Infrastructure Transitions Research Consortium; the repository credits Tom Russell and contributors. Starting from point and line geometries, it adds edge endpoints, connects nodes to nearby edges, splits edges at connections and creates node identifiers and edge from/to identifiers. These operations turn disconnected geographic features into an explicit network topology. The tool is generic: geographic extent and spatial resolution come from the supplied geometries, and it has no observational time period of its own. Public Python source, a demonstration notebook and installation instructions are available through GitHub and Python package distribution, free under MIT. Dependencies include GeoPandas and Shapely. The README states that system-library installation was tested on Ubuntu, so other deployment environments need checking. snkit prepares inputs for network-flow and infrastructure-disruption studies; it does not itself supply calibrated asset capacities. It relates directly to OSMnx (model-osmnx), which the README identifies as another network preparation tool with OpenStreetMap retrieval and topology correction.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:nismod fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/nismod/snkit",
+  "id": "platform-snkit",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "GeoPandas point and line geometries",
+    "Node and edge identifier tables"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-15",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "snkit: spatial networks toolkit",
+  "notes": "G7 G7-0013. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. README contains historical tomalrussell repository links. The verified nismod address is retained. The catalogue's Data Starter Kits mention snkit as external tooling, not as data included in that resource. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "nismod repository maintainers",
+  "related_ids": [
+    "model-osmnx"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for nismod/snkit: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3Anismod+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/nismod/snkit/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for infrastructure systems",
+  "type": "platform"
+}

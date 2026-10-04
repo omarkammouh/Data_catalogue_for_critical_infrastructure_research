@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/NTIA/p2108"
+    },
+    {
+      "kind": "repo",
+      "label": "Python binding",
+      "url": "https://github.com/NTIA/p2108-python"
+    },
+    {
+      "kind": "docs",
+      "label": "PropLib wiki",
+      "url": "https://ntia.github.io/propagation-library-wiki/models/P2108/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "ITU-R Recommendation P.2108: Prediction of clutter loss.",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "recommendation itu r p 2108 ntia its implementation clutter loss",
+    "repo": "github.com/ntia/p2108",
+    "url": "https://ntia.github.io/propagation-library-wiki/models/P2108"
+  },
+  "description": "This is the implementation of Recommendation ITU-R P.2108 by the Institute for Telecommunication Sciences of the US National Telecommunications and Information Administration, part of the ITS Propagation Library (PropLib). P.2108 gives three methods to predict the extra loss caused by clutter such as buildings and vegetation near a terminal: the height gain terminal correction model, the terrestrial statistical model and the aeronautical statistical model; the software implements Section 3 of Annex 1. It is built as a shared library with a command-line driver using plain-text files, and bindings exist for .NET, MATLAB and Python. Coverage: any terminal environment, applied on top of a path-loss model. Format and access: C++ source on GitHub with documentation on the PropLib wiki and Doxygen pages, releases up to v1.1; as a US Government work it is free of charge, with no US copyright and an NTIA disclaimer instead of a licence. Caveats: clutter loss is statistical and location-generic, not site-specific; it must be combined with a separate propagation model. Simulation uses: coverage and link margins of mobile and fixed wireless networks in built-up areas, and exposure studies where clutter changes after disasters. Related records: ITS ITM, eHata and P.528 are the path models it is paired with.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "NTIA/ITS Propagation Library wiki: every model listed, followed from the LF/MF record",
+      "route": "R10",
+      "source": "digital-ntia-its-proplib"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://ntia.github.io/propagation-library-wiki/models/P2108/",
+  "id": "model-ntia-p2108",
+  "inputs": [
+    "frequency",
+    "terminal height",
+    "clutter type",
+    "path distance or elevation angle",
+    "location percentage"
+  ],
+  "language": [
+    "c_cpp",
+    "python",
+    "matlab",
+    "dotnet"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-01-23",
+  "licence": "US Government work (not subject to copyright in the US, 15 USC 105) with NTIA software disclaimer",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Recommendation ITU-R P.2108: NTIA/ITS implementation (clutter loss)",
+  "notes": "README read 2026-09-26; version tags from git (v1.1). Input list summarised from the three methods named in the README.",
+  "outputs": [
+    "clutter loss (dB)"
+  ],
+  "provider": "NTIA Institute for Telecommunication Sciences (ITS)",
+  "related_ids": [
+    "data-itu-r-dbsg3-propagation-databanks",
+    "model-ntia-ehata",
+    "model-py1812"
+  ],
+  "repository": "https://github.com/NTIA/p2108",
+  "runs_on": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README",
+      "url": "https://github.com/NTIA/p2108"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "PropLib package list",
+      "url": "https://ntia.github.io/propagation-library-wiki/"
+    }
+  ],
+  "tags": [
+    "radio propagation",
+    "clutter loss",
+    "ITU-R P.2108",
+    "PropLib"
+  ],
+  "title_en": "Recommendation ITU-R P.2108: NTIA/ITS implementation (clutter loss)",
+  "type": "model"
+}

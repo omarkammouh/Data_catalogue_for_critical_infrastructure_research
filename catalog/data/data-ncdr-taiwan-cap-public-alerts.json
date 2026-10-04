@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Atom feed of current CAP alerts",
+      "url": "https://alerts.ncdr.nat.gov.tw/RssAtomFeeds.ashx"
+    },
+    {
+      "kind": "api",
+      "label": "JSON feed of current CAP alerts",
+      "url": "https://alerts.ncdr.nat.gov.tw/JSONAtomFeeds.ashx"
+    },
+    {
+      "kind": "viewer",
+      "label": "民生示警公開資料平台 (public alert platform)",
+      "url": "https://alerts.ncdr.nat.gov.tw/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "TW"
+  ],
+  "data_family": [
+    "historical_events",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "stream",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ncdr public alert platform taiwan common alerting protocol feed of warnings from government agencies including water outages emergency department alerts marine pollution and weather",
+    "url": "https://alerts.ncdr.nat.gov.tw"
+  },
+  "description": "This feed is Taiwan's national stream of public alerts in the Common Alerting Protocol (CAP), the international standard for machine-readable warnings, gathering messages from many government agencies in one place. It is run by the National Science and Technology Center for Disaster Reduction (NCDR). Besides weather and reservoir release warnings, it carries service alerts: planned and unplanned water outages from the Taiwan Water Corporation, emergency department status notices from the Ministry of Health and Welfare, marine pollution notices, and venues that failed fire safety inspections from the National Fire Agency. Each entry gives the issuing agency, category, status, message type, effective and expiry times, a summary and a link to the full CAP file. The feed is free and available as Atom XML or JSON without registration and is marked public domain, and each CAP file can be downloaded from its link. Caveats: the feed holds current alerts only, so a history must be built by polling it; texts are in Chinese; and alert areas must be read from each CAP file. Simulation uses: recording real outage and emergency department alerts to study cascades from water and power outages into health services, and driving emergency response scenarios with official warnings. Related records: the Indian SACHET feed (data-ndma-sachet-cap-alerts-india), the US National Weather Service CAP alerts (data-nws-cap-alerts) and the Taiwan disaster case data (data-nfa-taiwan-disaster-case-data).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: NCDR public alert platform (TW, emergency_management_agency)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "xml",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "storm_wind",
+    "extreme_heat",
+    "technological_failure",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://alerts.ncdr.nat.gov.tw/",
+  "id": "data-ncdr-taiwan-cap-public-alerts",
+  "languages": [
+    "zh"
+  ],
+  "licence": "Public domain (stated in the feed's rights element)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NCDR public alert platform (Taiwan): Common Alerting Protocol feed of warnings from government agencies, including water outages, emergency department alerts, marine pollution and weather",
+  "provider": "National Science and Technology Center for Disaster Reduction (NCDR), Taiwan",
+  "related_ids": [
+    "data-ndma-sachet-cap-alerts-india",
+    "data-nws-cap-alerts",
+    "data-nfa-taiwan-disaster-case-data"
+  ],
+  "schema_summary": "Atom or JSON entries: id, title, updated, author (issuing agency), link to the CAP file, summary, category, status, msgType, effective and expires times; CAP files give the alert area and details",
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: title NCDR_CAP-即時防災資訊(Json), rights Public Domain, 225 entries; authors National Fire Agency (127), Taiwan Water Corporation (40), Ocean Conservation Administration (35), Ministry of Health and Welfare (19), Water Resources Agency (2), Forestry and Nature Conservation Agency (1), Central Weather Administration (1); categories fire safety inspection failures (126), water outage (40), marine pollution (35), emergency department notifications (19), reservoir release (2), evacuation (1), high temperature (1)",
+      "url": "https://alerts.ncdr.nat.gov.tw/JSONAtomFeeds.ashx"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Atom feed NCDR_CAP-即時防災資訊 with the same entries, each linking a .cap file under Capstorage by agency",
+      "url": "https://alerts.ncdr.nat.gov.tw/RssAtomFeeds.ashx"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "民生示警公開資料平台 (public alert open data platform); page rendered by script",
+      "url": "https://alerts.ncdr.nat.gov.tw/web/"
+    }
+  ],
+  "spatial_resolution": "Alert area as defined in each CAP message",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "CAP",
+    "early warning",
+    "water outages",
+    "emergency departments",
+    "Taiwan"
+  ],
+  "temporal_coverage": "Current alerts",
+  "temporal_resolution": "Event",
+  "temporal_resolution_class": "event",
+  "title_en": "NCDR public alert platform (Taiwan): Common Alerting Protocol feed of warnings from government agencies, including water outages, emergency department alerts, marine pollution and weather",
+  "type": "data",
+  "update_frequency": "real_time"
+}

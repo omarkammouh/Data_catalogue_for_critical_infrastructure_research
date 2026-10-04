@@ -1,0 +1,137 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Metadaten.zip (8.8 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/22931986/files/Metadaten.zip?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "Notaufnahme_Aufenthaltsdauer.csv (16.4 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/22931986/files/Notaufnahme_Aufenthaltsdauer.csv?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "[Dokumentation]_AKTIN_Daten_zur_Aufenthaltsdauer_in_Notaufnahmen.pdf (81.9 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/22931986/files/%5BDokumentation%5D_AKTIN_Daten_zur_Aufenthaltsdauer_in_Notaufnahmen.pdf?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "datapackage.json (832 B)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/22931986/files/datapackage.json?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub repository (weekly updates)",
+      "url": "https://github.com/robert-koch-institut/AKTIN_Daten_zur_Aufenthaltsdauer_in_Notaufnahmen"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo release",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.22931986"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "service_performance",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.22931986",
+    "name": "aktin emergency department length of stay data germany weekly rki and aktin register",
+    "repo": "github.com/robert-koch-institut/aktin_daten_zur_aufenthaltsdauer_in_notaufnahmen",
+    "url": "https://github.com/robert-koch-institut/AKTIN_Daten_zur_Aufenthaltsdauer_in_Notaufnahmen"
+  },
+  "description": "This weekly series shows how long patients stay in a sample of German hospital emergency departments, a practical measure of how crowded and stretched those departments are. The producers are the AKTIN emergency department register, run from Otto von Guericke University Magdeburg and RWTH Aachen University Hospital, and the Robert Koch Institute, Germany's public health agency, which receives daily data deliveries from participating departments. Coverage starts in the first week of 2020 and is updated every Thursday with the previous week. Each row gives the number of participating departments, the mean number of visits, the mean length of stay, a reference mean and the difference from it, and whether stay lengths rose or fell. The CSV is available as a free download from GitHub and Zenodo under the Creative Commons Attribution 4.0 licence, with German documentation and a machine-readable data package. Caveats: only departments in the register are included, figures are national aggregates without locations, and length of stay reflects staffing and onward bed availability as well as demand. Simulation uses: tracking emergency department strain during epidemics and heatwaves, and calibrating hospital flow models with observed crowding. Related records: the RKI emergency department surveillance data (data-rki-emergency-department-surveillance) come from the same register, and the Quebec emergency department data (data-quebec-emergency-department-data) give a comparable measure.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "emergency department length of stay",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://github.com/robert-koch-institut/AKTIN_Daten_zur_Aufenthaltsdauer_in_Notaufnahmen",
+  "id": "data-aktin-emergency-department-length-of-stay",
+  "languages": [
+    "de"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "AKTIN emergency department length of stay data, Germany (weekly, RKI and AKTIN register)",
+  "provider": "AKTIN emergency department register (Otto von Guericke University Magdeburg, RWTH Aachen University Hospital) and Robert Koch Institute",
+  "related_ids": [
+    "data-rki-emergency-department-surveillance",
+    "data-quebec-emergency-department-data"
+  ],
+  "schema_summary": "Notaufnahme_Aufenthaltsdauer.csv: date (ISO week), ed_count (participating emergency departments), visit_mean, los_mean (mean length of stay in minutes), los_reference, los_difference, change (increase or decrease)",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators AKTIN-Notaufnahmeregister (Otto-von-Guericke Universität Magdeburg) and Robert Koch-Institut; CC BY 4.0; published 2026-09-24; Notaufnahme_Aufenthaltsdauer.csv 16 KB, metadata, documentation PDF, datapackage.json; aggregated routine data from a selection of German emergency departments in the AKTIN register; length of stay used to estimate ED load; compared with a reference mean; visit numbers, mean length of stay and deviations",
+      "url": "https://zenodo.org/api/records/22931986"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Shallow clone, last commit 2026-09-24: README (German) states data are updated weekly on Thursdays with the previous reporting week; contributors from OVGU Magdeburg, RWTH Aachen and RKI; CSV columns date (e.g. 2020-W01), ed_count, visit_mean, los_mean, los_reference, los_difference, change",
+      "url": "https://github.com/robert-koch-institut/AKTIN_Daten_zur_Aufenthaltsdauer_in_Notaufnahmen"
+    }
+  ],
+  "spatial_resolution": "Aggregate of participating emergency departments",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "emergency department",
+    "length of stay",
+    "crowding",
+    "surveillance",
+    "AKTIN",
+    "Robert Koch Institute"
+  ],
+  "temporal_coverage": "From 2020 week 1",
+  "temporal_resolution": "Weekly",
+  "temporal_resolution_class": "weekly",
+  "title_en": "AKTIN emergency department length of stay data, Germany (weekly, RKI and AKTIN register)",
+  "type": "data",
+  "update_frequency": "weekly"
+}

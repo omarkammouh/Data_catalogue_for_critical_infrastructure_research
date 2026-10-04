@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Establecimientos de Salud, August 2026 (XLSX, 25.2 MB)",
+      "url": "https://gobi.salud.gob.mx/gobi/catalogos/catalogosmaestros/ESTABLECIMIENTO_SALUD_202608.xlsx?V=2026.09.23"
+    },
+    {
+      "kind": "docs",
+      "label": "CLUES catalogue page (NOM-024-SSA3-2012)",
+      "url": "http://www.dgis.salud.gob.mx/contenidos/intercambio/clues_gobmx.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "MX"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "catalogues_registries",
+    "condition_ageing"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "clues catalogue of health establishments mexico all health units with institution type level of care status construction date and coordinates monthly xlsx",
+    "url": "https://dgis.salud.gob.mx/contenidos/intercambio/clues_gobmx.html"
+  },
+  "description": "CLUES is Mexico's official catalogue of health establishments, giving every hospital, clinic, laboratory and mobile health unit a unique key used across all health information systems. It is maintained by the General Directorate of Health Information (DGIS) of the Ministry of Health under the national health information standard NOM-024-SSA3-2012. The monthly file lists about 64,000 establishments of all public and private institutions with their institution, state, municipality, locality and health jurisdiction, establishment type, typology and level of care, full address, operating status, construction date and start of operation, ownership of the building, mobile unit details, latitude and longitude, and the reason and date of closure for units that have closed. Further sheets give sub-units and opening hours. The file is free and available to download as Excel from the DGIS catalogue page, which states that its variables are open to the whole health sector without restrictions on use. Caveats: bed counts and staffing are not in the catalogue, coordinates should be checked before use, and the file is large (25 MB). Simulation uses: mapping health facilities against earthquake, hurricane and flood hazards, using construction dates as a proxy for building vulnerability, and modelling access to each level of care. Related records: the Brazilian CNES register (data-cnes-brazil-health-establishments-api) and the Spanish hospital catalogue (data-spain-catalogo-nacional-hospitales) are comparable registers.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: CLUES catalogue of health establishments (MX, health_regulator_data_institute)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "http://www.dgis.salud.gob.mx/contenidos/intercambio/clues_gobmx.html",
+  "id": "data-mexico-clues-health-establishments",
+  "languages": [
+    "en"
+  ],
+  "licence": "Open for use across the health sector without restrictions (as stated on the catalogue page)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CLUES catalogue of health establishments (Mexico): all health units with institution, type, level of care, status, construction date and coordinates, monthly XLSX",
+  "provider": "Secretaría de Salud, Dirección General de Información en Salud (DGIS), Mexico",
+  "related_ids": [
+    "data-cnes-brazil-health-establishments-api",
+    "data-spain-catalogo-nacional-hospitales"
+  ],
+  "schema_summary": "Sheet CLUES (68 columns): CLUES key, institution, state, municipality, locality and health jurisdiction codes and names, establishment type, typology and subtypology, unit and trade names, street type, street, numbers, settlement type and name, postcode, address references, operating status, RFC, phones, construction date, start of operation date, mobile unit make, model, programme, type and typology, administering institution, level of care, unit stratum, type of works, property ownership, observations, latitude, longitude, last movement and its date, validation comments, closure reason and effective closure date; further sheets SUBCLUES and HORARIOS (opening hours)",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Catalogue CLUES (Clave Única de Establecimientos de Salud), key NOM-024-SSA3-2012 CAT_CLUES, status defined, origin DGIS; to be used as standard for identifying medical units in Mexico; variables open to the whole health sector with no restrictions on use; purposes: identify establishments, their institution (characters 1-5 of the key), address and type; updated when state health services or institutions request a change; last update August 2026; download Establecimientos de Salud XLSX 25.2 MB; page modified 23 September 2026",
+      "url": "http://www.dgis.salud.gob.mx/contenidos/intercambio/clues_gobmx.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: sheets CLUES_202608, SUBCLUES_202608, HORARIOS_202608; first sheet 64,451 rows including header, 68 columns as in the schema summary",
+      "url": "http://gobi.salud.gob.mx/gobi/catalogos/catalogosmaestros/ESTABLECIMIENTO_SALUD_202608.xlsx?V=2026.09.23"
+    }
+  ],
+  "spatial_resolution": "Individual establishment (coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "health facilities",
+    "CLUES",
+    "level of care",
+    "mobile units",
+    "Mexico"
+  ],
+  "temporal_coverage": "Current catalogue with closures and dates of operation",
+  "temporal_resolution": "Monthly release",
+  "temporal_resolution_class": "monthly",
+  "title_en": "CLUES catalogue of health establishments (Mexico): all health units with institution, type, level of care, status, construction date and coordinates, monthly XLSX",
+  "type": "data",
+  "update_frequency": "monthly"
+}

@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://deltares.github.io/Delft-FIAT/stable/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/Deltares/Delft-FIAT"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/Delft-FIAT/"
+    },
+    {
+      "kind": "docs",
+      "label": "HydroMT-FIAT model builder",
+      "url": "https://deltares.github.io/hydromt_fiat/latest"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "delft fiat fast impact assessment tool",
+    "repo": "github.com/deltares/delft-fiat",
+    "url": "https://deltares.github.io/Delft-FIAT/stable"
+  },
+  "description": "Delft-FIAT is an open-source Python package from Deltares for quickly estimating damages from hazards, combining spatial raster assessments and object-based vector assessments of exposed assets. Originally the Flood Impact Assessment Tool, it overlays hazard maps such as flood depths with exposure data on assets and applies damage functions to compute damage per object or grid cell and aggregated totals; other hazards can be handled when their damage can be estimated the same way with suitable damage functions. Deltares develops it for flood risk studies and adaptation planning, and models can be built with the companion HydroMT-FIAT tool or by hand, with outputs chosen in a settings.toml file. It is not tied to one region and works wherever hazard, exposure and vulnerability data exist. The code is on GitHub under the MIT licence and installable from PyPI (delft_fiat) or conda-forge, with documentation and a Windows setup guide, free of charge. Caveats: results depend entirely on the exposure data and damage curves supplied, and the version is still below 1.0, so interfaces may change. It serves hazard exposure, damage estimation and climate adaptation for buildings, roads and utilities; related records are CLIMADA, Hazus, the GloFAS river discharge data and the Aqueduct flood hazard maps.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "open source flood damage assessment tool",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://deltares.github.io/Delft-FIAT/stable/",
+  "id": "model-delft-fiat",
+  "inputs": [
+    "hazard maps (e.g. flood depth rasters)",
+    "exposure data for objects or grid cells",
+    "damage functions"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-10-28",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://deltares.github.io/hydromt_fiat/latest"
+    ],
+    "dead_since": "2026-09-27",
+    "wayback": "http://web.archive.org/web/20240711011834/https://deltares.github.io/hydromt_fiat/latest/"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "fragility",
+    "economic"
+  ],
+  "name": "Delft-FIAT (Fast Impact Assessment Tool)",
+  "notes": "Expected annual damage and other risk outputs are recalled from the documentation; the FAQ read on 2026-09-26 names output types only generally.",
+  "outputs": [
+    "damage per object or cell",
+    "aggregated damages",
+    "risk metrics"
+  ],
+  "provider": "Deltares",
+  "related_ids": [],
+  "repository": "https://github.com/Deltares/Delft-FIAT",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "built_environment.buildings",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "HydroMT-FIAT builds models, settings.toml outputs, other hazards with damage functions, acronym",
+      "url": "https://deltares.github.io/Delft-FIAT/stable/info/faq.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "raster and vector assessment, Python package fiat, MIT licence, PyPI and conda-forge",
+      "url": "https://raw.githubusercontent.com/Deltares/Delft-FIAT/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 0.4.0, project URLs",
+      "url": "https://pypi.org/pypi/delft-fiat/json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed last_updated.",
+      "url": "https://deltares.github.io/Delft-FIAT/stable/"
+    }
+  ],
+  "tags": [
+    "flood damage",
+    "impact assessment",
+    "Deltares",
+    "HydroMT",
+    "open source"
+  ],
+  "title_en": "Delft-FIAT (Fast Impact Assessment Tool)",
+  "type": "model"
+}

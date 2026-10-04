@@ -1,0 +1,143 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Climate Scenario Database page",
+      "url": "https://nilebasin.org/climate/scenario-database"
+    },
+    {
+      "kind": "api",
+      "label": "Data service portal (Datasette query)",
+      "url": "https://climatescenario.nilebasin.org"
+    },
+    {
+      "kind": "docs",
+      "label": "Description of the data service portal (PDF)",
+      "url": "https://nilebasin.org/sites/default/files/2025-02/Climate_Scenario_Database_Description.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa"
+  ],
+  "cost": "free",
+  "countries": [
+    "BI",
+    "CD",
+    "EG",
+    "ET",
+    "KE",
+    "RW",
+    "SS",
+    "SD",
+    "TZ",
+    "UG"
+  ],
+  "data_family": [
+    "scenarios_projections",
+    "hazards"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nile basin cordex climate change database precipitation temperature idf curves and pmp",
+    "url": "https://nilebasin.org/climate/scenario-database"
+  },
+  "description": "The Nile Basin Initiative publishes a climate change database to support climate risk assessment for infrastructure planning in the Nile Basin countries, alongside its climate proofing guideline. The data service portal gives historical and projected CORDEX climate data for the whole Nile Basin at 0.44 degrees: precipitation, maximum and minimum temperature, intensity-duration-frequency curves and probable maximum precipitation, for 1971 to 2000 and three future 30-year periods to 2095 under RCP 4.5 and RCP 8.5. The description report of June 2022 explains that four downscaled CORDEX runs were chosen to span the smallest and largest change signals and used to derive the IDF matrices and PMP, and walks through SQL queries and a rainfall-runoff example. Coverage is the Nile Basin, whose ten member countries are listed on the site. Access is free online as CSV, ASCII grids and maps through a Datasette query portal. Caveats: no licence was stated, only four model runs are offered, and the resolution is coarse for small catchments. Simulation uses: design rainfall for dams, spillways and drainage under climate change, and forcing of basin water resources models. Related records: Swedish irrigation demand indicators under climate scenarios (data-sweden-irrigation-water-demand-indicators-climate-scenarios) and Luxembourg heavy rainfall hazard maps (data-luxembourg-flood-and-heavy-rainfall-hazard-maps).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Nile Basin Initiative (SS, river_restoration_body) https://nilebasin.org/",
+      "route": "R18",
+      "source": "cross-cutting-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "raster",
+    "image",
+    "database"
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "flood",
+    "drought",
+    "extreme_heat"
+  ],
+  "homepage": "https://nilebasin.org/climate/scenario-database",
+  "id": "data-nbi-nile-basin-cordex-climate-change-database",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (only a site copyright notice on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Nile Basin CORDEX Climate Change Database (precipitation, temperature, IDF curves and PMP)",
+  "provider": "Nile Basin Initiative (NBI); portal described in a report by SYDRO Consult for the Climate Services for Infrastructure project",
+  "related_ids": [
+    "data-sweden-irrigation-water-demand-indicators-climate-scenarios",
+    "data-luxembourg-flood-and-heavy-rainfall-hazard-maps"
+  ],
+  "schema_summary": "pr, tasmax, tasmin, IDF and PMP tables; 1,378 rows in 3 tables; scenarios RCP 4.5 and RCP 8.5; four downscaled CORDEX model runs chosen to span minimum and maximum change signals",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage",
+    "water.irrigation"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "purpose, products, links",
+      "url": "https://nilebasin.org/climate/scenario-database"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "periods, scenarios, formats, 1,378 rows in 3 tables, Datasette",
+      "url": "https://climatescenario.nilebasin.org"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "SYDRO report 30.06.2022: four runs, IDF, PMP, query examples",
+      "url": "https://nilebasin.org/sites/default/files/2025-02/Climate_Scenario_Database_Description.pdf"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): only a site copyright notice on this page (Copyright © 2025 All Right Reserved)",
+      "url": "https://nilebasin.org/climate/scenario-database"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://climatescenario.nilebasin.org/"
+    }
+  ],
+  "spatial_resolution": "0.44 degrees",
+  "spatial_resolution_class": "over_10km",
+  "tags": [
+    "CORDEX",
+    "climate projections",
+    "IDF curves",
+    "probable maximum precipitation",
+    "climate proofing",
+    "Nile Basin"
+  ],
+  "temporal_resolution": "periods 1971-2000, 2006-2035, 2036-2065, 2066-2095",
+  "temporal_resolution_class": "annual",
+  "title_en": "Nile Basin CORDEX Climate Change Database (precipitation, temperature, IDF curves and PMP)",
+  "type": "data"
+}

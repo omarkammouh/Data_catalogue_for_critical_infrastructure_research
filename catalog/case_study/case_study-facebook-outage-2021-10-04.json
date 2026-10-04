@@ -1,0 +1,87 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Meta engineering post",
+      "url": "https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/"
+    }
+  ],
+  "access_restrictions": "none",
+  "case_study_kind": [
+    "post_event_analysis"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "facebook global outage of 4 october 2021 backbone and bgp withdrawal",
+    "url": "https://engineering.fb.com/2021/10/05/networking-traffic/outage-details"
+  },
+  "description": "This post-event analysis, published by Meta's engineering team on 5 October 2021, explains the outage that took Facebook, Instagram, WhatsApp and Messenger offline worldwide for about six hours on 4 October 2021. During routine maintenance, a command meant to assess available capacity on the global backbone, the network of fibre links joining all Facebook data centres, unintentionally took down every backbone connection; an audit tool that should have stopped the command had a bug. Facebook's edge DNS servers, designed to withdraw their BGP route announcements when they cannot reach the data centres, then withdrew them, so Facebook's name servers vanished from the Internet and all its domains stopped resolving. Recovery was slowed because out-of-band access and internal tools also depended on the failed network, engineers had to go on site into secure facilities, and services were restored gradually to avoid power and traffic surges, using experience from 'storm' drills. Coverage: a global service outage affecting billions of users, reported at the level of the event timeline, not measured data. Format and access: a free public web page by Meta, all rights reserved. Caveats: an operator's own account with no independent investigation and no quantitative impact data. Simulation uses: a reference scenario for cascading failure between backbone, DNS and BGP, resilience of recovery procedures, and emergency response planning for digital dependencies. Related records: RIPE RIS, RouteViews, Cloudflare Radar and IODA recorded the BGP withdrawal and traffic loss, and C-BGP or BGPStream can replay it.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for case_study:digital.internet_exchange:post_event_analysis",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/",
+  "id": "case_study-facebook-outage-2021-10-04",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-10-05",
+  "licence": "Operator web page, all rights reserved",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Facebook global outage of 4 October 2021 (backbone and BGP withdrawal)",
+  "notes": "Post read 2026-09-26. The six-hour duration and the audit-tool bug are stated in the post; resources_used lists public BGP datasets that captured the event (they were not used by Meta's post itself).",
+  "organisations": [
+    "Meta Platforms (Facebook)"
+  ],
+  "outcomes": "Meta traced the outage to a faulty backbone command that an audit bug failed to stop, followed by automatic BGP withdrawal of its DNS servers, and said it would harden auditing, out-of-band access and recovery drills.",
+  "provider": "Meta Engineering blog",
+  "related_ids": [],
+  "resources_used": [
+    "data-ripe-ris",
+    "data-routeviews",
+    "data-cloudflare-radar"
+  ],
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "full post",
+      "url": "https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/"
+    }
+  ],
+  "study_period": "2021",
+  "tags": [
+    "BGP",
+    "DNS",
+    "backbone outage",
+    "Facebook",
+    "post-incident report"
+  ],
+  "title_en": "Facebook global outage of 4 October 2021 (backbone and BGP withdrawal)",
+  "type": "case_study"
+}

@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "SDIRVE data schema repository",
+      "url": "https://github.com/etalab/schema-sdirve"
+    },
+    {
+      "kind": "docs",
+      "label": "Schema documentation",
+      "url": "https://schema.data.gouv.fr/etalab/schema-sdirve/latest/documentation.html"
+    },
+    {
+      "kind": "download",
+      "label": "Example plan data - Isere (TE38)",
+      "url": "https://www.data.gouv.fr/datasets/schema-directeur-des-infrastructure-de-recharge-pour-vehicule-electrique-en-isere"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "planned_future_infrastructure",
+    "standards_ontologies",
+    "distributed_flexible_resources"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sdirve french master plans for public ev charging infrastructure national data schema and departmental plan files",
+    "repo": "github.com/etalab/schema-sdirve",
+    "url": "https://github.com/etalab/schema-sdirve"
+  },
+  "description": "Under article 68 of the French mobility orientation law, local authorities may adopt a master plan (schema directeur, SDIRVE) for public charging infrastructure for electric and plug-in hybrid vehicles, governed by decrees 2021-565 and 2021-566 and an order of 10 May 2021 on publishing its diagnosis and objectives. Etalab maintains the national data schema, version 0.1.0 of March 2021 under Licence Ouverte 2.0, with a CSV generator: per municipality and IRIS district it records the diagnosis and adoption dates, existing charge points by power band, average sessions, duration and availability, estimated needs, forecast numbers of electric and plug-in hybrid cars, and target charge points by power band and by residential, professional and transit use, with total stations. Departmental energy syndicates publish their plans as CSV files on data.gouv.fr, for example Pyrenees-Atlantiques (targets for 2025, 2030 and 2035), Loire and Isere (2023 state and needs by IRIS outside Grenoble Alpes Metropole). Files are available for free download. Coverage is France, department by department. Caveats: plans are optional, so coverage is partial, publisher licences vary, and data.gouv.fr refused automated reading on the day, so plan details come from the European data portal. Simulation uses are planned charge point numbers and power levels by district for distribution grid load growth studies. Related records: data-low-carbon-london-ev-load-profiles gives measured charging profiles.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "critical infrastructure master plan",
+      "route": "R02",
+      "source": "data-europa-eu"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/etalab/schema-sdirve",
+  "id": "data-france-sdirve-ev-charging-master-plans",
+  "languages": [
+    "fr"
+  ],
+  "last_updated": "2026-07-08",
+  "licence": "Licence Ouverte 2.0 (schema); licences vary by publisher",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "SDIRVE - French master plans for public EV charging infrastructure (national data schema and departmental plan files)",
+  "provider": "Etalab (data schema) and French local energy syndicates and authorities (plan data), via data.gouv.fr",
+  "related_ids": [
+    "data-low-carbon-london-ev-load-profiles"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Legal basis (LOM art. 68, decrees and order of 10 May 2021), CSV format, generator",
+      "url": "https://raw.githubusercontent.com/etalab/schema-sdirve/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Schema title, version 0.1.0, dates, licence, field list",
+      "url": "https://raw.githubusercontent.com/etalab/schema-sdirve/master/schema.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Isere plan (TE38) description and CSV; Pyrenees-Atlantiques and Loire entries read the same way",
+      "url": "https://data.europa.eu/api/hub/search/datasets/66b3392fa50b45217ed6b51e"
+    }
+  ],
+  "tags": [
+    "EV charging",
+    "master plan",
+    "data schema",
+    "France"
+  ],
+  "title_en": "SDIRVE - French master plans for public EV charging infrastructure (national data schema and departmental plan files)",
+  "type": "data"
+}

@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Port register WFS (INSPIRE)",
+      "url": "https://inspire.geoportaal.ee/geoserver/TN_sadam/wfs?service=WFS&version=2.0.0&request=GetCapabilities"
+    },
+    {
+      "kind": "api",
+      "label": "Waterways and navigation marks WFS",
+      "url": "https://inspire.geoportaal.ee/geoserver/TN_veetransport/wfs?service=WFS&version=2.0.0&request=GetCapabilities"
+    },
+    {
+      "kind": "portal",
+      "label": "Open data portal entry",
+      "url": "https://andmed.eesti.ee/datasets/eesti-sadamaregister"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "EE"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "estonia port register waterway network and navigation marks sadamaregister and inspire water transport network",
+    "url": "https://sadamaregister.ee"
+  },
+  "description": "This record covers Estonia's national maritime transport network data: the port register (Eesti sadamaregister) and the INSPIRE water transport network layers published through the national geoportal. Contents: all ports registered in Estonia, at sea and on inland waters, with location, operator contacts, coordinates, port land and water areas, facilities and equipment, navigation season, fairway or channel dimensions, the largest vessel the port can take, icebreaker and tug service, anchorage, port functions, hydraulic structures and state supervision; on 29 September 2026 the WFS listed 232 port nodes, with port areas, 91 waterway links, waterway nodes, fairway areas, regulated sea areas and 314 lighthouses, beacons and daymarks plus buoys from the aids to navigation database. Producer: Transpordiamet as authorised processor of the port register and navigation marks database, with services run by Maa- ja Ruumiamet. Coverage: Estonian ports and waters, register data since 1998. Format and access: WFS and WMS services and the register's website; the portal lists the INSPIRE services under CC0. Free. Caveats: the register's own open data export and schema links were reported broken on the portal, so the WFS is the working route; attribute names are Estonian. Simulation uses: port and fairway network for maritime logistics, ice-season and port disruption scenarios, and exposure of ports to storm surge. Related records: the Estonian Topographic Database (data-estonia-etak-topographic-database) adds shoreline structures.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source ee-portal-andmed-eesti-ee: provider pages read (round 2 register piece)",
+      "route": "R02",
+      "source": "ee-portal-andmed-eesti-ee"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "gml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.sadamaregister.ee/",
+  "id": "data-estonia-port-register-waterways-navigation-marks",
+  "languages": [
+    "et"
+  ],
+  "licence": "CC0-1.0 (INSPIRE services)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Estonia port register, waterway network and navigation marks (sadamaregister and INSPIRE water transport network)",
+  "provider": "Transpordiamet (Estonian Transport Administration), for the Ministry of Economic Affairs and Communications; services by Maa- ja Ruumiamet",
+  "related_ids": [
+    "data-estonia-etak-topographic-database"
+  ],
+  "sectors": [
+    "transport.maritime_ports",
+    "transport.inland_waterways"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "portal entry: register contents, processor, citations, broken export link",
+      "url": "https://andmed.eesti.ee/api/datasets?search=sadamaregister"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "TN_sadam and TN_veetransport layers; hits: 232 port nodes, 91 waterway links, 314 beacons",
+      "url": "https://inspire.geoportaal.ee/geoserver/wfs?service=WFS&version=2.0.0&request=GetCapabilities"
+    }
+  ],
+  "tags": [
+    "Estonia",
+    "ports",
+    "port register",
+    "fairways",
+    "aids to navigation"
+  ],
+  "title_en": "Estonia port register, waterway network and navigation marks (sadamaregister and INSPIRE water transport network)",
+  "type": "data"
+}

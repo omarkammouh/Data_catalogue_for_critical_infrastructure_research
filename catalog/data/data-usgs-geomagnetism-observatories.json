@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Geomagnetism Program",
+      "url": "https://www.usgs.gov/programs/geomagnetism"
+    },
+    {
+      "kind": "api",
+      "label": "Data web service (OpenAPI)",
+      "url": "https://geomag.usgs.gov/ws/docs/"
+    },
+    {
+      "kind": "api",
+      "label": "Observatory list",
+      "url": "https://geomag.usgs.gov/ws/observatories/"
+    },
+    {
+      "kind": "repo",
+      "label": "geomag-algorithms code",
+      "url": "https://code.usgs.gov/ghsc/geomag/geomag-algorithms"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "space_weather",
+    "sensor_realtime_streams",
+    "hazards"
+  ],
+  "data_kind": [
+    "time_series",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usgs geomagnetism program observatory data and web service",
+    "repo": "code.usgs.gov/ghsc/geomag/geomag-algorithms",
+    "url": "https://usgs.gov/programs/geomagnetism"
+  },
+  "description": "The USGS Geomagnetism Program monitors the Earth's magnetic field with a network of magnetic observatories in the United States and its territories, including Boulder, Fredericksburg, Barrow, Honolulu, San Juan and Guam among fourteen listed sites, and disseminates continuous records of field variations for science and hazard mitigation, notably geoelectric hazards to power grids during geomagnetic storms. The Geomagnetism Data Web Service returns time series of field elements at 0.1-second, 1-second, 1-minute, hourly and daily sampling, as variation, adjusted, quasi-definitive or definitive data, in IAGA-2002 or JSON format, and also lists observatories and computes dB/dt and filtered products; it also serves some partner observatories (BGS, GSC, JMA, SANSA). Coverage is real time and historical. Data are public, accessible online at no cost through the web service, real-time plots and the open geomag-algorithms code, as a US federal work. Caveats: real-time variation data are provisional until definitive processing, and single observatories give point measurements, so regional hazard estimates need interpolation and ground conductivity models. It supports space weather hazard exposure and geomagnetically induced current studies for electricity grids and pipelines; related records are INTERMAGNET, SuperMAG and the USGS power-grid anomalies data release.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "USGS geomagnetic observatory data",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "domain_model_file",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://www.usgs.gov/programs/geomagnetism",
+  "id": "data-usgs-geomagnetism-observatories",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (US federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "USGS Geomagnetism Program observatory data and web service",
+  "notes": "Public-domain status follows USGS policy for federal works and is recalled; the pages read do not state a licence.",
+  "provider": "U.S. Geological Survey, Geomagnetism Program",
+  "related_ids": [],
+  "schema_summary": "observatory id, element (e.g. H, E, Z, F), time, value; sampling period and data type parameters",
+  "sectors": [
+    "cross_cutting.space",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Program mission, geoelectric hazards to power grids, USMTArray",
+      "url": "https://www.usgs.gov/programs/geomagnetism"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Data page: web service, programmatic access, plots",
+      "url": "https://www.usgs.gov/programs/geomagnetism/data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "OpenAPI: endpoints, sampling periods, data types, output formats",
+      "url": "https://geomag.usgs.gov/ws/openapi.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Observatory list with USGS and partner agencies",
+      "url": "https://geomag.usgs.gov/ws/observatories/"
+    }
+  ],
+  "tags": [
+    "geomagnetism",
+    "magnetometer",
+    "observatories",
+    "GIC",
+    "real time"
+  ],
+  "temporal_resolution": "0.1 s, 1 s, 1 min, 1 h, 1 day",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "USGS Geomagnetism Program observatory data and web service",
+  "type": "data",
+  "update_frequency": "real_time"
+}

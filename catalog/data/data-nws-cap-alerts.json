@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "NWS API active alerts (GeoJSON, CAP content in JSON, ATOM)",
+      "url": "https://api.weather.gov/alerts/active"
+    },
+    {
+      "kind": "docs",
+      "label": "NWS CAP documentation",
+      "url": "https://vlab.noaa.gov/web/nws-common-alerting-protocol"
+    },
+    {
+      "kind": "docs",
+      "label": "NWS API web service documentation",
+      "url": "https://www.weather.gov/documentation/services-web-api"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "emergency_management",
+    "standards_ontologies",
+    "hazards"
+  ],
+  "data_kind": [
+    "event_record",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "national weather service alerts in common alerting protocol cap via the nws api",
+    "url": "https://vlab.noaa.gov/web/nws-common-alerting-protocol"
+  },
+  "description": "The National Weather Service issues every weather and hydrologic watch, warning, advisory and special statement as a machine-readable Common Alerting Protocol (CAP) message, and publishes them through its public API. Each alert carries the event type, severity, certainty and urgency, issue, onset and expiry times, the affected forecast zones and counties with geocodes, a headline, description and protective instructions, and references to earlier alerts it updates. The producer is the U.S. National Weather Service within NOAA; its CAP messages follow the OASIS CAP 1.2 standard and the FEMA Integrated Public Alert and Warning System profile, so they feed wireless emergency alerts, sirens, broadcast and apps. Coverage is the United States and its territories; 460 alerts were active when read today. The API is free without a key and returns GeoJSON and JSON-LD, with an ATOM digest; push feeds through NOAAPORT and the NOAA Weather Wire Service deliver messages within about 45 seconds for users who need speed. Caveats: the public API serves active and recent alerts, not a long archive, polling adds delay for time-critical warnings such as tornadoes, and zone-based areas are coarser than storm polygons. Simulation uses: real-time triggers for emergency response and evacuation models, timing of warnings in post-event studies, and testing how alerts reach hospitals and the public. Related records: OpenFEMA (data-openfema) holds archived IPAWS alert messages for historical analysis.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "NWS Common Alerting Protocol alerts API",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "api",
+    "database",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "storm_wind",
+    "flood",
+    "extreme_heat",
+    "cold_snow_ice",
+    "wildfire",
+    "tsunami"
+  ],
+  "homepage": "https://vlab.noaa.gov/web/nws-common-alerting-protocol",
+  "id": "data-nws-cap-alerts",
+  "languages": [
+    "en"
+  ],
+  "licence": "U.S. federal government work (public domain inferred)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "National Weather Service alerts in Common Alerting Protocol (CAP) via the NWS API",
+  "provider": "U.S. National Weather Service (NOAA)",
+  "related_ids": [
+    "data-openfema"
+  ],
+  "schema_summary": "Per alert (CAP v1.2, IPAWS profile): identifier, sender, sent, effective, onset, expires and ends times, message type, status, event (watch, warning, advisory, statement), category, severity, certainty, urgency, response, headline, description, instruction, affected zones and area description with geocodes, references to earlier alerts",
+  "sectors": [
+    "services.emergency_services",
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "CAP is an XML standard for emergency information exchange; NWS CAP v1.2 follows OASIS and the FEMA IPAWS profile; uses; NWS recommends the API (ATOM digest and JSON); file listings on tgftp for 7 days; push via NOAAPORT and NWWS within 45 seconds",
+      "url": "https://vlab.noaa.gov/web/nws-common-alerting-protocol"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Answered 200 with 460 active alerts; property list (event, severity, certainty, urgency, areaDesc, geocode, affectedZones, instruction, references and others)",
+      "url": "https://api.weather.gov/alerts/active"
+    }
+  ],
+  "spatial_resolution": "NWS forecast zones and counties (polygons for some warnings)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "weather warnings",
+    "Common Alerting Protocol",
+    "IPAWS",
+    "public alerts",
+    "real-time",
+    "NWS API"
+  ],
+  "temporal_coverage": "Active alerts (plus recent alerts through the API)",
+  "temporal_resolution": "Real time (seconds to minutes)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "National Weather Service alerts in Common Alerting Protocol (CAP) via the NWS API",
+  "type": "data",
+  "update_frequency": "real_time"
+}

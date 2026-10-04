@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "ETCI 2021 competition page",
+      "url": "https://nasa-impact.github.io/etci2021/"
+    },
+    {
+      "kind": "portal",
+      "label": "CodaLab competition 30440 (registration for data)",
+      "url": "https://competitions.codalab.org/competitions/30440"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "north_america",
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "US",
+    "BD"
+  ],
+  "data_family": [
+    "imagery_remote_sensing",
+    "historical_events"
+  ],
+  "data_kind": [
+    "imagery",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "etci 2021 flood detection dataset labelled sentinel 1 sar tiles nasa impact and ieee grss",
+    "url": "https://competitions.codalab.org/competitions/30440"
+  },
+  "description": "The ETCI 2021 Competition on Flood Detection released a labelled machine-learning dataset of Sentinel-1 synthetic aperture radar images for mapping open-water flood extent. It was organised by NASA's Interagency Implementation and Advanced Concepts Team (IMPACT) with the IEEE Geoscience and Remote Sensing Society Earth Science Informatics committee. Coverage: 66,810 tiles of 256 by 256 pixels (33,405 per VV and VH polarisation) cut from 54 labelled GeoTIFF files of flood events in Nebraska (1,741 square km), North Alabama (13,789), Bangladesh (7,150), Red River North (6,746) and an area named Florence (7,197); training folders are named by region and event date and hold VV, VH, flood label and water body label images, with separate validation (10,400) and test (12,348) tiles per polarisation. Format and access: PNG tiles produced from Sentinel-1 C-band imagery with the ASF hyp3 processing pipeline; the page says all data can be requested by registering for the contest on CodaLab, which ran from April to July 2021. Licence: not stated on the pages read; contest terms and conditions apply. Caveats: the competition has ended, so continued access through CodaLab was not confirmed, only five areas are covered (the page does not say which Florence is meant), and labels are binary flood and permanent water masks. Simulation uses: training and testing flood-extent detection that feeds hazard exposure mapping and emergency response for infrastructure. Related records: the Global Flood Database (data-global-flood-database) maps historic flood events from optical satellites.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source water-etci-2021-flood-detection: provider pages read (round 2 register piece)",
+      "route": "R36",
+      "source": "water-etci-2021-flood-detection"
+    }
+  ],
+  "formats": [
+    "image",
+    "raster"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://competitions.codalab.org/competitions/30440",
+  "id": "data-etci-2021-sentinel1-flood-detection-dataset",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated; contest terms and conditions",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "ETCI 2021 flood detection dataset: labelled Sentinel-1 SAR tiles (NASA IMPACT and IEEE GRSS)",
+  "provider": "NASA Interagency Implementation and Advanced Concepts Team (IMPACT) with the IEEE GRSS Earth Science Informatics Technical Committee",
+  "related_ids": [
+    "data-global-flood-database"
+  ],
+  "sectors": [
+    "water.stormwater_drainage",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Organisers NASA IMPACT and IEEE GRSS ESI TC; 66,810 tiles (33,405 x 2 VV/VH) 256x256; train/val/test 33,405/10,400/12,348 per polarisation; 54 labelled GeoTIFFs from Sentinel-1 via hyp3; regions Nebraska, North Alabama, Bangladesh, Red River North, Florence with areas; 29 root folders region_datetime with vv, vh, flood_label, water_body_label; data requested by registering on CodaLab; contest terms",
+      "url": "https://nasa-impact.github.io/etci2021/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Phase 1 from 2021-04-15, competition ended 2021-07-15",
+      "url": "https://competitions.codalab.org/competitions/30440"
+    }
+  ],
+  "spatial_resolution": "256 x 256 pixel tiles from Sentinel-1 imagery",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "flood mapping",
+    "SAR",
+    "Sentinel-1",
+    "machine learning benchmark"
+  ],
+  "title_en": "ETCI 2021 flood detection dataset: labelled Sentinel-1 SAR tiles (NASA IMPACT and IEEE GRSS)",
+  "type": "data"
+}

@@ -1,0 +1,141 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "ArcGIS MapServer nrhp_locations (points and polygons)",
+      "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer"
+    },
+    {
+      "kind": "download",
+      "label": "NPS DataStore GIS package (reference 2210280)",
+      "url": "https://irma.nps.gov/DataStore/Reference/Profile/2210280"
+    },
+    {
+      "kind": "download",
+      "label": "National Register listing spreadsheets",
+      "url": "https://www.nps.gov/subjects/nationalregister/data-downloads.htm"
+    },
+    {
+      "kind": "docs",
+      "label": "CRGIS spatial data standards",
+      "url": "https://www.nps.gov/crgis/crgis_standards_overview.htm"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "reference_context",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "national register of historic places spatial data and listing spreadsheets nps",
+    "url": "https://nps.gov/orgs/1094/nrhp_spatialdata.htm"
+  },
+  "description": "The National Register of Historic Places is the official US list of buildings, districts, sites, structures and objects judged worthy of preservation, kept by the National Park Service. The NPS Cultural Resources GIS programme publishes its locations as spatial data: an ArcGIS map service with a point layer (74,636 features when queried) and a polygon layer of boundaries (22,905 features), and a downloadable package on the NPS DataStore. The programme's data-downloads page adds spreadsheets of all listings with reference numbers, names, addresses, counties, states and listing dates, updated to 22 May 2026. Coverage: nearly 100,000 listed properties across the states and territories; locations of restricted listings, such as sensitive archaeological sites, are left out. Access: MapServer queries in JSON, the DataStore package and XLSX spreadsheets, free and without registration. Licence (read on the provider page on 2026-09-28): Public domain (NPS: website materials generally in the public domain unless indicated). Caveats: many properties exist only as points, polygons were digitised at different times to the CRGIS standards, and district records do not list each contributing building. Simulation uses are heritage exposure layers for flood, fire, wind and sea level scenarios and prioritising historic buildings in adaptation plans. Related records: the FEMA USA Structures footprints and the England listed buildings record for a comparable national register.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: National Park Service, National Register of Historic Places homepage",
+      "route": "R10",
+      "source": "organisations.csv:US:built_environment:heritage_agency"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "National Register of Historic Places spatial data download NPS DataStore GIS points polygons",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "esri_geodatabase",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.nps.gov/orgs/1094/nrhp_spatialdata.htm",
+  "id": "data-nrhp-national-register-historic-places-spatial-data",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-22",
+  "licence": "Public domain (NPS: website materials generally in the public domain unless indicated)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer"
+    ]
+  },
+  "maturity": "active",
+  "name": "National Register of Historic Places spatial data and listing spreadsheets (NPS)",
+  "provider": "US National Park Service, Cultural Resources GIS (CRGIS) and National Register of Historic Places programme",
+  "related_ids": [
+    "data-fema-usa-structures",
+    "data-england-listed-buildings-planning-data"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "NRHP spatial data page: CRGIS points and polygons, DataStore download, restricted locations excluded",
+      "url": "https://www.nps.gov/orgs/1094/nrhp_spatialdata.htm"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Layers; count queries returned 74,636 points and 22,905 polygons",
+      "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Listing spreadsheets up to 2026-05-22",
+      "url": "https://www.nps.gov/subjects/nationalregister/data-downloads.htm"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Programme overview: nearly 100,000 listings",
+      "url": "https://www.nps.gov/subjects/nationalregister/index.htm"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): Public domain (NPS: website materials generally in the public domain unless indicated) (basis: nps.gov disclaimer)",
+      "url": "https://www.nps.gov/orgs/1094/nrhp_spatialdata.htm"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.nps.gov/aboutus/disclaimer.htm"
+    }
+  ],
+  "tags": [
+    "historic buildings",
+    "heritage",
+    "National Register",
+    "United States",
+    "cultural resources GIS"
+  ],
+  "temporal_coverage": "Listings since 1966, spreadsheets to 22 May 2026",
+  "title_en": "National Register of Historic Places spatial data and listing spreadsheets (NPS)",
+  "type": "data"
+}

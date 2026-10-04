@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/opentnsim/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/TUDelft-CITG/OpenTNSim"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://opentnsim.readthedocs.io/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opentnsim open source transport network simulation",
+    "repo": "github.com/tudelft-citg/opentnsim",
+    "url": "https://opentnsim.readthedocs.io"
+  },
+  "description": "OpenTNSim is a Python package for investigating traffic behaviour on networks, with modules centred on vessel traffic on waterways, to compare the consequences of different traffic scenarios, network configurations, fleet compositions and traffic rules. Its modules cover the core vessel and network objects, a graph module, locks, energy use and emissions of vessels, and a vessel traffic service, and it builds on discrete-event simulation (SimPy), NetworkX graphs and GeoPandas geometry. It is developed at TU Delft (Ports and Waterways) with Mark van Koningsveld and Fedor Baart as development leads. It is location independent: users supply a waterway graph for any network, and example notebooks and an online book demonstrate case networks. The package is on PyPI (version 2.2.2 of 30 January 2026) and GitHub under the MIT licence, free, with Sphinx documentation and a Zenodo DOI badge for releases. Caveats: it requires Python 3.12 or later, several releases are alpha pre-releases, and application to a real waterway needs calibrated network and fleet data. OpenTNSim supports capacity planning of locks and fairways, network flow and resilience studies of waterway disruptions, and energy and emission analysis of inland shipping; it relates to AIS vessel traffic data such as the Marine Cadastre series catalogued here for calibration.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.inland_waterways",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://opentnsim.readthedocs.io/",
+  "id": "model-opentnsim",
+  "inputs": [
+    "waterway network graph",
+    "vessel fleet and properties",
+    "lock and infrastructure definitions",
+    "traffic rules"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-30",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "network",
+    "discrete_event"
+  ],
+  "name": "OpenTNSim (Open source Transport Network Simulation)",
+  "outputs": [
+    "vessel movements and logs",
+    "waiting and passage times at locks",
+    "energy use and emissions"
+  ],
+  "provider": "TU Delft, Faculty of Civil Engineering and Geosciences, Ports and Waterways (development leads Mark van Koningsveld and Fedor Baart)",
+  "related_ids": [
+    "data-noaa-marine-cadastre-ais"
+  ],
+  "repository": "https://github.com/TUDelft-CITG/OpenTNSim",
+  "runs_on": [],
+  "sectors": [
+    "transport.inland_waterways",
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow",
+    "resilience",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "open source transport network simulation; docs; book; Python 3.12+; MIT badge",
+      "url": "https://raw.githubusercontent.com/TUDelft-CITG/OpenTNSim/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "modules model, core, energy, lock, graph, vessel_traffic_service",
+      "url": "https://opentnsim.readthedocs.io/en/latest/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "development lead Mark van Koningsveld, Fedor Baart",
+      "url": "https://opentnsim.readthedocs.io/en/latest/authors.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "2.2.2 uploaded 2026-01-30; summary: network performance for configurations, fleet compositions and traffic rules",
+      "url": "https://pypi.org/pypi/opentnsim/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: LICENSE.txt MIT (TUDelft / CITG-Ports and Waterways); tags to v2.3.3a1; last commit 2026-01-30; pyproject deps simpy, networkx, geopandas",
+      "url": "https://github.com/TUDelft-CITG/OpenTNSim"
+    }
+  ],
+  "tags": [
+    "inland shipping",
+    "locks",
+    "discrete-event simulation",
+    "vessel traffic"
+  ],
+  "title_en": "OpenTNSim (Open source Transport Network Simulation)",
+  "type": "model",
+  "validated_on": []
+}

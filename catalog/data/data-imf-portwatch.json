@@ -1,0 +1,148 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Daily port activity API",
+      "url": "https://portwatch.imf.org/datasets/83b1bbc7b3354c5fb1f40673bb8f852e/api"
+    },
+    {
+      "kind": "viewer",
+      "label": "PortWatch platform",
+      "url": "https://portwatch.imf.org/"
+    },
+    {
+      "kind": "portal",
+      "label": "Daily port activity data",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://portwatch.imf.org/datasets/83b1bbc7b3354c5fb1f40673bb8f852e/about"
+    },
+    {
+      "kind": "portal",
+      "label": "Daily chokepoint transits",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://portwatch.imf.org/datasets/3da2b9ca97684916b75c4013f95d18ab/about"
+    },
+    {
+      "kind": "docs",
+      "label": "Data and methodology",
+      "url": "https://portwatch.imf.org/pages/data-and-methodology"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "supply_chains_logistics",
+    "historical_events",
+    "scenarios_projections"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "imf portwatch port and chokepoint activity data",
+    "url": "https://portwatch.imf.org"
+  },
+  "description": "PortWatch is a platform and open data set for monitoring and simulating maritime trade disruptions. Its data sets include daily port calls and estimated import and export volumes by ship category (container, dry bulk, general cargo, ro-ro, tanker) for 2,065 ports, daily transit calls and trade volumes through maritime chokepoints, a ports database classifying ports as globally, regionally or domestically systemic, disruption events from GDACS, and spillover-simulator and climate-scenario layers informed by modelled cyclone, flood and earthquake risk at about 1,400 ports. Estimates are derived from satellite AIS vessel positions following Arslanalp, Koepke and Verschuur (IMF Working Paper 2021/225). It is a collaboration between the IMF and the University of Oxford Environmental Change Institute, developed with Esri, the UN Global Platform, the World Bank and the WTO and launched in beta on 15 November 2023. The daily port series runs from 1 January 2019 to within about a week of the present, with a change log of methodology revisions. Data are free under IMF terms of use, downloadable as CSV or GeoJSON and queryable through ArcGIS feature-service APIs. Caveats: trade volumes are model estimates from AIS, revised when vessels, ports or boundaries are added. PortWatch serves supply-chain cascading failure, resilience, emergency response and climate adaptation studies of ports, alongside the World Port Index catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.maritime_ports",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry",
+      "route": "R30",
+      "source": "transport-imf-portwatch"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geojson",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://portwatch.imf.org/datasets/83b1bbc7b3354c5fb1f40673bb8f852e/about",
+  "id": "data-imf-portwatch",
+  "languages": [
+    "en"
+  ],
+  "licence": "IMF terms of use (https://www.imf.org/external/terms.htm)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "IMF PortWatch port and chokepoint activity data",
+  "provider": "International Monetary Fund with the Environmental Change Institute, University of Oxford",
+  "related_ids": [
+    "data-world-port-index",
+    "data-world-bank-global-shipping-traffic-density"
+  ],
+  "sectors": [
+    "transport.maritime_ports",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "emergency_response",
+    "climate_adaptation",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "IMF and Oxford ECI; partners Esri, UN Global Platform, World Bank, WTO; 1,400 ports climate risk; launched 15 November 2023 (beta)",
+      "url": "https://portwatch.imf.org/pages/about"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "datasets list and change log of revisions through August 2026",
+      "url": "https://portwatch.imf.org/pages/data-and-methodology"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Daily_Ports_Data: variables by ship category; source IMF WP 2021/225; licence IMF terms",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/83b1bbc7b3354c5fb1f40673bb8f852e?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "service query: dates 2019-01-01 to 2026-09-18; ports database count 2,065",
+      "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Ports_Data/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json"
+    }
+  ],
+  "spatial_resolution": "individual ports and chokepoints",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "AIS",
+    "port calls",
+    "maritime trade",
+    "chokepoints",
+    "disruption"
+  ],
+  "temporal_coverage": "from 2019 to present",
+  "temporal_resolution": "daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "IMF PortWatch port and chokepoint activity data",
+  "type": "data",
+  "update_frequency": "weekly"
+}

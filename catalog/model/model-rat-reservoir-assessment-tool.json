@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "conda-forge package",
+      "url": "https://anaconda.org/conda-forge/rat"
+    },
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/UW-SASWE/RAT"
+    },
+    {
+      "kind": "portal",
+      "label": "Companion global database, test data and parameter files (Zenodo)",
+      "url": "https://zenodo.org/records/8267708"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://rat-satellitedams.readthedocs.io/en/latest/"
+    },
+    {
+      "kind": "paper",
+      "label": "RAT 3.0 paper (GMD 2024)",
+      "url": "https://doi.org/10.5194/gmd-17-3137-2024"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rat 3 0 reservoir assessment tool satellite based reservoir monitoring",
+    "repo": "github.com/uw-saswe/rat",
+    "url": "https://github.com/UW-SASWE/RAT"
+  },
+  "description": "The Reservoir Assessment Tool (RAT) uses satellite remote sensing to monitor the surface area and water level of artificial reservoirs, combines them with topography to estimate storage change, models inflow with the VIC hydrological model and routing and evaporation with the Penman method, and closes the water balance to estimate outflow, which reveals how dams are being operated where operators share no data. The SASWE group at the University of Washington developed it (RAT 1.0 in 2021, 2.0 in 2022, 3.0 in 2024) and publishes it as an open-source Python package on GitHub and conda-forge under GPL-3.0, with a companion global database of elevation, reservoirs, dams, basins, river networks and VIC parameters available as a free download from Zenodo under CC BY 4.0. Coverage is global and it can run for multiple basins; earlier versions serve South and South East Asia, Africa and South America. Caveats: the outflow is a residual estimate from satellite and model terms, so it depends on the quality of the imagery and forcing. Simulation uses: reservoir operations in transboundary river network models, flood and drought early warning, and climate adaptation. Related records: GRanD (data-grand-global-reservoir-and-dam-database) and GeoDAR (data-geodar-georeferenced-global-dams-reservoirs).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"dam\" AND \"soil\"",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "drought"
+  ],
+  "homepage": "https://github.com/UW-SASWE/RAT",
+  "id": "model-rat-reservoir-assessment-tool",
+  "inputs": [
+    "Satellite imagery (Sentinel-1, Sentinel-2, Landsat 8 and 9) for reservoir surface area and altimetry for water level",
+    "Topography from satellite DEMs or in-situ maps; global reservoir, dam, basin and river network data",
+    "Meteorological forcing and VIC soil and domain parameters (global defaults in the companion data)"
+  ],
+  "language": [
+    "python",
+    "fortran"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-11-24",
+  "licence": "GPL-3.0 (code); CC BY 4.0 (companion data on Zenodo)",
+  "licence_type": [
+    "attribution",
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid"
+  ],
+  "name": "RAT 3.0, Reservoir Assessment Tool (satellite-based reservoir monitoring)",
+  "outputs": [
+    "Reservoir surface area, storage change, modelled inflow and evaporation, and estimated outflow time series",
+    "Hydrological model (VIC) and routing outputs in NetCDF for multiple basins"
+  ],
+  "provider": "SASWE research group, University of Washington (S. Minocha, F. Hossain, P. Das and co-authors)",
+  "related_ids": [
+    "data-grand-global-reservoir-and-dam-database",
+    "data-geodar-georeferenced-global-dams-reservoirs"
+  ],
+  "repository": "https://github.com/UW-SASWE/RAT",
+  "runs_on": [],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.irrigation",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "climate_adaptation",
+    "emergency_response",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "method, versions 1.0-3.0, citations, GPL v3, conda install",
+      "url": "https://raw.githubusercontent.com/UW-SASWE/RAT/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "957 commits, 34 tags, GPL-3.0, latest commit merge of rat_swot_sm",
+      "url": "https://github.com/UW-SASWE/RAT"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "companion global data, VIC params, parameter files, Fortran routing, CC BY 4.0, 2023-08-20",
+      "url": "https://zenodo.org/api/records/8267708"
+    }
+  ],
+  "tags": [
+    "reservoir monitoring",
+    "remote sensing",
+    "dam operations",
+    "VIC",
+    "transboundary rivers",
+    "storage change"
+  ],
+  "title_en": "RAT 3.0, Reservoir Assessment Tool (satellite-based reservoir monitoring)",
+  "type": "model"
+}

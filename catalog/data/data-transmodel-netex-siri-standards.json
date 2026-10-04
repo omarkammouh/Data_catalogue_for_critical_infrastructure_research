@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "NeTEx XML schema",
+      "url": "https://github.com/NeTEx-CEN/NeTEx"
+    },
+    {
+      "kind": "repo",
+      "label": "SIRI XML schema",
+      "url": "https://github.com/SIRI-CEN/SIRI"
+    },
+    {
+      "kind": "portal",
+      "label": "Previous address",
+      "note": "address that redirects to the current one (direct-link pass 2026-09-30)",
+      "url": "https://netex-cen.eu/"
+    },
+    {
+      "kind": "docs",
+      "label": "NeTEx site",
+      "url": "https://transmodel-cen.eu/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "data_family": [
+    "standards_ontologies"
+  ],
+  "data_kind": [
+    "document"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "transmodel en 12896 with its netex and siri exchange formats for public transport data",
+    "url": "https://netex-cen.eu"
+  },
+  "description": "Transmodel is the European reference data model for public transport (EN 12896 series). It provides an abstract model of public transport concepts in parts covering common concepts, the public transport network, timing and vehicle scheduling, operations monitoring and control, fare management, passenger information, driver management, statistics and alternative modes such as vehicle sharing. It is implemented through exchange formats: NeTEx (CEN/TS 16614) for planned network, timetable and fares data, with XML schemas for the core, network, timetables, fares and new modes; SIRI (EN 15531) for real-time data through services such as production timetable, estimated timetable and stop monitoring; OpRa for observed data; and the OJP journey planning API. The standards are published by CEN, and under the EU delegated regulation on multimodal travel information (2024/490) many European national access points publish data in these formats. Coverage is European. The NeTEx and SIRI XML schemas are free on GitHub, NeTEx under GPL version 3, and the documentation sites are free to read. Caveats: the models are large and national profiles differ, so tools often support only subsets. They support building public transport network and timetable models, real-time delay analysis and interoperable digital twins. They complement GTFS and DATEX II catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.public_transit",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "\"public transport\" AND \"inventory\"",
+      "route": "R07",
+      "source": "crossref"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "\"public transport\" AND \"case study\" AND \"operations\"",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "formats": [
+    "xml",
+    "domain_model_file"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://transmodel-cen.eu/",
+  "id": "data-transmodel-netex-siri-standards",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-18",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Transmodel (EN 12896) with its NeTEx and SIRI exchange formats for public transport data",
+  "provider": "CEN (European Committee for Standardization), Transmodel, NeTEx and SIRI working groups",
+  "related_ids": [
+    "data-gtfs-specification",
+    "data-datex-ii-standard",
+    "data-netherlands-ndov-public-transport-data"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Transmodel abstract model, parts 1-10, modes covered; implemented by NeTEx (planned), SIRI (real time), OpRa (observed), OJP; national access points under EU DR 2024/490",
+      "url": "https://netex-cen.eu/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "NeTEx XML schema, (C) 2009-2024 NeTEx, CEN, Crown Copyright; Core, Parts 1, 2, 3, 5",
+      "url": "https://raw.githubusercontent.com/NeTEx-CEN/NeTEx/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU GPL v3",
+      "url": "https://raw.githubusercontent.com/NeTEx-CEN/NeTEx/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "SIRI EN 15531 and CEN/TS 15531, based on Transmodel V6.2, relates to NeTEx CEN/TS 16614; services Discovery, PT, ET, SM; (C) 2006-2026",
+      "url": "https://raw.githubusercontent.com/SIRI-CEN/SIRI/master/README.md"
+    }
+  ],
+  "spatial_resolution": "stops, lines and journeys",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "Transmodel",
+    "NeTEx",
+    "SIRI",
+    "CEN standard",
+    "public transport data"
+  ],
+  "temporal_coverage": "standards maintained since 2006 (SIRI) and 2009 (NeTEx)",
+  "title_en": "Transmodel (EN 12896) with its NeTEx and SIRI exchange formats for public transport data",
+  "type": "data",
+  "update_frequency": "irregular"
+}

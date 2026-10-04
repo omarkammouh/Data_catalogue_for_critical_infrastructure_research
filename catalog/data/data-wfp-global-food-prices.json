@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "HDX: Global - Food Prices (yearly CSV files)",
+      "url": "https://data.humdata.org/dataset/global-wfp-food-prices"
+    },
+    {
+      "kind": "api",
+      "label": "VAM DataBridges API",
+      "url": "https://databridges.vam.wfp.org/"
+    },
+    {
+      "kind": "repo",
+      "label": "DataBridges API Python client",
+      "url": "https://github.com/WFP-VAM/DataBridgesAPIClient"
+    },
+    {
+      "kind": "viewer",
+      "label": "VAM DataViz economic explorer",
+      "url": "https://dataviz.vam.wfp.org/economic_explorer/prices"
+    }
+  ],
+  "access_note": "HDX files are open; the DataBridges API needs an API key issued by WFP.",
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america"
+  ],
+  "cost": "free",
+  "data_family": [
+    "supply_chains_logistics",
+    "economic_financial",
+    "service_performance"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "wfp global food prices vam price database hdx and databridges api",
+    "repo": "github.com/wfp-vam/databridgesapiclient",
+    "url": "https://data.humdata.org/dataset/global-wfp-food-prices"
+  },
+  "description": "The WFP food price database records the prices of staple foods such as maize, rice, beans, fish and sugar in markets across 98 countries, about 3,000 markets in all, mostly in low- and middle-income and crisis-affected countries. Each observation gives the market with its administrative units and coordinates, the commodity, unit, price type (retail or wholesale), currency and date. The producer is the World Food Programme's Vulnerability Analysis and Mapping unit, which collects prices through country offices and partners. Coverage starts in 1992 for a few countries and 2003 or later for most, to September 2026, mostly monthly with some weekly series. Yearly CSV files are free on the Humanitarian Data Exchange under a Creative Commons Attribution licence for intergovernmental organisations; the same data are served by the VAM DataBridges API (with a WFP-issued key and a Python client) and the DataViz economic explorer. Caveats: market panels change over time, series have gaps and currency redenominations, and the older HDX data set that stopped in 2021 must not be confused with the current one. Simulation uses: observing market disruption and recovery after droughts, floods, earthquakes and conflict, calibrating food supply chain and trade shock models, and triggering anticipatory humanitarian response. Related records: the World Bank Real Time Food Prices (data-worldbank-real-time-food-prices) fills gaps with estimates, and FEWS NET (data-fews-net-data-explorer) links prices to food security outcomes.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "WFP global food prices database HDX",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought",
+    "flood",
+    "storm_wind",
+    "earthquake",
+    "pandemic"
+  ],
+  "homepage": "https://data.humdata.org/dataset/global-wfp-food-prices",
+  "id": "data-wfp-global-food-prices",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-27",
+  "licence": "CC BY-IGO",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "WFP Global Food Prices (VAM price database, HDX and DataBridges API)",
+  "provider": "World Food Programme (WFP), Vulnerability Analysis and Mapping (VAM)",
+  "related_ids": [
+    "data-worldbank-real-time-food-prices",
+    "data-fews-net-data-explorer"
+  ],
+  "schema_summary": "Per market, commodity, unit and date: retail or wholesale price in local currency and USD, price type, market location (admin units, latitude, longitude), commodity category; companion country, commodity and market lists",
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "emergency_response",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "98 countries, about 3,000 markets, from 1992, weekly updates with mostly monthly data, CC BY-IGO, yearly CSV resources, last modified 2026-09-21",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=global-wfp-food-prices"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Older dataset (76 countries, 1,500 markets) no longer updated, replaced by the global dataset",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=wfp-food-prices"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "DataBridges API v2 Python client generated from OpenAPI",
+      "url": "https://raw.githubusercontent.com/WFP-VAM/DataBridgesAPIClient/HEAD/README.md"
+    }
+  ],
+  "spatial_resolution": "Market (about 3,000 markets with coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "food prices",
+    "markets",
+    "WFP",
+    "VAM",
+    "humanitarian",
+    "food security",
+    "staples"
+  ],
+  "temporal_coverage": "From 1992 for a few countries, mostly 2003 onwards, to September 2026",
+  "temporal_resolution": "Mostly monthly, some weekly",
+  "temporal_resolution_class": "weekly",
+  "title_en": "WFP Global Food Prices (VAM price database, HDX and DataBridges API)",
+  "type": "data",
+  "update_frequency": "weekly"
+}

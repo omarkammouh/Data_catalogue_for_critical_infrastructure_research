@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "EWDS catalogue API record",
+      "url": "https://ewds.climate.copernicus.eu/api/catalogue/v1/collections/efas-historical"
+    },
+    {
+      "kind": "viewer",
+      "label": "EFAS web viewer",
+      "url": "https://european-flood.emergency.copernicus.eu/"
+    },
+    {
+      "kind": "portal",
+      "label": "EWDS historical data",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://ewds.climate.copernicus.eu/datasets/efas-historical"
+    },
+    {
+      "kind": "portal",
+      "label": "EWDS forecast data",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://ewds.climate.copernicus.eu/datasets/efas-forecast"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "hazards"
+  ],
+  "data_kind": [
+    "raster",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "european flood awareness system efas river discharge historical simulations forecasts reforecasts and seasonal forecasts",
+    "url": "https://european-flood.emergency.copernicus.eu"
+  },
+  "description": "EFAS is the European flood forecasting system of the Copernicus Emergency Management Service. Its datasets are gridded outputs of the open-source LISFLOOD hydrological model at 1 arcminute resolution (about 1.5 km at European latitudes; 5 km in version 4.0 and older). Coverage: the EFAS domain over Europe; the historical simulation, forced with gridded observed precipitation and temperature, runs from 1991 to the present; medium-range forecasts, initialised twice daily with 5- to 15-day lead times from ECMWF high-resolution and 51-member ensemble, DWD and 20-member COSMO-LEPS forcing, run from October 2018; reforecasts give 20 years initialised twice weekly; seasonal forecasts are initialised monthly from November 2020. Variables are river discharge, volumetric soil moisture, snow water equivalent, root-zone soil wetness index and runoff, with auxiliary upstream area, elevation, soil depth, wilting capacity and field capacity. Format and access: free download from the Early Warning Data Store after registration, via web form or API. Licence: CEMS-FLOODS datasets licence (PDF linked from each dataset). Caveats: forecasts are released to the public with a 30-day delay and real-time data go only to EFAS partners; version changes alter resolution and time step. Simulation uses: river discharge and soil moisture series for flood hazard exposure of bridges, roads, rail and utilities, emergency response planning and climate adaptation. Related records: the global counterpart GloFAS (data-glofas) and the Copernicus ground motion service (data-copernicus-european-ground-motion-service).",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source water-efas: provider pages read (round 2 register piece)",
+      "route": "R29",
+      "source": "water-efas"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf"
+  ],
+  "geographic_scope": "continental",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://ewds.climate.copernicus.eu/datasets/efas-historical",
+  "id": "data-efas-european-flood-awareness-system",
+  "languages": [
+    "en"
+  ],
+  "licence": "CEMS-FLOODS datasets licence",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "European Flood Awareness System (EFAS): river discharge historical simulations, forecasts, reforecasts and seasonal forecasts",
+  "provider": "Copernicus Emergency Management Service (CEMS), managed by the European Commission Joint Research Centre; data distributed through the ECMWF Early Warning Data Store (EWDS)",
+  "related_ids": [
+    "data-glofas",
+    "data-copernicus-european-ground-motion-service"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "cross_cutting.multi_sector",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Variables, auxiliary data, LISFLOOD 1 arcmin (5 km older), observed forcing; 1991-01-01 to 2026-09-25; CEMS-FLOODS licence",
+      "url": "https://ewds.climate.copernicus.eu/api/catalogue/v1/collections/efas-historical"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Twice daily, lead 5-15 days, ECMWF 51 members, DWD, COSMO-LEPS 20; from 2018-10-10 with 30-day delay; real time only for EFAS partners; CEMS run by JRC",
+      "url": "https://ewds.climate.copernicus.eu/api/catalogue/v1/collections/efas-forecast"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "20 years of reforecasts initialised Mondays and Thursdays",
+      "url": "https://ewds.climate.copernicus.eu/api/catalogue/v1/collections/efas-reforecast"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Monthly initialised seasonal forecasts from 2020-11-01",
+      "url": "https://ewds.climate.copernicus.eu/api/catalogue/v1/collections/efas-seasonal"
+    }
+  ],
+  "tags": [
+    "flood forecasting",
+    "river discharge",
+    "LISFLOOD",
+    "Copernicus",
+    "EFAS"
+  ],
+  "temporal_coverage": "historical 1991-present; forecasts from 2018-10 (30-day delay); seasonal from 2020-11",
+  "title_en": "European Flood Awareness System (EFAS): river discharge historical simulations, forecasts, reforecasts and seasonal forecasts",
+  "type": "data"
+}

@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository",
+      "url": "https://github.com/kuanb/peartree"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.python.org/pypi/peartree"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "peartree convert gtfs schedules into directed network graphs",
+    "repo": "github.com/kuanb/peartree",
+    "url": "https://github.com/kuanb/peartree"
+  },
+  "description": "peartree is a Python library that converts GTFS feed schedules into a representative directed network graph. The README says it uses the Partridge library to read the target operator's schedule, identifies the busiest day as a representative feed and builds a NetworkX graph for a chosen time period; its example loads several San Francisco Bay Area operators incrementally and converts an AC Transit feed. It installs from PyPI and was written by Kuan Butts. Coverage: any GTFS feed. Format and access: an open-source Python package. Licence and cost: MIT, free. Caveats: the README badges point to Travis CI and Gitter, which suggests an older project, and the graph is a schedule summary, not a full timetable model. It supports network flow and cascading failure studies that remove stops or links from a transit graph. It relates to OSMnx, City2Graph and the GTFS specification in the catalogue.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "https://github.com/MobilityData/awesome-transit README read 2026-09-28 (analysis tools, archives, national data, formats, agency tools)",
+      "route": "R48",
+      "source": "awesome-transit"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/kuanb/peartree",
+  "id": "model-peartree-gtfs-network-graph",
+  "inputs": [
+    "GTFS feed and a target time period"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-01-17",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network"
+  ],
+  "name": "peartree: convert GTFS schedules into directed network graphs",
+  "outputs": [
+    "NetworkX directed graph representing the transit schedule"
+  ],
+  "provider": "Kuan Butts",
+  "related_ids": [
+    "model-osmnx",
+    "data-gtfs-specification",
+    "model-city2graph-geospatial-graphs"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "purpose, Partridge, NetworkX, examples, author",
+      "url": "https://raw.githubusercontent.com/kuanb/peartree/master/README.rst"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "MIT",
+      "url": "https://raw.githubusercontent.com/kuanb/peartree/master/LICENSE"
+    }
+  ],
+  "tags": [
+    "GTFS",
+    "NetworkX",
+    "graph",
+    "Python",
+    "transit network",
+    "r2-fresh-transport"
+  ],
+  "title_en": "Peartree: convert GTFS schedules into directed network graphs",
+  "type": "model"
+}

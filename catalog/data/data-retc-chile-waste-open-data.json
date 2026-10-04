@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "RETC open data portal (CSV and XLSX by year)",
+      "url": "https://datosretc.mma.gob.cl/"
+    },
+    {
+      "kind": "api",
+      "label": "CKAN API",
+      "url": "https://datosretc.mma.gob.cl/api/3/action/package_list"
+    },
+    {
+      "kind": "viewer",
+      "label": "RETC open data maps (2019 summary)",
+      "url": "https://retc.mma.gob.cl/mapas-open-data/"
+    },
+    {
+      "kind": "portal",
+      "label": "Data page (landing)",
+      "url": "https://datosretc.mma.gob.cl/dataset/generacion-municipal-de-residuos-no-peligrosos"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CL"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation",
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "tabular",
+    "asset_inventory",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "retc chile open data municipal and industrial waste generation waste receivers storage facilities and hazardous waste declarations by establishment with coordinates 2014 to 2024",
+    "url": "https://datosretc.mma.gob.cl"
+  },
+  "description": "RETC is Chile's pollutant release and transfer register, run by the Ministry of the Environment, and its open data portal publishes the waste declarations that municipalities and companies file each year. For waste, the portal has yearly files on municipal waste generation, industrial non-hazardous waste, hazardous waste and its receivers, final receivers of non-hazardous waste, and authorised reception and storage facilities, from 2014 to 2024. The municipal file lists, for each municipality, the tonnes sent to each receiving site, the treatment (such as recycling, co-processing or landfill), the European waste list code, and the coordinates and comuna of both sender and receiver, so it describes a national waste flow network. The files are free and available to download as CSV or XLSX, and through a CKAN API, mostly under Creative Commons Attribution. Caveats: figures are self-declared, coverage grows over the years as more establishments report, and formats change between years. Simulation uses: building an origin and destination network of municipal waste flows, testing landfill closure or disruption scenarios, and optimising transfer and treatment capacity. Related records: the Italian ISPRA municipal waste register (data-ispra-catasto-rifiuti-municipal-waste) is a comparable national source, and Eurostat municipal waste (data-eurostat-env-wasmun) gives totals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk (tier 2): Chile RETC",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://datosretc.mma.gob.cl/dataset/generacion-municipal-de-residuos-no-peligrosos",
+  "id": "data-retc-chile-waste-open-data",
+  "languages": [
+    "es"
+  ],
+  "licence": "Creative Commons Attribution (most data sets); ODbL for some",
+  "licence_type": [
+    "attribution",
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "RETC Chile open data: municipal and industrial waste generation, waste receivers, storage facilities and hazardous waste declarations by establishment, with coordinates (2014 to 2024)",
+  "provider": "Registro de Emisiones y Transferencias de Contaminantes (RETC), Ministerio del Medio Ambiente, Chile",
+  "related_ids": [
+    "data-ispra-catasto-rifiuti-municipal-waste",
+    "data-eurostat-env-wasmun"
+  ],
+  "schema_summary": "Municipal waste file: year, establishment id and name, company, activity codes, latitude and longitude, comuna, province, region, tonnes, treatment (for example recycling or landfill), European waste list chapter and code, and the receiving establishment with its comuna and region",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "CKAN search: data sets for industrial and municipal non-hazardous waste generation, hazardous waste generation and receivers, non-hazardous waste receivers, reception and storage facilities, sewage sludge, emissions and registered establishments; CC BY or ODbL",
+      "url": "https://datosretc.mma.gob.cl/api/3/action/package_search?q=residuos"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Municipal non-hazardous waste generation: yearly files 2014 to 2024 (CSV, XLSX); 2022 CSV header read in memory with establishment, coordinates, comuna, tonnes, treatment, waste code and receiving establishment",
+      "url": "https://datosretc.mma.gob.cl/api/3/action/package_show?id=generacion-municipal-de-residuos-no-peligrosos"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Map viewer summarising 2019 declarations from SIDREP, F138 and SINADER, with a data dictionary",
+      "url": "https://retc.mma.gob.cl/mapas-open-data/"
+    }
+  ],
+  "spatial_resolution": "Individual establishment (point)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "municipal waste",
+    "waste flows",
+    "PRTR",
+    "Chile",
+    "hazardous waste"
+  ],
+  "temporal_coverage": "2014 to 2024",
+  "temporal_resolution": "Annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "RETC Chile open data: municipal and industrial waste generation, waste receivers, storage facilities and hazardous waste declarations by establishment, with coordinates (2014 to 2024)",
+  "type": "data",
+  "update_frequency": "annual"
+}

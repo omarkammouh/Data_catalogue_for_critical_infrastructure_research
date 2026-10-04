@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "S3 bucket spacenet-dataset (public, no sign-in)",
+      "note": "Direct link from the AWS Open Data registry, 2026-10-01",
+      "url": "https://spacenet-dataset.s3.amazonaws.com/"
+    },
+    {
+      "kind": "portal",
+      "label": "SpaceNet datasets catalogue",
+      "url": "https://spacenet.ai/datasets/"
+    },
+    {
+      "kind": "portal",
+      "label": "SpaceNet on the Registry of Open Data on AWS (s3://spacenet-dataset/)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://registry.opendata.aws/spacenet/"
+    }
+  ],
+  "access_note": "Downloads use the AWS command line with an active AWS account.",
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "imagery_remote_sensing",
+    "system_description"
+  ],
+  "data_kind": [
+    "imagery",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "spacenet datasets satellite imagery with building footprint and road labels",
+    "url": "https://spacenet.ai/datasets"
+  },
+  "description": "SpaceNet, launched in August 2016 as an open innovation project, is a repository of freely available very high-resolution satellite imagery with co-registered map features, hosted as an AWS public dataset. It holds about 67,000 square kilometres of imagery, more than 11 million building footprints and about 20,000 km of road labels, released through challenges on building detection (SpaceNet 1 and 2), off-nadir buildings (SpaceNet 4), road networks and travel times, multi-sensor all-weather mapping, multi-temporal urban development (SpaceNet 7) and flooded roads and buildings (SpaceNet 8), over cities such as Rotterdam, Dar es Salaam, Mumbai, Atlanta, Khartoum, Shanghai, Paris, Las Vegas and Rio de Janeiro. It also hosts outside datasets such as IARPA's Functional Map of the World and the USSOCOM Urban 3D competition data. Coverage: the listed areas of interest plus a worldwide moderate-resolution set. Access: AWS S3 bucket via the AWS command line. Licence: set per dataset. Caveats: areas are chosen for challenges, so coverage is patchy, and licences differ. Simulation uses are training building and road extraction models to build exposure inventories and map flood-affected buildings. Related records: the Inria Aerial Image Labeling dataset and the Open Cities AI Challenge dataset.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:imagery_remote_sensing, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "raster",
+    "geojson"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://spacenet.ai/datasets/",
+  "id": "data-spacenet-datasets",
+  "languages": [
+    "en"
+  ],
+  "licence": "Various open data licences, set per dataset",
+  "licence_type": [
+    "varies"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "SpaceNet datasets (satellite imagery with building footprint and road labels)",
+  "provider": "SpaceNet (open innovation project; hosted on AWS Open Data)",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Totals, challenge list, areas, hosted datasets, licence per dataset, AWS CLI",
+      "url": "https://spacenet.ai/datasets/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Launch August 2016, description, licence 'Various'",
+      "url": "https://registry.opendata.aws/spacenet/"
+    }
+  ],
+  "tags": [
+    "SpaceNet",
+    "satellite imagery",
+    "building footprints",
+    "machine learning",
+    "AWS Open Data"
+  ],
+  "title_en": "SpaceNet datasets (satellite imagery with building footprint and road labels)",
+  "type": "data"
+}

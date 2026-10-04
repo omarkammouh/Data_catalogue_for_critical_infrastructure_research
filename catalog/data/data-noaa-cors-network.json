@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "NGS CORS",
+      "url": "https://geodesy.noaa.gov/CORS/"
+    },
+    {
+      "kind": "portal",
+      "label": "NGS data server",
+      "url": "https://geodesy.noaa.gov/corsdata/"
+    },
+    {
+      "kind": "docs",
+      "label": "AWS bucket noaa-cors-pds",
+      "url": "https://noaa-cors-pds.s3.amazonaws.com/index.html"
+    },
+    {
+      "kind": "portal",
+      "label": "Registry of Open Data on AWS",
+      "url": "https://registry.opendata.aws/noaa-ncn/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "system_description",
+    "space_weather"
+  ],
+  "data_kind": [
+    "time_series",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "noaa continuously operating reference stations cors network ncn gnss data",
+    "url": "https://geodesy.noaa.gov/CORS"
+  },
+  "description": "The NOAA Continuously Operating Reference Stations Network (NCN), managed by NOAA's National Geodetic Survey, provides GNSS carrier phase and code range data from fiducial geodetic stations across the United States and its territories for three-dimensional positioning, meteorology, space weather and geophysics. The stations are independently owned and operated by hundreds of government, academic and private organisations, which share their data and station metadata with NGS; NGS analyses and distributes them free of charge. Data are available since 9 February 1994 in RINEX format, most within an hour of recording, with station coordinates, logs, time series plots and a custom request service (UFCORS). The archive is mirrored on the Registry of Open Data on AWS (bucket noaa-cors-pds, with RINEX from 1994 to 2026, raw data, coordinates and station logs). Coverage: the United States and territories, plus some partner sites abroad. Format and access: RINEX files by day and station through the NGS server, UFCORS and Amazon S3, free of charge and without restrictions as NOAA data. Caveats: stations change over time; users need GNSS processing software; hardware and operators differ. Simulation uses: reference positioning and timing infrastructure whose availability underpins surveying, precision agriculture, transport and timing; signals for ionospheric and space weather effects; and monitoring of ground motion at infrastructure. Related records: IGS products give the global network; the University of Bergen and Indonesian ROTI datasets derive ionospheric indices from similar receivers.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "DataCite data harvest of the digital piece; candidate datacite-b028a8c265, read in full on second reading",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "domain_model_file"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "space_weather",
+    "earthquake",
+    "landslide"
+  ],
+  "homepage": "https://geodesy.noaa.gov/CORS/",
+  "id": "data-noaa-cors-network",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "NOAA open data (no restrictions)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NOAA Continuously Operating Reference Stations (CORS) Network (NCN) GNSS data",
+  "notes": "NGS CORS page and the AWS registry page read 2026-09-26; the AWS bucket listing showed prefixes Plots, coord, cors, raw, rinex and station_log, with RINEX years 1994 to 2026. The Oceania continent (Pacific territories) and observation rates are from recall.",
+  "provider": "NOAA National Geodetic Survey (NGS), with hundreds of partner station operators",
+  "related_ids": [],
+  "schema_summary": "RINEX observation and navigation files per station and day; station logs; coordinates and velocities",
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "hazard_exposure"
+  ],
+  "size": "very large archive",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, start date, access",
+      "url": "https://registry.opendata.aws/noaa-ncn/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "bucket structure",
+      "url": "https://noaa-cors-pds.s3.amazonaws.com/?list-type=2&delimiter=/"
+    }
+  ],
+  "spatial_resolution": "station",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "CORS",
+    "GNSS",
+    "geodesy",
+    "RINEX",
+    "NOAA"
+  ],
+  "temporal_coverage": "1994-02-09 onwards",
+  "temporal_coverage_years": {
+    "start": 1994
+  },
+  "temporal_resolution": "1 to 30 s observations; hourly and daily files",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "NOAA Continuously Operating Reference Stations (CORS) Network (NCN) GNSS data",
+  "type": "data",
+  "update_frequency": "sub_daily"
+}

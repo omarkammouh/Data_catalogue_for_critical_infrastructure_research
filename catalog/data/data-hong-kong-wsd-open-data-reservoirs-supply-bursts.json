@@ -1,0 +1,144 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "WSD datasets on DATA.GOV.HK",
+      "url": "https://data.gov.hk/en-datasets/provider/hk-wsd"
+    },
+    {
+      "kind": "download",
+      "label": "Storage Position of Impounding Reservoirs (weekly CSV)",
+      "url": "https://data.gov.hk/en-data/dataset/hk-wsd-wsd2-storage-position-reservoir-weekly"
+    },
+    {
+      "kind": "download",
+      "label": "Storage Position of Individual Impounding Reservoirs (twice-monthly CSV)",
+      "url": "https://data.gov.hk/en-data/dataset/hk-wsd-wsd2-storage-position-individual-reservoir-bi-weekly"
+    },
+    {
+      "kind": "download",
+      "label": "Annual Statistics of Water Main Burst (CSV)",
+      "url": "https://data.gov.hk/en-data/dataset/hk-wsd-wsd2-annual-water-main-burst"
+    },
+    {
+      "kind": "download",
+      "label": "Annual Quantity of Fresh Water Supply (CSV)",
+      "url": "https://data.gov.hk/en-data/dataset/hk-wsd-wsd2-annual-quantity-of-fresh-water-supply"
+    },
+    {
+      "kind": "docs",
+      "label": "CKAN API",
+      "url": "https://data.gov.hk/en-data/api/3/action/package_search?fq=organization:hk-wsd"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "HK"
+  ],
+  "data_family": [
+    "demand_operation",
+    "condition_ageing",
+    "service_performance",
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hong kong water supplies department open data reservoir storage fresh water supply water main bursts water quality and energy",
+    "url": "https://data.gov.hk/en-datasets/provider/hk-wsd"
+  },
+  "description": "The Water Supplies Department (WSD) of Hong Kong publishes its operational statistics on DATA.GOV.HK: the total storage of impounding reservoirs every week (million cubic metres, percent full and the same day last year), the storage of individual impounding reservoirs twice a month, the annual number of water main bursts, the annual quantity of fresh water supply and water resources, the price and quality of Dongjiang water imported from Guangdong, drinking, flushing and recycled water quality, and electricity use, renewable generation and emissions of its waterworks. Coverage is the Hong Kong SAR water supply system; the CKAN catalogue lists 24 WSD datasets. Each dataset is a free download as CSV (some also XLSX) with a data dictionary, and is reachable through the DATA.GOV.HK CKAN API, under the DATA.GOV.HK terms, which allow commercial and non-commercial reuse free of charge. Caveats: the burst statistics are only annual territory-wide counts, and there is no network or asset layer (the water mains record plans are a separate, restricted product). Simulation uses: reservoir storage series for drought and supply resilience studies, and burst counts and supply volumes for capacity planning. Related records: the Singapore PUB drain water level sensors (data-singapore-pub-drain-water-level-sensors-flood-alerts).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Hong Kong data.gov.hk Water Supplies Department dataset reservoir storage water mains bursts",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "city",
+  "hazards": [
+    "drought"
+  ],
+  "homepage": "https://data.gov.hk/en-datasets/provider/hk-wsd",
+  "id": "data-hong-kong-wsd-open-data-reservoirs-supply-bursts",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "licence": "DATA.GOV.HK terms and conditions (free reuse, including commercial, with attribution and indemnity conditions)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Hong Kong Water Supplies Department open data (reservoir storage, fresh water supply, water main bursts, water quality and energy)",
+  "provider": "Water Supplies Department (WSD), Hong Kong SAR Government",
+  "related_ids": [
+    "data-singapore-pub-drain-water-level-sensors-flood-alerts"
+  ],
+  "schema_summary": "total storage of impounding reservoirs (million m3) and percent full, with the same day last year; storage of individual impounding reservoirs; annual number of water main bursts; annual fresh water supply and water resources; Dongjiang water price and quality; drinking, flushing and recycled water quality; electricity use, renewable generation and emissions of waterworks",
+  "sectors": [
+    "water.drinking_water",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "24 WSD datasets and their titles",
+      "url": "https://data.gov.hk/en-data/api/3/action/package_search?fq=organization:hk-wsd&rows=100"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "weekly update, CSV, data dictionary; header row read",
+      "url": "https://data.gov.hk/en-data/api/3/action/package_show?id=hk-wsd-wsd2-storage-position-reservoir-weekly"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "annual update, CSV; data dictionary: number of water main bursts in last calendar year",
+      "url": "https://data.gov.hk/en-data/api/3/action/package_show?id=hk-wsd-wsd2-annual-water-main-burst"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "free reuse for commercial and non-commercial purposes, with conditions",
+      "url": "https://data.gov.hk/en/terms-and-conditions"
+    }
+  ],
+  "spatial_resolution": "territory-wide totals; individual impounding reservoirs; 18 districts for water quality monitoring",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "Hong Kong",
+    "WSD",
+    "impounding reservoirs",
+    "reservoir storage",
+    "water main bursts",
+    "water supply",
+    "Dongjiang"
+  ],
+  "temporal_coverage": "reservoir storage from 2019; annual series (bursts from 2020 in the current file)",
+  "temporal_resolution": "weekly, twice monthly and annual",
+  "temporal_resolution_class": "weekly",
+  "title_en": "Hong Kong Water Supplies Department open data (reservoir storage, fresh water supply, water main bursts, water quality and energy)",
+  "type": "data",
+  "update_frequency": "weekly"
+}

@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Complete register (zip of CSV)",
+      "url": "https://environment.data.gov.uk/public-register/downloads/waste-operations"
+    },
+    {
+      "kind": "api",
+      "label": "Public registers API reference",
+      "url": "https://environment.data.gov.uk/public-register/view/api-reference"
+    },
+    {
+      "kind": "viewer",
+      "label": "Search the register",
+      "url": "https://environment.data.gov.uk/public-register/view/search-waste-operations"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "system_description",
+    "governance_regulation",
+    "critical_facilities"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "environment agency public register of waste operations permits england every permitted waste site with type operator grid reference and status",
+    "url": "https://environment.data.gov.uk/public-register/view/search-waste-operations"
+  },
+  "description": "This register lists every environmental permit for a waste operation in England, from landfills and incinerators to transfer stations, treatment plants and mobile plant, so it serves as an inventory of the country's waste management facilities. It is kept by the Environment Agency under the Environmental Permitting Regulations. The complete register holds about 9,600 permits, each with permit and older licence numbers, holder and trading name, site name and type, address, postcode, grid reference with easting and northing, local authority, current status and the dates of issue, variation, transfer, surrender, revocation or suspension. Site pages carry permit documents and compliance assessment reports. The whole register is available as a free download (a zipped CSV) and through an API, under the Environment Agency Conditional Licence. Caveats: permitted capacity and tonnages are not in this table (they are reported through separate waste returns), site types use regulatory codes, and some permits cover several activities or mobile plant with no fixed site. Simulation uses: building the facility layer of waste collection and treatment network models, screening waste sites against flood and other hazard maps, and planning capacity when a facility closes. Related records: the Environment Agency historic landfill layer (data-ea-historic-landfill-sites) covers closed sites, and the England local authority waste statistics (data-defra-env18-local-authority-collected-waste) give the tonnages delivered.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Environment Agency (GB, environment_agency_permit_register)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "archive",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://environment.data.gov.uk/public-register/view/search-waste-operations",
+  "id": "data-ea-waste-operations-permit-register",
+  "languages": [
+    "en"
+  ],
+  "licence": "Environment Agency Conditional Licence",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Environment Agency public register of waste operations permits (England): every permitted waste site with type, operator, grid reference and status",
+  "provider": "Environment Agency (England)",
+  "related_ids": [
+    "data-ea-historic-landfill-sites",
+    "data-defra-env18-local-authority-collected-waste"
+  ],
+  "schema_summary": "Permit number, waste management licence number, pre-EA permit reference, licence holder name, trading name, site name, site type (for example A12 clinical waste transfer station), site address and postcode, grid reference, easting, northing, local authority, status, issued, variation, transfer, effective, surrendered, revoked and suspended dates; permit documents and compliance assessment reports on the site pages",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Environmental Permitting Regulations, Waste Operations: permits allowing operators to use, recycle, treat, store or dispose of waste or mining waste, at one site or as mobile plant; search by holder, permit number, local authority, address or postcode distance; 'Download the complete register [zip archive]'; Environment Agency Conditional Licence",
+      "url": "https://environment.data.gov.uk/public-register/view/search-waste-operations"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Zip read in memory: waste-operations.csv (2.9 MB, about 9,600 lines) and a licence note; columns Permit Number, Waste Management Licence No., Pre-EA Permit Ref, Licence Holder Name, Trading Name, Site Name, Site Type, Site Address, Site Postcode, Site Grid Reference, Easting, Northing, Local Authority, Status, Issued Date, Variation Date, Transfer Date, Date Effective, Surrendered Date, Revoked Date, Suspended Date",
+      "url": "https://environment.data.gov.uk/public-register/downloads/waste-operations"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Public Registers Online API reference page",
+      "url": "https://environment.data.gov.uk/public-register/view/api-reference"
+    }
+  ],
+  "spatial_resolution": "Permitted site (grid reference)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "waste permits",
+    "waste sites",
+    "landfill",
+    "transfer stations",
+    "treatment",
+    "England",
+    "Environment Agency"
+  ],
+  "temporal_coverage": "Permits from the pre-Environment Agency era to date, with status history dates",
+  "temporal_resolution": "Event dates per permit",
+  "temporal_resolution_class": "event",
+  "title_en": "Environment Agency public register of waste operations permits (England): every permitted waste site with type, operator, grid reference and status",
+  "type": "data",
+  "update_frequency": "real_time"
+}

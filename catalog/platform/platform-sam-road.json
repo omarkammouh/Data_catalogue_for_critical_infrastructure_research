@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/htcr/sam_road"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/htcr/sam_road/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sam road network graph extraction",
+    "repo": "github.com/htcr/sam_road",
+    "url": "https://github.com/htcr/sam_road"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "SAM-Road is the public implementation by Congrui Hetang and collaborators of Segment Anything Model for Road Network Graph Extraction. It trains and applies a segmentation-based pipeline to infer road graphs from aerial or satellite imagery. Inputs include image tiles, training labels and a SAM checkpoint; outputs include inferred graph results, visualisations and topology or path-length evaluation scores. The documented examples use CityScale and SpaceNet, with spatial detail inherited from those images, not guaranteed global map accuracy. Public Python source is free under MIT, with model checkpoints linked separately. A limitation is the GPU and dependency setup, including NVIDIA CUDA, PyTorch and Go for the APLS metric. External imagery and foundation-model weights retain their own terms, and inferred roads require checking before use. The pipeline can prepare missing network topology for road-infrastructure simulations, complementary to SUMO (model-sumo). The README supplies training, inference and test commands and the CVPR workshop 2024 citation. No imagery, checkpoint or dataset archive was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "\"road network\" fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/htcr/sam_road",
+  "id": "platform-sam-road",
+  "interfaces": [
+    "code_library",
+    "other"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-08-10",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "SAM-Road network graph extraction",
+  "notes": "G7 G7-0617. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability.  Cited as: Hetang et al. (2024). Segment Anything Model for Road Network Graph Extraction. CVPR Workshop. arXiv:2403.16051..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Congrui Hetang and SAM-Road research collaborators",
+  "related_ids": [
+    "model-sumo"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for htcr/sam_road: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=%22road+network%22+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/htcr/sam_road/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for road transport",
+  "type": "platform"
+}

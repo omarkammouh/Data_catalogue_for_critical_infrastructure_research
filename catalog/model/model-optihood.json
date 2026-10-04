@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/SPF-OST/optihood"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/SPF-OST/optihood/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "optihood neighbourhood energy model",
+    "repo": "github.com/spf-ost/optihood",
+    "url": "https://github.com/SPF-OST/optihood"
+  },
+  "description": "OptiHood is a Python model for sizing and operating neighbourhood energy networks. It represents buildings that may share heat or electricity and can optimise heat pumps, combined heat and power, solar, storage and fuel purchases for cost or environmental impact. A workbook defines the nodes, buses, devices and links, while CSV demand profiles and a selected date index set the operating horizon and time step. Outputs include technology choices, energy flows and result plots. Geography is a user-defined neighbourhood; the README's hourly 2021 example shows one possible resolution, not a fixed data coverage. The GPL-3.0 source is public on GitHub with installation instructions and worked input examples. A mathematical solver is required, with Gurobi recommended and CBC, GLPK or CPLEX listed as alternatives. A limitation is that current demand profiles must be fixed, which limits demand-response experiments without additional modelling. It supports district-heat and electricity capacity planning and operating-scenario comparisons. The catalogue's model-pypsa is a separate network-energy model for comparison, not a verified dependency. No optimisation was executed and no example workbook was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "spf-ost/optihood linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/SPF-OST/optihood",
+  "id": "model-optihood",
+  "inputs": [
+    "Excel energy-network and technology definition",
+    "Demand time series and planning period"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network"
+  ],
+  "name": "OptiHood neighbourhood energy model",
+  "notes": "G7 G7-1312. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Optimal capacities, energy flows, costs and plots"
+  ],
+  "provider": "SPF Institute for Solar Technology",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/SPF-OST/optihood",
+  "sectors": [
+    "energy.district_heating_cooling",
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for SPF-OST/optihood: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/spf-ost/optihood"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/spf-ost/optihood/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Optimisation model for district heating and cooling, electricity and buildings",
+  "type": "model"
+}

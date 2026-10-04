@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/NTIA/itm"
+    },
+    {
+      "kind": "download",
+      "label": "Releases (DLL)",
+      "url": "https://github.com/NTIA/itm/releases"
+    },
+    {
+      "kind": "repo",
+      "label": "Archived FORTRAN",
+      "url": "https://github.com/NTIA/itm-longley-rice"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Longley A.G., Rice P.L. (1968) Prediction of tropospheric radio transmission loss over irregular terrain: a computer method. ESSA Technical Report ERL 79-ITS 67.",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "its irregular terrain model itm longley rice",
+    "repo": "github.com/ntia/itm",
+    "url": "https://github.com/NTIA/itm"
+  },
+  "description": "The Irregular Terrain Model (ITM), also called the Longley-Rice model, predicts terrestrial radio-wave propagation loss for frequencies between 20 MHz and 20 GHz, based on electromagnetic theory and empirical models developed by Anita Longley and Phil Rice at the Institute for Telecommunication Sciences of the US National Telecommunications and Information Administration. It runs in area prediction mode or point-to-point mode with a terrain profile, and variability can be given by time, location and situation or by confidence and reliability. ITS publishes the reference implementation as a C++ code base (version 1.3 is functionally identical to the archived FORTRAN 1.2.2; the current tag is v1.4), with a precompiled DLL, a command-line driver using ASCII input and output files, and example inputs and outputs. Coverage: any terrestrial path worldwide; resolution depends on the terrain profile supplied. Format and access: source on GitHub and DLLs on its release page; free of charge as a work of the US Government with a software disclaimer, so there is no licence fee. Caveats: the example set is not a full validation suite; the model ignores buildings and clutter and is less reliable below 1 km or in urban areas. Simulation uses: coverage and hazard exposure of broadcast, land-mobile and fixed links, spectrum and capacity planning, and emergency communications design. Related records: SPLAT! and Signal-Server embed it, and regulators such as the FCC use it for broadcast and spectrum studies.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for model:digital.telecom:physical",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NTIA/itm",
+  "id": "model-ntia-itm",
+  "inputs": [
+    "terrain profile or area parameters",
+    "frequency, antenna heights, polarisation",
+    "ground and climate parameters"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-09-24",
+  "licence": "US Government work (public domain in the US) with NTIA software disclaimer",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "ITS Irregular Terrain Model (ITM, Longley-Rice)",
+  "outputs": [
+    "basic transmission loss",
+    "variability statistics"
+  ],
+  "provider": "NTIA Institute for Telecommunication Sciences (ITS)",
+  "related_ids": [
+    "data-itu-r-dbsg3-propagation-databanks",
+    "data-fcc-lms-cdbs-broadcast-station-databases",
+    "data-fcc-antenna-structure-registration",
+    "model-splat",
+    "model-signal-server"
+  ],
+  "repository": "https://github.com/NTIA/itm",
+  "runs_on": [],
+  "sectors": [
+    "digital.telecom",
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README, LICENSE.md and tags via raw.githubusercontent.com and git",
+      "url": "https://github.com/NTIA/itm"
+    }
+  ],
+  "tags": [
+    "radio propagation",
+    "Longley-Rice",
+    "path loss",
+    "spectrum planning"
+  ],
+  "title_en": "ITS Irregular Terrain Model (ITM, Longley-Rice)",
+  "type": "model",
+  "validated_on": [
+    "ITS measurement data behind the original Longley-Rice model"
+  ]
+}

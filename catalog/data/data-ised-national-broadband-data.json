@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "National Broadband Map",
+      "url": "https://www.ic.gc.ca/app/sitt/bbmap/hm.html?lang=eng"
+    },
+    {
+      "kind": "portal",
+      "label": "Open government portal entry",
+      "url": "https://open.canada.ca/data/en/dataset/00a331db-121b-445d-b119-35dbbe3eedd9"
+    },
+    {
+      "kind": "portal",
+      "label": "NBD pseudo-household speeds (CSV zip)",
+      "url": "https://ised-isde.canada.ca/app/scr/sittibc/web/api/openData/NBD_PHH_Speeds.zip"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CA"
+  ],
+  "data_family": [
+    "telecom_coverage_spectrum",
+    "service_performance"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ised national broadband data broadband availability by hexagon pseudo household and road segment canada",
+    "url": "https://open.canada.ca/data/en/dataset/00a331db-121b-445d-b119-35dbbe3eedd9"
+  },
+  "description": "The National Broadband Data (NBD) describe where broadband internet service is available across Canada, by provider technology and speed, and underlie the National Broadband Map. The original layer aggregates coverage on a grid of hexagons of roughly 25 square kilometres each, and flags availability for the speed markers 5/1, 10/2, 25/5 and 50/10 Mbps where more than 75 per cent of dwellings in a hexagon can get service meeting them. To give finer detail, ISED and the CRTC also publish aggregated and anonymised service data at the level of pseudo-households, points from a statistical model of where dwellings are, and a road layer that projects those speeds onto roughly 250-metre segments of the Statistics Canada Road Network File. The dataset has been on the open government portal since 2016 and was last updated in June 2026. Coverage: all of Canada. Format and access: 15 resources including CSV, GeoPackage, MapInfo TAB, shapefile and KMZ downloads with English and French data dictionaries, free under the Open Government Licence - Canada. Caveats: availability reported by providers, not measured performance; the hexagon threshold hides partial coverage, and pseudo-households are modelled locations. Simulation uses: mapping which communities depend on which access technologies, estimating populations cut off when networks fail, and planning resilient or redundant connections. Related records: the CRTC communications market report data give subscriptions and revenue, and the ISED spectrum and broadcasting extracts give transmitter sites.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "open.canada.ca search for broadband availability",
+      "route": "R10",
+      "source": "organisations.csv:CA:digital:broadband_mapping"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geopackage",
+    "other_vector",
+    "shapefile",
+    "kml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://open.canada.ca/data/en/dataset/00a331db-121b-445d-b119-35dbbe3eedd9",
+  "id": "data-ised-national-broadband-data",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "last_updated": "2026-06",
+  "licence": "Open Government Licence - Canada",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ISED National Broadband Data: broadband availability by hexagon, pseudo-household and road segment (Canada)",
+  "notes": "Portal metadata read through the open.canada.ca CKAN API on 2026-09-26 (description, resources, licence, dates). Files not downloaded.",
+  "provider": "Innovation, Science and Economic Development Canada (ISED), with the CRTC",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "resilience"
+  ],
+  "size": "15 resources",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "portal metadata via CKAN API",
+      "url": "https://open.canada.ca/data/en/dataset/00a331db-121b-445d-b119-35dbbe3eedd9"
+    }
+  ],
+  "spatial_resolution": "25 km2 hexagons, pseudo-household points and 250 m road segments",
+  "spatial_resolution_class": "100m_to_1km",
+  "tags": [
+    "broadband availability",
+    "coverage map",
+    "rural connectivity",
+    "hexagon grid",
+    "Canada"
+  ],
+  "temporal_coverage": "current availability, updated as needed since 2016",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "ISED National Broadband Data: broadband availability by hexagon, pseudo-household and road segment (Canada)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

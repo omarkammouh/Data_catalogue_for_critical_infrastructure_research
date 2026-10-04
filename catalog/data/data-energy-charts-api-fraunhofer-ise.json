@@ -1,0 +1,136 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Energy-Charts API (OpenAPI 3.1 description)",
+      "url": "https://api.energy-charts.info/openapi.json"
+    },
+    {
+      "kind": "viewer",
+      "label": "Energy-Charts web charts",
+      "url": "https://www.energy-charts.info/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "AT",
+    "BA",
+    "BE",
+    "BG",
+    "CH",
+    "CY",
+    "CZ",
+    "DE",
+    "DK",
+    "EE",
+    "ES",
+    "FI",
+    "FR",
+    "GE",
+    "GR",
+    "HR",
+    "HU",
+    "IE",
+    "IT",
+    "LT",
+    "LU",
+    "LV",
+    "MD",
+    "ME",
+    "MK",
+    "NL",
+    "NO",
+    "PL",
+    "PT",
+    "RO",
+    "RS",
+    "SE",
+    "SI",
+    "SK",
+    "UA",
+    "GB",
+    "XK"
+  ],
+  "data_family": [
+    "demand_operation",
+    "cross_border_flows",
+    "economic_financial",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "energy charts api european electricity generation prices cross border trade and grid frequency fraunhofer ise",
+    "url": "https://energy-charts.info"
+  },
+  "description": "Energy-Charts is the public electricity data service of the Fraunhofer Institute for Solar Energy Systems ISE, and its API gives machine access to the series behind the charts. The OpenAPI description read on 2026-09-26 lists endpoints for public net electricity production per production type, total power, installed power per production type (monthly only for Germany), day-ahead and current prices, scheduled cross-border commercial exchanges between a country and each neighbour, renewable share forecasts and daily averages, a grid signal, and grid frequency. The frequency series is measured by Fraunhofer ISE in Freiburg for the Continental Europe synchronous area in one-second steps from 1 May 2022, with requests limited to three days. Coverage is the EU aggregate and about 37 European countries, from Germany and its neighbours to the Western Balkans, Ukraine, Moldova and Georgia. Data are returned as JSON, with ISO 8601 timestamps, and are free under CC BY 4.0 with attribution to Energy-Charts.info unless stated otherwise; version 2.0 of the API was released on 20 July 2026 and keeps the v1 endpoints. Caveats: values are compiled from transmission operator and exchange sources and some endpoints are country-limited. Simulation uses are driving dispatch and market models with observed generation mixes, prices and interconnector schedules, and frequency studies. Related records: data-entsoe-transparency-platform is the underlying pan-European transparency source.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:energy.electricity:demand_operation",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://api.energy-charts.info/openapi.json",
+  "id": "data-energy-charts-api-fraunhofer-ise",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-20",
+  "licence": "CC BY 4.0 unless stated otherwise, with attribution to Energy-Charts.info",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Energy-Charts API - European electricity generation, prices, cross-border trade and grid frequency (Fraunhofer ISE)",
+  "provider": "Fraunhofer Institute for Solar Energy Systems ISE",
+  "related_ids": [
+    "data-entsoe-transparency-platform"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Endpoint list, CC BY 4.0 data licence, v2.0 release 2026-07-20, frequency from 2022-05-01 at 1 s, country enumeration",
+      "url": "https://api.energy-charts.info/openapi.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Service home page (title Energy-Charts)",
+      "url": "https://www.energy-charts.info/"
+    }
+  ],
+  "tags": [
+    "electricity generation",
+    "day-ahead prices",
+    "cross-border exchange",
+    "grid frequency",
+    "REST API"
+  ],
+  "title_en": "Energy-Charts API - European electricity generation, prices, cross-border trade and grid frequency (Fraunhofer ISE)",
+  "type": "data"
+}

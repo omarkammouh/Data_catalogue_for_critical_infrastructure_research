@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/kLabUM/StormReactor"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1364815221002176"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.1016/j.envsoft.2021.105175",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "stormreactor stormwater quality modelling",
+    "url": "https://github.com/klabum/stormreactor"
+  },
+  "description": "StormReactor is a Python package from the University of Michigan kLab developers that extends stormwater-quality modelling in EPA SWMM. It supplies pollutant generation and removal methods for network nodes and links, including settling, concentration-dependent removal and completely stirred tank reactors. Users provide a SWMM input file and a Python configuration linking pollutants and assets to treatment parameters. The package updates water-quality states during a PySWMM simulation. Spatial coverage follows the input drainage network, and temporal resolution follows every simulation step. Public source, worked examples and a PyPI package are available free under LGPL-3.0. Reuse includes testing treatment assumptions and water-quality-based control of stormwater infrastructure. A limitation is that the current implementation cannot skip time steps. Node treatment must already be enabled in the SWMM input file before StormReactor can replace it. Existing model-epa-swmm is the underlying model. This review inspected the documented examples without executing them or downloading stormwater observations.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Environmental Modelling & Software whole-index enumeration; 10.1016/j.envsoft.2021.105175; G5-LOCAL-064;G5-LOCAL-107;G5-LOCAL-110",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/kLabUM/StormReactor",
+  "id": "model-stormreactor",
+  "inputs": [
+    "SWMM input network with treatment enabled",
+    "Pollutant, node or link identifiers and treatment parameters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-07-06",
+  "licence": "LGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.sciencedirect.com/science/article/pii/S1364815221002176"
+    ]
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "StormReactor stormwater quality modelling",
+  "notes": "G5 G5-0160. Software checked through metadata and documentation, without installation or execution. Geographic scope follows the documented application or software portability; it does not imply validation throughout that area. ",
+  "outputs": [
+    "Updated pollutant concentrations in SWMM nodes and links"
+  ],
+  "provider": "University of Michigan kLab / Open-Storm developers",
+  "related_ids": [
+    "model-epa-swmm"
+  ],
+  "repository": "https://github.com/kLabUM/StormReactor",
+  "sectors": [
+    "water.stormwater_drainage",
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Software-paper abstract and explicit software availability read.",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1364815221002176"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository identity and licence metadata.",
+      "url": "https://api.github.com/repos/kLabUM/StormReactor"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own workflow, input/output documentation, access and limitations.",
+      "url": "https://raw.githubusercontent.com/kLabUM/StormReactor/master/README.md"
+    }
+  ],
+  "tags": [
+    "research software",
+    "Environmental Modelling & Software"
+  ],
+  "title_en": "StormReactor stormwater-quality modelling in EPA SWMM",
+  "type": "model"
+}

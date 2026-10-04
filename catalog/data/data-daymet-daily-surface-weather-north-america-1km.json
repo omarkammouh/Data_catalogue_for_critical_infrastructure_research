@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Daymet get data page",
+      "url": "https://daymet.ornl.gov/getdata"
+    },
+    {
+      "kind": "docs",
+      "label": "Daymet description",
+      "url": "https://daymet.ornl.gov/overview"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing page)",
+      "url": "https://daymet.ornl.gov/"
+    },
+    {
+      "kind": "api",
+      "label": "Daymet single-pixel API (JSON)",
+      "url": "https://daymet.ornl.gov/single-pixel/api/data?lat=36.0133&lon=-84.2625&vars=tmax&start=2012-01-01&end=2012-01-03&format=json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US",
+    "CA",
+    "MX"
+  ],
+  "data_family": [
+    "weather_observations",
+    "hazards"
+  ],
+  "data_kind": [
+    "raster",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "daymet daily surface weather and climatology on a 1 km grid for north america hawaii and puerto rico ornl daac",
+    "url": "https://daymet.ornl.gov/single-pixel/api/data?end=2012-01-03&format=json&lat=36.0133&lon=-84.2625&start=2012-01-01&vars=tmax"
+  },
+  "description": "Daymet is a research product of the Environmental Sciences Division at Oak Ridge National Laboratory (ORNL), distributed by the NASA ORNL Distributed Active Archive Center (ORNL DAAC). It gives long-term, continuous, gridded estimates of daily weather by interpolating and extrapolating ground station observations with statistical modelling, to estimate near-surface conditions where no instruments exist. Coverage: daily minimum and maximum temperature, precipitation, vapour pressure, shortwave radiation, snow water equivalent and day length on a 1 km by 1 km grid over continental North America and Hawaii from 1980, and over Puerto Rico from 1950, through the end of the latest full calendar year; pre-derived climatological summaries and cross-validation files are also offered. Version 4 has been available since December 2020. Format and access: direct downloads with companion documentation from the ORNL DAAC, a THREDDS data server, 2 by 2 degree tiled subsets in netCDF, a Single Pixel Extraction Tool that returns a text table for any point, and RESTful web services for pixel and gridded subsets, with client libraries in several programming languages. Free; the site has a sign-in, but the download routes described did not state that one is required. Licence: not read. Caveats: the grids are interpolated from station data, so accuracy falls where stations are sparse; the model inputs are a digital elevation model, horizon files, a land-water mask and daily station temperature and precipitation. Simulation uses: long daily weather series for heat, cold, snow and precipitation exposure of infrastructure, demand modelling and climate adaptation studies in North America. Related records: GEFF-ERA5 (data-geff-era5-global-fire-danger-reanalysis) provides global fire weather indices from a reanalysis.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source ornl-daac: provider pages read (round 2 register piece)",
+      "route": "R18",
+      "source": "ornl-daac"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf",
+    "csv"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://daymet.ornl.gov/single-pixel/api/data?lat=36.0133&lon=-84.2625&vars=tmax&start=2012-01-01&end=2012-01-03&format=json",
+  "id": "data-daymet-daily-surface-weather-north-america-1km",
+  "languages": [
+    "en"
+  ],
+  "licence": "not read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Daymet: daily surface weather and climatology on a 1 km grid for North America, Hawaii and Puerto Rico (ORNL DAAC)",
+  "provider": "Oak Ridge National Laboratory (ORNL), distributed by the ORNL DAAC",
+  "related_ids": [
+    "data-geff-era5-global-fire-danger-reanalysis"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Variables, 1 km grid, North America and Hawaii from 1980, Puerto Rico from 1950; ORNL Environmental Sciences Division; NASA ESDIS and DOE support; V4 since 15 Dec 2020",
+      "url": "https://daymet.ornl.gov/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Interpolation from station observations; model inputs DEM, horizon files, land water mask, station Tmax/Tmin/precipitation",
+      "url": "https://daymet.ornl.gov/overview"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Direct download, THREDDS, Single Pixel Extraction Tool, RESTful web services, 2x2 degree netCDF tiles",
+      "url": "https://daymet.ornl.gov/getdata"
+    },
+    {
+      "accessed": "2026-10-02",
+      "note": "Follow-up check: landing page replaced by the provider page that holds the data (basis: fetched 2026-10-02)",
+      "url": "https://daymet.ornl.gov/single-pixel/api/data?lat=36.0133&lon=-84.2625&vars=tmax&start=2012-01-01&end=2012-01-03&format=json"
+    }
+  ],
+  "spatial_resolution": "1 km",
+  "spatial_resolution_class": "1km_to_10km",
+  "tags": [
+    "gridded weather",
+    "temperature",
+    "precipitation",
+    "snow water equivalent",
+    "ORNL DAAC",
+    "North America"
+  ],
+  "temporal_coverage": "1980 to latest full year (Puerto Rico from 1950), daily",
+  "title_en": "Daymet: daily surface weather and climatology on a 1 km grid for North America, Hawaii and Puerto Rico (ORNL DAAC)",
+  "type": "data"
+}

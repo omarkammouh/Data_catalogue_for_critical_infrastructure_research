@@ -1,0 +1,118 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "JRC data catalogue (Wi-Fi)",
+      "url": "https://data.jrc.ec.europa.eu/dataset/jrc-netbravo-netbravo-od-eu-wifi"
+    },
+    {
+      "kind": "download",
+      "label": "Wi-Fi 1 km grid",
+      "url": "https://radiolab.jrc.ec.europa.eu/public/srm/opendata/get?title=Last+Release&name=netBravo-OD-EU-Wifi-1km.zip"
+    },
+    {
+      "kind": "api",
+      "label": "data.europa.eu search",
+      "url": "https://data.europa.eu/api/hub/search/search?q=netbravo"
+    }
+  ],
+  "access_note": "data.jrc.ec.europa.eu rejects the shell and the page-fetch tool (2026-09-26); metadata read through data.europa.eu",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "data_family": [
+    "telecom_coverage_spectrum",
+    "service_performance",
+    "crowdsourced_public_reports"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "netbravo crowdsourced cellular wi fi and broadband measurements for europe jrc",
+    "url": "https://data.jrc.ec.europa.eu/dataset/jrc-netbravo-netbravo-od-eu-wifi"
+  },
+  "description": "netBravo was a crowdsourcing application of the European Commission's Joint Research Centre that measured mobile and Wi-Fi networks from volunteers' phones. The JRC publishes three open datasets from it, issued on 25 May 2016: European cellular signal strength coverage, European Wi-Fi hotspot signal strength coverage, and European broadband user experience (download and upload speed and ping over cellular and Wi-Fi). Each is aggregated on the ETRS89 statistical grid (GRID_ETRS89) at 100 m and 1 km resolution and delivered as a grid shapefile and CSV. Coverage: European countries where volunteers ran the app, mainly the mid-2010s. Format and access: ZIP files with shapefile and CSV from the JRC radio lab server, free of charge for commercial and non-commercial reuse under the Commission's reuse policy. Caveats: crowdsourced and uneven; biased to places and times where users measured; the Wi-Fi and cellular files were last modified in May 2026, but the broadband file answered 410 Gone and the netBravo site redirects. Simulation uses: observed signal strength to check modelled mobile coverage for hazard exposure and resilience studies. Related records: Ookla open tiles and OpenCelliD are larger crowdsourced sources; the Breitbandatlas and Arcep maps give official coverage.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "DataCite data harvest of the digital piece; candidate datacite-083ae82810, read in full on second reading",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "csv",
+    "archive"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://data.jrc.ec.europa.eu/dataset/jrc-netbravo-netbravo-od-eu-wifi",
+  "id": "data-jrc-netbravo-crowdsourced-coverage",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-04",
+  "licence": "European Commission reuse policy (COM_REUSE)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://radiolab.jrc.ec.europa.eu/public/srm/opendata/get?title=Last+Release&name=netBravo-OD-EU-Cellular-1km.zip"
+    ],
+    "dead_since": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "netBravo crowdsourced cellular, Wi-Fi and broadband measurements for Europe (JRC)",
+  "notes": "data.europa.eu search API read 2026-09-26 (three datasets, issued 2016-05-25, distributions, licence); last-modified dates from response headers of the file server. The 2013 start year and schema fields are inferred from the descriptions, not read in the files.",
+  "provider": "European Commission Joint Research Centre (JRC)",
+  "related_ids": [],
+  "schema_summary": "grid cell id, number of measurements, mean signal strength (cellular or Wi-Fi), download and upload speed and ping (broadband)",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "size": "not read",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "three datasets with descriptions and distributions",
+      "url": "https://data.europa.eu/api/hub/search/search?q=netbravo"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "DataCite record of the Wi-Fi dataset",
+      "url": "https://api.datacite.org/dois/10.2905/jrc.kwgtzm8"
+    }
+  ],
+  "spatial_resolution": "100 m and 1 km ETRS89 grid",
+  "spatial_resolution_class": "100m_to_1km",
+  "tags": [
+    "crowdsourcing",
+    "signal strength",
+    "Wi-Fi",
+    "mobile coverage",
+    "JRC"
+  ],
+  "temporal_coverage": "mid-2010s (issued 2016)",
+  "temporal_coverage_years": {
+    "end": 2016,
+    "start": 2013
+  },
+  "temporal_resolution": "aggregate over the collection period",
+  "temporal_resolution_class": "other",
+  "title_en": "NetBravo crowdsourced cellular, Wi-Fi and broadband measurements for Europe (JRC)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "navitia.io hosted API (redirects to hove.com)",
+      "url": "http://www.navitia.io/"
+    },
+    {
+      "kind": "repo",
+      "label": "Navitia source code (AGPL-3.0; closing end of September 2026)",
+      "url": "https://github.com/hove-io/navitia"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "europe"
+  ],
+  "cost": "freemium",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "navitia open source journey planning engine and api hove",
+    "repo": "github.com/hove-io/navitia",
+    "url": "https://github.com/hove-io/navitia"
+  },
+  "deployment": [
+    "own_server",
+    "hosted_service"
+  ],
+  "description": "Navitia is a multimodal journey planning engine and web API that computes public transport itineraries, isochrones, departure boards and line and stop information from timetable data. Development is led by Hove, formerly Kisio Digital and CanalTP, a subsidiary of Keolis, and the code was opened in 2014. Coverage: the engine itself is place-agnostic; it loads transit data in GTFS or NTFS format plus routing data, and a public instance runs at api.navitia.io. Format and access: a C++ core (Kraken) and a Python web service (Jörmungandr) returning JSON, published under the AGPL-3.0 licence on GitHub; the hosted navitia.io API is a freemium service whose site now redirects to hove.com, a script-rendered page that was not read. Licence: AGPL-3.0 for the historic open-source code (COPYING file). Caveats: the repository readme, updated in September 2026, states that a new version is coming, that access to the source code will be limited and that the GitHub repositories will close progressively by the end of September 2026, while the historic version stays reachable through the freemium navitia.io offer; users should secure a copy of the code or plan for the hosted service only. Simulation uses: computing accessibility and door-to-door travel times over transit networks for network flow, capacity planning and emergency response studies. Related records: OpenTripPlanner (model-opentripplanner) is the closest open alternative, and GTFS (data-gtfs-specification) is the main input format.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-navitia-io: provider pages read (round 2 register piece)",
+      "route": "R35",
+      "source": "transport-navitia-io"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/hove-io/navitia",
+  "id": "platform-navitia-journey-planning-api",
+  "interfaces": [
+    "web_api",
+    "file_exchange",
+    "code_library"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "AGPL-3.0 (historic open-source code); hosted API under Hove terms",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "http://www.navitia.io/"
+    ]
+  },
+  "maturity": "active",
+  "name": "Navitia: open-source journey planning engine and API (Hove)",
+  "open_source": true,
+  "platform_kind": [
+    "cloud_service",
+    "simulation_engine"
+  ],
+  "provider": "Hove (formerly Kisio Digital / CanalTP)",
+  "related_ids": [
+    "model-opentripplanner",
+    "data-gtfs-specification"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "readme.rst: journey planning engine; French notice from Hove that a new version is coming, source access will be limited and GitHub repos will close progressively by end of September; historic version stays available through the freemium navitia.io offer; COPYING AGPL-3.0; last commit 2026-09-24; readme: Kraken C++ core, Jörmungandr Python frontend, inputs NTFS or GTFS; Hove subsidiary of Keolis; public instance api.navitia.io",
+      "url": "https://github.com/hove-io/navitia"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "redirects to hove.com; page rendered by script, not read",
+      "url": "http://www.navitia.io/"
+    }
+  ],
+  "tags": [
+    "journey planning",
+    "GTFS",
+    "routing",
+    "API"
+  ],
+  "title_en": "Navitia: open-source journey planning engine and API (Hove)",
+  "type": "platform"
+}

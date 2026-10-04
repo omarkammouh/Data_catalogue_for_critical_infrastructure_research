@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "OMNIWeb interface",
+      "url": "https://omniweb.gsfc.nasa.gov/ow.html"
+    },
+    {
+      "kind": "portal",
+      "label": "High resolution OMNI (1 and 5 min)",
+      "url": "https://omniweb.gsfc.nasa.gov/ow_min.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Low resolution OMNI documentation",
+      "url": "https://omniweb.gsfc.nasa.gov/html/ow_data.html"
+    },
+    {
+      "kind": "docs",
+      "label": "HRO documentation",
+      "url": "https://omniweb.gsfc.nasa.gov/html/HROdocum.html"
+    },
+    {
+      "kind": "download",
+      "label": "SPDF archive of OMNI files",
+      "url": "https://spdf.gsfc.nasa.gov/pub/data/omni/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "space_weather",
+    "historical_events",
+    "hazards"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "omni solar wind and geomagnetic index data omniweb",
+    "url": "https://omniweb.gsfc.nasa.gov"
+  },
+  "description": "OMNI contains near-Earth solar wind magnetic field and plasma parameters compiled by NASA's Space Physics Data Facility from several spacecraft in geocentric or L1 orbits (IMP 8, ISEE 3, Wind, ACE, Geotail and others), cross-compared, partly cross-normalised and time-shifted to the Earth's bow shock nose. The Low Resolution OMNI set runs from 1963 to current at hourly, daily and 27-day resolution and also carries energetic proton fluxes from IMP and GOES and a wide range of geomagnetic and solar indices (Kp and ap, Dst, AE, AL and AU, F10.7, sunspot number, PCN, Lyman-alpha); the High Resolution OMNI set gives 1-minute and 5-minute shifted data. SPDF produces it to support studies of solar wind effects on the magnetosphere and ionosphere. The data are available online through the OMNIWeb interface for listing, plotting and subsetting, and as annual ASCII files on the SPDF archive; they are free public NASA data. Caveats: coverage has gaps before the L1 era, final Dst and AE indices lag by years with provisional and quick-look values in between, and the time-shift method adds uncertainty. It is a standard driver for space weather hazard analysis, including geomagnetically induced current studies of power grids and pipelines and satellite drag and radiation studies; related records are CDAWeb, DONKI, the GFZ Kp index, the NASA CCMC and the NOAA SWPC products.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "solar wind geomagnetic index time series",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "plain_text",
+    "netcdf_hdf",
+    "web_page"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://omniweb.gsfc.nasa.gov/",
+  "id": "data-omniweb-omni-solar-wind",
+  "languages": [
+    "en"
+  ],
+  "licence": "NASA public data (no restriction stated; acknowledgement of SPDF and data providers requested)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OMNI solar wind and geomagnetic index data (OMNIWeb)",
+  "notes": "The SPDF acknowledgements page returned 403 on 2026-09-26, so the licence wording is from general NASA open data practice, not re-read.",
+  "provider": "NASA Goddard Space Flight Center, Space Physics Data Facility (SPDF)",
+  "related_ids": [],
+  "schema_summary": "IMF magnitude and components, plasma speed, density, temperature, proton fluxes, Kp, ap, Dst, AE, F10.7, sunspot number",
+  "sectors": [
+    "cross_cutting.space",
+    "energy.electricity",
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "LRO 1963 to current, spacecraft, time-shifting, indices and availability table, 56-word ASCII records",
+      "url": "https://omniweb.gsfc.nasa.gov/html/ow_data.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "HRO 1-min and 5-min bow shock nose shifted data from ACE, Wind, IMP 8, Geotail; purpose",
+      "url": "https://omniweb.gsfc.nasa.gov/html/HROdocum.html"
+    }
+  ],
+  "tags": [
+    "solar wind",
+    "geomagnetic indices",
+    "Dst",
+    "Kp",
+    "SPDF",
+    "NASA"
+  ],
+  "temporal_coverage": "1963 to present (parameter-specific)",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1963
+  },
+  "temporal_resolution": "1-minute, 5-minute, hourly, daily, 27-day",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "OMNI solar wind and geomagnetic index data (OMNIWeb)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

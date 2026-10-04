@@ -1,0 +1,144 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "CESNET DataZoo",
+      "url": "https://github.com/CESNET/cesnet-datazoo"
+    },
+    {
+      "kind": "portal",
+      "label": "CESNET-QUIC22",
+      "url": "https://zenodo.org/records/10728760"
+    },
+    {
+      "kind": "portal",
+      "label": "CESNET-TLS-Year22",
+      "url": "https://zenodo.org/records/10608607"
+    },
+    {
+      "kind": "portal",
+      "label": "CESNET-TimeSeries24",
+      "url": "https://zenodo.org/records/13382427"
+    },
+    {
+      "kind": "paper",
+      "label": "TimeSeries24 data descriptor",
+      "url": "https://doi.org/10.1038/s41597-025-04603-x"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CZ"
+  ],
+  "data_family": [
+    "demand_operation",
+    "security_threat"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cesnet backbone traffic datasets cesnet quic22 cesnet tls year22 cesnet timeseries24 and datazoo",
+    "repo": "github.com/cesnet/cesnet-datazoo",
+    "url": "https://zenodo.org/records/10728760"
+  },
+  "description": "CESNET, the Czech national research and education network operator, publishes large real-world traffic datasets captured in the flow monitoring infrastructure of its backbone, which connects about 500 institutions and serves around half a million people. CESNET-QUIC22 holds 153 million QUIC flows from four weeks of October and November 2022 (89 GB uncompressed); CESNET-TLS-Year22 covers a full year of TLS flows with 180 web-service labels; CESNET-TimeSeries24 gives 40 weeks of traffic statistics for more than 275,000 IP addresses, institutions and subnets, built from 66 billion flows, for anomaly detection and forecasting (Scientific Data 12, 338, 2025). Flows are enriched with packet sequences, histograms and handshake fields. The CESNET DataZoo Python library downloads and prepares the datasets. Coverage: one national research network, 2022 to 2023. Format and access: compressed CSV and Parquet archives on Zenodo, from under 1 GB to about 40 GB per file, free of charge under CC BY 4.0. Caveats: an academic network, not a commercial ISP; addresses are anonymised; the labels come from server names. Simulation uses: realistic demand time series and anomalies for capacity planning, forecasting and resilience tests of network models and digital twins. Related records: MAWI and CAIDA passive traces are other backbone captures; the Telecom Italia Big Data Challenge gives regional mobile traffic.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Zenodo data harvest of the digital piece; candidate zenodo-4cd9c2e21b, read in full on second reading",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "Zenodo data harvest of the digital piece; candidate zenodo-70ebb9a7c9, read in full on second reading",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "Zenodo data harvest of the digital piece; candidate zenodo-1e7ee9238d, read in full on second reading",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "csv",
+    "parquet",
+    "archive"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "cyber_attack",
+    "technological_failure"
+  ],
+  "homepage": "https://zenodo.org/records/10728760",
+  "id": "data-cesnet-backbone-traffic-datasets",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-09-27",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "CESNET backbone traffic datasets (CESNET-QUIC22, CESNET-TLS-Year22, CESNET-TimeSeries24) and DataZoo",
+  "notes": "Zenodo API records 10728760, 10608607 and 13382427 read 2026-09-26 (descriptions, licences, file sizes). The TimeSeries24 time span of 2023 is inferred from its 40-week collection and 2024 publication; the Parquet format is from the DataZoo documentation named in the records, not opened.",
+  "provider": "CESNET (Czech Education and Scientific Network) and Czech Technical University in Prague",
+  "related_ids": [],
+  "schema_summary": "flows: times, bytes, packets, packet sequences and histograms, server name, service label; time series: per-interval counts of flows, packets, bytes, unique peers",
+  "sectors": [
+    "digital.telecom",
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience",
+    "digital_twin"
+  ],
+  "size": "about 20 to 40 GB compressed per dataset",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "TimeSeries24 description and files",
+      "url": "https://zenodo.org/api/records/13382427"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "QUIC22 description and files",
+      "url": "https://zenodo.org/api/records/10728760"
+    }
+  ],
+  "spatial_resolution": "IP address, subnet and institution",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "network traffic",
+    "backbone",
+    "flows",
+    "anomaly detection",
+    "CESNET"
+  ],
+  "temporal_coverage": "2022 to 2023 (by dataset)",
+  "temporal_coverage_years": {
+    "end": 2023,
+    "start": 2022
+  },
+  "temporal_resolution": "flow level; 10-minute to daily aggregates in TimeSeries24",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "CESNET backbone traffic datasets (CESNET-QUIC22, CESNET-TLS-Year22, CESNET-TimeSeries24) and DataZoo",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

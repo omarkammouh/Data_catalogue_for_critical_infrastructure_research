@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo software artefact (about 3.5 GB)",
+      "url": "https://zenodo.org/records/21456564"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.21456564",
+    "name": "bedreflyt",
+    "url": "https://zenodo.org/records/21456564"
+  },
+  "deployment": [
+    "own_server"
+  ],
+  "description": "Bedreflyt is a self-adaptive digital twin for hospital operations that supports bed management and patient-to-room allocation under uncertainty. It was developed at the University of Oslo with Durham University, and the software artefact was published on Zenodo on 20 July 2026 with its research paper. The system follows a monitor-analyse-plan-execute loop: an orchestrator combines operational patient data with an ontology of wards, rooms and treatments, a lifecycle manager opens or closes overflow rooms when ward capacity thresholds are crossed, and a Z3 constraint solver assigns patients to rooms under gender, infection, capacity and distance constraints. Access: a Docker Compose stack of services (API, semantic modelling engine, lifecycle manager, solver, Apache Jena Fuseki triplestore, PostgreSQL, Redis and a React dashboard) with source trees and an evaluation guide, in an archive of about 3.5 GB. Licence: Creative Commons Attribution 4.0; free. Coverage: one generic hospital model, adaptable to other hospitals through the ontology. Caveats: a research artefact with documented known limitations, not a clinical product. Simulation uses are hospital surge capacity planning and resource allocation in critical facilities during demand spikes. Related records: the AntifragiCity AHEPA hospital model.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"hospital\" AND \"optimization\"",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://zenodo.org/records/21456564",
+  "hosted_models": [
+    "Z3 SMT solver",
+    "SMOL semantic models"
+  ],
+  "id": "platform-bedreflyt-hospital-digital-twin",
+  "interfaces": [
+    "web_api",
+    "code_library",
+    "web_app"
+  ],
+  "interoperability": [
+    "OWL ontology in Apache Jena Fuseki",
+    "PostgreSQL",
+    "Docker Compose"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-20",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Bedreflyt",
+  "open_source": true,
+  "platform_kind": [
+    "digital_twin"
+  ],
+  "provider": "University of Oslo (Riccardo Sieve, Silvia Lizeth Tapia Tarifa, Einar Broch Johnsen) with Durham University (Nelly Bencomo)",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators and affiliations, 2026-07-20, software, CC BY 4.0, Artefact.zip 3.5 GB, architecture and services description",
+      "url": "https://zenodo.org/api/records/21456564"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.critical_facilities"
+  ],
+  "tags": [
+    "hospital",
+    "digital twin",
+    "bed management",
+    "ontology",
+    "constraint solver",
+    "MAPE-K"
+  ],
+  "title_en": "Digital twin for hospital operations",
+  "type": "platform"
+}

@@ -1,0 +1,146 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Census section indicators (CSV)",
+      "url": "https://www.ine.es/censos2021/C2021_Indicadores.csv"
+    },
+    {
+      "kind": "docs",
+      "label": "List of section indicators",
+      "url": "https://www.ine.es/censos2021/indicadores_seccen_c2021.xlsx"
+    },
+    {
+      "kind": "download",
+      "label": "Census section boundaries at 1 January 2021 (zip)",
+      "url": "https://www.ine.es/censos2021/Cartografia_secc.zip"
+    },
+    {
+      "kind": "portal",
+      "label": "Census 2021 API documentation",
+      "url": "https://www.ine.es/dyngs/DataLab/es/manual.html?cid=1259945952385"
+    },
+    {
+      "kind": "portal",
+      "label": "Custom census tables",
+      "url": "https://www.ine.es/Censo2021/Inicio.do?L=0"
+    },
+    {
+      "kind": "docs",
+      "label": "Municipal dwelling tables (PC-Axis)",
+      "url": "https://www.ine.es/dynt3/inebase/index.htm?type=pcaxis&path=/t20/e244/viviendas/p06/&file=pcaxis&L=0"
+    },
+    {
+      "kind": "viewer",
+      "label": "Census map viewer",
+      "url": "https://www.ine.es/censos2021/presentacion/visor_mapas.htm"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "ES"
+  ],
+  "data_family": [
+    "reference_context",
+    "system_description",
+    "demand_operation",
+    "social_vulnerability_equity"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ine spain censo de poblacion y viviendas 2021 indicators by census section municipal housing tables and census api",
+    "url": "https://ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177108&idp=1254735572981&menu=resultados"
+  },
+  "description": "INE publishes the results of Spain's 2021 Population and Housing Census in several open forms. A single CSV file gives a set of indicators for every census section, the smallest statistical unit: population by sex, age, nationality and education, activity and pension status, marital status, the total number of dwellings, main (usually occupied) versus non-main dwellings, tenure of main dwellings and households by size. The census section boundaries at 1 January 2021 are published as a zipped shapefile next to it. Predefined PC-Axis tables give buildings, dwellings and households for the country, regions, provinces and municipalities, and a separate series classifies dwellings by intensity of use estimated from their electricity consumption. Custom tables can be built online, and an API with documentation and an R example serves the census data as JSON. INE produces the census to count the population and dwellings. Coverage: all of Spain. Format and access: CSV, XLSX, PC-Axis, shapefile and JSON without registration; published on 30 June 2023. Licence: INE applies CC BY 4.0 to statistical information on its website unless stated otherwise. Caveats: section indicators are few and mostly shares, not full cross-tabulations; building characteristics such as age and condition are in the municipal tables. Simulation uses: population and dwelling exposure by section, vacant or seasonal dwelling shares from electricity use for energy demand, and evacuation planning. Related records: the INE 1 km population grid of the same census, the Spain hospital accessibility by census tract record and GHSL.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:ES:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "analysis_package_file",
+    "shapefile",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177108&menu=resultados&idp=1254735572981",
+  "id": "data-ine-spain-census-2021-census-section-indicators-and-api",
+  "languages": [
+    "es"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "INE Spain Censo de Población y Viviendas 2021, indicators by census section, municipal housing tables and census API",
+  "provider": "Instituto Nacional de Estadística (INE), Spain",
+  "related_ids": [
+    "data-ine-spain-census-2021-population-1km-grid",
+    "data-spain-hospital-accessibility-census-tracts",
+    "data-copernicus-ghsl-built-up-population"
+  ],
+  "schema_summary": "section indicators T1-T22+: population, sex, age, nationality, education, activity, pensioners, marital status, total dwellings, main and non-main dwellings, tenure of main dwellings, households by size; municipal tables on buildings, dwellings, households and dwellings by intensity of use from electricity consumption",
+  "sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Results page: predefined tables (persons, dwellings, dwellings by intensity of use from electricity consumption, households), section indicators CSV, section boundaries, API, 1 km grid; published 30/06/2023",
+      "url": "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177108&menu=resultados&idp=1254735572981"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Indicator list T1-T22 read (T18 dwellings, T19 main/non-main, T20 tenure, T22 household size)",
+      "url": "https://www.ine.es/censos2021/indicadores_seccen_c2021.xlsx"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Legal notice: CC BY 4.0 for INE statistical information unless otherwise stated",
+      "url": "https://www.ine.es/dyngs/AYU/index.htm?cid=125"
+    }
+  ],
+  "spatial_resolution": "census section (sección censal) for the indicator file; municipality, province and region for detailed tables",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "Spain",
+    "census sections",
+    "dwellings",
+    "electricity consumption",
+    "API"
+  ],
+  "temporal_coverage": "census reference date 1 January 2021",
+  "temporal_coverage_years": {
+    "end": 2021,
+    "start": 2021
+  },
+  "temporal_resolution": "none (census snapshot)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "INE Spain Population and Housing Census 2021, indicators by census section, municipal housing tables and census API",
+  "type": "data"
+}

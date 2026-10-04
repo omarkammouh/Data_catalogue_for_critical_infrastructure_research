@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "GeoServer WFS",
+      "url": "https://geonode.themimu.info/geoserver/ows?service=WFS&request=GetCapabilities"
+    },
+    {
+      "kind": "portal",
+      "label": "Railway network 2022 layer",
+      "url": "https://geonode.themimu.info/layers/geonode%3Ammr_rlwl_250k_mimu_1"
+    },
+    {
+      "kind": "portal",
+      "label": "Bridges (>180 ft) layer",
+      "url": "https://geonode.themimu.info/layers/geonode%3Amm_bridges_pt"
+    },
+    {
+      "kind": "portal",
+      "label": "Airports layer",
+      "url": "https://geonode.themimu.info/layers/geonode%3Ammr_airports_mimu"
+    },
+    {
+      "kind": "portal",
+      "label": "Sea ports layer",
+      "url": "https://geonode.themimu.info/layers/geonode%3Amyanmar_sea_port"
+    },
+    {
+      "kind": "docs",
+      "label": "Former landing page (description or portal page)",
+      "url": "https://geonode.themimu.info/layers/geonode%3Ammr_rdsl_mimu_250k"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "MM"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "myanmar transport layers from mimu geonode road network 2022 railway network 2022 bridges over 180 ft airports and seaports",
+    "url": "https://geonode.themimu.info/layers/geonode%3Ammr_airports_mimu"
+  },
+  "description": "The Myanmar Information Management Unit (MIMU) publishes national transport layers on its GeoNode for humanitarian and development planning. Contents: the road network 2022 (1,145 main, secondary and tertiary road segments built on a connectivity approach linking the Union capital, state and region capitals, towns and villages); the railway network 2022 (76 line features updated in March 2022 from satellite imagery and Ministry of Transport and Communications information); 986 larger bridges over 180 feet, located by CDE Myanmar and MIMU from the 2019 General Administration Department township profiles and satellite imagery; 65 airports with operational status; and 11 seaports and deep-sea port projects with port type and source. Producer: MIMU, with CDE Myanmar for bridges. Coverage: the whole of Myanmar at about 1:250,000. Format and access: GeoNode layers with WMS and WFS, downloadable as GeoJSON, shapefile or CSV without registration. Licence: no licence is stated on the layers; MIMU products are shared with attribution. Caveats: the railway status is not verified and parts may be out of service after landslides or conflict; the road layer is a connectivity network, not a surveyed road inventory; bridge positions are approximate. Simulation uses: access and isolation analysis for humanitarian logistics, flood and cyclone exposure of bridges and roads, and network models of freight routes to ports. Related records: MIMU public hospitals (data-myanmar-public-hospitals-mimu) and the substations layer (data-mimu-myanmar-electric-power-substations-2025) come from the same GeoNode.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source mm-sdi-geonode-themimu-info: provider pages read (round 2 register piece)",
+      "route": "R04",
+      "source": "mm-sdi-geonode-themimu-info"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "shapefile",
+    "csv",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://geonode.themimu.info/layers/geonode%3Ammr_airports_mimu",
+  "id": "data-mimu-myanmar-road-rail-bridges-airports-seaports-layers",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (MIMU products with attribution)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Myanmar transport layers from MIMU GeoNode: road network 2022, railway network 2022, bridges over 180 ft, airports and seaports",
+  "provider": "Myanmar Information Management Unit (MIMU), with CDE Myanmar for the bridge layer",
+  "related_ids": [
+    "data-myanmar-public-hospitals-mimu",
+    "data-mimu-myanmar-electric-power-substations-2025",
+    "data-mimu-myanmar-baseline-health-facilities-by-township-gad-2019"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.rail",
+    "transport.aviation",
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "abstracts: road network 2022, railway 2022 (March), bridges >180ft (GAD 2019), airports, sea ports",
+      "url": "https://geonode.themimu.info/api/layers/?limit=100"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "resultType=hits: roads 1,145, rail 76, bridges 986, airports 65, sea ports 11",
+      "url": "https://geonode.themimu.info/geoserver/ows?service=WFS&version=2.0.0&request=GetCapabilities"
+    }
+  ],
+  "tags": [
+    "Myanmar",
+    "road network",
+    "railway",
+    "bridges",
+    "airports",
+    "MIMU"
+  ],
+  "title_en": "Myanmar transport layers from MIMU GeoNode: road network 2022, railway network 2022, bridges over 180 ft, airports and seaports",
+  "type": "data"
+}

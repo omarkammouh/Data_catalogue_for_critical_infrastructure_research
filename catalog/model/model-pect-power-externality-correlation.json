@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/SSESLab/electricityandenvironment"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1016/j.softx.2018.12.001"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.1016/j.softx.2018.12.001",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pect power externality correlation tool",
+    "url": "https://github.com/sseslab/electricityandenvironment"
+  },
+  "description": "PECT is a Python tool from the SSESLab electricity and environment project for estimating indirect environmental effects of grid electricity. A user specifies a United States location and time interval. The script obtains generation mix from WattTime and combines it with fuel-specific factors from EPA eGRID and other cited sources. Outputs are time series of generation by fuel, carbon and air-pollutant emissions, and water consumption and withdrawal estimates. Its geographic coverage is limited to United States regions represented by the input services; temporal resolution follows the requested interval and available fuel-mix data. Source, examples and notebooks are public under LGPL-3.0, so the code is free to obtain. Running it requires a separate WattTime account, and the repository advises using current eGRID factors. PECT could help compare electricity scenarios or estimate water and emissions consequences of building electricity demand. Its factors and grid-mix inputs can become stale, and no live API output was checked. The related catalogue record data-epa-egrid-emissions-generation-resource-integrated-database describes one input dataset. No code or service was run.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "SoftwareX whole-index enumeration; 10.1016/j.softx.2018.12.001; G5-LOCAL-040",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/SSESLab/electricityandenvironment",
+  "id": "model-pect-power-externality-correlation",
+  "inputs": [
+    "United States location and time interval",
+    "WattTime fuel-mix data and eGRID emission factors"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2019-05-24",
+  "licence": "LGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "PECT Power Externality Correlation Tool",
+  "notes": "G5 G5-0975. Running PECT requires a valid WattTime API account and sufficiently current eGRID factors. No sign-in was needed for metadata review, and no API credentials were sought or used. The code licence is LGPL-3.0; third-party data-service terms were not checked. The model was not run. ",
+  "outputs": [
+    "Fuel-mix time series",
+    "Attributed carbon and air-pollutant emissions",
+    "Water consumption and withdrawal estimates"
+  ],
+  "provider": "SSESLab electricity and environment project",
+  "related_ids": [
+    "data-epa-egrid-emissions-generation-resource-integrated-database"
+  ],
+  "repository": "https://github.com/SSESLab/electricityandenvironment",
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Public article abstract identifies the US power externality model.",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.softx.2018.12.001"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own project states inputs, outputs, WattTime account requirement, example files and LGPL-3.0 licence.",
+      "url": "https://github.com/SSESLab/electricityandenvironment"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Paper-linked journal mirror corroborates PECT identity and licence.",
+      "url": "https://github.com/ElsevierSoftwareX/SOFTX_2018_30"
+    }
+  ],
+  "tags": [
+    "research software",
+    "SoftwareX"
+  ],
+  "title_en": "PECT Power Externality Correlation Tool",
+  "type": "model"
+}

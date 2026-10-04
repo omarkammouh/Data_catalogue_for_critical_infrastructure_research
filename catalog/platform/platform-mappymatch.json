@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/NatLabRockies/mappymatch"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/NatLabRockies/mappymatch/blob/main/README.md"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.3141/2645-08"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "mappymatch gps to road matching",
+    "repo": "github.com/natlabrockies/mappymatch",
+    "url": "https://github.com/NatLabRockies/mappymatch"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "Mappymatch is a Python package from the National Laboratory of the Rockies for matching GPS trajectories to road networks. It implements a longest-common-subsequence matcher and provides clients for OSRM and Valhalla matching servers. The documented local workflow reads a CSV trace, constructs a surrounding geofence, obtains an OpenStreetMap network through OSMnx and returns matches as a data frame. Geographic extent and observation dates follow the supplied trace and map. The repository currently documents OpenStreetMap as its supported map format, and the LCSS algorithm works best with high-resolution GPS traces. Source, example notebooks and installation instructions are public and free under BSD-3-Clause. External routing services and source maps retain their own access conditions. Sparse traces, mapping errors and unsupported map formats are material limits; this review did not measure matching accuracy. The package prepares observed movement paths for traffic simulation calibration and links directly to OSMnx (model-osmnx), which supplies network extraction in its primary example. The matched paths are inferred road assignments, not new GPS observations.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:NatLabRockies",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NatLabRockies/mappymatch",
+  "id": "platform-mappymatch",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "CSV",
+    "OpenStreetMap",
+    "Pandas DataFrame"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-20",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Mappymatch GPS-to-road matching",
+  "notes": "G7 G7-0265. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "National Laboratory of the Rockies and contributors",
+  "related_ids": [
+    "model-osmnx"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for NatLabRockies/mappymatch: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3ANatLabRockies&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/natlabrockies/mappymatch/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Mappymatch for gps trajectory matching to road networks",
+  "type": "platform"
+}

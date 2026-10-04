@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Dataset repository (CSV)",
+      "url": "https://github.com/microsoft/USBroadbandUsagePercentages"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "telecom_coverage_spectrum",
+    "social_vulnerability_equity"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "microsoft us broadband usage percentages share of devices using the internet at broadband speed by county and zip code",
+    "repo": "github.com/microsoft/usbroadbandusagepercentages",
+    "url": "https://github.com/microsoft/USBroadbandUsagePercentages"
+  },
+  "description": "This dataset estimates the share of people using the internet at broadband speed in each US county and ZIP code, as a check on reported broadband availability. It was produced by Microsoft's Airband Initiative with the AI for Good Research Lab from anonymised telemetry of Microsoft services: download speeds of software updates and service connections are compared with the FCC broadband definition of 25 Mbps and matched to households per area. Coverage: the United States, counties and ZIP codes, released as county files for November 2019 and October 2020 and a ZIP code file; the authors estimate that about 120 million people do not use the internet at broadband speed. Each row gives the area identifier, name, state and the broadband usage percentage. Format and access: CSV files in a public GitHub repository; free. Licence: Open Use of Data Agreement (O-UDA) 1.0. Caveats: usage is inferred from Microsoft device traffic and reverse IP location, so it reflects adoption and device behaviour as well as network availability; locations with fewer than 20 devices are suppressed, and the 25 Mbps threshold predates the FCC's current definition. Simulation uses: mapping the digital divide as an input to social vulnerability layers in resilience and emergency response planning where services move online. Related records: the FCC National Broadband Map (data-fcc-national-broadband-map) and FCC Form 477 deployment data (data-fcc-form-477-fixed-broadband-deployment) give reported availability to compare against.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source digital-us-broadband-usage-microsoft: provider pages read (round 2 register piece)",
+      "route": "R13",
+      "source": "digital-us-broadband-usage-microsoft"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/microsoft/USBroadbandUsagePercentages",
+  "id": "data-microsoft-us-broadband-usage-percentages",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-02-12",
+  "licence": "O-UDA-1.0 (Open Use of Data Agreement)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Microsoft US Broadband Usage Percentages: share of devices using the internet at broadband speed by county and ZIP code",
+  "notes": "Deep check A4 (2026-10-01) corrected: last_updated .",
+  "provider": "Microsoft (Airband Initiative and AI for Good Research Lab)",
+  "related_ids": [
+    "data-fcc-national-broadband-map",
+    "data-fcc-form-477-fixed-broadband-deployment"
+  ],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: datasets from the Airband Initiative; derived from anonymised Microsoft service data; locations with fewer than 20 devices suppressed; FCC 25 Mbps definition; about 120.4 million people not using broadband speeds; LICENSE.md O-UDA 1.0; last commit 2025-02-12 (README update); files dataset/broadband_data_2019November.csv, broadband_data_2020October.csv, broadband_data_zipcode.csv and a differential privacy paper",
+      "url": "https://raw.githubusercontent.com/microsoft/USBroadbandUsagePercentages/master/README.md"
+    }
+  ],
+  "spatial_resolution": "County and ZIP code",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "broadband",
+    "digital divide",
+    "United States"
+  ],
+  "temporal_coverage": "County releases of November 2019 and October 2020, and a ZIP code release",
+  "title_en": "Microsoft US Broadband Usage Percentages: share of devices using the internet at broadband speed by county and ZIP code",
+  "type": "data"
+}

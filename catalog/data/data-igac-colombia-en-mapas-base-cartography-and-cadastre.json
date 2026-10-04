@@ -1,0 +1,151 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Base Catastral SINIC Dato Abierto FeatureServer",
+      "url": "https://sigi.igac.gov.co/habilitacion/rest/services/sinic/SINIC_DA/FeatureServer"
+    },
+    {
+      "kind": "viewer",
+      "label": "Colombia en Mapas base cartography",
+      "url": "https://www.colombiaenmapas.gov.co/?b=igac&u=0&t=23&servicio=5&cescala=1"
+    },
+    {
+      "kind": "portal",
+      "label": "IGAC open data (datos abiertos)",
+      "url": "https://www.igac.gov.co/datos-abiertos/"
+    },
+    {
+      "kind": "portal",
+      "label": "IGAC open data hub (ArcGIS)",
+      "url": "https://datos-abiertos-igac-igac-oit.hub.arcgis.com/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CO"
+  ],
+  "crs": "Not recorded (MAGNA-SIRGAS family)",
+  "data_family": [
+    "system_description",
+    "reference_context",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "igac open geographic data colombia en mapas base cartography orthoimagery and the sinic open national cadastral base",
+    "url": "https://igac.gov.co/datos-abiertos"
+  },
+  "description": "The Instituto Geográfico Agustín Codazzi (IGAC), Colombia's national mapping and cadastre agency, publishes its open geographic data through three linked services. Colombia en Mapas offers the official base cartography at scales from 1:500,000 down to 1:1,000, with orthoimages, digital elevation models and vector databases. The IGAC open data hub on ArcGIS lists 2,551 datasets from more than 70 public entities, and the Base Catastral SINIC Dato Abierto service publishes the national cadastral base as open data, built from the bimonthly reports of the cadastral managers and covering land parcels (terrenos), constructions and units. Coverage is national, with base cartography scale and cadastral completeness varying by municipality; resolution is feature level for vectors. Format and access: alphanumeric data as CSV, XLSX and JSON, geospatial data as SHP, KML and GeoJSON, and OGC WMS and WFS services, with metadata in the ICDE GeoNetwork catalogue; the cadastral base is an ArcGIS FeatureServer. Licence: IGAC terms of use under Resolución 616 de 2020; the SINIC service states 'sin limitaciones de uso'. Free. Caveats: the cadastral base depends on each manager's reporting cycle, the available cartographic scale varies by area, and the hub mixes IGAC layers with those of other entities. Simulation uses: building and parcel exposure for hazard analysis, road and hydrography layers for network models, and terrain for flood studies. Related records: the Bogotá UAECD cadastral constructions and lots and the INVÍAS national road network.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "organisation walk retry (round 2 cloud worklist, round 1 failure row)",
+      "route": "R10",
+      "source": "igac.gov.co"
+    },
+    {
+      "date": "2026-09-28",
+      "query": "collections/dataset/items",
+      "route": "R04",
+      "source": "IGAC ArcGIS hub search API"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "kml",
+    "geojson",
+    "csv",
+    "spreadsheet",
+    "json",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://www.igac.gov.co/datos-abiertos/",
+  "id": "data-igac-colombia-en-mapas-base-cartography-and-cadastre",
+  "languages": [
+    "es"
+  ],
+  "licence": "IGAC terms of use (Resolución 616 de 2020); SINIC open cadastral base stated as without use limitations",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://datos-abiertos-igac-igac-oit.hub.arcgis.com/"
+    ]
+  },
+  "maturity": "active",
+  "name": "IGAC open geographic data: Colombia en Mapas base cartography, orthoimagery and the SINIC open national cadastral base",
+  "notes": "Round 2 cloud worklist: round 1 built-environment could not reach igac.gov.co (organisation walk P6); the site answered on 2026-09-28.",
+  "provider": "Instituto Geográfico Agustín Codazzi (IGAC), Colombia",
+  "related_ids": [
+    "data-bogota-uaecd-cadastral-constructions-and-lots",
+    "data-colombia-invias-national-road-network"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "cross_cutting.multi_sector",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "open data page: alphanumeric data in CSV, XLSX, JSON; geospatial data in SHP, KML, GeoJSON, WMS, WFS; metadata in the ICDE GeoNetwork",
+      "url": "https://www.igac.gov.co/datos-abiertos/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "base cartography on Colombia en Mapas at 1:500,000 to 1:1,000, orthoimages, DEMs, vector databases",
+      "url": "https://www.igac.gov.co/datos-abiertos/datos-abiertos-geoespaciales"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "2,551 datasets from more than 70 entities",
+      "url": "https://datos-abiertos-igac-igac-oit.hub.arcgis.com/api/search/v1/collections/dataset/items"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Base Catastral SINIC Dato Abierto; 'Sin limitaciones de uso'; terrenos, construcciones, unidades from bimonthly manager reports",
+      "url": "https://sigi.igac.gov.co/habilitacion/rest/services/sinic/SINIC_DA/FeatureServer"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Resolución 616 de 2020, terms of use",
+      "url": "https://www.igac.gov.co/sites/default/files/transparencia/normograma/resolucion_616_de_2020.pdf"
+    }
+  ],
+  "spatial_resolution": "Feature level; cartography at 1:500,000 to 1:1,000",
+  "spatial_resolution_class": "100m_to_1km",
+  "tags": [
+    "cadastre",
+    "base cartography",
+    "orthoimagery",
+    "DEM",
+    "national mapping agency",
+    "Colombia"
+  ],
+  "temporal_coverage": "Current editions; cadastral base updated bimonthly",
+  "temporal_resolution": "none",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "IGAC open geographic data: Colombia en Mapas base cartography, orthoimagery and the SINIC open national cadastral base",
+  "type": "data",
+  "update_frequency": "weekly"
+}

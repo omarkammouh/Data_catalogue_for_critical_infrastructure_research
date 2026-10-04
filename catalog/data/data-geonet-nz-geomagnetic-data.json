@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "WFS",
+      "note": "API endpoint or documentation linked from the record homepage (2026-10-01); found on https://www.geonet.org.nz/data/types/geomag",
+      "url": "https://wfs.geonet.org.nz"
+    },
+    {
+      "kind": "docs",
+      "label": "Geomagnetic data page",
+      "url": "https://www.geonet.org.nz/data/types/geomag"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (JSON)",
+      "note": "Checked 2026-10-01: returns application/json directly.",
+      "url": "https://shakinglayers.geonet.org.nz/api/v1/events/771645/latest/intensity_mmi_contour_lines.json"
+    },
+    {
+      "kind": "api",
+      "label": "Data service",
+      "note": "Checked 2026-10-01: returns application/vnd.geo+json directly.",
+      "url": "https://wfs.geonet.org.nz/geonet/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonet:quake_search_v1&maxFeatures=50&outputFormat=json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "oceania",
+    "antarctica"
+  ],
+  "cost": "free",
+  "countries": [
+    "NZ"
+  ],
+  "data_family": [
+    "space_weather",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "geonet geomagnetic data of new zealand gns science magnetometer network",
+    "url": "https://geonet.org.nz/data/types/geomag"
+  },
+  "description": "GeoNet publishes geomagnetic data from the New Zealand magnetometer network run by GNS Science, which operates a magnetic observatory north-west of Christchurch and one at Scott Base in Antarctica and supports the Apia observatory in Samoa. Magnetometers sampled every second give 1-minute averages of geomagnetic field changes at each site, recorded to support space weather warnings of solar disturbances and magnetic storm forecasts. Most sites have both a fluxgate magnetometer (X, Y and Z components) and a proton scalar magnetometer; the page explains the derived horizontal intensity, total field and the rate of change dH/dt in nanotesla per minute. Data is available through Tilde, GeoNet's time series API, with a data discovery tool and a data exploration tool, station metadata XML in the GeoNet data repository, a geomagnetic dashboard and other products; GeoNet also offers FDSN, WFS, a data API and AWS open data. Licence (read on the provider page on 2026-09-28): CC-BY-3.0 (NZ port). Access is free of charge. Caveats: the basic time series are unadjusted and can contain offsets, spikes and daily or seasonal variation, for example from vehicles parked near a sensor or large earthquakes, and they differ from Intermagnet products. Coverage is New Zealand, Scott Base and Samoa. It supports geomagnetically induced current analysis for power grids and pipelines during space weather storms; related records are Intermagnet and the Tromsø Geophysical Observatory magnetometer data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "web search for organisation walk row NZ:space_weather_centre",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "api",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://www.geonet.org.nz/data/types/geomag",
+  "id": "data-geonet-nz-geomagnetic-data",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-3.0 (NZ port)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GeoNet geomagnetic data of New Zealand (GNS Science magnetometer network)",
+  "provider": "GeoNet, run by GNS Science (Earth Sciences New Zealand) with the Natural Hazards Commission Toka Tū Ake",
+  "related_ids": [
+    "data-intermagnet",
+    "data-tromso-geophysical-observatory-magnetometer"
+  ],
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "space weather warnings; GNS magnetic observatory NW of Christchurch and Scott Base; supports Apia Samoa; 1 s sampling, 1-minute averages; unadjusted basic time series, offsets, spikes, vehicle, earthquake; Intermagnet constants differ; fluxgate (50) and proton (51); EY2M, SMHS fluxgate only; H, F, S, dH/dt nT/min; Tilde API, discovery, exploration; station metadata XML; FDSN, WFS, Data API, AWS open data",
+      "url": "https://www.geonet.org.nz/data/types/geomag"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): CC-BY-3.0 (NZ port) (basis: GeoNet: content licensed under CC BY 3.0 New Zealand)",
+      "url": "https://www.geonet.org.nz/data/types/geomag"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://creativecommons.org/licenses/by/3.0/nz/"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): added 1 verified direct data link(s) from the provider's resource list. Verified: https://shakinglayers.geonet.org.nz/api/v1/events/771645/latest/intens -> verified by fetch during the check; https://wfs.geonet.org.nz/geonet/ows?service=WFS&version=1.0.0&request -> verified by fetch during the check",
+      "url": "https://shakinglayers.geonet.org.nz/api/v1/events/771645/latest/intensity_mmi_contour_lines.json"
+    }
+  ],
+  "tags": [
+    "geomagnetism",
+    "magnetometer",
+    "GeoNet",
+    "GNS Science",
+    "New Zealand",
+    "dH/dt"
+  ],
+  "temporal_coverage": "continuous records at each observatory",
+  "title_en": "GeoNet geomagnetic data of New Zealand (GNS Science magnetometer network)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

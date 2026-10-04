@@ -1,0 +1,142 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Map and country data",
+      "url": "https://healthsites.io/"
+    },
+    {
+      "kind": "docs",
+      "label": "Healthsites API version 3 (facilities list, statistics, shapefile download)",
+      "note": "api-key query parameter required",
+      "url": "https://healthsites.io/api/docs/"
+    },
+    {
+      "kind": "docs",
+      "label": "OSM wiki project page (data model, tags, extracts on HDX)",
+      "url": "https://wiki.openstreetmap.org/wiki/Global_Healthsites_Mapping_Project"
+    },
+    {
+      "kind": "portal",
+      "label": "Country extracts on the Humanitarian Data Exchange",
+      "url": "https://data.humdata.org/organization/healthsites"
+    }
+  ],
+  "access_note": "The API needs an api-key (it answered 'API key is needed' without one); map viewing and HDX extracts are open.",
+  "access_restrictions": "registration",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "crs": "WGS 84 (OpenStreetMap)",
+  "data_family": [
+    "critical_facilities",
+    "system_description",
+    "crowdsourced_public_reports"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "healthsites io global healthsites mapping project",
+    "url": "https://healthsites.io"
+  },
+  "description": "Healthsites.io is the Global Healthsites Mapping Project's open data commons of health facility locations, built on OpenStreetMap. It aims to map every health facility in the world, from hospitals and clinics to pharmacies and doctors, with location, facility type and details such as operator, beds, staff, specialities, contact information and opening hours, following OpenStreetMap health tags. The project started because accurate health facility baselines were missing in emergencies such as the Haiti earthquake and the West African Ebola epidemic; it curates and validates the data with users, trusted partners, local OpenStreetMap chapters and health ministries. Coverage is global, with quality varying by country; resolution is the individual facility as a point or polygon. Access is through the map and country pages, API version 3 (facility lists filtered by country, bounding box and modification date, statistics and shapefile downloads, in JSON, XML or GeoJSON, with OSM or HXL tags), downloadable GeoJSON, Shapefile, KML and CSV, and country extracts on the Humanitarian Data Exchange. Licence: Open Database Licence (ODbL), free; the API needs a key. Caveats: crowdsourced attributes are incomplete and uneven between countries, and the database is only as current as its contributors. Simulation uses: health facilities as critical facilities for hazard exposure, access and emergency response studies and for healthcare resilience modelling. Related: healthcare demand and hospital capacity models such as Covasim (catalogued as model-covasim) need such facility inventories.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "global health facility locations open data (register healthsites)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry healthsites.io",
+      "route": "R30",
+      "source": "healthsites (register)"
+    }
+  ],
+  "formats": [
+    "api",
+    "geojson",
+    "xml",
+    "shapefile",
+    "kml",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://healthsites.io/",
+  "id": "data-healthsites-io",
+  "languages": [
+    "en"
+  ],
+  "licence": "ODbL-1.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Healthsites.io (Global Healthsites Mapping Project)",
+  "provider": "Global Healthsites Mapping Project (healthsites.io) with OpenStreetMap contributors",
+  "related_ids": [
+    "model-covasim"
+  ],
+  "schema_summary": "Facility geometry, name, amenity and healthcare type, operator, beds, staff, speciality, contact and opening hours following OSM health tags; tags in OSM or HXL format",
+  "sectors": [
+    "services.healthcare",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Mission, global scope, ODbL, API and formats GeoJSON, Shapefile, KML, CSV; version 3.0.0",
+      "url": "https://healthsites.io/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "API v3 endpoints facilities list, statistic, shapefile download; api-key required; filters country, extent, from, to; output json/xml/geojson; tag format osm/hxl",
+      "url": "https://healthsites.io/api/docs/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Answered 'API key is needed'",
+      "url": "https://healthsites.io/api/v3/facilities/count"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Project overview, data model, tag proposal, extracts via healthsites.io, HDX and the Export Tool",
+      "url": "https://wiki.openstreetmap.org/wiki/Global_Healthsites_Mapping_Project"
+    }
+  ],
+  "spatial_resolution": "Individual facility point or polygon",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "health facilities",
+    "hospitals",
+    "clinics",
+    "OpenStreetMap",
+    "HXL",
+    "humanitarian"
+  ],
+  "temporal_coverage": "Current state, with modification timestamps (API filters from/to)",
+  "temporal_resolution": "none",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Healthsites.io (Global Healthsites Mapping Project)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

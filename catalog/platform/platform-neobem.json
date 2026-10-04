@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/mitchpaulus/neobem"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/mitchpaulus/neobem/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "neobem building model preprocessor",
+    "repo": "github.com/mitchpaulus/neobem",
+    "url": "https://github.com/mitchpaulus/neobem"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "Neobem is a command-line preprocessor language published by the mitchpaulus repository for generating building-energy simulation inputs. It compiles expressions, variables, reusable templates and loops into EnergyPlus IDF files and also supports DOE-2 Building Description Language. Excel and JSON data can supply objects, and text can be read from a file or standard input and written to standard output. The repository documents source builds and releases for Windows, Linux and macOS architectures. Source is free under AGPL-3.0. Coverage is the user's building and chosen simulation period, without a fixed geographic dataset or physical resolution. The main caveat is that Neobem prepares text inputs, not checking the physical adequacy of a model or running its solver. Release choice also matters: some builds bundle a .NET runtime, while smaller builds need a matching runtime installed separately. It supports repeatable input generation for parameter studies and reusable model components around the catalogue's EnergyPlus engine (model-energyplus). No executable or archive was downloaded for this review.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:energyplus fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/mitchpaulus/neobem",
+  "id": "platform-neobem",
+  "interfaces": [
+    "command_line",
+    "other"
+  ],
+  "interoperability": [
+    "EnergyPlus IDF",
+    "DOE-2 BDL",
+    "Excel",
+    "JSON"
+  ],
+  "language": [
+    "dotnet"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-31",
+  "licence": "AGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Neobem building-model preprocessor",
+  "notes": "G7 G7-0055. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "mitchpaulus repository maintainers",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for mitchpaulus/neobem: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aenergyplus+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/mitchpaulus/neobem/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for buildings",
+  "type": "platform"
+}

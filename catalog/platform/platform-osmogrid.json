@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/ie3-institute/OSMoGrid"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/ie3-institute/OSMoGrid/blob/dev/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "osmogrid synthetic electrical network generator",
+    "repo": "github.com/ie3-institute/osmogrid",
+    "url": "https://github.com/ie3-institute/OSMoGrid"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "OSMoGrid generates electrical grid models from OpenStreetMap and optional asset CSV inputs. The IE3 research group publishes Java and Scala source, a user guide and configuration files, with a focus on low-voltage networks. Users provide a regional OSM PBF extract containing boundaries, buildings, streets, land use and substations, plus voltage and asset-generation settings. The program writes CSV grid assets for a chosen area, supporting later power-flow simulation. Geographic coverage is whatever OSM region is supplied, while the result is a network snapshot, not a time series. BSD-3-Clause source is freely available. A limitation is that OSM completeness and inferred asset placement affect whether the generated network resembles an actual utility system; the guide warns that even small areas can generate large files. The tool supports synthetic distribution-grid planning and hazard exposure studies. The catalogue's model-pandapower could analyse a converted network, but conversion was not tested. No OSM extract was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "ie3-institute/osmogrid linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/ie3-institute/OSMoGrid",
+  "id": "platform-osmogrid",
+  "interfaces": [
+    "code_library",
+    "file_exchange"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-09",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OSMoGrid synthetic electrical-network generator",
+  "notes": "G7 G7-1399. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "IE3 Institute energy systems researchers",
+  "related_ids": [
+    "model-pandapower"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for ie3-institute/OSMoGrid: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/ie3-institute/osmogrid"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/ie3-institute/osmogrid/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://api.github.com/repos/ie3-institute/OSMoGrid/contents/docs/readthedocs/use/config.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://api.github.com/repos/ie3-institute/OSMoGrid/contents/docs/readthedocs/use/osmInputData.md"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for electricity",
+  "type": "platform"
+}

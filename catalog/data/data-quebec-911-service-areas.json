@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Données Québec listing",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/desserte-des-centres-durgences-9-1-1"
+    },
+    {
+      "kind": "api",
+      "label": "WFS service",
+      "url": "https://geoegl.msp.gouv.qc.ca/apis/wss/911.fcgi?service=wfs&request=getcapabilities&version=1.1.0"
+    },
+    {
+      "kind": "api",
+      "label": "WMS service",
+      "url": "https://geoegl.msp.gouv.qc.ca/apis/wss/911.fcgi?request=getcapabilities&service=wms&version=1.3.0"
+    },
+    {
+      "kind": "viewer",
+      "label": "Interactive map (IGO)",
+      "url": "https://geoegl.msp.gouv.qc.ca/igo2/apercu-qc/?context=qc911&zoom=7"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CA"
+  ],
+  "data_family": [
+    "system_description",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "desserte des centres d urgences 9 1 1 quebec 911 emergency call centre service areas",
+    "url": "https://donneesquebec.ca/recherche/dataset/desserte-des-centres-durgences-9-1-1"
+  },
+  "description": "This data set maps which emergency communications centre answers a 911 call in each part of Quebec, Canada. The producer is Quebec's Ministère de la Sécurité intérieure, whose 911 and emergency telecommunications directorate enters and updates the layers. Coverage is the whole province. It has two complementary polygon layers: the 911 service areas, built from municipal boundaries intersected with cellular coverage, name the centre reached by a mobile 911 call; the agreement areas, where there is neither cellular coverage nor 911, name the centre reached by a ten-digit administrative emergency number from a satellite or landline phone. The layers are available from Données Québec as Shapefile and GeoJSON downloads and through WFS and WMS services with an interactive map, free under the Creative Commons Attribution 4.0 licence, and were last modified on 8 September 2026. Caveats: the documentation is in French, the layers give service areas, not centre capacities or call volumes, and cellular coverage is as reported to the ministry, not measured. Simulation uses: assigning emergency calls to answering centres in response models, testing which areas lose 911 access when a centre or telecom network fails, and planning remote-area emergency communications. Related records: the FCC 911 Master PSAP Registry (data-fcc-911-master-psap-registry) lists answering points for the United States.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "urgences",
+      "route": "R02",
+      "source": "services-donnees-quebec"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "geojson",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "regional",
+  "hazards": [],
+  "homepage": "https://www.donneesquebec.ca/recherche/dataset/desserte-des-centres-durgences-9-1-1",
+  "id": "data-quebec-911-service-areas",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-08",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Desserte des centres d'urgences 9-1-1 (Quebec 911 emergency call centre service areas)",
+  "provider": "Ministère de la Sécurité intérieure du Québec, Direction du 9-1-1 et des télécommunications d'urgence",
+  "related_ids": [
+    "data-fcc-911-master-psap-registry"
+  ],
+  "schema_summary": "Two polygon layers: 911 service areas (municipal limits intersected with cellular coverage, naming the emergency communications centre reached by a mobile 911 call) and agreement service areas (areas without cellular or 911 coverage, naming the centre reached by a ten-digit administrative emergency number from satellite or landline phones)",
+  "sectors": [
+    "services.emergency_services",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "cascading_failure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Ministère de la Sécurité intérieure; CC BY 4.0; created 2015-03-25, modified 2026-09-08; update continuous; two complementary layers described; maintained by the Direction du 9-1-1 et des télécommunications d'urgence; SHP, GeoJSON, WMS, WFS and IGO map",
+      "url": "https://www.donneesquebec.ca/recherche/api/3/action/package_show?id=desserte-des-centres-durgences-9-1-1"
+    }
+  ],
+  "spatial_resolution": "Municipal limits intersected with cellular coverage",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "911",
+    "PSAP",
+    "emergency communications centre",
+    "cellular coverage",
+    "Quebec"
+  ],
+  "temporal_coverage": "Current state",
+  "temporal_resolution": "Snapshot, updated continuously",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Closure of emergency centers 9-1-1 (Quebec 911 emergency call center service areas)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

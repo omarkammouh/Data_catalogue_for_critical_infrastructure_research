@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "sonnendach.ch roof suitability map",
+      "url": "https://www.uvek-gis.admin.ch/BFE/sonnendach/"
+    },
+    {
+      "kind": "download",
+      "label": "GeoPackage download (data.geo.admin.ch)",
+      "url": "https://data.geo.admin.ch/ch.bfe.solarenergie-eignung-daecher/solarenergie-eignung-daecher/solarenergie-eignung-daecher_2056.gpkg.zip"
+    },
+    {
+      "kind": "api",
+      "label": "WMS and WMTS services",
+      "url": "https://wms.geo.admin.ch/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de"
+    },
+    {
+      "kind": "docs",
+      "label": "opendata.swiss entry",
+      "url": "https://opendata.swiss/de/dataset/eignung-von-hausdachern-fur-die-nutzung-von-sonnenenergie"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "data_family": [
+    "resource_potential",
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "solar energy suitability of roofs in switzerland sonnendach ch",
+    "url": "https://bfe.admin.ch/solarenergie-eignung-daecher"
+  },
+  "description": "The Swiss Federal Office of Energy publishes a suitability map showing, for each roof in Switzerland, how well it suits solar electricity or solar heat and what yield is possible, presented to the public on sonnendach.ch. The sun's path over the year is simulated and the irradiation on every roof surface calculated from MeteoSwiss irradiation values and swisstopo's swissBUILDINGS3D 2.0 building models; from 2023 updated input data are used, with part of the country recalculated at each annual update, and the assumed photovoltaic module efficiency was raised from 17% to 20% from 1 January 2023. Data are downloadable as GeoPackages, including monthly and generalised versions, and as WMS and WMTS services; a companion dataset covers facades, and municipal solar potentials are derived from the roof results. Coverage: all of Switzerland. Access: free map, downloads and web services. Licence: opendata.swiss BY terms. Caveats: areas are updated in stages, so input data vintages differ, and yields are modelled. Simulation uses are building-level rooftop PV and solar thermal potential for energy and retrofit scenarios. Related records: the NREL PV Rooftop Database.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:resource_potential, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "geopackage",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.bfe.admin.ch/solarenergie-eignung-daecher",
+  "id": "data-swiss-sonnendach-roof-solar-suitability",
+  "languages": [
+    "de",
+    "fr",
+    "it",
+    "en"
+  ],
+  "licence": "opendata.swiss terms: open use with source attribution (BY)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Solar energy suitability of roofs in Switzerland (sonnendach.ch)",
+  "provider": "Swiss Federal Office of Energy (BFE/SFOE), with MeteoSwiss and swisstopo",
+  "related_ids": [
+    "data-nrel-pv-rooftop-database"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, inputs, 2023 updates, efficiency change, publisher, resources, terms",
+      "url": "https://ckan.opendata.swiss/api/3/action/package_show?id=eignung-von-hausdachern-fur-die-nutzung-von-sonnenenergie"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Map application",
+      "url": "https://www.uvek-gis.admin.ch/BFE/sonnendach/"
+    }
+  ],
+  "tags": [
+    "sonnendach",
+    "solar potential",
+    "roofs",
+    "Switzerland",
+    "BFE",
+    "open data"
+  ],
+  "title_en": "Solar energy suitability of roofs in Switzerland (sonnendach.ch)",
+  "type": "data"
+}

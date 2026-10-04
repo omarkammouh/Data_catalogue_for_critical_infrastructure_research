@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "CDS catalogue API record",
+      "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels"
+    },
+    {
+      "kind": "portal",
+      "label": "CDS dataset page (single levels)",
+      "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels"
+    },
+    {
+      "kind": "portal",
+      "label": "CDS dataset page (pressure levels)",
+      "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels"
+    }
+  ],
+  "access_note": "Downloads need a free Copernicus Climate Data Store account and acceptance of the licence.",
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "weather_observations",
+    "hazards",
+    "resource_potential"
+  ],
+  "data_kind": [
+    "raster",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.24381/cds.adbb2d47",
+    "name": "era5 hourly reanalysis single and pressure levels",
+    "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels"
+  },
+  "description": "ERA5 is the fifth generation ECMWF reanalysis of global weather and climate, which combines model data with observations from across the world by data assimilation into a complete and consistent record. It contains hourly estimates of many atmospheric, ocean-wave and land-surface quantities, such as near-surface temperature and wind, precipitation, radiation, snow and soil moisture, with an uncertainty estimate from a 10-member ensemble at three-hourly intervals and pre-computed monthly means. ECMWF produces it for the Copernicus Climate Change Service; it replaced ERA-Interim. Coverage is global from 1940 to the present, updated daily with a latency of a few days, regridded to 0.25 degrees for the reanalysis (0.5 degrees for ocean waves and the ensemble). Data are accessible from the Climate Data Store through web forms and an API, with subsets on single levels and pressure levels, under a CC BY 4.0 licence at no cost after free registration. Caveats: early decades rest on far fewer observations, preliminary ERA5T data can be revised, and grid-scale values smooth local extremes. It is the common weather and climate forcing for hazard exposure, heat and wind stress on infrastructure, renewable resource and demand modelling; related records are GloFAS, ISIMIP, the CMIP6 projections and the NEX-GDDP-CMIP6 downscaled data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "global climate reanalysis hourly",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "extreme_heat",
+    "storm_wind",
+    "flood",
+    "drought",
+    "cold_snow_ice",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+  "id": "data-era5-reanalysis",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ERA5 hourly reanalysis (single and pressure levels)",
+  "notes": "GRIB and NetCDF output formats are from the CDS download form as recalled and were not re-read on 2026-09-26.",
+  "provider": "ECMWF for the Copernicus Climate Change Service (C3S)",
+  "related_ids": [],
+  "schema_summary": "hundreds of surface and upper-air variables by hour and grid cell",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, 1940 to present, 0.25 degree regridding, ensemble, daily update, CC BY 4.0, DOI 10.24381/cds.adbb2d47",
+      "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels"
+    }
+  ],
+  "spatial_resolution": "0.25 degree (0.5 degree for ocean waves and ensemble)",
+  "spatial_resolution_class": "over_10km",
+  "spatial_resolution_m": 28000,
+  "tags": [
+    "reanalysis",
+    "ECMWF",
+    "Copernicus",
+    "climate data store",
+    "weather"
+  ],
+  "temporal_coverage": "1940 to present",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1940
+  },
+  "temporal_resolution": "hourly; monthly means",
+  "temporal_resolution_class": "hourly",
+  "title_en": "ERA5 hourly reanalysis (single and pressure levels)",
+  "type": "data",
+  "update_frequency": "daily"
+}

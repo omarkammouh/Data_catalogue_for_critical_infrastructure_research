@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "ShakeCast source (pyCast)",
+      "url": "https://code.usgs.gov/ghsc/esi/shakecast/shakecast"
+    },
+    {
+      "kind": "docs",
+      "label": "ShakeCast wiki",
+      "url": "https://code.usgs.gov/ghsc/esi/shakecast/shakecast/-/wikis/Home"
+    },
+    {
+      "kind": "repo",
+      "label": "ShakeCast AEBM module",
+      "url": "https://code.usgs.gov/ghsc/esi/shakecast/shakecast-aebm"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [],
+  "cost": "free",
+  "countries": [],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usgs shakecast shakemap broadcast automated post earthquake facility impact estimates and inspection priority notifications",
+    "repo": "code.usgs.gov/ghsc/esi/shakecast/shakecast",
+    "url": "https://code.usgs.gov/ghsc/esi/shakecast/shakecast"
+  },
+  "description": "ShakeCast, short for ShakeMap Broadcast, is a USGS post-earthquake situational awareness application whose source is published on the USGS GitLab (code.usgs.gov). Contents: after an earthquake it automatically retrieves ShakeMap ground-motion values at a user's facilities, compares them with damage functions (Hazus-based, intensity-based or custom; building-specific Hazus AEBM functions since version 3 in the companion shakecast-aebm repository) and sends notifications with potential impacts and inspection priorities to emergency managers; facilities can be buildings, campuses, bridges or bridge components. pyCast is the current Python backend with an Angular web frontend and scenario tools. Producer: USGS (repository group ghsc/esi); the wiki cites Lin, Wald and Slosky (2020). Coverage: any region with USGS ShakeMaps; Caltrans has used it since 2005 and nine other state transportation departments joined a Transportation Pooled Fund from 2017. Format and access: open source code on code.usgs.gov with a wiki, an Excel Inventory Workbook that exports facilities, notification groups and users as XML, and cloud or on-premise deployment. Licence: CC0 1.0 (repository licence). Caveats: the wiki says ShakeCast needs a sizeable facility inventory and expertise in earthquake engineering and IT; results depend on the fragility assigned to each facility. Simulation uses: rapid damage and inspection prioritisation for bridge, utility and facility portfolios, and scenario exercises for emergency response planning. Related records: data-usgs-shakemap-scenario-catalog, data-fhwa-national-bridge-inventory and platform-hazus.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source code-usgs: provider pages read (round 2 register piece)",
+      "route": "R05",
+      "source": "code-usgs"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://code.usgs.gov/ghsc/esi/shakecast/shakecast",
+  "id": "model-usgs-shakecast-shakemap-broadcast-facility-impact-notification",
+  "inputs": [
+    "USGS ShakeMap ground-motion grids",
+    "facility inventory with fragility or damage functions (Inventory Workbook XML)"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "fragility"
+  ],
+  "name": "USGS ShakeCast (ShakeMap Broadcast): automated post-earthquake facility impact estimates and inspection-priority notifications",
+  "outputs": [
+    "facility damage-state and inspection-priority estimates",
+    "automatic notifications to user groups"
+  ],
+  "provider": "U.S. Geological Survey",
+  "related_ids": [
+    "data-usgs-shakemap-scenario-catalog",
+    "data-fhwa-national-bridge-inventory",
+    "platform-hazus"
+  ],
+  "sectors": [
+    "transport.road",
+    "cross_cutting.multi_sector",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "project metadata (CC0, created 2020-11-17, activity 2026-09-11), README (pyCast), wiki Home and Inventory Workbook pages, shakecast-aebm README (Hazus AEBM since V3)",
+      "url": "https://code.usgs.gov/api/v4/projects/4804/wikis/Home"
+    }
+  ],
+  "tags": [
+    "USGS",
+    "earthquake",
+    "ShakeMap",
+    "post-event inspection",
+    "Caltrans"
+  ],
+  "title_en": "USGS ShakeCast (ShakeMap Broadcast): automated post-earthquake facility impact estimates and inspection-priority notifications",
+  "type": "model"
+}

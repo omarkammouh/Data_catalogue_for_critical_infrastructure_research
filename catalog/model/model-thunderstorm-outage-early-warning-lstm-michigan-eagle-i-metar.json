@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "arXiv 2510.03959 (PDF)",
+      "url": "https://arxiv.org/pdf/2510.03959"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "two stage lstm early warning model for summer thunderstorm power outages in michigan from open eagle i and metar data",
+    "url": "https://arxiv.org/pdf/2510.03959"
+  },
+  "description": "This record describes a 48-hour early-warning model for summer thunderstorm-related power outages in Michigan, presented in an October 2025 arXiv paper. The authors note that thunderstorm outages are hard to predict because most storms cause no damage, convective processes are rapid and public data are noisy and incomplete, and they build the model using only open outage data (EAGLE-I) and weather observations (METAR). The pipeline preserves convective extremes from a sparse station network through parameter-specific kriging and causal spatiotemporal features, builds rolling and nearest-neighbour inverse-distance aggregates to capture moisture advection, wind shifts and pressure drops, and applies a two-stage design of a logistic gate followed by an LSTM regressor. Evaluation focuses on state-level peaks of at least 50,000 customers without power, and the abstract reports that the two-stage model detects more peaks than the alternative with only one additional false alarm. Access: the paper on arXiv, free; no code or licence is stated on the pages read. Caveats: one state and one season. It suits outage forecasting research without utility data, and relates to the EAGLE-I outages record catalogued here.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "hurricane power grid damage prediction model utility outage forecasting open data",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://arxiv.org/pdf/2510.03959",
+  "id": "model-thunderstorm-outage-early-warning-lstm-michigan-eagle-i-metar",
+  "inputs": [
+    "Open outage records (EAGLE-I) and surface weather observations (METAR), converted to rolling and k-nearest-neighbour inverse-distance aggregates with parameter-specific kriging"
+  ],
+  "language": [
+    "not_stated"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-07",
+  "licence": "not stated (no licence or terms statement on the paper read on 2026-09-29)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical",
+    "hybrid"
+  ],
+  "name": "Two-stage LSTM early-warning model for summer thunderstorm power outages in Michigan from open EAGLE-I and METAR data",
+  "outputs": [
+    "48-hour early warning of state-level thunderstorm outage peaks of at least 50,000 customers without power"
+  ],
+  "provider": "University of Stavanger and University of Michigan (Stanishevska et al.)",
+  "regions": [
+    "Michigan"
+  ],
+  "related_ids": [
+    "data-eagle-i-recorded-electricity-outages-us-counties"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "abstract read 2026-09-29: Michigan, EAGLE-I and METAR data, two-stage LSTM, 50,000 customer peak metric",
+      "url": "https://arxiv.org/pdf/2510.03959"
+    }
+  ],
+  "tags": [
+    "thunderstorm outages",
+    "early warning",
+    "LSTM",
+    "EAGLE-I",
+    "METAR",
+    "r2-fresh-energy"
+  ],
+  "title_en": "Two-stage LSTM early-warning model for summer thunderstorm power outages in Michigan from open EAGLE-I and METAR data",
+  "type": "model",
+  "validated_on": [
+    "Michigan summer thunderstorm events, evaluated with hits, misses, false alarms and peak-conditional MASE with block bootstrap uncertainty"
+  ]
+}

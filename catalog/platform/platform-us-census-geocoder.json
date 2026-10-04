@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Census Geocoder web interface",
+      "url": "https://geocoding.geo.census.gov/geocoder/"
+    },
+    {
+      "kind": "api",
+      "label": "Geocoding services API documentation",
+      "url": "https://www.census.gov/data/developers/data-sets/Geocoding-services.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Census Geocoder documentation and user guide",
+      "url": "https://www.census.gov/programs-surveys/geography/technical-documentation/complete-technical-documentation/census-geocoder.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "census geocoder address and coordinate geocoding service",
+    "url": "https://geocoding.geo.census.gov/geocoder"
+  },
+  "deployment": [
+    "hosted_service"
+  ],
+  "description": "The Census Geocoder is the U.S. Census Bureau's free address look-up service, which matches addresses to coordinates and to the census geographies that contain them. Users submit a single address, a batch of up to 10,000 addresses, or a pair of coordinates, through a web interface or a REST API; results come from address ranges in the MAF/TIGER database, with coordinates interpolated along the matched range, and the optional Geographic Lookup returns the state, county, tract, block and other units for the point. Coverage: addresses within the United States, Puerto Rico and the U.S. Island Areas; benchmarks and vintages follow the TIGER database and the ACS and 2020 Census geography. The Census Bureau also offers group quarters assistance for the 2020 redistricting data through it. Format and access: web forms and REST endpoints returning JSON, and CSV batch upload and download; free, no key required, public domain. Caveats: coordinates are interpolated along potential address ranges, not rooftop positions, so a result can lie some distance from the building, and the match rate depends on address quality; it is a hosted service whose source code is not open. Simulation uses: locating infrastructure assets, customers, facilities and incident records from address lists, and assigning them to census blocks and tracts to join population, housing and vulnerability data. Related records: TIGER/Line edges and address ranges (the data behind it), TIGERweb services, the Census Data API and the 2020 P.L. 94-171 redistricting data.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; Data Tools and Applications list, entry Census Geocoder",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://geocoding.geo.census.gov/geocoder/",
+  "id": "platform-us-census-geocoder",
+  "interfaces": [
+    "web_app",
+    "web_api",
+    "command_line",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "JSON",
+    "CSV",
+    "FIPS/GEOID codes compatible with Census tables and TIGER files"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-19",
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Census Geocoder (address and coordinate geocoding service)",
+  "open_source": false,
+  "platform_kind": [
+    "data_preparation_tool",
+    "cloud_service"
+  ],
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-tiger-line-edges-faces-address-ranges",
+    "data-us-census-tigerweb-services",
+    "data-us-census-data-api",
+    "data-us-census-2020-redistricting-data-pl-94-171"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Interactive and REST access; coverage US, Puerto Rico, Island Areas",
+      "url": "https://geocoding.geo.census.gov/geocoder/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Single, batch up to 10,000 and coordinate inputs; interpolation along MAF/TIGER address ranges",
+      "url": "https://www.census.gov/programs-surveys/geography/technical-documentation/complete-technical-documentation/census-geocoder.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Single-record and batch entry points, GeoLookup, benchmark database; page revised 2023-12-20",
+      "url": "https://www.census.gov/data/developers/data-sets/Geocoding-services.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Group quarters assistance through the Census Geocoder (link on the redistricting page)",
+      "url": "https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed last_updated.",
+      "url": "https://geocoding.geo.census.gov/geocoder/"
+    }
+  ],
+  "supported_sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "tags": [
+    "geocoding",
+    "addresses",
+    "REST API",
+    "batch geocoding",
+    "GeoLookup",
+    "Census Bureau"
+  ],
+  "title_en": "Census Geocoder (address and coordinate geocoding service)",
+  "type": "platform"
+}

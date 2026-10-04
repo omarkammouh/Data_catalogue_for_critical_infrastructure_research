@@ -1,0 +1,146 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "OpenFEMA API data set catalogue",
+      "url": "https://www.fema.gov/api/open/v1/DataSets"
+    },
+    {
+      "kind": "api",
+      "label": "Disaster Declarations Summaries v2",
+      "url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries"
+    },
+    {
+      "kind": "api",
+      "label": "IPAWS Archived Alerts v1",
+      "url": "https://www.fema.gov/api/open/v1/IpawsArchivedAlerts"
+    },
+    {
+      "kind": "api",
+      "label": "Mission Assignments v2",
+      "url": "https://www.fema.gov/api/open/v2/MissionAssignments"
+    },
+    {
+      "kind": "repo",
+      "label": "OpenFEMA samples",
+      "url": "https://github.com/FEMA/openfema-samples"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "emergency_management",
+    "historical_events",
+    "recovery_restoration",
+    "economic_financial",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openfema data sets and api disaster declarations mission assignments public assistance ipaws archived alerts",
+    "repo": "github.com/fema/openfema-samples",
+    "url": "https://fema.gov/about/openfema/data-sets"
+  },
+  "description": "OpenFEMA is the open data programme of the U.S. Federal Emergency Management Agency. Its API serves about 50 data sets on disasters and emergency management: Disaster Declarations Summaries lists every federally declared major disaster, emergency and fire management assistance declaration since 1953 (70,414 records) with state, county, incident type, dates and the recovery programmes declared; IPAWS Archived Alerts holds about 4.9 million Common Alerting Protocol messages sent through the national alert system since June 2012; Mission Assignments records work orders FEMA issued to other federal agencies since 2012; other sets cover Public Assistance projects, hazard mitigation grants, flood insurance policies and claims, and firefighter grants. The producer is FEMA, part of the Department of Homeland Security. Coverage is the United States and its territories, mostly at county level. Data come as JSON, CSV or Parquet through a REST API with filtering, or as full files, free without registration; the catalogue gives no licence, so federal public domain is inferred. Caveats: fire management records before the modern era are partial, county detail is missing before 1964, the declaration numbering follows a historical scheme, and declarations record federal involvement, not all events. Simulation uses: event histories for emergency response demand and resource modelling, alert records for warning studies, and recovery funding timelines for resilience analysis. Related records: the NFIRS public data release (data-usfa-nfirs-public-data-release) is also distributed through OpenFEMA.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "OpenFEMA data sets API disaster declarations",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv",
+    "parquet",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge",
+    "storm_wind",
+    "wildfire",
+    "earthquake",
+    "drought",
+    "cold_snow_ice",
+    "pandemic",
+    "tsunami",
+    "volcanic"
+  ],
+  "homepage": "https://www.fema.gov/about/openfema/data-sets",
+  "id": "data-openfema",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-03-06",
+  "licence": "U.S. federal government work (the catalogue's licence field is empty; public domain inferred)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.fema.gov/about/openfema/data-sets"
+    ]
+  },
+  "maturity": "active",
+  "name": "OpenFEMA data sets and API (disaster declarations, mission assignments, public assistance, IPAWS archived alerts)",
+  "provider": "Federal Emergency Management Agency (FEMA), U.S. Department of Homeland Security",
+  "related_ids": [
+    "data-usfa-nfirs-public-data-release"
+  ],
+  "schema_summary": "About 50 data sets listed by the API catalogue. Disaster Declarations Summaries (70,414 records): declaration string and number, type (major disaster, emergency, fire management), state, county FIPS, incident type and dates, programmes declared (IA, IH, PA, HM). IPAWS Archived Alerts (4.9 million CAP v1.2 messages since June 2012). Mission Assignments (43,950 records since 2012): work orders to other federal agencies. Plus Public Assistance projects, hazard mitigation projects, NFIP policies and claims, and firefighter grants",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Catalogue entries read for DisasterDeclarationsSummaries (openfema-47, 70,414 records, temporal 1953-05-01/, licence field null), MissionAssignments (openfema-79) and IpawsArchivedAlerts (openfema-35, 4,885,457 records); 50 data sets listed",
+      "url": "https://www.fema.gov/api/open/v1/DataSets"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Sample record fields (femaDeclarationString, declarationType, incidentType, fipsCountyCode, programme flags)",
+      "url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries?$top=1&$inlinecount=allpages"
+    }
+  ],
+  "spatial_resolution": "County or designated area; some data sets at project or property level (redacted)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "disaster declarations",
+    "FEMA",
+    "emergency management",
+    "public assistance",
+    "IPAWS",
+    "alerts",
+    "mission assignments",
+    "OpenFEMA"
+  ],
+  "temporal_coverage": "Declarations since May 1953; IPAWS alerts since June 2012; mission assignments since October 2012",
+  "temporal_resolution": "Event records with dates",
+  "temporal_resolution_class": "event",
+  "title_en": "OpenFEMA data sets and API (disaster declarations, mission assignments, public assistance, IPAWS archived alerts)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

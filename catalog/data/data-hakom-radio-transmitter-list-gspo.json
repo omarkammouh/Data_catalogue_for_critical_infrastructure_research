@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Mobile transmitters (GSM, UMTS, LTE, NR) feature service",
+      "url": "https://ekarta.hakom.hr/server/rest/services/RADIJSKE_POSTAJE/GSPO/FeatureServer"
+    },
+    {
+      "kind": "api",
+      "label": "Broadcast transmitters WFS (DVB-T2, DAB)",
+      "url": "https://ekarta.hakom.hr/server/services/GSPO_DVB_T2_DAB_P/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+    },
+    {
+      "kind": "api",
+      "label": "EMF measurement points feature service",
+      "url": "https://ekarta.hakom.hr/server/rest/services/MJERENJA_EMP/Mjerenja_EMP/FeatureServer"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "HR"
+  ],
+  "data_family": [
+    "system_description",
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hakom geographic transmitter list gspo mobile gsm umts lte and 5g nr dvb t2 and dab transmitters with emf measurement points croatia",
+    "url": "https://ekarta.hakom.hr/server/rest/services/RADIJSKE_POSTAJE/GSPO/FeatureServer"
+  },
+  "description": "The Croatian Regulatory Authority for Network Industries publishes its geographic system of the transmitter list (GSPO) as ArcGIS feature services on its e-karta GIS server and as INSPIRE view and download services. The mobile service has layers for GSM (18,401 features), UMTS (5,267), LTE (82,698) and 5G NR (22,441). Each feature is a transmitter with technology, effective radiated power, installation type, operator, frequency, azimuth and height. Separate services hold digital terrestrial television (DVB-T2) and DAB radio transmitters. A related service maps 2,338 electromagnetic field measurement points with city, street address, coordinates, date, maximum measured field, campaign and a link to the measurement report. Coverage: Croatia. Format and access: ArcGIS REST feature services (JSON and GeoJSON queries), WMS and WFS 2.0, free; no licence was stated in the service metadata. Caveats: counts are transmitter or sector entries, not sites, so several features share one mast; the INSPIRE metadata gives a 2010 to 2016 temporal extent, although the services are current; the e-karta web viewer refused automated requests, while the REST services answered. Simulation uses: sector-level mobile network models with azimuth, height and power for coverage and exposure studies, and site locations for earthquake and wildfire exposure in Croatia. Related records: the HAKOM broadband availability and coverage maps give the resulting coverage; the Dutch Antenneregister and the UKE radio permit lists for Poland are comparable registers.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "data.europa.eu search (HAKOM) and e-karta REST directory",
+      "route": "R10",
+      "source": "organisations.csv:HR:digital:spectrum_agency"
+    }
+  ],
+  "formats": [
+    "json",
+    "geojson",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://ekarta.hakom.hr/server/rest/services/RADIJSKE_POSTAJE/GSPO/FeatureServer",
+  "id": "data-hakom-radio-transmitter-list-gspo",
+  "languages": [
+    "hr"
+  ],
+  "last_updated": "2026",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "HAKOM geographic transmitter list (GSPO): mobile GSM, UMTS, LTE and 5G NR, DVB-T2 and DAB transmitters with EMF measurement points (Croatia)",
+  "notes": "ArcGIS REST service directory, layer fields and returnCountOnly queries read on 2026-09-26; INSPIRE metadata read through data.europa.eu. last_updated assumed current from live services; no edit date was exposed.",
+  "provider": "Croatian Regulatory Authority for Network Industries (HAKOM)",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom",
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "size": "128,807 mobile transmitter features; 2,338 EMF points",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "service directory",
+      "url": "https://ekarta.hakom.hr/server/rest/services/?f=pjson"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "INSPIRE metadata",
+      "url": "https://data.europa.eu/data/datasets/8562330d-5b46-45eb-9cc7-f1c67e6f5617"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://ekarta.hakom.hr/server/rest/services/RADIJSKE_POSTAJE/GSPO/FeatureServer"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://ekarta.hakom.hr/server/services/GSPO_DVB_T2_DAB_P/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+    }
+  ],
+  "spatial_resolution": "transmitter points with azimuth",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "transmitters",
+    "base stations",
+    "5G",
+    "LTE",
+    "EMF",
+    "Croatia"
+  ],
+  "temporal_coverage": "current register",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "HAKOM geographic transmitter list (GSPO): mobile GSM, UMTS, LTE and 5G NR, DVB-T2 and DAB transmitters with EMF measurement points (Croatia)",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

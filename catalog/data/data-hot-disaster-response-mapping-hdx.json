@@ -1,0 +1,202 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "HDX CKAN search for HOT datasets outside the country export grid",
+      "url": "https://data.humdata.org/api/3/action/package_search?fq=organization:hot%20-name:hotosm_*&rows=100"
+    },
+    {
+      "kind": "portal",
+      "label": "Nepal flood 2026 fAIr building damage assessment",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.humdata.org/dataset/hot_flood_npl_buildings_damage"
+    },
+    {
+      "kind": "portal",
+      "label": "Myanmar damaged buildings (crowdsourced damage assessment pilot)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.humdata.org/dataset/hotosm_mmr_damaged_buildings"
+    },
+    {
+      "kind": "portal",
+      "label": "Venezuela M7.5 earthquake damage assessment areas",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.humdata.org/dataset/venezuela-m-7-5-earthquake-building-damage-assessment"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "crowdsourced_public_reports",
+    "calibration_validation",
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hot disaster response mapping and building damage datasets on hdx",
+    "url": "https://data.humdata.org/dataset?organization=hot&q=damage"
+  },
+  "description": "Besides its country export grid, the Humanitarian OpenStreetMap Team publishes about 30 event and campaign datasets on HDX (count on 2026-09-26) with buildings, roads and facilities mapped during disaster activations, crowdsourced and AI-assisted building damage assessments, and mapathon outputs. The Nepal flood 2026 fAIr assessment scores 8,421 OpenStreetMap buildings in the Trishuli and Bhote Koshi corridor as no visible, minor, major damage or destroyed, with a confidence value, validated against 3,896 manually tagged buildings (destroyed precision 0.91, recall 0.78). A Myanmar pilot with local mappers tagged damaged buildings in 20 townships after the March 2025 earthquake using MapSwipe, Tasking Manager and MapRoulette. The Türkiye export holds buildings tagged destroyed after the 6 February 2023 earthquake, and the Venezuela M7.5 set gives grid areas where AI-detected damage was confirmed by majority MapSwipe votes. Event exports cover the August 2026 Colombia earthquake, the January 2026 Mozambique floods, Cyclone Gezani in Madagascar and the 2026 DRC and Uganda Ebola outbreak; the LATAM Regional Mapatón 2026 sets hold footprints mapped from 13 June to 31 July 2026 in risk-priority areas of eight countries. Access: GeoJSON, Shapefile, GeoPackage and KML files, some with post-event imagery. Licence: mostly ODbL; the mapatón sets are CC BY and the Venezuela set cites CC BY-NC-SA fAIr detections. Caveats: AI calls can be inflated by cross-sensor imagery and cloud, crowdsourced tags are incomplete, and field verification is the ground truth. Simulation uses are observed damage for validating fragility and loss models, and exposure layers for response planning. Related records: HOT country exports on HDX and UNOSAT damage assessments.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"building\" \"sensor\"",
+      "route": "R04",
+      "source": "hdx"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "building damage survey",
+      "route": "R04",
+      "source": "hdx"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "building condition",
+      "route": "R04",
+      "source": "hdx"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "building social vulnerability",
+      "route": "R04",
+      "source": "hdx"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "building aerial imagery",
+      "route": "R04",
+      "source": "hdx"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "building crowdsourced",
+      "route": "R04",
+      "source": "hdx"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "public space hazard map",
+      "route": "R04",
+      "source": "hdx"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "building tree canopy",
+      "route": "R04",
+      "source": "hdx"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "shapefile",
+    "geopackage",
+    "kml",
+    "raster"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake",
+    "flood",
+    "storm_wind",
+    "pandemic"
+  ],
+  "homepage": "https://data.humdata.org/dataset/?organization=hot&q=damage",
+  "id": "data-hot-disaster-response-mapping-hdx",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-12",
+  "licence": "ODbL-1.0 for most sets; CC-BY-4.0 for the mapathon sets; other terms per dataset",
+  "licence_type": [
+    "attribution",
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://data.humdata.org/dataset/?organization=hot&q=damage"
+    ]
+  },
+  "maturity": "active",
+  "name": "HOT disaster-response mapping and building damage datasets on HDX",
+  "provider": "Humanitarian OpenStreetMap Team (HOT) with local OpenStreetMap communities, published on the Humanitarian Data Exchange (HDX)",
+  "related_ids": [],
+  "schema_summary": "fAIr sets: osm_id, building, damage (no-visible-damage, minor-damage, major-damage, destroyed), damage_confidence; OSM damage tags such as damage, damage:event, destroyed:building",
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "fAIr damage classes, 20,367 corridor buildings, 8,421 analysed, validation figures, cc-by, created 2026-08-28, modified 2026-09-14, caveats",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=hot_flood_npl_buildings_damage"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Crowdsourced damage assessment pilot, 20 townships, tools, odbl, modified 2025-11-11",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=hotosm_mmr_damaged_buildings"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "destroyed:building = yes and damage:date 2023-02-06, imagery sources, odbl, modified 2026-05-14",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=hotosm_tur_destroyed_buildings"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Method (fAIr and Microsoft AI detection, H3 grid, MapSwipe majority), coverage towns, hdx-other",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=venezuela-m-7-5-earthquake-building-damage-assessment"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Event export: partners, buildings and roads, odbl",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=col-earthquake-august-2026-openstreetmap-data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Campaign 13 June to 31 July 2026, cc-by",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=latam-regional-mapaton-2026-peru"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Flood extent widened by 200 m, status Standing/Damaged/Destroyed, OSM and Overture layers, modified 2026-09-26",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=hot_flood_npl"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "30 datasets outside the hotosm_ grid",
+      "url": "https://data.humdata.org/api/3/action/package_search?fq=organization:hot%20-name:hotosm_*&rows=100"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "HDX search of HOT datasets for damage, used as the landing page for the event and damage series (HTTP 200)",
+      "url": "https://data.humdata.org/dataset/?organization=hot&q=damage"
+    }
+  ],
+  "spatial_resolution": "Individual OpenStreetMap buildings and roads; H3 grid cells for the Venezuela damage areas",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "OpenStreetMap",
+    "HOT",
+    "damage assessment",
+    "fAIr",
+    "MapSwipe",
+    "disaster response",
+    "mapathon"
+  ],
+  "title_en": "HOT disaster-response mapping and building damage datasets on HDX",
+  "type": "data"
+}

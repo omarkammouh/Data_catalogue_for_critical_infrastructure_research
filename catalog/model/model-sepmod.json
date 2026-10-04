@@ -1,0 +1,85 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Verified provider documentation",
+      "url": "https://ccmc.gsfc.nasa.gov/models/SEPMOD~v2.20221228/"
+    }
+  ],
+  "access_note": "The cited metadata or documentation page was public. Executable, data-access and reuse terms were not inferred from page access. cost=on_request means ask the provider because charges were not established, not a verified pricing policy.",
+  "access_restrictions": "none",
+  "cost": "on_request",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sep model",
+    "url": "https://ccmc.gsfc.nasa.gov/models/SEPMOD~v2.20221228"
+  },
+  "description": "SEPMOD postprocesses heliospheric MHD simulations to estimate energetic-particle fluxes at a selected observer. The documented Fortran model uses shock and magnetic-field information from coupled solar-wind calculations. The resource is documented by University of California, Berkeley. The documented physical domain is Heliosphere / Inner Heliosphere; grid spacing, supported periods and cadence depend on this version and its chosen configuration. The documentation links Runs-on-Request, Continuous/RT Run (SEP Scoreboard Intensity). A software licence and any external distribution charge are not stated. Results depend on the parent heliospheric simulation and selected event geometry. The documented space-weather effects make it a potential environmental input for infrastructure hazard exposure and resilience simulations. It is related to platform-nasa-ccmc in this catalogue. The cited documentation is available online; underlying files were not downloaded. Spatial and temporal resolution were not independently established. Only metadata were checked; numerical accuracy and current service availability remain unverified.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Complete model catalogue; select one version per model with stated space-weather infrastructure impacts",
+      "route": "R51",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://ccmc.gsfc.nasa.gov/models/SEPMOD~v2.20221228/",
+  "id": "model-sepmod",
+  "inputs": [
+    "SEPMOD runs using field line and shock output derived from the WSA-ENLIL+Cone model. Therefore, an appropriate WSA-ENLIL+Cone model run with the correct settings to produce these outputs must be performed"
+  ],
+  "language": [
+    "fortran"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "not_stated",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "SEP Model",
+  "notes": "Preparation item P03428; found by A4; original findings: A4-0438.  Classification and possible simulation uses are curator interpretations grounded in the cited technical description. Draft only; date_catalogued is the preparation date, not proof of catalogue addition. ",
+  "outputs": [
+    "proton fluxes, pitch angle distributions, energy vs time spectrogram."
+  ],
+  "provider": "University of California, Berkeley",
+  "related_ids": [
+    "platform-nasa-ccmc"
+  ],
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Provider metadata read today; identity, purpose and technical description. Unstated fields remain explicitly uncertain.",
+      "url": "https://ccmc.gsfc.nasa.gov/models/SEPMOD~v2.20221228/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://ccmc.gsfc.nasa.gov/models/SEPMOD~v2.20221228/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for space systems",
+  "type": "model"
+}

@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.5582502"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opinmod open inertia modelling",
+    "url": "doi:10.5281/zenodo.5582501"
+  },
+  "description": "OpInMod is a model generator that builds unit commitment and economic dispatch optimisation problems that account for power system inertia. It was published on Zenodo in October 2021 (version 0.1) by Henning Thiesen. The motive is that energy system model generators used to assess future pathways ignore inertia, although enough inertia is the basis for controlling grid frequency, which matters as synchronous generators are replaced by converter-connected sources. OpInMod counts synchronous inertia from rotating machines connected to the grid and synthetic inertia from wind turbines and battery storage towards total system inertia, and adds inertia requirements to the dispatch problem so that schedules keep the system above a minimum. Coverage is not tied to a place. The code is downloadable from Zenodo as a small ZIP under the MIT licence at no cost. Caveats: it is an early version with no public repository, documentation or later releases found, and results depend on the chosen inertia constants. Simulation uses are checking whether low-inertia future systems remain frequency-secure and costing inertia provision, relevant to blackout risk after large disturbances. Related records: data-pre-processed-power-grid-frequency-time-series gives measured frequency data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "nuclear power plant economic model",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://doi.org/10.5281/zenodo.5582501",
+  "id": "model-opinmod-open-inertia-modelling",
+  "inputs": [
+    "Generator",
+    "wind and battery fleet data with inertia parameters",
+    "demand time series"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-10-20",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "OpInMod - Open Inertia Modelling",
+  "outputs": [
+    "Unit commitment and economic dispatch schedules with system inertia"
+  ],
+  "provider": "Henning Thiesen",
+  "related_ids": [
+    "data-pre-processed-power-grid-frequency-time-series"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract, creator, MIT, v0.1",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.5582502"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Published 2021-10-19, updated 2021-10-20, OpInMod.zip, no related identifiers",
+      "url": "https://zenodo.org/api/records/5582502"
+    }
+  ],
+  "tags": [
+    "inertia",
+    "frequency stability",
+    "unit commitment",
+    "economic dispatch",
+    "synthetic inertia"
+  ],
+  "title_en": "OpInMod unit commitment and economic dispatch optimisation",
+  "type": "model",
+  "validated_on": []
+}

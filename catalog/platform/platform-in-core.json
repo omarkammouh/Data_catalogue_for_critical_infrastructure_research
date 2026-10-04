@@ -1,0 +1,246 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "IN-CORE portal",
+      "url": "https://tools.in-core.org/"
+    },
+    {
+      "kind": "docs",
+      "label": "IN-CORE manual",
+      "url": "https://incore.ncsa.illinois.edu/doc/incore/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/IN-CORE/"
+    },
+    {
+      "kind": "download",
+      "label": "pyincore on PyPI",
+      "url": "https://pypi.org/project/pyincore/"
+    },
+    {
+      "kind": "docs",
+      "label": "NIST Center of Excellence page",
+      "url": "https://www.nist.gov/community-resilience/center-excellence"
+    },
+    {
+      "kind": "repo",
+      "label": "pyIncore source code",
+      "url": "https://github.com/IN-CORE/pyincore"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation source (incore-docs)",
+      "url": "https://github.com/IN-CORE/incore-docs"
+    },
+    {
+      "kind": "repo",
+      "label": "Web services source (incore-services)",
+      "url": "https://github.com/IN-CORE/incore-services"
+    },
+    {
+      "kind": "portal",
+      "label": "Account registration",
+      "note": "Free registration; an administrator activates the account",
+      "url": "https://tools.in-core.org/auth/realms/In-core/protocol/openid-connect/registrations?client_id=react-auth&response_type=code&scope=openid&redirect_uri=https://tools.in-core.org/"
+    },
+    {
+      "kind": "docs",
+      "label": "IN-CORE manual",
+      "url": "https://tools.in-core.org/doc/incore/introduction.html"
+    }
+  ],
+  "access_note": "A free account is needed for the hosted IN-CORE services.",
+  "access_restrictions": "registration",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "in core interdependent networked community resilience modeling environment",
+    "repo": "github.com/in-core",
+    "url": "https://tools.in-core.org"
+  },
+  "deployment": [
+    "hosted_service",
+    "desktop"
+  ],
+  "description": "IN-CORE is a computational environment for modelling the impact of natural hazards on whole communities and their recovery. It was built by the Center of Excellence for Risk-Based Community Resilience Planning, funded by the US National Institute of Standards and Technology (NIST) from 2015 and led by Colorado State University with partner universities, and is hosted by NCSA at the University of Illinois. Users set up interdependent models of buildings, transportation, water and electric power networks, people, businesses and social institutions, apply earthquake, tsunami, hurricane, flood or tornado scenarios, and chain physical damage, loss of functionality, restoration and social and economic impacts with uncertainty propagation. The platform consists of web services with integrated databases of hazards, fragility curves and testbed inventories, the pyIncore Python package (analyses, service clients, visualisation; version 1.22.0, MPL-2.0), a web interface and Jupyter environments. NIST states that IN-CORE is open source and that an account is free; source code is on GitHub and packages on PyPI and anaconda.org. Caveats: the curated datasets and testbeds are US-centred, detailed analyses need considerable input preparation, and the hosted service requires registration. Uses are resilience and recovery analysis, cascading failure across interdependent lifelines, emergency response and investment planning; it hosts fragility models comparable to those used by HAZUS and complements CLIMADA and OpenQuake.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "interdependent community resilience modelling platform",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-23",
+      "query": "NIST community resilience modelling environment IN-CORE pyincore",
+      "route": "R40",
+      "source": "assistant recall"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "earthquake",
+    "tsunami",
+    "storm_wind",
+    "flood",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://tools.in-core.org/",
+  "hosted_models": [
+    "building and bridge fragility analyses",
+    "electric power and water network damage and restoration",
+    "population dislocation",
+    "computable general equilibrium economics",
+    "Building damage",
+    "Network analyses",
+    "Building retrofit",
+    "Capital shocks",
+    "CGE models",
+    "Testbeds: Galveston, Joplin, Lumberton, Memphis (MMSA, Shelby County), Mobile, Seaside",
+    "Hazard services (earthquake, tornado, hurricane, flood, wind-wave-surge)"
+  ],
+  "id": "platform-in-core",
+  "interfaces": [
+    "code_library",
+    "web_app",
+    "web_api"
+  ],
+  "interoperability": [
+    "GeoJSON",
+    "Shapefile",
+    "CSV",
+    "GeoTIFF",
+    "GeoJSON and shapefile inventories",
+    "CSV results",
+    "IN-CORE data, hazard and fragility services"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-29",
+  "licence": "MPL-2.0 (pyincore)",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://github.com/IN-CORE/"
+    ]
+  },
+  "maturity": "active",
+  "name": "IN-CORE (Interdependent Networked Community Resilience Modeling Environment)",
+  "notes": "Audit 2026-09-24: re-read on tools.in-core.org (home page, manual introduction and account pages, rendered in Chromium because the site is a JavaScript application; incore.ncsa.illinois.edu redirects there), the pyincore README, LICENSE and CHANGELOG, PyPI, the anaconda.org package API and git tags. Corrections to round 1: the Center of Excellence is headquartered at Colorado State University, not 'hosted by NCSA' (NCSA hosts the platform); supported hazards include flood and combined wind, wave and surge, not only earthquake, tornado and hurricane; the Memphis (MMSA, Shelby County) testbed was missing; platform version 6.3.0 and the six web services added. Confirmed: NIST agreement 70NANB15H044, pyincore 1.22.0 of 2025-07-31 (latest on PyPI and conda; 1.23.0 release candidates as git tags), MPL-2.0, conda install, pip unsupported and Linux-only, free account activated by an administrator. Rewritten 2026-09-26 by the r1 cross-cutting piece from the IN-CORE pages read that day; earlier links and routes kept.",
+  "open_source": true,
+  "platform_kind": [
+    "modelling_suite",
+    "cloud_service"
+  ],
+  "provider": "NIST Center of Excellence for Risk-Based Community Resilience Planning (Colorado State University lead) and NCSA, University of Illinois",
+  "related_ids": [],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "built_environment.buildings",
+    "transport.road",
+    "water.drinking_water",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "cascading_failure",
+    "hazard_exposure",
+    "emergency_response",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "CoE funded by NIST 2015, led by Colorado State; IN-CORE open source and free account; links to portal, manual, GitHub, anaconda; pyIncore components",
+      "url": "https://www.nist.gov/community-resilience/center-excellence"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "pyincore 1.22.0, MPL 2.0, Python >=3.9, uploaded 2025-07-31",
+      "url": "https://pypi.org/pypi/pyincore/json"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Home page (Chromium): NIST-funded multi-university CoE headquartered at Colorado State University; Kubernetes and Docker; current version v6.3.0; sign up and conda install",
+      "url": "https://tools.in-core.org/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Manual introduction (Chromium): agreement 70NANB15H044; pyIncore components; web services (Hazard, DFR3, Data, Geospatial Visualization, Semantic, Space) in Java JAX-RS; Web Tools; IN-CORE Lab on NCSA cloud; testbeds Galveston, Joplin, Lumberton, MMSA, Mobile, Seaside",
+      "url": "https://tools.in-core.org/doc/incore/introduction.html"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Account required, free and open to everyone; administrator activates it (Chromium)",
+      "url": "https://tools.in-core.org/doc/incore/account.html"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Redirects to tools.in-core.org",
+      "url": "https://incore.ncsa.illinois.edu/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "pyIncore purpose; conda officially supported; pip not supported, tested on Linux only",
+      "url": "https://raw.githubusercontent.com/IN-CORE/pyincore/main/README.rst"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Mozilla Public License 2.0",
+      "url": "https://raw.githubusercontent.com/IN-CORE/pyincore/main/LICENSE"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "1.22.0 of 2025-07-31; flood, wind-wave-surge and MMSA Shelby analyses",
+      "url": "https://raw.githubusercontent.com/IN-CORE/pyincore/main/CHANGELOG.md"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "conda latest version 1.22.0",
+      "url": "https://api.anaconda.org/package/in-core/pyincore"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "git tags up to v1.23.0rc2",
+      "url": "https://github.com/IN-CORE/pyincore"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings",
+    "transport.road",
+    "water.drinking_water",
+    "energy.electricity"
+  ],
+  "tags": [
+    "community resilience",
+    "NIST",
+    "interdependency",
+    "fragility",
+    "recovery",
+    "testbeds",
+    "hazard",
+    "NCSA",
+    "Jupyter",
+    "CGE"
+  ],
+  "title_en": "IN-CORE (Interdependent Networked Community Resilience Modeling Environment)",
+  "type": "platform"
+}

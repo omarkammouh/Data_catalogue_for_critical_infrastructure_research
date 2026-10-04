@@ -1,0 +1,155 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "BIPAD portal",
+      "url": "https://bipadportal.gov.np/"
+    },
+    {
+      "kind": "api",
+      "label": "BIPAD REST API root (JSON)",
+      "url": "https://bipadportal.gov.np/api/v1/"
+    },
+    {
+      "kind": "api",
+      "label": "Incident endpoint",
+      "url": "https://bipadportal.gov.np/api/v1/incident/"
+    },
+    {
+      "kind": "api",
+      "label": "Resource endpoint (for example health facilities)",
+      "url": "https://bipadportal.gov.np/api/v1/resource/?resource_type=health"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "NP"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bipad nepal s national disaster information management system with an open api for incidents losses critical resources relief and hydromet data",
+    "url": "https://bipadportal.gov.np"
+  },
+  "deployment": [
+    "hosted_service"
+  ],
+  "description": "BIPAD is the Government of Nepal's disaster information management system, which brings incidents, losses, critical resources and monitoring data for the whole country into one map portal. Behind the portal is a public REST API whose root lists well over a hundred endpoints. These include verified disaster incidents with locations and ward identifiers, losses to people, families, infrastructure, agriculture and livestock, and resources such as health facilities, schools and open spaces for evacuation. Others cover relief stock and distributions, river, rainfall and air pollution stations, fire and earthquake feeds, situation reports, COVID-19 series, and administrative units down to ward level. When read, the incident and resource endpoints returned records without a key, for example a verified 2023 fire incident and a sub health post with coordinates. The portal and API are free to use, and data are available to download as JSON through paginated queries. Caveats: no licence is stated, the portal renders by script, record counts are not reported by the API, and completeness depends on local reporting. Coverage is national. Simulation uses: historical incident and loss data for hazard impact models, and facility and open-space locations for emergency response planning. Related records: the Nepal Annual Health Report (data-nepal-dohs-annual-health-report) complements the health facility layer.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk (tier 3): BIPAD disaster information management system",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "landslide",
+    "earthquake",
+    "wildfire",
+    "pandemic"
+  ],
+  "homepage": "https://bipadportal.gov.np/",
+  "hosted_models": [],
+  "id": "platform-bipad-nepal-disaster-information-management-system",
+  "interfaces": [
+    "web_app",
+    "web_api",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "GeoJSON-style point and polygon geometries",
+    "Geoserver layers"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-28",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BIPAD: Nepal's national disaster information management system with an open API for incidents, losses, critical resources, relief and hydromet data",
+  "open_source": false,
+  "platform_kind": [
+    "gis_environment",
+    "cloud_service"
+  ],
+  "provider": "Government of Nepal (BIPAD portal)",
+  "related_ids": [
+    "data-nepal-dohs-annual-health-report"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Portal loads by script (Initializing App)",
+      "url": "https://bipadportal.gov.np/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "API root read in memory: endpoints include hazard, alert, incident, event, loss, loss-people, loss-infrastructure, loss-agriculture, loss-livestock, resource, inventory, relief-flow, relief-release, river and rain stations, pollution, fire, earthquake, openspace-detail, situation-report, covid19 series, vizrisk-building, flood-station, ibf-household and ward-level administrative units",
+      "url": "https://bipadportal.gov.np/api/v1/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Incident record read in memory: id 64504, fire at Rapti Sonari Rural Municipality ward 2, point coordinates, created 2023-06-02, verified and approved, with Nepali title",
+      "url": "https://bipadportal.gov.np/api/v1/incident/?limit=1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Resource record read in memory: health resource Attarpur SHP (sub health post) with point coordinates and ward id",
+      "url": "https://bipadportal.gov.np/api/v1/resource/?limit=1&resource_type=health"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed last_updated.",
+      "url": "https://bipadportal.gov.np/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://bipadportal.gov.np/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://bipadportal.gov.np/api/v1/"
+    }
+  ],
+  "supported_sectors": [
+    "services.emergency_services",
+    "services.healthcare",
+    "services.food_supply"
+  ],
+  "tags": [
+    "Nepal",
+    "disaster information",
+    "incidents",
+    "losses",
+    "critical facilities",
+    "relief",
+    "API"
+  ],
+  "title_en": "BIPAD: Nepal's national disaster information management system with an open API for incidents, losses, critical resources, relief and hydromet data",
+  "type": "platform"
+}

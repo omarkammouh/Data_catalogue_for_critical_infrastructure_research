@@ -1,0 +1,146 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code (core)",
+      "url": "https://github.com/CLIMADA-project/climada_python"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code (petals)",
+      "url": "https://github.com/CLIMADA-project/climada_petals"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://climada-python.readthedocs.io/en/stable/"
+    },
+    {
+      "kind": "api",
+      "label": "Data API",
+      "url": "https://climada.ethz.ch/data-api/v1/docs"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/climada/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Aznar-Siguan, G. and Bresch, D. N. (2019). CLIMADA v1: a global weather and climate risk assessment platform. Geoscientific Model Development 12, 3085-3097. doi:10.5194/gmd-12-3085-2019",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5194/gmd-12-3085-2019",
+    "name": "climada climate adaptation",
+    "repo": "github.com/climada-project/climada_python",
+    "url": "https://wcr.ethz.ch/research/climada.html"
+  },
+  "description": "CLIMADA is a free and open-source Python framework for probabilistic climate risk assessment and appraisal of adaptation options, developed by the Weather and Climate Risks group at ETH Zurich with a wider scientific community. It combines hazard event sets, exposure (for example assets, population or infrastructure from OpenStreetMap) and impact functions to compute event and annual expected impacts, averted damage and cost-benefit of measures, with uncertainty and sensitivity analysis and impact forecasts. The core package holds the impact, measures and uncertainty modules; the companion climada_petals package generates hazards (tropical cyclones and storm surge, river flood, wildfire and others) and exposure. A data API provides global hazard, exposure and impact-function sets, described as covering major climate-related extreme-weather hazards at about 4 km resolution, with historic and probabilistic event sets for past, present and future climates. Version 6.1.0 (September 2025) is published on PyPI and conda-forge under GPL-3.0, with documentation on Read the Docs and a MATLAB predecessor kept for backward compatibility. Caveats: default global data are coarse for engineering design, impact functions are generic unless calibrated, and installation is heavy (conda recommended). It is used for hazard exposure, climate adaptation and resilience studies of infrastructure and consumes track and hazard data such as IBTrACS and ISIMIP outputs.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "open source climate risk assessment framework",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "storm_wind",
+    "coastal_flood_storm_surge",
+    "flood",
+    "wildfire",
+    "drought",
+    "extreme_heat",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://wcr.ethz.ch/research/climada.html",
+  "id": "model-climada",
+  "inputs": [
+    "hazard event sets (e.g. IBTrACS-based tropical cyclones)",
+    "exposure layers (assets",
+    "population",
+    "OpenStreetMap infrastructure)",
+    "impact functions",
+    "adaptation measures and costs"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-08",
+  "licence": "GPL-3.0-only",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical",
+    "economic",
+    "hybrid"
+  ],
+  "name": "CLIMADA (CLIMate ADAptation)",
+  "outputs": [
+    "event and annual expected impacts",
+    "exceedance frequency curves",
+    "averted damage",
+    "cost-benefit ratios",
+    "uncertainty distributions"
+  ],
+  "provider": "ETH Zurich Weather and Climate Risks group and the CLIMADA community",
+  "related_ids": [
+    "data-ibtracs",
+    "data-isimip-repository"
+  ],
+  "repository": "https://github.com/CLIMADA-project/climada_python",
+  "runs_on": [],
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Free open-source framework; data API 4x4 km global hazards; core and petals; conda-forge; docs",
+      "url": "https://raw.githubusercontent.com/CLIMADA-project/climada_python/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 6.1.0, GPLv3, Python 3.10-3.12, uploaded 2025-09-30",
+      "url": "https://pypi.org/pypi/climada/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Homepage at ETH Zurich Weather and Climate Risks group",
+      "url": "https://wcr.ethz.ch/research/climada.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Reference paper: CLIMADA v1, GMD 12, 3085-3097, Aznar-Siguan and Bresch",
+      "url": "https://api.crossref.org/works/10.5194/gmd-12-3085-2019"
+    }
+  ],
+  "tags": [
+    "climate risk",
+    "adaptation appraisal",
+    "probabilistic impact",
+    "ETH Zurich"
+  ],
+  "title_en": "Climada: probabilistic climate risk assessment and appraisal of adaptation options",
+  "type": "model",
+  "validated_on": [
+    "historical tropical cyclone and flood losses reported in the CLIMADA papers repository"
+  ]
+}

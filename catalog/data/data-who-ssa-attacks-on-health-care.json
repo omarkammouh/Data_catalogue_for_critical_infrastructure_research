@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Ukraine attacks on health care (CSV, HDX)",
+      "url": "https://data.humdata.org/dataset/ukraine-who-ssa"
+    },
+    {
+      "kind": "download",
+      "label": "SSA historic dashboard report 2017 to 2021 (XLSX, HDX)",
+      "url": "https://data.humdata.org/dataset/surveillance-system-for-attacks-on-health-care-ssa-historic"
+    },
+    {
+      "kind": "viewer",
+      "label": "SSA public dashboard",
+      "url": "https://extranet.who.int/ssa/"
+    },
+    {
+      "kind": "docs",
+      "label": "Methodological note (PDF)",
+      "url": "https://apps.who.int/iris/rest/bitstreams/1217469/retrieve"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "south_america"
+  ],
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "health_impacts"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "who surveillance system for attacks on health care ssa verified attacks on health facilities transport personnel and patients in emergency affected countries with the ukraine series from 2022",
+    "url": "https://extranet.who.int/ssa"
+  },
+  "description": "The SSA is the World Health Organization's system for recording attacks on health care, meaning violence, threats or obstruction that interfere with health services, in countries facing emergencies. It is run by WHO's Health Emergencies Programme under its Attacks on Health Care initiative and was launched in December 2019. Each attack record gives its date and time, country, certainty level (from rumour to confirmed), attack type, numbers killed and injured, what was affected (facilities, ambulances and transport, personnel, supplies, warehouses, patients), the type of facility, and any abduction, arrest or detention of health workers or patients. The public dashboard covers all monitored countries; downloadable series are the Ukraine data from February 2022, with about 3,300 attacks and updated this week, and a historic file of 3,018 verified attacks from 2017 to 2021. The files are free and available to download from the Humanitarian Data Exchange under CC BY or CC BY-IGO. Caveats: attacks are counted at country level without coordinates in the files read, certainty levels must be filtered, and the full global table is shown only through the dashboard. Simulation uses: estimating the rate at which health facilities and ambulances are damaged or disrupted in conflict, setting disruption scenarios for health service continuity, and validating models of conflict impacts on care. Related records: the Gaza hospital attacks data (data-gaza-attacks-on-hospitals-2023-2025) and the explosive weapons and health facilities data (data-ewipa-explosive-weapons-health-facilities).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hand-off to the services piece (integrator list handoffs/services.csv): WHO Surveillance System for Attacks on Health Care",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "physical_attack_sabotage"
+  ],
+  "homepage": "https://extranet.who.int/ssa/",
+  "id": "data-who-ssa-attacks-on-health-care",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-28",
+  "licence": "CC BY (Ukraine series on HDX); CC BY-IGO (historic series); WHO copyright for the dashboard",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://apps.who.int/iris/rest/bitstreams/1217469/retrieve"
+    ]
+  },
+  "maturity": "active",
+  "name": "WHO Surveillance System for Attacks on Health Care (SSA): verified attacks on health facilities, transport, personnel and patients in emergency-affected countries, with the Ukraine series from 2022",
+  "provider": "World Health Organization, Health Emergencies Programme (Attacks on Health Care initiative)",
+  "related_ids": [
+    "data-gaza-attacks-on-hospitals-2023-2025",
+    "data-ewipa-explosive-weapons-health-facilities"
+  ],
+  "schema_summary": "Ukraine CSV: ID, REPORTID, LASTMODIFIED, ATTACKDATE, ATTACKTIME, COUNTRY and ISO codes, CLASSIFICATION (certainty level, for example confirmed), ATTACKTYPE, VICTIMSTOTALINJURED, VICTIMSTOTALDEATH, flags for health facilities, transport, personnel, supplies and assets, warehouses and storage, patients and other, TYPEOFFACILITY, abduction, arrest and detention of health workers and patients",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "SSA dashboard: launched December 2019, global standardised monitoring of attacks on health care in emergency-affected, fragile and conflict-affected settings; filters by date, attack type, WHO region and country; totals of deaths, injuries and abduction, arrest or detention; methodology paper on WHO's publication platform",
+      "url": "https://extranet.who.int/ssa/Index.aspx"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "HDX dataset by WHO, CC BY, from 24 February 2022, modified 23 September 2026; definition of an attack and certainty levels (rumour, possible, probable, confirmed); CSV and methodological note",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=ukraine-who-ssa"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: 3,290 lines including header, 31 columns as in the schema summary; latest attack 22 September 2026",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTDw_w3n9b0_frBtvJWtZTJGb5Bn72sZsjJSRXLhIxMa6I1ZECFjb1LTsTZ0PmIHiQOw4SEPCO4uIFv/pub?gid=1932484940&single=true&output=csv"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Health Cluster dataset, CC BY-IGO: 3,018 verified attacks from 25 February 2017 to 31 December 2021 taken from the SSA; XLSX dashboard report",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=surveillance-system-for-attacks-on-health-care-ssa-historic"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (ckan ukraine-who-ssa updated)",
+      "url": "https://data.humdata.org/dataset/ukraine-who-ssa"
+    }
+  ],
+  "spatial_resolution": "Country (event records)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "attacks on health care",
+    "conflict",
+    "health facilities",
+    "Ukraine",
+    "humanitarian"
+  ],
+  "temporal_coverage": "February 2017 to December 2021 (historic); 24 February 2022 to September 2026 (Ukraine)",
+  "temporal_resolution": "Event",
+  "temporal_resolution_class": "event",
+  "title_en": "WHO Surveillance System for Attacks on Health Care (SSA): verified attacks on health facilities, transport, personnel and patients in emergency-affected countries, with the Ukraine series from 2022",
+  "type": "data",
+  "update_frequency": "real_time"
+}

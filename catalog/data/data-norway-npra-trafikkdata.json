@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Trafikkdata web application",
+      "url": "https://trafikkdata.atlas.vegvesen.no/"
+    },
+    {
+      "kind": "api",
+      "label": "Trafikkdata API",
+      "url": "https://trafikkdata.atlas.vegvesen.no/graphql"
+    },
+    {
+      "kind": "docs",
+      "label": "About trafikkdata",
+      "url": "https://trafikkdata.atlas.vegvesen.no/om-trafikkdata"
+    },
+    {
+      "kind": "api",
+      "label": "Trafikkdata GraphQL API (POST {\"query\":\"{ trafficRegistrationPoints { id name } }\"})",
+      "url": "https://trafikkdata-api.atlas.vegvesen.no/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NO"
+  ],
+  "data_family": [
+    "demand_operation",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "trafikkdata norwegian road traffic counts statens vegvesen",
+    "url": "https://trafikkdata.atlas.vegvesen.no"
+  },
+  "description": "Trafikkdata is the Norwegian Public Roads Administration's service for traffic counts from its registration points on state and county roads and some municipal roads. For motor vehicles the counting equipment records the speed, length, vehicle class and headway of each vehicle per lane; for cycles it records speed and direction. The data are shown in maps and tables on trafikkdata.no, with speed data exports, and are available through the Trafikkdata API in JSON. The current system has run since November 2014 for motor vehicles and July 2015 for cycles. Coverage is national. Access: free through the web application and the API under the Norwegian Licence for Open Government Data (NLOD). Caveats: only some municipal roads are covered, and new registration points are still being added, so series lengths differ between stations. It supports traffic demand and flow modelling, calibration of network models, disruption impact studies and cycling analyses, and complements the NVDB road database catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "sykkeltrafikk åpne data datasett",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://trafikkdata.atlas.vegvesen.no/",
+  "id": "data-norway-npra-trafikkdata",
+  "languages": [
+    "no",
+    "en"
+  ],
+  "last_updated": "2024-01-18",
+  "licence": "NLOD-2.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Trafikkdata, Norwegian road traffic counts (Statens vegvesen)",
+  "provider": "Statens vegvesen (Norwegian Public Roads Administration)",
+  "related_ids": [
+    "data-norway-nvdb-national-road-database",
+    "data-norway-npra-open-data-portal"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "state, county and some municipal roads; motor vehicles speed, length, class, headway per lane; cycles speed, direction; new system Nov 2014 and Jul 2015; NLOD; API",
+      "url": "https://dataut.vegvesen.no/api/3/action/package_show?id=trafikkdata"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "speed data export",
+      "url": "https://trafikkdata.atlas.vegvesen.no/fartsdata"
+    }
+  ],
+  "spatial_resolution": "counting station and lane",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "traffic counts",
+    "Norway",
+    "cycle counts",
+    "vehicle speed",
+    "NPRA"
+  ],
+  "temporal_coverage": "2014 to present for motor vehicles, 2015 to present for cycles",
+  "title_en": "Traffic data, Norwegian road traffic counts (Statens vegvesen)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

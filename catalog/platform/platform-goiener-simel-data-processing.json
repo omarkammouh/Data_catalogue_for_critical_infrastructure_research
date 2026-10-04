@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource",
+      "url": "https://github.com/DeustoTech/GoiEner-dataset"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-023-02846-0"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "goiener simel smart meter processing",
+    "url": "https://github.com/DeustoTech/GoiEner-dataset"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "GoiEner and the University of Deusto publish three R scripts for converting original electricity-meter records into cleaned load profiles. The documented stages collect SIMEL entries by anonymised supply-point identifier, remove duplicate timestamps and create raw CSVs, then impute gaps and adjust local timestamps. Cleaning also excludes short and zero-valued profiles and handles the COVID-period split. The GitHub source code is free under GPL-3.0. Coverage follows the Spanish cooperative's supplied records or compatible new inputs, with no fixed run horizon in the software. It prepares the series represented by data-goiener-smart-meter-data-spain for demand simulations with model-pypsa. A caveat is that users must edit local paths and review filtering and imputation choices before drawing conclusions about unusual demand. The scripts were documented but not run, and no household-level data were obtained.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G1-Q-BACKFILL-ENERGY-05; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/DeustoTech/GoiEner-dataset",
+  "id": "platform-goiener-simel-data-processing",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "SIMEL",
+    "CSV"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-06-23",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "GoiEner SIMEL smart-meter processing",
+  "notes": "G1 G1-0296. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-25.json. Related-resource uses are not tested interfaces. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "GoiEner and University of Deusto",
+  "related_ids": [
+    "data-goiener-smart-meter-data-spain",
+    "model-pypsa"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/DeustoTech/GoiEner-dataset"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/DeustoTech/GoiEner-dataset/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-023-02846-0"
+    }
+  ],
+  "supported_sectors": [
+    "energy.electricity"
+  ],
+  "tags": [],
+  "title_en": "GoiEner SIMEL smart-meter processing R scripts",
+  "type": "platform"
+}

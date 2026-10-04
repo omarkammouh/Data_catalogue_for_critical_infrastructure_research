@@ -1,0 +1,146 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Census Data API dataset discovery (HTML)",
+      "url": "https://api.census.gov/data.html"
+    },
+    {
+      "kind": "api",
+      "label": "Census Data API dataset discovery (JSON, DCAT)",
+      "url": "https://api.census.gov/data.json"
+    },
+    {
+      "kind": "portal",
+      "label": "Request an API key",
+      "note": "free key",
+      "url": "https://api.census.gov/data/key_signup.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Census Data API user guide",
+      "url": "https://www.census.gov/data/developers/guidance/api-user-guide.html"
+    },
+    {
+      "kind": "portal",
+      "label": "data.census.gov",
+      "url": "https://data.census.gov/"
+    }
+  ],
+  "access_note": "Free API key required for all data queries; data.census.gov and file downloads need no account.",
+  "access_restrictions": "registration",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "reference_context",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "census data api and data census gov access to census bureau statistical datasets",
+    "url": "https://census.gov/data/developers.html"
+  },
+  "description": "The Census Data API and the data.census.gov platform are the U.S. Census Bureau's main programmatic and web routes to its published statistics. The API gives raw aggregate statistics by Census geography (FIPS codes) and vintage from the Bureau's programs; its machine-readable discovery file listed 1,807 dataset editions in 146 dataset groups on 27 September 2026, with vintages from 1986 to 2026, including the American Community Survey, decennial census files, Population Estimates, County Business Patterns, the Economic Census, international trade, Public Sector (government) series, the Community Resilience Estimates and 960 microdata editions served through the Census Microdata API. data.census.gov offers table search, mapping, downloads and the Microdata Access Tool. Coverage: the United States, Puerto Rico and, for some programs, the Island Areas. Access: REST queries returning JSON arrays; an API key, free on request, must be used with all data queries, and up to 50 variables per query are allowed; the discovery catalogue declares a CC0 public domain dedication and the Bureau's terms of service apply. Caveats: only statistics already released in aggregate form; variables, geographies and endpoints differ by dataset and vintage, and some older products are only on FTP or in printed reports. Simulation uses: automated retrieval of population, housing, economic and government inputs for exposure, demand and resilience models, and reproducible pipelines that pull the same variables for many areas and years. Related records: ACS tables, TIGERweb services and the Census Geocoder (the geographic services used alongside it), and the Gazetteer files.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): Census Bureau developers pages and API discovery file",
+      "route": "R35",
+      "source": "census-data-api"
+    }
+  ],
+  "formats": [
+    "api",
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/data/developers.html",
+  "id": "data-us-census-data-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Census Data API and data.census.gov (access to Census Bureau statistical datasets)",
+  "notes": "Group counts treat each timeseries dataset as its own group. This is an access route record; the infrastructure-relevant datasets behind it have their own US Census records.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-american-community-survey-tables",
+    "data-us-census-tigerweb-services",
+    "platform-us-census-geocoder",
+    "data-us-census-gazetteer-files"
+  ],
+  "schema_summary": "Per dataset: variables.json, geography.json, groups; query parameters get, for, in, ucgid, time, key",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Purpose; data aggregated to Census geography by FIPS and vintage; Data API used with TIGERweb and Geocoder services",
+      "url": "https://www.census.gov/data/developers/guidance/api-user-guide.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Up to 50 variables per query; an API key must be used with all data queries",
+      "url": "https://www.census.gov/data/developers/guidance/api-user-guide.Query_Limits.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Only publicly released aggregate statistics; terms of service",
+      "url": "https://www.census.gov/data/developers/about.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Counted on 2026-09-27: 1,807 datasets, 146 groups, 960 microdata, vintages 1986-2026, license CC0 1.0",
+      "url": "https://api.census.gov/data.json"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "data.census.gov, Microdata Access and the API as the main data platforms",
+      "url": "https://www.census.gov/data/what-is-data-census-gov.html"
+    }
+  ],
+  "spatial_resolution": "Nation down to block group or block, varying by dataset",
+  "spatial_resolution_class": "varies",
+  "tags": [
+    "Census Data API",
+    "data.census.gov",
+    "API",
+    "microdata",
+    "DCAT catalogue",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "Dataset vintages 1986-2026",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1986
+  },
+  "temporal_resolution": "varies by dataset (monthly to decennial)",
+  "temporal_resolution_class": "varies",
+  "title_en": "Census Data API and data.census.gov (access to Census Bureau statistical datasets)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

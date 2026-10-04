@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "WRF-SFIRE on GitHub",
+      "url": "https://github.com/openwfm/WRF-SFIRE"
+    },
+    {
+      "kind": "docs",
+      "label": "User guide",
+      "url": "https://wiki.openwfm.org/wiki/WRF-SFIRE_user_guide"
+    },
+    {
+      "kind": "paper",
+      "label": "Mandel et al. 2011, GMD",
+      "url": "https://doi.org/10.5194/gmd-4-591-2011"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5194/gmd-4-591-2011",
+    "name": "wrf sfire coupled atmosphere and wildland fire spread model openwfm",
+    "repo": "github.com/openwfm/wrf-sfire",
+    "url": "https://wiki.openwfm.org/wiki/WRF-SFIRE_user_guide"
+  },
+  "description": "WRF-SFIRE couples the Weather Research and Forecasting (WRF) atmospheric model with a wildland fire spread model, so that the fire and the local weather interact. The OpenWFM user guide describes the model, which is kept on GitHub and has evolved separately from the WRF-Fire option in the main WRF code since that was taken from a limited 2010 version; the technical description is in Mandel, Beezley and Kochanski (2011, Geoscientific Model Development 4, 591-610) and Mandel et al. (2014, Natural Hazards and Earth System Sciences 14, 2829-2845). Coverage: any region with suitable weather and fuel data. The guide covers building and ideal cases, configuration namelists, ignition, real cases with the automated WRFx system, fuel data from GeoTIFF files, a fuel moisture model with assimilation of RAWS station data, smoke coupling with WRF-Chem, data assimilation and ignition from a perimeter, fire replay and cycling, and a standalone fire model. Format and access: Fortran source code on GitHub and the user guide on the OpenWFM wiki; free. Licence: the repository carries the WRF public domain notice from NCAR and UCAR, read from its licence file. Caveats: running real cases needs weather, fuel and topography data and substantial computing; the model was not run for this record. Simulation uses: fire spread and smoke under changing winds to assess wildfire exposure of power lines, roads and settlements and to support emergency response. Related records: BC Wildfire Predictive Services (platform-bcgov-wildfire-predictive-services) is an operational wildfire decision support code base.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source services-openwfm-wrf-sfire: provider pages read (round 2 register piece)",
+      "route": "R06",
+      "source": "services-openwfm-wrf-sfire"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://wiki.openwfm.org/wiki/WRF-SFIRE_user_guide",
+  "id": "model-openwfm-wrf-sfire-coupled-weather-fire",
+  "inputs": [
+    "WRF meteorological initial and boundary conditions",
+    "fuel maps (GeoTIFF)",
+    "topography",
+    "ignition points or perimeters",
+    "RAWS fuel moisture observations"
+  ],
+  "language": [
+    "fortran"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "public domain (WRF notice, NCAR/UCAR)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "WRF-SFIRE: coupled atmosphere and wildland fire spread model (OpenWFM)",
+  "outputs": [
+    "fire spread and perimeters",
+    "fire heat fluxes coupled to the atmosphere",
+    "fuel moisture",
+    "smoke (with WRF-Chem)"
+  ],
+  "provider": "OpenWFM (Mandel, Beezley, Kochanski and co-developers)",
+  "related_ids": [
+    "platform-bcgov-wildfire-predictive-services"
+  ],
+  "repository": "https://github.com/openwfm/WRF-SFIRE",
+  "sectors": [
+    "cross_cutting.green_blue",
+    "services.emergency_services",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Applies to github.com/openwfm/WRF-SFIRE; WRF-Fire based on limited 2010 version; GMD 2011 and NHESS 2014 references; contents list incl. WRFx, fuel moisture, RAWS assimilation, WRF-Chem smoke, perimeter ignition, standalone model; NSF grants",
+      "url": "https://wiki.openwfm.org/wiki/WRF-SFIRE_user_guide"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "WRF public domain notice from NCAR/UCAR, AS IS",
+      "url": "https://raw.githubusercontent.com/openwfm/WRF-SFIRE/master/LICENSE.txt"
+    }
+  ],
+  "tags": [
+    "wildfire",
+    "coupled model",
+    "WRF",
+    "fire spread",
+    "smoke"
+  ],
+  "title_en": "WRF-SFIRE: coupled atmosphere and wildland fire spread model (OpenWFM)",
+  "type": "model"
+}

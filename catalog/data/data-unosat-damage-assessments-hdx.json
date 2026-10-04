@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "UNOSAT on HDX (about 1,465 datasets)",
+      "url": "https://data.humdata.org/organization/unosat"
+    },
+    {
+      "kind": "download",
+      "label": "Example: destroyed buildings, Maungdaw District, Myanmar",
+      "url": "https://data.humdata.org/dataset/destroyed-buildings-in-maungdaw-and-buthindaung-townships-maungdaw-district-myanmar"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "imagery_remote_sensing",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "event_record",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "unosat satellite damage assessments on hdx",
+    "url": "https://data.humdata.org/organization/unosat"
+  },
+  "description": "UNOSAT, the United Nations Satellite Centre within the UN Institute for Training and Research, publishes its satellite-based damage analyses on the Humanitarian Data Exchange, one dataset per event and area, mapping destroyed and damaged structures after disasters and conflicts. It provides satellite analysis to UN agencies and member states on request, and its HDX organisation held about 1,465 datasets on 2026-09-26, nearly all matching a search for damage. An example is the analysis of Maungdaw and Buthindaung townships, Myanmar, which found more than 400,000 square metres of destroyed structures between 16 and 25 September 2017, beyond over 20 square kilometres identified earlier, and 122 fires detected by MODIS and VIIRS. Beyond building damage, the organisation also publishes shelter counts and densities at displacement sites, flood extents with exposed population, landslide inventories and night-time light power-supply assessments. Coverage: events worldwide where UNOSAT was activated. Access: shapefiles and file geodatabases hosted by UNOSAT, with maps, discoverable through the HDX CKAN API. Licence: set per dataset; the Myanmar example is Creative Commons Attribution-ShareAlike. Caveats: damage is detected from imagery by analysts, so interior damage and light damage are missed, and methods and grades vary between events. Simulation uses are post-event exposure and damage layers for response planning, and observations for validating damage models. Related records: the HOT OpenStreetMap exports and the Türkiye earthquake damage datasets.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"building\" \"sensor\"",
+      "route": "R04",
+      "source": "hdx"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "esri_geodatabase",
+    "document",
+    "image"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake",
+    "flood",
+    "storm_wind",
+    "physical_attack_sabotage",
+    "landslide",
+    "tsunami"
+  ],
+  "homepage": "https://data.humdata.org/organization/unosat",
+  "id": "data-unosat-damage-assessments-hdx",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-11-21",
+  "licence": "CC-BY-SA (per dataset; check each)",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "UNOSAT satellite damage assessments on HDX",
+  "provider": "United Nations Satellite Centre (UNOSAT), part of UNITAR",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Organisation title, description, 1,465 datasets",
+      "url": "https://data.humdata.org/api/3/action/organization_show?id=unosat"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "1,452 datasets match 'damage'",
+      "url": "https://data.humdata.org/api/3/action/package_search?fq=organization:unosat&q=damage&rows=0"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Example: cc-by-sa, created 2017-10-05, modified 2025-11-21, geodatabase and shapefile, figures",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=destroyed-buildings-in-maungdaw-and-buthindaung-townships-maungdaw-district-myanmar"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Open candidate titles from the 2026-09-26 HDX harvest include shelter density maps at Rukban and Hadalat, flood exposure in Bangladesh, Malawi and Kenya, landslide inventories and night-time light power supply assessments in Libya and Morocco",
+      "url": "https://data.humdata.org/api/3/action/package_search?fq=organization:unosat&rows=0"
+    }
+  ],
+  "spatial_resolution": "Individual structures or damage areas detected on very high resolution satellite imagery",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "UNOSAT",
+    "damage assessment",
+    "satellite",
+    "HDX",
+    "humanitarian",
+    "conflict"
+  ],
+  "title_en": "UNOSAT satellite damage assessments on HDX",
+  "type": "data"
+}

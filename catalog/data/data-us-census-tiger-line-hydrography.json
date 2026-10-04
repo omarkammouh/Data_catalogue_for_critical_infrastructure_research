@@ -1,0 +1,139 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "TIGER/Line 2025 FTP: AREAWATER, LINEARWATER, COASTLINE folders",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/"
+    },
+    {
+      "kind": "download",
+      "label": "TIGER/Line Shapefiles web interface",
+      "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+    },
+    {
+      "kind": "docs",
+      "label": "2025 technical documentation, chapter 4 (hydrography)",
+      "url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc_Ch4.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "crs": "NAD83 geographic (EPSG:4269)",
+  "data_family": [
+    "system_description",
+    "reference_context"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "tiger line shapefiles area hydrography linear hydrography and coastlines",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/AREAWATER"
+  },
+  "description": "The hydrography layers of the U.S. Census Bureau's TIGER/Line Shapefiles are extracts from the MAF/TIGER database that describe surface water as the Census Bureau maps it for its statistical geography. Area Hydrography (county files) contains perennial and intermittent water polygons: ponds, lakes, oceans, swamps, glaciers and the area of large double-line rivers. Linear Hydrography (county files) contains all linear features with hydrography codes: streams and rivers, braided streams, canals, ditches, artificial paths and aqueducts. A national Coastline file and shoreline edges in the All Lines layer complete the set, and relationship files link water polygons to topological faces. Coverage: the 50 states, the District of Columbia, Puerto Rico and the Island Areas; annual vintages, the 2025 files released on 23 September 2025 with feature updates through July 2025. Format and access: shapefiles by county on the Census Bureau's FTP site and web interface, plus national and state geodatabases and GeoPackages; free and public domain. Caveats: the features are drawn for census mapping, not hydrology; artificial paths may not match the USGS National Hydrography Dataset and do not carry NHD codes, and there is no flow direction or network attribute. Simulation uses: a nationally consistent water layer tied to census blocks, useful for masking water from exposure grids, linking canals and aqueducts to water-supply models, and locating riverine and coastal assets relative to population. Related records: TIGER/Line road and rail layers, the TIGER edges and faces topology, TIGER boundaries and blocks, and TIGERweb, which serves the same layers as map services.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; TIGER Data Products Guide; TIGER/Line 2025 technical documentation",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "esri_geodatabase",
+    "geopackage"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://www2.census.gov/geo/tiger/TIGER2025/AREAWATER/",
+  "id": "data-us-census-tiger-line-hydrography",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-09-23",
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "TIGER/Line Shapefiles: area hydrography, linear hydrography and coastlines",
+  "notes": "The TIGER/Line page lists editions for 2000, 2006 and every year from 2007; CRS GCS NAD83 per technical documentation section 3.3.3.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-tiger-line-roads-rails",
+    "data-us-census-tiger-line-edges-faces-address-ranges",
+    "data-us-census-tiger-line-boundaries-blocks",
+    "data-us-census-tigerweb-services"
+  ],
+  "schema_summary": "HYDROID, FULLNAME, MTFCC (H-codes for water type), ALAND/AWATER; linear: LINEARID, ARTPATH flag",
+  "sectors": [
+    "water.stormwater_drainage",
+    "water.drinking_water",
+    "water.irrigation",
+    "transport.inland_waterways"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "2025 TIGER/Line Shapefiles released 2025-09-23; legal boundaries as of 2025-01-01; no demographic data but linkable codes",
+      "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "2025 technical documentation chapter 3: list of legal and statistical entities, feature shapefiles, relationship files, nation/state/county file extents",
+      "url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc_Ch3.pdf"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Section 4.10 Hydrography: contents of area and linear files, artificial paths vs NHD, shoreline MTFCCs",
+      "url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc_Ch4.pdf"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Folder listing incl. AREAWATER, LINEARWATER, COASTLINE",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/"
+    }
+  ],
+  "spatial_resolution": "Vector, county-based files; positional accuracy varies by source",
+  "spatial_resolution_class": "varies",
+  "tags": [
+    "TIGER/Line",
+    "hydrography",
+    "rivers",
+    "canals",
+    "aqueducts",
+    "coastline",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "Annual vintages since 2007 (2025 current)",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2007
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "TIGER/Line Shapefiles: area hydrography, linear hydrography and coastlines",
+  "type": "data",
+  "update_frequency": "annual"
+}

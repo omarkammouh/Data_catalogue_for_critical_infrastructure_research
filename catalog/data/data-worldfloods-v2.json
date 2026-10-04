@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/spaceml-org/ml4floods"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/spaceml-org/ml4floods/blob/main/README.md"
+    },
+    {
+      "kind": "portal",
+      "label": "Dataset card and files",
+      "url": "https://huggingface.co/datasets/isp-uv-es/WorldFloodsv2"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1038/s41598-023-47595-7"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "hazards",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "imagery",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "worldfloods v2 satellite flood benchmark",
+    "url": "https://huggingface.co/datasets/isp-uv-es/WorldFloodsv2"
+  },
+  "description": "WorldFloods v2 is the ML4Floods research team's satellite-image benchmark for flood segmentation. The provider publishes 509 Sentinel-2 image and mask pairs divided into training, validation and test sets. Coverage consists of selected flood scenes, not a continuous global observation record; exact dates and footprints follow individual images. The public Hugging Face dataset is free for permitted noncommercial reuse under CC-BY-NC-4.0, with linked notebooks for exploring the files and constructing PyTorch data loaders. A limitation is that cloud cover and annotation methods affect segmentation labels, and a published benchmark split does not establish transfer to every flood region. The provider card does not state a single acquisition period or uniform output resolution. WorldFloods v2 can train flood mapping and supply comparison evidence for infrastructure inundation simulations such as Delft3D FM (model-delft3d-fm). The Scientific Reports 2023 paper describes the dataset and method. No images, masks or model weights were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "spaceml-org/ml4floods linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "image",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://github.com/spaceml-org/ml4floods",
+  "id": "data-worldfloods-v2",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-20",
+  "licence": "CC-BY-NC-4.0",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "WorldFloods v2 satellite flood benchmark",
+  "notes": "G7 G7-0777. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. Separate from the ML4Floods software record. Its dataset address and reuse terms differ. ",
+  "provider": "ML4Floods research team",
+  "related_ids": [
+    "platform-ml4floods",
+    "model-delft3d-fm"
+  ],
+  "sectors": [
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for spaceml-org/ml4floods: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/spaceml-org/ml4floods"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/spaceml-org/ml4floods/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Distinct dataset identity, pair count, splits, tutorials and noncommercial licence.",
+      "url": "https://huggingface.co/datasets/isp-uv-es/WorldFloodsv2"
+    }
+  ],
+  "spatial_resolution": "Scene-specific; not a single resolution stated in the dataset card",
+  "spatial_resolution_class": "other",
+  "tags": [],
+  "temporal_coverage": "Individual flood scenes; aggregate date range not stated in provider card",
+  "temporal_resolution": "Selected acquisitions",
+  "temporal_resolution_class": "other",
+  "title_en": "WorldFloods v2 satellite flood benchmark",
+  "type": "data"
+}

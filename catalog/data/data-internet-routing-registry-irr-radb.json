@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "irr.net",
+      "url": "https://www.irr.net/"
+    },
+    {
+      "kind": "docs",
+      "label": "List of routing registries",
+      "url": "https://www.irr.net/docs/list.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "system_description",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "network_topology",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "internet routing registry irr routing policy databases and the merit radb mirror",
+    "url": "https://irr.net"
+  },
+  "description": "The Internet Routing Registry is the union of routing policy databases run worldwide by organisations such as regional internet registries and network operators (the site names NTT, RIPE NCC, Savvis and Level3), which use the Routing Policy Specification Language (RPSL) to publish route objects, AS policies and sets. Merit Network runs irr.net to coordinate the registry, operates the RADB database and keeps the largest mirror of the other databases, so a query to Merit's whois server returns data from 17 databases. Coverage: global routing policy declared by network operators, current state with object history in some databases. Format and access: RPSL objects through whois (whois.radb.net) and bulk database dumps, free to query. Caveats: data are self-declared and often stale or wrong, which is why RPKI is used alongside; not all networks register; mirrors lag the source databases. Simulation uses: declared prefixes, AS relationships and policies for building AS-level topologies and testing route filtering and hijack scenarios in resilience studies. Related records: data-ripe-ris and data-routeviews give observed BGP routes to compare with declared policy; case_study-rostelecom-bgp-hijack-2020 is a hijack incident; data-team-cymru-ip-to-asn-mapping maps addresses to origin ASNs.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Internet Routing Registry data (cited in doi:10.1109/comst.2014.2376520); candidate crossref-7200541a60 on the integrator's must-have list (musthave/digital.csv)",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "formats": [
+    "plain_text"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.irr.net/",
+  "id": "data-internet-routing-registry-irr-radb",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09",
+  "licence": "terms of each database",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Internet Routing Registry (IRR) routing policy databases and the Merit RADB mirror",
+  "notes": "irr.net home page read on 2026-09-26 (purpose, operators, RADB mirror of 17 databases). The list page returned no readable table; the whois host and bulk dump access are from recall.",
+  "provider": "Merit Network, Inc. (RADB and irr.net), with IRR databases run by RIPE NCC, NTT and others",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom",
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "size": "17 mirrored databases",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "home page",
+      "url": "https://www.irr.net/"
+    }
+  ],
+  "spatial_resolution": "prefix and AS",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "IRR",
+    "RADB",
+    "RPSL",
+    "routing policy",
+    "BGP"
+  ],
+  "temporal_coverage": "current, with dumps over time",
+  "temporal_resolution": "continuous updates",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Internet Routing Registry (IRR) routing policy databases and the Merit RADB mirror",
+  "type": "data",
+  "update_frequency": "real_time"
+}

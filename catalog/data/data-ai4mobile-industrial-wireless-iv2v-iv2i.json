@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/fraunhoferhhi/ai4mobile-industrial"
+    },
+    {
+      "kind": "docs",
+      "label": "IEEE DataPort dataset deposit",
+      "url": "https://ieee-dataport.org/open-access/ai4mobile-industrial-wireless-datasets-iv2v-and-iv2i"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1109/MCOM.001.2300494"
+    }
+  ],
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "telecom_coverage_spectrum",
+    "demand_operation",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.21227/04ta-v128",
+    "name": "ai4mobile industrial wireless datasets iv2v and iv2i",
+    "repo": "github.com/fraunhoferhhi/ai4mobile-industrial",
+    "url": "https://ieee-dataport.org/open-access/ai4mobile-industrial-wireless-datasets-iv2v-and-iv2i"
+  },
+  "description": "AI4Mobile publishes measurements for industrial vehicle-to-vehicle and vehicle-to-infrastructure communications. The iV2V experiment covers roughly ten hours with three automated guided vehicles; iV2I+ covers roughly sixteen hours with a cleaning robot on a private cellular network. Fraunhofer HHI and collaborators provide combined Parquet tables, source tables and original logs, with feature metadata and Python examples on GitHub. Coverage comprises two industrial testbeds, not a geographic network survey. iV2V packets are spaced about 20 milliseconds apart and vehicle positions about 50 milliseconds. The combined iV2I+ table is resampled to one second, while original radio and robot measurements have finer intervals. DataCite states CC BY 4.0 for the data. IEEE DataPort exposes metadata publicly and states that a free IEEE account is needed for file access; payload access was not attempted. A limitation is that resampling loses information and interrupted clock synchronisation can affect packet-delay measurements by several milliseconds. Simulation uses include radio-quality, link-selection and robot communication validation alongside platform-ns-3, without a verified direct import path. The repository describes LTE channels; a blanket 5G claim is not adopted.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Curated-list traversal: jonathanwvd/awesome-industrial-datasets",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "csv",
+    "domain_model_file",
+    "other"
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://ieee-dataport.org/open-access/ai4mobile-industrial-wireless-datasets-iv2v-and-iv2i",
+  "id": "data-ai4mobile-industrial-wireless-iv2v-iv2i",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-04-15",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "AI4Mobile industrial wireless datasets: iV2V and iV2I+",
+  "notes": "G8; G8-0143. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations. ",
+  "provider": "Fraunhofer Heinrich Hertz Institute and AI4Mobile collaborators",
+  "related_ids": [
+    "platform-ns-3"
+  ],
+  "sectors": [
+    "digital.telecom",
+    "industry.manufacturing_chemical"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/fraunhoferhhi/ai4mobile-industrial/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/fraunhoferhhi/ai4mobile-industrial"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Dataset identity and CC BY 4.0 licence.",
+      "url": "https://api.datacite.org/dois/10.21227/04ta-v128"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Provider landing page, campaign duration, file listing and free-account access notice.",
+      "url": "https://ieee-dataport.org/open-access/ai4mobile-industrial-wireless-datasets-iv2v-and-iv2i"
+    }
+  ],
+  "spatial_resolution": "Two industrial testbeds; local positions rather than global asset coordinates.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Measurement campaigns: about 10 hours iV2V and 16 hours iV2I+; calendar interval not established.",
+  "temporal_resolution": "20 ms packets and 50 ms location in iV2V; combined iV2I+ at 1 s, with finer raw signals.",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "AI4Mobile industrial wireless datasets: iV2V and iV2I+",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

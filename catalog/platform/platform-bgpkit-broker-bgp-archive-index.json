@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/bgpkit/bgpkit-broker"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bgpkit broker near real time index and api of public bgp archive files ripe ris and routeviews",
+    "repo": "github.com/bgpkit/bgpkit-broker",
+    "url": "https://bgpkit.com/broker"
+  },
+  "deployment": [
+    "desktop",
+    "hosted_service",
+    "own_server"
+  ],
+  "description": "BGPKIT Broker is an online data API that lets users search the publicly available BGP archive files by time, collector, project or data type. It indexes the BGP table dumps and update files of RIPE RIS and RouteViews within about five minutes of their publication. Coverage: global, for all RIPE RIS and RouteViews collectors. The Rust library gives software access to the Broker API and a command line tool to run a self-hosted broker instance. The README says the Broker is used in production at Cloudflare Radar for its routing page and for BGP hijack and route leak detection. Format and access: a public web API and a Rust crate; the indexed MRT files stay at RIPE RIS and RouteViews; free. Licence: MIT, read from the repository licence file. Caveats: the Broker only indexes files, so parsing MRT data needs other tools; the public API's rate limits and terms were not read. Simulation uses: locating routing tables and updates for replaying internet routing events, such as hijacks and outages, in studies of internet resilience and cascading failure. Related records: RIPE RIS (data-ripe-ris) and RouteViews (data-routeviews) are the archives it indexes, BGPStream (platform-bgpstream) is a similar framework, and Cloudflare Radar (data-cloudflare-radar) uses it.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source digital-bgpkit-broker: provider pages read (round 2 register piece)",
+      "route": "R35",
+      "source": "digital-bgpkit-broker"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/bgpkit/bgpkit-broker",
+  "id": "platform-bgpkit-broker-bgp-archive-index",
+  "interfaces": [
+    "web_api",
+    "code_library",
+    "command_line"
+  ],
+  "language": [
+    "rust_go"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-10",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://bgpkit.com/broker"
+    ],
+    "dead_since": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BGPKIT Broker: near-real-time index and API of public BGP archive files (RIPE RIS and RouteViews)",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool",
+    "cloud_service"
+  ],
+  "provider": "BGPKIT",
+  "related_ids": [
+    "data-ripe-ris",
+    "data-routeviews",
+    "platform-bgpstream",
+    "data-cloudflare-radar"
+  ],
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "cascading_failure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "API to search BGP archive files by time, collector, project, type; indexes RIPE RIS and RouteViews with <5 min delay; Rust SDK and self-hosted CLI; used by Cloudflare Radar",
+      "url": "https://raw.githubusercontent.com/bgpkit/bgpkit-broker/main/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "MIT License, 2021 Mingwei Zhang",
+      "url": "https://raw.githubusercontent.com/bgpkit/bgpkit-broker/main/LICENSE"
+    }
+  ],
+  "tags": [
+    "BGP",
+    "routing",
+    "MRT",
+    "internet measurement"
+  ],
+  "title_en": "BGPKIT Broker: near-real-time index and API of public BGP archive files (RIPE RIS and RouteViews)",
+  "type": "platform"
+}

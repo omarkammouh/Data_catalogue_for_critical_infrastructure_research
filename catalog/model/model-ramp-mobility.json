@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/RAMP-project/RAMP-mobility"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/RAMP-project/RAMP-mobility/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Mangipinto et al. (2022). RAMP-mobility: stochastic simulation of electric-vehicle mobility and charging. Applied Energy. https://doi.org/10.1016/j.apenergy.2022.118676",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ramp mobility ev charging load model",
+    "repo": "github.com/ramp-project/ramp-mobility",
+    "url": "https://github.com/RAMP-project/RAMP-mobility"
+  },
+  "description": "RAMP-mobility is a Python application of the RAMP stochastic activity engine for generating electric-vehicle travel and charging-load profiles. Its developers document European mobility settings, vehicle categories and a one-minute output resolution. Inputs are mobility behaviour, vehicle and charger assumptions plus regional travel profiles; outputs are simulated trips, charging activity and electricity load series. Geography follows the European region selected, while periods and fleet size follow the input scenario. The complete model is free under EUPL-1.2-or-later and the repository offers a quick start and a methods paper. A limitation is that the source models patterns of vehicle use, not observing each driver; demand estimates must be checked for the local fleet and travel behaviour. It can supply charging-load inputs for transport and distribution-grid capacity simulations. The catalogue's model-pypsa is a separate energy-system model that may need such demand profiles, but no interface was tested. This review read the source instructions without running the model or downloading input data.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "ramp-project/ramp-mobility linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/RAMP-project/RAMP-mobility",
+  "id": "model-ramp-mobility",
+  "inputs": [
+    "EV fleet, travel and charging behaviour assumptions"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-05-14",
+  "licence": "EUPL-1.2",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical",
+    "agent_based"
+  ],
+  "name": "RAMP-mobility EV charging-load model",
+  "notes": "G7 G7-1302. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "One-minute electric mobility and charging-load profiles"
+  ],
+  "provider": "RAMP-mobility research contributors",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/RAMP-project/RAMP-mobility",
+  "sectors": [
+    "transport.road",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for RAMP-project/RAMP-mobility: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/ramp-project/ramp-mobility"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/ramp-project/ramp-mobility/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Statistical model for road transport and electricity",
+  "type": "model"
+}

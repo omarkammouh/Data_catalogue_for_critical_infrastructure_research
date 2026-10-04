@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/PowerGenome/PowerGenome"
+    },
+    {
+      "kind": "portal",
+      "label": "Renewable resource profiles (Zenodo, 2026.08.31)",
+      "url": "https://doi.org/10.5281/zenodo.22235855"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://powergenome.github.io/PowerGenome"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "powergenome",
+    "repo": "github.com/powergenome/powergenome",
+    "url": "https://powergenome.github.io/PowerGenome"
+  },
+  "description": "PowerGenome is an open Python tool that assembles the input data for power system capacity expansion models of the United States. It was created by Greg Schivley and is developed on GitHub under the MIT licence, with releases up to v0.8.0 and commits into September 2026. A user defines regions, clusters of existing generating units and other choices in a settings file, and one script builds the input files; it currently writes inputs for the GenX model. The data come from EIA, EPA, NREL and other public sources: existing units, new resource costs and operating parameters, transmission limits and expansion costs between regions, hourly demand by region, fuel prices, distributed generation and hourly wind and solar profiles. A September 2026 Zenodo release of renewable resource profiles gives hourly onshore wind, offshore wind and solar profiles made with NREL's reV and SAM for weather years 2007 to 2013 on a 10 km grid. Coverage is the contiguous United States. The code is accessible on GitHub and the profiles are downloadable from Zenodo (CC0) at no cost. Caveats: the data files are large and only GenX output is supported. Simulation uses are capacity expansion, clean energy policy and regional resource adequacy studies. Related records: model-pypsa-usa is another open US system model.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid resource potential",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://powergenome.github.io/PowerGenome",
+  "id": "model-powergenome",
+  "inputs": [
+    "EIA, EPA and NREL tabular data (existing units, costs, transmission, demand, fuel prices)",
+    "hourly wind and solar generation profiles",
+    "settings file of regions and clusters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-03",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "economic"
+  ],
+  "name": "PowerGenome",
+  "outputs": [
+    "input files for the GenX capacity expansion model"
+  ],
+  "provider": "Greg Schivley and PowerGenome contributors",
+  "related_ids": [
+    "model-pypsa-usa"
+  ],
+  "repository": "https://github.com/PowerGenome/PowerGenome",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, settings file, GenX output, EIA/NREL/EPA data components, renewable profile inputs",
+      "url": "https://raw.githubusercontent.com/PowerGenome/PowerGenome/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License, copyright 2019 Greg Schivley; tags up to v0.8.0",
+      "url": "https://raw.githubusercontent.com/PowerGenome/PowerGenome/HEAD/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Renewable resource profiles 2026.08.31.v1: reV and SAM, WTK and NSRDB, 10 km grid, weather years 2007-2013; CC0",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.22235855"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Head commit 2026-09-03",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/PowerGenome/PowerGenome/visit/latest/"
+    }
+  ],
+  "tags": [
+    "GenX",
+    "capacity expansion",
+    "input data",
+    "United States",
+    "reV",
+    "wind and solar profiles"
+  ],
+  "title_en": "PowerGenome open Python tool for power system capacity expansion models",
+  "type": "model",
+  "validated_on": []
+}

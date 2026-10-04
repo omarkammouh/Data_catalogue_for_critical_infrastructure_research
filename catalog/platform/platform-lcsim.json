@@ -1,0 +1,88 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/tsinghua-fib-lab/LCSim"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/tsinghua-fib-lab/LCSim/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "lcsim controllable traffic simulator",
+    "repo": "github.com/tsinghua-fib-lab/lcsim",
+    "url": "https://github.com/tsinghua-fib-lab/LCSim"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "LCSim is Tsinghua FIB Lab's controllable traffic simulator using a trained diffusion model. It supplies scenario-conversion scripts for Waymo, Argoverse and MOSS, a simulation notebook and a reinforcement-learning workflow for different driving styles. Inputs are converted map and trajectory scenarios, a diffusion model and configuration files; outputs are simulated motion and policy-training results. The documented training uses nine-second Waymo Open Motion v1.2 scenarios, with other coverage determined by imported scenes. Source is free under MIT and uses Python 3.10; preprocessing produces HDF5 training files. A limitation is the computational effort: the authors report approximately one week on four RTX 4090 GPUs for their 200-epoch training run. Dataset permissions remain separate. LCSim supports road-agent simulation and controlled scenario generation. Waymax (platform-waymax) provides related road-scene simulation. No dataset or weights were downloaded, and the training claim was not reproduced.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "tsinghua-fib-lab/lcsim linked by zachytong/awesome-traffic-simulation",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/tsinghua-fib-lab/LCSim",
+  "id": "platform-lcsim",
+  "interfaces": [
+    "code_library"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-11-04",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "LCSim controllable traffic simulator",
+  "notes": "G7 G7-1068. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability.  Cited as: Zhang et al. (2024). LCSim: A Large-Scale Controllable Traffic Simulator. https://arxiv.org/abs/2406.19781. Deep check A4 (2026-10-01) corrected: maturity .",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "Tsinghua FIB Lab and LCSim authors",
+  "related_ids": [],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for tsinghua-fib-lab/LCSim: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/tsinghua-fib-lab/lcsim"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/tsinghua-fib-lab/lcsim/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Simulation software for road transport",
+  "type": "platform"
+}

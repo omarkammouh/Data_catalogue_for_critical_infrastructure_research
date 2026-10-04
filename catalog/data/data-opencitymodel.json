@@ -1,0 +1,118 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository with state file indexes",
+      "url": "https://github.com/opencitymodel/opencitymodel"
+    },
+    {
+      "kind": "download",
+      "label": "AWS S3 bucket opencitymodel (CityGML, CityJSON, Parquet)",
+      "url": "https://s3.dualstack.us-east-1.amazonaws.com/opencitymodel/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "open city model",
+    "url": "https://github.com/opencitymodel/opencitymodel"
+  },
+  "description": "Open City Model is an open dataset of LoD1 3D building models for all buildings in the United States, roughly 125 million, built by combining open footprint data such as Microsoft's US Building Footprints with the project's own code and height estimation. It was produced by a volunteer initiative to make CityGML data freely available nationwide. Each building carries its footprint area, a height (measured where available, otherwise estimated by a regression of height on footprint area trained on about four million OpenStreetMap buildings), its state and county FIPS code, and the source of its footprint. Coverage is national, organised by state and county; the published release is June 2019 and the repository was last changed in November 2019. Access: files on the public AWS S3 bucket opencitymodel in CityGML, CityJSON and Parquet, identical in content, with per-state index pages. Licence (read on the provider page on 2026-09-28): ODbL-1.0. Free. Caveats: only LoD1 geometry; regression heights are rough; the data have not been updated since 2019. Simulation uses are 3D city context for digital twins and simple building exposure with heights. Related records: Microsoft US Building Footprints (source), GlobalBuildingAtlas and FEMA USA Structures (more recent alternatives).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R30",
+      "source": "built_environment-opencitymodel"
+    }
+  ],
+  "formats": [
+    "gml",
+    "cad_bim_3d",
+    "parquet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/opencitymodel/opencitymodel",
+  "id": "data-opencitymodel",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2019-11-14",
+  "licence": "ODbL-1.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Open City Model",
+  "notes": "GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "provider": "Open City Model initiative (volunteer project)",
+  "related_ids": [],
+  "schema_summary": "LoD1 geometry, footprint area, height (measured or regression-estimated), state and county FIPS, footprint source",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Initiative, ~125 million buildings, S3 bucket and path pattern, three formats, 2019-jun release tables, LOD1 only, height sources",
+      "url": "https://raw.githubusercontent.com/opencitymodel/opencitymodel/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: HEAD commit 2019-11-14",
+      "url": "https://github.com/opencitymodel/opencitymodel"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): ODbL-1.0 (basis: repository README: licensed under the ODbL)",
+      "url": "https://github.com/opencitymodel/opencitymodel/blob/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://s3.dualstack.us-east-1.amazonaws.com/opencitymodel/"
+    }
+  ],
+  "spatial_resolution": "LoD1 building models, files per state and county FIPS",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "CityGML",
+    "CityJSON",
+    "LoD1",
+    "3D",
+    "United States"
+  ],
+  "temporal_coverage": "Release 2019-jun",
+  "temporal_resolution": "none (snapshot)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Buildings data",
+  "type": "data"
+}

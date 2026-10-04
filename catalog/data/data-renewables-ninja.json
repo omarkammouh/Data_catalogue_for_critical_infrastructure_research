@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "API documentation",
+      "url": "https://www.renewables.ninja/documentation/api"
+    },
+    {
+      "kind": "viewer",
+      "label": "Web application",
+      "url": "https://www.renewables.ninja/"
+    },
+    {
+      "kind": "portal",
+      "label": "Downloads",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.renewables.ninja/downloads"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "resource_potential",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "renewables ninja hourly wind and solar pv power output simulations for any location with country datasets and api",
+    "url": "https://renewables.ninja"
+  },
+  "description": "Renewables.ninja lets users simulate the hourly power output of wind and solar PV plants anywhere in the world, and offers ready-made country datasets. It is a collaboration between Stefan Pfenninger of TU Delft, who designed the solar model and web application, and Iain Staffell of Imperial College London, who designed the wind model. Weather comes from the NASA MERRA reanalysis and the CM-SAF SARAH satellite dataset; irradiance is converted with the GSEE model and wind speed with the Virtual Wind Farm model, as set out in two 2016 Energy papers. Users pick a point on the map, the technology and parameters such as tilt, tracking, hub height and turbine; the API serves site-level runs and country aggregates in JSON or CSV, anonymously or with a token, under the same limits as the website. The downloads page keeps older hourly PV and wind capacity factor sets for the EU-28 plus Norway and Switzerland, with versions to v1.3 covering up to 2019 and v1.4 available online through the country view. Data are free to download under CC BY-NC 4.0; commercial use needs permission. Coverage is global. Caveats: the site gives the data as-is without warranty, and results depend on reanalysis bias correction. Simulation uses are wind and solar generation time series for capacity expansion, adequacy and weather stress studies. Related records: data-eia-2020-plant-wind-solar-hourly-profiles gives plant-level US profiles.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "global hourly wind and solar PV simulation tool reanalysis",
+      "route": "R40",
+      "source": "assistant recall"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "archive"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.renewables.ninja/",
+  "id": "data-renewables-ninja",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC BY-NC 4.0 (commercial use by permission)",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Renewables.ninja - hourly wind and solar PV power output simulations for any location, with country datasets and API",
+  "provider": "Stefan Pfenninger (TU Delft) and Iain Staffell (Imperial College London)",
+  "related_ids": [
+    "data-eia-2020-plant-wind-solar-hourly-profiles",
+    "data-godeeep-hourly-wind-solar-profiles-conus"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Team, CC BY-NC 4.0 licence and commercial contact, foundational papers, MERRA and SARAH sources, GSEE and VWF models, no warranty",
+      "url": "https://www.renewables.ninja/about"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Country and point downloads, older PV and wind versions (EU-28 plus NO and CH, v1.0 to v1.4)",
+      "url": "https://www.renewables.ninja/downloads"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Anonymous or token access, site-level and country endpoints, JSON and CSV",
+      "url": "https://www.renewables.ninja/documentation/api"
+    }
+  ],
+  "tags": [
+    "wind power",
+    "solar PV",
+    "capacity factors",
+    "reanalysis",
+    "global"
+  ],
+  "title_en": "Renewables.ninja - hourly wind and solar PV power output simulations for any location, with country datasets and API",
+  "type": "data"
+}

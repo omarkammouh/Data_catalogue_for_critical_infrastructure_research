@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/changliao1025/pyhexwatershed"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/changliao1025/pyhexwatershed/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hexwatershed flow direction network tool",
+    "repo": "github.com/changliao1025/pyhexwatershed",
+    "url": "https://github.com/changliao1025/pyhexwatershed"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "HexWatershed is a mesh-independent flow-direction model with a Python interface to a C++ hydrological backend. It derives drainage direction and river-network topology from terrain and model meshes, including non-regular grids. Users provide elevation, spatial mesh and stream information; outputs are prepared flow-direction and connectivity layers for a hydrological model. Geography, cell size and source date depend on the terrain and grid chosen by the user; this preparation tool has no fixed forecast period of its own. Battelle Memorial Institute publishes the Python interface under a permissive custom licence in the README, with conda installation, compilation guidance and a separate tutorial. The C++ backend must be built and supplied, so the Python package alone is not a complete runnable watershed simulation. A further limitation is that inferred direction and topology need checking where DEM depressions, engineered drains or braided channels complicate routing. It serves flood and catchment network input preparation. The catalogue's model-raven is a separate runoff model that needs basin topology; no direct HexWatershed export to Raven was tested. No elevation dataset or installer was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "changliao1025/pyhexwatershed linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/changliao1025/pyhexwatershed",
+  "id": "platform-hexwatershed",
+  "interfaces": [
+    "code_library"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-22",
+  "licence": "Battelle permissive custom licence",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "HexWatershed flow-direction network tool",
+  "notes": "G7 G7-1328. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Battelle Memorial Institute and HexWatershed contributors",
+  "related_ids": [
+    "model-raven"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for changliao1025/pyhexwatershed: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/changliao1025/pyhexwatershed"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/changliao1025/pyhexwatershed/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for dams and flood defences and stormwater drainage",
+  "type": "platform"
+}

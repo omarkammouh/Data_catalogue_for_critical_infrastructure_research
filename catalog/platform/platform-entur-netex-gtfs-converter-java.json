@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/entur/netex-gtfs-converter-java"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "entur netex to gtfs java converter",
+    "repo": "github.com/entur/netex-gtfs-converter-java",
+    "url": "https://github.com/entur/netex-gtfs-converter-java"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "Entur publishes this Java library to convert NeTEx public-transport data into GTFS schedule archives. The input consists of a provider codespace, timetable data and complete definitions of the referenced StopPlaces and Quays. The default converters expect the Nordic NeTEx Profile; extension interfaces allow a developer to replace data loading or entity production for another profile. Geographic coverage, calendar dates and timing resolution are determined by the input datasets. The documented Java API accepts streams and returns a stream for the output ZIP archive. Source code is public and free under EUPL 1.2. Conversion has a stated semantic limitation: NeTEx can override mode at individual ServiceJourney level, whereas the GTFS conversion retains the Line-level mode for a route. Unsupported profiles and incomplete stop definitions therefore need explicit handling. Simulation uses include preparing timetable inputs for route planning and multimodal network analysis. The converter relates to data-transmodel-netex-siri-standards, data-gtfs-specification and model-opentripplanner. The review read the interface documentation and repository metadata; it did not execute a conversion or establish lossless round-trip behaviour.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "gtfs dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/entur/netex-gtfs-converter-java",
+  "id": "platform-entur-netex-gtfs-converter-java",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "Nordic NeTEx Profile",
+    "NeTEx XML",
+    "GTFS Schedule ZIP"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-28",
+  "licence": "EUPL-1.2",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Entur NeTEx-to-GTFS Java converter",
+  "notes": "G8; G8-0081. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Entur",
+  "related_ids": [
+    "data-transmodel-netex-siri-standards",
+    "data-gtfs-specification",
+    "model-opentripplanner"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/entur/netex-gtfs-converter-java/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/entur/netex-gtfs-converter-java"
+    }
+  ],
+  "tags": [],
+  "title_en": "Java library for converting NeTEx public-transport data to GTFS archives",
+  "type": "platform"
+}

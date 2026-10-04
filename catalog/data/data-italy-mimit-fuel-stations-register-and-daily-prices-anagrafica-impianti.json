@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Dataset page (MIMIT open data)",
+      "url": "https://www.mimit.gov.it/it/open-data/elenco-dataset/carburanti-prezzi-praticati-e-anagrafica-degli-impianti"
+    },
+    {
+      "kind": "download",
+      "label": "Active stations register (CSV)",
+      "url": "https://www.mimit.gov.it/images/exportCSV/anagrafica_impianti_attivi.csv"
+    },
+    {
+      "kind": "download",
+      "label": "Prices at 8 am (CSV)",
+      "url": "https://www.mimit.gov.it/images/exportCSV/prezzo_alle_8.csv"
+    },
+    {
+      "kind": "docs",
+      "label": "OSM wiki import page (Italian fuel stations)",
+      "url": "https://wiki.openstreetmap.org/wiki/Import/Catalogue/ItalyFuelStations"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IT"
+  ],
+  "data_family": [
+    "system_description",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "italy fuel stations register and daily prices about 24 000 active stations with operator brand address and coordinates mimit",
+    "url": "https://mimit.gov.it/it/open-data/elenco-dataset/carburanti-prezzi-praticati-e-anagrafica-degli-impianti"
+  },
+  "description": "Two daily open data files on Italy's road fuel retail network, published by the industry ministry from information that station operators must report under article 51 of law 99/2009. Contents: the register of active stations (24,000 lines in the extraction of 28 September 2026) with station id, operator, brand, type (23,308 road, 543 motorway), name, address, municipality, province, latitude and longitude, and a price file of about 92,800 lines with fuel type (petrol, diesel, methane, LPG and others), price, self-service flag and time reported. The OpenStreetMap wiki notes coordinates are added by operators and not always verified, and that station names and addresses are inconsistent. Producer: MIMIT. Coverage: Italy, all 107 provinces named in the register. Format and access: two pipe-delimited CSV downloads updated daily with the situation at 8 am the day before; the separator changed to the pipe character on 10 February 2026; older extractions are archived. Free. Licence: Italian Open Data License IODL 2.0. Caveats: the page calls the datasets experimental; only stations that report are listed. Simulation uses: locating fuel supply nodes in road and emergency fuel supply resilience models, and price and outage analysis of the fuel network. Related records: none identified.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source osm-wiki: provider pages read (round 2 register piece)",
+      "route": "R48",
+      "source": "osm-wiki"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.mimit.gov.it/it/open-data/elenco-dataset/carburanti-prezzi-praticati-e-anagrafica-degli-impianti",
+  "id": "data-italy-mimit-fuel-stations-register-and-daily-prices-anagrafica-impianti",
+  "languages": [
+    "it"
+  ],
+  "licence": "Italian Open Data License IODL 2.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Italy fuel stations register and daily prices: about 24,000 active stations with operator, brand, address and coordinates (MIMIT)",
+  "provider": "Ministero delle Imprese e del Made in Italy (MIMIT)",
+  "related_ids": [],
+  "sectors": [
+    "energy.oil_fuels",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "dataset page read: article 51 law 99/2009, IODL 2.0, daily update, pipe separator from 10 Feb 2026",
+      "url": "https://www.mimit.gov.it/it/open-data/elenco-dataset/carburanti-prezzi-praticati-e-anagrafica-degli-impianti"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "register CSV read: extraction 2026-09-28, 23,964 lines, columns, 543 motorway stations",
+      "url": "https://www.mimit.gov.it/images/exportCSV/anagrafica_impianti_attivi.csv"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "price CSV read: columns and fuel types, about 92,800 lines",
+      "url": "https://www.mimit.gov.it/images/exportCSV/prezzo_alle_8.csv"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "OSM wiki import page: coordinate caveat",
+      "url": "https://wiki.openstreetmap.org/wiki/Import/Catalogue/ItalyFuelStations"
+    }
+  ],
+  "tags": [
+    "fuel stations",
+    "petrol",
+    "Italy",
+    "IODL",
+    "daily prices"
+  ],
+  "title_en": "Italy fuel stations register and daily prices: about 24,000 active stations with operator, brand, address and coordinates (MIMIT)",
+  "type": "data"
+}

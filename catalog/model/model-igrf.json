@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "IGRF-14 coefficients (text)",
+      "url": "https://www.ngdc.noaa.gov/IAGA/vmod/coeffs/igrf14coeffs.txt"
+    },
+    {
+      "kind": "download",
+      "label": "Fortran program (BGS)",
+      "url": "https://www.ngdc.noaa.gov/IAGA/vmod/igrf14.f"
+    },
+    {
+      "kind": "repo",
+      "label": "IAGA V-MOD GitHub",
+      "url": "https://github.com/IAGA-VMOD"
+    },
+    {
+      "kind": "paper",
+      "label": "IGRF-13 paper",
+      "url": "https://doi.org/10.1186/s40623-020-01288-x"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Alken, P., Thébault, E., Beggan, C.D. et al. (2021) International Geomagnetic Reference Field: the thirteenth generation. Earth Planets Space 73, 49. doi:10.1186/s40623-020-01288-x",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1186/s40623-020-01288-x",
+    "name": "international geomagnetic reference field igrf",
+    "repo": "github.com/iaga-vmod",
+    "url": "https://ncei.noaa.gov/products/international-geomagnetic-reference-field"
+  },
+  "description": "The International Geomagnetic Reference Field is a standard mathematical description of the Earth's main magnetic field, expressed as spherical harmonic Gauss coefficients, with definitive (DGRF) models for past epochs and a predictive secular variation. It is produced by the International Association of Geomagnetism and Aeronomy through a task force that combines candidate models from institutes using satellite, observatory and survey data; the 14th generation coefficients were finalised in November 2024. Coverage is global and the model runs from 1900 to the present in five-year epochs, with older generations kept for reprocessing legacy surveys. NOAA NCEI provides access to the coefficients as a text file and spreadsheet, the Geomag 7.0 program for Windows and Linux, a Fortran program from the British Geological Survey, Python code on GitHub, and online calculators. The Geomag software is public domain and free. Caveats: the IGRF represents only the core field, not crustal anomalies or the rapid external variations that drive space weather, and predictive values degrade towards the end of each five-year period. In infrastructure simulation it gives the background field and magnetic coordinates needed for geomagnetically induced current modelling, satellite attitude and navigation corrections, and compass-based systems; related records are INTERMAGNET, SuperMAG and OMNI.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "geomagnetic main field reference model",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://www.ncei.noaa.gov/products/international-geomagnetic-reference-field",
+  "id": "model-igrf",
+  "inputs": [
+    "date",
+    "latitude",
+    "longitude",
+    "altitude"
+  ],
+  "language": [
+    "fortran",
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (Geomag 7.0 software, US Government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://github.com/IAGA-VMOD"
+    ]
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "International Geomagnetic Reference Field (IGRF)",
+  "notes": "The IGRF-14 paper was not yet cited on the NCEI page read on 2026-09-26; the IGRF-13 paper is given.",
+  "outputs": [
+    "main field components and intensity",
+    "declination and inclination",
+    "secular variation"
+  ],
+  "provider": "International Association of Geomagnetism and Aeronomy (IAGA), V-MOD working group; distributed by NOAA NCEI and BGS",
+  "related_ids": [],
+  "repository": "https://github.com/IAGA-VMOD",
+  "sectors": [
+    "cross_cutting.space",
+    "digital.satellite_positioning",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "IAGA model, 14th generation Nov 2024, coefficients, Geomag 7.0, Fortran, GitHub, calculators, public domain, older versions table",
+      "url": "https://www.ncei.noaa.gov/products/international-geomagnetic-reference-field"
+    }
+  ],
+  "tags": [
+    "geomagnetic field model",
+    "spherical harmonics",
+    "IAGA",
+    "NCEI",
+    "BGS"
+  ],
+  "title_en": "International geomagnetic reference field model",
+  "type": "model"
+}

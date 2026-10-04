@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/ropensci/rnassqs"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.01880"
+    }
+  ],
+  "access_note": "The software is open; queries to USDA NASS Quick Stats require the provider API key.",
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rnassqs usda agricultural statistics client",
+    "url": "https://github.com/ropensci/rnassqs"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "rnassqs is an R client for the USDA National Agricultural Statistics Service Quick Stats API. The rOpenSci package lets users query agricultural measures by place, commodity and year and returns the JSON response as an R data frame. The article describes parameter discovery and repeatable queries, not publishing a separate fixed dataset. Spatial coverage is the US geography exposed by Quick Stats; temporal coverage and resolution depend on the requested NASS series. Its GitHub repository is public and the R DESCRIPTION states MIT, so the client is free. The upstream API requires its own key and has separate data definitions. A food-supply modeller could retrieve production or acreage series to calibrate regional supply and shock scenarios. A caveat is that units, survey methods, suppression and revision of NASS estimates must be checked for each query. The client does not create a crop-yield forecast or guarantee complete county coverage. No catalogue record explicitly covering this software was found. The JOSS article and own repository and package metadata were read without requesting NASS data. No directly related catalogue record was established.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "JOSS whole-index enumeration; 10.21105/joss.01880; G5-LOCAL-112",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/ropensci/rnassqs",
+  "id": "platform-rnassqs-usda-nass-client",
+  "interfaces": [
+    "code_library"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-09-22",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "rnassqs USDA agricultural statistics client",
+  "notes": "G5 G5-0820. Software checked through metadata and documentation, without installation or execution. Geographic scope follows the documented application or software portability; it does not imply validation throughout that area. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "rOpenSci rnassqs developers",
+  "related_ids": [],
+  "sectors": [
+    "industry.agriculture",
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "JOSS paper and named software.",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.01880"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "JOSS summary and scope read in memory.",
+      "url": "https://raw.githubusercontent.com/openjournals/joss-papers/master/joss.01880/10.21105.joss.01880.jats"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository identity and licence classification.",
+      "url": "https://api.github.com/repos/ropensci/rnassqs"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own documentation and capabilities.",
+      "url": "https://raw.githubusercontent.com/ropensci/rnassqs/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own R package DESCRIPTION licence field.",
+      "url": "https://api.github.com/repos/ropensci/rnassqs/contents/DESCRIPTION"
+    }
+  ],
+  "supported_sectors": [
+    "industry.agriculture",
+    "services.food_supply"
+  ],
+  "tags": [
+    "research software",
+    "JOSS"
+  ],
+  "title_en": "Rnassqs queries agricultural measures by place, commodity and year and returns the JSON response as an R data frame",
+  "type": "platform"
+}

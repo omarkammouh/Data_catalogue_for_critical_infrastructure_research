@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Benchmark repository",
+      "url": "https://github.com/yandex-research/urban-traffic-benchmark"
+    },
+    {
+      "kind": "portal",
+      "label": "Kaggle dataset",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.kaggle.com/datasets/mightyneghbor/city-traffic-benchmarks"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (arXiv 2510.02278)",
+      "url": "https://arxiv.org/abs/2510.02278"
+    }
+  ],
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "synthetic_benchmark",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "city traffic datasets city traffic m and city traffic l",
+    "url": "https://kaggle.com/datasets/mightyneghbor/city-traffic-benchmarks"
+  },
+  "description": "The City Traffic Datasets are two large benchmarks for fine-grained urban traffic forecasting, released with the paper Metropolis-Scale Road Network Datasets for Fine-Grained Urban Traffic Modeling. They are derived from GPS traces of vehicles aggregated to road segments in two major metropolitan areas: city-traffic-L covers 94,000 road segments and city-traffic-M 53,000. Each gives traffic speed and volume every 5 minutes from 1 July to 1 November 2024 (over 35,000 time steps), 26 static attributes per segment such as encoded speed limits, and the real directed street graph as an edge list. Raw Parquet files and preprocessed NumPy files are provided, with a benchmarking code repository on GitHub. Coverage is two cities that the pages read do not name. Access: free download from Kaggle (about 109 GB, account needed) under the MIT licence stated there. Caveats: the cities are not identified, the data come from probe vehicles, not fixed sensors, and the period is four months. It supports training and testing traffic forecasting and network flow models on real street graphs and testing how models scale to city-sized networks, and complements the Transportation Networks for Research test networks catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"road network\" AND \"benchmark\"",
+      "route": "R23",
+      "source": "kaggle"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://www.kaggle.com/datasets/mightyneghbor/city-traffic-benchmarks",
+  "id": "data-city-traffic-metropolis-road-benchmarks",
+  "languages": [
+    "en"
+  ],
+  "licence": "MIT (as stated on Kaggle)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "City Traffic Datasets (city-traffic-M and city-traffic-L)",
+  "provider": "Yandex Research (Velikonivtsev, Platonov, Alimaskina, Bazhenov, Prokhorenkova)",
+  "related_ids": [
+    "data-transportation-networks-for-research"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT; 108.9 GB; city-traffic-L 94K segments, M 53K; GPS traces aggregated to road segments; speed and volume 5-min; 26 static attributes; 2024-07-01 to 2024-11-01; raw parquet and processed npz; repo yandex-research/urban-traffic-benchmark",
+      "url": "https://www.kaggle.com/api/v1/datasets/view/mightyneghbor/city-traffic-benchmarks"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "authors Velikonivtsev, Platonov, Alimaskina, Bazhenov, Prokhorenkova; two major cities, up to 100,000 road segments; forecasting baseline",
+      "url": "https://arxiv.org/abs/2510.02278"
+    }
+  ],
+  "spatial_resolution": "road segment",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "traffic forecasting",
+    "benchmark",
+    "GPS traces",
+    "road graph",
+    "speed and volume"
+  ],
+  "temporal_coverage": "2024-07 to 2024-11, 5-minute",
+  "title_en": "City Traffic Datasets (city-traffic-M and city-traffic-L)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

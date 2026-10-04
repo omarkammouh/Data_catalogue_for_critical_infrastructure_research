@@ -1,0 +1,155 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Dataset on opendata.swiss (CSV, GeoPackage, INTERLIS, WMS, WMTS, REST API)",
+      "url": "https://opendata.swiss/de/dataset/stauanlagen-unter-bundesaufsicht"
+    },
+    {
+      "kind": "api",
+      "label": "Layer description (geo.admin.ch API)",
+      "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bfe.stauanlagen-bundesaufsicht?lang=en"
+    },
+    {
+      "kind": "docs",
+      "label": "SFOE dams page",
+      "url": "https://www.bfe.admin.ch/de/stauanlagen"
+    },
+    {
+      "kind": "viewer",
+      "label": "Energy map portal preview",
+      "url": "https://map.energie.admin.ch/"
+    }
+  ],
+  "access_note": "Free downloads (CSV, GeoPackage, INTERLIS 2.3 ZIP) and web services (WMS, WMTS, geo.admin.ch REST API) without registration.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "data_family": [
+    "system_description",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "dams under federal supervision switzerland sfoe",
+    "url": "https://bfe.admin.ch/de/stauanlagen"
+  },
+  "description": "The Swiss Federal Office of Energy publishes the dams in Switzerland that are under direct federal supervision as official basic geodata (ID 193.1). Each dam point carries the facility, dam and reservoir names, dam type and purpose in German, French and English, year of construction, start of operation and of federal supervision, dam height, crest length, crest level, impoundment and storage levels and impoundment volume. The set is listed on opendata.swiss with CSV, GeoPackage and INTERLIS 2.3 downloads, WMS and WMTS services and the geo.admin.ch REST API, with an annual update cycle; the data status is 28 November 2023 and the dataset was first published in 2011. Downloads are free without registration under the opendata.swiss terms of use set by SFOE. Caveats: only dams under federal supervision are included, so smaller dams supervised by cantons are missing, no hazard or consequence class is given, and the latest data status is from 2023. Simulation uses: a national inventory of large dams and reservoirs for dam-break and flood exposure studies, linking hydropower storage to the electricity system, and emergency planning downstream. Related records: the ICOLD World Register of Dams (data-icold-world-register-of-dams) and the Romanian dam register (data-romania-rebar-national-dam-register) are comparable inventories.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: BFE (Swiss Federal Office of Energy), dam supervision (CH, dam_safety_authority) https://www.bfe.admin.ch/de/stauanlagen",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "Talsperren unter Bundesaufsicht Liste BFE Stauanlagen Schweiz Daten",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geopackage",
+    "other_vector",
+    "ogc_map_service",
+    "api",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://www.bfe.admin.ch/de/stauanlagen",
+  "id": "data-switzerland-dams-under-federal-supervision",
+  "languages": [
+    "de",
+    "fr",
+    "it",
+    "en"
+  ],
+  "licence": "opendata.swiss terms of use set by SFOE (exact category not read)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Dams under federal supervision (Switzerland, SFOE)",
+  "notes": "The number of dams was not counted (no download).",
+  "provider": "Swiss Federal Office of Energy (SFOE / BFE)",
+  "related_ids": [
+    "data-icold-world-register-of-dams",
+    "data-romania-rebar-national-dam-register"
+  ],
+  "schema_summary": "fields: facilityname, damname, reservoirname, damtype (de/fr/en), facaim (purpose, de/fr/en), baujahr (construction year), beginningofoperation, startsupervision, damheight, crestlength, crestlevel, impoundmentlevel, storagelevel, impoundmentvolume, facility_stabil_id, id, has_picture; basic geodata ID 193.1 with a minimal geodata model",
+  "sectors": [
+    "water.dams_flood_defences",
+    "energy.electricity",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, resources (API, WMS, WMTS, INTERLIS ZIP, GeoPackage, CSV), published 2 July 2011, modified 28 November 2023, languages, annual interval",
+      "url": "https://opendata.swiss/de/dataset/stauanlagen-unter-bundesaufsicht"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "layer field list with sample values (metadata only)",
+      "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bfe.stauanlagen-bundesaufsicht?lang=en"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "minimal geodata model, INTERLIS model and geodata download",
+      "url": "https://www.bfe.admin.ch/de/stauanlagen"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://opendata.swiss/api/3/action/package_show?id=stauanlagen-unter-bundesaufsicht"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.bfe.admin.ch/de/stauanlagen"
+    }
+  ],
+  "spatial_resolution": "individual dams (point features)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "dams",
+    "reservoirs",
+    "dam safety",
+    "federal supervision",
+    "hydropower",
+    "basic geodata",
+    "INTERLIS",
+    "Switzerland",
+    "SFOE"
+  ],
+  "temporal_coverage": "current inventory with construction and operation start dates",
+  "temporal_resolution": "none",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Dams under federal supervision (Switzerland, SFOE)",
+  "type": "data",
+  "update_frequency": "annual"
+}

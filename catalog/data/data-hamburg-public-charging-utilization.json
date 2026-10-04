@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/TUMFTM/Hamburg-Public-Charging-Station-Utilization"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "demand_operation",
+    "distributed_flexible_resources",
+    "system_description"
+  ],
+  "data_kind": [
+    "time_series",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hamburg public charging station utilization and location tables",
+    "repo": "github.com/tumftm/hamburg-public-charging-station-utilization",
+    "url": "https://github.com/TUMFTM/Hamburg-Public-Charging-Station-Utilization"
+  },
+  "description": "This dataset supports analysis of where public charging stations are used in Hamburg. Lennart Adenaw and Sebastian Krapf at the Technical University of Munich combine Stromnetz Hamburg charging-station usage with OpenStreetMap location context. Published files include charging processes, charging-site geometries and connection-count profiles for all stations and four site clusters. Profile files separate weekdays, Saturdays, Sundays and weekends. Coverage is Hamburg, Germany; the repository does not establish the exact collection interval or a common temporal sampling resolution. CSV and GeoJSON files are publicly accessible free. The README explicitly retains the Hamburg source’s German attribution licence and the OpenStreetMap Open Database Licence. A limitation is that connection occupancy is not equivalent to metered electricity demand, and the source README does not supply a full column dictionary. The associated study analyses duration, daily transactions and connection ratios, which should be interpreted using its definitions. Simulation uses include calibrating charging occupancy patterns and evaluating candidate charging locations. It relates to data-openstreetmap for the spatial context. The data files were listed but not downloaded, and cluster assignments and utilization statistics were not reproduced.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"infrastructure\" \"dataset\"",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geojson"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/TUMFTM/Hamburg-Public-Charging-Station-Utilization",
+  "id": "data-hamburg-public-charging-utilization",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-03-22",
+  "licence": "Data licence Germany attribution 2.0 for Hamburg source; ODbL for OpenStreetMap-derived content",
+  "licence_type": [
+    "share_alike",
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Hamburg public charging-station utilization and location tables",
+  "notes": "G8; G8-0182. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations. ",
+  "provider": "Lennart Adenaw and Sebastian Krapf, Technical University of Munich",
+  "related_ids": [
+    "data-openstreetmap"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/TUMFTM/Hamburg-Public-Charging-Station-Utilization/blob/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/TUMFTM/Hamburg-Public-Charging-Station-Utilization"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing paper identity and abstract; occupancy metrics and site clustering.",
+      "url": "https://api.crossref.org/works/10.3390/wevj13040056"
+    }
+  ],
+  "spatial_resolution": "Hamburg charging sites and their surrounding context.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Exact observation dates not established in repository README.",
+  "temporal_resolution": "Charging processes and day-type connection profiles; sampling interval not established.",
+  "temporal_resolution_class": "daily",
+  "title_en": "Hamburg public charging-station utilization and location tables",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

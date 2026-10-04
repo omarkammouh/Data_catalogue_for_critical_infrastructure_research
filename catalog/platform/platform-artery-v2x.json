@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/riebl/artery"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/riebl/artery/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "artery v2x simulation framework",
+    "repo": "github.com/riebl/artery",
+    "url": "https://github.com/riebl/artery"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "Artery is a vehicle-to-everything simulation framework maintained in the riebl repository. It implements ETSI ITS-G5 communication through GeoNetworking, BTP and a middleware that equips each vehicle with multiple services. It began as a Veins extension but now supports independent use. Users provide road scenarios, traffic demand and communication settings; SUMO supplies vehicle movement and OMNeT++ handles network events. Outputs describe the resulting service and communication behaviour. Coverage is global and scenario-defined, with no common observation period or fixed network size. Public C++ source is free under GPL-2.0, with installation and example instructions on the project website. OMNeT++ retains its separate licence conditions. A limitation is documentation age: the installation page was last updated in August 2023 and recommends OMNeT++ 5.6 while warning about the 6.x transition. Linux is the documented build platform, and compatible external submodules are required. Artery supports coupled road and communication experiments around SUMO (model-sumo) and OMNeT++ (platform-omnet-plus-plus). This review did not establish compatibility with their newest releases.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:omnetpp fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/riebl/artery",
+  "id": "platform-artery-v2x",
+  "interfaces": [
+    "code_library",
+    "other"
+  ],
+  "interoperability": [
+    "SUMO",
+    "OMNeT++",
+    "Vanetza"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-30",
+  "licence": "GPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Artery V2X simulation framework",
+  "notes": "G7 G7-0379. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability.  Cited as: Artery project literature guide: Recent Advances in Network Simulation: The OMNeT++ Environment and its Ecosystem, sections 12 and 13. https://artery.v2x-research.eu/literature/.",
+  "open_source": true,
+  "platform_kind": [
+    "coupling_framework"
+  ],
+  "provider": "Artery project contributors",
+  "related_ids": [
+    "platform-omnet-plus-plus",
+    "model-sumo"
+  ],
+  "sectors": [
+    "digital.telecom",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for riebl/artery: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aomnetpp+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/riebl/artery/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Linux build requirements, pinned dependency advice, SUMO coupling and example execution. Page last updated August 2023.",
+      "url": "https://artery.v2x-research.eu/install/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Provider identifies book chapters describing Artery services and vehicular communication.",
+      "url": "https://artery.v2x-research.eu/literature/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Model coupling software for telecommunications and road transport",
+  "type": "platform"
+}

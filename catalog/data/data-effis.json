@@ -1,0 +1,145 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Current Situation Viewer 2.0",
+      "note": "file linked from the record homepage (2026-10-01); found on https://forest-fire.emergency.copernicus.eu/",
+      "url": "https://forest-fire.emergency.copernicus.eu/apps/effis.csv"
+    },
+    {
+      "kind": "api",
+      "label": "WMS server",
+      "url": "https://maps.effis.emergency.copernicus.eu/effis"
+    },
+    {
+      "kind": "portal",
+      "label": "EFFIS home",
+      "url": "https://forest-fire.emergency.copernicus.eu/"
+    },
+    {
+      "kind": "docs",
+      "label": "Data and services list",
+      "url": "https://forest-fire.emergency.copernicus.eu/applications/data-and-services"
+    },
+    {
+      "kind": "docs",
+      "label": "Download instructions",
+      "url": "https://forest-fire.emergency.copernicus.eu/downloads-instructions"
+    },
+    {
+      "kind": "docs",
+      "label": "Data licence",
+      "url": "https://forest-fire.emergency.copernicus.eu/about-effis/data-license"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "africa",
+    "asia"
+  ],
+  "cost": "free",
+  "data_family": [
+    "hazards",
+    "historical_events",
+    "emergency_management",
+    "vegetation_land_cover"
+  ],
+  "data_kind": [
+    "raster",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "european forest fire information system effis",
+    "url": "https://forest-fire.emergency.copernicus.eu"
+  },
+  "description": "EFFIS is a modular web geographic information system that provides near-real-time and historical information on forest fires and fire regimes across the full fire cycle: fire danger forecasts (Canadian Fire Weather Index components, KBDI, MARK-5 and NFDRS indices at about 8 km from ECMWF and Météo-France forcing), active fire detection, rapid mapping of burnt areas and fire severity, land cover damage, emissions and smoke dispersion, potential soil loss and vegetation regeneration, plus fuel maps and statistics. It was set up by the European Commission with national fire administrations to support forest fire protection and to inform EU institutions, and has been a Copernicus Emergency Management Service component since 2015; an expert group of 43 countries supports it. Coverage is Europe, the Middle East and North Africa, with some global products, from 2000 onwards for burnt areas. Data are freely available through a standard WMS server with time parameters, viewers and a statistics portal; EU-owned content is licensed CC BY 4.0 at no cost. Caveats: burnt area mapping targets fires of about 30 ha or more, national data completeness varies, and third-party layers keep their own rights. It serves wildfire hazard exposure, emergency response and climate adaptation for energy, transport and forest infrastructure; related records are NASA FIRMS, GDACS and the Copernicus High Resolution Layer Tree Cover and Forests.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "European forest fire data burnt areas",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "raster"
+  ],
+  "geographic_scope": "continental",
+  "hazards": [
+    "wildfire",
+    "drought"
+  ],
+  "homepage": "https://forest-fire.emergency.copernicus.eu/",
+  "id": "data-effis",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0 (EU-owned content, Commission reuse policy)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "European Forest Fire Information System (EFFIS)",
+  "notes": "The 30 ha burnt area threshold and the start year 2000 are recalled, not read on 2026-09-26.",
+  "provider": "European Commission Joint Research Centre, Copernicus Emergency Management Service",
+  "related_ids": [],
+  "schema_summary": "fire danger indices, active fires, burnt area perimeters with date and land cover, fuels",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "establishment, expert group of 43 countries, CEMS since 2015, modules",
+      "url": "https://forest-fire.emergency.copernicus.eu/about-effis"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "layer list: fire danger indices with ECMWF 8 km and Meteo France, fuels, human settlement layer",
+      "url": "https://forest-fire.emergency.copernicus.eu/applications/data-and-services"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "free data, WMS server, TIME parameter",
+      "url": "https://forest-fire.emergency.copernicus.eu/downloads-instructions"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "CC BY 4.0 for EU-owned content, Commission Decision 2011",
+      "url": "https://forest-fire.emergency.copernicus.eu/about-effis/data-license"
+    }
+  ],
+  "spatial_resolution": "about 8 km for fire danger; burnt areas from satellite imagery",
+  "spatial_resolution_class": "1km_to_10km",
+  "tags": [
+    "forest fires",
+    "fire danger",
+    "burnt areas",
+    "JRC",
+    "Copernicus EMS"
+  ],
+  "temporal_coverage": "2000 to present (burnt areas); daily forecasts",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2000
+  },
+  "temporal_resolution": "daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "European Forest Fire Information System (EFFIS)",
+  "type": "data",
+  "update_frequency": "daily"
+}

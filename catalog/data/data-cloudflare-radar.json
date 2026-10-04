@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Cloudflare Radar",
+      "url": "https://radar.cloudflare.com/"
+    },
+    {
+      "kind": "docs",
+      "label": "Radar documentation",
+      "url": "https://developers.cloudflare.com/radar/"
+    },
+    {
+      "kind": "api",
+      "label": "Outages API (annotations)",
+      "url": "https://developers.cloudflare.com/radar/investigate/outages/"
+    },
+    {
+      "kind": "docs",
+      "label": "First API request",
+      "url": "https://developers.cloudflare.com/radar/get-started/first-request/"
+    },
+    {
+      "kind": "download",
+      "label": "Data page",
+      "url": "https://developers.cloudflare.com/radar/llms.txt"
+    }
+  ],
+  "access_note": "Free Cloudflare account and API token with Account > Radar read permission for the API; the website is open.",
+  "access_restrictions": "registration",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "service_performance",
+    "demand_operation",
+    "security_threat"
+  ],
+  "data_kind": [
+    "time_series",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cloudflare radar",
+    "url": "https://radar.cloudflare.com"
+  },
+  "description": "Cloudflare Radar is a public hub of global internet traffic, attack and technology trends derived from Cloudflare's worldwide network and from aggregated, anonymised queries to its 1.1.1.1 public DNS resolver. Its data cover traffic volumes, HTTP requests, DNS queries, network flows, attacks, routing and connectivity quality by country, region and autonomous system, and the Cloudflare Radar Outage Center records internet disruptions with the affected network or area, the type and scope (nationwide, sub-national or single network), the likely cause (government shutdowns, severe weather and natural disasters, cable cuts, power outages, filtering) and start and end times. Cloudflare provides it so that academics, professionals and the public can investigate internet usage and events worldwide. Coverage is global and continuous, with outage annotations going back to at least 2022 in the API examples; time series resolution depends on the endpoint. Access is through the website and a free REST API returning JSON, which needs a Cloudflare account and a custom API token with Radar read permission; an MCP server is also offered. Data from the API endpoints are licensed CC BY-NC 4.0, so commercial reuse needs permission. Caveats: figures reflect traffic that passes through Cloudflare, not all traffic, and many series are normalised indices, not absolute volumes; comparisons between places need care, as the documentation explains. Simulation uses: detecting and dating internet outages after power failures, cable cuts and disasters, calibrating recovery and cascading-failure models, and emergency-response studies of communications. Related records: IODA outage signals, RIPE RIS routing data and M-Lab measurements.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.internet_exchange:service_performance",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "api"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://developers.cloudflare.com/radar/llms.txt",
+  "id": "data-cloudflare-radar",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-NC-4.0 (API data)",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://radar.cloudflare.com/"
+    ]
+  },
+  "maturity": "active",
+  "name": "Cloudflare Radar",
+  "provider": "Cloudflare",
+  "related_ids": [
+    "data-ioda-internet-outage-detection",
+    "data-ripe-ris",
+    "data-measurement-lab-mlab"
+  ],
+  "schema_summary": "Outage annotations: asn, type, scope, cause, startDate, endDate, linkedUrl; traffic, DNS, HTTP, attack and BGP series",
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Hub powered by Cloudflare network and 1.1.1.1; free API; CC BY-NC 4.0",
+      "url": "https://developers.cloudflare.com/radar/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Outage Center fields: ASN, type, scope, cause, start, end; example from 2022",
+      "url": "https://developers.cloudflare.com/radar/investigate/outages/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "API token with Account > Radar read permission",
+      "url": "https://developers.cloudflare.com/radar/get-started/first-request/"
+    }
+  ],
+  "spatial_resolution": "Country, region or city, autonomous system",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "internet traffic",
+    "outages",
+    "DNS",
+    "DDoS",
+    "shutdowns",
+    "Cloudflare"
+  ],
+  "temporal_resolution": "Endpoint-dependent",
+  "temporal_resolution_class": "varies",
+  "title_en": "Global internet traffic and attack trends",
+  "type": "data",
+  "update_frequency": "real_time"
+}

@@ -1,0 +1,149 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "APA SNIRH datasets on dados.gov.pt (API search)",
+      "url": "https://dados.gov.pt/api/1/datasets/?q=snirh"
+    },
+    {
+      "kind": "api",
+      "label": "Hydrometric stations INSPIRE WMS",
+      "url": "https://inspire.apambiente.pt/getogc/services/INSPIRE/EF_Hidrometricas/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+    },
+    {
+      "kind": "portal",
+      "label": "Rede de estações hidrométricas (SNIRH): SHP ZIP, WMS, WFS",
+      "url": "https://dados.gov.pt/pt/datasets/rede-de-estacoes-hidrometricas-snirh/"
+    },
+    {
+      "kind": "portal",
+      "label": "Atlas da Água - Albufeiras (Barragem): dams of the monitored reservoirs",
+      "url": "https://dados.gov.pt/pt/datasets/atlas-da-agua-albufeiras-barragem/"
+    },
+    {
+      "kind": "portal",
+      "label": "Marcas de cheia (flood marks): SHP ZIP, WMS, WFS",
+      "url": "https://dados.gov.pt/pt/datasets/marcas-de-cheia-ligacao-direta-ao-snirh-2/"
+    },
+    {
+      "kind": "portal",
+      "label": "SNIRH portal (station data; not reachable from the cloud session)",
+      "url": "https://snirh.apambiente.pt/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "PT"
+  ],
+  "data_family": [
+    "system_description",
+    "sensor_realtime_streams",
+    "historical_events",
+    "hazards"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "snirh monitoring networks and atlas da agua layers portugal hydrometric stations monitored reservoirs flood marks groundwater and water quality networks",
+    "url": "https://apambiente.pt/agua/sistema-nacional-de-informacao-de-recursos-hidricos-snirh"
+  },
+  "description": "The Sistema Nacional de Informação de Recursos Hídricos (SNIRH) is Portugal's national water resources information system, produced by the Agência Portuguesa do Ambiente (APA). APA publishes its network and Atlas da Água layers on dados.gov.pt: the hydrometric network (location, classification and characterisation of stations, flagged as an EU high-value dataset), active and inactive hydrometric stations, meteorological, groundwater quantity and quality and surface water quality networks, the reservoirs monitored by SNIRH with their dams and drainage basins, flood marks that record the maximum level reached by past floods, SNIRH basins and modelled 50 and 100 year flood lines for one river basin district. Coverage is the monitoring networks of APA and other entities that SNIRH processes, including the Azores and Madeira. The layers are free downloads as zipped shapefiles, several also as INSPIRE WMS and WFS services, under CC BY as stated on dados.gov.pt. Caveats: the station and reservoir time series (levels, flows, stored volumes) sit on the SNIRH portal, which returned HTTP 403 to the cloud session and could not be read, and the flood zone layer covers only RH3. Simulation uses: reservoir and gauge locations and historical flood marks for flood hazard exposure, reservoir capacity planning and climate adaptation studies. Related records: the Portuguese list of large dams (data-portugal-cnpgb-large-dams-list).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "SNIRH dados hidrométricos estações download Agência Portuguesa do Ambiente",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "drought"
+  ],
+  "homepage": "https://apambiente.pt/agua/sistema-nacional-de-informacao-de-recursos-hidricos-snirh",
+  "id": "data-portugal-snirh-water-resources-monitoring-networks",
+  "languages": [
+    "pt"
+  ],
+  "last_updated": "2026-03-05",
+  "licence": "CC BY (as stated on dados.gov.pt)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://snirh.apambiente.pt/"
+    ]
+  },
+  "maturity": "active",
+  "name": "SNIRH monitoring networks and Atlas da Água layers, Portugal (hydrometric stations, monitored reservoirs, flood marks, groundwater and water quality networks)",
+  "provider": "Agência Portuguesa do Ambiente (APA)",
+  "related_ids": [
+    "data-portugal-cnpgb-large-dams-list"
+  ],
+  "schema_summary": "location, classification and characterisation of hydrometric, meteorological, groundwater quantity and quality and surface water quality stations; active and inactive hydrometric stations of the Atlas da Água; monitored reservoir polygons, their dams and drainage basins; flood marks with maximum flood levels; SNIRH basins; flood zones for 50 and 100 year return periods in RH3",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "APA, cc-by, HVD, SHP ZIP, WMS, WFS",
+      "url": "https://dados.gov.pt/api/1/datasets/rede-de-estacoes-hidrometricas-snirh/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "30 SNIRH datasets: networks, Atlas da Água reservoirs and dams, flood marks, basins, RH3 flood zones",
+      "url": "https://dados.gov.pt/api/1/datasets/?q=snirh&page_size=30"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "base information: levels, flows, stored volumes, held in SNIRH",
+      "url": "https://dados.gov.pt/api/1/datasets/atlas-da-agua-estacoes-hidrometricas-activas/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "SNIRH processes, validates and publishes data from APA and other networks, incl. Azores and Madeira; hydrological year reports",
+      "url": "https://apambiente.pt/agua/sistema-nacional-de-informacao-de-recursos-hidricos-snirh"
+    }
+  ],
+  "spatial_resolution": "station, reservoir and flood mark points; basins",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "SNIRH",
+    "APA",
+    "Portugal",
+    "hydrometric network",
+    "reservoirs",
+    "flood marks",
+    "INSPIRE",
+    "high-value datasets"
+  ],
+  "temporal_coverage": "current networks (active and inactive stations); layers updated 2026",
+  "temporal_resolution": "static layers (station time series are on the SNIRH portal)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "SNIRH monitoring networks and Atlas da Água layers, Portugal (hydrometric stations, monitored reservoirs, flood marks, groundwater and water quality networks)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

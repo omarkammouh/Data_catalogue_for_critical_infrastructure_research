@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/AaltoUrbanWater/GisToSWMM5"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/AaltoUrbanWater/GisToSWMM5/blob/master/README.md"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1080/1573062X.2017.1325496"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gistoswmm5",
+    "repo": "github.com/aaltourbanwater/gistoswmm5",
+    "url": "https://github.com/AaltoUrbanWater/GisToSWMM5"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "GisToSWMM5 is an automated SWMM subcatchment generator developed at Aalto University. It creates drainage-model inputs from elevation, land-use and flow-direction rasters on a common grid, together with CSV tables describing drainage assets, rainfall and other parameters. Users can retain individual raster cells or merge cells that share land use and an eventual outlet. The raster cell size sets the minimum subcatchment size; coverage and simulation dates depend on the supplied catchment. Outputs include SWMM INP files and WKT geometry for subcatchments and routing. Python and shell utilities convert geometry and SWMM results to shapefiles and CSV. The public C++ source and examples are free under MIT. The repository includes an imaginary demonstration catchment, not a measured city dataset. Material caveats are sensitivity to whitespace, paths that may need manual correction and generated models that can be too large for the SWMM graphical interface. Utility tests cited in the README use older Ubuntu and Windows versions. The package prepares detailed runoff and drainage inputs for EPA SWMM (model-epa-swmm), supporting flood and drainage-capacity analysis.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:swmm fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://github.com/AaltoUrbanWater/GisToSWMM5",
+  "id": "platform-gistoswmm5",
+  "interfaces": [
+    "command_line",
+    "code_library"
+  ],
+  "interoperability": [
+    "SWMM INP",
+    "ASCII raster",
+    "CSV",
+    "WKT",
+    "Shapefile"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2019-02-28",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "GisToSWMM5",
+  "notes": "G7 G7-0026. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. Describing-paper citation is retained as required by the brief. The schema permits citation on all records but the existing validator may warn that it is normally a model field. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Aalto University, Urban Water research group",
+  "related_ids": [
+    "model-epa-swmm"
+  ],
+  "sectors": [
+    "water.stormwater_drainage",
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for AaltoUrbanWater/GisToSWMM5: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aswmm+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/AaltoUrbanWater/GisToSWMM5/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "GisToSWMM5 automated SWMM subcatchment generator",
+  "type": "platform"
+}

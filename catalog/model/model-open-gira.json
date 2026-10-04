@@ -1,0 +1,142 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "nismod/open-gira-v0.3.1.zip (43.6 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/14537079/files/nismod/open-gira-v0.3.1.zip?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/nismod/open-gira"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo archive",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.14537079"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://nismod.github.io/open-gira/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "open-gira contributors. open-gira, Zenodo. doi:10.5281/zenodo.14537079",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.14537079",
+    "name": "open gira open global infrastructure risk resilience analysis",
+    "repo": "github.com/nismod/open-gira",
+    "url": "https://github.com/nismod/open-gira"
+  },
+  "description": "open-gira is an open-source Snakemake workflow for analysing environmental risks to infrastructure networks anywhere in the world using global open data, maintained in the nismod organisation of the University of Oxford's infrastructure systems research group. It builds transport, electricity, water and communications networks from open sources such as OpenStreetMap and gridfinder, intersects them with river flood, coastal storm surge and tropical cyclone hazard layers (for example Aqueduct and STORM), estimates direct damage to physical assets with damage curves, and estimates indirect effects of disruption such as people affected and economic activity lost, producing per-country maps and exposure statistics by administrative region, hazard, scenario and epoch. It is installed by cloning the GitHub repository and creating a conda or micromamba environment, is documented as an mdBook, archived on Zenodo (doi:10.5281/zenodo.14537079) and released under the MIT licence at no cost. The authors state that it is a work in progress and that detailed engineering simulation and long-term planning are non-goals; closed data are deliberately not used, so results inherit the gaps of open datasets. Uses are hazard exposure and resilience analysis, cascading service disruption and climate adaptation screening; it relies on the snail library for network-hazard intersection and draws on Aqueduct Floods hazard maps.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "open-gira infrastructure risk workflow",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge",
+    "storm_wind"
+  ],
+  "homepage": "https://github.com/nismod/open-gira",
+  "id": "model-open-gira",
+  "inputs": [
+    "OpenStreetMap networks",
+    "gridfinder and power plant data",
+    "flood and cyclone hazard rasters",
+    "damage curves",
+    "population and economic data"
+  ],
+  "language": [
+    "python",
+    "other"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-24",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network",
+    "statistical",
+    "economic"
+  ],
+  "name": "open-gira (Open Global Infrastructure Risk/Resilience Analysis)",
+  "outputs": [
+    "asset exposure and direct damage per admin region",
+    "disruption and people affected",
+    "maps and statistics per hazard",
+    "scenario and epoch"
+  ],
+  "provider": "University of Oxford, Environmental Change Institute (nismod / Oxford Programme for Sustainable Infrastructure Systems)",
+  "related_ids": [
+    "model-snail",
+    "data-aqueduct-floods-hazard-maps"
+  ],
+  "repository": "https://github.com/nismod/open-gira",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "transport.road",
+    "transport.rail",
+    "energy.electricity",
+    "water.drinking_water",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "cascading_failure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Snakemake workflow, goals and non-goals, work in progress, conda install, mdBook docs, Zenodo DOI 10.5281/zenodo.14537079",
+      "url": "https://raw.githubusercontent.com/nismod/open-gira/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License, copyright open-gira contributors",
+      "url": "https://raw.githubusercontent.com/nismod/open-gira/main/LICENSE"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2026-07-24)",
+      "url": "https://zenodo.org/records/14537079/files/nismod/open-gira-v0.3.1.zip?download=1"
+    },
+    {
+      "accessed": "2026-10-02",
+      "note": "Follow-up check: landing page replaced by the provider page that holds the data (basis: git clone 2026-10-02)",
+      "url": "https://github.com/nismod/open-gira"
+    }
+  ],
+  "tags": [
+    "infrastructure risk",
+    "snakemake",
+    "open data",
+    "nismod",
+    "Oxford"
+  ],
+  "title_en": "Open-gira (Open Global Infrastructure Risk/Resilience Analysis)",
+  "type": "model",
+  "validated_on": []
+}

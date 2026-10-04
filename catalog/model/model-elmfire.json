@@ -1,0 +1,146 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/lautenberger/elmfire"
+    },
+    {
+      "kind": "docs",
+      "label": "ELMFIRE user guide",
+      "url": "https://elmfire.io/"
+    },
+    {
+      "kind": "portal",
+      "label": "Pyrecast (operational forecasts)",
+      "url": "https://pyrecast.org"
+    }
+  ],
+  "access_note": "The Commons Clause forbids selling the software or services whose value derives substantially from it.",
+  "access_restrictions": "none",
+  "citation": "ELMFIRE user guide, https://elmfire.io/",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "elmfire eulerian level set model of fire spread",
+    "repo": "github.com/lautenberger/elmfire",
+    "url": "https://elmfire.io"
+  },
+  "description": "ELMFIRE is an operational wildland fire spread model used by fire agencies, researchers and engineers to simulate how wildfires grow across real landscapes. It couples the Rothermel and Canadian (CFFDRS) surface spread formulations with a level-set front-tracking method, and adds crown fire, ember spotting, suppression (initial and extended attack), structure-to-structure fire spread in the wildland-urban interface, smoke emissions for the HYSPLIT dispersion model and a Monte Carlo mode for annual burn probability. Chris Lautenberger develops it, and through the Pyrecast project it forecasts the spread of most large fires in the continental United States. Coverage is any landscape for which gridded fuels, topography, weather and moisture are supplied as GeoTIFF rasters; resolution is set by the input grid. Outputs are georeferenced rasters of time of arrival, spread rate, fireline intensity and flame length. It is Fortran source code on GitHub, parallelised with MPI and runnable from a laptop to a cluster or in Docker, with a full user guide, tutorials and verification cases. Licence: GNU AGPL v3 with the Commons Clause, so it is free to use but may not be sold; no fee. Caveats: the build targets Linux, real fuel and weather inputs come through the CloudFire data services, and fire behaviour models carry large uncertainty. Simulation uses: wildfire hazard exposure of infrastructure and communities, real-time forecasting for emergency response, and risk assessment. Related wildfire spread models in the register: Cell2Fire and the USDA Missoula Fire Lab tools.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "operational wildfire spread model open source (register services-elmfire)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry ELMFIRE",
+      "route": "R06",
+      "source": "services-elmfire (register)"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://elmfire.io/",
+  "id": "model-elmfire",
+  "inputs": [
+    "Fuel model rasters",
+    "Topography",
+    "Weather and wind grids",
+    "Fuel moisture",
+    "Ignitions or active fire perimeters (GeoTIFF)"
+  ],
+  "language": [
+    "fortran"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-16",
+  "licence": "AGPL-3.0-only with Commons Clause (no right to sell)",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "ELMFIRE (Eulerian Level set Model of FIRE spread)",
+  "outputs": [
+    "Time of arrival",
+    "Spread rate",
+    "Fireline intensity",
+    "Flame length",
+    "Burn probability (Monte Carlo)",
+    "Ember transport, smoke emissions for HYSPLIT, structure-to-structure spread"
+  ],
+  "provider": "Chris Lautenberger and contributors (Pyrecast project)",
+  "related_ids": [],
+  "repository": "https://github.com/lautenberger/elmfire",
+  "runs_on": [],
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Capabilities, inputs and outputs, Pyrecast operational use, Linux build, Docker",
+      "url": "https://raw.githubusercontent.com/lautenberger/elmfire/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "User guide contents: suppression, urban spread, assets at risk, verification, CONUS validation",
+      "url": "https://elmfire.io/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Commons Clause on AGPL v3",
+      "url": "https://raw.githubusercontent.com/lautenberger/elmfire/HEAD/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "ELMFIRE 1.1, semantic versioning introduced",
+      "url": "https://raw.githubusercontent.com/lautenberger/elmfire/HEAD/CHANGELOG.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: latest date tag 2025.0717",
+      "url": "https://github.com/lautenberger/elmfire"
+    }
+  ],
+  "tags": [
+    "wildfire spread",
+    "level set",
+    "Rothermel",
+    "CFFDRS",
+    "burn probability",
+    "wildland-urban interface",
+    "spotting"
+  ],
+  "title_en": "ELMFIRE (Eulerian Level set Model of FIRE spread)",
+  "type": "model",
+  "validated_on": [
+    "Verification test cases shipped in the repository",
+    "Automated CONUS validation described in the user guide"
+  ]
+}

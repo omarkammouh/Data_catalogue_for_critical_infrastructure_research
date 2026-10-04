@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Specification repository (GitHub)",
+      "url": "https://github.com/zephyr-data-specs/GMNS"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation site",
+      "url": "https://zephyr-data-specs.github.io/GMNS/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "data_family": [
+    "standards_ontologies",
+    "system_description"
+  ],
+  "data_kind": [
+    "document",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "general modeling network specification gmns",
+    "url": "https://zephyr-data-specs.github.io/GMNS"
+  },
+  "description": "The General Modeling Network Specification (GMNS) defines a common machine- and human-readable format for sharing routable road network files between multimodal static and dynamic transportation planning and operations models. Only node and link tables are required, which is enough for static assignment; optional tables add geometry, zones, segments, lanes (including bike and parking lanes), movements at intersections, time-of-day variants, signal controllers, phases and timing plans, curb segments and use definitions, and users may add their own fields. The specification is written as JSON table schemas with generated documentation, small example networks (a freeway interchange, part of a multimodal city and a small city, plus Cambridge, Massachusetts), Python and R tools for conversion and validation, and empty SQLite templates. It is developed by a Volpe Center and FHWA partnership within the Zephyr Foundation's General Travel Network Data Standard and Tools project. Coverage is global in principle, as a format for road networks at any scale. The specification is free on GitHub and its documentation site; version 0.97 is current (tags from 0.94), with commits in March 2026. Caveats: no licence file is published in the repository, the version is below 1.0, and larger networks may need a more efficient container than CSV files. GMNS is the input format for network flow and capacity planning models such as DTALite and Path4GMNS, catalogued here, and relates to GTFS for transit schedules.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "visit: GMNS documentation site and GitHub README, changelog and tags",
+      "route": "R08",
+      "source": "transport-gmns"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv",
+    "database",
+    "document"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://zephyr-data-specs.github.io/GMNS/",
+  "id": "data-gmns",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-04",
+  "licence": "not stated (no licence file in the repository)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "General Modeling Network Specification (GMNS)",
+  "provider": "Zephyr Foundation project with the Volpe Center and the Federal Highway Administration (FHWA), US Department of Transportation",
+  "related_ids": [
+    "model-dtalite",
+    "data-gtfs-specification"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.active_mobility",
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "purpose statement; table list (node, link, geometry, zone, segment, location, lane, TOD tables, movement, signal tables, curb_seg, config, use_definition, use_group, time_set_definition)",
+      "url": "https://zephyr-data-specs.github.io/GMNS/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Volpe/FHWA partnership with Zephyr Foundation; principles; version 0.97 features; examples; Python and R conversion and validation; macro vs meso/micro table; no LICENSE file (404 for LICENSE, LICENSE.md, LICENSE.txt); tags v0.94 to v0.97; last commit 2026-03-04",
+      "url": "https://raw.githubusercontent.com/zephyr-data-specs/GMNS/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "0.96 of 2024-08-08 (SQLite templates, documentation site); 0.95 of 2024-06-14 (Cambridge, MA example)",
+      "url": "https://raw.githubusercontent.com/zephyr-data-specs/GMNS/main/docs/changelog.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://github.com/zephyr-data-specs/GMNS/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://zephyr-data-specs.github.io/GMNS/"
+    }
+  ],
+  "spatial_resolution": "nodes, links, lanes and movements (any network)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "network data standard",
+    "road network",
+    "traffic assignment",
+    "Zephyr Foundation",
+    "open specification"
+  ],
+  "temporal_coverage": "specification releases from 0.94 to 0.97",
+  "title_en": "General Modeling Network Specification (GMNS)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

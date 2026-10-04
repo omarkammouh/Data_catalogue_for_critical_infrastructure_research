@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Television transmitters metadata (API)",
+      "url": "https://data.ctu.gov.cz/api/3/action/package_show?id=71b84e94-82ba-454c-b1c1-ec76302c7369"
+    },
+    {
+      "kind": "api",
+      "label": "Radio transmitters metadata (API)",
+      "url": "https://data.ctu.gov.cz/api/3/action/package_show?id=382270a6-adee-4274-a4a8-06146278e6c1"
+    },
+    {
+      "kind": "api",
+      "label": "Fixed service equipment metadata (API)",
+      "url": "https://data.ctu.gov.cz/api/3/action/package_show?id=a0a32dc6-4bea-44c2-bf5e-4b6cd7a8951d"
+    },
+    {
+      "kind": "api",
+      "label": "71 to 86 GHz point-to-point systems metadata (API)",
+      "url": "https://data.ctu.gov.cz/api/3/action/package_show?id=9dc7f59e-863c-459c-9d98-bd011a785aa0"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CZ"
+  ],
+  "data_family": [
+    "system_description",
+    "telecom_coverage_spectrum",
+    "equipment_specifications"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ctu spectrum licence data tv and radio transmitters fixed service stations and 71 to 86 ghz point to point links czechia",
+    "url": "https://data.ctu.gov.cz/dataset/televizni-vysilace"
+  },
+  "description": "ČTÚ's spectrum management group of open datasets exports the registers behind its search applications, refreshed daily. The television transmitters and radio transmitters datasets list the valid individual licences for broadcast stations, with an antenna identifier (ANT_ID) that links each entry to the coordinated horizontal radiation pattern published in a separate dataset of antenna diagrams. The fixed service datasets list registered fixed service equipment and antennas, that is microwave links and similar stations, and a separate dataset gives technical data for point-to-point systems in the 71 to 76 GHz and 81 to 86 GHz bands, notified through ČTÚ's vor-kmitocty portal; since 1 August 2024 notification in these bands is no longer compulsory, so that list may be incomplete. Other spectrum datasets cover frequency assignments, frequencies assigned by licence, amateur, aeronautical and maritime stations, DAB+ service identifiers, local wireless information systems and spectrum use. Coverage: Czechia. Format and access: CSV and XLSX exports on the ČTÚ open data catalogue, free under ČTÚ terms allowing reuse with attribution. Caveats: licence data give authorised parameters, not actual operation; mobile base stations are not included. Simulation uses: locating broadcast transmitters and microwave backhaul links for hazard exposure and coverage modelling, and building fixed-link network graphs. Related records: the BNetzA and BAKOM transmitter data are neighbouring equivalents, and the ČTÚ catalogue record lists all datasets.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ČTÚ open data catalogue: spectrum management group",
+      "route": "R10",
+      "source": "organisations.csv:CZ:digital:spectrum_agency"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.ctu.gov.cz/dataset/televizni-vysilace",
+  "id": "data-ctu-spectrum-licences-transmitters-fixed-links",
+  "languages": [
+    "cs"
+  ],
+  "last_updated": "2026-09",
+  "licence": "ČTÚ open data terms of use (reuse, including commercial, with attribution to ČTÚ)",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ČTÚ spectrum licence data: TV and radio transmitters, fixed service stations and 71 to 86 GHz point-to-point links (Czechia)",
+  "notes": "Metadata of the four datasets read through the DKAN API on 2026-09-26 (descriptions, resources, dates, the August 2024 rule change). Station coordinates in the files are assumed from the register type; files not downloaded.",
+  "provider": "Český telekomunikační úřad (ČTÚ, Czech Telecommunication Office)",
+  "related_ids": [],
+  "sectors": [
+    "digital.broadcasting",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow",
+    "resilience"
+  ],
+  "size": "71 to 86 GHz XLSX about 1.1 MB",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "TV transmitter metadata",
+      "url": "https://data.ctu.gov.cz/api/3/action/package_show?id=71b84e94-82ba-454c-b1c1-ec76302c7369"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "point-to-point metadata",
+      "url": "https://data.ctu.gov.cz/api/3/action/package_show?id=9dc7f59e-863c-459c-9d98-bd011a785aa0"
+    }
+  ],
+  "spatial_resolution": "station coordinates",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "spectrum licences",
+    "broadcast transmitters",
+    "microwave links",
+    "E-band",
+    "Czechia"
+  ],
+  "temporal_coverage": "current licences",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "ČTÚ spectrum licence data: TV and radio transmitters, fixed service stations and 71 to 86 GHz point-to-point links (Czechia)",
+  "type": "data",
+  "update_frequency": "daily"
+}

@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "NARN lines on the BTS geospatial hub",
+      "url": "https://geodata.bts.gov/datasets/usdot::north-american-rail-network-lines/about"
+    },
+    {
+      "kind": "docs",
+      "label": "NARN lines feature service",
+      "url": "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer"
+    },
+    {
+      "kind": "docs",
+      "label": "Data dictionary",
+      "url": "https://doi.org/10.21949/1528950"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US",
+    "CA",
+    "MX"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "north american rail network narn lines and nodes",
+    "url": "https://geodata.bts.gov/datasets/usdot::north-american-rail-network-lines/about"
+  },
+  "description": "The North American Rail Network (NARN) is the Federal Railroad Administration's geographic database of the railway system of the United States, Canada and Mexico, created in 2016 and published in the National Transportation Atlas Database. The lines layer, last updated on 21 July 2026, held 302,771 segments on 26 September 2026 and the nodes layer 250,202 nodes that make the network routable. Each segment records up to three owning, operating or maintaining railroads, up to nine holders of trackage rights, division, subdivision and branch, yard name, passenger service, membership of the Strategic Rail Corridor Network (STRACNET), number of tracks, network status, length and state and county codes, mapped at 1:24,000 or better within the United States. Views by Class I railroad (BNSF, CN, CPKC, CSX, NS, UP) and for passenger rail are also published. The data are served as ArcGIS feature services (JSON, GeoJSON, PBF) with downloads, and as a US government work they are free for unrestricted public use; the data dictionary has DOI 10.21949/1528950. Caveats: accuracy outside the United States is lower, ownership fields describe several distinct roles, and the network shows track alignments, not capacity or traffic. NARN is used for freight rail routing, network flow and hazard exposure studies, and it is related to the NTAD record and underlies the BTS rail hazard exposure layers.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "North American Rail Network (transport P3 harvest)",
+      "route": "R11",
+      "source": "esri-living-atlas"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "HIFLD open rail network",
+      "route": "R10",
+      "source": "dataverse-harvard"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "json",
+    "geojson",
+    "other_vector",
+    "shapefile",
+    "csv"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://geodata.bts.gov/datasets/usdot::north-american-rail-network-lines/about",
+  "id": "data-north-american-rail-network",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-12-31",
+  "licence": "US Government work, no copyright (17 U.S.C. 101)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "North American Rail Network (NARN) lines and nodes",
+  "provider": "Federal Railroad Administration (FRA), published by the Bureau of Transportation Statistics in NTAD",
+  "related_ids": [
+    "data-us-national-transportation-atlas-database",
+    "data-us-railroad-climate-hazard-exposure"
+  ],
+  "sectors": [
+    "transport.rail",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "resilience",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "NARN lines description: created 2016, updated 21 July 2026 from FRA; ownership, trackage rights, passenger, STRACNET; 1:24,000; US, Canada, Mexico; data dictionary DOI; US Government work; Class I views",
+      "url": "https://geodata.bts.gov/api/search/v1/collections/all/items?limit=100"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "field list (RROWNER1-3, TRKRGHTS1-9, TRACKS, NET, STRACNET, PASSNGR); query formats JSON, geoJSON, PBF",
+      "url": "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "302,771 line segments; nodes layer 250,202",
+      "url": "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json"
+    }
+  ],
+  "spatial_resolution": "track segments at 1:24,000 or better in the United States",
+  "spatial_resolution_class": "10m_to_100m",
+  "tags": [
+    "railways",
+    "freight rail",
+    "North America",
+    "NTAD",
+    "STRACNET",
+    "routable network"
+  ],
+  "temporal_coverage": "current network, maintained since 2016",
+  "title_en": "North American Rail Network (NARN) lines and nodes",
+  "type": "data",
+  "update_frequency": "several_per_year"
+}

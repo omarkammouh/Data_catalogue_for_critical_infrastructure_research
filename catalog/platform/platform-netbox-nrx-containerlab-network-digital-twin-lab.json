@@ -1,0 +1,86 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/srl-labs/netbox-nrx-clab"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "netbox netreplica containerlab lab for building a network digital twin from a source of truth srl labs",
+    "repo": "github.com/srl-labs/netbox-nrx-clab",
+    "url": "https://github.com/srl-labs/netbox-nrx-clab"
+  },
+  "deployment": [
+    "own_server",
+    "desktop"
+  ],
+  "description": "This lab, published by the srl-labs community (Nokia SR Linux labs), shows how Containerlab can create virtual replicas, or digital twins, of a production network for testing. It deploys NetBox with seed data as the network source of truth, uses NetReplica (NRX) to turn the NetBox inventory into a Containerlab topology file for part of the sample network, and adds a Python script and templates for basic configuration management. Coverage: one sample network with a global OSPF backbone area. The walk-through tests a real operational change, moving the network from one interior gateway protocol to another, on the twin without downtime. Format and access: shell scripts, Python, templates and instructions on GitHub; free. Licence: not found in the repository files tried. Caveats: it is a demonstration lab with seed data, not a dataset of a real network; it was tested on Ubuntu 22.04 with Containerlab 0.51 and Docker 25, and was not run for this record. Simulation uses: building digital twins of IP networks from an inventory to rehearse changes and failures before applying them to live telecom networks. Related records: Containerlab (platform-containerlab) is the lab orchestrator it relies on.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source digital-netbox-nrx-clab: provider pages read (round 2 register piece)",
+      "route": "R25",
+      "source": "digital-netbox-nrx-clab"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/srl-labs/netbox-nrx-clab",
+  "id": "platform-netbox-nrx-containerlab-network-digital-twin-lab",
+  "interfaces": [
+    "command_line",
+    "code_library",
+    "web_app"
+  ],
+  "language": [
+    "other"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-06-17",
+  "licence": "not stated",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NetBox + NetReplica + Containerlab: lab for building a network digital twin from a source of truth (srl-labs)",
+  "open_source": true,
+  "platform_kind": [
+    "digital_twin"
+  ],
+  "provider": "srl-labs (Nokia SR Linux community labs)",
+  "related_ids": [
+    "platform-containerlab"
+  ],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "NetBox with seed data, NetReplica to Containerlab topology for Pod 1, Python config management; IGP change demo; tested Ubuntu 22.04.4, Containerlab 0.51.2, Docker 25.0.3",
+      "url": "https://raw.githubusercontent.com/srl-labs/netbox-nrx-clab/main/README.md"
+    }
+  ],
+  "tags": [
+    "network digital twin",
+    "NetBox",
+    "Containerlab",
+    "source of truth"
+  ],
+  "title_en": "NetBox + NetReplica + Containerlab: lab for building a network digital twin from a source of truth (srl-labs)",
+  "type": "platform"
+}

@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/jylambert/topotherm"
+    },
+    {
+      "kind": "download",
+      "label": "Benchmark code (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.10354616"
+    },
+    {
+      "kind": "paper",
+      "label": "Energy paper (2024)",
+      "url": "https://doi.org/10.1016/j.energy.2024.132885"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1016/j.energy.2024.132885",
+    "name": "topotherm district heating network design optimisation",
+    "repo": "github.com/jylambert/topotherm",
+    "url": "https://github.com/jylambert/topotherm"
+  },
+  "description": "topotherm is an open Pyomo-based mixed-integer linear programming model for designing district heating networks that scales to large districts for single and multiple time steps. It is developed by Jerry Lambert and Amedeo Ceruti at the Chair of Energy Systems of the Technical University of Munich, with releases up to 0.6.0. It was introduced in a 2024 paper in Energy that benchmarks four open formulations (Résimont, DHmin, DHNx and topotherm) on synthetic cases and real urban districts with up to 9,587 potential edges, where topotherm solved fastest for single time steps; the benchmark code is archived on Zenodo. It imports and exports GIS files and works with Gurobi or open-source solvers. Coverage is not tied to a place. The code is accessible on GitHub under the MIT licence at no cost. Caveats: large cases benefit from a commercial solver, and results depend on demand and cost inputs. Simulation uses are district heating network routing and sizing for heat planning. Related records: model-dhnx is one of the benchmarked models, and data-district-heating-long-term-unit-commitment-instances gives district heating optimisation instances.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "district heating statistical model",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/jylambert/topotherm",
+  "id": "model-topotherm-district-heating-network-design",
+  "inputs": [
+    "GIS files of streets, buildings and heat sources",
+    "heat demand and cost parameters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network"
+  ],
+  "name": "topotherm - district heating network design optimisation",
+  "outputs": [
+    "optimal district heating network layout and pipe sizing"
+  ],
+  "provider": "Chair of Energy Systems, Technical University of Munich (Jerry Lambert, Amedeo Ceruti)",
+  "related_ids": [
+    "model-dhnx",
+    "data-district-heating-long-term-unit-commitment-instances"
+  ],
+  "repository": "https://github.com/jylambert/topotherm",
+  "runs_on": [],
+  "sectors": [
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, Pyomo MILP, benchmark paper (Energy 2024), GIS import/export, Gurobi and open solvers",
+      "url": "https://raw.githubusercontent.com/jylambert/topotherm/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT-style licence, copyright 2025 Jerry Lambert, Amedeo Ceruti; pyproject version 0.6.0; tags to v0.6.0",
+      "url": "https://raw.githubusercontent.com/jylambert/topotherm/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Benchmark code: four frameworks, up to 9,587 potential edges; publisher TUM Chair of Energy Systems; CC-BY-4.0",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.10354616"
+    }
+  ],
+  "tags": [
+    "district heating",
+    "network design",
+    "MILP",
+    "Pyomo",
+    "TUM"
+  ],
+  "title_en": "Topotherm - district heating network design optimisation",
+  "type": "model",
+  "validated_on": [
+    "benchmark against Résimont, DHmin and DHNx"
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "IFRC GO web application",
+      "url": "https://go.ifrc.org/"
+    },
+    {
+      "kind": "api",
+      "label": "GO API v2 (endpoint index)",
+      "url": "https://goadmin.ifrc.org/api/v2/"
+    },
+    {
+      "kind": "repo",
+      "label": "GO API source code",
+      "url": "https://github.com/IFRCGo/go-api"
+    },
+    {
+      "kind": "api",
+      "label": "IFRC GO API v2, country records (example query)",
+      "url": "https://goadmin.ifrc.org/api/v2/country/?limit=1"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "emergency_management",
+    "recovery_restoration"
+  ],
+  "data_kind": [
+    "event_record",
+    "document"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ifrc go red cross red crescent emergencies appeals field reports deployments and preparedness data with open api",
+    "repo": "github.com/ifrcgo/go-api",
+    "url": "https://go.ifrc.org"
+  },
+  "description": "IFRC GO is the operations platform of the International Federation of Red Cross and Red Crescent Societies, and its public API exposes the federation's records of disasters and responses worldwide. It is produced by the IFRC with its national societies, which submit field reports, appeals and situation reports. Coverage: global, every country with a national society; the event list held 6,076 emergencies at the time of reading and the appeals list 4,239 DREF and emergency appeals, the newest from September 2026. Endpoints cover events with disaster type, countries, affected people, severity level and GLIDE number; appeals and their documents and funding; field reports and situation reports; flash updates; emergency response unit and personnel deployments; surge alerts; projects; country and district key figures; the Preparedness for Effective Response (PER) assessments; and operational learning extracted from past responses. Format and access: a REST API returning JSON (goadmin.ifrc.org/api/v2), CSV exports and a web application; public endpoints need no key, while some staff-only data need an account. Licence: IFRC GO terms of use (not read, as the page renders only with JavaScript). Caveats: records depend on national society reporting, affected-people counts are often missing, and event types mix hazards and crises. Simulation uses: historical event and response records for emergency response planning, resilience benchmarks and calibrating hazard exposure models. Related records: GDACS (data-gdacs) issues the alerts that often open GO events, DesInventar Sendai (data-desinventar-sendai) holds national loss records, and HDX (data-hdx-humanitarian-data-exchange) redistributes many GO datasets.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source services-ifrc-go: provider pages read (round 2 register piece)",
+      "route": "R11",
+      "source": "services-ifrc-go"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "storm_wind",
+    "earthquake",
+    "drought",
+    "pandemic"
+  ],
+  "homepage": "https://go.ifrc.org/",
+  "id": "data-ifrc-go-emergency-operations-api",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "IFRC GO terms of use (not read)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "IFRC GO: Red Cross Red Crescent emergencies, appeals, field reports, deployments and preparedness data with open API",
+  "provider": "International Federation of Red Cross and Red Crescent Societies (IFRC)",
+  "related_ids": [
+    "data-gdacs",
+    "data-desinventar-sendai",
+    "data-hdx-humanitarian-data-exchange"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "API root lists 105 endpoints incl. event, appeal, field-report, situation_report, flash-update, eru, personnel_deployment, surge_alert, project, per-*, ops-learning, country and district key figures",
+      "url": "https://goadmin.ifrc.org/api/v2/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "count 6,076 events; newest a pluvial/flash flood in Libya starting 2026-09-22 with severity level, GLIDE, countries",
+      "url": "https://goadmin.ifrc.org/api/v2/event/?limit=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "count 4,239 appeals; newest Indonesia drought DREF",
+      "url": "https://goadmin.ifrc.org/api/v2/appeal/?limit=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Source code of the GO API (Django, docker-compose)",
+      "url": "https://raw.githubusercontent.com/IFRCGo/go-api/develop/README.md"
+    }
+  ],
+  "tags": [
+    "humanitarian",
+    "Red Cross",
+    "disasters",
+    "appeals",
+    "DREF"
+  ],
+  "title_en": "IFRC GO: Red Cross Red Crescent emergencies, appeals, field reports, deployments and preparedness data with open API",
+  "type": "data",
+  "update_frequency": "real_time"
+}

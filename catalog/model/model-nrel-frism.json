@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/NREL/FRISM"
+    },
+    {
+      "kind": "docs",
+      "label": "DOE CODE record",
+      "url": "https://www.osti.gov/doecode/biblio/141722"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "frism freight integrated simulation model nrel",
+    "url": "https://github.com/NREL/FRISM"
+  },
+  "description": "FRISM, the FReight Integrated Simulation Model from the US National Renewable Energy Laboratory, simulates day-to-day freight activity, including end-consumer shopping, distribution channels and carrier operations, with the e-commerce interactions between passenger and freight travel. Its modules estimate household e-commerce generation, simulate monthly delivery frequency by consumers, generate business-to-business and business-to-consumer daily shipments and match them to carriers, and plan carrier vehicle tours with a vehicle routing solver (OR-Tools); the output assigns shipments to carriers and gives the tour plans that carry them from origin to destination. It was developed by Kyungsoo Jeong, Juliette Ugirumurera and Alicia Birky with funding from the US Department of Energy Vehicle Technologies Office. It is generic but ships with example data for US counties and scenario years. The code is open source on GitHub under the BSD 3-clause licence, free, written in Python with shell scripts, installed as a conda environment and registered in DOE CODE (August 2024). Caveats: it needs detailed freight, firm and household inputs that users must assemble, and it is a research code. It supports urban freight demand, fleet electrification and delivery tour analysis, and can feed freight agents into network simulators. It is related to the BEAM passenger simulator from LBNL and complements the jsprit and VROOM vehicle routing tools.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "FRISM freight integrated simulation model",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NREL/FRISM",
+  "id": "model-nrel-frism",
+  "inputs": [
+    "household and firm synthetic populations",
+    "e-commerce and shipment parameters",
+    "carrier fleets",
+    "road network travel times"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-08-23",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "agent_based",
+    "optimisation"
+  ],
+  "name": "FRISM (FReight Integrated Simulation Model), NREL",
+  "notes": "Deep check A4 (2026-10-01) corrected: maturity .",
+  "outputs": [
+    "shipments assigned to carriers",
+    "carrier vehicle tour plans"
+  ],
+  "provider": "National Renewable Energy Laboratory (NREL)",
+  "related_ids": [
+    "model-beam-lbnl",
+    "model-jsprit",
+    "model-vroom"
+  ],
+  "runs_on": [
+    "conda"
+  ],
+  "sectors": [
+    "transport.logistics_freight",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "abstract; developers; NREL; release 2024-08-23; open source; Python, Shell; BSD 3-clause; sponsor EERE VTO; GitHub NREL/FRISM; DOI 10.11578/dc.20240910.28",
+      "url": "https://www.osti.gov/doecode/biblio/141722"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "modules (HH e-commerce, B2C generation, Shipment2Fleet, carrier tour plan with OR-tools); conda environment; run with county number, year, scenario; example data",
+      "url": "https://raw.githubusercontent.com/NREL/FRISM/open-source/README.md"
+    }
+  ],
+  "tags": [
+    "freight simulation",
+    "e-commerce",
+    "vehicle routing",
+    "NREL",
+    "agent-based"
+  ],
+  "title_en": "FRISM (FReight Integrated Simulation Model), NREL",
+  "type": "model",
+  "validated_on": []
+}

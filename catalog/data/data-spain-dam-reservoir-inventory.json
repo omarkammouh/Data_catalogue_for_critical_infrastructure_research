@@ -1,0 +1,156 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Inventory page",
+      "url": "https://www.miteco.gob.es/es/agua/temas/seguridad-de-presas-y-embalses/inventario-presas-y-embalses.html"
+    },
+    {
+      "kind": "viewer",
+      "label": "SNCZI dam viewer",
+      "url": "https://sig.miteco.gob.es/snczi/index.html?herramienta=Presas"
+    },
+    {
+      "kind": "api",
+      "label": "WMS Presas",
+      "url": "https://wms.mapama.gob.es/sig/Agua/Presas?request=getcapabilities&service=wms"
+    },
+    {
+      "kind": "download",
+      "label": "Download (zipped layer, ETRS89)",
+      "url": "https://www.mapama.gob.es/app/descargas/descargafichero.aspx?f=egis_presa_geoetrs89.zip"
+    },
+    {
+      "kind": "docs",
+      "label": "Metadata (IDEE catalogue)",
+      "url": "https://www.idee.es/csw-codsi-idee/srv/api/records/4f218701-1004-4b15-93b1-298551ae9446"
+    },
+    {
+      "kind": "portal",
+      "label": "datos.gob.es entry",
+      "url": "https://datos.gob.es/en/catalogo/e05068001-inventario-de-presas-y-embalses"
+    }
+  ],
+  "access_note": "Viewer, WMS, OGC API Features, INSPIRE ATOM feed and a zipped layer download, all without registration.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "ES"
+  ],
+  "data_family": [
+    "system_description",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "spanish inventory of dams and reservoirs inventario de presas y embalses miteco",
+    "url": "https://miteco.gob.es/es/agua/temas/seguridad-de-presas-y-embalses/inventario-presas-y-embalses.html"
+  },
+  "description": "The Spanish Inventory of Dams and Reservoirs of the Ministry for the Ecological Transition (MITECO) covers the dams of all of Spain regardless of owner and serves as the ministry's tool for checking compliance with dam safety rules. For each dam it gives a technical sheet, name, river basin district, dam code, watercourse and basin, municipality and province, and the inventory describes dam type, geometric and geographic characteristics, basin and reservoir features, uses, and the status of the documents required by the dam safety standards: hazard classification, operating rules and emergency plans. It is shown in the viewer of the national flood zone mapping system (SNCZI) and published as INSPIRE hydrography and an EU high-value dataset through WMS, OGC API Features, an ATOM feed and a zipped layer download, free under CC BY 4.0 with attribution to MITECO; the metadata were last revised in December 2025. Caveats: the download holds the geographic layer and some safety-document details may only be visible in the viewer, fields were not inspected because no file was downloaded, and one metadata constraint cites an INSPIRE public access limitation. Simulation uses: a complete national dam inventory for dam-break and flood exposure modelling, linking reservoirs to irrigation, water supply and hydropower, prioritising dams without emergency plans, and emergency planning downstream. Related records: the Swiss dams under federal supervision (data-switzerland-dams-under-federal-supervision) and the ICOLD World Register of Dams (data-icold-world-register-of-dams).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: MITECO dam and reservoir safety (ES, dam_safety_authority) https://www.miteco.gob.es/es/agua/temas/seguridad-de-presas-y-embalses.html",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "Inventario de Presas y Embalses SNCZI descarga datos presas España clasificación riesgo",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "other_vector",
+    "ogc_map_service",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://www.miteco.gob.es/es/agua/temas/seguridad-de-presas-y-embalses/inventario-presas-y-embalses.html",
+  "id": "data-spain-dam-reservoir-inventory",
+  "languages": [
+    "es"
+  ],
+  "licence": "CC-BY-4.0 (attribution to MITECO)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://www.mapama.gob.es/app/descargas/descargafichero.aspx?f=egis_presa_geoetrs89.zip"
+    ],
+    "dead_since": "2026-09-27",
+    "unverified": [
+      "https://datos.gob.es/en/catalogo/e05068001-inventario-de-presas-y-embalses",
+      "https://wms.mapama.gob.es/sig/Agua/Presas?request=getcapabilities&service=wms"
+    ],
+    "wayback": "http://web.archive.org/web/20260317095848/https://www.mapama.gob.es/app/descargas/descargafichero.aspx?f=egis_presa_geoetrs89.zip"
+  },
+  "maturity": "active",
+  "name": "Spanish Inventory of Dams and Reservoirs (Inventario de Presas y Embalses, MITECO)",
+  "notes": "datos.gob.es pages did not render in the browser; metadata were read from the IDEE catalogue record.",
+  "provider": "Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO), Subdirección General de Dominio Público Hidráulico e Infraestructuras",
+  "related_ids": [
+    "data-switzerland-dams-under-federal-supervision",
+    "data-icold-world-register-of-dams"
+  ],
+  "schema_summary": "per dam: technical sheet (ficha técnica), dam name, river basin district (demarcación), dam code, watercourse and basin, municipality and province; the inventory also covers dam type, geometric and geographic characteristics, basin and reservoir characteristics, uses, and the status of safety documents (classification, operating rules, emergency plans)",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.irrigation",
+    "water.drinking_water",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "purpose, content types, viewer URL, WMS access",
+      "url": "https://www.miteco.gob.es/es/agua/temas/seguridad-de-presas-y-embalses/inventario-presas-y-embalses.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "abstract, CC BY 4.0 with attribution, INSPIRE access constraint, dateStamp 2025-12-09, WMS, ATOM, OGC API Features and zip download URLs, high-value dataset keyword",
+      "url": "https://www.idee.es/csw-codsi-idee/srv/api/records/4f218701-1004-4b15-93b1-298551ae9446/formatters/xml"
+    }
+  ],
+  "spatial_resolution": "individual dams, all owners",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "dams",
+    "reservoirs",
+    "dam safety",
+    "emergency plans",
+    "hazard classification",
+    "SNCZI",
+    "INSPIRE",
+    "high-value dataset",
+    "Spain",
+    "MITECO"
+  ],
+  "temporal_coverage": "current inventory (dataset since 2011; metadata revised 9 December 2025)",
+  "temporal_resolution": "none",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Spanish Inventory of Dams and Reservoirs (Inventario de Presas y Embalses, MITECO)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/ARPA-SIMC/CRITERIA3D"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/ARPA-SIMC/CRITERIA3D/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "criteria 3d agro hydrological model",
+    "repo": "github.com/arpa-simc/criteria3d",
+    "url": "https://github.com/ARPA-SIMC/CRITERIA3D"
+  },
+  "description": "CRITERIA-3D is an agro-hydrological model published by Arpae Emilia-Romagna for small and medium-sized catchments. It couples three-dimensional surface and subsurface water flow with soil heat transport, crop water uptake, snow and slope-stability calculations. Inputs include terrain and soil configurations plus hourly temperature, precipitation, radiation, humidity and wind. Outputs represent water and heat movement and associated catchment conditions over user-selected domains and periods. Public C++/Qt source is free under GPL-3.0 for applications, with separately identified LGPL libraries, and supports CPU parallelism or optional NVIDIA CUDA. A limitation is that the forestry biomass component is still in development, while dedicated irrigation scheduling is handled by the separate CRITERIA-1D model. The README illustrates the Ravone catchment near Bologna but does not by itself establish a reusable standalone case-study package. CRITERIA-3D supports flood, drainage and slope-risk simulations, complementary to Delft3D FM (model-delft3d-fm). Build instructions and scientific references describe the numerical basis. No binaries, catchment files or meteorological data were downloaded.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "arpa-simc/criteria3d linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "landslide",
+    "drought"
+  ],
+  "homepage": "https://github.com/ARPA-SIMC/CRITERIA3D",
+  "id": "model-criteria3d",
+  "inputs": [
+    "Terrain and soil configuration",
+    "Hourly meteorological series"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-29",
+  "licence": "Applications: GPL-3.0; shared libraries: LGPL as specified per library",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "CRITERIA-3D agro-hydrological model",
+  "notes": "G7 G7-0591. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Catchment water and heat flows",
+    "Slope and crop-water results"
+  ],
+  "provider": "Arpae Emilia-Romagna",
+  "related_ids": [
+    "model-delft3d-fm"
+  ],
+  "repository": "https://github.com/ARPA-SIMC/CRITERIA3D",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.irrigation",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for ARPA-SIMC/CRITERIA3D: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/arpa-simc/criteria3d"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/arpa-simc/criteria3d/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for dams and flood defences, irrigation and agriculture",
+  "type": "model"
+}

@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "CFS Subarea Estimates page",
+      "url": "https://www.census.gov/data/experimental-data-products/commodity-flow-survey-subarea-estimates.html"
+    },
+    {
+      "kind": "download",
+      "label": "2022 subarea estimates (CSV)",
+      "url": "https://www2.census.gov/data/experimental-data-products/commodity-flow-survey-subarea-estimates/2022/2022-cfs-subarea-estimates.csv"
+    },
+    {
+      "kind": "download",
+      "label": "2022 subareas shapefile",
+      "url": "https://www2.census.gov/data/experimental-data-products/commodity-flow-survey-subarea-estimates/2022/2022-commodity-flow-survey-subareas-shapefile.zip"
+    },
+    {
+      "kind": "docs",
+      "label": "2022 methodology",
+      "url": "https://www2.census.gov/data/experimental-data-products/commodity-flow-survey-subarea-estimates/2022/2022-commodity-flow-survey-subarea-estimates-methodology.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "supply_chains_logistics",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "commodity flow survey subarea estimates experimental 2017 and 2022",
+    "url": "https://census.gov/data/experimental-data-products/commodity-flow-survey-subarea-estimates.html"
+  },
+  "description": "The Commodity Flow Survey (CFS) Subarea Estimates are an experimental product of the U.S. Census Bureau and the Bureau of Transportation Statistics that adds geographic detail to the regular CFS freight flow estimates. They divide the 134 standard CFS Areas into 329 Subareas, each of at least one county and in general at least 10,000 CFS shipments, and publish origin-by-destination-by-commodity-group estimates for one mode, truck and ground parcel combined. Finer detail is given for origins and destinations near each other, while rarer long-distance flows are aggregated at the origin or destination. Coverage: the United States for the 2022 CFS, the second edition after the 2017 Subareas; the methodology is unchanged except for two added subareas. Format and access: a single CSV of estimates, a county-to-subarea lookup CSV, a subarea shapefile and state maps, with a methodology report; free and public domain. Caveats: experimental, truck and parcel only, and aggregated for long-distance pairs, so it is not a complete county-level origin-destination matrix. Simulation uses: sub-state truck freight origin-destination demand for highway freight network models, disruption and rerouting studies, and disaggregation of the Freight Analysis Framework. Related records: the Commodity Flow Survey (the parent survey), the Freight Analysis Framework, the CFS Expanded Hazardous Materials estimates and VIUS.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): Experimental Data Products page, entry Commodity Flow Survey Subarea Estimates",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    }
+  ],
+  "formats": [
+    "csv",
+    "shapefile",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/data/experimental-data-products/commodity-flow-survey-subarea-estimates.html",
+  "id": "data-us-census-cfs-subarea-estimates",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Commodity Flow Survey Subarea Estimates (experimental, 2017 and 2022)",
+  "notes": "Measure columns (value, tons, ton-miles) follow the standard CFS tables; the CSV itself was not opened.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-commodity-flow-survey",
+    "data-freight-analysis-framework",
+    "data-us-census-cfs-hazardous-materials-estimates",
+    "data-us-census-vehicle-inventory-and-use-survey"
+  ],
+  "schema_summary": "Origin subarea, destination subarea, SCTG commodity group, value, tons, ton-miles with coefficients of variation",
+  "sectors": [
+    "transport.logistics_freight",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "134 areas into 329 subareas, truck and parcel mode, aggregation of long-distance pairs, 2017 and 2022 editions, files",
+      "url": "https://www.census.gov/data/experimental-data-products/commodity-flow-survey-subarea-estimates.html"
+    }
+  ],
+  "spatial_resolution": "329 CFS Subareas (groups of counties)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "freight",
+    "origin-destination",
+    "trucks",
+    "Commodity Flow Survey",
+    "experimental data",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "2017 and 2022",
+  "temporal_coverage_years": {
+    "end": 2022,
+    "start": 2017
+  },
+  "temporal_resolution": "every five years",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "Commodity Flow Survey Subarea Estimates (experimental, 2017 and 2022)",
+  "type": "data",
+  "update_frequency": "multi_year"
+}

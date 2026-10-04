@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Dataset discovery dashboard",
+      "url": "https://ped.fz-juelich.de/dashboard"
+    },
+    {
+      "kind": "portal",
+      "label": "Data archive (experiments listed newest first)",
+      "url": "https://ped.fz-juelich.de/da/doku.php?id=start"
+    },
+    {
+      "kind": "portal",
+      "label": "Data archive (experiments, field studies, machine learning data)",
+      "url": "https://ped.fz-juelich.de/da/doku.php"
+    },
+    {
+      "kind": "portal",
+      "label": "Archive DOI 10.34735/ped.da",
+      "url": "https://doi.org/10.34735/ped.da"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE",
+    "CN"
+  ],
+  "data_family": [
+    "calibration_validation",
+    "behavioural_social"
+  ],
+  "data_kind": [
+    "time_series",
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.34735/ped.da",
+    "name": "pedestrian dynamics data archive forschungszentrum julich trajectories and videos of crowd evacuation and bottleneck experiments",
+    "url": "https://ped.fz-juelich.de/da/doku.php?id=start"
+  },
+  "description": "This archive holds the measured paths of people walking through corridors, bottlenecks, stairs and exits in controlled crowd experiments, the empirical basis for most evacuation and pedestrian simulation models. It is built by the Civil Safety Research institute (IAS-7) of Forschungszentrum Jülich with project partners, and carries its own DOI. Coverage spans laboratory, field and machine-learning datasets from experiments in Germany and elsewhere, including China, listed from newest to oldest with participant statistics. Most entries provide video recordings and head trajectories extracted with the PeTrack software at 16 to 25 frames per second, and some add motion capture, contact pressure, heart rate or questionnaires; data type descriptions follow FAIR principles and a dashboard searches the archive together with external datasets. Files are available as free downloads under the Creative Commons Attribution 4.0 licence, with source attribution requested. Caveats: participants are mostly students in laboratory settings, formats vary between older and newer experiments, and video files are large. Simulation uses: calibrating and validating fundamental diagrams, flow through exits and evacuation times in agent-based crowd and building evacuation models. Related records: the JuPedSim simulator (model-jupedsim) from the same institute is designed to use these data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Forschungszentrum Jülich (001, evacuation_modelling_community)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.public_space:behavioural_social, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "domain_model_file",
+    "plain_text",
+    "image",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://ped.fz-juelich.de/da/doku.php?id=start",
+  "id": "data-juelich-pedestrian-dynamics-data-archive",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-03-09",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://ped.fz-juelich.de/dashboard"
+    ]
+  },
+  "maturity": "active",
+  "name": "Pedestrian Dynamics Data Archive (Forschungszentrum Jülich): trajectories and videos of crowd, evacuation and bottleneck experiments",
+  "notes": "Deep check A4 (2026-10-01) corrected: last_updated .",
+  "provider": "Forschungszentrum Jülich, Institute for Advanced Simulation 7: Civil Safety Research",
+  "related_ids": [
+    "model-jupedsim",
+    "data-opentraj-human-trajectory-datasets",
+    "model-exodus-evacuation-pedestrian-simulation"
+  ],
+  "schema_summary": "Per experiment: description, set-up geometry, participant statistics, video recordings and head trajectories (frame, x, y, z at 16 or 25 fps) extracted with PeTrack; some experiments add motion capture, pressure, heart rate or questionnaire data; data type descriptions and FAIR guidance pages",
+  "sectors": [
+    "services.emergency_services",
+    "built_environment.buildings",
+    "built_environment.public_space",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Data archive (DOI 10.34735/ped.da, re3data 10.17616/R31NJMT6) of experiments on pedestrian dynamics built by IAS-7 Civil Safety Research of Forschungszentrum Jülich; sections experimental, machine learning, field study and external data; video recordings and trajectory data for most experiments, extracted mostly with PeTrack; 'You are very welcome to use our data for further research, as long as you name the source'; CC Attribution 4.0 International licence link; example files trj.zip (25 fps) and videos.zip (2,660 MB) for a 2015 Tianshui experiment; about 57 linked pages",
+      "url": "https://ped.fz-juelich.de/da/doku.php?id=start"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Archive scope, DOI, data types, PeTrack, usage condition, dataset list",
+      "url": "https://ped.fz-juelich.de/da/doku.php"
+    }
+  ],
+  "spatial_resolution": "Individual pedestrian positions in centimetres",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "pedestrian dynamics",
+    "evacuation",
+    "crowd experiments",
+    "trajectories",
+    "bottleneck",
+    "PeTrack"
+  ],
+  "temporal_coverage": "Experiments from the 2000s to the present",
+  "temporal_resolution": "16 to 25 frames per second",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Pedestrian Dynamics Data Archive (Forschungszentrum Jülich): trajectories and videos of crowd, evacuation and bottleneck experiments",
+  "type": "data",
+  "update_frequency": "irregular"
+}

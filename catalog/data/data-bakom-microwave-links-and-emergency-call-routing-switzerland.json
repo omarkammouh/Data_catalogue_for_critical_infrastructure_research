@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "STAC: microwave links",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.richtfunkverbindungen"
+    },
+    {
+      "kind": "download",
+      "label": "STAC: emergency call routing",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.notruf"
+    },
+    {
+      "kind": "viewer",
+      "label": "map.geo.admin.ch",
+      "url": "https://map.geo.admin.ch/?topic=funksender&lang=en&layers=ch.bakom.richtfunkverbindungen"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "data_family": [
+    "system_description",
+    "emergency_management",
+    "interdependencies",
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "network_topology",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "swiss microwave links and emergency call routing by commune bakom geodata",
+    "url": "https://map.geo.admin.ch?lang=en&layers=ch.bakom.richtfunkverbindungen&topic=funksender"
+  },
+  "description": "Two further telecommunications layers of the Swiss Federal Office of Communications (BAKOM) describe links that other networks and emergency services depend on. The microwave links layer maps licensed point-to-point radio links in Switzerland, which use tightly collimated beams between 4 and 90 GHz to carry telephony, data and images over line of sight between masts, rooftops and hill sites; each link is shown as a line with a link class (KL1 to KL3). BAKOM notes that the map is illustrative, does not give legally binding licence parameters, and that site positions are accurate to about 30 metres. The emergency call layer shows, for each Swiss commune and for special territories within communes, the routing number and the alarm centre to which emergency calls to 112, 117 (police), 118 (fire), 143, 144 (ambulance) and 147 are routed from fixed, mobile and satellite networks. Coverage: Switzerland; the microwave layer was rebuilt on 24 September 2026 and the emergency routing state is dated 1 June 2026. Format and access: GeoJSON (microwave links, about 0.6 MB) and one GeoPackage per emergency number from data.geo.admin.ch, WMS and viewer; free of charge under the geo.admin.ch terms. Caveats: frequencies, capacities and operators of links are not given; routing is administrative, not a record of call handling. Simulation uses: backhaul topology for mobile networks, interdependency of emergency services on call routing, and scenarios of losing alarm centres. Related records: the BAKOM mobile base station layer gives the sites the links connect.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "BAKOM Breitbandatlas Schweiz Glasfaser Mobilfunk Versorgung Karte opendata.swiss Nutzungsbedingungen Richtfunkverbindungen Notruf Leitweglenkung",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "geopackage",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://map.geo.admin.ch/?topic=funksender&lang=en&layers=ch.bakom.richtfunkverbindungen",
+  "id": "data-bakom-microwave-links-and-emergency-call-routing-switzerland",
+  "languages": [
+    "de",
+    "fr",
+    "it",
+    "en"
+  ],
+  "last_updated": "2026-09-24",
+  "licence": "Free of charge under the geo.admin.ch terms of use (fair use, source attribution); STAC entry lists the licence as proprietary",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Swiss microwave links and emergency call routing by commune (BAKOM geodata)",
+  "notes": "STAC descriptions and REST attributes read by API on 2026-09-26; microwave file size from a header request.",
+  "provider": "Federal Office of Communications (BAKOM / OFCOM Switzerland), published through geo.admin.ch",
+  "related_ids": [],
+  "schema_summary": "microwave link geometry and class; commune, special territory, routing number and alarm centre per emergency number and network type",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "emergency_response",
+    "cascading_failure"
+  ],
+  "size": "about 0.6 MB GeoJSON plus six GeoPackages",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "layer description",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.richtfunkverbindungen"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "layer description",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.notruf"
+    }
+  ],
+  "spatial_resolution": "link line (about 30 m site accuracy); commune",
+  "spatial_resolution_class": "10m_to_100m",
+  "tags": [
+    "microwave links",
+    "backhaul",
+    "emergency calls",
+    "112",
+    "Switzerland"
+  ],
+  "temporal_coverage": "current state",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Swiss microwave links and emergency call routing by commune (BAKOM geodata)",
+  "type": "data",
+  "update_frequency": "daily"
+}

@@ -1,0 +1,145 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Evolução Diária dos Acionamentos de Meios de Emergência Médica (API)",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/acionamentos-de-meios-de-emergencia-medica"
+    },
+    {
+      "kind": "api",
+      "label": "Evolução Diária das Ocorrências Pré-Hospitalares por Prioridade (API)",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/numero-de-ocorrencia-com-prioridade"
+    },
+    {
+      "kind": "api",
+      "label": "Evolução Mensal das Ocorrências Pré-Hospitalares por Tipologia (API)",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/evolucao-mensal-das-ocorrencias-pre-hospitalares-por-tipologia"
+    },
+    {
+      "kind": "api",
+      "label": "Chamadas de Emergência a Bordo de Embarcações (CODU MAR, API)",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/codu-mar"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "PT"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "inem pre hospital emergency activity portugal sns transparency daily dispatches by resource type daily calls by priority and monthly occurrences by type",
+    "url": "https://transparencia.sns.gov.pt/explore/dataset/acionamentos-de-meios-de-emergencia-medica"
+  },
+  "description": "These datasets record the daily and monthly workload of Portugal's national pre-hospital emergency medical service, from the emergency calls it triages to the ambulances, cars and helicopters it sends. They are produced by INEM, the National Institute of Medical Emergency, and published on the SNS Transparency portal. One series counts dispatches every day since November 2016 for each type of resource, including emergency helicopters, medical emergency cars, life support and emergency ambulances, motorcycles and rescue ambulances based at partner posts. A second counts calls every day by clinical priority, with the target arrival time for each level, such as 18 minutes for priority 2. A third gives monthly occurrences since 2013 in 36 categories such as road accidents, cardiac arrest, trauma, breathing difficulty, childbirth and psychiatric emergencies, and a fourth covers medical advice to vessels at sea. All are free and available to download in CSV, JSON, Excel and Parquet, and through the portal API. Caveats: the series are national totals without location, actual response times are not published here, and the type list includes a COVID category, so category definitions should be checked over time. Simulation uses: setting daily EMS demand and fleet mix in ambulance deployment models, and measuring surges during heatwaves, epidemics or major incidents. Related records: the SNS emergency department data (data-sns-portugal-emergency-department-attendances) show where patients arrive, and the Ambulance Victoria statistics (data-ambulance-victoria-incident-statistics) are a comparable EMS source.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: SNS Transparência (PT, health_ministry_service)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "spreadsheet",
+    "parquet"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "extreme_heat",
+    "pandemic"
+  ],
+  "homepage": "https://transparencia.sns.gov.pt/explore/dataset/acionamentos-de-meios-de-emergencia-medica/",
+  "id": "data-inem-portugal-prehospital-emergency-activity",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "not stated (portal metadata: license null)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "INEM pre-hospital emergency activity (Portugal, SNS Transparency): daily dispatches by resource type, daily calls by priority and monthly occurrences by type",
+  "notes": "Deep check A4 (2026-10-01) corrected: last_updated .",
+  "provider": "Instituto Nacional de Emergência Médica (INEM), Portugal, published on the SNS Transparency portal",
+  "related_ids": [
+    "data-sns-portugal-emergency-department-attendances",
+    "data-ambulance-victoria-incident-statistics"
+  ],
+  "schema_summary": "Dispatches (daily): number of activations of the emergency medical helicopter service (SHEM), medical emergency and resuscitation cars (VMER), paediatric inter-hospital transport ambulances (TIP), immediate life support ambulances (SIV), emergency medical ambulances (AEM), emergency motorcycles (MEM), psychological intervention units (UMIPE), rescue ambulances at emergency posts (PEM), at reserve posts (RES) and at non-INEM posts (NINEM). Priority (daily): occurrences by priority 1 to 5 and non-urgent without dispatch, with target arrival times (P2 18 minutes, P3 60 minutes, P4 120 minutes). Type (monthly): occurrences in 36 categories (road accident, cardiac arrest, trauma, dyspnoea, chest pain, psychiatric, childbirth, intoxication, secondary transport, COVID and others). CODU MAR: monthly medical advice calls from vessels",
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Publisher INEM; 3,615 records; daily count of activations by type of pre-hospital emergency medical resource; periods 2016-11-01 to 2026-09-24; modified 26 September 2026; fields listed in the schema summary",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/acionamentos-de-meios-de-emergencia-medica"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Publisher INEM; 3,615 records; daily count of pre-hospital occurrences by priority 1-5 with definitions (P1 imminent risk of life; P2 first resource on scene within 18 minutes; P3 within 60 minutes; P4 within 120 minutes; P5 transferred to SNS 24 line)",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/numero-de-ocorrencia-com-prioridade"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Publisher INEM; 164 records; monthly number of pre-hospital occurrences by type (36 types listed); periods 2013-01 to 2026-08",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/evolucao-mensal-das-ocorrencias-pre-hospitalares-por-tipologia"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Publisher INEM; 164 records; monthly number of medical advice services for emergencies on board vessels; export formats CSV, JSON, JSONL, XLSX, Parquet, GeoJSON, Shapefile and RDF exports listed by the portal API",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/codu-mar"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated (portal metadata: license null) (basis: transparencia.sns.gov.pt dataset metadata)",
+      "url": "https://transparencia.sns.gov.pt/explore/assets/acionamentos-de-meios-de-emergencia-medica/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://transparencia.sns.gov.pt/pages/termos-e-condicoes/"
+    }
+  ],
+  "spatial_resolution": "National",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "pre-hospital emergency",
+    "ambulance dispatch",
+    "EMS demand",
+    "INEM",
+    "Portugal"
+  ],
+  "temporal_coverage": "November 2016 to 24 September 2026 (daily); January 2013 to August 2026 (monthly)",
+  "temporal_resolution": "Daily and monthly",
+  "temporal_resolution_class": "daily",
+  "title_en": "INEM pre-hospital emergency activity (Portugal, SNS Transparency): daily dispatches by resource type, daily calls by priority and monthly occurrences by type",
+  "type": "data",
+  "update_frequency": "daily"
+}

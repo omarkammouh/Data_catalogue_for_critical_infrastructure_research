@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Directory API (JSON, or CSV with ?format=csv)",
+      "url": "https://www.pch.net/api/ixp/directory/Active"
+    },
+    {
+      "kind": "viewer",
+      "label": "IXP directory",
+      "url": "https://www.pch.net/ixp/dir"
+    },
+    {
+      "kind": "docs",
+      "label": "IXP datasets and API documentation",
+      "url": "https://www.pch.net/ixp/data"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "crs": "WGS 84 (latitude and longitude)",
+  "data_family": [
+    "system_description",
+    "critical_facilities",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pch internet exchange point directory",
+    "url": "https://pch.net/ixp/dir"
+  },
+  "description": "Packet Clearing House maintains a global directory of internet exchange points (IXPs), the facilities where networks interconnect to exchange traffic. For each exchange it reports the country, city, region, name, website, status (active, defunct, deprecated, planned, not an exchange or unknown), establishment date, latitude and longitude, number of participants and prefixes, peak, average and trough IPv4 traffic, average IPv6 traffic, whether PCH or Quad9 are present, rankings by traffic and participants and the date of last update, together with peering subnets and membership. PCH, a non-profit that supports critical internet infrastructure, publishes it for network operators, policy makers and researchers. Coverage is worldwide and historical: on 26 September 2026 the API returned 1,342 exchanges of any status, 905 of them active, with establishment dates back to the 1990s. The web directory is browsable and an API returns every IXP by status as JSON or CSV (format=csv), free and without an account. The data are licensed CC BY-NC-SA 3.0 Unported, and PCH asks users to tell it how the data are used. Caveats: many fields are self-reported or estimated, several records carry zeros or old update dates, and PCH advises users to understand the content before relying on it. Simulation uses: locating exchange points and their participant counts for internet topology and interconnection models, hazard exposure of exchanges, and cascading-failure and resilience analysis. Related records: PeeringDB, the Euro-IX IXP Database and the CAIDA AS Relationships Dataset.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.internet_exchange:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "api",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.pch.net/api/ixp/directory/Active",
+  "id": "data-pch-ixp-directory",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-NC-SA-3.0",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "PCH Internet Exchange Point Directory",
+  "provider": "Packet Clearing House (PCH)",
+  "related_ids": [
+    "data-peeringdb",
+    "data-euro-ix-ixp-database",
+    "data-caida-as-relationships",
+    "case_study-cost-of-peering-ixp-versus-ip-transit-global-evidence",
+    "case_study-ripe-labs-why-ixps-matter-critical-infrastructure-ixp-failures",
+    "data-comparative-look-public-ixp-datasets-peeringdb-euro-ix-pch",
+    "data-importance-of-internet-exchange-points-ecosystem-survey-chatzis-2013",
+    "data-isoc-ixp-toolkit-best-practices-guide-2014",
+    "data-ripe-ncc-ixp-south-east-europe-report-2025",
+    "platform-ixmon-drdos-detection-internet-exchange-points"
+  ],
+  "schema_summary": "id, ctry, cit, reg, name, url, stat, date, prfs, lat, lon, prts, traf, avg, trgh, ipv6_avg, pch, updt, ranks, prts_url, q9, iata",
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "cascading_failure",
+    "resilience"
+  ],
+  "size": "1,342 exchanges, 905 active (API, 2026-09-26)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Directory scope, API endpoints and fields, status values, CC BY-NC-SA 3.0",
+      "url": "https://www.pch.net/ixp/data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "1,342 records of any status; /Active 905 (2026-09-26)",
+      "url": "https://www.pch.net/api/ixp/directory"
+    }
+  ],
+  "spatial_resolution": "City-level point per exchange",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "IXP",
+    "internet exchange",
+    "peering",
+    "directory"
+  ],
+  "temporal_coverage": "Exchanges established from the 1990s to present, including defunct ones",
+  "title_en": "PCH Internet Exchange Point Directory",
+  "type": "data",
+  "update_frequency": "irregular"
+}

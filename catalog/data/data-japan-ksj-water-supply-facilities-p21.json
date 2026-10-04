@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "P21 data page and prefecture downloads",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P21.html"
+    },
+    {
+      "kind": "docs",
+      "label": "MLIT basic water supply statistics",
+      "url": "https://www.mlit.go.jp/mizukokudo/watersupply/stf_seisakunitsuite_bunya_topics_bukyoku_kenkou_suido_database_kihon_index.html"
+    }
+  ],
+  "access_note": "Download by prefecture from the National Land Numerical Information site without registration; commercial use is not permitted for this layer.",
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "JP"
+  ],
+  "data_family": [
+    "system_description",
+    "critical_facilities"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "japan national land numerical information water supply facilities 上水道関連施設テータ p21",
+    "url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P21.html"
+  },
+  "description": "The water supply facilities layer (P21) of Japan's National Land Numerical Information, published by MLIT, maps the service areas of public and small water supply schemes as polygons and the locations of water treatment plants and related facilities, such as pumping stations and control centres, as points. Service areas carry the operator, scheme name, type (public water supply, public or private small scheme), population served and maximum daily supply in cubic metres; facility points carry operator, scheme, facility name and maximum daily supply. It was compiled from prefectural water supply maps and water supply statistics, and is downloadable by prefecture as JPGIS GML and Shapefile in JGD2000 coordinates, free but for non-commercial use only. Caveats: the newest edition is from 2012 with data as of fiscal year 2010, so it predates later mergers of schemes and new plants; where a scheme is split across areas the totals sit on the largest area and the rest carry -999; pipes and mains are not included. Simulation uses: linking treatment plants and supply areas to flood, tsunami and earthquake hazard layers, estimating population affected by plant outages, and seeding simplified supply-demand network models. Related records: the Japan MLIT dam statistics database (data-japan-mlit-dam-statistics-database).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "水道行政 国土交通省 移管 水道事業 統計 水道統計 データ",
+      "route": "R22",
+      "source": "web-search"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: MLIT Water Supply and Sewerage Department (water supply administration moved from MHLW in April 2024) (JP, regulator) https://www.mlit.go.jp/mizukokudo/watersupply/stf_seisakunitsuite_bunya_topics_bukyoku_kenkou_suido_database_kihon_index.html",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "formats": [
+    "gml",
+    "shapefile",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P21.html",
+  "id": "data-japan-ksj-water-supply-facilities-p21",
+  "languages": [
+    "ja"
+  ],
+  "licence": "Non-commercial use (非商用) under the National Land Numerical Information terms",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Japan National Land Numerical Information water supply facilities (上水道関連施設データ, P21)",
+  "notes": "No files were downloaded.",
+  "provider": "Ministry of Land, Infrastructure, Transport and Tourism (MLIT), National Land Numerical Information",
+  "related_ids": [
+    "data-japan-mlit-dam-statistics-database"
+  ],
+  "schema_summary": "service areas (P21A): operator, scheme name, type code (public water supply 1, small public 2, small private 3), population served, maximum daily supply in m3; treatment plants and related facilities (P21B, including pumping stations and control centres): operator, scheme name, facility name, maximum daily supply; JGD2000 coordinates; -999 where totals are known only for the whole scheme",
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow",
+    "resilience",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "content, 2012 edition with FY2010 data, source materials, attributes, non-commercial licence, JGD2000, GML and Shapefile, -999 note, prefecture downloads",
+      "url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P21.html"
+    }
+  ],
+  "spatial_resolution": "water supply service area polygons and treatment plant points, by prefecture",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "water supply areas",
+    "water treatment plants",
+    "drinking water",
+    "service population",
+    "GIS",
+    "Japan",
+    "MLIT",
+    "National Land Numerical Information",
+    "KSJ"
+  ],
+  "temporal_coverage": "2012 edition, data as of fiscal year 2010",
+  "temporal_resolution": "none (snapshot)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Japan National Land Numerical Information water supply facilities",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

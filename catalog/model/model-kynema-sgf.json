@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/kynema/kynema-sgf"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/kynema/kynema-sgf/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Kuhn et al. (2025). AMR-Wind: A performance-portable, high-fidelity flow solver for wind farm simulations. Wind Energy. https://doi.org/10.1002/we.70010",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "kynema sgf formerly amr wind",
+    "repo": "github.com/kynema/kynema-sgf",
+    "url": "https://github.com/kynema/kynema-sgf"
+  },
+  "description": "Kynema-SGF is a structured-grid fluid solver maintained by Lawrence Berkeley, Sandia and the National Laboratory of the Rockies for wind-energy research. It contains an incompressible flow model on adaptive AMReX meshes, including atmospheric boundary-layer simulations and actuator representations of turbines. Inputs describe the computational domain, forcing and turbine configuration; outputs describe evolving flow fields and wakes. Spatial and temporal resolution follow the chosen mesh and simulation steps. Free BSD-3-Clause source is available in C++17 with documented builds for CPU and GPU systems. A limitation is the need to match mesh resolution, turbulence assumptions and computing resources to the wind-farm problem. The code was previously named AMR-Wind. It supports energy-infrastructure design and flow simulations, and can couple with the distinct near-body solver Kynema-UGF (model-kynema-ugf). The maintainers cite separate AMR-Wind and ExaWind method papers. No software was built or executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "exawind/amr-wind linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/kynema/kynema-sgf",
+  "id": "model-kynema-sgf",
+  "inputs": [
+    "Adaptive mesh, forcing and turbine configuration"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-28",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Kynema-SGF (formerly AMR-Wind)",
+  "notes": "G7 G7-1104. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Flow fields and turbine-wake interactions"
+  ],
+  "provider": "Lawrence Berkeley National Laboratory; Sandia National Laboratories; National Laboratory of the Rockies",
+  "related_ids": [
+    "model-kynema-ugf"
+  ],
+  "repository": "https://github.com/kynema/kynema-sgf",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for kynema/kynema-sgf: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/exawind/amr-wind"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/kynema/kynema-sgf/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for electricity",
+  "type": "model"
+}

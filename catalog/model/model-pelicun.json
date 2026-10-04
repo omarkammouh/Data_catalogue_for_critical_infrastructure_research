@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/pelicun/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/NHERI-SimCenter/pelicun"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://nheri-simcenter.github.io/pelicun/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Zsarnóczay, A. et al., pelicun, NHERI SimCenter, https://github.com/NHERI-SimCenter/pelicun",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pelicun probabilistic estimation of losses injuries and community resilience under natural hazard events",
+    "repo": "github.com/nheri-simcenter/pelicun",
+    "url": "https://nheri-simcenter.github.io/pelicun"
+  },
+  "description": "pelicun is a Python package for assessing damage and losses from natural hazard events with a stochastic model that extends the FEMA P-58 performance assessment method beyond buildings and beyond earthquakes. It is developed by the NSF-funded NHERI SimCenter, with Adam Zsarnóczay at Stanford University as contact; version 3.10.0 was the current PyPI release on the day read, and it is the damage and loss engine used by SimCenter's R2D and PBE applications. It fits joint distributions to engineering demand parameters, defines component damage and loss models using the bundled Damage and Loss Model Library (FEMA P-58 and Hazus earthquake and hurricane data), and estimates damage, collapse, repair cost and time, unsafe placarding, injuries and fatalities. Coverage: any building or asset with suitable response data; the library holds US-based models. Access: pip install, GitHub and online documentation. Licence: BSD 3-Clause; free. Caveats: users must supply structural response or hazard intensity, and results inherit the uncertainty of the chosen fragility models. Simulation uses: building-level performance-based engineering and regional loss assessment. Related records: R2D, IN-CORE and the nonductile concrete fragility automation data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell model:built_environment.buildings:fragility, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "open source seismic loss assessment building performance-based tool FEMA P-58 python",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake",
+    "storm_wind"
+  ],
+  "homepage": "https://nheri-simcenter.github.io/pelicun/",
+  "id": "model-pelicun",
+  "inputs": [
+    "Engineering demand parameters (EDPs) from structural analysis or hazard intensity",
+    "Component damage and loss models (FEMA P-58, Hazus) from the bundled library"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "fragility",
+    "statistical",
+    "economic"
+  ],
+  "name": "pelicun: Probabilistic Estimation of Losses, Injuries, and Community resilience Under Natural hazard events",
+  "outputs": [
+    "Component damage states and collapse cases",
+    "Repair cost and time",
+    "Unsafe placarding",
+    "Injuries and fatalities"
+  ],
+  "provider": "NHERI SimCenter (Adam Zsarnóczay, Stanford University)",
+  "related_ids": [
+    "data-gem-global-exposure-model",
+    "data-gem-global-vulnerability-model",
+    "data-hurricane-michael-hazus-damage-validation"
+  ],
+  "repository": "https://github.com/NHERI-SimCenter/pelicun",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, DLML, capabilities, licence, contact, NSF grants",
+      "url": "https://raw.githubusercontent.com/NHERI-SimCenter/pelicun/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 3.10.0, BSD-3-Clause, Python 3.9 or later",
+      "url": "https://pypi.org/pypi/pelicun/json"
+    }
+  ],
+  "tags": [
+    "FEMA P-58",
+    "Hazus",
+    "loss assessment",
+    "fragility",
+    "performance-based engineering",
+    "SimCenter"
+  ],
+  "title_en": "Pelicun: Probabilistic Estimation of Losses, Injuries, and Community resilience Under Natural hazard events",
+  "type": "model"
+}

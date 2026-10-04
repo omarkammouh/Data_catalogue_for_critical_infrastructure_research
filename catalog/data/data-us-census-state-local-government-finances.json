@@ -1,0 +1,166 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "State and Local Government Finances datasets and tables",
+      "url": "https://www.census.gov/programs-surveys/gov-finances/data/datasets.html"
+    },
+    {
+      "kind": "download",
+      "label": "2024 Individual Unit Files (ZIP)",
+      "url": "https://www2.census.gov/programs-surveys/gov-finances/tables/2024/2024_Individual_Unit_Files.zip"
+    },
+    {
+      "kind": "download",
+      "label": "Annual Survey of State Government Finances (ASFIN)",
+      "url": "https://www.census.gov/programs-surveys/state.html"
+    },
+    {
+      "kind": "api",
+      "label": "Public Sector: State and Local Government Finances API (timeseries/govslocalfin)",
+      "note": "API key required",
+      "url": "https://api.census.gov/data/timeseries/govslocalfin.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing page)",
+      "url": "https://www.census.gov/programs-surveys/gov-finances.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "economic_financial",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "annual survey of state and local government finances alfin and state government finances asfin",
+    "url": "https://census.gov/data/datasets/2024/econ/local/public-use-datasets.html"
+  },
+  "description": "The Annual Survey of State and Local Government Finances of the U.S. Census Bureau is described by the Bureau as the only nationwide, complete source of local government finance data collected with uniform definitions. It reports revenue, expenditure, debt and assets (cash and security holdings) by government function for the 50 states, the District of Columbia and the nation, for state governments, local governments and both combined. Item codes cover functions such as highways and toll highways, air transportation, water transport and terminals, sewerage, solid waste management, water supply, electric power, gas supply and transit utilities, split into charges or utility revenue, current operation and construction, so public infrastructure spending can be tracked by state and year. Individual Unit Files give record-level amounts by item code for every government in the annual sample, and the companion Annual Survey of State Government Finances (ASFIN) gives tables for each state government. Coverage: collected annually since 1957, a census of all governments in years ending 2 and 7 and a sample in between; 2024 data released July 2026 and revised 2022 and 2023 data. Access: XLSX tables and ZIP unit files with technical documentation on www2.census.gov, data.census.gov and the govslocalfin and govsstatefin APIs (free key); free and public domain. Caveats: sample years are estimates with coefficients of variation; item codes need the Government Finance and Employment Classification Manual; public utility enterprises and dependent agencies are reported under their parent government. Simulation uses: capital and operating cost baselines for public infrastructure, investment gap and asset management models. Related records: the government units listing, the public employment survey and construction spending.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; entries Annual Survey of State and Local Government Finances and Annual Survey of State Government Finances",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): api.census.gov/data.json dataset list, timeseries/govs* (7 datasets)",
+      "route": "R35",
+      "source": "census-data-api"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "plain_text",
+    "document",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/data/datasets/2024/econ/local/public-use-datasets.html",
+  "id": "data-us-census-state-local-government-finances",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Annual Survey of State and Local Government Finances (ALFIN) and State Government Finances (ASFIN)",
+  "notes": "ASFIN (state government finances) is folded into this record because it is the state-government part of the same finance program; public pensions, school system finances and state tax collections are separate Census programs listed as out of scope in the US Census failures file.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-government-units-special-districts",
+    "data-us-census-public-employment-payroll",
+    "data-us-census-construction-spending",
+    "data-asce-infrastructure-report-card"
+  ],
+  "schema_summary": "Government id, item code (revenue, expenditure by function and character, debt, assets), amount, survey year, imputation flag; state-by-type summary tables with CVs",
+  "sectors": [
+    "transport.road",
+    "transport.aviation",
+    "transport.maritime_ports",
+    "transport.public_transit",
+    "water.drinking_water",
+    "water.wastewater",
+    "energy.electricity",
+    "energy.gas_hydrogen",
+    "services.waste",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Only nationwide comprehensive local government finance source; 2024 datasets; 2022 and 2023 revised data released July 2026",
+      "url": "https://www.census.gov/programs-surveys/gov-finances.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Annual since 1957, census in years ending 2 and 7, sample in between, revenue and expenditure by function, debt",
+      "url": "https://www.census.gov/programs-surveys/gov-finances/about.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Revenue, expenditures, debt and assets; Individual Unit Files described as record-level data for all governments in the annual sample",
+      "url": "https://www.census.gov/data/datasets/2024/econ/local/public-use-datasets.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Opened the ZIP: estimates file, state-by-type file with CVs, government id file; technical documentation lists item codes such as A91 Water Utilities Revenue, E92 Electric Utilities current operation, F94 Transit Utilities construction, F80 Sewerage construction",
+      "url": "https://www2.census.gov/programs-surveys/gov-finances/tables/2024/2024_Individual_Unit_Files.zip"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "ASFIN tables 2023 and 2024 and 2022 Census of Governments state finance tables",
+      "url": "https://www.census.gov/programs-surveys/state.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Datasets timeseries/govslocalfin (2017-2024) and timeseries/govsstatefin",
+      "url": "https://api.census.gov/data.json"
+    }
+  ],
+  "spatial_resolution": "Nation and state totals by level of government; individual government units in the unit files",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "government finance",
+    "public infrastructure spending",
+    "capital outlay",
+    "ALFIN",
+    "ASFIN",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "Annual since 1957 (digital tables and unit files for recent years; API 2017-2024)",
+  "temporal_coverage_years": {
+    "end": 2024,
+    "start": 1957
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Annual Survey of State and Local Government Finances (ALFIN) and State Government Finances (ASFIN)",
+  "type": "data",
+  "update_frequency": "annual"
+}

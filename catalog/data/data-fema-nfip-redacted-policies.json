@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "OpenFEMA API v3 NfipPolicies",
+      "url": "https://www.fema.gov/api/open/v3/NfipPolicies"
+    },
+    {
+      "kind": "docs",
+      "label": "Version 3 data page",
+      "url": "https://www.fema.gov/openfema-data-page/nfip-redacted-policies-v3"
+    },
+    {
+      "kind": "docs",
+      "label": "Version 2 data page (deprecated)",
+      "url": "https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "economic_financial",
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fema nfip redacted policies national flood insurance program policy transactions openfema",
+    "url": "https://fema.gov/openfema-data-page/nfip-redacted-policies-v3"
+  },
+  "description": "The NFIP Redacted Policies dataset gives details of National Flood Insurance Program policy transactions, derived from the NFIP system of record and redacted to protect policyholders; FEMA and Write Your Own insurers issue the Standard Flood Insurance Policy for buildings and contents. Version 3 held 74,739,461 records from 2009 onwards when read (last refreshed 27 July 2026), and version 2 (FIMA NFIP Redacted Policies, 73.6 million records) is deprecated and due for removal on 15 October 2026. Fields include policy dates and cost, building and contents coverage and deductibles, premium and rate components, flood zone, base flood elevation, lowest floor and adjacent grade, elevation certificate and elevated building flags, construction and original construction date, number of floors, occupancy and primary residence, basement or crawlspace type, building replacement cost, CRS class, community, county, census tract and block group, and rounded coordinates. Coverage: United States. Access: free API and a very large compressed file. Licence: OpenFEMA terms. Caveats: FEMA states it is not an official federal report and lags the system of record; locations are generalised. Simulation uses: insured exposure and building attributes for flood loss models and insurance scenario analysis. Related records: NFIP Redacted Claims and NFIP Multiple Loss Properties.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "building insurance claims losses dataset flood NFIP open data",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api",
+    "parquet"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://www.fema.gov/openfema-data-page/nfip-redacted-policies-v3",
+  "id": "data-fema-nfip-redacted-policies",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-27",
+  "licence": "OpenFEMA terms and conditions (U.S. government data; citation requested)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2",
+      "https://www.fema.gov/openfema-data-page/nfip-redacted-policies-v3"
+    ]
+  },
+  "maturity": "active",
+  "name": "FEMA NFIP Redacted Policies (National Flood Insurance Program policy transactions, OpenFEMA)",
+  "provider": "FEMA Federal Insurance Directorate, published through OpenFEMA",
+  "related_ids": [
+    "data-fema-nfip-redacted-claims",
+    "data-fema-nfip-multiple-loss-properties"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "v2 description, record count, deprecation date 2026-10-15, temporal 2009-, monthly",
+      "url": "https://www.fema.gov/api/open/v1/DataSets?$filter=name%20eq%20%27FimaNfipPolicies%27"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "v3 NfipPolicies: 74,739,461 records, refreshed 2026-07-27",
+      "url": "https://www.fema.gov/api/open/v1/DataSets?$filter=substringof(%27Polic%27,name)"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Field list",
+      "url": "https://www.fema.gov/api/open/v2/FimaNfipPolicies?$top=1"
+    }
+  ],
+  "tags": [
+    "NFIP",
+    "flood insurance",
+    "policies",
+    "OpenFEMA",
+    "building exposure",
+    "United States"
+  ],
+  "temporal_coverage": "2009 onwards",
+  "title_en": "FEMA NFIP Redacted Policies (National Flood Insurance Program policy transactions, OpenFEMA)",
+  "type": "data",
+  "update_frequency": "monthly"
+}

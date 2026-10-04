@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/open-energy-transition/earthpv"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/open-energy-transition/earthpv/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "earthpv solar asset mapping pipeline",
+    "repo": "github.com/open-energy-transition/earthpv",
+    "url": "https://github.com/open-energy-transition/earthpv"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "EarthPV is an open mapping pipeline from Open Energy Transition for locating photovoltaic systems in satellite imagery and estimating installed capacity. It combines Sentinel-2 imagery, a trained TerraMind detector, building-footprint analysis and OpenStreetMap human verification. Users choose a country or imagery extent and run documented detection and calibration steps; outputs include ranked PV mapping leads, geometries and aggregated capacity estimates. Geographic coverage is intended to be global, while published examples and calibration are specific to available study areas. MIT source, documentation and reproducible setup guidance are public. The README calls the work alpha and reports lower recall for small rooftop arrays plus false-positive mapping leads. A limitation is that its detections are not a complete asset inventory until checked and calibrated locally. EarthPV can provide candidate distributed-generation locations for grid simulations. The related catalogue PVGIS is a separate resource and yield service, not verified EarthPV installations. No imagery, model weights or output dataset was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "open-energy-transition/earthpv linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/open-energy-transition/earthpv",
+  "id": "platform-earthpv",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "EarthPV solar-asset mapping pipeline",
+  "notes": "G7 G7-1568. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool",
+    "gis_environment"
+  ],
+  "provider": "Open Energy Transition",
+  "related_ids": [
+    "data-jrc-pvgis-photovoltaic-geographical-information-system"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for open-energy-transition/earthpv: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/open-energy-transition/earthpv"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/open-energy-transition/earthpv/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://open-energy-transition.github.io/earthpv/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for electricity and buildings",
+  "type": "platform"
+}

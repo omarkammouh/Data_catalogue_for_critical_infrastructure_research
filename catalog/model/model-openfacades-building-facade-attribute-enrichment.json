@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository (MIT)",
+      "url": "https://github.com/seshing/OpenFACADES"
+    },
+    {
+      "kind": "download",
+      "label": "Training dataset on Hugging Face",
+      "url": "https://huggingface.co/datasets/seshing/openfacades-dataset"
+    }
+  ],
+  "access_note": "Retrieving imagery needs a Mapillary API key.",
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openfacades building attribute and caption enrichment from street view imagery with vision language models",
+    "url": "https://github.com/seshing/OpenFACADES"
+  },
+  "description": "OpenFACADES is an open-source framework that enriches building profiles with objective attributes and semantic descriptions by combining crowdsourced building data and street view imagery with large vision-language models. Given a bounding box and a Mapillary API key, it retrieves building footprints and panoramic images, uses isovist analysis to link them, detects target buildings in panoramas, reprojects and filters them to good single-building views, and then applies fine-tuned InternVL models (1B and 2B released) to label building type, surface material, number of floors and building age and to write captions. The repository has Colab tutorials, a fine-tuning guide and a training dataset on Hugging Face, and lists follow-on uses such as graph neural network attribute prediction; the method is published in the ISPRS Journal of Photogrammetry and Remote Sensing (2025, volume 230). Coverage: anywhere with Mapillary panoramas, with examples from Zurich, Orlando, Santiago, Montreal, Moscow and Vilnius. Access: free code. Licence: MIT. Caveats: labels are model predictions whose accuracy varies by region and image coverage. Simulation uses: filling missing building attributes for exposure models and stock energy models. Related records: NUS Global Streetscapes and Mapillary street-level imagery.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "street view imagery building attributes dataset open Mapillary facade",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/seshing/OpenFACADES",
+  "id": "model-openfacades-building-facade-attribute-enrichment",
+  "inputs": [
+    "Bounding box of an area",
+    "OpenStreetMap building footprints",
+    "Mapillary panoramic street view images"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-13",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "OpenFACADES: building attribute and caption enrichment from street view imagery with vision-language models",
+  "outputs": [
+    "Images of individual buildings",
+    "Building type, surface material, number of floors and age labels",
+    "Descriptive captions"
+  ],
+  "provider": "Urban Analytics Lab, National University of Singapore (Xiucheng Liang, Filip Biljecki and co-authors)",
+  "related_ids": [
+    "data-nus-global-streetscapes",
+    "data-mapillary-street-level-imagery"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Overview, workflow, outputs, training data, citation",
+      "url": "https://raw.githubusercontent.com/seshing/OpenFACADES/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT licence",
+      "url": "https://raw.githubusercontent.com/seshing/OpenFACADES/HEAD/LICENSE.txt"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Training dataset, modified 2025-10-11",
+      "url": "https://huggingface.co/api/datasets/seshing/openfacades-dataset"
+    }
+  ],
+  "tags": [
+    "street view imagery",
+    "vision-language models",
+    "building attributes",
+    "facades",
+    "Mapillary",
+    "Urban Analytics Lab"
+  ],
+  "title_en": "OpenFACADES: building attribute and caption enrichment from street view imagery with vision-language models",
+  "type": "model"
+}

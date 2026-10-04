@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Broadband atlas page (German)",
+      "url": "https://www.bakom.admin.ch/de/breitbandatlas"
+    },
+    {
+      "kind": "download",
+      "label": "STAC: fibre connection availability",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.anschlussart-glasfaser"
+    },
+    {
+      "kind": "download",
+      "label": "STAC: download 100 Mbit/s availability",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.downlink100"
+    },
+    {
+      "kind": "download",
+      "label": "STAC: 5G availability",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.mobilnetz-5g"
+    },
+    {
+      "kind": "download",
+      "label": "STAC: providers per grid square",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.anbieter-eigenes_festnetz"
+    },
+    {
+      "kind": "docs",
+      "label": "Operator manual, version 4.0 (German)",
+      "url": "https://www.bakom.admin.ch/dam/de/sd-web/GRwgXsTdZT-4/Handbuch_Netzbetreiber_DE.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "data_family": [
+    "telecom_coverage_spectrum",
+    "service_performance",
+    "social_vulnerability_equity",
+    "system_description"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bakom broadband atlas of switzerland fixed and mobile availability grids",
+    "url": "https://bakom.admin.ch/de/breitbandatlas"
+  },
+  "description": "The broadband atlas of the Swiss Federal Office of Communications (BAKOM) shows how Switzerland is served by fixed and mobile telecommunications networks, in 17 maps: 14 on fixed networks and 3 on mobile networks. The fixed maps give, for each 250 by 250 metre grid square, the share of residential and commercial building entrances (from the federal building register) offered download speeds of at least 10, 30, 100, 300, 500 and 1,000 Mbit/s and upload speeds of at least 1, 10, 100 and 1,000 Mbit/s, the share connected by optical fibre (FTTB/FTTH), coaxial cable or copper wire, and the number of providers offering service. The mobile maps give, for each 100 by 100 metre square, the number of operators theoretically providing outdoor 3G, 4G or 5G coverage, compiled from the operators' predictive models. Operators supply data voluntarily following a BAKOM manual. Coverage: Switzerland, updated twice a year (latest state 30 April 2026). Format and access: GeoTIFF, GeoPackage and zipped downloads per map from data.geo.admin.ch, WMS and viewer; free of charge under the geo.admin.ch terms with source attribution. Caveats: operators that supply no data are missing; mobile coverage is modelled outdoor coverage, not measured; grid aggregation hides single buildings. Simulation uses: service coverage and redundancy for resilience analysis, planning of backup connectivity, and digital divide assessment. Related records: the BAKOM mobile base station layer gives the sites behind the mobile maps, and the German Breitbandatlas is the neighbouring counterpart.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "BAKOM Breitbandatlas Schweiz Glasfaser Mobilfunk Versorgung Karte opendata.swiss Nutzungsbedingungen Richtfunkverbindungen Notruf Leitweglenkung",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "raster",
+    "geopackage",
+    "archive",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.bakom.admin.ch/de/breitbandatlas",
+  "id": "data-bakom-broadband-atlas-switzerland",
+  "languages": [
+    "de",
+    "fr",
+    "it",
+    "en"
+  ],
+  "last_updated": "2026-04-30",
+  "licence": "Free of charge under the geo.admin.ch terms of use (fair use, source attribution); STAC entry lists the licence as proprietary",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BAKOM broadband atlas of Switzerland (fixed and mobile availability grids)",
+  "notes": "STAC metadata of the BAKOM collections read by API on 2026-09-26 (grid sizes, states, assets). Map count, half-yearly update and voluntary participation from a search result summary of the BAKOM atlas page.",
+  "provider": "Federal Office of Communications (BAKOM / OFCOM Switzerland), with data supplied by network operators",
+  "related_ids": [],
+  "schema_summary": "per grid square: share of buildings by speed class and connection type, provider count; operators with outdoor 3G, 4G and 5G coverage",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "capacity_planning"
+  ],
+  "size": "17 maps",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "mobile map description",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.mobilnetz-4g"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: 17 maps, updates",
+      "url": "https://www.bakom.admin.ch/de/breitbandatlas"
+    }
+  ],
+  "spatial_resolution": "250 m grid (fixed), 100 m grid (mobile)",
+  "spatial_resolution_class": "100m_to_1km",
+  "tags": [
+    "broadband",
+    "fibre",
+    "5G coverage",
+    "Switzerland",
+    "digital divide"
+  ],
+  "temporal_coverage": "current state (April 2026); earlier states not offered for download",
+  "temporal_resolution": "half-yearly",
+  "temporal_resolution_class": "sub_annual",
+  "title_en": "BAKOM broadband atlas of Switzerland (fixed and mobile availability grids)",
+  "type": "data",
+  "update_frequency": "several_per_year"
+}

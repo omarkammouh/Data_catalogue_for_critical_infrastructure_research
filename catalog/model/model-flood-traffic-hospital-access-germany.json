@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Code, precomputed loads, flood rasters and interactive maps (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.13968711"
+    },
+    {
+      "kind": "portal",
+      "label": "RFM2019 flood events (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.13963065"
+    },
+    {
+      "kind": "paper",
+      "label": "Communications Earth & Environment article (2025)",
+      "url": "https://www.nature.com/articles/s43247-025-02645-y"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.13968711",
+    "name": "flood induced traffic disruption model for hospital access in germany hidden risks in healthcare",
+    "url": "doi:10.5281/zenodo.13968711"
+  },
+  "description": "This model estimates which hospitals in Germany would face delayed emergency access or sudden patient surges when floods cut roads and push traffic onto detours, even if the hospitals themselves stay dry. It couples flood events from a regional flood model, downscaled to 5 m rasters, with a gravity-based traffic model on the OpenStreetMap road network, using population from the Global Human Settlement Layer and travel behaviour from the German Mobility Panel, and recomputes flows and hospital catchments when flooded roads close. The producers are Jonas Wassmer and co-authors at the Potsdam Institute for Climate Impact Research and the University of Potsdam, who report in Communications Earth & Environment (2025) that 75 of 2,475 hospitals are at risk of surges beyond normal capacity from flood-related traffic disruption alone, a third of them more than 10 km from any inundation. Coverage is Germany. The code, precomputed road network loads, flood rasters and interactive maps are on Zenodo under CC-BY-4.0 as a 21 GB package; users must download OpenStreetMap, population and mobility panel data themselves. Caveats: computing loads for new areas needs high-performance computing, the README does not state the programming language or dependencies, the mobility panel must be ordered, and a correction to the article was published in 2026. Simulation uses: national screening of hospitals exposed to indirect flood impacts, emergency route planning, and scenario tests for ambulance access. Related records: OpenEMS (model-openems-ambulance-deployment) optimises ambulance locations, and AccessMod (model-accessmod) computes health access under disrupted roads.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "flood transport disruption hospital access model Germany code",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://doi.org/10.5281/zenodo.13968711",
+  "id": "model-flood-traffic-hospital-access-germany",
+  "inputs": [
+    "OpenStreetMap road network (Geofabrik Europe extract)",
+    "Hospital locations from OpenStreetMap",
+    "Regional flood model events and downscaled 5 m flood rasters",
+    "GHS-POP 2020 population raster",
+    "German Mobility Panel trip data (optional, ordered separately)"
+  ],
+  "language": [
+    "not_stated"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-06-26",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "model_kind": [
+    "network",
+    "physical"
+  ],
+  "name": "Flood-induced traffic disruption model for hospital access in Germany (hidden risks in healthcare)",
+  "outputs": [
+    "Traffic flows and rerouting under flood scenarios",
+    "Hospitals at risk of patient surges or delayed emergency access",
+    "Interactive maps"
+  ],
+  "provider": "Jonas Wassmer and co-authors (Potsdam Institute for Climate Impact Research and University of Potsdam)",
+  "regions": [
+    "Germany"
+  ],
+  "related_ids": [
+    "model-openems-ambulance-deployment",
+    "model-accessmod"
+  ],
+  "runs_on": [
+    "High-performance computing for road network loads (precomputed results provided)"
+  ],
+  "sectors": [
+    "services.healthcare",
+    "transport.road",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "network_flow",
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Headline, published 2025-08-18, abstract (regional flood model plus gravity-based traffic model on open road data; 75 of 2,475 hospitals at risk of surges, a third more than 10 km from inundation); data and code availability pointing to Zenodo records; correction published 22 May 2026",
+      "url": "https://www.nature.com/articles/s43247-025-02645-y"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Software record, 2024-10-26, CC-BY-4.0, creator Jonas Wassmer (PIK); files hidden-risk.zip, interactive-maps.zip, README (21.2 GB)",
+      "url": "https://zenodo.org/api/records/13990586"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "README: precomputed loads from HPC; repo structure; 100 m and downscaled 5 m flood rasters; required downloads (Geofabrik Europe OSM, GHS-POP 2020 tile, German Mobility Panel); path settings",
+      "url": "https://zenodo.org/api/records/13990586/files/README.md/content"
+    }
+  ],
+  "tags": [
+    "flood",
+    "road network",
+    "hospital access",
+    "traffic rerouting",
+    "gravity model",
+    "Germany"
+  ],
+  "title_en": "Flood-induced traffic disruption model for hospital access in Germany (hidden risks in healthcare)",
+  "type": "model",
+  "validated_on": []
+}

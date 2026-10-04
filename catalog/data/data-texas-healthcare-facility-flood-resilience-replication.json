@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Replication package (input.zip, output.zip, README)",
+      "url": "https://zenodo.org/records/21510695"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code, execution and plotting scripts (GitHub)",
+      "url": "https://github.com/gizemtt/Multi-Objective-Planning-for-Healthcare-Facility-Resilience"
+    },
+    {
+      "kind": "paper",
+      "label": "Multi-Objective Planning for Healthcare Facility Resilience: Mitigate Now or Respond Later? (arXiv)",
+      "url": "https://arxiv.org/abs/2608.26304"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "scenarios_projections",
+    "social_vulnerability_equity",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "tabular",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "replication package for multi objective healthcare facility resilience planning texas 3 752 hospitals and nursing homes tropical cyclone flood scenarios hardening restoration and evacuation costs and social vulnerability weights",
+    "repo": "github.com/gizemtt/multi-objective-planning-for-healthcare-facility-resilience",
+    "url": "https://zenodo.org/records/21510695"
+  },
+  "description": "This replication package holds the inputs and results of a study that plans flood protection and patient evacuation for every hospital and nursing home in Texas together. It was deposited on Zenodo by Toplu-Tutay, Kammer-Kerwick, Hasenbein and Kutanoglu of The University of Texas at Austin, with the model code in a linked GitHub repository. The inputs cover 3,752 facilities with locations, bed capacities and occupancy; flood scenarios derived from 27 tropical cyclones that struck Texas between 1993 and 2018, in a main set and a percentile-based set; costs of hardening each facility, of restoring it after flooding and of moving patients between facilities; and census-tract social vulnerability used to weight service disruption. The outputs include run records, trade-off frontiers and decision variables from a two-stage stochastic model solved by Benders decomposition and a Lagrangian-dual method, with value-of-information analyses. The package is free and available to download under CC-BY-4.0. Caveats: the code repository could not be read from this environment, the cost and scenario inputs are modelling assumptions, not observed values, and coverage is limited to Texas. Simulation uses: testing hospital hardening and evacuation strategies against hurricane flooding, benchmarking optimisation methods, and reusing the facility, cost and scenario tables in other exposure studies. Related records: the CMS provider data on hospitals (data-cms-provider-data-hospitals) gives the national facility register such studies start from.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hand-off to the services piece (integrator list handoffs/services.csv): multi-objective planning for healthcare facility resilience (arXiv 2608.26304)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "archive"
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge",
+    "storm_wind"
+  ],
+  "homepage": "https://zenodo.org/records/21510695",
+  "id": "data-texas-healthcare-facility-flood-resilience-replication",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-12",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Replication package for multi-objective healthcare facility resilience planning (Texas): 3,752 hospitals and nursing homes, tropical cyclone flood scenarios, hardening, restoration and evacuation costs, and social vulnerability weights",
+  "notes": "Deep check A4 (2026-10-01) corrected: last_updated .",
+  "provider": "Toplu-Tutay, Kammer-Kerwick, Hasenbein and Kutanoglu, The University of Texas at Austin (deposited on Zenodo)",
+  "regions": [
+    "Texas"
+  ],
+  "related_ids": [
+    "data-cms-provider-data-hospitals"
+  ],
+  "schema_summary": "input/: HospitalsandNursingHomes.csv (facilities and locations), facility_beds_occupancy.csv, facility_hardening_cost.csv, facility_restoration_cost.csv, evacuation_costs.csv (interfacility), facility_service_disruption_V.csv (vulnerability-weighted impact weights), census_tract/Texas_svi.csv, flood_scenarios_585_q2.csv (main set) and flood_scenarios_585_q1q2q3.csv (percentile set); output/: Benders-decomposition and Lagrangian-dual run records, epsilon-constraint solutions, decision-variable exports, EVPI and VSS results",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "emergency_response",
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Zenodo record (read through the records API): Replication Package for Multi-Objective Planning for Healthcare Facility Resilience: Mitigate Now or Respond Later?, published 2026-06-12, CC-BY-4.0, creators from The University of Texas at Austin; input data for 3,752 hospitals and nursing homes in Texas (locations, bed capacities, occupancy), climate-informed flood scenarios from 27 tropical cyclones 1993 to 2018, interfacility patient-evacuation costs, hardening and restoration costs, census-tract social vulnerability index; outputs from Benders-decomposition and Lagrangian-dual methods with EVPI and VSS analyses; files input.zip, output.zip, README_Zenodo.md; code on GitHub",
+      "url": "https://zenodo.org/records/21510695"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "README read in memory: archive tree of input and output folders, the two flood-scenario files (main and percentile-based sets), description of Benders and Lagrangian-dual output folders, and reproduction steps (clone the GitHub repository, extract input/ into it, follow its README)",
+      "url": "https://zenodo.org/records/21510695/files/README_Zenodo.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Accompanying paper named in the hand-off list; bi-objective two-stage stochastic optimisation of facility hardening and scenario-dependent patient evacuation",
+      "url": "https://arxiv.org/abs/2608.26304"
+    }
+  ],
+  "spatial_resolution": "Individual facility; census tract for social vulnerability",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospitals",
+    "nursing homes",
+    "flood",
+    "hurricanes",
+    "evacuation",
+    "stochastic optimisation",
+    "Texas",
+    "replication package"
+  ],
+  "temporal_coverage": "Flood scenarios from 27 tropical cyclones that affected Texas, 1993 to 2018",
+  "temporal_resolution": "Scenario-based",
+  "temporal_resolution_class": "event",
+  "title_en": "Replication package for multi-objective healthcare facility resilience planning (Texas): 3,752 hospitals and nursing homes, tropical cyclone flood scenarios, hardening, restoration and evacuation costs, and social vulnerability weights",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

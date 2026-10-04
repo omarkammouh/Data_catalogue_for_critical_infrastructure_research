@@ -1,0 +1,141 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Census population database (interactive cross tables)",
+      "url": "https://www.dsec.gov.mo/CensosWebDB/"
+    },
+    {
+      "kind": "api",
+      "label": "Housing dimensions for 2021 (JSON, GET)",
+      "url": "https://www.dsec.gov.mo/InReportApi/Censos2016/AllHousingMeta2021"
+    },
+    {
+      "kind": "api",
+      "label": "Housing data (JSON, POST with dimensions, filters and year)",
+      "url": "https://www.dsec.gov.mo/InReportApi/Censos2016/AllHousingData"
+    },
+    {
+      "kind": "portal",
+      "label": "Census 2021 website",
+      "url": "https://www.dsec.gov.mo/Censos2021/en-US/"
+    },
+    {
+      "kind": "viewer",
+      "label": "Statistical geographic information system by statistical unit",
+      "url": "https://www.dsec.gov.mo/gis/unidade/?lang=en"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "MO"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "dsec macao population census 2011 and 2021 and by census 2016 interactive database housing units by parish and statistical district with building occupancy year usable area tenure and housing type json api",
+    "url": "https://dsec.gov.mo/CensosWebDB"
+  },
+  "description": "Macao's Statistics and Census Service runs an interactive census database for the 2011 and 2021 censuses and the 2016 by-census, with a JSON API behind it that the web application calls without registration. The housing dataset cross tabulates units by parish and statistical district with type of housing (private, economic or social), tenure, mortgage and rent bands, the starting year of occupancy of the building (before 1980 to 2010 and after), usable area of the unit, household size, composition and earnings. Separate datasets cover residents, labour and households. Coverage is the whole territory: a query of the 2021 housing dataset by parish returned 201,817 units, 79,837 of them in Nossa Senhora de Fátima. Format and access: free; the metadata endpoint answers a GET and the data endpoint a POST naming dimensions, filters and year; the census 2021 website is a JavaScript application, and a statistical GIS shows figures by statistical unit. Licence: not stated on the pages read. Caveats: the API is undocumented and meant for the web application; dimension names in the data query differ from those in the 2021 metadata; the unit counted in the housing dataset is not named in the responses. Simulation uses: district level building age and unit size for exposure and densification studies in a dense city. Related records: the DSOP Macao public works list.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:MO:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.dsec.gov.mo/CensosWebDB/",
+  "id": "data-dsec-macao-census-2021-housing-database-by-statistical-district",
+  "languages": [
+    "zh",
+    "pt",
+    "en"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.dsec.gov.mo/InReportApi/Censos2016/AllHousingData"
+    ]
+  },
+  "maturity": "active",
+  "name": "DSEC Macao Population Census 2011 and 2021 and By-census 2016 interactive database, housing units by parish and statistical district with building occupancy year, usable area, tenure and housing type (JSON API)",
+  "provider": "Statistics and Census Service of Macao SAR (DSEC)",
+  "related_ids": [
+    "data-dsop-macao-public-works-list"
+  ],
+  "schema_summary": "Housing dataset dimensions for 2021: parish, statistical district (24), type of housing (private, economic, social), tenure, mortgage payment, rent, starting year of occupancy of building (before 1980 to 2010 and after), usable area of unit (under 40 m2 to 120 m2 and over), number of household members, household composition, household earnings; separate resident, labour, household and local population datasets",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: links to Censos2021 and Intercensos2016",
+      "url": "https://www.dsec.gov.mo/en-US/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: API domain and endpoint names",
+      "url": "https://www.dsec.gov.mo/CensosWebDB/scripts/scripts-e1f4d1f46c.js"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: 11 dimensions with values",
+      "url": "https://www.dsec.gov.mo/InReportApi/Censos2016/AllHousingMeta2021"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: POST results by parish for 2011, 2016 and 2021",
+      "url": "https://www.dsec.gov.mo/InReportApi/Censos2016/AllHousingData"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://www.dsec.gov.mo/CensosWebDB/"
+    }
+  ],
+  "spatial_resolution": "7 parishes (freguesias) and 23 or 24 statistical districts (zonas), depending on the census year",
+  "spatial_resolution_class": "varies",
+  "tags": [
+    "census",
+    "Macao",
+    "census 2021",
+    "housing",
+    "statistical district",
+    "building age",
+    "JSON API"
+  ],
+  "temporal_coverage": "census 2011, by-census 2016 and census 2021",
+  "temporal_coverage_years": {
+    "end": 2021,
+    "start": 2011
+  },
+  "temporal_resolution": "five yearly",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "DSEC Macao Population Census 2011 and 2021 and By-census 2016 interactive database, housing units by parish and statistical district with building occupancy year, usable area, tenure and housing type (JSON API)",
+  "type": "data"
+}

@@ -1,0 +1,136 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "AGEB and urban block results, Aguascalientes (CSV ZIP; files 01 to 32 by state)",
+      "url": "https://www.inegi.org.mx/contenidos/programas/ccpv/2020/datosabiertos/ageb_manzana/ageb_mza_urbana_01_cpv2020_csv.zip"
+    },
+    {
+      "kind": "download",
+      "label": "ITER results by locality, national (CSV ZIP)",
+      "url": "https://www.inegi.org.mx/contenidos/programas/ccpv/2020/datosabiertos/iter/iter_00_cpv2020_csv.zip"
+    },
+    {
+      "kind": "portal",
+      "label": "SCITEL census tables by state (XLSX, CSV)",
+      "url": "https://www.inegi.org.mx/app/scitel/Default?ev=10"
+    },
+    {
+      "kind": "docs",
+      "label": "Data dictionary (national microdata catalogue)",
+      "url": "https://www.inegi.org.mx/rnm/index.php/catalog/632/data_dictionary"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "MX"
+  ],
+  "data_family": [
+    "system_description",
+    "reference_context",
+    "behavioural_social"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "inegi censo de poblacion y vivienda 2020 main results by ageb and urban block manzana with dwelling services and ict",
+    "url": "https://inegi.org.mx/programas/ccpv/2020"
+  },
+  "description": "INEGI publishes the main results of Mexico's 2020 Census of Population and Housing for every urban AGEB (basic geostatistical area) and urban block, in one open-data file per state, and a national ITER file of results by locality. Each row holds some 222 indicators. For dwellings these give the total, inhabited, uninhabited and temporary-use counts, occupants per room, rooms and bedrooms, dirt floors, and whether inhabited private dwellings have electricity, piped water and public water supply, a roof tank or cistern, a toilet or latrine and drainage, plus cars, motorcycles, bicycles, landlines, mobile phones, computers and internet. The Aguascalientes file has 16,376 rows. The files were last replaced on 26 July 2021 to add the AGEB and blocks of urban localities under 2,500 inhabitants. Format and access: ZIP archives with the data as CSV, a data dictionary and metadata, free to download; SCITEL gives state tables in XLSX and CSV. Licence: INEGI terms of free use, which allow copying, adapting and commercial use with credit to INEGI; free. Caveats: the files are in Latin-1 encoding, the CSV has no geometry, so blocks must be joined to INEGI's geostatistical framework, and the block files cover urban areas only. Simulation uses: block-level exposure of dwellings, service gaps in water, sanitation and electricity, and household ICT and vehicle access for demand and accessibility models. Related records: IPUMS International and the INEGI GNSS network record.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:MX:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.inegi.org.mx/programas/ccpv/2020/",
+  "id": "data-inegi-censo-2020-ageb-and-urban-block-results",
+  "languages": [
+    "es"
+  ],
+  "last_updated": "2021-07-26",
+  "licence": "Términos de Libre Uso de la Información del INEGI (free use, including commercial, with attribution)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.inegi.org.mx/programas/ccpv/2020/"
+    ]
+  },
+  "maturity": "stale",
+  "name": "INEGI Censo de Población y Vivienda 2020, main results by AGEB and urban block (manzana), with dwelling services and ICT",
+  "provider": "Instituto Nacional de Estadística y Geografía (INEGI), Mexico",
+  "related_ids": [
+    "data-ipums-international-census-microdata",
+    "data-inegi-rgna-mexico-gnss-network"
+  ],
+  "schema_summary": "One row per state, municipality, locality, AGEB and block with about 222 indicators: population by age and sex, education, economic activity, health cover; households; total, inhabited, uninhabited and temporary-use dwellings; occupants per room; dirt floor; electricity; piped water and public supply; water tank (tinaco) and cistern; toilet, latrine and drainage; car, motorcycle, bicycle; landline, mobile, internet, computer",
+  "sectors": [
+    "built_environment.buildings",
+    "water.drinking_water",
+    "water.wastewater",
+    "energy.electricity",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Downloaded: data CSV (16,376 rows), dictionary of 222 indicators incl. dwelling services 170-222, metadata (modified 2021-07-26, licence link to INEGI terms)",
+      "url": "https://www.inegi.org.mx/contenidos/programas/ccpv/2020/datosabiertos/ageb_manzana/ageb_mza_urbana_01_cpv2020_csv.zip"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Terms of free use: copy, distribute, adapt, extract and exploit commercially, credit INEGI",
+      "url": "https://www.inegi.org.mx/inegi/terminos.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "SCITEL: tables by state in XLSX and CSV",
+      "url": "https://www.inegi.org.mx/app/scitel/Default?ev=10"
+    }
+  ],
+  "spatial_resolution": "urban AGEB (basic geostatistical area) and urban block (manzana); localities in ITER",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "Mexico",
+    "AGEB",
+    "manzana",
+    "dwellings",
+    "water",
+    "drainage",
+    "electricity",
+    "internet"
+  ],
+  "temporal_coverage": "census reference date 15 March 2020",
+  "temporal_coverage_years": {
+    "end": 2020,
+    "start": 2020
+  },
+  "temporal_resolution": "none (census snapshot, decennial)",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "INEGI Population and Housing Census 2020, main results by AGEB and urban block (apple tree), with dwelling services and ICT",
+  "type": "data"
+}

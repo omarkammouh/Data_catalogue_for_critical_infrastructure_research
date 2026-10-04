@@ -1,0 +1,136 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Buildings time series (CSV)",
+      "url": "https://data.statistik.gv.at/data/OGD_rzgwz_gwz_zr_geb_GWZ_GEB_1.csv"
+    },
+    {
+      "kind": "portal",
+      "label": "Dwellings time series metadata",
+      "url": "https://data.statistik.gv.at/web/meta.jsp?dataset=OGD_rzgwz_gwz_zr_whg_GWZ_WHG_1"
+    },
+    {
+      "kind": "download",
+      "label": "Dwellings time series (CSV)",
+      "url": "https://data.statistik.gv.at/data/OGD_rzgwz_gwz_zr_whg_GWZ_WHG_1.csv"
+    },
+    {
+      "kind": "docs",
+      "label": "Address, Buildings and Dwellings Register (background)",
+      "url": "https://www.statistik.at/en/databases/address-buildings-and-dwellings-register"
+    },
+    {
+      "kind": "portal",
+      "label": "Open data catalogue of Statistik Austria",
+      "url": "https://data.statistik.gv.at/web/catalog.jsp"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "AT"
+  ],
+  "data_family": [
+    "system_description",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "austria housing census gebaude und wohnungszahlung buildings and dwellings by political district time series from 2011 statistik austria ogd",
+    "url": "https://data.statistik.gv.at/web/meta.jsp?dataset=OGD_rzgwz_gwz_zr_geb_GWZ_GEB_1"
+  },
+  "description": "Two open tables from Statistik Austria's register-based housing census (Gebäude- und Wohnungszählung) give the stock of buildings and of conventional dwellings in every Austrian political district for the census reference date of 31 October in 2011 and in each year from 2021 to 2024. Buildings are split by predominant use: residential buildings with one, two, or three or more dwellings, buildings for institutional households, and non-residential buildings. Dwellings are split by whether at least one person has their main residence there, which separates occupied from vacant or second homes. The producer is Statistik Austria, which derives the census from its Buildings and Dwellings Register and other administrative registers under the EU census regulation and the Austrian Register-based Census Act. Coverage is all of Austria at district level (117 units in the 2024 territorial structure). Format and access: semicolon-separated CSV with separate header and code-list files, plus a JSON service, downloadable without registration from data.statistik.gv.at. Licence: CC BY 4.0, free of charge. Caveats: counts only, no building-level records; the Vienna dwelling stock omits unoccupied dwellings created by extensions or conversions between 2012 and 2023, as the metadata notes; finer tables (municipality, construction period, heating) are in STATcube. Simulation uses: exposure models of the building stock, vacancy-aware demand estimates and district-level calibration of building stock models. Related records: the Swiss GWR register, the Danish BBR, Germany's Zensus 2022 grid and the EU Building Stock Observatory.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:AT:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.statistik.gv.at/web/meta.jsp?dataset=OGD_rzgwz_gwz_zr_geb_GWZ_GEB_1",
+  "id": "data-austria-housing-census-buildings-dwellings-by-district",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "last_updated": "2026-06-09",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Austria housing census (Gebäude- und Wohnungszählung) buildings and dwellings by political district, time series from 2011 (Statistik Austria OGD)",
+  "provider": "Statistik Austria",
+  "related_ids": [
+    "data-switzerland-gwr-federal-register-buildings-dwellings",
+    "data-denmark-bbr-building-and-dwelling-register",
+    "data-zensus-2022-grid-cells-buildings-dwellings",
+    "data-eu-building-stock-observatory",
+    "data-austria-register-census-municipality-key-results"
+  ],
+  "schema_summary": "buildings by predominant use (residential with 1, 2, 3+ dwellings, institutional, non-residential); conventional dwellings by occupancy (with or without usual residents); year; district code",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Buildings time series metadata: complete survey at 31.10 from the GWR, CC BY 4.0, first published 2017-11-16, last update 2026-06-09",
+      "url": "https://data.statistik.gv.at/web/meta.jsp?dataset=OGD_rzgwz_gwz_zr_geb_GWZ_GEB_1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Dwellings time series metadata, including the Vienna caveat on unoccupied dwellings 2012-2023",
+      "url": "https://data.statistik.gv.at/web/meta.jsp?dataset=OGD_rzgwz_gwz_zr_whg_GWZ_WHG_1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Columns: buildings, year, region (district, territorial structure 2024), type of building; years 2011, 2021-2024; 117 district codes",
+      "url": "https://data.statistik.gv.at/data/OGD_rzgwz_gwz_zr_geb_GWZ_GEB_1_HEADER.csv"
+    }
+  ],
+  "spatial_resolution": "political district (Bezirk, 117 units) and Austria total",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "census",
+    "housing census",
+    "building stock",
+    "dwellings",
+    "vacancy",
+    "Austria",
+    "register-based census"
+  ],
+  "temporal_coverage": "census reference dates 31 October 2011 and 2021 to 2024",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2011
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Austria housing census (Building and housing census) buildings and dwellings by political district, time series from 2011 (Statistik Austria OGD)",
+  "type": "data",
+  "update_frequency": "annual"
+}

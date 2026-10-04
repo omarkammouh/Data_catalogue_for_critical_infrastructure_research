@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Per-commune CityGML zips, file geodatabase, GeoPackage and GeoJSON footprints",
+      "url": "https://data.public.lu/fr/datasets/base-de-donnees-nationale-des-batiments-3d-2023/"
+    },
+    {
+      "kind": "download",
+      "label": "Earlier national 3D buildings 2020",
+      "url": "https://data.public.lu/fr/datasets/base-de-donnees-nationale-des-batiments-3d-2020/"
+    },
+    {
+      "kind": "api",
+      "label": "data.public.lu dataset API",
+      "url": "https://data.public.lu/api/1/datasets/base-de-donnees-nationale-des-batiments-3d-2023/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "LU"
+  ],
+  "data_family": [
+    "system_description",
+    "imagery_remote_sensing"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "base de donnees nationale des batiments 3d 2023 luxembourg lod2 2 citygml and 2d footprints",
+    "url": "https://data.public.lu/fr/datasets/base-de-donnees-nationale-des-batiments-3d-2023"
+  },
+  "description": "The national 3D buildings database of Luxembourg, produced by the Administration du cadastre et de la topographie, models every building in the Grand Duchy at level of detail 2.2 from aerial photography flown in summer 2023. Roofs were restituted photogrammetrically with a root mean square error of 20 cm or less in x, y and z, then extruded to the ground and textured from oblique images; only buildings with a footprint over 20 square metres were captured, with roof superstructures such as dormers whose longest side exceeds 50 cm and volume exceeds 1 cubic metre. Each commune comes as a zip with a CityGML file of building, roof, wall and ground surface objects and JPEG textures, and a file geodatabase holds all models as multipatch features; 2D footprints derived from the roof extents are offered as file geodatabase, GeoPackage and GeoJSON. Coverage: the whole country, in LUREF (EPSG:2169). Access: free downloads on data.public.lu; version 2 of 17 March 2026 corrects and upgrades the data; the dataset is planned to be renewed every three years. Licence: CC0 1.0. Caveats: footprints follow roof outlines, not walls, and buildings under 20 square metres are missing. Simulation uses are national 3D building geometry for solar, flood, heat and noise models and digital twins. Related records: swissBUILDINGS3D and the Estonian 3D building models.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: Administration du cadastre et de la topographie homepage",
+      "route": "R10",
+      "source": "organisations.csv:LU:built_environment:cadastre"
+    }
+  ],
+  "formats": [
+    "gml",
+    "esri_geodatabase",
+    "geopackage",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.public.lu/fr/datasets/base-de-donnees-nationale-des-batiments-3d-2023/",
+  "id": "data-luxembourg-act-national-3d-buildings-2023",
+  "languages": [
+    "fr"
+  ],
+  "last_updated": "2026-03-25",
+  "licence": "CC0 1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Base de données nationale des bâtiments 3D 2023 (Luxembourg, LOD2.2 CityGML and 2D footprints)",
+  "provider": "Administration du cadastre et de la topographie (ACT), Luxembourg",
+  "related_ids": [
+    "data-swissbuildings3d-swisstopo",
+    "data-estonia-3d-building-models-maa-ja-ruumiamet"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Dataset API: CC0, triennial, description of modelling (summer 2023 flights, RMSE <= 20 cm, 20 m2 threshold, dormers), CityGML per commune, multipatch GDB, 2D footprints GPKG and GeoJSON, EPSG:2169, update of 17/03/2026, last modified 2026-03-25",
+      "url": "https://data.public.lu/api/1/datasets/base-de-donnees-nationale-des-batiments-3d-2023/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Search lists 3D buildings 2013 LOD1, 2020 and 2023 editions by ACT",
+      "url": "https://data.public.lu/api/1/datasets/?q=batiments"
+    }
+  ],
+  "tags": [
+    "3D buildings",
+    "CityGML",
+    "LOD2",
+    "Luxembourg",
+    "building footprints"
+  ],
+  "temporal_coverage": "Aerial imagery of summer 2023; earlier editions 2013 (LOD1) and 2020",
+  "title_en": "National database of 3D buildings 2023 (Luxembourg, LOD2.2 CityGML and 2D footprints)",
+  "type": "data"
+}

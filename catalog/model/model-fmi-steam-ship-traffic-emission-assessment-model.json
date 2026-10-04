@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "FMI maritime emissions page",
+      "url": "https://en.ilmatieteenlaitos.fi/surveying-maritime-emissions"
+    },
+    {
+      "kind": "paper",
+      "label": "Jalkanen et al. 2012, Atmospheric Chemistry and Physics",
+      "url": "https://doi.org/10.5194/acp-12-2641-2012"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "on_request",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "steam ship traffic emission assessment model finnish meteorological institute",
+    "url": "https://en.ilmatieteenlaitos.fi/surveying-maritime-emissions"
+  },
+  "description": "STEAM (Ship Traffic Emission Assessment Model) is the Finnish Meteorological Institute's model for building ship emission inventories from individual vessel movements, developed by Jukka-Pekka Jalkanen and colleagues. Method: it reads Automatic Identification System (AIS) position reports, combines them with each ship's technical data and emission factors, and computes fuel use and emissions ship by ship, so the inventories follow changes in routing and operation; the 2012 Atmospheric Chemistry and Physics paper covers NOx, SOx, CO2, particulate matter and CO at a resolution of a few tens of metres and validates results against EMEP data. Coverage: applications range from single harbours to the Baltic Sea and Danish Straits and global studies; FMI shows the 2011 Baltic Sea CO2 map. Format and access: described on FMI's research pages and in peer-reviewed papers; no public code release was found. Licence and cost: no licence stated; use would need contact with FMI. Caveats: output quality depends on AIS coverage and ship data. Its emission fields can feed air quality exposure studies around ports and shipping lanes and link traffic flows to environmental impact. It relates to the Rhine ship emissions measurements and AIS data sharing records in the catalogue.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "STEAM ship traffic emission assessment model Finnish Meteorological Institute AIS",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://en.ilmatieteenlaitos.fi/surveying-maritime-emissions",
+  "id": "model-fmi-steam-ship-traffic-emission-assessment-model",
+  "inputs": [
+    "AIS vessel position reports, ship technical data (engines, fuels, hull), emission factors"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Not stated on the pages read (no public code release found)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "STEAM Ship Traffic Emission Assessment Model (Finnish Meteorological Institute)",
+  "outputs": [
+    "Gridded, fully dynamic ship emission inventories (NOx, SOx, CO2, PM, CO) from harbour to global scale"
+  ],
+  "provider": "Finnish Meteorological Institute (FMI), Jukka-Pekka Jalkanen and colleagues",
+  "related_ids": [
+    "data-rhine-worms-inland-ship-emission-plume-measurements-2021-2022",
+    "data-aishub-ais-data-exchange"
+  ],
+  "sectors": [
+    "transport.maritime_ports",
+    "transport.inland_waterways"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "purpose, AIS basis, dynamic inventories, harbour-to-global, Baltic 2011 CO2 map",
+      "url": "https://en.ilmatieteenlaitos.fi/surveying-maritime-emissions"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "authors, pollutants, resolution, Baltic and Danish Straits, EMEP validation",
+      "url": "https://doi.org/10.5194/acp-12-2641-2012"
+    }
+  ],
+  "tags": [
+    "ship emissions",
+    "AIS",
+    "emission inventory",
+    "Baltic Sea",
+    "air quality",
+    "r2-fresh-transport"
+  ],
+  "title_en": "STEAM Ship Traffic Emission Assessment Model (Finnish Meteorological Institute)",
+  "type": "model"
+}

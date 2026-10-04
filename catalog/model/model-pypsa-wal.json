@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/open-energy-transition/pypsa-wal"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/open-energy-transition/pypsa-wal/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "BE"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pypsa wal belgian energy system model",
+    "repo": "github.com/open-energy-transition/pypsa-wal",
+    "url": "https://github.com/open-energy-transition/pypsa-wal"
+  },
+  "description": "PyPSA-Wal is a Belgian energy-system model built as a soft fork of PyPSA-Eur with extra attention to Wallonia. Open Energy Transition publishes the workflow, code, source configuration and a project report; intermediate results are generated from raw inputs, not committed as ready-made outputs. Users provide energy demand, generators, networks, weather and technology assumptions, then run Snakemake stages to build and optimise scenarios. Outputs are capacities, dispatch and energy flows for selected Belgian regions and planning years. Geographic coverage includes Flanders, Brussels and Wallonia, with border assumptions. The README states MIT terms for the code; individual input data have separate rights. A limitation is that building results requires substantial processing, with a cited example using about 8.24 GB of memory, and the PyPSA-Eur parent has known modelling limits. The model supports Belgian energy-transition studies. The catalogue's model-pypsa-eur is the parent workflow, but it does not cover this Belgian configuration. No raw input or model result was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "open-energy-transition/pypsa-wal linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/open-energy-transition/pypsa-wal",
+  "id": "model-pypsa-wal",
+  "inputs": [
+    "Belgian energy demand, generation, network and weather data"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-11-24",
+  "licence": "MIT for code; input-data terms vary",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "PyPSA-Wal Belgian energy-system model",
+  "notes": "G7 G7-1410. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Optimised capacity, dispatch and energy-flow results"
+  ],
+  "provider": "Open Energy Transition gGmbH",
+  "related_ids": [
+    "model-pypsa-eur"
+  ],
+  "repository": "https://github.com/open-energy-transition/pypsa-wal",
+  "sectors": [
+    "energy.electricity",
+    "energy.gas_hydrogen",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for open-energy-transition/pypsa-wal: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/open-energy-transition/pypsa-wal"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/open-energy-transition/pypsa-wal/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://api.github.com/repos/open-energy-transition/pypsa-wal/contents/LICENSES"
+    }
+  ],
+  "tags": [],
+  "title_en": "Optimisation model for electricity, gas and hydrogen and district heating and cooling",
+  "type": "model"
+}

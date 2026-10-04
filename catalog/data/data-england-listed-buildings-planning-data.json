@@ -1,0 +1,140 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "planning.data.gov.uk listed building dataset",
+      "url": "https://www.planning.data.gov.uk/dataset/listed-building"
+    },
+    {
+      "kind": "api",
+      "label": "Entity API (JSON)",
+      "url": "https://www.planning.data.gov.uk/entity.json?dataset=listed-building"
+    },
+    {
+      "kind": "download",
+      "label": "Example local authority copy: London Borough of Barnet (CSV, GeoPackage, XML)",
+      "url": "https://open.barnet.gov.uk/download/2w6jz/ztc/statutory-listed-buildings.csv"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "governance_regulation",
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "listed buildings in england national heritage list entries on planning data gov uk",
+    "url": "https://planning.data.gov.uk/dataset/listed-building"
+  },
+  "description": "This dataset lists the buildings in England that have legal protection for special architectural or historic interest, from the National Heritage List for England maintained by Historic England, as published on the government's planning data platform. The platform describes it as a beta geography dataset with 382,270 entities, attributed to Historic England, with each entry giving the list entry reference, name, listing grade (I, II* or II), start date and a point location, and linking to the list entry on Historic England's site. Many local authorities publish their own copies: the London Borough of Barnet provides polygons as CSV, GeoPackage and XML, and Harlow, Teignbridge, Norwich and others list layers on data.gov.uk, some without files. Coverage is all of England. Access: dataset page and a JSON entity API on planning.data.gov.uk. Licence: Open Government Licence version 3, with Historic England and Ordnance Survey attribution; free. Caveats: points do not define the extent of the listing; Historic England's own download page was behind a Cloudflare check today. Simulation uses: heritage constraints in retrofit, flood and heat adaptation planning. Related records: England conservation areas and Historic Environment Scotland designations.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"building\" \"condition\"",
+      "route": "R02",
+      "source": "data-gov-uk"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "\"building\" \"regulation\"",
+      "route": "R02",
+      "source": "data-gov-uk"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "\"building\" \"plan\"",
+      "route": "R02",
+      "source": "data-gov-uk"
+    }
+  ],
+  "formats": [
+    "api",
+    "csv",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.planning.data.gov.uk/dataset/listed-building",
+  "id": "data-england-listed-buildings-planning-data",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "OGL-UK-3.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://ckan.publishing.service.gov.uk/api/3/action/package_show?id=inspire_listed_buildings"
+    ],
+    "dead_since": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Listed buildings in England (National Heritage List entries on planning.data.gov.uk)",
+  "notes": "Local authority copies (Harlow WMS, Teignbridge and 12 others, Norwich, Barnet) are matched to this record as derived copies of the national list.",
+  "provider": "Historic England, published by the Ministry of Housing, Communities and Local Government planning data platform",
+  "regions": [
+    "England"
+  ],
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Dataset text, 382,270 entities, attribution Historic England, OGL v3, beta phase, point caveat",
+      "url": "https://www.planning.data.gov.uk/dataset/listed-building.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Entity fields: reference, name, grade, start date, point, documentation URL",
+      "url": "https://www.planning.data.gov.uk/entity.json?dataset=listed-building&limit=1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Barnet copy: polygons, XML, CSV, GPKG, NHLE as official register",
+      "url": "https://ckan.publishing.service.gov.uk/api/3/action/package_show?id=statutory-listed-buildings1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Harlow copy, WMS",
+      "url": "https://ckan.publishing.service.gov.uk/api/3/action/package_show?id=inspire_listed_buildings"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "HTTP 403 (Cloudflare verification)",
+      "url": "https://historicengland.org.uk/listing/the-list/data-downloads/"
+    }
+  ],
+  "spatial_resolution": "One point per listed building",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "listed buildings",
+    "heritage",
+    "National Heritage List for England",
+    "Historic England",
+    "planning data"
+  ],
+  "temporal_resolution": "Continuously updated entries",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Listed buildings in England (National Heritage List entries on planning.data.gov.uk)",
+  "type": "data"
+}

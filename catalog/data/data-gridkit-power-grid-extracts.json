@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Toolkit source code",
+      "url": "https://github.com/bdw/GridKit"
+    },
+    {
+      "kind": "portal",
+      "label": "European and North American extracts",
+      "url": "https://doi.org/10.5281/zenodo.47317"
+    },
+    {
+      "kind": "portal",
+      "label": "ENTSO-E interactive map extract",
+      "url": "https://doi.org/10.5281/zenodo.55853"
+    },
+    {
+      "kind": "portal",
+      "label": "GridKit 1.0 code archive",
+      "url": "https://doi.org/10.5281/zenodo.47263"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "north_america"
+  ],
+  "cost": "free",
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gridkit power grid extraction toolkit and extracts europe north america entso e map",
+    "repo": "github.com/bdw/gridkit",
+    "url": "https://github.com/bdw/GridKit"
+  },
+  "description": "GridKit is a toolkit that turns OpenStreetMap power objects into a topologically connected network model of the electric power system, and its published extracts give ready-made high-voltage networks for Europe and North America. It was developed by Bart Wiegmans in the SciGRID project at the Next Energy research institute, to test heuristic spatial and topological analysis alongside SciGRID's route-based approach, and runs as PostgreSQL scripts with PostGIS. The 2016 extracts give stations in a vertices file and lines in a links file for the European and North American high-voltage grids, with OpenStreetMap as the primary source; a separate unofficial extract of the ENTSO-E interactive map of May 2016, covering Europe and to a limited extent North Africa and the Middle East, was processed into complete topological connections. Coverage is Europe and North America. Files are small ZIP archives of CSV tables, downloadable from Zenodo at no cost, with the OpenStreetMap extracts under ODbL, the ENTSO-E extract under CC BY 4.0 and the code under MIT. Caveats: ENTSO-E map coordinates favour clarity over accuracy, voltages are lower bounds of ranges, some DC lines lack voltage, the extracts are from 2016, and electrical parameters must be assumed. Simulation uses are power flow and network vulnerability studies of continental grids. Related records: data-pypsa-eur-osm-prebuilt-network is a newer OpenStreetMap-based European grid.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid fragility curve",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "power grid asset condition",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "power grid simulation model",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://github.com/bdw/GridKit",
+  "id": "data-gridkit-power-grid-extracts",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-01-24",
+  "licence": "ODbL-1.0 (OpenStreetMap extracts); CC-BY-4.0 (ENTSO-E extract); MIT (code)",
+  "licence_type": [
+    "attribution",
+    "share_alike",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "GridKit power grid extraction toolkit and extracts (Europe, North America, ENTSO-E map)",
+  "provider": "Bart Wiegmans (SciGRID project, Next Energy)",
+  "related_ids": [
+    "data-pypsa-eur-osm-prebuilt-network"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, SciGRID, Next Energy, PostGIS, intended uses and cautions",
+      "url": "https://raw.githubusercontent.com/bdw/GridKit/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT, Bart Wiegmans 2016",
+      "url": "https://raw.githubusercontent.com/bdw/GridKit/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Europe and North America extracts, vertices/links, OSM, ODbL, 2016",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.47317"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "ENTSO-E map extract 2016-05-11, caveats, CC-BY-4.0",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.55853"
+    }
+  ],
+  "tags": [
+    "GridKit",
+    "OpenStreetMap",
+    "SciGRID",
+    "ENTSO-E map",
+    "network topology",
+    "Europe",
+    "North America"
+  ],
+  "title_en": "GridKit power grid extraction toolkit and extracts (Europe, North America, ENTSO-E map)",
+  "type": "data"
+}

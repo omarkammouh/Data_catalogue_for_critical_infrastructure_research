@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Lotação Hospitalar para Doentes Agudos (API)",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/lotacao-praticada-por-tipo-de-cama"
+    },
+    {
+      "kind": "api",
+      "label": "Taxa de Ocupação Hospitalar (API)",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/ocupacao-do-internamento"
+    },
+    {
+      "kind": "portal",
+      "label": "SNS Transparency portal and API console",
+      "url": "https://transparencia.sns.gov.pt/api-console/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "PT"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "demand_operation",
+    "service_performance"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "portugal sns transparency acute hospital bed capacity by bed type and occupancy rate per hospital monthly since 2013",
+    "url": "https://transparencia.sns.gov.pt/explore/dataset/lotacao-praticada-por-tipo-de-cama"
+  },
+  "description": "These two datasets give, for every public hospital in Portugal's National Health Service, how many acute beds are in use each month and how full they are. They are published by the Executive Directorate of the SNS on its Transparency portal. The capacity dataset counts beds available and equipped for immediate admission, split into surgical, medical, neutral (not assigned to a specialty) and other beds, from January 2015 to June 2026, with each hospital's region and coordinates. The occupancy dataset gives inpatient days, beds in use and the occupancy rate per hospital, monthly from January 2013. Both are free and available to download from the portal in CSV, JSON, Excel, Parquet and GeoJSON, and through its open API. Caveats: the most recent two months are provisional, only acute beds are covered, and only in hospitals reporting to the SNS. Simulation uses: setting hospital bed capacity and baseline occupancy in surge and evacuation models, mapping exposure of beds to floods, heat or earthquakes, and checking headroom during epidemics. Related records: the SNS emergency department data (data-sns-portugal-emergency-department-attendances) and the Spanish national hospital catalogue (data-spain-catalogo-nacional-hospitales) cover neighbouring aspects.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: SNS Transparência (PT, health_ministry_service)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "spreadsheet",
+    "parquet",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://transparencia.sns.gov.pt/explore/dataset/lotacao-praticada-por-tipo-de-cama/",
+  "id": "data-sns-portugal-hospital-beds-and-occupancy",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "not stated (portal metadata: license null)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Portugal SNS Transparency: acute hospital bed capacity by bed type and occupancy rate per hospital, monthly since 2013",
+  "provider": "Direção Executiva do Serviço Nacional de Saúde (DE-SNS), Portugal",
+  "related_ids": [
+    "data-sns-portugal-emergency-department-attendances",
+    "data-spain-catalogo-nacional-hospitales"
+  ],
+  "schema_summary": "Beds: tempo (month), regiao, instituicao, localizacao_geografica (lat, lon), tipo_de_camas (surgical, medical, neutral, other), lotacao; 18,809 rows. Occupancy: period, region, institution, location, inpatient days, beds in use, annual inpatient occupancy rate; 7,556 rows",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Title Lotação Hospitalar para Doentes Agudos; publisher DE-SNS; 18,809 records; modified 31 August 2026; beds available and equipped for immediate admission of acute patients, by bed type including neutral beds not assigned to a specialty; fields tempo, regiao, instituicao, localizacao_geografica, tipo_de_camas, lotacao; bed types Camas Cirúrgicas, Médicas, Neutras, Outras; periods 2015-01 to 2026-06; first row Hospital Espírito Santo de Évora",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/lotacao-praticada-por-tipo-de-cama"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Title Taxa de Ocupação Hospitalar; 7,556 records; ratio of inpatient days to capacity; data for month n-2 provisional; periods 2013-01 to 2026-06; fields Período, Região, Instituição, Localização Geográfica, Nº Dias de Internamento, Lotação Praticada, Taxa Anual de Ocupação em Internamento; export formats CSV, JSON, JSONL, XLSX, Parquet, GeoJSON, Shapefile and RDF exports listed by the portal API",
+      "url": "https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets/ocupacao-do-internamento"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated (portal metadata: license null) (basis: transparencia.sns.gov.pt dataset metadata)",
+      "url": "https://transparencia.sns.gov.pt/explore/assets/lotacao-praticada-por-tipo-de-cama/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://transparencia.sns.gov.pt/pages/termos-e-condicoes/"
+    }
+  ],
+  "spatial_resolution": "Hospital (coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospital beds",
+    "bed occupancy",
+    "acute care",
+    "SNS",
+    "Portugal"
+  ],
+  "temporal_coverage": "January 2015 (beds) and January 2013 (occupancy) to June 2026",
+  "temporal_resolution": "Monthly",
+  "temporal_resolution_class": "monthly",
+  "title_en": "Portugal SNS Transparency: acute hospital bed capacity by bed type and occupancy rate per hospital, monthly since 2013",
+  "type": "data",
+  "update_frequency": "monthly"
+}

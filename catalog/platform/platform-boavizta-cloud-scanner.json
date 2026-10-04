@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Boavizta/cloud-scanner"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Boavizta/cloud-scanner/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "boavizta cloud scanner aws impact estimates",
+    "repo": "github.com/boavizta/cloud-scanner",
+    "url": "https://github.com/Boavizta/cloud-scanner"
+  },
+  "deployment": [
+    "own_server",
+    "hosted_service"
+  ],
+  "description": "Cloud-scanner is Boavizta's open-source tool for estimating environmental impacts from an AWS EC2 account inventory. It combines live instance and optional block-storage use with the BoaviztAPI impact model, then reports primary-energy demand, resource depletion and global-warming potential by server, application tag or region. Inputs are AWS inventory and usage metadata; outputs are JSON or Prometheus metrics. The geographic and temporal coverage follows the queried account and time of use. Source is free under AGPL-3.0 and can run as a command-line tool, metric server or AWS Lambda. A limitation is that the own README says it only covers EC2 instances and optionally block storage, not every cloud service or the whole data centre. Running it requires access to a user's AWS account and separate BoaviztAPI service; neither is needed to review its public metadata. The tool can prepare operational-impact estimates for digital-infrastructure scenarios. It is related to broader data-centre assessment tools, but no account was accessed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "boavizta/cloud-scanner linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/Boavizta/cloud-scanner",
+  "id": "platform-boavizta-cloud-scanner",
+  "interfaces": [
+    "command_line",
+    "web_app",
+    "file_exchange"
+  ],
+  "language": [
+    "rust_go"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-04",
+  "licence": "AGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Boavizta Cloud-scanner AWS impact estimates",
+  "notes": "G7 G7-1241. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability.  Cited as: Boavizta. Cloud-scanner and BoaviztAPI impact model. https://github.com/Boavizta/cloud-scanner.",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Boavizta",
+  "related_ids": [],
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Boavizta/cloud-scanner: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/boavizta/cloud-scanner"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/boavizta/cloud-scanner/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://boavizta.github.io/cloud-scanner/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Open-source tool for estimating environmental impacts from AWS EC2 account inventory",
+  "type": "platform"
+}

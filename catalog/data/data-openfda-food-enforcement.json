@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Food enforcement endpoint",
+      "url": "https://api.fda.gov/food/enforcement.json"
+    },
+    {
+      "kind": "docs",
+      "label": "API documentation",
+      "url": "https://open.fda.gov/apis/food/enforcement/"
+    },
+    {
+      "kind": "docs",
+      "label": "Data licensing",
+      "url": "https://open.fda.gov/license/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "historical_events",
+    "supply_chains_logistics",
+    "health_impacts"
+  ],
+  "data_kind": [
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openfda food enforcement reports food recalls",
+    "url": "https://open.fda.gov/apis/food/enforcement"
+  },
+  "description": "The openFDA food enforcement API publishes every food recall reported to the U.S. Food and Drug Administration since 2004. Each record gives the recall number and event, its classification by hazard level (Class I to III), status, the product description and quantity, the reason for recall (such as Listeria, undeclared allergens or foreign objects), the recalling firm and address, the distribution pattern, whether it was voluntary or mandated, and the key dates. The producer is the FDA, drawing on its Recall Enterprise System; openFDA renames some fields and serves them as JSON. Coverage is national, with 29,415 records as of 16 September 2026, updated weekly. Data are free through the API (with a free key for higher rate limits) and as bulk downloads, dedicated to the public domain under Creative Commons CC0. Caveats: only FDA-regulated foods are included (meat, poultry and egg products are recalled by USDA FSIS), distribution areas are free text, and records describe regulatory events, not illness counts. Simulation uses: event data on contamination and supply interruptions for food supply chain disruption and cascading failure models, and on how widely products are distributed. Related records: the WFP food prices (data-wfp-global-food-prices) show market effects of larger shocks.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "openFDA food enforcement reports API",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "api",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://open.fda.gov/apis/food/enforcement/",
+  "id": "data-openfda-food-enforcement",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "openFDA food enforcement reports (food recalls)",
+  "provider": "U.S. Food and Drug Administration (FDA)",
+  "related_ids": [],
+  "schema_summary": "Per recall: recall number, event id, status, classification (I, II, III), product type and description, quantity, reason for recall, recalling firm and address, distribution pattern, voluntary or mandated, initiation, classification, report and termination dates, code information",
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Source FDA Recall Enterprise System, 2004 to present, weekly updates",
+      "url": "https://open.fda.gov/apis/food/enforcement/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Meta: last_updated 2026-09-16, total 29,415, field list",
+      "url": "https://api.fda.gov/food/enforcement.json?limit=1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Data public domain under CC0 1.0 unless noted; terms of service govern the API",
+      "url": "https://open.fda.gov/license/"
+    }
+  ],
+  "spatial_resolution": "Recalling firm address; distribution pattern as text",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "food recalls",
+    "food safety",
+    "FDA",
+    "enforcement reports",
+    "contamination",
+    "distribution"
+  ],
+  "temporal_coverage": "2004 to present (29,415 records on 16 September 2026)",
+  "temporal_resolution": "Individual recall events",
+  "temporal_resolution_class": "event",
+  "title_en": "OpenFDA food enforcement reports (food recalls)",
+  "type": "data",
+  "update_frequency": "weekly"
+}

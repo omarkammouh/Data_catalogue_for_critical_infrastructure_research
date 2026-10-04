@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "2019 manually annotated corpus (Zenodo)",
+      "url": "https://zenodo.org/records/16040609"
+    },
+    {
+      "kind": "download",
+      "label": "2020-2023 model-classified tweet identifiers (Zenodo)",
+      "url": "https://zenodo.org/records/16098993"
+    }
+  ],
+  "access_restrictions": "on_request",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CO"
+  ],
+  "data_family": [
+    "crowdsourced_public_reports",
+    "behavioural_social"
+  ],
+  "data_kind": [
+    "tabular",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.16040609",
+    "name": "colombian spanish language tweets on urban solid waste 2019 annotated corpus and 2020 2023 classified identifiers",
+    "url": "doi:10.5281/zenodo.16040609"
+  },
+  "description": "These two releases let researchers find Colombian social media posts that complain about rubbish, littering, illegal dumping or poor waste collection, as a signal of where and when waste services fail. The authors were not named on the records while their paper was in peer review. The 2019 corpus draws on nearly two million tweets streamed from within Colombia's borders without keyword filtering, from which trained annotators labelled a set as related or unrelated to solid waste, including tricky cases where the word for garbage is used as an insult. The companion release applies a fine-tuned multilingual model to a country-scale stream for 2020 to 2023 and gives, for each tweet identifier, the predicted label and topic scores. Identifiers and labels are available as a free download from Zenodo under the Creative Commons Attribution 4.0 licence; the tweet text itself is shared on request under controlled access. Caveats: tweets must be rehydrated or requested, Twitter users are not representative, and the 2020 to 2023 labels are model predictions. Simulation uses: building complaint time series to validate models of collection service disruption and illegal dumping hot spots. Related records: the Lahore IoT collection pilot (case_study-lahore-iot-waste-collection-pilot) measures service performance with sensors instead.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "solid waste tweets Colombia",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "Spanish tweets classified solid waste related 2020 2023",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.16040609",
+  "id": "data-colombia-solid-waste-tweets",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "last_updated": "2026-08-28",
+  "licence": "CC BY 4.0 (identifiers and labels); tweet text on request",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Colombian Spanish-language tweets on urban solid waste: 2019 annotated corpus and 2020-2023 classified identifiers",
+  "provider": "Authors not named on the records while the associated paper is in peer review",
+  "related_ids": [
+    "case_study-lahore-iot-waste-collection-pilot"
+  ],
+  "schema_summary": "2019 corpus: tweet identifiers with manual labels (all_trash_related or unrelated) drawn from 1,995,625 geolocated tweets streamed within Colombia's bounding box; 2020-2023: tweet identifiers with XLM-RoBERTa waste-related predictions and zero-shot mDeBERTa topic rankings (waste, sports, politics, economics, other) with confidence scores",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Spanish-Language Solid-Waste Tweet Corpus (Colombia, 2019), manually annotated; creators listed as 'In peer review process'; CC BY 4.0; published 2026-08-26; corpus_annotated_2019_repository_ids_only.csv; classes all_trash_related (garbage, littering, illegal dumping, failures of solid-waste management) and unrelated; Streaming API v1.1 with Colombia bounding box, 2019 weeks 5-52, 1,995,625 raw tweets, no keyword filter; text available on request under controlled access",
+      "url": "https://zenodo.org/api/records/16040609"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Model-generated labels for 2020-2023; CC BY 4.0; published 2025-08-28, updated 2026-08-28; all_classified_tweets_idsOnly_repo.csv (1.4 GB); fine-tuned XLM-R separates waste-related tweets, high-confidence subset (>0.9) re-ranked by zero-shot mDeBERTa into five topics; identifiers and predictions open, text controlled",
+      "url": "https://zenodo.org/api/records/16098993"
+    }
+  ],
+  "spatial_resolution": "Tweets geolocated within Colombia",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "social media",
+    "Twitter",
+    "solid waste",
+    "illegal dumping",
+    "NLP",
+    "Colombia",
+    "Spanish"
+  ],
+  "temporal_coverage": "2019 (weeks 5 to 52) and 2020 to 2023",
+  "temporal_resolution": "Per tweet",
+  "temporal_resolution_class": "event",
+  "title_en": "Colombian Spanish-language tweets on urban solid waste: 2019 annotated corpus and 2020-2023 classified identifiers",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

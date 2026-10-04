@@ -1,0 +1,146 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Web-API overview",
+      "url": "https://www.tele.soumu.go.jp/j/musen/webapi/"
+    },
+    {
+      "kind": "portal",
+      "label": "Radio station information search",
+      "url": "https://www.tele.soumu.go.jp/musen/SearchServlet?pageID=1"
+    },
+    {
+      "kind": "docs",
+      "label": "Web-API terms of use",
+      "url": "https://www.tele.soumu.go.jp/j/musen/webapi/kiyaku/index.htm"
+    },
+    {
+      "kind": "docs",
+      "label": "e-Gov API catalogue entry",
+      "url": "https://www.e-gov.go.jp/digital-government/api/musen.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Tokai bureau open data and statistics",
+      "url": "https://www.soumu.go.jp/soutsu/tokai/tool/tokeisiryo/index.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "JP"
+  ],
+  "data_family": [
+    "catalogues_registries",
+    "system_description",
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "japan radio station licence search and web api 無線局等情報検索",
+    "url": "https://tele.soumu.go.jp/musen/SearchServlet?pageID=1"
+  },
+  "description": "The Japanese Ministry of Internal Affairs and Communications (MIC) publishes the licence information of radio stations in Japan through its Radio Use Portal, to make radio administration transparent and help users study frequency availability. The search covers stations by type, including broadcasting stations for television and radio, mobile base stations, fixed microwave links, amateur and other services, and returns licence details such as licensee, station type, location, frequencies and power; stations related to national security and diplomacy are excluded. A companion REST Web-API lets users query the same system automatically, with one request that counts stations matching conditions and another that returns lists of stations with their licence information, in JSON, XML or CSV; clients must identify themselves in the User-Agent header and accept the API terms of use. The regional communications bureaus also publish open data and statistics, such as counts of broadcast stations and lists of newly opened digital TV relay stations. Coverage: Japan, current licences. Format and access: web search and REST Web-API (JSON, XML, CSV), free after accepting the terms. Caveats: the portal and API pages refused automated requests from this environment, so the fields and terms were not read directly; the precision of station locations was not checked. Simulation uses: inventories of broadcast and mobile transmitter sites for hazard exposure in an earthquake- and typhoon-prone country, and redundancy of broadcast distribution. Related records: the Japanese ministry's 2011 telecom damage record and the QZSS disaster report service cover Japanese resilience, and the FCC LMS database is the US counterpart.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "総務省 無線局等情報検索 放送局 データ ダウンロード オープンデータ 送信所",
+      "route": "R22",
+      "source": "web-search"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "無線局等情報検索 Web-API 仕様 総務省 電波利用ポータル 無線局情報 API 利用",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "web_page",
+    "json",
+    "xml",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.tele.soumu.go.jp/musen/SearchServlet?pageID=1",
+  "id": "data-mic-japan-radio-station-licence-search-api",
+  "languages": [
+    "ja"
+  ],
+  "last_updated": "2026",
+  "licence": "MIC Web-API terms of use (not read)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.e-gov.go.jp/digital-government/api/musen.html",
+      "https://www.tele.soumu.go.jp/j/musen/webapi/",
+      "https://www.tele.soumu.go.jp/j/musen/webapi/kiyaku/index.htm",
+      "https://www.tele.soumu.go.jp/musen/SearchServlet?pageID=1"
+    ]
+  },
+  "maturity": "active",
+  "name": "Japan radio station licence search and Web-API (無線局等情報検索)",
+  "notes": "All pages on tele.soumu.go.jp and e-gov.go.jp returned 403 to fetch and header requests on 2026-09-26. Description built from search result summaries of the MIC Web-API pages and user blog posts; the field list is not verified.",
+  "provider": "Ministry of Internal Affairs and Communications of Japan (総務省), Radio Use Portal (電波利用ポータル)",
+  "related_ids": [],
+  "schema_summary": "licensee, station type, location, frequencies, power and licence dates per radio station",
+  "sectors": [
+    "digital.broadcasting",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "size": "not stated",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: API requests and formats",
+      "url": "https://www.tele.soumu.go.jp/j/musen/webapi/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: purpose and exclusions",
+      "url": "https://www.soumu.go.jp/soutsu/tokai/musen/tyousakyouhyou/index2.html"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): only a site copyright notice on this page (©Telecommunications Bureau of the Ministry of Internal Affairs and Commu)",
+      "url": "https://www.tele.soumu.go.jp/musen/SearchServlet?pageID=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.tele.soumu.go.jp/j/musen/webapi/"
+    }
+  ],
+  "spatial_resolution": "station (precision not checked)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "radio licences",
+    "broadcast stations",
+    "Japan",
+    "API",
+    "spectrum"
+  ],
+  "temporal_coverage": "current licences",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Japan radio station licence search and Web-API",
+  "type": "data",
+  "update_frequency": "real_time"
+}

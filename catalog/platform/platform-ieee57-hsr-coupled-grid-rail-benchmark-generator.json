@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/AnmarArif/ieee57-hsr-benchmark"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "ieee 57 bus and high speed rail coupled benchmark generator",
+    "repo": "github.com/anmararif/ieee57-hsr-benchmark",
+    "url": "https://github.com/AnmarArif/ieee57-hsr-benchmark"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This Jupyter notebook prepares a coupled electricity and high-speed-rail test case. The README says it modifies the IEEE 57-bus host with six line taps, adds 29 traction substations, simulates a nominal train timetable at one-second resolution and generates per-substation demand and regeneration signatures. It describes MATPOWER case files, geometry and parameter JSON, 15-minute planning envelopes and seeded timetable-jitter families as outputs. A modeller could use the generated case to test grid expansion or rail-electrification scenarios. The public tree contains the notebook and requirements, but not the promised benchmark output directory. This review did not run the notebook, so the listed bus and branch counts and generated files remain author-reported. The larger optimization pipeline from the paper is expressly absent and requires separate commercial solver access. GitHub reports MIT for the repository. The coupled case is a synthetic benchmark, not measured rail demand, and its results depend on declared train and timetable assumptions. Related resources include the original IEEE 57-bus test case and separately licensed optimization tools.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"power grid\" benchmark",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/AnmarArif/ieee57-hsr-benchmark",
+  "id": "platform-ieee57-hsr-coupled-grid-rail-benchmark-generator",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "MATPOWER case",
+    "CSV",
+    "JSON",
+    "NPZ"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "MIT for repository notebook; underlying IEEE and rail assumptions are documented separately in the README.",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "IEEE 57-bus and high-speed-rail coupled benchmark generator",
+  "notes": "G8; G8-0865. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Arif, A. AC-Guided Co-Expansion Planning of Power Grids Hosting High-Speed Railways, under review according to repository README, accessed 2026-09-28..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "IEEE 57-bus HSR Coupled Benchmark project",
+  "related_ids": [],
+  "sectors": [
+    "energy.electricity",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/AnmarArif/ieee57-hsr-benchmark/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/AnmarArif/ieee57-hsr-benchmark"
+    }
+  ],
+  "tags": [],
+  "title_en": "IEEE 57-bus and high-speed-rail coupled benchmark generator",
+  "type": "platform"
+}

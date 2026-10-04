@@ -1,0 +1,137 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "CBP APIs",
+      "note": "API key required",
+      "url": "https://www.census.gov/data/developers/data-sets/cbp-zbp.html"
+    },
+    {
+      "kind": "portal",
+      "label": "CBP datasets (CSV, 1986 onward)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.census.gov/programs-surveys/cbp/data/datasets.html"
+    },
+    {
+      "kind": "docs",
+      "label": "About CBP",
+      "url": "https://www.census.gov/programs-surveys/cbp/about.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "economic_financial",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "county business patterns cbp and zip code business patterns zbp",
+    "url": "https://census.gov/programs-surveys/cbp.html"
+  },
+  "description": "County Business Patterns (CBP) is the U.S. Census Bureau's annual series of subnational economic data for establishments with paid employees, by NAICS industry and employment size class: number of establishments, employment in the week of 12 March, first-quarter payroll and annual payroll. Statistics are published for the nation, states, counties, metropolitan and micropolitan areas, combined statistical areas, ZIP codes (ZIP Code Business Patterns) and congressional districts, and for Puerto Rico and the Island Areas at state and county level. It covers most industries but excludes crop and animal production, rail transportation, the Postal Service, private households, public administration and most government establishments. Coverage: annual from 1986, with metropolitan areas from 1993, Puerto Rico from 1998 and the Island Areas from 2008; the API lists vintages to 2023. Access: CSV datasets with record layouts from 1986, data.census.gov tables from 2012, and the Census Data API (cbp and zbp groups, free key); free and public domain. Caveats: the about page says its information is no longer current while the Bureau evaluates alternatives to noise infusion under a Department of Commerce order; small cells are suppressed or flagged, and the rail and public sectors are missing. Simulation uses: business exposure and employment by industry and area for hazard loss and business interruption models, daytime population proxies, and demand for freight and utility services. Related records: the Economic Census (five-year benchmark), LEHD LODES (workplace jobs by block), My Community Explorer, which maps CBP data, and the Commodity Flow Survey.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; All Surveys and Programs list, entry County Business Patterns",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): api.census.gov/data.json dataset list, groups cbp and zbp",
+      "route": "R35",
+      "source": "census-data-api"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/programs-surveys/cbp.html",
+  "id": "data-us-census-county-business-patterns",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "County Business Patterns (CBP) and ZIP Code Business Patterns (ZBP)",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-economic-census",
+    "data-us-census-lehd-lodes",
+    "data-us-census-my-community-explorer",
+    "data-commodity-flow-survey"
+  ],
+  "schema_summary": "Geography, NAICS, employment size class, establishments, mid-March employment, Q1 and annual payroll, noise and suppression flags",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "industry.manufacturing_chemical"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Series definition and measures; data.census.gov from 2012, CSV from 1986",
+      "url": "https://www.census.gov/programs-surveys/cbp.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Coverage, geographies, excluded industries, notice that the page is not current (noise infusion order)",
+      "url": "https://www.census.gov/programs-surveys/cbp/about.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "CSV 1986 onward; MSA 1993, Puerto Rico 1998, Island Areas 2008",
+      "url": "https://www.census.gov/programs-surveys/cbp/data/datasets.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "cbp vintages 1986-2023 and zbp vintages in the API",
+      "url": "https://api.census.gov/data.json"
+    }
+  ],
+  "spatial_resolution": "County and ZIP code",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "County Business Patterns",
+    "ZIP Code Business Patterns",
+    "establishments",
+    "employment",
+    "NAICS",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "1986 to 2023",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1986
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "County Business Patterns (CBP) and ZIP Code Business Patterns (ZBP)",
+  "type": "data",
+  "update_frequency": "annual"
+}

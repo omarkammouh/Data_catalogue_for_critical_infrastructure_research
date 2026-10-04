@@ -1,0 +1,133 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Offline RRL",
+      "url": "https://cdn.acma.gov.au/offline-rrl/index.html"
+    },
+    {
+      "kind": "portal",
+      "label": "RRL (ACMA)",
+      "url": "https://www.acma.gov.au/register-radiocommunications-licences-rrl"
+    },
+    {
+      "kind": "portal",
+      "label": "spectra_rrl.zip",
+      "url": "https://cdn.acma.gov.au/rrl/spectra_rrl.zip"
+    },
+    {
+      "kind": "docs",
+      "label": "Radiocomms licence data",
+      "url": "https://www.acma.gov.au/radiocomms-licence-data"
+    }
+  ],
+  "access_note": "acma.gov.au pages refused the shell (403) and the page-fetch tool (503) on 2026-09-26; the CDN file and the Offline RRL page answer.",
+  "access_restrictions": "none",
+  "continents": [
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "data_family": [
+    "system_description",
+    "telecom_coverage_spectrum",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "acma register of radiocommunications licences rrl australia",
+    "url": "https://acma.gov.au/register-radiocommunications-licences-rrl"
+  },
+  "description": "The Register of Radiocommunications Licences of the Australian Communications and Media Authority contains the details of all licensed radio services in Australia: apparatus, spectrum and class licences with their clients, the sites of transmitters and receivers with location, state, licensing area, postcode and elevation, the antennas, and the device details of each assignment such as frequency, bandwidth, emission designator, azimuth, tilt, polarisation, EIRP, callsign, station type and class. The full register is published as spectra_rrl.zip, a set of CSV files with reference documents (about 67 MB), regenerated daily and usually available by 6 am with daily difference files; ACMA also offers an online search and an Offline RRL web application that imports the file into a local SQLite database for search and mapping. Coverage: all of Australia, current licences, with an archive of older registers. Format and access: CSV in ZIP, free to download under ACMA's licence usage conditions. Caveats: licences show authorisations, not proof of operation; some defence and security assignments are withheld; the relational tables need the reference documents. Simulation uses: an inventory of radio sites and links (mobile, microwave, broadcast, land mobile) for network topology, hazard exposure of sites to bushfire and cyclones, and spectrum planning. Related records: the FCC ULS, ISED SMS extracts and ANFR installations are counterparts.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.telecom:governance_regulation",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "ACMA Register of Radiocommunications Licences spectra_rrl.zip download data licences sites assignments updated daily",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "archive"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "wildfire",
+    "storm_wind",
+    "flood"
+  ],
+  "homepage": "https://www.acma.gov.au/register-radiocommunications-licences-rrl",
+  "id": "data-acma-register-radiocommunications-licences",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "ACMA licence usage conditions for RRL data",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.acma.gov.au/radiocomms-licence-data",
+      "https://www.acma.gov.au/register-radiocommunications-licences-rrl"
+    ]
+  },
+  "maturity": "active",
+  "name": "ACMA Register of Radiocommunications Licences (RRL), Australia",
+  "notes": "Offline RRL page read 2026-09-26 (fields and loading process); file size and date from a one-byte range request of spectra_rrl.zip (not downloaded); daily 6 am availability and difference files from search snippets of ACMA pages.",
+  "provider": "Australian Communications and Media Authority (ACMA)",
+  "related_ids": [],
+  "schema_summary": "licences, clients, sites (location, state, licensing area, postcode, elevation), antennas, device details (frequency, bandwidth, emission, azimuth, tilt, EIRP, callsign, station type)",
+  "sectors": [
+    "digital.telecom",
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "size": "about 67 MB",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Offline RRL application page",
+      "url": "https://cdn.acma.gov.au/offline-rrl/index.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "size and date from range request",
+      "url": "https://cdn.acma.gov.au/rrl/spectra_rrl.zip"
+    }
+  ],
+  "spatial_resolution": "site (coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "spectrum licences",
+    "radio sites",
+    "Australia",
+    "RRL"
+  ],
+  "temporal_coverage": "current licences (daily snapshot)",
+  "temporal_resolution": "daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "ACMA Register of Radiocommunications Licences (RRL), Australia",
+  "type": "data",
+  "update_frequency": "daily"
+}

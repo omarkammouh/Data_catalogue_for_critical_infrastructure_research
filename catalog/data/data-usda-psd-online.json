@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "PSD Online application",
+      "url": "https://apps.fas.usda.gov/psdonline/app/index.html#/app/home"
+    },
+    {
+      "kind": "download",
+      "label": "All PSD data, CSV (zip)",
+      "url": "https://apps.fas.usda.gov/psdonline/downloads/psd_alldata_csv.zip"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "scenarios_projections"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usda production supply and distribution psd online official usda estimates of production consumption trade and stocks of agricultural commodities by country",
+    "url": "https://apps.fas.usda.gov/psdonline/app/index.html"
+  },
+  "description": "PSD Online is the public database behind the US Department of Agriculture's official supply and demand estimates for agricultural commodities around the world. For each country and commodity, such as wheat, maize, rice, soybeans, sugar, dairy and meat, it gives the balance for each marketing year: production, imports, exports, domestic consumption and ending stocks, with USDA's current-year projections revised each month in step with its World Agricultural Supply and Demand Estimates. The application lets users build tables by commodity and country, and the whole database is free to download as a zipped CSV, about 10 MB when checked. Caveats: the application renders by script and the FAS description page was blocked from this environment, so the attribute list here is the standard PSD balance, not read from a codebook; the figures are USDA estimates that can differ from national statistics and FAOSTAT; and no licence is stated on the page, though US federal data are generally public domain. Coverage is global. Simulation uses: commodity balances and stocks for food supply shock, trade restriction and drought impact models. Related records: the traceable food balance sheets (data-traceable-food-balance-sheets-gcamfaostat) give a FAOSTAT-based alternative for comparison.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have list from published reviews (integrator musthave/services.csv): USDA PSD production, supply and distribution",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "archive"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought"
+  ],
+  "homepage": "https://apps.fas.usda.gov/psdonline/app/index.html#/app/home",
+  "id": "data-usda-psd-online",
+  "languages": [
+    "en"
+  ],
+  "licence": "US federal government data (public domain in the United States; not stated on the page)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "USDA Production, Supply and Distribution (PSD Online): official USDA estimates of production, consumption, trade and stocks of agricultural commodities by country",
+  "provider": "Foreign Agricultural Service (FAS), United States Department of Agriculture",
+  "related_ids": [
+    "data-traceable-food-balance-sheets-gcamfaostat"
+  ],
+  "schema_summary": "Bulk CSV of all commodities, countries, marketing years and attributes (production, imports, exports, domestic consumption, stocks and related balance items) as published in the PSD database",
+  "sectors": [
+    "services.food_supply",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "PSD Online application page loads by script (title PSD Online)",
+      "url": "https://apps.fas.usda.gov/psdonline/app/index.html#/app/home"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "HTTP header read only (not downloaded): 200, application/x-zip-compressed, 10,444,053 bytes",
+      "url": "https://apps.fas.usda.gov/psdonline/downloads/psd_alldata_csv.zip"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "FAS description page returned 403 Access Denied from this environment",
+      "url": "https://www.fas.usda.gov/data/production-supply-and-distribution-online"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://apps.fas.usda.gov/psdonline/app/index.html#/app/home"
+    }
+  ],
+  "spatial_resolution": "Country",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "USDA",
+    "PSD",
+    "grain",
+    "oilseeds",
+    "commodity balances",
+    "trade",
+    "stocks",
+    "food supply"
+  ],
+  "temporal_coverage": "Historical marketing years to current USDA projections",
+  "temporal_resolution": "Annual (marketing year), revised monthly",
+  "temporal_resolution_class": "monthly",
+  "title_en": "USDA Production, Supply and Distribution (PSD Online): official USDA estimates of production, consumption, trade and stocks of agricultural commodities by country",
+  "type": "data",
+  "update_frequency": "monthly"
+}

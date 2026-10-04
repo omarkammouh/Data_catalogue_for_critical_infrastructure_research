@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo record",
+      "url": "https://zenodo.org/records/21484806"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "imagery_remote_sensing",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "event_record",
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "vehicle speed dataset for the major european road network from sentinel 2 imagery 2022 2026",
+    "url": "https://zenodo.org/records/21484806"
+  },
+  "description": "This dataset provides individual vehicle speed observations on European E-roads (motorways, trunk, primary and secondary roads tagged as E-roads in OpenStreetMap) for 2022 to 2026, derived from Copernicus Sentinel-2 Level-2A optical imagery. A moving vehicle appears at slightly shifted positions in the blue, green and red bands because of the short delays between band acquisitions; the pipeline links these displaced peaks into per-vehicle trajectories and converts the displacement into ground speed. Each record has the trajectory geometry, per-band displacements and headings, quality indicators, the estimated speed, the acquisition time and the source Sentinel-2 product id. It was produced by Maciej Adamiak, Sascha Fendrich, Julian Psotta and Alexander Zipf at HeiGIT. Coverage is the European E-road network. Access: free download from Zenodo (version 1.0.0, July 2026) as yearly GeoPackage files of 1 to 2 GB with a road segment layer and configuration files; no licence is stated on the record. Caveats: observations are snapshots at satellite overpass times in clear conditions, and the licence must be clarified before reuse. It supports calibration of road network speed attributes and traffic models at continental scale, and complements the Sentinel-2 transport chips and the EU TEN-T network catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"road network\" AND \"calibration\"",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "geopackage",
+    "plain_text"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://zenodo.org/records/21484806",
+  "id": "data-europe-e-road-vehicle-speeds-sentinel2",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-27",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Vehicle speed dataset for the major European road network from Sentinel-2 imagery, 2022-2026",
+  "provider": "Heidelberg Institute for Geoinformation Technology (HeiGIT)",
+  "related_ids": [
+    "data-sentinel2-waterway-port-railway-multilabel-germany",
+    "data-eu-ten-t-network-tentec"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "v1.0.0 2026-07-27; licence none; open access; Adamiak, Fendrich, Psotta, Zipf (HeiGIT); E-roads per OSM; 2022-2026; Sentinel-2 L2A B02/B03/B04 inter-band delay; trajectory geometry, displacements, headings, quality, speed, timestamp, product id; files eu_kinematics_2023/2025/2026.gpkg 1.2-2.2 GB, eu_segments.gpkg, yearly yaml",
+      "url": "https://zenodo.org/api/records/21484806"
+    }
+  ],
+  "spatial_resolution": "individual vehicle on road segment",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "vehicle speed",
+    "Sentinel-2",
+    "E-roads",
+    "remote sensing",
+    "HeiGIT"
+  ],
+  "temporal_coverage": "2022-2026",
+  "title_en": "Vehicle speed dataset for the major European road network from Sentinel-2 imagery, 2022-2026",
+  "type": "data",
+  "update_frequency": "irregular"
+}

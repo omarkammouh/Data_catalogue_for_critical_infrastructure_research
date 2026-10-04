@@ -1,0 +1,150 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "ArcGIS feature service (all incidents)",
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations/FeatureServer"
+    },
+    {
+      "kind": "api",
+      "label": "Current incidents service",
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer"
+    },
+    {
+      "kind": "portal",
+      "label": "NIFC Open Data site (downloads as CSV, GeoJSON, shapefile)",
+      "url": "https://data-nifc.opendata.arcgis.com/"
+    },
+    {
+      "kind": "api",
+      "label": "Current interagency fire perimeters",
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "emergency_management",
+    "hazards",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "event_record",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "wfigs wildland fire incident locations irwin incidents united states",
+    "url": "https://data-nifc.opendata.arcgis.com/datasets/b4402f7887ca4ea9a6189443f220ef28"
+  },
+  "description": "This service lists every wildland fire incident reported through IRWIN, the United States interagency system that links federal, state and local fire reporting, with the details of how each fire was responded to. The producer is the Wildland Fire Interagency Geospatial Services group at the National Interagency Fire Center, which hosts it on the NIFC open data site. Coverage is national, from 2014, when IRWIN began, to the present: 426,977 incidents at the time of reading, with a few records dated earlier. Each point carries 97 attributes, including discovery, containment, control and out times, initial response time and acres, final size, cause, the dispatch centre and fire department, the geographic coordination centre, the incident management organisation and complexity, suppression strategy, ICS-209 situation report fields, estimated cost to date and percent contained. The data are available free through ArcGIS REST services returning JSON or GeoJSON and as downloads from the open data site, refreshed every five minutes, with current, year-to-date and last-24-hour views and fire perimeters; no licence is stated beyond a liability disclaimer. Caveats: attributes are filled unevenly across agencies, small fires often lack cost and strategy fields, and heavy relative-date queries are discouraged by the provider. Simulation uses: modelling wildland fire response demand and dispatch workload, calibrating initial attack and containment times, and linking fire events to exposed infrastructure. Related records: the Wildfire Risk to Communities layers (data-wildfire-risk-to-communities) give hazard, and ELMFIRE (model-elmfire) simulates spread.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "nifc-wildfires",
+      "route": "R05",
+      "source": "pypi"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "geomac-wildfires",
+      "route": "R05",
+      "source": "pypi"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "ogc_map_service",
+    "json",
+    "csv",
+    "shapefile"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://data-nifc.opendata.arcgis.com/datasets/b4402f7887ca4ea9a6189443f220ef28",
+  "id": "data-nifc-wfigs-wildland-fire-incident-locations",
+  "languages": [
+    "en"
+  ],
+  "licence": "No licence stated; NIFC disclaimer of liability (US federal interagency data)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "WFIGS Wildland Fire Incident Locations (IRWIN incidents, United States)",
+  "provider": "National Interagency Fire Center, Wildland Fire Interagency Geospatial Services (WFIGS) Group",
+  "related_ids": [
+    "data-wildfire-risk-to-communities",
+    "model-elmfire"
+  ],
+  "schema_summary": "One point per wildland fire incident (wildfire, prescribed fire or incident complex) from IRWIN, with 97 attributes including discovery, containment, control and out dates, initial response time and acres, incident size, cause, dispatch centre ID, fire department ID, geographic area coordination centre, incident management organisation, fire management complexity, suppression strategy percentages, ICS-209 report dates and status, estimated cost to date, percent contained and point of origin",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Items Wildland Fire Incident Locations (all, no fall-off, back to 2014 when IRWIN began; WF, RX and CX records; valid and not quarantined; refreshed every 5 minutes; warning against relative-date queries), Current, Year to Date and Last 24 Hours variants and current perimeters; owner NIFC_Authoritative; licence text is a liability disclaimer",
+      "url": "https://data-nifc.opendata.arcgis.com/api/search/v1/collections/dataset/items?q=WFIGS%20Incident%20Locations"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "97 fields (listed in part: containment and control dates, dispatch centre, fire department, ICS-209 fields, cost to date, strategy percentages)",
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations/FeatureServer/0?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "426,977 records; 455 in the current service; discovery dates from 2003-01-01 to 2026-09-26 (statistics query)",
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Third-party download client (datadesk) that led to the NIFC services",
+      "url": "https://pypi.org/pypi/nifc-wildfires/json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://data-nifc.opendata.arcgis.com/datasets/b4402f7887ca4ea9a6189443f220ef28"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations/FeatureServer"
+    }
+  ],
+  "spatial_resolution": "Incident points",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "wildland fire",
+    "incident response",
+    "IRWIN",
+    "ICS-209",
+    "dispatch",
+    "NIFC"
+  ],
+  "temporal_coverage": "2014 (IRWIN start) to present; a few records carry earlier discovery dates",
+  "temporal_resolution": "Per incident, refreshed every 5 minutes",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "WFIGS Wildland Fire Incident Locations (IRWIN incidents, United States)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

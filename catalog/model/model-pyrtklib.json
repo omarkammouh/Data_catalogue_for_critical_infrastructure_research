@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/IPNL-POLYU/pyrtklib"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/pyrtklib/"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (arXiv 2409.12996)",
+      "url": "https://arxiv.org/abs/2409.12996"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "HK"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pyrtklib python binding of rtklib for deep learning aided gnss positioning",
+    "repo": "github.com/ipnl-polyu/pyrtklib",
+    "url": "https://github.com/IPNL-POLYU/pyrtklib"
+  },
+  "description": "pyrtklib is a Python binding for RTKLIB, the widely used open-source C library for GNSS positioning, developed by the Intelligent Positioning and Navigation Laboratory at the Hong Kong Polytechnic University. It exposes RTKLIB's functions in Python, including single point positioning, real-time kinematic and precise point positioning, so that GNSS processing can be combined directly with deep-learning tools that are written in Python. The accompanying paper, posted in 2024 and published in IEEE Transactions on Intelligent Transportation Systems in 2025, also presents a deep-learning subsystem (TDL-GNSS) that uses pyrtklib to predict weights and biases inside the positioning process, aimed at improving accuracy in urban canyons where buildings block and reflect signals. The package installs with pip on Linux, macOS and Windows for Python 3.6 to 3.13; version 0.2.7, released on 22 September 2024, added Python 3.12 and 3.13, and a more Pythonic front end is maintained as TASGNSS. Coverage: software, any location and receiver data in RINEX. Format and access: Python package on PyPI and GitHub, free under the MIT licence. Caveats: a thin binding, so users need to know RTKLIB's structures; the learning subsystem is research code. Simulation uses: positioning error models for urban transport and emergency vehicles, and testing the effect of degraded GNSS on dependent services. Related records: FGI-GSRx and GNSS-SDR process raw signals, and the Google smartphone decimetre datasets offer urban test data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hybrid GNSS positioning model machine learning physics ionosphere correction model open source PPP RTK software RTKLIB",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/IPNL-POLYU/pyrtklib",
+  "id": "model-pyrtklib",
+  "inputs": [
+    "GNSS observation and navigation files (RINEX)",
+    "processing options",
+    "trained network weights (TDL-GNSS)"
+  ],
+  "language": [
+    "python",
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-10-03",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid",
+    "statistical"
+  ],
+  "name": "pyrtklib: Python binding of RTKLIB for deep-learning-aided GNSS positioning",
+  "notes": "arXiv abstract read with curl, paper text with pypdf, PyPI metadata by API and repository page via fetch on 2026-09-26 (MIT, platforms, 182 stars). Validation data description is inferred from the paper's focus.",
+  "outputs": [
+    "position solutions (SPP, RTK, PPP)",
+    "learned weights and bias corrections"
+  ],
+  "provider": "Intelligent Positioning and Navigation Laboratory, Hong Kong Polytechnic University (Runzhi Hu, Penghui Xu, Yihan Zhong, Weisong Wen)",
+  "related_ids": [
+    "data-google-smartphone-decimeter-gnss-datasets",
+    "data-urbannav-gnss-urban-canyon-dataset",
+    "data-igs-gnss-products",
+    "data-noaa-cors-network"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "abstract",
+      "url": "https://arxiv.org/abs/2409.12996"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "repository page",
+      "url": "https://github.com/IPNL-POLYU/pyrtklib"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "releases",
+      "url": "https://pypi.org/pypi/pyrtklib/json"
+    }
+  ],
+  "tags": [
+    "RTKLIB",
+    "GNSS positioning",
+    "deep learning",
+    "urban canyon",
+    "Python binding"
+  ],
+  "title_en": "Pyrtklib: Python binding of RTKLIB for deep-learning-aided GNSS positioning",
+  "type": "model",
+  "validated_on": [
+    "urban canyon datasets in Hong Kong (per the paper)"
+  ]
+}

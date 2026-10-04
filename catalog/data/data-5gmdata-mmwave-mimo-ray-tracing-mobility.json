@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "5GMdata code and wiki",
+      "url": "https://github.com/lasseufpa/5gm-data"
+    },
+    {
+      "kind": "portal",
+      "label": "urban_canyon_v2i 5gmv1 database (Nextcloud)",
+      "url": "https://nextcloud.lasseufpa.org/s/PKYwAbg6BYFqFi3"
+    },
+    {
+      "kind": "docs",
+      "label": "Raymobtime (newer datasets)",
+      "url": "https://www.lasse.ufpa.br/raymobtime/"
+    },
+    {
+      "kind": "paper",
+      "label": "Klautau et al., ITA 2018",
+      "url": "http://ita.ucsd.edu/workshop/18/files/paper/paper_3313.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "5gmdata ray traced 60 ghz mmwave mimo channel data with vehicle mobility for 5g machine learning lasse ufpa",
+    "repo": "github.com/lasseufpa/5gm-data",
+    "url": "https://github.com/lasseufpa/5gm-data"
+  },
+  "description": "5GMdata provides datasets and code for machine learning on 5G millimetre-wave MIMO systems with moving users, built by combining vehicle mobility simulation with ray-tracing of radio propagation. It comes from the LASSE group at the Federal University of Pará (UFPA) in Brazil and was introduced by Klautau, Batista, Gonzalez-Prelcic, Wang and Heath at the 2018 Information Theory and Applications workshop, where it was applied to beam selection with deep learning. Coverage: the urban_canyon_v2i 5gmv1 dataset simulates 60 GHz vehicle-to-infrastructure links in an urban canyon: 116 episodes of 50 scenes each (5,800 ray-tracing runs at 100 ms intervals), one roadside transmitter and up to 10 receivers on cars, giving 41,023 valid channels with the 25 strongest rays each; the wiki points to the later Raymobtime datasets from the same group. Format and access: SQLite databases, HDF5 and NumPy NPZ files split by episode, and raw Remcom Wireless InSite outputs, downloadable from the group's Nextcloud, with Python and MATLAB code on GitHub; free. Licence: GPL-3.0 for the code (LICENSE file); no separate data licence stated. Caveats: the data are simulated for one synthetic scenario with omnidirectional antennas, the repository has not changed since May 2022, and the Raymobtime site answered a server error so the newer datasets were not read. Simulation uses: training beam-selection and channel models for connected-vehicle communication in digital twin and cascading failure studies of transport and telecom interaction. Related records: Veins (model-veins-vehicular-network-simulation) simulates vehicular communication at network level.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source digital-5gm-data: provider pages read (round 2 register piece)",
+      "route": "R17",
+      "source": "digital-5gm-data"
+    }
+  ],
+  "formats": [
+    "database",
+    "netcdf_hdf",
+    "analysis_package_file",
+    "other"
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://github.com/lasseufpa/5gm-data",
+  "id": "data-5gmdata-mmwave-mimo-ray-tracing-mobility",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-05-09",
+  "licence": "GPL-3.0 (code); data licence not stated",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.lasse.ufpa.br/raymobtime/"
+    ]
+  },
+  "maturity": "stale",
+  "name": "5GMdata: ray-traced 60 GHz mmWave MIMO channel data with vehicle mobility for 5G machine learning (LASSE, UFPA)",
+  "provider": "LASSE, Federal University of Pará (Aldebaro Klautau and co-authors, with Nuria Gonzalez-Prelcic, Yuyang Wang and Robert W. Heath Jr.)",
+  "related_ids": [
+    "model-veins-vehicular-network-simulation"
+  ],
+  "sectors": [
+    "digital.telecom",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Datasets and code for ML in 5G mmWave MIMO with mobility; citation Klautau et al. ITA 2018; LICENSE GPL-3.0; last commit 2022-05-09",
+      "url": "https://raw.githubusercontent.com/lasseufpa/5gm-data/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Read via git clone of the wiki: urban_cannyon_v2i.5gmv1 (Feb 2018) 60 GHz V2I, 116 episodes x 50 scenes, 5,800 ray-tracing runs, 41,023 channels, 25 rays, 100 ms, 1 Tx up to 10 Rx; rays HDF5/NPZ; raw Wireless InSite outputs; Nextcloud links; Raymobtime pointer",
+      "url": "https://github.com/lasseufpa/5gm-data/wiki/Freely-available-data-for-machine-learning-applied-to-telecommunications"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "HTTP 500, not read",
+      "url": "https://www.lasse.ufpa.br/raymobtime/"
+    }
+  ],
+  "tags": [
+    "mmWave",
+    "5G",
+    "ray tracing",
+    "V2I",
+    "machine learning"
+  ],
+  "title_en": "5GMdata: ray-traced 60 GHz mmWave MIMO channel data with vehicle mobility for 5G machine learning (LASSE, UFPA)",
+  "type": "data"
+}

@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "EES repository",
+      "url": "https://github.com/agentsoz/ees"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "emergency evacuation simulator ees bdi agent and matsim model of bushfire evacuation in victoria and nsw",
+    "repo": "github.com/agentsoz/ees",
+    "url": "https://github.com/agentsoz/ees"
+  },
+  "description": "The Emergency Evacuation Simulator (EES) is an agent-based model of community evacuation during bushfires in which residents are cognitive agents that decide when and where to leave, and their trips are simulated on the road network. It was developed by the agentsoz group of Dhirendra Singh, Lin Padgham and colleagues at RMIT University with Kai Nagel of the MATSim team, and is available as open source. Coverage: Australian case areas, with scenarios for the Mount Alexander, Surf Coast, Yarra Ranges and Loddon Mallee shires in Victoria, the Shire of Denmark in Western Australia, New South Wales, and synthetic grid networks. The model couples belief-desire-intention (BDI) agents with the MATSim traffic simulation and a social network diffusion model, and reads fire spread isochrones, ember and blockage events, emergency messages and synthetic populations per statistical area. Format and access: Java code built with Maven, with XML and JSON scenario files, on GitHub; free. Licence: MIT. Caveats: scenarios are research set-ups, not official plans, behaviour rules rest on survey-based assumptions, and the code depends on submodules and a specific MATSim version. Simulation uses: agent-based emergency response and evacuation planning, testing warning timing and road capacity for hazard exposure of communities to wildfire. Related records: MATSim (model-matsim) is the traffic engine it uses, and CrowdEgress (model-crowdegress-social-force-evacuation) is an evacuation model at building scale.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source services-ees-emergency-evacuation-simulator: provider pages read (round 2 register piece)",
+      "route": "R06",
+      "source": "services-ees-emergency-evacuation-simulator"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://github.com/agentsoz/ees",
+  "id": "model-ees-emergency-evacuation-simulator",
+  "inputs": [
+    "road network and synthetic population (MATSim)",
+    "fire spread isochrones, embers and road blockages",
+    "emergency messages and social network"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-01-29",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based"
+  ],
+  "name": "Emergency Evacuation Simulator (EES): BDI agent and MATSim model of bushfire evacuation in Victoria and NSW",
+  "outputs": [
+    "agent evacuation decisions and trips",
+    "traffic congestion and evacuation times"
+  ],
+  "provider": "agentsoz project (Dhirendra Singh, Lin Padgham and co-authors, RMIT University with Kai Nagel, TU Berlin)",
+  "related_ids": [
+    "model-matsim",
+    "model-crowdegress-social-force-evacuation"
+  ],
+  "repository": "https://github.com/agentsoz/ees",
+  "sectors": [
+    "services.emergency_services",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: depends on BDI-ABM integration and social network diffusion model; Maven build; MIT licence (2014-2024 contributors); last commit 2025-01-29 (update to latest MATSim)",
+      "url": "https://raw.githubusercontent.com/agentsoz/ees/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository tree read with git: scenarios for mount-alexander-shire (81 files), surf-coast-shire (54), yarra-ranges-shire (14), shire-of-denmark (7), nsw (8), loddon-mallee-northern-cluster-shires, grid; fire isochrone GeoJSON; AUTHORS lists Singh, Padgham, Nagel, Robertson, Bulumulla, Perera",
+      "url": "https://github.com/agentsoz/ees"
+    }
+  ],
+  "tags": [
+    "evacuation",
+    "bushfire",
+    "BDI agents",
+    "MATSim"
+  ],
+  "title_en": "Emergency Evacuation Simulator (EES): BDI agent and MATSim model of bushfire evacuation in Victoria and NSW",
+  "type": "model"
+}

@@ -1,0 +1,139 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Hurricane Helene status report (example)",
+      "url": "https://docs.fcc.gov/public/attachments/DOC-406099A1.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "Hurricane Ian status report (example)",
+      "url": "https://docs.fcc.gov/public/attachments/DOC-387932A1.pdf"
+    },
+    {
+      "kind": "portal",
+      "label": "DIRS page (FCC)",
+      "url": "https://www.fcc.gov/disaster-information-reporting-system-dirs-0"
+    }
+  ],
+  "access_note": "www.fcc.gov refuses scripted access (403); the reports on docs.fcc.gov open.",
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "recovery_restoration",
+    "historical_events",
+    "service_performance"
+  ],
+  "data_kind": [
+    "document",
+    "time_series",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fcc disaster information reporting system dirs communications status reports",
+    "url": "https://fcc.gov/disaster-information-reporting-system-dirs-0"
+  },
+  "description": "The Disaster Information Reporting System (DIRS) is the web-based system through which US communications providers report infrastructure status and service restoration to the Federal Communications Commission during and after major disasters, with mandatory filing for facilities-based providers under the Resilient Networks orders of 2024 (FCC 24-5) and April 2026, and the FCC's Public Safety and Homeland Security Bureau turns these filings into public Communications Status Reports for each activation. When the FCC activates DIRS for a hurricane, wildfire, winter storm or other event, it names the counties in the disaster area, and daily reports give the status of 911 services and Public Safety Answering Points (rerouted, without location information, down), the percentage of cell sites out of service by county and by state, cable and wireline subscribers out of service, and the status of broadcast radio and television stations. Coverage: US states and territories, one series of daily reports per activation since the system was created after Hurricane Katrina in 2007; for example Hurricane Helene in 2024 reached 13.3 percent of cell sites out in the affected area of one state. Format and access: PDF reports on docs.fcc.gov, free as US government works; the underlying company filings are confidential. Caveats: reports are snapshots; cell site outages do not map directly to service availability; the counties and providers covered change during an event. Simulation uses: outage and restoration curves of telecom networks after hazards, for calibrating resilience, cascading failure and recovery models. Related records: the FCC 2017 hurricane season report and the Katrina panel analyse single events.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.telecom:recovery_restoration",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "docs.fcc.gov \"Communications Status Report for Areas Impacted by\" 2025 DIRS cell sites out of service",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "document"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "storm_wind",
+    "flood",
+    "wildfire",
+    "cold_snow_ice",
+    "earthquake"
+  ],
+  "homepage": "https://docs.fcc.gov/public/attachments/DOC-406099A1.pdf",
+  "id": "data-fcc-dirs-communications-status-reports",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026",
+  "licence": "US Government work (public domain)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.fcc.gov/disaster-information-reporting-system-dirs-0"
+    ]
+  },
+  "maturity": "active",
+  "name": "FCC Disaster Information Reporting System (DIRS) communications status reports",
+  "notes": "Hurricane Helene report of 2 October 2024 read from docs.fcc.gov on 2026-09-26; start year of DIRS (2007) from recall of the FCC order that created it.",
+  "provider": "US Federal Communications Commission, Public Safety and Homeland Security Bureau",
+  "related_ids": [],
+  "schema_summary": "per report: disaster counties, PSAP status, percent of cell sites out by county, cable and wireline outages, broadcast station status",
+  "sectors": [
+    "digital.telecom",
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "emergency_response",
+    "cascading_failure",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "status report text",
+      "url": "https://docs.fcc.gov/public/attachments/DOC-406099A1.pdf"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "fact sheet of the April 2026 DIRS Modernization Report and Order",
+      "url": "https://docs.fcc.gov/public/attachments/DOC-421207A1.pdf"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Resilient Networks Second Report and Order (2024)",
+      "url": "https://docs.fcc.gov/public/attachments/FCC-24-5A1_Rcd.pdf"
+    }
+  ],
+  "spatial_resolution": "county",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "DIRS",
+    "disaster outages",
+    "cell sites out of service",
+    "911",
+    "hurricanes"
+  ],
+  "temporal_coverage": "reports per DIRS activation since 2007",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2007
+  },
+  "temporal_resolution": "daily during activations",
+  "temporal_resolution_class": "daily",
+  "title_en": "FCC Disaster Information Reporting System (DIRS) communications status reports",
+  "type": "data",
+  "update_frequency": "irregular"
+}

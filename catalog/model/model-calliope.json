@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/calliope/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/calliope-project/calliope"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://calliope.readthedocs.io"
+    },
+    {
+      "kind": "paper",
+      "label": "JOSS paper",
+      "url": "https://doi.org/10.21105/joss.00825"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Pfenninger, S., Pickering, B. (2018). Calliope: a multi-scale energy systems modelling framework. Journal of Open Source Software 3(29), 825. doi:10.21105/joss.00825",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.21105/joss.00825",
+    "name": "calliope",
+    "repo": "github.com/calliope-project/calliope",
+    "url": "https://callio.pe"
+  },
+  "description": "Calliope is a multi-scale energy systems modelling framework for building optimisation models of energy supply, conversion, storage and demand. A model is defined entirely in YAML and CSV text files that list technologies, locations, resource potentials and costs; Calliope builds an optimisation problem from them, solves it and returns capacities and dispatch, and can also run in an operational mode that tests a fixed system under different conditions. It is developed by the Calliope project, founded by Stefan Pfenninger and Bryn Pickering, with a community of contributors. The framework is location independent and targets high spatial and temporal resolution at scales from urban districts to entire continents. It is distributed on PyPI (version 0.7.0, September 2026, Python 3.12 or newer) and conda-forge, with source on GitHub and documentation on read-the-docs; results are saved as CSV or NetCDF or analysed in Python with pandas and xarray. It is released under the Apache 2.0 licence, free of charge. Caveats: Calliope formulates an optimisation problem over technologies and locations, not computing electrical power flow physics, so grid constraints are only represented as far as the model files describe them. Simulation uses are capacity planning and optimisation of electricity and heat systems. Related records: it is an alternative to model-pypsa and model-oemof-solph.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry Calliope",
+      "route": "R06",
+      "source": "energy-calliope"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.callio.pe/",
+  "id": "model-calliope",
+  "inputs": [
+    "YAML and CSV model definition (technologies",
+    "locations",
+    "resource potentials",
+    "costs)",
+    "Time series of demand and resource availability"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-29",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "Calliope",
+  "outputs": [
+    "Optimal capacities and dispatch",
+    "Results as CSV or NetCDF (xarray)"
+  ],
+  "provider": "Calliope project (Stefan Pfenninger, Bryn Pickering and contributors)",
+  "related_ids": [
+    "model-pypsa",
+    "model-oemof-solph"
+  ],
+  "repository": "https://github.com/calliope-project/calliope",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "About: multi-scale framework, YAML/CSV model definition, urban districts to continents, CSV/NetCDF results; Apache 2.0; cite Pfenninger and Pickering 2018",
+      "url": "https://raw.githubusercontent.com/calliope-project/calliope/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 0.7.0 uploaded 2026-09-01; Apache-2.0; Python >=3.12",
+      "url": "https://pypi.org/pypi/calliope/json"
+    }
+  ],
+  "tags": [
+    "energy system model",
+    "capacity expansion",
+    "YAML",
+    "open source"
+  ],
+  "title_en": "Calliope multi-scale energy systems modelling framework",
+  "type": "model",
+  "validated_on": []
+}

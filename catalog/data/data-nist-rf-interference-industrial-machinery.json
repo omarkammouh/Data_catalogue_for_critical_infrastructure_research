@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "NIST data record",
+      "url": "https://data.nist.gov/od/id/mds2-3729"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "data_family": [
+    "telecom_coverage_spectrum",
+    "equipment_specifications"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.18434/mds2-3729",
+    "name": "nist radio frequency interference measurements of industrial machinery 900 mhz and 2 4 ghz",
+    "url": "doi:10.18434/mds2-3729"
+  },
+  "description": "This NIST dataset holds electromagnetic interference measurements from machinery in industrial settings, at 900 MHz and 2.4 GHz, the bands shared by Wi-Fi, Bluetooth, WirelessHART, ISA100.11a and other industrial wireless systems. The NIST data record says the environments were an infrared curing machine, an overhead gantry crane with an unshielded variable frequency drive, microwave dryers used to dry ceramics (two sets, several 1,100 W magnetrons) and an unidentified broadband emitter recorded with network traffic, and that the data can inform interference mitigation, band selection, frequency planning and the IEEE 3388 standard. It was published in version 1.0.0 in February 2025 by Richard Candell and Mohamed Kashef as 60 files of about 54 MB (CSV captures, a metadata sheet, a PDF readme and MATLAB report scripts), free to download under the NIST licence. Coverage is a few machines in unnamed factories. A companion NIST dataset (DOI 10.18434/mds2-4072, January 2026, 93 files of about 33.8 GB) gives standardised baseband test vectors to replay such interference in the laboratory for IEEE Std 3388 performance tests. Caveats: the sites are not named, and the captures are short recordings, not long-term monitoring. For simulation it gives measured interference profiles to test how factory machinery degrades wireless control links in models of industrial communication and control reliability. Related catalogue records include the NIST Cybersecurity Framework manufacturing testbed datasets and the NIST Smart Manufacturing Systems test bed data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((industrial OR industry OR factory OR factories OR \"chemical plant\" OR \"chemical plants\" OR refinery OR refineries OR manufacturing OR petrochemical) AND (equipment OR machinery OR specifications OR fleet OR machines))",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((industrial OR industry OR factory OR factories OR \"chemical plant\" OR \"chemical plants\" OR refinery OR refineries OR manufacturing OR petrochemical) AND (ontology OR \"data model\" OR standard OR taxonomy OR schema))",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "document",
+    "source_code"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://doi.org/10.18434/mds2-3729",
+  "id": "data-nist-rf-interference-industrial-machinery",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-02-14",
+  "licence": "NIST licence",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NIST radio frequency interference measurements of industrial machinery (900 MHz and 2.4 GHz)",
+  "provider": "NIST (Richard Candell, Mohamed Kashef)",
+  "sectors": [
+    "industry.manufacturing_chemical",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "digital_twin"
+  ],
+  "size": "about 54 MB (60 files)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, keywords, files, sizes, date, contact and licence read 2026-09-26",
+      "url": "https://data.nist.gov/rmm/records?@id=ark:/88434/mds2-3729"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "creators, file count and total size read 2026-09-26",
+      "url": "https://api.datacite.org/dois/10.18434/mds2-3729"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "companion IEEE 3388 test vector dataset description, date and licence read 2026-09-26",
+      "url": "https://data.nist.gov/rmm/records?@id=ark:/88434/mds2-4072"
+    }
+  ],
+  "spatial_resolution": "machine",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "RF interference",
+    "EMI",
+    "industrial wireless",
+    "2.4 GHz",
+    "900 MHz",
+    "NIST"
+  ],
+  "temporal_coverage": "not stated on the page read",
+  "temporal_resolution": "spectrum capture",
+  "temporal_resolution_class": "other",
+  "title_en": "NIST radio frequency interference measurements of industrial machinery (900 MHz and 2.4 GHz)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

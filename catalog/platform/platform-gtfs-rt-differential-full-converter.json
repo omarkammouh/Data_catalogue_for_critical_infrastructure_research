@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/derhuerst/gtfs-rt-differential-to-full-dataset"
+    },
+    {
+      "kind": "docs",
+      "label": "npm package",
+      "url": "https://www.npmjs.com/package/gtfs-rt-differential-to-full-dataset"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gtfs realtime differential to full feed converter",
+    "repo": "github.com/derhuerst/gtfs-rt-differential-to-full-dataset",
+    "url": "https://github.com/derhuerst/gtfs-rt-differential-to-full-dataset"
+  },
+  "deployment": [
+    "own_server"
+  ],
+  "description": "This Node.js package turns a stream of GTFS Realtime differential messages into a current full-dataset message. It accepts FeedMessage-shaped JavaScript objects through a writable stream, keeps still-relevant entities in memory, and returns a protocol-buffer-encoded FULL_DATASET message. Users set a time-to-live period so old changes expire. The README gives npm installation and a short code example, and the repository carries an ISC licence. The project explicitly says its implementation does not exactly follow the draft DIFFERENTIAL specification; users need to test deletion and expiry behaviour against their feed before relying on a reconstructed state. This review read the public README and file tree, not the source code or a running feed. It did not install the package. Its scope is any public-transit GTFS Realtime feed that emits differential updates, so temporal and geographic coverage come from the user’s source feed, not the tool. A transport modeller could prepare a stable vehicle or trip-update snapshot for a simulation input. Related catalogue resource data-gtfs-specification defines the feed standard; this package is a specific conversion utility, not a transit dataset.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "gtfs dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/derhuerst/gtfs-rt-differential-to-full-dataset",
+  "id": "platform-gtfs-rt-differential-full-converter",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "GTFS Realtime FeedMessage",
+    "Protocol Buffers"
+  ],
+  "language": [
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-23",
+  "licence": "ISC",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.npmjs.com/package/gtfs-rt-differential-to-full-dataset"
+    ]
+  },
+  "maturity": "stale",
+  "name": "GTFS Realtime differential-to-full feed converter",
+  "notes": "G8; G8-0770. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: derhuerst. gtfs-rt-differential-to-full-dataset repository documentation, accessed 2026-09-28..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "derhuerst repository author",
+  "related_ids": [
+    "data-gtfs-specification"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/derhuerst/gtfs-rt-differential-to-full-dataset/blob/master/readme.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/derhuerst/gtfs-rt-differential-to-full-dataset"
+    }
+  ],
+  "tags": [],
+  "title_en": "Node.js package for gtfs realtime differential messages",
+  "type": "platform"
+}

@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/SHUD-System/SHUD"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/SHUD-System/SHUD/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "SHUD-System. Simulator for Hydrologic Unstructured Domains. https://github.com/SHUD-System/SHUD",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "shud integrated hydrological model",
+    "repo": "github.com/shud-system/shud",
+    "url": "https://github.com/SHUD-System/SHUD"
+  },
+  "description": "SHUD is the SHUD-System team's distributed hydrological model for unstructured domains. It contains fully coupled finite-volume calculations for surface water, soil moisture, groundwater and river flow, with a coupled lake model in version 2. Inputs describe the catchment, soils, geology and forcing; outputs include water levels, storage states and fluxes. Spatial resolution adapts to the model design, and the documented output interval can range from minutes to days. Source in C and C++ is free under MIT, with Linux, macOS and Windows guidance. A limitation is that the solver requires SUNDIALS/CVODE and model resolution must fit available computing resources. National geospatial inputs do not remove uncertainty in ungauged catchments. SHUD supports water-resource and stormwater simulations. T-Route (model-t-route) provides related river routing. The North Fork Cache Creek example is documented, but no case data or executable was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "shud-system/shud linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/SHUD-System/SHUD",
+  "id": "model-shud",
+  "inputs": [
+    "Catchment, soil and geology configuration",
+    "Hydrometeorological forcing"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-03",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "SHUD integrated hydrological model",
+  "notes": "G7 G7-1156. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Surface, groundwater and river states",
+    "Hydrological fluxes"
+  ],
+  "provider": "SHUD-System development team",
+  "related_ids": [
+    "model-t-route"
+  ],
+  "repository": "https://github.com/SHUD-System/SHUD",
+  "sectors": [
+    "water.drinking_water",
+    "water.stormwater_drainage",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for SHUD-System/SHUD: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/shud-system/shud"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/shud-system/shud/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for drinking water, stormwater drainage and dams and flood defences",
+  "type": "model"
+}

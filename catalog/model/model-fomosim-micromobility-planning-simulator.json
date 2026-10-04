@@ -1,0 +1,133 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code on GitHub (EECS-NTNU/fomo)",
+      "url": "https://github.com/EECS-NTNU/fomo"
+    },
+    {
+      "kind": "paper",
+      "label": "Expert Systems with Applications (2024), CC BY",
+      "url": "https://doi.org/10.1016/j.eswa.2024.125842"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Bakker, S.J.S., Ben Ahmed, M., Djupdal, A., Natvig, L., Andersson, H., Jahre, M. (2024) FOMOsim: An open-source simulator for rigorous analysis of micromobility planning problems. Expert Systems with Applications, doi:10.1016/j.eswa.2024.125842",
+  "continents": [
+    "europe",
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "NO",
+    "US"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1016/j.eswa.2024.125842",
+    "name": "fomosim open source simulator for bike sharing and e scooter micromobility planning",
+    "repo": "github.com/eecs-ntnu/fomo",
+    "url": "https://github.com/EECS-NTNU/fomo"
+  },
+  "description": "FOMOsim is an open-source simulator for analysing shared micromobility systems, developed at the Norwegian University of Science and Technology and described in Expert Systems with Applications in 2024. The paper argues that earlier micromobility simulators were custom-built, not open source and little tested, and presents a modular simulator with embedded benchmark instances built from bike-sharing systems in major American and Norwegian cities, plus a greedy heuristic for dynamic bike rebalancing. The Python code is an event-based simulation: a queue of trip-generation and vehicle-arrival events drives the state, and decision policies route the rebalancing vehicles. Refactoring notes from October 2025 on the project wiki add free-floating e-scooters next to station-based bikes, battery management and collaboration policies between the two systems; the default example uses a Trondheim instance. Coverage: city systems for which an instance is built from trip data and GBFS feeds. Access: source code and a wiki on GitHub. Licence and cost: free to download, but the repository has no licence file, while the paper is CC BY 4.0. Caveats: the wiki warns that policies written before the 2025 refactor will likely break, and some examples need the commercial Gurobi solver. It supports optimisation and capacity planning of bike-sharing fleets, stations and rebalancing operations. It relates to the Capital Bikeshare rebalancing case study, the GBFS specification and the Citi Bike system data in the catalogue.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "discrete event simulation bike sharing system open source simulator python dock rebalancing",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/EECS-NTNU/fomo",
+  "id": "model-fomosim-micromobility-planning-simulator",
+  "inputs": [
+    "Initial system state from JSON instance files (stations, bikes, e-scooters, depots), historical trip data and GBFS feeds for demand, rebalancing policy and vehicle settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "No licence file in the repository (paper CC BY 4.0)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "discrete_event",
+    "optimisation"
+  ],
+  "name": "FOMOsim, open-source simulator for bike-sharing and e-scooter micromobility planning",
+  "outputs": [
+    "Trips served, bike and e-scooter shortages and surpluses (lost trips), rebalancing vehicle routes and metrics over the simulated period"
+  ],
+  "provider": "Norwegian University of Science and Technology (Bakker, Ben Ahmed, Djupdal, Natvig, Andersson, Jahre)",
+  "regions": [
+    "Trondheim"
+  ],
+  "related_ids": [
+    "case_study-washington-dc-capital-bikeshare-rebalancing",
+    "data-gbfs-specification",
+    "data-citi-bike-system-data"
+  ],
+  "repository": "https://github.com/EECS-NTNU/fomo",
+  "sectors": [
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "abstract: open-source simulator, modular, benchmark instances from American and Norwegian BSS, greedy rebalancing heuristic; NTNU; CC BY",
+      "url": "https://api.openalex.org/works/doi:10.1016/j.eswa.2024.125842"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "README points to the wiki; no LICENSE file (404)",
+      "url": "https://raw.githubusercontent.com/EECS-NTNU/fomo/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "e-scooter support, policies, breaking changes",
+      "url": "https://raw.githubusercontent.com/wiki/EECS-NTNU/fomo/FOMOsim-Refactor-Notes-(Oct.-2025).md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Python dependencies including gurobipy",
+      "url": "https://raw.githubusercontent.com/wiki/EECS-NTNU/fomo/Installation.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "event queue driving the simulation",
+      "url": "https://raw.githubusercontent.com/EECS-NTNU/fomo/main/sim/Simulator.py"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "default Trondheim instance files",
+      "url": "https://raw.githubusercontent.com/EECS-NTNU/fomo/main/settings.py"
+    }
+  ],
+  "tags": [
+    "bike sharing",
+    "e-scooters",
+    "rebalancing",
+    "micromobility",
+    "discrete-event simulation",
+    "r2-fresh-transport"
+  ],
+  "title_en": "FOMOsim, open-source simulator for bike-sharing and e-scooter micromobility planning",
+  "type": "model",
+  "validated_on": [
+    "Benchmark instances built from bike-sharing systems in major American and Norwegian cities (paper)"
+  ]
+}

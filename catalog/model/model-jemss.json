@@ -1,0 +1,139 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/uoa-ems-research/JEMSS.jl"
+    },
+    {
+      "kind": "docs",
+      "label": "City model notes (PDF linked from README)",
+      "url": "https://drive.google.com/file/d/1teioy6s--sNjB5iwq0R8DM_W-Gj0WCcE/view?usp=sharing"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "JEMSS.jl repository (https://github.com/uoa-ems-research/JEMSS.jl)",
+  "continents": [
+    "oceania",
+    "north_america",
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NZ",
+    "CA",
+    "US",
+    "NL"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "jemss jl julia emergency medical services simulation",
+    "repo": "github.com/uoa-ems-research/jemss.jl",
+    "url": "https://github.com/uoa-ems-research/JEMSS.jl"
+  },
+  "description": "JEMSS.jl is a Julia package for simulating emergency medical services (EMS): calls arrive at locations and times, ambulances are dispatched from stations, drive over a road network to the call, may transport patients to hospital and return, and the simulation reports response times and ambulance utilisation. It supports studies of dispatch rules, ambulance relocation (move-up) policies and station locations. It is published by the uoa-ems-research group, whose name and Auckland example point to the University of Auckland. It ships city-like models of Auckland (New Zealand), Edmonton (Canada), Manhattan (United States) and Utrecht (Netherlands); the README says these are not exact replicas of the cities, and a linked document gives their sources. Any other area can be modelled by supplying ambulances, calls, stations, hospitals and a road network through a configuration file; resolution is the individual call and road link. It is a Julia package installed from GitHub (tags up to v1.3.6), with example scripts and a browser animation that needs the user's own Mapbox access token. Licence: Apache 2.0, free. Caveats: the bundled city data are approximations, the first run precomputes all-pairs shortest paths, and there is no graphical model builder. Simulation uses: emergency response planning, optimisation of ambulance deployment and capacity planning of EMS fleets. Related: the NHS ambulance handover simulation (catalogued as model-ambulance-des-nhsx) models the hospital end of the same process.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ambulance EMS simulation package (register services-jemss)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry JEMSS",
+      "route": "R06",
+      "source": "services-jemss (register)"
+    }
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/uoa-ems-research/JEMSS.jl",
+  "id": "model-jemss",
+  "inputs": [
+    "Ambulances",
+    "Calls (arrival times, locations, priorities)",
+    "Stations",
+    "Hospitals",
+    "Road network with travel times",
+    "Simulation configuration XML"
+  ],
+  "language": [
+    "julia"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-06-28",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "discrete_event",
+    "optimisation",
+    "network"
+  ],
+  "name": "JEMSS.jl (Julia Emergency Medical Services Simulation)",
+  "notes": "Provider inferred from the GitHub organisation name uoa-ems-research and the Auckland example; no provider page was read.",
+  "outputs": [
+    "Response time statistics",
+    "Ambulance utilisation",
+    "Animation of simulated operations"
+  ],
+  "provider": "uoa-ems-research (emergency medical services research at the University of Auckland)",
+  "regions": [
+    "Auckland",
+    "Edmonton",
+    "Manhattan",
+    "Utrecht"
+  ],
+  "related_ids": [
+    "model-ambulance-des-nhsx"
+  ],
+  "repository": "https://github.com/uoa-ems-research/JEMSS.jl",
+  "runs_on": [],
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Julia package for EMS simulation; Auckland example; city models Auckland, Edmonton, Manhattan, Utrecht; animation with Mapbox token",
+      "url": "https://raw.githubusercontent.com/uoa-ems-research/JEMSS.jl/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Apache License 2.0",
+      "url": "https://raw.githubusercontent.com/uoa-ems-research/JEMSS.jl/HEAD/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: tags up to v1.3.6",
+      "url": "https://github.com/uoa-ems-research/JEMSS.jl"
+    }
+  ],
+  "tags": [
+    "ambulance",
+    "EMS",
+    "discrete event simulation",
+    "dispatch",
+    "relocation",
+    "station location",
+    "Julia"
+  ],
+  "title_en": "JEMSS.jl (Julia Emergency Medical Services Simulation)",
+  "type": "model",
+  "validated_on": []
+}

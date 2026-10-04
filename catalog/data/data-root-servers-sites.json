@@ -1,0 +1,131 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Root server map",
+      "url": "https://root-servers.org/"
+    },
+    {
+      "kind": "api",
+      "label": "Site file for K-root (JSON); same pattern for A to M",
+      "url": "https://root-servers.org/root/K/json/"
+    },
+    {
+      "kind": "docs",
+      "label": "FAQ",
+      "url": "https://root-servers.org/faq/"
+    },
+    {
+      "kind": "portal",
+      "label": "News and reports archive",
+      "url": "https://root-servers.org/archives/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "crs": "WGS 84 (latitude, longitude)",
+  "data_family": [
+    "critical_facilities",
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "root server technical operations site data root servers org",
+    "url": "https://root-servers.org"
+  },
+  "description": "root-servers.org is the joint website of the independent operators of the DNS Root Server System, the servers that answer queries for the root zone on which every domain-name lookup depends. For each of the thirteen root server identities, A to M, it publishes a machine-readable file giving the operator (for example RIPE NCC for K), its autonomous system number, IPv4 and IPv6 service addresses, BGP community conventions, peering policy, links to the operator's RSSAC001 compliance statement and RSSAC002 daily statistics, and the list of anycast sites. Each site entry gives the town, country, latitude and longitude, whether it is a global or local site, IPv4 and IPv6 support, number of instances, status and creation and update dates. On 26 September 2026 the files listed 1,603 sites in total, from 6 for B and G to 386 for F. The operators publish it so the public and operators can see where the root is served; the site also carries news such as reports on DDoS attacks against root servers (December 2025) and technical diversity reports. Coverage is worldwide, point-level per site, reflecting the current deployment. Files are JSON at /root/<letter>/json/, free to read without registration; no licence is stated on the pages read. Caveats: locations are the operators' declared sites, instance counts per site vary, local sites serve only nearby networks, and daily traffic statistics sit on each operator's RSSAC002 pages, not here. Simulation uses: hazard exposure and redundancy analysis of critical DNS infrastructure, cascading-failure and resilience models of internet services. Related records: PeeringDB facilities and the RIPE RIS routing data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.internet_exchange:critical_facilities",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://root-servers.org/root/K/json/",
+  "id": "data-root-servers-sites",
+  "languages": [
+    "en"
+  ],
+  "licence": "Not stated (public operator information)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Root Server Technical Operations site data (root-servers.org)",
+  "notes": "Licence not stated on the pages read on 2026-09-26.",
+  "provider": "Root Server Technical Operations Association",
+  "related_ids": [
+    "data-peeringdb",
+    "data-ripe-ris"
+  ],
+  "schema_summary": "Per identity: ASN, Operator, IPv4, IPv6, Peering Policy, RSSAC001, RSSAC002, Sites[]; per site: Town, Country, Latitude, Longitude, Type, Instances, Status, IPv4, IPv6, Created, Updated",
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "cascading_failure",
+    "resilience"
+  ],
+  "size": "1,603 sites across 13 identities (2026-09-26)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Site, news (DDoS December 2025, diversity report 2026), links to /root/A-M/json/",
+      "url": "https://root-servers.org/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Fields; K operated by RIPE NCC, AS25152; site sample",
+      "url": "https://root-servers.org/root/K/json/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Root Server System served by multiple independent operators from thousands of sites",
+      "url": "https://root-servers.org/faq/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://root-servers.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://root-servers.org/root/K/json/"
+    }
+  ],
+  "spatial_resolution": "Point per site (town)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "DNS",
+    "root server",
+    "anycast",
+    "critical internet infrastructure"
+  ],
+  "temporal_coverage": "Current deployment",
+  "title_en": "Root Server Technical Operations site data (root-servers.org)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

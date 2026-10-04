@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/PyPSA/whobs-server"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/PyPSA/whobs-server/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "model energy wind solar storage optimiser",
+    "repo": "github.com/pypsa/whobs-server",
+    "url": "https://github.com/PyPSA/whobs-server"
+  },
+  "deployment": [
+    "hosted_service",
+    "own_server"
+  ],
+  "description": "model.energy is the WHOBS team's web platform for optimising wind, solar, battery and hydrogen storage to supply a constant electricity demand without direct emissions. It uses PyPSA and weather-derived generation profiles, with user-selected cost assumptions. Outputs describe the least-cost configured energy system. Global profiles use ERA5 data downsampled to half-degree cells, while temporal coverage follows selected weather years. Python server source is free under AGPL-3.0-or-later, with a public web interface and local deployment instructions. A limitation is the baseload-demand formulation and sensitivity to weather years and costs. Rebuilding global inputs also requires substantial storage and an external Climate Data Store account. The tool supports preliminary generation and storage planning. PyPSA (model-pypsa) is its optimisation dependency. Neither the web calculator nor its automatic multi-gigabyte data preparation was run.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:PyPSA",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/PyPSA/whobs-server",
+  "id": "platform-model-energy",
+  "interfaces": [
+    "code_library",
+    "web_app"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-05-30",
+  "licence": "AGPL-3.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "model.energy wind-solar-storage optimiser",
+  "notes": "G7 G7-1183. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability.  Cited as: WHOBS contributors. model.energy: online optimisation of energy systems. https://github.com/PyPSA/whobs-server.",
+  "open_source": true,
+  "platform_kind": [
+    "modelling_suite"
+  ],
+  "provider": "WHOBS and model.energy contributors",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "energy.gas_hydrogen"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for PyPSA/whobs-server: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3APyPSA&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/pypsa/whobs-server/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Modelling software for electricity and gas and hydrogen",
+  "type": "platform"
+}

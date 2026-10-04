@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Indoor and outdoor fill level data (Zenodo)",
+      "url": "https://zenodo.org/records/3375560"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GR"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.3375560",
+    "name": "composition project bin fill level sensor readings from industrial scrap bins in greece 2018 2019",
+    "url": "doi:10.5281/zenodo.3375560"
+  },
+  "description": "These files contain raw readings from sensors that measure how full waste bins are, recorded every few minutes during a smart waste management trial in Greece. The producer is Nikolaos Alexopoulos of the Centre for Research and Technology Hellas, for the European COMPOSITION project, with data shared by the pilot partners KLEEMANN Hellas, a manufacturer, and ELDIA, a waste management company. Coverage is indoor scrap bins from June to August 2019 and an outdoor open-top container from September to November 2018. Each line gives the sensor identifier, fill percentage, battery level and time, with error messages for the indoor bins and the measured distance to the waste surface for the outdoor container. The two text files and a readme are available as a free download from Zenodo under the Creative Commons Attribution 4.0 licence. Caveats: industrial scrap, not household waste, a few bins over one to two months, and unprocessed values that include noise from blocked sensors and people levelling the contents. Simulation uses: testing fill forecasting and dynamic collection scheduling, and generating realistic sensor feeds for waste logistics digital twins. Related records: the Lahore IoT collection pilot (case_study-lahore-iot-waste-collection-pilot) reports a household waste sensor deployment.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "fill level sensors bins dataset",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "json",
+    "plain_text"
+  ],
+  "geographic_scope": "site",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.3375560",
+  "id": "data-composition-bin-fill-level-sensors",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2019-08-22",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "COMPOSITION project bin fill level sensor readings from industrial scrap bins in Greece (2018-2019)",
+  "provider": "Nikolaos Alexopoulos (CERTH), COMPOSITION EU project, with pilot partners KLEEMANN Hellas SA and ELDIA SA",
+  "related_ids": [
+    "case_study-lahore-iot-waste-collection-pilot"
+  ],
+  "schema_summary": "Each line a JSON message: sensor or bin id, type 'Fill level', measurements FillPercentage and battery, eventDate timestamp, updateState; indoor file adds error messages; outdoor open-top container file adds sensor-to-surface distance in mm; readings about every 5 minutes",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creator Alexopoulos (CERTH); CC BY 4.0; published 2019-08-22; files '1. Indoor_bins_fill_level_Data.txt' (3.5 MB), '2. Outdoor_bins_fill_level_Data.txt' (3.4 MB), ReadMe.txt; Smart Waste Management scenario of the COMPOSITION EU project; data shared with consent of KLEEMANN Hellas SA and ELDIA SA; ReadMe: indoor bins 20/06/2019-08/08/2019, outdoor open top container 25/09/2018-25/11/2018; raw data without normalisation; read in memory: first outdoor readings at 5-minute steps with FillPercentage, battery and Distance",
+      "url": "https://zenodo.org/api/records/3375560"
+    }
+  ],
+  "spatial_resolution": "Individual bins at pilot sites",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "smart bins",
+    "fill level sensors",
+    "IoT",
+    "industrial waste",
+    "COMPOSITION",
+    "Horizon 2020"
+  ],
+  "temporal_coverage": "25 September to 25 November 2018 (outdoor); 20 June to 8 August 2019 (indoor)",
+  "temporal_resolution": "About 5 minutes",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "COMPOSITION project bin fill level sensor readings from industrial scrap bins in Greece (2018-2019)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

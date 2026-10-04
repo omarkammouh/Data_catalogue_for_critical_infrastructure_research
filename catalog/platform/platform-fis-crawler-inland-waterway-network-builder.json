@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/RWS-NL/fis-crawler"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fis crawler dutch and european inland waterway network builder",
+    "repo": "github.com/rws-nl/fis-crawler",
+    "url": "https://github.com/RWS-NL/fis-crawler"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "fis-crawler is a Rijkswaterstaat code base that crawls, processes and exports inland waterway network data for transport modelling of Dutch and European waterways. Scrapy crawlers read the Dutch Fairway Information System (FIS) data service, the DISK lock and bridge details and the European EuRIS services; a pipeline then builds networks, enriches them, schematises locks and merges the FIS and EuRIS networks into one cross-border graph. The README names two uses: route assignment, where a lock is a weighted edge with an average delay as in BIVAS and OpenTNSim, and detailed lock analysis by discrete-event simulation, where chambers, approaches, waiting berths and doors are modelled as in SIVAK and OpenTNSim. Coverage: Dutch waterways from FIS and DISK, and European waterways from EuRIS. Access: Python source on GitHub, run with the uv package manager. Licence and cost: free to read, but no licence file was found, so reuse terms are unclear. Caveats: it depends on the live data services it crawls, so outputs change as those services change. It prepares the network inputs for capacity and network flow studies of inland navigation, including low-water and lock outage scenarios, and is the likely source of the EuRIS and FIS network graphs catalogued here, which feed BIVAS and OpenTNSim.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "BIVAS inland shipping network model Rijkswaterstaat SIVAK lock simulation",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://github.com/RWS-NL/fis-crawler",
+  "id": "platform-fis-crawler-inland-waterway-network-builder",
+  "interfaces": [
+    "command_line",
+    "code_library"
+  ],
+  "interoperability": [
+    "Fairway Information System (FIS) data service",
+    "DISK lock and bridge data",
+    "EuRIS web services",
+    "network graph exports"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "not stated in the repository (no licence file found)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "fis-crawler, Dutch and European inland waterway network builder",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Rijkswaterstaat (RWS-NL GitHub organisation)",
+  "related_ids": [
+    "data-eu-inland-fairway-network-graphs-euris-fis",
+    "model-bivas",
+    "model-opentnsim",
+    "data-rijkswaterstaat-nautical-data"
+  ],
+  "sectors": [
+    "transport.inland_waterways"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: crawls, processes and exports inland waterway network data; FIS, DISK, EURIS crawlers; route assignment (BIVAS, OpenTNSim) and discrete-event lock analysis (SIVAK, OpenTNSim); uv; no licence file found",
+      "url": "https://raw.githubusercontent.com/RWS-NL/fis-crawler/main/README.md"
+    }
+  ],
+  "supported_sectors": [
+    "transport.inland_waterways"
+  ],
+  "tags": [
+    "inland waterways",
+    "locks",
+    "network graph",
+    "Rijkswaterstaat",
+    "EuRIS",
+    "r2-fresh-transport"
+  ],
+  "title_en": "Fis-crawler, Dutch and European inland waterway network builder",
+  "type": "platform"
+}

@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Socrata SODA API",
+      "url": "https://data.sfgov.org/resource/nuek-vuh3.json"
+    },
+    {
+      "kind": "portal",
+      "label": "Related Fire Incidents data set",
+      "url": "https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric/about_data"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "san francisco fire department and emergency medical services dispatched calls for service",
+    "url": "https://data.sfgov.org/Public-Safety/Fire-Department-and-Emergency-Medical-Services-Dis/nuek-vuh3"
+  },
+  "description": "This data set holds every response by San Francisco fire units to 911 calls, including medical incidents handled by emergency medical services staff, taken from the city's computer-aided dispatch system. Each row is one unit's response and carries the call and incident numbers, call type, priority, unit type, whether it is an advanced life support unit, the timestamps for receipt, dispatch, response, arrival on scene, transport, hospital arrival and availability, the final disposition, and the location as an intersection or call box with battalion, station area and neighbourhood. The producer is the San Francisco Fire Department, which enriches the Department of Emergency Management's dispatch extract, published on DataSF. Coverage is the City and County of San Francisco, with a multi-year history updated daily. Data are downloadable as CSV or JSON and queryable through the Socrata API without registration, under the Open Data Commons Public Domain Dedication and License. Caveats: most calls involve several units, so rows are not calls; addresses are generalised to intersections; the common call types are medical incidents, alarms, structure fires and traffic collisions. Simulation uses: call arrival rates, service and travel times for discrete-event and optimisation models of ambulance and fire station location, dispatch and surge. Related records: NYC 911 End-to-End data (data-nyc-911-end-to-end-response-times) and the NEMSIS research dataset (data-nemsis-research-dataset).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "DataSF Fire Department and EMS dispatched calls for service",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "city",
+  "hazards": [],
+  "homepage": "https://data.sfgov.org/Public-Safety/Fire-Department-and-Emergency-Medical-Services-Dis/nuek-vuh3",
+  "id": "data-sf-fire-ems-calls-for-service",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "ODC-PDDL-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "San Francisco Fire Department and Emergency Medical Services Dispatched Calls for Service",
+  "provider": "San Francisco Fire Department and Department of Emergency Management (DataSF)",
+  "related_ids": [
+    "data-nyc-911-end-to-end-response-times",
+    "data-nemsis-research-dataset"
+  ],
+  "schema_summary": "One row per unit response: call number, unit ID, incident number, call type and group, timestamps (received, entry, dispatch, response, on scene, transport, hospital, available), final disposition, address (intersection or call box), battalion, station area, priority, ALS unit, number of alarms, unit type, neighbourhood and district, location",
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Metadata: summary, how created (DEM CAD extract), daily update, columns, PDDL licence, rows updated 2026-09-25",
+      "url": "https://data.sfgov.org/api/views/nuek-vuh3.json"
+    }
+  ],
+  "spatial_resolution": "Intersection or street segment (latitude and longitude)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "911",
+    "computer-aided dispatch",
+    "fire calls",
+    "EMS",
+    "ambulance",
+    "response times",
+    "San Francisco"
+  ],
+  "temporal_coverage": "Multi-year history of computer-aided dispatch records, updated to September 2026",
+  "temporal_resolution": "Individual calls with timestamps",
+  "temporal_resolution_class": "event",
+  "title_en": "San Francisco Fire Department and Emergency Medical Services Dispatched Calls for Service",
+  "type": "data",
+  "update_frequency": "daily"
+}

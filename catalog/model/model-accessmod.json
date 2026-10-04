@@ -1,0 +1,141 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/unige-geohealth/accessmod"
+    },
+    {
+      "kind": "repo",
+      "label": "inAccessMod R package (input data preparation)",
+      "url": "https://github.com/unige-geohealth/inAccessMod"
+    },
+    {
+      "kind": "portal",
+      "label": "Download and user manual",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.accessmod.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "accessmod 5 physical accessibility to health care",
+    "repo": "github.com/unige-geohealth/accessmod",
+    "url": "https://accessmod.org"
+  },
+  "description": "AccessMod 5 is free, open-source software that models how physically accessible health services are to a population. It computes travel time surfaces to the nearest facility using anisotropic, multimodal movement over land cover, roads and barriers; estimates the part of the population not served when facilities lack capacity; measures referral times and distances between facilities; summarises coverage by administrative area; and finds the best locations for new facilities in a scaling-up analysis. The provider is the World Health Organization, with the GeoHealth group of the University of Geneva, which develops it with the MORU Health GeoLab; UNICEF supported maintenance from 2018 to 2021, and it has been a Digital Public Good since 2022. It applies worldwide wherever users supply national land cover, road, facility and population data. The code is on GitHub under the GNU GPL version 3, with an additional WHO terms of use and software licence agreement, and runs in Docker or a VirtualBox virtual machine with a browser interface built on GRASS, GDAL, R and Shiny. A companion R package, inAccessMod, automates downloading and preparing the input layers (administrative boundaries, elevation, population, land cover and OpenStreetMap roads and barriers) and processing WHO HeRAMS facility tables. Caveats: results depend on assumed travel speeds and input data quality, and seasonal flooding or disruption must be modelled as separate scenarios. Simulation uses: service coverage when roads or facilities are disrupted by floods or conflict, emergency referral planning, and facility siting. Related records: the Malaria Atlas Project travel time maps (data-map-travel-time-to-healthcare) provide a global precomputed equivalent.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "AccessMod 5 WHO physical accessibility health care",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://github.com/unige-geohealth/accessmod",
+  "id": "model-accessmod",
+  "inputs": [
+    "Land cover",
+    "Road network",
+    "Barriers (rivers, water bodies)",
+    "Travel scenario speeds by mode",
+    "Health facility locations and capacity",
+    "Population raster",
+    "Administrative boundaries"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-05",
+  "licence": "GPL-3.0 plus the WHO Terms of Use and Software License Agreement",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://doc-accessmod.unepgrid.ch/display/EN/AccessMod+5+user+manual"
+    ],
+    "dead_since": "2026-09-27",
+    "wayback": "http://web.archive.org/web/20220525135413/https://doc-accessmod.unepgrid.ch/display/EN/AccessMod+5+user+manual"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network",
+    "optimisation"
+  ],
+  "name": "AccessMod 5 (physical accessibility to health care)",
+  "outputs": [
+    "Travel time surfaces to nearest facility",
+    "Geographic coverage and unmet population",
+    "Referral times and distances between facilities",
+    "Zonal statistics of coverage",
+    "Optimal locations for new facilities (scaling up)"
+  ],
+  "provider": "World Health Organization with the GeoHealth group, University of Geneva",
+  "regions": [],
+  "related_ids": [
+    "data-map-travel-time-to-healthcare"
+  ],
+  "repository": "https://github.com/unige-geohealth/accessmod",
+  "runs_on": [
+    "Docker",
+    "VirtualBox virtual machine",
+    "web browser interface"
+  ],
+  "sectors": [
+    "services.healthcare",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "WHO tool, contributors, GPL v3 plus WHO terms, five tools, Docker since 5.7.x, Digital Public Good since 2022",
+      "url": "https://www.accessmod.org/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Summary: anisotropic multimodal accessibility; developed by GeoHealth group Geneva with WHO and MORU Health GeoLab",
+      "url": "https://raw.githubusercontent.com/unige-geohealth/accessmod/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "inAccessMod: R package that downloads and prepares AccessMod inputs (geoBoundaries boundaries, SRTM DEM, WorldPop population, Copernicus land cover, OpenStreetMap roads and barriers) and filters HeRAMS facility tables; JOSS 9(93) 5879, doi 10.21105/joss.05879",
+      "url": "https://raw.githubusercontent.com/unige-geohealth/inAccessMod/HEAD/README.md"
+    }
+  ],
+  "tags": [
+    "accessibility",
+    "travel time",
+    "health coverage",
+    "facility location",
+    "WHO",
+    "GRASS",
+    "digital public good"
+  ],
+  "title_en": "AccessMod 5 (physical accessibility to health care)",
+  "type": "model",
+  "validated_on": []
+}

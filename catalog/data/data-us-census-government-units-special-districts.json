@@ -1,0 +1,163 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "2022 Government Units Listing (ZIP with XLSX and documentation)",
+      "url": "https://www2.census.gov/programs-surveys/gus/datasets/2022/govt_units_2022.ZIP"
+    },
+    {
+      "kind": "api",
+      "label": "Public Sector: Government Organization API (timeseries/govsorg)",
+      "note": "API key required",
+      "url": "https://api.census.gov/data/timeseries/govsorg.html"
+    },
+    {
+      "kind": "portal",
+      "label": "2022 Government Units Listing page",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.census.gov/data/datasets/2022/econ/gus/public-use-files.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Government Organization methodology and technical documentation 2022",
+      "url": "https://www2.census.gov/programs-surveys/gus/datasets/2022/2022_gov_org_meth_tech_doc.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "Former landing page (description or portal)",
+      "url": "https://www.census.gov/programs-surveys/cog.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "governance_regulation",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "census of governments government units listing and annual government organization counts special districts by function",
+    "url": "https://census.gov/programs-surveys/cog.html"
+  },
+  "description": "The organization component of the U.S. Census Bureau's Census of Governments lists every unit of state and local government in the United States and counts them by type each year. The 2022 Government Units Listing is a public spreadsheet of the 90,887 governments enumerated in 2022, with sheets for general-purpose governments (counties, municipalities, townships), school districts and 39,555 special district governments. Each special district row gives the Census government id, name, function code, mailing address, website, state and county FIPS codes. Function codes identify infrastructure operators that appear in no asset register: 3,550 water supply utilities, 1,829 sewerage and 1,380 combined sewerage and water districts, 2,419 drainage and 599 flood control districts, 955 irrigation, 1,149 highway, 435 air transportation, 367 public mass transit, 173 electric power, 65 gas supply and 138 sea and inland port districts, plus 5,957 fire protection districts. Coverage: census years ending in 2 and 7 since 1957, annual counts (2025 and 2026 released), and a Census Data API series from 1942 to 2026. Access: ZIP of XLSX with documentation on www2.census.gov, tables on census.gov, and the govsorg API (free key); free and public domain. Caveats: mailing addresses, not service areas or coordinates; the Government Units Survey that fed the listing was discontinued in April 2025, last completed in 2021. Simulation uses: identifying which public body runs local water, drainage, power or transit service, and joining operators to finance and employment records. Related records: State and Local Government Finances, the public employment survey, EPA SDWIS and the FTA National Transit Database.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; entries Census of Governments and Government Units Survey",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): api.census.gov/data.json dataset list, timeseries/govsorg",
+      "route": "R35",
+      "source": "census-data-api"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "document",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/data/datasets/2022/econ/gus/public-use-files.html",
+  "id": "data-us-census-government-units-special-districts",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Census of Governments: Government Units Listing and annual government organization counts (special districts by function)",
+  "notes": "Function counts were computed from the 2022 file on 2026-09-27 (Special District sheet, 39,555 rows). Individual State Descriptions (PDF report per state) are folded into this record.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-state-local-government-finances",
+    "data-us-census-public-employment-payroll",
+    "data-epa-sdwis-federal-drinking-water-systems",
+    "data-fta-national-transit-database"
+  ],
+  "schema_summary": "CENSUS_ID_PID6, CENSUS_ID_GIDID, UNIT_NAME, UNIT_TYPE or FUNCTION_NAME, TITLE, address, WEB_ADDRESS, POPULATION or ENROLLMENT, FIPS_STATE, FIPS_COUNTY, FIPS_PLACE, IS_ACTIVE",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "water.stormwater_drainage",
+    "water.irrigation",
+    "water.dams_flood_defences",
+    "energy.electricity",
+    "transport.public_transit",
+    "transport.road",
+    "transport.aviation",
+    "transport.maritime_ports",
+    "services.emergency_services",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Scope, Title 13 section 161, every five years since 1957 for years ending 2 and 7, list of all local governments",
+      "url": "https://www.census.gov/programs-surveys/cog/about.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "GUS discontinued as of April 14, 2025, last completed 2021; 2025 and 2026 annual organization tables",
+      "url": "https://www.census.gov/programs-surveys/gus.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "90,887 governments, 39,555 special districts and 12,546 school districts in 2022; classification rules",
+      "url": "https://www2.census.gov/programs-surveys/gus/datasets/2022/2022_gov_org_meth_tech_doc.pdf"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Opened the XLSX: sheet columns and special district counts by FUNCTION_NAME were tallied from the file",
+      "url": "https://www2.census.gov/programs-surveys/gus/datasets/2022/govt_units_2022.ZIP"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Dataset timeseries/govsorg, Public Sector: Government Organization: 1942-2026",
+      "url": "https://api.census.gov/data.json"
+    }
+  ],
+  "spatial_resolution": "Individual government unit with state and county FIPS codes and mailing address",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "Census of Governments",
+    "special districts",
+    "water utilities",
+    "local government",
+    "Government Units Survey",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "Census of Governments every five years since 1957; 2022 listing; annual counts to 2026; API 1942-2026",
+  "temporal_coverage_years": {
+    "end": 2026,
+    "start": 1942
+  },
+  "temporal_resolution": "every five years (listing), annual (counts)",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "Census of Governments: Government Units Listing and annual government organization counts (special districts by function)",
+  "type": "data",
+  "update_frequency": "multi_year"
+}

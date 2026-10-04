@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Antonios-M/qres_marl"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Antonios-M/qres_marl/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "QRES-MARL: A Resilience-Based Multi-Agent Reinforcement Learning Framework for Post-Earthquake Recovery of Interdependent Infrastructures. TU Delft MSc thesis, identified in the repository README; thesis text not inspected.",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "qres marl",
+    "repo": "github.com/antonios-m/qres_marl",
+    "url": "https://github.com/Antonios-M/qres_marl"
+  },
+  "description": "QRES-MARL provides a research model for analysing infrastructure testbeds and choosing post-earthquake recovery strategies with multi-agent reinforcement learning. Published by the Antonios-M repository maintainer, it was developed for an MSc thesis at TU Delft and is explicitly intended for further research use. The Python workflow estimates income loss, relocation cost, traffic delay cost and repair cost, then trains or evaluates recovery policies. Users provide building and road GeoJSON files following IN-CORE schemas, traffic-network and demand CSV files following TNTP schemas, and suitable testbed settings. Coverage and simulation resolution depend on the selected testbed; the README does not define one universal study area or time step. The source is publicly accessible on GitHub and is free under Apache-2.0. Conda setup, training and inference commands are documented. A limitation is that trained agent files are supplied on request, so source access alone does not reproduce the reported inference results. The code was not executed during this review. It relates directly to IN-CORE (platform-in-core), uses HAZUS methods (platform-hazus), and identifies National Bridge Inventory and OpenStreetMap inputs for preparing testbeds.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "infrastructure recovery model fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake"
+  ],
+  "homepage": "https://github.com/Antonios-M/qres_marl",
+  "id": "model-qres-marl",
+  "inputs": [
+    "Building and road GeoJSON using IN-CORE schemas",
+    "Traffic network and demand CSV using TNTP schemas",
+    "Saved trained agents for inference"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-10-25",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid",
+    "optimisation"
+  ],
+  "name": "QRES-MARL",
+  "notes": "G7 G7-0004. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. Trained agents are available on request, so reproducing inference requires additional files. README clone instructions contain a different repository spelling; use the verified canonical address. No thesis PDF or input data were fetched. ",
+  "outputs": [
+    "Income losses, relocation costs, traffic delay costs and repair costs",
+    "Post-earthquake recovery policies"
+  ],
+  "provider": "Antonios-M repository maintainers",
+  "related_ids": [
+    "platform-in-core",
+    "platform-hazus",
+    "data-fhwa-national-bridge-inventory"
+  ],
+  "repository": "https://github.com/Antonios-M/qres_marl",
+  "sectors": [
+    "built_environment.buildings",
+    "transport.road",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "optimisation",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Antonios-M/qres_marl: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=infrastructure+recovery+model+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/Antonios-M/Qres_MARL/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Qres-marl infrastructure testbed recovery model",
+  "type": "model",
+  "validated_on": []
+}

@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "GPSJam map",
+      "url": "https://gpsjam.org/"
+    },
+    {
+      "kind": "download",
+      "label": "Daily data manifest",
+      "url": "https://gpsjam.org/data/manifest.csv"
+    },
+    {
+      "kind": "docs",
+      "label": "FAQ",
+      "url": "https://gpsjam.org/faq"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "security_threat",
+    "service_performance",
+    "crowdsourced_public_reports"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gpsjam daily maps of likely gnss interference from aircraft ads b reports",
+    "url": "https://gpsjam.org/data/manifest.csv"
+  },
+  "description": "GPSJam, created by John Wiseman in July 2022, maps where aircraft report degraded navigation accuracy, a strong sign of GPS or other satellite navigation jamming. Many aircraft broadcast ADS-B messages that include the accuracy of their navigation system; GPSJam aggregates these reports from the community receiver network airplanes.live and from ADS-B Exchange over 24 hours into hexagons, counting aircraft with good and bad accuracy, and colours hexagons where more than 2 or 10 percent of aircraft report low accuracy. Coverage: worldwide where ADS-B receivers exist, daily from 14 February 2022, with conflict zones such as the Baltic, the Middle East and Ukraine prominent. Format and access: an interactive map and daily gzip-compressed CSV files at gpsjam.org/data (H3 hexagon id, counts of good and bad aircraft) with a manifest of dates, free to use. Caveats: low accuracy can have causes other than jamming, the navigation system is not identified, coverage depends on receivers and air traffic, and the author flags suspect days. Simulation uses: a record of security threats to satellite positioning for hazard exposure of GNSS-dependent services such as aviation, shipping, telecom timing and power grids. Related records: IGS products and the FAA WAAS reports give GNSS performance, and ENISA incident reports cover telecom incidents.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.satellite_positioning:security_threat",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "physical_attack_sabotage",
+    "cyber_attack"
+  ],
+  "homepage": "https://gpsjam.org/data/manifest.csv",
+  "id": "data-gpsjam-gnss-interference",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-24",
+  "licence": "no licence stated (free to view and download)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GPSJam daily maps of likely GNSS interference from aircraft ADS-B reports",
+  "notes": "FAQ and about pages read 2026-09-26; data file headers read from gpsjam.org/data (2026-09-24 file and manifest). Deep check A4 (2026-10-01) corrected: dedupe_keys, homepage .",
+  "provider": "John Wiseman (gpsjam.org)",
+  "related_ids": [
+    "data-easa-sib-2022-02-gnss-outage-alterations",
+    "model-gnss-rfi-detection-low-cost-cots-receivers-cn0-power"
+  ],
+  "schema_summary": "hex (H3 id), count_good_aircraft, count_bad_aircraft; manifest: date, suspect flag, number of bad hexes, source",
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "FAQ",
+      "url": "https://gpsjam.org/faq"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "about page",
+      "url": "https://gpsjam.org/about"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "manifest header and first dates",
+      "url": "https://gpsjam.org/data/manifest.csv"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://gpsjam.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://gpsjam.org/faq"
+    }
+  ],
+  "spatial_resolution": "H3 resolution 4 hexagons",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "GNSS jamming",
+    "GPS interference",
+    "ADS-B",
+    "security"
+  ],
+  "temporal_coverage": "daily from 2022-02-14",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2022
+  },
+  "temporal_resolution": "daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "GPSJam daily maps of likely GNSS interference from aircraft ADS-B reports",
+  "type": "data",
+  "update_frequency": "daily"
+}

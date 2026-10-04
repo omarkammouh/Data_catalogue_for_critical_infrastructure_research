@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/chevrolet-zebra/azure-bandwidth-dataset"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "FR",
+    "GB",
+    "DE",
+    "IT",
+    "ES",
+    "CH",
+    "PL",
+    "SE"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "european azure regional upload measurements february march 2026",
+    "repo": "github.com/chevrolet-zebra/azure-bandwidth-dataset",
+    "url": "https://github.com/chevrolet-zebra/azure-bandwidth-dataset"
+  },
+  "description": "This dataset records cloud upload performance from one virtual machine in Azure France Central to eight European Azure regions. Jaime de Domingo Miralles collected the measurements for a university study of correlated performance variation. The documented campaign runs from 18 February to 18 March 2026, with hourly tests transferring 100 MB using four parallel connections. CSV fields record UTC completion time, destination region, block size, file size, transfer time, measured speed and failed attempts. The provider reports 5,111 valid measurements and 220 errors. Access is free under CC BY 4.0 through GitHub. A limitation is that the observations cover one provider, one origin and HTTPS uploads over a short period; they do not directly demonstrate resilience across cloud providers. Speed strings use MB/s, despite a numeric example naming its variable speed_mbps, so bytes must not be mistaken for bits. Simulation uses include calibrating regional transfer scenarios and exploring correlated degradation. No related catalogue dataset was established as the same campaign. The collection and statistical-analysis scripts were not run, and provider claims about gaps and correlations were not independently verified.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"datacenter\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "source_code"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://github.com/chevrolet-zebra/azure-bandwidth-dataset",
+  "id": "data-azure-europe-regional-upload-2026",
+  "languages": [
+    "es"
+  ],
+  "last_updated": "2026-05-04",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "European Azure regional upload measurements, February–March 2026",
+  "notes": "G8; G8-0199. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: de Domingo Miralles, J. (2026). Azure Bandwidth Monitoring Dataset: Multi-datacenter Performance Analysis. Repository dataset documentation..",
+  "provider": "Jaime de Domingo Miralles, Universidad Autónoma de Madrid",
+  "related_ids": [],
+  "sectors": [
+    "digital.data_centres",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/chevrolet-zebra/azure-bandwidth-dataset/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/chevrolet-zebra/azure-bandwidth-dataset"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Field dictionary, units, collection settings and study limitations.",
+      "url": "https://github.com/chevrolet-zebra/azure-bandwidth-dataset/blob/main/DATASET.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Explicit CC BY 4.0 statement.",
+      "url": "https://github.com/chevrolet-zebra/azure-bandwidth-dataset/blob/main/LICENSE"
+    }
+  ],
+  "spatial_resolution": "Eight European Azure regions from one France Central origin.",
+  "spatial_resolution_class": "regional_units",
+  "tags": [],
+  "temporal_coverage": "2026-02-18–2026-03-18.",
+  "temporal_resolution": "Hourly scheduled tests; timestamps in UTC.",
+  "temporal_resolution_class": "hourly",
+  "title_en": "European Azure regional upload measurements, February–March 2026",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

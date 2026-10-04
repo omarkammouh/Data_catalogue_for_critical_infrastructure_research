@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Data, pipeline and tool source code (Zenodo)",
+      "url": "https://zenodo.org/records/12615011"
+    },
+    {
+      "kind": "viewer",
+      "label": "Interactive tool",
+      "url": "https://global-plastics-tool.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Pottinger A.S., Geyer R., Biyani N., Martinez C.C., Nathan N., Morse M.R. et al. (2024). Pathways to reduce global plastic waste mismanagement and greenhouse gas emissions by 2050. Science. doi:10.1126/science.adr3837",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.12615011",
+    "name": "global plastics ai policy tool machine learning projections of plastic flows waste fate and ghg under policy scenarios",
+    "url": "https://global-plastics-tool.org"
+  },
+  "description": "This tool projects how much plastic the world will produce, use and throw away in future years, where that waste ends up, and how policies such as recycling targets or limits on mismanaged waste would change the result. The producers are A. Pottinger and Ciera Martinez of the Eric and Wendy Schmidt Center for Data Science and Environment at the University of California, Berkeley, with Roland Geyer, Nivedita Biyani, Neil Nathan and Molly Morse of the University of California, Santa Barbara. It uses machine learning models trained on a snapshot of global plastics statistics to predict business-as-usual flows by region, sector and end-of-life fate, applies a policy engine with options such as minimum recycling rates, minimum recycled content, a cap on mismanaged waste and investment in recycling or incineration, and calculates greenhouse gas emissions by polymer, with Monte Carlo runs for uncertainty. Coverage is global, broken into regions. The archive holds outputs, documentation for the model and each policy, the data and training pipeline, emission code and the interactive tool, and is available as a free download from Zenodo under the BSD 3-Clause licence, with the tool online. Caveats: projections rest on historical statistics and chosen model structures, and regional detail is coarse. Simulation uses: estimating future plastic waste loads on collection, sorting and disposal systems under policy options. Related records: ODYM (model-odym) builds material flow models, and the Europe polymer flows (data-europe-polymer-dynamic-probabilistic-mfa) give European detail.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Global Plastics AI Policy Tool",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://global-plastics-tool.org/",
+  "id": "model-global-plastics-ai-policy-tool",
+  "inputs": [
+    "Snapshot of upstream plastics production, trade, consumption and waste data as a SQLite database",
+    "Policy settings such as minimum recycling (collection) rate, minimum recycled content, maximum mismanaged rate, recycling and incineration investment"
+  ],
+  "language": [
+    "python",
+    "other"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-10-21",
+  "licence": "BSD 3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Global Plastics AI Policy Tool: machine learning projections of plastic flows, waste fate and GHG under policy scenarios",
+  "outputs": [
+    "Projected regional sector and end-of-life fate mass flows under business as usual and policy scenarios",
+    "Monte Carlo probability outputs",
+    "Greenhouse gas emissions by polymer"
+  ],
+  "provider": "A. Pottinger and Ciera Martinez (Eric and Wendy Schmidt Center for Data Science and Environment, UC Berkeley) with Roland Geyer, Nivedita Biyani, Neil Nathan and Molly Morse (UC Santa Barbara)",
+  "related_ids": [
+    "model-odym",
+    "data-europe-polymer-dynamic-probabilistic-mfa"
+  ],
+  "repository": "https://zenodo.org/records/12615011",
+  "runs_on": [
+    "Python (pipeline and policy engine)",
+    "Web browser (interactive tool)"
+  ],
+  "sectors": [
+    "services.waste",
+    "industry.manufacturing_chemical"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators Pottinger, Martinez (Schmidt Center for Data Science and Environment, UC Berkeley), Geyer, Biyani (Bren School, UCSB), Nathan, Morse (Marine Science Institute, UCSB); BSD 3-Clause; published 2024-10-21, updated 2024-11-22; archive parts: output summary, documentation (PDF and Markdown), BAU ML pipeline, polymer GHG pipeline, simulation tool and policy logic, supplemental scripts; outputs under CSV Schema Language specifications; point estimates and Monte Carlo probabilities for BAU and policies; source data snapshot as SQLite; see global-plastics-tool.org; README lists policy documents for incineration investment, maximum mismanaged rate, minimum recycled content, minimum recycling (collection) rate, recycling investment; 04_bau_ml_pipeline predicts business as usual regionalized sector and fate mass flows",
+      "url": "https://zenodo.org/api/records/12615011"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Interactive tool site responds (HTTP 200)",
+      "url": "https://global-plastics-tool.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed citation, last_updated.",
+      "url": "https://global-plastics-tool.org/"
+    }
+  ],
+  "tags": [
+    "plastics",
+    "material flows",
+    "waste management",
+    "machine learning",
+    "policy scenarios",
+    "greenhouse gases"
+  ],
+  "title_en": "Global Plastics AI Policy Tool: machine learning projections of plastic flows, waste fate and GHG under policy scenarios",
+  "type": "model",
+  "validated_on": [
+    "Model documentation and supporting analysis in the archive"
+  ]
+}

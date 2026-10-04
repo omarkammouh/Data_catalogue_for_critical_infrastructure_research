@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Refactored simulator (ITA)",
+      "url": "https://github.com/ita-gnss-lab/gnss-scintillation-simulator"
+    },
+    {
+      "kind": "repo",
+      "label": "Original simulator (CU SENSE Lab)",
+      "url": "https://github.com/cu-sense-lab/gnss-scintillation-simulator"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cpssm compact phase screen gnss scintillation simulator",
+    "repo": "github.com/ita-gnss-lab/gnss-scintillation-simulator",
+    "url": "https://github.com/ita-gnss-lab/gnss-scintillation-simulator"
+  },
+  "description": "The Compact Phase-screen-based Scintillation Model (CPSSM) is a MATLAB tool that simulates ionospheric scintillation, the rapid fluctuations in amplitude and phase of GNSS signals caused by irregularities in the ionosphere, so that receivers and algorithms can be tested against weak and strong scintillation. It models the ionosphere as a thin turbulent phase screen and lets users set receiver position and velocity, simulation time and ionospheric conditions for GPS and Galileo satellites, downloading RINEX ephemerides automatically, and it outputs time series of amplitude and phase, detrended phase and normalised power spectral densities. It covers any receiver location and time for which ephemerides are available. The original GPS scintillation simulator was created by the CU SENSE Lab at the University of Colorado Boulder (copyright 2020, MIT-style licence), and Rubem Vasconcelos Pacelli and Rodrigo de Lima Florindo of the ITA GPS/GNSS Laboratory published a refactored and enhanced version (started December 2024, cited as of July 2025) under the MIT licence; both include third-party code under BSD and other notices, such as an IGRF implementation and a Wavelab subset. It is free on GitHub but needs a MATLAB licence to run. Caveats: the phase-screen model is a simplification of real ionospheric structure and the refactored version supports GPS and Galileo only. It supports hazard exposure and resilience testing of satellite positioning services and the receivers that other infrastructures rely on; a related record is the FARR ionospheric radio propagation code.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "GNSS scintillation simulator (space simulation engine)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://github.com/ita-gnss-lab/gnss-scintillation-simulator",
+  "id": "model-cpssm-gnss-scintillation-simulator",
+  "inputs": [
+    "receiver position and velocity",
+    "simulation time",
+    "ionospheric scintillation parameters",
+    "RINEX ephemerides"
+  ],
+  "language": [
+    "matlab"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "MIT (with bundled BSD-licensed third-party code)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "CPSSM compact phase-screen GNSS scintillation simulator",
+  "outputs": [
+    "time series of signal amplitude and phase",
+    "detrended phase",
+    "normalised power spectral densities"
+  ],
+  "provider": "CU SENSE Lab, University of Colorado Boulder, and ITA GPS/GNSS Laboratory, Instituto Tecnológico de Aeronáutica (refactored version)",
+  "related_ids": [
+    "model-farr-ionospheric-radio-propagation"
+  ],
+  "sectors": [
+    "cross_cutting.space",
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "developers Pacelli and Florindo; citation date 2025-07-07, origdate 2024-12-27, Instituto Tecnologico de Aeronautica; CPSSM MATLAB tool; refactored and enhanced version of the CU SENSE Lab simulator; phase-screen; GPS and Galileo; receiver position and velocity, time, ionospheric conditions; RINEX download; outputs amplitude, phase, detrended phase, PSD; LICENSE MIT 2026 ITA GPS/GNSS Laboratory",
+      "url": "https://raw.githubusercontent.com/ita-gnss-lab/gnss-scintillation-simulator/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GPS Scintillation Simulator; external code under BSD; Wavelab850 subset; IGRF by Drew Compston; (c) 2020 Regents of the University of Colorado, CU Sense Lab; MIT-style permission notice",
+      "url": "https://raw.githubusercontent.com/cu-sense-lab/gnss-scintillation-simulator/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2026-09-25)",
+      "url": "https://github.com/ita-gnss-lab/gnss-scintillation-simulator"
+    }
+  ],
+  "tags": [
+    "ionospheric scintillation",
+    "GNSS",
+    "phase screen",
+    "MATLAB",
+    "receiver testing"
+  ],
+  "title_en": "CPSSM compact phase-screen GNSS scintillation simulator",
+  "type": "model"
+}

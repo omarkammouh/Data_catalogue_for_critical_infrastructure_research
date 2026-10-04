@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "RouteZero code",
+      "url": "https://github.com/bsgip/RouteZero"
+    },
+    {
+      "kind": "portal",
+      "label": "RouteZero web tool",
+      "url": "https://routezero.cecs.anu.edu.au/"
+    },
+    {
+      "kind": "paper",
+      "label": "npj Sustainable Mobility and Transport article",
+      "url": "https://www.nature.com/articles/s44333-024-00008-2"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1038/s44333-024-00008-2",
+    "name": "routezero electric bus energy consumption and depot charging optimisation model",
+    "repo": "github.com/bsgip/routezero",
+    "url": "https://github.com/bsgip/RouteZero"
+  },
+  "description": "RouteZero integrates a data-driven model of electric bus energy consumption with an optimisation of depot charging that minimises the load on the grid, as described in a 2024 article in npj Sustainable Mobility and Transport. It needs only public inputs: typical weather, GTFS route and timetable data and bus battery capacities and weights. The energy model extends a linear regression approach with Bayesian regression, fitted on data from 40 buses in Sydney; the case study covers a depot in Belconnen, ACT, serving 18 routes. Code and model-fit data are in the GitHub repository, and a web tool is hosted by the Australian National University. Coverage: any network with GTFS data. Format and access: Python package and web tool. Licence and cost: AGPL-3.0 code; article CC BY 4.0; free. Caveats: timetables do not say which bus runs which trip, so energy is computed in aggregate. It supports optimisation and capacity planning of electrified bus depots and their grid connection. It relates to the depot charging load profiles, the GTFS specification and the Istanbul clean bus fleet case in the catalogue.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "electric bus depot charging data open dataset transit fleet electrification energy consumption",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/bsgip/RouteZero",
+  "id": "model-routezero-electric-bus-depot-charging",
+  "inputs": [
+    "GTFS routes and timetables, typical weather, bus battery capacities and weights"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "AGPL-3.0 (code); CC BY 4.0 (article)",
+  "licence_type": [
+    "attribution",
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://routezero.cecs.anu.edu.au/"
+    ]
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical",
+    "optimisation"
+  ],
+  "name": "RouteZero: electric bus energy consumption and depot charging optimisation model",
+  "outputs": [
+    "Trip energy use, depot charging schedule, charger number and rating, depot peak load"
+  ],
+  "provider": "Johannes Hendriks and Björn Sturmberg (Australian National University, Battery Storage and Grid Integration Program)",
+  "related_ids": [
+    "data-nlr-heavy-duty-depot-charging-load-profiles",
+    "data-gtfs-specification",
+    "case_study-istanbul-clean-bus-fleet-transition-stochastic-plan"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "model, inputs, fit data, case study, code and web tool, CC BY 4.0",
+      "url": "https://www.nature.com/articles/s44333-024-00008-2"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "purpose, definitions, AGPL-3.0 licence file",
+      "url": "https://raw.githubusercontent.com/bsgip/RouteZero/main/README.md"
+    }
+  ],
+  "tags": [
+    "electric bus",
+    "depot charging",
+    "GTFS",
+    "grid impact",
+    "Bayesian regression",
+    "r2-fresh-transport"
+  ],
+  "title_en": "RouteZero: electric bus energy consumption and depot charging optimisation model",
+  "type": "model"
+}

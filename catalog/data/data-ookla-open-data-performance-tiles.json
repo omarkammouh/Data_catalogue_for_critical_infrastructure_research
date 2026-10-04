@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Documentation repository",
+      "url": "https://github.com/teamookla/ookla-open-data"
+    },
+    {
+      "kind": "portal",
+      "label": "Registry of Open Data on AWS entry",
+      "url": "https://registry.opendata.aws/speedtest-global-performance/"
+    },
+    {
+      "kind": "download",
+      "label": "Direct file download (example, Q4 2024 fixed tiles, Parquet)",
+      "note": "S3 bucket s3://ookla-open-data, paths FORMAT/performance/type=TYPE/year=YYYY/quarter=Q/; no sign-in",
+      "url": "https://ookla-open-data.s3.amazonaws.com/parquet/performance/type=fixed/year=2024/quarter=4/2024-10-01_performance_fixed_tiles.parquet"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "crs": "EPSG:4326 (WKT geometry); tiling on Web Mercator zoom 16",
+  "data_family": [
+    "service_performance",
+    "telecom_coverage_spectrum",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "speedtest by ookla global fixed and mobile network performance maps",
+    "repo": "github.com/teamookla/ookla-open-data",
+    "url": "https://github.com/teamookla/ookla-open-data"
+  },
+  "description": "This open dataset from Ookla gives average fixed broadband and mobile (cellular) network performance for the whole world, aggregated to zoom-level 16 Web Mercator tiles of about 610.8 by 610.8 metres at the equator. For each tile and quarter it reports average download and upload speed in kilobits per second, average latency, loaded latency during download and upload (Parquet only, from Q4 2022), the number of tests and the number of unique devices, with a quadkey and centroid coordinates. Measurements come from the Speedtest applications for Android and iOS and are filtered to results with GPS-quality location. Ookla publishes it to help bridge the gap between people with and without good internet access; regulators such as the US FCC use Speedtest data. The series starts in Q1 2019 and is extended shortly after each quarter ends; the README listed Q1 2026 as the latest completed quarter on 26 September 2026. Files are Esri Shapefiles and Apache Parquet with WKT geometry in EPSG:4326, split into mobile and fixed layers, in the public S3 bucket ookla-open-data (Registry of Open Data on AWS), downloadable without an account or cost. The licence is CC BY-NC-SA 4.0, so commercial use is not permitted without a separate licence. Caveats: tiles only exist where tests were taken, so sparsely populated areas are missing; results reflect app users and their devices, not a designed sample, and speeds depend on subscribed plans. Simulation uses: service performance baselines for telecom networks, before and after comparisons around hazard events, and resilience and equity analysis of connectivity. Related records: coverage and site data such as OpenCelliD and the M-Lab measurement archive.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.telecom:service_performance",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "shapefile"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/teamookla/ookla-open-data",
+  "id": "data-ookla-open-data-performance-tiles",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-16",
+  "licence": "CC-BY-NC-SA-4.0",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Speedtest by Ookla Global Fixed and Mobile Network Performance Maps",
+  "notes": "Non-commercial licence; the README names the latest quarter, which changes quarterly.",
+  "provider": "Ookla",
+  "related_ids": [
+    "data-opencellid"
+  ],
+  "schema_summary": "avg_d_kbps, avg_u_kbps, avg_lat_ms, avg_lat_down_ms, avg_lat_up_ms, tests, devices, quadkey, tile, tile_x, tile_y",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Tiles, attributes, Q1 2019 to Q1 2026, S3 paths, CC BY-NC-SA 4.0, changelog",
+      "url": "https://raw.githubusercontent.com/teamookla/ookla-open-data/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Registry entry: quarterly update, licence",
+      "url": "https://registry.opendata.aws/speedtest-global-performance/"
+    }
+  ],
+  "spatial_resolution": "Zoom-16 tiles, about 610.8 m at the equator",
+  "spatial_resolution_class": "100m_to_1km",
+  "spatial_resolution_m": 611,
+  "tags": [
+    "broadband speed",
+    "mobile speed",
+    "latency",
+    "Speedtest",
+    "crowdsourced measurements",
+    "digital divide"
+  ],
+  "temporal_coverage": "Q1 2019 to latest completed quarter (Q1 2026 on 2026-09-26)",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2019
+  },
+  "temporal_resolution": "Quarterly",
+  "temporal_resolution_class": "sub_annual",
+  "title_en": "Speedtest by Ookla Global Fixed and Mobile Network Performance Maps",
+  "type": "data",
+  "update_frequency": "several_per_year"
+}

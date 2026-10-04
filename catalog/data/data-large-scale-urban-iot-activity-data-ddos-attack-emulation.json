@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Dataset, attack generator and model code",
+      "url": "https://github.com/ANRGUSC/Urban_IoT_DDoS_Data"
+    },
+    {
+      "kind": "paper",
+      "label": "SenSys 2021 dataset paper (arXiv 2110.01842)",
+      "url": "https://arxiv.org/abs/2110.01842"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "cyber_control",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "large scale urban iot activity data for ddos attack emulation usc anrg",
+    "repo": "github.com/anrgusc/urban_iot_ddos_data",
+    "url": "https://github.com/ANRGUSC/Urban_IoT_DDoS_Data"
+  },
+  "description": "An urban Internet of Things activity dataset with a synthetic DDoS attack generator, released with a five-page dataset paper at ACM SenSys 2021 by researchers at the University of Southern California. The raw data are the activity status of 4,060 event-driven IoT nodes deployed in an urban area, each with a node identifier, latitude, longitude and a timestamp recorded whenever its status changes, over one month. A script turns this into a benign dataset with a status for every node every 30 seconds, and a second script injects attacks with tunable numbers of nodes, duration, attack ratio and start time. A small feed-forward neural network shows how to label which nodes are under attack and when. Coverage: one anonymous city deployment; the paper does not name the city. Format and access: a free GitHub repository with the zipped dataset, scripts and model code; the repository LICENSE.md allows free use, modification and redistribution with citation but not for commercial purposes. Caveats: the attacks are synthetic and only binary activity is recorded, not packet traffic. Useful for testing cyber attack detection and resilience of sensor networks in public space and smart city infrastructure; related records are not yet linked.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "smart city street lighting cybersecurity dataset attack IDS",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "archive",
+    "source_code"
+  ],
+  "geographic_scope": "city",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://github.com/ANRGUSC/Urban_IoT_DDoS_Data",
+  "id": "data-large-scale-urban-iot-activity-data-ddos-attack-emulation",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-03-14",
+  "licence": "USC ANRG licence (LICENSE.md in the GitHub repository): free use and redistribution with citation, no commercial use",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Large-scale urban IoT activity data for DDoS attack emulation (USC ANRG)",
+  "provider": "Autonomous Networks Research Group, University of Southern California (Arvin Hekmati, Eugenio Grippo, Bhaskar Krishnamachari)",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.public_space",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "SenSys 2021 dataset paper: 4,060 nodes, one month, 30 s granularity, synthetic attack script parameters, repository link, urban area not named",
+      "url": "https://arxiv.org/pdf/2110.01842"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Repository README: scripts, unzip of original dataset, no licence text (LICENSE file returns 404)",
+      "url": "https://raw.githubusercontent.com/ANRGUSC/Urban_IoT_DDoS_Data/main/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "licence re-check at wave 2 integration: licence read on the provider page",
+      "url": "https://raw.githubusercontent.com/ANRGUSC/Urban_IoT_DDoS_Data/HEAD/LICENSE.md"
+    }
+  ],
+  "tags": [
+    "IoT",
+    "DDoS",
+    "smart city",
+    "botnet",
+    "anomaly detection",
+    "r2-fresh-built-environment"
+  ],
+  "title_en": "Large-scale urban IoT activity data for DDoS attack emulation (USC ANRG)",
+  "type": "data"
+}

@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/HewlettPackard/dc-rl"
+    },
+    {
+      "kind": "paper",
+      "label": "NeurIPS 2024 paper",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/b6676756f8a935e208f394a1ba47f0bc-Paper-Datasets_and_Benchmarks_Track.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Naug A., Guillen A., Luna R., Gundecha V., Rengarajan D., Ghorbanpour S., Mousavi S., Ramesh Babu A., Markovikj D., Kashyap L.D., Sarkar S. (2024) SustainDC: Benchmarking for Sustainable Data Center Control. NeurIPS Datasets and Benchmarks Track.",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sustaindc data centre control benchmark dc rl",
+    "repo": "github.com/hewlettpackard/dc-rl",
+    "url": "https://github.com/HewlettPackard/dc-rl"
+  },
+  "description": "SustainDC is a set of Python environments for simulating and controlling a data centre with multi-agent reinforcement learning. It couples three environments: a workload environment that shifts delayable compute jobs in time, a data centre environment that models IT load, server and rack heat, and the HVAC plant with chiller, cooling tower and pumps, and a battery environment for auxiliary storage, all exposed through the Gymnasium interface so agents can be benchmarked on energy, carbon and water. It ships with real workload traces derived from Alibaba and Google clusters, EnergyPlus weather files and US Energy Information Administration carbon-intensity series for sites in Arizona, California, Georgia, Illinois, New York, Texas, Virginia and Washington, and baselines for eight algorithms such as PPO, MAPPO and HASAC. It was released by Hewlett Packard Enterprise and published in the NeurIPS 2024 Datasets and Benchmarks track, following an AAAI 2024 paper on data centre digital twins. Coverage: one configurable data centre per run at US locations, hourly steps over a year. Format and access: Python code on GitHub with documentation; free of charge under the MIT licence. Caveats: the thermal and HVAC models are simplified reduced-order models, not validated for a specific facility; the extra locations and traces are samples. Simulation uses: optimisation and digital-twin control of cooling and load shifting, extreme-heat exposure of cooling plants, and capacity planning of energy use. Related records: SustainCluster extends it to many sites, AlphaDataCenterCooling is a Modelica cooling testbed, CloudSim Plus simulates cloud workloads.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "data center case study testbed (Crossref literature sweep for case_study:digital.data_centres:testbed_demonstration; follow-up of 10.1016/j.softx.2026.103073)",
+      "route": "R07",
+      "source": "crossref"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "SustainDC HewlettPackard dc-rl benchmark data center github licence",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "extreme_heat"
+  ],
+  "homepage": "https://github.com/HewlettPackard/dc-rl",
+  "id": "model-sustaindc",
+  "inputs": [
+    "workload traces",
+    "EnergyPlus weather files",
+    "grid carbon intensity series",
+    "data centre configuration"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-08-25",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid"
+  ],
+  "name": "SustainDC data centre control benchmark (dc-rl)",
+  "notes": "LICENSE (MIT) and tags (v1.0) read from the repository on 2026-09-26; README summarised via fetch (407 commits). Author list of the NeurIPS paper from recall; check against the paper PDF.",
+  "outputs": [
+    "energy, carbon and water use",
+    "cooling set points and job schedules",
+    "agent rewards"
+  ],
+  "provider": "Hewlett Packard Enterprise (Avisek Naug, Soumyendu Sarkar and co-authors)",
+  "related_ids": [
+    "data-google-cluster-workload-traces",
+    "data-alibaba-cluster-trace-program",
+    "data-eu-data-centre-energy-performance-database",
+    "model-sustaincluster",
+    "model-sustain-lc"
+  ],
+  "repository": "https://github.com/HewlettPackard/dc-rl",
+  "runs_on": [],
+  "sectors": [
+    "digital.data_centres",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "digital_twin",
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README, LICENSE and tags",
+      "url": "https://github.com/HewlettPackard/dc-rl"
+    }
+  ],
+  "tags": [
+    "reinforcement learning",
+    "data centre cooling",
+    "carbon-aware scheduling",
+    "Gymnasium",
+    "benchmark"
+  ],
+  "title_en": "SustainDC data centre control benchmark",
+  "type": "model",
+  "validated_on": []
+}

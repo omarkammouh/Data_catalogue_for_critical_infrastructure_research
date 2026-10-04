@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/UW-Hydro/VIC"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/UW-Hydro/VIC/blob/master/readme.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Liang et al. (1994), https://doi.org/10.1029/94jd00483; Hamman et al. (2018), https://doi.org/10.5194/gmd-11-3481-2018",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "variable infiltration capacity model",
+    "repo": "github.com/uw-hydro/vic",
+    "url": "https://github.com/UW-Hydro/VIC"
+  },
+  "description": "The Variable Infiltration Capacity model is the large-scale hydrological model developed at the University of Washington and Princeton with an international research community. It represents water and energy balances over grid cells using statistical descriptions of subgrid soil and land-cover variability. Inputs include sub-daily meteorological forcing, soils and vegetation; outputs include grid-cell water and energy fluxes and storages. Coverage is globally configurable at regional or continental scales, generally with cells much larger than one kilometre and daily or sub-daily calculations. Public C source and online documentation are free under MIT. A limitation is that standard land-surface cells are simulated independently, with streamflow routing performed separately. The README warns that not all option combinations are equally mature or tested. VIC can generate runoff and drought scenarios for water-supply, irrigation and reservoir planning. The existing MIRCA-BC-USMX record (data-mirca-bc-usmx-irrigated-planted-fractions) provides an example of related input fractions but does not cover the general software. The README cites the 1994 formulation and 2018 VIC-5 paper. No forcing files or simulation archives were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "uw-hydro/vic linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/UW-Hydro/VIC",
+  "id": "model-vic",
+  "inputs": [
+    "Meteorological forcing",
+    "Soil and vegetation parameters"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-01-11",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Variable Infiltration Capacity model",
+  "notes": "G7 G7-0700. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Water and energy fluxes",
+    "Grid-cell water and energy storage"
+  ],
+  "provider": "University of Washington, Princeton University and VIC contributors",
+  "related_ids": [
+    "data-mirca-bc-usmx-irrigated-planted-fractions"
+  ],
+  "repository": "https://github.com/UW-Hydro/VIC",
+  "sectors": [
+    "water.drinking_water",
+    "water.irrigation",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for UW-Hydro/VIC: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/uw-hydro/vic"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/uw-hydro/vic/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Grid scale, forcing, outputs and separate routing assumptions.",
+      "url": "https://vic.readthedocs.io/en/master/Overview/ModelOverview/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for drinking water, irrigation and dams and flood defences",
+  "type": "model"
+}

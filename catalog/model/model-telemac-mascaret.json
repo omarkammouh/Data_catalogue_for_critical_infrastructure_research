@@ -1,0 +1,143 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Download page",
+      "url": "https://www.opentelemac.org/index.php/download"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code (GitLab, public)",
+      "url": "https://gitlab.pam-retd.fr/otm/telemac-mascaret"
+    },
+    {
+      "kind": "docs",
+      "label": "Git repository instructions (wiki)",
+      "url": "http://wiki.opentelemac.org/doku.php?id=telemac_git_repository"
+    }
+  ],
+  "access_note": "Source code is public without registration; the forum needs registration and paid support services are offered separately.",
+  "access_restrictions": "none",
+  "citation": "TELEMAC-MASCARET README, official source code repository (GitLab, TELEMAC consortium)",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opentelemac mascaret hydrodynamic modelling system",
+    "repo": "gitlab.pam-retd.fr/otm/telemac-mascaret",
+    "url": "https://opentelemac.org"
+  },
+  "description": "openTELEMAC-MASCARET is an integrated suite of solvers for free-surface flow, wave propagation and sediment transport, managed by a consortium of Artelia, the German Federal Waterways Engineering and Research Institute (BAW), CEREMA, EDF, HR Wallingford and IMDC, with scientific support from Daresbury Laboratory, CERFACS and ENPC. Its source modules include TELEMAC-2D and TELEMAC-3D for shallow water and three-dimensional hydrodynamics, MASCARET for one-dimensional river flow, TOMAWAC and ARTEMIS for waves, GAIA for sediment transport and bed evolution, WAQTEL for water quality, KHIONE for ice and NESTOR for dredging, with a Python API. The consortium describes it as widely used by engineers for design and impact studies where safety matters, anywhere in the world at site to regional scale. Code is public on GitLab under GPL version 3 or later, built with CMake and tested nightly at EDF with GFortran and Python; release 9.1.1 came out in May 2026, with PDF guides per module and many examples, and fee-paying support is offered separately. Caveats: meshing and calibration need expertise, runs on large domains need high-performance computing, and the project website was not reachable from our checking environment. Simulation uses: river and estuary flood inundation, dam-break and levee breach scenarios, storm surge and wave overtopping of coastal defences, sediment effects on reservoirs, ports and waterways, and climate adaptation studies. Related records: HEC-RAS (model-hec-ras) and ANUGA (model-anuga) are alternative open or free hydraulic models.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "openTELEMAC-MASCARET open source GPL download gitlab modules",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge",
+    "sea_level_rise"
+  ],
+  "homepage": "https://www.opentelemac.org/",
+  "id": "model-telemac-mascaret",
+  "inputs": [
+    "computational mesh (Selafin/SERAFIN files)",
+    "bathymetry and topography",
+    "boundary conditions (water levels",
+    "discharges",
+    "waves",
+    "tides)",
+    "friction and sediment parameters",
+    "steering files"
+  ],
+  "language": [
+    "fortran",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "GPL-3.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.opentelemac.org/",
+      "https://www.opentelemac.org/index.php/download"
+    ]
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "openTELEMAC-MASCARET hydrodynamic modelling system",
+  "notes": "Module roles for ARTEMIS, KHIONE, NESTOR and WAQTEL are from general knowledge of the TELEMAC suite matched to the module directory names; www.opentelemac.org returned 503 or no connection from the cloud.",
+  "outputs": [
+    "water depths and velocities",
+    "free-surface elevations",
+    "wave fields",
+    "sediment transport and bed evolution",
+    "water quality variables",
+    "ice processes"
+  ],
+  "provider": "TELEMAC consortium (Artelia, BAW, CEREMA, EDF, HR Wallingford, IMDC), with Daresbury Laboratory, CERFACS and ENPC",
+  "related_ids": [
+    "model-hec-ras",
+    "model-anuga"
+  ],
+  "repository": "https://gitlab.pam-retd.fr/otm/telemac-mascaret",
+  "runs_on": [],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage",
+    "transport.inland_waterways",
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README: consortium members, purpose, open source choice, paid services, build and nightly tests, GPLv3; latest commit 2026-09-25",
+      "url": "https://gitlab.pam-retd.fr/otm/telemac-mascaret"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "module directories: api, artemis, gaia, khione, mascaret, nestor, telemac2d, telemac3d, tomawac, waqtel",
+      "url": "https://gitlab.pam-retd.fr/api/v4/projects/75/repository/tree?path=sources"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "v9.1.1 released 2026-05-20",
+      "url": "https://gitlab.pam-retd.fr/api/v4/projects/75/releases"
+    }
+  ],
+  "tags": [
+    "TELEMAC",
+    "MASCARET",
+    "shallow water",
+    "finite element",
+    "free-surface flow",
+    "waves",
+    "sediment transport",
+    "dam break",
+    "coastal flooding",
+    "open source",
+    "EDF"
+  ],
+  "title_en": "Physical model for infrastructure systems",
+  "type": "model",
+  "validated_on": []
+}

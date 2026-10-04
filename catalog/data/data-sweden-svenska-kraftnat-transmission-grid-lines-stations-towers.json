@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Transmission grid shapefiles (SVK_STAMNAT.zip)",
+      "url": "https://gis-services.metria.se/svkfeed/filer/SVK_STAMNAT.zip"
+    },
+    {
+      "kind": "download",
+      "label": "INSPIRE transmission network for electricity (GML ZIP)",
+      "url": "https://gis-services.metria.se/svkfeed/filer/US.TransmissionsnatForEl.zip"
+    },
+    {
+      "kind": "api",
+      "label": "INSPIRE WMS/OWS",
+      "url": "https://inspire-skn.metria.se/geoserver/skn/ows?service=WMS&request=GetCapabilities"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "SE"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "svenska kraftnat transmission grid stamnat geodata 433 line features with voltage and placement 227 stations station areas and 50 269 towers shapefile and inspire gml",
+    "url": "https://gis-services.metria.se/svkfeed/svk_topfeed_transmission.xml"
+  },
+  "description": "Svenska kraftnät, the transmission system operator that owns Sweden's national grid (stamnät), publishes the geography of the grid as open download files, listed on the Swedish data portal dataportal.se. Contents: a shapefile set with 433 transmission line features carrying voltage and placement (overhead line or cable), 227 transformer and switching stations, station area polygons and 50,269 towers, plus an INSPIRE utility services dataset (transmission network for electricity) in GML; the grid comprises about 15,000 km of lines, 160 transformer and switching stations and 17 interconnectors abroad according to the portal description. Producer: Svenska kraftnät. Coverage: the Swedish national grid (220 and 400 kV), not regional or local networks. Format and access: two ZIP files (about 1.7 MB and 3.7 MB, last modified February 2026) through an INSPIRE Atom feed, and an INSPIRE WMS view service; no registration. Licence: the Atom feed states no limitations; the data portal lists no licence. Caveats: attributes are minimal (identifiers, voltage and placement only), with no line ratings, circuit numbers or electrical parameters, and interconnector landings abroad are not shown. Simulation uses: building the topology of the Nordic transmission grid for contingency and cascading failure studies, exposure of lines and towers to storms, icing and forest fires, and joining with market and outage statistics. Related records: Ei Sweden supply reliability statistics (data-ei-sweden-electricity-supply-reliability-outage-statistics) cover outages on the networks below this grid.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source se-portal-dataportal-se: provider pages read (round 2 register piece)",
+      "route": "R02",
+      "source": "se-portal-dataportal-se"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "gml",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://gis-services.metria.se/svkfeed/svk_topfeed_transmission.xml",
+  "id": "data-sweden-svenska-kraftnat-transmission-grid-lines-stations-towers",
+  "languages": [
+    "sv"
+  ],
+  "licence": "no limitations stated (Atom feed rights)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Svenska kraftnät transmission grid (stamnät) geodata: 433 line features with voltage and placement, 227 stations, station areas and 50,269 towers (shapefile and INSPIRE GML)",
+  "provider": "Svenska kraftnät (Swedish national grid operator), published through a Metria-hosted download service",
+  "related_ids": [
+    "data-ei-sweden-electricity-supply-reliability-outage-statistics"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "descriptions: 15,000 km lines, 160 stations, 17 interconnectors; modified 2026-02-02; no licence listed",
+      "url": "https://admin.dataportal.se/store/search?type=solr&query=US.TransmissionsnätFörEl&limit=3"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "downloaded: 433 lines (fields placement, voltage, id), 227 stations, 50,269 towers, station areas; last modified 16 Feb 2026",
+      "url": "https://gis-services.metria.se/svkfeed/filer/SVK_STAMNAT.zip"
+    }
+  ],
+  "tags": [
+    "Sweden",
+    "Svenska kraftnät",
+    "transmission grid",
+    "stamnät",
+    "towers",
+    "INSPIRE"
+  ],
+  "title_en": "Svenska kraftnät transmission grid (stamnät) geodata: 433 line features with voltage and placement, 227 stations, station areas and 50,269 towers (shapefile and INSPIRE GML)",
+  "type": "data"
+}

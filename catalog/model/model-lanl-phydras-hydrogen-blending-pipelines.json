@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/lanl-ansi/phydras"
+    },
+    {
+      "kind": "portal",
+      "label": "DOE CODE record",
+      "url": "https://www.osti.gov/doecode/biblio/127437"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "p hydras pipeline hydrogen decarbonization and repurposing analyzers",
+    "repo": "github.com/lanl-ansi/phydras",
+    "url": "https://github.com/lanl-ansi/phydras"
+  },
+  "description": "P-HyDRAs are prototype tools for simulating and optimising natural gas pipeline operations when hydrogen is blended in at different places and times. They were released in 2024 by Los Alamos National Laboratory with Anatoly Zlotnik, Kaarthik Sundar, Vitaliy Gyrya, Saif Kazi, Luke Baker, Jarupa Sodwatana and Yan Bodskyi as developers, to support decisions on repurposing midstream gas pipelines for decarbonisation. The models resolve dynamic gas flows through large pipeline networks with non-ideal gas equations of state, and can plan intra-day energy flow schedules and compute the value of natural gas, hydrogen and net energy delivered across space and time while respecting hydraulic limits, compressor station constraints, operating factors and existing shipping contracts. The optimisation model runs from a Jupyter notebook calling Julia scripts for data parsing, variables, constraints, objective and solver assembly. Coverage is not tied to a place. The code is accessible on GitHub at no cost, listed as open source on DOE CODE, with a single v1.0.0 tag. Caveats: the tools are prototypes, and the licence file is a copyright notice with government rights, not a named licence. Simulation uses are hydrogen blending, pipeline repurposing and transient gas network operation studies. Related records: model-lanl-grail-gas-pipeline-control is its predecessor for natural gas, and model-gasmodels-jl is a related LANL library.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "gas network simulation model",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/lanl-ansi/phydras",
+  "id": "model-lanl-phydras-hydrogen-blending-pipelines",
+  "inputs": [
+    "Pipeline network model",
+    "boundary condition time series",
+    "hydrogen blending locations and parameters"
+  ],
+  "language": [
+    "julia",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-05-03",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical",
+    "optimisation",
+    "network"
+  ],
+  "name": "P-HyDRAs - Pipeline Hydrogen Decarbonization and Repurposing Analyzers",
+  "outputs": [
+    "Optimal intra-day flow schedules",
+    "pressures and compositions",
+    "economic values of gas",
+    "hydrogen and energy delivered"
+  ],
+  "provider": "Los Alamos National Laboratory (Anatoly Zlotnik, Kaarthik Sundar, Vitaliy Gyrya, Saif Kazi and colleagues)",
+  "related_ids": [
+    "model-lanl-grail-gas-pipeline-control",
+    "model-gasmodels-jl"
+  ],
+  "repository": "https://github.com/lanl-ansi/phydras",
+  "runs_on": [],
+  "sectors": [
+    "energy.gas_hydrogen",
+    "transport.pipelines"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, notebook and Julia scripts",
+      "url": "https://raw.githubusercontent.com/lanl-ansi/phydras/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Triad National Security 2023, government rights notice",
+      "url": "https://raw.githubusercontent.com/lanl-ansi/phydras/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract, creators, LANL",
+      "url": "https://api.datacite.org/dois/10.11578/dc.20240517.10"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Open source, release 2024-05-03",
+      "url": "https://www.osti.gov/doecode/biblio/127437"
+    }
+  ],
+  "tags": [
+    "hydrogen blending",
+    "gas pipelines",
+    "transient flow",
+    "optimisation",
+    "Julia",
+    "LANL"
+  ],
+  "title_en": "P-HyDRAs - Pipeline Hydrogen Decarbonization and Repurposing Analyzers",
+  "type": "model",
+  "validated_on": []
+}

@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "London Datastore dataset page (current)",
+      "url": "https://data.london.gov.uk/dataset/a-and-e-attendance-in-london-by-day-and-hour-2knm8"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download: a-and-e-admissions.xlsx (2007–2017)",
+      "url": "https://data.london.gov.uk/download/2knm8/9d5bea64-e2d2-452e-bc5f-a740eb52e96e/a-and-e-admissions.xlsx"
+    },
+    {
+      "kind": "portal",
+      "label": "Legacy London Datastore page (404; retained for audit)",
+      "url": "https://data.london.gov.uk/dataset/ae-attendance-in-london-by-day-and-hour"
+    },
+    {
+      "kind": "docs",
+      "label": "Legacy data.gov.uk dataset page (404; retained for audit)",
+      "url": "https://www.data.gov.uk/dataset/ae-attendance-in-london-by-day-and-hour"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-03",
+  "dedupe_keys": {
+    "name": "a e attendance in london by day and hour greater london authority night time observatory",
+    "url": "https://data.london.gov.uk/dataset/a-and-e-attendance-in-london-by-day-and-hour-2knm8"
+  },
+  "description": "This dataset gives annual accident and emergency attendance in London by time of day, as numbers and percentages of attendances. The Greater London Authority publishes it on the London Datastore as part of its Night Time Observatory, which tracks London's night-time economy and services. The official item page names Public Health England as author and NHS Digital Hospital Episode Statistics as the source. Its a-and-e-admissions.xlsx file covers January 2007 through December 2017. The figures describe how emergency department demand is spread across the 24 hours, including the share of attendances at night. The item page labels the file Open Government Licence v3 and offers it as a free download. Caveats: counts are aggregated for London as a whole, so single hospitals cannot be separated, the source figures come from NHS statistics with their own coding changes, and attendance measures demand, not capacity. Simulation uses: building hour-of-day arrival profiles for emergency department and ambulance simulation models, and testing night-time surge scenarios. Related records: the treat-sim discrete event model (model-treat-sim-treatment-centre-des) uses such arrival profiles, and FDNY EMS incident dispatch data (data-nyc-fdny-ems-incident-dispatch) give pre-hospital demand in another large city.",
+  "description_checked": "2026-10-03",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "data.gov.uk CKAN package_search: hospital beds; A&E attendances",
+      "route": "R02",
+      "source": "data.gov.uk"
+    }
+  ],
+  "formats": [
+    "spreadsheet"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://data.london.gov.uk/dataset/a-and-e-attendance-in-london-by-day-and-hour-2knm8",
+  "id": "data-london-ae-attendance-by-day-and-hour",
+  "languages": [
+    "en"
+  ],
+  "licence": "Open Government Licence v3",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-03",
+    "dead": [
+      "https://data.london.gov.uk/dataset/ae-attendance-in-london-by-day-and-hour",
+      "https://www.data.gov.uk/dataset/ae-attendance-in-london-by-day-and-hour"
+    ],
+    "dead_since": "2026-10-03"
+  },
+  "maturity": "active",
+  "name": "A&E attendance in London by day and hour (Greater London Authority Night Time Observatory)",
+  "provider": "Greater London Authority (GLA), from NHS Hospital Episode Statistics",
+  "regions": [
+    "London"
+  ],
+  "related_ids": [
+    "model-treat-sim-treatment-centre-des",
+    "data-nyc-fdny-ems-incident-dispatch"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Legacy data.gov.uk CKAN metadata observed on 2026-09-28: annual A&E attendance by time of day, GLA Night Time Observatory, resource a-and-e-admissions.xlsx, metadata modified 2026-09-25. Its dataset page now returns 404; the metadata modified date may describe the catalogue record rather than a new data release.",
+      "url": "https://www.data.gov.uk/api/3/action/package_show?id=ae-attendance-in-london-by-day-and-hour"
+    },
+    {
+      "accessed": "2026-10-03",
+      "note": "Official current London Datastore item page: exact dataset title; identifies Public Health England as author, NHS Digital Hospital Episode Statistics as source, period January 2007 to December 2017, one a-and-e-admissions.xlsx file and Open Government Licence v3. The page was verified with HTTP HEAD 200. The legacy page path returns 404.",
+      "url": "https://data.london.gov.uk/dataset/a-and-e-attendance-in-london-by-day-and-hour-2knm8"
+    },
+    {
+      "accessed": "2026-10-03",
+      "note": "Direct XLSX link shown by the official item page. HTTP HEAD returned 200 with the Excel media type; no file body was downloaded.",
+      "url": "https://data.london.gov.uk/download/2knm8/9d5bea64-e2d2-452e-bc5f-a740eb52e96e/a-and-e-admissions.xlsx"
+    }
+  ],
+  "spatial_resolution": "London",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "A&E",
+    "emergency department",
+    "arrival profile",
+    "London"
+  ],
+  "temporal_coverage": "January 2007–December 2017",
+  "temporal_resolution": "Time of day (annual attendance statistics)",
+  "temporal_resolution_class": "hourly",
+  "title_en": "A&E attendance in London by day and hour (Greater London Authority Night Time Observatory)",
+  "type": "data",
+  "update_frequency": "annual"
+}

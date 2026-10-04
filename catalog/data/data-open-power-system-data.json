@@ -1,0 +1,250 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Processing scripts on GitHub",
+      "url": "https://github.com/Open-Power-System-Data"
+    },
+    {
+      "kind": "portal",
+      "label": "Data platform (all data packages)",
+      "url": "https://data.open-power-system-data.org/"
+    },
+    {
+      "kind": "portal",
+      "label": "Time series package (latest version)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.open-power-system-data.org/time_series/"
+    },
+    {
+      "kind": "portal",
+      "label": "Conventional power plants package",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.open-power-system-data.org/conventional_power_plants/"
+    },
+    {
+      "kind": "portal",
+      "label": "Renewable power plants package",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.open-power-system-data.org/renewable_power_plants/"
+    },
+    {
+      "kind": "portal",
+      "label": "National generation capacity package",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.open-power-system-data.org/national_generation_capacity/"
+    },
+    {
+      "kind": "portal",
+      "label": "Weather data package",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.open-power-system-data.org/weather_data/"
+    },
+    {
+      "kind": "docs",
+      "label": "Legal context of power system data",
+      "url": "https://open-power-system-data.org/legal"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing page)",
+      "note": "kept as secondary link by deep check A4",
+      "url": "https://open-power-system-data.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "AT",
+    "BE",
+    "BG",
+    "CH",
+    "CY",
+    "CZ",
+    "DE",
+    "DK",
+    "EE",
+    "ES",
+    "FI",
+    "FR",
+    "GB",
+    "GR",
+    "HR",
+    "HU",
+    "IE",
+    "IT",
+    "LT",
+    "LU",
+    "LV",
+    "ME",
+    "NL",
+    "NO",
+    "PL",
+    "PT",
+    "RO",
+    "RS",
+    "SE",
+    "SI",
+    "SK",
+    "UA"
+  ],
+  "data_family": [
+    "demand_operation",
+    "system_description",
+    "weather_observations"
+  ],
+  "data_kind": [
+    "time_series",
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "open power system data",
+    "repo": "github.com/open-power-system-data/time_series",
+    "url": "https://open-power-system-data.org/data-sources"
+  },
+  "description": "Open Power System Data (OPSD) is a free data platform for power system modelling. The project, run by researchers at Neon, TU Berlin, ETH Zürich and DIW, collects, checks, processes and documents data that are publicly available but inconvenient to use, and republishes them as data packages with a citable DOI per version. Five core packages exist: time series of electricity load (actual and forecast from the ENTSO-E Transparency Platform), wind and solar generation, capacities, generation profiles and day-ahead prices for 32 European countries, by country, control area or bidding zone, at 15, 30 and 60 minute resolution from 2015 to September 2020; conventional power plants with unit-level capacity, fuel, technology and location for 17 European countries; renewable power plants for eight countries (Czechia, Denmark, France, Germany, Poland, Sweden, Switzerland, United Kingdom); national generation capacity by technology for 1990 to 2020; and weather data. Contributed packages add household load data, wind and solar profiles and When2Heat heat-demand profiles (updated July 2023). Each package is offered as CSV, Excel and SQLite files with a datapackage.json describing fields and sources, downloadable without registration at no cost. Licence (read on the provider page on 2026-09-28): MIT for the processing scripts, CC-BY for the website text; data packages keep the licences of their original sources. Caveats: the core packages were last released between August and October 2020 and are not updated. The data serve network flow, capacity planning and optimisation studies of the European power system as load and generation inputs. No other catalogued records relate directly yet.",
+  "description_checked": "2026-09-24",
+  "discovery_routes": [
+    {
+      "date": "2026-09-23",
+      "query": "open European electricity load and generation time series platform, Open Power System Data",
+      "route": "R40",
+      "source": "assistant recall"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "database",
+    "json"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://open-power-system-data.org/data-sources/",
+  "id": "data-open-power-system-data",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-07-27",
+  "licence": "MIT for the processing scripts, CC-BY for the website text; data packages keep the licences of their original sources",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://github.com/Open-Power-System-Data"
+    ]
+  },
+  "maturity": "stale",
+  "name": "Open Power System Data",
+  "notes": "Audit 2026-09-24: re-read on open-power-system-data.org (home, legal context), the data platform, each package page and each package's latest datapackage.json. Corrections to round 1: the weather data package's latest version is 2020-09-16, not 2019-04-09; renewable power plants cover eight countries, not four; the time series cover 32 countries (the record listed 12; the country list is now the union over the five core packages); three contributed packages were missing, one updated in July 2023; the data licence, unverified before, is now stated from the provider (no licence for the core data, documentation CC-BY, contributed packages CC-BY-4.0 or CC-BY-NC-4.0); the project team (Neon, TU Berlin, ETH Zürich, DIW) is named on the site; the caveat that load differs between two ENTSO-E sources was dropped, because the current time series carry ENTSO-E Transparency load only. Core package versions: time series 2020-10-06, conventional plants and national capacity 2020-10-01, renewable plants 2020-08-25, weather 2020-09-16. Deep check A4 (2026-10-01) corrected: access_links, dedupe_keys, homepage .",
+  "provider": "Open Power System Data (OPSD) project",
+  "related_ids": [],
+  "schema_summary": "Load forecast and actual, wind and solar generation forecast and actual, installed capacity, capacity factors, day-ahead prices per country; plant lists with capacity, energy source, technology, CHP, location",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-24",
+      "note": "Purpose, scope, packages incl. three contributed ones, team (Neon, TU Berlin, ETH Zürich, DIW)",
+      "url": "https://open-power-system-data.org/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Legal context; quotes restrictive terms of data owners incl. ENTSO-E non-commercial use",
+      "url": "https://open-power-system-data.org/legal"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Data platform overview",
+      "url": "https://data.open-power-system-data.org/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Content (prices, load, wind and solar generation and capacities; by country, control area or bidding zone); CSV, XLSX, SQLite; DOI; 'Text is licensed under CC-BY'",
+      "url": "https://data.open-power-system-data.org/time_series/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Version 2020-10-06; temporal 2014-12-27 to 2020-09-30; 32 country prefixes; no licence field",
+      "url": "https://data.open-power-system-data.org/time_series/2020-10-06/datapackage.json"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Version 2020-10-01; 17 countries",
+      "url": "https://data.open-power-system-data.org/conventional_power_plants/2020-10-01/datapackage.json"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Version 2020-08-25; Czechia, Denmark, France, Germany, Poland, Sweden, Switzerland, United Kingdom",
+      "url": "https://data.open-power-system-data.org/renewable_power_plants/2020-08-25/datapackage.json"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Version 2020-10-01; 1990 to 2020",
+      "url": "https://data.open-power-system-data.org/national_generation_capacity/2020-10-01/datapackage.json"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Version 2020-09-16",
+      "url": "https://data.open-power-system-data.org/weather_data/2020-09-16/datapackage.json"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Contributed; CC-BY-4.0",
+      "url": "https://data.open-power-system-data.org/household_data/2020-04-15/datapackage.json"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Contributed; CC-BY-NC-4.0",
+      "url": "https://data.open-power-system-data.org/ninja_pv_wind_profiles/2020-09-16/datapackage.json"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Contributed; version 2023-07-27; CC-BY-4.0; 2008 to 2023-06-30, 28 countries",
+      "url": "https://data.open-power-system-data.org/when2heat/2023-07-27/datapackage.json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): MIT for the processing scripts, CC-BY for the website text; data packages keep the licences of their original sources (basis: open-power-system-data.org)",
+      "url": "https://open-power-system-data.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://choosealicense.com/licenses/mit/"
+    }
+  ],
+  "spatial_resolution": "Country or bidding zone (time series); individual plant with coordinates (power plant lists)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "electricity",
+    "load",
+    "wind",
+    "solar",
+    "prices",
+    "power plants",
+    "ENTSO-E",
+    "Europe",
+    "frictionless data package"
+  ],
+  "temporal_coverage": "Time series 2015 to 2020-09-30 (first values 2014-12-27); national capacity 1990 to 2020; When2Heat 2008 to 2023-06-30",
+  "temporal_resolution": "15, 30 or 60 minutes depending on country; daily cumulative capacity for renewable plants; snapshot for plant lists",
+  "temporal_resolution_class": "varies",
+  "title_en": "Open Power System Data",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

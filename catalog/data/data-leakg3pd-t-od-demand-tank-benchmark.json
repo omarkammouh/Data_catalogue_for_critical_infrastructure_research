@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/matheuspilotto/LeakG3PD-T-OD"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing page)",
+      "note": "kept as secondary link by deep check A4",
+      "url": "https://drive.google.com/file/d/1Ns1kztzO56wHvhULMKvAASJ-nBDFXVUe/view"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "synthetic_benchmark",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "leakg3pd t od customer tank demand only leakage benchmark",
+    "repo": "github.com/matheuspilotto/leakg3pd-t-od",
+    "url": "https://github.com/matheuspilotto/LeakG3PD-T-OD"
+  },
+  "description": "LeakG3PD-T-OD provides a demand-focused leakage benchmark derived from the 500 Net3 scenarios with private customer tanks in LeakG3PD-T. Matheus Pilotto and collaborators copy simulated demands as if metered, then add missing values, fraud and measurement error. They replace network tanks with reservoirs and pumps with low-roughness pipes without the original pump switching controls. Imposed head patterns and rerun hydraulics generate estimated pressures and link flows; leak locations are encoded by distance along their original pipes. Coverage is a synthetic water-distribution case, not an observed city network. The inspected README does not establish calendar bounds or sampling frequency. Public access to EPANET Net 3_T_OD.zip is free and requires no sign-in. The GitHub generator uses EUPL 1.2, while separate archive terms are not stated. The authors warn that regenerated values differ and further development is needed for practical deployment. Simulation uses include checking demand-based leak detection and inferred pressure calibration when customers have tanks. It relates to model-wntr and data-leakdb. The public archive was identified but its payload was not inspected.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "water distribution dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "source_code"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/matheuspilotto/LeakG3PD-T-OD",
+  "id": "data-leakg3pd-t-od-demand-tank-benchmark",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-11-29",
+  "licence": "GitHub generator EUPL-1.2; separate archive licence not stated",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "LeakG3PD-T-OD customer-tank demand-only leakage benchmark",
+  "notes": "G8; G8-0087. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata.. Deep check A4 (2026-10-01) corrected: access_links, dedupe_keys, homepage .",
+  "provider": "Matheus Pilotto and contributors",
+  "related_ids": [
+    "model-wntr",
+    "data-leakdb"
+  ],
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/matheuspilotto/LeakG3PD-T-OD/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/matheuspilotto/LeakG3PD-T-OD"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Browser verified named ZIP and public no-sign-in access; no download.",
+      "url": "https://drive.google.com/file/d/1Ns1kztzO56wHvhULMKvAASJ-nBDFXVUe/view"
+    }
+  ],
+  "spatial_resolution": "Synthetic EPANET Net3 with customer-tank demand patterns.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Synthetic scenarios; no calendar period stated.",
+  "temporal_resolution": "Not stated in inspected README.",
+  "temporal_resolution_class": "not_stated",
+  "title_en": "LeakG3PD-T-OD customer-tank demand-only leakage benchmark",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

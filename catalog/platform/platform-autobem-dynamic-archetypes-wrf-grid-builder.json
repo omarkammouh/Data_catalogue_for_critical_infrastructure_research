@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/5838465"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/5838465"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Repository metadata and README independently inspected; code not executed.",
+      "url": "https://github.com/ORNL-BTRIC/AutoBEM-DynamicArchetypes"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.5838465",
+    "name": "ornl btric autobem dynamicarchetypes v1 0 0 initial release",
+    "repo": "github.com/ornl-btric/autobem-dynamicarchetypes",
+    "url": "https://zenodo.org/records/5838465"
+  },
+  "deployment": [
+    "own_server",
+    "desktop"
+  ],
+  "description": "Oak Ridge National Laboratory releases a Python script for generating AutoBEM representative building archetypes by Weather Research and Forecasting grid cell. Zenodo archives an open source bundle with generic `other-open` rights metadata. The linked GitHub repository identifies BSD-3-Clause and documents `WRF_Archetypes_Parallel.py`: it spatially joins a WRF-zone shapefile with a building descriptor CSV, groups representative buildings and calculates floor-area multipliers, writing an archetype CSV. Its example uses Clark County AutoBEM building data and a WRF grid. This data-preparation tool can reduce a city-scale building energy simulation from many individual models to weighted representatives. A related catalogue record describes the national Model America source but not this grid-cell builder. A limitation is that archetype weights depend on correct source areas, map projection and WRF-zone geometry; they do not validate energy predictions. The README cites GeoPandas 0.9.0 and an example with 72 cores, so current compatibility is untested. No code was downloaded or run.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://zenodo.org/records/5838465",
+  "id": "platform-autobem-dynamic-archetypes-wrf-grid-builder",
+  "interfaces": [
+    "command_line",
+    "code_library",
+    "file_exchange"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-01-11",
+  "licence": "BSD-3-Clause linked repository; Zenodo archive labelled other-open",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "ORNL-BTRIC/AutoBEM-DynamicArchetypes: v1.0.0: Initial Release",
+  "notes": "G6 item G6-2175. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Brett Bass (Oak Ridge National Laboratory); Joshua New (Oak Ridge National Laboratory)",
+  "related_ids": [
+    "data-ornl-model-america"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/5838465"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence other-open, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/5838465"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README and BSD-3-Clause metadata inspected for script inputs, output and example command.",
+      "url": "https://github.com/ORNL-BTRIC/AutoBEM-DynamicArchetypes/blob/main/README.md"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "tags": [],
+  "title_en": "Python script for generating autobem building archetypes",
+  "type": "platform"
+}

@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/openclimatefix/solar-consumer"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/openclimatefix/solar-consumer/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "solar consumer generation feed collector",
+    "repo": "github.com/openclimatefix/solar-consumer",
+    "url": "https://github.com/openclimatefix/solar-consumer"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "Solar Consumer is software for pulling solar generation and forecast feeds into a PostgreSQL database. Its README names source interfaces for Great Britain, the Netherlands, Germany, Belgium and Rajasthan, including NESO, PVLive, Ned NL, ENTSO-E, Elia and RUVNL. Users configure selected feeds and storage, then collect national, regional or embedded-generation estimates. The outputs are time-stamped series for downstream analysis, not a fixed dataset embedded in this repository. Geographic coverage is the regions with implemented source adapters. GitHub metadata states MIT licensing for the collector; provider feed terms remain separate. A limitation is that different operators publish forecasts and actuals at different spatial and time resolutions, so their fields are not interchangeable without checks. The tool can assemble calibration and demand-balance inputs for solar grid simulations. The related ERA5 catalogue record supplies weather reanalysis, not generation observations. No live feed or database was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "openclimatefix/solar-consumer linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://github.com/openclimatefix/solar-consumer",
+  "id": "platform-solar-consumer",
+  "interfaces": [
+    "code_library"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-10",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Solar Consumer generation-feed collector",
+  "notes": "G7 G7-1765. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Open Climate Fix",
+  "related_ids": [
+    "data-era5-reanalysis"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for openclimatefix/solar-consumer: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/openclimatefix/solar-consumer"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/openclimatefix/solar-consumer/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Solar generation and forecast feeds database",
+  "type": "platform"
+}

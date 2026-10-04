@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/openquake-engine/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/gem/oq-engine"
+    },
+    {
+      "kind": "docs",
+      "label": "Manual",
+      "url": "https://docs.openquake.org/oq-engine/master/manual/"
+    },
+    {
+      "kind": "contact",
+      "label": "Support forum",
+      "url": "https://groups.google.com/g/openquake-users"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openquake engine",
+    "repo": "github.com/gem/oq-engine",
+    "url": "https://globalquakemodel.org/openquake"
+  },
+  "deployment": [
+    "desktop",
+    "own_server",
+    "hosted_service"
+  ],
+  "description": "The OpenQuake Engine is the seismic hazard and risk calculation software developed by the Global Earthquake Model (GEM) Foundation, designed as an open, community-driven tool. It implements probabilistic and scenario-based seismic hazard analysis (hazard curves, maps, uniform hazard spectra, disaggregation, event-based ground-motion fields) and risk calculators for damage and losses to exposed assets using fragility and vulnerability functions, including classical and event-based damage and risk, multi-peril scenario damage and retrofit benefit-cost ratios, reading source, exposure and vulnerability models as input files. It runs as a command-line engine on a laptop or on multiple nodes and SLURM clusters, with a web user interface, is installed from PyPI (openquake-engine 3.26.2) or installers, and the code is licensed AGPL-3.0-or-later at no cost, while the manual is CC BY-NC-SA 4.0 and many GEM models carry their own licences. Caveats: hazard and risk models must be supplied by the user or obtained from GEM under their own terms, calculations can be memory-heavy, and it covers earthquake and some secondary perils, not all hazards. It is used for hazard exposure of infrastructure and lifelines, fragility-based damage and resilience analysis, and pairs with the GEM global seismic hazard map and with loss frameworks such as Oasis LMF.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "open source seismic hazard and risk engine",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake",
+    "tsunami",
+    "landslide"
+  ],
+  "homepage": "https://www.globalquakemodel.org/openquake",
+  "hosted_models": [
+    "GEM global seismic hazard and risk models",
+    "national and regional seismic source models",
+    "fragility and vulnerability models"
+  ],
+  "id": "platform-openquake-engine",
+  "interfaces": [
+    "command_line",
+    "web_app",
+    "code_library"
+  ],
+  "interoperability": [
+    "XML and CSV model input files"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "AGPL-3.0-or-later (engine); manual CC-BY-NC-SA-4.0",
+  "licence_type": [
+    "non_commercial",
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.globalquakemodel.org/openquake"
+    ]
+  },
+  "maturity": "active",
+  "name": "OpenQuake Engine",
+  "notes": "GEM product pages answered HTTP 429 to scripted requests on 2026-09-26; facts taken from the manual and PyPI. Hazard type list includes secondary perils only as implemented in current releases.",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "Global Earthquake Model (GEM) Foundation",
+  "related_ids": [],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Seismic hazard and risk software by GEM Foundation; open community tool; source on gem/oq-engine; manual CC BY-NC-SA 4.0; version 3.27.0 devel",
+      "url": "https://docs.openquake.org/oq-engine/master/manual/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "User guide contents: classical and event based damage and risk, multi-peril scenario damage, retrofit benefit-cost ratio",
+      "url": "https://docs.openquake.org/oq-engine/master/manual/user-guide/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Running on multiple nodes and SLURM clusters",
+      "url": "https://docs.openquake.org/oq-engine/master/manual/getting-started/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "openquake-engine 3.26.2, AGPL-3.0-or-later, Python >=3.11",
+      "url": "https://pypi.org/pypi/openquake-engine/json"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings",
+    "cross_cutting.multi_sector"
+  ],
+  "tags": [
+    "seismic hazard",
+    "seismic risk",
+    "GEM",
+    "PSHA"
+  ],
+  "title_en": "OpenQuake Engine seismic hazard risk calculation software",
+  "type": "platform"
+}

@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "CNES establishments endpoint",
+      "url": "https://apidadosabertos.saude.gov.br/cnes/estabelecimentos"
+    },
+    {
+      "kind": "api",
+      "label": "CNES unit types endpoint",
+      "url": "https://apidadosabertos.saude.gov.br/cnes/tipounidades"
+    },
+    {
+      "kind": "portal",
+      "label": "Portal de Dados Abertos do SUS",
+      "url": "https://dadosabertos.saude.gov.br/"
+    },
+    {
+      "kind": "docs",
+      "label": "DATASUS (TABNET and systems)",
+      "url": "https://datasus.saude.gov.br/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "BR"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cnes health establishments of brazil sus open data api every registered health facility with type services coordinates and surgical obstetric and hospital capability flags",
+    "url": "https://dadosabertos.saude.gov.br"
+  },
+  "description": "The National Register of Health Establishments (CNES) is Brazil's national register of health facilities, from hospitals and clinics to laboratories and regulation centres, within the Unified Health System (SUS). It is maintained by the Ministry of Health through DATASUS, its information technology department, and published through the SUS open data API. Each establishment record gives its CNES code, tax number, legal and trade names, management and administrative sphere, unit type, full address, phone and email, latitude and longitude, opening shift, whether it offers SUS outpatient care, state and municipality codes, and flags for a surgical centre, obstetric centre, neonatal centre, hospital care, support services and outpatient care, with the date of last update. The data are free and available through the API as JSON, and the portal states a CC BY-ND 3.0 licence for its content. Caveats: the open API gives facility attributes but not bed counts or staff in the records read, coordinates come from the register and should be checked before use, and paging through the API is needed for a full national copy. Simulation uses: mapping hospitals and emergency-capable facilities for flood, landslide or heat exposure studies, building travel-time access models, and locating surgical and obstetric capacity for emergency planning. Related records: the Mexican CLUES catalogue (data-mexico-clues-health-establishments) and the Spanish hospital catalogue (data-spain-catalogo-nacional-hospitales) are comparable national registers.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: DATASUS (BR, health_ministry_service)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://dadosabertos.saude.gov.br/",
+  "id": "data-cnes-brazil-health-establishments-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC BY-ND 3.0 (stated for the content of the SUS open data portal)",
+  "licence_type": [
+    "no_derivatives"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CNES health establishments of Brazil (SUS open data API): every registered health facility with type, services, coordinates and surgical, obstetric and hospital capability flags",
+  "provider": "Ministério da Saúde, Departamento de Informação e Informática do SUS (DATASUS), Brazil",
+  "related_ids": [
+    "data-mexico-clues-health-establishments",
+    "data-spain-catalogo-nacional-hospitales"
+  ],
+  "schema_summary": "codigo_cnes, CNPJ, legal and trade names, management type, administrative sphere, codigo_tipo_unidade (unit type, for example public health laboratory, access regulation centre), postcode, address, district, phone, email, latitude and longitude, opening shift, SUS outpatient care flag, state and municipality codes, legal nature, deactivation reason, flags for surgical centre, obstetric centre, neonatal centre, hospital care, support services and outpatient care, teaching activity, hierarchy level, data_atualizacao",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "API answered with an establishment record; 37 fields listed in the schema summary, including latitude and longitude and flags for surgical, obstetric, neonatal and hospital care",
+      "url": "https://apidadosabertos.saude.gov.br/cnes/estabelecimentos?limit=1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Unit type code list (for example 80 public health laboratory, 81 access regulation centre, 82 state organ notification and distribution centre)",
+      "url": "https://apidadosabertos.saude.gov.br/cnes/tipounidades?limit=50"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "SUS open data portal: all content published under Creative Commons Attribution-NoDerivatives 3.0; themes including health care, pharmaceutical care, primary care; open data API link (apidadosabertos.saude.gov.br); Ministry of Health open data plan 2026-2028",
+      "url": "https://dadosabertos.saude.gov.br/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "DATASUS, part of SEIDIGI at the Ministry of Health, develops and maintains SUS information systems; featured services TABNET and TABWIN",
+      "url": "https://datasus.saude.gov.br/"
+    }
+  ],
+  "spatial_resolution": "Individual establishment (coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "health facilities",
+    "hospitals",
+    "CNES",
+    "SUS",
+    "Brazil",
+    "API"
+  ],
+  "temporal_coverage": "Current register",
+  "temporal_resolution": "Snapshot (updated continuously)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "CNES health establishments of Brazil (SUS open data API): every registered health facility with type, services, coordinates and surgical, obstetric and hospital capability flags",
+  "type": "data",
+  "update_frequency": "real_time"
+}

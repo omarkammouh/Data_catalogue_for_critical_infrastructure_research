@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/sustainable-computing/COBS"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/sustainable-computing/COBS/blob/master/README.md"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1145/3408308.3431119"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cobs comprehensive building simulator",
+    "repo": "github.com/sustainable-computing/cobs",
+    "url": "https://github.com/sustainable-computing/COBS"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "COBS is a modular building-control co-simulation platform developed by Tianyu Zhang and collaborators. It exposes EnergyPlus state after each simulation step so that an agent can choose actions for subsequent steps. A Gym-like interface supports control-algorithm experiments, with occupant models and building subsystems as intended extension points. The repository credits Pacific Northwest National Laboratory for supplied building and weather examples and links installation and user documentation. Coverage is building-level and depends on the chosen model and weather file; time detail follows the EnergyPlus simulation steps. Public Python source is free under MIT. The README labels the package early access and explicitly requires EnergyPlus 9.3.0, stating that other versions are not currently compatible. That restriction matters when reusing controllers or recent EnergyPlus models. COBS supports comparisons of HVAC and occupant-centred control strategies and analysis of resulting building energy behaviour. It wraps the catalogue's EnergyPlus engine (model-energyplus). This review checked documentation and licence metadata but did not execute a controller or assess the supplied buildings' calibration.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:energyplus fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/sustainable-computing/COBS",
+  "id": "platform-cobs",
+  "interfaces": [
+    "code_library",
+    "other"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-06-23",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "COBS: Comprehensive Building Simulator",
+  "notes": "G7 G7-0042. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "coupling_framework"
+  ],
+  "provider": "sustainable-computing repository maintainers",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for sustainable-computing/COBS: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aenergyplus+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/sustainable-computing/cobs/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Model coupling software for buildings",
+  "type": "platform"
+}

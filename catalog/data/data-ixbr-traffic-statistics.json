@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Aggregate traffic graphs",
+      "url": "https://ix.br/agregado/"
+    },
+    {
+      "kind": "viewer",
+      "label": "São Paulo traffic graphs",
+      "url": "https://ix.br/trafego/agregado/sp"
+    },
+    {
+      "kind": "viewer",
+      "label": "AS map and locator (CEPTRO.br)",
+      "url": "https://mapadeas.ceptro.br/"
+    },
+    {
+      "kind": "docs",
+      "label": "Release: 50 Tbit/s record (March 2026)",
+      "url": "https://nic.br/noticia/releases/ix-br-bate-recorde-de-50-tbit-s-de-trafego-internet-agregado-impulsionado-por-conteudo-e-servicos-digitais/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "BR"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance",
+    "system_description"
+  ],
+  "data_kind": [
+    "time_series",
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ix br traffic statistics for brazil s internet exchange points",
+    "url": "https://ix.br/agregado"
+  },
+  "description": "IX.br is the Brazilian system of public internet exchange points (Pontos de Troca de Tráfego), operated by NIC.br for the Brazilian Internet Steering Committee, and by traffic one of the largest sets of exchanges in the world. Its website publishes live traffic graphs for the aggregate of all locations and for each of its locations in 39 metropolitan areas across Brazil's five regions, with daily, weekly, monthly, yearly and decade views in bits per second, generated with MRTG and RRDtool and stamped with the time of the last update. NIC.br press releases track records: aggregate traffic reached 10 Tbit/s around 2020, passed 11 Tbit/s during the COVID-19 pandemic, reached 40.26 Tbit/s on 21 April 2025 and 50 Tbit/s in March 2026, when about 3,800 autonomous systems held roughly 7,000 connections and São Paulo alone carried 32 Tbit/s from more than 2,500 networks, followed by Fortaleza, a landing point for subsea cables. A companion AS map by CEPTRO.br shows which networks connect where. Coverage: Brazil, current traffic with graphs reaching back up to a decade. Format and access: graph images on the IX.br website, free to view, plus press releases; no data download or API was found. Caveats: values must be read from images; methods are not documented on the page. Simulation uses: demand curves and growth of interconnection traffic, the effect of losing a large exchange such as São Paulo or Fortaleza, and regional traffic localisation. Related records: the PCH directory and the Euro-IX IXP database list IX.br exchanges with members, and Cloudflare Radar shows national traffic trends.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "IX.br PTT estatísticas de tráfego dados abertos pontos de troca de tráfego Brasil NIC.br",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "image"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://ix.br/agregado/",
+  "id": "data-ixbr-traffic-statistics",
+  "languages": [
+    "pt"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "NIC.br; free to view, no licence stated",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "IX.br traffic statistics for Brazil's internet exchange points",
+  "notes": "Aggregate page and March 2026 release read via fetch on 2026-09-26. Earlier records from search result summaries. Five-minute sampling is the MRTG default, not stated on the page; Fortaleza's cable landing role is general knowledge.",
+  "provider": "IX.br, run by NIC.br (Núcleo de Informação e Coordenação do Ponto BR) for the Brazilian Internet Steering Committee (CGI.br)",
+  "related_ids": [],
+  "schema_summary": "traffic in bits per second per location and in aggregate over daily, weekly, monthly, yearly and decade windows",
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow",
+    "cascading_failure"
+  ],
+  "size": "39 locations",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "graphs and views",
+      "url": "https://ix.br/agregado/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "record, participants",
+      "url": "https://nic.br/noticia/releases/ix-br-bate-recorde-de-50-tbit-s-de-trafego-internet-agregado-impulsionado-por-conteudo-e-servicos-digitais/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://ix.br/agregado/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://ix.br/trafego/agregado/sp"
+    }
+  ],
+  "spatial_resolution": "exchange location",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "internet exchange",
+    "IX.br",
+    "traffic statistics",
+    "Brazil",
+    "NIC.br"
+  ],
+  "temporal_coverage": "about a decade of history in the decade view, to the present",
+  "temporal_resolution": "five-minute samples summarised in daily to decade graphs",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "IX.br traffic statistics for Brazil's internet exchange points",
+  "type": "data",
+  "update_frequency": "real_time"
+}

@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/floracharbo/hedge"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Charbonnier, F.; Morstyn, T.; McCulloch, M. (2023). Home Electricity Data Generator (HEDGE): An open-access tool for the generation of electric vehicle, residential demand, and PV generation profiles. https://doi.org/10.48550/arXiv.2310.01661.",
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hedge home electricity profile generator",
+    "repo": "github.com/floracharbo/hedge",
+    "url": "https://github.com/floracharbo/hedge"
+  },
+  "description": "HEDGE generates synthetic daily profiles of household electricity demand, rooftop photovoltaic output and electric-vehicle consumption and availability. Charbonnier, Morstyn and McCulloch train generative models on UK residential energy and travel data, retaining magnitude and behavioural-cluster consistency across successive days for each home. The Python interface takes a number of homes and returns arrays of energy in kilowatt-hours per interval and binary vehicle availability. Hourly generator inputs are included; other resolutions require a documented preparation stage using the source datasets. Geographic coverage reflects UK training data, not a general global population, and generated days are scenarios, not dated observations. Code is public and free under AGPL 3.0. Preparing travel inputs requires a separate UK Data Service registration, while other source terms remain applicable. No registration was needed to inspect the tool. A limitation is dependence on training-population behaviour and the computational cost of rebuilding the inputs. Simulation uses include residential flexibility, EV charging and control-method benchmarks. It relates to platform-opendss as a potential consumer of generated demand profiles, though conversion and power-flow coupling were not tested.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Curated-list traversal: rebase-energy/awesome-energy-datasets",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/floracharbo/hedge",
+  "id": "model-hedge-home-electricity-profile-generator",
+  "inputs": [
+    "Number of homes",
+    "Selected profile types",
+    "Behaviour-cluster and scaling configuration",
+    "Prepared UK training inputs"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-11-07",
+  "licence": "AGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "HEDGE home electricity profile generator",
+  "notes": "G8; G8-0106. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations. ",
+  "outputs": [
+    "Household demand and PV energy per interval",
+    "EV consumption and binary home availability"
+  ],
+  "provider": "Flora Charbonnier, Thomas Morstyn and Malcolm McCulloch",
+  "related_ids": [
+    "platform-opendss"
+  ],
+  "repository": "https://github.com/floracharbo/hedge",
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/floracharbo/hedge/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/floracharbo/hedge"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own paper abstract identifies GAN generation and cross-day behavioural consistency.",
+      "url": "https://arxiv.org/abs/2310.01661"
+    }
+  ],
+  "tags": [],
+  "title_en": "Synthetic daily household electricity demand, photovoltaic output and electric-vehicle consumption profiles",
+  "type": "model"
+}

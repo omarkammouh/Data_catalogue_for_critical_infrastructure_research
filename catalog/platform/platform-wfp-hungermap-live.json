@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "HungerMap LIVE interactive map",
+      "url": "https://hungermap.wfp.org/"
+    },
+    {
+      "kind": "api",
+      "label": "HungerMap data API (country information endpoint)",
+      "url": "https://api.hungermapdata.org/v2/info/country"
+    },
+    {
+      "kind": "docs",
+      "label": "WFP Innovation project page",
+      "url": "https://innovation.wfp.org/project/hungermap-live"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "wfp hungermap live global near real time food security monitoring and prediction platform",
+    "url": "https://hungermap.wfp.org"
+  },
+  "deployment": [
+    "hosted_service"
+  ],
+  "description": "HungerMap LIVE is the World Food Programme's global platform for watching food insecurity as it develops. It combines WFP's near real-time household food security monitoring with public data on weather, population, conflict, hazards, nutrition and the economy, and uses machine learning to estimate current food consumption where surveys are missing and to forecast indicators about a month ahead. Results are shown on an interactive world map with country and subnational views and feed WFP analytic products. The map is free to use in a browser, and a data API is available: when read, its country information endpoint was public and returned population and income group by country, while the food security endpoints required authorisation. Caveats: the site renders by script, no licence or bulk download is offered on the page, much of the API is closed, and modelled estimates carry uncertainty where survey coverage is thin. Coverage is global, focused on the countries where WFP operates. Simulation uses: a baseline of current food insecurity for disaster response and supply disruption scenarios, and a reference for validating food security models. Related records: the WFP global food prices data (data-wfp-global-food-prices) and the FEWS NET data explorer (data-fews-net-data-explorer) are complementary sources.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk (tier 3): WFP HungerMap LIVE",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought",
+    "flood",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://hungermap.wfp.org/",
+  "hosted_models": [
+    "Machine-learning nowcasts and one-month forecasts of food security indicators"
+  ],
+  "id": "platform-wfp-hungermap-live",
+  "interfaces": [
+    "web_app",
+    "web_api"
+  ],
+  "interoperability": [
+    "JSON API"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "WFP HungerMap LIVE: global near real-time food security monitoring and prediction platform",
+  "open_source": false,
+  "platform_kind": [
+    "cloud_service"
+  ],
+  "provider": "World Food Programme (WFP), Research, Assessment and Monitoring",
+  "related_ids": [
+    "data-wfp-global-food-prices",
+    "data-fews-net-data-explorer"
+  ],
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Project page read in memory: HungerMap LIVE pulls together food security, weather, population, conflict, hazard, nutrition and macro-economic data, including WFP near real-time monitoring, to track and predict food security; machine learning models forecast indicators one month ahead; last updated 07/04/2025",
+      "url": "https://innovation.wfp.org/project/hungermap-live"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Public JSON endpoint read in memory: countries with ISO codes, population figure, year and source, and income group; food security endpoints such as /v1/foodsecurity/country/{iso3}/region returned 401 Unauthorized and some others 503",
+      "url": "https://api.hungermapdata.org/v2/info/country"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Map application loads by script; no text content in the page source",
+      "url": "https://hungermap.wfp.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://hungermap.wfp.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://api.hungermapdata.org/v2/info/country"
+    }
+  ],
+  "supported_sectors": [
+    "services.food_supply"
+  ],
+  "tags": [
+    "food security",
+    "hunger",
+    "WFP",
+    "near real-time monitoring",
+    "nowcasting",
+    "early warning"
+  ],
+  "title_en": "WFP HungerMap LIVE: global near real-time food security monitoring and prediction platform",
+  "type": "platform"
+}

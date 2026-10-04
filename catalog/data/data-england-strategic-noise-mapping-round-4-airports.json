@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "WMS service",
+      "url": "https://environment.data.gov.uk/spatialdata/airport-noise-all-metrics-england-round-4/wms"
+    },
+    {
+      "kind": "api",
+      "label": "WCS service",
+      "url": "https://environment.data.gov.uk/spatialdata/airport-noise-all-metrics-england-round-4/wcs"
+    },
+    {
+      "kind": "portal",
+      "label": "Defra Data Services Platform",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://environment.data.gov.uk/explore/dac9cba4-abe7-43bd-b8e9-8a83da52edd8"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "airport noise all metrics england strategic noise mapping round 4",
+    "url": "https://environment.data.gov.uk/explore/dac9cba4-abe7-43bd-b8e9-8a83da52edd8"
+  },
+  "description": "This dataset gives the modelled noise from airports across England from the fourth round of strategic noise mapping. It provides five indicators: the day-evening-night level Lden with penalties for evening and night noise, the 16-hour daytime equivalent level LAeq,16h, and the day, evening and night levels Lday, Levening and Lnight, each as an annual average A-weighted level. Noise is modelled on a 10 m grid at a receptor height of 4 m above ground, with a lowest threshold of 35 dB for Lnight. It is published by the Department for Environment, Food and Rural Affairs on the Defra Data Services Platform, with a download and WMS and WCS services, in British National Grid (EPSG:27700). Coverage is airports in England. Access: free under the Open Government Licence, with no public access constraints; the data.gov.uk entry was modified in April 2026. Caveats: levels are modelled annual averages, not measurements, and no further update is planned for this round. It supports environmental impact and exposure analysis of airport operations and the assessment of noise constraints on airport capacity growth, and complements the US national transportation noise map catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"airport\" AND \"traffic\"",
+      "route": "R02",
+      "source": "data-gov-uk"
+    }
+  ],
+  "formats": [
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://environment.data.gov.uk/explore/dac9cba4-abe7-43bd-b8e9-8a83da52edd8",
+  "id": "data-england-strategic-noise-mapping-round-4-airports",
+  "languages": [
+    "en"
+  ],
+  "licence": "OGL-UK-3.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://environment.data.gov.uk/spatialdata/airport-noise-all-metrics-england-round-4/wcs"
+    ]
+  },
+  "maturity": "active",
+  "name": "Airport noise, all metrics, England strategic noise mapping round 4",
+  "provider": "Department for Environment, Food and Rural Affairs (Defra)",
+  "regions": [
+    "England"
+  ],
+  "related_ids": [
+    "data-bts-national-transportation-noise-map"
+  ],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Defra; Lden, LAeq16h, Lday, Leve, Lnight definitions; 10 m grid at 4 m receptor height; lowest threshold 35 dB for Lnight; resources download, WMS, WCS on environment.data.gov.uk; licence Open Government Licence; no public access constraints; frequency notPlanned; EPSG:27700; modified 2026-04-07",
+      "url": "https://ckan.publishing.service.gov.uk/api/action/package_show?id=airport-noise-all-metrics-england-round-4"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "layers Airport_Noise_ALL_LAeq16hr, Airport_Noise_ALL_Lday, Airport_Noise_ALL_Lden and others",
+      "url": "https://environment.data.gov.uk/spatialdata/airport-noise-all-metrics-england-round-4/wms?request=GetCapabilities&service=WMS"
+    }
+  ],
+  "spatial_resolution": "10 m grid",
+  "spatial_resolution_class": "10m_to_100m",
+  "tags": [
+    "noise mapping",
+    "airports",
+    "Lden",
+    "England",
+    "environmental noise"
+  ],
+  "temporal_coverage": "strategic noise mapping round 4",
+  "title_en": "Airport noise, all metrics, England strategic noise mapping round 4",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

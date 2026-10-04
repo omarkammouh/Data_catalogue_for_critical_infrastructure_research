@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/smwesten-usgs/swb2"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/smwesten-usgs/swb2/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Westenbroek (2026). Soil-Water-Balance Code version 2.4.1. U.S. Geological Survey Software Release. https://doi.org/10.5066/P1FMURCF",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usgs soil water balance code version 2",
+    "repo": "github.com/smwesten-usgs/swb2",
+    "url": "https://github.com/smwesten-usgs/swb2"
+  },
+  "description": "SWB2 is the U.S. Geological Survey's second-generation Soil-Water-Balance code for estimating groundwater recharge. It combines GIS grid layers with tabular climate inputs in a modified Thornthwaite-Mather daily water balance. Inputs describe land cover, soils, climate and model grid cells; outputs include recharge and related water-balance quantities that can feed regional groundwater-flow models. The user sets the grid extent and period. Daily calculations can be aggregated to monthly or annual recharge. The repository documents a 2026 version 2.4.1 software release and links an official manual. Its README states that this USGS code is in the public domain and shows a CC0 notice. A limitation is that recharge depends on spatial data and land-surface assumptions, which require local checking. This is a groundwater boundary-input model, not a groundwater-flow solver. The older SWB 1.x repository itself advises users to prefer SWB2. No climate grids or model binaries were downloaded. It supports water-supply and drought scenario simulations through its recharge outputs.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "smwesten-usgs/swb2 provider README continuation",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/smwesten-usgs/swb2",
+  "id": "model-usgs-swb2",
+  "inputs": [
+    "GIS land-cover and soil grids",
+    "Daily climate tables and recharge parameters"
+  ],
+  "language": [
+    "fortran"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-27",
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "USGS Soil-Water-Balance code version 2",
+  "notes": "G7 G7-1200. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Daily, monthly or annual groundwater-recharge estimates"
+  ],
+  "provider": "U.S. Geological Survey",
+  "related_ids": [],
+  "repository": "https://github.com/smwesten-usgs/swb2",
+  "sectors": [
+    "water.drinking_water",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for smwesten-usgs/swb2: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/smwesten-usgs/swb2"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/smwesten-usgs/swb2/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "USGS Soil-Water-Balance code version 2",
+  "type": "model"
+}

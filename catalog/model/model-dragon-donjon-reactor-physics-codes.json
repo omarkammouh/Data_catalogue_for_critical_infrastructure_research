@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Merlin page (codes and resources)",
+      "url": "https://merlin.polymtl.ca/"
+    },
+    {
+      "kind": "docs",
+      "label": "About Version5 (distribution, licence, components)",
+      "url": "https://merlin.polymtl.ca/version5.htm"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "dragon and donjon reactor physics codes version5 polytechnique montreal",
+    "url": "https://merlin.polymtl.ca"
+  },
+  "description": "DRAGON is a lattice code and DONJON a full-core reactor code, both developed at École Polytechnique de Montréal and distributed through the Merlin page, which also offers the PyNjoy 2012 cross-section library production system and an archive of reports, dissertations and sample data files. The Version5 page, updated 22 December 2025 and read on 2026-09-26, describes a 64-bit clean distribution whose release 5.0.1 matches Version4 at release 4.1.0, with a kernel in ANSI C and computational modules in Fortran 2003. Coverage includes Cartesian and hexagonal geometry tracking, subgroup self-shielding, SPH equivalence, discrete ordinates and characteristics methods in one to three dimensions, and creation of multi-parameter databases, with compatibility with WLUP, XMAS and SHEM libraries. Access is by download from the Merlin pages; the Version5 distribution is released under the GNU Lesser General Public License at no cost. Caveats: the main Merlin page was last updated in 2013, documentation is technical and aimed at reactor physicists, and the codes need nuclear data libraries prepared separately. Simulation uses are lattice and core calculations whose cross sections and power maps feed reactor safety and fuel cycle analysis, including a physics core for digital twin work. Related records: model-njoy-nuclear-data-processing produces the libraries such codes consume, and model-openmoc solves the same transport problem by the method of characteristics.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review https://www-pub.iaea.org/MTCD/publications/PDF/p15792-DOC-010-496_web.pdf (IAEA Technical Reports Series 496 (2025), review)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://merlin.polymtl.ca/",
+  "id": "model-dragon-donjon-reactor-physics-codes",
+  "inputs": [
+    "nuclear data libraries in Draglib format (WLUP, XMAS, SHEM group structures)",
+    "lattice and core geometries"
+  ],
+  "language": [
+    "fortran",
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-12-22",
+  "licence": "LGPL (GNU Lesser General Public License, Version5 distribution)",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "DRAGON and DONJON reactor physics codes (Version5, Polytechnique Montreal)",
+  "outputs": [
+    "lattice cross sections and multi-parameter reactor databases",
+    "core flux and power distributions"
+  ],
+  "provider": "École Polytechnique de Montréal",
+  "related_ids": [
+    "model-njoy-nuclear-data-processing",
+    "model-openmoc"
+  ],
+  "sectors": [
+    "energy.nuclear"
+  ],
+  "simulation_uses": [
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Merlin page (updated 2013-07-27) listing Version4, Version5, PyNjoy 2012 and the reactor physics archive",
+      "url": "https://merlin.polymtl.ca/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version5 page (updated 2025-12-22), components, languages, LGPL licence",
+      "url": "https://merlin.polymtl.ca/version5.htm"
+    }
+  ],
+  "tags": [
+    "reactor physics",
+    "lattice code",
+    "neutron transport",
+    "Polytechnique Montreal",
+    "nuclear"
+  ],
+  "title_en": "DRAGON and DONJON reactor physics codes (Version5, Polytechnique Montreal)",
+  "type": "model"
+}

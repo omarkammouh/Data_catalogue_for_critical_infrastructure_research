@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "FluSight forecast hub",
+      "url": "https://github.com/cdcepi/FluSight-forecast-hub"
+    },
+    {
+      "kind": "repo",
+      "label": "COVID-19 forecast hub",
+      "url": "https://github.com/CDCgov/covid19-forecast-hub"
+    },
+    {
+      "kind": "repo",
+      "label": "RSV forecast hub",
+      "url": "https://github.com/CDCgov/rsv-forecast-hub"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "scenarios_projections",
+    "demand_operation",
+    "health_impacts"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cdc forecast hubs flusight covid 19 rsv weekly ensemble and team forecasts of us hospital admissions",
+    "repo": "github.com/cdcepi/flusight-forecast-hub",
+    "url": "https://github.com/cdcepi/FluSight-forecast-hub"
+  },
+  "description": "The CDC forecast hubs collect probabilistic forecasts of respiratory disease burden from dozens of modelling teams each week and publish them with a CDC ensemble. They are run by the US Centers for Disease Control and Prevention on the hubverse standard of the Consortium of Infectious Disease Modeling Hubs. Coverage: the United States, national level plus all 50 states, Washington DC and Puerto Rico; the FluSight hub has run each influenza season (the 2026-2027 challenge starts on 7 October 2026 and runs to May), with separate hubs for COVID-19 and RSV. Teams submit quantile nowcasts and forecasts of weekly laboratory-confirmed hospital admissions and the share of emergency department visits for the previous, current and next three weeks, together with model metadata; the repositories also hold target data and ensemble outputs. Format and access: CSV and Parquet model output files with YAML metadata in public GitHub repositories, free to download. Licence: MIT for the repository; CDC asks users to contact it about attribution of individual teams' forecasts. Caveats: forecasts are submitted in real time and target data are revised, team participation varies by week, and skill drops beyond two weeks ahead. Simulation uses: hospital demand scenarios for capacity planning and emergency response of healthcare services during epidemic seasons. Related records: hubverse (platform-hubverse-modeling-hub-tools) supplies the data standards and tools, and the Rush COVID-19 hospital needs forecaster (model-rush-covid-hospital-needs-forecaster) turns such forecasts into bed demand.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source services-cdc-forecast-hubs: provider pages read (round 2 register piece)",
+      "route": "R36",
+      "source": "services-cdc-forecast-hubs"
+    }
+  ],
+  "formats": [
+    "csv",
+    "parquet",
+    "plain_text"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://github.com/cdcepi/FluSight-forecast-hub",
+  "id": "data-cdc-respiratory-forecast-hubs",
+  "languages": [
+    "en"
+  ],
+  "licence": "MIT (repository); contact CDC on attribution of team forecasts",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CDC forecast hubs (FluSight, COVID-19, RSV): weekly ensemble and team forecasts of US hospital admissions",
+  "provider": "US Centers for Disease Control and Prevention (CDC Influenza Division and Center for Forecasting and Outbreak Analytics), with the Consortium of Infectious Disease Modeling Hubs",
+  "related_ids": [
+    "platform-hubverse-modeling-hub-tools",
+    "model-rush-covid-hospital-needs-forecaster"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: FluSight 2026-2027 collects forecasts of weekly influenza hospital admissions and share of ED visits, national and 50 states, DC and Puerto Rico, preceding week to three weeks ahead; season planned from 2026-10-07; contact flusight@cdc.gov for attribution; MIT licence (Consortium of Infectious Disease Modeling Hubs); last commit 2026-09-28",
+      "url": "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository exists (git ls-remote); COVID-19 hub",
+      "url": "https://github.com/CDCgov/covid19-forecast-hub"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository exists (git ls-remote); RSV hub. No West Nile virus hub repository was found under cdcepi",
+      "url": "https://github.com/CDCgov/rsv-forecast-hub"
+    }
+  ],
+  "spatial_resolution": "National and state (jurisdiction)",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "influenza",
+    "COVID-19",
+    "RSV",
+    "forecasting",
+    "hospital admissions"
+  ],
+  "temporal_resolution": "Weekly",
+  "temporal_resolution_class": "weekly",
+  "title_en": "CDC forecast hubs (FluSight, COVID-19, RSV): weekly ensemble and team forecasts of US hospital admissions",
+  "type": "data",
+  "update_frequency": "weekly"
+}

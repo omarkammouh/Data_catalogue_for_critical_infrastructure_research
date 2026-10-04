@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "AeroAPI",
+      "url": "https://www.flightaware.com/commercial/aeroapi/"
+    },
+    {
+      "kind": "api",
+      "label": "Firehose streaming API",
+      "url": "https://www.flightaware.com/commercial/firehose/"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [],
+  "cost": "paid",
+  "countries": [],
+  "data_family": [
+    "sensor_realtime_streams",
+    "demand_operation",
+    "service_performance"
+  ],
+  "data_kind": [
+    "stream",
+    "time_series",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "flightaware flight tracking data aeroapi query api and firehose streaming feed",
+    "url": "https://flightaware.com/commercial/aeroapi"
+  },
+  "description": "FlightAware runs a global flight tracking service and sells its data through two main products. Coverage: global air traffic from more than 41,000 terrestrial ADS-B receivers operated by FlightAware, extended in remote regions by Aireon's space-based ADS-B, datalink and ACARS providers and radar feeds; Firehose fuses airborne and surface positions with detailed flight status and block events (FLIFO), predictions of arrival time, taxi-out duration and arrival runway, flight hold and go-around detection and airborne weather layers; AeroAPI gives ETAs, last position, full tracks, flight status, ground speed and altitude, with historical data back to 2011 and real-time alerts for departures, arrivals, cancellations and holds. Format and access: AeroAPI is a REST API with over 60 endpoints, usage-based pricing tiers, developer documentation and an interactive test portal; Firehose is an enterprise streaming API with pricing on request and a free trial. Licence: commercial terms, not read. Caveats: the pricing tier figures were not read; the historical data page returned a not-found page. Simulation uses: flight trajectories, delays and airport surface movements for aviation network flow, airport capacity and disruption propagation models. Related records: Spire Global ADS-B data (data-spire-global-satellite-ads-b-aviation-and-weather-data), the OpenSky Network (data-opensky-network) and ADS-B Exchange (data-adsb-exchange).",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-flightaware: provider pages read (round 2 register piece)",
+      "route": "R13",
+      "source": "transport-flightaware"
+    }
+  ],
+  "formats": [
+    "api"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.flightaware.com/commercial/aeroapi/",
+  "id": "data-flightaware-aeroapi-firehose-flight-tracking",
+  "languages": [
+    "en"
+  ],
+  "licence": "proprietary (commercial)",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "FlightAware flight tracking data: AeroAPI query API and Firehose streaming feed",
+  "provider": "FlightAware",
+  "related_ids": [
+    "data-spire-global-satellite-ads-b-aviation-and-weather-data",
+    "data-opensky-network",
+    "data-adsb-exchange"
+  ],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Query-based REST API, 60+ endpoints, usage-based pricing tiers, history back to 2011, alerts, interactive portal",
+      "url": "https://www.flightaware.com/commercial/aeroapi/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Streaming API; 41,000+ terrestrial ADS-B receivers; Aireon space-based ADS-B, datalink/ACARS, radar; FLIFO, Foresight predictions, hold and go-around detection, airborne weather; free trial",
+      "url": "https://www.flightaware.com/commercial/firehose/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Page not found",
+      "url": "https://www.flightaware.com/commercial/historical/"
+    }
+  ],
+  "tags": [
+    "flight tracking",
+    "ADS-B",
+    "flight status",
+    "aviation API",
+    "commercial data"
+  ],
+  "temporal_coverage": "real-time; history back to 2011 (AeroAPI)",
+  "title_en": "FlightAware flight tracking data: AeroAPI query API and Firehose streaming feed",
+  "type": "data"
+}

@@ -1,0 +1,155 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "REDATAM Censos 2017, district base",
+      "url": "https://censos2017.inei.gob.pe/bininei/RpWebEngine.exe/Portal?BASE=CPV2017DI&lang=esp"
+    },
+    {
+      "kind": "docs",
+      "label": "Dwelling variable dictionary",
+      "url": "https://censos2017.inei.gob.pe/bininei/RpWebStats.exe/Dictionary?BASE=CPV2017DI&ITEM=DICVIV&lang=esp"
+    },
+    {
+      "kind": "docs",
+      "label": "Geographic variable dictionary",
+      "url": "https://censos2017.inei.gob.pe/bininei/RpWebStats.exe/Dictionary?BASE=CPV2017DI&ITEM=DICGEO&lang=esp"
+    },
+    {
+      "kind": "docs",
+      "label": "Census questionnaire 2017 (PDF)",
+      "url": "https://www.inei.gob.pe/media/MenuRecursivo/censos/cedulacensalcpv201706jun.pdf"
+    },
+    {
+      "kind": "portal",
+      "label": "INEI census page",
+      "url": "https://www.inei.gob.pe/estadisticas/censos/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "PE"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "survey",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "inei peru censos nacionales 2017 xii poblacion vii vivienda district redatam system with dwelling water supply days and hours of water service water provider sanitation public grid electricity and building materials",
+    "url": "https://inei.gob.pe/estadisticas/censos"
+  },
+  "description": "Peru's National Institute of Statistics and Informatics offers the 2017 National Censuses (XII Population, VII Housing) in a REDATAM web system at district level, where users build tables, graphs and maps from the full microdata. The dwelling dictionary covers type, occupancy, wall, roof and floor materials, rooms and tenure, and a detailed block on water: supply source, whether water arrives every day, how many hours per day, on how many days if not daily, whether the household pays and which company or entity it pays. It also records the sanitary service and whether the dwelling has electric lighting from the public grid. Geography runs from department to province and district, split by urban and rural area. Coverage is national. Format and access: free online processing without registration, with the census questionnaire as documentation; the 2025 census website is a JavaScript application and no 2025 tables or microdata were found on the pages read. Licence: not stated on the pages read. Caveats: district is the lowest geographic level in this base; service hours are as reported by households. Simulation uses: district level intermittency of water supply for network reliability and demand studies, provider identity for utility service areas, and grid electrification and building materials for exposure. Related records: the Panama census 2023 REDATAM with water service hours and the Honduras census 2013 housing volume and REDATAM.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:PE:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "analysis_package_file",
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.inei.gob.pe/estadisticas/censos/",
+  "id": "data-inei-peru-censos-2017-redatam-water-service-hours-by-district",
+  "languages": [
+    "es"
+  ],
+  "licence": "not stated (only a site copyright notice on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "INEI Peru Censos Nacionales 2017 (XII Población, VII Vivienda) district REDATAM system with dwelling water supply, days and hours of water service, water provider, sanitation, public grid electricity and building materials",
+  "provider": "Instituto Nacional de Estadística e Informática (INEI), Peru",
+  "related_ids": [
+    "data-inec-panama-censo-2023-redatam-water-hours-sanitation-by-lugar-poblado",
+    "data-ine-honduras-cnpv-2013-housing-characteristics-volume-and-redatam"
+  ],
+  "schema_summary": "Dwelling entity variables: VAREA and ENCAREA urban or rural, C2P1 type, C2P2 occupancy, C2P3 to C2P5 wall, roof and floor material, C2P6 water supply (10 codes), C2P7 water service every day of the week, C2P7A hours per day, C2P7B days per week if not daily, C2P7C hours on those days, C2P8 pays for water, C2P9 entity paid for water, C2P10 sanitary service (8 codes), C2P11 public grid electric lighting, C2P12 rooms, C2P13 tenure; geography entities department, province, district",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: census links including REDATAM district base",
+      "url": "https://www.inei.gob.pe/estadisticas/censos/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: frame pointing to RpWebEngine portal CPV2017DI",
+      "url": "https://censos2017.inei.gob.pe/redatam/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: dwelling variables C2P1 to C2P13",
+      "url": "https://censos2017.inei.gob.pe/bininei/RpWebStats.exe/Dictionary?BASE=CPV2017DI&ITEM=DICVIV&lang=esp"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: department, province, district",
+      "url": "https://censos2017.inei.gob.pe/bininei/RpWebStats.exe/Dictionary?BASE=CPV2017DI&ITEM=DICGEO&lang=esp"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: JavaScript application, no text content",
+      "url": "https://censos2025.inei.gob.pe/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): only a site copyright notice on this page (all rights reserved)",
+      "url": "https://www.inei.gob.pe/estadisticas/censos/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://censos2017.inei.gob.pe/bininei/RpWebEngine.exe/Portal?BASE=CPV2017DI&lang=esp"
+    }
+  ],
+  "spatial_resolution": "department, province and district, urban and rural",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "Peru",
+    "censos 2017",
+    "REDATAM",
+    "intermittent water supply",
+    "water provider",
+    "district"
+  ],
+  "temporal_coverage": "census 2017",
+  "temporal_coverage_years": {
+    "end": 2017,
+    "start": 2017
+  },
+  "temporal_resolution": "single census",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "INEI Peru Censos Nacionales 2017 (XII Población, VII Vivienda) district REDATAM system with dwelling water supply, days and hours of water service, water provider, sanitation, public grid electricity and building materials",
+  "type": "data"
+}

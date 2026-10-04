@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Population grid WFS (vaestoruutu)",
+      "url": "https://geo.stat.fi/geoserver/vaestoruutu/wfs?service=WFS&request=GetCapabilities"
+    },
+    {
+      "kind": "docs",
+      "label": "Open data and interfaces, licence",
+      "url": "https://stat.fi/en/services/statistical-data-services/open-data-and-interfaces"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FI"
+  ],
+  "data_family": [
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "statistics finland population grid data 1 km and 5 km cells annual layers from 2005 wfs",
+    "url": "https://geo.stat.fi/geoserver/vaestoruutu/wfs?request=GetCapabilities&service=WFS"
+  },
+  "description": "Statistics Finland publishes the resident population on a regular grid as open data through a WFS service on geo.stat.fi. For each year (2005 and every year from 2010 to 2025) there is a layer of 1 km by 1 km cells and a layer of their centre points, and recent years also have 5 km cells. Each populated cell carries a grid identifier, coordinates, the municipality, total population, men and women, and three age groups (0 to 14, 15 to 64, 65 and over). The grid lets population be analysed on cells that do not follow administrative borders. Coverage: all of Finland. Format and access: WFS layers returning GML or GeoJSON, free without registration. Licence: CC BY 4.0 per Statistics Finland's open data terms. Caveats: only populated cells are included, and in cells with very few inhabitants the age groups are masked with -1; there are no building or dwelling counts on the open grid. Simulation uses: population exposure to hazards on a regular grid, evacuation and service catchment models, and a long time series for growth scenarios. Related records: Statistics Finland Paavo postal code statistics, the INE Spain 1 km census grid and WorldPop.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:FI:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "geojson",
+    "gml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://geo.stat.fi/geoserver/vaestoruutu/wfs?service=WFS&request=GetCapabilities",
+  "id": "data-statistics-finland-population-grid-1km",
+  "languages": [
+    "fi"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Statistics Finland population grid data, 1 km and 5 km cells, annual layers from 2005 (WFS)",
+  "provider": "Statistics Finland (Tilastokeskus)",
+  "related_ids": [
+    "data-statistics-finland-paavo-postal-code-area-statistics",
+    "data-ine-spain-census-2021-population-1km-grid",
+    "data-worldpop-global-gridded-population"
+  ],
+  "schema_summary": "grd_id, cell coordinates, municipality, population, men, women, age 0-14, 15-64, 65 and over; separate centre-point layers",
+  "sectors": [
+    "built_environment.buildings",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "51 layers: vaki2005_1km, vaki2010-2025_1km and centre points, vaki2022-2025_5km",
+      "url": "https://geo.stat.fi/geoserver/vaestoruutu/wfs?service=WFS&request=GetCapabilities"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Attributes grd_id, id_nro, xkoord, ykoord, kunta, vaesto, miehet, naiset, ika_0_14, ika_15_64, ika_65_",
+      "url": "https://geo.stat.fi/geoserver/vaestoruutu/wfs?service=WFS&request=DescribeFeatureType&typeName=vaestoruutu:vaki2025_1km"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "CC BY 4.0",
+      "url": "https://stat.fi/en/services/statistical-data-services/open-data-and-interfaces"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Cells with 2-4 inhabitants have age groups set to -1",
+      "url": "https://geo.stat.fi/geoserver/vaestoruutu/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=vaestoruutu:vaki2025_1km&count=400&outputFormat=application/json"
+    }
+  ],
+  "spatial_resolution": "1 km and 5 km grid cells",
+  "spatial_resolution_class": "1km_to_10km",
+  "spatial_resolution_m": 1000,
+  "tags": [
+    "population grid",
+    "1 km grid",
+    "Finland",
+    "WFS",
+    "register-based"
+  ],
+  "temporal_coverage": "annual layers 2005 and 2010 onward, latest 2025",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2005
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Statistics Finland population grid data, 1 km and 5 km cells, annual layers from 2005 (WFS)",
+  "type": "data",
+  "update_frequency": "annual"
+}

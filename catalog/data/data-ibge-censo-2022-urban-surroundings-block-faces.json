@@ -1,0 +1,142 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Tract-level CSV files",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios_Caracteristicas_urbanisticas_do_entorno_dos_domicilios/Agregados_por_Setor_csv/"
+    },
+    {
+      "kind": "docs",
+      "label": "Data dictionaries (faces, households, persons)",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios_Caracteristicas_urbanisticas_do_entorno_dos_domicilios/dicionarios_de_dados_entorno.zip"
+    },
+    {
+      "kind": "download",
+      "label": "Percentages of surroundings characteristics",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Dados_percentuais_das_Caracteristicas_urbanisticas_do_entorno_dos_domicilios/"
+    },
+    {
+      "kind": "download",
+      "label": "Surroundings of favelas and urban communities",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Favelas_e_comunidades_urbanas_Caracteristicas_do_entorno/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "BR"
+  ],
+  "data_family": [
+    "system_description",
+    "service_performance",
+    "social_vulnerability_equity"
+  ],
+  "data_kind": [
+    "tabular",
+    "survey"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ibge censo 2022 urban surroundings of dwellings caracteristicas urbanisticas do entorno street face infrastructure by census tract",
+    "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios_Caracteristicas_urbanisticas_do_entorno_dos_domicilios"
+  },
+  "description": "During the 2022 census IBGE enumerators recorded what each street face (one side of a block) in the selected urban tracts looks like, and IBGE publishes the result as tract-level counts. For every tract the faces table gives the number of faces by the traffic the street carries (trucks and buses, cars and vans, only pedestrians, bicycles and motorcycles, or waterway), and whether the face has a paved road, a storm drain inlet (bueiro), public lighting, a bus stop, cycle signage, a sidewalk, obstacles on the sidewalk, a wheelchair ramp, and how many trees. Parallel tables count the households and persons living on faces with each feature. The producer is IBGE, which runs the survey of urban surroundings with the census to describe infrastructure around dwellings. Coverage: tracts chosen for the surroundings survey across Brazil, with aggregates to neighbourhoods, districts and municipalities, plus separate files for favelas and urban communities. Format and access: zipped CSV and XLSX files (about 10 to 12 MB per tract file, April 2025) and dictionaries, free on ftp.ibge.gov.br. Licence: not stated in the directory; IBGE's terms page could not be read from the cloud (bot challenge). Caveats: only tracts selected for the surroundings survey are covered, observations are the enumerator's view on the ground, and there are no geometries of individual faces in these files. Simulation uses: gaps in drainage, lighting, paving and pedestrian infrastructure for flood and heat adaptation, accessibility and transit coverage models. Related records: the IBGE 2022 tract aggregates and their boundaries.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:BR:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios_Caracteristicas_urbanisticas_do_entorno_dos_domicilios/",
+  "id": "data-ibge-censo-2022-urban-surroundings-block-faces",
+  "languages": [
+    "pt"
+  ],
+  "last_updated": "2025-04-17",
+  "licence": "Not stated in the download directory (IBGE terms page not readable from the cloud)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "IBGE Censo 2022 urban surroundings of dwellings (Características urbanísticas do entorno), street-face infrastructure by census tract",
+  "provider": "Instituto Brasileiro de Geografia e Estatística (IBGE)",
+  "related_ids": [
+    "data-ibge-censo-2022-census-tract-aggregates"
+  ],
+  "schema_summary": "per tract: street faces by traffic type (trucks and buses, cars, pedestrians and bikes, waterway), paved road, storm drain inlet (bueiro), public lighting, bus stop, cycle signage, sidewalk, sidewalk obstacle, wheelchair ramp, number of trees; same items counted for households and persons",
+  "sectors": [
+    "transport.road",
+    "transport.active_mobility",
+    "transport.public_transit",
+    "water.stormwater_drainage",
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Directory: bairro, distrito, municipio, setor, subdistrito in CSV and XLSX; dictionaries zip",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios_Caracteristicas_urbanisticas_do_entorno_dos_domicilios/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Faces dictionary read: V05400-V05434 (traffic type, paving, bueiro, lighting, bus stop, cycle signage, sidewalk, obstacle, ramp, trees)",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios_Caracteristicas_urbanisticas_do_entorno_dos_domicilios/dicionarios_de_dados_entorno.zip"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Three tract files of 9.8 to 12 MB dated 2025-04-17",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios_Caracteristicas_urbanisticas_do_entorno_dos_domicilios/Agregados_por_Setor_csv/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios_Caracteristicas_urbanisticas_do_entorno_dos_domicilios/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios_Caracteristicas_urbanisticas_do_entorno_dos_domicilios/Agregados_por_Setor_csv/"
+    }
+  ],
+  "spatial_resolution": "census tract (counts of street faces, households and persons), also neighbourhood, district and municipality",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "census",
+    "street infrastructure",
+    "storm drains",
+    "sidewalks",
+    "public lighting",
+    "bus stops",
+    "Brazil",
+    "favelas"
+  ],
+  "temporal_coverage": "Census 2022 field observation",
+  "temporal_coverage_years": {
+    "end": 2022,
+    "start": 2022
+  },
+  "temporal_resolution": "none (census snapshot)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "IBGE Census 2022 urban surroundings of dwellings, street-face infrastructure by census tract",
+  "type": "data"
+}

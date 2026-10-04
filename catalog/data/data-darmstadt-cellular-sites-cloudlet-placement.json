@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "locations.csv, base-station coordinates (raw file in the authors repository)",
+      "note": "answers 200 on 2026-10-01: text/plain, 3,885 bytes",
+      "url": "https://raw.githubusercontent.com/Telecooperation/darmstadt-cellular/master/locations.csv"
+    },
+    {
+      "kind": "repo",
+      "label": "Telecooperation darmstadt-cellular repository",
+      "note": "verified with git ls-remote on 2026-10-01 (the GitHub web page itself is blocked from this sandbox)",
+      "url": "https://github.com/Telecooperation/darmstadt-cellular"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "darmstadt base station coordinates for urban cloudlet placement",
+    "repo": "github.com/telecooperation/darmstadt-cellular",
+    "url": "https://github.com/Telecooperation/darmstadt-cellular"
+  },
+  "description": "This small dataset provides cellular-base-station coordinates for studying where edge-computing cloudlets could use existing urban infrastructure. TU Darmstadt’s Telecooperation Lab documents extraction from the German Federal Network Agency map and publishes the resulting locations.csv file. Each location is represented by WGS84 latitude and longitude. Geographic coverage is Darmstadt, Germany; the collection date and site count are not stated in the inspected README, which cites two 2018 cloudlet-placement studies. Public GitHub access is free and the repository specifies MIT. The original regulatory source has separate reuse conditions that were not re-established for this historical extract. A limitation is that coordinates alone do not describe ownership, installed capacity, physical hosting space or connectivity, and should not be treated as evidence that a site can host a cloudlet. Simulation uses include testing candidate edge-node placement and spatial coverage assumptions. No related catalogue resource was identified as this particular city extract. The source web map was named in the documentation, but no current site inventory or coordinate payload was downloaded and no placement result was reproduced.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"cellular\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://raw.githubusercontent.com/Telecooperation/darmstadt-cellular/master/locations.csv",
+  "id": "data-darmstadt-cellular-sites-cloudlet-placement",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-10-25",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Darmstadt base-station coordinates for urban cloudlet placement",
+  "notes": "G8; G8-0229. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Gedeon, J. et al. (2018). From Cell Towers to Smart Street Lamps: Placing Cloudlets on Existing Urban Infrastructures. SEC 2018. Also A Multi-Cloudlet Infrastructure for Future Smart Cities, EdgeSys 2018..",
+  "provider": "TU Darmstadt Telecooperation Lab",
+  "regions": [
+    "Darmstadt"
+  ],
+  "related_ids": [
+    "model-base-station-placement-correlation-grouping-lte-hetnet"
+  ],
+  "sectors": [
+    "digital.telecom",
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/Telecooperation/darmstadt-cellular/blob/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/Telecooperation/darmstadt-cellular"
+    }
+  ],
+  "spatial_resolution": "Darmstadt, Germany; WGS84 points.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Historical extract supporting 2018 studies; collection date not specified.",
+  "temporal_resolution": "Static site coordinates.",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Darmstadt base-station coordinates for urban cloudlet placement",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

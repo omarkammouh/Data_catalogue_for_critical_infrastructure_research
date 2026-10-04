@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "ArcGIS REST service",
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/PublicView_RAWS/FeatureServer"
+    },
+    {
+      "kind": "portal",
+      "label": "NIFC open data item",
+      "url": "https://data-nifc.opendata.arcgis.com/datasets/nifc::public-view-interagency-remote-automatic-weather-stations-raws"
+    },
+    {
+      "kind": "portal",
+      "label": "WRCC RAWS USA Climate Archive",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://raws.dri.edu/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "weather_observations",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "interagency remote automatic weather stations raws public view and observations nifc",
+    "url": "https://data-nifc.opendata.arcgis.com/datasets/nifc::public-view-interagency-remote-automatic-weather-stations-raws"
+  },
+  "description": "The Remote Automatic Weather Stations (RAWS) network is a set of solar-powered weather stations operated by the United States wildland fire agencies, mostly sited to monitor fire danger. Stations send data through NOAA's GOES satellites to the National Interagency Fire Center in Boise, which forwards them to the Weather Information Management System and the Western Regional Climate Center. The NIFC public view feature service lists 3,220 station records with name, identifiers (WXID, NESS, NWS, MesoWest), elevation, state, county, agency, region, unit, status and the latest observed values: rain accumulation, wind speed and direction with peaks, air temperature, fuel temperature, relative humidity, fuel moisture, solar radiation and battery voltage. Coverage is the whole United States. The layer is free to download from the NIFC open data site or to query through its ArcGIS REST API, and station histories are available from the Western Regional Climate Center's RAWS USA Climate Archive. No licence is given; NIFC states the data are dynamic, not legal documents, and not better than their sources. Caveats: the public view shows latest readings only, and some stations are portable or seasonal. Simulation uses: driving fire danger and fire spread inputs for wildfire response planning, and placing weather observations near fire stations and evacuation routes. Related records: the NIFC wildland fire incident locations (data-nifc-wfigs-wildland-fire-incident-locations) come from the same open data site.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "weather observations for fire services fire weather stations data network open data RAWS",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "csv",
+    "shapefile"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://data-nifc.opendata.arcgis.com/datasets/nifc::public-view-interagency-remote-automatic-weather-stations-raws",
+  "id": "data-nifc-raws-remote-automatic-weather-stations",
+  "languages": [
+    "en"
+  ],
+  "licence": "Not stated (NIFC disclaimer on use and accuracy)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Interagency Remote Automatic Weather Stations (RAWS) public view and observations (NIFC)",
+  "provider": "National Interagency Fire Center (NIFC) and the wildland fire agencies; archive at the Western Regional Climate Center (WRCC)",
+  "related_ids": [
+    "data-nifc-wfigs-wildland-fire-incident-locations"
+  ],
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "item: nearly 2,200 interagency RAWS; GOES to NIFC Boise, WIMS, WRCC Reno; variables listed; licence text is a NIFC disclaimer; modified 2026-05-26",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/29185087b4594a35abe059cbdbf97ee4?f=json"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "layer RAWS Stations: fields listed in the description; query count 3,220",
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/PublicView_RAWS/FeatureServer/1?f=json"
+    }
+  ],
+  "spatial_resolution": "Station point",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "RAWS",
+    "fire weather",
+    "weather stations",
+    "wildland fire"
+  ],
+  "temporal_coverage": "Latest observations; WRCC archive for history",
+  "temporal_resolution": "Hourly observations",
+  "temporal_resolution_class": "hourly",
+  "title_en": "Interagency Remote Automatic Weather Stations (RAWS) public view and observations (NIFC)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

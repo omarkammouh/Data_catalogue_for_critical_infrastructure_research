@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Resource",
+      "url": "https://deddiag.github.io/"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-021-00963-2"
+    },
+    {
+      "kind": "repo",
+      "label": "Repository documentation",
+      "url": "https://github.com/DEDDIAG/energy-server"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "deddiag household energy monitoring system",
+    "url": "https://deddiag.github.io"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "The DEDDIAG domestic energy monitoring system collects appliance and whole-house electricity observations for demand research. Its Rosenheim developers provide a Raspberry Pi client called bbox and a central energy-server, both under MIT with free source access. The client uses smart plugs or a Modbus meter, records changes locally and sends hourly uploads to a PostgreSQL server. The server provides household charts and an annotation interface. The own system page describes nominal 1 Hz appliance polling, with actual timing affected by device and network response. It is location-independent software that can gather calibration data for building simulations such as model-energyplus. A caveat is that deployment requires compatible physical meters and the documented client/server configuration; free software does not remove equipment costs. Change-based storage must also be reconstructed carefully for regularly sampled demand series. The public installation documentation was inspected, but no system was installed, no credentials were configured and no measurements were collected.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "G1-Q-TITLE-ENERGY-01; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://deddiag.github.io/",
+  "id": "platform-deddiag-domestic-energy-monitoring",
+  "interfaces": [
+    "web_app",
+    "file_exchange",
+    "web_api"
+  ],
+  "interoperability": [
+    "Docker",
+    "Eclipse SmartHome",
+    "Raspberry Pi",
+    "PostgreSQL"
+  ],
+  "language": [
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-07-15",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "DEDDIAG household energy monitoring system",
+  "notes": "G1 G1-0150. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-17.json. Related-resource uses are not tested interfaces. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Technical University of Applied Sciences Rosenheim",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://deddiag.github.io/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/DEDDIAG/bbox"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/DEDDIAG/bbox/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/DEDDIAG/energy-server"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/DEDDIAG/energy-server/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-021-00963-2"
+    }
+  ],
+  "supported_sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "tags": [],
+  "title_en": "DEDDIAG household energy monitoring system",
+  "type": "platform"
+}

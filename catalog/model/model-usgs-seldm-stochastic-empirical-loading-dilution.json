@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "SELDM version 1.0.0 documentation (Techniques and Methods 4-C3)",
+      "url": "https://pubs.usgs.gov/publication/tm4C3"
+    },
+    {
+      "kind": "download",
+      "label": "SELDM software archive (all versions)",
+      "url": "https://www.usgs.gov/software/stochastic-empirical-loading-and-dilution-model-seldm-software-archive"
+    },
+    {
+      "kind": "download",
+      "label": "InterpretSELDM output interpreter on ScienceBase (installer and code)",
+      "url": "https://www.sciencebase.gov/catalog/item/5cd1ee34e4b09b8c0b7a58d7"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "seldm stochastic empirical loading and dilution model usgs and fhwa",
+    "url": "https://pubs.usgs.gov/publication/tm4C3"
+  },
+  "description": "SELDM is a stochastic model that produces planning-level estimates of stormflows, event mean concentrations and loads from a highway site and its upstream basin, the effect of best management practices, and the resulting dilution and concentrations in receiving streams and lakes. It uses Monte Carlo sampling of input statistics for precipitation, prestorm flow, runoff coefficients and water-quality constituents, which it provides from US national datasets by location and basin characteristics, and treats each source area as a lumped homogeneous unit; results are ranked to show the risk of adverse effects by storm and by year. The US Geological Survey developed it with the Federal Highway Administration (version 1.0.0 documented in Techniques and Methods 4-C3, 2013), and the InterpretSELDM software archive (May 2021) holds every version as a Microsoft Access database application with a simple interface, free to download, and the InterpretSELDM post-processor (2019) is on ScienceBase; USGS software is public domain. Coverage of the built-in statistics is national for the United States. Caveats: estimates carry large uncertainty, often orders of magnitude, the model is not calibrated to observed records, and it needs Microsoft Access on Windows. Simulation uses: sizing and comparing highway stormwater mitigation in capacity planning and optimisation, and screening pollutant exposure of receiving waters. Related record: EPA SWMM (model-epa-swmm).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"stormwater\" AND \"simulation\"",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://pubs.usgs.gov/publication/tm4C3",
+  "id": "model-usgs-seldm-stochastic-empirical-loading-dilution",
+  "inputs": [
+    "Highway site, upstream basin and lake basin properties (lumped, one homogeneous unit each)",
+    "Statistics for precipitation, prestorm flow, runoff coefficients and water-quality constituents from national datasets or site data",
+    "Performance of best management practices (BMPs)"
+  ],
+  "language": [
+    "other"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (USGS software)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "SELDM, Stochastic Empirical Loading and Dilution Model (USGS and FHWA)",
+  "outputs": [
+    "Stochastic populations of stormflows, event mean concentrations and loads from the highway, upstream basin and BMP outfalls",
+    "Downstream receiving-water concentrations and annual average lake concentrations, ranked by risk"
+  ],
+  "provider": "US Geological Survey in cooperation with the Federal Highway Administration",
+  "related_ids": [
+    "model-epa-swmm"
+  ],
+  "runs_on": [
+    "Windows"
+  ],
+  "sectors": [
+    "water.stormwater_drainage",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "abstract: purpose, FHWA cooperation, Monte Carlo, national input statistics, lumped parameter, uncertainty",
+      "url": "https://pubs.usgs.gov/publication/tm4C3"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "software archive May 12 2021, Microsoft Access database application with GUI, versions since 1.0",
+      "url": "https://www.usgs.gov/software/stochastic-empirical-loading-and-dilution-model-seldm-software-archive"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "InterpretSELDM 1.0, 2019-06-12, installer EXE, code zip, videos",
+      "url": "https://www.sciencebase.gov/catalog/item/5cd1ee34e4b09b8c0b7a58d7"
+    }
+  ],
+  "tags": [
+    "stormwater",
+    "highway runoff",
+    "water quality",
+    "Monte Carlo",
+    "BMP",
+    "receiving water"
+  ],
+  "title_en": "SELDM, Stochastic Empirical Loading and Dilution Model (USGS and FHWA)",
+  "type": "model"
+}

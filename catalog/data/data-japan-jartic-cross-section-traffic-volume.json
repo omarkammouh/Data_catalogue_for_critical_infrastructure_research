@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "JARTIC open data",
+      "url": "https://www.jartic.or.jp/service/opendata/"
+    },
+    {
+      "kind": "api",
+      "label": "G-Space located traffic volume API",
+      "url": "https://www.geospatial.jp/ckan/dataset/traffic-apiv2"
+    },
+    {
+      "kind": "docs",
+      "label": "Use case (traffic simulation)",
+      "url": "https://front.geospatial.jp/showcase/traffic/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "freemium",
+  "countries": [
+    "JP"
+  ],
+  "data_family": [
+    "demand_operation",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "jartic cross section traffic volume data police vehicle detectors 5 minute japan",
+    "url": "https://jartic.or.jp/service/opendata"
+  },
+  "description": "Cross-section traffic volume data in Japan are 5-minute traffic counts collected by prefectural police with vehicle detectors and other devices, compiled by the National Police Agency and provided by the Japan Road Traffic Information Center (JARTIC). JARTIC's open data page offers traffic regulation information, cross-section traffic volume, MLIT traffic volume data and intersection control information as files that are updated at the start of each month, when earlier files are removed. The G-Space Information Center adds the locations of the counting points and serves hourly extracts by date, mesh, link or area from July 2018 onwards through a paid API in JSON or CSV (165,000 yen for three months or 330,000 yen for a year). Coverage is national (Japan). The open files are free to download under JARTIC's terms of use; the located API is paid. Caveats: the open files keep only the latest month, and the full CSV files are large. The data support calibration of traffic simulation (such as SOUND models of the Kanto region), traffic regulation planning for disasters and events, and road maintenance planning. They complement the KSJ road data and are related to the DfT road traffic counts.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "断面交通量データ 交通流シミュレーション",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.jartic.or.jp/service/opendata/",
+  "id": "data-japan-jartic-cross-section-traffic-volume",
+  "languages": [
+    "ja"
+  ],
+  "licence": "JARTIC terms of use; G-Space API terms",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "JARTIC cross-section traffic volume data (police vehicle detectors, 5-minute), Japan",
+  "provider": "Japan Road Traffic Information Center (JARTIC), with the National Police Agency; located API via the G-Space Information Center (AIGID)",
+  "related_ids": [
+    "data-japan-ksj-roads-n01",
+    "data-uk-dft-road-traffic-counts"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "open data: traffic regulation, cross-section traffic volume, MLIT traffic volume, intersection control; updated at start of each month, earlier not retrievable; terms of use; large CSV",
+      "url": "https://www.jartic.or.jp/service/opendata/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "police detectors, NPA, JARTIC; 5-minute volumes from July 2018; locations added; pinpoint or area query, one hour per call; JSON or CSV; API key after application; price 165,000 yen/3 months, 330,000 yen/12 months; own terms",
+      "url": "https://www.geospatial.jp/ckan/api/3/action/package_show?id=traffic-apiv2"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "use case: SOUND traffic simulation of the Kanto region calibrated with cross-section volumes; uses for bypass evaluation, disaster and event traffic control, road maintenance",
+      "url": "https://front.geospatial.jp/showcase/traffic/"
+    }
+  ],
+  "spatial_resolution": "detector sections",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "Japan",
+    "traffic volume",
+    "vehicle detectors",
+    "JARTIC",
+    "police"
+  ],
+  "temporal_coverage": "latest month (open files); from July 2018 (API)",
+  "title_en": "JARTIC cross-section traffic volume data (police vehicle detectors, 5-minute), Japan",
+  "type": "data",
+  "update_frequency": "monthly"
+}

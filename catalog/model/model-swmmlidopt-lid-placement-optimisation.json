@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/ElhadiMohsenAbdalla/SWMMLIDOPT"
+    },
+    {
+      "kind": "docs",
+      "label": "EviBAN project page",
+      "url": "https://www.sintef.no/projectweb/eviban/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "swmmlidopt multi objective optimisation of lid measures with swmm",
+    "url": "https://github.com/ElhadiMohsenAbdalla/SWMMLIDOPT"
+  },
+  "description": "SWMMLIDopt is an R Shiny tool for multi-objective optimisation of the choice and placement of low impact development measures such as bioretention cells, green roofs, permeable pavements and vegetated swales in urban catchments modelled with the Storm Water Management Model. It was developed in the EviBAN project on natural water retention measures, funded under the Water JPI 2018 joint call and the Research Council of Norway, with SINTEF hosting the project page. The tool prepares optimisation input from a SWMM file with tagged catchments, runs the NSGA-II genetic algorithm through the mco and swmmr packages to trade total cost against reduced peak drainage flow, and lets users compare Pareto solutions and LID densities. Coverage is any SWMM catchment. Format and access: a public repository run locally with R, RStudio, Rtools and SWMM on Windows. Licence: MIT; free. Caveats: results depend on the SWMM model's calibration and on cost inputs, and only peak flow is optimised. It supports climate adaptation planning of green-blue stormwater infrastructure. Related catalogue records are the DRAIN-LID device model and the BGS Infiltration SuDS Map.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "green infrastructure stormwater model low impact development simulation tool open source",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/ElhadiMohsenAbdalla/SWMMLIDOPT",
+  "id": "model-swmmlidopt-lid-placement-optimisation",
+  "inputs": [
+    "SWMM input file with tagged catchments",
+    "LID measures and allowed land types",
+    "LID costs"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.sintef.no/projectweb/eviban/"
+    ]
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "SWMMLIDopt: multi-objective optimisation of LID measures with SWMM",
+  "outputs": [
+    "Pareto-optimal LID layouts (total cost versus peak flow reduction)",
+    "SWMM files with LID measures",
+    "Comparison plots"
+  ],
+  "provider": "EviBAN project (SINTEF and partners; Elhadi Mohsen Hassan Abdalla)",
+  "related_ids": [
+    "model-drain-lid-richards-infiltration",
+    "data-bgs-infiltration-suds-map"
+  ],
+  "sectors": [
+    "cross_cutting.green_blue",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "README: purpose, method, requirements, tabs, licence, funding",
+      "url": "https://raw.githubusercontent.com/ElhadiMohsenAbdalla/SWMMLIDOPT/HEAD/README.md"
+    }
+  ],
+  "tags": [
+    "LID",
+    "SWMM",
+    "NSGA-II",
+    "green infrastructure"
+  ],
+  "title_en": "SWMMLIDopt: multi-objective optimisation of LID measures with SWMM",
+  "type": "model"
+}

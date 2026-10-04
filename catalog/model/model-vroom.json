@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code and wiki",
+      "url": "https://github.com/VROOM-Project/vroom"
+    },
+    {
+      "kind": "viewer",
+      "label": "Demo frontend",
+      "url": "http://map.vroom-project.org/"
+    }
+  ],
+  "access_note": "A hosted premium API is sold by Verso; the open-source engine is free.",
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "vroom vehicle routing open source optimization machine",
+    "url": "https://github.com/VROOM-Project/vroom"
+  },
+  "description": "VROOM (Vehicle Routing Open-source Optimization Machine) is an open-source route optimisation engine written in C++20 that solves vehicle routing problems quickly enough for operational use. It handles the travelling salesman problem, capacitated routing, routing with time windows, multi-depot heterogeneous fleets with time windows and pickup-and-delivery with time windows, all in one model of vehicles (capacities on several metrics, skills, working hours, driver breaks, start and end points) and jobs or shipments (amounts, time windows, service durations, skills, priority). It runs as a command-line solver or through the vroom-express HTTP wrapper and reads travel times from the OSRM, Openrouteservice or Valhalla routing engines, or from a custom cost matrix. It is generic and works for any country or road network. The project is maintained by Verso, which also sells a hosted premium API; the open-source code is copyright Julien Coupey under a BSD 2-clause licence and is free. Caveats: travel times are only as good as the routing engine and road data behind it, usually OpenStreetMap, and the engine optimises plans, not simulating traffic. It is used to plan delivery, collection and service fleets, to test depot locations and to estimate fleet sizes under road network disruptions. See also the jsprit toolkit and OpenStreetMap.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "vehicle routing (codeberg-d4caba83f0 mirror)",
+      "route": "R10",
+      "source": "codeberg"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/VROOM-Project/vroom",
+  "id": "model-vroom",
+  "inputs": [
+    "vehicles with capacities",
+    "skills and working hours",
+    "jobs and shipments with time windows",
+    "travel time matrix or routing engine (OSRM",
+    "Openrouteservice",
+    "Valhalla)"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-17",
+  "licence": "BSD-2-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network"
+  ],
+  "name": "VROOM vehicle routing open-source optimization machine",
+  "outputs": [
+    "optimised vehicle routes and schedules",
+    "unassigned jobs",
+    "route summaries"
+  ],
+  "provider": "VROOM project (Julien Coupey), maintained by Verso",
+  "related_ids": [
+    "model-jsprit"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "transport.logistics_freight",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "C++20 engine; problem types TSP, CVRP, VRPTW, MDHVRPTW, PDPTW; vehicle and job features; OSRM, Openrouteservice, Valhalla; maintained by Verso; premium API",
+      "url": "https://raw.githubusercontent.com/VROOM-Project/vroom/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "copyright 2015-2025 Julien Coupey; BSD 2-clause terms",
+      "url": "https://raw.githubusercontent.com/VROOM-Project/vroom/master/LICENSE"
+    }
+  ],
+  "tags": [
+    "vehicle routing",
+    "VRP",
+    "route optimisation",
+    "logistics",
+    "OSRM"
+  ],
+  "title_en": "VROOM vehicle routing open-source optimization machine",
+  "type": "model",
+  "validated_on": []
+}

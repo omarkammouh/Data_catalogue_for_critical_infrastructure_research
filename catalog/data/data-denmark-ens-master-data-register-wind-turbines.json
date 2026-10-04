@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Vinddata, current extract (XLSX)",
+      "url": "https://ens.dk/media/8748/download"
+    },
+    {
+      "kind": "download",
+      "label": "Historiske vinddata (XLSX)",
+      "url": "https://ens.dk/media/8746/download"
+    },
+    {
+      "kind": "viewer",
+      "label": "Wind and solar map (plandata)",
+      "url": "https://sologvindinfo.dk/spatialmap"
+    },
+    {
+      "kind": "docs",
+      "label": "Guidance on the register fields (PDF)",
+      "url": "https://ens.dk/media/8414/download"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DK"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "danish energy agency master data register of wind turbines stamdataregister for vindkraftanlæg every grid connected wind turbine with location size and production",
+    "url": "https://ens.dk/analyser-og-statistik/data-oversigt-over-energisektoren"
+  },
+  "description": "The Stamdataregister for vindkraftanlæg is the Danish Energy Agency's national database of all electricity-producing wind turbines connected to the Danish power system, used for administration, statistics and settlement of price supplements. Contents: three spreadsheet extracts, the current wind dataset (master and production data), park production by park number, and a historical file of turbines decommissioned more than three years ago; the historical file alone has about 10,700 rows. Each turbine has an 18-digit GSRN number, grid connection and decommissioning dates, capacity in kW, rotor diameter, hub height, manufacturer and type, municipality, land or offshore siting, cadastral parcel and UTM coordinates (EUREF89), with monthly delivered production for the last three years and annual totals before that. Producer: Energistyrelsen, from data supplied by grid companies and Energinet. Coverage: Denmark, onshore and offshore, back to the 1970s; the current extract was uploaded in September 2026 (end of August 2026 data). Format and access: Excel files downloadable from the agency's data overview page, updated about every two months; a companion map on the planning data portal shows onshore turbines above 25 kW and solar plants above 1 MW. Free; the page states no licence. Caveats: production is withheld for privately owned turbines and household turbines have no coordinates; since 2023 park turbines carry no individual production, only the park total; data before 2000 are not guaranteed and values are revised retroactively. Simulation uses: an asset inventory of the wind fleet for power system models, wind output reconstruction and ageing or repowering studies. Related records: Energinet's Energi Data Service (data-energi-data-service-energinet) holds system-level production and market series.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source dk-portal-datavejviser-dk: provider pages read (round 2 register piece)",
+      "route": "R02",
+      "source": "dk-portal-datavejviser-dk"
+    }
+  ],
+  "formats": [
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://ens.dk/analyser-og-statistik/data-oversigt-over-energisektoren",
+  "id": "data-denmark-ens-master-data-register-wind-turbines",
+  "languages": [
+    "da"
+  ],
+  "last_updated": "2026-09-15",
+  "licence": "not stated",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Danish Energy Agency master data register of wind turbines (Stamdataregister for vindkraftanlæg): every grid-connected wind turbine with location, size and production",
+  "provider": "Energistyrelsen (Danish Energy Agency), with data reported by grid companies and Energinet",
+  "related_ids": [
+    "data-energi-data-service-energinet"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "register description, three files, field definitions, update cycle, caveats",
+      "url": "https://ens.dk/analyser-og-statistik/data-oversigt-over-energisektoren"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "XLSX opened: sheet of about 10,700 rows with GSRN, dates, kW, rotor, hub height, make, municipality, UTM coordinates and yearly production",
+      "url": "https://ens.dk/media/8748/download"
+    }
+  ],
+  "tags": [
+    "Denmark",
+    "wind turbines",
+    "Stamdataregister",
+    "asset register",
+    "GSRN"
+  ],
+  "title_en": "Danish Energy Agency master data register of wind turbines (Standard Data Register for wind power plants): every grid-connected wind turbine with location, size and production",
+  "type": "data"
+}

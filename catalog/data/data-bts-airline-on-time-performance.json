@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Database profile and tables",
+      "url": "https://www.transtats.bts.gov/DatabaseInfo.asp?QO_VQ=EFD&DB_URL="
+    },
+    {
+      "kind": "portal",
+      "label": "TranStats database directory",
+      "url": "https://www.transtats.bts.gov/DataIndex.asp"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance",
+    "historical_events"
+  ],
+  "data_kind": [
+    "tabular",
+    "event_record",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "airline on time performance data bts transtats",
+    "url": "https://transtats.bts.gov/DatabaseInfo.asp?DB_URL=&QO_VQ=EFD"
+  },
+  "description": "The Airline On-Time Performance database holds the scheduled and actual departure and arrival times of individual domestic non-stop flights reported monthly to the Bureau of Transportation Statistics by US certificated air carriers that account for at least half of one percent of domestic scheduled passenger revenues (one percent before 2018). The Reporting Carrier table runs from 1987 to 2026 and a Marketing Carrier table, which groups regional code-share partners under their marketing airline, from January 2018. Each flight record gives carrier, origin and destination airports, scheduled and actual gate times, taxi-out and taxi-in times, air time, non-stop distance, cancelled and diverted flights, and causes of delay and cancellation. Data are downloadable free from TranStats as CSV by month with field selection, with summary tables and definitions; as US government statistics they are unrestricted, and copies circulate in research repositories (monthly Form 234 files on the National Transportation Library, aggregated copies on figshare). Caveats: only the largest carriers and domestic flights are covered, the reporting threshold changed in 2018, and carrier codes change over time, for which TranStats provides stable carrier identifiers. The data support airport and airspace capacity, delay propagation and resilience analyses of the national air network, and complement the T-100 traffic statistics.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.aviation",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "Airline Service Quality Performance on-time data",
+      "route": "R10",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "airline on-time performance",
+      "route": "R10",
+      "source": "figshare"
+    }
+  ],
+  "formats": [
+    "csv",
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.transtats.bts.gov/DatabaseInfo.asp?QO_VQ=EFD&DB_URL=",
+  "id": "data-bts-airline-on-time-performance",
+  "languages": [
+    "en"
+  ],
+  "licence": "US Government work, no copyright (17 U.S.C. 101)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Airline On-Time Performance Data (BTS TranStats)",
+  "provider": "U.S. Department of Transportation, Bureau of Transportation Statistics (BTS), Office of Airline Information",
+  "related_ids": [
+    "data-bts-t100-air-carrier-traffic-statistics"
+  ],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "cascading_failure",
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "coverage (carriers with at least 0.5% of domestic scheduled passenger revenues since 2018, 1% before); first year 1987, last year 2026, monthly; marketing (from Jan 2018) and reporting carrier tables; fields incl. taxi times, causes of delay and cancellation; carrier-identifier note",
+      "url": "https://www.transtats.bts.gov/DatabaseInfo.asp?QO_VQ=EFD&DB_URL="
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "database directory entry for Airline On-Time Performance Data",
+      "url": "https://www.transtats.bts.gov/DataIndex.asp"
+    }
+  ],
+  "spatial_resolution": "individual flights between airport pairs",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "flight delays",
+    "on-time performance",
+    "cancellations",
+    "airlines",
+    "BTS TranStats"
+  ],
+  "temporal_coverage": "1987 to 2026 (reporting carriers); marketing carriers from January 2018",
+  "title_en": "Airline On-Time Performance Data (BTS TranStats)",
+  "type": "data",
+  "update_frequency": "monthly"
+}

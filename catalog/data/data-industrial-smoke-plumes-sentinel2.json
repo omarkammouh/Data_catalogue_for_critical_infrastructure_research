@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "images.tar.gz (6.4 GB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/4250706/files/images.tar.gz?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "segmentation_labels.tar.gz (340.6 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/4250706/files/segmentation_labels.tar.gz?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "README.md (2.8 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/4250706/files/README.md?download=1"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo record",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/records/4250706"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "data_family": [
+    "imagery_remote_sensing",
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.4250706",
+    "name": "characterization of industrial smoke plumes from remote sensing data sentinel 2 images of e prtr sites",
+    "url": "doi:10.5281/zenodo.4250706"
+  },
+  "description": "This dataset holds Sentinel-2 satellite images of industrial sites, some actively emitting smoke plumes, made to train deep learning models that detect and segment plumes. The Zenodo record says sites were picked from the European Pollutant Release and Transfer Register; each image is a 13-band GeoTIFF of 120 by 120 pixels (1.2 km square) from Level-2A products (band 10 from Level-1C), 21,350 images in all, manually split into 3,750 with plumes and 17,600 without, plus JSON segmentation labels for plumes in 1,437 images. It was published on 13 November 2020 (version v1.0) by five authors from the University of St. Gallen, Sociovestix Labs and ISS Inc. as two tar.gz files of about 6.4 GB and a readme, free to download under CC BY 4.0. Coverage is the sampled European industrial sites. Caveats: the acquisition dates and the site list are not stated in the part of the record read, and the labels are for plume presence, not emission amounts. For simulation it gives labelled imagery to build remote monitoring of whether plants are operating, for example to detect shutdowns after a disaster. Related catalogue records include the EU industrial emissions portal and the GHGSat landfill methane plumes.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((industrial OR industry OR factory OR factories OR \"chemical plant\" OR \"chemical plants\" OR refinery OR refineries OR manufacturing OR petrochemical) AND (satellite OR \"remote sensing\" OR imagery OR Sentinel OR Landsat OR LiDAR OR UAV))",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((industrial OR industry OR factory OR factories OR \"chemical plant\" OR \"chemical plants\" OR refinery OR refineries OR manufacturing OR petrochemical) AND (satellite OR \"remote sensing\" OR imagery OR Sentinel OR Landsat OR LiDAR OR UAV))",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "raster",
+    "json",
+    "archive"
+  ],
+  "geographic_scope": "continental",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.4250706",
+  "id": "data-industrial-smoke-plumes-sentinel2",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-11-13",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Characterization of industrial smoke plumes from remote sensing data (Sentinel-2 images of E-PRTR sites)",
+  "provider": "University of St. Gallen, Sociovestix Labs and ISS Inc. authors (Michael Mommert and others), via Zenodo",
+  "sectors": [
+    "industry.manufacturing_chemical",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "emergency_response"
+  ],
+  "size": "about 6.4 GB",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "creators, affiliations, description, files, sizes and licence read 2026-09-26",
+      "url": "https://zenodo.org/api/records/4250706"
+    }
+  ],
+  "spatial_resolution": "10 m (120 by 120 pixel chips of 1.2 km)",
+  "spatial_resolution_class": "10m_to_100m",
+  "tags": [
+    "smoke plumes",
+    "Sentinel-2",
+    "E-PRTR",
+    "segmentation",
+    "deep learning"
+  ],
+  "temporal_coverage": "not stated on the page read",
+  "temporal_resolution": "single acquisition per image",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Characterization of industrial smoke plumes from remote sensing data (Sentinel-2 images of E-PRTR sites)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

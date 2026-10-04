@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/Unipisa/Simu5G"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://simu5g.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Nardini G., Sabella D., Stea G., Thakkar P., Virdis A. (2020) Simu5G: an OMNeT++ library for end-to-end performance evaluation of 5G networks. IEEE Access 8.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "simu5g simulator for 5g new radio networks",
+    "repo": "github.com/unipisa/simu5g",
+    "url": "https://simu5g.org"
+  },
+  "description": "Simu5G is an end-to-end simulator of 5G New Radio cellular networks, the successor of the SimuLTE 4G simulator. It models the user and data plane of the radio access network and core, including the NR protocol stack, carrier aggregation, frequency division and time division duplexing, device-to-device communication, dual connectivity with LTE, and an ETSI Multi-access Edge Computing (MEC) model, and it can run as a real-time emulator that exchanges packets with real hosts. It is produced by the Computer Networking Group of the University of Pisa for research on radio resource management and edge applications; the latest release is v1.7.0. Coverage: generic cellular deployments of any extent defined by the user, from single cells to multi-cell urban layouts; it does not ship real network data. Format and access: C++ source on GitHub built on OMNeT++ and the INET Framework, with documentation and a showcase on the website; free of charge under the LGPL, while OMNeT++ itself is under the Academic Public License. Caveats: channel models are statistical, not ray-traced; large scenarios are computationally heavy; the OMNeT++ licence limits commercial use. Simulation uses: capacity planning and network flow of 5G access networks, resilience of mobile service under cell outages, and testing emergency or edge services in a digital twin. Related records: OMNeT++ is its host platform, ns-3 with 5G-LENA is an alternative, and OpenCelliD gives real cell locations for scenario design.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for model:digital.telecom:physical",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://simu5g.org/",
+  "id": "model-simu5g",
+  "inputs": [
+    "cell layout and base-station parameters",
+    "user positions and mobility",
+    "traffic profiles"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-17",
+  "licence": "LGPL-3.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Simu5G: Simulator for 5G New Radio Networks",
+  "notes": "Licence from LICENSE.md (LGPL, with OMNeT++ under the Academic Public License); version from git tags (v1.7.0), read 2026-09-26.",
+  "outputs": [
+    "throughput, delay and packet-loss statistics",
+    "radio resource usage",
+    "MEC application performance"
+  ],
+  "provider": "University of Pisa, Computer Networking Group",
+  "related_ids": [
+    "data-vienna-4g-5g-drive-test-dataset",
+    "model-5g-hetnet-handover-simulator",
+    "model-vienna-5g-simulators"
+  ],
+  "repository": "https://github.com/Unipisa/Simu5G",
+  "runs_on": [
+    "platform-omnet-plus-plus"
+  ],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow",
+    "resilience",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "home page",
+      "url": "https://simu5g.org/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "LICENSE.md and tags",
+      "url": "https://github.com/Unipisa/Simu5G"
+    }
+  ],
+  "tags": [
+    "5G",
+    "New Radio",
+    "MEC",
+    "cellular network simulation",
+    "emulation"
+  ],
+  "title_en": "Simu5G: Simulator for 5G New Radio Networks",
+  "type": "model",
+  "validated_on": [
+    "3GPP reference scenarios in the authors' papers"
+  ]
+}

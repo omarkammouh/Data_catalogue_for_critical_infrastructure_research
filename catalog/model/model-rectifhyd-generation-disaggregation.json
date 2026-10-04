@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource",
+      "url": "https://github.com/immm-sfa/turner_voisin_nelson_2022_scientific_data"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-022-01748-x"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Scientific Data. 10.1038/s41597-022-01748-x",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rectifhyd annual to monthly hydropower disaggregation",
+    "url": "https://github.com/immm-sfa/turner_voisin_nelson_2022_scientific_data"
+  },
+  "description": "Pacific Northwest National Laboratory publishes the R scripts that reproduce RectifHyd by distributing annual hydropower generation across months using reservoir releases and river-flow proxies. The README describes processing EIA spreadsheets, obtaining gauge flows, preparing release or flow fractions, combining estimates and exporting the final table. It names ResOpsUS, EIA-923, HILARRI, hydropower assets and USGS water records as required inputs. Coverage follows the United States plant inventory and source years; the current workflow references generation spreadsheets through 2022. Source is freely available on GitHub, and the own LICENSE states BSD 2-Clause. The model can prepare seasonal supply constraints for power simulations alongside data-godeeep-hydro-power-system-ready-hydropower. A caveat is that downstream flow and reservoir release are imperfect proxies for electricity production, particularly where storage or operational decisions alter the relationship. Reproduction also requires obtaining the separate source datasets and matching their versions. No R scripts were executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G1-Q-TITLE-ENERGY-01; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/immm-sfa/turner_voisin_nelson_2022_scientific_data",
+  "id": "model-rectifhyd-generation-disaggregation",
+  "inputs": [
+    "EIA-923 annual generation",
+    "Reservoir releases",
+    "Downstream gauge flows",
+    "Hydropower asset metadata"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-09-13",
+  "licence": "BSD-2-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "RectifHyd annual-to-monthly hydropower disaggregation",
+  "notes": "G1 G1-0180. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-19.json. Related-resource uses are not tested interfaces. ",
+  "outputs": [
+    "Estimated monthly hydropower generation",
+    "RectifHyd CSV"
+  ],
+  "provider": "Pacific Northwest National Laboratory",
+  "related_ids": [
+    "data-godeeep-hydro-power-system-ready-hydropower"
+  ],
+  "repository": "https://github.com/immm-sfa/turner_voisin_nelson_2022_scientific_data",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/immm-sfa/turner_voisin_nelson_2022_scientific_data"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/immm-sfa/turner_voisin_nelson_2022_scientific_data/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/immm-sfa/turner_voisin_nelson_2022_scientific_data/contents/LICENSE"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-022-01748-x"
+    }
+  ],
+  "tags": [],
+  "title_en": "Pacific northwest national laboratory r scripts reproduce rectifhyd by distributing annual hydropower generation across months",
+  "type": "model"
+}

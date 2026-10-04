@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Typed data set (JSON)",
+      "url": "https://opendata.cbs.nl/ODataApi/odata/81154ned/TypedDataSet?$format=json"
+    },
+    {
+      "kind": "docs",
+      "label": "OData table information",
+      "url": "https://opendata.cbs.nl/ODataApi/odata/81154ned/TableInfos?$format=json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "BQ"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cbs caribbean netherlands bonaire sint eustatius saba electricity and piped water connections of households and businesses prepaid and postpaid meters fossil and renewable electricity production and drinking water production statline table 81154ned",
+    "url": "https://opendata.cbs.nl/ODataApi/odata/81154ned"
+  },
+  "description": "Statistics Netherlands, which also serves as the statistics office for the Caribbean Netherlands, publishes a StatLine table on electricity and piped water for Bonaire, Sint Eustatius and Saba. It counts connections to the electricity and drinking water networks for households and businesses, splits household electricity connections into prepaid and postpaid on Bonaire, and gives electricity production from fossil and renewable sources and drinking water production. For 2024 the three islands had 16,863 electricity connections and produced 200.3 million kWh, of which 48.8 million kWh was renewable; Bonaire alone had 12,536 water connections. Coverage is each island and the total, from 1993 to 2025 with gaps. Format and access: free OData API and StatLine downloads, no key. Licence: not stated on the pages read. Caveats: this comes from utility and administrative sources, not a population census; some cells are empty, such as Saba water connections; the cbs.nl main site returned a gateway timeout when first tried. Simulation uses: island electricity and water demand and connection counts for small island grid and desalination planning, and the renewable share for energy transition studies. Related records: none for these islands in the catalogue.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:BQ:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://opendata.cbs.nl/ODataApi/odata/81154ned",
+  "id": "data-cbs-caribisch-nederland-electricity-and-water-connections-and-production-81154ned",
+  "languages": [
+    "nl"
+  ],
+  "last_updated": "2026-09-03",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CBS Caribbean Netherlands (Bonaire, Sint Eustatius, Saba) electricity and piped water connections of households and businesses, prepaid and postpaid meters, fossil and renewable electricity production and drinking water production, StatLine table 81154ned",
+  "provider": "Centraal Bureau voor de Statistiek (CBS), Statistics Netherlands",
+  "schema_summary": "Dimensions CaribischNederland (CN01 total, GM9001 Bonaire, GM9002 Sint Eustatius, GM9003 Saba) and Perioden. Electricity connections: total, households (total, prepaid, postpaid), businesses; electricity production total, fossil, renewable (million kWh); oil transit index. Piped water connections: total, households, businesses; drinking water production (1,000 m3).",
+  "sectors": [
+    "energy.electricity",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: Caribbean Netherlands table list",
+      "url": "https://opendata.cbs.nl/ODataCatalog/Tables"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: variables and units",
+      "url": "https://opendata.cbs.nl/ODataApi/odata/81154ned/DataProperties"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: 2024 rows",
+      "url": "https://opendata.cbs.nl/ODataApi/odata/81154ned/TypedDataSet"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://opendata.cbs.nl/ODataApi/odata/81154ned"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://opendata.cbs.nl/ODataApi/odata/81154ned/TableInfos?$format=json"
+    }
+  ],
+  "spatial_resolution": "Caribbean Netherlands total and each island (Bonaire GM9001, Sint Eustatius GM9002, Saba GM9003)",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "Caribbean Netherlands",
+    "Bonaire",
+    "Sint Eustatius",
+    "Saba",
+    "electricity connections",
+    "drinking water production",
+    "prepaid meters",
+    "CBS StatLine"
+  ],
+  "temporal_coverage": "1993 to 2025, irregular",
+  "temporal_coverage_years": {
+    "end": 2025,
+    "start": 1993
+  },
+  "temporal_resolution": "annual where available (table frequency marked irregular)",
+  "temporal_resolution_class": "annual",
+  "title_en": "CBS Caribbean Netherlands (Bonaire, Sint Eustatius, Saba) electricity and piped water connections of households and businesses, prepaid and postpaid meters, fossil and renewable electricity production and drinking water production, StatLine table 81154ned",
+  "type": "data"
+}

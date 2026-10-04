@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Transportation guide",
+      "url": "https://docs.overturemaps.org/guides/transportation/"
+    },
+    {
+      "kind": "docs",
+      "label": "Attribution and licensing",
+      "url": "https://docs.overturemaps.org/attribution/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "overture maps transportation theme global segments and connectors",
+    "url": "https://docs.overturemaps.org/guides/transportation"
+  },
+  "description": "The Overture transportation theme is a global open dataset of traversable segments (roads, railways and ferry routes) and connectors (the junctions where segments meet) that together form a routable graph. Segment properties describe physical attributes such as surface and width and rules such as access restrictions, speed limits that vary by time of day or vehicle, one-way rules and weight limits on bridges, with linear referencing so a property can apply to part of a segment. It is built by the Overture Maps Foundation from OpenStreetMap, enhanced with commercial road data from TomTom and other local and regional authoritative sources. Coverage is global. Because it includes OpenStreetMap data it is published under the ODbL, and it is free to download from Amazon S3 and Azure Blob Storage as Parquet files, with a Python client and DuckDB queries for extracting areas; it is released monthly (release 2026-09-23.1 was current) with GERS identifiers and a changelog. Caveats: it excludes flight paths and pipelines, and attribute completeness follows the underlying sources. The theme supports building road and rail network graphs for flow and routing models, exposure of links to hazards and network resilience studies. It complements the Overture buildings theme catalogued by the built environment piece and the Microsoft Road Detections dataset.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.road",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "geojson"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://overturemaps-us-west-2.s3.amazonaws.com/release/2026-09-23.1/theme=transportation/type=segment/part-00000-2585c915-3d9b-5fc8-ad89-cfc455d21f00-c000.zstd.parquet",
+  "id": "data-overture-maps-transportation",
+  "languages": [
+    "en"
+  ],
+  "licence": "ODbL-1.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Overture Maps transportation theme (global segments and connectors)",
+  "provider": "Overture Maps Foundation",
+  "related_ids": [
+    "data-microsoft-road-detections",
+    "data-overture-maps-infrastructure-theme"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.rail",
+    "transport.maritime_ports",
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "segments (roads, railways, ferries) and connectors; OSM plus TomTom and authoritative sources; ODbL; monthly releases; S3 and Azure paths for release 2026-09-23.1; Python client, DuckDB; GERS IDs, bridge files, changelog; excludes aerial paths and pipelines",
+      "url": "https://docs.overturemaps.org/guides/transportation/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "citation and OSM attribution requirements",
+      "url": "https://docs.overturemaps.org/attribution/"
+    }
+  ],
+  "spatial_resolution": "segments and connectors",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "Overture",
+    "routable network",
+    "OpenStreetMap",
+    "TomTom",
+    "GERS"
+  ],
+  "temporal_coverage": "current monthly release",
+  "title_en": "Overture Maps transportation theme (global segments and connectors)",
+  "type": "data",
+  "update_frequency": "monthly"
+}

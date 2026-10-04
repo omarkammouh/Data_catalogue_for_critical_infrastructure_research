@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "MoWaS current warnings (JSON)",
+      "url": "https://warnung.bund.de/api31/mowas/mapData.json"
+    },
+    {
+      "kind": "api",
+      "label": "Dashboard by regional key (example district)",
+      "url": "https://warnung.bund.de/api31/dashboard/091620000000.json"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing page)",
+      "note": "kept as secondary link by deep check A4",
+      "url": "https://warnung.bund.de/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nina warning data bbk germany live public warnings from mowas katwarn biwapp dwd flood and police sources as cap style json",
+    "url": "https://warnung.bund.de/api31/mowas/mapData.json"
+  },
+  "description": "These endpoints deliver the public warnings shown in Germany's official NINA warning app, bringing together alerts from civil protection, weather, flood and police systems in one machine-readable feed. They are operated by the Federal Office of Civil Protection and Disaster Assistance (BBK), which runs the modular warning system MoWaS. Coverage is Germany, with separate lists for MoWaS, the KATWARN and BIWAPP apps, the German Weather Service, state flood centres and police. Each list gives current warnings with identifier, start time, severity, urgency and multilingual titles, and each warning can be fetched as a document following the Common Alerting Protocol structure, with headline, description, instructions, event codes and affected areas; a dashboard endpoint returns warnings for an official regional key. The feeds are free and available without registration as JSON, but the provider publishes no documentation or bulk download and no licence on the endpoints, and only current warnings are returned. Caveats: the interface is undocumented and may change, historical warnings are not archived here, and area geometries must be requested separately. Simulation uses: feeding live alerts into emergency response dashboards and digital twins, and collecting a warning archive to study alert timing and reach. Related records: the WMO Register of Alerting Authorities (data-wmo-register-of-alerting-authorities) lists issuers worldwide, and the US National Weather Service alerts (data-nws-cap-alerts) are a documented CAP counterpart.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: BBK (DE, alert_authority)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "storm_wind",
+    "extreme_heat",
+    "technological_failure"
+  ],
+  "homepage": "https://warnung.bund.de/api31/mowas/mapData.json",
+  "id": "data-bbk-nina-warnings-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NINA warning data (BBK, Germany): live public warnings from MoWaS, KATWARN, BIWAPP, DWD, flood and police sources as CAP-style JSON",
+  "notes": "Deep check A4 (2026-10-01) corrected: access_links, dedupe_keys, homepage .",
+  "provider": "Bundesamt für Bevölkerungsschutz und Katastrophenhilfe (BBK), Germany",
+  "related_ids": [
+    "data-wmo-register-of-alerting-authorities",
+    "data-nws-cap-alerts"
+  ],
+  "schema_summary": "Per source (mowas, katwarn, biwapp, dwd, lhp, police) a mapData list of current warnings with id, version, start date, severity, urgency, type and multilingual titles with event codes; per warning a CAP-like document (identifier, sender, sent, status, msgType, scope, code, references, info with language, category, event, urgency, severity, certainty, event code, headline, description, instruction, web, contact, parameters and areas); dashboard per official regional key",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Returned 10 current MoWaS warnings, each with id (for example mow.DE-SL-SLS-W038-20260904-000), version, startDate, severity, urgency, type and titles in German, English, Arabic, Spanish, French, Polish, Russian and Turkish with BBK event codes (contaminated drinking water, gas supply outage)",
+      "url": "https://warnung.bund.de/api31/mowas/mapData.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "KATWARN, BIWAPP, DWD, LHP (flood) and police mapData endpoints answer 200 (empty lists at the time of reading); the /api31/ root answers 403",
+      "url": "https://warnung.bund.de/api31/katwarn/mapData.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Dashboard endpoint by regional key answers 200 (empty list for the example key)",
+      "url": "https://warnung.bund.de/api31/dashboard/091620000000.json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://warnung.bund.de/"
+    }
+  ],
+  "spatial_resolution": "Warning area (municipality or district)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "public warnings",
+    "MoWaS",
+    "NINA",
+    "CAP",
+    "civil protection",
+    "Germany"
+  ],
+  "temporal_coverage": "Current warnings only",
+  "temporal_resolution": "Real time",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "NINA warning data (BBK, Germany): live public warnings from MoWaS, KATWARN, BIWAPP, DWD, flood and police sources as CAP-style JSON",
+  "type": "data",
+  "update_frequency": "real_time"
+}

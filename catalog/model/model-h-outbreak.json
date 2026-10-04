@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/denissekim/H-outbreak"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Reports (2023): spatial-temporal simulation for hospital infection spread and outbreaks of Clostridioides difficile",
+      "url": "https://www.nature.com/articles/s41598-023-47296-1"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1038/s41598-023-47296-1",
+    "name": "h outbreak spatial temporal simulator of hospital infection spread and outbreaks",
+    "repo": "github.com/denissekim/h-outbreak",
+    "url": "https://github.com/denissekim/H-outbreak"
+  },
+  "description": "H-Outbreak is a Python simulator that generates realistic spatial and temporal data on hospitalised patients and on how a bacterial infection spreads between them. It combines an agent-based description of patients, who are admitted, move between services such as the emergency room, surgery, radiology, the intensive care unit and wards, and are discharged, with a compartmental model of infection states and with the constraints of the building: floor layout, rooms of two beds, cleaning of contaminated places and staff schedules. The provider is the author of the denissekim repository with co-authors, who describe the approach for Clostridioides difficile in Scientific Reports (2023). Coverage is a configurable hospital; the default has 212 beds. The code is on GitHub under the BSD 3-Clause licence and runs from the command line, writing patients.csv and movements.csv with the state of each patient at each step. Caveats: parameters are calibrated from the literature, not a specific hospital's data, validation in the paper is face validation and sensitivity analysis, and the repository has no tagged releases. Simulation uses: synthetic data for training outbreak detection, and testing cleaning, isolation and bed allocation policies when a hospital is under pressure. Related records: BloodPaTH (model-bloodpath) covers device-borne transmission, and Synthea (model-synthea) generates synthetic patient records.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hospital agent-based model infection spread patient flow open source code",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://github.com/denissekim/H-outbreak",
+  "id": "model-h-outbreak",
+  "inputs": [
+    "Hospital layout (floors, services, wards, rooms, beds)",
+    "Population parameters (occupancy, arrival rates, age, length of stay)",
+    "Epidemiological parameters (infection, colonisation, recovery and death probabilities)",
+    "Cleaning protocol and step settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-07",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "statistical"
+  ],
+  "name": "H-Outbreak: spatial-temporal simulator of hospital infection spread and outbreaks",
+  "outputs": [
+    "patients.csv with each hospitalised patient",
+    "movements.csv with patient locations and SEIRD states at each step"
+  ],
+  "provider": "denissekim and co-authors (H-outbreak repository)",
+  "regions": [],
+  "related_ids": [
+    "model-bloodpath",
+    "model-synthea"
+  ],
+  "repository": "https://github.com/denissekim/H-outbreak",
+  "runs_on": [
+    "Python (command line, main.py)"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Compartmental plus agent-based model with hospital layout, cleaning and staff schedules; default 212-bed hospital; parameters; outputs patients.csv and movements.csv",
+      "url": "https://raw.githubusercontent.com/denissekim/H-outbreak/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD 3-Clause",
+      "url": "https://raw.githubusercontent.com/denissekim/H-outbreak/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract: simulator combining agent-based patients, spatial-temporal hospital constraints and epidemiological models; face validation, calibration from literature, sensitivity analysis",
+      "url": "https://www.nature.com/articles/s41598-023-47296-1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Shallow clone: last commit 2026-08-07, five Python files",
+      "url": "https://github.com/denissekim/H-outbreak"
+    }
+  ],
+  "tags": [
+    "nosocomial infection",
+    "Clostridioides difficile",
+    "synthetic data",
+    "agent-based",
+    "hospital layout",
+    "cleaning"
+  ],
+  "title_en": "H-Outbreak: spatial-temporal simulator of hospital infection spread and outbreaks",
+  "type": "model",
+  "validated_on": []
+}

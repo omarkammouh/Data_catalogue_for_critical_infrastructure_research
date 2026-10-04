@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/XuyangCaoUCSD/LeoEM"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "leoem real time leo satellite network emulator",
+    "repo": "github.com/xuyangcaoucsd/leoem",
+    "url": "https://github.com/XuyangCaoUCSD/LeoEM"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "LeoEM emulates highly dynamic low Earth orbit (LEO) satellite networks in real time, so that unmodified programs and operating-system network stacks can be run and evaluated over satellite paths. It was built at the University of California San Diego for the SaTCP study of link-layer informed TCP adaptation, presented at IEEE INFOCOM 2023. Work proceeds in three stages: the constellation is built from orbital parameters with the StarPerf orbit propagation workflow, giving satellite positions over one orbital period; end-to-end routes are then precomputed with shortest paths weighted by propagation delay, using either inter-satellite laser links or bent-pipe radio relays via ground stations; finally, the network is emulated in real time with Mininet, with link delays, losses and handovers changing as the constellation moves, and hosts isolated in network namespaces. Users can, for example, stream video across an emulated path and watch the playback quality. Coverage: software for any constellation design, with Starlink-like examples. Format and access: source code on GitHub with per-stage READMEs, free. Caveats: depends on MATLAB and STK for the StarPerf stage; routes are precomputed shortest paths; research code tied to one paper. Simulation uses: testing transport protocols and applications under satellite handovers and outages, as a digital twin of a user's satellite path. Related records: StarPerf provides the constellation stage, OpenSN is a container-based alternative, and Hypatia simulates similar networks at packet level.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "LEO satellite constellation network routing simulator open source inter-satellite links network model StarPerf",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/XuyangCaoUCSD/LeoEM",
+  "hosted_models": [
+    "StarPerf constellation construction",
+    "Dijkstra route precomputation",
+    "Mininet link emulation"
+  ],
+  "id": "platform-leoem",
+  "interfaces": [
+    "command_line",
+    "code_library"
+  ],
+  "interoperability": [
+    "Mininet",
+    "MATLAB and STK"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "LeoEM: real-time LEO satellite network emulator",
+  "notes": "README read from raw GitHub on 2026-09-26 (stages, INFOCOM 2023). Licence and last activity not checked; maturity inferred.",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "University of California San Diego (Xuyang Cao and Xinyu Zhang)",
+  "related_ids": [],
+  "sectors": [
+    "digital.satellite_positioning",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README",
+      "url": "https://raw.githubusercontent.com/XuyangCaoUCSD/LeoEM/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): MIT (basis: licence file in the GitHub repository)",
+      "url": "https://github.com/XuyangCaoUCSD/LeoEM/blob/main/LICENSE"
+    }
+  ],
+  "supported_sectors": [
+    "digital.satellite_positioning",
+    "digital.telecom"
+  ],
+  "tags": [
+    "LEO satellite",
+    "network emulation",
+    "Mininet",
+    "TCP",
+    "handover"
+  ],
+  "title_en": "LeoEM: real-time LEO satellite network emulator",
+  "type": "platform"
+}

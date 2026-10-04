@@ -1,0 +1,142 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Economic Census APIs",
+      "note": "API key required",
+      "url": "https://www.census.gov/data/developers/data-sets/economic-census.html"
+    },
+    {
+      "kind": "portal",
+      "label": "Economic Census data tables and FTP files by year",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.census.gov/programs-surveys/economic-census/data/tables.html"
+    },
+    {
+      "kind": "docs",
+      "label": "About the 2022 Economic Census",
+      "url": "https://www.census.gov/programs-surveys/economic-census/year/2022/about.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "economic_financial",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "economic census every five years including utilities transportation and warehousing sectors",
+    "url": "https://census.gov/programs-surveys/economic-census.html"
+  },
+  "description": "The Economic Census is the U.S. Census Bureau's official five-year measure of American business, collected for years ending in 2 and 7 under a legal reporting requirement (Title 13). It covers establishments in most industries in the United States and the Island Areas, representing over eight million business locations, and tabulates by NAICS industry the number of establishments, employees, payroll and output (sales, value of shipments or revenue), with Geographic Area Statistics by state, metropolitan area, county and place, Establishment and Firm Size statistics and product lines (NAPCS). Infrastructure-relevant subject series include, for the utilities sector (NAICS 22), cost of purchased electricity and natural gas for resale and exported energy to Canada and Mexico; for transportation and warehousing, revenue-generating equipment and end-of-year inventories; and for construction, value of construction work by location and kind of business. Coverage: 2022 results released on a flow basis by industry; formatted tables for 2012, 2017 and 2022 on data.census.gov, FTP files for 2002 and 2007, and printed publications before 2002. Access: data.census.gov tables (xls, csv, zip), the FTP directory and the Census Data API (ecn groups, free key); free, public domain. Caveats: figures are suppressed where they would disclose a business, and a note says the Bureau is re-evaluating noise infusion; five-year gaps limit timeliness. Simulation uses: economic exposure of business activity by industry and area, utility sector revenue and cost structure, input-output and business interruption loss models. Related records: County Business Patterns, the petroleum bulk storage capacity tables of the same census, the Commodity Flow Survey and the NBER-CES manufacturing database.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; All Surveys and Programs list, entry Economic Census",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): api.census.gov/data.json dataset list, groups ecn* (95 datasets)",
+      "route": "R35",
+      "source": "census-data-api"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "archive",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/programs-surveys/economic-census.html",
+  "id": "data-us-census-economic-census",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Economic Census (every five years), including utilities, transportation and warehousing sectors",
+  "notes": "The noise infusion note is on the County Business Patterns about page, which states the Bureau is evaluating alternatives after a Department of Commerce order; it was not read on the Economic Census pages.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-county-business-patterns",
+    "data-us-census-petroleum-bulk-storage-capacity",
+    "data-commodity-flow-survey",
+    "data-nber-ces-manufacturing-industry-database"
+  ],
+  "schema_summary": "NAICS code, geography, establishments, employees, payroll, sales/shipments/revenue; subject series by product and topic",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "energy.gas_hydrogen",
+    "transport.logistics_freight",
+    "industry.manufacturing_chemical"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Purpose, product types (NAPCS, size, geographic area statistics)",
+      "url": "https://www.census.gov/programs-surveys/economic-census.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Years ending 2 and 7, Title 13 mandatory reporting, 8 million locations, statistics tabulated",
+      "url": "https://www.census.gov/programs-surveys/economic-census/year/2022/about.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Tables 2012/2017/2022 on data.census.gov, FTP only 2002/2007, printed before 2002, 2022 flow releases",
+      "url": "https://www.census.gov/programs-surveys/economic-census/data/tables.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "API datasets ecnpurelec, ecnpurgas, ecnexpnrg (utilities), ecnequip, ecneoyinvwh (transportation and warehousing), ecnvalcon, ecnkob (construction)",
+      "url": "https://api.census.gov/data.json"
+    }
+  ],
+  "spatial_resolution": "Nation, state, metropolitan area, county, place (varies by sector)",
+  "spatial_resolution_class": "varies",
+  "tags": [
+    "Economic Census",
+    "NAICS",
+    "utilities",
+    "transportation and warehousing",
+    "business statistics",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "Census years ending in 2 and 7; digital data from 2002, tables 2012-2022",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2002
+  },
+  "temporal_resolution": "every five years",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "Economic Census (every five years), including utilities, transportation and warehousing sectors",
+  "type": "data",
+  "update_frequency": "multi_year"
+}

@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/matsim-org/pt2matsim"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/matsim-org/pt2matsim/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pt2matsim",
+    "repo": "github.com/matsim-org/pt2matsim",
+    "url": "https://github.com/matsim-org/pt2matsim"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "PT2MATSim converts public-transit feeds into mapped MATSim schedules and networks. The MATSim project publishes Java converters for GTFS, HAFAS and OpenStreetMap, together with tools for network generation, schedule mapping and basic validation or editing. The mapper finds least-cost routes constrained to pass candidate network links for each stop. Outputs contain a mapped transit schedule and a modified network; the HAFAS converter can also use HRDF Realgraph files. Coverage, timetable dates and network resolution come from the user's source feeds, not a fixed geographic dataset. Source and standalone Java releases are public and free under GPL-2.0; transit-feed access and licence terms remain separate. A material limitation is that OpenStreetMap transit information lacks timetable detail and may be insufficiently accurate for simulation. The README also distinguishes HAFAS support for chained trips from GTFS conversion. Java and Maven instructions make the tool independently reusable for preparing public-transport simulations in MATSim (model-matsim). The existing MATSim record mentions pt2matsim as an external input converter, not cataloguing this separate preparation package. No feed conversion was run in this review.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:matsim fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/matsim-org/pt2matsim",
+  "id": "platform-pt2matsim",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "interoperability": [
+    "GTFS",
+    "HAFAS",
+    "OSM",
+    "MATSim"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-10",
+  "licence": "GPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "PT2MATSim",
+  "notes": "G7 G7-0251. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "MATSim PT2MATSim contributors",
+  "related_ids": [
+    "model-matsim"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.rail",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for matsim-org/pt2matsim: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Amatsim+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/matsim-org/pt2matsim/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "PT2MATSim for converting public-transit feeds into mapped schedules",
+  "type": "platform"
+}

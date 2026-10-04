@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Port Calls API description and pricing",
+      "url": "https://www.vesselfinder.com/port-calls-api"
+    }
+  ],
+  "access_note": "Credit-based API; credits must be purchased before use.",
+  "access_restrictions": "registration",
+  "cost": "paid",
+  "data_family": [
+    "demand_operation",
+    "sensor_realtime_streams",
+    "service_performance"
+  ],
+  "data_kind": [
+    "event_record",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "vesselfinder port calls api",
+    "url": "https://vesselfinder.com/port-calls-api"
+  },
+  "description": "The VesselFinder Port Calls API returns port visit records derived from Automatic Identification System (AIS) tracking by VesselFinder, a commercial vessel tracking service. Queried by a port's UN/LOCODE, it lists every vessel that called the port with actual times of arrival and departure; queried by vessel IMO or MMSI, it returns the history of port visits for one ship or a fleet with port name, country and LOCODE. Optional datasets add AIS positions, course, speed, draught, destination, reported and predicted arrival time, name, callsign and AIS type, and voyage records with the departure port and time. Responses come in JSON or XML, with no restriction on request volume or interval. Coverage: global, as far as the VesselFinder AIS network receives signals. Access: credit-based API; port call records cost 2 credits and AIS or voyage records 1 credit, with credits sold at 330 euros for 10,000, 625 euros for 20,000 and 1,470 euros for 50,000, valid 12 months. Licence and cost: proprietary and paid. Caveats: AIS gaps and port geofencing affect call detection, the history depth is not stated on the page, and redistribution terms need checking. It supports network flow and capacity planning models of port and shipping traffic, such as berth occupancy and disruption analysis. It complements free AIS data from NOAA Marine Cadastre, the World Port Index and UNCTADstat port call statistics in the catalogue.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "maritime port cloud platform port community system API vessel call data open port call dataset",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "json",
+    "xml"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.vesselfinder.com/port-calls-api",
+  "id": "data-vesselfinder-port-calls-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "Proprietary commercial terms",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "VesselFinder Port Calls API",
+  "provider": "VesselFinder (AIS tracking service)",
+  "related_ids": [
+    "data-noaa-marine-cadastre-ais",
+    "data-world-port-index",
+    "data-unctadstat-maritime-transport"
+  ],
+  "sectors": [
+    "transport.maritime_ports",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "per-port and per-vessel queries, datasets, formats, credit costs and prices, validity",
+      "url": "https://www.vesselfinder.com/port-calls-api"
+    }
+  ],
+  "tags": [
+    "port calls",
+    "AIS",
+    "API",
+    "vessel arrivals",
+    "LOCODE",
+    "r2-fresh-transport"
+  ],
+  "temporal_resolution": "per port call (arrival and departure times)",
+  "temporal_resolution_class": "event",
+  "title_en": "VesselFinder Port Calls API",
+  "type": "data"
+}

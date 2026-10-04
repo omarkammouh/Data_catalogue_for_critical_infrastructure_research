@@ -1,0 +1,251 @@
+# Written display labels for vocabulary values (audit E10, 2026-09-26).
+#
+# The dashboard used to show vocabulary keys with underscores replaced and the first letter
+# capitalised ("Gas hydrogen", "Vulnerability fragility", "Dams flood defences", "Gis environment").
+# These are the labels a reader sees instead. Keys are the vocabulary values of schema/vocab.yaml
+# (sectors as group.sector, sector groups and data-family groups by their own key). A value missing here
+# falls back to the humanised key; build.py lists every such value, and the dashboard tests require none
+# for the real vocabulary. Labels are sentence case, with "and" or a comma where the key joins two ideas.
+types:
+  data: Data
+  model: Model
+  platform: Platform
+  case_study: Case study
+data_kinds:
+  asset_inventory: Asset inventory
+  network_topology: Network topology
+  time_series: Time series
+  raster: Gridded data (raster)
+  tabular: Table
+  survey: Survey
+  event_record: Event records
+  document: Document
+  stream: Live data stream
+  imagery: Imagery
+model_kinds:
+  physical: Physical process
+  statistical: Statistical
+  agent_based: Agent-based
+  network: Network (graph)
+  optimisation: Optimisation
+  fragility: Damage and fragility
+  economic: Economic
+  hybrid: Hybrid (mixed methods)
+  discrete_event: Event-driven simulation
+platform_kinds:
+  simulation_engine: Simulation engine
+  coupling_framework: Model coupling framework
+  digital_twin: Digital twin
+  gis_environment: GIS software
+  cloud_service: Online service
+  modelling_suite: Modelling suite
+  data_preparation_tool: Data preparation tool
+case_study_kinds:
+  risk_vulnerability_assessment: Risk and vulnerability assessment
+  adaptation_planning: Adaptation planning
+  design_retrofit: Design and retrofit
+  operations_control: Operations and control
+  emergency_response_evacuation: Emergency response and evacuation
+  post_event_analysis: Post-event analysis
+  recovery_restoration: Recovery and restoration
+  investment_appraisal: Investment appraisal
+  policy_evaluation: Policy evaluation
+  testbed_demonstration: Testbed or demonstration
+hazard_types:
+  flood: Flood
+  coastal_flood_storm_surge: Coastal flood and storm surge
+  sea_level_rise: Sea-level rise
+  drought: Drought
+  extreme_heat: Extreme heat
+  cold_snow_ice: Cold, snow and ice
+  storm_wind: Storm and wind
+  hail: Hail
+  wildfire: Wildfire
+  earthquake: Earthquake
+  landslide: Landslide
+  tsunami: Tsunami
+  volcanic: Volcanic activity
+  space_weather: Space weather
+  cyber_attack: Cyber attack
+  physical_attack_sabotage: Physical attack and sabotage
+  pandemic: Pandemic
+  technological_failure: Equipment or technology failure
+  multi_hazard_climate_change: Multiple hazards and climate change
+simulation_uses:
+  network_flow: Flow through networks
+  cascading_failure: Cascading failure
+  hazard_exposure: Hazard exposure
+  resilience: Resilience
+  capacity_planning: Capacity planning
+  agent_based: Agent-based simulation
+  optimisation: Optimisation
+  digital_twin: Digital twin
+  emergency_response: Emergency response
+  climate_adaptation: Climate adaptation
+geographic_scope:
+  global: Global
+  continental: Continental
+  national: National
+  regional: Regional (part of a country)
+  city: City
+  site: Single site
+continents:
+  africa: Africa
+  asia: Asia
+  europe: Europe
+  north_america: North America
+  south_america: South America
+  oceania: Oceania
+  antarctica: Antarctica
+cost:
+  free: Free
+  freemium: Free with paid tiers
+  paid: Paid
+  on_request: On request
+access_restrictions:
+  none: No restriction
+  registration: Registration
+  institutional: Institution login
+  restricted: Restricted by the owner
+  on_request: On request
+maturity:
+  active: Active
+  maintained: Maintained
+  stale: Stale
+  archived: Archived
+  unknown: Unknown
+access_link_kinds:
+  download: Download
+  api: API
+  repo: Code repository
+  docs: Documentation
+  paper: Paper
+  portal: Portal
+  viewer: Viewer
+  contact: Contact
+sectors:
+  energy: Energy
+  energy.electricity: Electricity
+  energy.gas_hydrogen: Gas and hydrogen
+  energy.oil_fuels: Oil and fuels
+  energy.district_heating_cooling: District heating and cooling
+  energy.nuclear: Nuclear
+  water: Water
+  water.drinking_water: Drinking water
+  water.wastewater: Wastewater
+  water.stormwater_drainage: Stormwater and drainage
+  water.irrigation: Irrigation
+  water.dams_flood_defences: Dams and flood defences
+  transport: Transport
+  transport.road: Road
+  transport.rail: Rail
+  transport.public_transit: Public transit
+  transport.aviation: Aviation
+  transport.maritime_ports: Maritime and ports
+  transport.inland_waterways: Inland waterways
+  transport.pipelines: Pipelines
+  transport.active_mobility: Walking and cycling
+  transport.logistics_freight: Logistics and freight
+  digital: Digital and communications
+  digital.telecom: Telecommunications
+  digital.data_centres: Data centres
+  digital.satellite_positioning: Satellite positioning
+  digital.broadcasting: Broadcasting
+  digital.internet_exchange: Internet exchanges
+  built_environment: Built environment
+  built_environment.buildings: Buildings
+  built_environment.critical_facilities: Critical facilities
+  built_environment.public_space: Public space
+  services: Health, safety and services
+  services.healthcare: Healthcare
+  services.emergency_services: Emergency services
+  services.waste: Waste
+  services.food_supply: Food supply
+  industry: Economic and industrial
+  industry.manufacturing_chemical: Manufacturing and chemicals
+  industry.mining_materials: Mining and materials
+  industry.financial: Financial
+  industry.agriculture: Agriculture
+  cross_cutting: Cross-cutting
+  cross_cutting.space: Space
+  cross_cutting.green_blue: Green and blue infrastructure
+  cross_cutting.multi_sector: Multiple sectors
+data_families:
+  core: Core inputs
+  system_description: Asset inventories and networks
+  demand_operation: Demand and operating records
+  hazards: Hazard data
+  vulnerability_fragility: Damage and vulnerability curves
+  reference_context: Population, boundaries and buildings
+  events_lifecycle: Asset history and dependencies
+  historical_events: Past failures and incidents
+  recovery_restoration: Repair and restoration
+  condition_ageing: Asset age and condition
+  interdependencies: Dependencies between assets
+  economy_society: Economy and society
+  economic_financial: Costs, prices and losses
+  governance_regulation: Ownership and regulation
+  behavioural_social: Travel and behaviour surveys
+  social_vulnerability_equity: Vulnerable groups and equity
+  health_impacts: Health effects
+  security_threat: Conflict, sabotage and theft
+  flows_services: Supply chains and service delivery
+  supply_chains_logistics: Supply chains and logistics
+  cross_border_flows: Cross-border flows
+  service_performance: Reliability and service performance
+  critical_facilities: Hospitals, shelters and other key sites
+  emergency_management: Emergency plans and evacuation routes
+  physical_setting: Natural environment
+  resource_potential: Renewable energy potential
+  weather_observations: Weather observations
+  subsurface_geotechnical: Soil and ground conditions
+  vegetation_land_cover: Vegetation and land cover
+  space_weather: Space weather and geomagnetic storms
+  environmental_impact: Emissions, noise and water quality
+  imagery_remote_sensing: Satellite and aerial imagery
+  assets_technology: Equipment and technology
+  equipment_specifications: Equipment specifications
+  distributed_flexible_resources: Rooftop solar, batteries and EV chargers
+  planned_future_infrastructure: Planned infrastructure
+  telecom_coverage_spectrum: Telecom coverage and spectrum
+  cyber_control: Control systems and cyber security
+  time_futures: Live data, scenarios and test data
+  sensor_realtime_streams: Live sensor feeds
+  scenarios_projections: Scenarios and projections
+  synthetic_benchmark: Synthetic and test cases
+  meta: Standards, documents and catalogues
+  standards_ontologies: Data standards and formats
+  planning_regulatory_documents: Planning and regulatory documents
+  catalogues_registries: Lists of other data and models
+  calibration_validation: Measured and simulated results
+  crowdsourced_public_reports: Public reports and crowdsourced data
+route_families:
+  portal_api: Portals and APIs
+  doi_graph: DOI and research repositories
+  code_registry: Code registries
+  literature: Literature
+  crowdsourced: Crowdsourced
+  operator: Operators
+  vendor: Vendors
+  human_curated: Curated lists and communities
+  recall: Assistant recall
+fields:
+  # Record fields without a facet of their own, shown as automatic facets under "Other".
+  crs: Coordinate reference system
+  deployment: Deployment
+  hosted_models: Hosted models
+  inputs: Inputs
+  interfaces: Interfaces
+  interoperability: Interoperability
+  organisations: Organisations
+  outcomes: Outcomes
+  outputs: Outputs
+  resources_used: Resources used
+  runs_on: Runs on
+  spatial_resolution: Spatial resolution as stated
+  study_period: Study period
+  supported_sectors: Supported sectors
+  tags: Tags
+  temporal_coverage: Temporal coverage as stated
+  temporal_resolution: Temporal resolution
+  validated_on: Validated on

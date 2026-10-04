@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/slacgismo/pv-system-profiler"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/slacgismo/pv-system-profiler/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pv system profiler orientation inference",
+    "repo": "github.com/slacgismo/pv-system-profiler",
+    "url": "https://github.com/slacgismo/pv-system-profiler"
+  },
+  "description": "SLAC GISMo contributors developed PV System Profiler, which estimates a photovoltaic array's location and orientation from measured production. The repository describes a Python workflow using a statistical clear-sky signal and related solar-data tools. A user supplies plant power time series and fitting settings; outputs are inferred geometric parameters for the selected array. Geographic coverage follows the system under analysis. The README gives pip or Conda installation and dependencies, and GitHub metadata states BSD-2-Clause licensing. A limitation is that power data can be affected by shading, curtailment, faults and clipping, which may make array parameters hard to identify uniquely. Inferred orientation should be checked against installation records or imagery. The tool can improve distributed PV representations in grid simulations. The related catalogue ERA5 reanalysis is a separate weather product; the G7 StatisticalClearSky draft is a related processing dependency, not a catalogue ID. No plant measurements or package was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "slacgismo/pv-system-profiler linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/slacgismo/pv-system-profiler",
+  "id": "model-pv-system-profiler",
+  "inputs": [
+    "PV production time series and fitting settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-11-13",
+  "licence": "BSD-2-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "PV System Profiler orientation inference",
+  "notes": "G7 G7-1668. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Estimated array location and orientation"
+  ],
+  "provider": "SLAC GISMo contributors",
+  "related_ids": [
+    "data-era5-reanalysis"
+  ],
+  "repository": "https://github.com/slacgismo/pv-system-profiler",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for slacgismo/pv-system-profiler: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/slacgismo/pv-system-profiler"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/slacgismo/pv-system-profiler/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Pv system profiler estimating photovoltaic array location and orientation from measured production",
+  "type": "model"
+}

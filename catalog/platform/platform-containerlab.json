@@ -1,0 +1,131 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://containerlab.dev/"
+    },
+    {
+      "kind": "docs",
+      "label": "Peering lab example",
+      "url": "https://containerlab.dev/lab-examples/peering-lab/"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/srl-labs/containerlab"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "containerlab container based network lab orchestration with an ixp peering lab",
+    "repo": "github.com/srl-labs/containerlab",
+    "url": "https://containerlab.dev"
+  },
+  "deployment": [
+    "desktop",
+    "own_server",
+    "hosted_service"
+  ],
+  "description": "Containerlab is an open-source command-line tool that builds network labs from containerised network operating systems: from a topology file it starts the containers, creates virtual wiring between them and manages the lab's life cycle, which general container tools such as docker-compose cannot do easily. It supports Nokia SR Linux and SR OS, Cisco XRd and other virtual routers, Juniper cRPD and vMX, Arista, SONiC, FRR, VyOS and many more, can run traditional virtual-machine routers through vrnetlab or boxen, and can wire arbitrary Linux containers into a lab, with link impairments, a VS Code extension, web and desktop interfaces and Clabernetes for running labs on Kubernetes. Its catalogue of lab examples includes a peering lab that emulates an internet exchange: two member routers (Nokia SR OS and FRR) on a shared Linux-bridge peering LAN announce prefixes to a redundant pair of route servers running OpenBGPD and BIRD, using about 2 vCPUs and 6 GB of memory. Coverage: software, not tied to a place. Format and access: Go binaries and source on GitHub, free under a BSD-style licence (copyright Nokia 2021). Caveats: fidelity depends on the router images, some of which are commercial; it emulates control and data planes on one host, not real link capacities. Simulation uses: digital twins of exchange and operator networks for testing failures, routing security and configuration changes before deployment. Related records: GNS3 and Mininet are other network emulators, and ARouteServer offers a similar virtual exchange playground.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "synthetic IXP peering topology generator benchmark dataset route server simulation internet exchange",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://containerlab.dev/",
+  "hosted_models": [
+    "containerised network operating systems",
+    "route servers (BIRD, OpenBGPD)"
+  ],
+  "id": "platform-containerlab",
+  "interfaces": [
+    "command_line",
+    "file_exchange",
+    "code_library",
+    "web_app"
+  ],
+  "interoperability": [
+    "Docker",
+    "Kubernetes (Clabernetes)",
+    "vrnetlab"
+  ],
+  "language": [
+    "rust_go"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-29",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Containerlab: container-based network lab orchestration (with an IXP peering lab)",
+  "notes": "Homepage and licence file read with curl, peering lab page read via fetch on 2026-09-26. Licence recorded as BSD-3-Clause from the licence text (copyright Nokia 2021, three-clause wording seen in part). Candidate was the peering lab; recorded as the platform with the lab described inside.",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "Nokia SR Linux team (srl-labs) and the containerlab community",
+  "related_ids": [],
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "homepage text",
+      "url": "https://containerlab.dev/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "peering lab",
+      "url": "https://containerlab.dev/lab-examples/peering-lab/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "licence",
+      "url": "https://raw.githubusercontent.com/srl-labs/containerlab/main/LICENSE"
+    }
+  ],
+  "supported_sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "tags": [
+    "network emulation",
+    "containers",
+    "network lab",
+    "IXP lab",
+    "digital twin"
+  ],
+  "title_en": "Containerlab: container-based network lab orchestration (with an IXP peering lab)",
+  "type": "platform"
+}

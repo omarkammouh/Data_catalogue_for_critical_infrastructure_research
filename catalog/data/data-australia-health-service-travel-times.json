@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Python code (GitHub)",
+      "url": "https://github.com/MFilipcikova/hs-distances-aus"
+    },
+    {
+      "kind": "portal",
+      "label": "figshare record (CSV tables and OSM extract)",
+      "url": "https://doi.org/10.6084/m9.figshare.30018415"
+    },
+    {
+      "kind": "paper",
+      "label": "Data descriptor, Scientific Data 2025",
+      "url": "https://doi.org/10.1038/s41597-025-06381-y"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "data_family": [
+    "service_performance",
+    "social_vulnerability_equity"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "travel times and distances to health services in australia driving time from every mesh block to the nearest hospitals emergency departments gps and pharmacies",
+    "repo": "github.com/mfilipcikova/hs-distances-aus",
+    "url": "doi:10.6084/m9.figshare.30018415"
+  },
+  "description": "This data set gives, for every small area in Australia, how far people have to drive to reach the nearest hospital, emergency department, general practitioner and pharmacy. It was produced by a research team and described in a 2025 Scientific Data paper, with the data on figshare. Using the Open Source Routing Machine on OpenStreetMap roads, the authors computed driving times and distances from the centroid of each 2021 Mesh Block, about 368,000 of them, to the nearest public and private hospitals, emergency departments, GPs, bulk-billing GPs and pharmacies, and added population counts, remoteness classes (Modified Monash Model) and population-weighted averages by postal area, Statistical Area Level 2 and state. Coverage is all of Australia. The tables are free and available to download as CSV under CC BY 4.0, together with the road extract used, and the Python code is on GitHub so the method can be re-run for other countries. Caveats: times assume normal driving conditions and the service lists of the study date, and access by public transport or air retrieval is not modelled. Simulation uses: estimating how road closures in bushfires and floods lengthen access to emergency care, targeting remote areas for service planning, and weighting exposure by access. Related records: the HeiGIT accessibility indicators (data-heigit-accessibility-indicators) and the China hospital travel time maps (data-china-1km-hospital-travel-time-accessibility).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hand-off to the services piece (integrator list handoffs/services.csv): Travel times to health services in Australia",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "other_vector"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://doi.org/10.6084/m9.figshare.30018415",
+  "id": "data-australia-health-service-travel-times",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-21",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Travel times and distances to health services in Australia: driving time from every Mesh Block to the nearest hospitals, emergency departments, GPs and pharmacies",
+  "provider": "Filipcikova M, Jorm L, Barbieri S, Scientific Data 2025; data on figshare",
+  "related_ids": [
+    "data-heigit-accessibility-indicators",
+    "data-china-1km-hospital-travel-time-accessibility"
+  ],
+  "schema_summary": "mb_2021_centroids (Mesh Block code and coordinates, 368,286 rows); mb_2021_distances (Mesh Block, population, SA2, state, postal area, Modified Monash Model class and driving times and distances to the nearest public and private hospitals, emergency departments, general practitioners, bulk-billing GPs and pharmacies); population-weighted averages by postal area, SA2, and state by MMM class; the OpenStreetMap extract used for routing",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Scientific Data 2025 data descriptor (CC BY): driving times and distances computed with OSRM from 2021 Mesh Blocks to nearest public and private hospitals, EDs, GPs, bulk-billing GPs and pharmacies; tables mb_2021_centroids (368,286 rows), mb_2021_distances (368,256 rows) and weighted averages by POA, POA-MMM, SA2 and state-MMM; data at 10.6084/m9.figshare.30018415; code at github.com/MFilipcikova/hs-distances-aus",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12820261/fullTextXML"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "figshare item 'Travel times and distances to health services in Australia', CC BY, published 21 January 2026; files australia-latest.osm.pbf, mb_2021_centroids.csv, mb_2021_distances.csv and four weighted-average CSVs",
+      "url": "https://api.figshare.com/v2/articles/30018415"
+    }
+  ],
+  "spatial_resolution": "Mesh Block (2021) with SA2, postal area and state summaries",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "health service access",
+    "travel time",
+    "emergency departments",
+    "remoteness",
+    "Australia"
+  ],
+  "temporal_coverage": "2021 geography; published January 2026",
+  "temporal_resolution": "Snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Travel times and distances to health services in Australia: driving time from every Mesh Block to the nearest hospitals, emergency departments, GPs and pharmacies",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

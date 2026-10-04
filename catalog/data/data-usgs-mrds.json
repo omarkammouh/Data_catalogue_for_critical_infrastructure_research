@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Map viewer and search",
+      "url": "https://mrdata.usgs.gov/mrds/"
+    },
+    {
+      "kind": "api",
+      "label": "WMS service",
+      "url": "https://mrdata.usgs.gov/services/mrds"
+    },
+    {
+      "kind": "api",
+      "label": "WFS service",
+      "url": "https://mrdata.usgs.gov/services/wfs/mrds"
+    },
+    {
+      "kind": "download",
+      "label": "Flattened CSV download",
+      "url": "https://mrdata.usgs.gov/mrds/mrds-csv.zip"
+    },
+    {
+      "kind": "download",
+      "label": "Shapefile download",
+      "url": "https://mrdata.usgs.gov/mrds/mrds-trim.zip"
+    },
+    {
+      "kind": "paper",
+      "label": "Mason and Arndt (1996), USGS Data Series 20",
+      "url": "https://doi.org/10.3133/ds20"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania",
+    "antarctica"
+  ],
+  "cost": "free",
+  "crs": "geographic coordinates (WGS 84 decimal degrees in the flattened CSV)",
+  "data_family": [
+    "system_description",
+    "resource_potential"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.3133/ds20",
+    "name": "mineral resources data system mrds",
+    "url": "https://mrdata.usgs.gov/mrds"
+  },
+  "description": "The Mineral Resources Data System is a collection of reports on metallic and nonmetallic mineral resources throughout the world, published by the U.S. Geological Survey as part of its Mineral Resources Online Spatial Data service. Each report gives the deposit or mine name, location, commodity, deposit description, geological characteristics, production, reserves, resources and references; it subsumes the original MRDS and the Bureau of Mines MAS/MILS files. Coverage is global with point locations, and each record is graded A to E by how much information it holds. Access is free and without registration: a map viewer, a search form, full-text search, OGC WMS 1.3.0 and WFS 1.1.0 services, and downloads as a flattened CSV (about 23 MB), a shapefile (about 10 MB) and compact or full relational tables (up to 118 MB). As a USGS product the data are in the public domain. Caveats: USGS stopped systematic updates in 2011, so production and status fields are historical, the provider calls the database large, complex and somewhat problematic, and many records are only a commodity at a location. For simulation it serves as an asset inventory of mine and deposit sites for hazard exposure studies and for supply-chain and resilience analyses of mineral commodities. Related catalogue records include the USGS Mineral Commodity Summaries and the MSHA Mine Data Retrieval System for operating United States mines.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: mine, deposit and mineral occurrence inventories",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv",
+    "shapefile",
+    "ogc_map_service",
+    "kml",
+    "esri_geodatabase"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://mrdata.usgs.gov/mrds/",
+  "id": "data-usgs-mrds",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2011",
+  "licence": "Public domain (U.S. Government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Mineral Resources Data System (MRDS)",
+  "notes": "Provider page read 2026-09-26 states that systematic updates ceased in 2011 and that USGS is building a new database focused on the conterminous United States (USMIN).",
+  "provider": "U.S. Geological Survey (USGS)",
+  "schema_summary": "site name, location, commodity, deposit type and geology, development status, production, reserves, resources, references, record quality grade",
+  "sectors": [
+    "industry.mining_materials"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "size": "about 23 MB (flattened CSV) to 118 MB (comprehensive tables), compressed",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "provider landing page with services, downloads and status",
+      "url": "https://mrdata.usgs.gov/mrds/"
+    }
+  ],
+  "spatial_resolution": "point locations of deposits and mines",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "mineral deposits",
+    "mines",
+    "commodities",
+    "USGS"
+  ],
+  "temporal_coverage": "reports compiled up to 2011",
+  "temporal_resolution": "none",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Mineral Resources Data System (MRDS)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

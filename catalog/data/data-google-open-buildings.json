@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Dataset page with explorer, download tiles and FAQ",
+      "url": "https://sites.research.google/gr/open-buildings/"
+    },
+    {
+      "kind": "api",
+      "label": "Earth Engine asset (catalog page linked from the dataset page)",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_Research_open-buildings_v3_polygons"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "south_america",
+    "north_america"
+  ],
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "imagery_remote_sensing"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "google open buildings",
+    "url": "https://sites.research.google/gr/open-buildings"
+  },
+  "description": "Google Open Buildings is an open dataset of 1.8 billion building detections, each with a footprint polygon, a confidence score and a Plus Code, derived by a deep learning model from high-resolution satellite imagery over an inference area of 58 million square kilometres. It is produced by Google Research's team in Ghana, which focuses on Africa and the Global South, to support population mapping, humanitarian response, disaster risk reduction, addressing systems, vaccination planning and statistical indicators. Coverage is Africa, South Asia, South-East Asia, Latin America and the Caribbean; the current version 3 comes from inference in May 2023, and versions 1 and 2 remain available. Access: CSV files of polygons and points sharded by S2 cell, an online explorer and an Earth Engine asset. Licence: the user may choose Creative Commons Attribution 4.0 or ODbL 1.0; free. Caveats: there is no building type, address or other attribute beyond geometry and confidence; freshness depends on source imagery, which in places is several years old; low-confidence detections should be filtered with the published score thresholds. Simulation uses are exposure for hazard and resilience analysis and emergency response planning where official footprints are missing. Related records: Microsoft Global ML Building Footprints and Overture Maps buildings, which conflates it.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R30",
+      "source": "google-open-buildings"
+    }
+  ],
+  "formats": [
+    "other_vector",
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://sites.research.google/gr/open-buildings/",
+  "id": "data-google-open-buildings",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-05",
+  "licence": "CC-BY-4.0 or ODbL-1.0 (user's choice)",
+  "licence_type": [
+    "attribution",
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Google Open Buildings",
+  "notes": "A separate 2.5D temporal product (building presence and height time series) is a separate candidate.",
+  "provider": "Google Research (Open Buildings team, Ghana office)",
+  "regions": [
+    "Africa",
+    "South Asia",
+    "South-East Asia",
+    "Latin America",
+    "Caribbean"
+  ],
+  "related_ids": [],
+  "schema_summary": "latitude, longitude, area_in_meters, confidence (0.65-1.0), geometry (WKT), Plus Code",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Overview, 1.8 billion detections, 58M km2, v3 May 2023, columns, uses, dual CC BY 4.0 / ODbL licence, freshness caveat, Earth Engine asset",
+      "url": "https://sites.research.google/gr/open-buildings/"
+    }
+  ],
+  "spatial_resolution": "Individual building polygons from high-resolution satellite imagery",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "building footprints",
+    "Global South",
+    "Africa",
+    "machine learning",
+    "Plus Codes"
+  ],
+  "temporal_coverage": "v3 inference May 2023 on imagery of varying dates",
+  "temporal_resolution": "none (versioned snapshots v1-v3)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Google Open Buildings",
+  "type": "data"
+}

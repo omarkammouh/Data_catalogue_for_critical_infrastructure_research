@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Population in 1 km cells (CSV)",
+      "url": "https://www.ine.es/censos2021/Poblacion_Rejilla_Europea.csv"
+    },
+    {
+      "kind": "download",
+      "label": "Population in 1 km cells (XLSX)",
+      "url": "https://www.ine.es/censos2021/Poblacion_Rejilla_Europea.xlsx"
+    },
+    {
+      "kind": "download",
+      "label": "1 km cell boundaries (shapefile zip)",
+      "url": "https://www.ine.es/censos2021/Cartografia.zip"
+    },
+    {
+      "kind": "portal",
+      "label": "Census 2021 results page",
+      "url": "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177108&menu=resultados&idp=1254735572981"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "ES"
+  ],
+  "crs": "EPSG:3035",
+  "data_family": [
+    "reference_context",
+    "social_vulnerability_equity"
+  ],
+  "data_kind": [
+    "tabular",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ine spain census 2021 population on the european 1 km grid with grid cell boundaries",
+    "url": "https://ine.es/censos2021/Poblacion_Rejilla_Europea.csv"
+  },
+  "description": "As part of the 2021 census, INE publishes the resident population of Spain counted in the cells of the European 1 km grid. Each row is a cell identified by its GRD_ID in the ETRS89 Lambert azimuthal equal-area system (EPSG:3035) and gives total population, men and women, three age groups (under 16, 16 to 64, over 64), Spanish and foreign nationals, four education levels and economic activity (active, inactive). A zipped shapefile gives the outline of the cells. INE produces it with the census so that population can be mapped on cells that do not change with administrative boundaries. Coverage: all populated cells of Spain. Format and access: CSV and XLSX tables and a shapefile, free without registration from the census results page. Licence: CC BY 4.0 under INE's legal notice. Caveats: counts appear rounded to multiples of five in the rows read, the CSV uses semicolons, a dot as thousands separator and Latin-1 characters in its two header rows, and there are no dwelling counts on the grid. Simulation uses: population exposure to floods, fires and heat on a regular grid, and allocation of demand for service and evacuation models. Related records: the INE census section indicators, the Zensus 2022 grid for Germany, GHSL and WorldPop.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:ES:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "shapefile"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.ine.es/censos2021/Poblacion_Rejilla_Europea.csv",
+  "id": "data-ine-spain-census-2021-population-1km-grid",
+  "languages": [
+    "es"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "INE Spain Census 2021 population on the European 1 km grid, with grid cell boundaries",
+  "provider": "Instituto Nacional de Estadística (INE), Spain",
+  "related_ids": [
+    "data-ine-spain-census-2021-census-section-indicators-and-api",
+    "data-zensus-2022-grid-cells-buildings-dwellings",
+    "data-copernicus-ghsl-built-up-population",
+    "data-worldpop-global-gridded-population"
+  ],
+  "schema_summary": "GRD_ID (CRS3035RES1000m...), total population, men, women, age under 16, 16-64, over 64, Spanish and foreign nationals, education level, active and inactive",
+  "sectors": [
+    "built_environment.buildings",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Header read: GRD_ID, TOTAL, HOMBRE, MUJER, age groups, nationality, education, activity; first row CRS3035RES1000mN1000000E1966000 260 persons",
+      "url": "https://www.ine.es/censos2021/Poblacion_Rejilla_Europea.csv"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Población en celdas de 1 km2, XLSX and CSV, shapefile of the cells",
+      "url": "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177108&menu=resultados&idp=1254735572981"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "CC BY 4.0",
+      "url": "https://www.ine.es/dyngs/AYU/index.htm?cid=125"
+    }
+  ],
+  "spatial_resolution": "1 km grid cells (ETRS89-LAEA, EPSG:3035)",
+  "spatial_resolution_class": "1km_to_10km",
+  "spatial_resolution_m": 1000,
+  "tags": [
+    "census grid",
+    "1 km grid",
+    "population",
+    "Spain",
+    "EPSG:3035"
+  ],
+  "temporal_coverage": "census reference date 1 January 2021",
+  "temporal_coverage_years": {
+    "end": 2021,
+    "start": 2021
+  },
+  "temporal_resolution": "none (census snapshot)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "INE Spain Census 2021 population on the European 1 km grid, with grid cell boundaries",
+  "type": "data"
+}

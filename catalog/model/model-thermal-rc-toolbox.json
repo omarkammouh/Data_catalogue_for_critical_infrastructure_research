@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub davudtopalovic/thermal-rc-toolbox",
+      "url": "https://github.com/davudtopalovic/thermal-rc-toolbox"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "thermal rc toolbox grey box rc thermal modelling of buildings with ga identification",
+    "repo": "github.com/davudtopalovic/thermal-rc-toolbox",
+    "url": "https://github.com/davudtopalovic/thermal-rc-toolbox"
+  },
+  "description": "thermal-rc-toolbox is a Python package for grey-box thermal modelling of buildings with resistance-capacitance networks, with a pipeline that identifies the network parameters from measured data. Identification runs in three stages, optimisation, selection and clustering: a genetic algorithm in Pymoo searches the parameter space within physics-based bounds, the best candidates are selected, and HDBSCAN clustering shows parameter uncertainty and distinct groups of solutions. Built-in models are the 5R1C network of EN ISO 13790 for heat power demand forecasting, an extended 6R3C network for indoor air and supply water temperature, and generic 2R2C and 3R3C networks, and users can register their own. A command line tool runs any range of the stages. Coverage: any building with heating data. Access: free source on GitHub; version 0.1.0 in pyproject; not found on PyPI when checked. Licence: Apache-2.0. Caveats: an early release by one author; results depend on the quality of the measured data and bounds. Simulation uses are fast calibrated building thermal models for control, demand response and heat outage studies inside building or district digital twins. Related records: DarkGreyBox, the Grey Brick calibrated RC models dataset and EnergyPlus.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "building thermal network model reduced-order RC model open source python grey-box",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/davudtopalovic/thermal-rc-toolbox",
+  "id": "model-thermal-rc-toolbox",
+  "inputs": [
+    "Measured heat power, indoor and supply temperatures",
+    "Weather disturbances and thermostat setpoints",
+    "Physics-based parameter bounds and objective function"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-24",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "thermal-rc-toolbox: grey-box RC thermal modelling of buildings with GA identification",
+  "outputs": [
+    "Identified RC-network parameters with uncertainty clusters",
+    "Forecasts of heat power demand and indoor and supply water temperatures"
+  ],
+  "provider": "Davud Topalović",
+  "related_ids": [
+    "model-darkgreybox",
+    "data-grey-brick-buildings-calibrated-rc-models",
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/davudtopalovic/thermal-rc-toolbox",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "README features and models read; HEAD commit of 24 September 2026, pyproject (0.1.0, Apache-2.0) and LICENSE read through git. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+      "url": "https://raw.githubusercontent.com/davudtopalovic/thermal-rc-toolbox/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "not found on PyPI",
+      "url": "https://pypi.org/pypi/thermal-rc-toolbox/json"
+    }
+  ],
+  "tags": [
+    "grey-box",
+    "RC model",
+    "ISO 13790",
+    "genetic algorithm",
+    "parameter identification",
+    "Python"
+  ],
+  "title_en": "Thermal-rc-toolbox: grey-box RC thermal modelling of buildings with GA identification",
+  "type": "model"
+}

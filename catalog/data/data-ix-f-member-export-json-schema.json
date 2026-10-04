@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/euro-ix/json-schemas"
+    },
+    {
+      "kind": "docs",
+      "label": "Exchanges publishing an export (IXPDB)",
+      "url": "https://ixpdb.euro-ix.net/en/ixpdb/ixps/?reverse=&sort=name&q=&api=on"
+    },
+    {
+      "kind": "docs",
+      "label": "IXP Manager documentation of the export",
+      "url": "https://docs.ixpmanager.org/features/ixf-export/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "standards_ontologies",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "document"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ix f member export json schema for internet exchange member lists",
+    "repo": "github.com/euro-ix/json-schemas",
+    "url": "https://github.com/euro-ix/json-schemas"
+  },
+  "description": "The IX-F Member Export is an agreed JSON schema that lets internet exchange points (IXPs) publish their member lists in a standard, machine-readable form, so that each exchange becomes the authoritative source for its own member data and tools such as PeeringDB and the Euro-IX IXP database can read it automatically. The repository holds the current schema file (ixp-member-list.schema.json), earlier versions and example exports, with documentation in the README and wiki. An export describes the exchange (names, country, peering LANs, switches with their facilities and PeeringDB identifiers) and each member with its autonomous system number, connections, port speeds and the IP addresses it uses on the peering LAN. Exchanges that publish an export are listed in the Euro-IX IXP database, which replaced the repository's own implementation list in April 2018; IXP management software such as IXP Manager generates exports. Coverage: a global standard used mainly by exchanges in Europe and by members of the regional exchange associations. Format and access: JSON Schema files on GitHub, free; the repository shows about 53 stars and 25 forks. Caveats: exports are optional, and fields beyond the core are filled unevenly across exchanges. Simulation uses: a common input format for interconnection network models and digital twins of exchanges, and for keeping member and port capacity data current. Related records: the Euro-IX IXP database consumes these exports, and PeeringDB imports them.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "IX-F member export JSON schema standard internet exchange data format specification",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/euro-ix/json-schemas",
+  "id": "data-ix-f-member-export-json-schema",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-05-27",
+  "licence": "not stated (provider pages not readable from the cloud on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://ixpdb.euro-ix.net/en/ixpdb/ixps/?reverse=&sort=name&q=&api=on"
+    ],
+    "dead_since": "2026-09-27"
+  },
+  "maturity": "stale",
+  "name": "IX-F Member Export JSON schema for internet exchange member lists",
+  "notes": "Repository page read via fetch on 2026-09-26 (purpose, files, April 2018 note, maintainers, stars). Member and switch fields are from recall of the schema, not re-read. Start year inferred.",
+  "provider": "Internet Exchange Federation (IX-F), maintained through Euro-IX",
+  "related_ids": [],
+  "schema_summary": "ixp_list (names, country, peering LANs, switches and facilities) and member_list (ASN, connections, port speeds, peering LAN addresses)",
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "network_flow"
+  ],
+  "size": "small schema files",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "repository page",
+      "url": "https://github.com/euro-ix/json-schemas"
+    }
+  ],
+  "spatial_resolution": "exchange, switch and member port",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "IX-F",
+    "JSON schema",
+    "member list",
+    "internet exchange",
+    "data standard"
+  ],
+  "temporal_coverage": "schema versions since about 2016",
+  "temporal_resolution": "not applicable",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "IX-F Member Export JSON schema for internet exchange member lists",
+  "type": "data",
+  "update_frequency": "irregular"
+}

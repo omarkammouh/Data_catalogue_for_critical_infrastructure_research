@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "DOE CODE record SWR-21-75",
+      "url": "https://www.osti.gov/doecode/biblio/73265"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.11578/dc.20240701.7",
+    "name": "nrel co simulation framework for community scale building grid integration",
+    "url": "https://osti.gov/doecode/biblio/73265"
+  },
+  "description": "This co-simulation framework from the National Renewable Energy Laboratory, registered on DOE CODE as SWR-21-75 in 2022 with funding from the Solar Energy Technologies Office, assesses how distributed energy resources in buildings and their control strategies affect a distribution system. It couples five modules: a distribution feeder model in OpenDSS holding the locations of all resources; a residential building model in OCHRE simulating many homes with HVAC, water heaters, other loads, rooftop PV and home batteries; a home energy management system using foresee that optimises devices for cost, comfort and convenience; a community-level aggregator; and a utility controller. The provider reports that the framework brought PV curtailment to zero, reduced the voltage impact of solar variability and provided up to five days of critical load support during emergency events. Coverage: generic distribution feeders and residential communities, not tied to a place. Access: the DOE CODE record; the metadata read gives no repository address or licence, so both are to be confirmed. Caveats: results depend on the feeder and building models used, and the reported figures come from the developers. Simulation uses are testing building-side flexibility and backup supply during grid outages and planning feeder hosting capacity. Related records: the OpenDSS and HELICS platform records.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid simulation model",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.osti.gov/doecode/biblio/73265",
+  "id": "model-nrel-community-building-grid-cosimulation",
+  "inputs": [
+    "Distribution feeder topology with DER locations (OpenDSS)",
+    "Residential building and appliance models (OCHRE)",
+    "Occupant cost, comfort and convenience preferences"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "hybrid",
+    "optimisation",
+    "network"
+  ],
+  "name": "NREL co-simulation framework for community-scale building-grid integration",
+  "outputs": [
+    "Feeder voltages and PV curtailment",
+    "Home and aggregator dispatch",
+    "Critical load support during outages"
+  ],
+  "provider": "National Renewable Energy Laboratory (Sivasathya Pradha Balamurugan, Michael Blonsky, Prateek Munankarmi, Xin Jin); DOE Solar Energy Technologies Office",
+  "related_ids": [
+    "platform-opendss",
+    "platform-helics",
+    "data-end-use-load-profiles-us-building-stock",
+    "data-climate-onebuilding-tmyx-weather-files"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Title, creators and NREL affiliation, 2022, SETO funding, five components, reported results",
+      "url": "https://api.datacite.org/dois/10.11578/dc.20240701.7"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Landing page named in the DataCite record; the DOE CODE API returned 404 on the day",
+      "url": "https://www.osti.gov/doecode/biblio/73265"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://api.datacite.org/dois/10.11578/dc.20240701.7"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.osti.gov/doecode/biblio/73265"
+    }
+  ],
+  "tags": [
+    "co-simulation",
+    "OpenDSS",
+    "OCHRE",
+    "foresee",
+    "home energy management",
+    "aggregator",
+    "DER"
+  ],
+  "title_en": "NREL co-simulation framework for community-scale building-grid integration",
+  "type": "model"
+}

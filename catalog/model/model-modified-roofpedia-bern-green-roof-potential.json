@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code (MIT)",
+      "note": "README and LICENSE read raw",
+      "url": "https://github.com/StellaHtet92/Modified-Roofpedia"
+    },
+    {
+      "kind": "paper",
+      "label": "Preprint (arXiv 2607.22342)",
+      "url": "https://arxiv.org/abs/2607.22342"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "modified roofpedia four class rooftop mapping of existing and potential green roofs from open swiss data bern",
+    "url": "https://github.com/StellaHtet92/Modified-Roofpedia"
+  },
+  "description": "Modified-Roofpedia extends the Roofpedia deep learning pipeline of the National University of Singapore's Urban Analytics Lab so that it maps both existing green roofs and roofs with potential for greening. A U-Net segmentation model with four classes labels each building as an existing green roof, a flat roof suitable for greening, a roof with solar panels or a flat roof unsuitable for greening, using roof slopes from swissSURFACE3D to drop steep roofs. Htet Yamin Ko Ko released the code and a preprint on 24 July 2026, relying only on open swisstopo data: SWISSIMAGE orthophotos, swissSURFACE3D and swissTLM3D footprints. Coverage is the city of Bern, and the method is transferable to other Swiss cities. Validation mIoU was 0.78, and building-level accuracy across the four classes was 51 percent. Format and access: Python code on GitHub. Licence: MIT; free. Caveats: the four-class accuracy is modest, and suitability ignores structural load limits. It gives a resource potential layer for green roof planning and urban heat adaptation. Related catalogue records are Roofpedia and the STDL PROJ-VEGROOFS green roof detection.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "green roof potential map rooftop suitability open data city dataset download",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "city",
+  "hazards": [
+    "extreme_heat"
+  ],
+  "homepage": "https://github.com/StellaHtet92/Modified-Roofpedia",
+  "id": "model-modified-roofpedia-bern-green-roof-potential",
+  "inputs": [
+    "SWISSIMAGE orthophotos",
+    "swissSURFACE3D elevation (roof slope)",
+    "swissTLM3D building footprints"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-24",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Modified-Roofpedia: four-class rooftop mapping of existing and potential green roofs from open Swiss data (Bern)",
+  "outputs": [
+    "Per-building class: existing green roof, potential green roof, solar roof, flat roof unsuitable for greening"
+  ],
+  "provider": "Htet Yamin Ko Ko (independent researcher, with advice from swisstopo and the University of Bern)",
+  "regions": [
+    "Bern"
+  ],
+  "related_ids": [
+    "data-roofpedia-green-solar-roofs",
+    "model-stdl-proj-vegroofs-green-roof-detection"
+  ],
+  "sectors": [
+    "cross_cutting.green_blue",
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Preprint: data, classes, metrics, code links",
+      "url": "https://arxiv.org/pdf/2607.22342"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "README and MIT LICENSE",
+      "url": "https://raw.githubusercontent.com/StellaHtet92/Modified-Roofpedia/main/README.md"
+    }
+  ],
+  "tags": [
+    "green roofs",
+    "roof potential",
+    "U-Net",
+    "Bern"
+  ],
+  "title_en": "Modified-Roofpedia: four-class rooftop mapping of existing and potential green roofs from open Swiss data (Bern)",
+  "type": "model"
+}

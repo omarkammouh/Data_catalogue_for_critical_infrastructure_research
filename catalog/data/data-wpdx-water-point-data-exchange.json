@@ -1,0 +1,147 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Country extracts on HDX (for example Kenya)",
+      "url": "https://data.humdata.org/dataset/wpdx_ken"
+    },
+    {
+      "kind": "api",
+      "label": "WPdx-Basic dataset (Socrata SODA API)",
+      "url": "https://data.waterpointdata.org/resource/jfkt-jmqa.json"
+    },
+    {
+      "kind": "api",
+      "label": "WPdx+ dataset (Socrata SODA API)",
+      "url": "https://data.waterpointdata.org/resource/eqje-vguj.json"
+    },
+    {
+      "kind": "portal",
+      "label": "Access data: WPdx-Basic and WPdx+ repositories",
+      "url": "https://www.waterpointdata.org/access-data/"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing link)",
+      "url": "https://www.waterpointdata.org/"
+    },
+    {
+      "kind": "portal",
+      "label": "Data page (landing)",
+      "url": "https://data.waterpointdata.org/dataset/Water-Point-Data-Exchange-Plus-WPdx-/eqje-vguj"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "south_america",
+    "north_america"
+  ],
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "condition_ageing"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "wpdx water point data exchange global rural water point repository wpdx basic and wpdx",
+    "url": "https://waterpointdata.org"
+  },
+  "description": "The Water Point Data Exchange is a global repository of rural water point records (wells, springs, boreholes, tapstands and small schemes) shared by governments, NGOs and researchers and harmonised to the WPdx Data Standard, with coordinates, water source and technology, installation and rehabilitation year, management, payment, water quality and whether water was present when last assessed. It is an initiative of the Global Water Challenge, governed by a working group of sector organisations. On 2026-09-26 WPdx-Basic, which holds every shared record after validation, had 838,209 rows from 60 countries, and WPdx+, a cleaned and enhanced subset for countries with good administrative matching, had 440,270 rows with 74 fields including distances to roads and towns; both were updated that day. Coverage is global in principle but mostly sub-Saharan Africa, with parts of Asia and Latin America. Both datasets are free to filter and download, with an API, and per-country extracts are on HDX under CC BY-SA. Caveats: records come from many surveys of different dates, a status is only as recent as the last report, and coverage within a country depends on who shared data. Simulation uses: rural water supply asset and functionality inventories for planning rehabilitation and new construction, and drought resilience of rural supply. Related records: the WHO/UNICEF JMP database (data-who-unicef-jmp-wash-database) and national water point inventories on HDX (data-hdx-national-water-point-inventories).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"water point\"",
+      "route": "R04",
+      "source": "hdx"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought"
+  ],
+  "homepage": "https://data.waterpointdata.org/dataset/Water-Point-Data-Exchange-Plus-WPdx-/eqje-vguj",
+  "id": "data-wpdx-water-point-data-exchange",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-02",
+  "licence": "CC-BY-SA (as stated on the WPdx datasets on HDX)",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "WPdx, Water Point Data Exchange (global rural water point repository, WPdx-Basic and WPdx+)",
+  "provider": "Global Water Challenge (Water Point Data Exchange initiative)",
+  "related_ids": [
+    "data-who-unicef-jmp-wash-database",
+    "data-hdx-national-water-point-inventories"
+  ],
+  "schema_summary": "one row per water point: source, coordinates, report date, presence of water (status), water source and technology (cleaned categories), facility type, administrative units, install and rehabilitation year and agent, management, payment, faecal coliform, subjective quality, scheme id; WPdx+ adds distances to roads and towns and derived analysis fields",
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "mission, data standard, repositories, decision support tools, initiative of the Global Water Challenge",
+      "url": "https://www.waterpointdata.org/about/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "WPdx-Basic and WPdx+, free download, validation steps",
+      "url": "https://www.waterpointdata.org/access-data/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "WPdx-Basic metadata, fields; SoQL count 838,209 rows, 60 distinct country_name values",
+      "url": "https://data.waterpointdata.org/api/views/jfkt-jmqa.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "WPdx+ description, 74 columns, rows updated 2026-09-26; SoQL count 440,270 rows",
+      "url": "https://data.waterpointdata.org/api/views/eqje-vguj.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Kenya extract: CC BY-SA, dates 2011-2024, water points and district analysis CSVs",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=wpdx_ken"
+    }
+  ],
+  "spatial_resolution": "individual water points (latitude and longitude)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "water points",
+    "rural water supply",
+    "wells",
+    "boreholes",
+    "handpumps",
+    "functionality",
+    "WASH",
+    "Africa"
+  ],
+  "temporal_coverage": "reports from about 2011 to 2026 (per-country extracts on HDX cover e.g. 2011 to 2024 for Kenya)",
+  "title_en": "WPdx, Water Point Data Exchange (global rural water point repository, WPdx-Basic and WPdx+)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

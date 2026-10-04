@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "Preprint (arXiv)",
+      "url": "https://arxiv.org/abs/2609.12696"
+    },
+    {
+      "kind": "repo",
+      "label": "Code and derived data (GitHub)",
+      "url": "https://github.com/emailsson/global-hospital-travel-time"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "critical_facilities",
+    "social_vulnerability_equity"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "global maps of travel time to hospitals emergency hospitals and tertiary hospitals openstreetmap drive time isochrones 2026",
+    "url": "https://arxiv.org/abs/2609.12696"
+  },
+  "description": "This dataset maps how far the world's population lives from hospitals of different capability, published with a 2026 preprint by Johan Emilsson. Drive-time isochrones of 15, 30 and 60 minutes were routed on the OpenStreetMap car network from all 217,841 hospitals mapped in OpenStreetMap and dissolved for nested capability tiers: any hospital, hospitals tagged as having an emergency department, and emergency hospitals with a helipad or university-hospital name as a marker of tertiary care. Coverage is weighted with the GHS-POP 2025 population grid and benchmarked against the Weiss et al. 2020 friction-surface travel-time raster. Results: 96.2% of people live within an hour's drive of a hospital, 78.5% of one with a documented emergency department and 40.3% of a tertiary-marked hospital. Outputs include country and global tables, 0.25-degree coverage rasters, dissolved polygons and sensitivity tables, with analysis code and a Docker environment in a GitHub repository under the MIT licence; large files are release assets. Caveats: capability tiers rely on OpenStreetMap tags that are incomplete in many countries, drive times assume free-flow car travel, and the paper is not yet peer reviewed. Simulation uses: estimating populations cut off from emergency care when roads or hospitals fail, prioritising new emergency facilities, and validating accessibility models. Related records: the HeiGIT risk assessment indicators (data-heigit-risk-assessment-indicators-hdx) give district access measures and healthsites.io (data-healthsites-io) maps facilities.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "spatial accessibility to health care dataset travel time to nearest hospital global raster population within 2 hours",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "geopackage",
+    "raster",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://arxiv.org/abs/2609.12696",
+  "id": "data-global-travel-time-emergency-tertiary-hospitals",
+  "languages": [
+    "en"
+  ],
+  "licence": "MIT (code and derived data)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Global maps of travel time to hospitals, emergency hospitals and tertiary hospitals (OpenStreetMap drive-time isochrones, 2026)",
+  "provider": "Johan Emilsson (independent researcher)",
+  "related_ids": [
+    "data-heigit-risk-assessment-indicators-hdx",
+    "data-healthsites-io"
+  ],
+  "sectors": [
+    "services.healthcare",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "arXiv abstract: drive time routed on OSM from all 217,841 hospitals; 15, 30, 60 min isochrones; nested capability tiers; GHS-POP 2025; 96.2%, 78.5%, 40.3%; comment: code and data at github.com/emailsson/global-hospital-travel-time; published 2026-09-11",
+      "url": "https://export.arxiv.org/api/query?id_list=2609.12696"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "README: derived country and global tables, 0.25 degree rasters, unions.gpkg, sensitivity tables; Docker environment; benchmark against Weiss et al. 2020; large files as release assets; LICENSE MIT",
+      "url": "https://raw.githubusercontent.com/emailsson/global-hospital-travel-time/main/README.md"
+    }
+  ],
+  "spatial_resolution": "0.25 degree rasters and isochrone polygons",
+  "spatial_resolution_class": "over_10km",
+  "tags": [
+    "travel time",
+    "hospital access",
+    "emergency department",
+    "OpenStreetMap"
+  ],
+  "temporal_coverage": "2025 to 2026 (OSM snapshot and GHS-POP 2025)",
+  "temporal_resolution": "Snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Global maps of travel time to hospitals, emergency hospitals and tertiary hospitals (OpenStreetMap drive-time isochrones, 2026)",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

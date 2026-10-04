@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Distributori di farmaci (CSV, XML, JSON; daily)",
+      "url": "https://www.dati.salute.gov.it/it/dataset/distributori-di-farmaci"
+    },
+    {
+      "kind": "download",
+      "label": "CSV file of 26 September 2026",
+      "url": "https://www.dati.salute.gov.it/sites/default/files/opendata/FRM_DIST_4_20260926.csv"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IT"
+  ],
+  "data_family": [
+    "supply_chains_logistics",
+    "critical_facilities",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-09-26",
+  "dedupe_keys": {
+    "name": "italian ministry of health open data logistics sites authorised to distribute human and veterinary medicines",
+    "url": "https://dati.salute.gov.it/it/dataset/distributori-di-farmaci"
+  },
+  "description": "This register lists every warehouse and logistics site in Italy authorised to distribute medicines, the wholesale layer of the pharmaceutical supply chain between manufacturers and pharmacies or hospitals. It is published by the Italian Ministry of Health from its medicine traceability system and updated daily. Each row gives a unique site code, the site and company names, legal form, VAT number, the type of distributor, the full address with municipality, province and region, coordinates where known, and validity dates, so that openings, closures and changes can be followed over time. The register covers sites distributing medicines for human and for veterinary use. It is available as a free daily download in CSV, XML and JSON under the Italian Open Data Licence, with a data dictionary. Caveats: capacities, product ranges and delivery areas are not included, some coordinates are missing or from OpenStreetMap, and historical rows must be filtered by validity to obtain the current set. Simulation uses: building the distribution node layer of medicine supply chain and network models, testing the loss of a regional warehouse to a flood or earthquake, and planning emergency medicine logistics. Related records: the Italian pharmacy register (data-italy-pharmacies-register) gives the retail end of the same chain, and the US ARCOS opioid distribution paths (data-arcos-opioid-distribution-paths) show a comparable wholesale network.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Ministero della Salute (IT, health_ministry_service)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "xml",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://www.dati.salute.gov.it/it/dataset/distributori-di-farmaci",
+  "id": "data-italy-medicine-distribution-sites",
+  "languages": [
+    "en"
+  ],
+  "licence": "Italian Open Data Licence v2.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-09-26"
+  },
+  "maturity": "active",
+  "name": "Italian Ministry of Health open data: logistics sites authorised to distribute human and veterinary medicines",
+  "provider": "Ministero della Salute (Italy)",
+  "related_ids": [
+    "data-italy-pharmacies-register",
+    "data-arcos-opioid-distribution-paths"
+  ],
+  "schema_summary": "Unique logistics site code, site name, company name, legal subject, VAT number, distributor type code and description, address, postcode, municipality, province, region, coordinates where available, and validity start and end dates per row",
+  "sectors": [
+    "services.healthcare",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "List of logistics sites authorised to distribute medicines for human and veterinary use, with validity periods per detail row: site code, site name, company name, legal subject, VAT, distributor type code and description, address, postcode, municipality, province, region; data dictionary; some coordinates from OpenStreetMap contributors; Italian Open Data Licence v2.0; CSV (about 87,000 downloads), XML, JSON; daily update; last updated 26 September 2026",
+      "url": "https://www.dati.salute.gov.it/it/dataset/distributori-di-farmaci"
+    }
+  ],
+  "spatial_resolution": "Logistics site (address)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "pharmaceutical wholesale",
+    "medicine distribution",
+    "logistics sites",
+    "supply chain",
+    "Italy"
+  ],
+  "temporal_coverage": "2012 to present with validity dates",
+  "temporal_resolution": "Daily snapshot",
+  "temporal_resolution_class": "daily",
+  "title_en": "Italian Ministry of Health open data: logistics sites authorised to distribute human and veterinary medicines",
+  "type": "data",
+  "update_frequency": "daily"
+}

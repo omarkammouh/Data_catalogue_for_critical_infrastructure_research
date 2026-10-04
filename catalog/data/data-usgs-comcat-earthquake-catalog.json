@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "ComCat documentation",
+      "url": "https://earthquake.usgs.gov/data/comcat/"
+    },
+    {
+      "kind": "api",
+      "label": "FDSN event web service",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/"
+    },
+    {
+      "kind": "api",
+      "label": "Real-time GeoJSON feeds",
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "hazards",
+    "historical_events",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "event_record",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "anss comprehensive earthquake catalog comcat",
+    "repo": "github.com/usgs/earthquake-event-ws",
+    "url": "https://earthquake.usgs.gov/data/comcat"
+  },
+  "description": "ComCat contains earthquake source parameters (hypocentres, magnitudes, phase picks and amplitudes) and related products such as moment tensor solutions, macroseismic information, ShakeMaps, tectonic summaries and maps, contributed by seismic networks in the Advanced National Seismic System and other catalogues. It is run by the USGS Earthquake Hazards Program as the authoritative US and global event catalogue for research, response and public information. Coverage is global for larger events and detailed for the United States, with contributing catalogues reaching back to the nineteenth century and continuing in real time; magnitude thresholds and date ranges vary by contributing network. Data are accessible through the online catalogue search, real-time GeoJSON feeds, the FDSN event web service (query and count methods returning GeoJSON, QuakeML XML, CSV and text), and Python scripts for bulk products; as US Government data they are public domain and free. Caveats: catalogue completeness differs by region and period, magnitudes of different types are mixed, and automated real-time solutions are revised. It supports earthquake hazard exposure, scenario selection and post-event analysis for multi-sector infrastructure; related records are the NCEI global hazards databases, OpenQuake, GDACS and IN-CORE.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "global earthquake catalogue api",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "other",
+    "csv",
+    "kml"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake",
+    "tsunami"
+  ],
+  "homepage": "https://earthquake.usgs.gov/data/comcat/",
+  "id": "data-usgs-comcat-earthquake-catalog",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (US Government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://github.com/usgs/earthquake-event-ws"
+    ],
+    "dead_since": "2026-09-27"
+  },
+  "maturity": "active",
+  "name": "ANSS Comprehensive Earthquake Catalog (ComCat)",
+  "notes": "The public-domain status is from general USGS policy, and KML output is recalled; neither was read on 2026-09-26.",
+  "provider": "US Geological Survey (USGS) Earthquake Hazards Program, Advanced National Seismic System (ANSS)",
+  "related_ids": [],
+  "schema_summary": "time, latitude, longitude, depth, magnitude and type, network, event id, products (ShakeMap, moment tensor, DYFI)",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "contents, products, contributing catalogues and date ranges, feeds, search, bulk scripts, GitHub web service",
+      "url": "https://earthquake.usgs.gov/data/comcat/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "FDSN event service, query and count methods, geojson and xml formats, advice to use real-time feeds",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/"
+    }
+  ],
+  "tags": [
+    "earthquakes",
+    "seismic catalogue",
+    "ShakeMap",
+    "USGS",
+    "FDSN"
+  ],
+  "temporal_coverage": "19th century to present (network-dependent)",
+  "temporal_resolution": "per event",
+  "temporal_resolution_class": "event",
+  "title_en": "ANSS Comprehensive Earthquake Catalog (ComCat)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

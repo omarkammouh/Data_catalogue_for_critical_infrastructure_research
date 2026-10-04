@@ -1,0 +1,85 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Verified provider documentation",
+      "url": "https://ccmc.gsfc.nasa.gov/models/SEPNET~1/"
+    }
+  ],
+  "access_note": "The cited metadata or documentation page was public. Executable, data-access and reuse terms were not inferred from page access. cost=on_request means ask the provider because charges were not established, not a verified pricing policy.",
+  "access_restrictions": "none",
+  "cost": "on_request",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "solar energetic particle forecasting with multi task deep learning",
+    "url": "https://ccmc.gsfc.nasa.gov/models/SEPNET~1"
+  },
+  "description": "SEPNET estimates next-day energetic-proton event probability through multi-task deep learning. It combines recent SHARP magnetic features with flare information and returns probability, uncertainty and an all-clear indicator. The resource is documented by University of MIchigan. The documented physical domain is Solar, Heliosphere / Inner Heliosphere; grid spacing, supported periods and cadence depend on this version and its chosen configuration. The documentation links Public Repository, Continuous/RT Run (ISWA data tree). A software licence and any external distribution charge are not stated. Historical training and timely availability of magnetogram and flare inputs limit prospective application. The documented space-weather effects make it a potential environmental input for infrastructure hazard exposure and resilience simulations. It is related to platform-nasa-ccmc in this catalogue. Spatial and temporal resolution were not independently established.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Complete model catalogue; select one version per model with stated space-weather infrastructure impacts",
+      "route": "R51",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://ccmc.gsfc.nasa.gov/models/SEPNET~1/",
+  "id": "model-sepnet",
+  "inputs": [
+    "Magnetogram: SDO/HMI SHARP near-real-time product (hmi.sharp_720s_nrt); last data time as available at forecast issue. Flare catalog: SWPC flare list from LMSAL/HEK (e.g. GOES/XRS); all flares in the 24 hours preceding"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "not_stated",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Solar Energetic Particle Forecasting with Multi-Task Deep Learning",
+  "notes": "Preparation item P03429; found by A4; original findings: A4-0439. Classification and possible simulation uses are curator interpretations grounded in the cited technical description. Draft only; date_catalogued is the preparation date, not proof of catalogue addition. ",
+  "outputs": [
+    "Probability of SEP > 10 pfu (> 10 MeV protons) at Earth in the next 24 hours (mean of model-estimated probability over the preceding 24 h). Symmetric uncertainty (standard deviation"
+  ],
+  "provider": "University of MIchigan",
+  "related_ids": [
+    "platform-nasa-ccmc"
+  ],
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Provider metadata read today; identity, purpose and technical description. Unstated fields remain explicitly uncertain.",
+      "url": "https://ccmc.gsfc.nasa.gov/models/SEPNET~1/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://ccmc.gsfc.nasa.gov/models/SEPNET~1/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Solar Energetic Particle Forecasting with Multi-Task Deep Learning",
+  "type": "model"
+}

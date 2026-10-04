@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "CSV (CSO API)",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/DHA78/CSV/1.0/en"
+    },
+    {
+      "kind": "portal",
+      "label": "Catalogue entry (data.europa.eu, from data.gov.ie)",
+      "url": "https://data.europa.eu/data/datasets/29b5fad1-7dc0-4ce2-8c8a-98111edc5b10~~1"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IE"
+  ],
+  "data_family": [
+    "health_impacts",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ireland hospital discharges by principal diagnosis sex and county 2017 onwards cso pxstat table dha78",
+    "url": "https://data.europa.eu/data/datasets/29b5fad1-7dc0-4ce2-8c8a-98111edc5b10~~1"
+  },
+  "description": "This table counts all hospital discharges in Ireland by principal diagnosis, sex and county of residence each year, supplied by the Department of Health and published in the Central Statistics Office's PxStat database as table DHA78. Diagnoses are grouped by the International Shortlist for Hospital Morbidity Tabulation (ISHMT), from all causes down to chapters and specific groups. Coverage is every county of Ireland for the years 2017 to 2025 in the file read. The table is free to download in CSV, Excel, PX and JSON-stat formats through the CSO public API, and data.gov.ie lists it under a Creative Commons Attribution 4.0 licence, with the entry refreshed in September 2026. Caveats: discharges count episodes, not patients, day cases and inpatients are not separated in the rows read, and area is the patient's county, not the hospital's. Simulation uses: estimating baseline hospital demand by county and diagnosis for capacity and surge models, and measuring changes in admissions after heatwaves, floods or pandemic waves in Ireland. Related records: the Ireland HSE urgent and emergency care report (data-hse-urgent-emergency-care-daily-report) gives daily emergency department figures and the Northern Ireland emergency care waiting times (data-ni-emergency-care-waiting-times) cover the neighbouring system.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "data.europa.eu search API: hospital discharges diagnosis",
+      "route": "R02",
+      "source": "data.europa.eu"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "analysis_package_file",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.europa.eu/data/datasets/29b5fad1-7dc0-4ce2-8c8a-98111edc5b10~~1",
+  "id": "data-ireland-cso-dha78-hospital-discharges-by-diagnosis-county",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Ireland hospital discharges by principal diagnosis, sex and county, 2017 onwards (CSO PxStat table DHA78)",
+  "provider": "Department of Health (Ireland); published through the Central Statistics Office PxStat database and data.gov.ie",
+  "related_ids": [
+    "data-hse-urgent-emergency-care-daily-report",
+    "data-ni-emergency-care-waiting-times"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "catalogue: data.gov.ie; Department of Health; DHA78; CSV, XLSX, PX, JSON-stat; CC BY 4.0; modified 2026-09-28",
+      "url": "https://data.europa.eu/api/hub/search/datasets/29b5fad1-7dc0-4ce2-8c8a-98111edc5b10~~1"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "CSV read: columns statistic, year, sex, ISHMT, area (county), unit, value; years 2017 to 2025",
+      "url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/DHA78/CSV/1.0/en"
+    }
+  ],
+  "spatial_resolution": "County",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "hospital discharges",
+    "Ireland",
+    "CSO",
+    "PxStat"
+  ],
+  "temporal_coverage": "2017 to 2025",
+  "temporal_resolution": "Annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Ireland hospital discharges by principal diagnosis, sex and county, 2017 onwards (CSO PxStat table DHA78)",
+  "type": "data",
+  "update_frequency": "annual"
+}

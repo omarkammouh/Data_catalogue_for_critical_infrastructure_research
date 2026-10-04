@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "OEDI PV Rooftop Database",
+      "url": "https://data.openei.org/submissions/4"
+    },
+    {
+      "kind": "download",
+      "label": "AWS S3 s3://oedi-data-lake/pv-rooftop/ (Parquet)",
+      "url": "https://data.openei.org/submissions/4"
+    },
+    {
+      "kind": "docs",
+      "label": "PVRDB documentation",
+      "url": "https://github.com/openEDI/documentation/blob/main/PVROOFTOPS.md"
+    },
+    {
+      "kind": "portal",
+      "label": "PV Rooftop Database for Puerto Rico (PVRDB-PR)",
+      "url": "https://data.openei.org/submissions/2862"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US",
+    "PR"
+  ],
+  "data_family": [
+    "resource_potential",
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.25984/1784725",
+    "name": "nrel pv rooftop database pvrdb lidar derived rooftop pv potential for 128 u s metro regions",
+    "url": "https://data.openei.org/submissions/4"
+  },
+  "description": "NREL's PV Rooftop Database (PVRDB) is a lidar-derived, geospatially resolved dataset of suitable roof surfaces and their photovoltaic technical potential for 128 metropolitan regions of the United States, released through the DOE Open Energy Data Initiative. Lidar and building footprints came from the Department of Homeland Security's Homeland Security Infrastructure Program for 2006 to 2014; NREL identified suitable roof planes by size, orientation and shading and estimated 2015 technical potential with the System Advisor Model. For each city and lidar year there are five layers: lidar extent, buildings, developable planes, plane aspects and technical potential. Data are in Parquet on AWS S3 and Azure, about 319 GB, partitioned by city and year; a companion PVRDB-PR covers suitable roof planes for 96% of buildings in Puerto Rico. Coverage: 128 U.S. metro regions and Puerto Rico. Access: open download and cloud queries. Licence: CC BY 4.0. Caveats: lidar dates from 2006 to 2014, so newer buildings are missing, and potential is technical, not economic. Simulation uses are building-level rooftop PV potential for distributed generation, retrofit and demand scenarios. Related records: Google Project Sunroof data and the Swiss sonnendach roof suitability data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:resource_potential, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "parquet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.openei.org/submissions/4",
+  "id": "data-nrel-pv-rooftop-database",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-01",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NREL PV Rooftop Database (PVRDB): lidar-derived rooftop PV potential for 128 U.S. metro regions",
+  "provider": "National Renewable Energy Laboratory (NREL), Open Energy Data Initiative",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, layers, DOI, S3 and Azure, 318.65 GB, licence link CC BY 4.0",
+      "url": "https://data.openei.org/submissions/4"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Lidar source and years, method, SAM, Parquet schema",
+      "url": "https://raw.githubusercontent.com/openEDI/documentation/main/PVROOFTOPS.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Puerto Rico version, 96% of buildings",
+      "url": "https://data.openei.org/submissions/2862"
+    }
+  ],
+  "tags": [
+    "rooftop PV",
+    "solar potential",
+    "lidar",
+    "NREL",
+    "OEDI",
+    "building roofs"
+  ],
+  "temporal_coverage": "Lidar collected 2006-2014",
+  "title_en": "NREL PV Rooftop Database (PVRDB): lidar-derived rooftop PV potential for 128 U.S. metro regions",
+  "type": "data"
+}

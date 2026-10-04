@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/22057960"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/22057960"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.22057960",
+    "name": "plstm reg v1 0 a regional physics encoded lstm model for simulating reservoir operations under data scarcity",
+    "url": "https://zenodo.org/records/22057960"
+  },
+  "description": "Bin Yu publishes PLSTM-Reg v1.0, a physics-encoded LSTM for simulating reservoir operations across sites when local training data are scarce. Zenodo provides Python source, a configuration example and a detailed README with public access. The model embeds dynamic and static features, predicts release and storage, enforces daily mass balance, and clamps storage to each reservoir’s capacity. It is designed for integration with NeuralHydrology and can be trained against the separately deposited 256-reservoir United States dataset. No related catalogue record explicitly covers this model. A limitation is that the optional release bounds were disabled in the reported experiments because reservoir-specific limits were unavailable; predicted releases therefore are not operational permits. The README adopts NeuralHydrology’s BSD-3-Clause code licence by reference, while Zenodo metadata has no licence identifier. No code was installed or run, and predictive skill was not reproduced.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "title:(\"dam\" OR \"reservoir\" OR \"embankment dam\" OR \"concrete dam\" OR \"spillway\" OR \"dam safety\" OR \"dam failure\" OR \"dam breach\" OR \"dam inventory\" OR \"dam register\" OR \"levee\" OR \"dike\" OR \"dyke\" OR \"flood wall\" OR \"flood defence\" OR \"flood embankment\" OR \"flood barrier\" OR \"storm surge barrier\" OR \"weir\" OR \"sluice\" OR \"flood gate\" OR \"reservoir storage\" OR \"reservoir operation\" OR \"flood protection level\" OR \"coastal defence\" OR \"levee inventory\")",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://zenodo.org/records/22057960",
+  "id": "model-plstm-reg-physics-encoded-regional-reservoir-operations",
+  "inputs": [
+    "Daily inflow and climate features",
+    "Reservoir capacity, static features and initial storage"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-22",
+  "licence": "BSD-3-Clause by reference to NeuralHydrology LICENSE in README; Zenodo metadata has no licence identifier",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical",
+    "physical"
+  ],
+  "name": "PLSTM-Reg v1.0: A regional physics-encoded LSTM model for simulating reservoir operations under data scarcity",
+  "notes": "G6 item G6-2014. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "outputs": [
+    "Simulated daily release and storage"
+  ],
+  "provider": "Yu, Bin",
+  "related_ids": [],
+  "sectors": [
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/22057960"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence unknown, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/22057960"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Public README inspected for model equations, scaling, configuration, disabled optional bounds and referenced licence.",
+      "url": "https://zenodo.org/api/records/22057960/files/README.md/content"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Referenced framework repository metadata checked for BSD-3-Clause licence.",
+      "url": "https://github.com/neuralhydrology/neuralhydrology/blob/master/LICENSE"
+    }
+  ],
+  "tags": [],
+  "title_en": "PLSTM-Reg v1.0: A regional physics-encoded LSTM model for simulating reservoir operations under data scarcity",
+  "type": "model"
+}

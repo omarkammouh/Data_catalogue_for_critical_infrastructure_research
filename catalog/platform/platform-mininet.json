@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/mininet/mininet"
+    },
+    {
+      "kind": "portal",
+      "label": "Download",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://mininet.org/download/"
+    },
+    {
+      "kind": "docs",
+      "label": "Overview",
+      "url": "https://mininet.org/overview/"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (GZ)",
+      "note": "Checked 2026-10-01: returns application/x-gzip directly.",
+      "url": "https://download.virtualbox.org/virtualbox/7.2.20/VirtualBox-7.2.20-175154-SunOS.tar.gz"
+    },
+    {
+      "kind": "portal",
+      "label": "Original landing page",
+      "url": "https://mininet.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "mininet",
+    "repo": "github.com/mininet/mininet",
+    "url": "https://mininet.org"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "Mininet is a network emulator that creates a realistic virtual network of hosts, switches, controllers and links on a single computer. Its hosts run standard Linux network software and the real Linux kernel network stack, and its switches support OpenFlow for custom routing and software-defined networking, so code tested on Mininet can move to real systems with minimal changes. It was created by Bob Lantz and Brandon Heller at Stanford and is now copyright the Open Networking Foundation; the latest tag is 2.3.1b4. Coverage: user-defined topologies, typically up to hundreds or a few thousand nodes on one machine; no geographic data is included. Format and access: Python API and topology-aware command-line interface, installed from source or packages on Linux, with a virtual machine image; free of charge under the BSD 3-Clause licence. Caveats: it emulates in real time, so performance depends on the host hardware and very large or high-bandwidth networks are not faithful; development has slowed and releases are infrequent. Simulation uses: testing routing and control-plane behaviour, resilience and cascading failures after link or switch outages, capacity planning of software-defined networks, and small digital-twin testbeds for operators. Related records: ns-3 and OMNeT++ are discrete-event simulators, GNS3 emulates vendor router images, and CAIDA or Topology Zoo topologies can be loaded as test networks.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for platform:digital.internet_exchange:simulation_engine",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://mininet.org/download/",
+  "hosted_models": [
+    "OpenFlow controllers (POX, Ryu, ONOS)",
+    "Open vSwitch"
+  ],
+  "id": "platform-mininet",
+  "interfaces": [
+    "code_library",
+    "command_line",
+    "desktop_gui"
+  ],
+  "interoperability": [
+    "OpenFlow",
+    "Open vSwitch",
+    "Linux network namespaces"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-09-16",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Mininet",
+  "notes": "Licence from LICENSE (BSD 3-Clause, ONF copyright 2013-2022); version from git tags, read 2026-09-26.",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "Mininet project (Stanford origins; Open Networking Foundation)",
+  "related_ids": [],
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "cascading_failure",
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "overview",
+      "url": "https://mininet.org/overview/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "LICENSE and tags",
+      "url": "https://github.com/mininet/mininet"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): added 1 verified direct data link(s) from the provider's resource list. Verified: https://download.virtualbox.org/virtualbox/7.2.20/VirtualBox-7.2.20-17 -> verified by fetch during the check",
+      "url": "https://download.virtualbox.org/virtualbox/7.2.20/VirtualBox-7.2.20-175154-SunOS.tar.gz"
+    }
+  ],
+  "supported_sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "tags": [
+    "network emulation",
+    "SDN",
+    "OpenFlow",
+    "Linux"
+  ],
+  "title_en": "Mininet: network emulator with hosts, switches, controllers and links",
+  "type": "platform"
+}

@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "CCMC model page (version 4)",
+      "url": "https://ccmc.gsfc.nasa.gov/models/NAIRAS~4/"
+    },
+    {
+      "kind": "viewer",
+      "label": "Real-time NAIRAS on iSWA",
+      "url": "https://iswa.ccmc.gsfc.nasa.gov/app/?layout=NAIRAS"
+    },
+    {
+      "kind": "download",
+      "label": "Real-time data tree",
+      "url": "https://iswa.gsfc.nasa.gov/iswa_data_tree/model/radiation_and_plasma_effects/NAIRAS/"
+    },
+    {
+      "kind": "paper",
+      "label": "Phoenix et al. 2024 (Space Weather)",
+      "url": "https://doi.org/10.1029/2024SW003869"
+    }
+  ],
+  "access_note": "Real-time products are open; Runs-on-Request needs a CCMC user registration.",
+  "access_restrictions": "registration",
+  "citation": "Mertens, C. J., Meier, M. M., Brown, S., Norman, R. B., Xu, X. (2013). NAIRAS aircraft radiation model development, dose climatology, and initial validation. Space Weather, 11, 603-635. doi:10.1002/swe.20100",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1002/swe.20100",
+    "name": "nairas nowcast of aerospace ionizing radiation system",
+    "url": "https://ccmc.gsfc.nasa.gov/models/NAIRAS~4"
+  },
+  "description": "NAIRAS is a physics-based model that predicts biologically hazardous radiation exposure of crew and passengers on aircraft or spacecraft from galactic cosmic rays, inner-belt trapped protons in low Earth orbit and solar energetic particles from solar eruptions. It couples models that transport cosmic radiation through the heliosphere, Earth's magnetosphere, the neutral atmosphere and aircraft or spacecraft shielding, driven by inputs such as GOES particle fluxes and neutron monitor data, and outputs dosimetric quantities such as absorbed dose in silicon and tissue and effective dose. It covers the globe: the real-time mode gives hourly maps on a 1 by 1 degree grid from the surface to 90 km in 1 km steps, operational at CCMC's iSWA since 2020, and the Runs-on-Request mode computes global doses for chosen periods or along uploaded aircraft, balloon or spacecraft trajectories. Version 4 adds high-resolution grids, pilot altitude maps and North Atlantic corridor plots with a 20 microsievert per hour contour, and a 2024 Space Weather paper by Phoenix, Mertens, Gronoff and Tobiska compares it with 45 flights from the ARMAS measurement inventory (2013 to 2023). Real-time products are available free on iSWA, and Runs-on-Request needs a CCMC user registration. Caveats: it is a research model and SEP forecasting from UMASEP is not yet used. It supports hazard exposure analysis and emergency response for aviation during solar storms; a related record is the FAA CARI-7 flight dose program.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "aviation radiation exposure nowcast (space health impacts)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://ccmc.gsfc.nasa.gov/models/NAIRAS~4/",
+  "id": "model-nairas-aviation-radiation",
+  "inputs": [
+    "GOES charged particle flux data",
+    "neutron monitor data",
+    "geomagnetic cutoff rigidity",
+    "flight or spacecraft trajectory files"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "not stated for the resource; the describing article (doi:10.1002/swe.20100) is CC-BY-NC-ND-3.0",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "NAIRAS Nowcast of Aerospace Ionizing Radiation System",
+  "outputs": [
+    "global maps of absorbed and effective dose rates 0 to 90 km",
+    "dose along user trajectories",
+    "radiation flux and fluence"
+  ],
+  "provider": "NASA (NAIRAS team, hosted by the Community Coordinated Modeling Center)",
+  "related_ids": [
+    "model-faa-cari-7-flight-radiation-dose"
+  ],
+  "sectors": [
+    "cross_cutting.space",
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 4; predicts radiation exposure from GCR, TRP, SEP; coupled physics-based transport; real-time hourly maps 1x1 degree 0-90 km; operational at iSWA since 2020; RoR global and trajectory modes; inputs GOES particle flux; outputs absorbed dose in silicon, tissue; change log high-res grid, pilot images, North Atlantic corridor 20 uSv/h contour; UMASEP not used; references Mertens et al.; last updated 09/25/2026",
+      "url": "https://ccmc.gsfc.nasa.gov/models/NAIRAS~4/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "links to NAIRAS~4, iSWA layout, data tree and NAIRAS3 user registration for runs on request",
+      "url": "https://ccmc.gsfc.nasa.gov/models/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Phoenix, Mertens, Gronoff, Tobiska 2024 Space Weather; NAIRAS compared with 45 flight trajectories from ARMAS 2013-2023; CC BY 4.0",
+      "url": "https://api.crossref.org/works/10.1029/2024SW003869"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated for the resource; the describing article (doi:10.1002/swe.20100) is CC-BY-NC-ND-3.0 (basis: Crossref metadata (license, version of record))",
+      "url": "https://api.crossref.org/works/10.1002/swe.20100"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://api.crossref.org/works/10.1029/2024sw003869"
+    }
+  ],
+  "tags": [
+    "aviation radiation",
+    "galactic cosmic rays",
+    "solar energetic particles",
+    "effective dose",
+    "CCMC",
+    "iSWA"
+  ],
+  "title_en": "NAIRAS Nowcast of Aerospace Ionizing Radiation System",
+  "type": "model"
+}

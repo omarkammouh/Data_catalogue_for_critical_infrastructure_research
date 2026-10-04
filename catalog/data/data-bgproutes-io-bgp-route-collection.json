@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "bgproutes.io explorers",
+      "url": "https://bgproutes.io/"
+    },
+    {
+      "kind": "download",
+      "label": "MRT files",
+      "url": "https://mrt.bgproutes.io/"
+    },
+    {
+      "kind": "docs",
+      "label": "Blog: expanding visibility with BMP",
+      "url": "https://bgproutes.io/blog-bmp"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "interdependencies",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "network_topology",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bgproutes io open bgp route collection from operational routers bgp and bmp with explorers api and mrt files",
+    "url": "https://bgproutes.io"
+  },
+  "description": "bgproutes.io is a BGP data collection platform that gathers routes from operational routers, which it calls vantage points, and delivers them through a unified interface. Unlike platforms that receive only each router's best paths over a BGP session, as RIPE RIS and RouteViews do, it also accepts the BGP Monitoring Protocol (BMP), which exposes alternative and filtered paths and so improves detection of hijacks, route leaks and reachability gaps. Coverage: global, from contributing operators' routers. The site offers explorers for vantage points, prefixes, autonomous systems, internet exchange points and IRR records, an AS Rank comparison, a looking glass, a personal explorer, MRT files and an API; RPKI route origin and ASPA validation were added in March 2026. OVHcloud supports its infrastructure. Format and access: web dashboards, an API and MRT archive files; free to browse. Licence: not read; API terms and any registration were not read. Caveats: vantage points are volunteered, so coverage is uneven; the site is script-driven and only its home page and one blog post were read. Simulation uses: routing tables that include non-preferred paths help model internet route diversity and failover in cascading failure and resilience studies. Related records: RIPE RIS (data-ripe-ris) and RouteViews (data-routeviews) are the established collectors, and BGPKIT Broker (platform-bgpkit-broker-bgp-archive-index) indexes their archives.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source digital-bgproutes-io: provider pages read (round 2 register piece)",
+      "route": "R30",
+      "source": "digital-bgproutes-io"
+    }
+  ],
+  "formats": [
+    "other",
+    "web_page"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://bgproutes.io/",
+  "id": "data-bgproutes-io-bgp-route-collection",
+  "languages": [
+    "en"
+  ],
+  "licence": "not read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://mrt.bgproutes.io/"
+    ]
+  },
+  "maturity": "active",
+  "name": "bgproutes.io: open BGP route collection from operational routers (BGP and BMP) with explorers, API and MRT files",
+  "provider": "bgproutes.io",
+  "related_ids": [
+    "data-ripe-ris",
+    "data-routeviews",
+    "platform-bgpkit-broker-bgp-archive-index"
+  ],
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Collects BGP routes from operational routers (VPs); explorers (VP, prefix, AS, IXP, IRR), AS Rank, looking glass, MRT; ROV and ASPA validation March 2026; OVHcloud support",
+      "url": "https://bgproutes.io/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "BMP reveals non-preferred and filtered paths; RIPE RIS and RouteViews receive best paths only",
+      "url": "https://bgproutes.io/blog-bmp"
+    }
+  ],
+  "tags": [
+    "BGP",
+    "BMP",
+    "route collection",
+    "RPKI"
+  ],
+  "temporal_coverage": "ongoing",
+  "title_en": "Bgproutes.io: open BGP route collection from operational routers (BGP and BMP) with explorers, API and MRT files",
+  "type": "data"
+}

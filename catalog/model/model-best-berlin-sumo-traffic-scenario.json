@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "BeST scenario repository",
+      "url": "https://github.com/mosaic-addons/best-scenario"
+    },
+    {
+      "kind": "paper",
+      "label": "Schrab et al. 2023 (CSUM 2022)",
+      "url": "https://doi.org/10.1007/978-3-031-23721-8_24"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1007/978-3-031-23721-8_24",
+    "name": "best 24 hour microscopic traffic scenario of berlin for sumo and eclipse mosaic",
+    "repo": "github.com/mosaic-addons/best-scenario",
+    "url": "https://github.com/mosaic-addons/best-scenario"
+  },
+  "description": "The Berlin SUMO Traffic (BeST) scenario is a ready-made microscopic traffic simulation of motorised private transport for the whole city of Berlin over 24 hours, published for testing smart mobility applications. It was built by the Eclipse MOSAIC team (Karl Schrab, Robert Protzmann and Ilja Radusch) and described at the CSUM 2022 conference. Coverage: Berlin, about 800 square kilometres, with about 2.25 million car trips over a day, which the authors describe as the largest microscopic traffic scenario they know of. The scenario contains the road network, the trip demand and the configuration files needed to run it in Eclipse MOSAIC, the co-simulation framework for connected vehicles, or in Eclipse SUMO alone. Format and access: SUMO network, route and configuration files with MOSAIC scenario settings in a public GitHub repository; free. Licence: CC BY 4.0, with attribution by link or citation of the paper. Caveats: only private motorised traffic is modelled, so public transport, freight, cyclists and pedestrians are missing, and the demand is synthetic, so link volumes should be checked against counts before use for planning. Simulation uses: network flow and traffic capacity studies, testing connected vehicle and traffic management applications, and road disruption scenarios for resilience analysis in a large city. Related records: SUMO (platform-sumo) and Eclipse MOSAIC (platform-mosaic) run the scenario, and the Luxembourg (model-sumo-luxembourg-scenario-lust) and Monaco (model-sumo-monaco-scenario-most) scenarios are smaller city counterparts.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-best-berlin-scenario: provider pages read (round 2 register piece)",
+      "route": "R17",
+      "source": "transport-best-berlin-scenario"
+    }
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/mosaic-addons/best-scenario",
+  "id": "model-best-berlin-sumo-traffic-scenario",
+  "inputs": [
+    "Berlin road network (SUMO)",
+    "synthetic daily car trip demand"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-02-20",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "network"
+  ],
+  "name": "BeST: 24-hour microscopic traffic scenario of Berlin for SUMO and Eclipse MOSAIC",
+  "outputs": [
+    "vehicle trajectories, link flows and travel times over 24 hours"
+  ],
+  "provider": "Fraunhofer FOKUS and DCAITI (Eclipse MOSAIC team: Schrab, Protzmann, Radusch)",
+  "related_ids": [
+    "platform-sumo",
+    "platform-mosaic",
+    "model-sumo-luxembourg-scenario-lust",
+    "model-sumo-monaco-scenario-most"
+  ],
+  "repository": "https://github.com/mosaic-addons/best-scenario",
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: 24 hours of motorised private transport for the whole of Berlin, about 2.25 million trips in 800 km2; made for Eclipse MOSAIC, runnable with SUMO; CC BY 4.0 with citation Schrab, Protzmann, Radusch 2023 (CSUM 2022); last commit 2026-02-20",
+      "url": "https://raw.githubusercontent.com/mosaic-addons/best-scenario/main/README.md"
+    }
+  ],
+  "tags": [
+    "SUMO",
+    "Berlin",
+    "traffic scenario",
+    "microsimulation"
+  ],
+  "title_en": "BeST: 24-hour microscopic traffic scenario of Berlin for SUMO and Eclipse MOSAIC",
+  "type": "model"
+}

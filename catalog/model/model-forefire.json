@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/forefireAPI/forefire"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://forefire.readthedocs.io/en/latest/"
+    },
+    {
+      "kind": "viewer",
+      "label": "Live demo",
+      "url": "http://forefire.univ-corse.fr/sim"
+    },
+    {
+      "kind": "paper",
+      "label": "Journal of Open Source Software paper",
+      "url": "https://doi.org/10.21105/joss.08680"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.21105/joss.08680",
+    "name": "forefire wildland fire spread simulation engine",
+    "repo": "github.com/forefireapi/forefire",
+    "url": "https://forefire.univ-corse.fr"
+  },
+  "description": "ForeFire is an open-source engine for simulating how wildland fires spread across a landscape. Its C++ core propagates the fire front with a choice of rate-of-spread models over terrain and fuel maps stored as NetCDF, and it can be coupled two ways with an atmospheric model such as MesoNH, so that fire heat changes the wind that drives the fire. It runs through a scripting interpreter, Python bindings or Docker, and uses MPI for parallel runs. The provider is the French CNRS at the Université de Corse Pascal Paoli, where the engine is used for research and operational forecasting. Coverage is any region with fuel, terrain and weather inputs. The code is on GitHub under the GNU GPL version 3, is described in the Journal of Open Source Software, has online documentation and a live demo, and the latest tag read today is v2.5.0. Caveats: accuracy depends on fuel maps and wind forecasts, coupled runs need high-performance computing, and the engine models fire behaviour, not firefighting. Simulation uses: forecasting the fire front that emergency services must respond to, timing evacuation triggers for communities and facilities, and generating hazard footprints for infrastructure exposure. Related records: SimFire (model-simfire) is a lighter Python fire simulator, and Wildfire Risk to Communities (data-wildfire-risk-to-communities) maps community exposure in the United States.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "open-source wildland fire spread simulation engine",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://forefire.univ-corse.fr/",
+  "id": "model-forefire",
+  "inputs": [
+    "Terrain and fuel maps (NetCDF)",
+    "Wind and weather fields, optionally from a coupled atmospheric model",
+    "Ignition points and scenario scripts (.ff)"
+  ],
+  "language": [
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-13",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "ForeFire wildland fire spread simulation engine",
+  "outputs": [
+    "Fire front positions over time",
+    "Rate of spread and burned area",
+    "Heat and vapour fluxes for coupling with the atmosphere"
+  ],
+  "provider": "CNRS and Université de Corse Pascal Paoli",
+  "regions": [],
+  "related_ids": [
+    "model-simfire",
+    "data-wildfire-risk-to-communities"
+  ],
+  "repository": "https://github.com/forefireAPI/forefire",
+  "runs_on": [
+    "Linux",
+    "macOS",
+    "Docker",
+    "MPI clusters"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Open-source wildfire simulation engine in C++ by CNRS at Université de Corse; research and operational forecasting; rate-of-spread models, NetCDF, two-way coupling with MesoNH, MPI; interpreter, Python bindings, Docker; GPL v3; JOSS DOI",
+      "url": "https://raw.githubusercontent.com/forefireAPI/forefire/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: latest tag v2.5.0; shallow clone: last commit 2026-08-13, C++ and Python sources",
+      "url": "https://github.com/forefireAPI/forefire"
+    }
+  ],
+  "tags": [
+    "wildfire",
+    "fire spread",
+    "rate of spread",
+    "fire-atmosphere coupling",
+    "MesoNH",
+    "operational forecasting"
+  ],
+  "title_en": "ForeFire wildland fire spread simulation engine",
+  "type": "model",
+  "validated_on": []
+}

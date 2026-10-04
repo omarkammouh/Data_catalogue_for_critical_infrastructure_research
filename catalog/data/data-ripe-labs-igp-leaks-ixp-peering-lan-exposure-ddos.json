@@ -1,0 +1,83 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "RIPE Labs article, 21 October 2025 (9 minute read)",
+      "url": "https://labs.ripe.net/author/mw/how-igp-leaks-put-ixp-route-servers-in-the-ddos-shooting-range/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "vulnerability_fragility",
+    "security_threat"
+  ],
+  "data_kind": [
+    "tabular",
+    "document"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "how igp leaks put ixp route servers in the ddos shooting range peering lan exposure measurement across twelve ixps ripe labs 2025",
+    "url": "https://labs.ripe.net/author/mw/how-igp-leaks-put-ixp-route-servers-in-the-ddos-shooting-range"
+  },
+  "description": "This article reports a measurement of how exposed IXP peering LANs are to the public Internet through leaks of interior gateway protocol routes. Most IXPs use RPKI AS0 records to keep their peering LAN prefixes out of global BGP, but this cannot stop IGP leaks by connected members, for example through overly permissive OSPF interface ranges or unchanged BGP next-hops. Using active probing with spoofed ICMP across the routed IPv4 space, the author measured exposure at twelve IXPs and found it reached up to 27% of all routed ASes for large peering LANs, with a median of 20.5 times as many exposed ASes as members. The article also documents at least nine DDoS incidents of 10 to 100 Gbps into a major peering LAN since November 2024, involving MikroTik routers and IoT cameras. Producer: Matthias Wichtlhuber of DE-CIX, published on RIPE Labs on 21 October 2025. Coverage: twelve unnamed IXPs, global. Access: free article; the table of exposure per IXP is in the text and no raw data release was seen. Licence and cost: free; licence not stated. Caveats: IXPs are anonymised and the results are a single measurement snapshot. Simulation uses: the exposure table and incident sizes give parameters for security and resilience scenarios at exchange point route servers. Related records: the RIPE Labs IXP incident review (case_study-ripe-labs-why-ixps-matter-critical-infrastructure-ixp-failures) and IXmon (platform-ixmon-drdos-detection-internet-exchange-points).",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "IXP DDoS or route leak vulnerability analysis internet exchange route server security measurement",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "web_page"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://labs.ripe.net/author/mw/how-igp-leaks-put-ixp-route-servers-in-the-ddos-shooting-range/",
+  "id": "data-ripe-labs-igp-leaks-ixp-peering-lan-exposure-ddos",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated on the page read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "How IGP leaks put IXP route servers in the DDoS shooting range: peering LAN exposure measurement across twelve IXPs (RIPE Labs, 2025)",
+  "provider": "RIPE NCC (RIPE Labs), author Matthias Wichtlhuber (DE-CIX)",
+  "related_ids": [
+    "case_study-ripe-labs-why-ixps-matter-critical-infrastructure-ixp-failures",
+    "platform-ixmon-drdos-detection-internet-exchange-points"
+  ],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "article read in full: mechanism, measurement table, incident analysis",
+      "url": "https://labs.ripe.net/author/mw/how-igp-leaks-put-ixp-route-servers-in-the-ddos-shooting-range/"
+    }
+  ],
+  "tags": [
+    "IXP route server",
+    "IGP leak",
+    "peering LAN",
+    "DDoS",
+    "RPKI AS0",
+    "r2-fresh-digital"
+  ],
+  "title_en": "How IGP leaks put IXP route servers in the DDoS shooting range: peering LAN exposure measurement across twelve IXPs (RIPE Labs, 2025)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

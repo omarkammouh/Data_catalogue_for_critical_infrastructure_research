@@ -1,0 +1,146 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Hazard exposure of the National Highway System",
+      "url": "https://geodata.bts.gov/datasets/usdot::beta-hazard-exposure-national-highway-system/about"
+    },
+    {
+      "kind": "api",
+      "label": "Feature service (National Highway System)",
+      "url": "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_Hazard_Exposure_National_Highway_System/FeatureServer"
+    },
+    {
+      "kind": "docs",
+      "label": "Data dictionary",
+      "url": "https://doi.org/10.21949/3psn-b298"
+    },
+    {
+      "kind": "viewer",
+      "label": "HERA hub page",
+      "url": "https://www.arcgis.com/home/item.html?id=37be7fd3568c4ba2b7421fda21550bb2"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "hazards",
+    "vulnerability_fragility",
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bts hazard exposure layers for transport assets beta",
+    "url": "https://geodata.bts.gov/datasets/usdot::beta-hazard-exposure-national-highway-system/about"
+  },
+  "description": "The Bureau of Transportation Statistics publishes beta hazard exposure layers in the National Transportation Atlas Database that attach natural hazard estimates to national transport assets: the National Highway System (491,781 segments on 26 September 2026), National Highway System bridges, select North American Rail Network lines, principal ports and primary airport parcels. Each asset carries estimates of annualised frequency of coastal flooding, cold wave, drought, hail, hurricane, heat wave, ice storm, lightning, strong wind, tornado and winter weather from the FEMA National Risk Index, a landslide index and sinkhole susceptibility from USGS models, wildfire exposure from USDA burn probability and storm surge inundation from NOAA SLOSH models, covering the 50 states, the District of Columbia and Puerto Rico. The layers were updated on 16 October 2025 and are served as ArcGIS feature services (JSON, GeoJSON, PBF) with downloads and a data dictionary (DOI 10.21949/3psn-b298); as US government works they are free for unrestricted use. BTS's companion Hazard Exposure and Reporting Analytics (HERA) application maps people and HIFLD infrastructure exposed to coastal flooding and groundwater rise, but only for parts of California, Washington, Florida, Georgia, the Carolinas and Virginia. Caveats: the layers are beta, hazards are screening-level frequencies, not event footprints, and exposure is not damage. They support first-pass hazard exposure and resilience screening of highways, bridges, rail, ports and airports, and build on the NTAD networks and the National Bridge Inventory.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hazard exposure transport (transport P3 harvest)",
+      "route": "R11",
+      "source": "esri-living-atlas"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "highway hazard exposure dataset",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "json",
+    "geojson",
+    "other_vector",
+    "esri_geodatabase"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "coastal_flood_storm_surge",
+    "extreme_heat",
+    "cold_snow_ice",
+    "storm_wind",
+    "drought",
+    "wildfire",
+    "landslide",
+    "sea_level_rise",
+    "hail"
+  ],
+  "homepage": "https://doi.org/10.21949/3psn-b298",
+  "id": "data-bts-transport-hazard-exposure",
+  "languages": [
+    "en"
+  ],
+  "licence": "US Government work, no copyright (17 U.S.C. 101)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BTS hazard exposure layers for transport assets (beta)",
+  "provider": "U.S. Department of Transportation, Bureau of Transportation Statistics (BTS)",
+  "related_ids": [
+    "data-us-national-transportation-atlas-database",
+    "data-north-american-rail-network",
+    "data-fhwa-national-bridge-inventory",
+    "data-us-railroad-climate-hazard-exposure",
+    "data-hifld-open"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.rail",
+    "transport.maritime_ports",
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "five BETA hazard exposure layers (NHS, NHS bridges, primary airport parcels, principal ports, select NARN lines); hazard sources FEMA NRI, USGS, USDA, NOAA SLOSH; updated 16 Oct 2025; US Government work",
+      "url": "https://geodata.bts.gov/api/search/v1/collections/all/items?limit=100"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "491,781 highway segments",
+      "url": "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_Hazard_Exposure_National_Highway_System/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "HERA: coastal flooding and groundwater exposure using HIFLD; limited to CA, WA, FL, GA, the Carolinas and VA; owner BTS TVAR",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/37be7fd3568c4ba2b7421fda21550bb2?f=json"
+    }
+  ],
+  "spatial_resolution": "highway and rail segments, bridges, port and airport parcels",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hazard exposure",
+    "National Risk Index",
+    "highways",
+    "bridges",
+    "ports",
+    "airports",
+    "beta"
+  ],
+  "temporal_coverage": "hazard frequencies from current NRI, USGS, USDA and NOAA products; 2025 release",
+  "title_en": "BTS hazard exposure layers for transport assets (beta)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,161 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Tract-level CSV files (national zips by theme)",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/Agregados_por_Setor_csv/"
+    },
+    {
+      "kind": "download",
+      "label": "Tract boundaries with attributes (GeoPackage, shapefile, CSV)",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/malha_com_atributos/"
+    },
+    {
+      "kind": "docs",
+      "label": "Data dictionary (May 2026)",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/dicionario_de_dados_agregados_por_setores_censitarios_20260520.xlsx"
+    },
+    {
+      "kind": "download",
+      "label": "Public-use microdata and weighting areas",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Microdados_e_Areas_de_Ponderacao/"
+    },
+    {
+      "kind": "portal",
+      "label": "Census 2022 FTP directory (all result sets)",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "BR"
+  ],
+  "data_family": [
+    "reference_context",
+    "system_description",
+    "social_vulnerability_equity",
+    "service_performance"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ibge censo demografico 2022 aggregates by census tract agregados por setores censitarios with tract boundaries carrying the attributes",
+    "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios"
+  },
+  "description": "IBGE publishes the results of Brazil's 2022 Population Census for every census tract, the smallest area of the enumeration, as open files on its download server. The tract aggregates hold counts of persons and permanent private households by theme: basic totals, demography, literacy, colour or race, and three household characteristics files that report how each occupied dwelling gets water (general distribution network, well, other forms), whether it has a bathroom and how sewage is disposed of, and what happens to its waste (collected, skip container, burned, dumped). Further files cover the income of the household head and indigenous and quilombola households. The same variables are aggregated to neighbourhoods, districts, subdistricts and municipalities, and a companion set of tract boundaries carries the attributes as GeoPackage, shapefile and CSV. Coverage: all of Brazil. Format and access: national zipped CSV and XLSX files (the largest about 136 MB) and a data dictionary updated on 20 May 2026, free without registration on ftp.ibge.gov.br. Licence: not stated in the directory; IBGE's own web pages returned a bot challenge from the cloud, so the terms could not be read. Caveats: values are counts per tract with suppression rules described in the dictionary; small tracts may show zeros; the IBGE website itself blocks automated access. Simulation uses: population and dwelling exposure at tract level, water, sanitation and waste service gaps for utility planning, and social vulnerability layers. Related records: the IBGE block-face survey of urban surroundings from the same census, IPUMS International and the GHSL built-up and population grids.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:BR:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "geopackage",
+    "shapefile"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/",
+  "id": "data-ibge-censo-2022-census-tract-aggregates",
+  "languages": [
+    "pt"
+  ],
+  "last_updated": "2026-05-20",
+  "licence": "Not stated in the download directory (IBGE terms page not readable from the cloud)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "IBGE Censo Demográfico 2022 aggregates by census tract (Agregados por Setores Censitários), with tract boundaries carrying the attributes",
+  "provider": "Instituto Brasileiro de Geografia e Estatística (IBGE)",
+  "related_ids": [
+    "data-ibge-censo-2022-urban-surroundings-block-faces",
+    "data-ipums-international-census-microdata",
+    "data-copernicus-ghsl-built-up-population",
+    "data-brazil-safe-drinking-water-access-inequality-municipalities"
+  ],
+  "schema_summary": "basic counts (persons, households, dwelling types), demography, literacy, colour or race, three household-characteristics files (water supply source, sewage and bathrooms, waste destination), income of the household head, indigenous and quilombola households; variable codes V00001 onward",
+  "sectors": [
+    "built_environment.buildings",
+    "water.drinking_water",
+    "water.wastewater",
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "emergency_response",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Directory listing: tract aggregates, surroundings, microdata and weighting areas, favelas, indigenous and quilombola result sets",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Theme zips (basico 2026-05-20, caracteristicas_domicilio1-3, demografia, alfabetizacao, cor_ou_raca, indigenas, quilombolas), sizes 4.5 to 136 MB",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/Agregados_por_Setor_csv/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Dictionary read: variables on water supply (rede geral, other forms), bathrooms, waste destination (collected, container, burned)",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/dicionario_de_dados_agregados_por_setores_censitarios_20260520.xlsx"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Boundaries with attributes for setores, bairros, distritos, subdistritos; gpkg, shp, csv (2024-11-13)",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/malha_com_atributos/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "HTTP 403 Cloudflare challenge from the cloud; page not read",
+      "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/Agregados_por_Setor_csv/"
+    }
+  ],
+  "spatial_resolution": "census tract (setor censitário), also neighbourhood, district, subdistrict and municipality aggregates",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "census tracts",
+    "Brazil",
+    "water supply",
+    "sanitation",
+    "waste collection",
+    "households"
+  ],
+  "temporal_coverage": "Census reference date 2022",
+  "temporal_coverage_years": {
+    "end": 2022,
+    "start": 2022
+  },
+  "temporal_resolution": "none (census snapshot)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "IBGE Demographic Census 2022 aggregates by census tract, with tract boundaries carrying the attributes",
+  "type": "data"
+}

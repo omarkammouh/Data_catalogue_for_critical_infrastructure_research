@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/davide-belli/toulouse-road-network-dataset"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "toulouse road network benchmark generation code",
+    "repo": "github.com/davide-belli/toulouse-road-network-dataset",
+    "url": "https://github.com/davide-belli/toulouse-road-network-dataset"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This repository publishes the generation code for a Toulouse road-network machine-learning benchmark. It uses publicly sourced OSM road shapefile inputs, transforms them into 64 by 64 road-image patches and graph objects, and exposes a PyTorch Dataset class for later experiments. The README describes extraction, augmentation, canonical graph ordering and optional compressed image-array storage. A modeller could reuse the preprocessing code to form comparable road-network training cases or inspect how image and graph representations align. The example is Toulouse, France; the method’s performance on other cities was not tested here. The public tree contains scripts and source shapefile components but not the finished dataset under its output directory. The README points to a separate download route, whose availability and licence were not verified. This review read documentation and repository metadata but did not fetch the archive, run preprocessing or inspect graph topology. The code is MIT-licensed; OSM and Geofabrik source data have separate terms. Related resources are the original roads and any independently verified benchmark release. Its simulation use is preparation of paired road images and graph structures for testing network-generation methods, not a verified traffic-flow simulation.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"road network\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/davide-belli/toulouse-road-network-dataset",
+  "id": "platform-toulouse-road-network-benchmark-generator",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "OSM road shapefile",
+    "64x64 raster patches",
+    "graph pickle"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-03-15",
+  "licence": "MIT for repository code; OSM/Geofabrik road-data rights remain separate.",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Toulouse road-network benchmark generation code",
+  "notes": "G8; G8-0837. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Image-Conditioned Graph Generation for Road Network Extraction, arXiv:1910.14388, named by repository. Publication venue and final bibliographic details not checked..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Toulouse Road Network dataset project",
+  "related_ids": [],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/davide-belli/toulouse-road-network-dataset/blob/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/davide-belli/toulouse-road-network-dataset"
+    }
+  ],
+  "tags": [],
+  "title_en": "Toulouse road-network benchmark generation code",
+  "type": "platform"
+}

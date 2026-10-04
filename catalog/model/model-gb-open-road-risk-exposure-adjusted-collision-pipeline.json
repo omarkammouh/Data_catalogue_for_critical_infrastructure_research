@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/20451732"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/20451732"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Repository metadata and README independently inspected; code not executed.",
+      "url": "https://github.com/ThomasHSimm/open-road-risk"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.20451732",
+    "name": "open road risk an open data pipeline for exposure adjusted collision risk on the gb road network",
+    "repo": "github.com/thomashsimm/open-road-risk",
+    "url": "https://zenodo.org/records/20451732"
+  },
+  "description": "The Open Road Risk author publishes a staged software pipeline for collision-risk scores on Great Britain road links. Zenodo archives version 0.1.0 under MIT and links the code repository. The README describes traffic estimation from DfT counts, within-day profiles from WebTRIS and a link-year collision model using STATS19, OS Open Roads geometry, OSM and area context. Risk is adjusted for traffic exposure before link ranking. This model can supply road-safety and disruption assumptions in transport simulations. No related catalogue record explicitly covers this pipeline. Coverage is Great Britain and source years 2015–2024, with several upstream datasets fetched separately. A limitation is that many links lack direct traffic counts; predicted exposure and collision risk carry model error. Current repository performance notes include an earlier leaked evaluation metric that should not be reused. The archived code was not run and risk scores were not independently checked.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "title:(\"road network\" OR \"road\" OR \"highway\" OR \"motorway\" OR \"expressway\" OR \"trunk road\" OR \"arterial road\" OR \"road segment\" OR \"road link\" OR \"junction\" OR \"intersection\" OR \"interchange\" OR \"roundabout\" OR \"bridge\" OR \"road bridge\" OR \"viaduct\" OR \"tunnel\" OR \"road tunnel\" OR \"pavement\" OR \"pavement condition\" OR \"road asset inventory\" OR \"bridge inventory\" OR \"bridge condition\" OR \"traffic count\" OR \"traffic volume\" OR \"culvert\" OR \"AADT\" OR \"road closure\" OR \"road accident\" OR \"road safety\" OR \"road maintenance\" OR \"speed limit\" OR \"lane\" OR \"toll road\" OR \"road geometry\" OR \"road inventory\")",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://zenodo.org/records/20451732",
+  "id": "model-gb-open-road-risk-exposure-adjusted-collision-pipeline",
+  "inputs": [
+    "Road links, traffic counts and collisions",
+    "Population and road context"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-29",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Open Road Risk: an open-data pipeline for exposure-adjusted collision risk on the GB road network",
+  "notes": "G6 item G6-1679. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "outputs": [
+    "Exposure-adjusted link risk rankings and traffic estimates"
+  ],
+  "provider": "Simm, Thomas H.",
+  "related_ids": [],
+  "repository": "https://github.com/ThomasHSimm/open-road-risk",
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/20451732"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence mit-license, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/20451732"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "README and MIT repository metadata inspected; stages, upstream sources and corrected metric caveat documented.",
+      "url": "https://github.com/ThomasHSimm/open-road-risk"
+    }
+  ],
+  "tags": [],
+  "title_en": "Open Road Risk: an open-data pipeline for exposure-adjusted collision risk on the GB road network",
+  "type": "model"
+}

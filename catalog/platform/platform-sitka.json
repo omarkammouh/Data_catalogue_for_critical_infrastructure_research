@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/mcneillj/sitka"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/mcneillj/sitka/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sitka built environment analysis library",
+    "repo": "github.com/mcneillj/sitka",
+    "url": "https://github.com/mcneillj/sitka"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "Sitka is a Python library published by the mcneillj repository for built-environment analysis and model development. Implemented features in the README import EnergyPlus weather files into series, calculate site solar angles and estimate solar radiation on surfaces. NumPy and pandas provide the numerical and data-handling basis, and examples and documentation are linked from the repository. Public source and Python package installation are free under MIT. Geographic coverage and the weather period come from the supplied EPW file, with time resolution inherited from that series; the library does not provide a fixed measured building dataset. Its main caveat is the gap between implemented and planned functions: envelope constructions, thermal zones and HVAC systems are explicitly marked as future work. It must therefore not be described as a complete whole-building simulator. The existing weather and solar functions can prepare or analyse inputs for building performance studies and portable design tools. Sitka complements EnergyPlus (model-energyplus) at the weather and solar-analysis stage; direct exchange beyond the documented EPW import was not tested.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:building-energy fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/mcneillj/sitka",
+  "id": "platform-sitka",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "EPW",
+    "pandas series"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-04-30",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Sitka built-environment analysis library",
+  "notes": "G7 G7-0047. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "mcneillj repository maintainers",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for mcneillj/sitka: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Abuilding-energy+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/mcneillj/sitka/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for buildings",
+  "type": "platform"
+}

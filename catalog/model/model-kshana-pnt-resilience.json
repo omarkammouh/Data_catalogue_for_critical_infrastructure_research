@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/ashfordeOU/kshana"
+    },
+    {
+      "kind": "viewer",
+      "label": "Browser playground",
+      "url": "https://kshana.dev"
+    },
+    {
+      "kind": "download",
+      "label": "Zenodo v0.27.2",
+      "url": "https://zenodo.org/records/22907598"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "kshana pnt resilience simulator with quantum sensor performance models",
+    "repo": "github.com/ashfordeou/kshana",
+    "url": "https://kshana.dev"
+  },
+  "description": "Kshana is an open positioning, navigation and timing (PNT) resilience simulator built and maintained by the Estonian company Ashforde OÜ, with Chakshu Baweja as author. One dependency-light engine covers orbit geometry (SGP4 checked against all 666 AIAA verification vectors), constellation design, precise orbit fitting, time scales, clock stability with Allan deviations and holdover, strapdown inertial navigation, GNSS/INS fusion, ARAIM integrity, single-point positioning with real IGS products, jamming and spoofing resilience, anomaly detection and resilience scoring against operational figures of merit. Quantum clocks, quantum inertial sensors and optical time transfer are driven by published noise coefficients, not simulated from first principles. Coverage: global GNSS and also lunar and deep-space navigation cases. Format and access: source on GitHub under AGPL-3.0, a browser playground running client-side in WebAssembly, and versioned Zenodo archives (v0.27.2, 23 September 2026); RINEX, SP3 and CCSDS formats are read. Caveats: a young, single-maintainer project with rapid releases; the validation ledger on its site separates validated from modelled results and should be read before use. Simulation uses: resilience of PNT services and dependent infrastructure to jamming, spoofing and GNSS outages, and holdover planning for timing users. Related records: GPSJam and the IGS products give observed interference and orbits, Orekit is a general flight-dynamics library.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "zenodo software harvest of the digital piece; candidate zenodo-61934079a5 (Zenodo record 22907598)",
+      "route": "R05",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "cyber_attack",
+    "space_weather",
+    "technological_failure"
+  ],
+  "homepage": "https://kshana.dev",
+  "id": "model-kshana-pnt-resilience",
+  "inputs": [
+    "constellation and orbit data (TLE, SP3)",
+    "RINEX observations",
+    "sensor noise coefficients",
+    "jamming and spoofing scenarios"
+  ],
+  "language": [
+    "rust_go",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-23",
+  "licence": "AGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "Kshana: PNT-resilience simulator with quantum-sensor performance models",
+  "notes": "kshana.dev front page and Zenodo record read 2026-09-26. Language from the repository file list (516 Rust files, 107 Python files) read 2026-09-26; the Estonian seat is inferred from the OÜ company form.",
+  "outputs": [
+    "position, navigation and timing errors",
+    "holdover and integrity metrics",
+    "resilience scores"
+  ],
+  "provider": "Ashforde OÜ (Chakshu Baweja)",
+  "related_ids": [
+    "data-gpsjam-gnss-interference",
+    "data-jammertest-andoya-gnss-resilience-test",
+    "data-igs-gnss-products"
+  ],
+  "repository": "https://github.com/ashfordeOU/kshana",
+  "runs_on": [],
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "capability and validation summary",
+      "url": "https://kshana.dev"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Zenodo record",
+      "url": "https://zenodo.org/api/records/22907598"
+    }
+  ],
+  "tags": [
+    "PNT",
+    "GNSS resilience",
+    "jamming",
+    "timing holdover",
+    "quantum sensors"
+  ],
+  "title_en": "Kshana: PNT-resilience simulator with quantum-sensor performance models",
+  "type": "model",
+  "validated_on": [
+    "AIAA 2006-6753 SGP4 verification vectors",
+    "NIST SP 1065 Allan deviation references",
+    "agency precise orbits (Galileo, Swarm-A)"
+  ]
+}

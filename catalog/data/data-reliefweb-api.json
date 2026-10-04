@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "API documentation",
+      "url": "https://reliefweb.int/help/api"
+    },
+    {
+      "kind": "api",
+      "label": "API endpoint",
+      "url": "https://api.reliefweb.int/v2/reports"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (JSON)",
+      "note": "Checked 2026-10-01: returns application/json directly.",
+      "url": "https://reliefweb.int/post-api-schemas/v2/report.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "historical_events",
+    "emergency_management",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "document",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "reliefweb api humanitarian reports disasters jobs and training archive",
+    "url": "https://reliefweb.int/help/api"
+  },
+  "description": "The ReliefWeb API gives programmatic access to ReliefWeb's curated archive of humanitarian information: situation reports, maps and infographics, assessments, disaster records, country profiles, jobs and training notices, with a taxonomy of countries, disaster types, themes and sources. ReliefWeb is a specialised digital service run by the UN Office for the Coordination of Humanitarian Affairs, and most documents are contributed by partner organisations for republication. Coverage is worldwide, with content going back to the 1980s and new items added daily. The API is publicly accessible without a key, returns JSON from a REST endpoint that supports search, filtering, sorting and field selection, and the ReliefWeb team asks users to identify their application with an appname parameter and to respect call limits. Access is free, but the copyright of each document stays with its source organisation, so reuse of the documents themselves follows each partner's terms. Caveats: the archive is a document store, not structured incident data, disaster entries are coarse (type, date, countries, GLIDE number), and coverage favours events with an international humanitarian response. Simulation uses: collecting event timelines and after-action reports for emergency response and recovery case studies, and extracting disaster lists to drive hazard exposure scenarios for health and emergency services. Related records: GDACS (data-gdacs) supplies real-time alerts, EM-DAT (data-em-dat) and DesInventar (data-desinventar-sendai) hold structured loss data that complements the reports.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "recall: emergency management and alerting data",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "api"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://reliefweb.int/help/api",
+  "id": "data-reliefweb-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "Free API; document copyright stays with contributing organisations (ReliefWeb terms of use)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://api.reliefweb.int/v2/reports"
+    ]
+  },
+  "maturity": "active",
+  "name": "ReliefWeb API (humanitarian reports, disasters, jobs and training archive)",
+  "provider": "ReliefWeb, UN Office for the Coordination of Humanitarian Affairs (OCHA)",
+  "related_ids": [
+    "data-gdacs",
+    "data-em-dat",
+    "data-desinventar-sendai"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "API gives access to curated, continuously updated data archive going back to the 1980s; almost all content available through the API; publicly accessible; most content owned by content partners and contributed for re-publication",
+      "url": "https://reliefweb.int/help/api"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): added 1 verified direct data link(s) from the provider's resource list. Verified: https://reliefweb.int/post-api-schemas/v2/report.json -> verified by fetch during the check",
+      "url": "https://reliefweb.int/post-api-schemas/v2/report.json"
+    }
+  ],
+  "spatial_resolution": "Country",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "humanitarian",
+    "disaster reports",
+    "OCHA",
+    "API"
+  ],
+  "temporal_coverage": "1980s to present",
+  "temporal_resolution": "Per document",
+  "temporal_resolution_class": "event",
+  "title_en": "ReliefWeb API (humanitarian reports, disasters, jobs and training archive)",
+  "type": "data",
+  "update_frequency": "daily"
+}

@@ -1,0 +1,110 @@
+{
+  "id": "platform-synth-cosim",
+  "type": "platform",
+  "name": "Example Co-simulation Framework",
+  "provider": "Example Systems Consortium",
+  "description": "The Example Co-simulation Framework couples sector models through a time-stepped message bus so that, for instance, a power flow solver and a water network model can exchange states every minute of a simulated day. It is maintained by the Example Systems Consortium, an association of three laboratories, to make interdependency studies reproducible across groups. The framework is generic and location-independent; any model with a Python or C adapter can join, and the FMI standard is supported for packaged models. It is distributed as a Python package from PyPI and as source on GitHub under the Apache-2.0 licence, free of charge, with documentation and a command-line runner. Caveats: only fixed time steps are supported, the message bus has no persistence, and performance drops beyond a few dozen coupled models. Interfaces are CLI, a Python API and FMI 2.0; deployment is on desktop or server. Simulation uses include cascading failure, resilience and digital twin experiments. It hosts the Synthetic Power Flow Solver among its example models and is related to the Example Traffic Agent Model through an adapter.",
+  "homepage": "https://cosim.example.org/",
+  "access_links": [
+    {
+      "label": "Website",
+      "url": "https://cosim.example.org/",
+      "kind": "portal"
+    },
+    {
+      "label": "Repository",
+      "url": "https://github.com/example-systems/cosim-framework",
+      "kind": "repo"
+    },
+    {
+      "label": "Docs",
+      "url": "https://cosim.example.org/docs",
+      "kind": "docs"
+    }
+  ],
+  "licence": "Apache-2.0",
+  "cost": "free",
+  "access_restrictions": "none",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "water.drinking_water"
+  ],
+  "geographic_scope": "global",
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "digital_twin"
+  ],
+  "maturity": "active",
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-09-23",
+  "description_checked": "2026-09-23",
+  "related_ids": [
+    "model-synth-power-flow",
+    "model-synth-traffic-abm"
+  ],
+  "tags": [],
+  "sources": [
+    {
+      "url": "https://cosim.example.org/",
+      "accessed": "2026-09-23",
+      "note": "synthetic fixture"
+    }
+  ],
+  "discovery_routes": [
+    {
+      "route": "R06",
+      "source": "helics-ecosystem-example",
+      "query": "co-simulation framework",
+      "date": "2026-09-23"
+    },
+    {
+      "route": "R05",
+      "source": "pypi",
+      "query": "co-simulation",
+      "date": "2026-09-23"
+    }
+  ],
+  "dedupe_keys": {
+    "url": "https://cosim.example.org",
+    "repo": "github.com/example-systems/cosim-framework",
+    "name": "example co simulation framework"
+  },
+  "languages": [
+    "en"
+  ],
+  "platform_kind": [
+    "coupling_framework"
+  ],
+  "hosted_models": [
+    "model-synth-power-flow",
+    "Example Traffic Agent Model adapter"
+  ],
+  "interfaces": [
+    "CLI",
+    "Python API",
+    "FMI 2.0"
+  ],
+  "deployment": [
+    "desktop",
+    "server"
+  ],
+  "open_source": true,
+  "supported_sectors": [
+    "energy",
+    "water",
+    "transport"
+  ],
+  "interoperability": [
+    "FMI",
+    "JSON messages"
+  ],
+  "link_health": {
+    "checked": "2026-09-20",
+    "dead": [
+      "https://cosim.example.org/"
+    ],
+    "dead_since": "2026-09-20"
+  }
+}

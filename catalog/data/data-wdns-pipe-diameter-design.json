@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/bahrami-i/WDNs-Dataset"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/bahrami-i/WDNs-Dataset/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "synthetic_benchmark",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "synthetic wdn pipe diameter design dataset",
+    "repo": "github.com/bahrami-i/wdns-dataset",
+    "url": "https://github.com/bahrami-i/WDNs-Dataset"
+  },
+  "description": "WDNs-Dataset publishes pipe-level features for 600 synthetic water distribution networks and a Hanoi benchmark. Its README reports 85,745 synthetic pipe samples before outlier removal and 81,829 after preprocessing, with 13 graph and hydraulic features and an optimal commercial pipe-diameter target. The repository names CSV tables and a notebook that trains and evaluates an ANN-WOA diameter predictor. Users can load the tables to train a design surrogate or compare predicted diameters with the Hanoi case; outputs are predictions and error measures. Geographic coverage is synthetic, with Hanoi as a standard test network, not an observed operating utility. GitHub metadata states GPL-3.0 licensing for the repository. A limitation is that the synthetic generator and optimisation choices determine the feature distribution, and Hanoi alone does not establish transfer to real networks. The tables can calibrate or test water-network design models. No CSV or notebook was downloaded. The related catalogue record model-wntr provides water-network simulation, while these tables contain learned pipe-design examples, not a WNTR network file.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "water network dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "water distribution dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/bahrami-i/WDNs-Dataset",
+  "id": "data-wdns-pipe-diameter-design",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-05-19",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Synthetic WDN pipe-diameter design dataset",
+  "notes": "G7 G7-1971. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "provider": "WDNs-Dataset research contributors",
+  "related_ids": [
+    "model-wntr"
+  ],
+  "schema_summary": "Pipe-level graph and hydraulic predictors with target commercial diameter; synthetic and Hanoi tables.",
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for bahrami-i/WDNs-Dataset: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=water+network+dataset&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/bahrami-i/WDNs-Dataset/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/bahrami-i/WDNs-Dataset/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/bahrami-i/WDNs-Dataset"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Metadata listing confirms Hanoi dataset.csv, WDN Dataset.zip and generation/optimisation notebooks; payloads not read.",
+      "url": "https://api.github.com/repos/bahrami-i/WDNs-Dataset/contents"
+    }
+  ],
+  "tags": [],
+  "title_en": "Synthetic WDN pipe-diameter design dataset",
+  "type": "data"
+}

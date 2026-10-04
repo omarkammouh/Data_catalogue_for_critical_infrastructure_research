@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "API documentation and OpenAPI specification",
+      "url": "https://aviationweather.gov/data/api/"
+    },
+    {
+      "kind": "download",
+      "label": "Cache files (current METARs, TAFs, SIGMETs, PIREPs, stations)",
+      "url": "https://aviationweather.gov/data/cache/"
+    },
+    {
+      "kind": "api",
+      "label": "METAR observations as JSON (Data API example query)",
+      "url": "https://aviationweather.gov/api/data/metar?ids=KJFK,KLAX&format=json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "weather_observations",
+    "hazards",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "stream",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "aviation weather center data api metar taf pirep sigmet and more",
+    "url": "https://aviationweather.gov/data/api"
+  },
+  "description": "The Aviation Weather Center Data API gives machine-to-machine access to the aviation weather products of the US National Weather Service. It serves METAR surface observations and TAF terminal forecasts worldwide, pilot and aircraft reports (mainly US and North Atlantic), SIGMET warnings worldwide, G-AIRMET advisories for the contiguous US, AIRMETs and area forecasts for Alaska, center weather advisories, meteorological impact statements, the TFM convective forecast, wind and temperature tables, and reference data on stations, airports, navaids, fixes and obstacles. Formats include raw text, JSON, GeoJSON, CSV, XML and IWXXM, with an OpenAPI specification. The database holds the previous 30 days; gzipped cache files with all current METARs, TAFs, SIGMETs and pilot reports refresh every minute or ten minutes. Access: free REST endpoints with rate limits of 100 requests per minute and 400 results per call, no registration. Licence and cost: US Government data, free. Caveats: no long archive through this API (historical data must come from other archives), rate limits, and CORS is not permitted. It supports hazard exposure analysis of airports and airspace, weather-driven delay and flow models, and emergency response. It relates to the FAA NASR aeronautical data, OurAirports and NOAA space weather records in the catalogue.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "assistant recall, written down before searching: transport aviation, maritime ports and inland waterways, all four types",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "plain_text",
+    "json",
+    "geojson",
+    "csv",
+    "xml",
+    "other"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "storm_wind",
+    "cold_snow_ice"
+  ],
+  "homepage": "https://aviationweather.gov/api/data/metar?ids=KJFK,KLAX&format=json",
+  "id": "data-noaa-aviation-weather-center-data-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "US Government work (public domain)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://aviationweather.gov/api/data"
+    ],
+    "dead_since": "2026-10-01",
+    "unverified": [
+      "https://aviationweather.gov/data/cache/"
+    ]
+  },
+  "maturity": "active",
+  "name": "Aviation Weather Center Data API (METAR, TAF, PIREP, SIGMET and more)",
+  "provider": "NOAA National Weather Service, Aviation Weather Center (AWC)",
+  "related_ids": [
+    "data-faa-aeronautical-data-nasr-adds",
+    "data-ourairports",
+    "data-noaa-swpc-products"
+  ],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "product table with coverage and formats, 30-day window, cache files and frequencies, rate limits, restrictions",
+      "url": "https://aviationweather.gov/data/api/"
+    }
+  ],
+  "tags": [
+    "METAR",
+    "TAF",
+    "SIGMET",
+    "PIREP",
+    "aviation weather",
+    "r2-fresh-transport"
+  ],
+  "temporal_coverage": "rolling previous 30 days",
+  "temporal_resolution": "minutes to hourly",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Aviation Weather Center Data API (METAR, TAF, PIREP, SIGMET and more)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

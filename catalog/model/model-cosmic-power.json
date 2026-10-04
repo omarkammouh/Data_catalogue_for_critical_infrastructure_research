@@ -1,0 +1,93 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/ecotillasanchez/cosmic"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/ecotillasanchez/cosmic/blob/master/README.md"
+    }
+  ],
+  "access_note": "GPL-3.0 source; MATLAB, Simulink and Optimization Toolbox have separate licences.",
+  "access_restrictions": "none",
+  "citation": "Song, Cotilla-Sanchez, Ghanavati and Hines (2015). Dynamic modeling of cascading failure in power systems. IEEE Transactions on Power Systems 31(3), 2085–2095.",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cosmic dynamic cascading outage simulator",
+    "repo": "github.com/ecotillasanchez/cosmic",
+    "url": "https://github.com/ecotillasanchez/cosmic"
+  },
+  "description": "COSMIC is a dynamic cascading-outage simulator developed by researchers at Oregon State University and the University of Vermont. It models how power-system failures evolve through coupled electrical dynamics, with supplied MATLAB examples for 9-bus and 39-bus systems. Inputs are a configured power network, component behaviour and disturbances; outputs describe the resulting dynamic outage sequence and system response. The examples are test networks, without a fixed geographic or historical coverage, and simulation timing follows the case configuration. Source is free under GPL-3.0. A limitation is that execution requires separately licensed MATLAB, Simulink and Optimization Toolbox; the README reports testing on MATLAB R2023b on Apple Silicon, not general platform compatibility. COSMIC can support infrastructure cascading-failure and resilience studies. ANDES (model-andes) is related power-system dynamics software. The repository identifies a describing publication and example entry points. No model files or executable software were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"power system\" simulator fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/ecotillasanchez/cosmic",
+  "id": "model-cosmic-power",
+  "inputs": [
+    "Power-system case and component dynamics",
+    "Initiating disturbances"
+  ],
+  "language": [
+    "matlab"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2016-05-12",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical",
+    "network"
+  ],
+  "name": "COSMIC dynamic cascading-outage simulator",
+  "notes": "G7 G7-1007. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Dynamic system response and cascading outages"
+  ],
+  "provider": "Oregon State University and University of Vermont research team",
+  "related_ids": [
+    "model-andes"
+  ],
+  "repository": "https://github.com/ecotillasanchez/cosmic",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for ecotillasanchez/cosmic: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=%22power+system%22+simulator+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/ecotillasanchez/cosmic/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for electricity",
+  "type": "model"
+}

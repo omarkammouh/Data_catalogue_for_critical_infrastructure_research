@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "NWSS Public SARS-CoV-2 Wastewater Metric Data (archived 12 September 2025)",
+      "url": "https://data.cdc.gov/Public-Health-Surveillance/NWSS-Public-SARS-CoV-2-Wastewater-Metric-Data/2ew6-ywp6/about_data"
+    },
+    {
+      "kind": "api",
+      "label": "CDC Wastewater Data for SARS-CoV-2 (data.cdc.gov, current)",
+      "url": "https://data.cdc.gov/Public-Health-Surveillance/CDC-Wastewater-Data-for-SARS-CoV-2/j9g8-acpt/about_data"
+    },
+    {
+      "kind": "docs",
+      "label": "CDC wastewater surveillance programme page",
+      "url": "https://www.cdc.gov/wastewater"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "health_impacts",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cdc national wastewater surveillance system nwss wastewater data",
+    "url": "https://data.cdc.gov/Public-Health-Surveillance/CDC-Wastewater-Data-for-SARS-CoV-2/j9g8-acpt/about_data"
+  },
+  "description": "The National Wastewater Surveillance System (NWSS) is the US Centers for Disease Control and Prevention's programme for tracking pathogens in sewage, and its public SARS-CoV-2 data are published on data.cdc.gov. The current dataset, CDC Wastewater Data for SARS-CoV-2 (created July 2025), holds about 619,000 rows, one per sample collection day at an anonymised sampling site, with 38 columns covering jurisdiction, county, collection date, concentration and derived metrics. Rows come from state and local health departments funded through the ELC cooperative agreement, from CDC's national testing contract (currently Verily) and from WastewaterSCAN. It is refreshed weekly and is public domain, except that WastewaterSCAN rows carry Stanford's CC BY-NC 4.0 terms. The earlier NWSS Public SARS-CoV-2 Wastewater Metric Data (837,000 rows, one per site and 15-day window) was archived on 12 September 2025. Caveats: laboratories, methods and sampling frequency differ between sites, so CDC advises against comparing concentrations across locations; site identities are anonymised to arbitrary integers; and the cdc.gov programme pages refused access from the cataloguing session. Simulation uses: an operational wastewater signal for epidemic early warning and emergency response, and inflow-side data for digital twins of sewer and treatment systems. Related records: WastewaterSCAN (data-wastewaterscan) and Germany's AMELAG (data-rki-amelag-wastewater-surveillance).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"wastewater\" AND \"population\"",
+      "route": "R03",
+      "source": "dataverse-harvard"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://data.cdc.gov/Public-Health-Surveillance/CDC-Wastewater-Data-for-SARS-CoV-2/j9g8-acpt/about_data",
+  "id": "data-cdc-nwss-wastewater-surveillance",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public Domain (US Government); WastewaterSCAN rows CC BY-NC 4.0",
+  "licence_type": [
+    "non_commercial",
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.cdc.gov/wastewater"
+    ]
+  },
+  "maturity": "active",
+  "name": "CDC National Wastewater Surveillance System (NWSS) wastewater data",
+  "notes": "Harvested as a CHORDS catalogue entry on Harvard Dataverse (10.7910/DVN/H5NPWW); the provider pages on data.cdc.gov were read instead. Pathogens other than SARS-CoV-2 are published by CDC in separate datasets that were not opened.",
+  "provider": "US Centers for Disease Control and Prevention (CDC), National Wastewater Surveillance System",
+  "related_ids": [
+    "data-wastewaterscan",
+    "data-rki-amelag-wastewater-surveillance"
+  ],
+  "schema_summary": "about 38 columns per sample: record id, anonymous site id, jurisdiction, county, collection date, source designation (State_Territory, CDC_Verily, WastewaterSCAN), SARS-CoV-2 concentration and derived metrics; data dictionary v1.3 attached",
+  "sectors": [
+    "water.wastewater",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, data sources, licence, weekly update, 619K rows, 38 columns, county geography, footnote on comparisons",
+      "url": "https://data.cdc.gov/Public-Health-Surveillance/CDC-Wastewater-Data-for-SARS-CoV-2/j9g8-acpt/about_data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "archived 12 September 2025, 837K rows, 16 columns, row per site and 15-day period, created 30 November 2021",
+      "url": "https://data.cdc.gov/Public-Health-Surveillance/NWSS-Public-SARS-CoV-2-Wastewater-Metric-Data/2ew6-ywp6/about_data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "HTTP Access Denied from the cloud session",
+      "url": "https://www.cdc.gov/nwss/about-data.html"
+    }
+  ],
+  "spatial_resolution": "anonymised sampling sites (wastewater treatment plants and upstream sites), county-level geography",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "wastewater-based epidemiology",
+    "SARS-CoV-2",
+    "public health surveillance",
+    "wastewater treatment plants",
+    "United States",
+    "NWSS"
+  ],
+  "temporal_coverage": "2020 to present (metric dataset created 30 November 2021; current sample dataset created 29 July 2025)",
+  "temporal_resolution": "per sample collection day; metric dataset per 15-day window",
+  "temporal_resolution_class": "daily",
+  "title_en": "CDC National Wastewater Surveillance System (NWSS) wastewater data",
+  "type": "data",
+  "update_frequency": "weekly"
+}

@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "OpenLR Java reference implementation",
+      "url": "https://github.com/tomtom-international/openlr"
+    },
+    {
+      "kind": "docs",
+      "label": "OpenLR Association (white paper; site not reachable when checked)",
+      "url": "https://www.openlr-association.com/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "standards_ontologies"
+  ],
+  "data_kind": [
+    "document"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openlr map agnostic dynamic location referencing standard and java reference implementation",
+    "repo": "github.com/tomtom-international/openlr",
+    "url": "https://github.com/tomtom-international/openlr"
+  },
+  "description": "OpenLR is an open method for describing a location on a road network, such as a congested stretch or an incident position, so that systems using different digital maps can exchange it and find the same place again. TomTom publishes the Java reference implementation on GitHub. Coverage: the library encodes a map-dependent location into a map-agnostic reference and decodes it back onto another map; the test files follow the white paper location types of lines, geo-coordinates, points along a line, points of interest with access points, circles, rectangles, grids, polygons and closed lines. Format and access: Java 8 Maven modules for the encoder, decoder, map interface, data model, XML and binary physical formats, a DATEX II module with a PDF describing the OpenLR extension of DATEX II, and a loader for TomTom maps in SQLite; artefacts are published under the org.openlr group; free. Licence: Apache-2.0 (LICENSE file). Caveats: users must implement the map interface for their own network, the OpenLR Association website answered a Cloudflare SSL error (525) and was not read, so the white paper itself was not read, and the repository was last changed in October 2025. Simulation uses: linking traffic events, probe speeds and incident feeds from one map to the network of a simulation or digital twin, for network flow and emergency response studies. Related records: DATEX II (data-datex-ii-standard) carries OpenLR references in European traffic information exchange.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-openlr: provider pages read (round 2 register piece)",
+      "route": "R08",
+      "source": "transport-openlr"
+    }
+  ],
+  "formats": [
+    "software_package",
+    "xml"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/tomtom-international/openlr",
+  "id": "data-openlr-map-agnostic-location-referencing",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-10-31",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.openlr-association.com/"
+    ]
+  },
+  "maturity": "active",
+  "name": "OpenLR: map-agnostic dynamic location referencing standard and Java reference implementation",
+  "provider": "TomTom International (OpenLR Association)",
+  "related_ids": [
+    "data-datex-ii-standard"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: Maven, Java 8, 9 modules (encoder, map, maploader-tt-sqlite, decoder, data, xml, binary, datex2); LICENSE Apache 2.0; repository tree holds OpenLR_DATEX_II_extension.pdf and white paper location tests; HOWTO and usage sample (org.openlr artefacts); last commit 2025-10-31",
+      "url": "https://raw.githubusercontent.com/tomtom-international/openlr/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Cloudflare 525 SSL handshake failed; not read",
+      "url": "https://www.openlr-association.com/"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2025-10-31)",
+      "url": "https://github.com/tomtom-international/openlr"
+    }
+  ],
+  "tags": [
+    "location referencing",
+    "map matching",
+    "traffic information",
+    "TomTom"
+  ],
+  "title_en": "OpenLR: map-agnostic dynamic location referencing standard and Java reference implementation",
+  "type": "data"
+}

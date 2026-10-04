@@ -1,0 +1,174 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo",
+      "note": "",
+      "url": "https://doi.org/10.5281/zenodo.17640810"
+    },
+    {
+      "kind": "download",
+      "label": "ERAD on PyPI",
+      "note": "",
+      "url": "https://pypi.org/project/NREL-erad/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "note": "",
+      "url": "https://github.com/NREL/erad"
+    },
+    {
+      "kind": "portal",
+      "label": "Second listing of the same resource",
+      "note": "",
+      "url": "https://github.com/NLR-Distribution-Suite/erad"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "note": "",
+      "url": "https://nlr-distribution-suite.github.io/erad/"
+    },
+    {
+      "kind": "paper",
+      "label": "JOSS paper",
+      "note": "",
+      "url": "https://doi.org/10.21105/joss.08782"
+    },
+    {
+      "kind": "paper",
+      "label": "Wrong-target DOI placeholder (HTTP 200; retained for audit)",
+      "note": "HTTP 200, but page inspection showed DOI Name Values for DOI 0 and handle 0.NA/0.NA, not the record's associated paper. Marked as a human-confirmed wrong target; the URL remains in the catalogue for audit and the associated paper DOI is separate. Use the separate associated paper link at https://doi.org/10.21105/joss.08782.",
+      "url": "https://doi.org/0"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-03",
+  "dedupe_keys": {
+    "doi": "10.21105/joss.08782",
+    "name": "erad energy resilience analysis for electric distribution systems",
+    "repo": "github.com/nrel/erad",
+    "url": "https://github.com/NREL/erad"
+  },
+  "description": "ERAD is a free, open-source Python toolkit for assessing how electric distribution assets survive hazards and what that means for energy resilience of the households and critical services they supply. It is developed by the National Laboratory of the Rockies, formerly the National Renewable Energy Laboratory, with Kapil Duwadi, Bryan Palmintier, Aadil Latif, Kwami Senam Sedzro and Sherin Ann Abraham as authors, and is described in the Journal of Open Source Software. It represents infrastructure as a connected graph and computes hazard-specific exposure and survival probabilities for poles, lines, cables, transformers, substations, junction boxes, switches and rooftop solar, using fragility curves from the literature for flood, wind, wildfire and earthquake. It supports scenario-based analysis, uncertainty sampling and export of asset-level results, and lets users compare programmes such as undergrounding, microgrids and backup power for critical facilities across neighbourhoods. The README also advertises a Model Context Protocol server with 26 tools. Coverage is not tied to a place. The code is accessible on GitHub and Zenodo under the BSD 3-Clause licence at no cost, with documentation online and active releases (14 tags, latest commit May 2026). Caveats: fragility curves are generic literature values that may need local calibration. Simulation uses are hazard exposure, fragility-based failure and hardening studies of distribution grids. Related records: model-inl-seismic-contingency-auto-generator covers earthquake contingencies for transmission.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "nuclear power plant fragility curves",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-29",
+      "query": "projects.yaml category steady-state",
+      "route": "R06",
+      "source": "best-of-ps-projects-yaml"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "storm_wind",
+    "wildfire",
+    "earthquake"
+  ],
+  "homepage": "https://github.com/NREL/erad",
+  "id": "model-erad-distribution-resilience",
+  "inputs": [
+    "Distribution system asset graph",
+    "hazard scenarios such as flood depth",
+    "wind speed",
+    "wildfire or ground motion"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-06",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-03",
+    "dead": [
+      "https://doi.org/0"
+    ],
+    "dead_by_hand": [
+      "https://doi.org/0"
+    ],
+    "dead_since": "2026-10-03"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "fragility",
+    "network"
+  ],
+  "name": "ERAD - Energy Resilience Analysis for electric Distribution systems",
+  "notes": "Harvested from the best-of-ps list (projects.yaml and generated README) on 2026-09-29 at the user's request to include every entry of the related catalogues.",
+  "outputs": [
+    "Asset exposure and survival probabilities",
+    "household-level service resilience metrics",
+    "asset-level results for export"
+  ],
+  "provider": "National Laboratory of the Rockies, formerly NREL (Kapil Duwadi, Bryan Palmintier, Aadil Latif, Kwami Senam Sedzro and Sherin Ann Abraham)",
+  "related_ids": [
+    "model-inl-seismic-contingency-auto-generator",
+    "data-best-of-ps"
+  ],
+  "repository": "https://github.com/NREL/erad",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "hazard_exposure",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, assets, hazards, fragility, users, JOSS, MCP badge, docs link",
+      "url": "https://raw.githubusercontent.com/NREL/erad/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD 3-Clause, Alliance for Sustainable Energy 2023",
+      "url": "https://raw.githubusercontent.com/NREL/erad/HEAD/LICENSE.txt"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "v0.1.7 creators, household-level, programmes compared",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.17640811"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Head commit 2026-05-06; 14 tags",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/NREL/erad/visit/latest/"
+    },
+    {
+      "accessed": "2026-10-02",
+      "note": "Follow-up check: landing page replaced by the provider page that holds the data (basis: git clone 2026-10-02)",
+      "url": "https://github.com/NREL/erad"
+    }
+  ],
+  "tags": [
+    "resilience",
+    "fragility curves",
+    "distribution grid",
+    "flood",
+    "wildfire",
+    "earthquake",
+    "NREL"
+  ],
+  "title_en": "ERAD - Energy Resilience Analysis for electric Distribution systems",
+  "type": "model",
+  "validated_on": []
+}

@@ -1,0 +1,88 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/sharedstreets/trip-simulator"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sharedstreets trip simulator synthetic gps telemetry for cars bikes and scooters",
+    "repo": "github.com/sharedstreets/trip-simulator",
+    "url": "https://github.com/sharedstreets/trip-simulator"
+  },
+  "description": "trip-simulator is a tool from SharedStreets that generates simulated raw GPS telemetry, created because real GPS traces are sensitive and easy to de-anonymise. Coverage: any area with OpenStreetMap data; the README shows one million trips simulated over New York City. It is a multi-agent model for cars, bikes or scooters that needs no inputs besides an OpenStreetMap extract, generates pickups and drop-offs from network density, and adds physically realistic GPS noise so that telemetry algorithms can be tested. Format and access: a Node.js command-line tool installed with npm, taking an OSM PBF file and a vehicle configuration, and writing 1 Hz location probes plus trips and status changes that comply with the Mobility Data Specification (MDS). Licence and cost: MIT, free. Caveats: synthetic demand is not calibrated to observed travel; maintenance status was not checked. It supports agent-based testing of data pipelines and operational tools for shared mobility fleets without using personal data. It relates to the Mobility Data Specification and OpenStreetMap in the catalogue.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "https://github.com/Robinlovelace/open-gat README read 2026-09-28 (open transport planning tools table)",
+      "route": "R48",
+      "source": "open-gat"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/sharedstreets/trip-simulator",
+  "id": "model-sharedstreets-trip-simulator",
+  "inputs": [
+    "OpenStreetMap PBF extract",
+    "vehicle configuration (car, bike or scooter)"
+  ],
+  "language": [
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-12-01",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "agent_based"
+  ],
+  "name": "SharedStreets trip-simulator: synthetic GPS telemetry for cars, bikes and scooters",
+  "outputs": [
+    "1 Hz GPS probes",
+    "MDS-compliant trips and status changes"
+  ],
+  "provider": "SharedStreets",
+  "related_ids": [
+    "data-mobility-data-specification-mds",
+    "data-openstreetmap"
+  ],
+  "repository": "https://github.com/sharedstreets/trip-simulator",
+  "sectors": [
+    "transport.road",
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "purpose, features, CLI, outputs, licence",
+      "url": "https://raw.githubusercontent.com/sharedstreets/trip-simulator/master/README.md"
+    }
+  ],
+  "tags": [
+    "synthetic data",
+    "GPS",
+    "micromobility",
+    "MDS",
+    "privacy",
+    "r2-fresh-transport"
+  ],
+  "title_en": "SharedStreets trip-simulator: synthetic GPS telemetry for cars, bikes and scooters",
+  "type": "model"
+}

@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/Deltares/ra2ce"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://deltares.github.io/ra2ce/"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/ra2ce/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ra2ce resilience assessment and adaptation for critical infrastructure toolkit",
+    "url": "https://deltares.github.io/ra2ce"
+  },
+  "description": "RA2CE (Resilience Assessment and Adaptation for Critical infrastructurE) is an open-source Python toolkit from Deltares that quantifies the resilience of critical infrastructure networks, with a focus on transport infrastructure exposed to natural hazards and future climate, and helps prioritise interventions and adaptation measures. It builds a network from OpenStreetMap or a user shapefile and overlays flood depth or other hazard maps for several return periods; criticality analyses measure redundancy and detour lengths under single- or multi-link failures, and economic risk analyses estimate direct damages (expected annual damage) and indirect losses (expected annual losses) so that adaptation strategies can be compared. It is generic and works for any network in any country. It is distributed as source code on GitHub and as a package on PyPI (version 1.2.2, March 2026) for Python 3.11 to 3.14, is scriptable with Jupyter tutorials and Binder examples, and is released under the GNU GPL v3 and free to use; it builds on NetworkX and OSMnx. Caveats: results depend on the hazard maps, damage curves and network data the user supplies, OpenStreetMap roads can be incomplete, and it is an analysis toolkit for consultants, researchers and decision makers, not a traffic simulator. It supports hazard exposure, network criticality, resilience and cascading failure analysis of road networks for climate adaptation planning. It is related to the BTS transport hazard exposure data and complements MATSim and SUMO.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "lead from the cross-cutting piece (PowerPath record uses RA2CE)",
+      "route": "R22",
+      "source": "integrator"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://deltares.github.io/ra2ce/",
+  "id": "model-deltares-ra2ce",
+  "inputs": [
+    "road network from OpenStreetMap or shapefile",
+    "hazard maps such as flood depth per return period",
+    "damage curves and economic parameters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-11",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network",
+    "economic"
+  ],
+  "name": "RA2CE resilience assessment and adaptation for critical infrastructure toolkit",
+  "outputs": [
+    "network criticality and detour lengths",
+    "hazard exposure of network links",
+    "expected annual damage and losses",
+    "comparison of adaptation strategies"
+  ],
+  "provider": "Deltares",
+  "related_ids": [
+    "data-bts-transport-hazard-exposure",
+    "model-matsim",
+    "model-sumo"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "full name; Python package by Deltares; quantifies resilience, prioritises adaptation; Python 3.11-3.14; GPL3; NetworkX and OSMnx; Binder",
+      "url": "https://raw.githubusercontent.com/Deltares/ra2ce/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU General Public License v3",
+      "url": "https://raw.githubusercontent.com/Deltares/ra2ce/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 1.2.2 uploaded 2026-03-11; requires Python >=3.11,<3.15",
+      "url": "https://pypi.org/project/ra2ce/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "transport infrastructure and natural hazards; OSM or shapefile networks; criticality (redundancy, detours, single/multi-link); EAD and EAL; adaptation strategies; users",
+      "url": "https://deltares.github.io/ra2ce/"
+    }
+  ],
+  "tags": [
+    "criticality",
+    "resilience",
+    "flood",
+    "climate adaptation",
+    "road network",
+    "Deltares"
+  ],
+  "title_en": "RA2CE resilience assessment and adaptation for critical infrastructure toolkit",
+  "type": "model",
+  "validated_on": []
+}

@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/NREL/BlendPATH"
+    },
+    {
+      "kind": "docs",
+      "label": "BlendPATH user manual (NLR technical report)",
+      "url": "https://docs.nlr.gov/docs/fy25osti/87790.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "DOE HyBlend page",
+      "url": "https://www.energy.gov/cmei/fuels/hyblend-opportunities-hydrogen-blending-natural-gas-pipelines"
+    },
+    {
+      "kind": "paper",
+      "label": "DOE CODE software record",
+      "url": "https://doi.org/10.11578/dc.20240216.1"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.11578/dc.20240216.1",
+    "name": "blendpath blending pipeline analysis tool for hydrogen hyblend project nlr",
+    "repo": "github.com/nrel/blendpath",
+    "url": "https://github.com/NREL/BlendPATH"
+  },
+  "description": "BlendPATH, the Blending Pipeline Analysis Tool for Hydrogen, is an open-source program to assess the system impacts and costs of repurposing existing natural gas pipelines for hydrogen and hydrogen blends. The US Department of Energy HyBlend page read on 2026-09-26 lists it among the curated tools of HyBlend, a collaboration launched in 2021 on materials compatibility, techno-economic analysis and life cycle analysis of blending, with materials tests at pressures up to 100 bar. The README says BlendPATH is a Python package installed with pip, supports Python 3.10 to 3.13, has a user manual published as an NLR technical report, and ships an example based on a network from the literature; the licence file gives the BSD 3-clause licence with copyright held by the Alliance for Energy Innovation, and use also means accepting the terms of the ProFAST cost library. Git tags run to v2.1.1. Coverage is transmission pipelines as modelled by the user, with US cost assumptions. Caveats: results depend on the cost and material assumptions, and the tool needs Python experience. Simulation uses are network flow and capacity planning studies of how much hydrogen existing pipelines can carry and at what cost. Related records: data-gaslib provides gas network instances for such studies, and data-h2-infrastructure-map-europe-ehb maps planned hydrogen pipelines in Europe.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review doi:10.3390/en15103582 (journal review)",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/NREL/BlendPATH",
+  "id": "model-blendpath-hydrogen-blending-pipeline-tool",
+  "inputs": [
+    "pipeline network files (example based on a published network)",
+    "hydrogen blend targets and cost assumptions"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-13",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "economic"
+  ],
+  "name": "BlendPATH - Blending Pipeline Analysis Tool for Hydrogen (HyBlend project, NLR)",
+  "outputs": [
+    "hydraulic results and costs of repurposing pipelines for hydrogen blends"
+  ],
+  "provider": "National Laboratory of the Rockies (formerly NREL) for the US Department of Energy HyBlend project",
+  "related_ids": [
+    "data-gaslib",
+    "data-h2-infrastructure-map-europe-ehb"
+  ],
+  "repository": "https://github.com/NREL/BlendPATH",
+  "sectors": [
+    "energy.gas_hydrogen"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README (purpose, DOIs, Python versions, manual, install, example, ProFAST terms)",
+      "url": "https://raw.githubusercontent.com/NREL/BlendPATH/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD 3-clause licence, copyright 2024 Alliance for Energy Innovation; tags to v2.1.1 read with git ls-remote",
+      "url": "https://raw.githubusercontent.com/NREL/BlendPATH/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "DOE HyBlend page (aims, 2021 launch, 100 bar tests, curated tools including BlendPATH)",
+      "url": "https://www.energy.gov/cmei/fuels/hyblend-opportunities-hydrogen-blending-natural-gas-pipelines"
+    }
+  ],
+  "tags": [
+    "hydrogen blending",
+    "natural gas pipelines",
+    "techno-economic analysis",
+    "HyBlend",
+    "open source"
+  ],
+  "title_en": "BlendPATH - Blending Pipeline Analysis Tool for Hydrogen (HyBlend project, NLR)",
+  "type": "model"
+}

@@ -1,0 +1,133 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "DOWNLOAD",
+      "note": "Found on the record's own page, checked 2026-10-01",
+      "url": "https://www.cened.it/download"
+    },
+    {
+      "kind": "api",
+      "label": "Database CENED+2 (Socrata, since DGR 3868/2015)",
+      "url": "https://www.dati.lombardia.it/Energia/Database-CENED-2-Certificazione-ENergetica-degli-EDifici/bbky-sde5"
+    },
+    {
+      "kind": "api",
+      "label": "CENED (DDUO 5796/2009 method, 2010 to 2018)",
+      "url": "https://www.dati.lombardia.it/Energia/CENED-Certificazione-ENergetica-degli-EDifici/rsg3-xhvk"
+    },
+    {
+      "kind": "portal",
+      "label": "OpenData CENED+2.0 page",
+      "url": "https://www.cened.it/opendata-cened-2.0"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IT"
+  ],
+  "data_family": [
+    "demand_operation",
+    "system_description",
+    "condition_ageing"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cened energy performance certificates of buildings lombardy open data",
+    "url": "https://cened.it/opendata-cened-2.0"
+  },
+  "description": "CENED is the energy certification system of buildings in Lombardy, and the region publishes the energy performance certificates (APE, Attestati di Prestazione Energetica) lodged in the regional building energy cadastre as open data on its Socrata portal. Two tables exist. The older CENED table holds about 1.48 million certificates issued under the DDUO 5796/2009 method, closed between August 2010 and October 2018, with municipality, public or private building, intended use, construction year, reason for the certificate, gross and net floor area and volume, dispersing surface, mean U-values of envelope, roof, floor and windows, energy class, heating, hot water and total primary energy indices, CO2 emissions, ventilation, solar thermal and PV panels, fuel and generator type and power. The Database CENED+2 table holds about 2.2 million certificates issued under DGR 3868/2015 and the Allegato H method, with about 200 fields covering location and address, climate zone, residential or non-residential use, construction year, conditioned areas and volumes, services present, energy indices, nearly zero-energy status and energy class. Coverage: Lombardy, Italy. Access: free CSV download or API; ARIA advises importing the CSV as text. Licence: CC0 1.0 Universal. Caveats: certificates are issued at transactions and renovations, so they are not a census of the stock, and the two tables use different calculation methods. Simulation uses: building stock energy models, retrofit scenarios and archetype calibration for Lombardy. Related records: the ADEME DPE diagnostics, the England and Wales EPCs and the SEAI BER research tool.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "dati aperti edifici catasto energetico APE open data download edifici 3D regione",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://www.cened.it/opendata-cened-2.0",
+  "id": "data-lombardy-cened-energy-performance-certificates",
+  "languages": [
+    "it"
+  ],
+  "last_updated": "2026-09-24",
+  "licence": "CC0 1.0 (public domain dedication)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CENED energy performance certificates of buildings, Lombardy (open data)",
+  "provider": "Regione Lombardia and ARIA S.p.A. (Azienda Regionale per l'Innovazione e gli Acquisti)",
+  "regions": [
+    "Lombardy"
+  ],
+  "related_ids": [
+    "data-ademe-dpe-energy-performance-diagnostics",
+    "data-england-wales-energy-performance-certificates",
+    "data-seai-ber-research-tool"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "CENED table metadata: description, CC0, ARIA, columns, update 2026-09-05",
+      "url": "https://www.dati.lombardia.it/api/views/rsg3-xhvk.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "1,481,408 rows; closing dates 2010-08 to 2018-10",
+      "url": "https://www.dati.lombardia.it/resource/rsg3-xhvk.json?$select=count(*)"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "CENED+2 table metadata: DGR 3868/2015, 201 columns, update 2026-09-24",
+      "url": "https://www.dati.lombardia.it/api/views/bbky-sde5.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "2,217,830 rows",
+      "url": "https://www.dati.lombardia.it/resource/bbky-sde5.json?$select=count(*)"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "ARIA open data page, Allegato H method, contents",
+      "url": "https://www.cened.it/opendata-cened-2.0"
+    }
+  ],
+  "tags": [
+    "CENED",
+    "APE",
+    "energy performance certificates",
+    "Lombardy",
+    "Italy",
+    "building stock"
+  ],
+  "temporal_coverage": "2010 onwards",
+  "title_en": "CENED energy performance certificates of buildings, Lombardy (open data)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "API page",
+      "url": "https://waterlevel.ie/page/api/"
+    },
+    {
+      "kind": "api",
+      "label": "Station GeoJSON",
+      "url": "http://waterlevel.ie/geojson/"
+    },
+    {
+      "kind": "portal",
+      "label": "Hydro-Data",
+      "url": "https://waterlevel.ie/hydro-data/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IE"
+  ],
+  "data_family": [
+    "hazards",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "waterlevel ie opw real time water level network of ireland with geojson station list latest readings and csv files per station and sensor plus the hydro data archive api",
+    "url": "https://waterlevel.ie"
+  },
+  "description": "waterlevel.ie is the Office of Public Works' real-time water level service for Ireland's rivers, lakes and coastal gauges, and its API page explains how programs can reuse the data. The page read on 2026-09-28 lists pre-generated files for automated access: a GeoJSON file of stations with coordinates, names and reference numbers, a GeoJSON of latest readings, and CSV files per station and sensor for the last day, week or five-week \"month\", plus group files such as the Shannon gauges. Sensors cover water level, level against ordnance datum, water temperature, battery voltage and backup level for flood warning stations, and the linked Hydro-Data API offers water level and flow for the full period of record, percentiles and thresholds, spot flow gaugings, station metadata and rainfall. Data refresh about every five minutes, with new readings per station roughly every 15 minutes, in UTC. Coverage is the OPW hydrometric network in Ireland. Access is free under the Creative Commons Attribution 4.0 licence, but only stations numbered 00001 to 41000 may be republished, and OPW asks bulk users to notify it and poll no more than every 15 minutes. Caveats: the API page does not say whether recent readings are validated, and stations above 41000 cannot be republished. It supports flood warning and exposure studies, such as triggering road or rail closure scenarios from river levels. Related record: the OPW open spatial data portal.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: OPW hydrometric data (waterlevel.ie) (IE, hydrological_service) https://waterlevel.ie/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://waterlevel.ie/",
+  "id": "data-waterlevel-ie-opw-realtime-water-level-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC BY 4.0 (stations 00001-41000 only; others need OPW permission)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "waterlevel.ie (OPW): real-time water level network of Ireland with GeoJSON station list, latest readings and CSV files per station and sensor, plus the Hydro-Data archive API",
+  "provider": "Office of Public Works (OPW), Ireland",
+  "related_ids": [
+    "data-opw-ireland-open-spatial-data-portal"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "read in Chromium: data reusable under CC BY 4.0 with attribution to OPW, in line with PER Circular 12 of 2016; users asked to inform OPW; only stations 00001-41000 suitable for republication; pre-generated data for automated access: GeoJSON of station coordinates, names and refs, GeoJSON of latest readings, latest readings page, CSV files for day, week and month per station and sensor, group CSVs such as Shannon gauges; sensors water level 0001, ordnance datum OD, temperature 0002, battery 0003, backup water level 0011; Hydro-Data API with water level and flow for full period of record, percentiles and thresholds, spot flow gaugings, station metadata, rainfall; site updated about every 5 minutes, new station data about every 15 minutes; bulk requests no more than once every 15 minutes; UTC; records older than 5 weeks on Hydro-Data",
+      "url": "https://waterlevel.ie/page/api/"
+    }
+  ],
+  "tags": [
+    "water level",
+    "hydrometric",
+    "Ireland",
+    "OPW",
+    "flood warning"
+  ],
+  "temporal_coverage": "last 5 weeks on waterlevel.ie; full period of record on Hydro-Data",
+  "temporal_resolution": "about 15 minutes",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Waterlevel.ie (OPW): real-time water level network of Ireland with GeoJSON station list, latest readings and CSV files per station and sensor, plus the Hydro-Data archive API",
+  "type": "data",
+  "update_frequency": "real_time"
+}

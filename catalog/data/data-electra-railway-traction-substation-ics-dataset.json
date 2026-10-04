@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Electra Modbus (zip, 56 MB)",
+      "url": "http://perception.inf.um.es/ICS-datasets/csv/electra_modbus.zip"
+    },
+    {
+      "kind": "download",
+      "label": "Electra S7Comm (zip, 1.7 GB)",
+      "url": "http://perception.inf.um.es/ICS-datasets/csv/electra_s7comm.zip"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "ES"
+  ],
+  "data_family": [
+    "cyber_control",
+    "security_threat",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "electra railway electric traction substation ics anomaly detection dataset",
+    "url": "https://perception.inf.um.es/ICS-datasets"
+  },
+  "description": "Electra is an anomaly detection dataset for industrial control systems generated from the network traffic of an electric traction substation testbed, published by researchers at the University of Murcia. The testbed models a substation of a real high-speed railway area that converts grid power to the voltage, current and frequency needed by trains or trams; it has five programmable logic controllers (one master, four slaves), a SCADA system with an HMI, a switch and a firewall, communicating over Modbus TCP, OPC and S7Comm. Traffic was recorded in normal operation and under attacks: reconnaissance of function codes, false data injection by response and command modification through a man-in-the-middle node, forced errors, unauthorised reads and writes, and replay. Each record holds a timestamp, source and destination MAC and IP, request flag, function code, error flag, memory address, data value and label. Coverage: one laboratory testbed. Access: two zipped CSV downloads, Modbus (56 MB) and S7Comm (1.7 GB), from the university page. Licence and cost: free, but no licence is stated, so reuse terms should be checked with the authors. Caveats: laboratory traffic, a limited attack set and no physical process values. It supports intrusion detection research and cyber-physical cascading failure studies of railway power supply, and complements the BATADAL water network attack datasets in the catalogue.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "https://arxiv.org/html/2608.30332 (ICS datasets and testbeds roadmap) read 2026-09-28, transport rows",
+      "route": "R50",
+      "source": "arxiv-2608.30332"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "http://perception.inf.um.es/ICS-datasets/",
+  "id": "data-electra-railway-traction-substation-ics-dataset",
+  "languages": [
+    "en"
+  ],
+  "licence": "Not stated on the download page",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Electra railway electric traction substation ICS anomaly detection dataset",
+  "provider": "University of Murcia, Department of Information and Communications Engineering (perception.inf.um.es)",
+  "related_ids": [
+    "data-batadal-attack-detection-datasets"
+  ],
+  "sectors": [
+    "transport.rail",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "digital_twin"
+  ],
+  "size": "about 1.76 GB zipped",
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "testbed, devices and protocols, attack table, feature table, downloads and sizes; no licence text",
+      "url": "http://perception.inf.um.es/ICS-datasets/"
+    }
+  ],
+  "tags": [
+    "ICS security",
+    "intrusion detection",
+    "Modbus",
+    "S7Comm",
+    "traction substation",
+    "r2-fresh-transport"
+  ],
+  "title_en": "Electra railway electric traction substation ICS anomaly detection dataset",
+  "type": "data"
+}

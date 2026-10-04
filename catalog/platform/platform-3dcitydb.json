@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "3DCityDB repository",
+      "url": "https://github.com/3dcitydb/3dcitydb"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://docs.3dcitydb.org/"
+    },
+    {
+      "kind": "repo",
+      "label": "citydb-tool (import and export)",
+      "url": "https://github.com/3dcitydb/citydb-tool"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "3d city database 3dcitydb",
+    "repo": "github.com/3dcitydb/3dcitydb",
+    "url": "https://3dcitydb.org"
+  },
+  "deployment": [
+    "own_server"
+  ],
+  "description": "The 3D City Database (3DCityDB) is a free geodatabase for storing, representing and managing virtual 3D city models on a standard spatial relational database. Version 5 maps the OGC CityGML 3.0 conceptual model onto a PostgreSQL/PostGIS schema with fewer tables than version 4, storing geometries directly as PostGIS types so that spatial SQL queries are simpler and faster and GIS such as QGIS or ArcGIS can connect directly. It supports CityGML 3.0, 2.0 and 1.0, Application Domain Extensions, four or five levels of detail, textures and materials, TIN terrain, generic and prototypical objects, recursive aggregation and flexible 3D geometries; objects can be marked as terminated, not deleted, giving simple versioning. The citydb-tool reads and writes CityGML in GML and CityJSON encodings of any size and upgrades or downgrades between CityGML versions; Docker containers start a database with the schema preinstalled. Version 4 remains in production in cities including Berlin, Potsdam, Hamburg, Munich, Frankfurt, Dresden and Rotterdam and stays supported for one to two years. Coverage: generic. Access: free SQL scripts, tools and containers. Licence: Apache 2.0. Caveats: V5 is new, and V4 users must migrate; the www.3dcitydb.org address redirected to a blocked host here, so the repository was read instead. Simulation uses: a database backbone for city digital twins, building exposure analysis and energy or solar studies on CityGML models. Related records: the OGC CityGML standard, CityJSON and the Berlin 3D building models.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell platform:built_environment.buildings:gis_environment, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.3dcitydb.org/",
+  "id": "platform-3dcitydb",
+  "interfaces": [
+    "code_library",
+    "file_exchange",
+    "command_line",
+    "other"
+  ],
+  "interoperability": [
+    "CityGML 3.0, 2.0 and 1.0",
+    "CityJSON",
+    "Application Domain Extensions (ADE)",
+    "QGIS and ArcGIS through PostGIS"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-21",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.3dcitydb.org/"
+    ]
+  },
+  "maturity": "active",
+  "name": "3D City Database (3DCityDB)",
+  "notes": "Latest tag seen with git ls-remote: v5.1.4. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "open_source": true,
+  "platform_kind": [
+    "gis_environment"
+  ],
+  "provider": "3DCityDB developers (3dcitydb organisation on GitHub)",
+  "related_ids": [
+    "data-ogc-citygml-standard",
+    "data-cityjson-encoding",
+    "data-berlin-3d-building-models-lod2-and-mesh"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "V5 description, CityGML mapping, features, tools, Docker, V4 users",
+      "url": "https://raw.githubusercontent.com/3dcitydb/3dcitydb/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Apache 2.0",
+      "url": "https://raw.githubusercontent.com/3dcitydb/3dcitydb/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: tags up to v5.1.4",
+      "url": "https://github.com/3dcitydb/3dcitydb"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings",
+    "built_environment.public_space"
+  ],
+  "tags": [
+    "3DCityDB",
+    "CityGML",
+    "PostGIS",
+    "3D city model",
+    "database",
+    "open source"
+  ],
+  "title_en": "3d city database stores virtual 3d city models on a standard spatial relational database",
+  "type": "platform"
+}

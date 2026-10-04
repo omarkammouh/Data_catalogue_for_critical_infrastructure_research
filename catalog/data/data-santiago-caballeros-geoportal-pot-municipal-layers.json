@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Geoportal POT Santiago (GeoNode)",
+      "url": "https://cartografia.ayuntamientosantiago.gob.do/"
+    },
+    {
+      "kind": "api",
+      "label": "GeoNode resources API",
+      "url": "https://cartografia.ayuntamientosantiago.gob.do/api/v2/resources"
+    },
+    {
+      "kind": "api",
+      "label": "WMS GetCapabilities",
+      "url": "https://cartografia.ayuntamientosantiago.gob.do/geoserver/ows?service=WMS&request=GetCapabilities"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "DO"
+  ],
+  "crs": "EPSG:3857 web maps",
+  "data_family": [
+    "system_description",
+    "hazards",
+    "planning_regulatory_documents"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "document"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "geoportal pot santiago municipal gis layers and pmot plan maps of santiago de los caballeros dominican republic",
+    "url": "https://cartografia.ayuntamientosantiago.gob.do/api/v2/resources"
+  },
+  "description": "The Geoportal POT Santiago is the GeoNode spatial data portal of the municipality of Santiago de los Caballeros in the Dominican Republic, set up for its municipal land-use plan (Plan Municipal de Ordenamiento Territorial, PMOT). On 28 September 2026 it held 96 resources: map layers such as the street network, public bus (OMSA) and shared-car (concho) routes, the cable car line 1 and its stations, irrigation canals, the cycle path, urban equipment, parks, hydrography, neighbourhoods and districts, historic centre parcels, topography, geology, seismic amplification and liquefaction, faults, soils, land cover from 1986 to 2015 and rainfall isohyets, plus PMOT documents on basic infrastructure networks (sanitation, water, drainage, energy and waste) and mobility. Coverage is the municipality and its districts; resolution is feature level. Format and access: GeoNode catalogue with a REST API and OGC WMS from its GeoServer; downloads per layer. Licence: most resources are marked public domain, a few not specified. Free. Caveats: resources were published between 2022 and 2026 and some describe older data (land cover from 1986, densities from 2010), and PMOT sheets are map documents, not data. Simulation uses: transport network and exposure models for a Caribbean city, including seismic amplification and liquefaction layers for earthquake scenarios. Related records: the ONE Dominican Republic Censo 2010 Redatam microdata and the INDOMET climate data give national context.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "api/v2/resources (round 2 cloud worklist)",
+      "route": "R04",
+      "source": "GeoNode API"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "other",
+    "document"
+  ],
+  "geographic_scope": "city",
+  "hazards": [
+    "earthquake"
+  ],
+  "homepage": "https://cartografia.ayuntamientosantiago.gob.do/api/v2/resources",
+  "id": "data-santiago-caballeros-geoportal-pot-municipal-layers",
+  "languages": [
+    "es"
+  ],
+  "last_updated": "2026",
+  "licence": "Public domain for most resources (per GeoNode metadata); a few not specified",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Geoportal POT Santiago: municipal GIS layers and PMOT plan maps of Santiago de los Caballeros (Dominican Republic)",
+  "notes": "Round 2 cloud worklist: round 1 cross-cutting found the portal through web search but could not read it; it answered on 2026-09-28.",
+  "provider": "Ayuntamiento de Santiago de los Caballeros (municipal planning office)",
+  "related_ids": [
+    "data-one-dominican-republic-censo-2010-redatam-housing-and-segment-environment",
+    "data-indomet-dominican-climate-data",
+    "data-mopc-dominican-geoportal-road-network"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.road",
+    "water.irrigation",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "96 resources with titles, dates, licences (public_domain) and categories",
+      "url": "https://cartografia.ayuntamientosantiago.gob.do/api/v2/resources?page_size=100"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "WMS 1.3.0 capabilities answer",
+      "url": "https://cartografia.ayuntamientosantiago.gob.do/geoserver/ows?service=WMS&request=GetCapabilities"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "read in Chromium: GeoNode of the municipal land-use planning directorate; 63 layers downloadable in standard formats, 1 map, 32 documents; categories relief and soil 19, infrastructure 6, hazards 3, cultural heritage 1, administrative divisions 13, urban planning 2, climate 1, water resources 4, PMOT regulations 37, mineral resources 1, maps 3, municipal services and facilities 1, human settlements 1, public space 3, protected areas 1",
+      "url": "https://cartografia.ayuntamientosantiago.gob.do/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Wave 1 integrator dedupe: merged duplicate record data-santiago-dominican-republic-pot-geoportal (#26) into this record; its sources and extra access links were kept here.",
+      "url": "https://cartografia.ayuntamientosantiago.gob.do/"
+    }
+  ],
+  "spatial_resolution": "Feature level",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "GeoNode",
+    "municipal GIS",
+    "land-use plan",
+    "bus routes",
+    "cable car",
+    "liquefaction",
+    "Dominican Republic"
+  ],
+  "temporal_coverage": "Published 2022 to 2026; underlying data from 1986 onward",
+  "temporal_resolution": "none",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Geoportal POT Santiago: municipal GIS layers and PMOT plan maps of Santiago de los Caballeros (Dominican Republic)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

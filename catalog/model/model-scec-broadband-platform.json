@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Docker images",
+      "url": "https://github.com/sceccode/bbp_docker"
+    },
+    {
+      "kind": "download",
+      "label": "SCECcode/bbp-v22.4.0.zip (94.8 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/7062972/files/SCECcode/bbp-v22.4.0.zip?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "Repository and wiki",
+      "url": "https://github.com/SCECcode/bbp"
+    },
+    {
+      "kind": "portal",
+      "label": "Release v22.4.0 (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.7062971"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Maechling, P. J., F. Silva, S. Callaghan and T. H. Jordan (2015). SCEC Broadband Platform: System Architecture and Software Implementation. Seismological Research Letters 86(1). doi:10.1785/0220140125",
+  "continents": [
+    "north_america",
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "US",
+    "JP"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1785/0220140125",
+    "name": "scec broadband platform bbp broadband ground motion simulation software",
+    "repo": "github.com/sceccode/bbp",
+    "url": "https://github.com/SCECcode/bbp"
+  },
+  "description": "The SCEC Broadband Platform is a software system that generates broadband seismograms from 0 to more than 20 Hz for historical and scenario earthquakes in California, Eastern North America and Japan using several alternative simulation methods, including the GP, SDSU, Irikura, Song and UCSB methods. In validation mode it simulates recorded events such as Landers, Ridgecrest and Chino Hills and produces goodness-of-fit plots for pseudo-spectral acceleration and Fourier amplitude spectra against observed records; in scenario mode it runs user-defined ruptures with station lists. Release 22.4.0 of September 2022 added multi-segment ruptures, a ten times faster low-frequency module and new Green's functions for the Southern Walker Lane. It is developed and supported by the SCEC Research Computing Group (Fabio Silva, Philip Maechling and others), with the preferred reference Maechling et al. (2015) in Seismological Research Letters. The code is accessible free on GitHub and Zenodo, with Docker images for laptops; SCEC-developed parts are under the BSD 3-Clause licence and individual method codes may carry their own open licences. Caveats: full installations need Linux and high-performance computing, and region velocity models and validation events are limited to the supported regions. It supports generation of ground-motion time histories for seismic fragility and network damage simulation of bridges, pipelines, lifelines and buildings; a related record is the OpenQuake Engine.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "earthquake ground motion simulation (handed over from another piece)",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "earthquake"
+  ],
+  "homepage": "https://github.com/SCECcode/bbp",
+  "id": "model-scec-broadband-platform",
+  "inputs": [
+    "earthquake rupture or source description",
+    "station list",
+    "regional velocity model and Green's functions"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-22",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "SCEC Broadband Platform (BBP), broadband ground-motion simulation software",
+  "notes": "last_updated is the date of the latest Zenodo release (v22.4.0); the GitHub API was blocked from this session. The language listed is Python from the run_bbp.py entry point in the README; other languages in the code were not checked.",
+  "outputs": [
+    "broadband acceleration",
+    "velocity and displacement seismograms",
+    "response spectra",
+    "goodness-of-fit plots against recorded events"
+  ],
+  "provider": "Southern California Earthquake Center (SCEC), Research Computing Group",
+  "related_ids": [
+    "platform-openquake-engine"
+  ],
+  "repository": "https://github.com/SCECcode/bbp",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "0-20+ Hz seismograms for California, Eastern North America and Japan; validation and scenario modes; Docker option; Linux and HPC; SCEC Research Computing Group support; preferred reference Maechling et al. 2015; BSD 3-Clause for SCEC parts",
+      "url": "https://raw.githubusercontent.com/SCECcode/bbp/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "v22.4.0 2022-09-08; creators Silva, Milner, Maechling; multi-segment ruptures for GP, SDSU, Irikura 1 and 2, Song; UCSB DCF; FAS GoF; Southern Walker Lane; 10x speed-up",
+      "url": "https://zenodo.org/api/records/7062972"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed last_updated.",
+      "url": "https://github.com/SCECcode/bbp"
+    }
+  ],
+  "tags": [
+    "ground motion simulation",
+    "broadband seismograms",
+    "earthquake scenarios",
+    "validation",
+    "SCEC"
+  ],
+  "title_en": "SCEC Broadband Platform (BBP), broadband ground-motion simulation software",
+  "type": "model"
+}

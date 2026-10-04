@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/martin146/5G-localization-dataset"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "CZ"
+  ],
+  "data_family": [
+    "telecom_coverage_spectrum",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "brno 5g nr lte m and nb iot rsrp fingerprint routes",
+    "repo": "github.com/martin146/5g-localization-dataset",
+    "url": "https://github.com/martin146/5G-localization-dataset"
+  },
+  "description": "This dataset records cellular signal fingerprints from vehicle measurements in Brno, Czech Republic. The maintainers publish six CSV files: circular and denser grid-pattern routes for 5G NR, LTE-M and NB-IoT. Rows contain a timestamp, two position fields and received-power values for observed base stations; zero is documented as the value used during an outage. Coverage is the sampled city routes, not all of Brno, and the full collection calendar and fixed sampling interval are not stated. Public GitHub access is free under MIT. A limitation is that the README labels the position columns Longitude then Latitude, while its example values have the opposite order expected for Brno. Spatial use therefore requires checking coordinate order, not silently adopting the labels. Zero-filled unavailable signals also need treatment distinct from measured radio power. Simulation uses include evaluating location inference and comparing radio coverage along routes. No related catalogue resource was identified as the same three-technology campaign. The six data files were confirmed in the repository tree, but their rows, base-station identities and observation dates were not independently inspected.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"cellular\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/martin146/5G-localization-dataset",
+  "id": "data-brno-cellular-rsrp-localization-fingerprints",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-03-01",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Brno 5G NR, LTE-M and NB-IoT RSRP fingerprint routes",
+  "notes": "G8; G8-0233. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "provider": "RSRP Fingerprinting Dataset repository maintainers",
+  "regions": [
+    "Brno"
+  ],
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/martin146/5G-localization-dataset/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/martin146/5G-localization-dataset"
+    }
+  ],
+  "spatial_resolution": "Circular and grid-pattern vehicle routes in Brno; coordinate-column order requires checking.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Exact campaign dates not stated; README has an illustrative Unix-like timestamp.",
+  "temporal_resolution": "Timestamped per-base-station fingerprints; fixed interval not stated.",
+  "temporal_resolution_class": "not_stated",
+  "title_en": "Brno 5G NR, LTE-M and NB-IoT RSRP fingerprint routes",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

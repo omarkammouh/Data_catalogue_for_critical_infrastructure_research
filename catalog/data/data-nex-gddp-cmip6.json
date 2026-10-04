@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "S3 bucket nex-gddp-cmip6 (public, no sign-in)",
+      "note": "Direct link from the AWS Open Data registry, 2026-10-01",
+      "url": "https://nex-gddp-cmip6.s3.us-west-2.amazonaws.com/"
+    },
+    {
+      "kind": "api",
+      "label": "S3 bucket nex-gddp-cmip6-cog (public, no sign-in)",
+      "note": "Direct link from the AWS Open Data registry, 2026-10-01",
+      "url": "https://nex-gddp-cmip6-cog.s3.us-west-2.amazonaws.com/"
+    },
+    {
+      "kind": "portal",
+      "label": "NCCS THREDDS catalogue",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://ds.nccs.nasa.gov/thredds/catalog/AMES/NEX/GDDP-CMIP6/catalog.html"
+    },
+    {
+      "kind": "portal",
+      "label": "AWS Registry of Open Data",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://registry.opendata.aws/nex-gddp-cmip6/"
+    },
+    {
+      "kind": "docs",
+      "label": "NCCS dataset page",
+      "url": "https://www.nccs.nasa.gov/data-collections/nex-gddp-cmip6/"
+    },
+    {
+      "kind": "docs",
+      "label": "Earth Engine catalogue entry",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GDDP-CMIP6"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "scenarios_projections",
+    "hazards",
+    "weather_observations"
+  ],
+  "data_kind": [
+    "raster",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nasa earth exchange global daily downscaled projections nex gddp cmip6",
+    "url": "https://nccs.nasa.gov/data-collections/nex-gddp-cmip6"
+  },
+  "description": "NEX-GDDP-CMIP6 contains global, bias-corrected and statistically downscaled daily climate scenarios derived from CMIP6 general circulation model runs, for the historical period and the four Tier 1 Shared Socioeconomic Pathways (SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5), from about 34 models with variables such as daily maximum and minimum temperature, precipitation, humidity, radiation and wind. NASA's Earth Exchange produced it to provide high-resolution scenarios for assessing climate change impacts at local to regional scales. Coverage is global at 0.25 degrees (about 25 km), daily, from 1950 to 2100. Files are NetCDF, accessible through the NASA Center for Climate Simulation THREDDS server with spatial subsetting, through Amazon Web Services S3 in the Registry of Open Data, and as an Earth Engine collection; access is free. The licence was initially CC BY-SA 4.0 following the CMIP6 data licence and was relaxed after the CMIP6 licence update of June 2022, as noted in each file's metadata. Caveats: statistical downscaling cannot add new physical detail, variables are missing for some models, and no further updates are planned. It is widely used for future heat, precipitation and flood hazard exposure and climate adaptation studies of infrastructure; related records are the CDS CMIP6 projections, ERA5 and ISIMIP.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "downscaled daily climate projections global",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "multi_hazard_climate_change",
+    "extreme_heat",
+    "flood",
+    "drought"
+  ],
+  "homepage": "https://www.nccs.nasa.gov/data-collections/nex-gddp-cmip6/",
+  "id": "data-nex-gddp-cmip6",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0 or CC-BY-SA-4.0 per model, as stated in each file's metadata",
+  "licence_type": [
+    "share_alike",
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP-CMIP6)",
+  "notes": "The SSP list and variable names are recalled; the NCCS page says all four Tier 1 SSPs while the Earth Engine page mentions two, so the scenario set in Earth Engine may be smaller.",
+  "provider": "NASA Ames (NASA Earth Exchange, Climate Analytics Group), distributed by the NASA Center for Climate Simulation",
+  "related_ids": [],
+  "schema_summary": "tasmax, tasmin, tas, pr, hurs, huss, rlds, rsds, sfcWind per model, scenario and year",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, four Tier 1 SSPs, purpose, THREDDS and AWS access, 0.25 degree daily",
+      "url": "https://www.nccs.nasa.gov/data-collections/nex-gddp-cmip6/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "licence history CC BY-SA 4.0 and June 2022 CMIP6 licence update, no future updates",
+      "url": "https://registry.opendata.aws/nex-gddp-cmip6/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "1950-2100, 34 models, 27830 m pixels, terms of use per model",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GDDP-CMIP6"
+    }
+  ],
+  "spatial_resolution": "0.25 degree (about 25 km)",
+  "spatial_resolution_class": "over_10km",
+  "spatial_resolution_m": 25000,
+  "tags": [
+    "downscaled climate projections",
+    "CMIP6",
+    "NASA",
+    "bias correction",
+    "SSP"
+  ],
+  "temporal_coverage": "1950 to 2100",
+  "temporal_coverage_years": {
+    "end": 2100,
+    "start": 1950
+  },
+  "temporal_resolution": "daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP-CMIP6)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

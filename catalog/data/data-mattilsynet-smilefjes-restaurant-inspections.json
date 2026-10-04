@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Dataset description on data.norge.no",
+      "url": "https://data.norge.no/nb/datasets/288aa74c-e3d3-492e-9ede-e71503b3bfd9/smilefjestilsyn-pa-serveringssteder"
+    },
+    {
+      "kind": "download",
+      "label": "Inspections (CSV, XML, JSON via hotell.difi.no)",
+      "url": "https://hotell.difi.no/?dataset=mattilsynet/smilefjes/tilsyn"
+    },
+    {
+      "kind": "viewer",
+      "label": "Smilefjes search",
+      "url": "https://smilefjes.mattilsynet.no/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NO"
+  ],
+  "data_family": [
+    "service_performance",
+    "critical_facilities"
+  ],
+  "data_kind": [
+    "tabular",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "mattilsynet smiley inspections of norwegian food service premises every inspection with grade per theme and per requirement open data",
+    "url": "https://data.norge.no/nb/datasets/288aa74c-e3d3-492e-9ede-e71503b3bfd9/smilefjestilsyn-pa-serveringssteder"
+  },
+  "description": "This dataset lists every hygiene inspection of Norway's restaurants, cafés and other places serving food, with the smiley grade displayed on the door afterwards. It is published by Mattilsynet, the Norwegian Food Safety Authority, under the national smiley scheme. The inspections table gives each premises' identifier, business register number, name and address, the inspection date, whether it was an ordinary or follow-up visit, its status, the overall grade and the grades for four themes: management and routines, premises and equipment, food preparation and handling, and traceability and labelling. A second table lists every requirement point assessed in each inspection with its grade and text. Grades run from 0 (no breach) to 3 (serious breach), with codes for not applicable and not assessed. The data are free under CC BY 4.0 and described on data.norge.no, with a download in CSV, XML and JSON. Caveats: addresses are internal data of variable quality, withdrawn inspections disappear so copies should be refreshed daily, and the download host did not answer from this environment, so the files themselves were not read. Simulation uses: mapping the food service layer of urban food supply, and modelling inspection capacity and compliance over time. Related records: the UK Food Hygiene Rating Scheme (data-fsa-food-hygiene-rating-scheme) is the closest equivalent.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Mattilsynet (NO, food_safety_agency)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "xml",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://data.norge.no/nb/datasets/288aa74c-e3d3-492e-9ede-e71503b3bfd9/smilefjestilsyn-pa-serveringssteder",
+  "id": "data-mattilsynet-smilefjes-restaurant-inspections",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://hotell.difi.no/?dataset=mattilsynet/smilefjes/tilsyn"
+    ]
+  },
+  "maturity": "active",
+  "name": "Mattilsynet smiley inspections of Norwegian food service premises: every inspection with grade per theme and per requirement (open data)",
+  "provider": "Mattilsynet (Norwegian Food Safety Authority)",
+  "related_ids": [
+    "data-fsa-food-hygiene-rating-scheme"
+  ],
+  "schema_summary": "Inspections: tilsynsobjektid, orgnummer (link to the Brønnøysund business register), navn, adrlinje1, adrlinje2, postnr, poststed, tilsynid, sakref, status, dato, karakter (overall grade), tilsynsbesoektype (ordinary or follow-up), tema_karakter1-4 (theme:grade for management and routines, premises and equipment, food preparation and handling, traceability and labelling), kravpunkter_href. Requirement points: tilsynid, dato, tema.kravpunkt, kravpunktnavn, karakter, tekst_no, tekst_nn. Grade scale 0-5",
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Publisher Mattilsynet; public access, open data; distribution CSV, XML, JSON; CC BY 4.0; datasets Tilsyn (information on the poster displayed after inspection) and Kravpunkter (each requirement point with its grade); field declarations as in the schema summary; grade scale 0 no breach to 3 serious breach, 4 not applicable, 5 not assessed; overall grade is the worst given; invalidated inspections are withdrawn, so users should refresh once a day; addresses are internal data of variable quality",
+      "url": "https://data.norge.no/nb/datasets/288aa74c-e3d3-492e-9ede-e71503b3bfd9/smilefjestilsyn-pa-serveringssteder"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Mattilsynet APIs and datasets page lists Smilefjestilsyn på serveringssteder among its datasets",
+      "url": "https://www.mattilsynet.no/om-mattilsynet/api"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Download host did not answer from this environment (proxy CONNECT 502); file not read",
+      "url": "https://hotell.difi.no/download/mattilsynet/smilefjes/tilsyn?download"
+    }
+  ],
+  "spatial_resolution": "Individual premises (address)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "food hygiene",
+    "restaurant inspections",
+    "smiley scheme",
+    "food service",
+    "Norway"
+  ],
+  "temporal_coverage": "Not stated on the page read",
+  "temporal_resolution": "Per inspection",
+  "temporal_resolution_class": "event",
+  "title_en": "Mattilsynet smiley inspections of Norwegian food service premises: every inspection with grade per theme and per requirement (open data)",
+  "type": "data",
+  "update_frequency": "daily"
+}

@@ -1,0 +1,118 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/gdsim/gdsim"
+    },
+    {
+      "kind": "docs",
+      "label": "Project page",
+      "url": "https://inrg.engineering.ucsc.edu/project/gdsim/"
+    },
+    {
+      "kind": "paper",
+      "label": "Simulation (2024) article",
+      "url": "https://doi.org/10.1177/00375497241241340"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "doi": "10.1177/00375497241241340",
+    "name": "gdsim geo distributed data centre job scheduling simulator",
+    "repo": "github.com/gdsim/gdsim",
+    "url": "https://inrg.engineering.ucsc.edu/project/gdsim"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "GDSim is an open-source, event-driven simulation environment for benchmarking job schedulers that place work across geographically distributed data centres. It takes three trace files, one for jobs (cores, submission delay, input file and task durations), one for files (size and the data centres that hold copies) and one for the topology (number of data centres, machines and cores, and the bandwidth matrix between sites), replays them, and lets different schedulers build their schedules so they can be compared side by side on completion time and data transfer. Implemented schedulers include Global-SRPT, SWAG and GEODIS plus several heuristic meta-schedulers. It was built in the i-NRG lab of the University of California Santa Cruz and described in a 2021 conference paper and a 2024 article in the journal Simulation. Coverage: user-defined sets of data centres linked by a bandwidth matrix, without real geography. Format and access: Go source code on GitHub, installed with go install; free of charge under the GNU GPL version 3. Caveats: the last commit is from April 2022; it models compute slots and wide-area transfers, not power, cooling or failures; the repository has little documentation beyond the README. Simulation uses: capacity planning and optimisation of workload placement across data centre regions, and what-if studies of losing a site or a link. Related records: CloudSim Plus and SimGrid are broader cloud simulators, SustainCluster adds energy and carbon to geo-distributed scheduling.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "data center simulation (Crossref literature sweep for model:digital.data_centres:physical; follow-up of 10.1177/00375497241241340)",
+      "route": "R07",
+      "source": "crossref"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "open-source simulation platform benchmarking geo-distributed data center schedulers github",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://inrg.engineering.ucsc.edu/project/gdsim/",
+  "hosted_models": [
+    "Global-SRPT scheduler",
+    "SWAG scheduler",
+    "GEODIS scheduler",
+    "heuristic meta-schedulers"
+  ],
+  "id": "platform-gdsim",
+  "interfaces": [
+    "command_line",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "plain-text job, file and topology traces"
+  ],
+  "language": [
+    "rust_go"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-04-07",
+  "licence": "GPL-3.0-only",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "GDSim geo-distributed data centre job scheduling simulator",
+  "notes": "README, LICENSE (GPL v3) and the latest commits (2022-04-07) read from a shallow clone of the code repository on 2026-09-26. Authors from the SAGE article page in search results.",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "University of California Santa Cruz, i-NRG lab (Daniel Alves, Katia Obraczka) with Google (Abdul Kabbani)",
+  "related_ids": [],
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README, LICENSE and commit log",
+      "url": "https://github.com/gdsim/gdsim"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: article and authors",
+      "url": "https://journals.sagepub.com/doi/10.1177/00375497241241340"
+    }
+  ],
+  "supported_sectors": [
+    "digital.data_centres"
+  ],
+  "tags": [
+    "job scheduling",
+    "geo-distributed data centres",
+    "trace-driven simulation",
+    "Go"
+  ],
+  "title_en": "GDSim geo-distributed data centre job scheduling simulator",
+  "type": "platform"
+}

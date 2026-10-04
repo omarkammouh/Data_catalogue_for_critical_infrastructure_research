@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Municipal results workbook (XLSX)",
+      "url": "https://www.jcpra.or.jp/Portals/0/resource/dl/excel/city/dl_shichoson_jisseki.xlsx"
+    },
+    {
+      "kind": "viewer",
+      "label": "Municipal results page (Tableau Public views)",
+      "url": "https://www.jcpra.or.jp/library/record/municipality_data.html"
+    },
+    {
+      "kind": "portal",
+      "label": "Obligation fulfilment lists by prefecture (zipped CSV)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.jcpra.or.jp/library/status/list/data.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "JP"
+  ],
+  "data_family": [
+    "demand_operation",
+    "supply_chains_logistics",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "jcpra municipal recycling data japan container and packaging waste taken from each municipality by material and month storage facility counts fees and sales of recycled products",
+    "url": "https://jcpra.or.jp/library/record/municipality_data.html"
+  },
+  "description": "These data show how much separately collected container and packaging waste, such as glass bottles, PET bottles and plastic packaging, each Japanese municipality hands over for recycling. They are published by the Japan Containers and Packaging Recycling Association (JCPRA), which takes over this waste from municipalities. A single workbook gives, by fiscal year, material and month, the tonnes taken over and the tonnes contracted, the number of municipalities and storage facilities served, the fees paid by municipalities, and the sales of recycled products by use; coverage is national, and one sheet lists contract and actual tonnes for every municipality or waste union, with about 79,000 rows. Plastic product waste collected together with packaging has been included since FY2023. The workbook is free and available to download as Excel, with interactive Tableau views and zipped CSV lists of obliged businesses by prefecture. Caveats: headers are in Japanese, the current fiscal year is partial, only packaging handed to JCPRA is counted, and no licence is named. Simulation uses: modelling recyclable flows from municipal storage sites to recyclers, estimating how a disaster that closes storage facilities would affect collection, and setting per-municipality baselines. Related records: the Japanese municipal waste treatment survey (data-japan-municipal-waste-treatment-survey), the Portuguese Sociedade Ponto Verde collection data (data-sociedade-ponto-verde-packaging-collection) and the Finnish packaging volumes (data-finland-packaging-volumes-epr).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Japan Containers and Packaging Recycling Association (JP, epr_scheme)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://www.jcpra.or.jp/library/record/municipality_data.html",
+  "id": "data-jcpra-japan-container-packaging-recycling-data",
+  "languages": [
+    "en"
+  ],
+  "licence": "JCPRA website terms (no licence named on the pages read)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "JCPRA municipal recycling data (Japan): container and packaging waste taken from each municipality by material and month, storage facility counts, fees and sales of recycled products",
+  "provider": "Japan Containers and Packaging Recycling Association (JCPRA)",
+  "related_ids": [
+    "data-japan-municipal-waste-treatment-survey",
+    "data-sociedade-ponto-verde-packaging-collection",
+    "data-finland-packaging-volumes-epr"
+  ],
+  "schema_summary": "Workbook sheets: 1 municipalities and storage facilities served by year and material (contract and actual); 2-1 monthly quantities taken over by material and recycling method with annual actual and contract tonnes; 2-2 plastics breakdown; 3 contract and actual tonnes by fiscal year, material, prefecture and municipality or union (about 79,000 rows); 4 fees paid by municipalities; 5-1 monthly sales of recycled products by material; 5-2 sales by product use",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Municipal results page: contract and actual quantities by prefecture (updated 2 June 2026), number of municipalities and storage facilities (updated 29 June 2026), trend of total fees from municipalities; Tableau Public views; municipal detail in sheet 3 of the workbook",
+      "url": "https://www.jcpra.or.jp/library/record/municipality_data.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: 4.3 MB; sheets 表紙, 1, 2-1, 2-2, 3, 4, 5-1, 5-2; sheet 3 has 79,463 rows of fiscal year, material, prefecture, municipality or union, contract (A), actual (B), B/A and member municipalities; plastics separate collection added from FY2023",
+      "url": "https://www.jcpra.or.jp/Portals/0/resource/dl/excel/city/dl_shichoson_jisseki.xlsx"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Obligation fulfilment data by prefecture as of end of June 2026 (Reiwa 8), zipped CSV lists of obliged businesses per prefecture",
+      "url": "https://www.jcpra.or.jp/library/status/list/data.html"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): only a site copyright notice on this page (Copyright © 2024 The Japan Containers And Packaging Recycling Association All Rights Res)",
+      "url": "https://www.jcpra.or.jp/library/record/municipality_data.html"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.jcpra.or.jp/tou/"
+    }
+  ],
+  "spatial_resolution": "Municipality or waste union",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "packaging recycling",
+    "extended producer responsibility",
+    "plastics",
+    "glass",
+    "PET bottles",
+    "Japan"
+  ],
+  "temporal_coverage": "Multiple fiscal years to FY2026 (partial)",
+  "temporal_resolution": "Monthly and annual",
+  "temporal_resolution_class": "monthly",
+  "title_en": "JCPRA municipal recycling data (Japan): container and packaging waste taken from each municipality by material and month, storage facility counts, fees and sales of recycled products",
+  "type": "data",
+  "update_frequency": "annual"
+}

@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/USEPA/elevatr"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/USEPA/elevatr/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "elevatr elevation data access package",
+    "repo": "github.com/usepa/elevatr",
+    "url": "https://github.com/USEPA/elevatr"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "elevatr is an R package maintained by Jeffrey Hollister and contributors through the US Environmental Protection Agency. It retrieves point elevations or digital elevation rasters from AWS Terrain Tiles, OpenTopography and the USGS Elevation Point Query Service. Users supply coordinates or spatial objects and choose an extent or clipping geometry; results are spatial point objects or rasters. Coverage is global for the tile sources and US-only for the USGS point service, with resolution inherited from the selected source. Public code and CRAN installation are free under the MIT licence stated in DESCRIPTION. A limitation is a documented transition between raster and terra output classes: the README and package metadata describe different stages, so users should verify the return class of their installed version. Elevation sources also have their own coverage and quality limits. The package can prepare terrain inputs for flood and drainage models such as Delft3D FM (model-delft3d-fm). No elevation tiles were downloaded or API credentials requested.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:USEPA",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/USEPA/elevatr",
+  "id": "platform-elevatr",
+  "interfaces": [
+    "code_library",
+    "other"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-09-09",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "elevatr elevation-data access package",
+  "notes": "G7 G7-0559. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Jeffrey Hollister and elevatr contributors, US EPA",
+  "related_ids": [
+    "model-delft3d-fm"
+  ],
+  "sectors": [
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for USEPA/elevatr: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3AUSEPA&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/usepa/elevatr/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository terms identify MIT despite unclassified GitHub licence metadata.",
+      "url": "https://api.github.com/repos/usepa/elevatr/contents/DESCRIPTION"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for dams and flood defences",
+  "type": "platform"
+}

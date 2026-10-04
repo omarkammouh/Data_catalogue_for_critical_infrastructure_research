@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitLab repository",
+      "url": "https://gitlab.com/searchwing/development/groundstation/searchwing-sar-missiontools"
+    },
+    {
+      "kind": "docs",
+      "label": "Search area calculations (SearchWing wiki, PDF)",
+      "url": "https://wiki.searchwing.org/home/Development/files/sw-areacalc.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Beckmann F. (2019). SearchWing search area calculations. SearchWing wiki, https://wiki.searchwing.org/home/Development/files/sw-areacalc.pdf",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "searchwing sar mission tools automated mission planning for search and rescue with fixed wing drones",
+    "repo": "gitlab.com/searchwing/development/groundstation/searchwing-sar-missiontools",
+    "url": "https://gitlab.com/searchwing/development/groundstation/searchwing-sar-missiontools"
+  },
+  "description": "This tool from the SearchWing project plans search and rescue missions for fixed-wing drones automatically. The user enters the drone's range and camera angles, the smallest object that must be detectable, the take-off point, the estimated position of the person or object sought, the landing point, the wind and the time available, and the tool computes a search pattern and flight mission, including the highest altitude at which the object can still be detected. The calculations follow a 2019 SearchWing paper on search area calculations by Friedrich Beckmann, and wind is used to estimate fixed-wing flight efficiency. It has a Python back end, which can also be used from the command line, and an Angular web front end. The source is free to download from GitLab under the GPL-3.0-or-later licence. Caveats: it is a planning tool for one drone type and relies on an estimated search position, and the repository does not report field validation. Coverage is general. Simulation uses: estimating how much area drone patrols can cover in search and rescue, as part of emergency service capacity studies. Related records: the Basarnas SAR statistics (data-basarnas-indonesia-sar-statistics) give search and rescue operations data for Indonesia.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "search and rescue",
+      "route": "R05",
+      "source": "gitlab"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://gitlab.com/searchwing/development/groundstation/searchwing-sar-missiontools",
+  "id": "model-searchwing-sar-mission-tools",
+  "inputs": [
+    "Drone range and camera angles",
+    "Minimum detectable object size",
+    "Take-off, estimated object and landing coordinates",
+    "Wind strength and direction",
+    "Time window"
+  ],
+  "language": [
+    "python",
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-3.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "physical"
+  ],
+  "name": "SearchWing SAR mission tools: automated mission planning for search and rescue with fixed-wing drones",
+  "outputs": [
+    "Search pattern and flight mission for the drone",
+    "Maximum altitude for the required detection size"
+  ],
+  "provider": "SearchWing project (Friedrich Beckmann and contributors)",
+  "related_ids": [
+    "data-basarnas-indonesia-sar-statistics"
+  ],
+  "repository": "https://gitlab.com/searchwing/development/groundstation/searchwing-sar-missiontools",
+  "runs_on": [
+    "Python back end with command-line interface",
+    "Angular web front end"
+  ],
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README read in memory: tool for optimised, fast automated mission planning for search-and-rescue with fixed-wing drones; mission properties computed as defined in 'Search Area Calculations' (Friedrich Beckmann, SearchWing, January 2019); Python back end and Angular front end, back end also plans via CLI; inputs as listed; GitLab metadata: created 2023-03-26, last activity 2024-07-24, GPL-3.0-or-later",
+      "url": "https://gitlab.com/searchwing/development/groundstation/searchwing-sar-missiontools"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed citation.",
+      "url": "https://gitlab.com/searchwing/development/groundstation/searchwing-sar-missiontools"
+    }
+  ],
+  "tags": [
+    "search and rescue",
+    "drones",
+    "mission planning"
+  ],
+  "title_en": "SearchWing SAR mission tools: automated mission planning for search and rescue with fixed-wing drones",
+  "type": "model",
+  "validated_on": []
+}

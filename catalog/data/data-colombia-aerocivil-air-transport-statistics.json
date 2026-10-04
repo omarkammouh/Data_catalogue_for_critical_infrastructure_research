@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Origin-destination traffic (datos.gov.co)",
+      "url": "https://www.datos.gov.co/d/gb6w-ynu4"
+    },
+    {
+      "kind": "download",
+      "label": "Traffic by aircraft type (datos.gov.co)",
+      "url": "https://www.datos.gov.co/d/djjf-g4q4"
+    },
+    {
+      "kind": "download",
+      "label": "Air operations (datos.gov.co)",
+      "url": "https://www.datos.gov.co/d/jh8x-n6h6"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (PHP)",
+      "note": "Checked 2026-10-01: returns application/octet-stream directly.",
+      "url": "https://www.aerocivil.gov.co/loader.php?lServicio=Tools2&lTipo=descargas&lFuncion=descargar&idHash=w6kFGupuqaswPnLl9m8LzDpNVEZZZGlvPQ"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CO"
+  ],
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "aerocivil colombia air transport open data origin destination traffic and operations",
+    "url": "https://aerocivil.gov.co/publicaciones/3900/datos-abiertos"
+  },
+  "description": "Colombia's civil aviation authority, the Unidad Administrativa Especial de Aeronáutica Civil (Aerocivil), publishes its air transport statistics as open data on the national portal datos.gov.co. Three monthly datasets carry the core series: commercial origin-destination traffic from 2020 (airline, year and month, origin and destination airport, city and country, flight type, domestic or international traffic, passengers and cargo plus mail in kilograms; about 478,000 rows); traffic by aircraft type from 2020 (adds number of flights, block hours and seats offered); and cumulative air operations at Colombian aerodromes from 2017 (airport, origin, destination, airline, operator, flight, traffic and operation type, total operations). Coverage is national, by airport and route. The data are free on datos.gov.co, a Socrata portal with CSV and JSON export and an API, under the Creative Commons Attribution-ShareAlike 4.0 licence, updated monthly. Caveats: the series start in 2017 or 2020, so earlier years need Aerocivil's statistical bulletins, and operations counts are aggregated by month. The origin-destination matrices support network flow and capacity planning models of the Colombian air network and exposure analysis of airports. It complements the Mexican AFAC and Brazilian ANAC statistics.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Aerocivil datos abiertos",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.aerocivil.gov.co/publicaciones/3900/datos-abiertos/",
+  "id": "data-colombia-aerocivil-air-transport-statistics",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-06",
+  "licence": "CC-BY-SA-4.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Aerocivil Colombia air transport open data (origin-destination traffic and operations)",
+  "provider": "Unidad Administrativa Especial de Aeronáutica Civil (Aerocivil), Colombia",
+  "related_ids": [
+    "data-mexico-afac-aviation-statistics",
+    "data-brazil-anac-air-transport-statistics"
+  ],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "datasets published on datos.gov.co; open licence document; CSV, JSON, XML formats under MinTIC guidance",
+      "url": "https://www.aerocivil.gov.co/publicaciones/3900/datos-abiertos/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "origin-destination traffic 2020-2026, fields, CC BY-SA 4.0; 478,010 rows by count query",
+      "url": "https://www.datos.gov.co/api/views/gb6w-ynu4.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "traffic by aircraft type 2020-2026, flights, block hours, seats, CC BY-SA 4.0",
+      "url": "https://www.datos.gov.co/api/views/djjf-g4q4.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "cumulative air operations 2017 onward, monthly, CC BY-SA 4.0",
+      "url": "https://www.datos.gov.co/api/views/jh8x-n6h6.json"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): added 1 verified direct data link(s) from the provider's resource list. Verified: https://www.aerocivil.gov.co/loader.php?lServicio=Tools2&lTipo=descarg -> verified by fetch during the check",
+      "url": "https://www.aerocivil.gov.co/loader.php?lServicio=Tools2&lTipo=descargas&lFuncion=descargar&idHash=w6kFGupuqaswPnLl9m8LzDpNVEZZZGlvPQ"
+    }
+  ],
+  "spatial_resolution": "airport pair and airline",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "Colombia",
+    "origin-destination",
+    "passengers",
+    "air cargo",
+    "airports"
+  ],
+  "temporal_coverage": "2017 or 2020 to 2026",
+  "title_en": "Aerocivil Colombia air transport open data (origin-destination traffic and operations)",
+  "type": "data",
+  "update_frequency": "monthly"
+}

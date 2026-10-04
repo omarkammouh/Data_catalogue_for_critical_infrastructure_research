@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "libcimpp source code",
+      "url": "https://github.com/sogno-platform/libcimpp"
+    },
+    {
+      "kind": "docs",
+      "label": "CIM++ project page (FEIN Aachen)",
+      "url": "https://www.fein-aachen.org/en/projects/cimpp/"
+    },
+    {
+      "kind": "docs",
+      "label": "CGMES 3.0.0 API documentation",
+      "url": "https://sogno-platform.github.io/libcimpp/CGMES_3.0.0/annotated.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cim libcimpp c library for reading cim and cgmes power system models",
+    "repo": "github.com/sogno-platform/libcimpp",
+    "url": "https://github.com/sogno-platform/libcimpp"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "CIM++ is a software project from the Institute for Automation of Complex Power Systems (ACS) at RWTH Aachen University around libcimpp, a library that turns XML/RDF documents following the Common Information Model standards (IEC 61970, 61968 and 62325) into C++ objects. The FEIN Aachen project page explains that a toolchain maps a CIM data model specified in UML to compilable C++ code, from which the deserialiser is generated, so that CIM-to-X translators can follow new CIM versions. The README, now under the SOGNO platform on GitHub, calls libcimpp a serialiser and deserialiser and lists supported CGMES versions 2.4.13 (2013), 2.4.15 (2016 and 2020) and 3.0.0. Coverage: power system network models exchanged in CIM or CGMES. Format and access: C++ source on GitHub, built with CMake and one of the libxml2, Xerces or Microsoft XML parsers; API documentation for CGMES 3.0.0 on GitHub Pages. Licence: Mozilla Public License 2.0 (G-PST Open Tools Portal); a LICENSE file is present in the repository. Caveats: release history and activity dates were not read. Simulation uses: loading grid models from transmission operators' CIM/CGMES exports into power flow and dynamic simulators. Related records: DPsim (model-dpsim), also from RWTH Aachen's SOGNO work, is a power system simulator that can take CIM models.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source gpst-open-tools: provider pages read (round 2 register piece)",
+      "route": "R06",
+      "source": "gpst-open-tools"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/sogno-platform/libcimpp",
+  "id": "platform-cimpp-libcimpp-cim-cgmes-deserialiser",
+  "interfaces": [
+    "code_library",
+    "file_exchange"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-18",
+  "licence": "MPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CIM++ (libcimpp): C++ library for reading CIM and CGMES power system models",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Institute for Automation of Complex Power Systems (ACS), RWTH Aachen University",
+  "related_ids": [
+    "model-dpsim"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Deserialiser for CIM IEC61970/61968/62325; RWTH Aachen; MPL-2.0; C++",
+      "url": "https://opentools.globalpst.org/tools/libcimpp"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Serialiser and deserialiser; CGMES versions; arabica; libxml2/Xerces/MSXML; CMake",
+      "url": "https://raw.githubusercontent.com/sogno-platform/libcimpp/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Toolchain from CIM UML to C++ codebase and deserialiser",
+      "url": "https://www.fein-aachen.org/en/projects/cimpp/"
+    }
+  ],
+  "tags": [
+    "CIM",
+    "CGMES",
+    "IEC 61970",
+    "data model",
+    "interoperability"
+  ],
+  "title_en": "CIM++ (libcimpp): C++ library for reading CIM and CGMES power system models",
+  "type": "platform"
+}

@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource landing page",
+      "url": "https://github.com/znes/KlimaSchiff"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.3390/data8050085"
+    }
+  ],
+  "access_note": "The public GitHub repository and authenticated GitHub API show BSD-3-Clause code. Its README says raw HELCOM and VesselFinder data are required, and gives older Python 3.6 and GDAL 3.0.4 setup instructions. Those upstream data permissions and runtime dependencies were not checked. No repository archive was downloaded and no model ran.",
+  "access_restrictions": "none",
+  "citation": "https://doi.org/10.3390/data8050085",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "url": "https://github.com/znes/KlimaSchiff"
+  },
+  "description": "Europa Universität Flensburg publishes KlimaSchiff, Python code for estimating North and Baltic Sea shipping emissions from vessel activity. Its GitHub README describes a pipeline that combines HELCOM and VesselFinder input data, creates ship routes at a default five-minute interval, calculates route emissions and rasterises results to NetCDF. The MDPI article describes 2015 ship emissions and fuel or energy use for vessels over 100 gross tons, including CO2, NOx and particulate pollutants. GitHub states BSD-3-Clause with free public code access. Maritime-port or fuel-transition simulations can use the model structure to test emission factors, route activity or shore-power scenarios. The README says raw upstream ship data are required; their access and rights are separate from the code licence. The older Python and GDAL setup has not been run, and numerical results were not checked. The catalogue ShipNetSim model and global shipping-traffic density data are related resources, but neither is this particular emissions pipeline.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G4-MDPI-KLIMASCHIFF-CODE; 10.3390/data8050085",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://github.com/znes/KlimaSchiff",
+  "id": "model-klimaschiff-ship-emission-calculator",
+  "inputs": [
+    "raw AIS ship positions",
+    "vessel characteristics from HELCOM and VesselFinder",
+    "emission factors"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-02-10",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "KlimaSchiff",
+  "notes": "G4-0640; G4 other data journals. Metadata only. Simulation uses are reviewer assessments. Data payloads and code execution were not checked. ",
+  "outputs": [
+    "five-minute ship routes and pollutant-emission estimates",
+    "rasterised emission NetCDF"
+  ],
+  "provider": "Europa Universität Flensburg, Centre for Sustainable Energy Systems",
+  "related_ids": [
+    "model-shipnetsim",
+    "data-world-bank-global-shipping-traffic-density"
+  ],
+  "sectors": [
+    "transport.maritime_ports",
+    "energy.oil_fuels",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Named public code repository, README workflow and dependency note.",
+      "url": "https://github.com/znes/KlimaSchiff"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Authenticated API, BSD-3-Clause metadata and repository state.",
+      "url": "https://api.github.com/repos/znes/KlimaSchiff"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing article, maritime emissions purpose, period and separate code/data links.",
+      "url": "https://www.mdpi.com/2306-5729/8/5/85"
+    }
+  ],
+  "tags": [],
+  "title_en": "Klima schiff: python code for estimating shipping emissions from vessel activity",
+  "type": "model"
+}

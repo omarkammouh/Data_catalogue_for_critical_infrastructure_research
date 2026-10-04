@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Treepedia_Public library",
+      "url": "https://github.com/mittrees/Treepedia_Public"
+    },
+    {
+      "kind": "portal",
+      "label": "Treepedia maps",
+      "url": "https://senseable.mit.edu/treepedia"
+    },
+    {
+      "kind": "portal",
+      "label": "Second listing of the same resource",
+      "url": "https://toolkit.climate.gov/tool/treepedia"
+    }
+  ],
+  "access_note": "The Treepedia website failed TLS verification and returned 503 here; facts come from the repository. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "vegetation_land_cover",
+    "imagery_remote_sensing"
+  ],
+  "data_kind": [
+    "tabular",
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "treepedia street level green view index maps and library mit senseable city lab",
+    "url": "https://senseable.mit.edu/treepedia"
+  },
+  "description": "Treepedia, from MIT's Senseable City Lab, measures and maps vegetation along city streets by computing a Green View Index (GVI), from 0 to 100, on Google Street View panoramas, estimating the share of view obstructed by tree canopy; its website maps GVI across and between cities. The public repository provides the library and workflow so others can compute GVI: sample points every 20 metres along a street network inside a boundary shapefile, collect panorama identifiers from Google, then classify six images per point with Otsu's method and mean-shift segmentation and average them into one GVI per point, written to a shapefile. Coverage: cities mapped by the lab or by users who send results; parks are excluded because Street View does not go into them. Access: free code; imagery needs Google Street View access. Licence: BSD-style for the code. Caveats: the code targets Python 2.7, and results depend on Street View coverage and dates. Simulation uses: street canopy exposure for pedestrian heat, shade routing and greening plans. Related records: the NYC street tree census and London public realm trees.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.public_space:vegetation_land_cover, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-29",
+      "query": "toolkit.climate.gov browse all tools",
+      "route": "R06",
+      "source": "toolkit.climate.gov"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "source_code"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "extreme_heat"
+  ],
+  "homepage": "https://toolkit.climate.gov/tool/treepedia",
+  "id": "data-treepedia-green-view-index",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2018-05-17",
+  "licence": "BSD-2-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Treepedia: street-level Green View Index maps and library (MIT Senseable City Lab)",
+  "notes": "Harvested from the U.S. Climate Resilience Toolkit page on 2026-09-29 at the user's request to include every entry of the related catalogues.",
+  "provider": "MIT Senseable City Lab",
+  "related_ids": [
+    "data-nyc-2015-street-tree-census",
+    "data-london-public-realm-trees",
+    "data-us-climate-resilience-toolkit-catalogue"
+  ],
+  "sectors": [
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, GVI method, workflow steps, Python 2.7",
+      "url": "https://raw.githubusercontent.com/mittrees/Treepedia_Public/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Licence text",
+      "url": "https://raw.githubusercontent.com/mittrees/Treepedia_Public/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): BSD-2-Clause (basis: licence file in the GitHub repository)",
+      "url": "https://github.com/mittrees/Treepedia_Public/blob/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://senseable.mit.edu/treepedia"
+    }
+  ],
+  "tags": [
+    "Treepedia",
+    "Green View Index",
+    "street trees",
+    "Google Street View",
+    "MIT Senseable City Lab",
+    "urban canopy"
+  ],
+  "title_en": "Treepedia: street-level Green View Index maps and library (MIT Senseable City Lab)",
+  "type": "data"
+}

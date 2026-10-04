@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/michaelajao/hospitalisation-PINN"
+    },
+    {
+      "kind": "portal",
+      "label": "Release v1.1.0 (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.18316775"
+    },
+    {
+      "kind": "paper",
+      "label": "Book chapter (CRC Press, 2025)",
+      "url": "https://doi.org/10.1201/9781003570882"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.18316775",
+    "name": "hospitalisation pinn hybrid physics informed neural network seird model for forecasting covid 19 icu demand in england",
+    "repo": "github.com/michaelajao/hospitalisation-pinn",
+    "url": "https://github.com/michaelajao/hospitalisation-PINN"
+  },
+  "description": "This model forecasts how many COVID-19 patients will need intensive care beds in England by combining a compartmental epidemic model with a neural network. The producers are Michael Ajao-Olarinoye and colleagues at Coventry University, who published it with a 2025 book chapter in Recent Advances in Deep Learning Applications. It is a physics-informed neural network: the network is trained to fit observed data while obeying the equations of an extended SEIRD model that separates asymptomatic and symptomatic infection and includes hospital admission and critical care compartments, so it estimates changing epidemic parameters and projects admissions and intensive care demand. Coverage is England during the COVID-19 pandemic. The Python code is available free on GitHub and as a Zenodo release under the Creative Commons Attribution 4.0 licence. Caveats: trained on English pandemic data, it needs machine learning expertise and retraining for new diseases or regions, and forecasting accuracy is reported only in the chapter. Simulation uses: short-term forecasting of intensive care demand for surge planning, and feeding epidemic scenarios into hospital capacity models. Related records: the Rush hospital needs forecaster (model-rush-covid-hospital-needs-forecaster) and CHIME (model-chime) convert epidemic forecasts into bed demand.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ICU demand forecasting model",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://github.com/michaelajao/hospitalisation-PINN",
+  "id": "model-hospitalisation-pinn-icu-demand",
+  "inputs": [
+    "COVID-19 cases, hospital admissions and critical care occupancy for England"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-16",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "model_kind": [
+    "hybrid",
+    "statistical"
+  ],
+  "name": "Hospitalisation-PINN: hybrid physics-informed neural network SEIRD model for forecasting COVID-19 ICU demand in England",
+  "outputs": [
+    "Estimated epidemiological parameters",
+    "Forecasts of hospital admissions and ICU demand"
+  ],
+  "provider": "Michael Ajao-Olarinoye and co-authors (Coventry University)",
+  "regions": [
+    "England"
+  ],
+  "related_ids": [
+    "model-rush-covid-hospital-needs-forecaster",
+    "model-chime"
+  ],
+  "repository": "https://github.com/michaelajao/hospitalisation-PINN",
+  "runs_on": [
+    "Python with a deep learning framework"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creator Ajao-Olarinoye (Coventry University); CC BY 4.0; published 2026-01-20; release v1.1.0 of github.com/michaelajao/hospitalisation-PINN (15 MB zip); implementation of the chapter Ajao-Olarinoye, Palade, He, Wark, Mukandavire, Mousavi (2025) A Hybrid Physics-Informed Neural Network: SEIRD Model for Forecasting COVID-19 ICU Demand in England, Recent Advances in Deep Learning Applications, CRC, pp 231-256; extended SEIRD with asymptomatic and symptomatic divisions, hospital admissions and critical care compartments; automated parameter estimation",
+      "url": "https://zenodo.org/api/records/18316775"
+    }
+  ],
+  "tags": [
+    "physics-informed neural network",
+    "SEIRD",
+    "ICU demand",
+    "COVID-19",
+    "England",
+    "forecasting"
+  ],
+  "title_en": "Hospitalisation-PINN: hybrid physics-informed neural network SEIRD model for forecasting COVID-19 ICU demand in England",
+  "type": "model",
+  "validated_on": [
+    "England COVID-19 data (book chapter results)"
+  ]
+}

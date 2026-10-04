@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/jfuruness/bgpy_pkg"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI",
+      "url": "https://pypi.org/project/bgpy_pkg/"
+    },
+    {
+      "kind": "paper",
+      "label": "CSET 2023 paper",
+      "url": "https://doi.org/10.1145/3607505.3607509"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Furuness J., Morris C., Morillo R., Herzberg A., Wang B. (2023) BGPy: The BGP Python Security Simulator. Proceedings of the 16th Cyber Security Experimentation and Test Workshop (CSET), ACM.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1145/3607505.3607509",
+    "name": "bgpy bgp python security simulator",
+    "repo": "github.com/jfuruness/bgpy_pkg",
+    "url": "https://github.com/jfuruness/bgpy_pkg"
+  },
+  "description": "BGPy is an open-source Python simulator of the Border Gateway Protocol aimed at security research and teaching. It builds an Internet-scale graph of autonomous systems with their customer, provider and peer relationships, propagates announcements with realistic routing policies, and lets users run attack and defence scenarios such as prefix and subprefix hijacks, route leaks and forged-origin attacks against more than twenty defensive policies including Route Origin Validation, ASPA, BGPsec and several research proposals, with adoption levels varied across the graph. It was developed at the University of Connecticut, grew out of the ROV++ work presented at NDSS 2021 and an optimised BGP simulator paper at INFOCOM workshops 2021, and was described at the Cyber Security Experimentation and Test workshop in 2023; the authors report use by teams including NIST. Coverage: the global AS-level Internet as given by CAIDA relationship data, or any graph the user supplies. Format and access: Python package bgpy_pkg on PyPI (version 13.0.13, August 2026) with source on GitHub; free of charge under the MIT licence. Caveats: it simulates the control plane only, without timing or data-plane traffic; results depend on the inferred AS relationships and assumed policies. Simulation uses: cyber-attack exposure and resilience of Internet routing, cascading spread of hijacks and leaks, and evaluation of security deployment options. Related records: C-BGP is a configuration-level BGP solver, CAIDA AS relationships give its topology, BGPStream gives observed routing data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "BGP internet network simulator (Crossref literature sweep for platform:digital.internet_exchange:simulation_engine; follow-up of 10.1109/infocomwkshps51825.2021.9484563)",
+      "route": "R07",
+      "source": "crossref"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "BGPy BGP simulator hijacks UConn github Furuness",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://github.com/jfuruness/bgpy_pkg",
+  "id": "model-bgpy",
+  "inputs": [
+    "CAIDA AS relationship graph or custom topology",
+    "attack and defence scenario definitions",
+    "policy adoption settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "BGPy BGP Python security simulator",
+  "notes": "PyPI metadata (version 13.0.13 uploaded 2026-08-25, MIT licence text, Python >= 3.10) read on 2026-09-26; repository README summarised via fetch. The 2021 INFOCOM workshop paper (doi 10.1109/infocomwkshps51825.2021.9484563) was the Crossref hit that led here.",
+  "outputs": [
+    "per-AS routing outcomes",
+    "attacker success and disconnection rates",
+    "graphs and diagrams of propagation"
+  ],
+  "provider": "University of Connecticut (Justin Furuness, Cameron Morris, Reynaldo Morillo, Amir Herzberg, Bing Wang)",
+  "related_ids": [
+    "data-caida-as-relationships",
+    "data-ripe-ris",
+    "data-routeviews",
+    "model-c-bgp"
+  ],
+  "repository": "https://github.com/jfuruness/bgpy_pkg",
+  "runs_on": [],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "cascading_failure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "version, licence, upload date",
+      "url": "https://pypi.org/pypi/bgpy_pkg/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "README",
+      "url": "https://github.com/jfuruness/bgpy_pkg"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: paper and authors",
+      "url": "https://nlab.engr.uconn.edu/papers/Furuness-BGPy-2023.pdf"
+    }
+  ],
+  "tags": [
+    "BGP",
+    "route hijacking",
+    "ROV",
+    "ASPA",
+    "BGPsec",
+    "Python"
+  ],
+  "title_en": "BGPy BGP Python security simulator",
+  "type": "model",
+  "validated_on": [
+    "comparison with other BGP simulators reported in the CSET 2023 paper"
+  ]
+}

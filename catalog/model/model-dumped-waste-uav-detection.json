@@ -1,0 +1,144 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code, weights and study data",
+      "url": "https://github.com/GIScience/Open-access_Model_for_Solid_Waste_Detection_on_Crowdsourced_UAV_Imagery_in_Sub-Saharan_Africa"
+    },
+    {
+      "kind": "download",
+      "label": "Archived release v3.0.0 (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.19731126"
+    },
+    {
+      "kind": "repo",
+      "label": "YOLO SWAG follow-on model for fAIr",
+      "url": "https://github.com/GIScience/solid-waste-detection-for-fAIr"
+    },
+    {
+      "kind": "paper",
+      "label": "Preprint (arXiv 2605.02316)",
+      "url": "https://arxiv.org/abs/2605.02316"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.19731126",
+    "name": "open access model for detecting openly dumped municipal solid waste in crowdsourced uav imagery sub saharan africa and yolo swag",
+    "repo": "github.com/giscience/open-access_model_for_solid_waste_detection_on_crowdsourced_uav_imagery_in_sub-saharan_africa",
+    "url": "https://github.com/GIScience/Open-access_Model_for_Solid_Waste_Detection_on_Crowdsourced_UAV_Imagery_in_Sub-Saharan_Africa"
+  },
+  "description": "This open model detects openly dumped, dispersed municipal solid waste in drone imagery of towns and cities in Sub-Saharan Africa. A fine-tuned YOLO11x classifier labels each 5 m by 5 m tile of an OpenAerialMap scene as waste or background, and the share of waste tiles gives a contamination measure for each area, which the study relates to street-network complexity and population density from the Million Neighborhoods Africa data. The provider is the GIScience group and HeiGIT at Heidelberg University, with Steffen Knoblauch as creator of the archived release; a follow-on model, YOLO SWAG, extends the labels by country and city for the fAIr mapping tool. Coverage is 29 study regions in 10 countries; the preprint (arXiv 2605.02316) finds hotspots along waterways, where waste can worsen flooding and health risks. The Python pipeline, trained weights and labels are on GitHub and archived on Zenodo as v3.0.0; the README states the MIT licence while the Zenodo deposit lists CC-BY-4.0, so users should check which applies to which part. Caveats: detection needs recent high-resolution drone imagery, crowdsourced scenes are patchy in time and space, and small or covered waste is missed. Simulation uses: mapping dumped waste that blocks drains before flood season, targeting collection services, and exposure of informal settlements to waste-related hazards. Related records: What a Waste (data-world-waste-status) gives national waste statistics.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "open-access model detecting dumped waste crowdsourced UAV imagery Sub-Saharan Africa",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "continental",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://github.com/GIScience/Open-access_Model_for_Solid_Waste_Detection_on_Crowdsourced_UAV_Imagery_in_Sub-Saharan_Africa",
+  "id": "model-dumped-waste-uav-detection",
+  "inputs": [
+    "UAV orthoimagery from OpenAerialMap",
+    "5 m by 5 m tile grid over the study region",
+    "Street-network complexity and population density from Million Neighborhoods Africa"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-17",
+  "licence": "MIT (README badge); the Zenodo deposit of v3.0.0 lists CC-BY-4.0",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Open-access model for detecting openly dumped municipal solid waste in crowdsourced UAV imagery (Sub-Saharan Africa) and YOLO SWAG",
+  "outputs": [
+    "Waste or background class per tile",
+    "Openly dumped dispersed municipal solid waste contamination share per region",
+    "Hotspot maps"
+  ],
+  "provider": "GIScience Research Group and HeiGIT, Heidelberg University (Steffen Knoblauch and co-authors)",
+  "regions": [],
+  "related_ids": [
+    "data-world-waste-status"
+  ],
+  "repository": "https://github.com/GIScience/Open-access_Model_for_Solid_Waste_Detection_on_Crowdsourced_UAV_Imagery_in_Sub-Saharan_Africa",
+  "runs_on": [
+    "Python 3.10 or newer with Ultralytics YOLO"
+  ],
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract: open-access deep learning model for openly dumped dispersed solid waste, 29 regions in 10 countries, hotspots along waterways, associations with population density and infrastructure access",
+      "url": "https://arxiv.org/abs/2605.02316"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Zenodo DOIs 10.5281/zenodo.19731126 and 10.5281/zenodo.21874456 found in the PDF (not saved)",
+      "url": "https://arxiv.org/pdf/2605.02316"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "YOLO11x-cls classifier on 5 m tiles, ODDMSWC metric, Million Neighborhoods covariates, Python 3.10+, MIT badge",
+      "url": "https://raw.githubusercontent.com/GIScience/Open-access_Model_for_Solid_Waste_Detection_on_Crowdsourced_UAV_Imagery_in_Sub-Saharan_Africa/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "v3.0.0, 2026-04-24, software, CC-BY-4.0, creator Steffen Knoblauch (Heidelberg University, IWR, HeiGIT, KIT)",
+      "url": "https://zenodo.org/api/records/19731126"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "YOLO SWAG: pretrained YOLO26-cls model, GPKG labels by country and city, based on the arXiv work; MIT",
+      "url": "https://raw.githubusercontent.com/GIScience/solid-waste-detection-for-fAIr/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote tags v2.0.0 and v3.0.0",
+      "url": "https://github.com/GIScience/Open-access_Model_for_Solid_Waste_Detection_on_Crowdsourced_UAV_Imagery_in_Sub-Saharan_Africa"
+    }
+  ],
+  "tags": [
+    "solid waste",
+    "open dumping",
+    "UAV",
+    "OpenAerialMap",
+    "YOLO",
+    "computer vision",
+    "Sub-Saharan Africa"
+  ],
+  "title_en": "Open-access model for detecting openly dumped municipal solid waste in crowdsourced UAV imagery (Sub-Saharan Africa) and YOLO SWAG",
+  "type": "model",
+  "validated_on": [
+    "29 regions in 10 Sub-Saharan African countries"
+  ]
+}

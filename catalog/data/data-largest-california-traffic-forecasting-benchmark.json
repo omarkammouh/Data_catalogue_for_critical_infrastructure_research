@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "CA dataset on Kaggle",
+      "url": "https://www.kaggle.com/datasets/liuxu77/largest"
+    },
+    {
+      "kind": "repo",
+      "label": "Code and processing notebooks",
+      "url": "https://github.com/liuxu77/LargeST"
+    },
+    {
+      "kind": "paper",
+      "label": "NeurIPS 2023 Datasets and Benchmarks paper (arXiv 2306.08259)",
+      "url": "https://arxiv.org/abs/2306.08259"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "demand_operation",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "time_series",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "largest benchmark dataset for large scale traffic forecasting california pems 8 600 sensors",
+    "repo": "github.com/liuxu77/largest",
+    "url": "https://github.com/liuxu77/LargeST"
+  },
+  "description": "LargeST is a benchmark dataset for road traffic forecasting built from the Caltrans Performance Measurement System, released by Xu Liu and co-authors with a NeurIPS 2023 Datasets and Benchmarks paper. It contains traffic flow from 8,600 mainline sensors across California over five years, with metadata per sensor (PeMS id, latitude, longitude, district, county, highway, lanes, direction). Coverage: the full California (CA) set, 2017 to 2021, plus three sub-datasets derived from it: Greater Los Angeles (GLA), Greater Bay Area (GBA) and San Diego (SD). Format and access: five HDF5 files of raw flow, a CSV of metadata and an adjacency matrix, hosted on Kaggle, with notebooks in the GitHub repository to clean the data and generate training sets, and baseline implementations. Licence and cost: data CC BY-NC 4.0, code MIT; free. Caveats: non-commercial licence; flow is aggregated sensor data, so it needs processing before use, and PeMS detector gaps carry through. It supports data-driven traffic forecasting and network flow studies for freeway capacity planning. It relates to Caltrans PeMS in the catalogue.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "assistant recall, written down before searching: transport second recall pass: road and rail long tail",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf",
+    "csv",
+    "other"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://github.com/liuxu77/LargeST",
+  "id": "data-largest-california-traffic-forecasting-benchmark",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-11-01",
+  "licence": "CC BY-NC 4.0 (data); MIT (code)",
+  "licence_type": [
+    "non_commercial",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "LargeST: benchmark dataset for large-scale traffic forecasting (California PeMS, 8,600 sensors)",
+  "provider": "Xu Liu, Yutong Xia, Yuxuan Liang and co-authors (National University of Singapore and others)",
+  "regions": [
+    "US-CA"
+  ],
+  "related_ids": [
+    "data-caltrans-pems"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "files, sub-datasets, metadata fields, Kaggle host, licences",
+      "url": "https://raw.githubusercontent.com/liuxu77/LargeST/main/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "abstract: 8,600 sensors, five-year coverage, authors",
+      "url": "https://export.arxiv.org/api/query?id_list=2306.08259"
+    }
+  ],
+  "tags": [
+    "traffic forecasting",
+    "benchmark",
+    "PeMS",
+    "graph neural network",
+    "loop detectors",
+    "r2-fresh-transport"
+  ],
+  "temporal_coverage": "2017-2021",
+  "title_en": "LargeST: benchmark dataset for large-scale traffic forecasting (California PeMS, 8,600 sensors)",
+  "type": "data"
+}

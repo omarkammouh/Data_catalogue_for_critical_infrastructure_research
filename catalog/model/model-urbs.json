@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code (GitHub)",
+      "url": "https://github.com/tum-ens/urbs"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code (LRZ GitLab mirror)",
+      "url": "https://gitlab.lrz.de/tum-ens/urbs"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "urbs",
+    "repo": "github.com/tum-ens/urbs",
+    "url": "https://github.com/tum-ens/urbs"
+  },
+  "description": "urbs is a linear programming optimisation model for capacity expansion planning and unit commitment of distributed energy systems. It models multiple commodities with a focus on optimal storage sizing and use, finding the minimum-cost energy system that satisfies given demand time series for commodities such as electricity and heat across a set of sites linked by transmission. Its name, Latin for city, reflects its origin in urban energy system optimisation, and it has since been adapted to scales from neighbourhoods to continents. It is developed at the Technical University of Munich's Chair of Renewable and Sustainable Energy Systems (TUM ENS). Source code is on GitHub with a mirror on the LRZ GitLab; users clone the repository, create the documented Python environment and supply an Excel input file, and the README recommends two solver libraries installed with the environment. It is released under the GNU GPL version 3 at no cost. Caveats: it is not distributed as a package on PyPI, so installation is from a cloned repository, and it works on hourly time steps by default, configurable by the user. Simulation uses are capacity planning and optimisation of multi-commodity systems. Related records: it compares with model-oemof-solph, model-calliope and model-pypsa.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry urbs (TUM ENS)",
+      "route": "R06",
+      "source": "energy-urbs"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/tum-ens/urbs",
+  "id": "model-urbs",
+  "inputs": [
+    "Excel input workbook of sites",
+    "commodities",
+    "processes",
+    "transmission",
+    "storage and demand time series"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-27",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "urbs",
+  "outputs": [
+    "Optimal capacities of processes",
+    "transmission and storage",
+    "Hourly dispatch and costs"
+  ],
+  "provider": "Technical University of Munich, Chair of Renewable and Sustainable Energy Systems (TUM ENS)",
+  "related_ids": [
+    "model-oemof-solph",
+    "model-calliope",
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/tum-ens/urbs",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "LP model for capacity expansion and unit commitment; multi-commodity; storage; urban origin, neighbourhoods to continents; clone from GitHub or LRZ GitLab; solver section",
+      "url": "https://raw.githubusercontent.com/tum-ens/urbs/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU GPL version 3",
+      "url": "https://raw.githubusercontent.com/tum-ens/urbs/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Visit 2026-09-24; head commit 2026-08-27",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/tum-ens/urbs/visit/latest/"
+    }
+  ],
+  "tags": [
+    "linear programming",
+    "storage sizing",
+    "urban energy systems",
+    "TUM"
+  ],
+  "title_en": "Linear programming optimisation model for capacity expansion planning",
+  "type": "model",
+  "validated_on": []
+}

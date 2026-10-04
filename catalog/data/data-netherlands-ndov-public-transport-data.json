@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "NDOV Loket",
+      "url": "https://ndovloket.nl/"
+    },
+    {
+      "kind": "download",
+      "label": "Open file server",
+      "url": "https://data.ndovloket.nl/"
+    },
+    {
+      "kind": "docs",
+      "label": "Real-time feeds (ZeroMQ) notes",
+      "url": "https://data.ndovloket.nl/REALTIME.TXT"
+    },
+    {
+      "kind": "portal",
+      "label": "OV Data collections (REISinformatiegroep)",
+      "url": "https://reisinformatiegroep.nl/ndovloket/"
+    }
+  ],
+  "access_note": "The file server and best-effort real-time feeds are open; REISinformatiegroep collections need a sign-up and acceptance of licence terms, and the premium real-time network a signed NDOV user agreement.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL",
+    "BE"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation",
+    "service_performance",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "network_topology",
+    "tabular",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ndov loket dutch national public transport data timetables stops fares and real time feeds",
+    "url": "https://ndovloket.nl"
+  },
+  "description": "NDOV Loket is the Dutch national access point for public transport data. It publishes planned data (timetables in NeTEx, GTFS and the Dutch KV1 exchange format, stop registers, fares and products, NS and ProRail files, occupancy and passenger-count files) and real-time streams: vehicle positions and punctuality (BISON KV6), service messages (KV15), trip changes and cancellations (KV17), KV78Turbo, NS InfoPlus and SIRI, served over ZeroMQ publish and subscribe channels. The data come from the Dutch bus, tram, metro, rail and ferry operators under agreements between governments and operators; Stichting OpenGeo runs the open file server and best-effort real-time infrastructure, and REISinformatiegroep (9292) releases the collections on the operators' behalf. Coverage is the Netherlands, with the Belgian operators De Lijn and TEC and some cross-border German data. Files are free and listed openly (the stop register was updated on 26 September 2026); REISinformatiegroep collections need a sign-up and acceptance of licence terms. All data are released under CC0. Caveats: the free real-time service is best-effort and fair use, one connection per consumer and stream, with a premium network only under a signed user agreement; no technical support is given; the KV formats are Dutch-specific. The data support network flow, capacity planning, reliability and resilience analysis and real-time digital twins of public transport, and complement the GTFS specification and ProRail track geometry records catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "openbaar vervoer open data dataset",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "transit_feed",
+    "other",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.ndovloket.nl/",
+  "id": "data-netherlands-ndov-public-transport-data",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NDOV Loket - Dutch national public transport data (timetables, stops, fares and real-time feeds)",
+  "provider": "NDOV Loket (Nationale Databank Openbaar Vervoer), operated by Stichting OpenGeo (GOVI), with data collections released by REISinformatiegroep on behalf of the Dutch public transport operators",
+  "related_ids": [
+    "data-gtfs-specification",
+    "data-mobility-database",
+    "data-prorail-spoorwegen-netherlands"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "REISinformatiegroep releases OV data on behalf of operators under the Open Data Model and CC0; agreements between governments and operators; collections include interfaces, PPT fare files and GTFS of the Netherlands; sign-up, accept licence, log in, download",
+      "url": "https://reisinformatiegroep.nl/ndovloket/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "directory: avv, bezetting, delijn, gtfs, haltes (26 Sep 2026), netex, ns, prorail, reizigersaantallen, tarieven, tec and others; LICENTIE-CC0.TXT; REALTIME.TXT",
+      "url": "https://data.ndovloket.nl/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "punctuality, positions and cancellations as raw source data; premium network via ACC ICT after signing NDOV user agreement; Stichting OpenGeo best-effort CC0 streams, fair use one connection per stream; ZeroMQ ports for BISON KV6/15/17, KV78Turbo, NS InfoPlus, SIRI; operator envelopes",
+      "url": "https://data.ndovloket.nl/REALTIME.TXT"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GOVI: planned and real-time travel information for Benelux and Germany under MMTIS via national access points; incident register on ovdata.nl; no technical support, OpenOV Discord",
+      "url": "https://ndovloket.nl/"
+    }
+  ],
+  "spatial_resolution": "stops, lines and vehicle positions",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "national access point",
+    "NeTEx",
+    "KV6",
+    "SIRI",
+    "Netherlands"
+  ],
+  "temporal_coverage": "current timetables and live streams; archive folders from 2016",
+  "temporal_resolution": "real time (vehicle positions) to timetable periods",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "NDOV Loket - Dutch national public transport data (timetables, stops, fares and real-time feeds)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

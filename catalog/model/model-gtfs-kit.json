@@ -1,0 +1,143 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Codeberg repository",
+      "url": "https://codeberg.org/araichev/gtfs_kit"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://araichev.codeberg.page/gtfs_kit_docs"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/gtfs-kit/"
+    },
+    {
+      "kind": "repo",
+      "label": "Archived GitHub repository",
+      "url": "https://github.com/mrcagney/gtfs_kit"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gtfs kit python library for analysing gtfs feeds",
+    "repo": "codeberg.org/araichev/gtfs_kit",
+    "url": "https://codeberg.org/araichev/gtfs_kit"
+  },
+  "description": "GTFS Kit is a Python library for analysing General Transit Feed Specification (GTFS) public transport feeds in memory, without a database, using pandas and GeoPandas. It reads a feed into data frames, computes route, stop and network statistics, time series and timetables that respect GTFS service-day times beyond 24 hours, and can combine several feeds into one, deduplicating stops, jointly operated routes and shapes that recur across them. It is maintained by Alex Raichev since 2019, with documentation built with Sphinx and published on Codeberg Pages and examples in a Marimo notebook. Coverage is generic: any GTFS feed. Access: free under the MIT licence from PyPI (version 13.0.1, August 2026) and the Codeberg repository; it needs Python 3.10 or later. Caveats: its status is alpha with breaking changes, and it assumes a valid feed without validating it, so the author recommends the canonical GTFS validator first. It supports building public transport network graphs and service statistics as inputs to network flow, accessibility and disruption models, and complements the GTFS specification, the Mobility Database and UrbanAccess catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.public_transit",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "GTFS",
+      "route": "R05",
+      "source": "codeberg"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://codeberg.org/araichev/gtfs_kit",
+  "id": "model-gtfs-kit",
+  "inputs": [
+    "GTFS feed"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-05",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://araichev.github.io/gtfs_kit_docs"
+    ],
+    "dead_since": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "GTFS Kit Python library for analysing GTFS feeds",
+  "outputs": [
+    "route",
+    "stop and trip statistics",
+    "geometries",
+    "combined feeds"
+  ],
+  "provider": "Alex Raichev (open-source project)",
+  "related_ids": [
+    "data-gtfs-specification",
+    "data-mobility-database",
+    "model-urbanaccess",
+    "platform-mobilitydata-canonical-gtfs-validator",
+    "model-gtfstools-r-gtfs-editing"
+  ],
+  "repository": "https://codeberg.org/araichev/gtfs_kit",
+  "runs_on": [
+    "Python"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "version 13.0.1 uploaded 2026-08-30; MIT; Python >=3.10; repository codeberg.org/araichev/gtfs_kit; docs araichev.codeberg.page/gtfs_kit_docs; pandas and GeoPandas; combine_feeds; no inbuilt validation, use canonical GTFS validator; author Alex Raichev (2019-09); Marimo examples",
+      "url": "https://pypi.org/pypi/gtfs-kit/json"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "purpose, dependencies, no validation, Codeberg move, maintainer",
+      "url": "https://raw.githubusercontent.com/mrcagney/gtfs_kit/master/README.rst"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "MIT",
+      "url": "https://raw.githubusercontent.com/mrcagney/gtfs_kit/master/LICENSE.txt"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Wave 1 integrator dedupe: merged duplicate record model-gtfs-kit-python-gtfs-analysis (#17) into this record; its sources and extra access links were kept here.",
+      "url": "https://codeberg.org/araichev/gtfs_kit"
+    }
+  ],
+  "tags": [
+    "GTFS",
+    "public transport",
+    "Python",
+    "pandas",
+    "feed analysis"
+  ],
+  "title_en": "GTFS Kit Python library for analysing GTFS feeds",
+  "type": "model",
+  "validated_on": []
+}

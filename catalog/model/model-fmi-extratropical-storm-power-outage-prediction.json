@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code (Zenodo, Tervo and Sirviö 2020)",
+      "note": "Not opened: Zenodo rate-limited on 2026-09-29",
+      "url": "https://doi.org/10.5281/zenodo.4525236"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code (Zenodo, Tervo 2020)",
+      "note": "Not opened",
+      "url": "https://doi.org/10.5281/zenodo.4525234"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (NHESS, 2021, open access)",
+      "url": "https://doi.org/10.5194/nhess-21-607-2021"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FI"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "storm object power outage prediction model for extratropical storms finnish meteorological institute and aalto university",
+    "url": "doi:10.5194/nhess-21-607-2021"
+  },
+  "description": "This model predicts the power outages that extratropical windstorms will cause in Finland's forested distribution networks, where falling trees on overhead lines caused on average 46 percent of transmission faults between 2010 and 2018. Roope Tervo, Ilona Láng and Antti Mäkelä of the Finnish Meteorological Institute and Alexander Jung of Aalto University published it in Natural Hazards and Earth System Sciences in February 2021. It identifies storm objects as polygons where gusts exceed a threshold within an hour, tracks them over time, extracts features such as wind, temperature, pressure, cloud cover and forest data, and classifies each object's damage as none, low or high, the high class meaning more than 140 transformers affected; a support vector classifier reached 81 percent precision and 61 percent recall and can run up to ten days ahead with forecasts. Coverage is the areas of three Finnish distribution companies. Format and access: open article, with Python source code deposited on Zenodo. Licence: article CC-BY-4.0; code licence not read because Zenodo could not be opened. Caveats: the outage data are proprietary. It supports hazard exposure and emergency response planning by utilities before storms. Related catalogue records are ERA5 and the Luke multi-source national forest inventory.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "statistical model of power outage and multi-infrastructure disruption prediction from hurricane storms open source code",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "storm_wind"
+  ],
+  "homepage": "https://doi.org/10.5194/nhess-21-607-2021",
+  "id": "model-fmi-extratropical-storm-power-outage-prediction",
+  "inputs": [
+    "ERA5 reanalysis weather",
+    "Luke forest inventory",
+    "Distribution company outage records (proprietary)"
+  ],
+  "language": [
+    "other"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-02-11",
+  "licence": "Article CC-BY-4.0; code licence not read",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Storm object power outage prediction model for extratropical storms (Finnish Meteorological Institute and Aalto University)",
+  "outputs": [
+    "Storm objects with predicted damage class (none, low, high by transformers affected)"
+  ],
+  "provider": "Finnish Meteorological Institute and Aalto University (Roope Tervo, Ilona Láng, Alexander Jung, Antti Mäkelä)",
+  "related_ids": [
+    "data-era5-reanalysis",
+    "data-luke-multi-source-national-forest-inventory"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Article page: authors, abstract, method, code and data availability, licence",
+      "url": "https://nhess.copernicus.org/articles/21/607/2021/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "News item: precision, recall, lead time, damage classes",
+      "url": "https://www.infoq.com/news/2021/04/open-source-ai-storms/"
+    }
+  ],
+  "tags": [
+    "power outages",
+    "extratropical storms",
+    "machine learning",
+    "forests"
+  ],
+  "title_en": "Storm object power outage prediction model for extratropical storms (Finnish Meteorological Institute and Aalto University)",
+  "type": "model"
+}

@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Rodneymondela/ventilation-simulator"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Rodneymondela/ventilation-simulator/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "mine ventilation network simulator",
+    "repo": "github.com/rodneymondela/ventilation-simulator",
+    "url": "https://github.com/Rodneymondela/ventilation-simulator"
+  },
+  "description": "Mine Ventilation Network Simulator is a web application published by the Rodneymondela repository for steady-state mine-airflow studies. Users draw nodes and airways, assign fan and resistance properties, solve the network and inspect airflow, velocity and pressure. The documented methods include Atkinson resistance and Hardy Cross iteration, with two-dimensional and three-dimensional views, staged network configurations and JSON or CSV export. Geographic coverage is global in principle, with network detail defined by the user; the resource is not an inventory or calibrated model of an operating mine. Source and local launch instructions are public and free under MIT. The README explicitly says that friction factors and air-density defaults are placeholders requiring verification. Its contaminant layer is not a validated occupational-exposure tool, and the heat model omits latent or evaporative, diesel and rock-conduction contributions. Those limits are material for any engineering use. The model can support exploratory mine-network capacity and disruption scenarios, analogous to flow-network analysis in pandapower (model-pandapower) but with different physical equations and no implied interchangeability. No solver result or safety claim was verified in this review.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "mining simulation fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/Rodneymondela/ventilation-simulator",
+  "id": "model-mine-ventilation-network",
+  "inputs": [
+    "Airway geometry and resistance",
+    "Fan and boundary settings"
+  ],
+  "language": [
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-10",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "network"
+  ],
+  "name": "Mine Ventilation Network Simulator",
+  "notes": "G7 G7-0272. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Airflow",
+    "Pressure",
+    "Velocity",
+    "Solver residuals"
+  ],
+  "provider": "rodneymondela repository maintainers",
+  "related_ids": [
+    "model-pandapower"
+  ],
+  "repository": "https://github.com/Rodneymondela/ventilation-simulator",
+  "sectors": [
+    "industry.mining_materials"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Rodneymondela/ventilation-simulator: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=mining+simulation+fork%3Afalse&per_page=100&page=5"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/rodneymondela/ventilation-simulator/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for mining and materials",
+  "type": "model"
+}

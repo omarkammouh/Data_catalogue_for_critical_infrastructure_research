@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Socrata SODA API",
+      "url": "https://opendata.fcc.gov/resource/dpq5-ta9j.json"
+    },
+    {
+      "kind": "viewer",
+      "label": "PSAP Registry Locator map",
+      "url": "https://opendata.fcc.gov/d/tph8-9bz3"
+    },
+    {
+      "kind": "portal",
+      "label": "FCC open data table (CSV, JSON export)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://opendata.fcc.gov/d/dpq5-ta9j"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fcc 911 master psap registry public safety answering points united states",
+    "url": "https://opendata.fcc.gov/d/dpq5-ta9j"
+  },
+  "description": "The 911 Master PSAP Registry is the Federal Communications Commission's list of public safety answering points, the call centres that receive 911 calls in the United States. The producer is the FCC Public Safety and Homeland Security Bureau, which assigns each PSAP an identification number used in carrier filings. Coverage is national: 8,557 rows across 55 state and territory values. Each row gives the PSAP ID, name, county, city and state, the type of the last record change and its date, and a city-level geocode. The table is available on the FCC open data portal for download as CSV or JSON, through the Socrata API, and as a map locator; it is free and in the public domain as a U.S. Government work. Caveats: the rows were last updated in October 2017 while the description says the registry was current in February 2019, so consolidations since then are missing; the geocode is only at city level and missing for some rows; the table lists centres but not their staffing, call volumes or backup arrangements, and the FCC's current registry on fcc.gov could not be read from this environment. Simulation uses: mapping which call centre serves an area, modelling the load shifted to neighbouring PSAPs when one fails or its telecom links go down, and siting studies for dispatch capacity. Related records: the NYC 911 end-to-end response times (data-nyc-911-end-to-end-response-times) show operations at one large PSAP, and the FCC DIRS disaster reports, catalogued by the digital piece, record PSAP outages during disasters.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "handed over by the digital piece: 911 Master PSAP Registry",
+      "route": "R31",
+      "source": "digital-fcc-open-data"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "geojson",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://opendata.fcc.gov/d/dpq5-ta9j",
+  "id": "data-fcc-911-master-psap-registry",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2019-02-26",
+  "licence": "Public Domain U.S. Government",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "FCC 911 Master PSAP Registry (public safety answering points, United States)",
+  "provider": "Federal Communications Commission, Public Safety and Homeland Security Bureau",
+  "related_ids": [
+    "data-nyc-911-end-to-end-response-times"
+  ],
+  "schema_summary": "One row per PSAP: FCC PSAP ID, PSAP name, county, city, state, type of record change (full text), date last modified, and a city-level geocode (latitude and longitude where resolved)",
+  "sectors": [
+    "services.emergency_services",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Dataset metadata: name, description (PSAP ID, name, state, county, city, record change; updated periodically; description says updated as of 26 February 2019), attribution FCC, licence Public Domain U.S. Government, category Public Safety, rows last updated 2017-10-10, column list",
+      "url": "https://opendata.fcc.gov/api/views/dpq5-ta9j.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "8,557 rows; 55 distinct state values; latest date last modified 2017-10-05 (SoQL queries)",
+      "url": "https://opendata.fcc.gov/resource/dpq5-ta9j.json?$select=count(*)"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Registry Locator: map view of the same table",
+      "url": "https://opendata.fcc.gov/api/views/tph8-9bz3.json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed last_updated, maturity.",
+      "url": "https://opendata.fcc.gov/d/dpq5-ta9j"
+    }
+  ],
+  "spatial_resolution": "Individual PSAPs, geocoded to city level",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "911",
+    "PSAP",
+    "public safety answering point",
+    "emergency call centres",
+    "dispatch"
+  ],
+  "temporal_coverage": "Registry state as of the last update (records modified up to 2017-10-05)",
+  "temporal_resolution": "Snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "FCC 911 Master PSAP Registry (public safety answering points, United States)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,140 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/jupedsim/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/PedestrianDynamics/jupedsim"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://www.jupedsim.org/stable/"
+    },
+    {
+      "kind": "paper",
+      "label": "Software DOI (Zenodo concept)",
+      "url": "https://doi.org/10.5281/zenodo.1293771"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "JuPedSim, https://doi.org/10.5281/zenodo.1293771",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.1293771",
+    "name": "jupedsim julich pedestrian simulator",
+    "repo": "github.com/pedestriandynamics/jupedsim",
+    "url": "https://jupedsim.org/stable"
+  },
+  "description": "JuPedSim is an open-source library for simulating pedestrian dynamics: individual agents walk through a polygonal geometry along journeys of stages (waypoints, queues, waiting areas, exits) under one of several microscopic operational models, such as the collision-free speed model with rotational steering and the WarpDriver model. It is used to study crowd movement through bottlenecks and corners, lane formation, queues, route choice and the evacuation times of buildings and public spaces. The Civil Safety Research institute (IAS-7) of Forschungszentrum Jülich in Germany started it, first as a C++ command-line application in 2010 and since rewritten as a Python package with a C++ core, and a wider community now contributes. Coverage is any geometry the user supplies, from a corridor to a stadium or station; resolution is the individual pedestrian with time steps of fractions of a second. It is installed from PyPI (version 1.4.2, May 2026), with source on GitHub, documentation and example notebooks, and a Zenodo software DOI. Licence: GNU LGPL v3, free. Caveats: model parameters must be calibrated for a given population and situation, it simulates walking only (no fire or smoke), and references to versions before 0.10 describe the old application. Simulation uses: agent-based evacuation and crowd-management studies for emergency response planning in buildings, transport hubs and events. Related: Aamks couples evacuation with fire simulation (catalogued as platform-aamks), and the Jülich pedestrian data archive in the register supplies experiments for calibration.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "pedestrian dynamics evacuation simulator (register services-jupedsim)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry JuPedSim",
+      "route": "R06",
+      "source": "services-jupedsim (register)"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "jupedsim JSON API",
+      "route": "R05",
+      "source": "pypi"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://pypi.org/project/jupedsim/",
+  "id": "model-jupedsim",
+  "inputs": [
+    "Walkable geometry (polygons)",
+    "Agents and their parameters",
+    "Journeys, stages and exits",
+    "Choice of pedestrian model"
+  ],
+  "language": [
+    "python",
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-21",
+  "licence": "LGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "physical"
+  ],
+  "name": "JuPedSim (Jülich Pedestrian Simulator)",
+  "outputs": [
+    "Trajectories of every pedestrian",
+    "Evacuation times",
+    "Flows, densities and queues (with analysis tools)"
+  ],
+  "provider": "Institute for Advanced Simulation, Civil Safety Research (IAS-7), Forschungszentrum Jülich, and community",
+  "related_ids": [
+    "platform-aamks"
+  ],
+  "repository": "https://github.com/PedestrianDynamics/jupedsim",
+  "runs_on": [],
+  "sectors": [
+    "services.emergency_services",
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Library to simulate pedestrian dynamics; initiated at IAS-7 Forschungszentrum Jülich; pip install; LGPLv3; Zenodo DOI badge",
+      "url": "https://raw.githubusercontent.com/PedestrianDynamics/jupedsim/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Python package with C++ core; started 2010 as CLI; models CollisionFreeSpeedModelV3, WarpDriver; notebooks incl. route choice and evacuation times",
+      "url": "https://www.jupedsim.org/stable/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 1.4.2 uploaded 2026-05-21",
+      "url": "https://pypi.org/pypi/jupedsim/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU LGPL",
+      "url": "https://raw.githubusercontent.com/PedestrianDynamics/jupedsim/HEAD/LICENSE"
+    }
+  ],
+  "tags": [
+    "pedestrian dynamics",
+    "crowd",
+    "evacuation",
+    "microscopic model",
+    "collision-free speed model"
+  ],
+  "title_en": "Agent-based model for emergency services and public spaces",
+  "type": "model",
+  "validated_on": [
+    "Notebooks comparing models on bottleneck, corner and single-file experiments"
+  ]
+}

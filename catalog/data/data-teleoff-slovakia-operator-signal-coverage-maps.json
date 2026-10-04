@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "WCS (O2 Slovakia)",
+      "url": "https://mapypokrytia.teleoff.gov.sk/geoserver/o2/wcs?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCapabilities"
+    },
+    {
+      "kind": "api",
+      "label": "WMTS capabilities",
+      "url": "https://mapypokrytia.teleoff.gov.sk/mapproxy/service?service=WMTS&version=1.1.1&request=GetCapabilities"
+    },
+    {
+      "kind": "viewer",
+      "label": "Coverage map viewer",
+      "url": "https://mapypokrytia.teleoff.gov.sk/"
+    },
+    {
+      "kind": "docs",
+      "label": "Example layer on data.europa.eu",
+      "url": "https://data.europa.eu/data/datasets/https-data-gov-sk-set-data-gmd-55ee7a26-c744-49f5-a9ab-4f40b256dc6c"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "SK"
+  ],
+  "data_family": [
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "teleoff slovakia operator signal coverage maps by band and technology quarterly wms wmts and wcs",
+    "url": "https://mapypokrytia.teleoff.gov.sk"
+  },
+  "description": "The Slovak regulator publishes signal coverage maps for each mobile network operator, frequency band and technology, and registers every layer as a dataset in the Slovak INSPIRE catalogue, from which the European data portal harvests them. The 118 layers found cover Orange Slovensko, Slovak Telekom, O2 Slovakia and SWAN (4ka) for the quarters 2025 Q2, 2025 Q4 and 2026 Q1, across bands from 700 MHz to 3700 MHz and technologies 2G, 3G, 4G and 5G; for example, O2 Slovakia 3600 MHz 5G 2026 Q1, issued in June 2026. The layers are classed coverage rasters in the Slovak S-JTSK coordinate system, served per operator as WMS and WMTS view services and a WCS download service from the regulator's map server, with a public map viewer. Coverage: Slovakia, by operator, band, technology and quarter. Format and access: OGC WMS, WMTS and WCS services, free under CC BY 4.0 as stated in the distributions. Caveats: coverage is operator-declared or modelled; the map server's certificate chain failed verification from the collection environment, so capabilities, class definitions and resolution were not read; earlier quarters may exist outside the harvested set. Simulation uses: band-level coverage by operator for Slovak mobile resilience and capacity models, including 5G in the 3.6 GHz band. Related records: the Slovak RAN performance counters give network measurements; the CTU broadband coverage by settlement unit and the Digital Decade DESI indicators give neighbouring and EU views.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "data.europa.eu search (pokrytie)",
+      "route": "R02",
+      "source": "organisations.csv:SK:digital:broadband_mapping"
+    }
+  ],
+  "formats": [
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.europa.eu/data/datasets/https-data-gov-sk-set-data-gmd-55ee7a26-c744-49f5-a9ab-4f40b256dc6c",
+  "id": "data-teleoff-slovakia-operator-signal-coverage-maps",
+  "languages": [
+    "sk"
+  ],
+  "last_updated": "2026-06",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://mapypokrytia.teleoff.gov.sk/",
+      "https://mapypokrytia.teleoff.gov.sk/geoserver/o2/wcs?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCapabilities",
+      "https://mapypokrytia.teleoff.gov.sk/mapproxy/service?service=WMTS&version=1.1.1&request=GetCapabilities"
+    ]
+  },
+  "maturity": "active",
+  "name": "Teleoff Slovakia operator signal coverage maps by band and technology (quarterly, WMS, WMTS and WCS)",
+  "notes": "Layer titles, dates, distributions and licence read through the data.europa.eu search API on 2026-09-26; layers counted by title. mapypokrytia.teleoff.gov.sk and teleoff.gov.sk failed TLS verification (unable to get local issuer certificate); verification was not disabled. SWAN is read as the 4ka operator; this is inferred.",
+  "provider": "Regulatory Authority for Electronic Communications and Postal Services of the Slovak Republic (Teleoff, formerly RÚ)",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "size": "118 layers harvested",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "example layer metadata",
+      "url": "https://data.europa.eu/data/datasets/https-data-gov-sk-set-data-gmd-55ee7a26-c744-49f5-a9ab-4f40b256dc6c"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "example layer metadata",
+      "url": "https://data.europa.eu/data/datasets/https-data-gov-sk-set-data-gmd-23f6ce80-57d5-4885-9f5e-6d08b08145e3"
+    }
+  ],
+  "spatial_resolution": "raster, not stated",
+  "spatial_resolution_class": "not_stated",
+  "tags": [
+    "coverage",
+    "5G",
+    "spectrum bands",
+    "INSPIRE",
+    "Slovakia"
+  ],
+  "temporal_coverage": "2025 Q2 to 2026 Q1 (harvested layers)",
+  "temporal_resolution": "quarterly (not every quarter)",
+  "temporal_resolution_class": "sub_annual",
+  "title_en": "Teleoff Slovakia operator signal coverage maps by band and technology (quarterly, WMS, WMTS and WCS)",
+  "type": "data",
+  "update_frequency": "several_per_year"
+}

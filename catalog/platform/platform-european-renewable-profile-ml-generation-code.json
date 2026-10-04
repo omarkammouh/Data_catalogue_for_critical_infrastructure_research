@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource",
+      "url": "https://github.com/mj-mayer/european-renewable-profiles"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-026-08227-7"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "european renewable profile generation code",
+    "url": "https://github.com/mj-mayer/european-renewable-profiles"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This public GitHub repository contains code for generating long European hourly solar, onshore wind, offshore wind and electricity-demand profiles from ERA5 weather predictors and measured ENTSO-E records. Its README identifies the published Zenodo output and lists country cleaning notebooks, ERA5 preparation, machine-learning scripts and model-evaluation steps. GitHub licence metadata and the README state MIT for the code; the output data are separately CC BY 4.0. A power-system modeller can generate or adapt weather-year profiles before capacity-planning runs with model-pypsa. A caveat is that training is stochastic, so the README says reruns reproduce model errors within neural-network variation, not byte-for-byte. Current ERA5 reprocessing and source-platform terms can also alter an input download. Some countries lack sufficient measured data, and Kosovo uses a Serbian holiday calendar as a proxy. I read own repository metadata and README but did not download ERA5 data, install dependencies, retrain networks or compare generated values with the Zenodo archive.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G1-Q-ENERGY-TITLE-25; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://github.com/mj-mayer/european-renewable-profiles",
+  "id": "platform-european-renewable-profile-ml-generation-code",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "ERA5 reanalysis",
+    "ENTSO-E Transparency Platform",
+    "Excel country profiles"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-05",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "European renewable profile generation code",
+  "notes": "G1 G1-0601. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-45.json. Related-resource uses are not tested interfaces. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "European renewable profiles team",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/mj-mayer/european-renewable-profiles"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/mj-mayer/european-renewable-profiles/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-026-08227-7"
+    }
+  ],
+  "tags": [],
+  "title_en": "European renewable profile generation code for solar wind and demand",
+  "type": "platform"
+}

@@ -1,0 +1,118 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "TDX-Hydro basins and streams (Geosciences tab)",
+      "url": "https://earth-info.nga.mil/"
+    },
+    {
+      "kind": "docs",
+      "label": "TDX-Hydro technical document (PDF)",
+      "url": "https://earth-info.nga.mil/php/download.php?file=tdx-hydro-technical-doc"
+    },
+    {
+      "kind": "docs",
+      "label": "TDX-Hydro data licence",
+      "url": "https://earth-info.nga.mil/php/download.php?file=tdx-hydro-license"
+    },
+    {
+      "kind": "paper",
+      "label": "Carlson et al. 2024, ESS Open Archive",
+      "url": "https://doi.org/10.22541/essoar.171629686.65893579/v1"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "hazards",
+    "system_description",
+    "reference_context"
+  ],
+  "data_kind": [
+    "network_topology",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.22541/essoar.171629686.65893579/v1",
+    "name": "tdx hydro global high resolution stream networks and drainage basins from 12 m tandem x nga",
+    "url": "https://earth-info.nga.mil"
+  },
+  "description": "TDX-Hydro is a global hydrographic data suite of stream networks, drainage basins and hydrologically conditioned elevation derived from 12 m TanDEM-X elevation data, developed by the NGA Office of Geomatics and first released publicly in 2023. The conditioning applies vegetation bias removal (using Landsat tree cover, forest canopy height and ICESat-2), adaptive smoothing, river enforcement with OpenStreetMap and surface water occurrence, and depression handling, run on the Blue Waters supercomputer before TauDEM delineation. Coverage: global land, processed per HydroBASINS level 2 basin (for example Africa 1020000010 and Europe 2020000010) with a 1 km buffer; outputs are vector stream networks, catchments for each stream segment, flow direction and accumulation rasters, and endorheic sink points. Format and access: GeoPackage files named by dataset, HydroBASINS ID and version, downloadable per basin from the Geosciences tab of earth-info.nga.mil, with a technical document (last edited 31 January 2023) and a licence file; free. Licence: CC-BY-SA-4.0, copyright 2023 NGA, for commercial and non-commercial use. Caveats: the conditioned 12 m DEM itself is limited distribution and not public; reservoir flattening can move water-level jumps upstream; HydroBASINS boundaries do not match TanDEM-X exactly, so some streams are truncated at basin edges; coastal masking lets streams extend slightly past the coast. Simulation uses: river network topology and catchments for flood hazard exposure, drainage and dam studies, and hydrologic model set-up at global scale. Related records: HydroSHEDS (data-hydrosheds-hydrorivers-hydrobasins) provides the HydroBASINS tiling that TDX-Hydro is organised by.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source water-tdx-hydro: provider pages read (round 2 register piece)",
+      "route": "R30",
+      "source": "water-tdx-hydro"
+    }
+  ],
+  "formats": [
+    "geopackage",
+    "shapefile"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://earth-info.nga.mil/",
+  "id": "data-nga-tdx-hydro-global-streams-basins",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-SA-4.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "TDX-Hydro: global high-resolution stream networks and drainage basins from 12 m TanDEM-X (NGA)",
+  "provider": "US National Geospatial-Intelligence Agency (NGA), Office of Geomatics, with USACE ERDC and NASA",
+  "related_ids": [
+    "data-hydrosheds-hydrorivers-hydrobasins"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Geosciences section: TDX-Hydro vector river networks and drainage basins, per-basin downloads by HydroBASINS ID, technical document and licence",
+      "url": "https://earth-info.nga.mil/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Copyright 2023 NGA; CC BY-SA 4.0; available for public use; no warranty",
+      "url": "https://earth-info.nga.mil/php/download.php?file=tdx-hydro-license"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Technical documentation (2023-01-31): inputs, conditioning steps, Blue Waters, file naming, outputs, LIMDIS DEM, known issues",
+      "url": "https://earth-info.nga.mil/php/download.php?file=tdx-hydro-technical-doc"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "First public release summer 2023 with USACE ERDC and NASA; Carlson et al. 2024 DOI; basis of GEOGLOWS v2",
+      "url": "https://raw.githubusercontent.com/WikiWatershed/global-hydrography/main/README.md"
+    }
+  ],
+  "tags": [
+    "hydrography",
+    "river network",
+    "TanDEM-X",
+    "drainage basins",
+    "TauDEM",
+    "NGA"
+  ],
+  "temporal_coverage": "2023 release (technical document dated 2023-01-31)",
+  "title_en": "TDX-Hydro: global high-resolution stream networks and drainage basins from 12 m TanDEM-X (NGA)",
+  "type": "data"
+}

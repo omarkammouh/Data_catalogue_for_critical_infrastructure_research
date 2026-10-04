@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Open data files per local authority (XML)",
+      "url": "https://data.food.gov.uk/catalog/datasets/38dd8d6a-5ab1-4f50-b753-ab33288e3200"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "governance_regulation",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "food hygiene rating scheme open data and api fsa every rated food business in the uk with location type and inspection result",
+    "url": "https://data.food.gov.uk/catalog/datasets/38dd8d6a-5ab1-4f50-b753-ab33288e3200"
+  },
+  "description": "This dataset lists every food business inspected under the UK's food hygiene rating schemes, from restaurants and takeaways to supermarkets, food manufacturers and distributors, which makes it the most complete public inventory of places where food is sold or handled. It is published by the Food Standards Agency on behalf of the local authorities that carry out the inspections. Coverage is every participating local authority in the United Kingdom, from Aberdeen City to York, updated in near real time since 2010; each record gives the business name and type, address and postcode, latitude and longitude, the latest rating and its date, and component scores for hygiene, structure and management. The data are available free under the Open Government Licence, as a download of one XML file per local authority or through a documented JSON API. Caveats: the data hold only the latest rating, business size or floor area is absent, some mobile or home-based traders have no address, and exempt premises are listed without a rating. Simulation uses: mapping food retail and catering outlets for food access and supply disruption models, estimating exposure of food businesses to floods or power cuts, and siting emergency food distribution. Related records: the FSA food alerts API (data-fsa-food-alerts-api) covers recalls, the FSA approved establishments list (data-fsa-approved-food-establishments) covers meat, dairy and fish plants, and the New York retail food stores list (data-nys-retail-food-stores) is a US counterpart.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Food Standards Agency (GB, food_safety_agency)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "xml",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://data.food.gov.uk/catalog/datasets/38dd8d6a-5ab1-4f50-b753-ab33288e3200",
+  "id": "data-fsa-food-hygiene-rating-scheme",
+  "languages": [
+    "en"
+  ],
+  "licence": "Open Government Licence v3.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://api.ratings.food.gov.uk/Regions/basic"
+    ],
+    "dead_since": "2026-09-27"
+  },
+  "maturity": "active",
+  "name": "Food Hygiene Rating Scheme open data and API (FSA): every rated food business in the UK with location, type and inspection result",
+  "provider": "Food Standards Agency (FSA), on behalf of participating local authorities",
+  "related_ids": [
+    "data-fsa-food-alerts-api",
+    "data-fsa-approved-food-establishments",
+    "data-nys-retail-food-stores"
+  ],
+  "schema_summary": "Per establishment: FHRS ID, local authority business ID, business name and type (restaurants, retailers such as supermarkets, takeaways, manufacturers, distributors), address, postcode, rating value and date, hygiene, structural and management scores, local authority, geocode latitude and longitude; API endpoints for regions, authorities, business types and establishments",
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Food Hygiene Ratings Scheme (FHRS) Data: rating or inspection results given to businesses and date of inspection by the local authority; businesses include restaurants, pubs, cafés, takeaways, hotels, supermarkets and other food shops; issued 1 November 2010; update period near real-time; Open Government Licence v3; one XML download per local authority (Aberdeen City to York)",
+      "url": "https://data.food.gov.uk/catalog/datasets/38dd8d6a-5ab1-4f50-b753-ab33288e3200"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "API version 2 answers with regions (East Counties, East Midlands, London and others) with self links",
+      "url": "https://api.ratings.food.gov.uk/Regions/basic"
+    }
+  ],
+  "spatial_resolution": "Individual food establishment (geocoded)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "food businesses",
+    "supermarkets",
+    "hygiene ratings",
+    "food outlets",
+    "FSA"
+  ],
+  "temporal_coverage": "2010 to present (latest rating per establishment)",
+  "temporal_resolution": "Latest inspection",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Food Hygiene Rating Scheme open data and API (FSA): every rated food business in the UK with location, type and inspection result",
+  "type": "data",
+  "update_frequency": "real_time"
+}

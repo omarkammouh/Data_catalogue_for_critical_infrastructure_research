@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Km of fibre by department",
+      "url": "https://catalogodatos.gub.uy/dataset/km-de-fibra-optica-por-departamento"
+    },
+    {
+      "kind": "download",
+      "label": "Mobile subscribers",
+      "url": "https://catalogodatos.gub.uy/dataset/ursec-suscriptores-mensuales-por-servicios-moviles"
+    },
+    {
+      "kind": "api",
+      "label": "CKAN search (URSEC)",
+      "url": "https://catalogodatos.gub.uy/api/3/action/package_search?q=ursec"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (CSV)",
+      "note": "Checked 2026-10-01: returns text/csv directly.",
+      "url": "https://catalogodatos.gub.uy/dataset/9bec3260-63e3-41dd-9905-3c724fd5d8a4/resource/4d83fc90-e70f-46f6-8b93-a641d1452a24/download/presupuesto-2020-a-2023.csv"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (JSON)",
+      "note": "Checked 2026-10-01: returns application/json directly.",
+      "url": "https://catalogodatos.gub.uy/dataset/f2e28862-2d9b-42bd-8ca5-e233755b794b/resource/3e7131ce-ab0f-4326-aef6-157613c9b528/download/metadatos_trafico-de-servicios-de-telecomunicaciones.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "UY"
+  ],
+  "data_family": [
+    "demand_operation",
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ursec uruguay telecom open data monthly mobile and fixed subscribers traffic and fibre optic kilometres by department",
+    "url": "https://catalogodatos.gub.uy/organization/ursec"
+  },
+  "description": "Uruguay's communications regulator publishes sector data on the national open data catalogue. Telecom datasets include monthly subscribers to mobile services, split into prepaid and postpaid; monthly subscribers to fixed telecommunications services; traffic of fixed and mobile telecommunications services; commercial fixed telephony; public telephones; and kilometres of optical fibre in the national territory by department. Each dataset is offered as CSV, XLSX and XML with a JSON metadata file, and all were refreshed in February 2026. The fibre dataset is one of few national open series of backbone and access fibre length by region in Latin America. Other URSEC datasets cover postal items, budgets and resolutions. Coverage: Uruguay, national and by department. Format and access: CSV, XLSX and XML on catalogodatos.gub.uy and its CKAN API, free under the Uruguayan public data licence (Licencia de Datos Abiertos del Uruguay). Caveats: the fibre series does not say whether it covers backbone, access or both, nor who owns it; update cadence appears yearly despite monthly figures; the start of the series was not checked. Simulation uses: departmental fibre extent for exposure and redundancy studies, and subscriber and traffic series for Uruguayan demand models. Related records: the LAC-IX survey and map covers Uruguayan exchange points; the TeleGeography submarine cable map covers Uruguay's landings.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "catalogodatos.gub.uy search (ursec)",
+      "route": "R10",
+      "source": "organisations.csv:UY:digital:ministry_regulator"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://catalogodatos.gub.uy/organization/ursec",
+  "id": "data-ursec-uruguay-telecom-open-data",
+  "languages": [
+    "es"
+  ],
+  "last_updated": "2026-02",
+  "licence": "Licencia de Datos Abiertos del Uruguay",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "URSEC Uruguay telecom open data: monthly mobile and fixed subscribers, traffic and fibre optic kilometres by department",
+  "notes": "CKAN package_search and package_show read on 2026-09-26. The fibre series temporal resolution is inferred. Licence name as shown by the catalogue (DAG licence of Uruguay).",
+  "provider": "Unidad Reguladora de Servicios de Comunicaciones (URSEC), Uruguay",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "size": "about 8 telecom datasets",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "fibre dataset metadata",
+      "url": "https://catalogodatos.gub.uy/api/3/action/package_show?id=km-de-fibra-optica-por-departamento"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): added 2 verified direct data link(s) from the provider's resource list. Verified: https://catalogodatos.gub.uy/dataset/9bec3260-63e3-41dd-9905-3c724fd5d -> verified by fetch during the check; https://catalogodatos.gub.uy/dataset/f2e28862-2d9b-42bd-8ca5-e233755b7 -> verified by fetch during the check",
+      "url": "https://catalogodatos.gub.uy/dataset/9bec3260-63e3-41dd-9905-3c724fd5d8a4/resource/4d83fc90-e70f-46f6-8b93-a641d1452a24/download/presupuesto-2020-a-2023.csv"
+    }
+  ],
+  "spatial_resolution": "national; department (fibre)",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "subscribers",
+    "traffic",
+    "optical fibre",
+    "department",
+    "Uruguay"
+  ],
+  "temporal_coverage": "not stated (series to 2025)",
+  "temporal_resolution": "monthly (subscribers); annual (fibre)",
+  "temporal_resolution_class": "monthly",
+  "title_en": "URSEC Uruguay telecom open data: monthly mobile and fixed subscribers, traffic and fibre optic kilometres by department",
+  "type": "data",
+  "update_frequency": "annual"
+}

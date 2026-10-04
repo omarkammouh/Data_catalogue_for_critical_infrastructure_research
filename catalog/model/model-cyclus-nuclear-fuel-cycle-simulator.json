@@ -1,0 +1,136 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Project website",
+      "url": "https://fuelcycle.org"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code (GitHub)",
+      "url": "https://github.com/cyclus/cyclus"
+    },
+    {
+      "kind": "repo",
+      "label": "Cycamore facility module",
+      "url": "https://github.com/cyclus/cycamore"
+    },
+    {
+      "kind": "download",
+      "label": "cyclopts resource exchange analysis (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.27370"
+    },
+    {
+      "kind": "download",
+      "label": "cycmap spent fuel validation code (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.1475436"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cyclus agent based nuclear fuel cycle simulator",
+    "repo": "github.com/cyclus/cyclus",
+    "url": "https://fuelcycle.org"
+  },
+  "description": "Cyclus is an agent-based and extensible framework for modelling the flow of material through current and future nuclear fuel cycles, developed from the University of Wisconsin-Madison. Its core provides the input and output handling and a dynamic resource exchange solver that manages trades of material between facility agents, while facility models come from the Cycamore module or from third-party plug-in archetypes; a Python interface is also offered. The project website lists version 1.6.0 released in May 2024 and a Cyclus workshop at GLOBAL 2026 in August 2026, and the repository has about 50 tags with its last commit in July 2026. Related Zenodo deposits include cyclopts, a stochastic analysis of the resource exchange formulation by Matthew Gidden (2015), and cycmap, code for validating spent fuel output by Gwendolyn Chee, Gyutae Park and Kathryn Huff (2018). Coverage is any fuel cycle the user defines. The code is accessible on GitHub under a BSD 3-clause licence at no cost. Caveats: it models material logistics, not reactor physics or grid operation, and results depend on the chosen archetypes. Simulation uses are fleet transition and supply chain scenarios for reactors, enrichment, reprocessing and waste storage. Related records: model-dieterpy-dieter-power-sector-model covers power sector capacity planning.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "nuclear power plant optimization model",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "nuclear power plant simulator",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://fuelcycle.org",
+  "id": "model-cyclus-nuclear-fuel-cycle-simulator",
+  "inputs": [
+    "fuel cycle facility archetypes and deployment schedules",
+    "material recipes"
+  ],
+  "language": [
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "network"
+  ],
+  "name": "Cyclus agent-based nuclear fuel cycle simulator",
+  "outputs": [
+    "material flows and inventories through the fuel cycle"
+  ],
+  "provider": "Cyclus project, University of Wisconsin-Madison Computational Nuclear Engineering Research Group",
+  "related_ids": [
+    "model-dieterpy-dieter-power-sector-model"
+  ],
+  "repository": "https://github.com/cyclus/cyclus",
+  "runs_on": [
+    "desktop",
+    "server"
+  ],
+  "sectors": [
+    "energy.nuclear"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Agent-based simulator, dynamic resource exchange, plug-in agents; news v1.6.0 (2024-05-04), workshop 2026-08-16",
+      "url": "https://fuelcycle.org"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "README core description and Cycamore; LICENSE BSD 3-clause (University of Wisconsin); 50 tags; SWH HEAD 2026-07-06",
+      "url": "https://github.com/cyclus/cyclus"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "cycmap v1.0 - validation of spent nuclear fuel output by Cyclus (Chee, Park, Huff)",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.1475436"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "cyclopts 0.0.12 by Matthew Gidden; BSD",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.27370"
+    }
+  ],
+  "tags": [
+    "nuclear fuel cycle",
+    "agent-based",
+    "material flow",
+    "fleet transition",
+    "Cyclus"
+  ],
+  "title_en": "Cyclus agent-based nuclear fuel cycle simulator",
+  "type": "model",
+  "validated_on": [
+    "spent nuclear fuel output comparison (cycmap, ANS Winter 2018)"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/pycraf/"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/bwinkel/pycraf"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://bwinkel.github.io/pycraf/"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (arXiv 1805.11434)",
+      "url": "https://arxiv.org/abs/1805.11434"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pycraf python package for spectrum management compatibility studies itu r p 452 and p 676",
+    "repo": "github.com/bwinkel/pycraf",
+    "url": "https://bwinkel.github.io/pycraf"
+  },
+  "description": "pycraf is a Python package for spectrum-management compatibility studies, written by Benjamin Winkel at the Max Planck Institute for Radio Astronomy in Bonn and described in a 2018 paper in Advances in Radio Science. Its core is an implementation of Recommendation ITU-R P.452 (version 16), which calculates the path attenuation between an interfering transmitter and a victim receiver from distance and terrain, and it also computes atmospheric attenuation following ITU-R P.676, with further tools for antenna patterns, geometry and conversions. A typical use is the interference level at a radio telescope caused by a broadcasting tower; the authors also ran a Monte Carlo study of the possible harm from 5G base stations and user devices around a radio observatory. Coverage: any location, using terrain data such as SRTM. Format and access: Python package on PyPI and GitHub, documentation on GitHub Pages, free under GPL v3; version 2.1.0 was released on 1 February 2025 and the first release dates from June 2017. Caveats: aimed at compatibility studies, not coverage planning; results are only as good as the terrain and clutter inputs. Simulation uses: interference and coverage calculations for broadcasting and mobile transmitters, and hazard exposure of radio links to anomalous propagation. Related records: Py1812 and Py1546 implement other ITU-R propagation methods, and the NTIA ITM model covers similar paths.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "radio propagation path loss model open source implementation ray tracing ITU-R P.1812 P.452 python library",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://arxiv.org/abs/1805.11434",
+  "id": "model-pycraf",
+  "inputs": [
+    "transmitter and receiver locations and heights",
+    "frequency and time percentage",
+    "terrain profile (e.g. SRTM)"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-02-01",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "pycraf: Python package for spectrum-management compatibility studies (ITU-R P.452 and P.676)",
+  "notes": "arXiv abstract read with curl, PyPI metadata read by API and documentation home read on 2026-09-26. Antenna and geometry tools and Cython are from recall.",
+  "outputs": [
+    "path attenuation (P.452)",
+    "atmospheric attenuation (P.676)",
+    "interference levels"
+  ],
+  "provider": "Benjamin Winkel and Axel Jessner, Max Planck Institute for Radio Astronomy (MPIfR), Bonn",
+  "related_ids": [
+    "data-itu-r-dbsg3-propagation-databanks",
+    "data-fcc-uls-license-data",
+    "data-ised-spectrum-management-system-extracts",
+    "model-py1812"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "digital.telecom",
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "abstract",
+      "url": "https://arxiv.org/abs/1805.11434"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "versions and licence",
+      "url": "https://pypi.org/pypi/pycraf/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "documentation",
+      "url": "https://bwinkel.github.io/pycraf/"
+    }
+  ],
+  "tags": [
+    "ITU-R P.452",
+    "interference",
+    "spectrum management",
+    "radio astronomy",
+    "propagation"
+  ],
+  "title_en": "Pycraf: Python package for spectrum-management compatibility studies (ITU-R P.452 and P.676)",
+  "type": "model",
+  "validated_on": []
+}

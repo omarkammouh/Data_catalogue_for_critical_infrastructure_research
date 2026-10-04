@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "2023 outage report",
+      "url": "https://www.ams-ix.net/ams/outage-on-amsterdam-peering-platform"
+    },
+    {
+      "kind": "docs",
+      "label": "2022 outage notice",
+      "url": "https://www.ams-ix.net/ams/news/outage-at-the-ams-ix-platform-in-amsterdam"
+    },
+    {
+      "kind": "docs",
+      "label": "2015 outage news (NL Times)",
+      "url": "https://nltimes.nl/2015/05/13/outage-amsterdam-internet-hub-affects-much-netherlands"
+    }
+  ],
+  "access_restrictions": "none",
+  "case_study_kind": [
+    "post_event_analysis",
+    "operations_control"
+  ],
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "ams ix peering platform outages from switching loops 2015 2022 and 2023",
+    "url": "https://ams-ix.net/ams/outage-on-amsterdam-peering-platform"
+  },
+  "description": "This post-event and operations case brings together three outages of the peering platform of the Amsterdam Internet Exchange, one of the largest internet exchanges in the world, all caused by layer-2 loops or leaks in the switching fabric. On 13 May 2015, around midday, a loop created during work on the platform dropped BGP sessions of connected networks for about an hour and caused connectivity problems across the Netherlands; AMS-IX blamed human error and said it would build a workflow to prevent a repeat. On 6 April 2022, from 10:20 to 10:45, an engineer preparing a routing test before planned maintenance set a wrong port configuration that created a loop, interrupting 74.5 per cent of BGP sessions on the platform. On 22 and 23 November 2023, in two windows, LACP frames from customer equipment leaked through a switch whose filter was not fully working; traffic fell to 2.1 Tb/s at worst and IPv4 BGP sessions from 885 to 550. After the last event AMS-IX applied filters to non-LACP links, changed provisioning, added alerts for problem frames and revised incident communication. Coverage: one exchange in Amsterdam, three events. Format and access: incident notices on the AMS-IX website and news reports, free. Caveats: the 2015 root-cause note went only to members; traffic effects outside the exchange were not measured here. Simulation uses: failure modes of shared switching fabrics, cascading loss of peering sessions and operational procedures at exchanges. Related records: the DE-CIX Frankfurt outage of 2018 and RIPE Atlas measurements show how traffic reroutes when an exchange fails.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "AMS-IX outage May 2015 loop root cause report lessons internet exchange",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "city",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://www.ams-ix.net/ams/outage-on-amsterdam-peering-platform",
+  "id": "case_study-ams-ix-platform-loop-outages",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023",
+  "licence": "AMS-IX copyright; free to read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.ams-ix.net/ams/news/outage-at-the-ams-ix-platform-in-amsterdam",
+      "https://www.ams-ix.net/ams/outage-on-amsterdam-peering-platform"
+    ]
+  },
+  "maturity": "stale",
+  "name": "AMS-IX peering platform outages from switching loops (2015, 2022 and 2023)",
+  "notes": "AMS-IX 2022 and 2023 pages and NL Times 2015 article read via fetch on 2026-09-26. The search result wrongly dated the 2022 notice to 2015; dates here follow the pages.",
+  "organisations": [
+    "AMS-IX"
+  ],
+  "outcomes": "Three loop or leak outages: about an hour in 2015, 74.5 per cent of BGP sessions lost for 25 minutes in 2022, traffic down to 2.1 Tb/s in 2023; filtering, provisioning and alerting were changed.",
+  "provider": "Amsterdam Internet Exchange (AMS-IX)",
+  "related_ids": [],
+  "resources_used": [
+    "AMS-IX Amsterdam peering platform",
+    "Juniper PE switches",
+    "Extreme SLX switches"
+  ],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "2023 report",
+      "url": "https://www.ams-ix.net/ams/outage-on-amsterdam-peering-platform"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "2022 notice",
+      "url": "https://www.ams-ix.net/ams/news/outage-at-the-ams-ix-platform-in-amsterdam"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "2015 event",
+      "url": "https://nltimes.nl/2015/05/13/outage-amsterdam-internet-hub-affects-much-netherlands"
+    }
+  ],
+  "study_period": "2015 to 2023",
+  "tags": [
+    "internet exchange",
+    "outage",
+    "switching loop",
+    "BGP sessions",
+    "Amsterdam"
+  ],
+  "title_en": "AMS-IX peering platform outages from switching loops (2015, 2022 and 2023)",
+  "type": "case_study"
+}

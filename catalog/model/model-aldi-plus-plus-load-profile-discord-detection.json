@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository (MIT)",
+      "url": "https://github.com/buds-lab/aldiplusplus"
+    },
+    {
+      "kind": "paper",
+      "label": "arXiv preprint 2203.06618",
+      "url": "https://arxiv.org/abs/2203.06618"
+    },
+    {
+      "kind": "paper",
+      "label": "Energy and Buildings article",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378778822002675"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "aldi automatic parameter less discord detection for building energy load profiles",
+    "url": "https://github.com/buds-lab/aldiplusplus"
+  },
+  "description": "ALDI++ is a method and Python code base for detecting discords and outliers in daily building energy load profiles without user-set parameters, built on the earlier ALDI (Automated Load profile Discord Identification) matrix profile method and using the similarity of discords. The authors, Matias Quintana, Till Stoeckmann, June Young Park, Marian Turowski, Veit Hagenmeyer and Clayton Miller, motivate it with the ASHRAE Great Energy Predictor III competition, where removing anomalous training data was a large part of the winning solutions, and compare it with a statistical threshold, a variational auto-encoder and the original ALDI for classifying discords and for energy forecasting; the abstract reports that classification gains over ALDI are marginal but ALDI++ gives the best forecasting results. The repository supplies conda environments, the forecasting set-up used on AWS, and instructions to download the GEPIII data from Kaggle and the outliers labelled by top teams. Coverage: generic, tested on the Building Data Genome 2 meters. Access: free code on GitHub. Licence: MIT (copyright BUDS Group). Caveats: research code with no releases, and the data must be fetched separately. Simulation uses: cleaning meter data before calibrating or training building energy models. Related records: Building Data Genome 2.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "building energy measured data calibration validation benchmark dataset BDG2 building data genome",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/buds-lab/aldiplusplus",
+  "id": "model-aldi-plus-plus-load-profile-discord-detection",
+  "inputs": [
+    "Hourly building meter data (tested on the GEPIII subset of Building Data Genome 2)",
+    "Manually labelled outliers for evaluation"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.sciencedirect.com/science/article/pii/S0378778822002675"
+    ]
+  },
+  "maturity": "archived",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "ALDI++: automatic, parameter-less discord detection for building energy load profiles",
+  "outputs": [
+    "Daily discord and outlier labels for load profiles",
+    "Cleaned training data for energy forecasting"
+  ],
+  "provider": "Building and Urban Data Science (BUDS) Lab, National University of Singapore, with Karlsruhe Institute of Technology co-authors",
+  "related_ids": [
+    "data-building-data-genome-2"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract, authors (citation metadata)",
+      "url": "https://arxiv.org/abs/2203.06618"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, requirements, data sources, journal link",
+      "url": "https://raw.githubusercontent.com/buds-lab/aldiplusplus/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT licence, BUDS Group",
+      "url": "https://raw.githubusercontent.com/buds-lab/aldiplusplus/HEAD/LICENSE"
+    }
+  ],
+  "tags": [
+    "anomaly detection",
+    "load profiles",
+    "matrix profile",
+    "data cleaning",
+    "GEPIII",
+    "BUDS Lab"
+  ],
+  "title_en": "ALDI++: automatic, parameter-less discord detection for building energy load profiles",
+  "type": "model"
+}

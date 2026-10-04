@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Broadcasting station permits (data.gov.lt)",
+      "url": "https://data.gov.lt/datasets/2729/"
+    },
+    {
+      "kind": "api",
+      "label": "get.data.gov.lt API",
+      "url": "https://get.data.gov.lt/datasets/gov/rrt/leid_transliacijos_stotys"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "LT"
+  ],
+  "data_family": [
+    "system_description",
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-09-27",
+  "dedupe_keys": {
+    "name": "rrt lithuania broadcasting station permits with antenna coordinates radio and television",
+    "url": "https://data.gov.lt/datasets/2729"
+  },
+  "description": "This dataset lists the currently valid permits issued by the Communications Regulatory Authority of Lithuania for the use of broadcasting stations, both radio and television. Each permit gives the location of the transmitting antenna in WGS coordinates, with the station and permit details held in the regulator's register. Expired permits are removed, so the table is a snapshot of licensed broadcast transmitters. The State Data Agency publishes it through the national data service get.data.gov.lt, which offers the table as CSV, JSON and RDF through a documented query API, and the metadata were last updated in April 2026. Sister datasets from the same register cover radio amateur authorisations, aircraft station authorisations and ship station permits. Coverage: Lithuania. Format and access: CSV, JSON and RDF through the get.data.gov.lt API, free under CC BY 4.0. Caveats: only current permits, with no history; technical fields such as power, frequency and antenna height were not checked; the API returned server errors to automated requests, so the row count is unknown. Simulation uses: locations of FM and television transmitters for broadcast continuity and hazard exposure models, including public warning by radio. Related records: the Ofcom broadcast transmitter parameters, the Traficom radio and TV stations for Finland and the UKE radio permit lists for Poland give comparable registers.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "data.europa.eu search (ryšių)",
+      "route": "R12",
+      "source": "organisations.csv:LT:digital:spectrum_agency"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "database"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.gov.lt/datasets/2729/",
+  "id": "data-rrt-lithuania-broadcasting-station-permits",
+  "languages": [
+    "lt"
+  ],
+  "last_updated": "2026-04",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-09-27"
+  },
+  "maturity": "active",
+  "name": "RRT Lithuania broadcasting station permits with antenna coordinates (radio and television)",
+  "notes": "Metadata read through the data.europa.eu search API on 2026-09-26. get.data.gov.lt returned HTTP 500 to curl. The API query syntax is from the portal's general documentation, not checked for this table.",
+  "provider": "Communications Regulatory Authority of the Republic of Lithuania (RRT), published by the State Data Agency (Valstybės duomenų agentūra)",
+  "related_ids": [],
+  "sectors": [
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "size": "not stated",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "dataset metadata",
+      "url": "https://data.europa.eu/data/datasets/https-data-gov-lt-datasets-2729-~~1"
+    }
+  ],
+  "spatial_resolution": "antenna points",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "broadcast transmitters",
+    "FM",
+    "DVB-T",
+    "permits",
+    "Lithuania"
+  ],
+  "temporal_coverage": "current permits",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "RRT Lithuania broadcasting station permits with antenna coordinates (radio and television)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "GitHub documentation",
+      "url": "https://github.com/google/cluster-data"
+    },
+    {
+      "kind": "docs",
+      "label": "ClusterData2019",
+      "url": "https://github.com/google/cluster-data/blob/master/ClusterData2019.md"
+    },
+    {
+      "kind": "docs",
+      "label": "Power traces",
+      "url": "https://github.com/google/cluster-data/blob/master/PowerData2019.md"
+    }
+  ],
+  "access_note": "2019 trace only through Google BigQuery (a Google Cloud account is needed; queries may be billed).",
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "time_series",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "google cluster workload traces borg clusterdata 2011 and 2019 power traces",
+    "url": "https://github.com/google/cluster-data"
+  },
+  "description": "The Google cluster workload traces describe jobs and tasks running on Google compute cells managed by the Borg cluster manager. ClusterData2019 (version 3) covers eight Borg cells over May 2019, with job and task events, resource requests and usage, five-minute CPU usage histograms, alloc sets and parent-child job links; ClusterData2011 (version 2) covers one cell of about 12,500 machines over May 2011; a 2009 seven-hour trace is deprecated. Companion power traces cover 57 power domains in May 2019, and ETA execution traces are also hosted. Google publishes them, maintained by John Wilkes and collaborators, so researchers can study scheduling and resource management with real production data; a bibliography lists papers that use them. Coverage: Google data centres (cells not geographically identified), one month per version, with timestamps in microseconds and five-minute usage windows. Format and access: the 2019 trace (about 2.4 TiB compressed) is available only through Google BigQuery, the 2011 trace as CSV files in cloud storage, with documentation on GitHub; free of charge under CC BY 4.0, and users are asked to join a mailing list. Caveats: data are anonymised and normalised, so absolute capacities and locations are hidden; BigQuery access may incur query costs; the trace covers compute workload, not facility power or cooling beyond the power domains. Simulation uses: demand and operation inputs for data-centre capacity planning, scheduling optimisation, energy and power studies, and synthetic benchmarks for simulators. Related records: CloudSim, CloudSim Plus and SimGrid consume such traces; the Alibaba and Azure trace programmes are comparable.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.data_centres:synthetic_benchmark",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "database",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/google/cluster-data/blob/master/ClusterData2019.md",
+  "id": "data-google-cluster-workload-traces",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Google cluster workload traces (Borg ClusterData 2011 and 2019, power traces)",
+  "provider": "Google",
+  "related_ids": [
+    "platform-dccluster-opt-geo-distributed-workload-benchmark"
+  ],
+  "schema_summary": "machine events and attributes, collection (job) and instance (task) events, instance usage with CPU histograms, alloc sets; power per domain",
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "size": "about 2.4 TiB compressed (2019)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README and ClusterData2019.md via raw.githubusercontent.com",
+      "url": "https://github.com/google/cluster-data"
+    }
+  ],
+  "spatial_resolution": "cluster (cell) and machine",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "Borg",
+    "cluster trace",
+    "workload",
+    "scheduling",
+    "power traces"
+  ],
+  "temporal_coverage": "May 2011; May 2019",
+  "temporal_coverage_years": {
+    "end": 2019,
+    "start": 2011
+  },
+  "temporal_resolution": "microsecond events; 5-minute usage",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Google cluster workload traces (Borg ClusterData 2011 and 2019, power traces)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

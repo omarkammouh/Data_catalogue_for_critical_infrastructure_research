@@ -1,0 +1,160 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "EPA EPANET page: EPANET 2.2 installers, toolkit, source and manuals",
+      "url": "https://www.epa.gov/water-research/epanet"
+    },
+    {
+      "kind": "repo",
+      "label": "EPA official release 2.2.0 (source, GUI, manuals)",
+      "url": "https://github.com/USEPA/EPANET2.2"
+    },
+    {
+      "kind": "docs",
+      "label": "EPANET 2.2 user manual (online)",
+      "url": "https://usepa.github.io/EPANET2.2/"
+    },
+    {
+      "kind": "repo",
+      "label": "OWA-EPANET engine and toolkit",
+      "url": "https://github.com/OpenWaterAnalytics/EPANET"
+    },
+    {
+      "kind": "docs",
+      "label": "OWA-EPANET Toolkit 2.3 API documentation",
+      "url": "http://wateranalytics.org/EPANET/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "U.S. Environmental Protection Agency (2020). EPANET 2.2 User Manual. Office of Research and Development, Cincinnati, OH. https://usepa.github.io/EPANET2.2/",
+  "cost": "free",
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "epanet",
+    "repo": "github.com/usepa/epanet2.2",
+    "url": "https://epa.gov/water-research/epanet"
+  },
+  "description": "EPANET performs extended-period simulation of the hydraulic and water quality behaviour of pressurised drinking water distribution networks made of pipes, junctions, pumps, valves, storage tanks and reservoirs. It tracks the flow in each pipe, the pressure at each node, the water level in each tank, a chemical concentration, water age and source tracing over a simulation period, with pressure-dependent demands, rule-based controls, several head-loss formulas and no limit on network size. The U.S. Environmental Protection Agency developed it to understand the movement and fate of drinking water constituents; engineers use it to design and size infrastructure, retrofit ageing systems, optimise tanks and pumps, reduce energy use, investigate water quality, prepare for emergencies, and model contamination threats and resilience to security threats or natural disasters. It is generic and runs any network described in an INP input file. EPA's official release is version 2.2 (July 2020): a Windows program with a visual network editor, a Windows toolkit library, source code and a user manual in English and Spanish. The solver engine and its C toolkit are developed further as OWA-EPANET by the Open Water Analytics community, whose release 2.3.5 (February 2026) builds on Linux, macOS and Windows but has no graphical interface. Licence: EPA's EPANET page calls EPANET public domain software; EPA's release repository and OWA-EPANET state the MIT licence; either way it is free and unrestricted. Caveats: EPA's official release and the community engine differ in version and features. Simulation uses are network flow, capacity planning, emergency response and resilience of water supply. Related tools not yet catalogued: EPANET-MSX (multi-species reactions) and EPANET-RTX (real-time models) from EPA, and WNTR, which wraps EPANET for resilience analysis.",
+  "description_checked": "2026-09-24",
+  "discovery_routes": [
+    {
+      "date": "2026-09-23",
+      "query": "EPA water distribution network hydraulic and water quality model EPANET",
+      "route": "R40",
+      "source": "assistant recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.epa.gov/water-research/epanet",
+  "id": "model-epanet",
+  "inputs": [
+    "EPANET INP network file (pipes, junctions, pumps, valves, tanks, reservoirs, demands, patterns, controls)",
+    "Water quality source and reaction parameters"
+  ],
+  "language": [
+    "c_cpp",
+    "other"
+  ],
+  "languages": [
+    "en",
+    "es"
+  ],
+  "last_updated": "2026-02-20",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "network"
+  ],
+  "name": "EPANET",
+  "notes": "Audit 2026-09-24: every statement re-read on EPA's EPANET page, the EPA and OWA repository READMEs and licence, the online manual, the OWA toolkit documentation, the OWA releases feed and git tags. Corrections to round 1: the OWA-EPANET 2.3.5 release is dated 2026-02-20 (releases feed; tagged commit 2026-02-19), not 2025-02-20; EPA's page describes EPANET as public domain while its repositories state MIT, which the description now says; a Spanish manual exists (July 2021); maturity is active because OWA released 2.3.3, 2.3.4 and 2.3.5 between December 2025 and February 2026. EPA's own last release is 2.2 of 2020-07-23. WNTR 1.5.0 (Revised BSD) was uploaded to PyPI on 2026-07-01 and is a candidate for its own record.",
+  "outputs": [
+    "Pipe flows and velocities",
+    "Node pressures and heads",
+    "Tank levels",
+    "Chemical concentration, water age and source trace",
+    "Binary output and report files"
+  ],
+  "provider": "U.S. Environmental Protection Agency (with the Open Water Analytics community)",
+  "related_ids": [
+    "model-x-what-excel-looped-wdn-design-optimisation"
+  ],
+  "repository": "https://github.com/USEPA/EPANET2.2",
+  "runs_on": [],
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-24",
+      "note": "Capabilities, uses, 'public domain software', Windows program; EPANET 2.2 files dated 07/23/2020; Spanish manual 07/16/2021; EPANET-MSX and RTX",
+      "url": "https://www.epa.gov/water-research/epanet"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Official release 2.2.0, collaboration with OWA, 'released under the MIT license', Delphi-based interface, manual links",
+      "url": "https://raw.githubusercontent.com/USEPA/EPANET2.2/master/README.md"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Online user manual: EPA Office of Research and Development, Cincinnati; version 2.2 improvements",
+      "url": "https://usepa.github.io/EPANET2.2/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "OWA-EPANET: engine and C toolkit only, no GUI, maintained since May 2014, not endorsed by EPA; Linux, macOS and Windows builds",
+      "url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/master/README.md"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "MIT licence",
+      "url": "https://raw.githubusercontent.com/OpenWaterAnalytics/EPANET/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "OWA-EPANET Toolkit 2.3 documentation: capabilities of the toolkit",
+      "url": "http://wateranalytics.org/EPANET/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "OWA:EPANET 2.3.5 updated 2026-02-20T00:10:09Z; 2.3.4 2026-02-10; 2.3.3 2025-12-14 (read with the page-fetch tool)",
+      "url": "https://github.com/OpenWaterAnalytics/EPANET/releases.atom"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "git: tag v2.3.5, commit dated 2026-02-19T17:25:11-05:00",
+      "url": "https://github.com/OpenWaterAnalytics/EPANET"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "WNTR 1.5.0, Revised BSD, uploaded 2026-07-01 (related tool)",
+      "url": "https://pypi.org/pypi/wntr/json"
+    }
+  ],
+  "tags": [
+    "water distribution",
+    "hydraulics",
+    "water quality",
+    "INP",
+    "toolkit",
+    "EPANET-MSX",
+    "WNTR"
+  ],
+  "title_en": "Drinking-water network hydraulics and water-quality simulation",
+  "type": "model",
+  "validated_on": []
+}

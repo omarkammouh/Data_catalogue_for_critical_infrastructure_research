@@ -1,0 +1,144 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "MITECO download page (layers, 2020-21 table, field description)",
+      "url": "https://www.miteco.gob.es/en/cartografia-y-sig/ide/descargas/agua/anuario-de-aforos.html"
+    },
+    {
+      "kind": "download",
+      "label": "CEDEX per-basin CSV downloads",
+      "url": "https://ceh.cedex.es/anuarioaforos/default.asp"
+    },
+    {
+      "kind": "api",
+      "label": "WMS gauging stations",
+      "url": "https://gis.miteco.gob.es/geoserver/agua/Estaciones_Aforos/wms?request=getcapabilities&service=wms"
+    },
+    {
+      "kind": "docs",
+      "label": "CEDEX announcement",
+      "url": "https://www.cedex.es/comunicacion/noticias/cedex-tiene-disposicion-publica-datos-anuario-aforos-desde-1912"
+    }
+  ],
+  "access_note": "Station layers, the full 2020-21 database and per-basin CSV files download without registration.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "ES"
+  ],
+  "data_family": [
+    "demand_operation",
+    "system_description",
+    "hazards"
+  ],
+  "data_kind": [
+    "time_series",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "spanish gauging yearbook anuario de aforos saih roea integrated gauging network",
+    "url": "https://miteco.gob.es/en/cartografia-y-sig/ide/descargas/agua/anuario-de-aforos.html"
+  },
+  "description": "The Spanish Gauging Yearbook (Anuario de Aforos) publishes the validated hydrological data of the integrated gauging network SAIH-ROEA, which joins the official gauging network with stations of the automatic hydrological information system (SAIH). It covers four station types: river gauges, reservoirs, conduits (canals and main pipelines) and evaporation stations at reservoirs, with each station's location, municipality, catchment area and technical features, plus its historical series. Records start in 1911-12 and the current release runs to hydrological year 2020-21; the ministry keeps it as the official hydrological register required by article 33 of the National Hydrological Plan Law (Ley 10/2001). MITECO offers station layers as Shapefile, KMZ, INSPIRE GML and WMS and the full 2020-21 database as a 306 MB compressed table, and CEDEX offers complete per-basin downloads as CSV files with a field description document. Use is free of charge with attribution to MITECO. Caveats: the latest data end in 2021, the CSV files use a decimal comma and a point for thousands, the CEDEX download application did not render from the cloud so its per-basin pages were not checked, and no file was downloaded. Simulation uses: long inflow, outflow and storage series for reservoir operation and water supply models, flood frequency and drought analysis, calibration of hydrological models, and inputs to irrigation and hydropower planning. Related records: the Spanish Inventory of Dams and Reservoirs (data-spain-dam-reservoir-inventory).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: CEDEX Centre for Hydrographic Studies (gauging yearbook) (ES, hydrological_service) https://ceh.cedex.es/anuarioaforos/default.asp",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "anuario de aforos CEDEX datos descarga estaciones de aforo ROEA",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "database",
+    "shapefile",
+    "kml",
+    "gml",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "drought"
+  ],
+  "homepage": "https://www.miteco.gob.es/en/cartografia-y-sig/ide/descargas/agua/anuario-de-aforos.html",
+  "id": "data-spain-anuario-de-aforos-gauging-yearbook",
+  "languages": [
+    "es"
+  ],
+  "licence": "Free use and free of charge with attribution: «© Ministerio para la Transición Ecológica y el Reto Demográfico»",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://ceh.cedex.es/anuarioaforos/default.asp"
+    ]
+  },
+  "maturity": "active",
+  "name": "Spanish Gauging Yearbook (Anuario de Aforos, SAIH-ROEA integrated gauging network)",
+  "notes": "ceh.cedex.es/anuarioaforos did not render in the cloud browser; its content is described from the CEDEX announcement page.",
+  "provider": "Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO), with the Centro de Estudios Hidrográficos of CEDEX",
+  "related_ids": [
+    "data-spain-dam-reservoir-inventory"
+  ],
+  "schema_summary": "per station: location, municipality, catchment area in km2, and type-specific technical features (river regime, station type, reservoir volume, photograph, diagram); historical series for each station; statistical tables; a field description document gives table fields and units",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.irrigation",
+    "water.drinking_water",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "station types, data since 1911, Ley 10/2001 art. 33, file list and sizes, licence text, update 01/06/2024, WMS URL, series to 2020-21",
+      "url": "https://www.miteco.gob.es/en/cartografia-y-sig/ide/descargas/agua/anuario-de-aforos.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "complete per-basin downloads, CSV text files, field description document, decimal comma",
+      "url": "https://www.cedex.es/comunicacion/noticias/cedex-tiene-disposicion-publica-datos-anuario-aforos-desde-1912"
+    }
+  ],
+  "spatial_resolution": "individual stations (river gauges, conduits, reservoirs, evaporation stations)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "streamflow",
+    "gauging stations",
+    "reservoirs",
+    "evaporation",
+    "SAIH",
+    "ROEA",
+    "CEDEX",
+    "hydrological yearbook",
+    "Spain",
+    "INSPIRE"
+  ],
+  "temporal_coverage": "hydrological data since 1911-12, updated to hydrological year 2020-21",
+  "temporal_resolution": "daily and monthly values with annual statistics (as described in the yearbook tables)",
+  "temporal_resolution_class": "daily",
+  "title_en": "Spanish Gauging Yearbook (Anuario de Aforos, SAIH-ROEA integrated gauging network)",
+  "type": "data",
+  "update_frequency": "annual"
+}

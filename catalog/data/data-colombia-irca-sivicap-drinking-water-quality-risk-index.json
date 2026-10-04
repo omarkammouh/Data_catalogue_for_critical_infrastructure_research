@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Calidad del Agua para Consumo Humano en Colombia (datos.gov.co; API)",
+      "url": "https://www.datos.gov.co/resource/nxt2-39c3.json"
+    },
+    {
+      "kind": "portal",
+      "label": "IRCA 2010-2019 and consolidated SIVICAP parameters (iMMAP copy on HDX)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.humdata.org/dataset/indice-de-riesgo-por-calidad-del-agua-para-consumo-humano-irca-municipal-2010-2019-en-colombia"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CO"
+  ],
+  "data_family": [
+    "demand_operation",
+    "health_impacts"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "colombia drinking water quality risk index irca by municipality urban and rural from sivicap ins",
+    "url": "https://datos.gov.co/d/nxt2-39c3"
+  },
+  "description": "Colombia's drinking water quality surveillance system SIVICAP produces the IRCA (Índice de Riesgo de la Calidad del Agua para Consumo Humano), the percentage risk of water-related disease from failures to meet physical, chemical and microbiological standards. The national dataset gives the annual average IRCA and its risk level for every department and municipality, separately for urban and rural areas, from 2007; on 2026-09-26 it held 19,160 rows covering 2007 to 2024. The Instituto Nacional de Salud produced it and publishes it on the national open data portal. Coverage is national for Colombia. It is free on datos.gov.co as CSV or JSON through the Socrata API under CC BY-SA 4.0, updated yearly (last on 2025-06-10), and iMMAP republished 2010 to 2019 values with the consolidated SIVICAP parameters on HDX. Caveats: it is an index of sampled water quality, not a description of the supply systems, and the latest year when read was 2024. Simulation uses: municipal drinking water quality risk as an indicator of service performance and health exposure, and to flag systems for improvement. Related records: the WHO/UNICEF JMP database (data-who-unicef-jmp-wash-database) and SIASAR (data-siasar-rural-water-sanitation-information-system).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "sanitation",
+      "route": "R04",
+      "source": "hdx"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "spreadsheet",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://www.datos.gov.co/d/nxt2-39c3",
+  "id": "data-colombia-irca-sivicap-drinking-water-quality-risk-index",
+  "languages": [
+    "es"
+  ],
+  "last_updated": "2025-06-10",
+  "licence": "cc-by",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Colombia drinking water quality risk index (IRCA) by municipality, urban and rural, from SIVICAP (INS)",
+  "provider": "Instituto Nacional de Salud (INS), Colombia",
+  "related_ids": [
+    "data-who-unicef-jmp-wash-database",
+    "data-siasar-rural-water-sanitation-information-system"
+  ],
+  "schema_summary": "department and municipality codes and names, year, IRCA (percent) and risk level for the municipality, its urban area and its rural area; the HDX copy adds consolidated SIVICAP physical, chemical and microbiological parameters for 2010 to 2019",
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, INS, columns, CC BY-SA 4.0, annual update, rows updated 2025-06-10",
+      "url": "https://www.datos.gov.co/api/views/nxt2-39c3.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "19,160 rows, years 2007 to 2024",
+      "url": "https://www.datos.gov.co/resource/nxt2-39c3.json?$select=count(*),min(a_o),max(a_o)"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "iMMAP copy, SIVICAP INS source, 2010-2019, CC BY",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=indice-de-riesgo-por-calidad-del-agua-para-consumo-humano-irca-municipal-2010-2019-en-colombia"
+    }
+  ],
+  "spatial_resolution": "municipality, split into urban and rural areas",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "drinking water quality",
+    "IRCA",
+    "SIVICAP",
+    "public health surveillance",
+    "Colombia",
+    "municipalities",
+    "rural water"
+  ],
+  "temporal_coverage": "2007 to 2024",
+  "temporal_resolution": "annual average",
+  "temporal_resolution_class": "annual",
+  "title_en": "Colombia drinking water quality risk index (IRCA) by municipality, urban and rural, from SIVICAP (INS)",
+  "type": "data",
+  "update_frequency": "annual"
+}

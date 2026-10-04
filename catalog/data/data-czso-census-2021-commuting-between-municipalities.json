@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Commuting between municipalities (CSV)",
+      "url": "https://csu.gov.cz/docs/107508/4dbdab3b-905c-deff-4cfa-e4828a6fa2de/dojizdka_obce.csv?version=1.0"
+    },
+    {
+      "kind": "download",
+      "label": "Commuters by main means of transport and sex (CSV)",
+      "url": "https://csu.gov.cz/docs/107508/1c4621b8-bf78-532d-47bd-3626dc749681/sldb2021_vyjizdka_vsichni_prostredek_pohlavi.csv?version=1.0"
+    },
+    {
+      "kind": "portal",
+      "label": "Census 2021 open data product",
+      "url": "https://csu.gov.cz/produkty/vysledky-scitani-2021-otevrena-data"
+    },
+    {
+      "kind": "docs",
+      "label": "Open data documentation",
+      "url": "https://csu.gov.cz/vysledky-scitani-2021-otevrena-data-dokumentace"
+    },
+    {
+      "kind": "docs",
+      "label": "Terms of use of CZSO data",
+      "url": "https://csu.gov.cz/podminky_pro_vyuzivani_a_dalsi_zverejnovani_statistickych_udaju_csu"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CZ"
+  ],
+  "data_family": [
+    "demand_operation",
+    "behavioural_social"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "czech census 2021 commuting between municipalities and commuters by mode and frequency sldb 2021 open data",
+    "url": "https://csu.gov.cz/docs/107508/4dbdab3b-905c-deff-4cfa-e4828a6fa2de/dojizdka_obce.csv?version=1.0"
+  },
+  "description": "Among the open datasets of the Czech 2021 census, the Czech Statistical Office publishes a table of commuting between municipalities, including daily commuting, together with counts of people who travel to work and school by frequency of the journey, by main means of transport, by destination area and by sex, and of employed persons and students by place of work or school. These give origin and destination flows for the whole country from the census questions on place of work or school and travel. The CZSO produces them as part of the census programme. Coverage: all municipalities of Czechia. Format and access: UTF-8 CSV files with JSON schemas, released in March to May 2023 and downloadable without registration from the census open data product page. Licence: CC BY 4.0 under the CZSO terms, free. Caveats: flows describe the census reference date of 26 March 2021, the flow file lists pairs of origin and destination municipalities with work, school, total and daily commuters, while the other commuting files are long tables with one value per row; check the JSON schema of each file. Simulation uses: origin-destination matrices for calibrating transport demand models, commuter networks for agent-based simulations and daytime population estimates for exposure. Related records: the Czech census houses and dwellings data and the US census ACS commuting flows.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:CZ:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://csu.gov.cz/docs/107508/4dbdab3b-905c-deff-4cfa-e4828a6fa2de/dojizdka_obce.csv?version=1.0",
+  "id": "data-czso-census-2021-commuting-between-municipalities",
+  "languages": [
+    "cs"
+  ],
+  "last_updated": "2023-05-04",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Czech Census 2021 commuting between municipalities and commuters by mode and frequency (SLDB 2021 open data)",
+  "provider": "Czech Statistical Office (Český statistický úřad, ČSÚ)",
+  "related_ids": [
+    "data-czso-census-2021-open-data-houses-and-dwellings",
+    "data-us-census-acs-commuting-flows"
+  ],
+  "schema_summary": "commuting between municipalities including daily commuting; commuters to work and school by frequency, by main means of transport, by destination area and sex; employed persons and students by place of work or school",
+  "sectors": [
+    "transport.road",
+    "transport.public_transit",
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "agent_based",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Datasets read: Vyjíždějící do zaměstnání a školy podle frekvence vyjížďky and podle hlavního dopravního prostředku (2023-04-14), by destination and sex (2023-05-04), Dojížďka mezi obcemi, včetně denní dojížďky (2023-05-04)",
+      "url": "https://csu.gov.cz/produkty/vysledky-scitani-2021-otevrena-data"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "CC BY 4.0",
+      "url": "https://csu.gov.cz/podminky_pro_vyuzivani_a_dalsi_zverejnovani_statistickych_udaju_csu"
+    }
+  ],
+  "spatial_resolution": "municipality to municipality flows; commuter counts by municipality and higher units",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "census",
+    "Czechia",
+    "commuting",
+    "origin-destination",
+    "mode of transport"
+  ],
+  "temporal_coverage": "census reference date 26 March 2021",
+  "temporal_coverage_years": {
+    "end": 2021,
+    "start": 2021
+  },
+  "temporal_resolution": "none (census snapshot)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Czech Census 2021 commuting between municipalities and commuters by mode and frequency (SLDB 2021 open data)",
+  "type": "data"
+}

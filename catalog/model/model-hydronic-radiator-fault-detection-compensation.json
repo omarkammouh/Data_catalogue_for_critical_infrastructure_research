@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/21869564"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/21869564"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Link supplied by Zenodo; repository contents not independently inspected.",
+      "url": "https://github.com/NimaMngh/hydronic-fdc-energyplus"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Integrated fault detection and supervisory compensation for hydronic radiator faults in district-heated buildings; submitted to Results in Engineering, publication not established.",
+  "cost": "free",
+  "countries": [
+    "SE"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.21869564",
+    "name": "integrated fault detection and supervisory compensation for hydronic radiator faults in district heated buildings",
+    "repo": "github.com/nimamngh/hydronic-fdc-energyplus",
+    "url": "https://zenodo.org/records/21869564"
+  },
+  "description": "Nima Monghasemi and colleagues publish code for detecting and compensating hydronic-heating faults inside EnergyPlus through its Python API. The August 2026 archive provides trained one-class SVM, isolation-forest and local-outlier-factor detectors, model inputs and derived results, free under MIT terms for author code. Coverage is a representative DOE retail building using district heating and Västerås weather, with ten-minute simulations over October–April. Scenarios include restricted valve flow, thermostat over-delivery bias and supply-temperature bias. These materials can benchmark fault diagnosis and supervisory-control simulations; thermostat bias is a proxy for over-delivery, not a demonstrated valve mechanism. Related catalogue record model-energyplus is required at version 25.1.0. Training uses fault-free data, runtime logs must be regenerated, and stored detectors depend on the pinned scikit-learn version. Generalisation and uncertainty remain unverified. The manuscript is described as submitted, and no code was executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "(\"building stock\" OR \"building energy\" OR \"urban building\") AND (simulation OR dataset)",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://zenodo.org/records/21869564",
+  "id": "model-hydronic-radiator-fault-detection-compensation",
+  "inputs": [
+    "EnergyPlus building and weather inputs",
+    "Fault-free training season",
+    "Valve and supply-temperature fault scenarios"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-10",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid",
+    "physical"
+  ],
+  "name": "Integrated fault detection and supervisory compensation for hydronic radiator faults in district-heated buildings",
+  "notes": "G6 item G6-0600. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "outputs": [
+    "Anomaly scores and fault classifications",
+    "Compensated heating trajectories and comfort measures"
+  ],
+  "provider": "Monghasemi, Nima (Department of Engineering Sciences, Mälardalen University, Västerås, Sweden); Vouros, Stavros (Department of Engineering Sciences, Mälardalen University, Västerås, Sweden); Kyprianidis, Konstantinos (Department of Engineering Sciences, Mälardalen University, Västerås, Sweden); Vadiee, Amir (Department of Engineering Sciences, Mälardalen University, Västerås, Sweden)",
+  "related_ids": [
+    "model-energyplus",
+    "data-doe-pnnl-prototype-building-models"
+  ],
+  "repository": "https://github.com/NimaMngh/hydronic-fdc-energyplus",
+  "sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/21869564"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence mit-license, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/21869564"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Fault-injection distinctions, seasonal timestep, software dependencies and omitted runtime logs.",
+      "url": "https://api.github.com/repos/NimaMngh/hydronic-fdc-energyplus/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Integrated fault detection and supervisory compensation for hydronic radiator faults in district-heated buildings",
+  "type": "model"
+}

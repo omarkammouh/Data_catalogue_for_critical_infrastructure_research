@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Model repository",
+      "url": "https://github.com/MelikaBaghi/IPD-medical-tourism-simulation"
+    },
+    {
+      "kind": "download",
+      "label": "Release v1.0.3 (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.22941914"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "IR"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.22941914",
+    "name": "hybrid agent based and discrete event simulation of shared hospital capacity for medical tourism anylogic",
+    "repo": "github.com/melikabaghi/ipd-medical-tourism-simulation",
+    "url": "https://github.com/MelikaBaghi/IPD-medical-tourism-simulation"
+  },
+  "description": "This simulation model represents a hospital department that treats both medical tourists from abroad and local patients with the same beds, specialists and appointment slots, to study how patient behaviour affects waiting times. The producers are Melika Baghi and Hadi Mosadegh of Amirkabir University of Technology in Tehran. It combines an agent-based layer, in which patients decide whether to take medication as prescribed, switch doctors, book online or in person, or give up early, with a discrete-event layer that carries visits, admission, recovery and return. In the authors' experiments, the hybrid model gave a mean inpatient waiting time of 14.8 days against 25.8 days for an otherwise identical discrete-event-only version. Coverage is one multi-specialty department with cardiology, internal medicine and breast oncology sections. The model is available free on GitHub and Zenodo under the MIT licence, but needs the commercial AnyLogic software to run. Caveats: the README notes that the bed-sharing routine never adds beds as implemented, so bed sharing is not evaluated, and parameters describe one setting. Simulation uses: testing how behavioural feedback changes hospital queues and capacity needs, and comparing hybrid with conventional queueing models. Related records: the SimPy healthcare models (model-simpy-streamlit-healthcare-des) are open-source discrete-event alternatives.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hospital capacity hybrid simulation",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "site",
+  "hazards": [],
+  "homepage": "https://github.com/MelikaBaghi/IPD-medical-tourism-simulation",
+  "id": "model-medical-tourism-hospital-capacity-hybrid-simulation",
+  "inputs": [
+    "Arrival rates of medical tourists and local patients",
+    "Beds, specialists and appointment slots by section",
+    "Patient behaviour parameters (medication adherence, physician switching, online versus in-person channel, abandonment)"
+  ],
+  "language": [
+    "java",
+    "agent_based_language"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-24",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "hybrid",
+    "discrete_event"
+  ],
+  "name": "Hybrid agent-based and discrete-event simulation of shared hospital capacity for medical tourism (AnyLogic)",
+  "outputs": [
+    "Inpatient admission waiting times",
+    "Abandonment and re-presentation",
+    "Bed and specialist utilisation across 30 or more seeded replications"
+  ],
+  "provider": "Melika Baghi and Hadi Mosadegh (Amirkabir University of Technology, Tehran)",
+  "related_ids": [
+    "model-simpy-streamlit-healthcare-des"
+  ],
+  "repository": "https://github.com/MelikaBaghi/IPD-medical-tourism-simulation",
+  "runs_on": [
+    "AnyLogic"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators Baghi and Mosadegh (Amirkabir University of Technology); MIT; published 2026-09-24; release v1.0.3 of github.com/MelikaBaghi/IPD-medical-tourism-simulation; hybrid agent-based and discrete-event AnyLogic model of a multi-specialty international-patient hospital department serving medical tourists and local patients from the same beds, specialists and slots; behaviours adherence, physician switching, online vs in-person channel, abandonment; daily bed-sharing routine for cardiology, internal medicine and breast oncology never adds beds as implemented; 30 hybrid and 36 DES-only replications: mean admission wait 14.8 vs 25.8 days (about 42% lower); gap 25 to 64% at higher demand and bed counts",
+      "url": "https://zenodo.org/api/records/22941914"
+    }
+  ],
+  "tags": [
+    "medical tourism",
+    "hybrid simulation",
+    "AnyLogic",
+    "patient behaviour",
+    "bed sharing",
+    "discrete-event simulation"
+  ],
+  "title_en": "Hybrid agent-based and discrete-event simulation of shared hospital capacity for medical tourism (AnyLogic)",
+  "type": "model",
+  "validated_on": [
+    "Replication experiments comparing hybrid and discrete-event-only versions (mean admission wait 14.8 versus 25.8 days)"
+  ]
+}

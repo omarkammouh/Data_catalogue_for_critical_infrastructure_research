@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Orion-AI-Lab/KuroSiwo"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Orion-AI-Lab/KuroSiwo/blob/main/README.md"
+    },
+    {
+      "kind": "portal",
+      "label": "Dataset card and files",
+      "url": "https://huggingface.co/datasets/orion-ai-lab/Kuro-Siwo-GeoTIFFs"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "hazards",
+    "calibration_validation",
+    "historical_events"
+  ],
+  "data_kind": [
+    "imagery",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "kuro siwo multi temporal flood dataset",
+    "url": "https://huggingface.co/datasets/orion-ai-lab/Kuro-Siwo-GeoTIFFs"
+  },
+  "description": "Kuro Siwo is Orion Lab's satellite-radar dataset for rapid flood mapping. It contains 43 events across six continents and three climate zones during 2015 to 2022, with expert-interpreted annotations at 10 metre resolution. Each event includes one post-flood and two pre-flood Sentinel-1 acquisitions, elevation information and water-class or validity masks. GRD and SLC variants support different radar representations. Public data are free under CC-BY-4.0, stated in the provider's Hugging Face card, and the GitHub repository supplies preprocessing and training instructions. A limitation is that selected event coverage does not constitute a continuous global flood inventory. Interpretation and acquisition timing affect labels, and the hosted preview currently reports a viewer error. The dataset can train flood detection and provide observations for evaluating infrastructure inundation models such as Delft3D FM (model-delft3d-fm). Its NeurIPS 2024 paper describes the benchmark. No imagery, annotations or model weights were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "orion-ai-lab/kurosiwo linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "raster",
+    "analysis_package_file",
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://huggingface.co/datasets/orion-ai-lab/Kuro-Siwo-GeoTIFFs",
+  "id": "data-kuro-siwo",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-16",
+  "licence": "CC-BY-4.0 dataset; MIT repository software",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Kuro Siwo multi-temporal flood dataset",
+  "notes": "G7 G7-0761. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability.  Cited as: Bountos et al. (2024). Kuro Siwo: 33 billion m² under the water. A global multi-temporal satellite dataset for rapid flood mapping. NeurIPS 37, 38105-38121. https://arxiv.org/abs/2311.12056.",
+  "provider": "Orion Lab and Kuro Siwo research team",
+  "related_ids": [
+    "model-delft3d-fm"
+  ],
+  "sectors": [
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Orion-AI-Lab/KuroSiwo: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/orion-ai-lab/kurosiwo"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/orion-ai-lab/kurosiwo/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider card verifies dataset identity, coverage, variables and CC-BY-4.0. Viewer error does not prevent reading the dataset card.",
+      "url": "https://huggingface.co/datasets/orion-ai-lab/Kuro-Siwo-GeoTIFFs"
+    }
+  ],
+  "spatial_resolution": "10 m annotations",
+  "spatial_resolution_class": "10m_to_100m",
+  "tags": [],
+  "temporal_coverage": "2015-2022 selected flood events",
+  "temporal_resolution": "Two pre-flood and one post-flood acquisitions per event",
+  "temporal_resolution_class": "event",
+  "title_en": "Kuro Siwo multi-temporal flood dataset",
+  "type": "data"
+}

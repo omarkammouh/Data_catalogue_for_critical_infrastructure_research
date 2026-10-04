@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Project site",
+      "url": "https://global-flood-database.cloudtostreet.ai/"
+    },
+    {
+      "kind": "portal",
+      "label": "Earth Engine catalogue entry",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/GLOBAL_FLOOD_DB_MODIS_EVENTS_V1"
+    },
+    {
+      "kind": "paper",
+      "label": "Nature paper",
+      "url": "https://doi.org/10.1038/s41586-021-03695-w"
+    }
+  ],
+  "access_note": "Processing in Google Earth Engine needs an Earth Engine account.",
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "hazards",
+    "calibration_validation",
+    "imagery_remote_sensing"
+  ],
+  "data_kind": [
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1038/s41586-021-03695-w",
+    "name": "global flood database modis flood events 2000 2018",
+    "url": "https://global-flood-database.cloudtostreet.ai"
+  },
+  "description": "The Global Flood Database maps the extent and duration of 913 large flood events that occurred between 2000 and 2018, observed by the Terra and Aqua MODIS sensors. It was produced by Cloud to Street with the Dartmouth Flood Observatory, whose event list selected the floods, and is described in Tellman et al. (2021) in Nature (doi:10.1038/s41586-021-03695-w), which used it to show a growing proportion of population exposed to floods. Using 12,719 MODIS scenes, each pixel was classified as water or non-water at 250 m resolution over each event, giving bands for maximum flooded extent, duration in days, clear-sky observation counts and a JRC permanent water mask; each image in the collection is one flood and can be filtered by date, country or observatory id. The collection is served in the Google Earth Engine catalogue as GLOBAL_FLOOD_DB/MODIS_EVENTS/V1 under the Creative Commons Attribution Non-Commercial 4.0 licence, free of charge; an Earth Engine account is needed to process it there. Caveats: cloud cover hides many floods, short flash floods and urban flooding are missed, 250 m pixels are coarse, and the record stops in 2018. It serves validation and calibration of flood hazard models, historical exposure analysis of infrastructure networks and resilience studies, and complements the Aqueduct Floods and GloFAS hazard products in this catalogue.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "satellite observed flood extent database",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "api",
+    "raster"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://global-flood-database.cloudtostreet.ai/",
+  "id": "data-global-flood-database",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-NC-4.0",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://global-flood-database.cloudtostreet.ai/"
+    ]
+  },
+  "maturity": "archived",
+  "name": "Global Flood Database (MODIS flood events 2000-2018)",
+  "notes": "Reference: Tellman, B. et al. (2021). Satellite imaging reveals increased proportion of population exposed to floods. Nature. doi:10.1038/s41586-021-03695-w",
+  "provider": "Cloud to Street and Dartmouth Flood Observatory",
+  "related_ids": [],
+  "schema_summary": "flooded, duration, clear_views, clear_perc, jrc_perm_water bands; event metadata (DFO id, country, dates)",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "913 events 2000-2018, 12,719 MODIS scenes, 250 m, bands, producer C2S/DFO, CC BY-NC 4.0, Tellman et al. citation",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/GLOBAL_FLOOD_DB_MODIS_EVENTS_V1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Paper title confirmed in Crossref",
+      "url": "https://api.crossref.org/works/10.1038/s41586-021-03695-w"
+    }
+  ],
+  "spatial_resolution": "250 m classification (served at 30 m pixels)",
+  "spatial_resolution_class": "100m_to_1km",
+  "spatial_resolution_m": 250,
+  "tags": [
+    "flood extent",
+    "MODIS",
+    "Earth Engine",
+    "Dartmouth Flood Observatory"
+  ],
+  "temporal_coverage": "2000-02-17 to 2018-12-10",
+  "temporal_coverage_years": {
+    "end": 2018,
+    "start": 2000
+  },
+  "temporal_resolution": "per event (3-day MODIS composites)",
+  "temporal_resolution_class": "daily",
+  "title_en": "Global Flood Database (MODIS flood events 2000-2018)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "hospitalizace.csv (daily hospital load)",
+      "url": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/hospitalizace.csv"
+    },
+    {
+      "kind": "portal",
+      "label": "COVID-19 open datasets and downloads",
+      "url": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19"
+    },
+    {
+      "kind": "paper",
+      "label": "Komenda et al. 2022, Sharing datasets of the COVID-19 epidemic in the Czech Republic, PLOS ONE",
+      "url": "https://doi.org/10.1371/journal.pone.0267397"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CZ"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "czech ministry of health covid 19 open data daily national hospital load by severity icu oxygen high flow ventilation and ecmo 2020 to present",
+    "url": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19"
+  },
+  "description": "This dataset gives, for every day since March 2020, how many COVID-19 patients were in Czech hospitals and how much intensive care they needed, one of the longest open national series of pandemic hospital load. It is published by the Czech Ministry of Health on its Onemocnění aktuálně portal, built with the Institute of Health Information and Statistics (ÚZIS) and Masaryk University, from the National Health Information System. Each daily row gives newly admitted and cumulative patients, the number in hospital, their split by severity (no symptoms, mild, moderate, severe), and the numbers in intensive care, on oxygen, on high-flow oxygen, on mechanical ventilation and on ECMO, with deaths. The file is available as a free download in CSV and JSON and is still updated daily. Caveats: figures are national only in the open file (regional aggregates sit in an authorised-access section), the series covers COVID-19 patients, not total bed occupancy, and definitions of severity follow the Czech reporting system. Simulation uses: calibrating epidemic hospital demand models, testing intensive care surge capacity, and comparing waves against capacity limits. Related records: the California county hospital capacity data (data-california-covid19-hospital-capacity-by-county) and the French COVID hospital incidence data (data-france-covid-hospital-incidence-contact-networks) are comparable series.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Onemocnění aktuálně (Ministry of Health) (CZ, health_ministry_service)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/hospitalizace.csv",
+  "id": "data-czech-covid-hospital-load",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated for the resource; the describing article (doi:10.1371/journal.pone.0267397) is CC-BY-4.0",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Czech Ministry of Health COVID-19 open data: daily national hospital load by severity, ICU, oxygen, high-flow, ventilation and ECMO (2020 to present)",
+  "provider": "Ministerstvo zdravotnictví ČR with ÚZIS ČR and IBA LF MU (Onemocnění aktuálně portal)",
+  "related_ids": [
+    "data-california-covid19-hospital-capacity-by-county",
+    "data-france-covid-hospital-incidence-contact-networks"
+  ],
+  "schema_summary": "hospitalizace.csv: id, datum, pacient_prvni_zaznam, kum_pacient_prvni_zaznam, pocet_hosp (patients in hospital), stav_bez_priznaku, stav_lehky, stav_stredni, stav_tezky (by severity), jip (intensive care), kyslik (oxygen), hfno (high-flow nasal oxygen), upv (mechanical ventilation), ecmo, tezky_upv_ecmo, umrti, kum_umrti",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: 2,394 lines, first date 2020-03-01, last date 2026-09-25; header listed in the schema summary",
+      "url": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/hospitalizace.csv"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Page COVID-19 v ČR: Otevřené datové sady a sady ke stažení (dataset list renders by script); data source: National Health Information System, regional hygiene stations, Ministry of Health; portal by ÚZIS ČR and IBA LF MU",
+      "url": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract read via Europe PMC: open datasets on epidemiology, hospital-based care and vaccination in CSV and JSON, 3-star open data usable without restrictions; authorised-access section for municipal and regional aggregates; article licence CC BY",
+      "url": "https://doi.org/10.1371/journal.pone.0267397"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated for the resource; the describing article (doi:10.1371/journal.pone.0267397) is CC-BY-4.0 (basis: Crossref metadata (license, version of record))",
+      "url": "https://api.crossref.org/works/10.1371/journal.pone.0267397"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19"
+    }
+  ],
+  "spatial_resolution": "National",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "COVID-19",
+    "hospital load",
+    "intensive care",
+    "ventilation",
+    "ECMO",
+    "Czech Republic"
+  ],
+  "temporal_coverage": "1 March 2020 to 25 September 2026",
+  "temporal_resolution": "Daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "Czech Ministry of Health COVID-19 open data: daily national hospital load by severity, ICU, oxygen, high-flow, ventilation and ECMO (2020 to present)",
+  "type": "data",
+  "update_frequency": "daily"
+}

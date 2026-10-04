@@ -1,0 +1,148 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Web services (WMS, WFS, 3D Tiles)",
+      "url": "https://docs.3dbag.nl/en/delivery/webservices/"
+    },
+    {
+      "kind": "viewer",
+      "label": "3DBAG viewer and tile downloads",
+      "url": "https://3dbag.nl/en/viewer"
+    },
+    {
+      "kind": "portal",
+      "label": "3D BAG 2020 snapshot (2020-05-13) on 4TU.ResearchData, GeoPackage, DOI 10.4121/13088933.v1",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.4tu.nl/datasets/02e1afdc-13c9-4196-b7b7-587edd0b1b83/1"
+    },
+    {
+      "kind": "portal",
+      "label": "Previous homepage",
+      "note": "general page the record pointed to before direct-link pass 2026-09-30",
+      "url": "https://3dbag.nl/"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation: sources, schema, formats, release notes",
+      "url": "https://docs.3dbag.nl/en/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "3dbag",
+    "url": "https://3dbag.nl"
+  },
+  "description": "3DBAG is an open dataset of 3D building models for the whole of the Netherlands, generated fully automatically at three levels of detail (LoD1.2, LoD1.3 and LoD2.2), with 2D projections of roof surfaces and their heights. It is produced by the 3D geoinformation research group at TU Delft and the company 3DGI by combining the national building register BAG with the AHN national elevation point cloud, using only open-source software such as the roofer reconstruction tool. Coverage is every building in the national register; underground and overlapping parts are removed and glass-roofed buildings such as greenhouses fall back to simple models. The release of 9 September 2025 added 3D Tiles and IFC outputs and a ridgeline height attribute. Access: a web viewer with tile downloads in CityJSON, GeoPackage, FlatGeobuf, OBJ and IFC, and web services. Licence: Creative Commons Attribution 4.0, credit '3DBAG by tudelft3d and 3DGI'; free. Caveats: model quality follows the age and density of the AHN point cloud and the BAG outlines, which include underground parts. Simulation uses are city and national digital twins, flood and heat exposure with building heights, and solar and energy analyses. Related records: BAG (Basisregistratie Adressen en Gebouwen), its building source, and AHN, its height source.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R25",
+      "source": "built_environment-3d-bag"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "highway register",
+      "route": "R03",
+      "source": "4tu-researchdata"
+    }
+  ],
+  "formats": [
+    "cad_bim_3d",
+    "geopackage",
+    "other_vector",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.4tu.nl/datasets/02e1afdc-13c9-4196-b7b7-587edd0b1b83/1",
+  "id": "data-3dbag",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-09-09",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "3DBAG",
+  "notes": "An archived 2020 snapshot (2020-05-13) is on 4TU.ResearchData; it was handed in by the integrator (candidate 4tu-researchdata-c4d235c431).",
+  "provider": "3D geoinformation research group, TU Delft, and 3DGI",
+  "related_ids": [],
+  "schema_summary": "BAG identifiers and attributes, roof heights and ridgeline elevation (b3_h_nok), LoD1.2/1.3/2.2 geometry, 2D roof projections",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Overview, LoDs, BAG + AHN, exclusions, delivery formats in navigation (CityJSON, FGB, GPKG, IFC, OBJ, web services)",
+      "url": "https://docs.3dbag.nl/en/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "CC BY 4.0, required credit",
+      "url": "https://docs.3dbag.nl/en/copyright/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Release 2025.09.03 dated 9 September 2025: 3D Tiles, IFC, b3_h_nok; roofer 1.0.0-beta-5",
+      "url": "https://docs.3dbag.nl/en/overview/release_notes/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BAG description, municipal responsibility, Kadaster, 30 cm positional accuracy",
+      "url": "https://docs.3dbag.nl/en/overview/sources/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "4TU.ResearchData record: 3D BAG 2020 snapshot of 2020-05-13 by Balázs Dukai, Hugo Ledoux and Jantien Stoter, CC BY 4.0, one 7.73 GB GeoPackage, DOI 10.4121/13088933.v1",
+      "url": "https://data.4tu.nl/datasets/02e1afdc-13c9-4196-b7b7-587edd0b1b83/1"
+    }
+  ],
+  "spatial_resolution": "Every building in the Netherlands at LoD1.2, LoD1.3 and LoD2.2",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "3D city model",
+    "LoD2",
+    "CityJSON",
+    "Netherlands",
+    "AHN",
+    "BAG"
+  ],
+  "temporal_resolution": "none (regular releases)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "3D building models dataset for the Netherlands",
+  "type": "data"
+}

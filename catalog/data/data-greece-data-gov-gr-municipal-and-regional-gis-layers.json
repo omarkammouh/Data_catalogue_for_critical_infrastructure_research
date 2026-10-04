@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Dataset page on the open data portal",
+      "url": "https://data.gov.gr/"
+    },
+    {
+      "kind": "api",
+      "label": "Portal catalogue API (CKAN package_search, layers named gis-*)",
+      "url": "https://data.gov.gr/api/3/action/package_search?q=name:gis-*&rows=5"
+    },
+    {
+      "kind": "portal",
+      "label": "Example: Marousi municipality buildings layer",
+      "url": "https://data.gov.gr/dataset/gis-maroussi-wms-maroussi-inf_buildings_poly"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GR"
+  ],
+  "data_family": [
+    "reference_context",
+    "critical_facilities",
+    "historical_events"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "greece data gov gr harvested municipal regional and ministry gis layers wms and wfs",
+    "url": "https://data.gov.gr"
+  },
+  "description": "Municipalities, regions and ministries of Greece, published through data.gov.gr publishes a large family of GIS layers that the portal harvests from the geoservers of Greek municipalities, regions and ministries; the catalogue API listed 12,039 datasets named gis-* from 31 publishers on 2026-09-29 (for example the municipalities of Chania, Syros-Ermoupoli, Rethymno, Chalandri and Oraiokastro, the Region of Crete and a ministry), each offered as a WMS view plus GeoJSON, CSV, Shapefile and KML downloads served by the publisher's geoserver; titles seen include building layers (Marousi, Corfu, Piraeus, Chalandri), historic flood points (Naxos, Region of Crete, Egaleo), fire-service posts and hospitals (Region of Crete, West Lesvos). Coverage: the areas of the publishing municipalities and regions only, not the whole country; the layer count and coverage vary by publisher. Format and access: WMS views and GeoJSON, CSV, Shapefile and KML downloads served from each publisher's geoserver, free and without registration through data.gov.gr; the portal catalogue is queryable through a public CKAN API. Licence (read on the portal page on 2026-09-29): CC BY 4.0 on every resource of the datasets (the dataset-level licence field is empty); cost: free. Caveats: the layers are only as complete as each municipality's own GIS, each layer has a title only as its description, the downloads are served by many different geoservers that may be slow or removed, and no layer was downloaded. Simulation uses: municipal building, facility, hazard-history and infrastructure layers for local exposure and emergency-response studies, and to harvest many small GIS layers for Greek city case studies. Related catalogue records: Oikoskopio: environmental web GIS of Greece (WWF Greece) (data-oikoskopio-wwf-greece-environmental-web-gis); ELSTAT Greece 2021 Buildings Census tables down to settlement level (floors, use, construction period, frame material, roof, lifts, accessibility) (data-elstat-greece-2021-buildings-census-tables-by-settlement); OpenStreetMap (data-openstreetmap).",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "portal API search: data.gov.gr CKAN, buildings, schools, hospitals, floods",
+      "route": "R02",
+      "source": "r2-no-public-data"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "geojson",
+    "csv",
+    "shapefile",
+    "kml"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://data.gov.gr/",
+  "id": "data-greece-data-gov-gr-municipal-and-regional-gis-layers",
+  "languages": [
+    "el"
+  ],
+  "last_updated": "2026-09-28",
+  "licence": "CC-BY-4.0 (set on every resource of the datasets in the portal metadata; the dataset-level field is empty)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Greece data.gov.gr harvested municipal, regional and ministry GIS layers (WMS and WFS)",
+  "notes": "Round 2 piece 14 (no-public-data visits): round 1 marked \"data.gov.gr (urban observatory)\" as publishing no data; the portal was read on 2026-09-29.",
+  "provider": "Municipalities, regions and ministries of Greece, published through data.gov.gr",
+  "related_ids": [
+    "data-oikoskopio-wwf-greece-environmental-web-gis",
+    "data-elstat-greece-2021-buildings-census-tables-by-settlement",
+    "data-openstreetmap"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.critical_facilities",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "dataset metadata (title, description, licence, resources, modification date 2026-09-28) read from the portal page and its public API",
+      "url": "https://data.gov.gr/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "licence re-check at wave 2 integration: licence read on the provider page",
+      "url": "https://data.gov.gr/"
+    }
+  ],
+  "tags": [
+    "Greece",
+    "municipal GIS",
+    "WMS",
+    "buildings",
+    "data.gov.gr"
+  ],
+  "title_en": "Greece data.gov.gr harvested municipal, regional and ministry GIS layers (WMS and WFS)",
+  "type": "data"
+}

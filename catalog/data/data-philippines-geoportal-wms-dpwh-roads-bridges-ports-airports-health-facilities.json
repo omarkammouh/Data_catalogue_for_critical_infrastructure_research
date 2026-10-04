@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "GeoServer WMS capabilities",
+      "url": "https://geoserver.geoportal.gov.ph/geoserver/geoportal/wms?service=WMS&version=1.3.0&request=GetCapabilities"
+    },
+    {
+      "kind": "viewer",
+      "label": "Geoportal map builder",
+      "url": "https://staging.geoportal.gov.ph/gpmapbuilder"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing link)",
+      "url": "https://www.geoportal.gov.ph/"
+    }
+  ],
+  "access_restrictions": "restricted",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "PH"
+  ],
+  "data_family": [
+    "system_description",
+    "hazards"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "geoportal philippines map services dpwh national roads lanes pavement expressways national bridges ports airports health facilities and flood risk damage layers 3 450 wms layers",
+    "url": "https://geoportal.gov.ph"
+  },
+  "description": "Geoportal Philippines is the national spatial data infrastructure portal, whose GeoServer publishes layers contributed by government agencies and local governments as a public Web Map Service. Contents: 3,450 layers, among them Department of Public Works and Highways national road layers with number of lanes, pavement and surface type and expressways, the national bridge inventory layer, nautical ports, national airports and airport control stations, fish ports and farm-to-market roads from the Department of Agriculture, hospitals and health facilities from the Department of Health (April 2020), water district service areas, road layers by class for several provinces, 2013 renewable energy service contract areas, and flood risk layers giving building damage cost and damaged floor area for return periods from 20% to 0.5% annual exceedance probability. Producer: the contributing agencies, with the portal run by NAMRIA. Coverage: the Philippines, national layers plus selected provinces and cities. Format and access: WMS 1.3.0 map images and legends without registration, and a map builder, routing and hazard viewer on the portal; the WFS endpoint returns 401 Unauthorized, so vector data must be requested from the owning agency. Licence: no licence is stated in the capabilities. Caveats: view access only from outside; layer dates vary widely and some layers are from 2013 to 2022; attribute detail visible only through GetFeatureInfo. Simulation uses: screening infrastructure exposure against the flood risk and hazard layers, identifying road and bridge assets for disaster response planning, and locating health facilities for service coverage studies. Related records: none in the catalogue cover Philippine national road or bridge layers.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source ph-sdi-geoportal-gov-ph: provider pages read (round 2 register piece)",
+      "route": "R04",
+      "source": "ph-sdi-geoportal-gov-ph"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "image"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://geoserver.geoportal.gov.ph/geoserver/geoportal/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+  "id": "data-philippines-geoportal-wms-dpwh-roads-bridges-ports-airports-health-facilities",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Geoportal Philippines map services: DPWH national roads (lanes, pavement, expressways), national bridges, ports, airports, health facilities and flood risk damage layers (3,450 WMS layers)",
+  "provider": "National Mapping and Resource Information Authority (NAMRIA) and the Department of Information and Communications Technology, with layers from partner agencies (DPWH, DOTr, DOH, DA, DOE and local governments)",
+  "related_ids": [],
+  "sectors": [
+    "transport.road",
+    "transport.maritime_ports",
+    "transport.aviation",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "3,450 named layers; infrastructure layer titles listed",
+      "url": "https://geoserver.geoportal.gov.ph/geoserver/geoportal/wms?service=WMS&version=1.3.0&request=GetCapabilities"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "HTTP 401 Unauthorized",
+      "url": "https://geoserver.geoportal.gov.ph/geoserver/ows?service=WFS&version=2.0.0&request=GetCapabilities"
+    }
+  ],
+  "tags": [
+    "Philippines",
+    "Geoportal",
+    "DPWH",
+    "national roads",
+    "bridges",
+    "NAMRIA"
+  ],
+  "title_en": "Geoportal Philippines map services: DPWH national roads (lanes, pavement, expressways), national bridges, ports, airports, health facilities and flood risk damage layers (3,450 WMS layers)",
+  "type": "data"
+}

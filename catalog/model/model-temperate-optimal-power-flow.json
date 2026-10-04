@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource",
+      "url": "https://github.com/gillioz/TemperateOptimalPowerFlow.jl"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-025-04479-x"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Scientific Data. 10.1038/s41597-025-04479-x",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "temperate optimal power flow",
+    "url": "https://github.com/gillioz/TemperateOptimalPowerFlow.jl"
+  },
+  "description": "The Temperate Optimal Power Flow package dispatches generation while penalising heavily loaded transmission lines. Its quadratic line-cost formulation combines loading rates and thermal limits, with optional linear production costs and constraints on generator output over a period. The own README documents importing Matpower or PowerModels networks, setting up load and cost matrices, running an optimizer and retrieving generation or flow series. Geographic and temporal coverage follow user inputs. The HES-SO research package is freely available as Julia source and through the Julia package manager under MIT. It works with model-powermodels-jl or model-matpower network formats and supports dispatch scenarios for network simulations. A caveat is that an optimizer must be supplied separately; examples name open Ipopt and commercial Gurobi. Large time-series problems may need partitioning and substantial memory. The algorithm's loading penalty is a modelling choice, not evidence of actual operator dispatch. No optimisation was run.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G1-Q-TITLE-ENERGY-01; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/gillioz/TemperateOptimalPowerFlow.jl",
+  "id": "model-temperate-optimal-power-flow",
+  "inputs": [
+    "Matpower or PowerModels network",
+    "Load time series",
+    "Generator cost time series",
+    "Optimisation solver"
+  ],
+  "language": [
+    "julia"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-04-15",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network"
+  ],
+  "name": "Temperate Optimal Power Flow",
+  "notes": "G1 G1-0197. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-20.json. Related-resource uses are not tested interfaces. ",
+  "outputs": [
+    "Generator dispatch series",
+    "Line flows"
+  ],
+  "provider": "HES-SO Valais-Wallis",
+  "related_ids": [
+    "model-powermodels-jl",
+    "model-matpower"
+  ],
+  "repository": "https://github.com/gillioz/TemperateOptimalPowerFlow.jl",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/gillioz/TemperateOptimalPowerFlow.jl"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/gillioz/TemperateOptimalPowerFlow.jl/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-025-04479-x"
+    }
+  ],
+  "tags": [],
+  "title_en": "Optimisation model for electricity",
+  "type": "model"
+}

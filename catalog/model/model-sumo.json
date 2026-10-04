@@ -1,0 +1,152 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Downloads",
+      "url": "https://sumo.dlr.de/docs/Downloads.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://sumo.dlr.de/docs/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/eclipse-sumo/sumo"
+    },
+    {
+      "kind": "portal",
+      "label": "Project site",
+      "url": "https://eclipse.dev/sumo/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "eclipse sumo simulation of urban mobility",
+    "repo": "github.com/eclipse-sumo/sumo",
+    "url": "https://eclipse.dev/sumo"
+  },
+  "description": "Eclipse SUMO is an open-source, microscopic and continuous multi-modal traffic simulation package designed for large road networks. It models intermodal systems including cars, trucks, public transport, bicycles and pedestrians vehicle by vehicle, and ships with tools for network import (for example from OpenStreetMap), route finding, demand generation, visualisation and emission calculation; the TraCI and libsumo interfaces let other programs control a running simulation, which is how it is coupled to communication simulators and automated-driving stacks. SUMO is an Eclipse Foundation project developed mainly by staff of the German Aerospace Center (DLR) Institute of Transportation Systems. It is location independent: users build scenarios for any city or corridor, and several published scenarios exist (for example Luxembourg LuST and Monaco MoST). Binaries for Windows, Linux and macOS, sources and Python packages are downloadable; the latest release, 1.27.1, is dated 25 June 2026, and the GitHub repository is updated daily. It is licensed under EPL-2.0 with GPL-2.0 or later as a secondary licence, free of charge; the separate \"extra\" build contains GPL code for GeoTIFF, shapefile and 3D-model support. Caveats: calibrating a large scenario takes substantial effort, and microscopic runs of whole regions are computationally heavy. SUMO supports traffic flow, emergency response and evacuation, capacity planning, signal and automated-vehicle studies and digital-twin prototypes; it relates to MATSim, a complementary agent-based framework catalogued here, and to OpenStreetMap-derived networks.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.road",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry",
+      "route": "R06",
+      "source": "transport-sumo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://eclipse.dev/sumo/",
+  "id": "model-sumo",
+  "inputs": [
+    "road network (SUMO .net.xml",
+    "importable from OpenStreetMap",
+    "OpenDRIVE",
+    "VISUM",
+    "VISSIM)",
+    "traffic demand (routes",
+    "trips",
+    "flows",
+    "OD matrices)",
+    "public transport schedules",
+    "detector counts for calibration"
+  ],
+  "language": [
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-02",
+  "licence": "EPL-2.0 OR GPL-2.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "agent_based"
+  ],
+  "name": "Eclipse SUMO (Simulation of Urban MObility)",
+  "outputs": [
+    "vehicle trajectories and states",
+    "edge and lane statistics",
+    "detector outputs",
+    "emissions and noise",
+    "trip information"
+  ],
+  "provider": "Eclipse Foundation project, mainly developed by the German Aerospace Center (DLR) Institute of Transportation Systems",
+  "related_ids": [
+    "model-matsim"
+  ],
+  "repository": "https://github.com/eclipse-sumo/sumo",
+  "runs_on": [],
+  "sectors": [
+    "transport.road",
+    "transport.public_transit",
+    "transport.active_mobility",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "agent_based",
+    "emergency_response",
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "open source microscopic multimodal simulation; latest 1.27.1; EPL-2.0 and GPL-2.0",
+      "url": "https://eclipse.dev/sumo/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "release 1.27.1 dated 25.06.2026; EPL-2.0 with GPL v2 or later secondary; extra build contains GPL code",
+      "url": "https://sumo.dlr.de/docs/Downloads.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "mainly developed by DLR Institute of Transportation Systems",
+      "url": "https://raw.githubusercontent.com/eclipse-sumo/sumo/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: last commit 2026-09-25; tags up to v1_27_1",
+      "url": "https://github.com/eclipse-sumo/sumo"
+    }
+  ],
+  "tags": [
+    "microscopic traffic simulation",
+    "TraCI",
+    "multimodal",
+    "open source"
+  ],
+  "title_en": "Eclipse SUMO (Simulation of Urban MObility)",
+  "type": "model",
+  "validated_on": []
+}

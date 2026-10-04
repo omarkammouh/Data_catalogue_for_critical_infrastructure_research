@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/eike-fokken/grazer"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (arXiv 2108.00687)",
+      "url": "https://arxiv.org/abs/2108.00687"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "grazer simulation and optimal control of coupled gas and power networks and other network dynamical systems",
+    "repo": "github.com/eike-fokken/grazer",
+    "url": "https://github.com/eike-fokken/grazer"
+  },
+  "description": "Grazer is open software for the simulation and optimal control of dynamical systems defined on networks, introduced in a paper by Eike Fokken, Simone Gottlich and Michael Herty on efficient simulation of coupled gas and power networks under uncertain, stochastically fluctuating demands and supplies, tested on networks of realistic size. The repository README explains that inputs are JSON files validated by JSON schemas, that it is built with CMake using gcc or clang 9 or later on Linux and macOS with dependencies such as METIS, and that it offers a command-line interface with run and schema subcommands and a test suite. Example runs simulate a gas-power network and solve an optimal control problem for compressor and valve use on the same gas network. The code is written in C++ and available under the MIT licence as a free download from GitHub, with releases built by continuous integration. Coverage is not tied to a region. Caveats: the author states it is used and tested by one person and has rough edges, macOS builds are no longer checked automatically, and Windows support is not maintained. Simulation uses are transient coupled gas and electricity network flow and control studies, including stochastic demand. Related records: model-gasnetsim and model-simone-gas-pipeline-simulation also simulate gas networks.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "physics-based coupled infrastructure simulation model power water gas co-simulation open source multi-physics infrastructure resilience",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/eike-fokken/grazer",
+  "id": "model-grazer-coupled-gas-power-network-simulation",
+  "inputs": [
+    "JSON files describing the network topology, components, boundary values and control problem"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-22",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "network",
+    "optimisation"
+  ],
+  "name": "Grazer - simulation and optimal control of coupled gas and power networks and other network dynamical systems",
+  "outputs": [
+    "Simulated time evolution of gas pressures and flows and power network states",
+    "Optimal compressor and valve controls"
+  ],
+  "provider": "E. Fokken, S. Gottlich and M. Herty",
+  "related_ids": [
+    "model-gasnetsim",
+    "model-simone-gas-pipeline-simulation",
+    "model-helics-saint-cosimulation-coupled-gas-electricity-networks"
+  ],
+  "repository": "https://github.com/eike-fokken/grazer",
+  "runs_on": [
+    "Linux",
+    "macOS"
+  ],
+  "sectors": [
+    "energy.gas_hydrogen",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Title, authors, abstract (coupled gas and power, stochastic demand, realistic networks)",
+      "url": "https://arxiv.org/abs/2108.00687"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, JSON input, single-user caveat, build and dependencies, CLI subcommands, examples, macOS and MSVC notes",
+      "url": "https://raw.githubusercontent.com/eike-fokken/grazer/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT licence",
+      "url": "https://raw.githubusercontent.com/eike-fokken/grazer/master/LICENSE"
+    }
+  ],
+  "tags": [
+    "coupled gas and power",
+    "network simulation",
+    "optimal control",
+    "C++"
+  ],
+  "title_en": "Grazer - simulation and optimal control of coupled gas and power networks and other network dynamical systems",
+  "type": "model",
+  "validated_on": []
+}

@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code and user guide",
+      "url": "https://github.com/AIT-IES/DisHeatLib"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "disheatlib modelica library for dynamic modelling of district heating networks ait",
+    "repo": "github.com/ait-ies/disheatlib",
+    "url": "https://github.com/AIT-IES/DisHeatLib"
+  },
+  "description": "DisHeatLib is a free, open-source Modelica library of basic models that simplify the implementation of district heating networks and their control systems, with an interface to an optional electric power network. The README read on 2026-09-26 says it is built on the Modelica IBPSA library as its core, and the licence file names AIT GmbH (the AIT Austrian Institute of Technology) as copyright holder in 2019 under the BSD 3-clause licence. Coverage is generic networks, with example sub-packages ranging from single components to combined systems. Access is the GitHub source, which is the development site and user guide; the only tag seen with git was v1.0.0. Caveats: the README says Dymola with a supported C++ compiler is needed, that the IBPSA library must be loaded first, and that OpenModelica is currently not supported, so a free tool chain is not available; recent activity was not confirmed. Simulation uses are dynamic network flow and temperature simulation of district heating systems, control design, and coupled heat and power studies, including as a component library for digital twin models. Related records: model-dhnx is a Python toolbox for district heating network optimisation and simulation, and model-digripy-district-heating-grid-simulation is another open simulation tool for heating grids.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review doi:10.1016/j.energy.2024.132189 (journal review)",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/AIT-IES/DisHeatLib",
+  "id": "model-disheatlib-modelica-district-heating",
+  "inputs": [
+    "network topology, pipe and substation parameters",
+    "demand profiles and control settings"
+  ],
+  "language": [
+    "modelica"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-03-11",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "DisHeatLib - Modelica library for dynamic modelling of district heating networks (AIT)",
+  "outputs": [
+    "dynamic temperatures, pressures, flows and heat losses"
+  ],
+  "provider": "AIT Austrian Institute of Technology",
+  "related_ids": [
+    "model-dhnx",
+    "model-digripy-district-heating-grid-simulation"
+  ],
+  "repository": "https://github.com/AIT-IES/DisHeatLib",
+  "sectors": [
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README (purpose, IBPSA core, BSD 3-clause, Dymola prerequisite, OpenModelica not supported, examples)",
+      "url": "https://raw.githubusercontent.com/AIT-IES/DisHeatLib/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD 3-Clause licence, copyright 2019 AIT GmbH; tag v1.0.0 read with git ls-remote",
+      "url": "https://raw.githubusercontent.com/AIT-IES/DisHeatLib/HEAD/LICENSE"
+    }
+  ],
+  "tags": [
+    "district heating",
+    "Modelica",
+    "dynamic simulation",
+    "AIT",
+    "open source"
+  ],
+  "title_en": "DisHeatLib - Modelica library for dynamic modelling of district heating networks (AIT)",
+  "type": "model"
+}

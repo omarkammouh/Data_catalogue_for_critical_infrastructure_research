@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "StatBank API table metadata, BOL101",
+      "url": "https://api.statbank.dk/v1/tableinfo/BOL101?lang=en"
+    },
+    {
+      "kind": "api",
+      "label": "StatBank API table list",
+      "url": "https://api.statbank.dk/v1/tables?lang=en&format=JSON"
+    },
+    {
+      "kind": "docs",
+      "label": "StatBank API documentation and licence",
+      "url": "https://www.dst.dk/en/Statistik/hjaelp-til-statistikbanken/api"
+    },
+    {
+      "kind": "portal",
+      "label": "StatBank Denmark",
+      "url": "https://www.statbank.dk/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DK"
+  ],
+  "data_family": [
+    "system_description",
+    "reference_context",
+    "condition_ageing"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "statistics denmark register based dwelling tables bol101 to bol106 by municipality use tenure and year of construction statbank api",
+    "url": "https://api.statbank.dk/v1/tableinfo/BOL101?lang=en"
+  },
+  "description": "Statistics Denmark's Census of Housing is compiled each year by matching the Building and Dwelling Register (BBR) with the population register (CPR) through addresses, and is published in StatBank. The BOL tables count dwellings on 1 January for every municipality, region and the whole country: BOL101 splits dwellings by type of resident, use (detached houses and farmhouses, terraced or semi-detached houses, multi-dwelling houses, student hostels, community buildings, cottages, other), tenure, ownership and year of construction in 33 classes; BOL104 by household type and number of children; BOL106 gives dwellings and floor area by use; BOL201 to BOL204 count occupants; BOLRD gives occupied dwellings by tenure back to 1930. Annual series run from 2010 to 2026, and the tables were last updated on 8 April 2026. Format and access: the StatBank API returns table metadata and data as JSON, CSV, PX or Excel without registration; StatBank has a web interface in Danish and English. Licence: Statistics Denmark allows free commercial and non-commercial use with a source reference, which it states corresponds to CC BY 4.0. Caveats: counts are aggregated to municipalities, so building-level work needs the BBR itself; categories of use follow BBR codes. Simulation uses: municipal building stock by age and use for exposure and retrofit models, occupancy for population at risk. Related records: the Danish BBR building and dwelling register, the Statistics Denmark commuting table and the Austrian and Czech housing census records.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:DK:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv",
+    "analysis_package_file",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://api.statbank.dk/v1/tableinfo/BOL101?lang=en",
+  "id": "data-statistics-denmark-register-housing-tables-statbank",
+  "languages": [
+    "da",
+    "en"
+  ],
+  "last_updated": "2026-04-08",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Statistics Denmark register-based dwelling tables (BOL101 to BOL106) by municipality, use, tenure and year of construction (StatBank API)",
+  "provider": "Statistics Denmark (Danmarks Statistik)",
+  "related_ids": [
+    "data-denmark-bbr-building-and-dwelling-register",
+    "data-statistics-denmark-commuting-flows-pend100",
+    "data-czso-census-2021-open-data-houses-and-dwellings"
+  ],
+  "schema_summary": "BOL101 dwellings by area, type of resident, use (7 classes), tenure, ownership, year of construction (33 classes); BOL104 by household type and children; BOL106 dwellings and floor area by use; BOL201-204 occupants; BOLRD occupied dwellings by tenure 1930 onward",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "2,306 tables; BOL101-106, BOL201-204 updated 2026-04-08, periods 2010-2026; BOLRD 1930-2026",
+      "url": "https://api.statbank.dk/v1/tables?lang=en&format=JSON"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Variables: region (116), type of resident, use (7), tenure, ownership, year of construction (33), time (15)",
+      "url": "https://api.statbank.dk/v1/tableinfo/BOL101?lang=en&format=JSON"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Census of Housing: BBR and CPR data matched via addresses",
+      "url": "https://www.dst.dk/documentationofstatistics/46fdade9-ae4e-4572-8a06-048c8b74e388"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Free commercial and non-commercial use with source reference, corresponds to CC 4.0 BY; JSON, CSV and other formats",
+      "url": "https://www.dst.dk/en/Statistik/hjaelp-til-statistikbanken/api"
+    }
+  ],
+  "spatial_resolution": "98 municipalities, regions and whole country (116 area codes)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "register-based census",
+    "Denmark",
+    "dwellings",
+    "year of construction",
+    "StatBank API"
+  ],
+  "temporal_coverage": "annual 1 January counts from 2010; occupied dwellings by tenure back to 1930",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2010
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Statistics Denmark register-based dwelling tables (BOL101 to BOL106) by municipality, use, tenure and year of construction (StatBank API)",
+  "type": "data",
+  "update_frequency": "annual"
+}

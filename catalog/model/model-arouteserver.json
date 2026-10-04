@@ -1,0 +1,118 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/pierky/arouteserver"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://arouteserver.readthedocs.io/"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/arouteserver/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "arouteserver builds and tests bgp route server configurations for internet exchanges",
+    "repo": "github.com/pierky/arouteserver",
+    "url": "https://github.com/pierky/arouteserver"
+  },
+  "description": "ARouteServer is a Python tool that automatically builds, and tests, feature-rich configurations for the BGP route servers that internet exchange points (IXPs) run so that members can peer with many networks through one session. Operators describe general policies and client settings in two YAML files; the tool enriches them with IRR data via bgpq4 or bgpq3, PeeringDB records for maximum-prefix limits and AS-SETs, RPKI ROAs and other sources, then renders configurations from built-in templates for BIRD 1.6, BIRD 2 and 3, and OpenBGPD. It applies filters recommended in RFC 7947 and RFC 7948, such as next-hop enforcement, prefix-length limits, bogon and invalid AS path rejection, IRR-based prefix and origin validation, RPKI origin validation, ASPA-based route leak detection and BGP roles, plus blackhole filtering and BGP communities for traffic engineering. Generated configurations are checked with a live-test framework that runs Docker instances to simulate scenarios, and a Docker playground offers a virtual exchange to experiment with. The README lists 28 exchanges that use it, including Netnod, SwissIX, IX Australia, NZIX and BharatIX. Coverage: software for any exchange. Format and access: Python package on PyPI (version 1.25.0 released on 23 September 2026) and GitHub, free under GPL v3. Caveats: configuration quality depends on the policy chosen; it does not measure traffic. Simulation uses: policy-accurate route-server models in emulated exchanges, and tests of routing security under hijack or leak scenarios. Related records: IXP Manager generates similar configurations, and the MANRS IXP validation tool checks the outcome.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "BGP route server simulation hybrid emulation IXP testbed model open source route server BIRD OpenBGPD ARouteServer",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/pierky/arouteserver",
+  "id": "model-arouteserver",
+  "inputs": [
+    "general policy YAML",
+    "client list YAML",
+    "IRR, PeeringDB and RPKI data"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-23",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network",
+    "hybrid"
+  ],
+  "name": "ARouteServer: builds and tests BGP route-server configurations for internet exchanges",
+  "notes": "README read from the raw GitHub file and PyPI metadata read by API on 2026-09-26 (features, supported daemons, users, release dates: first 2017-01-31, latest 1.25.0 on 2026-09-23).",
+  "outputs": [
+    "BIRD or OpenBGPD route-server configuration",
+    "live test results"
+  ],
+  "provider": "Pier Carlo Chiodi and contributors",
+  "related_ids": [
+    "data-peeringdb",
+    "data-euro-ix-ixp-database",
+    "data-pch-ixp-directory",
+    "model-manrs-ixp-validation-tool",
+    "platform-ixp-manager"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README",
+      "url": "https://raw.githubusercontent.com/pierky/arouteserver/master/README.rst"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "release history and licence",
+      "url": "https://pypi.org/pypi/arouteserver/json"
+    }
+  ],
+  "tags": [
+    "route server",
+    "BGP",
+    "IXP",
+    "RPKI",
+    "configuration generation"
+  ],
+  "title_en": "ARouteServer: builds and tests BGP route-server configurations for internet exchanges",
+  "type": "model",
+  "validated_on": [
+    "Docker live tests of route-server scenarios"
+  ]
+}

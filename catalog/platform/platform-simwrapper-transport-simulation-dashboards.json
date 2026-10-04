@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "SimWrapper web app",
+      "url": "https://simwrapper.app"
+    },
+    {
+      "kind": "docs",
+      "label": "SimWrapper documentation",
+      "url": "https://docs.simwrapper.app/docs"
+    },
+    {
+      "kind": "repo",
+      "label": "SimWrapper source code",
+      "url": "https://github.com/simwrapper/simwrapper"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "simwrapper web based visualisation and dashboards for matsim and activitysim outputs vsp tu berlin",
+    "repo": "github.com/simwrapper/simwrapper",
+    "url": "https://simwrapper.app"
+  },
+  "deployment": [
+    "hosted_service",
+    "own_server"
+  ],
+  "description": "SimWrapper is an open-source, browser-based data visualisation tool for researchers building disaggregate transport simulations with software such as MATSim and ActivitySim. It is developed at the VSP group of TU Berlin, which also uses it to publish public dashboards of its scenarios. Coverage: a generic tool with views for MATSim network link volumes, carrier and logistics plans, demand-responsive vehicle animation, public transit supply and demand and event logs, plus general charts, flow and O/D maps, hexagon aggregation, shapefile and GeoJSON area maps, HDF5 matrix viewing, AequilibraE maps and scenario comparison. Format and access: a TypeScript and Vue single-page web app at simwrapper.app that reads simulation output files from the local disk, a local file server or network storage, configured by small YAML files, with no central database or upload; dashboards can also be written as code from MATSim; free. Licence: GPL-3.0 (LICENSE file). Caveats: local folders open directly only in Chromium browsers (Safari and Firefox need a small local server), the simwrapper.app and vsp.berlin pages render by script and only the documentation site was read, and it visualises results but does not simulate. Simulation uses: inspecting and sharing agent-based transport model results for capacity planning and network flow studies. Related records: MATSim (model-matsim), ActivitySim (model-activitysim) and the OMX matrix format (data-omx-open-matrix-file-format), whose HDF5 matrices its matrix viewer reads.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-simwrapper: provider pages read (round 2 register piece)",
+      "route": "R06",
+      "source": "transport-simwrapper"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/simwrapper/simwrapper",
+  "id": "platform-simwrapper-transport-simulation-dashboards",
+  "interfaces": [
+    "web_app",
+    "file_exchange",
+    "code_library"
+  ],
+  "language": [
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "SimWrapper: web-based visualisation and dashboards for MATSim and ActivitySim outputs (VSP TU Berlin)",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool",
+    "gis_environment"
+  ],
+  "provider": "Transport Systems Planning and Transport Telematics (VSP), Technische Universität Berlin",
+  "related_ids": [
+    "model-matsim",
+    "model-activitysim",
+    "data-omx-open-matrix-file-format"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Docs: web-based viz for disaggregate transport simulations (MATSim, ActivitySim); YAML config; files on local disk or file server, no central database; Chrome/Edge direct, local server for Safari/Firefox; API list of MATSim and general views incl. Matrix (HDF5) viewer and AequilibraE map",
+      "url": "https://docs.simwrapper.app/docs/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "TypeScript, Vue SPA; VSP TU Berlin; LICENSE GPL-3.0; release 4.7.1 on 2026-06-26",
+      "url": "https://raw.githubusercontent.com/simwrapper/simwrapper/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "script-rendered page, not read",
+      "url": "https://simwrapper.app"
+    }
+  ],
+  "tags": [
+    "visualisation",
+    "dashboards",
+    "MATSim",
+    "ActivitySim"
+  ],
+  "title_en": "SimWrapper: web-based visualisation and dashboards for MATSim and ActivitySim outputs (VSP TU Berlin)",
+  "type": "platform"
+}

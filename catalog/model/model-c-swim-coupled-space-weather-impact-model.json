@@ -1,0 +1,143 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/denniesbor/C-SWIM"
+    },
+    {
+      "kind": "portal",
+      "label": "TVA and UIUC150 case study data and code snapshot (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.21986729"
+    },
+    {
+      "kind": "paper",
+      "label": "Companion paper (arXiv)",
+      "url": "https://doi.org/10.48550/arXiv.2412.18032"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.48550/arxiv.2412.18032",
+    "name": "c swim coupled space weather impact model",
+    "repo": "github.com/denniesbor/c-swim",
+    "url": "https://github.com/denniesbor/C-SWIM"
+  },
+  "description": "C-SWIM (Coupled Space Weather Impact Model) is an open Python pipeline that links physics, engineering and economics to assess the impacts of extreme space weather on the US high-voltage grid. It is developed on GitHub by Dennies Bor with Edward Oughton and co-authors, and underpins an arXiv paper on major space weather risks and a 2026 study of component-level transmission characterisation whose TVA and UIUC150 case study data, with a pinned C-SWIM snapshot, are archived on Zenodo (v1.0.1, August 2026). The pipeline collects geomagnetic and grid data, derives extreme geoelectric field scenarios statistically, builds a geospatial admittance model of the extra-high-voltage grid, simulates geomagnetically induced currents for synthetic and historical storms, validates them against measurements and IEEE benchmarks, and estimates socio-economic impacts with input-output and computable general equilibrium models. Coverage is the United States. The code is accessible on GitHub at no cost, and the case study package is downloadable under CC BY 4.0. Licence (read on the provider page on 2026-09-28): CC-BY-4.0. Simulation uses are substation-level space weather risk, grid failure and economic loss scenarios. Related records: data-may-2024-storm-gic-observations holds observations used for validation, and model-powermodelsgmd-jl is another GIC tool. The underlying files were not downloaded, so their contents are not verified here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "gas network space weather",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "oil pipeline economic model",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://github.com/denniesbor/C-SWIM",
+  "id": "model-c-swim-coupled-space-weather-impact-model",
+  "inputs": [
+    "geomagnetic and magnetotelluric data",
+    "extra-high-voltage grid geometry (OpenStreetMap, HIFLD)",
+    "storm scenarios"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-17",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "network",
+    "economic"
+  ],
+  "name": "C-SWIM - Coupled Space Weather Impact Model",
+  "outputs": [
+    "geoelectric fields and induced currents per substation",
+    "vulnerable substations",
+    "input-output and CGE economic impacts"
+  ],
+  "provider": "Dennies Bor, Edward J. Oughton and colleagues",
+  "related_ids": [
+    "data-may-2024-storm-gic-observations",
+    "model-powermodelsgmd-jl"
+  ],
+  "repository": "https://github.com/denniesbor/C-SWIM",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Pipeline steps, validation, IO and CGE modelling, Lucas et al. basis, arXiv citation; pyproject cswim 0.1.1; no LICENSE file (404)",
+      "url": "https://raw.githubusercontent.com/denniesbor/C-SWIM/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Case study package contents, commit-pinned C-SWIM and C-MAP snapshots, OSM and HIFLD base data, omissions",
+      "url": "https://zenodo.org/records/21986729/files/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "v1.0.1 published 2026-08-17, CC-BY-4.0, creators Oughton, Weigel, Bor, Gaunt",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.21986729"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): CC-BY-4.0 (basis: DataCite metadata (rightsList))",
+      "url": "https://api.datacite.org/dois/10.48550/arxiv.2412.18032"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://github.com/denniesbor/C-SWIM/blob/main/README.md"
+    }
+  ],
+  "tags": [
+    "space weather",
+    "geomagnetically induced currents",
+    "economic impact",
+    "input-output",
+    "substations"
+  ],
+  "title_en": "C-SWIM - Coupled Space Weather Impact Model",
+  "type": "model",
+  "validated_on": [
+    "TVA GIC monitor measurements",
+    "IEEE GIC benchmark test cases"
+  ]
+}

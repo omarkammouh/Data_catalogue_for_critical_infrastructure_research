@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Version 2.0.0 source archive (zip)",
+      "url": "https://code.usgs.gov/map/wu/aiwum-2.0-hydromap_ml-mirror/-/archive/2.0.0/aiwum-2.0-hydromap_ml-mirror-2.0.0.zip"
+    },
+    {
+      "kind": "portal",
+      "label": "AIWUM 2.0 data release (doi 10.5066/P9CET25K)",
+      "url": "https://doi.org/10.5066/P9CET25K"
+    },
+    {
+      "kind": "repo",
+      "label": "AIWUM 2.0 source code (USGS GitLab, version 2.0.0)",
+      "url": "https://code.usgs.gov/map/wu/aiwum-2.0-hydromap_ml-mirror"
+    },
+    {
+      "kind": "docs",
+      "label": "USGS software release (doi 10.5066/P137FIUZ)",
+      "url": "https://doi.org/10.5066/P137FIUZ"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "aiwum 2 0 aquaculture and irrigation water use model usgs mississippi alluvial plain",
+    "url": "https://code.usgs.gov/map/wu/aiwum-2.0-hydromap_ml-mirror"
+  },
+  "description": "AIWUM 2.0 is a machine-learning model that predicts annual and monthly groundwater withdrawals for irrigation and aquaculture on a 1 km grid across the Mississippi Alluvial Plain (Mississippi embayment) for 2014 to 2020. It trains a distributed random forest on metered withdrawals from the Mississippi Delta Voluntary Metering Program, with predictors from SSEBop evapotranspiration, PRISM and TerraClimate climate, the Cropland Data Layer and the Soil-Water-Balance model, and it forms part of a USGS hydrologic decision-support system for the region. The US Geological Survey produced it with the Desert Research Institute and Colorado State University; the Python code (version 2.0.0, production status) is a free download from the USGS GitLab under CC0 public domain, published as a USGS software release (doi 10.5066/P137FIUZ) with a companion data release of the predictions (doi 10.5066/P9CET25K) and a 2024 paper in the Journal of Hydrology: Regional Studies. Coverage is regional, one agricultural region of the United States. Caveats: the model is statistical and trained on one metering programme, so it is not transferable without new training data, and the repository mirror was last updated in February 2024. Simulation uses: gridded irrigation groundwater demand for capacity planning of aquifer use and drought adaptation. Related records: USGS monthly irrigation water use by HUC12 for 2015 (data-usgs-monthly-irrigation-water-use-huc12-2015) and the AZ-Hydro Arizona water use series (data-az-hydro-arizona-water-use-1896-2099).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"irrigation\" AND \"machine learning\"",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "drought"
+  ],
+  "homepage": "https://code.usgs.gov/map/wu/aiwum-2.0-hydromap_ml-mirror",
+  "id": "model-usgs-aiwum-2-aquaculture-irrigation-water-use-model",
+  "inputs": [
+    "Remote-sensing and gridded predictors such as SSEBop actual evapotranspiration, PRISM and TerraClimate climate, the USDA Cropland Data Layer and Soil-Water-Balance model outputs",
+    "Metered groundwater withdrawals from the Mississippi Department of Environmental Quality Delta Voluntary Metering Program for training"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-23",
+  "licence": "CC0-1.0 (public domain)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://code.usgs.gov/map/wu/aiwum-2.0-hydromap_ml-mirror/-/archive/2.0.0/aiwum-2.0-hydromap_ml-mirror-2.0.0.zip"
+    ]
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "AIWUM 2.0, Aquaculture and Irrigation Water Use Model (USGS, Mississippi Alluvial Plain)",
+  "outputs": [
+    "Annual and monthly groundwater use for irrigation and aquaculture at 1 km resolution across the Mississippi Alluvial Plain, 2014 to 2020"
+  ],
+  "provider": "US Geological Survey, with the Desert Research Institute and Colorado State University",
+  "related_ids": [
+    "data-usgs-monthly-irrigation-water-use-huc12-2015",
+    "data-az-hydro-arizona-water-use-1896-2099"
+  ],
+  "repository": "https://code.usgs.gov/map/wu/aiwum-2.0-hydromap_ml-mirror",
+  "runs_on": [],
+  "sectors": [
+    "water.irrigation",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README: maintainers, DRF model, 1 km annual and monthly predictions 2014-2020, predictors, VMP training data, software and data release dois, 2024 paper",
+      "url": "https://code.usgs.gov/map/wu/aiwum-2.0-hydromap_ml-mirror"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "licence CC0-1.0, created 2023-06-08, last activity 2024-02-06",
+      "url": "https://code.usgs.gov/api/v4/projects/10963?license=true"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 2.0.0, status Production, language Python, public domain CC0-1.0",
+      "url": "https://code.usgs.gov/map/wu/aiwum-2.0-hydromap_ml-mirror/-/raw/main/code.json"
+    }
+  ],
+  "tags": [
+    "irrigation",
+    "aquaculture",
+    "groundwater use",
+    "water use estimation",
+    "random forest",
+    "remote sensing",
+    "Mississippi Alluvial Plain"
+  ],
+  "title_en": "AIWUM 2.0, Aquaculture and Irrigation Water Use Model (USGS, Mississippi Alluvial Plain)",
+  "type": "model"
+}

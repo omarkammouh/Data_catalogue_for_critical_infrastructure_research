@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Representation of the transport system in Samgods 1.2.2",
+      "url": "https://bransch.trafikverket.se/contentassets/ab220f9016154ef7a8478555560bb280/2024/representation-of-the-swedish-transport-and-logistics-system-in-samgods-1.2.2.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "Logistics model program documentation (March 2026)",
+      "url": "https://bransch.trafikverket.se/contentassets/ab220f9016154ef7a8478555560bb280/2026/program-documentation---version-1.2.3.pdf"
+    }
+  ],
+  "access_restrictions": "on_request",
+  "continents": [
+    "europe"
+  ],
+  "cost": "on_request",
+  "countries": [
+    "SE"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "samgods the swedish national freight transport model",
+    "url": "https://bransch.trafikverket.se/contentassets/ab220f9016154ef7a8478555560bb280/2024/representation-of-the-swedish-transport-and-logistics-system-in-samgods-1.2.2.pdf"
+  },
+  "description": "Samgods is Sweden's national model for freight transport, used by Trafikverket for multimodal freight forecasts such as the base forecasts to 2045. It covers road, rail, sea and air. Demand is given as production-wholesale- consumption matrices for 16 commodity groups based on NST 2007 and 590 zones inside and outside Sweden, with municipalities as domestic zones and 299 foreign zones. A logistics module, developed by Significance for Samgods and its Norwegian counterpart NEMO, chooses shipment sizes, transport chains and the use of consolidation and distribution centres; version 1.2.2 uses six road, 11 rail, 22 sea and one air vehicle type, and 125 predefined transport chains for the base year 2019. A rail capacity model handles link volume constraints, and Cube Voyager builds level-of-service matrices and assigns vehicles, with a graphical interface in Cube Base. The logistics module is a Windows console application run by batch file. Coverage is national with international links. Documentation is free on Trafikverket's sector site; the pages read do not say how outside users obtain the model, so access is recorded as on request. Caveats: it needs commercial Cube software, and zones abroad are coarse. It supports freight network flow, capacity planning and policy scenario studies, and complements TransTools 3 and the Freight Analysis Framework catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review doi:10.1007/s11116-012-9422-9 (journal review)",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://bransch.trafikverket.se/contentassets/ab220f9016154ef7a8478555560bb280/2024/representation-of-the-swedish-transport-and-logistics-system-in-samgods-1.2.2.pdf",
+  "id": "model-samgods-swedish-national-freight-model",
+  "inputs": [
+    "production-wholesale-consumption matrices by commodity",
+    "transport networks",
+    "vehicle and terminal costs"
+  ],
+  "language": [],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-01",
+  "licence": "not stated (provider pages not readable from the cloud on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "economic",
+    "network"
+  ],
+  "name": "Samgods, the Swedish national freight transport model",
+  "outputs": [
+    "transport chains",
+    "vehicle origin-destination matrices",
+    "link flows",
+    "tonne-km"
+  ],
+  "provider": "Trafikverket (Swedish Transport Administration); logistics module by Significance",
+  "related_ids": [
+    "model-transtools-3",
+    "data-freight-analysis-framework"
+  ],
+  "runs_on": [
+    "Windows",
+    "Cube Voyager"
+  ],
+  "sectors": [
+    "transport.logistics_freight",
+    "transport.road",
+    "transport.rail",
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Trafikverket 2024-04-01; 16 NST 2007 commodity groups; 590 zones; 299 foreign zones; vehicle types 6 road, 11 rail, 22 sea, 1 air; 125 chains base year 2019; RCM; Cube Base, Cube Voyager, Cube GIS",
+      "url": "https://bransch.trafikverket.se/contentassets/ab220f9016154ef7a8478555560bb280/2024/representation-of-the-swedish-transport-and-logistics-system-in-samgods-1.2.2.pdf"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Significance, March 2026; logistics module for Samgods and NEMO; shipment size, consolidation; console application runall.bat on Windows; Emme/2 in the model structure figure",
+      "url": "https://bransch.trafikverket.se/contentassets/ab220f9016154ef7a8478555560bb280/2026/program-documentation---version-1.2.3.pdf"
+    }
+  ],
+  "tags": [
+    "freight model",
+    "Sweden",
+    "logistics",
+    "NST 2007",
+    "Trafikverket"
+  ],
+  "title_en": "Samgods, the Swedish national freight transport model",
+  "type": "model",
+  "validated_on": [
+    "Swedish freight statistics",
+    "base year 2019"
+  ]
+}

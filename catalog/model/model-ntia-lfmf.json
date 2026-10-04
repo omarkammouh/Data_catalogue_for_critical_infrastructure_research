@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "NTIA/LFMF-v1.1.zip (146.2 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/14727812/files/NTIA/LFMF-v1.1.zip?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/NTIA/LFMF"
+    },
+    {
+      "kind": "repo",
+      "label": "Test data",
+      "url": "https://github.com/NTIA/LFMF-test-data"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo archive",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/records/14727812"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ntia its low frequency medium frequency lf mf propagation model",
+    "repo": "github.com/ntia/lfmf",
+    "url": "https://ntia.github.io/propagation-library-wiki/models/LFMF"
+  },
+  "description": "The LF/MF model of the Institute for Telecommunication Sciences of the US National Telecommunications and Information Administration predicts basic transmission loss in the frequency range 0.01 to 30 MHz for ground-wave propagation paths over a smooth Earth with antenna heights below 50 metres, the regime of AM broadcasting, LF time signals and navigation beacons. ITS publishes a C++ reference implementation built as a shared library, a command-line driver with plain-text input and output files, and bindings for .NET, MATLAB and Python, all part of the ITS Propagation Library (PropLib); a separate repository holds test data. Coverage: any path over a smooth Earth, with ground conductivity and permittivity as inputs. Format and access: source code on GitHub and a citable Zenodo archive (version 1.1, CC-BY-4.0 on Zenodo), with documentation on the PropLib wiki and Doxygen pages; as a US Government work it has no copyright in the US and comes with the NTIA disclaimer. Caveats: smooth-Earth only, so terrain and mixed paths are not modelled; ionospheric sky-wave is outside its scope. Simulation uses: coverage and hazard exposure of AM and LF broadcast and emergency alerting, and spectrum planning. Related records: ITS ITM covers 20 MHz to 20 GHz, and eHata, P.528 and P.2108 are other PropLib models.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "zenodo software harvest of the digital piece; candidate zenodo-b4f92fe135 (Zenodo record 14727812)",
+      "route": "R05",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://zenodo.org/records/14727812",
+  "id": "model-ntia-lfmf",
+  "inputs": [
+    "frequency",
+    "antenna heights",
+    "path distance",
+    "ground conductivity and permittivity",
+    "transmit power"
+  ],
+  "language": [
+    "c_cpp",
+    "python",
+    "matlab",
+    "dotnet"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-09-07",
+  "licence": "US Government work (not subject to copyright in the US, 15 USC 105) with NTIA software disclaimer",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://ntia.github.io/propagation-library-wiki/models/LFMF/"
+    ],
+    "dead_since": "2026-09-27"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "NTIA/ITS Low Frequency / Medium Frequency (LF/MF) Propagation Model",
+  "notes": "README, LICENSE.md and Zenodo record read 2026-09-26; git tags show v1.2 release candidates. last_updated is the year of the Zenodo archive (January 2025 record id range), inferred.",
+  "outputs": [
+    "basic transmission loss",
+    "field strength"
+  ],
+  "provider": "NTIA Institute for Telecommunication Sciences (ITS)",
+  "related_ids": [
+    "data-itu-r-p832-world-atlas-ground-conductivities",
+    "data-fcc-lms-cdbs-broadcast-station-databases",
+    "data-itu-r-dbsg3-propagation-databanks"
+  ],
+  "repository": "https://github.com/NTIA/LFMF",
+  "runs_on": [],
+  "sectors": [
+    "digital.broadcasting",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README and licence",
+      "url": "https://github.com/NTIA/LFMF"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Zenodo record metadata",
+      "url": "https://zenodo.org/api/records/14727812"
+    }
+  ],
+  "tags": [
+    "radio propagation",
+    "ground wave",
+    "AM broadcasting",
+    "PropLib"
+  ],
+  "title_en": "NTIA/ITS Low Frequency / Medium Frequency (LF/MF) Propagation Model",
+  "type": "model",
+  "validated_on": [
+    "NTIA/LFMF-test-data reference cases"
+  ]
+}

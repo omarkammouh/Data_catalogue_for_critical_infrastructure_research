@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/pingswept/pysolar"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/pingswept/pysolar/blob/master/README.markdown"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pysolar solar position and irradiation library",
+    "repo": "github.com/pingswept/pysolar",
+    "url": "https://github.com/pingswept/pysolar"
+  },
+  "description": "Pysolar is a Python library maintained by Brandon Stafford and contributors for calculating solar position and irradiation at a location on Earth. Users provide geographic coordinates and timezone-aware dates or times and obtain solar quantities for further analysis. Coverage is global, while temporal sampling follows the user's calls, not a fixed weather-observation series. The repository links function documentation and provides pip installation instructions. Public source is free under GPL-3.0. A limitation is the distinction between astronomical irradiation calculations and measured local weather: this resource does not supply cloud observations or a calibrated photovoltaic plant. The README also documents breaking changes from Python 2-era releases and warns that naive timestamps can produce incorrect results. Those interface details matter when reproducing older studies. Pysolar can prepare solar inputs for building or renewable-generation simulations, complementing EnergyPlus (model-energyplus) and broader power-system scenario models. The maintainer describes the project as a community-maintained library, not a supported commercial product. This review did not execute ephemeris calculations or compare numerical results with observations.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "pingswept/pysolar linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/pingswept/pysolar",
+  "id": "model-pysolar",
+  "inputs": [
+    "Coordinates",
+    "Timezone-aware date and time"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-10-20",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Pysolar solar-position and irradiation library",
+  "notes": "G7 G7-0420. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Solar position",
+    "Irradiation estimates"
+  ],
+  "provider": "Brandon Stafford and Pysolar contributors",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/pingswept/pysolar",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for pingswept/pysolar: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/pingswept/pysolar"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/pingswept/pysolar/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Pysolar: python library for solar position and irradiation calculation",
+  "type": "model"
+}

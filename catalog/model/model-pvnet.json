@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/openclimatefix/pvnet"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/openclimatefix/pvnet/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Open Climate Fix (2024). PVNet workshop paper, Tackling Climate Change with Machine Learning at ICLR. https://www.climatechange.ai/papers/iclr2024/46",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pvnet renewable generation forecasting model",
+    "repo": "github.com/openclimatefix/pvnet",
+    "url": "https://github.com/openclimatefix/pvnet"
+  },
+  "description": "PVNet is Open Climate Fix's neural model and training code for predicting renewable electricity generation. It combines encoded numerical weather predictions and satellite imagery with recent generation, solar coordinates and location embeddings. Outputs are predictions of future energy yield. Geographic and temporal coverage follow configured input locations, training periods and forecast horizons; the README demonstrates British generation and European weather sources. Python source is free under MIT with training and inference instructions. A limitation is that the documented public satellite files currently use a compressor unsupported by the model's tensorstore backend, so those example paths cannot be used directly. Versions of the separate data sampler must also match. PVNet supports generation scenarios for electricity-system operation simulations and relates to PyPSA (model-pypsa). The linked ICLR 2024 workshop paper describes experiments. No private generation data or cloud account was accessed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "openclimatefix/pvnet linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/openclimatefix/pvnet",
+  "id": "model-pvnet",
+  "inputs": [
+    "Weather predictions and satellite imagery",
+    "Recent generation, solar coordinates and location"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-29",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "PVNet renewable-generation forecasting model",
+  "notes": "G7 G7-1116. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Renewable-generation forecasts"
+  ],
+  "provider": "Open Climate Fix",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/openclimatefix/pvnet",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for openclimatefix/pvnet: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/openclimatefix/pvnet"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/openclimatefix/pvnet/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Statistical model for electricity",
+  "type": "model"
+}

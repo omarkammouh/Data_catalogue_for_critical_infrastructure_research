@@ -1,0 +1,131 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Full dataset (CSV)",
+      "url": "https://storage.dosm.gov.my/hies/hh_access_amenities.csv"
+    },
+    {
+      "kind": "download",
+      "label": "Full dataset (Parquet)",
+      "url": "https://storage.dosm.gov.my/hies/hh_access_amenities.parquet"
+    },
+    {
+      "kind": "api",
+      "label": "data.gov.my Open API, data catalogue",
+      "url": "https://developer.data.gov.my/static-api/data-catalogue"
+    },
+    {
+      "kind": "portal",
+      "label": "Census-based households and living quarters by state",
+      "url": "https://open.dosm.gov.my/data-catalogue/hh_profile_state"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "MY"
+  ],
+  "data_family": [
+    "system_description",
+    "behavioural_social",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular",
+    "survey"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opendosm household access to piped water sanitation and electricity by state and district malaysia",
+    "url": "https://open.dosm.gov.my/data-catalogue/hh_access_amenities"
+  },
+  "description": "This OpenDOSM dataset gives the share of households in each Malaysian state and administrative district with piped water at home, covered by sanitary latrines, and with electricity at home. It is produced by the Department of Statistics Malaysia from the household-level Household Income and Expenditure Survey, which runs at least twice in every five years, and holds 172 rows per round for 2016, 2019, 2022 and 2024, covering 16 states and 160 districts. The catalogue page was last updated on 3 August 2026. The same portal carries the census-based count of households and living quarters by state, whose census years 1970 to 2020 come from adjusted population census data and whose other years are estimates. Format and access: CSV and Parquet downloads and the data.gov.my Open API, free and without registration. Licence: CC BY 4.0, free. Caveats: the figures are survey estimates, not census counts, so small districts carry sampling error, and census small-area housing tables are not on the portal; the page links technical notes on sampling. Simulation uses: district service coverage gaps for water, sanitation and electricity planning, and for weighting exposure and vulnerability. Related records: the OpenDOSM water supply statistics and IPUMS International.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:MY:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "parquet",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://open.dosm.gov.my/data-catalogue/hh_access_amenities",
+  "id": "data-opendosm-household-access-basic-amenities-by-district",
+  "languages": [
+    "en",
+    "ms"
+  ],
+  "last_updated": "2026-08-03",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OpenDOSM household access to piped water, sanitation and electricity by state and district, Malaysia",
+  "provider": "Department of Statistics Malaysia (DOSM)",
+  "related_ids": [
+    "data-malaysia-opendosm-water-supply-statistics",
+    "data-ipums-international-census-microdata"
+  ],
+  "schema_summary": "date, state, district, piped_water (% of households with piped water at home), sanitation (% covered by sanitary latrines), electricity (% with electricity at home); 172 rows per year, 688 in all",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Variables, method (HIES), CSV and Parquet URLs, CC BY 4.0, last updated 03 Aug 2026",
+      "url": "https://open.dosm.gov.my/data-catalogue/hh_access_amenities"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: 688 data rows, 172 per year for 2016, 2019, 2022, 2024",
+      "url": "https://storage.dosm.gov.my/hies/hh_access_amenities.csv"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Households and living quarters 1970-2024; census years from adjusted census data",
+      "url": "https://open.dosm.gov.my/data-catalogue/hh_profile"
+    }
+  ],
+  "spatial_resolution": "16 states and 160 administrative districts",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "Malaysia",
+    "households",
+    "piped water",
+    "sanitation",
+    "electricity access",
+    "district"
+  ],
+  "temporal_coverage": "2016, 2019, 2022 and 2024",
+  "temporal_coverage_years": {
+    "end": 2024,
+    "start": 2016
+  },
+  "temporal_resolution": "survey rounds (at least twice in five years)",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "OpenDOSM household access to piped water, sanitation and electricity by state and district, Malaysia",
+  "type": "data"
+}

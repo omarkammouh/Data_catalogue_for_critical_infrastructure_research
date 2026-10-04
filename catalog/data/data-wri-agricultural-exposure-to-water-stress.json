@@ -1,0 +1,93 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "WRI data page",
+      "url": "https://www.wri.org/data/agricultural-exposure-water-stress"
+    },
+    {
+      "kind": "download",
+      "label": "KAPSARC mirror",
+      "url": "https://datasource.kapsarc.org/explore/dataset/agricultural-exposure-to-water-stress/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "hazards",
+    "vulnerability_fragility"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "agricultural exposure to water stress wri aqueduct",
+    "url": "https://wri.org/data/agricultural-exposure-water-stress"
+  },
+  "description": "This WRI Aqueduct dataset gives the percentage of total crop production in each country that lies in areas facing different levels of water stress. Crop production data are overlaid on Aqueduct's baseline water stress indicator, the ratio of local water withdrawals to available renewable supply (Gassert et al. 2013), to show competition for and depletion of water in major agricultural areas. The WRI data page dates it 31 October 2013 and licenses it under Creative Commons Attribution 3.0; a KAPSARC mirror has 214 records with fields for year, crop, indicator and value, served as CSV, Excel, JSON and API. Coverage is global by country and crop. Caveats: it reflects baseline water stress and crop production around 2013, not projections, and it is a national aggregate; the WRI resource map page returned a Cloudflare 403 to this session, so the data page was read through the WebFetch tool. For simulation it flags countries and crops whose production depends on water-stressed areas, useful to weight drought and irrigation supply shocks in food supply chain models. Related catalogue records include the Aqueduct floods hazard maps, the yield constraint score and FAOSTAT.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"crop map\"",
+      "route": "R44",
+      "source": "kapsarc"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://datasource.kapsarc.org/explore/dataset/agricultural-exposure-to-water-stress/",
+  "id": "data-wri-agricultural-exposure-to-water-stress",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-09-10",
+  "licence": "CC-BY-3.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Agricultural exposure to water stress (WRI Aqueduct)",
+  "provider": "World Resources Institute (Aqueduct)",
+  "sectors": [
+    "industry.agriculture",
+    "water.irrigation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, date and licence read with WebFetch 2026-09-26",
+      "url": "https://www.wri.org/data/agricultural-exposure-water-stress"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "fields and record count read 2026-09-26",
+      "url": "https://datasource.kapsarc.org/api/explore/v2.1/catalog/datasets/agricultural-exposure-to-water-stress"
+    }
+  ],
+  "spatial_resolution": "country and crop",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "water stress",
+    "agriculture",
+    "Aqueduct",
+    "crops"
+  ],
+  "temporal_coverage": "around 2013",
+  "title_en": "Agricultural exposure to water stress (WRI Aqueduct)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

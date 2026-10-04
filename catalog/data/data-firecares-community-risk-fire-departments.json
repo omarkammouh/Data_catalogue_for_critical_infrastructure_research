@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Department search and maps",
+      "url": "https://firecares.nfors.org/"
+    },
+    {
+      "kind": "docs",
+      "label": "About the data",
+      "url": "https://firecares.nfors.org/data/"
+    },
+    {
+      "kind": "docs",
+      "label": "API access terms",
+      "url": "https://firecares.nfors.org/api-terms/"
+    },
+    {
+      "kind": "repo",
+      "label": "Processing notebooks (FireCARES/data)",
+      "url": "https://github.com/FireCARES/data"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "historical_events",
+    "service_performance"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "firecares community fire risk station service areas and response analytics for us fire departments",
+    "repo": "github.com/firecares/data",
+    "url": "https://firecares.nfors.org"
+  },
+  "description": "FireCARES (Community Assessment Response Evaluation System) is a web system that scores community fire risk and fire department performance for every registered US fire department. It is run by the International Public Safety Data Institute (IPSDI) and was built with the US Fire Administration and fire service partners to test whether station resources match a community's risk. Coverage: United States, department jurisdictions, with historical incidents from NFIRS (2024 data now loaded). Each department page combines geocoded historical fire and EMS incident heatmaps, 4, 6 and 8 minute drive-time service areas from each station, effective response force areas, structure counts by property hazard level, and live National Weather Service fire weather warnings and NIFC wildland fire perimeters. Format and access: public map pages and search by department; the underlying layers and the API need an account under a data use agreement and API terms. The FireCARES GitHub organisation publishes the processing notebooks (MIT licence) but not the data. Licence: data use agreement; free to fire departments. Caveats: NFIRS reporting is voluntary and uneven, so incident density partly reflects reporting practice; station locations are self-reported. Simulation uses: station location and service area inputs for emergency response and capacity planning models, and a validated risk layer for hazard exposure of buildings. Related records: the NFIRS public data release (data-usfa-nfirs-public-data-release) and the USFA National Fire Department Registry (data-usfa-national-fire-department-registry) are its main sources.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source built_environment-firecares-data: provider pages read (round 2 register piece)",
+      "route": "R30",
+      "source": "built_environment-firecares-data"
+    }
+  ],
+  "formats": [
+    "web_page",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://firecares.nfors.org/",
+  "id": "data-firecares-community-risk-fire-departments",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-11-06",
+  "licence": "FireCARES data use agreement and API terms; processing code MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "FireCARES: community fire risk, station service areas and response analytics for US fire departments",
+  "provider": "International Public Safety Data Institute (IPSDI), NFORS; originally the FireCARES partners with the US Fire Administration",
+  "related_ids": [
+    "data-usfa-nfirs-public-data-release",
+    "data-usfa-national-fire-department-registry"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Home page: Community Assessment Response Evaluation System; 2024 NFIRS data available; request account; IPSDI link; data access agreement and API terms",
+      "url": "https://firecares.nfors.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "About our data: live NWS warnings, WFIGS/NIFC perimeters, NFIRS fire and EMS heatmaps geocoded by IPSDI, 4/6/8 minute service areas, effective response force",
+      "url": "https://firecares.nfors.org/data/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Register address: repository of notebooks and source notes (NFIRS, USFA), MIT licence, last commit 2020-11-06",
+      "url": "https://raw.githubusercontent.com/FireCARES/data/master/README.md"
+    }
+  ],
+  "spatial_resolution": "Fire department jurisdiction; incident points; drive-time polygons",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "fire service",
+    "community risk",
+    "NFIRS",
+    "service areas"
+  ],
+  "temporal_coverage": "NFIRS history to 2024; live warnings",
+  "title_en": "FireCARES: community fire risk, station service areas and response analytics for US fire departments",
+  "type": "data"
+}

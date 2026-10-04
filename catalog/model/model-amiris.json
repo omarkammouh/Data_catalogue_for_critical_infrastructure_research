@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code and documentation",
+      "url": "https://gitlab.com/dlr-ve/esy/amiris/amiris"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo community",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/communities/amiris"
+    },
+    {
+      "kind": "paper",
+      "label": "JOSS paper",
+      "url": "https://doi.org/10.21105/joss.05041"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Schimeczek et al., AMIRIS, Journal of Open Source Software 8(84):5041, 2023, doi:10.21105/joss.05041",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.21105/joss.05041",
+    "name": "amiris agent based market model for the investigation of renewable and integrated energy systems",
+    "repo": "gitlab.com/dlr-ve/esy/amiris/amiris",
+    "url": "https://gitlab.com/dlr-ve/esy/amiris/amiris"
+  },
+  "description": "AMIRIS is an agent-based simulation model of electricity markets and their actors, used to assess the interactions between producers, consumers, flexibility options, market designs and policy instruments. It is mainly developed by the German Aerospace Center's Institute of Networked Energy Systems, with development since 2008 funded by DLR and German federal ministries. The method is location-independent: users can model large transnational systems and small household decisions together, and a market zone at hourly resolution for one year typically runs in under a minute on the FAME framework. Applications include storage profitability, household flexibility in Germany, renewable cost recovery under policy instruments and cold dark doldrums in European market coupling. It is written mainly in Java with Python tooling, released on GitLab (version 5.0.0 in September 2026) with documentation and a Zenodo community, under Apache-2.0 at no cost. Caveats: AMIRIS does not optimise the energy system as a whole or enforce system-wide constraints such as emission caps, for which its developers point to optimisation tools. Simulation uses are agent-based market studies and capacity and investment questions. Related records: the README recommends PyPSA and oemof for system optimisation, catalogued as model-pypsa and model-oemof-solph.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "nuclear power plant simulation model",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://gitlab.com/dlr-ve/esy/amiris/amiris",
+  "id": "model-amiris",
+  "inputs": [
+    "Scenario definitions of agents, market design and policy instruments",
+    "Time series of demand, renewable availability and prices"
+  ],
+  "language": [
+    "java",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-18",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "economic"
+  ],
+  "name": "AMIRIS - Agent-based Market model for the Investigation of Renewable and Integrated energy Systems",
+  "outputs": [
+    "Market prices",
+    "Dispatch and revenues of actors"
+  ],
+  "provider": "German Aerospace Center (DLR), Institute of Networked Energy Systems",
+  "related_ids": [
+    "model-pypsa",
+    "model-oemof-solph"
+  ],
+  "repository": "https://gitlab.com/dlr-ve/esy/amiris/amiris",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, runtime under a minute, applications, non-applications, DLR, funding, Apache-2.0 SPDX, JOSS citation, REMix/PyPSA/oemof recommendation",
+      "url": "https://gitlab.com/dlr-ve/esy/amiris/amiris/-/raw/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Last activity 2026-09-18",
+      "url": "https://gitlab.com/api/v4/projects/dlr-ve%2Fesy%2Famiris%2Famiris"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "v5.0.0 released 2026-09-10",
+      "url": "https://gitlab.com/api/v4/projects/dlr-ve%2Fesy%2Famiris%2Famiris/releases"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Java 98%, Python 1%",
+      "url": "https://gitlab.com/api/v4/projects/dlr-ve%2Fesy%2Famiris%2Famiris/languages"
+    }
+  ],
+  "tags": [
+    "agent-based",
+    "electricity market",
+    "policy",
+    "DLR",
+    "FAME",
+    "Java"
+  ],
+  "title_en": "AMIRIS - Agent-based Market model for the Investigation of Renewable and Integrated energy Systems",
+  "type": "model",
+  "validated_on": [
+    "Backtesting on open historical data (competing flexibility study)"
+  ]
+}

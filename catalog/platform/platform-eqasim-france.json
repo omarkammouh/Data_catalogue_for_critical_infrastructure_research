@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/eqasim-org/eqasim-france"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/eqasim-org/eqasim-france/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "eqasim france synthetic population and travel demand pipeline",
+    "repo": "github.com/eqasim-org/eqasim-france",
+    "url": "https://github.com/eqasim-org/eqasim-france"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "The eqasim France pipeline creates synthetic populations and daily travel demand from publicly available French data. The eqasim developers publish Python code and documentation for Île-de-France, with additional examples for Toulouse and Occitanie, Lyon, Nantes and Corsica. Inputs describe population, households, mobility and infrastructure. Outputs represent synthetic persons and households, their localised daily activities, travel modes and trip timing. CSV exports and MATSim input generation are documented, and meta.json records the exact code revision used. Geography depends on the selected French region; person-level synthetic detail must not be treated as observed individual behaviour. Source is public and free under GPL-2.0. Input sources retain their own access conditions, and generating a new region requires collecting and configuring those inputs. The README links full generation and simulation instructions but does not establish accuracy for every supported region or a common reference year. This data-preparation tool supports activity-based traffic simulation with MATSim (model-matsim), service-location studies and population-based scenario analysis. External records that merely cite eqasim as a preparation dependency do not describe this reusable pipeline itself.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:matsim fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/eqasim-org/eqasim-france",
+  "id": "platform-eqasim-france",
+  "interfaces": [
+    "code_library",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "CSV",
+    "MATSim"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-23",
+  "licence": "GPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "eqasim France synthetic-population and travel-demand pipeline",
+  "notes": "G7 G7-0250. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability.  Cited as: Hörl and Balac (2021). Synthetic population and travel demand for Paris and Île-de-France based on open and publicly available data. Transportation Research Part C 130, 103291. https://www.sciencedirect.com/science/article/pii/S0968090X21003016.",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "eqasim France contributors",
+  "related_ids": [
+    "model-matsim"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for eqasim-org/eqasim-france: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Amatsim+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/eqasim-org/eqasim-france/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Eqasim France synthetic-population and travel-demand pipeline",
+  "type": "platform"
+}

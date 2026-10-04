@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "API endpoint (JSON)",
+      "url": "https://api.fda.gov/drug/shortages.json"
+    },
+    {
+      "kind": "portal",
+      "label": "Download information",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://open.fda.gov/data/downloads/"
+    },
+    {
+      "kind": "docs",
+      "label": "openFDA drug shortages overview",
+      "url": "https://open.fda.gov/data/drugshortages/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "supply_chains_logistics",
+    "historical_events",
+    "service_performance"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openfda drug shortages api fda drug shortage database",
+    "url": "https://open.fda.gov/data/drugshortages"
+  },
+  "description": "This dataset provides the US Food and Drug Administration's drug shortage and discontinuation notices as a queryable API and bulk download. The FDA compiles it from information that manufacturers report about their ability to supply the market, and lists a drug as in shortage when national supply does not meet current or projected demand. Each record gives the generic and brand presentation, package NDC code, dosage form, therapeutic category, company and contact, status (current, resolved, to be discontinued), reason or related information, and the initial posting, update and discontinuation dates; about 1,600 records were available at the 26 September 2026 update. Coverage is the United States at national level. Access is free through the openFDA REST API returning JSON, with an optional key for higher rate limits, or as zipped JSON downloads; FDA dedicates the data to the public domain under CC0. Caveats: openFDA warns that results are unvalidated and should not guide medical care, shortages are recorded at national level only with no stock quantities or regional detail, and reporting depends on manufacturers. Simulation uses: building event histories for medical supply chain disruption models, testing hospital resilience to shortages of critical drugs, and linking supply shocks to emergency response planning. Related records: the openFDA food enforcement reports (data-openfda-food-enforcement) use the same API platform, and the AHRQ HCUP databases (data-ahrq-hcup-hospital-utilization-databases) describe the hospital demand side.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "medicine shortage database open data pharmaceutical supply chain",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "api",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://open.fda.gov/data/drugshortages/",
+  "id": "data-openfda-drug-shortages",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "openFDA Drug Shortages API (FDA Drug Shortage Database)",
+  "provider": "US Food and Drug Administration (FDA), openFDA",
+  "related_ids": [
+    "data-openfda-food-enforcement",
+    "data-ahrq-hcup-hospital-utilization-databases"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "page: definition of a drug shortage; FDA tracks shortages at national level from manufacturer information; provider FDA; licence Public Domain and CC0",
+      "url": "https://open.fda.gov/data/drugshortages/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "API response: last_updated 2026-09-26, total 1601 results; fields package_ndc, generic_name, status, therapeutic_category, company_name, related_info, dates; disclaimer that results are unvalidated",
+      "url": "https://api.fda.gov/drug/shortages.json?limit=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "openFDA content and data dedicated to the public domain under Creative Commons CC0 1.0 Universal",
+      "url": "https://open.fda.gov/license/"
+    }
+  ],
+  "spatial_resolution": "National",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "drug shortages",
+    "medical supply chain",
+    "pharmaceuticals",
+    "FDA"
+  ],
+  "temporal_coverage": "Current and resolved shortages as listed by FDA (dates per notice)",
+  "temporal_resolution": "Per notice",
+  "temporal_resolution_class": "event",
+  "title_en": "OpenFDA Drug Shortages API (FDA Drug Shortage Database)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

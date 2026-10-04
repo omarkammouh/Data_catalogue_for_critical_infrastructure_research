@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/EnergieID/entsoe-py"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/EnergieID/entsoe-py/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "entsoe py electricity data preparation client",
+    "repo": "github.com/energieid/entsoe-py",
+    "url": "https://github.com/EnergieID/entsoe-py"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "entsoe-py is EnergieID's Python client for ENTSO-E electricity data services. It exposes a raw client returning XML or compressed XML and a Pandas client returning Series or DataFrame objects. The latter splits long time intervals and large requests across API calls. A separate subpackage accesses the ENTSO-E File Library. Users choose the requested electricity series, geographic bidding zone and time interval, so European coverage and temporal resolution depend on the underlying service. Public source and pip installation are free under MIT. Access to upstream services requires the relevant credentials or registration and is not supplied by the package. A limitation is that queries require timezone-aware start/end timestamps, while bidding-zone mappings change across years and can contain gaps. The tool can prepare observed electricity inputs for calibration and scenario construction in models such as PyPSA (model-pypsa). It is a data-access and conversion library, not a new generation or demand dataset. This review read only public documentation and did not request ENTSO-E data or handle account credentials.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "energieid/entsoe-py linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://github.com/EnergieID/entsoe-py",
+  "id": "platform-entsoe-py",
+  "interfaces": [
+    "code_library",
+    "web_api"
+  ],
+  "interoperability": [
+    "XML",
+    "Pandas Series",
+    "Pandas DataFrame"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-04",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "entsoe-py electricity-data preparation client",
+  "notes": "G7 G7-0417. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "EnergieID contributors",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for EnergieID/entsoe-py: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/energieid/entsoe-py"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/energieid/entsoe-py/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Python client for ENTSO-E electricity data services",
+  "type": "platform"
+}

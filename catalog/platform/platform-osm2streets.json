@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/a-b-street/osm2streets"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/a-b-street/osm2streets/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "osm2streets lane level street network preparation",
+    "repo": "github.com/a-b-street/osm2streets",
+    "url": "https://github.com/a-b-street/osm2streets"
+  },
+  "deployment": [
+    "desktop",
+    "hosted_service"
+  ],
+  "description": "osm2streets is a Rust library and associated web tooling developed by the A/B Street project for transforming OpenStreetMap into a lane-level street representation. Roads retain ordered lanes with type, direction and width, while intersections become linked polygon areas. Transformations consolidate dual carriageways, short connecting roads and separated cycle or foot paths. Outputs include GeoJSON road, lane and intersection geometry, with a JavaScript/WebAssembly interface and the StreetExplorer browser application. Coverage is global where users supply OSM input; detail and currency depend on local tagging, not a uniform observation period. Public source and usage instructions are free under Apache-2.0, with OSM data terms separate. A limitation is that the API is unstable and routing, crosswalks and several editing features are described as planned. The README contains inconsistent statements about Python-binding maturity, so those bindings require checking before use. The tool can prepare street geometry for transport simulation, complementary to SUMO (model-sumo), without claiming tested direct interchange. No street data were downloaded or transformed during this review.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:a-b-street",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/a-b-street/osm2streets",
+  "id": "platform-osm2streets",
+  "interfaces": [
+    "code_library",
+    "other",
+    "web_app",
+    "desktop_gui"
+  ],
+  "interoperability": [
+    "OSM XML",
+    "GeoJSON"
+  ],
+  "language": [
+    "rust_go"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-10-02",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "osm2streets lane-level street-network preparation",
+  "notes": "G7 G7-0401. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "A/B Street contributors",
+  "related_ids": [
+    "model-sumo"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for a-b-street/osm2streets: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3Aa-b-street&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/a-b-street/osm2streets/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for road transport and public transport",
+  "type": "platform"
+}

@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/uesl-empa/cesar-p-core"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.04261"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.21105/joss.04261",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cesar p",
+    "url": "https://github.com/uesl-empa/cesar-p-core"
+  },
+  "description": "CESAR-P calculates building energy demand for districts using a bottom-up EnergyPlus workflow. Empa publishes the Python code to prepare building parameters, generate IDF inputs, run simulations and process results, with parallel execution supported. Users supply building footprints and heights, construction years, use types and hourly EPW weather; shading requires neighbouring geometry. Default outputs summarise annual heating, cooling and domestic-hot-water demand, with hourly series available on request. Geographic coverage follows the supplied district, and the README describes Swiss scaling applications. GitHub distributes the source under AGPL-3.0, allowing free reuse. The documented dependency range is EnergyPlus 8.5 to 9.5, and some inputs use spreadsheets. A limitation is that clustering and upscaling are outside CESAR-P itself. These version and scope limits matter for reproducing a city-scale study. The model can compare retrofit measures and their energy, cost and emission consequences. Related record model-energyplus supplies the underlying simulator. No building data were downloaded and no simulation was run.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "JOSS whole-index enumeration; 10.21105/joss.04261; G5-LOCAL-079;G5-LOCAL-080;G5-LOCAL-081;G5-LOCAL-100;G5-LOCAL-106;G5-LOCAL-110",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/uesl-empa/cesar-p-core",
+  "id": "model-cesar-p",
+  "inputs": [
+    "Building footprints, heights, construction years and types",
+    "Hourly EPW weather",
+    "Neighbour geometry for shading and retrofit assumptions"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-08-30",
+  "licence": "AGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "CESAR-P",
+  "notes": "G5 G5-0045. Software checked through metadata and documentation, without installation or execution. Global scope means portability, not worldwide validation. ",
+  "outputs": [
+    "Annual and optional hourly building energy demands",
+    "Operational costs and emissions",
+    "Retrofit assumptions, costs and embodied emissions"
+  ],
+  "provider": "Empa, Urban Energy Systems Laboratory",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/uesl-empa/cesar-p-core",
+  "sectors": [
+    "built_environment.buildings",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository identity and licence metadata.",
+      "url": "https://api.github.com/repos/hues-platform/cesar-p-core"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Purpose, access, usage, scope and caveats.",
+      "url": "https://raw.githubusercontent.com/uesl-empa/cesar-p-core/master/README.rst"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Journal software identity and repository link.",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.04261"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Published article summary reviewed in XML; article text not saved.",
+      "url": "https://raw.githubusercontent.com/openjournals/joss-papers/master/joss.04261/10.21105.joss.04261.jats"
+    }
+  ],
+  "tags": [
+    "research software",
+    "JOSS"
+  ],
+  "title_en": "Cesar-p building energy demand calculation for districts",
+  "type": "model"
+}

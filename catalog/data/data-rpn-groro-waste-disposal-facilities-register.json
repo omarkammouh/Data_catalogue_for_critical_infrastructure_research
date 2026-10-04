@@ -1,0 +1,133 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "GRORO dataset passport (meta.csv)",
+      "url": "https://rpn.gov.ru/opendata/7703381225-groro/meta.csv"
+    },
+    {
+      "kind": "download",
+      "label": "GRORO data, version of 21 December 2022 (CSV)",
+      "url": "https://rpn.gov.ru/upload/iblock/646/jsf6dvn4ij1ul1103lwxz7622iyxurx7/data_20221221T0308_structure_20221221T0308.csv"
+    },
+    {
+      "kind": "docs",
+      "label": "Register of open datasets (CSV)",
+      "url": "https://rpn.gov.ru/opendata/list.csv"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing page)",
+      "url": "https://rpn.gov.ru/opendata/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "RU"
+  ],
+  "data_family": [
+    "system_description",
+    "catalogues_registries",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rosprirodnadzor groro state register of waste disposal facilities in russia landfills and storage sites with purpose waste codes and operator",
+    "url": "https://rpn.gov.ru/opendata/7703381225-groro/meta.csv"
+  },
+  "description": "GRORO is Russia's official state register of waste disposal facilities, the landfills and storage sites used to bury or store waste. It is kept by Rosprirodnadzor, the federal environmental supervision service. Each entry gives the region, the facility's register number and name, whether it is used for burial or storage of waste, the waste types it accepts with their codes in the federal waste classification catalogue, whether negative environmental impact information exists, the OKATO territorial code and nearest settlement, and the operating organisation with its address. The open data version read reflects the register at 13 December 2022 and holds about 4,400 records. It is free and available to download as CSV from Rosprirodnadzor's open data section, with a passport and structure file. Caveats: the data have not been refreshed since December 2022, sites have no coordinates, waste code fields span several lines and need careful parsing, and capacity and remaining volume are not given. Simulation uses: building the disposal node layer of national or regional waste flow models, locating landfills for exposure to floods, permafrost thaw or wildfire, and checking where waste can be diverted when sites close. Related records: the HIFLD solid waste landfills (data-hifld-open) and the Italian municipal waste data (data-ispra-catasto-rifiuti-municipal-waste) are waste facility and flow sources for other countries.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Росприроднадзор (RU, environment_agency_permit_register)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://rpn.gov.ru/opendata/7703381225-groro/meta.csv",
+  "id": "data-rpn-groro-waste-disposal-facilities-register",
+  "languages": [
+    "ru"
+  ],
+  "licence": "Russian government open data (standard 3.0; no licence named in the passport)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Rosprirodnadzor GRORO: state register of waste disposal facilities in Russia (landfills and storage sites) with purpose, waste codes and operator",
+  "provider": "Федеральная служба по надзору в сфере природопользования (Rosprirodnadzor), Russia",
+  "related_ids": [
+    "data-hifld-open",
+    "data-ispra-catasto-rifiuti-municipal-waste"
+  ],
+  "schema_summary": "Subject of the federation (region), GRORO facility number, facility name, purpose (disposal/burial or storage), waste types and FKKO codes, information on negative environmental impact, OKATO code, nearest settlement, operating organisation (name and address), amending order number",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Open data section lists the federal waste classification catalogue (FKKO), the state register of waste disposal facilities (GRORO), the data bank on wastes and treatment technologies, recycling standard reports and permit registers; register of datasets as CSV",
+      "url": "https://rpn.gov.ru/opendata/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Passport: identifier 7703381225-groro, title Государственный реестр объектов размещения отходов, creator Rosprirodnadzor, created 2016-09-02, modified 2022-12-13, provenance data at 13.12.2022, format CSV, standard version 3.0; data versions of 21 December 2022 and 2 September 2016 with structure file",
+      "url": "https://rpn.gov.ru/opendata/7703381225-groro/meta.csv"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: 10 columns as in the schema summary; 4,383 records after the header by CSV parsing, with multi-line waste code fields and irregular quoting; purposes written as storage (хранение) or burial (захоронение) in varying case; 72 regions among well-formed rows",
+      "url": "https://rpn.gov.ru/upload/iblock/646/jsf6dvn4ij1ul1103lwxz7622iyxurx7/data_20221221T0308_structure_20221221T0308.csv"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://rpn.gov.ru/opendata/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://rpn.gov.ru/documents/legal/international/"
+    }
+  ],
+  "spatial_resolution": "Facility (nearest settlement and OKATO code, no coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "landfills",
+    "waste disposal facilities",
+    "waste storage",
+    "register",
+    "Russia"
+  ],
+  "temporal_coverage": "Register state at 13 December 2022 (earlier version 2 September 2016)",
+  "temporal_resolution": "Snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Rosprirodnadzor GRORO: state register of waste disposal facilities in Russia (landfills and storage sites) with purpose, waste codes and operator",
+  "type": "data",
+  "update_frequency": "irregular"
+}

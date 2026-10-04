@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "ODL-Info website and map",
+      "url": "https://odlinfo.bfs.de/ODL/EN/home/home_node.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Data interface documentation",
+      "url": "https://odlinfo.bfs.de/ODL/EN/service/data-interface/data-interface_node.html"
+    },
+    {
+      "kind": "api",
+      "label": "WFS endpoint",
+      "url": "https://www.imis.bfs.de/ogc/opendata/ows?service=WFS&version=1.1.0&request=GetCapabilities"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "hazards"
+  ],
+  "data_kind": [
+    "stream",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bfs odl measuring network ambient gamma dose rate at about 1 700 german stations open wfs data interface",
+    "url": "https://odlinfo.bfs.de/ODL/EN/home/home_node.html"
+  },
+  "description": "The ODL measuring network of the German Federal Office for Radiation Protection (BfS) measures the ambient gamma dose rate at about 1,700 active stations across Germany, and its values are published on the ODL-Info website and through an open data interface. The interface is an OGC Web Feature Service provided free of charge; layers include the station list with the latest one-hour value, and each feature carries the station identifier, name, coordinates and measured value with its time stamp, with cosmic and terrestrial components in microsievert per hour. Output is GeoJSON by default, with GML2, GML3, zipped shapefile and CSV also offered. The BfS geoportal terms say BfS data are published under free licences, the Datenlizenz Deutschland Namensnennung 2.0 or the federal geodata use ordinance, with the exact licence in each data set metadata. The service was live on the day of cataloguing, reporting 1,676 stations for the latest hourly layer. Coverage is Germany. Caveats: from 1 July 2025 the calculation method changed, raising values slightly, and rain, snow and technical faults affect short-term readings. Simulation uses are radiological exposure mapping and emergency response planning around nuclear sites. Related records: data-eurdep-european-radiological-data-exchange-platform aggregates national networks across Europe.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "radiation monitoring network open data EURDEP gamma dose rate nuclear emergency preparedness zones dataset",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "gml",
+    "shapefile",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://odlinfo.bfs.de/ODL/EN/home/home_node.html",
+  "id": "data-bfs-odl-ambient-gamma-dose-rate-network-germany",
+  "languages": [
+    "en"
+  ],
+  "licence": "DL-DE-BY-2.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.imis.bfs.de/ogc/opendata/ows?service=WFS&version=1.1.0&request=GetCapabilities"
+    ]
+  },
+  "maturity": "active",
+  "name": "BfS ODL measuring network - ambient gamma dose rate at about 1,700 German stations (open WFS data interface)",
+  "provider": "Bundesamt für Strahlenschutz (BfS, Federal Office for Radiation Protection)",
+  "related_ids": [
+    "data-eurdep-european-radiological-data-exchange-platform"
+  ],
+  "sectors": [
+    "energy.nuclear"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "About 1,700 active stations, 24-hour average map",
+      "url": "https://odlinfo.bfs.de/ODL/EN/home/home_node.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "WFS interface, free of charge, formats, layer fields, method change 2025-07-01",
+      "url": "https://odlinfo.bfs.de/ODL/EN/service/data-interface/data-interface_node.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Terms of use (free licences, DL-DE-BY 2.0 or GeoNutzV, per-data-set metadata)",
+      "url": "https://www.imis.bfs.de/geoportal/resources/sitepolicy.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Live response 2026-09-26, totalFeatures 1676, properties (value, cosmic, terrestrial, unit)",
+      "url": "https://www.imis.bfs.de/ogc/opendata/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=opendata:odlinfo_odl_1h_latest&outputFormat=application/json&maxFeatures=1"
+    }
+  ],
+  "tags": [
+    "radiation monitoring",
+    "gamma dose rate",
+    "WFS",
+    "Germany",
+    "nuclear emergency"
+  ],
+  "title_en": "BfS ODL measuring network - ambient gamma dose rate at about 1,700 German stations (open WFS data interface)",
+  "type": "data"
+}

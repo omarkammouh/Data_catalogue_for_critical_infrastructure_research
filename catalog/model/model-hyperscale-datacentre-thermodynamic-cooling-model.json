@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/7222231"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/7222231"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Repository metadata and README independently inspected; code not executed.",
+      "url": "https://github.com/olejandro/hdc-tdm"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.7222231",
+    "name": "thermodynamic model of a hyperscale data centre hdc tdm",
+    "repo": "github.com/olejandro/hdc-tdm",
+    "url": "https://zenodo.org/records/7222231"
+  },
+  "description": "The code authors publish HDC-TDM, a Python thermodynamic model of a hyperscale data centre. Zenodo archives version 0.1 under Apache 2.0 and links the public repository. Its README identifies an example outdoor-temperature input, a corresponding output CSV and a main script. The model switches between indirect-airside free cooling and chiller operation according to ambient temperature, with equations documented in the describing study. It has supplied data-centre waste-heat inputs to a Danish energy-system analysis. This model can compare cooling demand and recoverable heat under weather scenarios. No related catalogue record explicitly covers this Python implementation. Coverage is a configured facility and input weather, not all data-centre equipment classes. A limitation is that the README does not establish calibration against measured thermal performance or current equipment efficiency. Code was not installed or run, and its Danish study results were not reproduced.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "title:(\"data centre\" OR \"data center\" OR \"colocation\" OR \"cloud region\" OR \"availability zone\" OR \"server farm\" OR \"hyperscale data centre\" OR \"edge data centre\" OR \"data centre location\" OR \"data centre capacity\" OR \"IT load\" OR \"power usage effectiveness\" OR \"PUE\" OR \"cooling\" OR \"data centre outage\" OR \"data centre map\" OR \"data centre inventory\" OR \"rack\" OR \"facility tier\" OR \"data centre energy use\" OR \"data centre water use\" OR \"backup generator\" OR \"UPS\")",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://zenodo.org/records/7222231",
+  "id": "model-hyperscale-datacentre-thermodynamic-cooling-model",
+  "inputs": [
+    "Outdoor temperature series",
+    "Data-centre cooling and equipment assumptions"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-10-18",
+  "licence": "apache2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "ThermoDynamic Model of a Hyperscale Data Centre (HDC-TDM)",
+  "notes": "G6 item G6-1662. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "outputs": [
+    "Cooling-energy and excess-heat series"
+  ],
+  "provider": "Colangelo, Alessandro (Politecnico di Torino); Petrović, Stefan (Danish Energy Agency); Balyk, Olexandr (University College Cork)",
+  "related_ids": [],
+  "repository": "https://github.com/olejandro/hdc-tdm",
+  "sectors": [
+    "digital.data_centres",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/7222231"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence apache2.0, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/7222231"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "README and Apache-2.0 repository metadata inspected; entry point and free/chiller modes described.",
+      "url": "https://github.com/olejandro/hdc-tdm"
+    }
+  ],
+  "tags": [],
+  "title_en": "ThermoDynamic Model of a Hyperscale Data Centre (HDC-TDM)",
+  "type": "model"
+}

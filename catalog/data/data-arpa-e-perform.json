@@ -1,0 +1,147 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "S3 bucket arpa-e-perform (public, no sign-in)",
+      "note": "Direct link from the AWS Open Data registry, 2026-10-01",
+      "url": "https://arpa-e-perform.s3.us-west-2.amazonaws.com/"
+    },
+    {
+      "kind": "api",
+      "label": "S3 bucket arpa-e-perform/ERCOT/ (public, no sign-in)",
+      "note": "Direct link from the AWS Open Data registry, 2026-10-01",
+      "url": "https://arpa-e-perform.s3.us-west-2.amazonaws.com/?prefix=ERCOT/&delimiter=/"
+    },
+    {
+      "kind": "api",
+      "label": "S3 bucket arpa-e-perform/NYISO/ (public, no sign-in)",
+      "note": "Direct link from the AWS Open Data registry, 2026-10-01",
+      "url": "https://arpa-e-perform.s3.us-west-2.amazonaws.com/?prefix=NYISO/&delimiter=/"
+    },
+    {
+      "kind": "portal",
+      "label": "AWS Open Data registry entry",
+      "url": "https://registry.opendata.aws/arpa-e-perform/"
+    },
+    {
+      "kind": "portal",
+      "label": "OEDI catalogue entry",
+      "url": "https://data.openei.org/submissions/5772"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://github.com/PERFORM-Forecasts/documentation"
+    },
+    {
+      "kind": "docs",
+      "label": "OSTI record",
+      "url": "https://doi.org/10.25984/1891136"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "resource_potential",
+    "planned_future_infrastructure",
+    "scenarios_projections"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "arpa e perform load wind and solar actuals and forecasts",
+    "url": "https://registry.opendata.aws/arpa-e-perform"
+  },
+  "description": "The ARPA-E PERFORM data sets are time-coincident load, wind and solar generation profiles, with actuals and deterministic and probabilistic forecasts, for four US system operators: ERCOT, MISO, NYISO and SPP. They were produced by the National Renewable Energy Laboratory for the ARPA-E PERFORM programme, which develops risk-based grid management systems. Solar actuals are simulated from the National Solar Radiation Database with the System Advisor Model and wind actuals from WRF weather data, at site, zone and system level, including planned sites from 2021 interconnection queues; load comes from operator websites, downscaled to 5 minutes where only hourly data exist. Forecasts are day-ahead, intra-day and intra-hour, given as 1 to 99 percentiles. Coverage is ERCOT for 2017 and 2018 and the other operators for 2018 and 2019, at 5-minute resolution for actuals. Files are HDF5 on AWS S3 with metadata tables, documented on GitHub and listed in OEDI, under CC-BY-3.0-US at no cost. Caveats: generation is simulated, not metered, forecasts cover only the second year, times are in UTC, and parts of the load are synthetic downscaling. Simulation uses are stochastic unit commitment, reserve and risk studies and renewable integration planning. Related records: none linked on the provider's pages read on the day.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid planned",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf",
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://data.openei.org/submissions/5772",
+  "id": "data-arpa-e-perform",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022",
+  "licence": "CC-BY-3.0-US",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ARPA-E PERFORM load, wind and solar actuals and forecasts",
+  "provider": "National Renewable Energy Laboratory (NREL) for the ARPA-E PERFORM programme",
+  "regions": [
+    "ERCOT",
+    "MISO",
+    "NYISO",
+    "SPP"
+  ],
+  "related_ids": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Programme aim, ISOs and years, actuals methods (NSRDB, SAM, WRF), load downscaling, forecast types, percentiles, UTC, .h5 on s3://arpa-e-perform, OEDI 5772",
+      "url": "https://raw.githubusercontent.com/PERFORM-Forecasts/documentation/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Licence CC BY 3.0 US; managed by NREL; update frequency as needed",
+      "url": "https://registry.opendata.aws/arpa-e-perform/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "OEDI/NREL 2022; 5-min; planned sites from 2021 queues",
+      "url": "https://api.datacite.org/dois/10.25984/1891136"
+    }
+  ],
+  "tags": [
+    "forecasts",
+    "probabilistic",
+    "solar",
+    "wind",
+    "load",
+    "ERCOT",
+    "MISO",
+    "NYISO",
+    "SPP",
+    "NREL"
+  ],
+  "temporal_coverage": "ERCOT 2017-2018; MISO, NYISO and SPP 2018-2019 (forecasts for the second year)",
+  "temporal_resolution": "5-minute actuals; hourly and 15-minute forecasts",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "ARPA-E PERFORM load, wind and solar actuals and forecasts",
+  "type": "data",
+  "update_frequency": "irregular"
+}

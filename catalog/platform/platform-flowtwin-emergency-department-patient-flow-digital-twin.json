@@ -1,0 +1,93 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/HARJOT666/FlowTwin"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "flowtwin real time emergency department patient flow digital twin with ai narration harjot666",
+    "repo": "github.com/harjot666/flowtwin",
+    "url": "https://github.com/HARJOT666/FlowTwin"
+  },
+  "deployment": [
+    "own_server"
+  ],
+  "description": "A hackathon prototype of a live digital twin for emergency department patient flow. A built-in event simulator emits patient events such as arrival, triage, bed assignment and discharge onto Kafka; a Spring Boot service updates the twin state, held in Redis and stored in PostgreSQL, and an in-process Java discrete-event engine projects the next hours of flow to show bottlenecks before they form. Staff can run what-if scenarios that change staffing, bed counts or triage rules, and an LLM layer turns the results into a plain-language explanation with ranked recommendations. Wait-time predictions cover triage, bed and length of stay, and events and scenarios are stored for replay. Coverage: one generic emergency department, fed by simulated events. Access: free GitHub repository, run with Docker Compose. Caveats: the README calls it a prototype, real hospital feeds are only a design intention, and the licence appears only as a badge. Useful for capacity planning and testing emergency department operations in simulation; related records are not yet linked.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "hospital digital twin or hospital emergency department simulation open source model patient flow surge capacity",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://github.com/HARJOT666/FlowTwin",
+  "id": "platform-flowtwin-emergency-department-patient-flow-digital-twin",
+  "interfaces": [
+    "web_api",
+    "code_library",
+    "web_app"
+  ],
+  "interoperability": [
+    "Spring Boot 4 (Java 17) backend with Kafka, PostgreSQL, Redis and Docker Compose",
+    "pluggable OpenAI, Gemini or Claude API for narration",
+    "designed for FHIR or ABDM event feeds"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-06",
+  "licence": "MIT according to the README badge; no LICENSE file found in the repository root",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "FlowTwin: real-time emergency department patient flow digital twin with AI narration (HARJOT666)",
+  "open_source": true,
+  "platform_kind": [
+    "digital_twin"
+  ],
+  "provider": "GitHub user HARJOT666 (hackathon prototype)",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.critical_facilities",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "README: prototype status, architecture (Kafka, Redis, PostgreSQL, Spring Boot, React), what-if scenarios, LLM narration, MIT badge; LICENSE file returns 404",
+      "url": "https://raw.githubusercontent.com/HARJOT666/FlowTwin/main/README.md"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.critical_facilities",
+    "services.healthcare"
+  ],
+  "tags": [
+    "emergency department",
+    "patient flow",
+    "digital twin",
+    "what-if scenarios",
+    "hackathon prototype",
+    "r2-fresh-built-environment"
+  ],
+  "title_en": "FlowTwin: real-time emergency department patient flow digital twin with AI narration (HARJOT666)",
+  "type": "platform"
+}

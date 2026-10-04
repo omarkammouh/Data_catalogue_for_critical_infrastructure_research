@@ -1,0 +1,131 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "R package source",
+      "url": "https://github.com/phenriot/BloodPaTH"
+    },
+    {
+      "kind": "paper",
+      "label": "Henriot et al. (2025), PLOS Computational Biology 21(2): e1012850",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012850"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa"
+  ],
+  "cost": "free",
+  "countries": [
+    "EG",
+    "ET"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1371/journal.pcbi.1012850",
+    "name": "bloodpath agent based model of bloodborne pathogen transmission within hospitals",
+    "repo": "github.com/phenriot/bloodpath",
+    "url": "https://github.com/phenriot/BloodPaTH"
+  },
+  "description": "BloodPaTH is an R package whose core, written in C++, is an agent-based model of how bloodborne pathogens such as hepatitis B and C spread inside a hospital. It simulates patients moving between wards from admission to discharge, the use, reuse, contamination and sterilisation of medical devices during invasive procedures, and infection of patients exposed to a contaminated device through a susceptible-exposed-infected model. The provider is Henriot and co-authors, who describe it in PLOS Computational Biology (2025). Coverage is any hospital for which longitudinal admission data and procedure probabilities exist; the paper calibrates it to Ain Shams University Hospital in Cairo for hepatitis C and illustrates hepatitis B in Ethiopia. The code is on GitHub under the GNU GPL version 2 or later, installs in R with devtools, and the latest tag read today is v0.2-alpha. Caveats: the package is an alpha release, results depend on ward transition and procedure data that few hospitals publish, and only device-borne transmission is modelled. Simulation uses: the effect of device shortages in low-resource or disrupted hospitals, where the paper finds frequent shortages raise infection risk, and targeted screening strategies. Related records: H-outbreak (model-h-outbreak) simulates contact-borne hospital outbreaks, and Covasim (model-covasim) models community epidemics.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hospital agent-based model infection spread patient flow open source code",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://github.com/phenriot/BloodPaTH",
+  "id": "model-bloodpath",
+  "inputs": [
+    "Longitudinal retrospective admission data",
+    "Transition probabilities between wards",
+    "Ward-specific probabilities of invasive procedures",
+    "Medical device stocks, use, reuse and sterilisation",
+    "Upon-admission prevalence"
+  ],
+  "language": [
+    "r",
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-29",
+  "licence": "GPL-2.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "discrete_event",
+    "agent_based"
+  ],
+  "name": "BloodPaTH: agent-based model of bloodborne pathogen transmission within hospitals",
+  "notes": "Deep check A4 (2026-10-01) corrected: last_updated .",
+  "outputs": [
+    "Patient movements between wards",
+    "Device contamination dynamics",
+    "Infections acquired by procedure and ward (SEI states)"
+  ],
+  "provider": "Henriot P and co-authors (R package by phenriot)",
+  "regions": [
+    "Cairo"
+  ],
+  "related_ids": [
+    "model-h-outbreak",
+    "model-covasim"
+  ],
+  "repository": "https://github.com/phenriot/BloodPaTH",
+  "runs_on": [
+    "R (install with devtools from GitHub)"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Agent-based model in C++ within an R package: patient movements between wards, device dynamics, SEI transmission; GPL (>=2) badge; installation",
+      "url": "https://raw.githubusercontent.com/phenriot/BloodPaTH/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract and citation (Henriot P, El-Kassas M, Anwar W et al., published 24 February 2025): HCV case study in Ain Shams University Hospital, Cairo; device shortages raise risk; HBV illustration in Ethiopia",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012850"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote tags v0.1-alpha and v0.2-alpha; shallow clone: last commit 2026-09-16, R and C++ sources",
+      "url": "https://github.com/phenriot/BloodPaTH"
+    }
+  ],
+  "tags": [
+    "nosocomial infection",
+    "bloodborne pathogens",
+    "hepatitis C",
+    "medical devices",
+    "agent-based",
+    "hospital"
+  ],
+  "title_en": "BloodPaTH: agent-based model of bloodborne pathogen transmission within hospitals",
+  "type": "model",
+  "validated_on": [
+    "Ain Shams University Hospital, Cairo (hepatitis C)",
+    "Illustrative hepatitis B case in Ethiopia"
+  ]
+}

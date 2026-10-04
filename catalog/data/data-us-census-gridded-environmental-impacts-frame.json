@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Gridded EIF files (Parquet)",
+      "url": "https://www2.census.gov/ces/gridded_eif/"
+    },
+    {
+      "kind": "docs",
+      "label": "Gridded EIF page",
+      "url": "https://www.census.gov/data/experimental-data-products/gridded-eif.html"
+    },
+    {
+      "kind": "paper",
+      "label": "Working paper: The Privacy-Protected Gridded Environmental Impacts Frame",
+      "url": "https://www.census.gov/library/working-papers/2024/adrm/CES-WP-24-66.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "crs": "WGS 84 geographic grid (0.01 degree)",
+  "data_family": [
+    "demand_operation",
+    "social_vulnerability_equity",
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gridded environmental impacts frame gridded eif",
+    "url": "https://census.gov/data/experimental-data-products/gridded-eif.html"
+  },
+  "description": "The Gridded Environmental Impacts Frame (Gridded EIF) is an experimental, privacy-protected dataset from the U.S. Census Bureau's Center for Economic Studies, derived from the confidential Environmental Impacts Frame microdata, which links people to residential locations and environmental conditions. On a fixed 0.01-degree grid (about 1.2 square kilometres in North America) it provides population counts by age, sex, race and ethnicity, counts by race and ethnicity and household income decile, and exposure data for environmental hazards including air pollutants, all on the same grid. Coverage: the United States, annual files for 1999 to 2024 for the population tabulations and 1999 to 2023 for pollutants; a 2024 file adds housing units by age and income of householder and home value. The grid topology is supplied as an R data file, and a 2026 report applies the data to a winter storm. Format and access: Parquet files (about 100 MB per year) on the Census Bureau's www2 server; free and public domain. Caveats: experimental and noise-infused for privacy, so small cell counts are unreliable; hazard coverage is mainly air pollution, not infrastructure hazards. Simulation uses: gridded population and housing exposure layers for hazard footprints (storms, floods, heat, outages) at about 1 km, independent of census boundaries, for impact and equity analysis. Related records: LandScan and GHSL gridded population, the SEDAC U.S. social vulnerability grids, the 2020 Census DHC and the Community Resilience Estimates.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): Experimental Data Products page, entry Gridded EIF",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "cold_snow_ice",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://www.census.gov/data/experimental-data-products/gridded-eif.html",
+  "id": "data-us-census-gridded-environmental-impacts-frame",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-23",
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Gridded Environmental Impacts Frame (Gridded EIF)",
+  "notes": "Hazard tag cold_snow_ice reflects the Bureau's 2026 winter storm application report; the grid itself carries pollutant exposure, not storm data.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-ornl-landscan-population",
+    "data-copernicus-ghsl-built-up-population",
+    "data-sedac-us-social-vulnerability-index-grids",
+    "data-us-census-2020-census-demographic-housing-characteristics",
+    "data-us-census-community-resilience-estimates"
+  ],
+  "schema_summary": "Grid cell id with population counts by age x sex x race/ethnicity, race x income decile, pollutant exposure, housing units by householder age, income and home value",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "size": "about 100 MB per annual Parquet file; several GB in total",
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Grid size, contents, 2024 additions incl. housing units, winter storm report; revised 2026-01-23",
+      "url": "https://www.census.gov/data/experimental-data-products/gridded-eif.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "File listing: pop_ageracesex and pop_raceincome 1999-2024, pollutants 1999-2023, hu_age_homeval 2024, grid topology .rda, Parquet sizes",
+      "url": "https://www2.census.gov/ces/gridded_eif/"
+    }
+  ],
+  "spatial_resolution": "0.01 degree grid (about 1.2 km2)",
+  "spatial_resolution_class": "1km_to_10km",
+  "spatial_resolution_m": 1100,
+  "tags": [
+    "gridded population",
+    "exposure",
+    "environmental justice",
+    "air pollution",
+    "experimental data",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "1999 to 2024 (population), 1999 to 2023 (pollutants), 2024 (housing units)",
+  "temporal_coverage_years": {
+    "end": 2024,
+    "start": 1999
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Gridded Environmental Impacts Frame (Gridded EIF)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

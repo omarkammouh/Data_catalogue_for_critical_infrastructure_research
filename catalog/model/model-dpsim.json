@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/sogno-platform/dpsim"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/dpsim/"
+    },
+    {
+      "kind": "docs",
+      "label": "Installation guide",
+      "url": "https://sogno.energy/dpsim/docs/user-guide/install/"
+    },
+    {
+      "kind": "portal",
+      "label": "Former landing page (description or portal)",
+      "url": "https://sogno.energy/dpsim/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "dpsim",
+    "repo": "github.com/sogno-platform/dpsim",
+    "url": "https://sogno.energy/dpsim"
+  },
+  "description": "DPsim is a solver library for dynamic power system simulation that supports both the electromagnetic transient (EMT) and dynamic phasor (DP) domains, with an included power flow solver for standalone use or to initialise dynamic runs. Its simulation core is written in C++ for efficiency and exposed through a Python module, it can execute in real time with time steps down to 50 microseconds, and it loads network models in the IEC 61970 CIM and CGMES XML format. It is developed by the Institute for Automation of Complex Power Systems at the E.ON Energy Research Center of RWTH Aachen University within the SOGNO platform. The library is location-independent and suits any grid, at any scale, described in CIM. Wheels for CPython 3.10 to 3.14 are published on PyPI (version 1.4.0, August 2026), with source on GitHub, a container image and documentation at sogno.energy, under the Mozilla Public License 2.0 free of charge. Caveats: the Windows wheel is built without VILLASnode, real-time support and Sundials, so those features need Linux, WSL2 or the container. Simulation uses are dynamic network simulation, hardware-in-the-loop and real-time co-simulation for digital twin and resilience studies. Related records: it can be coupled to other tools through VILLASnode and complements the steady-state model-pandapower.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry SOGNO and DPsim",
+      "route": "R25",
+      "source": "energy-sogno-dpsim"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/sogno-platform/dpsim",
+  "id": "model-dpsim",
+  "inputs": [
+    "IEC 61970 CIM / CGMES XML network models",
+    "Component parameters defined in Python"
+  ],
+  "language": [
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-21",
+  "licence": "MPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "DPsim",
+  "outputs": [
+    "Electromagnetic transient and dynamic phasor time series",
+    "Power flow solution"
+  ],
+  "provider": "Institute for Automation of Complex Power Systems (ACS), E.ON Energy Research Center, RWTH Aachen University; SOGNO project",
+  "related_ids": [
+    "model-pandapower"
+  ],
+  "repository": "https://github.com/sogno-platform/dpsim",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "EMT and DP, power flow, Python module, C++ core, real-time 50 us, CIM/CGMES, VILLASnode; pip wheels 3.10-3.14; Windows limitations",
+      "url": "https://raw.githubusercontent.com/sogno-platform/dpsim/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Copyright Institute for Automation of Complex Power Systems, EONERC, RWTH Aachen University; MPL-2.0",
+      "url": "https://raw.githubusercontent.com/sogno-platform/dpsim/HEAD/CITATION.cff"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Latest upload 2026-08-14; first release 2019-09-17",
+      "url": "https://pypi.org/pypi/dpsim/json"
+    }
+  ],
+  "tags": [
+    "EMT",
+    "dynamic phasor",
+    "real-time simulation",
+    "CIM",
+    "CGMES"
+  ],
+  "title_en": "Physical model for electricity",
+  "type": "model",
+  "validated_on": []
+}

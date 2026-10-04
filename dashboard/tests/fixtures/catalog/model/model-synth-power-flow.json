@@ -1,0 +1,113 @@
+{
+  "id": "model-synth-power-flow",
+  "type": "model",
+  "name": "Synthetic Power Flow Solver",
+  "provider": "Example Grid Lab",
+  "description": "The Synthetic Power Flow Solver is an open-source Python package that implements AC and DC power flow, N-1 contingency screening and a simple cascading outage routine for transmission networks. It is developed by the Example Grid Lab to accompany its synthetic benchmark cases and to teach network analysis. The model is generic and applies to any network supplied in its CSV input format, so coverage is global and not tied to a country or period. It is installed from PyPI or from the GitHub repository, runs from the command line or as a library, and is documented online; the licence is MIT and there is no cost. Caveats: convergence is not guaranteed for heavily loaded cases, dynamic phenomena are not represented, and the code is maintained by a small group. Inputs are bus, branch and generator tables; outputs are voltages, flows and a list of overloaded elements. Simulation uses include network flow, cascading failure and capacity planning. It is validated on the Synthetic Grid Topology Set and runs inside the Example Co-simulation Framework catalogued here.",
+  "homepage": "https://github.com/example-grid-lab/synthetic-power-flow",
+  "access_links": [
+    {
+      "label": "Repository",
+      "url": "https://github.com/example-grid-lab/synthetic-power-flow",
+      "kind": "repo"
+    },
+    {
+      "label": "Documentation",
+      "url": "https://docs.example.org/synthetic-power-flow/",
+      "kind": "docs"
+    },
+    {
+      "label": "Paper",
+      "url": "https://doi.org/10.9999/example.2026.001",
+      "kind": "paper"
+    }
+  ],
+  "licence": "MIT",
+  "cost": "free",
+  "access_restrictions": "none",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "geographic_scope": "global",
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "capacity_planning"
+  ],
+  "maturity": "active",
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-09-23",
+  "description_checked": "2026-09-23",
+  "related_ids": [
+    "data-synth-grid-topology",
+    "platform-synth-cosim"
+  ],
+  "tags": [],
+  "sources": [
+    {
+      "url": "https://github.com/example-grid-lab/synthetic-power-flow",
+      "accessed": "2026-09-23",
+      "note": "synthetic fixture"
+    }
+  ],
+  "discovery_routes": [
+    {
+      "route": "R05",
+      "source": "pypi",
+      "query": "power flow",
+      "date": "2026-09-23"
+    },
+    {
+      "route": "R40",
+      "source": "assistant-recall",
+      "query": "open source power flow solvers",
+      "date": "2026-09-23"
+    },
+    {
+      "route": "R07",
+      "source": "openalex",
+      "query": "power flow python package",
+      "date": "2026-09-23"
+    }
+  ],
+  "dedupe_keys": {
+    "url": "https://github.com/example-grid-lab/synthetic-power-flow",
+    "repo": "github.com/example-grid-lab/synthetic-power-flow",
+    "doi": "10.9999/example.2026.001",
+    "name": "synthetic power flow solver"
+  },
+  "languages": [
+    "en"
+  ],
+  "model_kind": [
+    "physical",
+    "network"
+  ],
+  "language": [
+    "Python"
+  ],
+  "inputs": [
+    "bus table",
+    "branch table",
+    "generator table"
+  ],
+  "outputs": [
+    "bus voltages",
+    "branch flows",
+    "overload list"
+  ],
+  "validated_on": [
+    "data-synth-grid-topology"
+  ],
+  "repository": "https://github.com/example-grid-lab/synthetic-power-flow",
+  "citation": "https://doi.org/10.9999/example.2026.001",
+  "runs_on": [
+    "platform-synth-cosim"
+  ],
+  "link_health": {
+    "checked": "2026-09-20",
+    "unverified": [
+      "https://github.com/example-grid-lab/synthetic-power-flow"
+    ]
+  }
+}

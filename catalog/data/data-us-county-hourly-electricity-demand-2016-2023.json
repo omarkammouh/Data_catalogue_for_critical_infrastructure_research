@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Resource",
+      "url": "https://data.openei.org/submissions/8562"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-026-07693-3"
+    },
+    {
+      "kind": "repo",
+      "label": "Repository documentation",
+      "url": "https://github.com/NatLabRockies/HistoricalLoadData"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "distributed_flexible_resources",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.25984/3366592",
+    "name": "us county hourly electricity demand profiles 2016 2023",
+    "url": "https://data.openei.org/submissions/8562"
+  },
+  "description": "The National Laboratory of the Rockies publishes estimated hourly electricity demand for each county in the contiguous United States from 2016 through 2023. The own OpenEI page provides an HDF5 file and DOI under CC BY 4.0, with public access free. Its description combines balancing-authority load shapes scaled to county annual sales and direct use with estimated on-site distributed photovoltaic consumption. Each county column is keyed by FIPS code. The profiles can drive weather-year power-system planning with model-pypsa after mapping counties to network zones. A caveat is that county hourly demand is estimated from regional shapes and allocation rules, not metered at every county border. The provider corrected a February 2026 version that had attributed PV profiles to wrong counties. UTC hour-ending timestamps and version must be preserved in comparisons. The own landing metadata were read without downloading the HDF5 file or rerunning the separate code.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G1-Q-ENERGY-TITLE-24; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.openei.org/submissions/8562",
+  "id": "data-us-county-hourly-electricity-demand-2016-2023",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-05",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "US county hourly electricity demand profiles 2016–2023",
+  "notes": "G1 G1-0586. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-44.json. Related-resource uses are not tested interfaces. ",
+  "provider": "National Laboratory of the Rockies",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://data.openei.org/submissions/8562"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-026-07693-3"
+    }
+  ],
+  "tags": [],
+  "temporal_coverage": "2016–2023",
+  "temporal_resolution": "Hourly",
+  "temporal_resolution_class": "hourly",
+  "title_en": "US county hourly electricity demand profiles 2016–2023",
+  "type": "data"
+}

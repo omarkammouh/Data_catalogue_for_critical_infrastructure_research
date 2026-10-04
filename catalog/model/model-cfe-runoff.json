@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/NOAA-OWP/cfe"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/NOAA-OWP/cfe/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cfe conceptual rainfall runoff model",
+    "repo": "github.com/noaa-owp/cfe",
+    "url": "https://github.com/NOAA-OWP/cfe"
+  },
+  "description": "CFE, the Conceptual Functional Equivalent model, is NOAA's simplified rainfall-runoff model designed to represent functions of the U.S. National Water Model. The repository includes a Basic Model Interface version for standalone use or coupling to atmospheric forcing and potential-evapotranspiration modules. Inputs are local forcing series, conceptual water-balance parameters and configuration files; outputs are simulated catchment runoff and model states at the configured time step. Geography is set by the catchment and forcing chosen by the user; no universal grid or period is embedded in the code. NOAA publishes the source freely under Apache-2.0 with build, configuration and test examples. The README distinguishes its original non-BMI code from the expanded interface. A limit is that being functionally equivalent does not make CFE a calibrated copy of every National Water Model process or basin. It can support catchment flow and flood simulations and tests of model coupling. The catalogue's model-noaa-national-water-model is the larger national framework this simplified model relates to. The examples were inspected, not run.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "noaa-owp/cfe linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NOAA-OWP/cfe",
+  "id": "model-cfe-runoff",
+  "inputs": [
+    "Rainfall and atmospheric forcing",
+    "Catchment configuration and water-balance parameters"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-09",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "CFE conceptual rainfall-runoff model",
+  "notes": "G7 G7-1281. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Catchment runoff and internal water states"
+  ],
+  "provider": "NOAA Office of Water Prediction",
+  "related_ids": [
+    "model-noaa-national-water-model"
+  ],
+  "repository": "https://github.com/NOAA-OWP/cfe",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for NOAA-OWP/cfe: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/noaa-owp/cfe"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/noaa-owp/cfe/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for dams and flood defences and drinking water",
+  "type": "model"
+}

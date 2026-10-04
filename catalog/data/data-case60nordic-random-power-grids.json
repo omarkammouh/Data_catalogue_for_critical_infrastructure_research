@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "case60.zip (203.8 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/7077699/files/case60.zip?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "case60_topo.zip (202.3 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/7100302/files/case60_topo.zip?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "Generator code (powerdatagen)",
+      "url": "https://github.com/bdonon/powerdatagen"
+    },
+    {
+      "kind": "portal",
+      "label": "Random power grid data set (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.7077699"
+    },
+    {
+      "kind": "portal",
+      "label": "Random topology data set (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.7100302"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "network_topology",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "case60nordic random power grid data sets for machine learning",
+    "repo": "github.com/bdonon/powerdatagen",
+    "url": "doi:10.5281/zenodo.7077698"
+  },
+  "description": "These data sets hold thousands of randomly generated variants of the case60nordic test system, also known as Nordic32, for training and testing machine learning methods on power grids. They were published on Zenodo in 2022 (version 0.1) by Balthazar Donon, with a second data set that also randomises grid topology. They were made with the open-source powerdatagen tool, which samples power grids from a single source snapshot, stores them as pandapower files, runs an AC power flow on each, and filters the samples so that the data set meets set conditions; a companion viewer supports visual inspection. The approach gives large, physically consistent sets of operating points and topologies from one reference grid. Coverage is the synthetic Nordic32 test system, not a real grid. Files are ZIP archives, about 204 MB for the first data set, downloadable from Zenodo under CC BY 4.0 at no cost. Caveats: sampling ranges and filters shape the distribution, and the Zenodo abstracts are brief, so users must read the generator code. Simulation uses are training graph neural networks and other learned surrogates for power flow and optimal power flow. Related records: model-pandapower is the grid format used.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid network topology",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "power grid population",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "archive"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://doi.org/10.5281/zenodo.7077698",
+  "id": "data-case60nordic-random-power-grids",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-09-14",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "case60nordic random power grid data sets for machine learning",
+  "provider": "Balthazar Donon",
+  "related_ids": [
+    "model-pandapower"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation"
+  ],
+  "size": "About 204 MB (random grid data set)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract, case60nordic/nordic32, powerdatagen link, CC-BY-4.0, v0.1",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.7077699"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Sampling from a snapshot, pandapower files, AC power flow, filtering, powerdata-view",
+      "url": "https://raw.githubusercontent.com/bdonon/powerdatagen/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Published 2022-09-14, case60.zip 204 MB",
+      "url": "https://zenodo.org/api/records/7077699"
+    }
+  ],
+  "tags": [
+    "machine learning",
+    "synthetic data",
+    "Nordic32",
+    "pandapower",
+    "power flow",
+    "graph neural networks"
+  ],
+  "title_en": "Case60nordic random power grid data sets for machine learning",
+  "type": "data"
+}

@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/derhuerst/extract-gtfs-pathways"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "extract gtfs pathways as geojson",
+    "repo": "github.com/derhuerst/extract-gtfs-pathways",
+    "url": "https://github.com/derhuerst/extract-gtfs-pathways"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "This ISC-licensed Node.js tool prepares station pathway geometry from GTFS files. Its command-line interface reads pathways.txt and stops.txt, then writes GeoJSON nodes and links to an output directory. The README also describes a Docker image and optional expressions for extra feature properties. Users must supply their own transit feed and sort stops.txt by parent_station and location_type as specified; the repository itself has no place-specific data or historical period. A transit modeller could use the output to inspect walking connections, transfer paths and access-network topology before route or passenger-flow simulation. GitHub provides the source free of charge. The README warns that option expressions are evaluated as JavaScript, so only trusted input should be used for those flags. This review did not run the CLI, inspect feed compatibility or confirm Docker availability. The resulting spatial coverage and data date follow the supplied GTFS feed. Related resources are the original GTFS feed and any station accessibility inventory used with it.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "gtfs dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/derhuerst/extract-gtfs-pathways",
+  "id": "platform-extract-gtfs-pathways-geojson",
+  "interfaces": [
+    "command_line",
+    "code_library"
+  ],
+  "interoperability": [
+    "GTFS pathways.txt",
+    "GTFS stops.txt",
+    "GeoJSON"
+  ],
+  "language": [
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-07-01",
+  "licence": "ISC (GitHub licence metadata and license.md).",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Extract GTFS pathways as GeoJSON",
+  "notes": "G8; G8-0884. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: extract-gtfs-pathways repository README, accessed 2026-09-28. No describing paper identified..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "extract-gtfs-pathways project",
+  "related_ids": [],
+  "sectors": [
+    "transport.public_transit",
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/derhuerst/extract-gtfs-pathways/blob/main/readme.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/derhuerst/extract-gtfs-pathways"
+    }
+  ],
+  "tags": [],
+  "title_en": "Extract GTFS pathways as GeoJSON prepares station pathway geometry",
+  "type": "platform"
+}

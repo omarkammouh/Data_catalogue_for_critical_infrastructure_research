@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Hugging Face dataset",
+      "url": "https://huggingface.co/datasets/microsoft/GridSFM_US_power_grid"
+    },
+    {
+      "kind": "docs",
+      "label": "Research blog post",
+      "url": "https://www.microsoft.com/en-us/research/blog/building-realistic-electric-transmission-grid-dataset-at-scale-a-pipeline-from-open-dataset/"
+    },
+    {
+      "kind": "paper",
+      "label": "Companion paper (arXiv 2605.04289)",
+      "url": "https://arxiv.org/abs/2605.04289"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "network_topology",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gridsfm us power grid dataset opf ready transmission models for 48 us states and 6 multi state regions built from open data microsoft research",
+    "url": "https://huggingface.co/datasets/microsoft/GridSFM_US_power_grid"
+  },
+  "description": "The GridSFM US Power Grid Dataset from Microsoft Research is a set of geographically grounded, electrically coherent transmission network models derived only from public data, released to support AC optimal power flow analysis of congestion, capacity and demand siting without restricted grid data. It holds 54 OPF-ready instances, one for each of the 48 contiguous states and six multi-state regions, from small systems of 11 buses to the Eastern Interconnection with 21,697 buses, each at a peak (16h) and off-peak (04h) demand snapshot. Each instance includes bus-branch topology, estimated line impedances and transformer characteristics, generator capacity, fuel type and cost functions, hourly demand allocation, a DC warm-start solution and synthetic reactive shunts, with AC and DC results files. The pipeline starts from OpenStreetMap power infrastructure and adds EIA generator and balancing authority demand data, Census population and HIFLD boundaries. Files are available to download free from Hugging Face in JSON under the MIT licence. Coverage is the contiguous United States. Caveats: the card states that electrical parameters are estimated, parallel circuits are approximated, demand uses public proxies, and the data are not for operational, regulatory or safety-critical decisions. Simulation uses are large-scale AC-OPF, transmission expansion, line upgrade and data-centre load siting studies. Related records: data-hifld-open and data-eia-860-annual-electric-generator-report are among its inputs.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "electricity transmission grid network topology open dataset substations lines download",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://huggingface.co/datasets/microsoft/GridSFM_US_power_grid",
+  "id": "data-gridsfm-us-power-grid-dataset",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-25",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GridSFM US Power Grid Dataset - OPF-ready transmission models for 48 US states and 6 multi-state regions built from open data (Microsoft Research)",
+  "provider": "Microsoft Research (Catalyst Lab)",
+  "related_ids": [
+    "data-hifld-open",
+    "data-eia-860-annual-electric-generator-report",
+    "data-columbia-synthetic-grid-western-interconnection"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, 48 states and interconnections, 11 to 21,697 buses, OSM plus EIA and Census pipeline, not exact replicas, GitHub and Hugging Face links, authors",
+      "url": "https://www.microsoft.com/en-us/research/blog/building-realistic-electric-transmission-grid-dataset-at-scale-a-pipeline-from-open-dataset/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Dataset card (54 instances, contents, 16h and 04h snapshots, sources incl. HIFLD, out-of-scope uses), MIT licence, JSON files, last modified 2026-05-25",
+      "url": "https://huggingface.co/datasets/microsoft/GridSFM_US_power_grid"
+    }
+  ],
+  "tags": [
+    "transmission network",
+    "optimal power flow",
+    "OpenStreetMap",
+    "synthetic grid",
+    "United States"
+  ],
+  "title_en": "GridSFM US Power Grid Dataset - OPF-ready transmission models for 48 US states and 6 multi-state regions built from open data (Microsoft Research)",
+  "type": "data"
+}

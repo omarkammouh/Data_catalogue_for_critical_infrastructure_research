@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code (GitHub)",
+      "url": "https://github.com/ox-inet-resilience/resilience"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Based on Foundations of System-Wide Financial Stress Testing with Heterogeneous Institutions (Bank of England working paper, 2020).",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "resilience library for system wide financial stress testing oxford inet",
+    "repo": "github.com/ox-inet-resilience/resilience",
+    "url": "https://github.com/ox-inet-resilience/resilience"
+  },
+  "description": "resilience is a Python library of building blocks for system-wide financial stress testing, which simulates multi-layered networks of banks, hedge funds and asset managers, each with its own balance sheet and constraints, linked by interbank loans, repo contracts and common asset holdings. Contagion runs through price impacts of asset sales, leverage limits, liquidity coverage ratios, risk-weighted asset rules and exposures between institutions. It is published by the Oxford Institute for New Economic Thinking (INET) complexity economics group and implements the framework in the 2020 Bank of England working paper Foundations of System-Wide Financial Stress Testing with Heterogeneous Institutions. It is a general library, not tied to a country; users build their own system from data. The code is free under the Apache 2.0 licence and installs with pip from the repository, with continuous integration tests. Caveats: it provides mechanisms, not calibrated data, so results depend on the balance sheets and behavioural rules users supply, and documentation is mainly the paper. For simulation it lets analysts build agent-based cascading failure models of the financial system and test how solvency and liquidity shocks, including those from physical infrastructure disruptions, spread between institutions. It is related to the firesale_stresstest record in this catalogue, an application by the same group.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "macro-financial stress testing model open source code systemic risk central bank github",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/ox-inet-resilience/resilience",
+  "id": "model-oxford-inet-resilience-system-wide-stress-testing",
+  "inputs": [
+    "balance sheets of banks, hedge funds and asset managers",
+    "loan and repo contracts between institutions",
+    "regulatory constraints (leverage, LCR, RWA)"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-11-22",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "agent_based",
+    "network"
+  ],
+  "name": "resilience library for system-wide financial stress testing (Oxford INET)",
+  "outputs": [
+    "contagion losses, defaults and asset prices in a multi-layer financial network"
+  ],
+  "provider": "Oxford INET Complexity Economics (ox-inet-resilience)",
+  "related_ids": [
+    "model-firesale-stresstest-eu-banks-abm"
+  ],
+  "repository": "https://github.com/ox-inet-resilience/resilience",
+  "runs_on": [
+    "Python 3"
+  ],
+  "sectors": [
+    "industry.financial"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "agent_based",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: purpose, agent types, contagion channels, Bank of England 2020 paper, Apache 2.0, pip install, CI",
+      "url": "https://github.com/ox-inet-resilience/resilience"
+    }
+  ],
+  "tags": [
+    "system-wide stress testing",
+    "financial contagion",
+    "multi-layer network"
+  ],
+  "title_en": "Resilience library for system-wide financial stress testing (Oxford INET)",
+  "type": "model"
+}

@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/eliagroup/ToOp"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/eliagroup/ToOp/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "ToOp contributors (2025). GPU-based load-flow solver paper. https://doi.org/10.1109/PowerTech59965.2025.11180422. Optimiser architecture: https://arxiv.org/abs/2605.10128",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "toop transmission grid topology optimisation engine",
+    "repo": "github.com/eliagroup/toop",
+    "url": "https://github.com/eliagroup/ToOp"
+  },
+  "description": "ToOp is Elia Group's Python engine for finding transmission-grid topology changes that reduce congestion. It imports operational networks, preprocesses constraints, searches with a GPU-based DC power-flow solver and filters candidate solutions with AC power flow. Available actions include line switching, busbar splitting or reassignment and grouped phase-shifting-transformer taps. Inputs include network snapshots, masks and contingency definitions; outputs are Pareto-optimal candidate actions and their evaluated performance. Spatial coverage follows the supplied network, with each workload representing selected operating states. Source is free under MPL-2.0, using HDF5 and JSON intermediate definitions. A limitation is that accelerated batches may differ only in supported topology and outage dimensions. The repository supplies the engine, not a complete operator interface. ToOp supports congestion and intervention simulations, related to network analysis with OpenDSS (platform-opendss). Its README cites separate solver and optimiser papers. No operational grid data was accessed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "eliagroup/toop linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/eliagroup/ToOp",
+  "id": "model-toop",
+  "inputs": [
+    "Operational grid snapshots and contingency definitions",
+    "Topology action masks and load-flow settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "MPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network"
+  ],
+  "name": "ToOp transmission-grid topology optimisation engine",
+  "notes": "G7 G7-1082. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Evaluated candidate grid-topology actions",
+    "Pareto-optimal objective trade-offs"
+  ],
+  "provider": "Elia Group",
+  "related_ids": [
+    "platform-opendss"
+  ],
+  "repository": "https://github.com/eliagroup/ToOp",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for eliagroup/ToOp: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/eliagroup/toop"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/eliagroup/toop/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "ToOp transmission-grid topology optimisation engine",
+  "type": "model"
+}

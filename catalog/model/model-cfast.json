@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Releases (installers)",
+      "url": "https://github.com/firemodels/cfast/releases"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/firemodels/cfast"
+    },
+    {
+      "kind": "docs",
+      "label": "Discussion forum",
+      "url": "https://github.com/firemodels/cfast/discussions"
+    },
+    {
+      "kind": "docs",
+      "label": "Smokeview visualiser",
+      "url": "https://github.com/firemodels/smv"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "NIST CFAST technical reference and user guides (https://pages.nist.gov/cfast/)",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cfast consolidated fire and smoke transport",
+    "repo": "github.com/firemodels/cfast",
+    "url": "https://pages.nist.gov/cfast"
+  },
+  "description": "CFAST (Consolidated Fire and Smoke Transport) is a two-zone fire model that predicts the thermal environment in a multi-compartment structure subjected to a user-prescribed fire. It calculates the time-evolving distribution of smoke and gaseous combustion products and the temperature throughout a building, dividing each compartment into a hot upper layer and a cooler lower layer and computing flows through doors, windows and mechanical vents. The National Institute of Standards and Technology (NIST) develops and maintains it for fire protection engineering, including assessing tenability, detector and sprinkler activation and the conditions that fire services and occupants face during a building fire. Coverage is generic: any building geometry the user describes, at compartment resolution, not a three-dimensional grid. It is Fortran source code on GitHub with installers on the releases page (release tags run to 7.7.7, with an 8.0 beta), and results are viewed with NIST's Smokeview. Licence and cost: public domain under Title 17 Section 105 of the United States Code, free. Caveats: a zone model is fast but approximate; it cannot resolve detailed flow fields, for which NIST's Fire Dynamics Simulator (FDS) is used, and the fire itself is an input, not predicted. Simulation uses: fire hazard exposure of buildings and emergency response planning for fire and smoke spread, including life-safety studies of critical facilities. Related: FDS and Smokeview from the same NIST team (FDS is listed in the register; not yet catalogued).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "zone fire and smoke model NIST CFAST (register services-cfast)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry CFAST",
+      "route": "R06",
+      "source": "services-cfast (register)"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://pages.nist.gov/cfast/",
+  "id": "model-cfast",
+  "inputs": [
+    "Compartment geometry and vents",
+    "Wall materials",
+    "User-prescribed fire (heat release rate curve)",
+    "Ambient conditions"
+  ],
+  "language": [
+    "fortran"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "Public domain (NIST, 17 U.S.C. 105)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "CFAST (Consolidated Fire and Smoke Transport)",
+  "outputs": [
+    "Time-evolving upper and lower layer temperatures",
+    "Smoke and combustion-gas distribution",
+    "Layer heights",
+    "Targets and detector responses"
+  ],
+  "provider": "National Institute of Standards and Technology (NIST), Fire Research Division",
+  "related_ids": [],
+  "repository": "https://github.com/firemodels/cfast",
+  "runs_on": [],
+  "sectors": [
+    "services.emergency_services",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Two-zone model, multi-compartment smoke and temperature, public domain notice",
+      "url": "https://pages.nist.gov/cfast/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, Smokeview, forum, releases",
+      "url": "https://raw.githubusercontent.com/firemodels/cfast/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "NIST software notice",
+      "url": "https://raw.githubusercontent.com/firemodels/cfast/HEAD/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: release tags up to CFAST-7.7.7 and CFAST-8-Beta",
+      "url": "https://github.com/firemodels/cfast"
+    }
+  ],
+  "tags": [
+    "zone fire model",
+    "smoke",
+    "compartment fire",
+    "fire safety",
+    "Smokeview",
+    "NIST"
+  ],
+  "title_en": "Cfast two-zone fire model predicting thermal environment",
+  "type": "model",
+  "validated_on": []
+}

@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository (Apache-2.0)",
+      "url": "https://github.com/unicef/giga-global-school-mapping"
+    }
+  ],
+  "access_note": "The pipeline uses commercial Maxar imagery that users must obtain.",
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "unicef giga ai enabled school mapping from satellite images",
+    "url": "https://github.com/unicef/giga-global-school-mapping"
+  },
+  "description": "This repository from Giga, the UNICEF and ITU initiative to connect every school to the internet by 2030, provides a public end-to-end pipeline for detecting school locations in high-resolution satellite images with deep learning. Its stated objectives are to help governments improve school location data in national registers and to find previously unmapped schools quickly and at scale, because school GPS coordinates are often inaccurate, incomplete or missing in many developing countries and good locations are needed to estimate the cost of connecting schools. For each school and non-school location it downloads 300 by 300 m image tiles of 500 by 500 pixels from Maxar at 60 cm per pixel, and it is built with scikit-learn, PyTorch, GeoPandas, Rasterio, Fiona and GDAL, with configuration files, notebooks and scripts for data download, cleaning, training, evaluation and deployment; a companion repository validates detections. Coverage: countries where Giga works. Access: free code. Licence: Apache 2.0. Caveats: depends on licensed commercial imagery and local training labels. Simulation uses: completing school inventories for exposure, service access and connectivity planning. Related records: Giga Maps, the NCES school locations and fMoW.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "schools locations open dataset worldwide geolocation giga",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/unicef/giga-global-school-mapping",
+  "id": "model-giga-ai-school-mapping",
+  "inputs": [
+    "School and non-school locations",
+    "High-resolution satellite image tiles (300 by 300 m, 60 cm per pixel, Maxar)"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-12-30",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://github.com/unicef/giga-school-mapping-validator"
+    ],
+    "dead_since": "2026-09-27"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "UNICEF Giga AI-enabled school mapping from satellite images",
+  "outputs": [
+    "Predicted school locations",
+    "Improved national school registers"
+  ],
+  "provider": "UNICEF Giga (UNICEF and ITU initiative)",
+  "related_ids": [
+    "data-giga-maps-schools-connectivity",
+    "data-nces-edge-school-locations-geocodes",
+    "data-fmow-functional-map-of-the-world"
+  ],
+  "sectors": [
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Objectives, imagery, tools, code design",
+      "url": "https://raw.githubusercontent.com/unicef/giga-global-school-mapping/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Apache 2.0",
+      "url": "https://raw.githubusercontent.com/unicef/giga-global-school-mapping/HEAD/LICENSE"
+    }
+  ],
+  "tags": [
+    "schools",
+    "satellite imagery",
+    "deep learning",
+    "UNICEF",
+    "Giga",
+    "school mapping"
+  ],
+  "title_en": "UNICEF Giga AI-enabled school mapping from satellite images",
+  "type": "model"
+}

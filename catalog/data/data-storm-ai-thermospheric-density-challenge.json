@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "STORM-AI Dataverse",
+      "url": "https://doi.org/10.7910/DVN/U6K6MJ"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "north_america",
+    "south_america",
+    "asia",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "space_weather",
+    "calibration_validation",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.7910/dvn/u6k6mj",
+    "name": "storm ai challenge dataset thermospheric density and space weather drivers for satellite orbit forecasting",
+    "url": "doi:10.7910/dvn/u6k6mj"
+  },
+  "description": "The STORM-AI dataset was built for the 2025 MIT ARCLab Prize for AI Innovation in Space, which asked teams to forecast orbit-averaged thermospheric density three days ahead, because empirical models such as MSIS and JB2008 can fail during geomagnetic storms and drag errors put low Earth orbit satellites at risk. The training set has 8,118 samples, each with initial orbital parameters of a satellite, 60 days of space weather indicators, GOES X-ray flux and OMNI2 solar wind observations, and the density target over the next three days; 4,589 hidden samples were kept for private testing. Submissions were ranked on Codabench by an orbital density error metric benchmarked against MSIS; 139 teams made 973 submissions. A development kit on GitHub has baselines, evaluation scripts and documentation. Coverage: satellites in low Earth orbit over many years of solar activity. Format and access: files on the STORM-AI Dataverse (published February 2026), free of charge. Caveats: a machine learning benchmark; densities are derived from satellite accelerometers or orbits; sample selection follows the challenge design. Simulation uses: testing forecasts of drag during storms for resilience of satellite constellations used by communications and navigation. Related records: NOAA SWPC products, OMNIWeb and the GFZ Kp index give drivers; the Starlink February 2022 storm loss is a case.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Harvard Dataverse data harvest of the digital piece; candidate dataverse-harvard-09af7f49a7, read in full on second reading",
+      "route": "R03",
+      "source": "dataverse-harvard"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://doi.org/10.7910/DVN/U6K6MJ",
+  "id": "data-storm-ai-thermospheric-density-challenge",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-02-13",
+  "licence": "Harvard Dataverse terms (see dataset)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "STORM-AI challenge dataset: thermospheric density and space weather drivers for satellite orbit forecasting",
+  "notes": "Dataverse description read in the harvest 2026-09-26. The CSV format and the source of density targets are inferred; the devkit URL was not read.",
+  "provider": "MIT ARCLab (Astrodynamics, Space Robotics and Controls Laboratory) and partners (STORM-AI Dataverse)",
+  "related_ids": [],
+  "schema_summary": "per sample: initial orbital elements, 60-day space weather indices, GOES X-ray flux, OMNI2 solar wind, three-day orbit-averaged density target",
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "hazard_exposure"
+  ],
+  "size": "8,118 training samples",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "dataset description",
+      "url": "https://doi.org/10.7910/DVN/U6K6MJ"
+    }
+  ],
+  "spatial_resolution": "satellite orbit",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "thermospheric density",
+    "satellite drag",
+    "geomagnetic storms",
+    "LEO",
+    "machine learning challenge"
+  ],
+  "temporal_coverage": "many years of satellite and solar data (by sample)",
+  "temporal_resolution": "orbit-averaged; space weather indices at their native cadence",
+  "temporal_resolution_class": "other",
+  "title_en": "STORM-AI challenge dataset: thermospheric density and space weather drivers for satellite orbit forecasting",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

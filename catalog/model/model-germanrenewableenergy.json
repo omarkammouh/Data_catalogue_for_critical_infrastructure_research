@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/openkfw/GermanRenewableEnergy"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/openkfw/GermanRenewableEnergy/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "germanrenewableenergy hourly wind and solar model",
+    "repo": "github.com/openkfw/germanrenewableenergy",
+    "url": "https://github.com/openkfw/GermanRenewableEnergy"
+  },
+  "description": "GermanRenewableEnergy is a software model for estimating hourly output from Germany's registered solar panels and wind turbines. It combines installation information from the German MaStR register with ERA5 weather fields and calculates generation capacity factors for specified years from 2000 through 2023. Users provide asset data, weather and run settings; outputs are hourly and aggregated renewable-generation series by plant or geographic unit. Geographic coverage is Germany, with time constrained by the available source years. AGPL-3.0 source, installation and execution guides are public. A limitation is that a calculated capacity factor is not metered generation and inherits errors in installation dates, location and weather. It can build historical wind and solar inputs for German electricity-network scenarios. The related catalogue ERA5 record is a weather input, not this calculated output. No MaStR register dump, ERA5 fields or package was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "openkfw/germanrenewableenergy linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/openkfw/GermanRenewableEnergy",
+  "id": "model-germanrenewableenergy",
+  "inputs": [
+    "MaStR solar and wind assets with ERA5 weather"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-03-07",
+  "licence": "AGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "GermanRenewableEnergy hourly wind and solar model",
+  "notes": "G7 G7-1589. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Hourly and aggregated renewable generation"
+  ],
+  "provider": "GermanRenewableEnergy contributors",
+  "related_ids": [
+    "data-era5-reanalysis"
+  ],
+  "repository": "https://github.com/openkfw/GermanRenewableEnergy",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for openkfw/GermanRenewableEnergy: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/openkfw/germanrenewableenergy"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/openkfw/germanrenewableenergy/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "GermanRenewableEnergy hourly wind and solar model",
+  "type": "model"
+}

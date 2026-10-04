@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Open Data API documentation",
+      "url": "https://developer.dataplatform.knmi.nl/open-data-api"
+    },
+    {
+      "kind": "portal",
+      "label": "KNMI Data Platform",
+      "url": "https://dataplatform.knmi.nl/"
+    },
+    {
+      "kind": "docs",
+      "label": "Developer portal",
+      "url": "https://developer.dataplatform.knmi.nl/"
+    }
+  ],
+  "access_note": "a shared anonymous API key is published in the documentation; a registered key gives a dedicated quota",
+  "access_restrictions": "registration",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "data_family": [
+    "hazards",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "time_series",
+    "raster",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "knmi data platform kdp open data api notification service edr api wms api and dataset content api for knmi datasets",
+    "url": "https://dataplatform.knmi.nl"
+  },
+  "description": "The KNMI Data Platform is the Royal Netherlands Meteorological Institute's service for delivering its datasets by programme. The developer portal read on 2026-09-28 documents a file-based Open Data API that lists and queries the files of each dataset and creates download links, a Notification Service that announces each new file, an Environmental Data Retrieval (EDR) API, a WMS API for maps and a Dataset Content API; many files are NetCDF. Every call needs an API key: a shared anonymous key published in the documentation and valid until August 2027, with 3,000 requests an hour shared among all users, a registered key after signing up with 1,000 requests an hour, and a bulk key for whole datasets. Coverage is the Netherlands, for the datasets KNMI publishes on the platform. Licence (read on 2026-09-29): CC0-1.0 unless otherwise stated (KNMI copyright page); dataset-specific terms on the data platform. Access is free of charge. Caveats: the dataset catalogue page refused the cloud session (403, then 429), so the list of datasets and their periods was not read, and the anonymous key's quota is shared. It supports hazard and adaptation studies, such as pulling radar rainfall or wind observations to drive flood or storm impact models for Dutch infrastructure. No related KNMI data record is catalogued.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "KNMI ruimteweer data verwachting dataplatform geomagnetisch",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf",
+    "other",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "storm_wind",
+    "extreme_heat",
+    "drought"
+  ],
+  "homepage": "https://dataplatform.knmi.nl/",
+  "id": "data-knmi-data-platform-open-data-api",
+  "languages": [
+    "en",
+    "nl"
+  ],
+  "licence": "CC0-1.0 unless otherwise stated (KNMI copyright page); dataset-specific terms on the data platform",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://dataplatform.knmi.nl/"
+    ]
+  },
+  "maturity": "active",
+  "name": "KNMI Data Platform (KDP): Open Data API, Notification Service, EDR API, WMS API and Dataset Content API for KNMI datasets",
+  "provider": "Royal Netherlands Meteorological Institute (KNMI)",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "read: KNMI Data Platform (KDP) Open Data API is file-based: list and query files in datasets and create download links; datasets listed on the KNMI Data Platform; endpoints need an API key in the Authorization header; keys: registered (200 requests/s, 1000/h), anonymous shared key (50/min, 3000/h, valid till 1 August 2027, published on the page), dataset bulk key; Notification Service for new files; fair use policy against excessive polling",
+      "url": "https://developer.dataplatform.knmi.nl/open-data-api"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "read: developer portal with Open Data API, Notification Service, Dataset Content API, EDR API, WMS API, API catalogue, registration",
+      "url": "https://developer.dataplatform.knmi.nl/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "read: registration with a valid email, reviewed within 2 working days; each API has its own key; anonymous key valid for a year; .nc files are NetCDF",
+      "url": "https://developer.dataplatform.knmi.nl/faq"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "status 403 on 2026-09-26 and 429 Too many requests on 2026-09-28 to the cloud session; catalogue page not read",
+      "url": "https://dataplatform.knmi.nl/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Licence read by the wave 1 integrator (KNMI copyright page); replaces \"per dataset (not read)\".",
+      "url": "https://www.knmi.nl/copyright"
+    }
+  ],
+  "tags": [
+    "KNMI",
+    "API",
+    "weather data",
+    "Netherlands",
+    "climate"
+  ],
+  "title_en": "KNMI Data Platform (KDP): Open Data API, Notification Service, EDR API, WMS API and Dataset Content API for KNMI datasets",
+  "type": "data",
+  "update_frequency": "real_time"
+}

@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "WMS",
+      "url": "https://service.pdok.nl/rws/vaarweg-netwerk-data-service-bevaarbaarheid/wms/v2_0?request=GetCapabilities&service=WMS"
+    },
+    {
+      "kind": "api",
+      "label": "WFS",
+      "url": "https://service.pdok.nl/rws/vaarweg-netwerk-data-service-bevaarbaarheid/wfs/v2_0?request=GetCapabilities&service=WFS"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "data_family": [
+    "system_description",
+    "standards_ontologies"
+  ],
+  "data_kind": [
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "vaarweg netwerk data service vnds navigability classes of dutch waterways",
+    "url": "https://pdok.nl/ogc-webservices/-/article/vaarweg-netwerk-data-service-vnds"
+  },
+  "description": "The Vaarweg Netwerk Data Service (VNDS) navigability layer from Rijkswaterstaat gives, for every port, waterway and waterway section in the Netherlands, its navigability class. The classes follow the 1992 classification of the European Conference of Ministers of Transport (CEMT), based on the dimensions of standard vessels and push convoys, with a Dutch class 0 added for waterways smaller than class I and class VII omitted because nine-barge push convoys do not sail in the Netherlands. The classes depend on vessel length and width, fairway width and depth, structures (lock length, width and sill depth, lift gate and fixed bridge heights) and sharp bends; they run from 0 (small craft and recreation) through I Spits, II Kempenaar, III Dortmund-Eems canal ship and IV Rhine-Herne canal ship to Va, Vb and VIa to VIc for large Rhine ships and push convoys. Coverage: national. Format and access: OGC WMS and WFS services on PDOK, part of the Fairway Information Services data (FIS-VNDS). Licence and cost: CC0 public domain dedication with no fees, as stated in the service capabilities. Caveats: descriptions are in Dutch, and the layer holds classes, not live water depths or closures. It gives the capacity limits needed for network flow and capacity planning models of inland shipping. It sits beside the NWB Vaarwegen network and Rijkswaterstaat nautical data records in the catalogue.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "open data vaarwegen Rijkswaterstaat vaarwegnetwerk dataset scheepvaart intensiteiten download",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "gml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.pdok.nl/ogc-webservices/-/article/vaarweg-netwerk-data-service-vnds",
+  "id": "data-rijkswaterstaat-vnds-waterway-navigability-classes",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Vaarweg Netwerk Data Service (VNDS) navigability classes of Dutch waterways",
+  "provider": "Rijkswaterstaat, published through PDOK",
+  "related_ids": [
+    "data-nwb-vaarwegen",
+    "data-rijkswaterstaat-nautical-data"
+  ],
+  "sectors": [
+    "transport.inland_waterways"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "description, CEMT 1992 classes, class list, WMS and WFS URLs",
+      "url": "https://www.pdok.nl/ogc-webservices/-/article/vaarweg-netwerk-data-service-vnds"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "fees none, CC0 access constraint, FIS-VNDS abstract",
+      "url": "https://service.pdok.nl/rws/vaarweg-netwerk-data-service-bevaarbaarheid/wfs/v2_0?request=GetCapabilities&service=WFS"
+    }
+  ],
+  "tags": [
+    "navigability",
+    "CEMT classes",
+    "waterway network",
+    "Netherlands",
+    "PDOK",
+    "r2-fresh-transport"
+  ],
+  "temporal_coverage": "Current network (service version 2.0)",
+  "title_en": "Waterway Network Data Service (VNDS) navigability classes of Dutch waterways",
+  "type": "data"
+}

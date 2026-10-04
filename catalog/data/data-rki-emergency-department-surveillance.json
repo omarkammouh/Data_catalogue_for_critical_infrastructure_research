@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "All 5 files (zip)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/api/records/22958067/files-archive"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub repository (daily updates)",
+      "url": "https://github.com/robert-koch-institut/Daten_der_Notaufnahmesurveillance"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo release",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.22958067"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "demand_operation",
+    "health_impacts",
+    "critical_facilities"
+  ],
+  "data_kind": [
+    "time_series",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.22958067",
+    "name": "rki emergency department syndromic surveillance data daten der notaufnahmesurveillance germany",
+    "repo": "github.com/robert-koch-institut/daten_der_notaufnahmesurveillance",
+    "url": "https://github.com/robert-koch-institut/Daten_der_Notaufnahmesurveillance"
+  },
+  "description": "This data set tracks, day by day, what share of visits to German emergency departments are due to respiratory infections, gastrointestinal infections, COVID-19 and heat, with the value that would normally be expected, so that surges in demand stand out. The producers are the Robert Koch Institute, Germany's public health agency, and the AKTIN emergency department register, which forwards routine data from participating departments every day. Coverage begins on 1 January 2019 and is updated daily with data up to two days earlier. The time series give, by department type and age group, the relative share of cases for each syndrome, a seven-day average, an expected value with prediction interval and the number of departments reporting; a second file lists every participating department with its name, type, level of emergency care, state and coordinates. The files are available as a free download from GitHub and Zenodo under the Creative Commons Attribution 4.0 licence, with German documentation. Caveats: departments are included per syndrome only when their coding is at least 80 percent complete, shares, not absolute counts are given, and the network covers a subset of German hospitals. Simulation uses: early warning of emergency department surges in epidemics and heatwaves, and estimating heat-related health demand for adaptation planning. Related records: the AKTIN length of stay data (data-aktin-emergency-department-length-of-stay) and the German ambulance dispatch series (data-germany-ambulance-dispatches-temperature-air-pollution).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "emergency department surveillance",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "pandemic",
+    "extreme_heat"
+  ],
+  "homepage": "https://github.com/robert-koch-institut/Daten_der_Notaufnahmesurveillance",
+  "id": "data-rki-emergency-department-surveillance",
+  "languages": [
+    "de"
+  ],
+  "last_updated": "2026-10-02",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "RKI emergency department syndromic surveillance data (Daten der Notaufnahmesurveillance), Germany",
+  "provider": "Robert Koch Institute with the AKTIN infrastructure and emergency department register",
+  "related_ids": [
+    "data-aktin-emergency-department-length-of-stay",
+    "data-germany-ambulance-dispatches-temperature-air-pollution"
+  ],
+  "schema_summary": "Notaufnahmesurveillance_Zeitreihen_Syndrome.tsv: date, ed_type, age_group, syndrome (ARI, ILI, COVID-19, GI, SARI, HEAT), relative_cases, 7-day moving average, expected value with lower and upper bounds, ed_count. Notaufnahmesurveillance_Standorte.tsv: IK number, ED name, ED type, level of emergency care, state, latitude and longitude of each participating department",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators Robert Koch-Institut and AKTIN-Infrastruktur und das Notaufnahmeregister; CC BY 4.0; published 2026-09-25; Zeitreihen_Syndrome.tsv 28 MB, Standorte.tsv, metadata, documentation; aggregated routine data from German EDs for syndromic surveillance of ILI, COVID-19, ARE, GI, SARI and heat-related presentations (HEAT); share of visits, expected values and prediction intervals; aggregated by ED type and age group",
+      "url": "https://zenodo.org/api/records/22958067"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Shallow clone, last commit 2026-09-25: README states daily updates with data up to two days before; expected values from data since 1 January 2019 up to 365 days back; EDs included per syndrome only with at least 80% completeness; Standorte file with ik_number, ed_name, ed_type, level_of_care, state, latitude, longitude",
+      "url": "https://github.com/robert-koch-institut/Daten_der_Notaufnahmesurveillance"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed last_updated.",
+      "url": "https://github.com/robert-koch-institut/Daten_der_Notaufnahmesurveillance"
+    }
+  ],
+  "spatial_resolution": "Participating emergency departments (locations listed); series aggregated nationally by ED type and age group",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "syndromic surveillance",
+    "emergency departments",
+    "heat",
+    "respiratory infections",
+    "Robert Koch Institute",
+    "AKTIN"
+  ],
+  "temporal_coverage": "From 1 January 2019",
+  "temporal_resolution": "Daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "RKI emergency department syndromic surveillance data (data from emergency department surveillance), Germany",
+  "type": "data",
+  "update_frequency": "daily"
+}

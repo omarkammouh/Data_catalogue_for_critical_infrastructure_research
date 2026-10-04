@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/bonsai-lab-polimi/tnsm2024-data-centric"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1109/TNSM.2024.3406934"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "condition_ageing",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "tabular",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "microwave network hardware failure alarm dataset",
+    "repo": "github.com/bonsai-lab-polimi/tnsm2024-data-centric",
+    "url": "https://github.com/bonsai-lab-polimi/tnsm2024-data-centric"
+  },
+  "description": "This microwave-network dataset supports failure-cause classification from alarm activity. The BONSAI Lab repository accompanying Di Cicco and collaborators’ 2024 paper publishes a CSV with 1,669 labelled observations and 164 alarm features. Each row covers a fifteen-minute period in which a hardware failure occurred. Each feature counts the seconds for which an alarm remained active, ranging from zero to 900. Labels distinguish indoor-unit failures, outdoor-unit failures, cable failures and power failures, with 515, 611, 207 and 336 observations respectively. Geographic coverage, operator identity and the complete observation dates are not stated in the inspected README. The repository exposes the CSV publicly under GPL 3.0 and without a charge. A limitation is that every documented row contains a failure; the class proportions should not be interpreted as network-wide failure probabilities or as an estimate of normal-operation prevalence. Simulation uses include validating failure-diagnosis modules and representing alarm evidence in telecom restoration studies. It complements data-bakom-microwave-links-and-emergency-call-routing-switzerland, which describes network locations, not labelled failure episodes. No alarm rows were downloaded and no classifier was retrained.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"data centre\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/bonsai-lab-polimi/tnsm2024-data-centric",
+  "id": "data-microwave-hardware-failure-alarms-tnsm2024",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-10-08",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Microwave-network hardware failure alarm dataset",
+  "notes": "G8; G8-0150. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations. ",
+  "provider": "BONSAI Lab, Politecnico di Milano; Di Cicco and collaborators",
+  "related_ids": [
+    "data-bakom-microwave-links-and-emergency-call-routing-switzerland"
+  ],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/bonsai-lab-polimi/tnsm2024-data-centric/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/bonsai-lab-polimi/tnsm2024-data-centric"
+    }
+  ],
+  "spatial_resolution": "Microwave equipment; sampled network geography not stated.",
+  "spatial_resolution_class": "not_stated",
+  "tags": [],
+  "temporal_coverage": "Calendar interval not stated.",
+  "temporal_resolution": "15-minute failure observation windows; feature values are seconds active.",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Microwave-network hardware failure alarm dataset",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

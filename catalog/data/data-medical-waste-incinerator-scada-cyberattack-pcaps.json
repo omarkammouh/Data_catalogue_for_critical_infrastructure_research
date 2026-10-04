@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Mendeley Data (PCAPs and attack scripts)",
+      "url": "https://data.mendeley.com/datasets/vpcr4wpgfd/4"
+    },
+    {
+      "kind": "paper",
+      "label": "Data in Brief article (2025)",
+      "url": "https://doi.org/10.1016/j.dib.2025.112294"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "JO"
+  ],
+  "data_family": [
+    "cyber_control",
+    "sensor_realtime_streams",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "stream",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.17632/vpcr4wpgfd.4",
+    "name": "scada network traffic from a medical waste incinerator with injected cyberattacks siemens s7 1500 jordan",
+    "url": "doi:10.17632/vpcr4wpgfd.4"
+  },
+  "description": "These packet captures record the control network traffic of a real medical waste incinerator for two weeks, plus copies with simulated cyberattacks, so that intrusion detection for waste treatment plants can be tested on realistic data. The producers are Basheer Al-Duwairi, Ahmed Shatnawi, Ahmad Al-Hammouri and Mohammad Ababneh of the Jordan University of Science and Technology, working with Dakota State University, who described the data in Data in Brief in 2025. Coverage is one incinerator control system built on a Siemens S7-1500 programmable logic controller, with more than 19 million packets of OPC and PROFINET traffic between the operator interface and the controller over 14 days. Eight further captures inject man-in-the-middle, replay, fuzzing, command flooding, data spoofing, protocol exploitation, stealthy command injection and SYN flooding attacks, and the Python scripts that generated them are included. The files are available as a free download from Mendeley Data under the Creative Commons Attribution 4.0 licence. Caveats: attacks are synthetic injections, packets carry no labels beyond the file names, and capture dates are not given. Simulation uses: training and testing anomaly detection for waste plant control systems and building cyber-physical digital twins of treatment facilities. Related records: the China incineration monitoring data (data-china-msw-incineration-monitoring) cover plant emissions in operation.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "SCADA traffic medical waste incinerator dataset",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "formats": [
+    "domain_model_file",
+    "csv",
+    "source_code"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://doi.org/10.17632/vpcr4wpgfd.4",
+  "id": "data-medical-waste-incinerator-scada-cyberattack-pcaps",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://data.mendeley.com/datasets/vpcr4wpgfd/4"
+    ]
+  },
+  "maturity": "active",
+  "name": "SCADA network traffic from a medical waste incinerator with injected cyberattacks (Siemens S7-1500, Jordan)",
+  "provider": "Basheer Al-Duwairi, Ahmed Shatnawi, Ahmad Al-Hammouri and Mohammad Ababneh (Jordan University of Science and Technology, with Dakota State University)",
+  "regions": [
+    "Irbid"
+  ],
+  "related_ids": [
+    "data-china-msw-incineration-monitoring"
+  ],
+  "schema_summary": "14 daily PCAP captures (day01 to day14) of OPC and PROFINET traffic between the HMI and a Siemens S7-1500/ET200MP PLC, over 19 million packets; attack-injected PCAPs for man-in-the-middle, replay, fuzzing, command flooding, data spoofing, protocol exploitation, stealthy command injection and SYN flooding (identified by file name, packets unlabelled); per-file statistics; Python attack and sanitiser scripts; checksums",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Mendeley Data 'SCADA Traffic Dataset from a Medical Waste Incinerator with Injected Cyber Attacks', version 4, published 2025-09-01, CC BY 4.0; files day01-day14.pcap, traffic_with_<attack>.pcap files, per_file_statistics.csv, scada_pcap_sanitizer.py, attack scripts (command flooding, data spoofing, fuzzing, MITM, replay, s7comm exploit, stealthy injection, stop PLC, SYN flooding), checksums",
+      "url": "https://data.mendeley.com/public-api/datasets/vpcr4wpgfd"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Data in Brief 63, 112294 (2025): authors at Jordan University of Science and Technology (Irbid) and Dakota State University; 14 daily captures over two weeks from a Siemens S7-1500/ET200MP SCADA system at a medical waste incinerator, captured with Wireshark on the HMI connected to the PLC, OPC and PROFINET, over 19 million packets; eight attack scenarios of about 20,000 injected packets each; no per-packet labels",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12702041/"
+    }
+  ],
+  "spatial_resolution": "One plant control network",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "SCADA",
+    "industrial control systems",
+    "cyberattack",
+    "medical waste",
+    "incinerator",
+    "PCAP"
+  ],
+  "temporal_coverage": "14 consecutive days (dates not stated)",
+  "temporal_resolution": "Packet level",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "SCADA network traffic from a medical waste incinerator with injected cyberattacks (Siemens S7-1500, Jordan)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

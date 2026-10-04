@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository with state downloads and FAQ",
+      "url": "https://github.com/microsoft/USBuildingFootprints"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "microsoft us building footprints",
+    "url": "https://github.com/microsoft/USBuildingFootprints"
+  },
+  "description": "Microsoft US Building Footprints is a country-wide set of 129,591,852 computer-generated building footprint polygons for the 50 United States and the District of Columbia, derived from satellite imagery by Microsoft's computer-vision algorithms. Microsoft Maps released it to support the OpenStreetMap ecosystem. Coverage is national; 73,250,745 footprints inside a focal area come from imagery of 2019 and 2020, while the rest were extracted from older imagery averaging about 2012, and each footprint carries a capture-date tag where the vintage could be deduced. Access: GeoJSON files per state, linked from the repository. Licence: Open Data Commons Open Database License (ODbL), free. Caveats: this is an older release; Microsoft's Global ML Building Footprints dataset now covers the United States with more recent imagery and height estimates, and footprints are machine-detected with local errors. Simulation uses are building exposure inventories for hazard and resilience studies in the United States. Related records: Microsoft Global ML Building Footprints (successor), FEMA USA Structures and the USACE National Structure Inventory, which build on footprint data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R30",
+      "source": "built_environment-microsoft-us-building-footprints"
+    }
+  ],
+  "formats": [
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/microsoft/USBuildingFootprints",
+  "id": "data-microsoft-us-building-footprints",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-11-07",
+  "licence": "ODbL-1.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "Microsoft US Building Footprints",
+  "notes": "Maturity set to archived because the global dataset supersedes it; the README states no end of maintenance, so this is a judgement recorded here. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "provider": "Microsoft (Bing Maps)",
+  "related_ids": [],
+  "schema_summary": "Polygon geometry; capture date tag where the imagery vintage could be deduced",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Counts, ODbL licence, data vintage, GeoJSON per state, purpose",
+      "url": "https://raw.githubusercontent.com/microsoft/USBuildingFootprints/master/README.md"
+    }
+  ],
+  "spatial_resolution": "Individual building polygons",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "building footprints",
+    "United States",
+    "machine learning"
+  ],
+  "temporal_coverage": "Imagery about 2012 (average) and 2019-2020 in the refreshed focal area",
+  "temporal_resolution": "none (snapshot)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Microsoft US Building Footprints",
+  "type": "data"
+}

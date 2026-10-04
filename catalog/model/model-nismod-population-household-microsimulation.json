@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/nismod/microsimulation"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/nismod/microsimulation/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nismod population and household microsimulation",
+    "repo": "github.com/nismod/microsimulation",
+    "url": "https://github.com/nismod/microsimulation"
+  },
+  "description": "NISMOD population and household microsimulation is a Python model published in the NISMOD organisation for evolving synthetic populations and household counts. Its static population workflow starts from 2011 census information and uses ONS estimates for 2001–2013 and projections for 2014–2039. The README identifies MSOA as the finest current population resolution and describes household inputs at Output Area resolution. A separate assignment algorithm links individuals to households using census distributions. The source, JSON configuration examples and command-line scripts are public on GitHub and free under MIT. Users supply census and projection inputs through UKCensusAPI, ukpopulation and related population-synthesis packages. The outputs can provide geographically detailed demand and exposure assumptions for national infrastructure scenarios. Important limitations are the README's work-in-progress warning, a crude household projection method and unfinished coupled dynamic models. UKCensusAPI requires an API key, and nationwide assignment is described as needing high-performance computing. This review did not run the code or obtain population data. The resource complements NISMOD (platform-nismod) by supplying demographic inputs, not simulating infrastructure flows itself.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:nismod fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/nismod/microsimulation",
+  "id": "model-nismod-population-household-microsimulation",
+  "inputs": [
+    "2011 census population and household information",
+    "ONS population estimates and projections",
+    "DCLG household forecasts"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-03-18",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "NISMOD population and household microsimulation",
+  "notes": "G7 G7-0014. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. The README states that UKCensusAPI requires an API key for execution; no key is needed to inspect this public resource and none was requested. Several dynamic components remain unfinished. ",
+  "outputs": [
+    "Synthetic population projections",
+    "Household projections",
+    "Person-to-household assignment tables"
+  ],
+  "provider": "nismod repository maintainers",
+  "related_ids": [
+    "platform-nismod"
+  ],
+  "repository": "https://github.com/nismod/microsimulation",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for nismod/microsimulation: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3Anismod+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/nismod/microsimulation/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Population and household microsimulation starting from 2011 census information",
+  "type": "model",
+  "validated_on": []
+}

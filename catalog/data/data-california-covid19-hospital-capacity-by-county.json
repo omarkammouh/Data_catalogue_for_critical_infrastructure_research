@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Statewide COVID-19 hospital county data (CSV)",
+      "url": "https://data.chhs.ca.gov/dataset/2df3e19e-9ee4-42a6-a087-9761f82033f6/resource/47af979d-8685-4981-bced-96a6b79d3ed5/download/covid19hospitalbycounty.csv"
+    },
+    {
+      "kind": "api",
+      "label": "CHHS CKAN API package",
+      "url": "https://data.chhs.ca.gov/api/3/action/package_show?id=covid-19-hospital-data"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance",
+    "historical_events"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "california covid 19 hospital data by county daily hospitalised covid 19 patients icu patients and available icu beds 2020 2024 archived",
+    "url": "https://data.chhs.ca.gov/dataset/covid-19-hospital-data"
+  },
+  "description": "This table shows, day by day and county by county, how many COVID-19 patients filled California hospital beds and intensive care units, and how many ICU beds were still free, through the whole pandemic. The producer is the California Department of Public Health, which gathered daily counts from hospitals while reporting was mandatory and published them on the California Health and Human Services open data portal. Coverage runs from 27 March 2020 to 7 October 2024 across 56 counties, with 88,589 county-day rows. Each row gives confirmed and suspected COVID-19 patients in hospital and in intensive care, total hospital beds and available ICU beds. The file is available as a free download in CSV or ZIP form, and the portal's CKAN API describes it; no formal licence is stated, so use falls under the CHHS terms of use. Caveats: counts include anyone diagnosed with COVID-19 during their stay, reporting completeness changed over time, suspected ICU counts are missing for about a quarter of rows, and the series is archived with no further updates. Simulation uses: calibrating hospital and ICU surge in pandemic capacity models and testing thresholds for regional stay-at-home or patient transfer triggers. Related records: the California licensed facility and bed counts (data-california-licensed-healthcare-facilities-and-beds) give the underlying licensed capacity.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "California Hospital Bed and EMS Data System (HBEDS)",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "archive"
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://data.chhs.ca.gov/dataset/covid-19-hospital-data",
+  "id": "data-california-covid19-hospital-capacity-by-county",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (CHHS portal: 'No License Provided'; use subject to the CHHS Terms of Use, commercial uses need approval)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "California COVID-19 hospital data by county: daily hospitalised COVID-19 patients, ICU patients and available ICU beds (2020-2024, archived)",
+  "provider": "California Department of Public Health (CDPH), from hospital reporting, published on the CHHS Open Data Portal",
+  "regions": [
+    "California"
+  ],
+  "related_ids": [
+    "data-california-licensed-healthcare-facilities-and-beds",
+    "data-hcai-hospital-utilization-and-financial"
+  ],
+  "schema_summary": "One row per county and day: county, todays_date, hospitalized_covid_confirmed_patients, hospitalized_suspected_covid_patients, hospitalized_covid_patients, all_hospital_beds, icu_covid_confirmed_patients, icu_suspected_covid_patients, icu_available_beds",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "CHHS package 'COVID-19 Hospital Data (ARCHIVED)', California Department of Public Health, created 2021-02-01, modified 2025-11-07; 'not being updated as hospitals are no longer mandated to report COVID Hospitalizations to CDPH'; counts include all patients diagnosed with COVID-19 during their stay; hospitals report total patients each day so cumulative totals are not available; resources: all-data ZIP and Statewide Covid-19 Hospital County Data CSV (3.3 MB)",
+      "url": "https://data.chhs.ca.gov/api/3/action/package_show?id=covid-19-hospital-data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Dataset page: temporal coverage 2020-present, geography California, granularity county, frequency daily; 'License No License Provided'; use subject to the CHHS Terms of Use",
+      "url": "https://data.chhs.ca.gov/dataset/covid-19-hospital-data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "CSV read in memory: 88,589 rows, 56 counties, dates 2020-03-27 to 2024-10-07; columns as in the schema summary",
+      "url": "https://data.chhs.ca.gov/dataset/2df3e19e-9ee4-42a6-a087-9761f82033f6/resource/47af979d-8685-4981-bced-96a6b79d3ed5/download/covid19hospitalbycounty.csv"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated (CHHS portal: 'No License Provided'; use subject to the CHHS Terms of Use, commercial uses need approval) (basis: data.chhs.ca.gov dataset page)",
+      "url": "https://data.chhs.ca.gov/api/3/action/package_show?id=covid-19-hospital-data"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://data.chhs.ca.gov/dataset/covid-19-hospital-data"
+    }
+  ],
+  "spatial_resolution": "County (56 counties with reporting hospitals)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospital capacity",
+    "ICU beds",
+    "COVID-19",
+    "surge",
+    "California",
+    "CDPH"
+  ],
+  "temporal_coverage": "27 March 2020 to 7 October 2024",
+  "temporal_resolution": "Daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "California COVID-19 hospital data by county: daily hospitalised COVID-19 patients, ICU patients and available ICU beds (2020-2024, archived)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

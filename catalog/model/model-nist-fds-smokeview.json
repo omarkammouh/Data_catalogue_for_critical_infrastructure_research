@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "FDS-SMV site (download, documentation, validation reports)",
+      "url": "https://pages.nist.gov/fds-smv/"
+    },
+    {
+      "kind": "repo",
+      "label": "FDS and Smokeview source",
+      "url": "https://github.com/firemodels/fds"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "fire dynamics simulator fds and smokeview nist",
+    "url": "https://pages.nist.gov/fds-smv"
+  },
+  "description": "Fire Dynamics Simulator (FDS) is NIST's large-eddy simulation code for low-speed flows, focused on smoke and heat transport from fires, and Smokeview displays the output of FDS and of CFAST simulations. The site offers downloads, documentation, a discussion forum, issue tracker and wiki, third-party interfaces and training, road maps for future research, and publicly available reports for the experimental datasets in the FDS Validation Guide. The FDS+Evac evacuation module, developed by VTT in Finland, is no longer supported after FDS 6.7.7. Coverage: generic. Access: free downloads for Windows, macOS and Linux and source code. Licence: public domain, as a U.S. government work not subject to copyright. Caveats: results depend on grid resolution and the modeller's inputs, and evacuation now needs separate tools. Simulation uses: smoke spread and tenability in buildings, tunnels and facilities for fire safety design and emergency planning. Related records: CONTAM, the EXODUS evacuation model and Pathfinder.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell model:built_environment.buildings:physical, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://pages.nist.gov/fds-smv/",
+  "id": "model-nist-fds-smokeview",
+  "inputs": [
+    "Geometry, materials and fire sources",
+    "Ventilation boundary conditions"
+  ],
+  "language": [
+    "fortran"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "Public domain (U.S. government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Fire Dynamics Simulator (FDS) and Smokeview (NIST)",
+  "outputs": [
+    "Smoke, temperature and heat flux fields",
+    "Visualisations of FDS and CFAST results"
+  ],
+  "provider": "National Institute of Standards and Technology (NIST)",
+  "related_ids": [
+    "model-nist-contam",
+    "model-exodus-evacuation-pedestrian-simulation",
+    "model-pathfinder-thunderhead-egress",
+    "data-nist-fire-calorimetry-database",
+    "data-nees-bncs-full-scale-building-shake-table-fire-test"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, resources, FDS+Evac status, public domain statement",
+      "url": "https://pages.nist.gov/fds-smv/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "LES description, Smokeview and CFAST, repository and release links; Source/main.f90 present",
+      "url": "https://raw.githubusercontent.com/firemodels/fds/master/README.md"
+    }
+  ],
+  "tags": [
+    "FDS",
+    "Smokeview",
+    "fire simulation",
+    "CFD",
+    "NIST",
+    "smoke"
+  ],
+  "title_en": "Fire Dynamics Simulator (FDS) and Smokeview (NIST)",
+  "type": "model"
+}

@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "OEDI submission with resources and methodology report",
+      "url": "https://data.openei.org/submissions/4520"
+    },
+    {
+      "kind": "download",
+      "label": "Public S3 data lake prefix (no sign-in)",
+      "url": "https://oedi-data-lake.s3.amazonaws.com/?list-type=2&prefix=nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2021/&delimiter=/"
+    },
+    {
+      "kind": "docs",
+      "label": "DOI landing",
+      "url": "https://doi.org/10.25984/1876417"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "calibration_validation",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.25984/1876417",
+    "name": "end use load profiles for the u s building stock",
+    "url": "https://data.openei.org/submissions/4520"
+  },
+  "description": "End-Use Load Profiles for the U.S. Building Stock is a public dataset of calibrated and validated 15-minute load profiles for all major residential and commercial building types and end uses, across all climate regions of the United States, offered both as aggregates and as individual modelled building timeseries. It was produced by a three-year project funded by the U.S. Department of Energy, led by the National Renewable Energy Laboratory with Lawrence Berkeley National Laboratory and others, to help cities, states and utilities value energy efficiency, demand response and distributed energy resources; the profiles come from ResStock and ComStock calibrated against many measured datasets, as the methodology report describes. Data date from 14 October 2021 and were last updated on 28 March 2024; the submission's DOI is 10.25984/1876417. Access is through the Open Energy Data Initiative, which hosts the files in its public data lake. Licence: Creative Commons Attribution 4.0, free. Caveats: profiles describe a synthetic but representative stock, not metered individual customers, and newer ResStock and ComStock releases supersede parts of it. Simulation uses are building-load inputs for capacity planning, distribution network flow studies and demand-flexibility optimisation. Related records: ResStock and ComStock (the models behind it), EnergyPlus.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:demand_operation",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.openei.org/submissions/4520",
+  "id": "data-end-use-load-profiles-us-building-stock",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-03-28",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "End-Use Load Profiles for the U.S. Building Stock",
+  "notes": "Formats and releases read from the public OEDI S3 listing (s3://oedi-data-lake/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2021/): four releases (resstock_amy2018_release_1, resstock_tmy3_release_1, comstock_amy2018_release_1, comstock_tmy3_release_1), each with metadata.parquet, timeseries aggregates as CSV by ASHRAE/IECC climate zone and other geographies, individual building timeseries, building energy models, weather and occupancy schedules.",
+  "provider": "National Renewable Energy Laboratory (now NLR) with LBNL and partners, for the U.S. Department of Energy; hosted on the Open Energy Data Initiative (OEDI)",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, DOE three-year project, 15-minute calibrated profiles, 'Publicly accessible', licence CC BY 4.0, data from 14 Oct 2021, last updated 28 Mar 2024, submitted 2 May 2022, DOI and citation",
+      "url": "https://data.openei.org/submissions/4520"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "S3 listing: four releases, metadata.parquet, CSV aggregates by climate zone, individual building timeseries, models, weather, occupancy schedules",
+      "url": "https://oedi-data-lake.s3.amazonaws.com/?list-type=2&prefix=nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2021/"
+    }
+  ],
+  "spatial_resolution": "Individual modelled buildings aggregated by county, PUMA, state and climate region",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "load profiles",
+    "end use",
+    "15-minute",
+    "OEDI",
+    "US"
+  ],
+  "temporal_coverage": "Weather years 2018 (AMY) and typical meteorological year; data published 14 October 2021, updated 28 March 2024",
+  "temporal_resolution": "15-minute",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "End-Use Load Profiles for the U.S. Building Stock",
+  "type": "data"
+}

@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "DOI landing (mediaTUM)",
+      "url": "https://doi.org/10.14459/2024mp1735865"
+    },
+    {
+      "kind": "portal",
+      "label": "data.europa.eu entry",
+      "url": "https://data.europa.eu/data/datasets/https-open-bydata-de-api-hub-repo-datasets-https-mediatum-ub-tum-de-1735865"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Rosero-Velásquez, H. (2024). Graph-based model for reliability analysis of infrastructure networks. Technical University of Munich. doi:10.14459/2024mp1735865",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CL"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.14459/2024mp1735865",
+    "name": "graph based model for reliability analysis of infrastructure networks tum riesgos",
+    "url": "doi:10.14459/2024mp1735865"
+  },
+  "description": "This model simulates cascading effects within an infrastructure network such as a power grid or water supply system. Its input is the probability of failure of each nodal component, and its output is the estimated probability of service disruption in the areas the network supplies. It includes a taxonomy of network components (nodes and lines) with fragility functions, the conditional probability of failure given an intensity measure, taken from FEMA (2003), and its cascading algorithm follows Crucitti, Latora and Marchiori (2004), Hernandez-Fajardo (2012) and Poljanšek, Bono and Gutiérrez (2012). The script is written in Python with JSON pre- and post-processing files, and the data include an example for the power network of the Valparaíso Region in Chile under earthquake events. It was published by Hugo Rosero-Velásquez at TUM in March 2024 (version 1.0) through mediaTUM with a DataCite DOI, with funding from the German research ministry's RIESGOS and RIESGOS 2.0 projects. Licence: the German open data catalogue lists it as closed, and the mediaTUM page, which holds the files, was not readable from our checks. Caveats: fragility curves are generic literature values and the example is a single region. It supports cascading failure, resilience and earthquake hazard exposure studies of lifeline networks; a related record is the InfraRisk model.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "graph-based reliability model (green service performance)",
+      "route": "R04",
+      "source": "data-europa-eu"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "earthquake"
+  ],
+  "homepage": "https://doi.org/10.14459/2024mp1735865",
+  "id": "model-tum-graph-based-infrastructure-network-reliability",
+  "inputs": [
+    "network nodes and lines in JSON",
+    "component failure probabilities",
+    "fragility functions given an intensity measure"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-03-05",
+  "licence": "closed (per GovData listing)",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network",
+    "fragility"
+  ],
+  "name": "Graph-based model for reliability analysis of infrastructure networks (TUM, RIESGOS)",
+  "notes": "mediatum.ub.tum.de is behind an Anubis proof-of-work page that the cloud browser cannot pass (2026-09-26); worth a local-browser check of the file licence.",
+  "outputs": [
+    "probability of service disruption per supplied area"
+  ],
+  "provider": "Technical University of Munich (TUM)",
+  "related_ids": [],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "TUM 2024, version 1.0, issued 2024-03-05, creator Rosero-Velásquez; description: cascading effects in power or water networks; Python with JSON; input nodal failure probability, output probability of service disruption; FEMA 2003 fragilities; Crucitti et al. 2004, Hernandez-Fajardo 2012, Poljanšek et al. 2012; Valparaíso power network under earthquakes; RIESGOS and RIESGOS 2.0 BMBF",
+      "url": "https://api.datacite.org/dois/10.14459/2024mp1735865"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GovData licence other-closed; modified 2026-09-09",
+      "url": "https://data.europa.eu/data/datasets/https-open-bydata-de-api-hub-repo-datasets-https-mediatum-ub-tum-de-1735865"
+    }
+  ],
+  "tags": [
+    "network reliability",
+    "cascading effects",
+    "graph theory",
+    "fragility",
+    "RIESGOS",
+    "Valparaíso",
+    "Python"
+  ],
+  "title_en": "Graph-based model for reliability analysis of infrastructure networks (TUM, RIESGOS)",
+  "type": "model"
+}

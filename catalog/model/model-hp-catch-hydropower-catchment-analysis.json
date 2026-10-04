@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Code and documentation",
+      "url": "https://github.com/yasserhaddad/HP-CatCH"
+    },
+    {
+      "kind": "paper",
+      "label": "ESSD discussion preprint, under review",
+      "url": "https://essd.copernicus.org/preprints/essd-2026-448/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "https://doi.org/10.5194/essd-2026-448",
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "date_catalogued": "2026-10-02",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "hp catch hydropower cascade and catchment analysis",
+    "repo": "yasserhaddad/hp-catch",
+    "url": "https://github.com/yasserhaddad/HP-CatCH"
+  },
+  "description": "HP-CatCH is Python code for constructing and analysing hydropower cascade networks across Switzerland and their contributing catchments. Yann Yasser Haddad and collaborators publish the repository alongside an Earth System Science Data discussion preprint from August 2026. The code loads plant registries, reservoirs, water intakes, pressure tunnels, catchment polygons and elevation data. It extracts directed cascade topology, traces upstream contributors and computes catchment-to-reservoir weights. Analysis functions aggregate inflows and examine water utilisation. Outputs include CSV node and flow tables and geospatial shapefiles, as described in the public documentation. The code is free under the MIT licence and available without registration. Python 3.11 or later and geospatial dependencies are required. External inputs are configured through file paths and are not included as a complete runnable example. The national companion dataset describes 48 cascades and 601 run-of-river plants, but its ETH landing page returned HTTP 429 during this check. Code inspection here was limited to documentation and metadata; execution and reproduced inflows were not tested. The preprint remains under review. This model could support water-energy dependency analysis and climate adaptation studies in Switzerland.",
+  "description_checked": "2026-10-02",
+  "discovery_routes": [
+    {
+      "date": "2026-10-02",
+      "query": "ESSD hydropower infrastructure data papers; companion code availability",
+      "route": "R07",
+      "source": "publisher-cross-check-2026-10-02"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/yasserhaddad/HP-CatCH",
+  "id": "model-hp-catch-hydropower-catchment-analysis",
+  "inputs": [
+    "WASTA hydropower registry",
+    "SwissTLM3D water layers",
+    "BAFU subcatchments",
+    "Elevation models",
+    "Cascade topology tables",
+    "Simulated runoff/inflows"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-02"
+  },
+  "maturity": "not_stated",
+  "model_kind": [
+    "network"
+  ],
+  "name": "HP-CatCH hydropower cascade and catchment analysis",
+  "notes": "Metadata and documentation only. No code archive or datasets downloaded; no software executed. Companion data DOI 10.3929/ethz-c-000800479 is a follow-up candidate with unverified ETH access.",
+  "outputs": [
+    "Cascade node and directed flow tables",
+    "Catchment-reservoir weights",
+    "Catchment shapefiles",
+    "Aggregated inflows and utilisation metrics"
+  ],
+  "provider": "Yann Yasser Haddad and ETH Zürich collaborators",
+  "related_ids": [],
+  "repository": "https://github.com/yasserhaddad/HP-CatCH",
+  "sectors": [
+    "energy.electricity",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "climate_adaptation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-02",
+      "note": "Public README, MIT licence badge, input requirements and model functions read.",
+      "url": "https://github.com/yasserhaddad/HP-CatCH"
+    },
+    {
+      "accessed": "2026-10-02",
+      "note": "Output CSV and shapefile structures read; no output data retrieved.",
+      "url": "https://raw.githubusercontent.com/yasserhaddad/HP-CatCH/main/Output_data_documentation.md"
+    },
+    {
+      "accessed": "2026-10-02",
+      "note": "Preprint status and companion dataset/code identities read.",
+      "url": "https://essd.copernicus.org/preprints/essd-2026-448/"
+    }
+  ],
+  "tags": [
+    "hydropower",
+    "catchments",
+    "cascade topology",
+    "preprint"
+  ],
+  "title_en": "HP-CatCH hydropower cascade and catchment analysis",
+  "type": "model",
+  "validated_on": [
+    "Companion Swiss hydropower analysis described in an ESSD discussion preprint; validation was not independently reproduced."
+  ]
+}

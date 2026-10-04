@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Zenodo DOI",
+      "url": "https://doi.org/10.5281/zenodo.4687620"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "scenarios_projections"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hotmaps energy potential of municipal solid waste from households and economic activities at nuts3 level eu28",
+    "repo": "gitlab.com/hotmaps/potential/potential_municipal_solid_waste",
+    "url": "https://gitlab.com/hotmaps/potential/potential_municipal_solid_waste"
+  },
+  "description": "This data set estimates how much energy could be recovered from municipal solid waste in every NUTS3 region of the 28 EU member states. It was produced by Chiara Scaramuzzino and Giulia Garegnani at Eurac Research for the Horizon 2020 Hotmaps project on heating and cooling planning. National Eurostat figures for waste generated in 2014 by households and by economic activities were converted to energy with a fixed heating value and equivalence ratio, then shared out to regions by population for household waste and by GDP for waste from economic activities. Recyclable paper, cardboard and wood, and food, vegetal waste and used frying oil, were excluded on sustainability grounds, and the result is a calorific potential that does not assume any conversion technology. The CSV and its metadata are free to download from GitLab, with a Zenodo DOI; the README gives a CC BY 4.0 licence while the datapackage metadata names a public domain dedication. Caveats: regional values are proxies, not reported waste, and the data refer to 2014. Coverage is the EU28 at NUTS3 level. Simulation uses: sizing waste-to-energy and district heating supply by region in energy and waste system models. Related records: the Eurostat municipal waste series (data-eurostat-env-wasmun) is the national source data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "solid waste",
+      "route": "R05",
+      "source": "gitlab"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "continental",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.4687620",
+  "id": "data-hotmaps-municipal-solid-waste-energy-potential",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2017-11-16",
+  "licence": "CC BY 4.0 (README); the datapackage metadata names ODC-PDDL-1.0",
+  "licence_type": [
+    "attribution",
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Hotmaps: energy potential of municipal solid waste from households and economic activities at NUTS3 level (EU28)",
+  "provider": "Eurac Research for the Hotmaps project (Chiara Scaramuzzino, Giulia Garegnani)",
+  "related_ids": [
+    "data-eurostat-env-wasmun"
+  ],
+  "schema_summary": "output_potential.csv with fields rowid, code (NUTS3), source, value, note, unit, sector (household or NACE activities), owner, nuts_level, code_label, measure_type_eustat_flag and potential_definition; datapackage.json with metadata",
+  "sectors": [
+    "services.waste",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README read in memory: total energy potential of municipal solid waste from households and economic activities (NACE) in the EU28 at NUTS3 level; national Eurostat waste generation for 2014 converted with a low heating value of 13.81644 MJ/kg and equivalence ratio 0.340656, then spatialised by population (2011) for household waste and GDP (2014) for NACE waste; recyclables, food, vegetal waste and used frying oil excluded; potentials do not account for energy conversion; authors Scaramuzzino and Garegnani; CC BY 4.0; funded by the Horizon 2020 Hotmaps project (grant 723677)",
+      "url": "https://gitlab.com/hotmaps/potential/potential_municipal_solid_waste/-/raw/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Datapackage read in memory: title 'Energy Potential of municipal solid waste', licence ODC-PDDL-1.0, resource solid_waste with the fields listed in the schema summary",
+      "url": "https://gitlab.com/hotmaps/potential/potential_municipal_solid_waste/-/raw/master/datapackage.json"
+    }
+  ],
+  "spatial_resolution": "NUTS3",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "municipal solid waste",
+    "energy potential",
+    "NUTS3",
+    "Hotmaps",
+    "EU28",
+    "waste-to-energy"
+  ],
+  "temporal_coverage": "Waste data for 2014; population 2011; datapackage temporal field 2011",
+  "temporal_resolution": "Single year",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Hotmaps: energy potential of municipal solid waste from households and economic activities at NUTS3 level (EU28)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

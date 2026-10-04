@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Software and example data (Zenodo)",
+      "url": "https://zenodo.org/records/17176470"
+    },
+    {
+      "kind": "download",
+      "label": "Related distributionally robust model record (Zenodo, no files)",
+      "url": "https://doi.org/10.5281/zenodo.17560314"
+    },
+    {
+      "kind": "paper",
+      "label": "Computers and Operations Research article (2025)",
+      "url": "https://doi.org/10.1016/j.cor.2025.107208"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "ES"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.17176470",
+    "name": "hierarchical compromise optimisation of ambulance locations under stochastic travel times two stage stochastic model and bfc csc algorithm",
+    "url": "doi:10.5281/zenodo.17176470"
+  },
+  "description": "This software decides where to station ambulances when travel times are uncertain, balancing several goals in order of priority. The producers are Imanol Gago-Carro of the Basque Center for Applied Mathematics, Unai Aldasoro and María Merino of the University of the Basque Country, and Dae-Jin Lee of IE University, who published the method in Computers and Operations Research in 2025. It is a two-stage stochastic integer programme: ambulance bases are chosen first, then performance is evaluated over many travel time scenarios, and a hierarchical compromise approach with a dedicated algorithm (BFC-CSC) trades off objectives such as coverage and response time. Coverage in the study was the Basque public emergency medical service in Spain, but under a confidentiality agreement the repository contains only a small example instance. The Python scripts, example data and output logs are available as a free download from Zenodo under the Creative Commons Attribution 4.0 licence; a companion record for a distributionally robust version had no files attached. Caveats: needs the commercial CPLEX solver, real data are not released, and documentation is limited to the folder structure and paper. Simulation uses: planning ambulance bases that stay effective when congestion or road disruption make travel times unpredictable. Related records: the Fez-Meknes ambulance data (data-fez-meknes-ambulance-deployment) offer a public test instance, and OpenEMS (model-openems-ambulance-deployment) simulates deployment.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ambulance location optimisation stochastic travel times",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.17176470",
+  "id": "model-ambulance-location-stochastic-travel-times-bfc-csc",
+  "inputs": [
+    "Candidate ambulance bases and demand points",
+    "Scenarios of stochastic travel times",
+    "Ideal and anti-ideal values of the objectives (prepared by a script)"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-09-22",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "Hierarchical compromise optimisation of ambulance locations under stochastic travel times (two-stage stochastic model and BFC-CSC algorithm)",
+  "outputs": [
+    "Ambulance location plans under hierarchical compromise objectives",
+    "KPI and log files per objective variant"
+  ],
+  "provider": "Imanol Gago-Carro (Basque Center for Applied Mathematics), Unai Aldasoro and María Merino (University of the Basque Country) and Dae-Jin Lee (IE University)",
+  "regions": [
+    "Basque Country"
+  ],
+  "related_ids": [
+    "data-fez-meknes-ambulance-deployment",
+    "model-openems-ambulance-deployment"
+  ],
+  "runs_on": [
+    "Python with CPLEX"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators Gago-Carro (BCAM), Aldasoro (UPV/EHU), Lee (IE University), Merino (UPV/EHU); CC BY 4.0; published 2025-09-22, updated 2025-10-18; two-stage stochastic 0-1 ILP and BFC-CSC algorithm from the paper in Computers and Operations Research (10.1016/j.cor.2025.107208); confidentiality with the Basque public EMS system means the data are a small example, not the study data; folders 0_preparing_files (calculate_ideal_antiideal.py), 1_f1_f2_model (ambulance_BFC-CSC.py, ambulance_model.py), 2_dinf_model, 3_Output (BFC and CPLEX KPI outputs), 4_data",
+      "url": "https://zenodo.org/api/records/17176470"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Companion record by Gago-Carro, Aldasoro, Merino, Ruiz: two-stage distributionally robust 0-1 ILP for ambulance location and dispatch under travel time uncertainty; no files attached when read",
+      "url": "https://zenodo.org/api/records/17560314"
+    }
+  ],
+  "tags": [
+    "ambulance location",
+    "stochastic programming",
+    "compromise programming",
+    "EMS",
+    "Basque Country",
+    "CPLEX"
+  ],
+  "title_en": "Hierarchical compromise optimisation of ambulance locations under stochastic travel times (two-stage stochastic model and BFC-CSC algorithm)",
+  "type": "model",
+  "validated_on": [
+    "Basque public EMS system data in the article (not released); small example instance in the repository"
+  ]
+}

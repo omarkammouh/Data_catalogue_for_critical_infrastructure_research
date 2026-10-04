@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "PDOK dataset page",
+      "url": "https://www.pdok.nl/introductie/-/article/spoorwegen"
+    },
+    {
+      "kind": "api",
+      "label": "OGC API Features",
+      "url": "https://api.pdok.nl/prorail/spoorwegen/ogc/v1"
+    },
+    {
+      "kind": "download",
+      "label": "Atom download (GeoPackage)",
+      "url": "https://service.pdok.nl/prorail/spoorwegen/atom/index.xml"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "prorail spoorwegen the dutch railway network dataset track axes switches crossings level crossings stations",
+    "url": "https://pdok.nl/introductie/-/article/spoorwegen"
+  },
+  "description": "Spoorwegen is ProRail's open dataset of the railway network of the Netherlands. It contains the track axis of every track (the centre line between the rails), the alignment centre line, switches, track crossings, level crossings, stations and kilometre referencing points placed about every 100 m along the track centre line; track features carry geographic codes, kilometre ranges, line sections and a life-cycle status, so planned designs can appear next to tracks in service. It is maintained by ProRail, the Dutch rail infrastructure manager, and published by PDOK. Coverage is national for the network managed by ProRail. The dataset is free to download under CC0 1.0 as a GeoPackage (about 39 MB, updated 15 July 2026) and through WMS, WFS and OGC API Features services. The metadata state that all tracks physically present are included, with positional accuracy better than 28 cm. It replaced an earlier railway dataset on PDOK in February 2021 and is refreshed as ProRail's database changes. Caveats: the dataset describes geometry and topology only, without speeds, signalling, electrification or timetables, which ProRail offers through other channels, and the life-cycle status must be filtered to keep only tracks in use. The dataset supports network flow and hazard exposure studies of Dutch rail, for example flood or heat exposure of track and level crossings, and complements the national road network (NWB) and railML-based timetable models catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "spoorweg open data dataset",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "geopackage",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.pdok.nl/introductie/-/article/spoorwegen",
+  "id": "data-prorail-spoorwegen-netherlands",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ProRail Spoorwegen, the Dutch railway network dataset (track axes, switches, crossings, level crossings, stations)",
+  "provider": "ProRail (Asset Management Informatie), published through PDOK (Kadaster)",
+  "related_ids": [
+    "data-netherlands-nationaal-wegenbestand",
+    "data-railml"
+  ],
+  "sectors": [
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "dataset contains rail connections incl. kilometre points, stations and level crossings; WMS, WFS, OGC API, Atom",
+      "url": "https://www.pdok.nl/introductie/-/article/spoorwegen"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "licence CC0 1.0; collections kilometrering (about every 100 m), kruising, overweg, spooras, station, trace, wissel; sample spooras attributes incl. geocode, km range, kmlint, levenscyclus_status",
+      "url": "https://api.pdok.nl/prorail/spoorwegen/ogc/v1?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "metadata: ProRail AM Informatie; no use limitations, CC0; completeness 100% of physically present tracks; accuracy better than 28 cm; metadata date 2026-07-15",
+      "url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&version=2.0.2&request=GetRecordById&outputschema=http://www.isotc211.org/2005/gmd&elementsetname=full&id=061d5632-41f0-430a-a69d-7564960eb077"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GeoPackage download, 38,875,136 bytes; feed updated 2026-07-15",
+      "url": "https://service.pdok.nl/prorail/spoorwegen/atom/spoorwegen.xml"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search snippet only: new Spoorwegen dataset made available by ProRail on PDOK as of 18 February 2021",
+      "url": "https://geoforum.nl/t/nieuwe-dataset-spoorwegen/5498"
+    }
+  ],
+  "spatial_resolution": "individual tracks, switches and level crossings; kilometre points about every 100 m",
+  "spatial_resolution_class": "100m_to_1km",
+  "tags": [
+    "railway network",
+    "track geometry",
+    "level crossings",
+    "ProRail",
+    "Netherlands"
+  ],
+  "temporal_coverage": "current network (with planned designs flagged by life-cycle status)",
+  "title_en": "ProRail Spoorwegen, the Dutch railway network dataset (track axes, switches, crossings, level crossings, stations)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

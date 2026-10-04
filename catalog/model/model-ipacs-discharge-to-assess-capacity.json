@@ -1,0 +1,147 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "ipacs-model.zip (7.8 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/7845908/files/ipacs-model.zip?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "P1_paper_model_results_Harper_2023.zip (595 kB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/7934721/files/P1_paper_model_results_Harper_2023.zip?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "Model code and documentation",
+      "url": "https://github.com/nhs-bnssg-analytics/ipacs-model"
+    },
+    {
+      "kind": "portal",
+      "label": "Code and material (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.7845908"
+    },
+    {
+      "kind": "portal",
+      "label": "Data for the visits-based model paper (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.7934721"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.7845908",
+    "name": "ipacs model improving the flow of patients between acute community and social care discharge to assess simulation",
+    "repo": "github.com/nhs-bnssg-analytics/ipacs-model",
+    "url": "https://github.com/nhs-bnssg-analytics/ipacs-model"
+  },
+  "description": "This model helps an English health and care system decide how much community capacity it needs so that patients ready to leave hospital are not stuck waiting for home care, a community bed or a care home place. The producers are the IPACS project team, funded by Health Data Research UK from 2020 to 2023: Alison Harper and Martin Pitt of the University of Exeter, Zehra Onen Dumlu and Christos Vasilakis of the University of Bath, and Richard Wood and Paul Forte of the NHS integrated care board for Bristol, North Somerset and South Gloucestershire. It is a stochastic discrete-event simulation of the discharge-to-assess pathways: users enter arrival rates, lengths of stay and capacities in an Excel file, and the model estimates occupancy, the number of patients with a delayed discharge, days spent waiting and total cost over time. Coverage is the Bristol area system where it was built, but any system can supply its own parameters. The code and documentation are available free on GitHub and Zenodo under the GNU General Public License, with the data behind a companion paper on visits-based home care. Caveats: parameters must be estimated locally, the project ended in 2023 with the last code change in May 2023, and the documentation is in PDF guides in the repository. Simulation uses: sizing community and social care capacity to relieve hospital bed pressure in winter or surges. Related records: patientflow (model-patientflow) and the NHP demand model (model-nhp-demand-model) cover hospital demand.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "patient flow acute community social care",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "IPACS visits based model",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [],
+  "homepage": "https://github.com/nhs-bnssg-analytics/ipacs-model",
+  "id": "model-ipacs-discharge-to-assess-capacity",
+  "inputs": [
+    "Excel file of arrival rates, lengths of stay and capacity for each discharge-to-assess pathway (home care, community beds, care homes)",
+    "Time-varying resource requirements for visits-based home care"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-05-03",
+  "licence": "GPL-2.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "model_kind": [
+    "statistical",
+    "discrete_event"
+  ],
+  "name": "IPACS model: improving the flow of patients between acute, community and social care (discharge-to-assess simulation)",
+  "outputs": [
+    "Occupancy of community services over time",
+    "Number of patients with a discharge delay and days waiting",
+    "Total system costs"
+  ],
+  "provider": "IPACS project team: Alison Harper and Martin Pitt (University of Exeter), Zehra Onen Dumlu and Christos Vasilakis (University of Bath), Richard Wood and Paul Forte (NHS Bristol, North Somerset and South Gloucestershire ICB)",
+  "regions": [
+    "Bristol, North Somerset and South Gloucestershire"
+  ],
+  "related_ids": [
+    "model-patientflow",
+    "model-nhp-demand-model"
+  ],
+  "repository": "https://github.com/nhs-bnssg-analytics/ipacs-model",
+  "runs_on": [
+    "R (RStudio project) with an Excel parameter file"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators Harper (Exeter), Onen Dumlu (Bath), Forte (BNSSG ICB), Vasilakis (Bath), Pitt (Exeter), Wood (BNSSG); GPL-2.0-or-later; published 2023-04-19; ipacs-model.zip 7.8 MB; funded by Health Data Research UK, May 2020 to March 2023; high-level model of discharge-to-assess (D2A) pathways; takes Excel input parameters and estimates occupancy, patients with discharge delay, days waiting and total system costs; accounts for variation; github.com/nhs-bnssg-analytics/ipacs-model",
+      "url": "https://zenodo.org/api/records/7845908"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Data for results of the IPACS visits-based model paper (Harper and Worthington): planning integrated care services using simulation modelling for visits-based home care with time-varying resource requirements; GPL-2.0-or-later; published 2023-05-14",
+      "url": "https://zenodo.org/api/records/7934721"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "README and shallow clone: R scripts (ipacs_main_script.R, bed and visit model functions), model_inputs/IPACS_params.xlsx, Documentation PDFs (context and scope, technical user guide, STRESS-DES report); last commit 2023-05-03",
+      "url": "https://github.com/nhs-bnssg-analytics/ipacs-model"
+    }
+  ],
+  "tags": [
+    "discharge to assess",
+    "delayed discharge",
+    "community care",
+    "discrete-event simulation",
+    "NHS",
+    "STRESS-DES"
+  ],
+  "title_en": "IPACS model: improving the flow of patients between acute, community and social care (discharge-to-assess simulation)",
+  "type": "model",
+  "validated_on": [
+    "Bristol, North Somerset and South Gloucestershire health and care system (IPACS project, 2020 to 2023)"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "ISIMIP Repository API",
+      "url": "https://data.isimip.org/api/v1/datasets/?sector=agriculture"
+    },
+    {
+      "kind": "portal",
+      "label": "ISIMIP Repository (agriculture sector)",
+      "url": "https://data.isimip.org/search/sector/agriculture/"
+    },
+    {
+      "kind": "portal",
+      "label": "Phase II archive example (LPJmL rice, Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.4384615"
+    },
+    {
+      "kind": "docs",
+      "label": "Ag-GRID and GGCMI page",
+      "url": "https://agmip.org/ag-grid-2/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "scenarios_projections",
+    "vulnerability_fragility",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "raster",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ggcmi global gridded crop model intercomparison simulation outputs agmip and isimip",
+    "url": "https://agmip.org/ag-grid-2"
+  },
+  "description": "The Global Gridded Crop Model Intercomparison is the global crop modelling initiative of the Agricultural Model Intercomparison and Improvement Project (AgMIP), run by its Ag-GRID initiative. It is coordinated from the Columbia University Climate School, NASA GISS and the Potsdam Institute for Climate Impact Research, and is tied into the agriculture sector of ISIMIP. It produces multi-model ensembles of gridded crop simulations. Phase 1 evaluated models against historical weather; Phase 2 was a sensitivity archive from 10 models used to train crop yield emulators; a 2020 study looked at regional nuclear war cooling. Phase 3, aligned with ISIMIP3, gives the largest ensemble of climate impact projections for agriculture, with 12 crop models on the AgMIP page (ISIMIP counts 15 under its ISIMIP3a/b protocol) and 5 CMIP6 climate models. Coverage is global and gridded. Access to Phase 3 outputs is free through the ISIMIP Repository and its API, where files are organised by crop, model, climate forcing, scenario, irrigation and variable (for example anthesis day for maize under full irrigation, annual per growing season). The ISIMIP3b records read carry the CC0 1.0 public domain dedication, and the Phase II archives are on Zenodo per model and crop under CC BY 4.0 (for example LPJmL rice: yield, biomass, planting and maturity day, irrigation water withdrawal and evapotranspiration). Caveats: results differ between models and depend on the harmonised management inputs, and Phase 3 is ongoing, with more teams still adding simulations. For simulation it gives climate-driven crop productivity projections for agricultural hazard exposure, adaptation and food-supply scenarios. Related catalogue records include the ISIMIP Repository, LPJmL, DSSAT, APSIM and MAgPIE.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: crop and agricultural systems models",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "source_code",
+    "api"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought",
+    "extreme_heat",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://agmip.org/ag-grid-2/",
+  "id": "data-ggcmi-global-gridded-crop-model-outputs",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-12-02",
+  "licence": "CC0-1.0 (ISIMIP3b outputs); CC-BY-4.0 (Phase II Zenodo archives)",
+  "licence_type": [
+    "public_domain",
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "GGCMI Global Gridded Crop Model Intercomparison simulation outputs (AgMIP and ISIMIP)",
+  "notes": "Deep check A4 (2026-10-01) corrected: last_updated .",
+  "provider": "AgMIP Gridded Crop Modeling Initiative (Ag-GRID), with ISIMIP",
+  "schema_summary": "per crop, model, climate forcing, climate and socio-economic scenario and irrigation setting, output variables (anthesis day read as an example)",
+  "sectors": [
+    "industry.agriculture",
+    "water.irrigation"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "initiative, phases, coordination and participant table read 2026-09-26",
+      "url": "https://agmip.org/ag-grid-2/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "ISIMIP3b agriculture dataset path, specifiers and CC0 rights read 2026-09-26",
+      "url": "https://data.isimip.org/api/v1/datasets/?sector=agriculture&simulation_round=ISIMIP3b&page_size=1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Phase II archive variables, experiment design and CC BY 4.0 read 2026-09-26",
+      "url": "https://zenodo.org/api/records/4384615"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "15 models follow the ISIMIP3a/b agriculture protocol (pDSSAT page)",
+      "url": "https://www.isimip.org/impactmodels/details/105/"
+    }
+  ],
+  "spatial_resolution": "global grid (resolution per ISIMIP protocol)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "crop models",
+    "climate impacts",
+    "model intercomparison",
+    "AgMIP"
+  ],
+  "temporal_coverage": "historical and future periods under CMIP6 forcing (Phase 3)",
+  "temporal_resolution": "annual per growing season",
+  "temporal_resolution_class": "sub_annual",
+  "title_en": "GGCMI Global Gridded Crop Model Intercomparison simulation outputs (AgMIP and ISIMIP)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

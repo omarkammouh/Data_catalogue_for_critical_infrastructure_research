@@ -1,0 +1,154 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Dwelling indicators master table (ArcGIS REST, table Maestra_2nd)",
+      "url": "https://services8.arcgis.com/xSn1Pefr3M9zkw7Z/arcgis/rest/services/Maestra_prueba/FeatureServer/0"
+    },
+    {
+      "kind": "api",
+      "label": "Private dwellings by department, municipality and district, with polygons",
+      "url": "https://services8.arcgis.com/xSn1Pefr3M9zkw7Z/arcgis/rest/services/Viviendas_particulares_capa_mapa_simple/FeatureServer/0"
+    },
+    {
+      "kind": "api",
+      "label": "ICT indicators by district, with polygons",
+      "url": "https://services8.arcgis.com/xSn1Pefr3M9zkw7Z/arcgis/rest/services/Mapa_Tics_WFL1/FeatureServer/7"
+    },
+    {
+      "kind": "viewer",
+      "label": "Census results geoportal (dashboards for dwellings, ICT, agricultural census)",
+      "url": "https://geoportal.bcr.gob.sv/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "SV"
+  ],
+  "data_family": [
+    "system_description",
+    "social_vulnerability_equity"
+  ],
+  "data_kind": [
+    "tabular",
+    "survey"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bcr onec el salvador 2024 population and housing census dwelling indicators table electricity source water supply piped water sanitation grey water cooking fuel wall roof and floor materials structures by department municipality and district arcgis feature service",
+    "url": "https://geoportal.bcr.gob.sv"
+  },
+  "description": "The statistics office of El Salvador's central bank publishes results of the 2024 Population and Housing Census on an ArcGIS Hub geoportal, and the dashboards read from public ArcGIS feature services. The master table behind the dwelling dashboard holds counts and shares for each category of each dwelling indicator by department, municipality and district: the source of electricity, the water supplier, whether piped water reaches the dwelling, the type of sanitation and grey water disposal, refuse disposal, cooking fuel, wall, roof and floor materials, and occupied and vacant dwellings. At national level it lists 1,640,857 dwellings on the public electricity service, 6,408 using solar panels and 42,292 without electricity, and 801,985 supplied by the national water utility ANDA against 504,709 on community systems. Companion layers give private dwellings and ICT indicators per district with boundaries. Format and access: ArcGIS REST queries return JSON or GeoJSON without a key. Licence: not stated. Caveats: the service is named as a test table and the Estructuras category counts look implausible, so check totals against published reports; the 2024 municipal reform means districts are the former municipalities. Simulation uses: district level electricity and water access, roof materials for storm exposure, and sanitation for wastewater planning. Related records: the 2007 census REDATAM database from the same office.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:SV:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "json",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://services8.arcgis.com/xSn1Pefr3M9zkw7Z/arcgis/rest/services/Maestra_prueba/FeatureServer/0",
+  "id": "data-bcr-onec-el-salvador-cnpv-2024-dwelling-services-by-district-arcgis-table",
+  "languages": [
+    "es"
+  ],
+  "last_updated": "2025-03-30",
+  "licence": "not stated on the pages read (item licence field empty)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BCR ONEC El Salvador 2024 Population and Housing Census dwelling indicators table (electricity source, water supply, piped water, sanitation, grey water, cooking fuel, wall, roof and floor materials, structures) by department, municipality and district, ArcGIS feature service",
+  "provider": "Oficina Nacional de Estadística y Censos (ONEC), Banco Central de Reserva de El Salvador (BCR)",
+  "related_ids": [
+    "data-digestyc-el-salvador-cpv-2007-redatam-vivienda-agua-alumbrado-by-census-segment"
+  ],
+  "schema_summary": "Table Maestra_2nd, 33,581 rows with fields cantidad, porcentaje, categoria, indicador, id_depto, id_mun, id_distrito (26,556 rows at district level). Indicators: Electricidad (public service, solar panels, wind, fuel generator, neighbour connection, other, none), Suministro (ANDA utility, community system, private company, private or public well, public tap, neighbour, water body, tanker, rainwater), Chorro (piped inside dwelling, in yard only, none), Servicio Sanitario (sewer, septic tank, biodigester, latrine, none), Uso Sanitario, Aguas Grises, Residuos, Combustible, Material Paredes, Techo, Piso, Vivienda ocupada and desocupada, Estructuras.",
+  "sectors": [
+    "energy.electricity",
+    "water.drinking_water",
+    "water.wastewater",
+    "digital.telecom",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "resilience",
+    "emergency_response",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: hub site configuration and organisation id",
+      "url": "https://geoportal.bcr.gob.sv/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: item list (605 public items)",
+      "url": "https://www.arcgis.com/sharing/rest/search?q=orgid:xSn1Pefr3M9zkw7Z"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: dwelling dashboard data sources",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/4f4958cb2d6f40bda9a4771aae14c9b2/data"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: fields, row counts, national categories",
+      "url": "https://services8.arcgis.com/xSn1Pefr3M9zkw7Z/arcgis/rest/services/Maestra_prueba/FeatureServer/0"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: results release and geoportal link",
+      "url": "https://elsalvador.unfpa.org/es/news/segunda-entrega-resultados-censo"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://geoportal.bcr.gob.sv/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://services8.arcgis.com/xSn1Pefr3M9zkw7Z/arcgis/rest/services/Maestra_prueba/FeatureServer/0"
+    }
+  ],
+  "spatial_resolution": "national, 14 departments, municipalities and districts (codes id_depto, id_mun, id_distrito)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "El Salvador",
+    "CNPV 2024",
+    "ArcGIS",
+    "district",
+    "electricity access",
+    "water supply",
+    "sanitation",
+    "Central America"
+  ],
+  "temporal_coverage": "census fieldwork 2 May to 26 June 2024 (from press coverage); results released 2024 to 2025",
+  "temporal_coverage_years": {
+    "end": 2024,
+    "start": 2024
+  },
+  "temporal_resolution": "single census",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "BCR ONEC El Salvador 2024 Population and Housing Census dwelling indicators table (electricity source, water supply, piped water, sanitation, grey water, cooking fuel, wall, roof and floor materials, structures) by department, municipality and district, ArcGIS feature service",
+  "type": "data"
+}

@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "GCF DIVA page",
+      "url": "https://globalclimateforum.org/diva_modelling/"
+    },
+    {
+      "kind": "repo",
+      "label": "DIVACoast.jl on GitHub",
+      "url": "https://github.com/GlobalClimateForum/DIVACoast.jl"
+    },
+    {
+      "kind": "download",
+      "label": "Global coastal segmentation dataset (Zenodo)",
+      "url": "https://zenodo.org/records/19664628"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "diva coastal impact and adaptation modelling divacoast jl and global diva datasets",
+    "repo": "github.com/globalclimateforum/divacoast.jl",
+    "url": "https://globalclimateforum.org/diva_modelling"
+  },
+  "description": "DIVA (originally Dynamic Interactive Vulnerability Assessment) is an ecosystem of tools and data for modelling the biophysical and socio-economic impacts of sea level rise and the effect of adaptation such as dike raising and beach nourishment, covering coastal flooding, erosion, wetland change and salinity intrusion. The first version came from the EU project DINAS-COAST; the current DIVACoast.jl is a Julia library with data types and algorithms for scripting assessment runs, with demo data and scripts, and a global dataset on Zenodo partitions the world's coastal plain into about 175,000 flood plains and the coastline into about 700,000 segments, as GeoTIFF and GeoPackage files with NUTS2 and GADM1 tables (about 4.3 GB, April 2026, CC BY 4.0). Global Climate Forum coordinates development and maintains the code, with bio-physical modules from the University of Southampton, coastal input data from Kiel University and wetland modules from Cambridge and Lincoln. The library is open source under the MIT licence on GitHub with online documentation. Caveats: the library version is still 0.0.0, the dataset's method paper was in preparation, and users must script their own runs. It supports national to global coastal flood exposure, damage and adaptation cost scenarios for infrastructure; a related record is the Coastal Hazard Wheel.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "portal_type=eea.climateadapt.tool",
+      "route": "R29",
+      "source": "climate-adapt"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "sea_level_rise",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://globalclimateforum.org/diva_modelling/",
+  "id": "model-diva-coastal-impact-adaptation",
+  "inputs": [
+    "coastal flood plain and coastline segments",
+    "elevation",
+    "population and assets",
+    "sea level rise scenarios",
+    "adaptation strategies"
+  ],
+  "language": [
+    "julia"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-20",
+  "licence": "MIT (code); CC-BY-4.0 (global dataset)",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://globalclimateforum.github.io/DIVACoastDocs/"
+    ],
+    "dead_since": "2026-09-27"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid",
+    "economic"
+  ],
+  "name": "DIVA coastal impact and adaptation modelling (DIVACoast.jl and global DIVA datasets)",
+  "notes": "last_updated is the date of the global dataset release on Zenodo; the DINAS-COAST origin and impact list are from the Climate-ADAPT tool page.",
+  "outputs": [
+    "flood exposure and damages",
+    "erosion and wetland change",
+    "adaptation costs"
+  ],
+  "provider": "Global Climate Forum, with University of Southampton, Kiel University and partners",
+  "related_ids": [
+    "model-coastal-hazard-wheel"
+  ],
+  "repository": "https://github.com/GlobalClimateForum/DIVACoast.jl",
+  "sectors": [
+    "cross_cutting.green_blue",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "DIVA ecosystem of tools and data; DIVACoast.jl julia library, github and docs; global dataset zenodo 19664628 ~175,000 flood plains and ~700,000 coastline segments, geoTIFF and GeoPackage; GCF maintains, Southampton, Kiel, Cambridge, Lincoln",
+      "url": "https://globalclimateforum.org/diva_modelling/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License, Global Climate Forum Berlin; Project.toml version 0.0.0",
+      "url": "https://raw.githubusercontent.com/GlobalClimateForum/DIVACoast.jl/main/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Global segmentation of the coastal plain and coastline, Lincke, 2026-04-20, CC BY 4.0, 23 files 4252 MB, NUTS2 and GADM1 csv, method paper in preparation",
+      "url": "https://zenodo.org/records/19664628"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "erosion, coastal flooding incl rivers, wetland change, salinity intrusion; dike raising and beach nourishment; DINAS-COAST",
+      "url": "https://climate-adapt.eea.europa.eu/en/metadata/tools/dynamic-interactive-vulnerability-assessment-model-diva"
+    }
+  ],
+  "tags": [
+    "sea level rise",
+    "coastal flooding",
+    "integrated assessment",
+    "Julia",
+    "DINAS-COAST",
+    "adaptation"
+  ],
+  "title_en": "DIVA coastal impact and adaptation modelling (DIVACoast.jl and global DIVA datasets)",
+  "type": "model"
+}

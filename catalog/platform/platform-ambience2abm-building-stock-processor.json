@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/spine-tools/AmBIENCe2ABM"
+    },
+    {
+      "kind": "docs",
+      "label": "Also described at",
+      "url": "https://zenodo.org/records/18252929"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/18252929"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.3390/buildings14061614"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.18252929",
+    "name": "ambience2abm building stock data processor",
+    "repo": "github.com/spine-tools/ambience2abm",
+    "url": "https://github.com/spine-tools/AmBIENCe2ABM"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "AmBIENCe2ABM processes European building-stock inputs for ArchetypeBuildingModel.jl. Topi Rasku publishes the Python package as part of the EU Mopo project. It combines AmBIENCe building typologies, Hotmaps heated floor-area maps and assumed ventilation properties into CSV-based Frictionless data packages and Spine Datastore import specifications. Coverage is EU-wide with reference-building and stock categories; Hotmaps floor-area inputs refer to 2015, while other source periods differ. The workflow generates static parameters, not hourly heating and cooling time series, which are produced in a separate downstream workflow. Code is free under MIT and processed data under CC BY 4.0. Raw AmBIENCe deliverables are excluded because their licence remains unclear. The documentation warns that heat-source distributions and some reference geometries are unreliable and that ventilation and infiltration require crude assumptions. These limitations favour aggregated exploratory scenarios over precise individual-building predictions. Simulation uses include preparing thermal archetypes and energy-demand inputs. The tool directly builds on data-hotmaps-building-stock-and-heat-density-maps; no scripts were executed or data packages imported during this review.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "\"building stock\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://github.com/spine-tools/AmBIENCe2ABM",
+  "id": "platform-ambience2abm-building-stock-processor",
+  "interfaces": [
+    "code_library",
+    "command_line",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "CSV",
+    "Frictionless Data Package JSON",
+    "Spine Datastore"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-03",
+  "licence": "MIT for code; CC-BY-4.0 for processed data; source-specific input terms",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "AmBIENCe2ABM building-stock data processor",
+  "notes": "G8; G8-0059. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Topi Rasku; Spine-tools and EU Mopo project",
+  "related_ids": [
+    "data-hotmaps-building-stock-and-heat-density-maps"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/spine-tools/AmBIENCe2ABM/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/spine-tools/AmBIENCe2ABM"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/18252929"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence mit-license, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/18252929"
+    }
+  ],
+  "tags": [],
+  "title_en": "Ambience2abm european building stock processing",
+  "type": "platform"
+}

@@ -1,0 +1,142 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Hosted feature layer (ArcGIS REST)",
+      "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0"
+    },
+    {
+      "kind": "viewer",
+      "label": "Living Atlas item",
+      "url": "https://www.arcgis.com/home/item.html?id=b15ae99c439941ebad23109cced164a2"
+    },
+    {
+      "kind": "portal",
+      "label": "FEMA USA Structures page (description, access, use cases)",
+      "url": "https://gis-fema.hub.arcgis.com/pages/usa-structures"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "emergency_management",
+    "imagery_remote_sensing"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usa structures",
+    "url": "https://gis-fema.hub.arcgis.com/pages/usa-structures"
+  },
+  "description": "USA Structures is a national dataset of building footprints for every structure larger than 450 square feet in all U.S. states and territories, with attributes for occupancy class under FEMA's Building Occupancy Classification standard, address, height, area, building code, estimated population and a unique identifier. It is built by FEMA's Response Geospatial Office with Oak Ridge National Laboratory, which extract outlines from high-resolution satellite imagery with convolutional and later transformer models on high-performance computers, then attribute them from more than 57 authoritative layers and residence-type models; the USGS National Map Corps verifies occupancy classes. It serves disaster preparedness, response, recovery and mitigation. Launched in 2021, it is updated annually in batches of states; the hosted layer held 135,321,228 features on 26 September 2026 and its data were last edited on 23 September 2025. Access: an ArcGIS Online feature layer in the Living Atlas and File Geodatabase downloads by state. Licence: the page calls it open access geospatial data without naming a licence; it is free. Caveats: footprints and attributes are modelled, population is an estimate with a confidence interval, and structures under 450 square feet are excluded. Simulation uses are exposure for hazard and consequence analysis, emergency response and resilience planning. Related records: USACE National Structure Inventory (point inventory for consequence models), Microsoft US Building Footprints.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R30",
+      "source": "built_environment-usa-structures"
+    }
+  ],
+  "formats": [
+    "esri_geodatabase",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://gis-fema.hub.arcgis.com/pages/usa-structures",
+  "id": "data-fema-usa-structures",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-09-23",
+  "licence": "Not stated on the provider page (U.S. federal open data)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://gis-fema.hub.arcgis.com/pages/usa-structures"
+    ]
+  },
+  "maturity": "active",
+  "name": "USA Structures",
+  "notes": "Feature count from a returnCountOnly query on the hosted layer; dataLastEditDate 1758662435029 ms (2025-09-23). The methodology data descriptor ('A baseline structure inventory with critical attribution for the US and its territories') is named on the page; not read today.",
+  "provider": "Federal Emergency Management Agency (FEMA) Response Geospatial Office with Oak Ridge National Laboratory (ORNL)",
+  "regions": [
+    "U.S. states and territories"
+  ],
+  "related_ids": [],
+  "schema_summary": "BUILD_ID, UUID, occupancy class and primary/secondary occupancy, address fields, height, area (m2, ft2), elevations, FIPS, census code, source image and date, building code, median population with 95% interval",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in a headless browser: definition, >450 ft2, FEMA-ORNL partnership, methods, 57 authoritative layers, TNMCorps verification, launched 2021, annual updates, access options",
+      "url": "https://gis-fema.hub.arcgis.com/pages/usa-structures"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Field list; editingInfo dataLastEditDate 2025-09-23",
+      "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "count 135,321,228",
+      "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Living Atlas item summary: structures > 450 ft2 in US and territories, checked annually",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/b15ae99c439941ebad23109cced164a2?f=json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://gis-fema.hub.arcgis.com/pages/usa-structures"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0"
+    }
+  ],
+  "spatial_resolution": "Footprints of all structures larger than 450 square feet",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "building footprints",
+    "occupancy",
+    "FEMA",
+    "ORNL",
+    "exposure",
+    "United States"
+  ],
+  "temporal_resolution": "annual updates, released in batches of states",
+  "temporal_resolution_class": "annual",
+  "title_en": "USA Structures building footprints dataset",
+  "type": "data",
+  "update_frequency": "annual"
+}

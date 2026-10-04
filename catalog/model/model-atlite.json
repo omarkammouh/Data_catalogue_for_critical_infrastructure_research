@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/PyPSA/atlite"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/atlite/"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://atlite.readthedocs.io/en/latest/"
+    },
+    {
+      "kind": "paper",
+      "label": "JOSS paper",
+      "url": "https://doi.org/10.21105/joss.03294"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "atlite: A Lightweight Python Package for Calculating Renewable Power Potentials and Time Series. Journal of Open Source Software. doi:10.21105/joss.03294",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.21105/joss.03294",
+    "name": "atlite",
+    "repo": "github.com/pypsa/atlite",
+    "url": "https://atlite.readthedocs.io/en/latest"
+  },
+  "description": "atlite is a free, xarray-based Python library for converting weather data, such as wind speeds, solar radiation, temperature and runoff, into power system data such as wind, solar and hydro power and heating demand time series. It is designed to work with big weather reanalysis datasets while keeping computing requirements low; with the recommended ERA5 dataset it yields hourly time series on a 30 km grid, and documented examples also use SARAH-2 satellite data, GEBCO terrain, land-use availability and GloFAS-based hydro inflow. It was first developed by the Renewable Energy Group at FIAS for the CoNDyNet project, funded by the German Federal Ministry for Education and Research, as a light-weight version of the Aarhus University RE Atlas, and is now maintained by volunteers from several institutions. The library is location-independent and covers any region of the weather data, including climate projections. It is on PyPI (version 0.6.1, April 2026) and conda-forge, with source on GitHub, documentation on read-the-docs and a Journal of Open Source Software paper, under the MIT licence at no cost. Caveats: the resolution of the output depends on the weather dataset used, and the maintainers state that there is no dedicated funding for its development. Simulation uses are capacity planning with renewable and heat demand time series and exposure of energy supply to weather and climate change. Related records: its time series are used by model-pypsa-eur.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry PyPSA community",
+      "route": "R06",
+      "source": "energy-pypsa"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://atlite.readthedocs.io/en/latest/",
+  "id": "model-atlite",
+  "inputs": [
+    "Weather data such as wind speeds and solar influx from large weather datasets"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-21",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "atlite",
+  "outputs": [
+    "Power-system relevant time series (renewable generation",
+    "potentials) for any subset of a weather database"
+  ],
+  "provider": "Contributors to atlite (initially the Renewable Energy Group at FIAS); PyPSA community",
+  "related_ids": [
+    "model-pypsa-eur"
+  ],
+  "repository": "https://github.com/PyPSA/atlite",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Converts weather data to energy systems data; lightweight; FIAS, CoNDyNet, BMBF Stromnetze",
+      "url": "https://raw.githubusercontent.com/PyPSA/atlite/HEAD/README.rst"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "JOSS paper doi:10.21105/joss.03294",
+      "url": "https://raw.githubusercontent.com/PyPSA/atlite/HEAD/CITATION.cff"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 0.6.1 uploaded 2026-04-21; MIT",
+      "url": "https://pypi.org/pypi/atlite/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Conversions, ERA5 hourly 30 km, examples (SARAH-2, GEBCO, GloFAS hydro), used by PyPSA-EUR, volunteer maintenance without dedicated funding, origin RE Atlas",
+      "url": "https://atlite.readthedocs.io/en/latest/"
+    }
+  ],
+  "tags": [
+    "renewable potentials",
+    "weather conversion",
+    "xarray",
+    "wind",
+    "solar"
+  ],
+  "title_en": "Weather data conversion library for power system time series",
+  "type": "model",
+  "validated_on": []
+}

@@ -1,0 +1,155 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository with download of version 2.2",
+      "url": "https://github.com/USACE-RMC/LifeSim"
+    },
+    {
+      "kind": "docs",
+      "label": "LifeSim User's Guide",
+      "url": "https://usace-rmc.github.io/RMC-Software-Documentation/docs/desktop-applications/lifesim/users-guide/v1.0/preface/"
+    },
+    {
+      "kind": "docs",
+      "label": "LifeSim Validation Studies Report",
+      "url": "https://usace-rmc.github.io/RMC-Software-Documentation/docs/desktop-applications/lifesim/validation-studies/v1.0/preface/"
+    }
+  ],
+  "access_note": "Use is not restricted; RMC does not support non-Corps users but responds to bug reports.",
+  "access_restrictions": "none",
+  "citation": "U.S. Army Corps of Engineers Risk Management Center (2021). LifeSim Technical Reference Manual.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "lifesim usace life loss estimation",
+    "repo": "github.com/usace-rmc/lifesim",
+    "url": "https://github.com/USACE-RMC/LifeSim"
+  },
+  "description": "LifeSim is the U.S. Army Corps of Engineers' spatially distributed dynamic simulation system for estimating potential life loss and direct economic damages from floods, including natural floods and dam and levee failures. It simulates the whole warning and evacuation process: an agent-based approach tracks individuals and groups as they are warned, mobilise and drive to destinations, while a vehicular evacuation engine (a dual-regime modified Greenshields traffic model with spillback) moves them along the road network against the arriving flood, so that people caught or stranded can be identified. Natural variability and knowledge uncertainty are sampled by Monte Carlo analysis, giving a distribution of consequences, not a single estimate. The Risk Management Center of the Institute for Water Resources developed it for the USACE Dam and Levee Safety programme. Coverage is any study area for which the user supplies hydraulic grids, structure and population inventories, road network, destinations and emergency-planning timelines; defaults reflect United States practice. It is a Windows desktop application with a graphical interface, GIS mapping and animation, downloadable from GitHub (version 2.2), with a User's Guide, a Technical Reference Manual and a validation-studies report online. Cost and licence: free to anyone under the RMC distribution policy; the repository carries no open-source licence and no source code. Caveats: RMC gives no user support to non-Corps users, and the RMC product page refused access from this environment. Simulation uses: emergency response and evacuation planning, flood hazard exposure and resilience of communities below dams and levees. Related: USACE HEC hydraulic models supply its flood grids (not yet catalogued).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "flood life loss evacuation simulation USACE (register services-lifesim)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry LifeSim",
+      "route": "R06",
+      "source": "services-lifesim (register)"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://github.com/USACE-RMC/LifeSim",
+  "id": "model-lifesim",
+  "inputs": [
+    "Hydraulic flood depth and arrival grids (natural floods, dam or levee breach)",
+    "Structure and population inventories",
+    "Emergency planning data (warning and mobilisation)",
+    "Road network",
+    "Destinations",
+    "Agricultural data"
+  ],
+  "language": [
+    "dotnet"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-18",
+  "licence": "Free public use under the RMC software distribution policy (no licence file in the repository)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://usace-rmc.github.io/RMC-Software-Documentation/source-documents/desktop-applications/lifesim/technical-reference-manual/LifeSim-Technical-Reference-Manual.pdf"
+    ],
+    "dead_since": "2026-09-27"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "physical"
+  ],
+  "name": "LifeSim (USACE Life Loss Estimation)",
+  "outputs": [
+    "Distribution of estimated life loss",
+    "Direct economic damages",
+    "Evacuation animation and GIS maps of where people are at risk"
+  ],
+  "provider": "U.S. Army Corps of Engineers, Institute for Water Resources, Risk Management Center (RMC)",
+  "related_ids": [],
+  "repository": "https://github.com/USACE-RMC/LifeSim",
+  "runs_on": [],
+  "sectors": [
+    "services.emergency_services",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "agent_based",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, agent-based warning and evacuation simulation, Greenshields traffic model, Monte Carlo, download v2.2, support policy, documentation links",
+      "url": "https://raw.githubusercontent.com/USACE-RMC/LifeSim/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Spatially distributed dynamic simulation of life loss and direct economic damage from natural and dam and levee failure floods; input chapters",
+      "url": "https://usace-rmc.github.io/RMC-Software-Documentation/docs/desktop-applications/lifesim/users-guide/v1.0/preface/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: tags v2.1.5, v2.1.6, v2.1.6a, v2.2",
+      "url": "https://github.com/USACE-RMC/LifeSim"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Access Denied (403) from this environment; not used as evidence",
+      "url": "https://www.rmc.usace.army.mil/Software/LifeSim/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://github.com/USACE-RMC/LifeSim/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://usace-rmc.github.io/RMC-Software-Documentation/docs/desktop-applications/lifesim/users-guide/v1.0/preface/"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2026-06-18)",
+      "url": "https://github.com/USACE-RMC/LifeSim"
+    }
+  ],
+  "tags": [
+    "life loss",
+    "evacuation",
+    "dam breach",
+    "levee failure",
+    "warning",
+    "agent-based",
+    "Monte Carlo",
+    "USACE"
+  ],
+  "title_en": "LifeSim (USACE Life Loss Estimation)",
+  "type": "model",
+  "validated_on": [
+    "Historical flood events documented in the LifeSim Validation Studies Report"
+  ]
+}

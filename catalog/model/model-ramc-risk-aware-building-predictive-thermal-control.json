@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/21863692"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/21863692"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Repository metadata and README independently inspected; code not executed.",
+      "url": "https://github.com/NimaMngh/ramc-buildings"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "https://doi.org/10.3390/buildings16132662",
+  "cost": "free",
+  "countries": [
+    "SE"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.21863692",
+    "name": "ramc risk aware model then control for predictive thermal control of buildings",
+    "repo": "github.com/nimamngh/ramc-buildings",
+    "url": "https://zenodo.org/records/21863692"
+  },
+  "description": "Nima Monghasemi and colleagues at Mälardalen University publish RAMC, which trains building thermal models with a conditional-value-at-risk penalty before nonlinear predictive control. The August 2026 archive provides Python code, processed data, weather and identified resistance-capacitance parameters. Its case adapts a DOE retail-building prototype to hydronic district heating in Västerås, Sweden. MIT terms cover author code; redistributed prototype and weather inputs retain their own conditions. Downloads are free. The workflow supports simulation of risk-sensitive heating control, identification and held-out validation. EnergyPlus 25.1 is needed to regenerate initial outputs; later stages can read deposited data, and a large neural-training table must be regenerated. Related catalogue records model-energyplus and data-doe-pnnl-prototype-building-models describe dependencies. Transfer to actual buildings, parameter uncertainty and reported cost performance were not independently assessed. No code or control experiment was run.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "(\"building stock\" OR \"building energy\" OR \"urban building\") AND (simulation OR dataset)",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://zenodo.org/records/21863692",
+  "id": "model-ramc-risk-aware-building-predictive-thermal-control",
+  "inputs": [
+    "Building thermal data and weather",
+    "Identified resistance-capacitance parameters",
+    "Perturbed control inputs and risk penalty"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-09",
+  "licence": "MIT author code; DOE prototype and Climate.OneBuilding weather retain upstream terms",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid",
+    "optimisation"
+  ],
+  "name": "RAMC: Risk-Aware Model-then-Control for Predictive Thermal Control of Buildings",
+  "notes": "G6 item G6-0598. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "outputs": [
+    "Thermal predictions",
+    "Closed-loop control costs and comfort outcomes"
+  ],
+  "provider": "Monghasemi, Nima (Department of Engineering Sciences, Mälardalen University, Västerås, Sweden); Vouros, Stavros (Department of Engineering Sciences, Mälardalen University, Västerås, Sweden); Kyprianidis, Konstantinos (Department of Engineering Sciences, Mälardalen University, Västerås, Sweden); Vadiee, Amir (Department of Engineering Sciences, Mälardalen University, Västerås, Sweden)",
+  "related_ids": [
+    "model-energyplus",
+    "data-doe-pnnl-prototype-building-models"
+  ],
+  "repository": "https://github.com/NimaMngh/ramc-buildings",
+  "sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/21863692"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence mit-license, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/21863692"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Pipeline, representative building, software requirements and omitted regenerable training table.",
+      "url": "https://api.github.com/repos/NimaMngh/ramc-buildings/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "MIT licence confirmed directly despite GitHub API classifying the file as Other.",
+      "url": "https://github.com/NimaMngh/ramc-buildings/blob/main/LICENSE"
+    }
+  ],
+  "tags": [],
+  "title_en": "RAMC: Risk-Aware Model-then-Control for Predictive Thermal Control of Buildings",
+  "type": "model"
+}

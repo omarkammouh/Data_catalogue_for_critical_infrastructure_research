@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://foam-for-nuclear.gitlab.io/offbeat/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code (stable releases)",
+      "url": "https://gitlab.com/foam-for-nuclear/OFFBEAT"
+    },
+    {
+      "kind": "repo",
+      "label": "foamForNuclear repository (future development)",
+      "url": "https://gitlab.com/foamForNuclear/foamForNuclear"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "offbeat openfoam fuel behavior analysis tool",
+    "repo": "gitlab.com/foam-for-nuclear/offbeat",
+    "url": "https://foam-for-nuclear.gitlab.io/offbeat"
+  },
+  "description": "OFFBEAT, the OpenFOAM Fuel BEhavior Analysis Tool, is a three-dimensional finite-volume nuclear fuel performance code built on the OpenFOAM C++ library. The README read on 2026-09-26 says it is developed mainly at the Laboratory of Reactor Safety at EPFL, the Laboratory for Reactor Physics and Thermal-Hydraulics at the Paul Scherrer Institut and the MEDAL laboratory at Texas A&M University. Coverage includes solid mechanics, thermal analysis, gap heat transfer and contact between non-conformal fuel and cladding meshes, temperature and burnup dependent properties, densification, relocation, swelling, growth, fission gas release, creep and plasticity. The master branch works with OpenFOAM Foundation 9 and OpenFOAM ESI v2506, and documentation and Doxygen pages are online; the code is free under the GPL-3.0 licence. Caveats: the README warns that the code is being merged into the foamForNuclear framework with a new Python API, that input dictionaries are changing, and that the online documentation follows the develop branch, not master. Simulation uses are fuel rod behaviour under normal and accident conditions for safety analysis, and a fuel model for coupled reactor digital twin work. Related records: model-gen-foam-reactor-multiphysics is the core solver from the same foam-for-nuclear group, and platform-moose-multiphysics-framework hosts another fuel code.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review https://www-pub.iaea.org/MTCD/publications/PDF/p15792-DOC-010-496_web.pdf (IAEA Technical Reports Series 496 (2025), review)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://gitlab.com/foam-for-nuclear/OFFBEAT",
+  "id": "model-offbeat-fuel-performance",
+  "inputs": [
+    "fuel and cladding meshes (independent, non-conformal)",
+    "power history and material property models"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "OFFBEAT - OpenFOAM Fuel BEhavior Analysis Tool",
+  "outputs": [
+    "fuel temperatures, stresses and deformations",
+    "fission gas release"
+  ],
+  "provider": "EPFL Laboratory of Reactor Safety, Paul Scherrer Institut and Texas A&M University",
+  "related_ids": [
+    "model-gen-foam-reactor-multiphysics",
+    "platform-moose-multiphysics-framework"
+  ],
+  "repository": "https://gitlab.com/foam-for-nuclear/OFFBEAT",
+  "sectors": [
+    "energy.nuclear"
+  ],
+  "simulation_uses": [
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README (capabilities, developing laboratories, repository status notice, OpenFOAM versions, documentation)",
+      "url": "https://gitlab.com/foam-for-nuclear/OFFBEAT/-/raw/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GPL-3.0 licence and tags read with git",
+      "url": "https://gitlab.com/foam-for-nuclear/OFFBEAT"
+    }
+  ],
+  "tags": [
+    "fuel performance",
+    "OpenFOAM",
+    "nuclear fuel",
+    "EPFL",
+    "PSI",
+    "open source"
+  ],
+  "title_en": "OFFBEAT - OpenFOAM Fuel BEhavior Analysis Tool",
+  "type": "model"
+}

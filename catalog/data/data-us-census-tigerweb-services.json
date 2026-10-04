@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "TIGERweb applications",
+      "url": "https://tigerweb.geo.census.gov/tigerwebmain/TIGERweb_main.html"
+    },
+    {
+      "kind": "api",
+      "label": "TIGERweb REST services directory",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services"
+    },
+    {
+      "kind": "docs",
+      "label": "TIGERweb REST service documentation",
+      "url": "https://tigerweb.geo.census.gov/tigerwebmain/TIGERweb_restmapservice.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "reference_context"
+  ],
+  "data_kind": [
+    "stream",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "tigerweb applications rest and wms map services",
+    "url": "https://tigerweb.geo.census.gov/tigerwebmain/TIGERweb_main.html"
+  },
+  "description": "TIGERweb is the U.S. Census Bureau's web system for viewing and streaming TIGER geographic data without GIS software or downloads. It consists of web applications to view, search and identify features, and GeoServices REST and WMS map services that return Census boundaries and features by FIPS code or by latitude and longitude, grouped into services such as tracts and blocks, places and county subdivisions, legislative districts, school districts, PUMAs and ZCTAs, urban areas, hydrography, transportation and labels. Coverage: the United States, Puerto Rico and the Island Areas in several vintages: Current (boundaries in effect for the 2026 ACS, with legal boundaries reported to the 2026 Boundary and Annexation Survey through 1 March 2026, the 120th Congress districts and 2020 statistical areas including corrected urban areas), plus archived vintages such as the 2020 Census, the Economic Census and generalised ACS vintages back to 2012. Format and access: free web applications, ArcGIS REST MapServer endpoints (JSON, GeoJSON and images) and WMS; no key required; public domain. HTML data files list entities per vintage. Caveats: map services have request limits and are not intended for bulk national downloads, for which the TIGER/Line files are better; availability depends on the Census Bureau's servers. Simulation uses: on-the-fly lookup of the census unit containing an asset or hazard point, and streaming of boundaries and water or road layers into web dashboards and digital twins. Related records: the Census Geocoder, which feeds coordinates into TIGERweb, the Census Data API, TIGER/Line layers and Cartographic Boundary Files.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; Data Tools and Applications list, entry TIGERweb",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "ogc_map_service",
+    "json",
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://tigerweb.geo.census.gov/tigerwebmain/TIGERweb_main.html",
+  "id": "data-us-census-tigerweb-services",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "TIGERweb applications, REST and WMS map services",
+  "notes": "Request limits are the usual ArcGIS Server limits; the Bureau's page does not state a number.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "platform-us-census-geocoder",
+    "data-us-census-data-api",
+    "data-us-census-tiger-line-boundaries-blocks",
+    "data-us-census-cartographic-boundary-files"
+  ],
+  "schema_summary": "Map service layers per geography with GEOID, NAME, area and centroid attributes",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "digital_twin",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Applications, WMS and REST services, current vintage contents (2026 BAS, 120th Congress, 2020 statistical areas)",
+      "url": "https://tigerweb.geo.census.gov/tigerwebmain/TIGERweb_main.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "GeoServices REST specification; service folders Census2020, Econ, Generalized_ACS2012 onward with Tracts_Blocks, Hydro, Transportation, Urban, School and other services",
+      "url": "https://tigerweb.geo.census.gov/tigerwebmain/TIGERweb_restmapservice.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "TIGERweb REST API returns boundaries by FIPS code or latitude/longitude; used with the Data API and Geocoder",
+      "url": "https://www.census.gov/data/developers/guidance/api-user-guide.Overview.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "TIGERweb vintages: Current (ACS 2025), BAS 2025, ACS 2024, 2020 Census; viewer, HTML data files, REST and WMS",
+      "url": "https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html"
+    }
+  ],
+  "spatial_resolution": "Full TIGER detail, served by scale",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "TIGERweb",
+    "REST API",
+    "WMS",
+    "map services",
+    "boundaries",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "Current vintage (2026 ACS geography) and archived vintages (2020 Census, Economic Census, generalised ACS 2012 onward)",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2012
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "TIGERweb applications, REST and WMS map services",
+  "type": "data",
+  "update_frequency": "annual"
+}

@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code (WorldModelers version)",
+      "url": "https://github.com/mjpuma/FSC-WorldModelers"
+    },
+    {
+      "kind": "paper",
+      "label": "Heslin et al. 2020 paper",
+      "url": "https://doi.org/10.3389/fsufs.2020.00026"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Heslin A. et al. (2020) Simulating the cascading effects of an extreme agricultural production shock, Frontiers in Sustainable Food Systems 4:26, doi:10.3389/fsufs.2020.00026",
+  "continents": [],
+  "cost": "free",
+  "countries": [],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.3389/fsufs.2020.00026",
+    "name": "food shocks cascade fsc model country level agent based network model of food supply shocks",
+    "repo": "github.com/mjpuma/fsc-worldmodelers",
+    "url": "https://github.com/mjpuma/FSC-WorldModelers"
+  },
+  "description": "The Food Shocks Cascade model is a simple agent-based network model that computes the chain reactions caused by a production shortfall as countries draw down reserves and cut exports, based on dynamic food balance sheets. It was developed by Michael Puma and co-authors and published in Heslin et al. (2020), which simulated a contemporary US Dust Bowl, building on the earlier cereals network shocks model of Marchand et al. (2016). Countries are nodes linked by bilateral trade; a scenario sets fractional production declines by country and year, and the model redistributes shortfalls through trade and stocks, reporting changes in supply, reserves, exports and consumption per country. Inputs are the FAOSTAT detailed trade matrix, FAOSTAT production and USDA grain stocks, and a scenario library includes Covid-19 wheat declines and the Dust Bowl case; resolution can be set at country or province level and yearly steps. The R code is on GitHub, free to download; no licence file was found in the repository, so reuse terms are unclear. Caveats: prices are not modelled, trade responses follow fixed rules, not markets, and results depend on the stock data. Simulation uses: cascading failure analysis of the global food trade network, resilience scenarios for crop failures, and stress tests of import-dependent countries. Related records: the earlier reserves and trade model (model-code-for-reserves-and-trade-jointly-determine-exposure-to-food-supply-shocks-p02992), and inputs FAOSTAT (data-faostat) and USDA PSD Online (data-usda-psd-online).",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "food system simulation model open source R package food supply shock propagation trade network",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought",
+    "pandemic"
+  ],
+  "homepage": "https://github.com/mjpuma/FSC-WorldModelers",
+  "id": "model-food-shocks-cascade-fsc",
+  "inputs": [
+    "FAOSTAT detailed trade matrix",
+    "FAOSTAT crop production",
+    "USDA PSD grain stocks",
+    "Production decline scenario by country and year"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "No licence file in the repository (terms unclear)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "agent_based",
+    "network"
+  ],
+  "name": "Food Shocks Cascade (FSC) model: country-level agent-based network model of food supply shocks",
+  "outputs": [
+    "Change in supply, reserves and exports per country",
+    "Consumption shortfalls",
+    "Cascade over years"
+  ],
+  "provider": "Michael J. Puma (Columbia University and NASA GISS) with Heslin, Marchand and co-authors",
+  "related_ids": [
+    "model-code-for-reserves-and-trade-jointly-determine-exposure-to-food-supply-shocks-p02992",
+    "data-faostat",
+    "data-usda-psd-online"
+  ],
+  "repository": "https://github.com/mjpuma/FSC-WorldModelers",
+  "runs_on": [],
+  "sectors": [
+    "services.food_supply",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Food Shocks Cascade Model: simple agent-based network model computing chain-reactions due to production anomalies from dynamic food balance sheets at country level; written in R; Heslin et al. 2020 US Dust Bowl; earlier version cereals-network-shocks (Marchand et al. 2016); inputs FAOSTAT trade matrix and production, USDA PSD grains; scenario library incl. COVID wheat decline",
+      "url": "https://raw.githubusercontent.com/mjpuma/FSC-WorldModelers/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "no LICENSE, LICENSE.md or LICENSE.txt found on master",
+      "url": "https://raw.githubusercontent.com/mjpuma/FSC-WorldModelers/master/LICENSE"
+    }
+  ],
+  "tags": [
+    "food trade",
+    "shock propagation",
+    "food balance sheets",
+    "agent-based network"
+  ],
+  "title_en": "Food Shocks Cascade (FSC) model: country-level agent-based network model of food supply shocks",
+  "type": "model",
+  "validated_on": []
+}

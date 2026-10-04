@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Download Data",
+      "note": "data or download page linked from the record homepage (2026-10-01); found on https://www.hec.usace.army.mil/confluence/nsi",
+      "url": "https://www.hec.usace.army.mil/fwlink/?linkid=nsi-downloads"
+    },
+    {
+      "kind": "portal",
+      "label": "NSI home: download, user guides, technical references",
+      "url": "https://www.hec.usace.army.mil/confluence/nsi"
+    },
+    {
+      "kind": "docs",
+      "label": "Technical documentation (2026 Base)",
+      "url": "https://www.hec.usace.army.mil/confluence/nsi/technicalreferences/latest/technical-documentation"
+    },
+    {
+      "kind": "docs",
+      "label": "Release notes and FAQ",
+      "url": "https://www.hec.usace.army.mil/confluence/nsi/technicalreferences/latest/release-notes"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "economic_financial",
+    "vulnerability_fragility",
+    "reference_context"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "national structure inventory nsi",
+    "url": "https://hec.usace.army.mil/confluence/nsi"
+  },
+  "description": "The National Structure Inventory (NSI) is a nationally consistent, point-based inventory of U.S. structures with the attributes that hazard consequence models need: occupancy type, square footage, stories, foundation type and height, building material, population estimates and depreciated and full replacement value. The U.S. Army Corps of Engineers created and maintains it to simplify the preparation of consequence analyses; flood risk is the primary use, and it also serves FEMA and interagency work on other natural and technological hazards. The 2026 Base dataset, the first update since 2022, is modelled from parcel data, business data, building footprints, HIFLD facility layers and Census data, and adds vehicle availability, building height, full replacement cost and the Census Community Resilience Estimate; dollar values reflect costs of about August 2025. Access: state GeoPackage and GeoParquet downloads and a REST API returning GeoJSON by county or bounding box, with a common schema. Licence: no licence is named on the pages read; the data are public and free. Caveats: USACE states it is a modelled exposure inventory, not verified structure by structure, suited to national and regional screening; values exclude land and market effects, and growing areas lag. Simulation uses are flood and multi-hazard exposure, loss and life-safety estimation, resilience and emergency planning. Related records: FEMA USA Structures (footprints), Hazus (consequence modelling).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R30",
+      "source": "built_environment-national-structure-inventory"
+    }
+  ],
+  "formats": [
+    "geopackage",
+    "parquet",
+    "geojson",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.hec.usace.army.mil/confluence/nsi",
+  "id": "data-usace-national-structure-inventory",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026",
+  "licence": "Not stated on the pages read (U.S. federal data, publicly downloadable)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "National Structure Inventory (NSI)",
+  "provider": "U.S. Army Corps of Engineers (USACE), Hydrologic Engineering Center",
+  "related_ids": [],
+  "schema_summary": "fd_id, occupancy type, square footage, stories, foundation type and height, building material, population estimates, depreciated and full replacement value (about August 2025 costs), vehicles, height, census Community Resilience Estimate",
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, 2026 Base, USACE maintenance, limitations statement, formats and API, sources",
+      "url": "https://www.hec.usace.army.mil/confluence/nsi/technicalreferences/latest/technical-documentation"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "NSI 2026 first update since 2022; new fields; improved estimates",
+      "url": "https://www.hec.usace.army.mil/confluence/nsi/technicalreferences/latest/release-notes"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Replacement costs as of about August 2025; values exclude land; data lag",
+      "url": "https://www.hec.usace.army.mil/confluence/nsi/technicalreferences/latest/frequently-asked-questions"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://www.hec.usace.army.mil/confluence/nsi"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.hec.usace.army.mil/confluence/nsi/technicalreferences/latest/technical-documentation"
+    }
+  ],
+  "spatial_resolution": "Point per structure",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "structure inventory",
+    "consequence analysis",
+    "flood risk",
+    "replacement value",
+    "USACE"
+  ],
+  "temporal_resolution": "versioned base layers (2022, 2026)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "National Structure Inventory (NSI)",
+  "type": "data"
+}

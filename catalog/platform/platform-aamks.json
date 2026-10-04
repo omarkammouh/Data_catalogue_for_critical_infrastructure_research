@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/aamks/aamks"
+    },
+    {
+      "kind": "viewer",
+      "label": "Test server at Fire University (preprocessing only)",
+      "note": "Did not answer from this environment on 2026-09-26",
+      "url": "https://aamks.apoz.edu.pl"
+    },
+    {
+      "kind": "docs",
+      "label": "Wiki",
+      "url": "https://github.com/aamks/aamks/wiki"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "aamks",
+    "repo": "github.com/aamks/aamks",
+    "url": "https://github.com/aamks/aamks"
+  },
+  "deployment": [
+    "own_server",
+    "hosted_service"
+  ],
+  "description": "Aamks is an open-source, web-based platform for assessing the fire safety of people in buildings through combined Monte Carlo simulation of fire and evacuation. The user sets project variables such as the number of simulations and the building category and draws the geometry in the Aamks.Apainter editor; Aamks then generates many CFAST fire simulations and Aamks.Evac evacuation simulations, dispatches them over a network of workers, stores results in a PostgreSQL database, compiles them into distributions of outcomes for a report, and animates individual runs, with occupants moving through the building and affected by fire and smoke. It is developed by a team linked to the Fire University (Akademia Pożarnicza, apoz.edu.pl) in Warsaw, which hosts its test server and contact address. Coverage is any building the user draws; resolution is the compartment for fire and the individual occupant for evacuation. The back end needs Linux, PostgreSQL, Apache and Python, using navigation meshes and RVO2 for movement; source is on GitHub (tags up to v2.1.1) with a wiki. Licence: GNU GPL v3, free. Caveats: self-hosting is needed for real computations, since the university's public test server offers preprocessing only and did not answer from here on the check date. Simulation uses: probabilistic fire risk assessment and evacuation (agent-based) of buildings, including critical facilities, for emergency response planning. Related: it runs NIST's CFAST zone fire model (catalogued as model-cfast).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "fire and evacuation Monte Carlo platform (register services-aamks)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry Aamks",
+      "route": "R06",
+      "source": "services-aamks (register)"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://github.com/aamks/aamks",
+  "hosted_models": [
+    "model-cfast",
+    "Aamks.Evac (evacuation)"
+  ],
+  "id": "platform-aamks",
+  "interfaces": [
+    "web_app",
+    "desktop_gui",
+    "other"
+  ],
+  "interoperability": [
+    "CFAST input files",
+    "PostgreSQL results database"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-10-17",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://aamks.apoz.edu.pl"
+    ]
+  },
+  "maturity": "active",
+  "name": "Aamks",
+  "open_source": true,
+  "platform_kind": [
+    "modelling_suite"
+  ],
+  "provider": "Aamks team, Fire University (Akademia Pożarnicza), Warsaw",
+  "related_ids": [
+    "model-cfast"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "agent_based",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Web-based platform for fire safety of humans in buildings; Monte Carlo of CFAST fire and Aamks.Evac; workflow; Linux, Postgres, Apache, Python; test server",
+      "url": "https://raw.githubusercontent.com/aamks/aamks/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU GPL v3",
+      "url": "https://raw.githubusercontent.com/aamks/aamks/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: tags up to v2.1.1",
+      "url": "https://github.com/aamks/aamks"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings",
+    "services.emergency_services"
+  ],
+  "tags": [
+    "fire safety",
+    "evacuation",
+    "Monte Carlo",
+    "CFAST",
+    "risk assessment",
+    "buildings"
+  ],
+  "title_en": "Open-source web-based platform for assessing fire safety of people in buildings",
+  "type": "platform"
+}

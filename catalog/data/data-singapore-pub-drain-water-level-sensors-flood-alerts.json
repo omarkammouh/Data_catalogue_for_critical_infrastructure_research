@@ -1,0 +1,153 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Flood Alerts across Singapore (API, data.gov.sg)",
+      "url": "https://data.gov.sg/datasets/d_f1404e08587ce555b9ea3f565e2eb9a3/view"
+    },
+    {
+      "kind": "viewer",
+      "label": "PUB water level sensors and CCTV viewer",
+      "url": "https://app.pub.gov.sg/waterlevel/pages/WaterLevelSensors.aspx"
+    },
+    {
+      "kind": "portal",
+      "label": "PUB Water Level Sensors dataset (data.gov.sg)",
+      "url": "https://data.gov.sg/datasets/d_31333fa5cf0834f012d840365b336610/view"
+    },
+    {
+      "kind": "docs",
+      "label": "PUB flood forecasting and monitoring",
+      "url": "https://www.pub.gov.sg/Public/KeyInitiatives/Flood-Resilience/Flood-Forecasting-and-Monitoring"
+    }
+  ],
+  "access_note": "Sensor locations are a small XLSX/GeoJSON layer; flood alert events come from a public real-time API; live water levels are shown in PUB's viewer and alert subscriptions.",
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "SG"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "system_description",
+    "hazards",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pub drain water level sensors and flood alerts api singapore data gov sg",
+    "url": "https://data.gov.sg/datasets/d_31333fa5cf0834f012d840365b336610/view"
+  },
+  "description": "PUB, Singapore's national water agency, publishes on the national open data portal the locations of its drain and canal water level sensors and a real-time API of flood alert events across the island. The sensor layer, created in 2023 and last updated on 13 April 2026 on a half-yearly cycle, lists each sensor point with a name and description in a small XLSX or GeoJSON file, while the flood alerts API returns timestamped observation records every few minutes; PUB notes that flood warning notices are not included. PUB states that its Catchment and Waterways Operations System integrates more than 1,000 water level sensors, over 500 CCTV cameras, rain gauges, weather radar and response vehicle locations, and live levels can be viewed in its water level viewer. Both sets are free under the Singapore Open Data Licence, which allows commercial use. Caveats: the portal gives sensor locations but not the historical water level series, alert records can be empty when no flooding occurs, and the page layer size suggests it may cover fewer sensors than PUB's total. Simulation uses: real-time and event data for urban flash flood models and digital twins of the drainage system, validating drainage capacity under intense rainfall, emergency response routing, and climate adaptation of canals and drains. Related records: the Dutch LIWO maps (data-netherlands-liwo-flood-information) are a scenario-based counterpart for national flood information.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: PUB, Singapore's National Water Agency (SG, utility) https://www.pub.gov.sg/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "data.gov.sg PUB water level sensors drains canals real-time API dataset",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "geojson",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://data.gov.sg/datasets/d_31333fa5cf0834f012d840365b336610/view",
+  "id": "data-singapore-pub-drain-water-level-sensors-flood-alerts",
+  "languages": [
+    "en"
+  ],
+  "licence": "Singapore Open Data Licence (worldwide, royalty-free, commercial and non-commercial use)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://app.pub.gov.sg/waterlevel/pages/WaterLevelSensors.aspx"
+    ]
+  },
+  "maturity": "active",
+  "name": "PUB drain water level sensors and flood alerts API (Singapore, data.gov.sg)",
+  "notes": "One call to the public flood alerts endpoint was made to see the record structure (records had empty readings at the time); no sensor file was downloaded. The data.gov.sg dataset pages failed to render in the browser, so metadata came from the portal's metadata API.",
+  "provider": "PUB, Singapore's National Water Agency",
+  "related_ids": [
+    "data-netherlands-liwo-flood-information"
+  ],
+  "schema_summary": "sensor layer: Name and Description attributes per sensor point (37.8 kB file); flood alerts API: records with datetime, item type (observation), readings list and station flag, updatedTimestamp; flood warning notices are not included",
+  "sectors": [
+    "water.stormwater_drainage",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "climate_adaptation",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "dataset metadata: created 2023-07-31, last updated 2026-04-13, XLSX, 37,846 bytes, attributes Name and Description, managed by PUB",
+      "url": "https://api-production.data.gov.sg/v2/public/api/datasets/d_31333fa5cf0834f012d840365b336610/metadata"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "collection description and half-yearly frequency",
+      "url": "https://api-production.data.gov.sg/v2/public/api/collections/1541/metadata"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "flood alerts API description, warning notices excluded, last updated 2025-12-16",
+      "url": "https://api-production.data.gov.sg/v2/public/api/datasets/d_f1404e08587ce555b9ea3f565e2eb9a3/metadata"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "CWOS with more than 1,000 water level sensors, over 500 CCTV, rain gauges, radar",
+      "url": "https://www.pub.gov.sg/Public/KeyInitiatives/Flood-Resilience/Flood-Forecasting-and-Monitoring"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "licence terms",
+      "url": "https://data.gov.sg/open-data-licence"
+    }
+  ],
+  "spatial_resolution": "point locations of drain and canal water level sensors",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "urban drainage",
+    "water level sensors",
+    "flash floods",
+    "flood alerts",
+    "real-time API",
+    "canals",
+    "Singapore",
+    "PUB",
+    "open data"
+  ],
+  "temporal_coverage": "current sensor network; flood alert events in real time",
+  "temporal_resolution": "alert records about every two minutes",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "PUB drain water level sensors and flood alerts API (Singapore, data.gov.sg)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

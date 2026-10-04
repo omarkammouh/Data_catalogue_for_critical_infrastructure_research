@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "DOB Violations (BIS, older civil penalties) on NYC Open Data",
+      "url": "https://data.cityofnewyork.us/d/3h2n-5cm9"
+    },
+    {
+      "kind": "api",
+      "label": "DOB Safety Violations (DOB NOW, newer civil penalties)",
+      "url": "https://data.cityofnewyork.us/d/855j-jady"
+    },
+    {
+      "kind": "api",
+      "label": "DOB ECB Violations",
+      "url": "https://data.cityofnewyork.us/d/6bgk-3dad"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "condition_ageing",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nyc department of buildings violations dob violations and dob safety violations",
+    "url": "https://data.cityofnewyork.us/d/3h2n-5cm9"
+  },
+  "description": "The New York City Department of Buildings publishes its civil penalties, commonly called DOB violations, on NYC Open Data in two tables. DOB Violations holds older penalties issued in the Buildings Information System, updated every weekday since 2015, with 18 fields including borough, building identification number, block and lot, issue and disposition dates, violation type, category, device number and description. DOB Safety Violations holds newer penalties issued or payable in DOB NOW since 2023, updated daily, with violation type, status, remarks, device number and type, cycle end date, coordinates, BBL and census tract. Summonses adjudicated by OATH/ECB are in a separate DOB ECB Violations table, and some violations appear in more than one table. Coverage: buildings in New York City. Access: CSV, JSON and Socrata API from NYC Open Data. Licence: NYC Open Data terms; free. Caveats: violations reflect inspections and complaints, not a full condition survey, and duplicates across tables must be handled. Simulation uses are building condition and code compliance indicators for risk scoring, elevator and boiler device histories, and ageing studies. Related records: the NYC facade compliance filings, PLUTO and the NYC building footprints.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:condition_ageing, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://data.cityofnewyork.us/d/3h2n-5cm9",
+  "id": "data-nyc-dob-violations",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "NYC Open Data terms of use",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NYC Department of Buildings violations (DOB Violations and DOB Safety Violations)",
+  "provider": "New York City Department of Buildings (DOB)",
+  "related_ids": [
+    "data-nyc-pluto-mappluto",
+    "data-nyc-building-footprints"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, 18 columns, weekday updates, public since 2015-12-11, rows updated 2026-09-25",
+      "url": "https://data.cityofnewyork.us/api/views/3h2n-5cm9.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, 24 columns, daily updates, public since 2023-11-22",
+      "url": "https://data.cityofnewyork.us/api/views/855j-jady.json"
+    }
+  ],
+  "tags": [
+    "New York City",
+    "building violations",
+    "DOB",
+    "code enforcement",
+    "condition"
+  ],
+  "title_en": "NYC Department of Buildings violations (DOB Violations and DOB Safety Violations)",
+  "type": "data",
+  "update_frequency": "daily"
+}

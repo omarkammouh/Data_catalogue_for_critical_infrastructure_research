@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Social Infrastructure Information Platform",
+      "url": "https://www.ipf.mlit.go.jp/ipf/"
+    },
+    {
+      "kind": "portal",
+      "label": "Road bridges GeoJSON by prefecture (ipf0101)",
+      "url": "https://www.geospatial.jp/ckan/dataset/ipf0101"
+    },
+    {
+      "kind": "portal",
+      "label": "Tunnels (ipf0103)",
+      "url": "https://www.geospatial.jp/ckan/dataset/ipf0103"
+    },
+    {
+      "kind": "portal",
+      "label": "Dams (ipf0201)",
+      "url": "https://www.geospatial.jp/ckan/dataset/ipf0201"
+    },
+    {
+      "kind": "portal",
+      "label": "Sewage treatment plants (ipf1202)",
+      "url": "https://www.geospatial.jp/ckan/dataset/ipf1202"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "JP"
+  ],
+  "data_family": [
+    "system_description",
+    "condition_ageing"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "mlit social infrastructure information platform 社会資本情報フラットフォーム bridges tunnels dams sluices ports airports treatment plants with inspection grades by prefecture",
+    "url": "https://ipf.mlit.go.jp/ipf"
+  },
+  "description": "The Social Infrastructure Information Platform (trial version) of Japan's Ministry of Land, Infrastructure, Transport and Tourism aggregates basic and maintenance information on public infrastructure so that facilities can be browsed and compared across owners. Contents: GeoJSON files per prefecture for 18 facility types: road bridges, pedestrian bridges, tunnels, rock and snow sheds, large culverts and gantry signs; dams, sabo (erosion control) works, sluice gates and sluice pipes; port mooring facilities; urban parks; airports; aids to navigation; government buildings; sewage treatment plants; and water purification plants. Each record carries the facility name, owner (national, prefectural, municipal or expressway company), prefecture and municipality, coordinates, year completed or opened, dimensions such as bridge length and width, and for road structures the overall inspection grade (I to IV) and inspection year; the Tokyo bridge file alone holds 635 bridges. Producer: MLIT, compiling data from road, river, port, airport, sewerage and water supply administrators. Coverage: all 47 prefectures for most types; files were last updated in 2021 and 2022. Format and access: GeoJSON downloads from the G-Spatial Information Center CKAN and a web viewer at ipf.mlit.go.jp. Free under the platform's own terms of use. Caveats: it is a trial platform and coverage differs by facility type and owner, municipal bridges are incomplete, and field names are in Japanese. Simulation uses: an asset and condition inventory for bridge and tunnel risk ranking, seismic and flood exposure of dams, plants and ports, and network vulnerability studies that weight links by structure condition. Related records: National Land Numerical Information roads (data-japan-ksj-roads-n01) and water supply facilities (data-japan-ksj-water-supply-facilities-p21).",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source jp-sdi-front-geospatial-jp: provider pages read (round 2 register piece)",
+      "route": "R04",
+      "source": "jp-sdi-front-geospatial-jp"
+    }
+  ],
+  "formats": [
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.ipf.mlit.go.jp/ipf/",
+  "id": "data-japan-mlit-social-infrastructure-information-platform",
+  "languages": [
+    "ja"
+  ],
+  "licence": "platform's own terms of use (独自利用規約)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.ipf.mlit.go.jp/ipf/"
+    ]
+  },
+  "maturity": "stale",
+  "name": "MLIT Social Infrastructure Information Platform (社会資本情報プラットフォーム): bridges, tunnels, dams, sluices, ports, airports, treatment plants with inspection grades, by prefecture",
+  "provider": "Ministry of Land, Infrastructure, Transport and Tourism of Japan (MLIT), Minister's Secretariat; distributed through the G-Spatial Information Center",
+  "related_ids": [
+    "data-japan-ksj-roads-n01",
+    "data-japan-ksj-water-supply-facilities-p21"
+  ],
+  "sectors": [
+    "transport.road",
+    "water.dams_flood_defences",
+    "water.wastewater",
+    "water.drinking_water",
+    "transport.maritime_ports",
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "20 datasets: 18 facility types, 1 to 47 prefecture files each, modified 2024-10",
+      "url": "https://www.geospatial.jp/ckan/api/3/action/package_search?q=社会資本情報プラットフォーム"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Tokyo bridges GeoJSON read: 635 features with owner, coordinates, year, length, width, inspection grade and year",
+      "url": "https://www.geospatial.jp/ckan/dataset/ipf0101"
+    }
+  ],
+  "tags": [
+    "Japan",
+    "bridges",
+    "inspection grades",
+    "infrastructure register",
+    "MLIT"
+  ],
+  "title_en": "MLIT Social Infrastructure Information Platform : bridges, tunnels, dams, sluices, ports, airports, treatment plants with inspection grades, by prefecture",
+  "type": "data"
+}

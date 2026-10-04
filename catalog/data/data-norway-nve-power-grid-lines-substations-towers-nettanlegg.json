@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Nettanlegg MapServer (REST query)",
+      "url": "https://kart.nve.no/enterprise/rest/services/Nettanlegg4/MapServer"
+    },
+    {
+      "kind": "api",
+      "label": "WMS",
+      "url": "https://kart.nve.no/enterprise/services/Nettanlegg4/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+    },
+    {
+      "kind": "docs",
+      "label": "Geonorge metadata: Kraftlinjer",
+      "url": "https://kartkatalog.geonorge.no/Metadata/uuid/4ab8c70a-215a-4e1a-847b-b3c044526d5e"
+    },
+    {
+      "kind": "docs",
+      "label": "Geonorge metadata: Transformatorstasjoner",
+      "url": "https://kartkatalog.geonorge.no/Metadata/uuid/ae55f901-480d-4fdc-8f1e-58ef3004d169"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NO"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nve norwegian power grid layers nettanlegg transmission regional and distribution lines submarine cables 672 899 towers and poles and 1 549 transformer stations",
+    "url": "https://kart.nve.no/enterprise/rest/services/Nettanlegg4/MapServer"
+  },
+  "description": "The Norwegian Water Resources and Energy Directorate (NVE) publishes the national high-voltage power grid as open map data, catalogued in Geonorge and data.norge.no. Contents: the Nettanlegg service holds 390 transmission grid overhead line features, 3,708 regional grid lines, 141,401 high-voltage distribution line features (1 kV and above), 8,747 submarine cable features, 672,899 towers and poles, 1,549 transformer and switching stations, and the 158 area licence holders (distribution system operators) with their service areas. Producer: NVE, from licence data reported by grid companies. Coverage: all of Norway. Format and access: ArcGIS MapServer with query (JSON and GeoJSON export) and WMS on kart.nve.no, and SOSI downloads through Geonorge; updates are irregular as licences change. Licence: Norwegian Licence for Open Government Data (NLOD). Caveats: the transmission and regional layers hold overhead lines only, underground cables are not included, and geometry accuracy varies by source; this is a map of assets, not an electrical model with impedances. Simulation uses: building a topological model of the Norwegian grid for contingency and cascading failure studies, exposure of lines and towers to landslides, avalanches and icing, and linking hydropower plants to substations. Related records: the NVE FRAM power market dataset (data-nve-fram-open-power-market-dataset) gives market model inputs from the same agency.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source no-portal-data-norge-no: provider pages read (round 2 register piece)",
+      "route": "R02",
+      "source": "no-portal-data-norge-no"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "geojson",
+    "other_vector"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://kart.nve.no/enterprise/rest/services/Nettanlegg4/MapServer",
+  "id": "data-norway-nve-power-grid-lines-substations-towers-nettanlegg",
+  "languages": [
+    "no"
+  ],
+  "licence": "NLOD 1.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NVE Norwegian power grid layers (Nettanlegg): transmission, regional and distribution lines, submarine cables, 672,899 towers and poles and 1,549 transformer stations",
+  "provider": "Norges vassdrags- og energidirektorat (NVE, Norwegian Water Resources and Energy Directorate)",
+  "related_ids": [
+    "data-nve-fram-open-power-market-dataset"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "8 layers; returnCountOnly counts per layer",
+      "url": "https://kart.nve.no/enterprise/rest/services/Nettanlegg4/MapServer?f=json"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "NLOD licence, SOSI format, irregular updates, lines 1 kV and above, overhead only",
+      "url": "https://kartkatalog.geonorge.no/api/getdata/4ab8c70a-215a-4e1a-847b-b3c044526d5e"
+    }
+  ],
+  "tags": [
+    "Norway",
+    "NVE",
+    "power grid",
+    "transmission lines",
+    "substations",
+    "towers"
+  ],
+  "title_en": "NVE Norwegian power grid layers (Nettanlegg): transmission, regional and distribution lines, submarine cables, 672,899 towers and poles and 1,549 transformer stations",
+  "type": "data"
+}

@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Dataset page (CSV export)",
+      "url": "https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/ua7e-t2fy"
+    },
+    {
+      "kind": "api",
+      "label": "Socrata API (dataset ua7e-t2fy)",
+      "url": "https://data.cdc.gov/resource/ua7e-t2fy.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance",
+    "health_impacts"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "nhsn weekly hospital respiratory data us inpatient and icu beds occupancy and covid 19 influenza and rsv hospital patients and admissions by state from august 2020",
+    "url": "https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/ua7e-t2fy"
+  },
+  "description": "This series tracks how full US hospitals are and how many patients they are treating for COVID-19, influenza and RSV, week by week. It is published by the Centers for Disease Control and Prevention through its National Healthcare Safety Network (NHSN), to which hospitals report. For each week and each state, territory and the nation it gives the number of inpatient beds and ICU beds (adult and paediatric) and how many are occupied, the numbers of hospitalised and ICU patients with each confirmed virus, and new admissions by age band. Coverage runs from August 2020 to this week. The data are free and available through the CDC open data portal as a CSV download or a JSON API, in the public domain. Caveats: values are aggregates by jurisdiction, not by hospital; reporting was voluntary between May and October 2024, so that period is incomplete; and RSV figures were voluntary until November 2024. Simulation uses: calibrating hospital surge and bed occupancy models during epidemics, setting baseline occupancy for disaster scenarios, and testing capacity planning against observed peaks. Related records: the NHSN healthcare-associated infection data (data-cdc-nhsn-hai-progress-report-data), the California COVID-19 hospital capacity data (data-california-covid19-hospital-capacity-by-county) and the AHA Annual Survey (data-aha-annual-survey-database) for hospital-level beds.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hand-off to the services piece (integrator list handoffs/services.csv): CDC NHSN hospital bed capacity project",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/ua7e-t2fy",
+  "id": "data-cdc-nhsn-hospital-respiratory-data",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "Public Domain U.S. Government",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NHSN Weekly Hospital Respiratory Data (US): inpatient and ICU beds, occupancy and COVID-19, influenza and RSV hospital patients and admissions by state, from August 2020",
+  "provider": "Centers for Disease Control and Prevention (CDC), National Healthcare Safety Network (NHSN), Division of Healthcare Quality Promotion",
+  "related_ids": [
+    "data-cdc-nhsn-hai-progress-report-data",
+    "data-california-covid19-hospital-capacity-by-county",
+    "data-aha-annual-survey-database"
+  ],
+  "schema_summary": "weekendingdate, jurisdiction; inpatient beds (all, adult, paediatric) and occupied; ICU beds and occupied; hospitalised patients and ICU patients with confirmed COVID-19, influenza and RSV (adult, paediatric, total); new admissions by age band for each virus; further metrics",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Dataset metadata: Weekly Hospital Respiratory Data (HRD) Metrics by Jurisdiction, NHSN; attribution CDC DHQP Surveillance Branch, NHSN; licence Public Domain U.S. Government; weekly hospital respiratory data aggregated to national and state or territory levels reported to NHSN from August 2020; mandated reporting through 30 April 2024, voluntary 1 May to 31 October 2024, mandated again from 1 November 2024; RSV voluntary until 1 November 2024; columns as in the schema summary; rows updated 2026-09-25",
+      "url": "https://data.cdc.gov/api/views/ua7e-t2fy.json"
+    }
+  ],
+  "spatial_resolution": "State, territory and national",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "hospital capacity",
+    "ICU beds",
+    "COVID-19",
+    "influenza",
+    "RSV",
+    "NHSN"
+  ],
+  "temporal_coverage": "August 2020 to September 2026",
+  "temporal_resolution": "Weekly",
+  "temporal_resolution_class": "weekly",
+  "title_en": "NHSN Weekly Hospital Respiratory Data (US): inpatient and ICU beds, occupancy and COVID-19, influenza and RSV hospital patients and admissions by state, from August 2020",
+  "type": "data",
+  "update_frequency": "weekly"
+}

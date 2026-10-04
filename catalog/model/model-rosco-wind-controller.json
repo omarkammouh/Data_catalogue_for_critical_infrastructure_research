@@ -1,0 +1,93 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/NatLabRockies/ROSCO"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/NatLabRockies/ROSCO/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Abbas et al. (2021). A Reference Open-Source Controller for Fixed and Floating Offshore Wind Turbines. Wind Energy Science Discussions. https://doi.org/10.5194/wes-2021-19",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rosco reference wind turbine controller",
+    "repo": "github.com/natlabrockies/rosco",
+    "url": "https://github.com/NatLabRockies/ROSCO"
+  },
+  "description": "ROSCO provides a reference wind-turbine controller and tools to tune and test it. National laboratory and University of Colorado contributors publish a Fortran controller with a mainly Python toolbox, example turbine cases, OpenFAST input/output utilities and simple one-degree-of-freedom simulations. Users supply turbine parameters and model files; outputs include controller settings and simulated responses. It is a generic component-level resource without a fixed geographic coverage or observation period. The source repository, documentation and examples are public and free under Apache-2.0. Controller integration uses the Bladed-style avrSWAP interface. The README states that OpenFAST versions after 3.5.0 support an extended interface, while other simulators should disable that extension. Toolbox compatibility also depends on matching the openfast-io version used to read turbine inputs. A limitation is that these dependency constraints restrict interchangeability across installations. ROSCO supports control experiments for fixed and floating wind turbines and helps explore generation performance before supplying aggregate assumptions to planning models such as PyPSA (model-pypsa). No turbine simulation or controller-safety assessment was performed during this review.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:NatLabRockies",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NatLabRockies/ROSCO",
+  "id": "model-rosco-wind-controller",
+  "inputs": [
+    "Turbine parameters",
+    "OpenFAST input files"
+  ],
+  "language": [
+    "fortran",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-28",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "ROSCO reference wind-turbine controller",
+  "notes": "G7 G7-0258. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Controller settings",
+    "Turbine response time series"
+  ],
+  "provider": "National Laboratory of the Rockies and contributors",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/NatLabRockies/ROSCO",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for NatLabRockies/ROSCO: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3ANatLabRockies&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/natlabrockies/rosco/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for electricity",
+  "type": "model"
+}

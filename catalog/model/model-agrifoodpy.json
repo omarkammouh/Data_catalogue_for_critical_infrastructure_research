@@ -1,0 +1,165 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "AgriFoodPy source code",
+      "url": "https://github.com/FixOurFood/AgriFoodPy"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation and examples",
+      "url": "https://agrifoodpy.readthedocs.io/en/latest/"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/AgriFoodPy/"
+    },
+    {
+      "kind": "repo",
+      "label": "agrifoodpy-shocks extension (shocks, crises and interventions)",
+      "url": "https://github.com/BAFR-UK/agrifoodpy-shocks"
+    },
+    {
+      "kind": "repo",
+      "label": "agrifoodpy-data companion data package",
+      "url": "https://github.com/FixOurFood/agrifoodpy-data"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "agrifoodpy modular food system modelling framework with the agrifoodpy shocks resilience extension",
+    "repo": "github.com/fixourfood/agrifoodpy",
+    "url": "https://github.com/FixOurFood/AgriFoodPy"
+  },
+  "description": "AgriFoodPy is a Python framework for building models of a national food system, from food supply and consumption to land use and emissions, and its agrifoodpy-shocks extension adds crises and resilience interventions that perturb food supply. The producers are the AgriFoodPy developers of the FixOurFood project and the BAFR-UK project on food resilience in the United Kingdom. Coverage: the framework works with any country's FAOSTAT food balance sheets, and the companion data package holds UK data such as land classification and land cover. Models are chained as nodes in a pipeline over xarray data, for example loading food balance sheets, scaling consumption and projecting to 2050; the shocks extension registers crises such as a severe drought with a severity path and vulnerability by channel (biological, logistics, labour, market) and interventions that build resilience. The code is available on GitHub and PyPI under the free BSD 3-Clause licence, with documentation and examples. Caveats: it works at national, item-level aggregates, not on physical supply chain networks, the shocks extension is new and small, and results depend on assumed severity and vulnerability values. Simulation uses: stress tests of national food supply under harvest failures or trade disruption, comparing resilience interventions, and linking food availability to climate adaptation scenarios. Related records: FAOSTAT food balances (data-faostat) are its main input, and the global food shock trade model (model-global-food-shock-trade) covers cross-border propagation.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "AgriFoodPy",
+      "route": "R05",
+      "source": "pypi"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "agrifoodpy-shocks",
+      "route": "R13",
+      "source": "pypi"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "agrifoodpy-data",
+      "route": "R13",
+      "source": "pypi"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "drought",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://github.com/FixOurFood/AgriFoodPy",
+  "id": "model-agrifoodpy",
+  "inputs": [
+    "FAOSTAT food balance sheets by country, item and year",
+    "Population, land use and emissions data",
+    "Agricultural Land Classification and land cover maps for the UK (companion data package)",
+    "Crisis severity and vulnerability, intervention resilience by channel (biological, logistics, labour, market) for shock runs"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "BSD-3-Clause (AgriFoodPy and agrifoodpy-shocks)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid"
+  ],
+  "name": "AgriFoodPy: modular food system modelling framework, with the agrifoodpy-shocks resilience extension",
+  "outputs": [
+    "Projected food supply and consumption by item to 2050",
+    "Emissions and land use under interventions",
+    "Perturbed food supply and availability under crises and resilience interventions"
+  ],
+  "provider": "FixOurFood project (AgriFoodPy developers) and the BAFR-UK project (Backcasting to Achieve Food Resilience in the UK)",
+  "regions": [
+    "United Kingdom"
+  ],
+  "related_ids": [
+    "data-faostat",
+    "model-global-food-shock-trade"
+  ],
+  "repository": "https://github.com/FixOurFood/AgriFoodPy",
+  "runs_on": [
+    "Python with xarray"
+  ],
+  "sectors": [
+    "services.food_supply",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "climate_adaptation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 0.2.1 uploaded 2026-08-05; FixOurFood developers; README: modelling of food consumption patterns, environmental impact and emissions, population and land use; pipeline manager; xarray container",
+      "url": "https://pypi.org/pypi/AgriFoodPy/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Extension for resilience modelling: shocks, interventions and crises affecting food supply, availability and land use; channels Bio, Log, Lab, Mark; YAML pipelines",
+      "url": "https://pypi.org/pypi/agrifoodpy-shocks/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Companion data: FAOSTAT FBS baseline projected to 2050, NDCs, Natural England ALC, UKCEH land cover",
+      "url": "https://pypi.org/pypi/agrifoodpy-data/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD-style licence, copyright 2023 AgriFoodPy developers",
+      "url": "https://raw.githubusercontent.com/FixOurFood/AgriFoodPy/main/LICENCE.rst"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD 3-Clause, copyright 2026 BAFR-UK",
+      "url": "https://raw.githubusercontent.com/BAFR-UK/agrifoodpy-shocks/main/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Shallow clone: last commit 2026-08-05; agrifoodpy-shocks last commit 2026-08-13",
+      "url": "https://github.com/FixOurFood/AgriFoodPy"
+    }
+  ],
+  "tags": [
+    "food system",
+    "food balance sheet",
+    "food resilience",
+    "shocks",
+    "pipeline",
+    "UK food policy"
+  ],
+  "title_en": "AgriFoodPy: modular food system modelling framework, with the agrifoodpy-shocks resilience extension",
+  "type": "model"
+}

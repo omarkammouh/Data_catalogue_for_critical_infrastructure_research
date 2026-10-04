@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "MIT release article",
+      "url": "https://aeroastro.mit.edu/news-impact/researchers-release-open-source-space-debris-model/"
+    },
+    {
+      "kind": "repo",
+      "label": "MOCAT-MC repository",
+      "url": "https://github.com/ARCLab-MIT/MOCAT-MC"
+    },
+    {
+      "kind": "repo",
+      "label": "MOCAT-SSEM repository",
+      "url": "https://github.com/ARCLab-MIT/MOCAT-SSEM"
+    },
+    {
+      "kind": "download",
+      "label": "pyssem on PyPI",
+      "url": "https://pypi.org/project/pyssem/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "mocat mit orbital capacity assessment tool mocat mc and mocat ssem",
+    "repo": "github.com/arclab-mit/mocat-mc",
+    "url": "https://aeroastro.mit.edu/news-impact/researchers-release-open-source-space-debris-model"
+  },
+  "description": "MOCAT is an open-source toolset from MIT's ARCLab that models the long-term evolution of the global low Earth orbit population to show how space debris grows and how well debris prevention measures work, as a basis for estimating orbital capacity. It has two parts: MOCAT-MC propagates individual objects with Monte Carlo analysis of parameters, fragmentation and collisions, and MOCAT-SSEM is a probabilistic source-sink model that propagates species (active slotted and unslotted satellites, derelicts and debris, with multi-mass variants) quickly enough to run on a personal computer in seconds to minutes. It was released as a public beta at the OECD Space Forum workshop in December 2023, with Richard Linares as principal investigator and support from DARPA and NASA's Office of Technology, Policy and Strategy. Both are MATLAB code, accessible on GitHub under the MIT licence, free, with example scenarios such as no future launches from January 2020; a Python port, pyssem, is on PyPI as a development release. Caveats: MOCAT-SSEM is labelled beta version 0.1, species models drop single-object detail, and results depend on launch and compliance assumptions. It supports simulation of collision cascades and capacity planning for satellite infrastructure and space sustainability policy; a related record is ESA's Space Weather Service Network.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "MIT MOCAT open-source space debris model",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://aeroastro.mit.edu/news-impact/researchers-release-open-source-space-debris-model/",
+  "id": "model-mocat-mit-orbital-capacity-assessment-tool",
+  "inputs": [
+    "initial space object population by species or individual objects",
+    "launch traffic scenarios",
+    "post-mission disposal and compliance assumptions",
+    "fragmentation and collision parameters"
+  ],
+  "language": [
+    "matlab",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-08",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "MOCAT, MIT Orbital Capacity Assessment Tool (MOCAT-MC and MOCAT-SSEM)",
+  "outputs": [
+    "projected LEO population by species and altitude over long horizons",
+    "collision and debris growth statistics",
+    "orbital capacity estimates"
+  ],
+  "provider": "MIT Astrodynamics, Space Robotics, and Controls Laboratory (ARCLab), Department of Aeronautics and Astronautics",
+  "related_ids": [
+    "data-esa-space-weather-service-network"
+  ],
+  "repository": "https://github.com/ARCLab-MIT/MOCAT-MC",
+  "sectors": [
+    "cross_cutting.space",
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "14 Dec 2023 public beta at OECD Space Forum; MOCAT-MC and MOCAT-SSEM; PI Richard Linares; DARPA and NASA OTPS support",
+      "url": "https://aeroastro.mit.edu/news-impact/researchers-release-open-source-space-debris-model/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MOCAT-MC: MATLAB Monte Carlo long-term LEO propagation, no-launch scenario from 1 Jan 2020, MIT License 2023 ARCLab",
+      "url": "https://raw.githubusercontent.com/ARCLab-MIT/MOCAT-MC/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MOCAT-SSEM beta version 0.1, source-sink species model, MATLAB, MOCAT-3, 4S and multi-mass workbooks",
+      "url": "https://raw.githubusercontent.com/ARCLab-MIT/MOCAT-SSEM/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "pyssem 0.1.dev465: source sink model for long-term LEO sustainability, MIT",
+      "url": "https://pypi.org/pypi/pyssem/json"
+    }
+  ],
+  "tags": [
+    "space debris",
+    "orbital capacity",
+    "Kessler syndrome",
+    "low Earth orbit",
+    "space sustainability"
+  ],
+  "title_en": "MOCAT, MIT Orbital Capacity Assessment Tool (MOCAT-MC and MOCAT-SSEM)",
+  "type": "model"
+}

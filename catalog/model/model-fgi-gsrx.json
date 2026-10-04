@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/nlsfi/FGI-GSRx"
+    },
+    {
+      "kind": "paper",
+      "label": "Spoofing data repository and FGI-GSRx analysis (GPS Solutions, 2024)",
+      "url": "https://doi.org/10.1007/s10291-024-01719-2"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FI"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fgi gsrx open source multi constellation gnss software defined receiver",
+    "repo": "github.com/nlsfi/fgi-gsrx",
+    "url": "https://github.com/nlsfi/FGI-GSRx"
+  },
+  "description": "FGI-GSRx is a multi-constellation GNSS software-defined receiver written in MATLAB by the Finnish Geospatial Research Institute (FGI) of the National Land Survey of Finland, used for about a decade in research on robust, resilient and precise positioning, navigation and timing. It processes raw in-phase and quadrature (I/Q) samples from GPS, Galileo, BeiDou and GLONASS through acquisition, tracking and position computation, and its modular design lets researchers insert new algorithms at any stage, for example for interference detection or spoofing mitigation. Recent versions add Galileo OSNMA navigation message authentication (with the FGI-OSNMA library), parallel tracking with MATLAB's Parallel Computing Toolbox (v2.1.1) and RINEX 3.04 navigation and observation output for Galileo and GPS (v2.1.2). It accompanies the updated edition of the textbook GNSS Software Receivers from Cambridge University Press, and FGI publishes jamming and spoofing datasets and configuration files for use with it. Coverage: software for any recording. Format and access: MATLAB source code on GitHub, free under GPL v3; MATLAB itself is commercial. Caveats: research code requiring MATLAB and familiarity with receiver processing; not a real-time receiver. Simulation uses: testing receiver resilience to jamming and spoofing, and generating degraded position solutions for scenarios where services depend on GNSS. Related records: the FGI jamming and spoofing dataset repository is its companion data, GNSS-SDR is an open C++ receiver, and Jammertest provides field trials.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "GNSS interference jamming statistical model open source GPS disruption probability analysis software",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/nlsfi/FGI-GSRx",
+  "id": "model-fgi-gsrx",
+  "inputs": [
+    "raw GNSS I/Q sample files",
+    "receiver configuration files"
+  ],
+  "language": [
+    "matlab"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-10",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "FGI-GSRx: open-source multi-constellation GNSS software-defined receiver",
+  "notes": "README and licence read from raw GitHub on 2026-09-26; paper details from Crossref metadata and the FGI-JSDR page. The Springer article itself refused automated fetches.",
+  "outputs": [
+    "acquisition and tracking results",
+    "position, velocity and time solutions",
+    "RINEX 3.04 files"
+  ],
+  "provider": "Finnish Geospatial Research Institute (FGI), National Land Survey of Finland",
+  "related_ids": [
+    "data-fgi-gnss-jamming-spoofing-dataset-repository",
+    "data-oakbat-gnss-spoofing-interference-test-battery",
+    "data-fraunhofer-iis-gnss-interference-datasets",
+    "platform-gnss-sdr"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README and versions",
+      "url": "https://raw.githubusercontent.com/nlsfi/FGI-GSRx/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "paper metadata",
+      "url": "https://api.crossref.org/works/10.1007/s10291-024-01719-2"
+    }
+  ],
+  "tags": [
+    "software-defined receiver",
+    "GNSS",
+    "spoofing",
+    "OSNMA",
+    "MATLAB"
+  ],
+  "title_en": "Fgi-gsrx multi-constellation gnss software-defined receiver",
+  "type": "model",
+  "validated_on": [
+    "FGI spoofing and jamming datasets"
+  ]
+}

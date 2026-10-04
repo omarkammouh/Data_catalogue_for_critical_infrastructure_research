@@ -1,0 +1,167 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Data downloads (API token required)",
+      "url": "https://opencellid.org/downloads.php"
+    },
+    {
+      "kind": "api",
+      "label": "API overview",
+      "url": "https://docs.opencellid.org/docs/api/overview"
+    },
+    {
+      "kind": "docs",
+      "label": "Database format",
+      "url": "https://docs.opencellid.org/docs/downloads/database-format"
+    },
+    {
+      "kind": "docs",
+      "label": "Licence and attribution",
+      "url": "https://docs.opencellid.org/docs/attribution"
+    },
+    {
+      "kind": "viewer",
+      "label": "Cell tower map",
+      "url": "https://opencellid.org/"
+    },
+    {
+      "kind": "portal",
+      "label": "Network statistics",
+      "url": "https://opencellid.org/stats.php"
+    }
+  ],
+  "access_note": "Free account and API access token needed for downloads and API; exports cover the last 18 months of observations.",
+  "access_restrictions": "registration",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "crs": "WGS 84 (decimal degrees)",
+  "data_family": [
+    "system_description",
+    "telecom_coverage_spectrum",
+    "crowdsourced_public_reports"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opencellid",
+    "url": "https://opencellid.org"
+  },
+  "description": "OpenCelliD is a community-built open database of mobile network cells: for each logical cell it gives the radio technology (GSM, CDMA, UMTS, LTE, 5G NR), mobile country and network codes, area and cell identifiers, an estimated latitude and longitude, an estimated range in metres, the number of measurements behind the estimate and first and last seen timestamps. It was started in 2008 by Thomas Landspurg so that phones without GPS could estimate their position from cell identifiers, was maintained by ENAiKOON from 2013 and has been maintained by Unwired Labs since July 2017. Coverage is worldwide: on 26 September 2026 the statistics page listed 55,133,881 cells in 219 countries, including 19.7 million LTE and 361,714 NR cells. Country files, the worldwide file and daily change files are CSV (gzip), regenerated daily by 02:00 GMT, and cover cells observed in the last 18 months; an HTTP API returns single cell positions and cells in an area, including older observations. Both need a free account and API access token. Data are licensed under CC BY-SA 4.0 with a visible credit to OpenCelliD, at no cost. Caveats: positions are estimated from crowdsourced observations, not surveyed tower sites; several cell identifiers can belong to one physical mast; coverage depends on where contributors travel, so rural areas and some operators are thin, and a download is not a complete inventory. Simulation uses: approximate locations and density of mobile base stations for hazard exposure of telecom sites, power-dependency and cascading failure studies, and coverage and resilience analysis. Related records: it complements regulator site registers and coverage maps in this catalogue and the OpenStreetMap telecom features shown in Open Infrastructure Map.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.telecom:telecom_coverage_spectrum",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://opencellid.org/",
+  "id": "data-opencellid",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "CC-BY-SA-4.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OpenCelliD",
+  "notes": "Cell positions are estimates from contributor measurements, not operator site data.",
+  "provider": "Unwired Labs (OpenCelliD community)",
+  "related_ids": [
+    "data-open-infrastructure-map",
+    "case_study-global-mobile-basestation-climate-vulnerability",
+    "data-cellmapper-crowdsourced-cell-tower-map",
+    "data-geotel-cell-tower-location-data",
+    "data-gsma-intelligence-mobile-network-coverage-data",
+    "data-openstreetmap-telecoms-tagging-guidelines",
+    "data-osiptel-peru-mobile-coverage-by-operator",
+    "data-wuerzburg-mobilfunk-antennen-standorte-opencellid",
+    "model-cell-tower-detection-maxar-osm-africa"
+  ],
+  "schema_summary": "radio, mcc, net, area, cell, unit, lon, lat, range, samples, changeable, created, updated, averageSignal",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "cascading_failure",
+    "resilience",
+    "network_flow"
+  ],
+  "size": "55,133,881 cells in 219 countries (statistics page, 2026-09-26)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "History: 2008 Landspurg, 2013 ENAiKOON, July 2017 Unwired Labs; radio types",
+      "url": "https://opencellid.org/about.php"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "55,133,881 total cells, 219 countries, 19,717,821 LTE, 361,714 NR",
+      "url": "https://opencellid.org/stats.php"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Country, worldwide and daily change exports with API token; last 18 months; attribution",
+      "url": "https://opencellid.org/downloads.php"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "CSV columns and types",
+      "url": "https://docs.opencellid.org/docs/downloads/database-format"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Daily exports by 02:00 GMT; coverage caveat, not a complete inventory",
+      "url": "https://docs.opencellid.org/docs/downloads/overview"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Licensed CC BY-SA 4.0 including API results",
+      "url": "https://docs.opencellid.org/docs/attribution"
+    }
+  ],
+  "spatial_resolution": "Point per logical cell; estimated position with an estimated range in metres",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "cell towers",
+    "base stations",
+    "mobile network",
+    "crowdsourced",
+    "geolocation",
+    "LTE",
+    "5G"
+  ],
+  "temporal_coverage": "2008 to present; exports limited to cells seen in the last 18 months",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2008
+  },
+  "temporal_resolution": "Snapshot with daily change files",
+  "temporal_resolution_class": "daily",
+  "title_en": "OpencelliD database of mobile network cells with radio technology and identifiers from 2008 to 2026",
+  "type": "data",
+  "update_frequency": "daily"
+}

@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "data.go.kr: K-water dam and weir hydrological operation information (open API)",
+      "url": "https://www.data.go.kr/data/15099110/openapi.do"
+    },
+    {
+      "kind": "portal",
+      "label": "data.go.kr: K-water dam and weir hydrological status information (CSV file)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.data.go.kr/data/15083335/fileData.do"
+    },
+    {
+      "kind": "portal",
+      "label": "K-water open data portal (dataset list)",
+      "url": "https://opendata.kwater.or.kr/open/data/list/list.do"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "KR"
+  ],
+  "data_family": [
+    "demand_operation",
+    "system_description",
+    "weather_observations"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "k water dam and weir hydrological operation data water level inflow release storage and k water open data portal",
+    "url": "https://data.go.kr/data/15099110/openapi.do"
+  },
+  "description": "K-water publishes hydrological operation data for the dams and weirs it manages on Korea's public data portal: dam water level, rainfall, inflow, total release, storage and storage rate at 61 sites (21 multipurpose dams, 14 water supply dams, the Nakdong estuary barrage, 3 flood control dams, 6 regulating reservoirs and 16 weirs), at 10-minute, hourly and daily steps from January 2006, with the period differing by site. K-water produced the data, which is offered as a yearly CSV file and as an open REST API (XML and JSON) with automatic approval of an API key; the portal states it is free with no restriction on the scope of use. K-water's own open data portal lists 413 datasets on water resources, water supply, sewerage, water quality and drought, among them the specifications of flood control dams and an integrated table of water treatment plants with location, capacity and supply area. Coverage is the dams and weirs operated by K-water in South Korea. Caveats: the file holds the latest 10,000 records, blanks occur where data were not aggregated, and water levels of all dams nationwide are published separately by the Han River Flood Control Office. Simulation uses: reservoir operation, inflow and release series for capacity planning and flood and drought response studies of dams and water supply. Related records: the Global Dam Watch database (data-global-dam-watch-database) and GRanD (data-grand-global-reservoir-and-dam-database).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "WAMIS 국가수자원관리종합정보시스템 수문자료 다운로드 댐 운영 자료 K-water 공공데이터",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "xml",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "drought"
+  ],
+  "homepage": "https://www.data.go.kr/data/15099110/openapi.do",
+  "id": "data-korea-kwater-dam-weir-hydrological-operation-data",
+  "languages": [
+    "ko"
+  ],
+  "licence": "Korean public data, free with no restriction on the scope of use (data.go.kr terms)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.data.go.kr/data/15099110/openapi.do"
+    ]
+  },
+  "maturity": "active",
+  "name": "K-water dam and weir hydrological operation data (water level, inflow, release, storage) and K-water open data portal",
+  "provider": "Korea Water Resources Corporation (K-water)",
+  "related_ids": [
+    "data-global-dam-watch-database",
+    "data-grand-global-reservoir-and-dam-database"
+  ],
+  "schema_summary": "per site and time step: dam water level (EL. m), rainfall (mm), inflow (m3/s), total release (m3/s), storage (million m3) and storage rate (%) against the design flood level (normal high water level for water supply dams)",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "items, 61 sites by type, from January 2006, 10-minute/hourly/daily, XLS/CSV and XML/JSON, licence no restriction, automatic approval",
+      "url": "https://www.data.go.kr/data/15099110/openapi.do"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "yearly CSV, latest 10,000 records, blanks note, free",
+      "url": "https://www.data.go.kr/data/15083335/fileData.do"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "413 datasets by category; treatment plant table, flood control dam specifications",
+      "url": "https://opendata.kwater.or.kr/open/data/list/list.do"
+    }
+  ],
+  "spatial_resolution": "61 dam and weir sites",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "Korea",
+    "K-water",
+    "dam operation",
+    "reservoir storage",
+    "weirs",
+    "flood control dams",
+    "open API"
+  ],
+  "temporal_coverage": "from January 2006 (period differs by site)",
+  "temporal_resolution": "10 minutes, hourly, daily",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "K-water dam and weir hydrological operation data (water level, inflow, release, storage) and K-water open data portal",
+  "type": "data",
+  "update_frequency": "annual"
+}

@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Dataset page (CSV export and API)",
+      "url": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/series_longues_passages_urgences_2017_2023/information/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "demand_operation",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "drees corrected long series of daily emergency department visits by french department 2017 to 2023",
+    "url": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/series_longues_passages_urgences_2017_2023/information"
+  },
+  "description": "This dataset counts, for each French department and each day from 2017 to 2023, how many people came to hospital emergency departments, corrected so that the series can be compared over time. It was released by DREES, the statistics directorate of the French health ministry, alongside its December 2024 study of emergency department visits by department. Coverage is metropolitan France and most overseas departments over seven years, with Martinique excluded and a few departments starting in 2018 or 2020 because daily data quality was judged insufficient earlier. Each of the roughly 248,000 rows gives a department, a date and the number of visits. The data are available as a free download in CSV or through the portal API under the Licence Ouverte. Caveats: this is a one-off release that ends in 2023, counts are not split by age, severity or hospital, and the correction method is documented in the accompanying study, not in the file. Simulation uses: fitting daily and seasonal demand patterns for emergency department capacity models, and measuring demand surges during heatwaves or epidemics such as COVID-19. Related records: the SAE hospital statistics (data-drees-sae-hospital-annual-statistics) give the emergency department resources, and the German AKTIN data (data-aktin-emergency-department-length-of-stay) give comparable length-of-stay detail.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit follow-up: DREES (FR, health_regulator_data_institute)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "extreme_heat",
+    "pandemic"
+  ],
+  "homepage": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/series_longues_passages_urgences_2017_2023/information/",
+  "id": "data-drees-emergency-department-daily-visits-2017-2023",
+  "languages": [
+    "fr"
+  ],
+  "licence": "Licence Ouverte v2.0 (Etalab)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "DREES corrected long series of daily emergency department visits by French department, 2017 to 2023",
+  "provider": "Direction de la recherche, des études, de l'évaluation et des statistiques (DREES)",
+  "related_ids": [
+    "data-drees-sae-hospital-annual-statistics",
+    "data-aktin-emergency-department-length-of-stay"
+  ],
+  "schema_summary": "Department, date (1 January 2017 to 31 December 2023) and corrected number of emergency department visits; about 248,000 rows",
+  "sectors": [
+    "services.healthcare",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Séries longues corrigées du nombre de passages aux urgences 2017 à 2023 en France: accompanies Études et Résultats no 1320 (December 2024), 'Passages aux urgences entre 2017 et 2023: des dynamiques contrastées selon les départements'; CSV giving for each department and each date from 1 January 2017 to 31 December 2023 the number of visits to emergency services; Martinique excluded for quality; La Réunion, Mayotte, Corse-du-Sud, Haute-Corse and Territoire de Belfort from 2018 only, Guyane from 2020; Licence Ouverte v2.0; about 247,900 records; modified 12 December 2024",
+      "url": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/series_longues_passages_urgences_2017_2023/information/"
+    }
+  ],
+  "spatial_resolution": "Department",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "emergency department",
+    "daily visits",
+    "urgences",
+    "France",
+    "DREES"
+  ],
+  "temporal_coverage": "2017-01-01 to 2023-12-31",
+  "temporal_resolution": "Daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "DREES corrected long series of daily emergency department visits by French department, 2017 to 2023",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

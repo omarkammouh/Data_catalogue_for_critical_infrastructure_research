@@ -1,0 +1,88 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "Article (open access)",
+      "url": "https://doi.org/10.1038/s41598-022-08419-2"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Grassia M, Mangioni G, Schiavo S, Traverso S (2022) Scientific Reports",
+  "continents": [],
+  "cost": "free",
+  "countries": [],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1038/s41598-022-08419-2",
+    "name": "diffusion model of food production shocks through the international food trade network grassia et al 2022",
+    "url": "doi:10.1038/s41598-022-08419-2"
+  },
+  "description": "This model simulates how shocks to domestic food production spread through the international food trade network, published in 2022 in Scientific Reports by Grassia, Mangioni, Schiavo and Traverso. It applies a diffusion process on the network of food trade between countries, so that a production shortfall in one country propagates to its trading partners according to trade links, and relates each country's exposure and vulnerability to its trade openness and network position. The authors find that low-income and food insecure countries tend to be the most exposed to external shocks while being least able to use trade to shield themselves from shocks at home, and that simple centrality measures predict the size of the shock a country experiences. Coverage is global at country level. The article is free under the Creative Commons Attribution licence and describes the model; no public code repository was found in the metadata read. Caveats: it treats trade as a static network without price responses or stocks, and results depend on the chosen shock scenarios. Simulation uses: screening countries' import dependence and vulnerability in food supply shock scenarios and ranking chokepoints in the trade network. Related records: the Food Shocks Cascade model (model-food-shocks-cascade-fsc) is a comparable network model and the IFPRI IMPACT projections (data-ifpri-impact-projections-food-net-trade-2050) give net trade trajectories.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "food system simulation model open source R package food supply shock propagation trade network",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://doi.org/10.1038/s41598-022-08419-2",
+  "id": "model-food-trade-shock-diffusion-network",
+  "inputs": [
+    "Bilateral food trade matrix",
+    "Domestic production",
+    "Shock scenarios"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-03-17",
+  "licence": "CC-BY-4.0 (article)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network"
+  ],
+  "name": "Diffusion model of food production shocks through the international food trade network (Grassia et al. 2022)",
+  "outputs": [
+    "Shock received by each country",
+    "Exposure and vulnerability indicators"
+  ],
+  "provider": "Grassia, Mangioni, Schiavo and Traverso (article authors)",
+  "related_ids": [
+    "model-food-shocks-cascade-fsc",
+    "data-ifpri-impact-projections-food-net-trade-2050"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Europe PMC: Scientific Reports 2022, doi 10.1038/s41598-022-08419-2, CC BY; diffusion model of domestic production shocks through the international food trade network; low-income, food insecure countries most exposed; centrality predicts shock magnitude",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC8931070&resultType=core&format=json"
+    }
+  ],
+  "tags": [
+    "food trade network",
+    "shock propagation",
+    "food security"
+  ],
+  "title_en": "Diffusion model of food production shocks through the international food trade network (Grassia et al. 2022)",
+  "type": "model",
+  "validated_on": []
+}

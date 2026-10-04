@@ -1,0 +1,131 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Project website",
+      "url": "https://www.balmorel.com"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation (Balmorel 5.0)",
+      "url": "https://balmorelcommunity.github.io/Balmorel/index.html"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code (GitHub)",
+      "url": "https://github.com/balmorelcommunity/Balmorel"
+    },
+    {
+      "kind": "repo",
+      "label": "Base data repository (GitHub)",
+      "url": "https://github.com/balmorelcommunity/Balmorel_data"
+    },
+    {
+      "kind": "paper",
+      "label": "Energy Strategy Reviews paper (2018)",
+      "url": "https://doi.org/10.1016/j.esr.2018.01.003"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1016/j.esr.2018.01.003",
+    "name": "balmorel open source energy system model",
+    "repo": "github.com/balmorelcommunity/balmorel",
+    "url": "https://balmorel.com"
+  },
+  "description": "Balmorel is an open-source, bottom-up partial equilibrium energy system model for the electricity and combined heat and power sectors in an international perspective, released in 2001 and described in the 2018 Energy Strategy Reviews paper \"The Balmorel open source energy system model\". It is written in GAMS as a mainly linear optimisation problem, handles time and space flexibly, and combines operation and investment optimisation, so it serves both long-range planning and shorter operational analysis. The README lists applications in Denmark, Norway, Sweden, the Baltic states, Poland, Germany, Austria, Ghana, Mauritius, Canada and China, on security of supply, flexible demand, hydrogen, wind power, natural gas, transmission expansion, heat transmission and electric vehicles; the OptiFlow add-on can be hard-linked for fuels and other flows. Coverage is set by the data; the Balmorel_data repository holds base data. The GAMS code is accessible on GitHub under the ISC licence at no cost, with version 5.0 documentation and a demo branch that runs with a GAMS academic trial licence. Caveats: a GAMS licence and solver are required for full runs, and data are maintained separately. Simulation uses are capacity expansion and dispatch of power and district heating with transmission. Related records: model-optiflow-network-flow-model links to Balmorel, and model-dieterpy-dieter-power-sector-model is another open power sector model.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "(\"waste management\" OR \"landfill\" OR \"municipal solid waste\" OR \"recycling facility\") AND (\"network topology\" OR \"asset inventory\" OR \"asset register\" OR \"network model\")",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://www.balmorel.com",
+  "id": "model-balmorel-energy-system-model",
+  "inputs": [
+    "demand, technology, fuel and transmission data by region"
+  ],
+  "language": [
+    "optimisation_language"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-06",
+  "licence": "ISC",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "economic"
+  ],
+  "name": "Balmorel open source energy system model",
+  "outputs": [
+    "investment, dispatch, transmission flows and prices"
+  ],
+  "provider": "Balmorel community (originally Hans Ravn and contributors)",
+  "related_ids": [
+    "model-optiflow-network-flow-model",
+    "model-dieterpy-dieter-power-sector-model"
+  ],
+  "repository": "https://github.com/balmorelcommunity/Balmorel",
+  "runs_on": [
+    "desktop",
+    "server",
+    "hpc"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "energy.district_heating_cooling",
+    "energy.gas_hydrogen"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README - purpose, applications, data repository, demo branch; LICENSE ISC (Hans Ravn and contributors); SWH HEAD 2026-03-06",
+      "url": "https://github.com/balmorelcommunity/Balmorel"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Released 2001; GAMS; ESR 2018 paper abstract",
+      "url": "https://www.balmorel.com"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Balmorel 5.0 documentation; validated against other open-source models",
+      "url": "https://balmorelcommunity.github.io/Balmorel/index.html"
+    }
+  ],
+  "tags": [
+    "Balmorel",
+    "energy system model",
+    "district heating",
+    "GAMS",
+    "capacity expansion"
+  ],
+  "title_en": "Balmorel open source energy system model",
+  "type": "model",
+  "validated_on": [
+    "comparisons with other open-source models (per documentation)"
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "FEWS NET Data Warehouse REST API",
+      "note": "Unauthenticated requests return public data only",
+      "url": "https://fdw.fews.net/api/"
+    },
+    {
+      "kind": "portal",
+      "label": "FEWS NET Data Explorer",
+      "url": "https://fdw.fews.net/data-explorer/"
+    },
+    {
+      "kind": "docs",
+      "label": "Data Explorer knowledge base (API, data usage policies, metadata standards)",
+      "url": "https://help.fews.net/fde/v3"
+    },
+    {
+      "kind": "docs",
+      "label": "About FEWS NET",
+      "url": "https://fews.net/about"
+    },
+    {
+      "kind": "portal",
+      "label": "Provider home page",
+      "url": "https://fews.net/"
+    },
+    {
+      "kind": "download",
+      "label": "Data page",
+      "url": "https://help.fews.net/fde/v3/__pagetree.json"
+    }
+  ],
+  "access_note": "Public data are open without login; some data need an account with permissions, and some only through the API.",
+  "access_restrictions": "registration",
+  "continents": [
+    "africa",
+    "asia",
+    "south_america",
+    "north_america",
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "ET",
+    "KE",
+    "SO",
+    "SS",
+    "SD",
+    "UG",
+    "MW",
+    "MZ",
+    "ZW",
+    "MG",
+    "NE",
+    "NG",
+    "ML",
+    "BF",
+    "TD",
+    "AF",
+    "YE",
+    "HT",
+    "GT",
+    "HN"
+  ],
+  "data_family": [
+    "supply_chains_logistics",
+    "economic_financial",
+    "social_vulnerability_equity",
+    "scenarios_projections",
+    "weather_observations",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fews net data explorer and data warehouse api",
+    "url": "https://fews.net"
+  },
+  "description": "The FEWS NET Data Explorer and its Data Warehouse API hold the data that the Famine Early Warning Systems Network uses for food security early warning: market prices and trade, acute food insecurity classifications and projections compatible with the Integrated Food Security Phase Classification (IPC), agroclimatology, livelihood zones, crop production, nutrition and geographic boundaries. USAID established FEWS NET in 1985 after famines in East and West Africa; it forecasts acute food insecurity six to twelve months ahead to guide humanitarian planning and response. Coverage is the several dozen most food-insecure countries it monitors in East, Southern and West Africa, Asia, the Middle East and Europe, and Latin America and the Caribbean, at country, livelihood-zone, administrative-unit and market level, with series such as monthly prices. Access: the Data Explorer lets users search, filter, visualise and export data, and the Data Warehouse REST API at fdw.fews.net/api returns public data without authentication and more with an account. Cost is free; the data usage policy is set per source document, and some data are restricted. Caveats: the Data Explorer does not expose all FEWS NET data, series lengths differ by country and source, and continuity depends on funding. Simulation uses: food supply and market disruption scenarios, drought and climate impacts on food systems, and emergency response planning for food assistance. Related: IPC analyses and WFP DataBridges food prices are listed in the register but not yet catalogued.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "famine early warning food security data API (register services-fews-net)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry FEWS NET",
+      "route": "R30",
+      "source": "services-fews-net (register)"
+    }
+  ],
+  "formats": [
+    "api",
+    "web_page",
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "continental",
+  "hazards": [
+    "drought",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://help.fews.net/fde/v3/__pagetree.json",
+  "id": "data-fews-net-data-explorer",
+  "languages": [
+    "en"
+  ],
+  "licence": "Data usage policy set per source document (see Data Usage Policies and Permissions)",
+  "licence_type": [
+    "varies"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "FEWS NET Data Explorer and Data Warehouse API",
+  "provider": "Famine Early Warning Systems Network (FEWS NET), established by USAID",
+  "related_ids": [],
+  "schema_summary": "Market prices and trade flows, acute food insecurity classifications (IPC-compatible) and projections, agroclimatology, livelihood zones, crop production, nutrition, geographic boundaries",
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Established by USAID in 1985; early warning and analysis of acute food insecurity; forecasts 6-12 months; country list; data sections",
+      "url": "https://fews.net/about"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Data Platform = Data Explorer + Data Warehouse; not all data accessible; restricted permissions",
+      "url": "https://help.fews.net/fde/v3/about-the-fews-net-data-explorer"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "REST API base https://fdw.fews.net/api; unauthenticated requests return public data",
+      "url": "https://help.fews.net/fde/v3/fews-net-api"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Usage policy per source document; fine-grained permissions",
+      "url": "https://help.fews.net/fde/v3/data-usage-policies-and-permissions"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "API root answered with resource list (country, currency, classifiedproduct, ...)",
+      "url": "https://fdw.fews.net/api/"
+    }
+  ],
+  "spatial_resolution": "Country, livelihood zone, administrative unit and market",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "food security",
+    "famine early warning",
+    "market prices",
+    "IPC",
+    "livelihood zones",
+    "humanitarian"
+  ],
+  "temporal_coverage": "Varies by series; FEWS NET has operated since 1985",
+  "temporal_resolution": "Monthly market prices; seasonal classifications; varies",
+  "temporal_resolution_class": "varies",
+  "title_en": "FEWS NET Data Explorer and Data Warehouse API",
+  "type": "data",
+  "update_frequency": "real_time"
+}

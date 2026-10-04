@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "AGCOM Broadband Map",
+      "url": "https://maps.agcom.it/"
+    },
+    {
+      "kind": "portal",
+      "label": "Regional reuse: AGCOM coverage indicators (Piemonte, dati.gov.it)",
+      "url": "https://www.dati.gov.it/view-dataset/dataset?id=dati-copertura-agcom-cittadini"
+    },
+    {
+      "kind": "download",
+      "label": "Regional reuse CSV",
+      "url": "https://api.smartdatanet.it/api/Oict_dati_agcomcittadini_opendata_23545/download/23545/all"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IT"
+  ],
+  "data_family": [
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "tabular",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "agcom broadband map fixed and mobile network coverage in italy with municipal indicators",
+    "url": "https://maps.agcom.it"
+  },
+  "description": "The AGCOM Broadband Map is the Italian regulator's public map of fixed and mobile broadband coverage, built from operators' network data. Coverage of fixed networks is given by technology and speed class, and coverage of mobile networks by operator and technology, and AGCOM publishes open data derived from the map. Indicators from these data are reused by others: the Piemonte region republishes municipal coverage indicators for fixed and mobile networks calculated from AGCOM data, available from 2019 and recalculated at each AGCOM update. As that reuse explains, ADSL, FTTC and FTTH coverage come from a non-point method using Istat census sections as reference areas, which overstates coverage and is used for the EU DESI index, while coverage up to 30 Mbit/s, above 30 Mbit/s and above 100 Mbit/s comes from a point-based method that analyses individual addresses reached by networks, following the European broadband mapping guidelines. Coverage: Italy. Format and access: web map and open data from AGCOM; the regional reuse is a CSV under CC BY 4.0. Licence (read on the provider page on 2026-09-28): CC-BY-4.0. Simulation uses: municipal and address-level exposure to loss of fixed or mobile service, and areas depending on a single technology. Related records: the AGCOM Osservatorio gives market statistics, and the Telecom Italia Big Data Challenge gives measured mobile activity in Milan and Trentino. The underlying files were not downloaded, so their contents are not verified here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "dati.gov.it search for AGCOM",
+      "route": "R02",
+      "source": "organisations.csv:IT:digital:broadband_mapping"
+    }
+  ],
+  "formats": [
+    "web_page",
+    "image",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://maps.agcom.it/",
+  "id": "data-agcom-broadband-map",
+  "languages": [
+    "it"
+  ],
+  "last_updated": "2025-04-28",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://api.smartdatanet.it/api/Oict_dati_agcomcittadini_opendata_23545/download/23545/all"
+    ]
+  },
+  "maturity": "active",
+  "name": "AGCOM Broadband Map: fixed and mobile network coverage in Italy with municipal indicators",
+  "notes": "maps.agcom.it answered with a scheduled maintenance notice on 2026-09-26. The methods and 2019 start come from the Piemonte reuse entry on dati.gov.it (CKAN metadata read). AGCOM open data downloads and mobile layers are from recall.",
+  "provider": "Autorità per le Garanzie nelle Comunicazioni (AGCOM)",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "capacity_planning"
+  ],
+  "size": "not stated",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "map page (maintenance notice)",
+      "url": "https://maps.agcom.it/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "regional reuse metadata",
+      "url": "https://www.dati.gov.it/opendata/api/3/action/package_show?id=dati-copertura-agcom-cittadini"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): CC-BY-4.0 (basis: dati.gov.it dataset licence: Creative Commons Attribuzione 4.0)",
+      "url": "https://maps.agcom.it/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.dati.gov.it/view-dataset/dataset?id=dati-copertura-agcom-cittadini"
+    }
+  ],
+  "spatial_resolution": "address points and census sections; municipal indicators",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "broadband coverage",
+    "mobile coverage",
+    "FTTH",
+    "municipalities",
+    "Italy"
+  ],
+  "temporal_coverage": "from 2019",
+  "temporal_resolution": "per AGCOM update",
+  "temporal_resolution_class": "event",
+  "title_en": "AGCOM Broadband Map: fixed and mobile network coverage in Italy with municipal indicators",
+  "type": "data",
+  "update_frequency": "irregular"
+}

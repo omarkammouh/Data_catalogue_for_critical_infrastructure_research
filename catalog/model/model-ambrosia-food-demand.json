@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/JGCRI/ambrosia"
+    },
+    {
+      "kind": "docs",
+      "label": "Vignette and tutorial",
+      "url": "https://jgcri.github.io/ambrosia/articles/ambrosia_vignette.html"
+    },
+    {
+      "kind": "paper",
+      "label": "Narayan et al. (2021), Journal of Open Source Software",
+      "url": "https://doi.org/10.21105/joss.02890"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Narayan, K., Vernon, C., Waldhoff, S., Edmonds, J., Cui, R. (2021). ambrosia: An R package for calculating and analyzing food demand that is responsive to changing incomes and prices. Journal of Open Source Software. https://doi.org/10.21105/joss.02890",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.21105/joss.02890",
+    "name": "ambrosia food demand model r package",
+    "repo": "github.com/jgcri/ambrosia",
+    "url": "https://github.com/JGCRI/ambrosia"
+  },
+  "description": "ambrosia is an R package that calculates food demand for staple and non-staple commodities in response to changing incomes and prices, implementing the food demand framework of Edmonds et al. (2017). It has three main functions: computing food demand for any set of parameters, incomes and prices; estimating the model's calibration parameters from a user's dataset; and exploring and preparing raw data before estimation. Its authors at the Joint Global Change Research Institute of Pacific Northwest National Laboratory use it to calculate the parameters of the food demand model in the Global Change Analysis Model (GCAM), and published it in the Journal of Open Source Software (2021). Coverage is whatever countries, regions and time series the user supplies; resolution is region and year, with two commodity groups. It is R source on GitHub (DESCRIPTION version 2.0.0), installed with devtools, with a vignette of worked examples. Licence: BSD 2-Clause (copyright Battelle Memorial Institute), free. Caveats: it models aggregate demand quantities, not the logistics network, retail outlets or spatial distribution of food, and results depend on calibration data. Simulation uses: projecting food demand under income and price scenarios, as the demand side of food supply system models used for capacity planning and stress tests of food supply. Related records: none catalogued yet; food security data such as the FEWS NET Data Explorer (catalogued as data-fews-net-data-explorer) supplies prices for similar analyses.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "food demand model income price (register services-ambrosia-food-demand)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry ambrosia",
+      "route": "R06",
+      "source": "services-ambrosia-food-demand (register)"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/JGCRI/ambrosia",
+  "id": "model-ambrosia-food-demand",
+  "inputs": [
+    "Income levels",
+    "Prices of staple and non-staple food",
+    "Observed food demand time series for calibration"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-11-08",
+  "licence": "BSD-2-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "economic",
+    "statistical"
+  ],
+  "name": "ambrosia (food demand model R package)",
+  "outputs": [
+    "Food demand (staples and non-staples) responsive to income and prices",
+    "Calibrated model parameters"
+  ],
+  "provider": "Joint Global Change Research Institute (JGCRI), Pacific Northwest National Laboratory",
+  "related_ids": [
+    "data-fews-net-data-explorer"
+  ],
+  "repository": "https://github.com/JGCRI/ambrosia",
+  "runs_on": [],
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, three functions, Edmonds et al. (2017) framework, used to calibrate GCAM food demand, installation, vignette",
+      "url": "https://raw.githubusercontent.com/JGCRI/ambrosia/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 2.0.0; authors at PNNL; BSD_2_clause",
+      "url": "https://raw.githubusercontent.com/JGCRI/ambrosia/HEAD/DESCRIPTION"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Copyright 2020 Battelle Memorial Institute",
+      "url": "https://raw.githubusercontent.com/JGCRI/ambrosia/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "JOSS paper 10.21105/joss.02890, 2021-03-30",
+      "url": "https://api.crossref.org/works?query.bibliographic=ambrosia+R+package+food+demand+JOSS&rows=2"
+    }
+  ],
+  "tags": [
+    "food demand",
+    "staples",
+    "income elasticity",
+    "GCAM",
+    "calibration"
+  ],
+  "title_en": "Ambrosia (food demand model R package)",
+  "type": "model",
+  "validated_on": []
+}

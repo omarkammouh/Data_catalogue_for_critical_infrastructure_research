@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "BIPT antenna site map",
+      "url": "https://sites.bipt.be/"
+    },
+    {
+      "kind": "docs",
+      "label": "OSM wiki import page (BIPT antennas, 2020)",
+      "url": "https://wiki.openstreetmap.org/wiki/Import/Catalogue/ibpt_belgium_antennas"
+    },
+    {
+      "kind": "repo",
+      "label": "GeoJSON and import notebook (GitLab)",
+      "url": "https://gitlab.com/vucod/osm-import-bipt-antennas-belgium"
+    },
+    {
+      "kind": "download",
+      "label": "BIPT antenna sites as GeoJSON (OSM import repository, 5.5 MB)",
+      "url": "https://gitlab.com/vucod/osm-import-bipt-antennas-belgium/-/raw/master/antennasBIPT.geojson"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "BE"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bipt mobile antenna sites of belgium regulator s list of base station sites with operators and coordinates",
+    "repo": "gitlab.com/vucod/osm-import-bipt-antennas-belgium",
+    "url": "https://wiki.openstreetmap.org/wiki/Import/Catalogue/ibpt_belgium_antennas"
+  },
+  "description": "A list and map of the antennas used for mobile communication in Belgium, kept by the national telecom regulator from what the operators report to it. Contents: base transceiver station sites, sometimes with several antennas, with an antenna site ID, the operators present and latitude and longitude. The OpenStreetMap wiki, whose import page says BIPT confirmed by email that the list could be reused for OpenStreetMap, states the import brought around 7,800 antenna nodes into OpenStreetMap in 2020, with a monthly script adding new sites. Producer: BIPT, with the Belgian OpenStreetMap community for the import. Coverage: Belgium. Format and access: the BIPT antenna site web map at sites.bipt.be; per the wiki, an Excel export was the source for the import (not confirmed on the current site), and a GeoJSON of the import is on GitLab. Licence: no formal licence found; BIPT's emailed permission says the data may be used, is updated monthly from operator information, and is offered without guarantee of completeness or accuracy. Caveats: operator-reported, not audited; about 5,000 imported nodes carry a fixme tag because the antenna may sit on a mast slightly off its mapped position. Simulation uses: siting mobile network infrastructure in telecom coverage, resilience and exposure models. Related records: BIPT's coverage atlas and the Flemish antenna dataset.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source osm-wiki: provider pages read (round 2 register piece)",
+      "route": "R48",
+      "source": "osm-wiki"
+    }
+  ],
+  "formats": [
+    "web_page",
+    "spreadsheet",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://gitlab.com/vucod/osm-import-bipt-antennas-belgium/-/raw/master/antennasBIPT.geojson",
+  "id": "data-bipt-belgium-mobile-antenna-sites-list-operators-and-coordinates",
+  "languages": [
+    "nl",
+    "fr",
+    "en"
+  ],
+  "licence": "no formal licence found; BIPT emailed permission to reuse (no guarantee of accuracy)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BIPT mobile antenna sites of Belgium: regulator's list of base station sites with operators and coordinates",
+  "provider": "BIPT (Belgian Institute for Postal Services and Telecommunications)",
+  "related_ids": [
+    "data-bipt-data-portal-coverage-atlas",
+    "data-flanders-transmitting-antennas-and-5g-sites"
+  ],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "portal page: BIPT-Antennesite web app; API paths for public antenna sites in its script",
+      "url": "https://sites.bipt.be/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "OSM wiki import page: permission emails, ~7,800 nodes, ~5,000 fixme tags, monthly script",
+      "url": "https://wiki.openstreetmap.org/wiki/Import/Catalogue/ibpt_belgium_antennas"
+    }
+  ],
+  "tags": [
+    "mobile antennas",
+    "base stations",
+    "BIPT",
+    "Belgium",
+    "telecom regulator"
+  ],
+  "title_en": "BIPT mobile antenna sites of Belgium: regulator's list of base station sites with operators and coordinates",
+  "type": "data"
+}

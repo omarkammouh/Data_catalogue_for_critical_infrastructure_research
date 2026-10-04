@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/spaceml-org/ml4floods"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/spaceml-org/ml4floods/blob/main/README.md"
+    },
+    {
+      "kind": "docs",
+      "label": "Published case notebook",
+      "url": "https://spaceml-org.github.io/ml4floods/content/ml4ops/HOWTO_postprocess_inference.html"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1038/s41598-023-47595-7"
+    }
+  ],
+  "access_restrictions": "none",
+  "case_study_kind": [
+    "post_event_analysis"
+  ],
+  "cost": "free",
+  "countries": [
+    "UA"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "kherson dam break flood mapping with ml4floods",
+    "url": "https://spaceml-org.github.io/ml4floods/content/ml4ops/HOWTO_postprocess_inference.html"
+  },
+  "description": "This ML4Floods notebook documents satellite flood mapping after the June 2023 dam break between Nova Kakhovka and Kherson, Ukraine. It queries imagery from 31 May to 12 June and applies a cloud-aware model to Sentinel-2 images from 3 and 8 June and Landsat 9 from 9 June. Outputs include mapped water classes, vectorised extents and a combined pre-event and post-event flood product. The notebook and pretrained models permit noncommercial reuse under CC-BY-NC-4.0; package code uses LGPL-3.0. A limitation is that cloud and acquisition timing affect observed extent, and the demonstration supplies neither a flood-depth estimate nor independent accuracy measurements for this event. Reproduction requires the documented external imagery and computing services. The case provides reusable observation-processing steps for evaluating dam-break infrastructure simulations, linked to platform-ml4floods and model-delft3d-fm. Its documented outcome is a multi-sensor flood map, without a claimed operational emergency-response benefit. Only the rendered notebook was inspected; no imagery or models were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "spaceml-org/ml4floods linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://spaceml-org.github.io/ml4floods/content/ml4ops/HOWTO_postprocess_inference.html",
+  "id": "case_study-kherson-ml4floods",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-20",
+  "licence": "CC-BY-NC-4.0 notebook and pretrained models; LGPL-3.0 package software",
+  "licence_type": [
+    "non_commercial",
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Kherson dam-break flood mapping with ML4Floods",
+  "notes": "G7 G7-0778. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. Distinct documented real-event application; the general ML4Floods software record does not enumerate this case. ",
+  "organisations": [
+    "ML4Floods research team"
+  ],
+  "outcomes": "Published pre-event and post-event water maps and a combined multi-sensor flood-extent product.",
+  "provider": "ML4Floods research team",
+  "regions": [
+    "Nova Kakhovka to Kherson"
+  ],
+  "related_ids": [
+    "platform-ml4floods",
+    "data-worldfloods-v2",
+    "model-delft3d-fm"
+  ],
+  "resources_used": [
+    "platform-ml4floods",
+    "data-worldfloods-v2",
+    "Sentinel-2",
+    "Landsat 9"
+  ],
+  "sectors": [
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for spaceml-org/ml4floods: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/spaceml-org/ml4floods"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/spaceml-org/ml4floods/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Named real event, selected image dates, published map outputs, reuse instructions and distinct notebook licence.",
+      "url": "https://spaceml-org.github.io/ml4floods/content/ml4ops/HOWTO_postprocess_inference.html"
+    }
+  ],
+  "study_period": "2023-05-31 to 2023-06-12 image query; mapped scenes 3, 8 and 9 June 2023",
+  "tags": [],
+  "title_en": "Kherson dam-break flood mapping with ML4Floods",
+  "type": "case_study"
+}

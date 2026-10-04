@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code on GitHub",
+      "url": "https://github.com/WaimenMak/PedNStream"
+    },
+    {
+      "kind": "paper",
+      "label": "arXiv 2607.01021",
+      "url": "https://arxiv.org/abs/2607.01021"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Mai, W., Duives, D., Hoogendoorn, S. (2026) PedNStream: Scalable Network Flow Simulation for Pedestrian Traffic Management. arXiv:2607.01021",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pednstream pedestrian network flow simulation",
+    "repo": "github.com/waimenmak/pednstream",
+    "url": "https://github.com/WaimenMak/PedNStream"
+  },
+  "description": "PedNStream (Pedestrian Network Flow Simulation) is an open-source, Python-native simulator for macroscopic pedestrian traffic on networks, written by Weiming Mai, Dorine Duives and Serge Hoogendoorn at Delft University of Technology to evaluate crowd management measures that must be run many times at network scale, where microscopic models are too costly. It builds on the Link Transmission Model, adds stochastic link dynamics for local variation in pedestrian flow, and uses a utility-based route choice model so walkers reroute as congestion and interventions change. A modular framework offers controller interfaces for gating, flow separation and route guidance, so closed-loop control can be tested. Coverage is generic: any walking network the user builds, from event sites to city centres. Access: Python source code on GitHub and the 2026 arXiv paper describing verification on synthetic scenarios (queue formation, spillback, dissipation, rerouting), a comparison with observed counts on a real network, and a runtime analysis. Licence and cost: free under the MIT licence. Caveats: a young research code at version 3 of the preprint; macroscopic links do not represent individual trajectories or evacuation behaviour inside buildings, and calibration data must come from the user. It suits network flow studies, event capacity planning and emergency crowd management. It complements the Jülich pedestrian dynamics data archive for calibration and relates to the Love Parade 2010 crowd disaster case study in the catalogue.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "pedestrian crowd simulation open source discrete event OR agent based JuPedSim Vadere active mobility",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/WaimenMak/PedNStream",
+  "id": "model-pednstream-pedestrian-network-flow-simulation",
+  "inputs": [
+    "Pedestrian network graph with link lengths, widths and capacities",
+    "origin-destination demand over time",
+    "route choice and link dynamics parameters",
+    "controller settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-11",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "PedNStream, pedestrian network flow simulation",
+  "outputs": [
+    "Link densities, flows and queues over time, route splits, spillback and congestion dissipation, controller performance"
+  ],
+  "provider": "Delft University of Technology, Department of Transport and Planning (Mai, Duives, Hoogendoorn)",
+  "related_ids": [
+    "data-juelich-pedestrian-dynamics-data-archive",
+    "case_study-duisburg-love-parade-2010-crowd-disaster"
+  ],
+  "repository": "https://github.com/WaimenMak/PedNStream",
+  "sectors": [
+    "transport.active_mobility",
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "authors, LTM basis, stochastic link dynamics, route choice, controllers, validation stages, CC BY-SA 4.0 paper",
+      "url": "https://arxiv.org/abs/2607.01021"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Python repository, MIT licence",
+      "url": "https://github.com/WaimenMak/PedNStream"
+    }
+  ],
+  "tags": [
+    "pedestrian simulation",
+    "Link Transmission Model",
+    "crowd management",
+    "macroscopic",
+    "r2-fresh-transport"
+  ],
+  "title_en": "PedNStream, pedestrian network flow simulation",
+  "type": "model",
+  "validated_on": [
+    "Observed pedestrian counts on a real network (paper)",
+    "synthetic verification scenarios"
+  ]
+}

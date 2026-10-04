@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Sildre map of hydrological stations",
+      "url": "https://sildre.nve.no/"
+    },
+    {
+      "kind": "portal",
+      "label": "NVE historical hydrological data",
+      "url": "https://www.nve.no/vann-og-vassdrag/hydrologiske-data/historiske-data/"
+    },
+    {
+      "kind": "docs",
+      "label": "HydAPI documentation",
+      "url": "https://hydapi.nve.no/UserDocumentation/"
+    },
+    {
+      "kind": "docs",
+      "label": "NVE hydrological data API and licence page",
+      "url": "https://www.nve.no/vann-og-vassdrag/hydrologiske-data/api/"
+    }
+  ],
+  "access_note": "Every request needs a free API key tied to an email address; requests are throttled per key and responses have a maximum number of data points.",
+  "access_restrictions": "registration",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NO"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "weather_observations",
+    "system_description"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nve hydrological api hydapi norwegian observed hydrological time series",
+    "url": "https://hydapi.nve.no/UserDocumentation"
+  },
+  "description": "HydAPI is the REST interface of the Norwegian Water Resources and Energy Directorate (NVE) to its archive of historical and active observed hydrological time series in Norway, updated continuously with the latest observations. It offers station metadata, including regulated high and low water levels, mean annual discharge, reservoir capacity, station purpose and minimum discharge requirements, together with series listings, parameters such as water stage (1000), discharge (1001) and air temperature (17), stage-discharge rating curves, daily percentile statistics and observations at instantaneous, hourly or daily resolution in JSON. Data are free under the Norwegian Licence for Open Government Data, compatible with CC BY 3.0, and each call needs a free API key tied to an email address. The API is version 1.0; metadata for stations and series were extended in February 2023, and a map of stations is available in the Sildre viewer. Caveats: NVE provides the data as is, with possible errors or gaps, throttles requests per key, caps the number of points per request, and may change the API without changing the version number. Simulation uses: inflow and discharge series for reservoir and dam operation models, flood frequency and warning thresholds, drought and low-flow analysis for water supply and irrigation, and hydropower availability for coupled water and electricity models. Related record: Wflow.jl (model-wflow) is a hydrological model that such observed discharge series can calibrate.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: NVE (Norwegian Water Resources and Energy Directorate), hydrological data (NO, hydrological_service) https://www.nve.no/vann-og-vassdrag/hydrologiske-data/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "formats": [
+    "json",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "drought"
+  ],
+  "homepage": "https://hydapi.nve.no/UserDocumentation/",
+  "id": "data-norway-nve-hydapi-hydrological-time-series",
+  "languages": [
+    "en",
+    "no"
+  ],
+  "licence": "NLOD (Norwegian Licence for Open Government Data), compatible with CC BY 3.0 Norway",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://sildre.nve.no/"
+    ]
+  },
+  "maturity": "active",
+  "name": "NVE Hydrological API (HydAPI), Norwegian observed hydrological time series",
+  "notes": "The number of stations was not stated on the documentation page and was not counted (no data downloaded).",
+  "provider": "Norwegian Water Resources and Energy Directorate (NVE)",
+  "related_ids": [
+    "model-wflow"
+  ],
+  "schema_summary": "endpoints Stations (metadata incl. highest and lowest regulated water level, mean annual discharge, reservoir capacity, NN2000 offset, station purpose, minimum discharges), Series, Parameters (e.g. 1000 water stage, 1001 discharge, 17 air temperature), Rating curves, Percentiles (daily percentile statistics), Observations (GET and POST, resolution inst, hour or day, ISO-8601 reference time)",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.drinking_water",
+    "water.irrigation",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "purpose, licence NLOD, API key, throttling, endpoints, parameters, resolutions, changelog (February 2023 metadata additions)",
+      "url": "https://hydapi.nve.no/UserDocumentation/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "NLOD licence compatible with CC BY 3.0, data as is, attribution guidance",
+      "url": "https://www.nve.no/vann-og-vassdrag/hydrologiske-data/api/"
+    }
+  ],
+  "spatial_resolution": "gauging stations (station ids such as 6.10.0), searchable by county and municipality",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hydrology",
+    "discharge",
+    "water level",
+    "reservoirs",
+    "rating curves",
+    "gauging stations",
+    "API",
+    "NVE",
+    "Norway",
+    "open government data"
+  ],
+  "temporal_coverage": "historical and active series; start and end dates per series in station metadata",
+  "temporal_resolution": "instantaneous, hourly and daily",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "NVE Hydrological API (HydAPI), Norwegian observed hydrological time series",
+  "type": "data",
+  "update_frequency": "real_time"
+}

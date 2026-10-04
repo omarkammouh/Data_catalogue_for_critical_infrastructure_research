@@ -1,0 +1,137 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://gridlab-d.readthedocs.io/en/docs/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/gridlab-d/gridlab-d"
+    },
+    {
+      "kind": "download",
+      "label": "Python bindings on PyPI",
+      "url": "https://pypi.org/project/gridlabd/"
+    },
+    {
+      "kind": "docs",
+      "label": "GridLAB-D wiki (downloads and papers)",
+      "url": "https://gridlab-d.shoutwiki.com/wiki/Main_Page"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gridlab d agent based power distribution system simulator pnnl battelle",
+    "repo": "github.com/gridlab-d/gridlab-d",
+    "url": "https://gridlab-d.readthedocs.io/en/docs"
+  },
+  "description": "GridLAB-D is a power distribution system simulator developed at Pacific Northwest National Laboratory, with copyright held by Battelle Memorial Institute. The documentation, read on 2026-09-26, covers built-in distribution models, unbalanced power flow with a Newton-Raphson solver, lines, transformers, regulators, capacitors, fuses, reclosers, switches and substations, reliability and restoration modules, climate inputs, generators, inverters, solar panels, wind turbines, batteries, and residential house models with thermal parameters, water heaters, EV chargers and appliance loads, plus recorders, players, checkpoints and co-simulation with HELICS and EnergyPlus. It is built from source with CMake and a C++ compiler, and Python bindings named gridlabd appeared on PyPI in September 2026 (version 6.0.0a1, Python 3.10 or newer); the wiki lists earlier releases up to 4.3 with Windows and Linux builds. The GridLAB-D licence, version 5.3 of October 2024, allows free use, modification and redistribution with notices retained. Coverage is generic: users model any distribution feeder. Caveats: the Python release is an alpha, and older wiki pages are dated. Simulation uses are network flow, agent-based load behaviour, outage and restoration resilience studies of distribution grids. Related records: data-ieee-pes-distribution-test-feeders supplies standard feeders.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for model:energy.electricity:physical",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://gridlab-d.readthedocs.io/en/docs/",
+  "id": "model-gridlab-d",
+  "inputs": [
+    "Distribution feeder models (nodes",
+    "lines",
+    "transformers",
+    "regulators",
+    "switches)",
+    "Weather and climate files",
+    "Loadshapes and schedules",
+    "Residential house and appliance parameters"
+  ],
+  "language": [
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-05-28",
+  "licence": "GridLAB-D License (Battelle BSD-style open source licence)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "agent_based",
+    "network"
+  ],
+  "name": "GridLAB-D - agent-based power distribution system simulator (PNNL / Battelle)",
+  "outputs": [
+    "Unbalanced three-phase power flow results",
+    "Recorder time series of loads and voltages",
+    "Reliability metrics",
+    "Emissions and billing dumps"
+  ],
+  "provider": "Pacific Northwest National Laboratory (Battelle Memorial Institute) for the US Department of Energy",
+  "related_ids": [
+    "data-ieee-pes-distribution-test-feeders"
+  ],
+  "repository": "https://github.com/gridlab-d/gridlab-d",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "agent_based",
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Documentation contents, modules, powerflow classes, reliability, residential models, HELICS and EnergyPlus integration",
+      "url": "https://gridlab-d.readthedocs.io/en/docs/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GridLAB-D License version 5.3 October 2024, Battelle terms",
+      "url": "https://raw.githubusercontent.com/gridlab-d/gridlab-d/master/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Build from source with CMake and g++ or Clang",
+      "url": "https://raw.githubusercontent.com/gridlab-d/gridlab-d/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Python bindings 6.0.0a1, first upload 2026-09-09, last 2026-09-25, Python >=3.10",
+      "url": "https://pypi.org/pypi/gridlabd/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Copyright Battelle 2008-2026, release history to version 4.3",
+      "url": "https://gridlab-d.shoutwiki.com/wiki/Main_Page"
+    }
+  ],
+  "tags": [
+    "distribution grid",
+    "power flow",
+    "agent-based",
+    "residential loads",
+    "co-simulation",
+    "PNNL"
+  ],
+  "title_en": "GridLAB-D - agent-based power distribution system simulator (PNNL / Battelle)",
+  "type": "model",
+  "validated_on": []
+}

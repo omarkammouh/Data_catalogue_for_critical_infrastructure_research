@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "DataSF dataset",
+      "url": "https://data.sfgov.org/dataset/Emergency-Medical-Services-Agency-EMSA-Response-Ti/faug-73ss/about_data"
+    },
+    {
+      "kind": "api",
+      "label": "Socrata API",
+      "url": "https://data.sfgov.org/resource/faug-73ss.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "service_performance",
+    "historical_events"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "san francisco emsa emergency medical services response times",
+    "url": "https://data.sfgov.org/dataset/Emergency-Medical-Services-Agency-EMSA-Response-Ti/faug-73ss/about_data"
+  },
+  "description": "This dataset gives the time emergency response vehicles take to arrive at the scene of a medical incident in San Francisco after dispatch, published by the city's Emergency Medical Services Agency on the DataSF portal and used for the city's 911 response time dashboards. It is derived from the Fire Department Calls for Service data from the computer-aided dispatch system, with extra validation that removes non-medical events, responses missing the time stamps needed for a response time, negative times and other invalid records. Each row is a response with incident number, call date, final priority, response type, month and response time in minutes. Coverage is the City and County of San Francisco, refreshed regularly. Data are free to view, export as CSV or JSON, or query through the Socrata API; DataSF publishes under the Open Data Commons Public Domain Dedication and License. Caveats: it holds derived times only, so dispatch, travel and on-scene components must be taken from the underlying calls data, and priorities and definitions follow local protocols. Simulation uses: calibrating ambulance response time distributions by priority, validating EMS location and dispatch models, and benchmarking urban response performance. Related records: FDNY EMS incident dispatch data (data-nyc-fdny-ems-incident-dispatch) and Ontario land ambulance response times (data-ontario-land-ambulance-response-times) give comparable measures.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "ambulance response times open data by region dataset download statistics",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://data.sfgov.org/dataset/Emergency-Medical-Services-Agency-EMSA-Response-Ti/faug-73ss/about_data",
+  "id": "data-sf-emsa-ems-response-times",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "PDDL-1.0 (DataSF default)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "San Francisco EMSA emergency medical services response times",
+  "provider": "San Francisco Emergency Medical Services Agency (EMSA), from San Francisco Fire Department computer-aided dispatch",
+  "regions": [
+    "San Francisco"
+  ],
+  "related_ids": [
+    "data-nyc-fdny-ems-incident-dispatch",
+    "data-ontario-land-ambulance-response-times"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Socrata metadata: EMSA Emergency Medical Services Response Times Dataset; derived from Fire Department Calls for Service (CAD); used for sf.gov response time dashboards; excludes non-medical events, missing time stamps, negative response times; columns response_type, incident_number, call_date, final_priority, month, response_time_min, data_as_of",
+      "url": "https://data.sfgov.org/api/views/faug-73ss.json"
+    }
+  ],
+  "spatial_resolution": "City",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "EMS response times",
+    "ambulance",
+    "San Francisco",
+    "911"
+  ],
+  "temporal_coverage": "Recent years (rolling)",
+  "temporal_resolution": "Response",
+  "temporal_resolution_class": "other",
+  "title_en": "San Francisco EMSA emergency medical services response times",
+  "type": "data",
+  "update_frequency": "irregular"
+}

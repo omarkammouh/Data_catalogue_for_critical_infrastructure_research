@@ -1,0 +1,93 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/KWR-Water/pysimdeum"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/KWR-Water/pysimdeum/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pysimdeum household water demand and discharge",
+    "repo": "github.com/kwr-water/pysimdeum",
+    "url": "https://github.com/KWR-Water/pysimdeum"
+  },
+  "description": "PySIMDEUM is KWR Water's Python implementation of stochastic residential water-demand and discharge modelling at end-use level. It builds households with occupants and appliances from regional statistics, simulates their use and stores results in xarray arrays. Outputs distinguish total and hot-water flow and can be aggregated by user, end use, time or repeated pattern and exported to CSV, Excel or NetCDF. Coverage is globally configurable, while the supplied default statistics describe Dutch households; the examples use second-scale outputs and hourly aggregation. Public code, pip installation and usage examples are free under EUPL-1.2. A limitation is that transferring the defaults to another population requires changing household and appliance statistics through code or TOML files. Stochastic patterns are simulated inputs, not measured customer demand. PySIMDEUM can generate demand or wastewater inflows for network studies with EPANET (model-epanet). The README links a worldwide end-use review supporting parameter selection. No household data were retrieved or demand patterns generated.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:KWR-Water",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/KWR-Water/pysimdeum",
+  "id": "model-pysimdeum",
+  "inputs": [
+    "Household and appliance statistics",
+    "Simulation settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-12",
+  "licence": "EUPL-1.2",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "statistical"
+  ],
+  "name": "PySIMDEUM household water demand and discharge",
+  "notes": "G7 G7-0569. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "xarray water demand and discharge",
+    "CSV Excel and NetCDF exports"
+  ],
+  "provider": "KWR Water",
+  "related_ids": [
+    "model-epanet"
+  ],
+  "repository": "https://github.com/KWR-Water/pysimdeum",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for KWR-Water/pysimdeum: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3AKWR-Water&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/kwr-water/pysimdeum/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "PySIMDEUM household water demand and discharge",
+  "type": "model"
+}

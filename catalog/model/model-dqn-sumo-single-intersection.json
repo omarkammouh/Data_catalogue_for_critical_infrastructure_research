@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/AndreaVidali/Deep-QLearning-Agent-for-Traffic-Signal-Control"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/AndreaVidali/Deep-QLearning-Agent-for-Traffic-Signal-Control/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "deep q learning signal controller for sumo",
+    "repo": "github.com/andreavidali/deep-qlearning-agent-for-traffic-signal-control",
+    "url": "https://github.com/AndreaVidali/Deep-QLearning-Agent-for-Traffic-Signal-Control"
+  },
+  "description": "Andrea Vidali's repository implements a PyTorch deep Q-learning controller for one four-way SUMO intersection. Its state contains 80 binary occupancy cells arranged across eight incoming lane groups, and four actions select fixed green phases with intervening yellow times. Configurable demand generation, replay memory and neural-network settings support training and testing through a Python command-line interface. Outputs include saved PyTorch weights, YAML settings and delay, queue and reward plots with underlying text data. The synthetic intersection has 750-metre incoming arms; geographic coverage and episode duration do not describe an observed city network. Public source and detailed methodology are free under MIT. A limitation is the fixed single-junction representation and simplified demand process, so learned results do not establish performance across larger road networks. The current refactoring requires Python 3.13 and SUMO, and the README records a macOS GUI issue. The model supports reproducible signal-control experiments around SUMO (model-sumo). No traffic model, trained weight file or simulator was downloaded or executed.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:sumo fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/AndreaVidali/Deep-QLearning-Agent-for-Traffic-Signal-Control",
+  "id": "model-dqn-sumo-single-intersection",
+  "inputs": [
+    "YAML traffic and learning settings",
+    "SUMO intersection configuration"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-24",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "optimisation"
+  ],
+  "name": "Deep Q-learning signal controller for SUMO",
+  "notes": "G7 G7-0403. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "PyTorch weights",
+    "Delay and queue results",
+    "Reward plots and text data"
+  ],
+  "provider": "Andrea Vidali",
+  "related_ids": [
+    "model-sumo"
+  ],
+  "repository": "https://github.com/AndreaVidali/Deep-QLearning-Agent-for-Traffic-Signal-Control",
+  "runs_on": [
+    "model-sumo"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for AndreaVidali/Deep-QLearning-Agent-for-Traffic-Signal-Control: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Asumo+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/andreavidali/deep-qlearning-agent-for-traffic-signal-control/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Deep Q-learning signal controller for SUMO",
+  "type": "model"
+}

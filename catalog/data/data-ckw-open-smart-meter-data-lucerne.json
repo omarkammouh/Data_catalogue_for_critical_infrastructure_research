@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Dataset A: anonymised smart meter load profiles (monthly CSV.gz)",
+      "url": "https://axsa4prod4publicdata4sa.blob.core.windows.net/$web/index.html"
+    },
+    {
+      "kind": "download",
+      "label": "Cleaned 2021-2022 subset on Zenodo (ETH Zurich)",
+      "url": "https://zenodo.org/records/7828796"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing page)",
+      "url": "https://www.ckw.ch/landingpages/open-data"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "data_family": [
+    "demand_operation",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ckw open data smart meter consumption data canton of lucerne",
+    "url": "https://axsa4prod4publicdata4sa.blob.core.windows.net/$web/index.html"
+  },
+  "description": "CKW, the Axpo subsidiary supplying central Switzerland, publishes the 15-minute load profiles of the smart meters in its supply area as open data. Dataset A (anonymised smart meters) holds the load measurement of each smart meter, with meter numbers anonymised and large consumers filtered out; each monthly gzip CSV has an anonymised meter id, the UTC start of the 15-minute window and the consumption in kWh, and files of 2.6 to 4.3 GB are exported about three weeks after each month ends (September 2026 exported on 2026-09-20). A web search summary of CKW's pages (secondary) adds that only consumers below 25,000 kWh a year are shown and that a second dataset aggregates consumption by postal code. A cleaned research subset by Benjamin Sawicki (ETH Zurich) on Zenodo keeps 4,959 meters with complete data for 2021 and 2022 in daily Parquet files, with summary statistics for all 112,148 unfiltered meters, under CC BY 4.0. Coverage: the CKW supply area in the Canton of Lucerne. Access: free downloads; the Axpo open data portal failed TLS name checks and the CKW landing page required JavaScript here. Licence: free open data, with the CC BY 4.0 Zenodo copy. Caveats: no building type or address is attached, and meters change as the rollout proceeds. Simulation uses: household and small business load profiles for demand modelling, distribution network studies and flexibility analysis. Related records: the Swiss residential load profiles dataset and the UK smart meter trials.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "building electricity smart meter load profiles open dataset households",
+      "route": "R22",
+      "source": "google-search"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "CKW open data smart meter Verbrauchsdaten Datensatz Download Haushalte",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "parquet"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://axsa4prod4publicdata4sa.blob.core.windows.net/$web/index.html",
+  "id": "data-ckw-open-smart-meter-data-lucerne",
+  "languages": [
+    "de"
+  ],
+  "last_updated": "2026-09-20",
+  "licence": "Free open data (terms on the CKW page, which blocked automated reading)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.ckw.ch/landingpages/open-data"
+    ]
+  },
+  "maturity": "active",
+  "name": "CKW Open Data smart meter consumption data (Canton of Lucerne)",
+  "notes": "open.data.axpo.com failed TLS hostname verification (not bypassed); www.ckw.ch returned a JavaScript challenge.",
+  "provider": "CKW AG (Centralschweizerische Kraftwerke, an Axpo company)",
+  "regions": [
+    "Canton of Lucerne"
+  ],
+  "related_ids": [
+    "data-switzerland-ekz-residential-load-profiles-2023-2024",
+    "data-uk-energy-demand-research-project-smart-meter-trials",
+    "data-low-carbon-london-smart-meter-households"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Dataset A description, columns, monthly files and export dates",
+      "url": "https://axsa4prod4publicdata4sa.blob.core.windows.net/$web/index.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "ETH cleaned subset: 4,959 meters, 2021-2022, CC BY 4.0",
+      "url": "https://zenodo.org/api/records/7828796"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Secondary (search snippet): thresholds and postal code dataset",
+      "url": "https://www.ckw.ch/landingpages/open-data"
+    }
+  ],
+  "tags": [
+    "CKW",
+    "smart meter",
+    "load profiles",
+    "Lucerne",
+    "Switzerland",
+    "15-minute data"
+  ],
+  "temporal_coverage": "2021 onwards",
+  "title_en": "CKW Open Data smart meter consumption data (Canton of Lucerne)",
+  "type": "data",
+  "update_frequency": "monthly"
+}

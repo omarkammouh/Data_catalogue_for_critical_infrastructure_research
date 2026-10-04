@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/andrewlyden/PyPSA-GB"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/andrewlyden/PyPSA-GB/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Lyden et al. (2024). PyPSA-GB: An open-source model of Great Britain’s power system for simulating future energy scenarios. Energy Strategy Reviews 53, 101375.",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pypsa gb electricity system model",
+    "repo": "github.com/andrewlyden/pypsa-gb",
+    "url": "https://github.com/andrewlyden/PyPSA-GB"
+  },
+  "description": "PyPSA-GB is Andrew Lyden and collaborators' electricity-system model with national coverage of Great Britain, built on PyPSA. It supplies detailed transmission, reduced-network and zonal representations for historical analysis and future scenarios, with automated routing to generation, demand and network sources. Users configure study years and scenarios in YAML and run a Snakemake workflow; outputs are constructed networks and power-system optimisation results. The reviewed documentation describes more than 2,000 buses in the detailed representation, 32 in the reduced model and 17 zones. Source is free under MIT; the licence separately states CC-BY-4.0 for ESPENI and ERA5 inputs. A limitation is that historical and projected inputs follow different sources and assumptions, with the reviewed workflow separating years through 2024 from later scenarios. Future upgrades are planning assumptions. PyPSA-GB can assess capacity, dispatch and electrification pathways, specialising PyPSA (model-pypsa) for Great Britain. The README cites the 2024 Energy Strategy Reviews paper. No network files or energy datasets were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "andrewlyden/pypsa-gb linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/andrewlyden/PyPSA-GB",
+  "id": "model-pypsa-gb",
+  "inputs": [
+    "Scenario and year configuration",
+    "Generation, demand and network inputs"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-02",
+  "licence": "Code: MIT; ESPENI and ERA5 inputs: CC-BY-4.0",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network"
+  ],
+  "name": "PyPSA-GB electricity-system model",
+  "notes": "G7 G7-0740. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "GB network representations",
+    "Dispatch and planning results"
+  ],
+  "provider": "Andrew Lyden and PyPSA-GB collaborators",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/andrewlyden/PyPSA-GB",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for andrewlyden/PyPSA-GB: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/andrewlyden/pypsa-gb"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/andrewlyden/pypsa-gb/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "MIT software terms and explicit ESPENI/ERA5 data attribution terms.",
+      "url": "https://api.github.com/repos/andrewlyden/pypsa-gb/license"
+    }
+  ],
+  "tags": [],
+  "title_en": "Optimisation model for electricity",
+  "type": "model"
+}

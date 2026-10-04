@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "brit source",
+      "url": "https://code.usgs.gov/ghsc/erp/bridge_risk_interactive_tool"
+    },
+    {
+      "kind": "paper",
+      "label": "Software release DOI",
+      "url": "https://doi.org/10.5066/P9N5QTIN"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5066/p9n5qtin",
+    "name": "usgs brit bridge risk interactive tool site specific highway bridge seismic risk under hazard model epistemic uncertainty",
+    "repo": "code.usgs.gov/ghsc/erp/bridge_risk_interactive_tool",
+    "url": "https://code.usgs.gov/ghsc/erp/bridge_risk_interactive_tool"
+  },
+  "description": "brit is a USGS Python package and Jupyter dashboard (Kwong and Jaiswal 2022, DOI 10.5066/P9N5QTIN) published on code.usgs.gov. Contents: the notebook launches an interactive dashboard showing a site-specific seismic risk assessment of a highway bridge from an input hazard curve for 1-second spectral acceleration; users switch Hazus highway bridge class, damage state, fractile hazard curves and fragility dispersion in a sidebar and the plots and risk estimates update. Default fragility curves come from Table 7-6 of the Hazus earthquake technical manual, and hazard curves can come from different USGS National Seismic Hazard Model versions, VS30 estimates or logic-tree branches. Producer: USGS (N.S. Kwong and K.S. Jaiswal). Coverage: any site with a hazard curve, framed around the US hazard models. Format and access: open source Python (numpy, pandas, scipy, panel, holoviews) with unit tests reported at 99% coverage. Licence: CC0 1.0 (repository licence). Caveats: the dashboard supports only 1-second spectral acceleration although the package handles 0.2-second too; the accompanying journal paper was in review when the README was written; the last repository activity was January 2023. Simulation uses: bridge fragility and risk inputs for road network resilience studies, and sensitivity of bridge loss estimates to hazard uncertainty. Related records: data-usgs-national-seismic-hazard-model, data-fhwa-national-bridge-inventory and platform-hazus.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source code-usgs: provider pages read (round 2 register piece)",
+      "route": "R05",
+      "source": "code-usgs"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://code.usgs.gov/ghsc/erp/bridge_risk_interactive_tool",
+  "id": "model-usgs-brit-bridge-risk-interactive-tool-seismic-hazard-uncertainty",
+  "inputs": [
+    "seismic hazard curve (1-second spectral acceleration)",
+    "Hazus highway bridge class and fragility parameters"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023",
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "fragility"
+  ],
+  "name": "USGS brit (Bridge Risk Interactive Tool): site-specific highway bridge seismic risk under hazard-model epistemic uncertainty",
+  "outputs": [
+    "bridge damage-state exceedance and risk estimates",
+    "interactive plots of epistemic uncertainty"
+  ],
+  "provider": "U.S. Geological Survey (Kwong and Jaiswal)",
+  "related_ids": [
+    "data-usgs-national-seismic-hazard-model",
+    "data-fhwa-national-bridge-inventory",
+    "platform-hazus"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "README and project metadata (CC0, created 2022-11-03, last activity 2023-01-10)",
+      "url": "https://code.usgs.gov/ghsc/erp/bridge_risk_interactive_tool/-/raw/main/README.md"
+    }
+  ],
+  "tags": [
+    "USGS",
+    "bridges",
+    "seismic risk",
+    "fragility",
+    "Hazus"
+  ],
+  "title_en": "USGS brit (Bridge Risk Interactive Tool): site-specific highway bridge seismic risk under hazard-model epistemic uncertainty",
+  "type": "model"
+}

@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/openclimatefix/open-source-quartz-solar-forecast"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/openclimatefix/open-source-quartz-solar-forecast/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "open quartz solar forecast",
+    "repo": "github.com/openclimatefix/open-source-quartz-solar-forecast",
+    "url": "https://github.com/openclimatefix/open-source-quartz-solar-forecast"
+  },
+  "description": "Open Quartz is Open Climate Fix's open solar-generation forecast for individual photovoltaic sites. A Python interface accepts latitude, longitude, installed capacity and forecast time, combines them with numerical weather predictions, and returns generation in kilowatts over a zero-to-48-hour horizon. Scripts can collect forecasts in CSV, and a separately hosted API is documented. Geographic coverage of the interface is broad, but the models were trained on UK sites; application elsewhere requires caution. Public software is free under MIT, distinct from the provider's commercial forecast. A limitation is the mismatch between the training weather source and supported GFS, ICON or ECMWF inputs. Historical requests also face missing variables and model-specific time restrictions. The README describes usage logging with an opt-out setting. The package can provide solar scenarios for dispatch and storage studies with PyPSA (model-pypsa). The public repository identifies a software DOI. No service request containing a real site, dataset download or accuracy benchmark was performed.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "openclimatefix/open-source-quartz-solar-forecast linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/openclimatefix/open-source-quartz-solar-forecast",
+  "id": "model-open-quartz-solar-forecast",
+  "inputs": [
+    "Site coordinates and PV capacity",
+    "Weather forecasts",
+    "Forecast timestamp"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-06",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "Open Quartz solar forecast",
+  "notes": "G7 G7-0515. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "PV generation forecast",
+    "CSV time series"
+  ],
+  "provider": "Open Climate Fix",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/openclimatefix/open-source-quartz-solar-forecast",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for openclimatefix/open-source-quartz-solar-forecast: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/openclimatefix/open-source-quartz-solar-forecast"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/openclimatefix/open-source-quartz-solar-forecast/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Statistical model for electricity",
+  "type": "model"
+}

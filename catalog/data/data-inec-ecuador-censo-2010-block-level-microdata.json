@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "National SPSS file (ZIP)",
+      "url": "https://www.ecuadorencifras.gob.ec/documentos/datos/Poblacion_y_Demografia/Censo_poblacion_y_vivienda_/bdd_nivel_manzana_censal/Spss/CPV2010M_SPSS_Nacional.zip"
+    },
+    {
+      "kind": "download",
+      "label": "National Redatam base (ZIP)",
+      "url": "https://www.ecuadorencifras.gob.ec/documentos/datos/Poblacion_y_Demografia/Censo_poblacion_y_vivienda_/bdd_nivel_manzana_censal/Redatam/CPV2010M_Redatam_Nacional.zip"
+    },
+    {
+      "kind": "download",
+      "label": "Example provincial CSV, Galápagos (ZIP)",
+      "url": "https://www.ecuadorencifras.gob.ec/documentos/datos/Poblacion_y_Demografia/Censo_poblacion_y_vivienda_/bdd_nivel_manzana_censal/CSV/CPV2010M_CSV_Galapagos.zip"
+    },
+    {
+      "kind": "portal",
+      "label": "Download page, all provinces in CSV, SPSS and Redatam",
+      "url": "https://www.ecuadorencifras.gob.ec/base-de-datos-censo-de-poblacion-y-vivienda-2010-a-nivel-de-manzana/"
+    },
+    {
+      "kind": "docs",
+      "label": "2010 census questionnaire (PDF)",
+      "url": "https://www.ecuadorencifras.gob.ec//wp-content/descargas/Poblacion_y_demo/Cuestionario_censal/cuestionario_censal.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "EC"
+  ],
+  "data_family": [
+    "system_description",
+    "behavioural_social"
+  ],
+  "data_kind": [
+    "survey",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "inec ecuador censo 2010 full microdata at census block manzana level by province dwelling household and person files",
+    "url": "https://ecuadorencifras.gob.ec/base-de-datos-censo-de-poblacion-y-vivienda-2010-a-nivel-de-manzana"
+  },
+  "description": "Ecuador's National Institute of Statistics and Censuses publishes the full microdata of the 2010 Population and Housing Census at census block level, one ZIP per province plus national files, in CSV, SPSS and Redatam formats. Each province pack holds dwelling, household, person and emigrant files, keyed by geographic codes down to the census block (manzana) and sector. Following the census questionnaire, dwelling records cover type, main access road, construction materials, water source and supply, sanitation connection (sewer, septic tank, cesspit or direct discharge), electricity source (public grid, generator, none) and waste disposal, and household records cover landline and mobile phone, cable television, internet and computer. Coverage is the whole country; the Galápagos pack alone has 9,119 dwelling rows, 7,376 household rows and 25,124 person rows. Format and access: free ZIP downloads with no registration; the parent page adds bases for the 2001 and 1990 censuses and the 2006 Galápagos census. Licence: Creative Commons Attribution 4.0, as stated in the site footer. Caveats: variables are coded and need the questionnaire or a dictionary; the 2022 census site, the national data archive (ANDA) and the Redatam server answered 403 from the cloud, so 2022 microdata were not reached. Simulation uses: block level water, sanitation, power and connectivity gaps and dwelling exposure for hazard and service planning models. Related records: the INE Chile Censo 2024 basic services table.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:EC:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.ecuadorencifras.gob.ec/base-de-datos-censo-de-poblacion-y-vivienda-2010-a-nivel-de-manzana/",
+  "id": "data-inec-ecuador-censo-2010-block-level-microdata",
+  "languages": [
+    "es"
+  ],
+  "licence": "CC BY 4.0 (site footer)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "INEC Ecuador Censo 2010 full microdata at census block (manzana) level by province, dwelling, household and person files",
+  "provider": "Instituto Nacional de Estadística y Censos (INEC), Ecuador",
+  "related_ids": [
+    "data-ine-chile-censo-2024-dwelling-basic-services-by-comuna"
+  ],
+  "schema_summary": "Per province ZIP with four CSV files (Vivienda, Hogar, Poblac, Emig) keyed by geographic codes I01-I10 down to block; dwelling variables V01-V16 (type, access road, materials, water source and supply, sanitation, electricity source, waste disposal, rooms), household variables H00-H15 (drinking water treatment, landline, mobile phone, cable TV, internet, computer), person and emigrant records. Galápagos file: 9,119 dwelling rows, 7,376 household rows, 25,124 person rows",
+  "sectors": [
+    "built_environment.buildings",
+    "water.drinking_water",
+    "water.wastewater",
+    "energy.electricity",
+    "services.waste",
+    "digital.telecom",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Download page: provincial and national ZIPs in SPSS, CSV and Redatam",
+      "url": "https://www.ecuadorencifras.gob.ec/base-de-datos-censo-de-poblacion-y-vivienda-2010-a-nivel-de-manzana/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Downloaded: four CSVs; row counts and column headers read",
+      "url": "https://www.ecuadorencifras.gob.ec/documentos/datos/Poblacion_y_Demografia/Censo_poblacion_y_vivienda_/bdd_nivel_manzana_censal/CSV/CPV2010M_CSV_Galapagos.zip"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: dwelling and household questions (sanitation, electricity, waste, phones, internet)",
+      "url": "https://www.ecuadorencifras.gob.ec//wp-content/descargas/Poblacion_y_demo/Cuestionario_censal/cuestionario_censal.pdf"
+    }
+  ],
+  "spatial_resolution": "census block (manzana) and sector, within zone, parish, canton and province identifiers",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "Ecuador",
+    "Censo 2010",
+    "microdata",
+    "census block",
+    "manzana",
+    "water",
+    "electricity",
+    "sanitation"
+  ],
+  "temporal_coverage": "VII Censo de Población y VI de Vivienda 2010; bases for 2001, 1990 and Galápagos 2006 on the parent page",
+  "temporal_coverage_years": {
+    "end": 2010,
+    "start": 2010
+  },
+  "temporal_resolution": "single census",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "INEC Ecuador Censo 2010 full microdata at census block (manzana) level by province, dwelling, household and person files",
+  "type": "data"
+}

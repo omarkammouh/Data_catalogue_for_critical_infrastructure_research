@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/FZJ-IEK3-VSA/hplib"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/FZJ-IEK3-VSA/hplib/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hplib heat pump model and parameter library",
+    "repo": "github.com/fzj-iek3-vsa/hplib",
+    "url": "https://github.com/FZJ-IEK3-VSA/hplib"
+  },
+  "description": "hplib is a heat-pump library maintained by Forschungszentrum Jülich and collaborators. It derives equipment parameters from public Heat Pump KEYMARK certification data and uses regression models to simulate coefficient of performance, electrical and thermal power, and mass flow. Users select a specific manufacturer/model or one of six generic heat-pump types and provide operating conditions. Outputs can form time series for building and energy-system simulations. Coverage follows the equipment database, not a geographic survey, while temporal resolution is user-selected. Public code is free under MIT, and the resulting database CSV files are separately licensed CC-BY-4.0. A limitation is that several published equipment limits and standby quantities are explicitly not used in the simulation. The README also contains differing inventory counts and historical certification-date summaries, so no single current database size is asserted here. hplib can parameterise heat-pump demand in building studies, complementary to EnergyPlus (model-energyplus). Documentation links model-fitting and validation examples and a software DOI. No certification PDF, database CSV or simulation output was downloaded.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "fzj-iek3-vsa/hplib linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/FZJ-IEK3-VSA/hplib",
+  "id": "model-hplib",
+  "inputs": [
+    "Equipment selection",
+    "Operating temperature and mode inputs"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-10-07",
+  "licence": "Code: MIT; derived database CSV files: CC-BY-4.0",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "hplib heat-pump model and parameter library",
+  "notes": "G7 G7-0604. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "COP and power time series",
+    "Mass-flow estimates"
+  ],
+  "provider": "Forschungszentrum Jülich and hplib contributors",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/FZJ-IEK3-VSA/hplib",
+  "sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for FZJ-IEK3-VSA/hplib: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/fzj-iek3-vsa/hplib"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/fzj-iek3-vsa/hplib/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Hplib heat-pump model and parameter library",
+  "type": "model"
+}

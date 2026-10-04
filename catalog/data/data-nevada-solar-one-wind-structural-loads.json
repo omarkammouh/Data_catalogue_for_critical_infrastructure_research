@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Resource",
+      "url": "https://data.openei.org/submissions/5938"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-023-02896-4"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "weather_observations",
+    "vulnerability_fragility",
+    "calibration_validation",
+    "equipment_specifications"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.25984/2001061",
+    "name": "nevada solar one wind and collector structural loads",
+    "url": "https://data.openei.org/submissions/5938"
+  },
+  "description": "The National Renewable Energy Laboratory publishes wind and structural-load measurements from the operating Nevada Solar One concentrating-solar plant. Meteorological masts and load sensors cover four parabolic-trough rows, with additional lidar scans over the collector field. The 2021–2023 data use daily Parquet files organised by measurement type, year, month and day. Masts and loads have 20 Hz and one-minute products, while lidar files follow individual scans. Public S3 access is free under CC BY 4.0, with a documented Python demonstration. The measurements can validate wind-loading and collector-performance simulations alongside energy assessments with model-system-advisor-model-sam. A caveat is that one plant layout and collector design do not represent all solar installations. Measurement synchronisation, processing and missing periods matter when comparing extreme loads. No part of the approximately 324.6 GB archive was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G1-Q-BACKFILL-ENERGY-05; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "other"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "storm_wind"
+  ],
+  "homepage": "https://data.openei.org/submissions/5938",
+  "id": "data-nevada-solar-one-wind-structural-loads",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-01",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Nevada Solar One wind and collector structural loads",
+  "notes": "G1 G1-0302. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-25.json. Related-resource uses are not tested interfaces. ",
+  "provider": "National Renewable Energy Laboratory",
+  "regions": [
+    "Nevada Solar One"
+  ],
+  "related_ids": [
+    "model-system-advisor-model-sam"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://data.openei.org/submissions/5938"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/openEDI/documentation/contents/NSO.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-023-02896-4"
+    }
+  ],
+  "tags": [],
+  "temporal_coverage": "2021–2023",
+  "temporal_resolution": "20 Hz and 1-minute series; separate lidar scans",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Nevada Solar One wind and collector structural loads",
+  "type": "data"
+}

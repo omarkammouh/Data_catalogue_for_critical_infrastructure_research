@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/pyModeS/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/junzis/pyModeS"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pymodes mode s and ads b message decoder",
+    "url": "https://github.com/junzis/pyModeS"
+  },
+  "description": "pyModeS is a fast Python decoder for Mode S and ADS-B messages broadcast by aircraft. Version 3 is a ground-up rewrite with a single decode function that returns every decodable field in one pass: identification and call sign, airborne and surface position through CPR pair resolution, airborne velocity, and Comm-B registers such as data link capability and heading and speed. It decodes single messages, batches with timestamps, and streams through a stateful PipeDecoder that keeps per-aircraft state, matches position pairs and evicts stale aircraft; surface positions use an airport reference from a shipped airport database. Coverage is any receiver data, such as recordings from the OpenSky Network. Access: free on PyPI and GitHub under the GNU General Public License version 3; release 3.6.0 was uploaded on 16 July 2026 and needs Python 3.11 or later. Caveats: it decodes raw messages only, so trajectories still need cleaning and assembly, and some Comm-B registers are ambiguous. It supports building aircraft trajectories for airspace capacity, network flow and emissions studies. It complements the OpenSky Network, the traffic library and OpenAP catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review doi:10.1017/s0373463321000953 (journal review)",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/junzis/pyModeS",
+  "id": "model-pymodes",
+  "inputs": [
+    "Mode S and ADS-B hexadecimal messages",
+    "timestamps"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-16",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "pyModeS, Mode S and ADS-B message decoder",
+  "outputs": [
+    "decoded aircraft identity",
+    "position",
+    "velocity and state fields"
+  ],
+  "provider": "pyModeS developers (GitHub junzis)",
+  "related_ids": [
+    "data-opensky-network",
+    "model-openap",
+    "model-traffic-air-traffic-toolbox"
+  ],
+  "runs_on": [
+    "Python 3.11 or later"
+  ],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "v3 rewrite; single decode(); batch with timestamps; CPR pairs; Comm-B; PipeDecoder per-ICAO state; surface_ref airport; Python 3.11+; GPL-3.0 badge",
+      "url": "https://raw.githubusercontent.com/junzis/pyModeS/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU GPL v3; version 3.6.0 uploaded 2026-07-16",
+      "url": "https://pypi.org/pypi/pyModeS/json"
+    }
+  ],
+  "tags": [
+    "ADS-B",
+    "Mode S",
+    "decoder",
+    "aircraft surveillance"
+  ],
+  "title_en": "PyModeS, Mode S and ADS-B message decoder",
+  "type": "model",
+  "validated_on": []
+}

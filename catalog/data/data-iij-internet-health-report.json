@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "IHR web interface",
+      "url": "https://ihr.iijlab.net/ihr/en-us/"
+    },
+    {
+      "kind": "api",
+      "label": "IHR API (Swagger)",
+      "url": "https://ihr.iijlab.net/ihr/api/"
+    },
+    {
+      "kind": "download",
+      "label": "Daily archive",
+      "url": "https://archive.ihr.live/ihr/"
+    },
+    {
+      "kind": "docs",
+      "label": "Archive and data policy",
+      "url": "https://ihr-archive.iijlab.net/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "service_performance",
+    "system_description"
+  ],
+  "data_kind": [
+    "time_series",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "internet health report ihr as hegemony network delay route origin validation and forwarding anomalies",
+    "url": "https://ihr.iijlab.net/ihr/en-us"
+  },
+  "description": "The Internet Health Report is a monitoring service run by the IIJ Research Laboratory that publishes metrics on the structure and health of the global internet, computed from public BGP and traceroute data such as RIPE RIS, RouteViews and RIPE Atlas. Its main metric is AS hegemony, the dependency of each network (autonomous system) on the networks through which it is reached, in a local form per origin network and a global form that measures centrality; country hegemony gives the same for countries. It also reports network delay and forwarding anomalies, route origin validation with RPKI and its history, and a graph of internet resources (IYP). Coverage: all networks seen in the public routing data, worldwide, daily from about 2017. Format and access: a web interface, a public REST API, and an archive of daily dump files per metric at archive.ihr.live and data.bgpkit.com, free; data are licensed CC BY-NC-SA 4.0. Caveats: metrics depend on the vantage points of the collectors; non-commercial licence; the web pages need JavaScript. Simulation uses: network dependency and centrality weights for cascading failure and resilience models of internet routing, and a record of anomalies during outages. Related records: data-ripe-ris, data-routeviews and data-ripe-atlas are the inputs; data-caida-as-relationships gives the AS graph; data-ioda-internet-outage-detection gives outage signals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "internet health report",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://ihr.iijlab.net/ihr/en-us/",
+  "id": "data-iij-internet-health-report",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01",
+  "licence": "CC-BY-NC-SA-4.0",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Internet Health Report (IHR): AS hegemony, network delay, route origin validation and forwarding anomalies",
+  "notes": "Archive page, its data policy and the archive directory (hegemony, country_hegemony, rov, rpki-history, tr_hegemony, iyp; hegemony subfolders dated 2024 and 2026) read with curl on 2026-09-26. The API page is a Swagger UI. Start year is from recall.",
+  "provider": "Internet Initiative Japan (IIJ) Research Laboratory, with contributors including BGPKIT",
+  "related_ids": [],
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience"
+  ],
+  "size": "one file per metric per day",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "archive and data policy",
+      "url": "https://ihr-archive.iijlab.net/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "archive directory",
+      "url": "https://archive.ihr.live/ihr/"
+    }
+  ],
+  "spatial_resolution": "autonomous system; country",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "AS hegemony",
+    "BGP",
+    "RPKI",
+    "internet health",
+    "IIJ"
+  ],
+  "temporal_coverage": "about 2017 to present (start not checked)",
+  "temporal_resolution": "daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "Internet Health Report (IHR): AS hegemony, network delay, route origin validation and forwarding anomalies",
+  "type": "data",
+  "update_frequency": "daily"
+}

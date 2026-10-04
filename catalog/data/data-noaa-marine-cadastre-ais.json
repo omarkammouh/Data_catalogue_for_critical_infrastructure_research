@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Vessel traffic page and bulk downloads",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://hub.marinecadastre.gov/pages/vesseltraffic"
+    },
+    {
+      "kind": "download",
+      "label": "AIS vessel traffic, one day (2023-01-01, zip with CSV, 319 MB)",
+      "url": "https://coast.noaa.gov/htdata/CMSP/AISDataHandler/2023/AIS_2023_01_01.zip"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "marine cadastre vessel traffic ais data for us waters",
+    "url": "https://hub.marinecadastre.gov/pages/vesseltraffic"
+  },
+  "description": "Marine Cadastre publishes vessel traffic data from the Automatic Identification System collected by the US Coast Guard's Nationwide AIS receiver network: broadcast points with location, time, vessel type, speed, length, beam and draft, plus derived annual track lines and transit counts. It is a joint effort of the Bureau of Ocean Energy Management, NOAA and the US Coast Guard Navigation Center. Coverage is United States coastal waters for calendar years 2009 to 2026, with a separate Guam set for 2015 to 2025. Points are filtered to one minute; 2009 to 2014 come as monthly zipped file geodatabases by UTM zone, with ship names removed and MMSI encrypted for 2010 to 2014, and data since 2015 are daily Zstd-compressed CSV files, with 2024 also as analysis-ready GeoParquet on Azure. The AccessAIS tool downloads user-defined areas and dates, and bulk tables list all files; everything is free with no registration. Caveats: there is no live feed and the newest data lag the present, vessel identity fields were corrected with AVIS and later a new identification database, and coverage is limited to US receiver range. The data support network flow, capacity planning and hazard exposure studies of US ports and waterways, and relate to global density layers such as the World Bank shipping traffic density catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.maritime_ports",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv",
+    "esri_geodatabase",
+    "parquet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://hub.marinecadastre.gov/pages/vesseltraffic",
+  "id": "data-noaa-marine-cadastre-ais",
+  "languages": [
+    "en"
+  ],
+  "licence": "US Government data (no licence terms stated)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Marine Cadastre vessel traffic (AIS) data for US waters",
+  "provider": "Bureau of Ocean Energy Management (BOEM), NOAA Office for Coastal Management and US Coast Guard Navigation Center (Marine Cadastre)",
+  "related_ids": [
+    "data-world-bank-global-shipping-traffic-density"
+  ],
+  "sectors": [
+    "transport.maritime_ports",
+    "transport.inland_waterways"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "rendered: BOEM, NOAA, USCG NAVCEN; 2009 to 2026; formats by period; GeoParquet 2024; AccessAIS; no live data; page updated 18 September 2026",
+      "url": "https://hub.marinecadastre.gov/pages/vesseltraffic"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://hub.marinecadastre.gov/pages/vesseltraffic"
+    }
+  ],
+  "spatial_resolution": "individual vessel positions",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "AIS",
+    "vessel traffic",
+    "United States",
+    "track lines"
+  ],
+  "temporal_coverage": "from 2009 to 2026",
+  "temporal_resolution": "one minute",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Marine Cadastre vessel traffic (AIS) data for US waters",
+  "type": "data",
+  "update_frequency": "several_per_year"
+}

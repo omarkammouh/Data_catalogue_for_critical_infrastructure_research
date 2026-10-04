@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/timtroendle/simple-simple"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/timtroendle/simple-simple/blob/develop/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "simple simple one zone building energy model",
+    "repo": "github.com/timtroendle/simple-simple",
+    "url": "https://github.com/timtroendle/simple-simple"
+  },
+  "description": "Simple Simple is a Python implementation of a one-capacity, one-resistance building heat model derived from ISO 13790. Its README documents the equations, heat-transfer parameters, heating and cooling set points, a package installation path and a one-step usage example. Users provide floor area, outside temperature, thermal mass, conductance and HVAC limits; outputs are the modelled indoor temperature and required heating or cooling power. The model describes a generic conditioned space, not a particular building stock. GitHub metadata states MIT licensing. A limitation is that the repository intentionally omits windows, ventilation, solar gain and internal gain, so it cannot stand in for a full building retrofit assessment. Its small state space is useful for testing controller logic or coupling demand to district-energy models. The catalogue's EnergyPlus model addresses more detailed building physics. No package or weather data was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "building energy model",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/timtroendle/simple-simple",
+  "id": "model-simple-simple-building-energy",
+  "inputs": [
+    "Outdoor temperature, one-zone thermal parameters and HVAC set points"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-02-14",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Simple Simple one-zone building energy model",
+  "notes": "G7 G7-1982. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Indoor temperature and heating or cooling power"
+  ],
+  "provider": "Simple Simple contributors",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/timtroendle/simple-simple",
+  "sectors": [
+    "built_environment.buildings",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for timtroendle/simple-simple: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=building+energy+model&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/timtroendle/simple-simple/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Simple Simple one-zone building energy model",
+  "type": "model"
+}

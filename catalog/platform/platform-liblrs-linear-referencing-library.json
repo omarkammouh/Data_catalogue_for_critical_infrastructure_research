@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/OpenRailAssociation/liblrs"
+    },
+    {
+      "kind": "docs",
+      "label": "Rust documentation",
+      "url": "https://docs.rs/liblrs"
+    },
+    {
+      "kind": "download",
+      "label": "Python bindings on PyPI",
+      "url": "https://pypi.org/project/liblrs-python/"
+    },
+    {
+      "kind": "viewer",
+      "label": "HTML demonstrator",
+      "url": "https://OpenRailAssociation.github.io/liblrs/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "liblrs linear referencing system library",
+    "repo": "github.com/openrailassociation/liblrs",
+    "url": "https://github.com/osrd-project/liblrs"
+  },
+  "deployment": [
+    "desktop",
+    "own_server",
+    "hosted_service"
+  ],
+  "description": "liblrs is a library for linear referencing systems, which locate a position along a curve such as a road, canal or railway relative to fixed reference points like milestones. It lets users build scales of anchors, attach them to curves and convert between linear references and coordinates, and it is written to cope with awkward real cases: anchors that are not numbers or not on the curve, changing distances after a bypass is built, a moved origin, or one scale shared by a river and its canal. The library is developed in the OSRD project of the OpenRail Association. Coverage: generic, any network with a linear referencing scheme, on spherical or projected coordinates. Access: Rust crate with documentation on docs.rs, Python bindings on PyPI, JavaScript bindings through WebAssembly and an online HTML demonstrator; data are serialised with FlatBuffers. Licence and cost: MIT, free. Caveats: it is a library, so the user must supply the reference points and curves, and infrastructure managers' LRS data are often not public. It prepares asset positions for rail digital twins and for mapping incidents, inspections and hazards onto networks, and is used alongside the OSRD railway design platform catalogued here.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "https://openrailassociation.org/ projects section read 2026-09-28",
+      "route": "R06",
+      "source": "transport-openrail-association"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/osrd-project/liblrs",
+  "id": "platform-liblrs-linear-referencing-library",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "FlatBuffers serialisation of LRS data",
+    "spherical and projected coordinates"
+  ],
+  "language": [
+    "rust_go"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-13",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "liblrs, linear referencing system library",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "OpenRail Association (OSRD project)",
+  "related_ids": [
+    "platform-osrd"
+  ],
+  "sectors": [
+    "transport.rail",
+    "transport.road",
+    "transport.inland_waterways"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: linear referencing library in Rust, Python, JavaScript; MIT licence; edge cases; demonstrator; FlatBuffers",
+      "url": "https://raw.githubusercontent.com/osrd-project/liblrs/main/README.md"
+    }
+  ],
+  "supported_sectors": [
+    "transport.rail",
+    "transport.road",
+    "transport.inland_waterways"
+  ],
+  "tags": [
+    "linear referencing",
+    "railway assets",
+    "Rust",
+    "OpenRail Association",
+    "r2-fresh-transport"
+  ],
+  "title_en": "Liblrs linear referencing system library",
+  "type": "platform"
+}

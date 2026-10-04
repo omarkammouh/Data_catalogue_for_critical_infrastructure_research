@@ -1,0 +1,145 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Giswater website",
+      "url": "https://www.giswater.org/"
+    },
+    {
+      "kind": "repo",
+      "label": "QGIS plugin source repository",
+      "url": "https://github.com/Giswater/giswater_qgis_plugin"
+    },
+    {
+      "kind": "docs",
+      "label": "README (requirements, install, licence)",
+      "url": "https://raw.githubusercontent.com/Giswater/giswater_qgis_plugin/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "giswater",
+    "repo": "github.com/giswater/giswater_qgis_plugin",
+    "url": "https://giswater.org"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "Giswater is an open-source platform for managing water supply, sewerage and urban drainage networks inside a GIS. It combines a PostgreSQL/PostGIS database model with a QGIS plugin, so a utility's network assets are stored, edited and queried spatially and can be exported to hydraulic engines: the Go2Epa function builds EPANET models for supply networks and EPA SWMM models for drainage, and the plugin bundles WNTR and swmm-api for running them. The README describes it as the first open-source tool for integral water cycle management, started in 2014 for city councils, water and sewerage service providers and hydraulic engineers, and able to connect to SCADA, WMS, ERP, CRM and business intelligence tools. Development is organised in plugin, database-model and documentation repositories under the Giswater organisation, with monthly builds and annual minor releases (latest tag v4.17.1 when read on 28 September 2026); the website adds master planning and flood risk evaluation as uses. Coverage is generic: any network whose data a utility loads. Access: free download under the GNU General Public License version 3 or later; it needs PostgreSQL with PostGIS and QGIS 3.34 LTR. Caveats: the website is mainly in Spanish, setup is server-client and demands database skills, and simulation accuracy rests on the utility's own asset data. Simulation uses: network flow and capacity planning, flood hazard exposure and a basis for digital twins. Related records: EPANET (model-epanet), EPA SWMM (model-epa-swmm) and WNTR (model-wntr).",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "water network GIS software open source QGIS plugin EPANET QWater",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://www.giswater.org/",
+  "hosted_models": [
+    "model-epanet",
+    "model-epa-swmm",
+    "model-wntr"
+  ],
+  "id": "platform-giswater",
+  "interfaces": [
+    "desktop_gui",
+    "code_library",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "EPANET INP",
+    "EPA SWMM INP",
+    "WMS",
+    "SCADA connections",
+    "ERP and CRM integration"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "es",
+    "en",
+    "ca"
+  ],
+  "last_updated": "2026-09-28",
+  "licence": "GPL-3.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Giswater",
+  "notes": "The date of tag v4.9.2 was not read (GitHub API is not reachable from this session); the description gives only the tag name and the date it was read. Provider field combines the README acknowledgements and the association named on the website.",
+  "open_source": true,
+  "platform_kind": [
+    "gis_environment",
+    "modelling_suite"
+  ],
+  "provider": "Giswater Association and BGEO OPEN GIS S.L. (with GITS-BarcelonaTech and Catalan water utilities as founding contributors)",
+  "related_ids": [
+    "model-epanet",
+    "model-epa-swmm",
+    "model-wntr"
+  ],
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "hazard_exposure",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, 2014 start, PostgreSQL/PostGIS and QGIS 3.34 requirements, EPANET/SWMM/SCADA/ERP integration, three repositories, release cadence, WNTR and swmm-api bundled, GPL-3.0-or-later, founding contributors",
+      "url": "https://raw.githubusercontent.com/Giswater/giswater_qgis_plugin/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "open source and free, master plans with GIS, flood risk evaluation, users (engineers, utilities, consultants), association and forum, 2nd Giswater Conference 16 April 2026",
+      "url": "https://www.giswater.org/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: latest tag v4.9.2",
+      "url": "https://github.com/Giswater/giswater_qgis_plugin"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed description, last_updated.",
+      "url": "https://www.giswater.org/"
+    }
+  ],
+  "supported_sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "water.stormwater_drainage"
+  ],
+  "tags": [
+    "QGIS",
+    "PostGIS",
+    "water network asset management",
+    "sewer network",
+    "EPANET",
+    "SWMM",
+    "open source",
+    "Spain"
+  ],
+  "title_en": "Giswater open-source water supply and drainage network platform",
+  "type": "platform"
+}

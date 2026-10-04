@@ -1,0 +1,141 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "STAC collection: radio and TV transmitters",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.radio-fernsehsender"
+    },
+    {
+      "kind": "download",
+      "label": "GeoJSON (English)",
+      "url": "https://data.geo.admin.ch/ch.bakom.radio-fernsehsender/radio-fernsehsender/radio-fernsehsender_2056_en.json"
+    },
+    {
+      "kind": "download",
+      "label": "STAC collection: local and regional TV coverage areas",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.versorgungsgebiet-tv"
+    },
+    {
+      "kind": "download",
+      "label": "STAC collection: local and regional radio coverage areas",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.versorgungsgebiet-ukw"
+    },
+    {
+      "kind": "viewer",
+      "label": "map.geo.admin.ch transmitter map",
+      "url": "https://map.geo.admin.ch/?topic=funksender&lang=en&layers=ch.bakom.radio-fernsehsender"
+    },
+    {
+      "kind": "api",
+      "label": "Layer attributes (geo.admin REST API)",
+      "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bakom.radio-fernsehsender"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "data_family": [
+    "system_description",
+    "catalogues_registries",
+    "telecom_coverage_spectrum",
+    "critical_facilities"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "swiss radio and tv transmitters and broadcast coverage areas bakom geodata",
+    "url": "https://map.geo.admin.ch?lang=en&layers=ch.bakom.radio-fernsehsender&topic=funksender"
+  },
+  "description": "The Swiss Federal Office of Communications (BAKOM) publishes the locations of all licensed radio and television transmitters in Switzerland as open geodata on the federal geoportal. The layer Swiss radio and TV broadcasters covers VHF FM (UKW), DAB+ and DVB-T transmitters, and for each site gives a code and name, the services carried, the transmitter power and the programmes with their frequencies or channels; the multiplex operators (SRG SSR and regional operators) describe the content of DAB ensembles and DVB-T bouquets. Two companion layers map the licensed coverage areas of private local and regional radio and television broadcasters with a performance mandate under the Radio and Television Act. BAKOM also offers transmitter lists as PDF and machine-readable coordination data in CSV and XML for transmitters coordinated with neighbouring countries under the Geneva plans GE84 and GE06. Coverage: Switzerland; the transmitter layer is refreshed daily in the geodata service (last build 25 September 2026). Format and access: GeoJSON in the Swiss LV95 grid in five languages from data.geo.admin.ch (STAC API), Shapefile coverage areas, WMS and the map.geo.admin.ch viewer; free of charge under the geo.admin.ch terms with source attribution. Caveats: the STAC entry labels the licence proprietary; the coverage-area geometries date from the 2007 licensing round; no antenna heights or patterns are given. Simulation uses: exposure of broadcast sites to hazards, redundancy of emergency radio and TV distribution, and network models of multiplex coverage. Related records: the ITU BR IFIC holds the international registrations, and the BAKOM mobile base station layer covers telecom sites.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "BAKOM Standorte Radio- und Fernsehsender geodaten map.geo.admin.ch Sendeanlagen Rundfunk download",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "shapefile",
+    "csv",
+    "xml",
+    "document",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://map.geo.admin.ch/?topic=funksender&lang=en&layers=ch.bakom.radio-fernsehsender",
+  "id": "data-bakom-radio-tv-transmitters-switzerland",
+  "languages": [
+    "de",
+    "fr",
+    "it",
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "Free of charge under the geo.admin.ch terms of use (fair use, source attribution); STAC entry lists the licence as proprietary",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Swiss radio and TV transmitters and broadcast coverage areas (BAKOM geodata)",
+  "notes": "STAC metadata and REST layer attributes read by API on 2026-09-26; file size from a header request. BAKOM page read via fetch (lists and coordination data). Terms from the geo.admin.ch terms of use page; opendata.swiss refused automated requests (403).",
+  "provider": "Federal Office of Communications (BAKOM / OFCOM Switzerland), published through the Federal Spatial Data Infrastructure (geo.admin.ch)",
+  "related_ids": [],
+  "schema_summary": "site code, name, services (UKW, DAB+, TV), transmitter power, programmes, frequencies or channels; coverage polygons by broadcaster",
+  "sectors": [
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "emergency_response"
+  ],
+  "size": "about 0.2 MB GeoJSON for the transmitter layer",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "layer description and assets",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.radio-fernsehsender"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "lists and coordination data",
+      "url": "https://www.bakom.admin.ch/de/standorte-von-sendeanlagen"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "terms of use",
+      "url": "https://www.geo.admin.ch/en/general-terms-of-use-fsdi"
+    }
+  ],
+  "spatial_resolution": "transmitter site (point) and coverage polygons",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "broadcast transmitters",
+    "DAB+",
+    "FM",
+    "DVB-T",
+    "Switzerland",
+    "geodata"
+  ],
+  "temporal_coverage": "current licensed transmitters; coverage areas from 2007",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Swiss radio and TV transmitters and broadcast coverage areas (BAKOM geodata)",
+  "type": "data",
+  "update_frequency": "daily"
+}

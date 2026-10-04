@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Download the entire dataset",
+      "note": "file linked from the record homepage (2026-10-01); found on https://www.census.gov/programs-surveys/international-programs/about/idb.html",
+      "url": "https://www.census.gov/data-tools/demo/data/idb/dataset/idbzip.zip"
+    },
+    {
+      "kind": "api",
+      "label": "IDB API (timeseries/idb)",
+      "note": "API key required",
+      "url": "https://www.census.gov/data/developers/data-sets/international-database.html"
+    },
+    {
+      "kind": "viewer",
+      "label": "IDB web tool",
+      "url": "https://www.census.gov/data-tools/demo/idb/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "scenarios_projections",
+    "demand_operation",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "international database idb world population estimates and projections",
+    "url": "https://census.gov/programs-surveys/international-programs/about/idb.html"
+  },
+  "description": "The International Database (IDB) of the U.S. Census Bureau provides population estimates and projections for over 200 countries and areas with populations of 5,000 or more, and for thousands of subnational areas. For each country it contains total population, population by single year of age and by five-year age group and sex, and demographic indicators on fertility, mortality and migration, from a base year through 2100 for 1 July of each year. The Census Bureau has produced these estimates since the 1960s and, with the United Nations Population Division, is one of the few organisations that regularly estimate and project the world's population. The IDB was last updated in December 2025 and the next update is planned for November 2026. Access: the IDB web tool for display and download, and the Census Data API (timeseries/idb/1year and 5year, free key required); free and public domain. Caveats: estimates for countries with old or missing censuses rest on assumptions, and subnational data are not available for every country or year. Simulation uses: population exposure and demand scenarios for infrastructure studies outside the United States, including national demand projections to 2100 and age structures for vulnerability analysis. Related records: U.S. national population projections, IPUMS International census microdata, the Census Bureau's subnational population tables on HDX and gridded population products such as LandScan and GHSL.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; Data Tools and Applications list, entry International Database",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): api.census.gov/data.json dataset list, group timeseries/idb",
+      "route": "R35",
+      "source": "census-data-api"
+    }
+  ],
+  "formats": [
+    "api",
+    "web_page",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.census.gov/programs-surveys/international-programs/about/idb.html",
+  "id": "data-us-census-international-database",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-12",
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "International Database (IDB): world population estimates and projections",
+  "notes": "The earliest base year differs by country; 1950 in temporal_coverage_years is the earliest year the IDB tool offers and is approximate.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-national-population-projections",
+    "data-ipums-international-census-microdata",
+    "data-us-census-bureau-subnational-population-housing-tables-hdx",
+    "data-ornl-landscan-population",
+    "data-copernicus-ghsl-built-up-population"
+  ],
+  "schema_summary": "Population by single year of age and sex, 5-year groups, fertility, mortality and migration indicators by GENC country code and year",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Scope (200+ countries, subnational areas), access routes, last update December 2025, next November 2026",
+      "url": "https://www.census.gov/programs-surveys/international-programs/about/idb.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "API endpoints, variables by single year of age and sex, base year through 2100, API key required",
+      "url": "https://www.census.gov/data/developers/data-sets/international-database.html"
+    }
+  ],
+  "spatial_resolution": "Country; subnational areas for some countries",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "world population",
+    "population projections",
+    "International Database",
+    "IDB",
+    "demography",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "Country base year to 2100",
+  "temporal_coverage_years": {
+    "end": 2100,
+    "start": 1950
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "International Database (IDB): world population estimates and projections",
+  "type": "data",
+  "update_frequency": "annual"
+}

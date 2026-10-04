@@ -1,0 +1,153 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "NID website: search, map, downloads",
+      "url": "https://nid.sec.usace.army.mil/"
+    },
+    {
+      "kind": "download",
+      "label": "NID national CSV export",
+      "url": "https://nid.sec.usace.army.mil/api/nation/csv"
+    },
+    {
+      "kind": "api",
+      "label": "NID public ArcGIS feature service",
+      "url": "https://geospatial.sec.usace.army.mil/dls/rest/services/NID/National_Inventory_of_Dams_Public_Service/FeatureServer"
+    },
+    {
+      "kind": "api",
+      "label": "Data service",
+      "note": "Checked 2026-10-01: reached from the provider page https://geospatial.sec.usace.army.mil/dls/rest/services/NID/.",
+      "url": "https://geospatial.sec.usace.army.mil/dls/services/NID/National_Inventory_of_Dams_Public_Service/MapServer/FeatureServer?wsdl"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "crs": "WGS 84 (latitude and longitude fields)",
+  "data_family": [
+    "system_description",
+    "condition_ageing",
+    "governance_regulation",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "national inventory of dams nid",
+    "url": "https://nid.sec.usace.army.mil"
+  },
+  "description": "The National Inventory of Dams is the United States' register of dams, compiled and published by the U.S. Army Corps of Engineers under congressional authorisation from the data of state and federal dam-safety regulators and owners. On 26 September 2026 its public feature service held 92,606 dam records. Each record carries 81 attributes: identifiers and names, owner types, the federal and state agencies that regulate, inspect and operate the dam, location with river, county and congressional district, purposes, dam and core types, foundation, several height definitions, length, volume, year completed and years modified, normal, maximum and NID storage, surface and drainage area, maximum discharge, spillway and outlet gates, lock dimensions, last inspection date and frequency, downstream hazard potential, condition assessment, whether an emergency action plan exists and when it was revised, and operational status. Coverage is the United States and its territories, at point resolution, continuously updated record by record. It is open through the NID website (search, map, national CSV export) and an ArcGIS REST feature service, free of charge; no licence text is stated. Caveats: attribute completeness varies by state regulator, some fields are coded values, and the inventory does not include inundation maps or structural design detail. Simulation uses: dam-failure hazard exposure, reservoir and flood-defence system description for resilience models, emergency planning using hazard potential and emergency action plan status, and ageing analysis from construction and inspection dates. It pairs with the National Levee Database for US flood defences and with global dam inventories such as GRanD and Global Dam Watch.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "national inventory of dams dataset USACE download API",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geojson",
+    "ogc_map_service",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://geospatial.sec.usace.army.mil/dls/rest/services/NID/National_Inventory_of_Dams_Public_Service/FeatureServer",
+  "id": "data-usace-national-inventory-of-dams",
+  "languages": [
+    "en"
+  ],
+  "licence": "U.S. Government public data (no licence stated on the service)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "National Inventory of Dams (NID)",
+  "notes": "The NID website is a JavaScript application whose text could not be read by script; facts come from its public feature service. The site title also names a Low-Head Dams Inventory, not described here. Licence not stated; U.S. federal data.",
+  "provider": "U.S. Army Corps of Engineers",
+  "related_ids": [
+    "data-usace-national-levee-database"
+  ],
+  "schema_summary": "81 fields including NIDID, name, owner types, regulatory agencies, location, river, purposes, dam types, heights, length, volume, year completed, storages, surface and drainage area, maximum discharge, spillway, outlet gates, last inspection date and frequency, hazard potential, condition assessment, emergency action plan status, operational status",
+  "sectors": [
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "emergency_response",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "site title National Inventory of Dams & Low-Head Dams Inventory; national CSV export answers at /api/nation/csv (HEAD only)",
+      "url": "https://nid.sec.usace.army.mil/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "81 fields listed; point layer",
+      "url": "https://geospatial.sec.usace.army.mil/dls/rest/services/NID/National_Inventory_of_Dams_Public_Service/FeatureServer/0?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "count 92,606",
+      "url": "https://geospatial.sec.usace.army.mil/dls/rest/services/NID/National_Inventory_of_Dams_Public_Service/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "congressionally authorised, maintained by USACE (secondary source)",
+      "url": "https://en.wikipedia.org/wiki/National_Inventory_of_Dams"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://nid.sec.usace.army.mil/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://nid.sec.usace.army.mil/api/nation/csv"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): data page found by following the provider site. Verified: https://geospatial.sec.usace.army.mil/dls/services/NID/National_Invent -> verified by fetch during the check",
+      "url": "https://geospatial.sec.usace.army.mil/dls/services/NID/National_Inventory_of_Dams_Public_Service/MapServer/FeatureServer?wsdl"
+    }
+  ],
+  "spatial_resolution": "point location per dam",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "dams",
+    "dam safety",
+    "hazard potential",
+    "condition assessment",
+    "emergency action plan",
+    "reservoir storage",
+    "United States"
+  ],
+  "temporal_coverage": "current inventory; per-dam update dates, construction years back to the 19th century",
+  "temporal_resolution": "Snapshot (no time step)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "National Inventory of Dams (NID)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

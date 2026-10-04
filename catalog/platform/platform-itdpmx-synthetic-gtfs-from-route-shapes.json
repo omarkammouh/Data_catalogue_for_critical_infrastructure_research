@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/ITDPmx/generation-gtfs-from-shapes"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "MX"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "itdp mexico synthetic gtfs generator from route shapes",
+    "repo": "github.com/itdpmx/generation-gtfs-from-shapes",
+    "url": "https://github.com/ITDPmx/generation-gtfs-from-shapes"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "ITDP Mexico publishes a notebook pipeline that makes a synthetic GTFS Schedule feed from public-transit route geometry. A user supplies GeoJSON LineStrings with route labels and types and edits a JSON file for stop spacing, route speeds, headways, service dates and operating hours. The notebooks generate stops, shapes, trips and frequency-based schedules; an optional conversion produces explicit stop_times for tools such as r5r and r5py. The README names a Mérida worked example and gives installation, input fields, notebook order and validation steps. The code is MIT-licensed. Its schedules are assumptions, not observed agency trips; the README explicitly warns users of that limit. This review opened documentation and the repository tree but did not execute the notebooks or inspect the generated ZIP. Geographic coverage depends on user route inputs, and time resolution depends on the configured headways and service calendar. A modeller could use the output to compare accessibility under alternative route spacing or service frequency assumptions. Related catalogue resource data-gtfs-specification describes the target format; this repository is a concrete GTFS generation tool, not an observed transit feed. Its simulation use is synthetic public-transport network-flow and capacity planning.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "gtfs dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/ITDPmx/generation-gtfs-from-shapes",
+  "id": "platform-itdpmx-synthetic-gtfs-from-route-shapes",
+  "interfaces": [
+    "code_library",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "GeoJSON LineString routes",
+    "GTFS Schedule",
+    "r5r",
+    "r5py"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ITDP Mexico synthetic GTFS generator from route shapes",
+  "notes": "G8; G8-0774. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: ITDP Mexico. generation-gtfs-from-shapes repository documentation, accessed 2026-09-28..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Institute for Transportation and Development Policy Mexico",
+  "related_ids": [
+    "data-gtfs-specification"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/ITDPmx/generation-gtfs-from-shapes/blob/main/readme.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/ITDPmx/generation-gtfs-from-shapes"
+    }
+  ],
+  "tags": [],
+  "title_en": "ITDP Mexico synthetic GTFS generator from route shapes",
+  "type": "platform"
+}

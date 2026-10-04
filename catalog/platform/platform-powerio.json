@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/eigenergy/powerio"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/eigenergy/powerio/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "powerio power system data compiler",
+    "repo": "github.com/eigenergy/powerio",
+    "url": "https://github.com/eigenergy/powerio"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "PowerIO is a Rust and Python toolkit maintained by EIG Energy contributors for translating power-system cases into typed data, sparse solver matrices and network graphs. Its repository documents reading and writing several case formats, retaining source provenance and reporting information lost during conversion. Users supply a grid case such as a MATPOWER file, select a target format or matrix representation, and receive solver-ready values or diagnostics. Geographic coverage is the network described by the input case, not a fixed country. The repository offers MIT or Apache-2.0 licensing and examples; the Python package wraps the Rust core. A limitation is that format conversion does not validate electrical parameters or guarantee identical solver behaviour after fields are dropped. PowerIO can prepare transmission and distribution cases for capacity and contingency models. The catalogue's model-pypsa is a separate power-system optimisation package that could consume prepared cases through an adapter; no coupling was tested. No case data or package was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:power-systems fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/eigenergy/powerio",
+  "id": "platform-powerio",
+  "interfaces": [
+    "code_library"
+  ],
+  "language": [
+    "rust_go"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-23",
+  "licence": "MIT OR Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "PowerIO power-system data compiler",
+  "notes": "G7 G7-1471. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "EIG Energy contributors",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for eigenergy/powerio: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Apower-systems+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/eigenergy/powerio/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Toolkit for translating power-system cases into typed data",
+  "type": "platform"
+}

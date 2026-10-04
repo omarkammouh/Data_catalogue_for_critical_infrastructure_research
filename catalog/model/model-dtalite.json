@@ -1,0 +1,136 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "DTALite and NeXTA (GitHub)",
+      "url": "https://github.com/asu-trans-ai-lab/DTALite"
+    },
+    {
+      "kind": "repo",
+      "label": "Path4GMNS (GitHub)",
+      "url": "https://github.com/jdlph/Path4GMNS"
+    },
+    {
+      "kind": "download",
+      "label": "Path4GMNS (PyPI)",
+      "url": "https://pypi.org/project/path4gmns/"
+    },
+    {
+      "kind": "paper",
+      "label": "White paper (Cogent Engineering 2014)",
+      "url": "https://doi.org/10.1080/23311916.2014.961345"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "dtalite and nexta with the path4gmns python interface",
+    "url": "https://github.com/asu-trans-ai-lab/DTALite"
+  },
+  "description": "DTALite is an open-source analysis, modelling and simulation library for fast macroscopic and mesoscopic traffic assignment on networks in the General Modeling Network Specification (GMNS) format. Its queue-based mesoscopic simulator, described by Zhou and Taylor in Cogent Engineering (2014) for fast model evaluation and calibration, loads origin-destination demand onto road and multimodal networks by static user-equilibrium assignment and then dynamic traffic assignment, with origin-destination demand estimation, space-time parallel computing and a simplified emission model among its documented extensions. NeXTA, developed with Federal Highway Administration support, visualises networks and traffic results, also through QGIS. The Python package Path4GMNS (version 0.10.0 of 16 December 2025 on PyPI, Apache 2.0) calls the C++ DTALite engine and adds shortest paths, link- and path-based equilibrium, accessibility and equity measures, and zone and demand synthesis. It is maintained by the Transportation AI Lab at Arizona State University. It is location independent and runs at corridor, city, regional and state scale; the README lists state-wide modelling in Maryland and work-zone analysis in North Carolina among uses. DTALite is free on GitHub under GPL-3.0 with a Windows release; the last commit was August 2024, and a redesign continues as TransOMS. Caveats: the Windows package and several forks make versions hard to follow, and some Path4GMNS versions could not call DTALite. DTALite supports network flow, capacity planning and work-zone disruption and resilience studies of road networks, and relates to the GMNS standard and to AequilibraE and MATSim, catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.road",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "public transport bus metro simulation model open source",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/asu-trans-ai-lab/DTALite",
+  "id": "model-dtalite",
+  "inputs": [
+    "GMNS node and link files",
+    "zones and origin-destination demand",
+    "link capacities and speeds"
+  ],
+  "language": [
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-12-16",
+  "licence": "GPL-3.0 (DTALite); Apache-2.0 (Path4GMNS)",
+  "licence_type": [
+    "copyleft_code",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network",
+    "optimisation"
+  ],
+  "name": "DTALite and NeXTA (with the Path4GMNS Python interface)",
+  "outputs": [
+    "link volumes and travel times",
+    "paths and route flows",
+    "time-dependent link states",
+    "accessibility measures"
+  ],
+  "provider": "Arizona State University, Transportation AI Lab (Xuesong Zhou and colleagues), with Path4GMNS by Peiheng Li and Xuesong Zhou",
+  "related_ids": [
+    "data-gmns",
+    "model-aequilibrae",
+    "model-matsim"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "transport.road",
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "AMS library for macroscopic and mesoscopic assignment on GMNS; NeXTA via FHWA study; Path4GMNS and TransOMS pointers; references (Zhou and Taylor 2014, ODME, parallel computing, emission model, Maryland MITAMS, NC work zones); GPL-3.0; last commit 2024-08-17",
+      "url": "https://raw.githubusercontent.com/asu-trans-ai-lab/DTALite/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Python path engine for GMNS; API to C++ DTALite (UE, UE+DTA, ODME); accessibility and equity; zone and demand synthesis; v0.9.5 and v0.9.6 cannot call DTALite",
+      "url": "https://raw.githubusercontent.com/jdlph/Path4GMNS/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 0.10.0 uploaded 2025-12-16; Apache License 2.0; authors Xuesong Zhou, Peiheng Li",
+      "url": "https://pypi.org/pypi/path4gmns/json"
+    }
+  ],
+  "tags": [
+    "dynamic traffic assignment",
+    "mesoscopic simulation",
+    "traffic assignment",
+    "GMNS",
+    "open source"
+  ],
+  "title_en": "DTALite and NeXTA (with the Path4GMNS Python interface)",
+  "type": "model",
+  "validated_on": []
+}

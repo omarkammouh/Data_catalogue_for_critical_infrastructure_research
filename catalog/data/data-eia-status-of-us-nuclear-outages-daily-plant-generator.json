@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Status of U.S. Nuclear Outages",
+      "url": "https://www.eia.gov/nuclear/outages/"
+    },
+    {
+      "kind": "download",
+      "label": "Bulk file NUC_STATUS.zip",
+      "url": "https://www.eia.gov/opendata/bulk/NUC_STATUS.zip"
+    },
+    {
+      "kind": "api",
+      "label": "EIA API v2",
+      "url": "https://www.eia.gov/opendata/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "eia status of u s nuclear outages daily capacity outage mw and percent outage by plant and generator since 2007",
+    "url": "https://eia.gov/nuclear/outages"
+  },
+  "description": "Status of U.S. Nuclear Outages is an EIA daily data series built from the Nuclear Regulatory Commission's Power Reactor Status Report. Contents: the bulk file NUC_STATUS holds 522 daily series: for each of 66 nuclear plants and 107 reactor units (generator 1 to 4), the nuclear generating capacity, the capacity on outage in megawatts and the percent outage, plus three national totals (U.S. nuclear capacity, capacity outage and percent outage). Each plant series carries the state and latitude and longitude of the plant. Producer: EIA, from NRC Power Reactor Status Report data. Coverage: all US nuclear plants reported since 1 January 2007, including retired plants such as San Onofre and Duane Arnold; the file read on 29 September 2026 ran to 28 September 2026. Format and access: web page with charts and download, EIA API v2, and the JSON bulk file NUC_STATUS.zip (about 11 MB) listed in the EIA bulk manifest. Licence: public domain; EIA's copyright and reuse page says U.S. government publications are not subject to copyright and asks users to acknowledge the source with its publication date. Caveats: EIA notes the data are subject to third-party quality guidelines and that weekend and holiday values usually appear on the next weekday; outages are reported as capacity, not causes. Simulation uses: daily availability of nuclear units for power system adequacy, outage season and capacity planning studies, and validation of grid models. Related records: data-eia-860-annual-electric-generator-report, data-eia-930-hourly-electric-grid-monitor and data-eia-open-data.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source energy-eia: provider pages read (round 2 register piece)",
+      "route": "R31",
+      "source": "energy-eia"
+    }
+  ],
+  "formats": [
+    "json",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.eia.gov/nuclear/outages/",
+  "id": "data-eia-status-of-us-nuclear-outages-daily-plant-generator",
+  "languages": [
+    "en"
+  ],
+  "licence": "public domain (EIA copyrights and reuse page)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "EIA Status of U.S. Nuclear Outages: daily capacity, outage MW and percent outage by plant and generator since 2007",
+  "provider": "U.S. Energy Information Administration (EIA)",
+  "related_ids": [
+    "data-eia-860-annual-electric-generator-report",
+    "data-eia-930-hourly-electric-grid-monitor",
+    "data-eia-open-data"
+  ],
+  "sectors": [
+    "energy.nuclear",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "bulk file read: 522 series (66 plants x 3, generator-level 3 x 107, 3 national), start 20070101, end 20260928; manifest entry NUC_STATUS",
+      "url": "https://www.eia.gov/opendata/bulk/NUC_STATUS.zip"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "page notes on NRC source and weekend data",
+      "url": "https://www.eia.gov/nuclear/outages/"
+    }
+  ],
+  "tags": [
+    "EIA",
+    "nuclear",
+    "outages",
+    "NRC"
+  ],
+  "title_en": "EIA Status of U.S. Nuclear Outages: daily capacity, outage MW and percent outage by plant and generator since 2007",
+  "type": "data"
+}

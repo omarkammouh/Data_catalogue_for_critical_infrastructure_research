@@ -1,0 +1,137 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Metadata record, data call 2023 public final version (Oct. 2025)",
+      "url": "https://sdi.eea.europa.eu/catalogue/srv/api/records/88b3b08d-3b1b-4a65-9406-365b218e09da"
+    },
+    {
+      "kind": "portal",
+      "label": "Direct download folder (GeoPackage, File geodatabase)",
+      "url": "https://sdi.eea.europa.eu/data/88b3b08d-3b1b-4a65-9406-365b218e09da"
+    },
+    {
+      "kind": "portal",
+      "label": "ArcGIS REST map service",
+      "url": "https://water.discomap.eea.europa.eu/arcgis/rest/services/WISE_UWWTD/TreatmentPlants_2022/MapServer"
+    },
+    {
+      "kind": "api",
+      "label": "WMS service",
+      "url": "https://water.discomap.eea.europa.eu/arcgis/services/WISE_UWWTD/TreatmentPlants_2022/MapServer/WMSServer?request=GetCapabilities&service=WMS"
+    },
+    {
+      "kind": "docs",
+      "label": "Waterbase UWWTD tabular dataset",
+      "url": "https://www.eea.europa.eu/data-and-maps/data/waterbase-uwwtd-urban-waste-water-treatment-directive-9"
+    },
+    {
+      "kind": "docs",
+      "label": "Field definitions (Eionet Data Dictionary)",
+      "url": "https://dd.eionet.europa.eu/datasets/latest/UWWTDArt15/tables/UWWTPs"
+    },
+    {
+      "kind": "viewer",
+      "label": "UWWTD interactive maps",
+      "url": "https://www.eea.europa.eu/themes/water/european-waters/water-use-and-environmental-pressures/uwwtd/interactive-maps/urban-waste-water-treatment-maps-3"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "crs": "EPSG:4258",
+  "data_family": [
+    "system_description",
+    "service_performance",
+    "governance_regulation",
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.2909/88b3b08d-3b1b-4a65-9406-365b218e09da",
+    "name": "urban waste water treatment directive uwwtd treatment plants eea",
+    "url": "https://sdi.eea.europa.eu/data/88b3b08d-3b1b-4a65-9406-365b218e09da"
+  },
+  "description": "The UWWTD Treatment Plants dataset maps the urban waste water treatment plants that EU Member States report under the Urban Waste Water Treatment Directive (91/271/EEC), together with collecting systems that have no plant. For each plant it gives coordinates, design capacity and actual load treated, the type of treatment and data on performance, and it links to the agglomerations served and to discharge points, which are published as sister datasets. Member States report every two years on request of the European Commission; the European Environment Agency compiles the reports into Waterbase and publishes spatial versions through its geospatial catalogue. The public final version of the 2023 data call (October 2025, catalogued 3 March 2026) holds data reported in 2023 for 2022 to 2023 and keeps active, connected plants with valid coordinates; earlier calls back to at least 2015 remain available, and the full set including inactive plants is in internal versions. Access: free download in GeoPackage and ESRI File Geodatabase, WMS and ArcGIS REST map services, with field definitions in the Eionet Data Dictionary, under Creative Commons Attribution 4.0 with the EEA as copyright holder; coordinates use ETRS89 (EPSG:4258). Caveats: content is provisional until the Commission's compliance check, some countries report late (Romania and Slovenia were missing from the December 2024 provisional release), and only agglomerations of at least 2,000 population equivalents are required. Simulation uses: capacity planning of treatment, exposure of plants to flood and other hazards, and network flow studies linking catchments to plants. Related records: HydroWASTE (data-hydrowaste) and the England storm overflow returns (data-ea-edm-storm-overflows-annual-returns).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Urban Waste Water Treatment Directive UWWTD data agglomerations treatment plants dataset",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "formats": [
+    "geopackage",
+    "esri_geodatabase",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://sdi.eea.europa.eu/data/88b3b08d-3b1b-4a65-9406-365b218e09da",
+  "id": "data-uwwtd-treatment-plants",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-03",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Urban Waste Water Treatment Directive (UWWTD) Treatment Plants, EEA",
+  "notes": "The 2,000 population-equivalent threshold comes from the search result on the agglomerations dataset, not from the treatment plant record. Schema summary is indicative; the Data Dictionary table was not opened. The EEA metadata calls the October 2025 release both final and 'provisional' in its abstract.",
+  "provider": "European Environment Agency (EEA), from EU Member State reporting under Directive 91/271/EEC",
+  "related_ids": [
+    "data-hydrowaste",
+    "data-ea-edm-storm-overflows-annual-returns"
+  ],
+  "schema_summary": "treatment plant identifier, coordinates, design capacity, actual load entering, type of treatment (primary, secondary, more stringent), performance and compliance, links to agglomerations and discharge points",
+  "sectors": [
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "records 88b3b08d (public final, Oct. 2025, published 2026-03-03) and 11cf0cb0 (provisional Dec. 2024): abstract, CC-BY 4.0 EEA, EPSG:4258, GDB and GeoPackage, biannual, links (download, REST, WMS, DOI, data dictionary), Romania and Slovenia missing from provisional",
+      "url": "https://sdi.eea.europa.eu/catalogue/srv/api/search/records/_search"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "series listing: calls 2015, 2017, 2019 public versions; Waterbase UWWTD Treatment Plants series",
+      "url": "https://sdi.eea.europa.eu/catalogue/srv/api/search/records/_search"
+    }
+  ],
+  "spatial_resolution": "individual treatment plants (point coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "wastewater treatment plants",
+    "UWWTD",
+    "EU reporting",
+    "Waterbase",
+    "agglomerations",
+    "WISE",
+    "INSPIRE"
+  ],
+  "temporal_coverage": "reporting periods since the 2000s; latest public release covers 2022-2023 data (data call 2023)",
+  "temporal_resolution": "biennial reporting",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "Urban Waste Water Treatment Directive (UWWTD) Treatment Plants, EEA",
+  "type": "data",
+  "update_frequency": "several_per_year"
+}

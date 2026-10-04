@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "PDOK BAG services (WMS, WFS, OGC API) and product overview",
+      "url": "https://www.pdok.nl/introductie/-/article/basisregistratie-adressen-en-gebouwen-ba-1"
+    },
+    {
+      "kind": "portal",
+      "label": "Kadaster BAG page",
+      "url": "https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "data_family": [
+    "system_description",
+    "condition_ageing",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bag basisregistratie adressen en gebouwen",
+    "url": "https://service.pdok.nl/lv/bag/wfs/v2_0?count=1&outputFormat=application%2Fjson&request=GetFeature&service=WFS&typeNames=bag%3Apand&version=2.0.0"
+  },
+  "description": "The BAG (Basisregistratie Adressen en Gebouwen) is the Dutch government's authoritative register of all buildings and addresses, part of the national system of base registers. Municipalities are the source holders and are responsible for entering data and for its quality; the Kadaster runs the national facility LV-BAG and delivers the data to users. It records every building (pand) with its outline, construction year and status, and every addressable object with its use function and floor area, plus moorings and caravan pitches; building outlines come from aerial photos and terrestrial survey with about 30 centimetre accuracy. Coverage is the whole Netherlands, updated continuously; PDOK's web services are refreshed daily. Access: the BAG API for individual queries, a viewer, the full BAG Extract and a GeoPackage through Atom download services, OGC API vector tiles and features, and WMS and WFS on PDOK; a new BAG Extract download API replaces the SOAP service, which stops on 1 March 2027. Licence: open data under the Creative Commons Public Domain Mark 1.0; free. Caveats: the PDOK WFS carries only main addresses, and building outlines include underground parts. Simulation uses are building exposure, energy and capacity planning, and emergency response. Related records: 3DBAG (3D models built from the BAG) and EUBUCCO (includes it).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R10",
+      "source": "built_environment-bag-netherlands"
+    }
+  ],
+  "formats": [
+    "raster",
+    "xml",
+    "geopackage",
+    "ogc_map_service",
+    "other_vector",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://service.pdok.nl/lv/bag/wfs/v2_0?service=WFS&version=2.0.0&request=GetFeature&typeNames=bag:pand&count=1&outputFormat=application/json",
+  "id": "data-bag-netherlands",
+  "languages": [
+    "nl"
+  ],
+  "licence": "Public Domain Mark 1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BAG (Basisregistratie Adressen en Gebouwen)",
+  "notes": "Attributes named from the BAG documentation cited by 3DBAG (construction date, use) and the PDOK product page; the full BAG catalogue of attributes is in the BAG manual (not read today).",
+  "provider": "Kadaster (national register maintained from municipal source data)",
+  "related_ids": [],
+  "schema_summary": "Buildings (panden) with construction year and status; addressable objects (verblijfsobjecten) with use function and floor area; addresses; moorings and pitches",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Municipalities as source holders, Kadaster runs LV-BAG, open data under CC Public Domain Mark 1.0, BAG Extract Ophaal API, SOAP service ends 1 March 2027",
+      "url": "https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Daily updated service, contents, main-address limitation, LV BAG products list, WMS and WFS",
+      "url": "https://www.pdok.nl/introductie/-/article/basisregistratie-adressen-en-gebouwen-ba-1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BAG contents, construction date and use, 30 cm positional accuracy",
+      "url": "https://docs.3dbag.nl/en/overview/sources/"
+    }
+  ],
+  "spatial_resolution": "Every building (pand) and addressable object; positional accuracy about 30 cm",
+  "spatial_resolution_class": "under_10m",
+  "tags": [
+    "building register",
+    "addresses",
+    "Netherlands",
+    "Kadaster",
+    "PDOK",
+    "base register"
+  ],
+  "temporal_resolution": "daily updates (PDOK services)",
+  "temporal_resolution_class": "daily",
+  "title_en": "BAG (Basic Registration of Addresses and Buildings)",
+  "type": "data",
+  "update_frequency": "daily"
+}

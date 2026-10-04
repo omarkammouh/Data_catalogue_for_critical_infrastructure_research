@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/HewlettPackard/sustain-cluster"
+    },
+    {
+      "kind": "download",
+      "label": "Releases",
+      "url": "https://github.com/HewlettPackard/sustain-cluster/releases"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Hewlett Packard Enterprise (2025) SustainCluster, GitHub repository HewlettPackard/sustain-cluster.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sustaincluster geo distributed sustainable scheduling environment",
+    "repo": "github.com/hewlettpackard/sustain-cluster",
+    "url": "https://github.com/HewlettPackard/sustain-cluster"
+  },
+  "description": "SustainCluster is an open-source Gymnasium environment for benchmarking sustainable scheduling of AI workloads across a fleet of geographically distributed data centres. A central scheduler assigns or defers tasks among more than twenty locations in North and South America, Europe and Asia-Pacific, and each data centre is simulated with power curves for CPUs, GPUs and memory, fan and airflow power, CRAC units, chillers derived from EnergyPlus data, cooling towers and pumps, while transfers between regions carry delays and per-gigabyte costs. It is driven by the Alibaba 2020 GPU cluster trace extended to a full year, with electricity prices, carbon intensity and weather gathered from Electricity Maps, GridStatus, ISO interfaces and Open-Meteo, and it offers a Soft Actor-Critic baseline plus RLlib algorithms. It was released by Hewlett Packard Enterprise in 2025 as part of the ExaDigiT digital twin effort, with tagged release v1.1.0. Coverage: over twenty real regions with hourly or finer steps across a year. Format and access: Python code and bundled input series on GitHub; free of charge under the MIT licence. Caveats: facility physics are generic reduced-order models; price and carbon inputs are historical samples; network delays come from one published measurement study. Simulation uses: optimisation of workload placement for cost, carbon and cooling, capacity planning of multi-region fleets, and testing behaviour when a region is hot or grid-stressed. Related records: SustainDC is its single-site predecessor, GDSim compares geo-distributed schedulers without energy, Electricity Maps supplies carbon data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "SustainDC HewlettPackard dc-rl benchmark data center github licence",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "extreme_heat"
+  ],
+  "homepage": "https://github.com/HewlettPackard/sustain-cluster",
+  "id": "model-sustaincluster",
+  "inputs": [
+    "Alibaba GPU cluster trace",
+    "electricity price, carbon and weather series",
+    "inter-region transfer costs"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "SustainCluster geo-distributed sustainable scheduling environment",
+  "notes": "LICENSE (MIT, 2025 Hewlett Packard Enterprise) and tags (version1, v1.1.0) read on 2026-09-26; README summarised via fetch. No paper citation was given in the README.",
+  "outputs": [
+    "task placements and delays",
+    "energy, cost, carbon and water per site",
+    "agent rewards"
+  ],
+  "provider": "Hewlett Packard Enterprise (ExaDigiT consortium)",
+  "related_ids": [
+    "data-google-cluster-workload-traces",
+    "data-alibaba-cluster-trace-program",
+    "data-open-power-system-data",
+    "model-sustaindc"
+  ],
+  "repository": "https://github.com/HewlettPackard/sustain-cluster",
+  "runs_on": [],
+  "sectors": [
+    "digital.data_centres",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README, LICENSE and tags",
+      "url": "https://github.com/HewlettPackard/sustain-cluster"
+    }
+  ],
+  "tags": [
+    "geo-distributed scheduling",
+    "carbon-aware computing",
+    "reinforcement learning",
+    "Gymnasium",
+    "AI workloads"
+  ],
+  "title_en": "SustainCluster geo distributed sustainable scheduling environment",
+  "type": "model",
+  "validated_on": []
+}

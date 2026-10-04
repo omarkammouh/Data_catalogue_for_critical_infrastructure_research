@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "CQC care directory (CSV, monthly)",
+      "url": "https://www.cqc.org.uk/system/files/2026-09/23_september_2026_CQC_directory.csv"
+    },
+    {
+      "kind": "api",
+      "label": "CQC developer portal (syndication API, sign-up)",
+      "url": "https://api-portal.service.cqc.org.uk"
+    },
+    {
+      "kind": "docs",
+      "label": "Using CQC data",
+      "url": "https://www.cqc.org.uk/about-us/transparency/using-cqc-data"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "catalogues_registries",
+    "critical_facilities",
+    "service_performance"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "care quality commission care directory and syndication api every registered health and social care location in england with services specialisms and ratings",
+    "url": "https://cqc.org.uk/about-us/transparency/using-cqc-data"
+  },
+  "description": "This is the official register of every health and adult social care service in England regulated by the Care Quality Commission, from hospitals and GP practices to dentists, care homes and home care agencies. It is published by the Commission itself, which updates the underlying records daily. The downloadable care directory lists about 57,000 active locations with name, address and postcode, service types, specialisms, provider, local authority, region and the date of the latest inspection, while the syndication API adds inactive locations, registration start and end dates, linked organisations, regulated activities and current ratings. The directory is available as a free CSV download under the Open Government Licence; the API is free but needs a developer portal account. Caveats: addresses are geocoded only to postcode, bed numbers and capacity are not included, NHS trusts appear as providers with many locations, and the API schema changed in 2026 for the single assessment framework. Simulation uses: building the inventory of care facilities for hazard exposure screening (flood, heat), locating vulnerable residents in care homes for evacuation planning, and capacity planning of health and social care networks. Related records: the NHS trust classification (data-nhs-trust-classification-england) groups the trusts that run many of these locations, and Healthsites.io (data-healthsites-io) offers an open global alternative.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Care Quality Commission (GB, health_regulator_data_institute)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "archive",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://www.cqc.org.uk/about-us/transparency/using-cqc-data",
+  "id": "data-cqc-care-directory-and-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "Open Government Licence v3.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.cqc.org.uk/system/files/2026-09/23_september_2026_CQC_directory.csv"
+    ]
+  },
+  "maturity": "active",
+  "name": "Care Quality Commission care directory and syndication API: every registered health and social care location in England with services, specialisms and ratings",
+  "provider": "Care Quality Commission (CQC), England",
+  "related_ids": [
+    "data-nhs-trust-classification-england",
+    "data-healthsites-io"
+  ],
+  "schema_summary": "Directory: name, also known as, address, postcode, phone, website, service types, date of latest check, specialisms and services, provider name, local authority, region, location URL, location ID and provider ID. API: active and inactive providers and locations, registration start and end dates, organisation type, linked organisations, regulated activities, service types and specialisms, latest ratings and report dates",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Page updated 3 September 2026: data through an API and downloadable data sheets of registered locations; Open Government Licence; API migrated to api.service.cqc.org.uk and now needs authentication; API lists all active and inactive providers and locations with name and address, registration dates, organisation type, linked organisations, regulated activities, service types and specialisms, latest ratings; updated daily; care directory CSV and ZIP of 23 September 2026",
+      "url": "https://www.cqc.org.uk/about-us/transparency/using-cqc-data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: 'CQC Locations data' produced 23 September 2026, about 57,100 lines; columns Name, Also known as, Address, Postcode, Phone number, Service's website, Service types, Date of latest check, Specialisms/services, Provider name, Local authority, Region, Location URL, CQC Location ID, CQC Provider ID",
+      "url": "https://www.cqc.org.uk/system/files/2026-09/23_september_2026_CQC_directory.csv"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "CQC Developer Portal: syndication APIs, latest single assessment framework contracts and a user guide",
+      "url": "https://api-portal.service.cqc.org.uk"
+    }
+  ],
+  "spatial_resolution": "Individual care location (postcode)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "care homes",
+    "hospitals",
+    "GP practices",
+    "dentists",
+    "regulator",
+    "CQC",
+    "England"
+  ],
+  "temporal_coverage": "Current register with registration history in the API",
+  "temporal_resolution": "Daily (API), monthly (directory)",
+  "temporal_resolution_class": "daily",
+  "title_en": "Care Quality Commission care directory and syndication API: every registered health and social care location in England with services, specialisms and ratings",
+  "type": "data",
+  "update_frequency": "daily"
+}

@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Provider resource page",
+      "url": "https://datahub.hhs.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u"
+    },
+    {
+      "kind": "api",
+      "label": "Metadata or documentation read",
+      "url": "https://datahub.hhs.gov/api/views/anag-cw7u.json"
+    }
+  ],
+  "access_note": "Only public metadata and documentation were inspected; no protected access, data downloads or software execution. No inference of unrestricted redistribution is made.",
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "covid 19 reported patient impact and hospital capacity by facility",
+    "url": "https://datahub.hhs.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u"
+  },
+  "description": "COVID-19 Reported Patient Impact and Hospital Capacity by Facility is published by U.S. Department of Health & Human Services. The dataset records weekly facility-level hospital capacity, occupancy and COVID-19 patient measures. Its stated coverage is United States; hospital-level weekly reports through May 2024. Further dates and resolution are unknown unless specified by the provider. The provider exposes machine-readable metadata; data files were not downloaded. The inspected public resource is free to access. The licence is Public Domain U.S. Government. The provider stopped updates after 3 May 2024; retain as an archived series. For simulation, it can inform health-service demand, capacity and disruption scenarios; this is a reviewer assessment of potential use. Related record model-simpy-streamlit-healthcare-des provides a comparison in the same service area; technical compatibility was not tested.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "https://api.us.socrata.com/api/catalog/v1?q=hospital+beds&limit=35",
+      "route": "R02",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://datahub.hhs.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u",
+  "id": "data-covid-19-reported-patient-impact-and-hospital-capacity-by-facility-p02630",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-05-03",
+  "licence": "Public Domain U.S. Government",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "COVID-19 Reported Patient Impact and Hospital Capacity by Facility",
+  "notes": "Geographic classification describes the stated application scale; countries are omitted when not established. Empty technical fields mean not established from inspected metadata. No import or approval is implied. ",
+  "provider": "U.S. Department of Health & Human Services",
+  "related_ids": [
+    "model-simpy-streamlit-healthcare-des"
+  ],
+  "schema_summary": "hospital_pk, collection_week, state, ccn, hospital_name, address, city, zip, hospital_subtype, fips_code, is_metro_micro, total_beds_7_day_avg, all_adult_hospital_beds_7_day_avg, all_adult_hospital_inpatient_beds_7_day_avg, inpatient_beds_used_7_day_avg, all_adult_hospital_inpatient_bed_occupied_7_day_avg, inpatient_beds_used_covid_7_day_avg, total_adult_patients_hospitalized_confirmed_and_suspected_covid_7_day_avg, total_adult_patients_hospitalized_confirmed_covid_7_day_avg, total_pediatric_patients_hospitalized_confirmed_and_suspected_covid_7_day_avg, total_pediatric_patients_hospitalized_confirmed_covid_7_day_avg, inpatient_beds_7_day_avg, total_icu_beds_7_day_avg, total_staffed_adult_icu_beds_7_day_avg",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Primary provider page or provider-deposited repository metadata read during E09. Specific content, scope and caveat are traced in evidence/P02630.md.",
+      "url": "https://datahub.hhs.gov/api/views/anag-cw7u.json"
+    }
+  ],
+  "spatial_resolution": "United States; hospital-level weekly reports through May 2024",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "United States; hospital-level weekly reports through May 2024",
+  "temporal_resolution_class": "not_stated",
+  "title_en": "COVID-19 Reported Patient Impact and Hospital Capacity by Facility",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

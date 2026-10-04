@@ -1,0 +1,118 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "LISFLOOD-FP v8.2 source release (Zenodo, GPL-2.0)",
+      "url": "https://zenodo.org/records/13121102"
+    },
+    {
+      "kind": "docs",
+      "label": "LISFLOOD-FP 8.0 documentation, instructions and tutorials (SEAMLESS-WAVE)",
+      "url": "https://www.seamlesswave.com/LISFLOOD8.0"
+    },
+    {
+      "kind": "docs",
+      "label": "University of Bristol model page",
+      "url": "https://www.bristol.ac.uk/geography/research/hydrology/models/lisflood/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.13121102",
+    "name": "lisflood fp two dimensional hydrodynamic flood inundation model",
+    "url": "https://bristol.ac.uk/geography/research/hydrology/models/lisflood"
+  },
+  "description": "LISFLOOD-FP is a two-dimensional hydrodynamic model for floodplain inundation over complex topography, produced by the University of Bristol's hydrology group as a non-commercial research code. It predicts the water depth in each grid cell at each time step and so simulates flood waves over fluvial, coastal and estuarine floodplains. Version 8 offers a local inertia (ACC) solver with a subgrid channel model, first-order finite volume (FV1) and second-order discontinuous Galerkin (DG2) shallow water solvers, GPU acceleration, and a non-uniform multiwavelet grid (8.1); the solvers suit fluvial and pluvial flooding, and FV1 and DG2 also dam breaks and flows around hydraulic structures. Coverage is any area with a raster terrain model. Version 8.2 (2024) is a free download from Zenodo under GPL-2.0, with documentation and tutorials on the SEAMLESS-WAVE site. Caveats: the ACC solver is not recommended for supercritical flows, DG2 is costly for large areas, and the DG2 and FV1 solvers do not work with the subgrid channel model. Simulation uses: flood hazard mapping, dam break inundation and emergency planning for levees, reservoirs and drainage, and climate adaptation scenarios. Related records: HEC-RAS (model-hec-ras) and ANUGA (model-anuga).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "LISFLOOD-FP open source University of Bristol GitHub flood inundation model community",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://www.bristol.ac.uk/geography/research/hydrology/models/lisflood/",
+  "id": "model-lisflood-fp",
+  "inputs": [
+    "Raster digital elevation model, with remote-sensing terrain such as airborne laser altimetry or satellite radar",
+    "Boundary inflows or rainfall, Manning's roughness, and river channel geometry for the subgrid channel model"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-07-29",
+  "licence": "GPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "LISFLOOD-FP two-dimensional hydrodynamic flood inundation model",
+  "outputs": [
+    "Water depth in every grid cell at every time step, giving the propagation of flood waves over fluvial, coastal and estuarine floodplains"
+  ],
+  "provider": "University of Bristol (School of Geographical Sciences) and the LISFLOOD-FP developers",
+  "related_ids": [
+    "model-hec-ras",
+    "model-anuga"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, outputs, non-commercial research code, uses",
+      "url": "https://www.bristol.ac.uk/geography/research/hydrology/models/lisflood/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "v8.2, 2024-07-29, GPL-2.0, doi 10.5281/zenodo.13121102",
+      "url": "https://zenodo.org/api/records/13121102"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "solvers ACC, FV1, DG2, GPU, non-uniform ACC in 8.1, limitations table",
+      "url": "https://www.seamlesswave.com/LISFLOOD8.0"
+    }
+  ],
+  "tags": [
+    "flood inundation",
+    "hydrodynamic model",
+    "shallow water equations",
+    "local inertia",
+    "GPU",
+    "dam break",
+    "floodplain"
+  ],
+  "title_en": "LISFLOOD-FP two-dimensional hydrodynamic flood inundation model",
+  "type": "model"
+}

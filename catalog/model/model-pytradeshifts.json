@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code and notebooks",
+      "url": "https://github.com/allfed/pytradeshifts"
+    },
+    {
+      "kind": "paper",
+      "label": "Food trade disruption after global catastrophes (Earth System Dynamics 16, 1585, 2025)",
+      "url": "https://esd.copernicus.org/articles/16/1585/2025/esd-16-1585-2025.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pytradeshifts network model of food trade shifts under yield shocks",
+    "repo": "github.com/allfed/pytradeshifts",
+    "url": "https://github.com/allfed/pytradeshifts"
+  },
+  "description": "PyTradeShifts is a Python network model that estimates how international food trade flows and trading communities change when crop yields fall. It builds the trade network for a crop from FAO data, removes re-exports with the Croft et al. (2018) algorithm so that each country exports no more than it produces, applies yield changes by country and recomputes flows, then detects trade communities and compares them before and after the shock, following Hedlund et al. (2022). The provider is the Alliance to Feed the Earth in Disasters (ALLFED), and the Earth System Dynamics article on food trade disruption after global catastrophes (2025) links to this code. Coverage is global at country level for the crops in FAO trade data. The code is on GitHub under the Apache 2.0 licence, installs with uv and is driven from Jupyter notebooks; the latest tag read today is 1.3. Caveats: the model redistributes existing trade proportionally and does not represent prices, stocks or export bans explicitly, and results depend on the base year of FAO data. Simulation uses: stress tests of national food supply under multiple breadbasket failures, nuclear winter or volcanic scenarios, and identification of countries whose imports depend on few partners. Related records: FAOSTAT food balances and trade (data-faostat) supply the inputs, and the global food shock and trade model (model-global-food-shock-trade) adds prices.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "food trade network shock simulation open source code",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://github.com/allfed/pytradeshifts",
+  "id": "model-pytradeshifts",
+  "inputs": [
+    "FAO trade matrices and production by crop",
+    "Yield change scenarios by country (for example from crop model runs)"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "PyTradeShifts: network model of food trade shifts under yield shocks",
+  "outputs": [
+    "Re-export-corrected trade flows after yield changes",
+    "Trade communities detected in the network and how they shift"
+  ],
+  "provider": "Alliance to Feed the Earth in Disasters (ALLFED)",
+  "regions": [],
+  "related_ids": [
+    "data-faostat",
+    "model-global-food-shock-trade"
+  ],
+  "repository": "https://github.com/allfed/pytradeshifts",
+  "runs_on": [
+    "Python with uv",
+    "Jupyter notebooks"
+  ],
+  "sectors": [
+    "services.food_supply",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Network model of trade community shifts under yield changes, based on Hedlund et al. (2022) with the Croft et al. (2018) re-export algorithm; installation with uv; Apache 2.0 badge",
+      "url": "https://raw.githubusercontent.com/allfed/pytradeshifts/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: latest tag 1.3; shallow clone: last commit 2026-05-16, notebooks and bundled trade CSVs",
+      "url": "https://github.com/allfed/pytradeshifts"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Article page answered 200 (Earth System Dynamics 2025, food trade disruption after global catastrophes)",
+      "url": "https://esd.copernicus.org/articles/16/1585/2025/esd-16-1585-2025.html"
+    }
+  ],
+  "tags": [
+    "food trade",
+    "trade network",
+    "community detection",
+    "yield shock",
+    "global catastrophic risk",
+    "ALLFED"
+  ],
+  "title_en": "PyTradeShifts: network model of food trade shifts under yield shocks",
+  "type": "model",
+  "validated_on": []
+}

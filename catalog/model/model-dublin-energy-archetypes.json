@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/codema-dev/dublin-energy-model"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/codema-dev/dublin-energy-model/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "IE"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "dublin energy modelling notebooks",
+    "repo": "github.com/codema-dev/dublin-energy-model",
+    "url": "https://github.com/codema-dev/dublin-energy-model"
+  },
+  "description": "Codema's Dublin Energy Modelling repository provides notebooks that automate EnergyPlus archetype creation using eppy and Docker. The documented workflow produces total energy, electricity, heat and peak electricity demand for residential and commercial sectors in Dublin, Ireland. Outputs are organised at small-area and postcode level, not representing individual measured buildings. Inputs are the archetype and simulation settings used by the notebooks; the short README does not establish a common reference year, weather period or calibrated stock coverage. Public Python notebooks and container-based launch instructions are free under MIT. A limitation is that the repository metadata marks the project as unmaintained, and the README mainly documents environment setup, not model validation or all input assumptions. The container instructions use either a command line or a VS Code development environment. The resource supports urban building-demand scenario preparation around EnergyPlus (model-energyplus). It is a reusable local modelling workflow, but the repository alone does not prove agreement with observed Dublin demand. No container or building-model file was downloaded.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:energyplus fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/codema-dev/dublin-energy-model",
+  "id": "model-dublin-energy-archetypes",
+  "inputs": [
+    "Building archetype and EnergyPlus settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-04-22",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Dublin Energy Modelling notebooks",
+  "notes": "G7 G7-0396. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Small-area and postcode energy demands",
+    "Peak electricity demands"
+  ],
+  "provider": "Codema",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/codema-dev/dublin-energy-model",
+  "runs_on": [
+    "model-energyplus"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for codema-dev/dublin-energy-model: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aenergyplus+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/codema-dev/dublin-energy-model/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for buildings",
+  "type": "model"
+}

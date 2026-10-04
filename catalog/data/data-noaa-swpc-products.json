@@ -1,0 +1,144 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Data services directory (JSON, text)",
+      "url": "https://services.swpc.noaa.gov/"
+    },
+    {
+      "kind": "portal",
+      "label": "Products and data",
+      "url": "https://www.spaceweather.gov/products-and-data"
+    },
+    {
+      "kind": "docs",
+      "label": "Subscription services",
+      "url": "https://www.spaceweather.gov/content/subscription-services"
+    },
+    {
+      "kind": "docs",
+      "label": "Impacts on electric power transmission",
+      "url": "https://www.spaceweather.gov/impacts/electric-power-transmission"
+    },
+    {
+      "kind": "portal",
+      "label": "Data page",
+      "note": "Checked 2026-10-01: reached from the provider page https://www.spaceweather.gov/.",
+      "url": "https://www.spaceweather.gov/products/summary-space-weather-observations"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (JSON)",
+      "note": "Checked 2026-10-01: returns application/json directly.",
+      "url": "https://services.swpc.noaa.gov/json/45-day-forecast.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "space_weather",
+    "sensor_realtime_streams",
+    "scenarios_projections"
+  ],
+  "data_kind": [
+    "stream",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "noaa space weather prediction center products and data services",
+    "url": "https://spaceweather.gov"
+  },
+  "description": "The Space Weather Prediction Center (SWPC) of the US National Weather Service is the official US source of space weather alerts, watches, warnings and forecasts. Its products and data pages list the NOAA space weather scales, 3-day geomagnetic forecasts, the report and forecast of solar and geophysical activity, 45-day Ap and F10.7 flux forecasts, weekly highlights and 27-day outlooks, the 30-minute aurora forecast, the relativistic electron forecast model, WSA-Enlil solar wind predictions and GOES solar and particle observations. Machine-readable products are served free of charge from the services.swpc.noaa.gov directory in JSON, text and image form, and alerts can be received by free email subscription; the SWPC also explains impacts on electric power transmission, where geomagnetically induced currents flow through power lines and transformers, and on GPS, satellites and aviation. As US government data they are public domain. Caveats: the service is organised around current operations, so long historical archives sit at NCEI and other archives, product formats change with notice, and the directory offers no search. Uses include real-time feeds for digital twins and emergency response in power grids, satellite and GNSS operations, and hazard exposure studies of geomagnetic storms; related records are the GFZ Kp index, INTERMAGNET and DONKI in this catalogue.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "space weather forecasts and alerts data",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "json",
+    "plain_text",
+    "image"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://www.spaceweather.gov/",
+  "id": "data-noaa-swpc-products",
+  "languages": [
+    "en"
+  ],
+  "licence": "US government work, public domain",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NOAA Space Weather Prediction Center products and data services",
+  "provider": "NOAA National Weather Service Space Weather Prediction Center (SWPC)",
+  "related_ids": [
+    "data-space-weather-effects-critical-infrastructure-briefing-facsko-arxiv-23"
+  ],
+  "schema_summary": "alerts, watches and warnings; Kp and Ap; solar wind; X-ray and proton flux; forecasts; aurora ovation grid",
+  "sectors": [
+    "cross_cutting.space",
+    "energy.electricity",
+    "digital.satellite_positioning",
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Product list: space weather scales, 3-day geomagnetic forecast, 45-day Ap/F10.7, aurora, REFM, WSA-Enlil, GOES SUVI",
+      "url": "https://www.spaceweather.gov/products-and-data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Directory listing of json, products and text folders",
+      "url": "https://services.swpc.noaa.gov/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Products issued, email notification",
+      "url": "https://www.spaceweather.gov/content/subscription-services"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Space weather effects on the electric power grid via induced currents",
+      "url": "https://www.spaceweather.gov/impacts/electric-power-transmission"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): data page found by following the provider site; added 1 verified direct data link(s) from the provider's resource list. Verified: https://www.spaceweather.gov/products/summary-space-weather-observatio -> verified by fetch during the check; https://services.swpc.noaa.gov/json/45-day-forecast.json -> verified by fetch during the check",
+      "url": "https://www.spaceweather.gov/products/summary-space-weather-observations"
+    }
+  ],
+  "spatial_resolution": "global and regional indices",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "space weather",
+    "geomagnetic storm",
+    "NOAA scales",
+    "GOES",
+    "forecasts"
+  ],
+  "temporal_coverage": "current conditions and recent days; forecasts up to 45 days",
+  "temporal_resolution": "1 minute to daily",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "NOAA Space Weather Prediction Center products and data services",
+  "type": "data",
+  "update_frequency": "real_time"
+}

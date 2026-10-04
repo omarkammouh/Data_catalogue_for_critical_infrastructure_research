@@ -1,0 +1,86 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "ORSAT page",
+      "url": "https://orbitaldebris.jsc.nasa.gov/reentry/orsat.html"
+    }
+  ],
+  "access_note": "The page describes the code but offers no download; availability outside NASA is not stated.",
+  "access_restrictions": "restricted",
+  "cost": "on_request",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "orsat object reentry survival analysis tool nasa",
+    "url": "https://orbitaldebris.jsc.nasa.gov/reentry/orsat.html"
+  },
+  "description": "ORSAT is NASA's primary code for predicting whether satellite and upper stage components survive re-entry, whether from orbital decay or a controlled entry, and so the risk to people on the ground. The NASA Orbital Debris Program Office at Johnson Space Center uses it for higher-fidelity analysis after the Debris Assessment Software flags a spacecraft as possibly non-compliant with NASA-STD 8719.14, which limits casualty risk to below 1 in 10,000. It couples three-degrees-of-freedom trajectory, atmosphere (1976 US Standard, MSISe-90 or GRAM-99), aerodynamic, aerothermodynamic and thermal ablation models for spinning or tumbling shapes, with drag from hypersonic to subsonic speeds, and holds thermal properties for 80 materials. Coverage is any orbit. Format and access: described on the office's web page; no download is offered and availability outside NASA is not stated. Licence: not stated. Caveats: demise thresholds rest on engineering judgement through parametric runs. It supports hazard exposure analysis of falling debris and compliance design of spacecraft. Related catalogue records are NASA's Debris Assessment Software and ESA's DRAMA suite, which includes a comparable survival module.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "satellite re-entry predictions database reentry risk casualty dataset",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://orbitaldebris.jsc.nasa.gov/reentry/orsat.html",
+  "id": "model-nasa-orsat-reentry-survival",
+  "inputs": [
+    "Component shapes, materials and dimensions",
+    "Orbit or entry conditions",
+    "Atmosphere model (1976 US Standard, MSISe-90 or GRAM-99)",
+    "Breakup altitude"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Not stated on the page (NASA code; no public download offered)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "ORSAT: Object Reentry Survival Analysis Tool (NASA)",
+  "outputs": [
+    "Component demise or survival",
+    "Impact kinetic energy",
+    "Total debris casualty area",
+    "Ground casualty risk versus the 1:10,000 limit"
+  ],
+  "provider": "NASA Orbital Debris Program Office (Johnson Space Center)",
+  "related_ids": [
+    "platform-debris-assessment-software-das",
+    "platform-drama-debris-mitigation-analysis-suite"
+  ],
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "ORSAT page: purpose, standard, models, materials database",
+      "url": "https://orbitaldebris.jsc.nasa.gov/reentry/orsat.html"
+    }
+  ],
+  "tags": [
+    "re-entry",
+    "survivability",
+    "casualty risk"
+  ],
+  "title_en": "ORSAT: Object Reentry Survival Analysis Tool (NASA)",
+  "type": "model"
+}

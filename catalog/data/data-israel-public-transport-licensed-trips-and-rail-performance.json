@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Bus system licensing (CSV per year)",
+      "url": "https://data.gov.il/dataset/licensing_bus_system"
+    },
+    {
+      "kind": "download",
+      "label": "Rail planned versus operated (CSV)",
+      "url": "https://data.gov.il/dataset/train_trip"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "IL"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "israel public transport licensed daily bus trips by line 2017 onward and rail planned versus operated trips",
+    "url": "https://data.gov.il/dataset/licensing_bus_system"
+  },
+  "description": "Two operational datasets from Israel's Ministry of Transport describe how much public transport service is licensed and delivered. Contents: the bus system licensing database gives the number of daily licensed trips per bus line, with one CSV per year from 2017 to 2026 and a data structure document; the rail planned versus operated dataset lists, by year, month, train number, origin and destination station, the licensed trips, trips licensed but not operated, trips operated without a licence and the percentage performed for Israel Railways. Producer: the ministry's public transport division, from its licensing and monitoring systems. Coverage: all licensed bus lines and national rail services in Israel. Format and access: CSV files with PDF data dictionaries on data.gov.il, also reachable through the CKAN datastore API; the bus file is refreshed daily. Free under the portal's open terms. Caveats: the rail file notes that no new data are currently expected, so it may stay frozen, and the bus file counts scheduled licensed trips, not observed runs; Hebrew field names. Simulation uses: service supply inputs for transit models, calibration of frequencies, and measuring service reliability and disruption effects on the rail network. Related records: the ministry's planning GIS layers (data-israel-ministry-of-transport-planning-gis-layers) give stations, frequencies and tunnels.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source il-portal-data-gov-il: provider pages read (round 2 register piece)",
+      "route": "R02",
+      "source": "il-portal-data-gov-il"
+    }
+  ],
+  "formats": [
+    "csv",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.gov.il/dataset/licensing_bus_system",
+  "id": "data-israel-public-transport-licensed-trips-and-rail-performance",
+  "languages": [
+    "he"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "data.gov.il other open licence",
+  "licence_type": [
+    "attribution"
+  ],
+  "maturity": "active",
+  "name": "Israel public transport licensed daily bus trips by line (2017 onward) and rail planned versus operated trips",
+  "provider": "Ministry of Transport and Road Safety of Israel (National Public Transport Authority), on data.gov.il",
+  "related_ids": [
+    "data-israel-ministry-of-transport-planning-gis-layers"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "daily licensed trips per line; CSV 2017-2026; modified 2026-09-28",
+      "url": "https://data.gov.il/api/3/action/package_show?id=licensing_bus_system"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "rail planned vs executed fields; note that no further data are expected",
+      "url": "https://data.gov.il/api/3/action/package_show?id=train_trip"
+    }
+  ],
+  "tags": [
+    "Israel",
+    "bus",
+    "rail punctuality",
+    "public transport",
+    "licensing"
+  ],
+  "title_en": "Israel public transport licensed daily bus trips by line (2017 onward) and rail planned versus operated trips",
+  "type": "data"
+}

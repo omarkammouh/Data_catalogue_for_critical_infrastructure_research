@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "PVWatts Calculator",
+      "url": "https://pvwatts.nlr.gov/"
+    },
+    {
+      "kind": "api",
+      "label": "PVWatts V8 API documentation",
+      "url": "https://developer.nlr.gov/docs/solar/pvwatts/v8/"
+    },
+    {
+      "kind": "repo",
+      "label": "SAM Simulation Core (ssc) source",
+      "url": "https://github.com/NREL/ssc"
+    }
+  ],
+  "access_restrictions": "registration",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pvwatts calculator and pvwatts api v8 grid connected pv production estimates",
+    "repo": "github.com/nrel/ssc",
+    "url": "https://pvwatts.nlr.gov"
+  },
+  "description": "PVWatts is a web calculator and API from the National Laboratory of the Rockies (NLR, formerly NREL) that estimates the electricity production of grid-connected roof- or ground-mounted photovoltaic systems from a few inputs. The calculator asks for a location and system details such as DC size, module and array type, losses, tilt, azimuth, DC to AC ratio, inverter efficiency, ground coverage ratio, albedo, bifacial and soiling settings, and returns monthly or hourly AC energy and solar radiation for download. The API documentation says Version 8 added bifacial modules, monthly irradiance losses and albedo inputs, updated module, inverter and thermal models, and uses 2020 typical meteorological year data from the National Solar Radiation Database where covered; the web calculator, the API and the System Advisor Model now share the same pvwattsv8 module. Coverage: locations worldwide with weather data; NSRDB data where covered. Format and access: web application in English, Spanish and Ukrainian; REST API returning JSON or XML with a developer API key (registration); the model code is in the NREL ssc repository. Licence: BSD 3-Clause for the code (G-PST Open Tools Portal); the calculator's terms were not read. Caveats: the calculator warns that its estimates suit only preliminary studies and do not reflect site-specific characteristics. Simulation uses: first-cut PV generation profiles for capacity planning and hazard scenarios. Related records: the System Advisor Model (model-system-advisor-model-sam) uses the same PVWatts model.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source gpst-open-tools: provider pages read (round 2 register piece)",
+      "route": "R06",
+      "source": "gpst-open-tools"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://pvwatts.nlr.gov/",
+  "id": "model-pvwatts-calculator-and-api",
+  "inputs": [
+    "location",
+    "system size, module and array type",
+    "losses, tilt, azimuth, inverter settings"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "PVWatts Calculator and PVWatts API (V8): grid-connected PV production estimates",
+  "outputs": [
+    "monthly and hourly AC energy",
+    "solar radiation"
+  ],
+  "provider": "National Laboratory of the Rockies (NLR, formerly NREL)",
+  "related_ids": [
+    "model-system-advisor-model-sam"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Calculator inputs, results download monthly/hourly, languages, caution on preliminary estimates",
+      "url": "https://pvwatts.nlr.gov/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "V8 changes, 2020 TMY NSRDB, pvwattsv8 shared with SAM, JSON/XML, api_key required",
+      "url": "https://developer.nlr.gov/docs/solar/pvwatts/v8/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "NREL; BSD-3-Clause; C++; ssc repository",
+      "url": "https://opentools.globalpst.org/tools/pvwatts"
+    }
+  ],
+  "tags": [
+    "photovoltaic",
+    "solar",
+    "energy yield",
+    "API",
+    "NSRDB"
+  ],
+  "title_en": "PVWatts Calculator and PVWatts API (V8): grid-connected PV production estimates",
+  "type": "model"
+}

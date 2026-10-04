@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Road links WFS (GeoJSON)",
+      "url": "https://nsdi.gov.mn/api/open-layer/18/325/3370/wfs/?service=WFS&version=1.0.0&request=GetFeature&typeName=gp_tn:gp_layer_roadlink_rl_view&outputFormat=application/json&maxFeatures=100"
+    },
+    {
+      "kind": "api",
+      "label": "Railway links WFS (GeoJSON)",
+      "url": "https://nsdi.gov.mn/api/open-layer/18/325/3123/wfs/?service=WFS&version=1.0.0&request=GetFeature&typeName=gp_tn:gp_layer_railwaylink_rl_view&outputFormat=application/json&maxFeatures=100"
+    },
+    {
+      "kind": "api",
+      "label": "Buildings 2D WFS (GeoJSON)",
+      "url": "https://nsdi.gov.mn/api/open-layer/10/329/3237/wfs/?service=WFS&version=1.0.0&request=GetFeature&typeName=gp_bu:gp_layer_building2d_b_view&outputFormat=application/json&maxFeatures=100"
+    },
+    {
+      "kind": "viewer",
+      "label": "egazar map viewer",
+      "url": "https://egazar.gov.mn/map"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "MN"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "mongolia nsdi open layers inspire model road network 209 001 road links railway links and stations and 737 208 building footprints via wfs",
+    "url": "https://nsdi.gov.mn/open-layer"
+  },
+  "description": "Mongolia's National Spatial Data Infrastructure portal (nsdi.gov.mn), run by the land administration, geodesy and cartography agency, offers an open layers page where national base data can be viewed and downloaded through proxied OGC services. Contents: a transport network theme modelled on the INSPIRE schema, with 209,001 road links and road nodes, road names, form of way, surface category, number of lanes and speed limits; railway links (1,416 features), railway nodes, stations and electrification; transport and port nodes and waterway links; a buildings theme with 737,208 two-dimensional building footprints; and further themes for administrative units, addresses and postal zones, hydrography and water basins, groundwater, land cover, soils, geology and geodetic control points. Producer: the national agency and contributing ministries named for each theme. Coverage: the whole of Mongolia. Format and access: each layer has its own WMS, WMTS and WFS endpoint under nsdi.gov.mn/api/open-layer/, and WFS GetFeature returns GeoJSON without registration; the feature price field on the page is zero. Licence: no licence is stated on the open layer page. Caveats: the services are generic GeoServer views with limited metadata, attribute completeness varies (many name fields are empty), and some layers require the right property list per endpoint. Simulation uses: national road and rail network models for freight and accessibility in a sparse network, building exposure to earthquakes, floods and dzud-related hazards, and gazetteer linking. Related records: none in the catalogue cover Mongolian road or building data.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source mn-sdi-nsdi-gov-mn: provider pages read (round 2 register piece)",
+      "route": "R04",
+      "source": "mn-sdi-nsdi-gov-mn"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "gml",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://nsdi.gov.mn/open-layer/",
+  "id": "data-mongolia-nsdi-open-layers-inspire-transport-network-and-buildings",
+  "languages": [
+    "mn"
+  ],
+  "licence": "not stated",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Mongolia NSDI open layers: INSPIRE-model road network (209,001 road links), railway links and stations, and 737,208 building footprints via WFS",
+  "provider": "Agency for Land Administration and Management, Geodesy and Cartography (ALAMGaC), Mongolia, through the National Spatial Data Infrastructure portal nsdi.gov.mn",
+  "related_ids": [],
+  "sectors": [
+    "transport.road",
+    "transport.rail",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "open layer list with themes, WMS/WMTS/WFS URLs, feature price 0",
+      "url": "https://nsdi.gov.mn/open-layer/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "60 gp_tn feature types; totalFeatures road links 209,001; railway links 1,416; buildings 737,208",
+      "url": "https://nsdi.gov.mn/api/open-layer/18/325/3370/wfs/?service=WFS&request=GetCapabilities"
+    }
+  ],
+  "tags": [
+    "Mongolia",
+    "NSDI",
+    "road network",
+    "railway",
+    "building footprints",
+    "INSPIRE model"
+  ],
+  "title_en": "Mongolia NSDI open layers: INSPIRE-model road network (209,001 road links), railway links and stations, and 737,208 building footprints via WFS",
+  "type": "data"
+}

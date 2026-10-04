@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Resource landing page",
+      "url": "https://zenodo.org/records/15189665"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1080/20964471.2025.2458714"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "https://doi.org/10.1080/20964471.2025.2458714",
+  "cost": "free",
+  "countries": [],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.15189665",
+    "name": "sturm flood u net trained on sentinel 1 imagery",
+    "url": "https://zenodo.org/records/15189665"
+  },
+  "description": "WEO publishes a pretrained U-Net for binary flood segmentation from Sentinel-1 synthetic-aperture-radar imagery. The model belongs to the STURM-Flood project, whose global benchmark uses 128-by-128-pixel tiles at 10 m resolution from 60 flood events. Zenodo resolves the model concept to version DOI 10.5281/zenodo.15189665 and distributes a TAR.GZ archive under CC-BY-4.0, publicly and free. The companion GitHub notebook documents TensorFlow inference with Python 3.8 or later, producing water-probability and binary-mask GeoTIFFs and optional evaluation tables. The separately licensed inference code uses CC-BY-SA-4.0. Sensor preprocessing and performance outside the training distribution remain limitations; published weights do not establish operational flood-detection reliability. The model can create observed flood-extent estimates for comparison with hydraulic simulations and infrastructure exposure maps. It complements the Sentinel-2 model by using radar inputs. Weights were not downloaded and inference was not run.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "G3-Q0201: 10.1080/20964471.2025.2458714 availability",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://zenodo.org/records/15189665",
+  "id": "model-sturm-flood-sentinel1-unet",
+  "inputs": [
+    "Sentinel-1 SAR image tiles"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-04-10",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "STURM-Flood U-Net trained on Sentinel-1 imagery",
+  "notes": "G3 G3-0113. Draft only. No resource files downloaded or software executed. ",
+  "outputs": [
+    "Water probability maps",
+    "Binary flood masks"
+  ],
+  "provider": "WEO, STURM project",
+  "related_ids": [],
+  "runs_on": [],
+  "sectors": [
+    "water.dams_flood_defences",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or article availability. Simulation uses are reviewer interpretation.",
+      "url": "https://zenodo.org/api/records/15189664"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or article availability. Simulation uses are reviewer interpretation.",
+      "url": "https://zenodo.org/records/15189665"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or article availability. Simulation uses are reviewer interpretation.",
+      "url": "https://doi.org/10.1080/20964471.2025.2458714"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or article availability. Simulation uses are reviewer interpretation.",
+      "url": "https://api.github.com/repos/STURM-WEO/STURM-Flood/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "STURM-Flood U-Net binary flood segmentation from Sentinel-1 imagery",
+  "type": "model"
+}

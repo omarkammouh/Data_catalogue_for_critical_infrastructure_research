@@ -1,0 +1,149 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "UNDRR on HDX (208 datasets)",
+      "url": "https://data.humdata.org/organization/united-nations-office-for-disaster-risk-reduction-unisdr"
+    },
+    {
+      "kind": "portal",
+      "label": "Multi-hazard average annual loss (shapefile and results workbook)",
+      "url": "https://data.humdata.org/dataset/multi-hazard-average-annual-loss"
+    },
+    {
+      "kind": "portal",
+      "label": "Example exposure dataset: Nepal",
+      "url": "https://data.humdata.org/dataset/gar15-global-exposure-dataset-for-nepal"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "hazards",
+    "economic_financial",
+    "system_description"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gar15 global risk model datasets on hdx exposure hazard and average annual loss",
+    "url": "https://data.humdata.org/organization/united-nations-office-for-disaster-risk-reduction-unisdr"
+  },
+  "description": "The Global Assessment Report on Disaster Risk Reduction 2015 (GAR15) produced a global probabilistic risk model, and UNDRR publishes its inputs and results on the Humanitarian Data Exchange. The exposure layer comes as 181 country datasets (found by name on 2026-09-26): a top-down database in which national statistics on socio-economics, building type and capital stock are spread onto 5 x 5 km or 1 x 1 km grids using population and GDP as proxies. Hazard layers include a global tropical cyclone wind model for 50, 100, 250, 500 and 1,000-year return periods, built from 2,594 historical cyclones, topography, roughness and bathymetry, and a tsunami run-up model for a 500-year return period. Results include multi-hazard average annual loss per country, the long-term expected yearly loss, and a volcano population exposure index supplied by Global Volcano Model and IAVCEI. Coverage: global, as of 2015. Access: zipped shapefiles, grids and a results workbook, with metadata PDFs inside the archives. Licence: listed on HDX as 'other', with terms in each dataset; free. Caveats: UNDRR states the data come from global datasets, should be read as orders of magnitude, and must not be used for local planning or life-saving decisions; the model has not been updated since 2015. Simulation uses are global exposure and hazard inputs for screening building and facility risk and for comparing national loss estimates. Related records: the DesInventar Sendai loss databases and the multi-hazard vulnerability database.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "building hazard map",
+      "route": "R04",
+      "source": "hdx"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "critical facilities social vulnerability",
+      "route": "R04",
+      "source": "hdx"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "public space hazard map",
+      "route": "R04",
+      "source": "hdx"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "raster",
+    "spreadsheet",
+    "geojson",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake",
+    "storm_wind",
+    "tsunami",
+    "volcanic",
+    "flood"
+  ],
+  "homepage": "https://data.humdata.org/organization/united-nations-office-for-disaster-risk-reduction-unisdr",
+  "id": "data-gar15-global-risk-model-datasets-hdx",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-06-10",
+  "licence": "HDX 'other' licence (terms stated per dataset)",
+  "licence_type": [
+    "varies"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GAR15 global risk model datasets on HDX (exposure, hazard and average annual loss)",
+  "provider": "UN Office for Disaster Risk Reduction (UNDRR, formerly UNISDR), with Global Volcano Model and IAVCEI for volcano data",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "AAL definition, created 2015-05-13, modified 2021-09-23, hdx-other, caveat on local use",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=multi-hazard-average-annual-loss"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Exposure method (top-down, 5x5 or 1x1 grid, population and GDP proxies), caveats",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=gar15-global-exposure-dataset-for-nepal"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Cyclone wind model, 2,594 historical cyclones, five return periods",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=cyclone-wind-100-years-return-period"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Tsunami run-up RP500",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=tsunami-hazard-run-up-rp-500-years"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GVM and IAVCEI, modified 2025-06-10",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=volcano-population-exposure-index-gvm"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "181 exposure datasets",
+      "url": "https://data.humdata.org/api/3/action/package_search?q=name:gar15-global-exposure-dataset-for-*&rows=0"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "UNDRR title, 208 datasets",
+      "url": "https://data.humdata.org/api/3/action/organization_show?id=united-nations-office-for-disaster-risk-reduction-unisdr"
+    }
+  ],
+  "spatial_resolution": "5 x 5 km or 1 x 1 km exposure grid; national average annual loss",
+  "spatial_resolution_class": "1km_to_10km",
+  "tags": [
+    "GAR15",
+    "UNDRR",
+    "exposure",
+    "average annual loss",
+    "cyclone wind",
+    "tsunami",
+    "global risk model"
+  ],
+  "temporal_coverage": "GAR 2015 assessment (exposure reference 2015)",
+  "title_en": "GAR15 global risk model datasets on HDX (exposure, hazard and average annual loss)",
+  "type": "data"
+}

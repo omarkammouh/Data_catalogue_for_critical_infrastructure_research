@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Battery-Intelligence-Lab/SLIDE"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Battery-Intelligence-Lab/SLIDE/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Reniers, Mulder and Howey (2019). Review and performance comparison of mechanical-chemical degradation models for lithium-ion batteries. https://doi.org/10.1149/2.0281914jes",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "slide lithium ion degradation simulator",
+    "repo": "github.com/battery-intelligence-lab/slide",
+    "url": "https://github.com/Battery-Intelligence-Lab/SLIDE"
+  },
+  "description": "SLIDE is a lithium-ion battery degradation simulator developed at the University of Oxford's Battery Intelligence Lab. Its C++ implementation combines a single-particle battery model with a bulk thermal model and selectable degradation equations. Users set fitting parameters and charge/discharge procedures, including constant-current, constant-voltage, calendar-ageing and drive-cycle experiments. Outputs are CSV histories such as current, voltage and temperature at selected intervals. Coverage is global at cell level, with duration and sampling chosen for the simulated test. Public source is free under the BSD 3-Clause licence verified from the repository. MATLAB plotting scripts are optional; changing spatial discretisation can require additional functions with their own licences. A limitation is that selected degradation equations and fitted parameters determine applicability to a battery chemistry and duty cycle. The README also distinguishes the changed main branch from the older SLIDE_v2 branch. SLIDE supports storage-lifetime assumptions in infrastructure planning, complementary to PyPSA (model-pypsa). The 2019 degradation-model comparison paper is cited. Runtime claims were not tested.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "battery-intelligence-lab/slide linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/Battery-Intelligence-Lab/SLIDE",
+  "id": "model-slide-battery-degradation",
+  "inputs": [
+    "Cell and degradation parameters",
+    "Charge/discharge profiles"
+  ],
+  "language": [
+    "c_cpp",
+    "matlab"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-29",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "SLIDE lithium-ion degradation simulator",
+  "notes": "G7 G7-0517. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "CSV current voltage and temperature histories"
+  ],
+  "provider": "University of Oxford Battery Intelligence Lab",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/Battery-Intelligence-Lab/SLIDE",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Battery-Intelligence-Lab/SLIDE: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/battery-intelligence-lab/slide"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/battery-intelligence-lab/slide/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Full licence text identifies BSD 3-Clause despite metadata NOASSERTION.",
+      "url": "https://api.github.com/repos/battery-intelligence-lab/slide/license"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for electricity",
+  "type": "model"
+}

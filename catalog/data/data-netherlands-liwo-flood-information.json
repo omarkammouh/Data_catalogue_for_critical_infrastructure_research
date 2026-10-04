@@ -1,0 +1,137 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "LIWO map viewer (Basisinformatie Overstromingen)",
+      "url": "https://basisinformatie-overstromingen.nl/"
+    },
+    {
+      "kind": "portal",
+      "label": "National flood information provision (LVO)",
+      "url": "https://www.overstromingsinformatie.nl/"
+    },
+    {
+      "kind": "docs",
+      "label": "LIWO page with manuals and method report (IPLO)",
+      "url": "https://iplo.nl/thema/water/applicaties-modellen/berichtgeving-crisismanagement/liwo/"
+    }
+  ],
+  "access_note": "The map viewer is open to everyone; map layers are also served to professionals as WMS web services, and the underlying scenarios sit in the national flood information database (LDO).",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "data_family": [
+    "hazards",
+    "emergency_management",
+    "scenarios_projections",
+    "vulnerability_fragility"
+  ],
+  "data_kind": [
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "liwo national flood and inundation map layers netherlands",
+    "url": "https://basisinformatie-overstromingen.nl"
+  },
+  "description": "LIWO, the Dutch national information system on water and floods, is a map viewer and set of map services from the Watermanagementcentrum Nederland at Rijkswaterstaat, built by Deltares and HKV, that gives professionals the flood layers they need to prepare for flooding and waterlogging in the Netherlands. Its layers come from the national flood information database (LDO), into which provinces, water boards and Rijkswaterstaat deliver breach scenarios. They include maximum flood depth for outer-dike areas and for breaches of primary and non-primary flood defences, individual breach scenarios with effect maps that can be combined online, EU Floods Directive maps, pluvial flooding from short intense rain, flood probabilities and flood risk now and at the 2050 and 2100 horizons, evacuation percentages, warning and water arrival times, flood duration and dry floors per building and neighbourhood. The viewer is open to all, layers are also served as WMS, content may be reused with attribution to LIWO and WMCN, and releases are periodic, the latest being 2025.1.6 in October 2025. Caveats: IPLO warns that reading the layers needs specialist knowledge from water managers, scenario resolution and dates differ by source holder, no open licence is named and bulk download was not confirmed. Simulation uses: flood exposure of assets and people behind dikes, evacuation and crisis planning, cascading impacts of dike breaches on other networks, and climate adaptation of spatial plans. Related record: the national primary flood defence data (data-netherlands-primary-flood-defences-nbpw) gives the dike trajectories and safety standards the breach scenarios refer to.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Basisinformatie overstromingen (LIWO) (NL, flood_coastal_agency) https://basisinformatie-overstromingen.nl/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "formats": [
+    "web_page",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://basisinformatie-overstromingen.nl/",
+  "id": "data-netherlands-liwo-flood-information",
+  "languages": [
+    "nl"
+  ],
+  "licence": "Reuse of content allowed with attribution to LIWO, Watermanagementcentrum Nederland (copyright reserved by WMCN; no open licence named)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://basisinformatie-overstromingen.nl/"
+    ]
+  },
+  "maturity": "active",
+  "name": "LIWO national flood and inundation map layers (Netherlands)",
+  "notes": "WMS availability and the Deltares/HKV role come from web search snippets; WMS endpoints were not opened.",
+  "provider": "Watermanagementcentrum Nederland (WMCN), Rijkswaterstaat; built by Deltares and HKV",
+  "related_ids": [
+    "data-netherlands-primary-flood-defences-nbpw"
+  ],
+  "schema_summary": "map layer groups: maximum flood depth (outer-dike areas, primary and non-primary defence breaches, regional water system), flood scenarios with effect maps and scenario combination, EU Floods Directive maps (2019), pluvial flooding from short intense rain (2018), flood probabilities and flood risk now, at 2050 standard and 2100, evacuation percentages, warning time, water arrival time, flood duration, dry floors per building and neighbourhood",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "climate_adaptation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "map layer list, WMCN product, links to klimaateffectatlas and overstroomik",
+      "url": "https://basisinformatie-overstromingen.nl/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "open to everyone, source LDO fed by provinces, water boards and Rijkswaterstaat, reuse with attribution, application version 2025.1.6, source code on GitHub (deltares/liwo-static)",
+      "url": "https://basisinformatie-overstromingen.nl/#/about"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "release dates, specialist knowledge needed, method report",
+      "url": "https://iplo.nl/thema/water/applicaties-modellen/berichtgeving-crisismanagement/liwo/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "web search snippet: developed by Deltares and HKV for Rijkswaterstaat; maps available to professionals as WMS",
+      "url": "https://www.hkv.nl/projecten/landelijk-informatiesysteem-water-en-overstromingen-liwo/"
+    }
+  ],
+  "spatial_resolution": "gridded flood depth and scenario maps; evacuation and dry-floor layers per area, building and neighbourhood",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "LIWO",
+    "flood scenarios",
+    "inundation depth",
+    "dike breach",
+    "flood probability",
+    "flood risk",
+    "evacuation",
+    "Netherlands",
+    "Rijkswaterstaat",
+    "crisis management"
+  ],
+  "temporal_coverage": "current maps plus sets dated 2007, 2018, 2019 and design horizons 2050 and 2100",
+  "temporal_resolution": "scenario snapshots, no time series",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "LIWO national flood and inundation map layers (Netherlands)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Census 2021 bulk data (Nomis)",
+      "url": "https://www.nomisweb.co.uk/sources/census_2021_bulk"
+    },
+    {
+      "kind": "portal",
+      "label": "ONS create a custom dataset",
+      "url": "https://www.ons.gov.uk/datasets/create"
+    },
+    {
+      "kind": "docs",
+      "label": "Census 2021 dictionary",
+      "url": "https://www.ons.gov.uk/census/census2021dictionary"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "social_vulnerability_equity",
+    "demand_operation",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "census 2021 england and wales topic summaries and custom datasets down to output areas ons nomis bulk download",
+    "url": "https://nomisweb.co.uk/sources/census_2021_bulk"
+  },
+  "description": "The Office for National Statistics (ONS) publishes the results of Census 2021 for England and Wales as topic summary tables, a custom dataset builder and bulk downloads distributed through Nomis. Coverage: 74 topic summaries (TS tables) listed on the Nomis bulk page, covering demography and migration, households, housing, travel to work, health and disability, and more; infrastructure-relevant tables include accommodation type (TS044), car or van availability (TS045), central heating (TS046), bedrooms and rooms (TS050, TS051), occupancy ratings (TS052, TS053), tenure (TS054), distance travelled to work (TS058), method of travel to work (TS061), general health (TS037) and disability (TS038). Each table is given for output areas, lower and middle layer super output areas, local authorities, regions and countries, with 2021 wards added later. Format and access: each dataset is a zip file of CSV files, one per geography type, with column headings in the first row, plus a second zip for geographies added after the first release; the ONS custom dataset tool lets users choose a population type (such as all households or usual residents) and build their own cross-tabulations. Free. Licence (read on 2026-09-29): OGL-UK-3.0 (ONS: all content under the Open Government Licence v3.0 unless otherwise stated). Caveats: ONS applied targeted record swapping and cell key perturbation for disclosure control, so small counts may differ slightly between tables. Simulation uses: small-area population, household, heating, car access and commuting counts for exposure, social vulnerability and demand estimates in infrastructure risk and emergency response studies. Related records: the ONS UK travel area isochrones (data-ons-uk-travel-area-isochrones-2022) give travel-time areas from the same office.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source gb-nso-ons-gov-uk: provider pages read (round 2 register piece)",
+      "route": "R10",
+      "source": "gb-nso-ons-gov-uk"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.nomisweb.co.uk/sources/census_2021_bulk",
+  "id": "data-ons-census-2021-england-wales-topic-summaries",
+  "languages": [
+    "en"
+  ],
+  "licence": "OGL-UK-3.0 (ONS: all content under the Open Government Licence v3.0 unless otherwise stated)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Census 2021 England and Wales: topic summaries and custom datasets down to output areas (ONS, Nomis bulk download)",
+  "provider": "Office for National Statistics (ONS)",
+  "related_ids": [
+    "data-ons-uk-travel-area-isochrones-2022"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "transport.road",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Zip per dataset with CSV per geography (OA, LSOA, MSOA, LA, region, country), extra zip with 2021 wards; record swapping and cell key perturbation; 74 TS tables incl. TS044-TS061",
+      "url": "https://www.nomisweb.co.uk/sources/census_2021_bulk"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Custom dataset builder by population type",
+      "url": "https://www.ons.gov.uk/datasets/create"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Licence read by the wave 1 integrator (ONS page footer); replaces \"not read\".",
+      "url": "https://www.ons.gov.uk/census/census2021dictionary"
+    }
+  ],
+  "tags": [
+    "census",
+    "England and Wales",
+    "housing",
+    "travel to work",
+    "output areas"
+  ],
+  "temporal_coverage": "census day 21 March 2021",
+  "title_en": "Census 2021 England and Wales: topic summaries and custom datasets down to output areas (ONS, Nomis bulk download)",
+  "type": "data"
+}

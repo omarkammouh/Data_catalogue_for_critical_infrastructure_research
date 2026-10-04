@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "RBMC public download server",
+      "url": "https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rbmc/"
+    },
+    {
+      "kind": "docs",
+      "label": "RBMC page (IBGE)",
+      "url": "https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/rede-geodesica/16258-rede-brasileira-de-monitoramento-continuo-dos-sistemas-gnss-rbmc.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "BR"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "system_description",
+    "space_weather"
+  ],
+  "data_kind": [
+    "time_series",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ibge rbmc brazilian network for continuous monitoring of gnss rinex data and station reports",
+    "url": "https://ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/rede-geodesica/16258-rede-brasileira-de-monitoramento-continuo-dos-sistemas-gnss-rbmc.html"
+  },
+  "description": "The Rede Brasileira de Monitoramento Contínuo dos Sistemas GNSS (RBMC) is IBGE's national network of continuously operating GNSS reference stations, which realises the SIRGAS2000 geodetic reference frame in Brazil and gives surveyors, engineers and scientists reference observations for precise positioning. IBGE's public download server holds daily observation files from 1995 to the present in the dados folder, RINEX 3 files from 2018 onwards, and 1-second RINEX 3 data from 2020, plus station description reports (216 station reports were listed when read, including discontinued stations), cartograms of the network, usage statistics, time-series graphs and a tutorial on real-time precise point positioning through NTRIP. Real-time streams are offered separately as the RBMC-IP service. Coverage: Brazil, with stations in every state. Format and access: RINEX observation files, PDF station reports and images on a public FTP-style web server; IBGE states that all files there are public, and data are free. Caveats: the IBGE landing page refused automated requests, so details of the real-time service and station count come from the server listings and recall; station availability varies over time. Simulation uses: exposure of positioning services to ionospheric storms and outages, and a reference network for studies of GNSS dependence in transport, energy timing and emergency services. Related records: the Geoscience Australia and NGS CORS networks, and online post-processing services such as AUSPOS, CSRS-PPP and OPUS, are comparable.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "visit of the IBGE RBMC download server",
+      "route": "R51",
+      "source": "organisations.csv:BR:digital:satellite_gnss"
+    }
+  ],
+  "formats": [
+    "domain_model_file",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/rede-geodesica/16258-rede-brasileira-de-monitoramento-continuo-dos-sistemas-gnss-rbmc.html",
+  "id": "data-ibge-rbmc-gnss-network",
+  "languages": [
+    "pt"
+  ],
+  "last_updated": "2026-09",
+  "licence": "Public data (IBGE: all files on the server are public)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.ibge.gov.br/geociencias/informacoes-sobre-posicionamento-geodesico/rede-geodesica/16258-rede-brasileira-de-monitoramento-continuo-dos-sistemas-gnss-rbmc.html"
+    ]
+  },
+  "maturity": "active",
+  "name": "IBGE RBMC: Brazilian network for continuous monitoring of GNSS (RINEX data and station reports)",
+  "notes": "Download server listings read with curl on 2026-09-26 (folders, years, 216 station report PDFs, NTRIP PPP tutorial). The IBGE page returned 403 to curl and fetch. SIRGAS2000, RBMC-IP, the 15-second sampling of daily files and the RINEX 2 format of older files are from recall.",
+  "provider": "Instituto Brasileiro de Geografia e Estatística (IBGE), Brazil",
+  "related_ids": [],
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "size": "not stated",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "server listing",
+      "url": "https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rbmc/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "station reports",
+      "url": "https://geoftp.ibge.gov.br/informacoes_sobre_posicionamento_geodesico/rbmc/relatorio/"
+    }
+  ],
+  "spatial_resolution": "station points",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "GNSS",
+    "CORS",
+    "RINEX",
+    "SIRGAS2000",
+    "Brazil"
+  ],
+  "temporal_coverage": "1995 to present",
+  "temporal_resolution": "15 s daily files; 1 s RINEX 3 since 2020",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "IBGE RBMC: Brazilian network for continuous monitoring of GNSS (RINEX data and station reports)",
+  "type": "data",
+  "update_frequency": "daily"
+}

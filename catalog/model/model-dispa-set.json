@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/energy-modelling-toolkit/Dispa-SET"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "http://dispa-set.readthedocs.io/en/latest/"
+    }
+  ],
+  "access_note": "The model code is free; running it requires a GAMS installation and the GAMS Python API, as the README explains.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "dispa set",
+    "repo": "github.com/energy-modelling-toolkit/dispa-set",
+    "url": "https://dispa-set.readthedocs.io/en/latest"
+  },
+  "description": "Dispa-SET is a unit commitment and dispatch model developed within the European Commission's Joint Research Centre, focused on balancing and flexibility problems in the European power system. It is expressed as an optimisation problem whose continuous variables are unit dispatch, shed load and curtailed generation and whose binary variables are unit commitment status, with features including minimum and maximum power, ramping limits, reserves, minimum up and down times, load shedding, curtailment, pumped-hydro storage and non-dispatchable units. Three formulations, linear and mixed-integer, trade accuracy against computing effort, so a system can be modelled at the level of a micro-grid, region, country or continent, and a pan-European scenario is included from version 2.3. The core is written in GAMS with Python routines for input and output handling and visualisation; code is on GitHub (latest tag v3.0) with documentation on read-the-docs, under the European Union Public Licence 1.2. Caveats: a GAMS installation with its Python API must be set up before use, and the README badges still reference Python 2.7 and 3.7 and a retired Travis build. Simulation uses are optimisation of dispatch, flexibility and adequacy analysis and capacity planning. Related records: it compares with model-antares-simulator and model-pypsa.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry Dispa-SET (JRC)",
+      "route": "R06",
+      "source": "energy-dispa-set"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "http://dispa-set.readthedocs.io/en/latest/",
+  "id": "model-dispa-set",
+  "inputs": [
+    "Power plant units with technical constraints",
+    "Demand and renewable time series",
+    "Interconnection capacities",
+    "Pan-European scenario data (included from version 2.3)"
+  ],
+  "language": [
+    "optimisation_language",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-11",
+  "licence": "EUPL-1.2",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "Dispa-SET",
+  "outputs": [
+    "Unit commitment and dispatch",
+    "Load shedding and curtailment",
+    "Reserves",
+    "Costs"
+  ],
+  "provider": "European Commission Joint Research Centre (JRC) and the energy-modelling-toolkit contributors",
+  "related_ids": [
+    "model-antares-simulator",
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/energy-modelling-toolkit/Dispa-SET",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, JRC, GAMS + Python, LP/MILP formulations, pan-European scenario from 2.3, features, GAMS API install, badges",
+      "url": "https://raw.githubusercontent.com/energy-modelling-toolkit/Dispa-SET/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "EUPL v1.2",
+      "url": "https://raw.githubusercontent.com/energy-modelling-toolkit/Dispa-SET/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Visit 2026-09-09; head commit 2026-05-11",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/energy-modelling-toolkit/Dispa-SET/visit/latest/"
+    }
+  ],
+  "tags": [
+    "unit commitment",
+    "GAMS",
+    "JRC",
+    "flexibility",
+    "Europe"
+  ],
+  "title_en": "Dispa-SET is a unit commitment and dispatch model for balancing and flexibility problems",
+  "type": "model",
+  "validated_on": []
+}

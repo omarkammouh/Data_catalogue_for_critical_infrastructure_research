@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "CSV (pipe-separated), updated weekly",
+      "url": "https://ministere-culture.s3.sbg.io.cloud.ovh.net/POP/merimee.csv"
+    },
+    {
+      "kind": "portal",
+      "label": "Plateforme ouverte du patrimoine (POP)",
+      "url": "https://pop.culture.gouv.fr/"
+    },
+    {
+      "kind": "download",
+      "label": "GeoJSON export on data.gouv.fr",
+      "url": "https://www.data.gouv.fr/datasets/immeubles-proteges-au-titre-des-monuments-historiques-2"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "reference_context",
+    "catalogues_registries",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "immeubles proteges au titre des monuments historiques merimee base france",
+    "url": "https://data.gouv.fr/datasets/immeubles-proteges-au-titre-des-monuments-historiques-2"
+  },
+  "description": "This dataset lists every building and structure in France that is or has been protected as a historic monument (classé or inscrit) since 1840, exported from the Mérimée base of the Ministry of Culture's open heritage platform POP. Each record gives the reference, name, current use, address and commune with INSEE code, cadastral parcels, type and date of protection, dating by century, authors, main walling and roof materials, roof type, state of conservation, description and history, legal status and WGS84 coordinates, with links to the Palissy and Joconde object bases and the Archiv MH archive. Protected buildings range from prehistory to the twentieth century. Coverage: all of France, including overseas departments. Access: a pipe-separated CSV of about 100 MB regenerated every Thursday, and a GeoJSON export on data.gouv.fr. Licence: Licence Ouverte v2.0; free. Caveats: some monuments still lack coordinates while producers geolocate them, and descriptive fields vary in completeness between records. Simulation uses are heritage exposure and constraint layers, with construction materials and dating, for flood, fire and heat risk and retrofit planning. Related records: the BDNB national building database and the Netherlands national monument register.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: Ministère de la Culture, Plateforme ouverte du patrimoine (POP) homepage",
+      "route": "R10",
+      "source": "organisations.csv:FR:built_environment:heritage_agency"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.data.gouv.fr/datasets/immeubles-proteges-au-titre-des-monuments-historiques-2",
+  "id": "data-france-merimee-protected-historic-monuments",
+  "languages": [
+    "fr"
+  ],
+  "last_updated": "2026-09-24",
+  "licence": "Licence Ouverte v2.0 (Etalab)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Immeubles protégés au titre des Monuments historiques (Mérimée base, France)",
+  "provider": "Ministère de la Culture (Plateforme ouverte du patrimoine, POP)",
+  "related_ids": [
+    "data-bdnb-base-de-donnees-nationale-des-batiments",
+    "data-rce-rijksmonumenten-cultural-heritage-objects"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Dataset metadata: scope since 1840, field list, weekly Thursday update, missing coordinates note, Licence Ouverte v2, CSV and GeoJSON resources",
+      "url": "https://www.data.gouv.fr/api/1/datasets/5af120e5b595087cfabcde81/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "First bytes read: pipe-separated header; HEAD shows 100,102,040 bytes",
+      "url": "https://ministere-culture.s3.sbg.io.cloud.ovh.net/POP/merimee.csv"
+    }
+  ],
+  "tags": [
+    "historic monuments",
+    "heritage",
+    "Mérimée",
+    "France",
+    "protected buildings"
+  ],
+  "temporal_coverage": "Protections since 1840",
+  "title_en": "Buildings protected as Historic Monuments (Mérimée base, France)",
+  "type": "data"
+}

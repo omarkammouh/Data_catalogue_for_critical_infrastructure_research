@@ -1,0 +1,152 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Download map data (PWS_Boundaries_Latest.zip, GitHub)",
+      "url": "https://github.com/USEPA/ORD_SAB_Model/raw/refs/heads/main/Version_History/PWS_Boundaries_Latest.zip"
+    },
+    {
+      "kind": "api",
+      "label": "Community water system feature service (ArcGIS REST)",
+      "url": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Water_System_Boundaries/FeatureServer"
+    },
+    {
+      "kind": "api",
+      "label": "Non-community water system feature layer",
+      "url": "https://epa.maps.arcgis.com/home/item.html?id=95b861a3bb0d4fa6b5eb84494b135c51"
+    },
+    {
+      "kind": "repo",
+      "label": "ORD_SAB_Model repository (R code, inputs, version history, metadata)",
+      "url": "https://github.com/USEPA/ORD_SAB_Model"
+    },
+    {
+      "kind": "docs",
+      "label": "Community water system service area technical documentation",
+      "url": "https://epa.maps.arcgis.com/home/item.html?id=609326a2d1024f2da42ac53f68f40db6"
+    },
+    {
+      "kind": "docs",
+      "label": "Non-community water system methods document",
+      "url": "https://epa.maps.arcgis.com/home/item.html?id=29cee3c00b8444a7be7071f0f91ef104"
+    },
+    {
+      "kind": "viewer",
+      "label": "Service area boundaries map viewer",
+      "url": "https://experience.arcgis.com/experience/7cdd2750ae0d4442a6986d27750d441d"
+    },
+    {
+      "kind": "docs",
+      "label": "Community Water System Service Area Boundaries Data Standard (October 2024)",
+      "url": "https://www.epa.gov/system/files/documents/2024-04/cws-service-area-boundaries-data-standard.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "service_performance",
+    "social_vulnerability_equity",
+    "reference_context"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "epa public water system service area boundaries",
+    "repo": "github.com/usepa/ord_sab_model",
+    "url": "https://epa.gov/ground-water-and-drinking-water/public-water-system-service-areas"
+  },
+  "description": "This dataset maps the geographic areas served by US public water systems. EPA's Office of Research and Development built it, and the Office of Water now maintains it, so that system data reported under the Safe Drinking Water Act (violations, population served) can be linked to the people and places each system serves. It covers over 44,000 community water systems in all 50 states, Washington DC, territories and tribal lands, about 99 per cent of the population they serve; version 3 (17 March 2026) added about 78,000 transient and non-transient non-community systems, mapped at parcel level, around 84 per cent of that universe. About 60 per cent of community boundaries come from state or utility sources and about 40 per cent were modelled by EPA with machine learning from building footprints, population density and connections. Each polygon carries the PWSID, population, connections and boundary source. Access: free zipped download and R code on GitHub (MIT), ArcGIS feature services and a web map. Caveats: modelled boundaries are estimates that often differ from real ones, EPA does not warrant spatial accuracy, many tribal and territorial systems are missing, private wells are not shown, and the repository labels the work as pre-dissemination peer review. Simulation uses: linking drinking-water assets and outages to served populations, exposure of service areas to hazards, emergency response and investment planning. Related records: HIFLD Open (data-hifld-open) for other US infrastructure layers.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "EPA community water system service area boundaries dataset ORD 2024",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "other_vector",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.epa.gov/ground-water-and-drinking-water/public-water-system-service-areas",
+  "id": "data-epa-public-water-system-service-areas",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-17",
+  "licence": "MIT (repository); US Government work",
+  "licence_type": [
+    "permissive_code",
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "EPA Public Water System Service Area Boundaries",
+  "notes": "The zip download answered HTTP 403 to a header request from the cloud session; the web map and feature services are the alternative routes. EPIC's provisional water utility service area boundaries are a related non-government dataset.",
+  "provider": "US Environmental Protection Agency (Office of Research and Development and Office of Water)",
+  "related_ids": [
+    "data-hifld-open"
+  ],
+  "schema_summary": "Per service area: federal public water system ID (PWSID) linking to SDWIS, system name, service connections, population served, primary service area type, boundary source (EPA-modelled, state or system)",
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "version 3 March 2026, scope 44,000+ CWS 99 per cent population, NCWS 84 per cent, 60/40 authoritative vs modelled, PWSID attributes, SDWIS 2023 Q4 and 2025 Q3, limitations, download and service links; page updated 10 August 2026",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/public-water-system-service-areas?tab=map"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "over 78,000 of about 93,500 NCWS mapped; machine learning for systems without state boundaries",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/public-water-system-service-areas?tab=faq"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT licence, version 3.0 17 March 2026, R scripts, pre-dissemination peer review disclaimer",
+      "url": "https://github.com/USEPA/ORD_SAB_Model"
+    }
+  ],
+  "spatial_resolution": "service area polygons; non-community systems mapped at parcel level",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "drinking water",
+    "service area boundaries",
+    "community water systems",
+    "PWSID",
+    "SDWIS",
+    "machine learning",
+    "utility boundaries"
+  ],
+  "temporal_coverage": "SDWIS 2023 Q4 universe for community systems; SDWIS 2025 Q3 for non-community systems",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2023
+  },
+  "temporal_resolution": "none (snapshot versions)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "EPA Public Water System Service Area Boundaries",
+  "type": "data",
+  "update_frequency": "irregular"
+}

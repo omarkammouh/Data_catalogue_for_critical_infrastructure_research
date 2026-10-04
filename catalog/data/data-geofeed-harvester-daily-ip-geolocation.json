@@ -1,0 +1,86 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and daily release artefacts",
+      "url": "https://github.com/ipanalytics/GeoFeed-Harvester"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "geofeed harvester daily dataset of operator published ip geolocation from rfc 8805 geofeeds",
+    "repo": "github.com/ipanalytics/geofeed-harvester",
+    "url": "https://github.com/ipanalytics/GeoFeed-Harvester"
+  },
+  "description": "GeoFeed Harvester builds a daily open dataset of IP address geolocation as published by network operators themselves in RFC 8805 geofeed files. The project, run by the ipanalytics contributors on GitHub, discovers geofeed links in public regional internet registry data, downloads each file, validates every row, adds provenance and checks each prefix's BGP visibility. Coverage: global; the run of 2026-09-28 held 532,661 valid prefixes from 4,300 geofeed URLs across 289 country codes, with 712 failed fetches logged. Each row gives the prefix, country, region, city, postal code, registry, parent inetnum, source URL, fetch time, signature and BGP validity flags, and a confidence score. Format and access: CSV, JSON lines and Parquet artefacts with a changelog, diff, manifest and checksums, published by a GitHub workflow every day; free download. Licence: MIT. Caveats: geofeeds are self-declared and often give a city or country for a large prefix, operators may publish stale entries, and coverage depends on which networks publish feeds. Simulation uses: mapping where networks say their address space is used, as an input to digital twin and cascading failure studies of internet access by region. Related records: CAIDA GeofeedWHOIS (data-caida-geofeedwhois) is a research dataset built from the same geofeed mechanism, and the Internet Health Report (data-iij-internet-health-report) gives routing dependencies for the same prefixes.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source digital-geofeed-harvester: provider pages read (round 2 register piece)",
+      "route": "R15",
+      "source": "digital-geofeed-harvester"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "parquet"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/ipanalytics/GeoFeed-Harvester",
+  "id": "data-geofeed-harvester-daily-ip-geolocation",
+  "languages": [
+    "en"
+  ],
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GeoFeed Harvester: daily dataset of operator-published IP geolocation from RFC 8805 geofeeds",
+  "provider": "GeoFeed Harvester contributors (ipanalytics), GitHub",
+  "related_ids": [
+    "data-caida-geofeedwhois",
+    "data-iij-internet-health-report"
+  ],
+  "sectors": [
+    "digital.telecom",
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: daily first-party IP geolocation from public geofeeds; latest run 2026-09-28 with 532,661 valid rows, 4,300 geofeed URLs, 289 countries; CSV, JSONL, Parquet outputs; MIT licence; last commit 2026-09-28",
+      "url": "https://raw.githubusercontent.com/ipanalytics/GeoFeed-Harvester/main/README.md"
+    }
+  ],
+  "spatial_resolution": "IP prefix to city, region or country",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "IP geolocation",
+    "geofeed",
+    "RFC 8805",
+    "BGP"
+  ],
+  "title_en": "GeoFeed Harvester: daily dataset of operator-published IP geolocation from RFC 8805 geofeeds",
+  "type": "data",
+  "update_frequency": "daily"
+}

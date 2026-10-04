@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "TranStats database directory (Air Carrier Statistics)",
+      "url": "https://www.transtats.bts.gov/DataIndex.asp"
+    },
+    {
+      "kind": "portal",
+      "label": "T-100 domestic market and segment layer (BTS geospatial hub)",
+      "url": "https://geodata.bts.gov/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "cross_border_flows"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "air carrier statistics t 100 form 41 traffic bts",
+    "url": "https://transtats.bts.gov/DataIndex.asp"
+  },
+  "description": "The Air Carrier Statistics database, known as T-100 and reported on Form 41 Traffic schedules, contains monthly traffic and capacity data reported to the Bureau of Transportation Statistics by US certificated air carriers and, in the all-carriers version, by foreign carriers serving the United States. Segment tables give, for each carrier, non-stop airport pair, aircraft type and service class, departures scheduled and performed, available seats and capacity, passengers, freight and mail carried, distance and ramp-to-ramp and airborne hours; market tables give on-flight origin and destination traffic, in domestic and international versions. Tables are downloadable free from TranStats as CSV with field selection, a domestic T-100 layer is published on the BTS geospatial hub, and third-party aggregated copies (for example 1990 to 2026 on figshare) circulate. As US government statistics the data are unrestricted. Caveats: small carriers report separately on Form 298C, and passenger counts are on-flight, not true itineraries, for which the DB1B ticket sample is the counterpart. T-100 describes the demand and capacity of the air network for network flow, airport capacity planning and disruption studies, and is related to the on-time performance data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "BTS T-100 air traffic",
+      "route": "R10",
+      "source": "figshare"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "airline airport aviation statistics",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.transtats.bts.gov/DataIndex.asp",
+  "id": "data-bts-t100-air-carrier-traffic-statistics",
+  "languages": [
+    "en"
+  ],
+  "licence": "US Government work, no copyright (17 U.S.C. 101)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://geodata.bts.gov/"
+    ]
+  },
+  "maturity": "active",
+  "name": "Air Carrier Statistics T-100 (Form 41 Traffic), BTS",
+  "provider": "U.S. Department of Transportation, Bureau of Transportation Statistics (BTS), Office of Airline Information",
+  "related_ids": [
+    "data-bts-airline-on-time-performance",
+    "data-us-national-transportation-atlas-database"
+  ],
+  "sectors": [
+    "transport.aviation",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Air Carrier Statistics (Form 41 Traffic) U.S. Carriers and All Carriers: monthly passengers, freight and mail, aircraft type, service class, capacity, seats, ramp-to-ramp and airborne hours; Form 298C for small carriers; DB1B 10% ticket sample",
+      "url": "https://www.transtats.bts.gov/DataIndex.asp"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "T-100 Domestic Market and Segment Data feature service on the BTS hub, updated July 2026",
+      "url": "https://geodata.bts.gov/api/search/v1/collections/all/items?limit=100"
+    }
+  ],
+  "spatial_resolution": "carrier and non-stop airport pair by aircraft type",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "air traffic",
+    "passengers",
+    "air freight",
+    "seats",
+    "airport pairs",
+    "T-100",
+    "Form 41"
+  ],
+  "temporal_coverage": "monthly data from 1990 (domestic and international segment and market tables)",
+  "title_en": "Air Carrier Statistics T-100 (Form 41 Traffic), BTS",
+  "type": "data",
+  "update_frequency": "monthly"
+}

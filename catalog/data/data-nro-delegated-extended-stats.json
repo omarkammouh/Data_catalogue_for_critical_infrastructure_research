@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Latest delegated-extended file",
+      "url": "https://ftp.ripe.net/pub/stats/ripencc/nro-stats/latest/nro-delegated-stats"
+    },
+    {
+      "kind": "docs",
+      "label": "Format README",
+      "url": "https://www.nro.net/wp-content/uploads/nro-extended-stats-readme5.txt"
+    },
+    {
+      "kind": "download",
+      "label": "RPKI adoption by economy (CSV)",
+      "url": "https://www.nro.net/wp-content/uploads/rpki-uploads/economy-adoption.csv"
+    },
+    {
+      "kind": "portal",
+      "label": "RIR statistics page",
+      "url": "https://www.nro.net/about/rirs/statistics/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "governance_regulation",
+    "system_description",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nro extended allocation and assignment reports delegated extended statistics",
+    "url": "https://nro.net/about/rirs/statistics"
+  },
+  "description": "The NRO extended allocation and assignment report is a joint product of the five Regional Internet Registries (AFRINIC, APNIC, ARIN, LACNIC and RIPE NCC), coordinated by the Number Resource Organization, that lists every block of internet number resources they have distributed: autonomous system numbers, IPv4 address ranges and IPv6 address ranges. Each record gives the registry, the economy (ISO country code), the resource type, the start value, the size, the date of allocation or assignment, the status (allocated, assigned, available, reserved) and an opaque identifier that groups resources held by the same organisation. The registries publish it to give the internet community consistent, accessible statistics for research and analysis of how number resources are used. Coverage is global by economy, with dates from 1982; the file of 25 September 2026 summarised 117,284 ASN records, 270,300 IPv4 records and 383,529 IPv6 records. It is a pipe-separated text file regenerated daily and downloadable free from ftp.ripe.net, with a README describing the format; the NRO page also offers daily RPKI adoption reports per registry and per economy as CSV and text. No licence is stated on the pages read. Caveats: the country code records the holder's registration, not where addresses are used; the opaque identifiers do not name organisations; legacy space and transfers make histories uneven. Simulation uses: mapping which networks and address space belong to each country, as a building block for internet topology models, outage attribution by country and resilience analysis of national internet infrastructure. Related records: the CAIDA AS Relationships Dataset, RIPE RIS routing data and PeeringDB.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.internet_exchange:governance_regulation",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "plain_text",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.nro.net/about/rirs/statistics/",
+  "id": "data-nro-delegated-extended-stats",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "Not stated (public registry statistics)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NRO Extended Allocation and Assignment Reports (delegated-extended statistics)",
+  "provider": "Number Resource Organization (NRO) and the five Regional Internet Registries",
+  "related_ids": [
+    "data-caida-as-relationships",
+    "data-ripe-ris",
+    "data-peeringdb"
+  ],
+  "schema_summary": "registry|cc|type|start|value|date|status|opaque-id|extensions; header and summary lines",
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "cascading_failure"
+  ],
+  "size": "117,284 ASN, 270,300 IPv4 and 383,529 IPv6 records (file of 2026-09-25)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Joint RIR project, delegated-extended daily, RPKI adoption reports",
+      "url": "https://www.nro.net/about/rirs/statistics/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Header 20260925, start date 19821213, summary counts",
+      "url": "https://ftp.ripe.net/pub/stats/ripencc/nro-stats/latest/nro-delegated-stats"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "File format",
+      "url": "https://www.nro.net/wp-content/uploads/nro-extended-stats-readme5.txt"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://www.nro.net/about/rirs/statistics/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://ftp.ripe.net/pub/stats/ripencc/nro-stats/latest/nro-delegated-stats"
+    }
+  ],
+  "spatial_resolution": "Economy (country code)",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "IP addresses",
+    "ASN",
+    "RIR",
+    "address allocation",
+    "RPKI"
+  ],
+  "temporal_coverage": "Allocations dated from 1982 to present",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1982
+  },
+  "temporal_resolution": "Daily snapshot",
+  "temporal_resolution_class": "daily",
+  "title_en": "NRO Extended Allocation and Assignment Reports (delegated-extended statistics)",
+  "type": "data",
+  "update_frequency": "daily"
+}

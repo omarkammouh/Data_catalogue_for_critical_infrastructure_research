@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Complete LeakDB dataset on Zenodo",
+      "url": "https://zenodo.org/records/13985057"
+    },
+    {
+      "kind": "repo",
+      "label": "LeakDB repository (example and scoring code)",
+      "url": "https://github.com/KIOS-Research/LeakDB"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "synthetic_benchmark",
+    "calibration_validation",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.13985057",
+    "name": "leakdb leakage diagnosis benchmark for water distribution networks",
+    "repo": "github.com/kios-research/leakdb",
+    "url": "https://github.com/KIOS-Research/LeakDB"
+  },
+  "description": "LeakDB is a benchmark dataset for leakage diagnosis in water distribution networks. It contains a large number of artificially created but realistic leakage scenarios on several benchmark networks under varying conditions, with the simulated hydraulic measurements and the true leak events, together with a scoring algorithm in MATLAB for comparing detection and localisation methods. The KIOS Research and Innovation Center of Excellence at the University of Cyprus produced it so that leakage-detection algorithms can be evaluated on common ground; it was presented at the WDSA/CCWI joint conference in 2018 (Vrachimis, Kyriakou, Eliades and Polycarpou). The GitHub repository gives a MATLAB example that runs provided algorithms on a limited set of scenarios for the Hanoi benchmark network; the complete dataset, a single 13.9 GB ZIP file, is on Zenodo (record of 24 October 2024) under a Creative Commons Attribution 4.0 licence, free of charge. The data are synthetic, not from a real utility, so spatial coverage is the benchmark networks' nodes and pipes and temporal coverage is the simulated scenario periods. Caveats: the README says the dataset is being expanded with more networks, algorithms and features, and results depend on the hydraulic simulator's assumptions. Simulation uses: developing and validating leak detection for digital twins and resilience analysis of network flow. Related records: EPANET (model-epanet) and the Exeter water network benchmarks (data-exeter-cws-water-network-benchmarks).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "water distribution network benchmark dataset EPANET models collection",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "source_code"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/KIOS-Research/LeakDB",
+  "id": "data-leakdb",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-10-24",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "LeakDB leakage diagnosis benchmark for water distribution networks",
+  "notes": "Content of the ZIP (file formats, sampling interval) not inspected; schema_summary and temporal resolution follow the README's description and are indicative.",
+  "provider": "KIOS Research and Innovation Center of Excellence, University of Cyprus",
+  "related_ids": [
+    "model-epanet",
+    "data-exeter-cws-water-network-benchmarks"
+  ],
+  "schema_summary": "leakage scenarios per network with simulated pressures and flows, leak labels (location, start, size) and scoring algorithm",
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "digital_twin"
+  ],
+  "size": "13.9 GB (Zenodo ZIP)",
+  "size_bytes": 13888061642,
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, MATLAB scoring, Hanoi example, full dataset on Zenodo, citation, being expanded",
+      "url": "https://raw.githubusercontent.com/KIOS-Research/LeakDB/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "LeakDB Dataset, 2024-10-24, CC-BY-4.0, LeakDB.zip 13,888,061,642 bytes",
+      "url": "https://zenodo.org/api/records/13985057"
+    }
+  ],
+  "spatial_resolution": "network nodes and pipes of benchmark networks",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "leakage detection",
+    "benchmark",
+    "water distribution network",
+    "Hanoi network",
+    "KIOS",
+    "synthetic scenarios"
+  ],
+  "temporal_coverage": "simulated scenarios (synthetic)",
+  "temporal_resolution": "sub-hourly simulated sensor readings",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "LeakDB leakage diagnosis benchmark for water distribution networks",
+  "type": "data",
+  "update_frequency": "irregular"
+}

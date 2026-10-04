@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "data.gouv.fr dataset",
+      "url": "https://www.data.gouv.fr/datasets/donnees-sur-les-installations-radioelectriques-de-plus-de-5-watts-1"
+    },
+    {
+      "kind": "portal",
+      "label": "ANFR open data portal",
+      "url": "https://data.anfr.fr/"
+    },
+    {
+      "kind": "viewer",
+      "label": "Cartoradio map",
+      "url": "https://www.cartoradio.fr/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "crs": "WGS 84 coordinates in degrees, minutes, seconds",
+  "data_family": [
+    "system_description",
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "anfr radio installations over 5 watts cartoradio open data",
+    "url": "https://data.gouv.fr/datasets/donnees-sur-les-installations-radioelectriques-de-plus-de-5-watts-1"
+  },
+  "description": "This dataset lists the radio installations of more than 5 watts in France, meaning the support structures (masts, towers, rooftops), the antennas mounted on them with height and azimuth, the transmitters and their systems (2G, 3G, 4G and 5G mobile, broadcast radio and television, radio links, private networks) and the frequency bands they use, excluding the installations of civil aviation and the ministries of Defence and the Interior. The data come from a database of the Agence nationale des fréquences (ANFR), the French spectrum agency, which every public or private operator of radio installations must feed under the administrative procedure of article L.43 of the Post and Electronic Communications Code; the same data drive the Cartoradio map and the ANFR monthly observatory of mobile networks. Coverage: metropolitan France and overseas territories, site by site with coordinates, as monthly snapshots published since April 2015. Format and access: monthly ZIP archives of about 65 MB of CSV tables (supports, antennas, transmitters, bands) plus small reference tables, downloadable from data.gouv.fr and the ANFR open data portal, with a map viewer at cartoradio.fr; free of charge under the Licence Ouverte 2.0 (Etalab). Caveats: defence, interior and aviation sites are missing; power and exact configuration are not given; the schema changes occasionally and codes need the reference tables. Simulation uses: an asset inventory of mobile and broadcast sites for network flow and capacity planning, hazard exposure of towers to storms, floods or wildfire, and resilience of coverage when sites fail. Related records: OpenCelliD gives crowdsourced cell locations, ARCEP Mon Réseau Mobile gives coverage and quality, and ARCEP's unavailable-sites data give outages.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.telecom:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "ANFR données installations radioélectriques de plus de 5 watts data.gouv.fr",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "archive"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.data.gouv.fr/datasets/donnees-sur-les-installations-radioelectriques-de-plus-de-5-watts-1",
+  "id": "data-anfr-radio-installations",
+  "languages": [
+    "fr"
+  ],
+  "last_updated": "2026-09-06",
+  "licence": "etalab-2.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.data.gouv.fr/datasets/donnees-sur-les-installations-radioelectriques-de-plus-de-5-watts-1"
+    ]
+  },
+  "maturity": "active",
+  "name": "ANFR radio installations over 5 watts (Cartoradio open data)",
+  "notes": "Metadata read through the data.gouv.fr API on 2026-09-26 (created 2015-04-02, monthly, latest resource 2026-09-06, licence lov2). The schema summary and CRS are from recall of the ANFR documentation; check the reference tables.",
+  "provider": "Agence nationale des fréquences (ANFR)",
+  "related_ids": [],
+  "schema_summary": "support (site id, coordinates, height, type, owner), antenna (type, azimuth, height), transmitter (system, operator, service dates), frequency bands",
+  "sectors": [
+    "digital.telecom",
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "size": "about 65 MB per monthly archive",
+  "size_bytes": 65714910,
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "dataset metadata and resource list",
+      "url": "https://www.data.gouv.fr/api/1/datasets/donnees-sur-les-installations-radioelectriques-de-plus-de-5-watts-1/"
+    }
+  ],
+  "spatial_resolution": "individual site (coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "antenna sites",
+    "mobile base stations",
+    "broadcast transmitters",
+    "spectrum",
+    "France"
+  ],
+  "temporal_coverage": "monthly snapshots since April 2015",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2015
+  },
+  "temporal_resolution": "monthly",
+  "temporal_resolution_class": "monthly",
+  "title_en": "ANFR radio installations over 5 watts (Cartoradio open data)",
+  "type": "data",
+  "update_frequency": "monthly"
+}

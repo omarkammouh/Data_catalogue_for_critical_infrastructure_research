@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/DavideFornari/padova-transit-punctuality"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "IT"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "padova tram gtfs punctuality data pipeline",
+    "repo": "github.com/davidefornari/padova-transit-punctuality",
+    "url": "https://github.com/DavideFornari/padova-transit-punctuality"
+  },
+  "deployment": [
+    "desktop",
+    "hosted_service"
+  ],
+  "description": "This repository publishes a data pipeline for comparing scheduled and observed tram service in Padova, Italy. Python and Airflow jobs collect Busitalia Veneto GTFS static schedules, trip updates and vehicle positions, storing hourly and daily partitions as Parquet. DuckDB and dbt models prepare stop-event and route tables, and a Streamlit app displays punctuality outputs. A modeller could use the resulting delay measures to build a transit-service scenario or calibrate timetable reliability assumptions. The README identifies public tram URLs and says bus feeds require HTTP Basic authentication, so this draft covers the tram path only. The project authors state that the provider feeds carry Italy’s IODL 2.0 terms, while GitHub metadata reports MIT for the pipeline code. This review read the README and tree but did not fetch GTFS ZIPs or protobuf feeds, execute Airflow, or check historical coverage and output accuracy. The pipeline needs Docker, Python and local storage; the optional cloud route has separate service costs. Related resources are the original Busitalia feeds, not a second copy of these generated tables.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"transport\" \"model\" \"data pipeline\"",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/DavideFornari/padova-transit-punctuality",
+  "id": "platform-padova-tram-gtfs-punctuality-pipeline",
+  "interfaces": [
+    "code_library",
+    "other",
+    "web_app"
+  ],
+  "interoperability": [
+    "GTFS static",
+    "GTFS-Realtime",
+    "Parquet",
+    "DuckDB"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-30",
+  "licence": "MIT for pipeline code; Busitalia Veneto feeds are described as IODL 2.0 by the README.",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Padova tram GTFS punctuality data pipeline",
+  "notes": "G8; G8-0831. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Padova Transit Punctuality repository documentation, accessed 2026-09-28. No describing paper identified..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Padova Transit Punctuality project",
+  "related_ids": [],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/DavideFornari/padova-transit-punctuality/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/DavideFornari/padova-transit-punctuality"
+    }
+  ],
+  "tags": [],
+  "title_en": "Padova tram GTFS punctuality data pipeline for Italy",
+  "type": "platform"
+}

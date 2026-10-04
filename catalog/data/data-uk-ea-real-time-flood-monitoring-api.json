@@ -1,0 +1,145 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "API reference",
+      "url": "https://environment.data.gov.uk/flood-monitoring/doc/reference"
+    },
+    {
+      "kind": "api",
+      "label": "Latest readings for all measures",
+      "url": "https://environment.data.gov.uk/flood-monitoring/data/readings?latest"
+    },
+    {
+      "kind": "api",
+      "label": "Current flood warnings and alerts",
+      "url": "https://environment.data.gov.uk/flood-monitoring/id/floods"
+    },
+    {
+      "kind": "docs",
+      "label": "Rainfall API",
+      "url": "https://environment.data.gov.uk/flood-monitoring/doc/rainfall"
+    },
+    {
+      "kind": "docs",
+      "label": "Tide gauge API",
+      "url": "https://environment.data.gov.uk/flood-monitoring/doc/tidegauge"
+    },
+    {
+      "kind": "portal",
+      "label": "Daily CSV archives of readings",
+      "url": "https://environment.data.gov.uk/flood-monitoring/archive"
+    }
+  ],
+  "access_note": "Open data with no registration; the service is labelled beta and carries no service-level guarantee.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "hazards",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "stream",
+    "time_series",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "environment agency real time flood monitoring api england",
+    "url": "https://environment.data.gov.uk/flood-monitoring/doc/reference"
+  },
+  "description": "The Environment Agency's real-time flood monitoring API gives open, near real-time access to flood warnings and flood alerts, the flood areas they apply to, water level and flow measurements, rainfall and tide gauge readings, and metadata on the monitoring stations across England. Levels and flows are usually measured every 15 minutes, though stations report back once or twice a day in quiet periods and more often when flood risk rises. It is a REST service returning JSON, with CSV for some lists, filters by river, catchment, town, parameter or distance, and a single call for the latest value of every measure; readings are also archived daily as CSV dump files in short and full formats. The data are free under the Open Government Licence with no registration, and users are asked to credit the Environment Agency real-time data API. Caveats: the service is labelled beta, offers no guaranteed service level and must not be used for safety-critical applications, readings sometimes arrive in late batches so the latest-value call alone does not keep a complete history, and coverage is England only. Simulation uses: live inputs for flood forecasting and digital twins, event reconstruction of river and coastal floods for drainage, dam and defence studies, trigger thresholds for emergency response, and calibration of hydraulic models. Related records: the UK National River Flow Archive (data-uk-national-river-flow-archive) and EA flood defence assets (data-ea-aims-spatial-flood-defences).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Environment Agency flood monitoring (GB, flood_coastal_agency) https://environment.data.gov.uk/flood-monitoring/doc/reference",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv",
+    "web_page",
+    "database"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://environment.data.gov.uk/flood-monitoring/doc/reference",
+  "id": "data-uk-ea-real-time-flood-monitoring-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "OGL-UK-3.0 (attribution statement requested)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Environment Agency real-time flood monitoring API (England)",
+  "notes": "No API calls were made to data endpoints.",
+  "provider": "Environment Agency (England), Defra group",
+  "related_ids": [
+    "data-uk-national-river-flow-archive",
+    "data-ea-aims-spatial-flood-defences"
+  ],
+  "schema_summary": "flood warnings and alerts (severity, county, location filters), flood areas, monitoring stations (parameter, qualifier, town, catchment, river, status, lat/long and easting/northing), measures per station, and readings (dateTime, value, measure); rainfall and tide gauge measures; three-day flood forecast; archive CSVs in short and full formats",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage",
+    "water.drinking_water",
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "scope, 15-minute readings, transfer frequency, OGL without registration, attribution statement, API list and filters, beta and no service level",
+      "url": "https://environment.data.gov.uk/flood-monitoring/doc/reference"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "daily CSV archives in short and full formats",
+      "url": "https://environment.data.gov.uk/flood-monitoring/archive"
+    }
+  ],
+  "spatial_resolution": "individual monitoring stations and flood warning areas across England",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "river levels",
+    "flows",
+    "flood warnings",
+    "flood alerts",
+    "rainfall",
+    "tide gauges",
+    "real-time API",
+    "Environment Agency",
+    "England",
+    "open data"
+  ],
+  "temporal_coverage": "near real time; daily archive files of readings",
+  "temporal_resolution": "water levels and flows usually every 15 minutes; transfer typically once or twice a day, more often at times of flood risk",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Environment Agency real-time flood monitoring API (England)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

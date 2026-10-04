@@ -1,0 +1,85 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "ISOC Pulse blog post of 2 April 2026",
+      "url": "https://pulse.internetsociety.org/en/blog/2026/04/blackouts-and-byteouts-what-happens-to-internet-hubs-when-the-grid-stumbles/"
+    }
+  ],
+  "access_restrictions": "none",
+  "case_study_kind": [
+    "risk_vulnerability_assessment"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "power grid dependence of internet exchange facilities and data centres substation failure simulation isoc pulse 2026",
+    "url": "https://pulse.internetsociety.org/en/blog/2026/04/blackouts-and-byteouts-what-happens-to-internet-hubs-when-the-grid-stumbles"
+  },
+  "description": "This blog post describes a Pulse fellowship study of how Internet exchange points and data centres depend on nearby power substations. The team mapped IXP-hosting facilities and data centres to their nearest high-voltage substations by proximity, because no public dataset says which substation supplies a facility, then built a bipartite graph linking each facility to its three nearest substations, so a facility fails only if all three are lost. Random, degree-centrality and betweenness-centrality failure strategies showed that about 70 percent of IXPs fail at roughly a 20 percent substation failure rate, mainly through co-location, and that targeted failures are significantly more damaging. The team then used the PEERING testbed to emulate an Amsterdam outage and see where traffic reroutes, including pairs and triples of failed sites. Producer: Tanya Shreedhar (TU Delft) for the Internet Society Pulse programme. Coverage: IXP facilities in Europe, with Amsterdam as the worked example. Access: a free public blog post; the methodology and results are available by contacting the author. Licence and cost: free to read; no licence stated. Caveats: proximity assignment is an assumption, not known supply contracts, and the post is a summary, not a peer-reviewed paper. Simulation uses: the substation-facility graph and failure strategies show how to couple power and Internet exchange models for cascading-failure studies. Related records: PeeringDB (data-peeringdb), the Euro-IX IXP database (data-euro-ix-ixp-database) and the PEERING testbed (case_study-peering-bgp-testbed).",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "internet exchange point resilience model simulation peering outage fragility",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://pulse.internetsociety.org/en/blog/2026/04/blackouts-and-byteouts-what-happens-to-internet-hubs-when-the-grid-stumbles/",
+  "id": "case_study-isoc-pulse-ixp-power-substation-dependency-simulation",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-02",
+  "licence": "not stated on the page read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Power grid dependence of Internet exchange facilities and data centres: substation failure simulation (ISOC Pulse, 2026)",
+  "outcomes": "In a bipartite facility-substation model about 70 percent of IXPs fail when about 20 percent of substations fail, mainly because of co-location, and targeted failures are more damaging than random ones",
+  "provider": "Tanya Shreedhar, TU Delft, and colleagues (Internet Society Pulse Research Fellow 2025)",
+  "related_ids": [
+    "data-peeringdb",
+    "data-euro-ix-ixp-database",
+    "case_study-peering-bgp-testbed",
+    "case_study-iberian-blackout-2025-internet-exchange-points-traffic-bgp-data-centre",
+    "model-power-grids-internet-resilience-grid-failure-zones-netwattzap"
+  ],
+  "resources_used": [],
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.data_centres",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "proximity mapping, bipartite k=3 model, 70 percent at 20 percent result, failure strategies, PEERING Amsterdam emulation",
+      "url": "https://pulse.internetsociety.org/en/blog/2026/04/blackouts-and-byteouts-what-happens-to-internet-hubs-when-the-grid-stumbles/"
+    }
+  ],
+  "study_period": "2025 Pulse Research Fellowship; blog dated 2 April 2026",
+  "tags": [
+    "IXP",
+    "data centres",
+    "power substations",
+    "co-location",
+    "cascading failure",
+    "PEERING",
+    "r2-fresh-digital"
+  ],
+  "title_en": "Power grid dependence of Internet exchange facilities and data centres: substation failure simulation (ISOC Pulse, 2026)",
+  "type": "case_study"
+}

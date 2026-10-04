@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Cal-ITP data analyses portfolio",
+      "url": "https://analysis.dds.dot.ca.gov/"
+    },
+    {
+      "kind": "api",
+      "label": "CA Transit Routes feature service",
+      "url": "https://gisdata.dot.ca.gov/arcgis/rest/services/CHrailroad/CA_Transit_Routes/FeatureServer"
+    },
+    {
+      "kind": "api",
+      "label": "CA Transit Stops feature service",
+      "url": "https://gisdata.dot.ca.gov/arcgis/rest/services/CHrailroad/CA_Transit_Stops/FeatureServer"
+    },
+    {
+      "kind": "api",
+      "label": "High-quality transit areas feature service",
+      "url": "https://gisdata.dot.ca.gov/arcgis/rest/services/CHrailroad/CA_HQ_Transit_Areas/FeatureServer"
+    },
+    {
+      "kind": "docs",
+      "label": "GTFS ingest pipeline data dictionary",
+      "url": "https://data.ca.gov/dataset/cal-itp-gtfs-ingest-pipeline-dataset/resource/e26bf6ee-419d-4a95-8e4c-e2b13d5de793"
+    },
+    {
+      "kind": "repo",
+      "label": "Analysis code",
+      "url": "https://github.com/cal-itp/data-analyses/"
+    },
+    {
+      "kind": "docs",
+      "label": "Cal-ITP programme",
+      "url": "https://www.calitp.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "service_performance",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cal itp and caltrans dds statewide california gtfs derived transit routes stops speeds and high quality transit areas",
+    "repo": "github.com/cal-itp/data-analyses",
+    "url": "https://analysis.dds.dot.ca.gov"
+  },
+  "description": "The California Integrated Travel Project (Cal-ITP) is a state programme that brings common standards for fares, eligibility checks and real-time information to California's hundreds of transit providers, and with Caltrans' Division of Data and Digital Services (DDS) it ingests every provider's GTFS feeds into statewide transit data products. Cal-ITP is funded through CalSTA and Caltrans by the Transit and Intercity Rail Capital Program; DDS analysts publish the analyses. Coverage: all public transit operators in California. Published layers include statewide transit routes and stops, average transit speeds by stop-to-stop segment and by route and time of day, high-quality transit areas and major bus stops under state planning law, GTFS digests by operator and legislative district, real-time performance metrics per operator and stop, and National Transit Database ridership summaries, with a data dictionary for the GTFS ingest pipeline. Format and access: ArcGIS feature and map services on the Caltrans GIS server, downloads on the California open data portal, dashboards in the analyses portfolio and source code on GitHub; free. Licence: California open data terms for the published layers (not read per layer); analysis code on GitHub. Caveats: layers inherit the quality of each operator's GTFS, and speeds from real-time feeds are missing for operators without vehicle positions. Simulation uses: statewide transit network topology and service levels for network flow, accessibility and capacity planning models, and bus stop exposure to hazards. Related records: the GTFS specification (data-gtfs-specification) defines the source feeds, and Caltrans PeMS (data-caltrans-pems) covers the state highway side.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-cal-itp: provider pages read (round 2 register piece)",
+      "route": "R02",
+      "source": "transport-cal-itp"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "geojson",
+    "csv",
+    "shapefile"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://analysis.dds.dot.ca.gov/",
+  "id": "data-cal-itp-california-transit-gtfs-analyses",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-29",
+  "licence": "AGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Cal-ITP and Caltrans DDS: statewide California GTFS-derived transit routes, stops, speeds and high-quality transit areas",
+  "provider": "California Department of Transportation (Caltrans) Division of Data and Digital Services, with the California Integrated Travel Project (Cal-ITP)",
+  "related_ids": [
+    "data-gtfs-specification",
+    "data-caltrans-pems"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Cal-ITP: state initiative supported by CalSTA and Caltrans through a TIRCP grant; consistent fare collection, eligibility verification and real-time information for hundreds of California transit providers",
+      "url": "https://www.calitp.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Caltrans DDS portfolio in collaboration with Cal-ITP: transit speed maps, GTFS digests, GTFS real-time operator and stop metrics, HQ transit corridors, NTD ridership; links to HQTA areas and stops, CA Transit Routes and Stops, average transit speeds feature and map services and the GTFS ingest pipeline data dictionary",
+      "url": "https://analysis.dds.dot.ca.gov/"
+    }
+  ],
+  "spatial_resolution": "Route, stop and stop-to-stop segment",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "GTFS",
+    "California",
+    "transit",
+    "speeds"
+  ],
+  "title_en": "Cal-ITP and Caltrans DDS: statewide California GTFS-derived transit routes, stops, speeds and high-quality transit areas",
+  "type": "data",
+  "update_frequency": "irregular"
+}

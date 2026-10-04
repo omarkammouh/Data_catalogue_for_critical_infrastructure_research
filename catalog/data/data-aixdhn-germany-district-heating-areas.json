@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Dataset documentation",
+      "url": "https://github.com/RWTH-EBC/AixDHN/blob/main/README.md"
+    },
+    {
+      "kind": "repo",
+      "label": "GeoJSON files for existing networks",
+      "url": "https://github.com/RWTH-EBC/AixDHN/tree/main/GeoJSON-Files/ExistingNetworks"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing paper",
+      "note": "Citation supplied by the README; article full text was not inspected.",
+      "url": "https://doi.org/10.1016/j.segy.2025.100218"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "crs": "EPSG:3035",
+  "data_family": [
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "aixdhn district heating networks dataset from clustered census data",
+    "repo": "github.com/rwth-ebc/aixdhn",
+    "url": "https://github.com/RWTH-EBC/AixDHN"
+  },
+  "description": "AixDHN contains inferred district-heating areas for Germany, with annual residential heat demand, demand density, household counts and administrative identifiers. RWTH Aachen University’s Institute for Energy Efficient Buildings and Indoor Climate publishes the dataset to identify district-heating grids from clustered census and demand data. The repository lists one GeoJSON file for each of the 16 German states. Spatial objects are polygons of presumed heating networks, with centroids and census-cell membership in EPSG:3035. The documentation does not state the census reference year or a regular update schedule. The data are available directly in the public GitHub repository under the MIT licence, so access and reuse are free. The accompanying paper is linked in the README. A limitation is that inferred service areas do not establish actual pipe alignments or hydraulic connectivity. Annual residential demand also does not supply hourly operating profiles or non-residential loads. Simulation uses include district-heating capacity planning and optimisation of possible supply areas before constructing a detailed network model. The dataset complements data-hotmaps-building-stock-and-heat-density-maps as a separate source for heat-demand comparisons; compatibility has not been tested.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "district heating data",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/RWTH-EBC/AixDHN",
+  "id": "data-aixdhn-germany-district-heating-areas",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-23",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "AixDHN: District Heating Networks Dataset from Clustered Census Data",
+  "notes": "G8; G8-0002. Repository last-push date is not a data observation date. Simulation uses and the complementary relation to Hotmaps are curator interpretations, not claims of tested interoperability. Metadata and file listing checked; GeoJSON payloads were not downloaded. The README contains a future-tense population sentence, but today’s file listing confirms 16 state GeoJSON files. ",
+  "provider": "RWTH Aachen University, E.ON Energy Research Center, Institute for Energy Efficient Buildings and Indoor Climate",
+  "related_ids": [
+    "data-hotmaps-building-stock-and-heat-density-maps"
+  ],
+  "schema_summary": "ID, GEN, ARS, LAN, geometry, area, centroid, DH_demand, total_demand_cells, total_demand_area, share_DH, heat_density_DH, heat_density, DH_supplied_households, DH_cells.",
+  "sectors": [
+    "energy.district_heating_cooling",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Identity, producing institution, purpose, national coverage, licence, paper citation and data attributes; fetched through the repository README API.",
+      "url": "https://github.com/RWTH-EBC/AixDHN/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "HTTP 200. README SHA 54dd3e4159ffa9a87c6d5f5a002e6b4f8a0b3c38.",
+      "url": "https://api.github.com/repos/RWTH-EBC/AixDHN/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Attribute descriptions, annual-demand units, polygon interpretation and EPSG:3035.",
+      "url": "https://github.com/RWTH-EBC/AixDHN/blob/main/GeoJSON-Files/ExistingNetworks/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "HTTP 200. Sixteen state GeoJSON file names and sizes; no data content retrieved.",
+      "url": "https://api.github.com/repos/RWTH-EBC/AixDHN/contents/GeoJSON-Files/ExistingNetworks"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "G8-Q0006 metadata states MIT, non-archived repository and last pushed 2026-01-23. Continued maintenance is not established.",
+      "url": "https://api.github.com/search/repositories?q=district+heating+data&per_page=100&page=1"
+    }
+  ],
+  "spatial_resolution": "Presumed district-heating area polygons and census-cell membership; numerical grid resolution not stated in the inspected README.",
+  "spatial_resolution_class": "not_stated",
+  "tags": [
+    "district heating",
+    "Germany",
+    "census-derived service areas",
+    "heat demand"
+  ],
+  "temporal_coverage": "Census and demand reference dates not stated in the inspected documentation.",
+  "temporal_resolution": "Annual demand attributes.",
+  "temporal_resolution_class": "annual",
+  "title_en": "AixDHN: District Heating Networks Dataset from Clustered Census Data",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

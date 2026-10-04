@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "NYC Open Data dataset",
+      "url": "https://data.cityofnewyork.us/d/epne-qv9x"
+    },
+    {
+      "kind": "download",
+      "label": "DCP BYTES of the BIG APPLE archive",
+      "url": "https://www.nyc.gov/content/planning/pages/resources/datasets/hurricane-evacuation-zones"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "emergency_management",
+    "hazards",
+    "planning_regulatory_documents"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nyc hurricane evacuation zones nycem and department of city planning",
+    "url": "https://data.cityofnewyork.us/d/epne-qv9x"
+  },
+  "description": "This dataset maps New York City's six hurricane evacuation zones, the areas residents may be ordered to leave depending on the expected storm surge. The zones were created by New York City Emergency Management from storm surge inundation modelled with the National Hurricane Center's SLOSH model and are maintained by the Department of City Planning, which publishes them on NYC Open Data and in its BYTES of the BIG APPLE archive. Each polygon carries its zone number (1 to 6, from highest to lowest threat) with geometry; the current version is 26b, updated in May 2026, and all earlier versions remain downloadable from the planning department. Coverage is the coastal parts of the five boroughs. Data are free to download as shapefile, GeoJSON or through the Socrata API under the NYC Open Data terms of use. Caveats: the zones are planning boundaries, not flood depths, they must not be confused with FEMA flood insurance zones, and they do not show evacuation routes, shelters or populations. Simulation uses: defining the population to evacuate in hurricane evacuation and traffic models, locating hospitals, nursing homes and fire stations inside each zone, and building storm surge exposure scenarios for emergency services. Related records: the FDNY EMS incident dispatch data (data-nyc-fdny-ems-incident-dispatch) record demand in the same districts, and the Hurricane Sandy hospital evacuation study (case_study-hurricane-sandy-nyc-hospital-evacuations) shows how the zones were used.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "hurricane evacuation zones open data GIS dataset storm surge evacuation",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "geojson",
+    "api"
+  ],
+  "geographic_scope": "city",
+  "hazards": [
+    "coastal_flood_storm_surge",
+    "storm_wind"
+  ],
+  "homepage": "https://data.cityofnewyork.us/d/epne-qv9x",
+  "id": "data-nyc-hurricane-evacuation-zones",
+  "languages": [
+    "en"
+  ],
+  "licence": "NYC Open Data terms of use (free public use)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NYC Hurricane Evacuation Zones (NYCEM and Department of City Planning)",
+  "provider": "New York City Emergency Management (NYCEM), maintained by the NYC Department of City Planning; published on NYC Open Data",
+  "regions": [
+    "New York City"
+  ],
+  "related_ids": [
+    "data-nyc-fdny-ems-incident-dispatch",
+    "case_study-hurricane-sandy-nyc-hospital-evacuations"
+  ],
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Socrata metadata: six evacuation zones representing threat levels of storm surge flooding; created by NYCEM, maintained by DCP; not FEMA flood insurance zones; previous versions on DCP BYTES of the BIG APPLE; current version 26b; columns Hurricane Evacuation Zone and geometry",
+      "url": "https://data.cityofnewyork.us/api/views/epne-qv9x.json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "catalog: Hurricane Evacuation Zones epne-qv9x updated 2026-05-26; related Hurricane Inundation by Evacuation Zone based on NHC 2020 SLOSH NE1 basin at 10 m",
+      "url": "https://api.us.socrata.com/api/catalog/v1?domains=data.cityofnewyork.us&q=hurricane%20evacuation%20zones"
+    }
+  ],
+  "spatial_resolution": "Zone polygons",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "evacuation zones",
+    "hurricane",
+    "storm surge",
+    "New York City",
+    "SLOSH"
+  ],
+  "temporal_coverage": "Current version 26b (2026) and archived versions",
+  "temporal_resolution": "Snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "NYC Hurricane Evacuation Zones (NYCEM and Department of City Planning)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

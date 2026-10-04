@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/cryotools/matilda"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/cryotools/matilda/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "matilda glacierized catchment model",
+    "repo": "github.com/cryotools/matilda",
+    "url": "https://github.com/cryotools/matilda"
+  },
+  "description": "MATILDA is a Python model for water resources in glacierized catchments, developed by a cryosphere research team. It combines a temperature-index glacier melt component with HBV hydrology and provides parameter optimisation through SPOTPY. Inputs include temperature and precipitation, catchment and glacier parameters, and optional observed runoff; outputs are simulated melt, runoff and water-balance series. Coverage follows the chosen glacier basin and forcing period, with no fixed global grid. The MIT-licensed source is free, and the repository supplies example forcing and runoff files, installation instructions and a link to the wider MATILDA-Online workflow. Python 3.11 and several scientific libraries are required. A limitation is that a temperature-index melt scheme simplifies glacier energy balance, and results depend on local calibration and input elevation treatment. The model can inform reservoir inflow and drought simulations where glacier contribution matters. The catalogue's data-era5-reanalysis is a possible climate forcing source after downscaling checks, but no pairing was attempted here.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "cryotools/matilda linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/cryotools/matilda",
+  "id": "model-matilda-glacier",
+  "inputs": [
+    "Air temperature, precipitation and glacier-basin parameters",
+    "Optional observed discharge for calibration"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "MATILDA glacierized-catchment model",
+  "notes": "G7 G7-1285. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Glacier melt, runoff and water-balance time series"
+  ],
+  "provider": "MATILDA and cryotools contributors",
+  "related_ids": [
+    "data-era5-reanalysis"
+  ],
+  "repository": "https://github.com/cryotools/matilda",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for cryotools/matilda: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/cryotools/matilda"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/cryotools/matilda/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://matilda-rtd.readthedocs.io/en/latest/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for dams and flood defences and drinking water",
+  "type": "model"
+}

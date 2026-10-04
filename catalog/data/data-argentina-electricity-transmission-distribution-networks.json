@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Transporte Eléctrico AT Líneas (SHP, CSV)",
+      "url": "http://datos.energia.gob.ar/dataset/transporte-electrico-at-lineas-"
+    },
+    {
+      "kind": "download",
+      "label": "Redes de distribución eléctrica (Consejo Federal, 53 resources)",
+      "url": "http://datos.energia.gob.ar/dataset/redes-de-distribucion-electrica-del-consejo-federal"
+    },
+    {
+      "kind": "download",
+      "label": "Distribución Eléctrica Edenor",
+      "url": "http://datos.energia.gob.ar/dataset/distribucion-electrica-edenor"
+    },
+    {
+      "kind": "download",
+      "label": "Distribución Eléctrica Edesur",
+      "url": "http://datos.energia.gob.ar/dataset/distribucion-electrica-edesur"
+    },
+    {
+      "kind": "download",
+      "label": "Distribución Eléctrica Edelap",
+      "url": "http://datos.energia.gob.ar/dataset/distribucion-electrica-edelap"
+    },
+    {
+      "kind": "viewer",
+      "label": "Secretaría de Energía SIG viewer",
+      "url": "https://sig.se.gob.ar/visor/visorsig.php"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "AR"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "argentina electricity networks high voltage transmission lines and provincial and buenos aires distribution networks secretaria de energia open data",
+    "url": "https://datos.energia.gob.ar/dataset/transporte-electrico-at-lineas-"
+  },
+  "description": "Argentina's energy open data portal, run by the Secretaría de Energía, publishes the geometry of the country's electricity networks as several datasets. Contents: Transporte Eléctrico AT Líneas holds the high-voltage transmission lines of the national grid; Redes de distribución eléctrica, supplied by the Consejo Federal de la Energía Eléctrica, provincial distribution companies and regulators, holds medium-voltage lines for provinces such as Jujuy (EJESA), Salta (EDESA), Chaco (SECHEEP), Misiones (EMSA), Neuquén (EPEN), Santiago del Estero, Santa Cruz, Córdoba, Corrientes, Río Negro, Tucumán and Tierra del Fuego, and Buenos Aires cooperatives, in 53 resources; and the Distribución Eléctrica Edenor, Edesur and Edelap datasets hold the Greater Buenos Aires and La Plata distribution networks (lines by voltage level, substations and transformer stations) in 10 to 20 resources each. Coverage: national for transmission, uneven by province for distribution; resources date from 2017 to 2026 (transmission lines updated 5 June 2026, Edelap 9 September 2026). Format and access: Shapefile and CSV downloads from the CKAN portal datos.energia.gob.ar, with the same layers in the Secretaría's SIG viewer. Licence: Creative Commons Attribution 4.0; free. Caveats: attributes are sparse and uneven between utilities, some provincial resources have not been updated since 2017, and the networks are geometric, without electrical parameters. Simulation uses: grid topology for hazard exposure, network flow and resilience studies of the Argentine power system. Related records: the gas pipelines and compressor stations of the same portal (data-argentina-enargas-gas-pipelines-compressor-stations).",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source ar-sdi-idera-gob-ar: provider pages read (round 2 register piece)",
+      "route": "R04",
+      "source": "ar-sdi-idera-gob-ar"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "http://datos.energia.gob.ar/dataset/transporte-electrico-at-lineas-",
+  "id": "data-argentina-electricity-transmission-distribution-networks",
+  "languages": [
+    "es"
+  ],
+  "last_updated": "2026-06-05",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://sig.se.gob.ar/visor/visorsig.php"
+    ]
+  },
+  "maturity": "active",
+  "name": "Argentina electricity networks: high-voltage transmission lines and provincial and Buenos Aires distribution networks (Secretaría de Energía open data)",
+  "provider": "Secretaría de Energía de la Nación (Subsecretaría de Eficiencia e Información Energética) and the Consejo Federal de la Energía Eléctrica, Argentina",
+  "related_ids": [
+    "data-argentina-enargas-gas-pipelines-compressor-stations"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "HV lines, SHP and CSV, CC-BY-4.0, modified 2026-06-05",
+      "url": "http://datos.energia.gob.ar/api/3/action/package_show?id=transporte-electrico-at-lineas-"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "53 provincial distribution resources, CC-BY-4.0, dates 2017 to 2024",
+      "url": "http://datos.energia.gob.ar/api/3/action/package_show?id=redes-de-distribucion-electrica-del-consejo-federal"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Edenor 20, Edesur 10, Edelap 12 resources; CC-BY-4.0",
+      "url": "http://datos.energia.gob.ar/api/3/action/package_search?q=distribucion%20electrica"
+    }
+  ],
+  "tags": [
+    "Argentina",
+    "transmission lines",
+    "distribution network",
+    "Edenor",
+    "Edesur"
+  ],
+  "title_en": "Argentina electricity networks: high-voltage transmission lines and provincial and Buenos Aires distribution networks (Secretaría de Energía open data)",
+  "type": "data"
+}

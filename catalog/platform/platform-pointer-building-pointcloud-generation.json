@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource",
+      "url": "https://github.com/kdmayer/PointER"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-023-02544-x"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/kdmayer/PointER/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pointer building point cloud generation",
+    "url": "https://github.com/kdmayer/PointER"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "Technical University of Munich and Stanford University researchers publish the PointER generation workflow for cropping building point clouds and linking energy features. The repository includes setup documentation, environment definitions, an example notebook and instructions for processing an area of interest. It uses national LiDAR, building footprints, district boundaries and UPRN coordinates. Python source is free under MIT. Its demonstrated coverage is 16 English districts, while new runs follow the user's source coverage and dates. Generated geometry can support building-stock and retrofit simulations with model-energyplus. A caveat is that the documented Verisk footprint input carries separate restrictions; the README identifies OpenStreetMap as an alternative. The workflow also requires substantial memory and upfront data preparation. Open code does not remove input-data obligations. No container was started or point cloud generated during this review.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G1-Q-BACKFILL-ENERGY-05; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "topic:building-energy fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/kdmayer/PointER",
+  "id": "platform-pointer-building-pointcloud-generation",
+  "interfaces": [
+    "code_library",
+    "other"
+  ],
+  "interoperability": [
+    "LAZ",
+    "GeoPackage",
+    "Shapefile",
+    "UPRN",
+    "NumPy"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-10-06",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "PointER building point-cloud generation",
+  "notes": "G1 G1-0288. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-25.json. Related-resource uses are not tested interfaces. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Technical University of Munich and Stanford University",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/kdmayer/PointER"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/kdmayer/PointER/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-023-02544-x"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for kdmayer/PointER: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Abuilding-energy+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/kdmayer/pointer/readme"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "tags": [],
+  "title_en": "Building point cloud cropping and energy features",
+  "type": "platform"
+}

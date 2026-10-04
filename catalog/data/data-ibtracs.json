@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Product page and access methods",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.ncei.noaa.gov/products/international-best-track-archive"
+    },
+    {
+      "kind": "docs",
+      "label": "Technical documentation (PDF)",
+      "url": "https://www.ncei.noaa.gov/sites/default/files/2025-04/IBTrACS_version4r01_Technical_Details.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "Column documentation (PDF)",
+      "url": "https://www.ncei.noaa.gov/sites/default/files/2025-09/IBTrACS_v04r01_column_documentation.pdf"
+    },
+    {
+      "kind": "paper",
+      "label": "Dataset DOI",
+      "url": "https://doi.org/10.25921/82ty-9e16"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "hazards",
+    "historical_events",
+    "weather_observations"
+  ],
+  "data_kind": [
+    "event_record",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.25921/82ty-9e16",
+    "name": "international best track archive for climate stewardship ibtracs",
+    "url": "https://ncei.noaa.gov/products/international-best-track-archive"
+  },
+  "description": "IBTrACS is described by NOAA's National Centers for Environmental Information (NCEI) as the most complete global collection of tropical cyclone best tracks. It merges recent and historical track and intensity records from the WMO Regional Specialized Meteorological Centres and other agencies into one unified, publicly available dataset so that agencies' estimates can be compared. Each storm is a series of positions with time, central pressure, maximum sustained wind, radii and agency-specific values, covering every ocean basin. Version 4r01 is updated three times a week and is distributed as CF-compliant netCDF, CSV and shapefiles, with technical documentation, column documentation and a change log; use is free and a voluntary user registration form is requested. The recommended citation is Gahtan et al. (2024), doi:10.25921/82ty-9e16. Caveats are documented in the technical details: agencies use different wind averaging periods, early records are sparse and less reliable, and intensities before the satellite era are uncertain. The archive is the standard input for stochastic tropical cyclone hazard models and for the wind and storm surge exposure of infrastructure, for calibration of fragility-based loss models, and for climate adaptation and resilience studies; it feeds tools such as CLIMADA and the STORM synthetic cyclone dataset.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "global tropical cyclone best track archive",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf",
+    "csv",
+    "shapefile"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "storm_wind",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://www.ncei.noaa.gov/products/international-best-track-archive",
+  "id": "data-ibtracs",
+  "languages": [
+    "en"
+  ],
+  "licence": "US government public data (no licence stated; citation requested)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "International Best Track Archive for Climate Stewardship (IBTrACS)",
+  "provider": "NOAA National Centers for Environmental Information (NCEI)",
+  "related_ids": [],
+  "schema_summary": "storm id, basin, time, latitude, longitude, wind, pressure, wind radii, agency-specific columns",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Most complete global TC collection; version 4r01; updated three times a week; netCDF, CSV, shapefile; citation doi:10.25921/82ty-9e16; voluntary registration",
+      "url": "https://www.ncei.noaa.gov/products/international-best-track-archive"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://api.datacite.org/dois/10.25921/82ty-9e16"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.ncei.noaa.gov/products/international-best-track-archive"
+    }
+  ],
+  "spatial_resolution": "point track positions (typically 3-hourly)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "tropical cyclone",
+    "best track",
+    "hurricane",
+    "typhoon",
+    "NOAA"
+  ],
+  "temporal_coverage": "historical records to present",
+  "temporal_resolution": "sub-daily track points",
+  "temporal_resolution_class": "daily",
+  "title_en": "International Best Track Archive for Climate Stewardship (IBTrACS)",
+  "type": "data",
+  "update_frequency": "weekly"
+}

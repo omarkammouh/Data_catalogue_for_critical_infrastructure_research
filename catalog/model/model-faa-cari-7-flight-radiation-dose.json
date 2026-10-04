@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "CARI-7 page and downloads",
+      "url": "https://www.faa.gov/data_research/research/med_humanfacs/aeromedical/radiobiology/cari7"
+    },
+    {
+      "kind": "download",
+      "label": "Download CARI-7",
+      "note": "Found on the record's own page, checked 2026-10-01",
+      "url": "https://www.faa.gov/sites/faa.gov/files/data_research/research/med_humanfacs/aeromedical/cari_7exe.zip"
+    },
+    {
+      "kind": "docs",
+      "label": "FAA reports on radiation exposure during air travel",
+      "url": "https://www.faa.gov/data_research/research/med_humanfacs/aeromedical/radiobiology/reports"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Copeland, K. (2017). CARI-7A: Development and Validation. Radiation Protection Dosimetry, 175(4), 419-431. doi:10.1093/rpd/ncw369",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1093/rpd/ncw369",
+    "name": "cari 7 and cari 7a flight radiation dose programs faa",
+    "url": "https://faa.gov/data_research/research/med_humanfacs/aeromedical/radiobiology/cari7"
+  },
+  "description": "CARI-7 is a computer program from the FAA Civil Aerospace Medical Institute that calculates the effective dose of galactic cosmic radiation received by an individual on an aircraft, based on an anthropomorphic phantom. It handles waypoint-defined and shortest-route flight paths, accounts for changes in altitude and location during a flight, and can give particle-specific doses along a route or at chosen locations up to 300,000 ft. It covers any flight worldwide and calculations back to 1958 without extra data; monthly averages use databases of geomagnetic field and solar activity effects, and hour-specific runs adjust for geomagnetic storms and Forbush decreases. Atmospheric response databases were generated with the Monte Carlo transport code MCNPX 2.7.0. CARI-7A is the research version with more options, including three atmospheric transport switches, several cosmic ray and solar particle event models and custom input spectra. Both run from a command prompt on most personal computers (about 80 to 100 MB of disc) and are free downloads from the FAA page, last updated on 1 September 2026, with user guides and documentation on cutoff rigidities, particle spectra and atmospheric transport; the FAA also publishes reports on in-flight radiation and a CARI-based solar radiation alert system. Caveats: CARI-7 addresses galactic radiation and is slower with hour-specific options. It supports hazard exposure analysis for aviation crews and passengers during space weather; a related record is the NAIRAS nowcast model.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "FAA aviation radiation exposure CARI (space health impacts)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://www.faa.gov/data_research/research/med_humanfacs/aeromedical/radiobiology/cari7",
+  "id": "model-faa-cari-7-flight-radiation-dose",
+  "inputs": [
+    "flight path (waypoints or geodesic)",
+    "altitude profile",
+    "date and time",
+    "heliocentric potential file"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-01",
+  "licence": "not stated on the page read (US government software)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "CARI-7 and CARI-7A flight radiation dose programs (FAA)",
+  "outputs": [
+    "effective dose to an individual on a flight",
+    "particle-specific doses at locations or along routes"
+  ],
+  "provider": "Federal Aviation Administration, Civil Aerospace Medical Institute",
+  "related_ids": [
+    "model-nairas-aviation-radiation"
+  ],
+  "sectors": [
+    "cross_cutting.space",
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "CARI-7 developed at CAMI; effective dose of galactic cosmic radiation on aircraft; waypoint and geodesic paths; altitude limit 300,000 ft; calculations to 1958; command prompt; 80 MB disc; monthly average databases; hour-specific adjustments for storms and Forbush; CARI-7A research options; MCNPX2.7.0 response databases; documentation PDFs; last updated September 1, 2026",
+      "url": "https://www.faa.gov/data_research/research/med_humanfacs/aeromedical/radiobiology/cari7"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "reports incl. MIRA 2017 CARI-7 based solar radiation alert system, CARI-NAIRAS, Copeland 2017 CARI-7A development and validation",
+      "url": "https://www.faa.gov/data_research/research/med_humanfacs/aeromedical/radiobiology/reports"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://api.crossref.org/works/10.1093/rpd/ncw369"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.faa.gov/data_research/research/med_humanfacs/aeromedical/radiobiology/cari7"
+    }
+  ],
+  "tags": [
+    "aviation radiation",
+    "galactic cosmic radiation",
+    "effective dose",
+    "aircrew",
+    "FAA",
+    "CAMI"
+  ],
+  "title_en": "CARI-7 and CARI-7A flight radiation dose programs (FAA)",
+  "type": "model"
+}

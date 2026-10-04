@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://docs.opentripplanner.org/en/latest/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/opentripplanner/OpenTripPlanner"
+    },
+    {
+      "kind": "portal",
+      "label": "Project site",
+      "url": "https://www.opentripplanner.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opentripplanner otp",
+    "repo": "github.com/opentripplanner/opentripplanner",
+    "url": "https://opentripplanner.org"
+  },
+  "description": "OpenTripPlanner is an open-source multimodal trip planner centred on scheduled public transport combined with walking, cycling, bike share and ride hailing. Its Java server builds a routable network from open standard data, mainly GTFS timetables and OpenStreetMap streets (NeTEx and SIRI are supported through a Transmodel API), applies GTFS Realtime, SIRI and GBFS updates, and answers itinerary requests through GraphQL APIs used by web and mobile clients. It is developed by the OpenTripPlanner project and its contributors on GitHub, where version 2 is the current line (tags up to v2.10.0, commits in September 2026). OTP is location independent: any region with GTFS and OpenStreetMap data can be loaded, with elevation data optional. It is licensed under the GNU LGPL 3.0 or later and free; it runs on any platform with a Java virtual machine and as a container image. Caveats: OTP computes journeys for a given network state, not traffic dynamics or crowding, and large regions need substantial memory. It serves accessibility and network flow analysis, disruption and resilience studies (re-routing when stops or lines fail), emergency response planning and capacity planning; it consumes GTFS feeds from the Mobility Database and Transitland, both catalogued here, and relates to Conveyal R5, a routing engine for accessibility analysis.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.public_transit",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry",
+      "route": "R06",
+      "source": "transport-opentripplanner"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/opentripplanner/OpenTripPlanner",
+  "id": "model-opentripplanner",
+  "inputs": [
+    "GTFS or NeTEx timetables",
+    "OpenStreetMap PBF",
+    "elevation (DEM) optional",
+    "GTFS Realtime / SIRI / GBFS updates"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "LGPL-3.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "OpenTripPlanner (OTP)",
+  "outputs": [
+    "itineraries via GraphQL APIs",
+    "travel times",
+    "isochrone-style accessibility results"
+  ],
+  "provider": "OpenTripPlanner project and contributors",
+  "related_ids": [
+    "data-gtfs-specification",
+    "data-mobility-database",
+    "data-transitland",
+    "model-conveyal-r5"
+  ],
+  "repository": "https://github.com/opentripplanner/OpenTripPlanner",
+  "runs_on": [],
+  "sectors": [
+    "transport.public_transit",
+    "transport.active_mobility",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "multimodal trip planner; GTFS and OpenStreetMap; GraphQL APIs; real-time updates",
+      "url": "https://raw.githubusercontent.com/opentripplanner/OpenTripPlanner/dev-2.x/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU Lesser General Public License version 3 or later",
+      "url": "https://raw.githubusercontent.com/opentripplanner/OpenTripPlanner/dev-2.x/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "OTP 2 docs: NeTEx and SIRI, GTFS GraphQL and Transmodel APIs, GBFS updaters, DEM, container image",
+      "url": "https://docs.opentripplanner.org/en/latest/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: tags up to v2.10.0; last commit 2026-09-24",
+      "url": "https://github.com/opentripplanner/OpenTripPlanner"
+    }
+  ],
+  "tags": [
+    "trip planner",
+    "routing",
+    "GTFS",
+    "OpenStreetMap",
+    "multimodal"
+  ],
+  "title_en": "Network model for public transport, cycling and walking and railways",
+  "type": "model",
+  "validated_on": []
+}

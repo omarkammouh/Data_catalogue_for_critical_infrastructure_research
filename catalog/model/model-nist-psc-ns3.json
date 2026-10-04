@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/usnistgov/psc-ns3"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/usnistgov/psc-ns3/blob/psc-7.0/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Rouil et al. (2017). Implementation and Validation of an LTE D2D Model for ns-3. Workshop on ns-3. Garey et al. (2021). Modeling MCPTT and User Behavior in ns-3. SIMULTECH.",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nist public safety communication models for ns 3",
+    "repo": "github.com/usnistgov/psc-ns3",
+    "url": "https://github.com/usnistgov/psc-ns3"
+  },
+  "description": "NIST's Public Safety Communications extension for ns-3 models LTE device-to-device communication and mission-critical push-to-talk. It adds sidelink and relay behaviour, application traffic, building effects and reusable incident-scenario classes. Users define responders, movement, network configuration and applications; outputs include network traces, scenario descriptions and communication performance over simulated time. Coverage is globally configurable at local network scale, with no fixed observational dataset. Public C++ source is free under GPL-2.0, with NIST-authored portions in the United States public domain and GPL-2.0 terms abroad. A limitation is that legacy land-mobile radio is not supported and UE-to-network relay supports IPv6 only. The documented PSC 7.0 release follows ns-3.40; its large example has unresolved upstream assertion and trace-volume issues. The extension supports emergency-communications capacity and resilience studies on ns-3 (platform-ns-3). Official documentation cites the 2017 LTE D2D validation paper and 2021 MCPTT paper. No incident scenario was executed and no trace archive was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:ns-3 fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/usnistgov/psc-ns3",
+  "id": "model-nist-psc-ns3",
+  "inputs": [
+    "Network and application configuration",
+    "Scenario locations and node mobility"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-01-03",
+  "licence": "GPL-2.0; NIST-authored portions are US public domain and GPL-2.0 abroad",
+  "licence_type": [
+    "copyleft_code",
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network",
+    "discrete_event"
+  ],
+  "name": "NIST public-safety communication models for ns-3",
+  "notes": "G7 G7-0683. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Network and application traces",
+    "Scenario descriptions and communication metrics"
+  ],
+  "provider": "NIST Wireless Networks Division with CTTC and University of Washington",
+  "related_ids": [
+    "platform-ns-3"
+  ],
+  "repository": "https://github.com/usnistgov/psc-ns3",
+  "sectors": [
+    "digital.telecom",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for usnistgov/psc-ns3: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Ans-3+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/usnistgov/psc-ns3/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "GPL-2.0 and NIST-specific public-domain notice.",
+      "url": "https://api.github.com/repos/usnistgov/psc-ns3/license"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "PSC features, limitations and release history.",
+      "url": "https://api.github.com/repos/usnistgov/psc-ns3/contents/src/psc/doc/source/psc-design.rst"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Scenario inputs, outputs and known trace/assertion limitations.",
+      "url": "https://api.github.com/repos/usnistgov/psc-ns3/contents/src/psc/doc/source/psc-scenario.rst"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Published model citations.",
+      "url": "https://api.github.com/repos/usnistgov/psc-ns3/contents/src/psc/doc/source/psc-references.rst"
+    }
+  ],
+  "tags": [],
+  "title_en": "Public-safety communication models for LTE device-to-device communication",
+  "type": "model"
+}

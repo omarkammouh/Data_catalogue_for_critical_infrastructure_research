@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "NVDB API Les",
+      "url": "https://nvdbapiles.atlas.vegvesen.no/"
+    },
+    {
+      "kind": "viewer",
+      "label": "Vegkart map application",
+      "url": "https://vegkart.atlas.vegvesen.no/"
+    },
+    {
+      "kind": "docs",
+      "label": "Dataset entry in the NPRA data portal",
+      "url": "https://dataut.vegvesen.no/dataset/nasjonal-vegdatabank"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NO"
+  ],
+  "data_family": [
+    "system_description",
+    "historical_events",
+    "condition_ageing"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nasjonal vegdatabank nvdb norwegian national road database",
+    "url": "https://nvdbapiles.atlas.vegvesen.no"
+  },
+  "description": "The Nasjonal vegdatabank (NVDB) is Norway's national road database, covering state and county roads, municipal roads, private roads and forest roads, and it is used every day in Norwegian road management. It contains the road network with geometry and topology that underpins maps and route planners, equipment and drainage along roads, accidents and traffic volumes, and base data for noise calculations and traffic modelling. Almost 30 million objects of over 395 object types can be retrieved, among them signs, culverts, lighting points, guardrails, landslides, rest areas, tunnels, ferry quays and traffic accidents, each with a coordinate. Coverage is national; most object types are recorded on European, state and county roads. Access: free through the REST API Les (version 4, JSON and XML) and as CSV downloads from the Vegkart map application, under the Norwegian Licence for Open Government Data (NLOD). Caveats: queries use object type IDs from a separate data catalogue, and few object types exist on municipal and private roads. It supports road network topology, tunnel and culvert exposure, cascading failure and landslide vulnerability studies, and complements the NPRA traffic data and open data portal catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "sykkeltrafikk åpne data datasett",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "json",
+    "xml",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://nvdbapiles.atlas.vegvesen.no/",
+  "id": "data-norway-nvdb-national-road-database",
+  "languages": [
+    "no"
+  ],
+  "licence": "NLOD-2.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Nasjonal vegdatabank (NVDB), Norwegian national road database",
+  "provider": "Statens vegvesen (Norwegian Public Roads Administration)",
+  "related_ids": [
+    "data-norway-npra-trafikkdata",
+    "data-norway-npra-open-data-portal"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "state, county, municipal, private and forest roads; geometry and topology; equipment, drainage; accidents, traffic volumes; noise and traffic model inputs; API Les REST JSON; almost 30 million objects, 395+ types; vegkart.no; NLOD; resources API v4 XML/JSON and CSV",
+      "url": "https://dataut.vegvesen.no/api/3/action/package_show?id=nasjonal-vegdatabank"
+    }
+  ],
+  "spatial_resolution": "asset and road link",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "NVDB",
+    "road database",
+    "Norway",
+    "road assets",
+    "API"
+  ],
+  "temporal_coverage": "current with history",
+  "title_en": "National Road Database (NVDB)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

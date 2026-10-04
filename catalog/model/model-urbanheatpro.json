@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/tum-ens/UrbanHeatPro"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/tum-ens/UrbanHeatPro/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "urbanheatpro urban heat demand model",
+    "repo": "github.com/tum-ens/urbanheatpro",
+    "url": "https://github.com/tum-ens/UrbanHeatPro"
+  },
+  "description": "UrbanHeatPro is a Python bottom-up model for hourly space-heating and hot-water demand in an urban building stock. Its README documents a CSV input for building area, use, construction-year class and exposed walls, with configurable time resolution and demand-side measures such as renovation and night setback. Users supply a study-area building list and weather or scenario assumptions; outputs are heat-demand profiles from individual buildings up to a city. Default characteristic values are based on German statistics. GitHub metadata states GPL-3.0 licensing. A limitation is that non-residential hot-water demand is not calculated in the documented version, and default German typologies need checking before use elsewhere. The model can produce district-heating demand and retrofit scenarios for urban energy simulations. The catalogue's EnergyPlus model offers more detailed individual-building physics, while this repository focuses on stock-level demand. No building list, weather data or model package was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "urban heat simulation",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/tum-ens/UrbanHeatPro",
+  "id": "model-urbanheatpro",
+  "inputs": [
+    "Building-stock CSV, typology and weather assumptions"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-04-23",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "UrbanHeatPro urban heat-demand model",
+  "notes": "G7 G7-1988. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Hourly space-heating and hot-water demand profiles"
+  ],
+  "provider": "Technical University of Munich energy systems contributors",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/tum-ens/UrbanHeatPro",
+  "sectors": [
+    "built_environment.buildings",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for tum-ens/UrbanHeatPro: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=urban+heat+simulation&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/tum-ens/UrbanHeatPro/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for buildings and district heating and cooling",
+  "type": "model"
+}

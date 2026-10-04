@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Networks endpoint",
+      "url": "https://api.citybik.es/v2/networks"
+    },
+    {
+      "kind": "repo",
+      "label": "pybikes library",
+      "url": "https://github.com/eskerda/pybikes"
+    },
+    {
+      "kind": "docs",
+      "label": "API documentation",
+      "url": "https://api.citybik.es/v2/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "sensor_realtime_streams",
+    "system_description"
+  ],
+  "data_kind": [
+    "stream",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "citybikes api live station status of about 800 bike sharing networks worldwide pybikes",
+    "repo": "github.com/eskerda/pybikes",
+    "url": "https://api.citybik.es/v2"
+  },
+  "description": "The CityBikes API gives one uniform interface to the station data of bike-sharing systems around the world, so that apps and researchers do not have to handle each operator's feed. It is run by the CityBikes project, founded by Lluís Esquerda, and powered by the open-source pybikes library, which scrapes or reads each system's website or GBFS feed. Coverage: 815 networks in 53 countries at the time of reading, run by companies such as JCDecaux and by many municipal systems. The networks endpoint lists each system with its company, city, country and coordinates, and each network endpoint returns its stations with location, free bikes, empty slots, timestamp and extra fields such as electric bikes or renting status where the source gives them. Format and access: a free JSON REST API (v2) without registration, with pybikes on PyPI and GitHub to run the scrapers directly. Licence: the service is free on condition that apps using it credit CityBikes; pybikes is AGPL-3.0; operators' own data terms still apply. Caveats: the API returns current status only, so building time series requires polling and storing; feeds break when operators change their sites; some networks are duplicates or no longer operate. Simulation uses: bike availability and station locations for agent-based and network flow models of active mobility, and for capacity planning of docking stations. Related records: the General Bikeshare Feed Specification (data-gbfs-specification) is the standard many of the source feeds use, and Citi Bike system data (data-citi-bike-system-data) holds trip histories for one network.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-citybikes: provider pages read (round 2 register piece)",
+      "route": "R15",
+      "source": "transport-citybikes"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://api.citybik.es/v2/",
+  "id": "data-citybikes-api-bike-sharing-networks",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "Free service with attribution to CityBikes required; pybikes AGPL-3.0; operator data terms apply",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CityBikes API: live station status of about 800 bike-sharing networks worldwide (pybikes)",
+  "provider": "CityBikes project (Lluís Esquerda and contributors)",
+  "related_ids": [
+    "data-gbfs-specification",
+    "data-citi-bike-system-data"
+  ],
+  "sectors": [
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "API documentation: networks and network endpoints; terms: free service, apps using it should indicate it",
+      "url": "https://api.citybik.es/v2/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Returned 815 networks across 53 country codes",
+      "url": "https://api.citybik.es/v2/networks"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "pybikes: tools to scrape bike sharing data, powers CityBikes; pip install pybikes; LICENSE AGPL-3.0; last commit 2026-09-25",
+      "url": "https://raw.githubusercontent.com/eskerda/pybikes/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "endpoints, fields, JSON format, PyBikes display layer",
+      "url": "https://api.citybik.es/v2/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "815 networks, 53 countries on 2026-09-28",
+      "url": "https://api.citybik.es/v2/networks"
+    }
+  ],
+  "spatial_resolution": "Docking station",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "bike sharing",
+    "micromobility",
+    "API",
+    "GBFS",
+    "station status",
+    "PyBikes",
+    "r2-fresh-transport"
+  ],
+  "temporal_coverage": "Live snapshots",
+  "temporal_resolution": "Real time (current status)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "CityBikes API: live station status of about 800 bike-sharing networks worldwide (pybikes)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

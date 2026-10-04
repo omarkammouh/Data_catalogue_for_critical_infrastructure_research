@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "beaconDB site and map",
+      "url": "https://beacondb.net/"
+    },
+    {
+      "kind": "api",
+      "label": "Statistics feed (JSON)",
+      "url": "https://beacondb.net/stats.json"
+    },
+    {
+      "kind": "repo",
+      "label": "Server code on GitHub",
+      "url": "https://github.com/beacondb/beacondb"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "crowdsourced_public_reports",
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "beacondb crowd sourced public wireless geolocation database of wi fi bluetooth and cell transmitters",
+    "repo": "github.com/beacondb/beacondb",
+    "url": "https://beacondb.net"
+  },
+  "description": "beaconDB is a privacy-focused assisted positioning service and database of wireless transmitters, built as an alternative to the Mozilla Location Services that shut down. It aims to offer public domain dumps of its Wi-Fi database, with obfuscation to protect transmitters and contributors. Coverage: global and crowd-sourced; the statistics feed read on 2026-09-29 reported about 169.7 million Wi-Fi networks, 8.3 million cell towers and 6.3 million Bluetooth beacons in 220 countries, from about 361 million reports. Data are collected opt-in through phone apps such as NeoStumbler and Tower Collector. Format and access: a geolocation web API and a JSON statistics feed; the server code is on GitHub; free. Licence: public domain is the stated aim for future dumps; the code licence was not found in the repository files tried. Caveats: the README says the project is experimental, data exports are not ready yet and some data are not yet obfuscated, so bulk data cannot be downloaded today; coverage follows where contributors travel. Simulation uses: estimating cell tower and Wi-Fi coverage and density for telecom exposure and service studies, and positioning when satellite navigation is degraded. Related records: OpenCelliD (data-opencellid) is an established open cell tower database.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source digital-beacondb: provider pages read (round 2 register piece)",
+      "route": "R15",
+      "source": "digital-beacondb"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://beacondb.net/",
+  "id": "data-beacondb-wireless-geolocation-database",
+  "languages": [
+    "en"
+  ],
+  "licence": "public domain",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "beaconDB: crowd-sourced public wireless geolocation database of Wi-Fi, Bluetooth and cell transmitters",
+  "provider": "beaconDB project",
+  "related_ids": [
+    "data-opencellid"
+  ],
+  "sectors": [
+    "digital.telecom",
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Privacy-focused assisted GPS in Rust; alternative to Mozilla Location Services; public domain dumps planned; experimental, exports not ready, some data not obfuscated",
+      "url": "https://raw.githubusercontent.com/beacondb/beacondb/main/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Opt-in collection via NeoStumbler, Tower Collector; published information obfuscated",
+      "url": "https://beacondb.net/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "total_wifi 169,659,591; total_cell 8,260,759; total_bluetooth 6,262,030; countries 220; reports 360,792,920",
+      "url": "https://beacondb.net/stats.json"
+    }
+  ],
+  "tags": [
+    "Wi-Fi",
+    "cell towers",
+    "geolocation",
+    "crowdsourced"
+  ],
+  "temporal_coverage": "ongoing",
+  "title_en": "BeaconDB: crowd-sourced public wireless geolocation database of Wi-Fi, Bluetooth and cell transmitters",
+  "type": "data"
+}

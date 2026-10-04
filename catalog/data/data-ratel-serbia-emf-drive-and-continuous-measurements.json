@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "EMF drive measurements (data.gov.rs)",
+      "url": "https://data.gov.rs/sr/datasets/67f76c04ea8a3c09e626e61d/"
+    },
+    {
+      "kind": "portal",
+      "label": "Continuous EMF measurements (data.gov.rs)",
+      "url": "https://data.gov.rs/sr/datasets/5b3a22c0cbe3c856351ffc38/"
+    },
+    {
+      "kind": "viewer",
+      "label": "RATEL EMF portal",
+      "url": "https://emf.ratel.rs/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "RS"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ratel serbia electromagnetic field measurements drive tests from 100 khz to 8 ghz and continuous monitoring at sensitive sites",
+    "url": "https://emf.ratel.rs"
+  },
+  "description": "The Serbian regulator runs an electromagnetic field monitoring system and publishes its measurements as open data. The EMF drive measurements dataset holds mobile measurements of electric field strength across the band from 100 kHz to 8 GHz, taken while driving through Serbian districts, with one file per campaign (for example February and April 2025) offered as CSV, XML and JSON; the dataset starts in November 2024 and is updated yearly. A second dataset gives continuous measurements of electric field level at locations in zones of increased sensitivity, such as kindergartens, schools and health facilities, with 119 sites each offered in three formats and data for 2018 listed on the portal. The measurements capture the combined emissions of mobile base stations, broadcast transmitters and other radio sources. Coverage: Serbia, along driven routes and at monitored sites. Format and access: CSV, XML and JSON files on emf.ratel.rs, listed on data.gov.rs, free under the Open Data Licence of the Republic of Serbia. Caveats: field strength is total exposure, not per operator or technology; the continuous series listed covers 2018; the drive files were not opened, so position and frequency resolution were not checked. Simulation uses: a measured proxy for radio network density and broadcast reach along roads, and a validation layer for propagation models. Related records: the RATEL radio frequency licence registers give the transmitters behind the measured fields; the Flanders transmitting antennas record covers EMF certificates in Belgium.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "data.gov.rs search (RATEL organisation)",
+      "route": "R12",
+      "source": "organisations.csv:RS:digital:ministry_regulator"
+    }
+  ],
+  "formats": [
+    "csv",
+    "xml",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.gov.rs/sr/datasets/67f76c04ea8a3c09e626e61d/",
+  "id": "data-ratel-serbia-emf-drive-and-continuous-measurements",
+  "languages": [
+    "sr"
+  ],
+  "last_updated": "2026-09-15",
+  "licence": "Open Data Licence of the Republic of Serbia (attribution)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "RATEL Serbia electromagnetic field measurements: drive tests from 100 kHz to 8 GHz and continuous monitoring at sensitive sites",
+  "notes": "Metadata read through the data.gov.rs udata API on 2026-09-26 (resource titles, formats, dates, temporal coverage). Files were not downloaded; the site count is the resource count divided by three formats.",
+  "provider": "Regulatory Authority for Electronic Communications and Postal Services of Serbia (RATEL)",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom",
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "size": "18 drive files; 357 continuous files (119 sites)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "drive measurement metadata",
+      "url": "https://data.gov.rs/api/1/datasets/67f76c04ea8a3c09e626e61d/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "continuous measurement metadata",
+      "url": "https://data.gov.rs/api/1/datasets/5b3a22c0cbe3c856351ffc38/"
+    }
+  ],
+  "spatial_resolution": "drive routes; fixed sites",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "EMF",
+    "field strength",
+    "drive test",
+    "monitoring",
+    "Serbia"
+  ],
+  "temporal_coverage": "drive tests from November 2024; continuous series 2018",
+  "temporal_resolution": "per measurement",
+  "temporal_resolution_class": "event",
+  "title_en": "RATEL Serbia electromagnetic field measurements: drive tests from 100 kHz to 8 GHz and continuous monitoring at sensitive sites",
+  "type": "data",
+  "update_frequency": "annual"
+}

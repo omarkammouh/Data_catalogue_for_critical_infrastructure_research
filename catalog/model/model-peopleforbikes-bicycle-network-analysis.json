@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "City Ratings",
+      "url": "https://cityratings.peopleforbikes.org/"
+    },
+    {
+      "kind": "repo",
+      "label": "Brokenspoke Analyzer",
+      "url": "https://github.com/PeopleForBikes/brokenspoke-analyzer"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "peopleforbikes bicycle network analysis bna and city ratings",
+    "url": "https://cityratings.peopleforbikes.org"
+  },
+  "description": "The Bicycle Network Analysis (BNA) is PeopleForBikes' method and software for measuring the quality and connectedness of a city's bike network, meaning protected bike lanes, off-street paths, slow shared streets and safe crossings, on a scale of 0 to 100. It assesses six factors summarised as SPRINT: safe speeds, protected bike lanes, reallocated space, intersection treatments, network connections and trusted data. PeopleForBikes publishes the results annually as City Ratings for more than 3,000 US cities, alongside a national tracker of bicycle infrastructure projects. The Brokenspoke Analyzer lets users run the BNA locally; it uses OpenStreetMap data and tools such as osm2pgrouting, osm2pgsql and Docker, and is free on GitHub under the MIT licence. Coverage of the ratings is national (United States), while the analyzer can be run for other places with OpenStreetMap data. Caveats: scores depend on the completeness of OpenStreetMap bike infrastructure tagging, and the ratings are an advocacy product. The BNA supports network connectivity analysis of cycling infrastructure, planning of investments and before-and-after evaluation. It complements the OpenSidewalks schema and the Canadian cycling network databases catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.active_mobility",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://cityratings.peopleforbikes.org/",
+  "id": "model-peopleforbikes-bicycle-network-analysis",
+  "inputs": [
+    "OpenStreetMap data",
+    "city boundary"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "PeopleForBikes Bicycle Network Analysis (BNA) and City Ratings",
+  "outputs": [
+    "bicycle network connectivity score",
+    "category scores"
+  ],
+  "provider": "PeopleForBikes",
+  "related_ids": [
+    "data-opensidewalks-schema",
+    "data-statcan-canadian-cycling-pedestrian-network-databases"
+  ],
+  "runs_on": [
+    "Docker"
+  ],
+  "sectors": [
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "2026 City Ratings for more than 3,000 US cities; Great Bike Infrastructure Project",
+      "url": "https://cityratings.peopleforbikes.org/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BNA 0-100; SPRINT factors; released annually; methodology; BNA Mechanics; National Bike Project Tracker",
+      "url": "https://cityratings.peopleforbikes.org/about"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "run the BNA locally; docker, osm2pgrouting, osm2pgsql, osmium; MIT licence badge",
+      "url": "https://raw.githubusercontent.com/PeopleForBikes/brokenspoke-analyzer/main/README.md"
+    }
+  ],
+  "tags": [
+    "cycling network",
+    "connectivity",
+    "City Ratings",
+    "OpenStreetMap",
+    "low-stress network"
+  ],
+  "title_en": "PeopleForBikes Bicycle Network Analysis (BNA) and City Ratings",
+  "type": "model",
+  "validated_on": []
+}

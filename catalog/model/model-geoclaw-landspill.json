@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Version 1.0 archive (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.4914798"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/geoclaw-landspill/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/barbagroup/geoclaw-landspill"
+    },
+    {
+      "kind": "paper",
+      "label": "JOSS paper",
+      "url": "https://doi.org/10.21105/joss.03114"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "P.-Y. Chuang, T. Thorleifson, L. A. Barba, geoclaw-landspill: an oil land-spill and overland flow simulator for pipeline rupture events, Journal of Open Source Software, 2021",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.21105/joss.03114",
+    "name": "geoclaw landspill oil land spill and overland flow simulator for pipeline risk management",
+    "repo": "github.com/barbagroup/geoclaw-landspill",
+    "url": "https://github.com/barbagroup/geoclaw-landspill"
+  },
+  "description": "geoclaw-landspill is an open-source package for simulating the overland flow of oil released by pipeline ruptures, for use in pipeline risk management. It was written by Pi-Yueh Chuang, Tracy Thorleifson and Lorena A. Barba, and its numerical solver is a modified version of GeoClaw, which solves the full shallow-water equations. Additions include point sources for rupture points, evaporation models, Darcy-Weisbach bottom friction with land roughness, temperature-dependent viscosity, and records of where and when oil flows into inland waterbodies, with pre- and post-processing utilities. The method is location-independent, but automatic download of topography and hydrology data works only for the United States. It is a Python package with a Fortran solver, installed through conda from the barbagroup channel or through pip with gfortran, and Docker and Singularity containers are provided; results are CF-1.7 NetCDF files. It is licensed under BSD-3-Clause at no cost, reviewed in the Journal of Open Source Software, and version 1.0 is archived on Zenodo (June 2021). Caveats: only Linux is supported, and the last commit dates from June 2021. Simulation uses are spill hazard exposure mapping along pipeline routes and emergency response planning. Related records: none linked on the provider's pages read on the day.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "oil pipeline simulation model",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "oil pipeline simulator",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/barbagroup/geoclaw-landspill",
+  "id": "model-geoclaw-landspill",
+  "inputs": [
+    "Topography and hydrology rasters",
+    "Rupture point locations and release rates",
+    "Oil properties (density, viscosity, evaporation)"
+  ],
+  "language": [
+    "fortran",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-06-10",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "geoclaw-landspill - oil land-spill and overland flow simulator for pipeline risk management",
+  "outputs": [
+    "Oil depth and extent over time",
+    "Times and locations where oil reaches waterbodies",
+    "CF-1.7 NetCDF files"
+  ],
+  "provider": "Pi-Yueh Chuang, Tracy Thorleifson and Lorena A. Barba (Barba group)",
+  "related_ids": [],
+  "repository": "https://github.com/barbagroup/geoclaw-landspill",
+  "runs_on": [
+    "Linux"
+  ],
+  "sectors": [
+    "energy.oil_fuels",
+    "transport.pipelines"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, modified GeoClaw, added features, US-only automatic download, NetCDF, Linux only, conda install, BSD-3-Clause and JOSS badges",
+      "url": "https://raw.githubusercontent.com/barbagroup/geoclaw-landspill/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "gfortran build dependency, pip and conda installation",
+      "url": "https://raw.githubusercontent.com/barbagroup/geoclaw-landspill/HEAD/doc/deps_install_tests.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators Chuang, Thorleifson, Barba; version 1.0",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.4914798"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Published 2021-06-08, BSD-3-Clause",
+      "url": "https://zenodo.org/api/records/4914798"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Head commit 2021-06-10",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/barbagroup/geoclaw-landspill/visit/latest/"
+    }
+  ],
+  "tags": [
+    "oil spill",
+    "pipeline rupture",
+    "overland flow",
+    "shallow water",
+    "GeoClaw",
+    "risk"
+  ],
+  "title_en": "Geoclaw-landspill - oil land-spill and overland flow simulator for pipeline risk management",
+  "type": "model",
+  "validated_on": [
+    "Example cases shipped in the repository"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "PALM website",
+      "url": "https://palm.muk.uni-hannover.de/trac"
+    },
+    {
+      "kind": "repo",
+      "label": "Release repository",
+      "url": "https://gitlab.palm-model.org/releases/palm_model_system"
+    },
+    {
+      "kind": "docs",
+      "label": "New documentation",
+      "url": "https://www.palm-model.org/docs"
+    },
+    {
+      "kind": "paper",
+      "label": "PALM 6.0 overview paper",
+      "url": "https://doi.org/10.5194/gmd-13-1335-2020"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Maronga, B. et al. (2020). Overview of the PALM model system 6.0. Geoscientific Model Development 13, 1335. doi:10.5194/gmd-13-1335-2020",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5194/gmd-13-1335-2020",
+    "name": "palm model system with palm 4u urban climate components",
+    "repo": "gitlab.palm-model.org/releases/palm_model_system",
+    "url": "https://gitlab.palm-model.org/releases/palm_model_system"
+  },
+  "description": "PALM is a turbulence-resolving large-eddy simulation model of atmospheric and oceanic boundary layer flows, built for massively parallel computers (tested up to 32,000 cores, with GPU support), that can also run in a cheaper RANS mode. Its PALM-4U components, shipped with the model, serve urban applications from meso to micro scale with city-wide or district coverage: buildings are resolved on a Cartesian grid down to 1 m or finer, with energy balance solvers for buildings and paved surfaces, radiative transfer in the urban canopy with shading and multiple reflections, a wall material model, an indoor climate module giving indoor temperature, energy demand and waste heat, a chemistry module, self-nesting, a multi-agent system of residents for biometeorology, and forcing from COSMO-DE, ICON or WRF. It is developed at Leibniz University Hannover with a community of research groups and described in Maronga et al. (2020) for version 6.0. The code is accessible from the project's GitLab release repository as free software under GNU GPL v3, with documentation being moved to a new site and training through the PALM Academy launched in August 2026. Caveats: runs at building scale need high-performance computing and detailed urban input data, and the documentation is in transition. It supports simulation of urban heat, ventilation and green and blue infrastructure options in city planning for climate adaptation; related records are UMEP and the Stuttgart green ventilation corridors case study.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "PALM-4U urban climate model system",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "city",
+  "hazards": [
+    "extreme_heat",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://gitlab.palm-model.org/releases/palm_model_system",
+  "id": "model-palm-4u-urban-climate",
+  "inputs": [
+    "building and terrain geometry on a Cartesian grid",
+    "surface and wall materials",
+    "land surface and vegetation data",
+    "meteorological forcing from COSMO-DE",
+    "ICON or WRF"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-02",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "agent_based"
+  ],
+  "name": "PALM model system with PALM-4U urban climate components",
+  "notes": "The last activity date is the GitLab release project's last_activity_at.",
+  "outputs": [
+    "3D wind",
+    "temperature and humidity fields",
+    "surface and wall energy balances",
+    "indoor temperature and energy demand",
+    "biometeorological indices",
+    "pollutant concentrations"
+  ],
+  "provider": "Institute of Meteorology and Climatology, Leibniz University Hannover, and the PALM community",
+  "related_ids": [
+    "case_study-stuttgart-ventilation-corridors"
+  ],
+  "repository": "https://gitlab.palm-model.org/releases/palm_model_system",
+  "sectors": [
+    "cross_cutting.green_blue",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "hazard_exposure",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "LES and RANS modes, 32,000 cores, GPU, GPL v3, PALM-4U components list, 1 m grid, forcing by COSMO-DE, ICON, WRF, PALM Academy 2026-08-26, new docs",
+      "url": "https://palm.muk.uni-hannover.de/trac"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "releases/palm_model_system, last_activity_at 2026-06-02",
+      "url": "https://gitlab.palm-model.org/api/v4/projects?search=palm"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Overview of the PALM model system 6.0, GMD, 2020, Maronga et al.",
+      "url": "https://api.crossref.org/works/10.5194/gmd-13-1335-2020"
+    }
+  ],
+  "tags": [
+    "large-eddy simulation",
+    "urban microclimate",
+    "PALM-4U",
+    "heat stress",
+    "city planning"
+  ],
+  "title_en": "PALM model system with PALM-4U urban climate components",
+  "type": "model"
+}

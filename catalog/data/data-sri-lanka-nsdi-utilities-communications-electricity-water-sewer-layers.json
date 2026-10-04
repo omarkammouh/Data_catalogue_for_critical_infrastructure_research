@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Utilities_Communications MapServer (REST, query enabled)",
+      "url": "https://gisapps.nsdi.gov.lk/server/rest/services/SLNSDI/Utilities_Communications/MapServer"
+    },
+    {
+      "kind": "docs",
+      "label": "NSDI metadata catalogue",
+      "url": "https://catalog.nsdi.gov.lk/"
+    },
+    {
+      "kind": "viewer",
+      "label": "NSDI geoportal",
+      "url": "https://geoportal.nsdi.gov.lk/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "LK"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sri lanka nsdi utilities and communications layers ceb 132 kv and 220 kv lines and grid substations leco distribution network water and sewer pipes",
+    "url": "https://gisapps.nsdi.gov.lk/server/rest/services/SLNSDI/Utilities_Communications/MapServer"
+  },
+  "description": "The Sri Lanka National Spatial Data Infrastructure (NSDI) publishes a Utilities_Communications map service on its public ArcGIS Server, catalogued in the NSDI metadata catalogue. Contents: Ceylon Electricity Board (CEB) transmission layers with 170 132 kV line features, 6,810 132 kV points, 40 220 kV line features and 2,760 220 kV points, and 97 grid substations, switching stations and power stations; Lanka Electricity Company (LECO) distribution assets with 16,818 11 kV line segments, 54,299 low-voltage line segments, 3,967 transformers and 61,617 street lights; water supply layers (647 pipe segments with material, diameter, laying date and status, hydrants, valves, meters, storage) and sewerage layers (manholes, gravity and force mains, laterals); and 1,145 telecom structures. Producer: the Survey Department's NSDI unit, compiling layers supplied by the utilities. Coverage: CEB layers cover the southern and western part of the island in the counts checked; LECO serves the western and southern coastal belt; the water and sewer pipe layers cover only a small area south of Colombo. Format and access: ArcGIS MapServer with query capability, so features can be exported as JSON or GeoJSON through the REST query endpoint; the NSDI geoportal viewer shows them on a map. Licence: no licence is stated on the service or in the metadata. Caveats: metadata records were last updated in 2022 and the catalogue links point to an internal server address; transmission layers came from KML conversions with few attributes (name, folder path). Simulation uses: power distribution network topology for feeder-level studies, transmission corridor exposure to floods and landslides, and water pipe condition analysis. Related records: the SAARC energy data portal (data-saarc-energy-data-portal-south-asia) gives national energy statistics.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source lk-sdi-nsdi-gov-lk: provider pages read (round 2 register piece)",
+      "route": "R04",
+      "source": "lk-sdi-nsdi-gov-lk"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "json",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://gisapps.nsdi.gov.lk/server/rest/services/SLNSDI/Utilities_Communications/MapServer",
+  "id": "data-sri-lanka-nsdi-utilities-communications-electricity-water-sewer-layers",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "not_stated",
+  "name": "Sri Lanka NSDI utilities and communications layers: CEB 132 kV and 220 kV lines and grid substations, LECO distribution network, water and sewer pipes",
+  "provider": "Survey Department of Sri Lanka (National Spatial Data Infrastructure), with data from the Ceylon Electricity Board, Lanka Electricity Company and water and sewerage agencies",
+  "related_ids": [
+    "data-saarc-energy-data-portal-south-asia"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "water.drinking_water",
+    "water.wastewater",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "33 layers; feature counts from returnCountOnly queries; water pipe extent and fields",
+      "url": "https://gisapps.nsdi.gov.lk/server/rest/services/SLNSDI/Utilities_Communications/MapServer?f=json"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "CEB metadata items published 2021-12, updated 2022-03 to 2022-06, links to internal server",
+      "url": "https://catalog.nsdi.gov.lk/rest/metadata/search?q=CEB&f=json"
+    }
+  ],
+  "tags": [
+    "Sri Lanka",
+    "NSDI",
+    "CEB",
+    "LECO",
+    "transmission lines",
+    "water pipes",
+    "sewer network"
+  ],
+  "title_en": "Sri Lanka NSDI utilities and communications layers: CEB 132 kV and 220 kV lines and grid substations, LECO distribution network, water and sewer pipes",
+  "type": "data"
+}

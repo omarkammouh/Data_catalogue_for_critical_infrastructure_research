@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/H2020-newTRENDs/FLEX"
+    },
+    {
+      "kind": "download",
+      "label": "Release archived on Zenodo",
+      "url": "https://zenodo.org/records/7330631"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.7330631",
+    "name": "flex household behaviour energy system operation and energy community model",
+    "repo": "github.com/h2020-newtrends/flex",
+    "url": "https://github.com/H2020-newTRENDs/FLEX"
+  },
+  "description": "FLEX is a modelling suite for household energy behaviour, household energy system operation and energy communities, developed by Fraunhofer ISI and the TU Wien Energy Economics Group in the Horizon 2020 newTRENDs project. FLEX-Behavior models each household member's activity at 10-minute resolution with a Markov chain and converts it into appliance electricity, hot water and occupancy profiles aggregated hourly. FLEX-Operation adds the building envelope and technologies such as the heating system, PV, thermal and battery storage and electric vehicles, and computes hourly operation, consumption and cost, either as a simulation or as an optimisation that minimises cost to represent a smart energy management system. FLEX-Community takes a group of households and models an aggregator that enables peer-to-peer trading and optimises battery operation. Coverage: generic households; the archived version was used for a study of variable electricity prices and heat pump buildings. Access: source on GitHub and version 0.1.1 archived on Zenodo on 2022-11-15. Licence: MIT; free. Caveats: the optimisation mode needs a solver through Pyomo and the authors suggest the commercial Gurobi; later development after that release was not checked. Simulation uses are household demand flexibility, heat pump operation under price signals and community-level load studies. Related records: the ResStock record for stock-level residential simulation.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "district heating optimization model",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/H2020-newTRENDs/FLEX",
+  "id": "model-flex-household-energy-behaviour-operation-community",
+  "inputs": [
+    "Household members and activity data",
+    "Building envelope and technologies (heating, PV, thermal and battery storage, EV)",
+    "Electricity prices"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-05-21",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid",
+    "statistical",
+    "optimisation"
+  ],
+  "name": "FLEX: household behaviour, energy system operation and energy community model",
+  "notes": "GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "outputs": [
+    "Household appliance, hot water and occupancy profiles",
+    "Hourly energy system operation, consumption and cost",
+    "Energy community trading and battery operation"
+  ],
+  "provider": "Fraunhofer ISI and TU Wien Energy Economics Group (Philipp Mascherbauer, Songmin Yu, Thomas Haupt), H2020 newTRENDs project",
+  "related_ids": [
+    "model-resstock",
+    "data-invert-eu27-residential-building-stock-2020-2050",
+    "data-tabula-episcope-building-typologies"
+  ],
+  "repository": "https://github.com/H2020-newTRENDs/FLEX",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Title, creators and affiliations, 2022-11-15, V0.1.1, MIT, link to GitHub tag, release notes",
+      "url": "https://zenodo.org/api/records/7330631"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Three modules, developers, newTRENDs, installation with Pyomo and suggested Gurobi solver",
+      "url": "https://raw.githubusercontent.com/H2020-newTRENDs/FLEX/main/README.md"
+    }
+  ],
+  "tags": [
+    "households",
+    "demand flexibility",
+    "heat pumps",
+    "energy community",
+    "Markov chain",
+    "Pyomo",
+    "newTRENDs"
+  ],
+  "title_en": "FLEX: household behaviour, energy system operation and energy community model",
+  "type": "model"
+}

@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Download",
+      "note": "download page linked from the record homepage (2026-10-01); found on https://simulationresearch.lbl.gov/GO/",
+      "url": "https://simulationresearch.lbl.gov/GO/download.html"
+    },
+    {
+      "kind": "portal",
+      "label": "GenOpt site (download, documentation, Javadoc)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://simulationresearch.lbl.gov/GO/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "genopt generic optimisation program for simulation based cost functions lbnl",
+    "url": "https://simulationresearch.lbl.gov/GO"
+  },
+  "description": "GenOpt minimises a cost function evaluated by an external simulation program such as EnergyPlus, TRNSYS, Dymola, IDA ICE or DOE-2, and is aimed at problems where the cost function is expensive and its derivatives are unavailable or may not exist. It couples to any program that reads text input and writes text output, supports continuous and discrete variables with bounds and constraints through penalty or barrier functions, and offers local and global multi-dimensional and one-dimensional algorithms plus parametric runs, running simulations in parallel on multiple CPUs automatically. New algorithms can be added through its algorithm interface, and it is written in Java for platform independence. Coverage: generic. Access: free download with documentation. Licence: LBNL copyright (the page shows 1998 to 2021). Caveats: the developers note it is not designed for linear or quadratic programming or problems with available gradients, and the site has not changed since 2021. Simulation uses: optimising building design and control parameters with detailed simulation engines. Related records: jEPlus, EnergyPlus and the Modelica Buildings Library.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell model:built_environment.buildings:optimisation, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://simulationresearch.lbl.gov/GO/",
+  "id": "model-genopt-generic-optimization",
+  "inputs": [
+    "Text-file inputs of an external simulation program",
+    "Continuous or discrete variables and bounds"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Copyright The Regents of the University of California (LBNL); terms on the download page",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "GenOpt: generic optimisation program for simulation-based cost functions (LBNL)",
+  "outputs": [
+    "Optimal parameter values",
+    "Parametric run results"
+  ],
+  "provider": "Lawrence Berkeley National Laboratory, Simulation Research Group",
+  "related_ids": [
+    "model-jeplus-parametric-tool",
+    "model-energyplus",
+    "model-modelica-buildings-library",
+    "data-climate-onebuilding-tmyx-weather-files",
+    "data-weathershift-future-weather-files",
+    "data-doe-pnnl-prototype-building-models",
+    "data-doe-commercial-reference-buildings"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, coupling, algorithms, parallel runs, limits, copyright 1998 to 2021",
+      "url": "https://simulationresearch.lbl.gov/GO/"
+    }
+  ],
+  "tags": [
+    "GenOpt",
+    "optimisation",
+    "LBNL",
+    "simulation-based optimisation",
+    "Java",
+    "parametric runs"
+  ],
+  "title_en": "GenOpt: generic optimisation program for simulation-based cost functions (LBNL)",
+  "type": "model"
+}

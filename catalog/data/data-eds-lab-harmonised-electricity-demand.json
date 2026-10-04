@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Provider data page",
+      "url": "https://huggingface.co/datasets/EDS-lab/electricity-demand"
+    }
+  ],
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "weather_observations",
+    "reference_context"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "eds lab harmonised electricity demand and weather dataset",
+    "url": "https://huggingface.co/datasets/EDS-lab/electricity-demand"
+  },
+  "description": "EDS Lab publishes harmonised observations assembled from multiple open smart-meter datasets for electricity-demand forecasting. Three Parquet files contain demand, meter metadata and weather. Demand rows use a meter identifier, a period-start timestamp in local time and interval consumption in kilowatt-hours. Metadata preserve original dataset and building identifiers, approximate coordinates, timezone, sampling frequency, residential or commercial class and the number of buildings represented by a meter. Weather fields are joined by location and local timestamp, with documented temperature, precipitation, wind and radiation units. The public card does not establish the complete country list, building count or calendar span; sampling frequency varies by meter. The dataset is labelled BSD 3-Clause and offered without a stated fee, but file access requires a Hugging Face account and agreement to share contact information. No conditions were accepted and no personal information was submitted. Approximate locations, local-time joins and heterogeneous source intervals require care. Simulation uses include demand-shape calibration and weather-dependent load models. It relates to data-building-data-genome-2 as another building-load resource. This release is separate from the feature-extraction scripts reviewed as G8-0104; it is not a verified release of the feature matrix claimed by the curated list.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "Curated-list traversal: rebase-energy/awesome-energy-datasets",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "parquet"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://huggingface.co/datasets/EDS-lab/electricity-demand",
+  "id": "data-eds-lab-harmonised-electricity-demand",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-06-20",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "EDS Lab harmonised electricity-demand and weather dataset",
+  "notes": "G8; G8-0283. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "provider": "EDS Lab",
+  "related_ids": [
+    "data-building-data-genome-2"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity and access checked on its own provider page, following a GitHub curated-list link.",
+      "url": "https://huggingface.co/datasets/EDS-lab/electricity-demand"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Public metadata, file names, BSD-3-Clause and gated=auto. Raw README returns 401, but the complete card is public in the browser.",
+      "url": "https://huggingface.co/api/datasets/EDS-lab/electricity-demand"
+    }
+  ],
+  "spatial_resolution": "Multiple source datasets; approximate coordinates and geohashes per location; country list not established.",
+  "spatial_resolution_class": "not_stated",
+  "tags": [],
+  "temporal_coverage": "Different source datasets; complete calendar span not specified in public card.",
+  "temporal_resolution": "Per-meter pandas frequency field; timestamps in local time.",
+  "temporal_resolution_class": "event",
+  "title_en": "EDS Lab harmonised electricity-demand and weather dataset",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

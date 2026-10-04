@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/JGCRI/superwell"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://gmd.copernicus.org/articles/18/1737/2025/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.5194/gmd-18-1737-2025",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.14583794",
+    "name": "superwell groundwater cost and supply model",
+    "url": "https://github.com/jgcri/superwell"
+  },
+  "description": "Superwell is a groundwater extraction and cost model published by the Joint Global Change Research Institute. It combines aquifer properties with well construction, maintenance and pumping-energy costs to estimate accessible groundwater volumes and their unit costs. Users provide CSV inputs for hydrogeology, electricity rates and extraction assumptions. The current workflow runs Python scripts; R code remains for an older version. Outputs are CSV tables of extraction, drawdown, well numbers and costs. The documented global configuration uses 0.5-degree cells, while the model permits other spatial and temporal settings. These calculations support water-supply planning and coupled water-energy scenario studies. Source code is freely available on GitHub under MIT. A limitation is that estimated supply depends strongly on uncertain aquifer properties, assumed depletion limits and cost settings; it is not a local pumping permit or site investigation. The input and output datasets have separate published identities under review in G5. No directly related catalogue record was established. This review did not run extraction scenarios.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "GMD whole-index enumeration; 10.5194/gmd-18-1737-2025; G5-LOCAL-009;G5-LOCAL-035;G5-LOCAL-048;G5-LOCAL-056;G5-LOCAL-079;G5-LOCAL-085;G5-LOCAL-086;G5-LOCAL-089;G5-LOCAL-096;G5-LOCAL-100;G5-LOCAL-103;G5-LOCAL-106;G5-LOCAL-107",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/JGCRI/superwell",
+  "id": "model-superwell",
+  "inputs": [
+    "Aquifer thickness, porosity, permeability, recharge and depth to water",
+    "Extraction scenario and well-cost settings",
+    "Electricity rates"
+  ],
+  "language": [
+    "python",
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-14",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid"
+  ],
+  "name": "Superwell groundwater cost and supply model",
+  "notes": "G5 G5-0099. Software checked through metadata and documentation, without installation or execution. Geographic scope follows the documented application or software portability; it does not imply validation throughout that area. ",
+  "outputs": [
+    "Groundwater extraction and drawdown",
+    "Well requirements and groundwater supply-cost curves"
+  ],
+  "provider": "Joint Global Change Research Institute",
+  "related_ids": [],
+  "repository": "https://github.com/JGCRI/superwell",
+  "sectors": [
+    "water.drinking_water",
+    "water.irrigation",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Publisher Model description category, abstract and code/data availability read.",
+      "url": "https://gmd.copernicus.org/articles/18/1737/2025/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Abstract and availability read in memory; article text not saved.",
+      "url": "https://gmd.copernicus.org/articles/18/1737/2025/gmd-18-1737-2025.xml"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Canonical public repository, MIT licence; language statistic is R but README identifies current Python solver.",
+      "url": "https://api.github.com/repos/JGCRI/superwell"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Current Python workflow, CSV inputs and outputs, and legacy R code distinction.",
+      "url": "https://raw.githubusercontent.com/JGCRI/superwell/main/README.md"
+    }
+  ],
+  "tags": [
+    "research software",
+    "GMD"
+  ],
+  "title_en": "Superwell groundwater cost and supply model",
+  "type": "model"
+}

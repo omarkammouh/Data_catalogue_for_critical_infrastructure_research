@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Download server",
+      "url": "https://download.geofabrik.de/"
+    },
+    {
+      "kind": "api",
+      "label": "WMS Server",
+      "note": "direct link found on the record homepage (link check 2026-10-01)",
+      "url": "https://www.geofabrik.de/maps/wms.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Download server description",
+      "url": "https://www.geofabrik.de/data/download.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Shapefiles (free and paid)",
+      "url": "https://www.geofabrik.de/data/shapefiles.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "freemium",
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "geofabrik download server daily openstreetmap extracts by continent country and region pbf diffs shapefiles",
+    "url": "https://geofabrik.de/data/download.html"
+  },
+  "description": "Geofabrik GmbH, a Karlsruhe company that is a member of the OpenStreetMap Foundation, runs a free download server with excerpts and derived data from OpenStreetMap, most of them updated every day, so that an edit in OpenStreetMap appears the next day. Files are organised by region: whole continents at the root, subdirectories for countries on every continent except Antarctica, and some countries split further, for example all German Länder, English counties and French départements. Raw data come as .osm.pbf files with daily diff updates (.osc.gz), without personal metadata; the full-history files with contributor metadata sit on a separate password-protected server for OpenStreetMap contributors only. Free shapefiles (.shp.zip) hold a default selection of layers, including the road and railway network, forests, water areas and many points of interest. Richer layered shapefiles, routable road-segment shapefiles with estimated travel times, power network extracts, boundary polygons and other exports are sold as paid services on quotation. Coverage: global, by region. Format and access: PBF, OSC and shapefile downloads over HTTPS; free, paid custom exports. Licence: ODbL 1.0, with OpenStreetMap acknowledged as the source. Caveats: the download server itself refused connections from the cloud on 2026-09-29, so file listings and sizes were not read; the free shapefiles hold only a default layer set. Simulation uses: road, rail, waterway and point-of-interest networks by region for network flow, accessibility and hazard exposure models. Related records: OpenStreetMap itself (data-openstreetmap) and the HOT country exports on HDX (data-hotosm-country-exports-hdx).",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source geofabrik: provider pages read (round 2 register piece)",
+      "route": "R15",
+      "source": "geofabrik"
+    }
+  ],
+  "formats": [
+    "other_vector",
+    "other",
+    "shapefile"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.geofabrik.de/data/download.html",
+  "id": "data-geofabrik-openstreetmap-extracts-and-shapefiles",
+  "languages": [
+    "en"
+  ],
+  "licence": "ODbL-1.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://download.geofabrik.de/"
+    ]
+  },
+  "maturity": "active",
+  "name": "Geofabrik download server: daily OpenStreetMap extracts by continent, country and region (PBF, diffs, shapefiles)",
+  "provider": "Geofabrik GmbH, Karlsruhe",
+  "related_ids": [
+    "data-openstreetmap",
+    "data-hotosm-country-exports-hdx"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.rail",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Free download server; daily updates; region hierarchy; PBF, OSC diffs, shapefiles default layers; metadata-free public files; internal server for contributors; ODbL 1.0; Karlsruhe, OSMF member",
+      "url": "https://www.geofabrik.de/data/download.html"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Free simple shapefiles; paid layered and routable shapefiles on quotation",
+      "url": "https://www.geofabrik.de/data/shapefiles.html"
+    }
+  ],
+  "tags": [
+    "OpenStreetMap",
+    "extracts",
+    "shapefiles",
+    "road network",
+    "daily updates"
+  ],
+  "temporal_coverage": "current, updated daily",
+  "title_en": "Geofabrik download server: daily OpenStreetMap extracts by continent, country and region (PBF, diffs, shapefiles)",
+  "type": "data"
+}

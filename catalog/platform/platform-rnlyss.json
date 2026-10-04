@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/klimaat/rnlyss"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/klimaat/rnlyss/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rnlyss building weather preparation library",
+    "repo": "github.com/klimaat/rnlyss",
+    "url": "https://github.com/klimaat/rnlyss"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "rnlyss is a Python library published by the klimaat project to retrieve, organise and extract atmospheric reanalysis time series for building design. Developed during ASHRAE research project 1745-RP, it supports documented CFSR/CFSv2, MERRA-2 and ERA5 workflows, stacks source data in HDF5 and exports EnergyPlus Weather files. Coverage, temporal span and grid resolution follow each upstream reanalysis and the selected location or period. Public code and command-line examples are free under MIT; access to upstream data is separate, and the README describes provider accounts. A limitation is that the library was developed for Python 3.5 and Ubuntu 16.04, is untested on Windows and is explicitly described as a fragile research product dependent on upstream services. Current provider API compatibility was not tested. The tool can prepare weather inputs for EnergyPlus (model-energyplus) and related building simulations, with reanalysis uncertainty carried into those applications. The linked ASHRAE report describes the research context. No provider sign-in was needed to inspect the public repository, and no reanalysis data were requested or downloaded.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:building-energy fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/klimaat/rnlyss",
+  "id": "platform-rnlyss",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "interoperability": [
+    "HDF5",
+    "EPW",
+    "NetCDF",
+    "GRIB"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-11",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "rnlyss building-weather preparation library",
+  "notes": "G7 G7-0398. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability.  Cited as: Roth (2019). Evaluation of Climate Reanalysis Data for Use in ASHRAE Applications. Final report, ASHRAE 1745-RP. Identified in repository README..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "klimaat repository maintainers",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for klimaat/rnlyss: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Abuilding-energy+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/klimaat/rnlyss/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for buildings",
+  "type": "platform"
+}

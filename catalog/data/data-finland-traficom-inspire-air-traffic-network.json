@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "WFS service",
+      "url": "https://julkinen.traficom.fi/inspirepalvelu/ilmaliikenne/wfs?request=getcapabilities"
+    },
+    {
+      "kind": "api",
+      "label": "WMS service",
+      "url": "https://julkinen.traficom.fi/inspirepalvelu/ilmaliikenne/wms?request=getcapabilities"
+    },
+    {
+      "kind": "portal",
+      "label": "Open data portal entry",
+      "url": "https://avoindata.suomi.fi/data/dataset/8ce03375-1711-490e-a66a-e03c03a2e12a"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FI"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "finland inspire air traffic network traficom",
+    "url": "https://julkinen.traficom.fi/inspirepalvelu/ilmaliikenne/wfs?count=1&request=GetFeature&service=WFS&typeNames=ilmaliikenne%3ATN_AERODROMENODE&version=2.0.0"
+  },
+  "description": "The Air Traffic Network product is Traficom's INSPIRE-compliant link and node dataset of the Finnish air transport network. Its layers include aerodrome nodes at aerodrome reference points, air route links, airspace areas, control zones, designated points, instrument approach procedures, navaids, procedure links, runway areas and runway centreline points. The data are retrieved from the European AIS Database (EAD) maintained by Eurocontrol and updated regularly. It is published by the Finnish Transport and Communications Agency Traficom as WMS and WFS services and in the Traficom map service. Coverage is Finland. Access: free under CC BY 4.0 through the WFS and WMS services listed on the Finnish open data portal (metadata modified April 2025). Caveats: the data are not constantly up to date and must not be used for operational flight activities or flight planning, for which ANS Finland's AIS site is the source. It supports modelling of the air route network and airport nodes for network flow studies, airspace and aerodrome hazard exposure screening, and complements the Finnish FTIA and Digitraffic data and the Eurocontrol aviation data catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"road network\" AND \"traffic\"",
+      "route": "R02",
+      "source": "data-europa-eu"
+    }
+  ],
+  "formats": [
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://julkinen.traficom.fi/inspirepalvelu/ilmaliikenne/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=ilmaliikenne:TN_AERODROMENODE&count=1",
+  "id": "data-finland-traficom-inspire-air-traffic-network",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://avoindata.suomi.fi/data/dataset/8ce03375-1711-490e-a66a-e03c03a2e12a"
+    ]
+  },
+  "maturity": "active",
+  "name": "Finland INSPIRE Air Traffic Network (Traficom)",
+  "provider": "Finnish Transport and Communications Agency Traficom",
+  "related_ids": [
+    "data-finland-ftia-open-data",
+    "data-finland-fintraffic-digitraffic",
+    "data-eurocontrol-aviation-data-repository-research"
+  ],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "cc-by-4.0; modified 2025-04-16; maintainer Traficom; resources Oskari map, WMS, WFS",
+      "url": "https://avoindata.suomi.fi/data/api/3/action/package_show?id=8ce03375-1711-490e-a66a-e03c03a2e12a"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "layers TN_AERODROMENODE, TN_AIRROUTELINK, TN_AIRSPACEAREA, CTR_ALUE, TN_DESIGNATEDPOINT, TN_INSTRUMENTAPPROACHPROCEDURE, TN_NAVAID, TN_PROCEDURELINK, TN_RUNWAYAREA, TN_RUNWAYCENTERLINEPOINT",
+      "url": "https://julkinen.traficom.fi/inspirepalvelu/ilmaliikenne/wfs?request=getcapabilities"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "INSPIRE link-knot routing dataset; from EAD by Eurocontrol; updated regularly but not constantly up to date; not for operational flight activities or flight planning; ANS Finland ais.fi",
+      "url": "https://data.europa.eu/api/hub/search/datasets/8ce03375-1711-490e-a66a-e03c03a2e12a"
+    }
+  ],
+  "spatial_resolution": "aerodrome and route link",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "INSPIRE",
+    "air traffic network",
+    "aerodromes",
+    "air routes",
+    "Finland"
+  ],
+  "temporal_coverage": "current",
+  "title_en": "Finland INSPIRE Air Traffic Network (Traficom)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

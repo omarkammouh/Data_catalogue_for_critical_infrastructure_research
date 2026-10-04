@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "pro_wwtp.tif (1 GB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/18015075/files/pro_wwtp.tif?download=1"
+    },
+    {
+      "kind": "download",
+      "label": "std_wwtp.tif (1 GB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/18015075/files/std_wwtp.tif?download=1"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo record (GeoTIFF probability and standard deviation maps)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/records/18015075"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "planned_future_infrastructure",
+    "scenarios_projections"
+  ],
+  "data_kind": [
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "global development likelihood of wastewater treatment plants 30 arc second probability map",
+    "url": "doi:10.5281/zenodo.18015075"
+  },
+  "description": "This dataset is a global map of where wastewater treatment plants are likely to be developed, produced by a positive-unlabeled deep neural network trained on the HydroWASTE plant locations and 267,325 random unlabeled sites with fourteen socioeconomic and geographic factors, including GDP, population, land cover, NDVI, distances to settlements, power grid, rivers, lakes and faults, flood hazard, elevation and slope. It gives the mean probability from ten ensemble models and its standard deviation; the authors report an AUC of 0.988 and a suitable area of about 8.3 million km2, half of it in the United States, China, India, Russia and Germany. Researchers at Sun Yat-sen University published it on Zenodo in December 2025 as two GeoTIFF files of about 1 GB each at 0.0083 degree resolution, as a free download under CC BY 4.0. Coverage is global. Caveats: it is a modelled suitability surface, not a plan or inventory, it inherits HydroWASTE's gaps. Simulation uses: screening candidate treatment plant locations in capacity planning and multi-objective optimisation of sanitation expansion. Related record: HydroWASTE (data-hydrowaste).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"wastewater\" AND \"vegetation\"",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "\"wastewater\" AND \"population\"",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "raster"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://doi.org/10.5281/zenodo.18015075",
+  "id": "data-global-wwtp-development-likelihood-map",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-12-22",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Global development likelihood of wastewater treatment plants (30 arc-second probability map)",
+  "provider": "Sun Yat-sen University (W. Li, H. Liu, M. Li)",
+  "related_ids": [
+    "data-hydrowaste"
+  ],
+  "schema_summary": "pro_wwtp.tif: mean probability of WWTP development from ten ensemble models; std_wwtp.tif: standard deviation across the ten models; NoData -9999",
+  "sectors": [
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, method, metrics, files and sizes, CC BY 4.0, creators, 2025-12-22",
+      "url": "https://zenodo.org/api/records/18015075"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (doi 10.5281/zenodo.18015075 updated)",
+      "url": "https://zenodo.org/records/18015075/files/pro_wwtp.tif?download=1"
+    }
+  ],
+  "spatial_resolution": "0.0083 degrees (about 1 km), WGS 1984",
+  "spatial_resolution_class": "100m_to_1km",
+  "tags": [
+    "wastewater treatment plants",
+    "siting",
+    "suitability",
+    "deep learning",
+    "SDG 6",
+    "global"
+  ],
+  "temporal_coverage": "model trained on HydroWASTE plant locations and present-day factors (published December 2025)",
+  "temporal_resolution": "static",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Global development likelihood of wastewater treatment plants (30 arc-second probability map)",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

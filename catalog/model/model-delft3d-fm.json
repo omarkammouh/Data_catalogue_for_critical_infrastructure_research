@@ -1,0 +1,151 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code of the simulation engines (GitHub)",
+      "url": "https://github.com/Deltares/Delft3D"
+    },
+    {
+      "kind": "docs",
+      "label": "Delft3D FM open source community portal",
+      "url": "https://oss.deltares.nl/web/delft3dfm"
+    },
+    {
+      "kind": "docs",
+      "label": "Delft3D FM Suite 2D3D product page",
+      "url": "https://www.deltares.nl/en/software-and-data/products/delft3d-flexible-mesh-suite"
+    },
+    {
+      "kind": "docs",
+      "label": "Release notes",
+      "url": "https://oss.deltares.nl/web/delft3d/release-notes"
+    }
+  ],
+  "access_note": "Engine source code is public on GitHub. The precompiled open source GUI needs a portal registration to download, and the validated precompiled suite (Delft3D FM Suite 2026.01) comes through paid Delft3D Service Packages ordered from Deltares.",
+  "access_restrictions": "registration",
+  "citation": "Deltares, Delft3D FM and Delft3D 4 kernels, source code repository (GitHub) and Delft3D FM open source community portal",
+  "cost": "freemium",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "delft3d flexible mesh delft3d fm and delft3d 4 simulation engines",
+    "repo": "github.com/deltares/delft3d",
+    "url": "https://oss.deltares.nl/web/delft3dfm"
+  },
+  "description": "Delft3D Flexible Mesh (Delft3D FM) is the hydrodynamic modelling suite of Deltares, the Dutch water research institute, whose simulation engines (together with the older Delft3D 4 engines) are published as open source code on GitHub. The engines cover hydrodynamics on unstructured meshes (D-Flow FM), hydrology (D-Hydrology), real-time control of structures such as weirs, pumps and gates (D-Real Time Control), morphodynamics (D-Morphology), waves (D-Waves) and water quality with the DELWAQ kernel, for coastal, estuarine, river, rural and urban applications. The community portal reports 40,000 plus members, 447 key partners in 49 countries and more than 16,000 publications using Delft3D, so it is one of the most widely used hydraulic modelling systems for rivers, deltas and coasts. Most engines are licensed AGPL-3.0 or GPL-3.0, with utility libraries under LGPL-2.1; users can compile the kernels themselves, download a precompiled open source GUI after registering, or buy service packages for the validated precompiled suite, whose latest release is 2026.01 (November 2025). Caveats: model building and calibration need experienced modellers, the open source GUI has licence-check issues reported on the forum, large 3D runs need high-performance computing, and GitHub metadata could not be read from our environment. Simulation uses: river and urban flood inundation, levee and dike breach scenarios, storm surge, reservoir and irrigation canal operation with real-time control, sediment impacts on waterways and ports, and receiving-water quality downstream of wastewater discharges. Related records: TELEMAC-MASCARET (model-telemac-mascaret) and HEC-RAS (model-hec-ras) are alternatives, XBeach (model-xbeach) handles storm impacts on sandy coasts, and Delft-FEWS (platform-delft-fews) runs Delft3D models in operational forecasting.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Deltares open source community portal (NL, open_source_community) https://oss.deltares.nl/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge",
+    "sea_level_rise"
+  ],
+  "homepage": "https://oss.deltares.nl/web/delft3dfm",
+  "id": "model-delft3d-fm",
+  "inputs": [
+    "unstructured or curvilinear computational grids",
+    "bathymetry and topography",
+    "boundary conditions (water levels",
+    "discharges",
+    "waves",
+    "tides)",
+    "meteorological forcing",
+    "external forcings files",
+    "sediment and water quality parameters",
+    "hydraulic structures"
+  ],
+  "language": [
+    "fortran",
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "AGPL-3.0 or GPL-3.0 for most simulation engines; LGPL-2.1 for several utility libraries; third-party packages under their own licences",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Delft3D Flexible Mesh (Delft3D FM) and Delft3D 4 simulation engines",
+  "notes": "Release month and licence split are from search result snippets of the GitHub README and release notes; the GitHub API and web pages were refused from the cloud session.",
+  "outputs": [
+    "water levels and velocities",
+    "inundation extents and depths",
+    "wave fields",
+    "sediment transport and bed level change",
+    "water quality concentrations",
+    "real-time control actions"
+  ],
+  "provider": "Deltares",
+  "related_ids": [
+    "model-telemac-mascaret",
+    "model-hec-ras",
+    "model-xbeach",
+    "platform-delft-fews"
+  ],
+  "repository": "https://github.com/Deltares/Delft3D",
+  "runs_on": [],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage",
+    "water.irrigation",
+    "water.wastewater",
+    "transport.inland_waterways",
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "modules, community size, move to GitHub, GUI registration, forum posts on the 2026.01 open source GUI",
+      "url": "https://oss.deltares.nl/web/delft3dfm"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "seen through web search snippets only (github.com returned 403 from the cloud): repository scope and licences AGPL-3.0/GPL-3.0 engines, LGPL-2.1 utilities",
+      "url": "https://github.com/Deltares/Delft3D"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "seen through web search snippets: latest validated release Delft3D FM Suite 2026.01 2D3D (November 2025) via service packages",
+      "url": "https://oss.deltares.nl/web/delft3d/release-notes"
+    }
+  ],
+  "tags": [
+    "Delft3D",
+    "D-Flow FM",
+    "D-Hydrology",
+    "D-Real Time Control",
+    "D-Morphology",
+    "D-Waves",
+    "DELWAQ",
+    "water quality",
+    "flexible mesh",
+    "hydrodynamics",
+    "open source",
+    "Deltares"
+  ],
+  "title_en": "Delft3D Flexible Mesh (Delft3D FM) and Delft3D 4 simulation engines",
+  "type": "model",
+  "validated_on": []
+}

@@ -1,0 +1,131 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "LODES version 8 data files by state",
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES8/"
+    },
+    {
+      "kind": "docs",
+      "label": "LODES 8.4 technical documentation",
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES8/LODESTechDoc8.4.pdf"
+    },
+    {
+      "kind": "viewer",
+      "label": "OnTheMap web application",
+      "url": "https://onthemap.ces.census.gov/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "crs": "not applicable (tabular; join to TIGER/Line blocks)",
+  "data_family": [
+    "behavioural_social",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "lehd origin destination employment statistics lodes and onthemap",
+    "url": "https://lehd.ces.census.gov/data"
+  },
+  "description": "LEHD Origin-Destination Employment Statistics (LODES) of the U.S. Census Bureau's Center for Economic Studies give the number of jobs by census block of workplace and of residence, and the home-to-work flows between blocks, for almost every state. They are produced by the Longitudinal Employer-Household Dynamics partnership from state unemployment insurance records, federal employment records and Census data. Three file groups are released per state and year: Origin-Destination (OD) flows between home block and work block, Residence Area Characteristics (RAC) and Workplace Area Characteristics (WAC), segmented by age, earnings band and job type and counting jobs in each of 20 NAICS sectors, including utilities (sector 22) and transportation and warehousing (48-49); a geography crosswalk links blocks to tracts, counties, metro areas and other units. Coverage: 2002 to 2023 (22 years) in LODES version 8 on 2020 census blocks; demographic variables from 2009, federal jobs from 2010, firm age and size from 2011; some states lack OD and WAC files in some years (Alaska and Michigan for 2022-2023) and Puerto Rico is not included. Access: gzipped CSV files by state on lehd.ces.census.gov and the OnTheMap web application for mapping and reports; free and public domain. Caveats: values come from modelled administrative data subject to nonsampling error and disclosure avoidance review, so small-area flows are approximate, and job type files separate all jobs from primary jobs (JT00 versus JT01), which users must choose between to avoid double counting. Simulation uses: daytime population and commuter flow matrices for transport network models, workforce exposure in hazard zones and interdependency studies. Related records: OnTheMap for Emergency Management, ACS commuting tables and County Business Patterns.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; entries LEHD/LODES and OnTheMap",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    }
+  ],
+  "formats": [
+    "csv",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://lehd.ces.census.gov/data/",
+  "id": "data-us-census-lehd-lodes",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "LEHD Origin-Destination Employment Statistics (LODES) and OnTheMap",
+  "notes": "OnTheMap is folded into this record as its viewer. QWI, Job-to-Job Flows, PSEO and VEO (other LEHD products) are listed in the US Census failures file as out of scope.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "platform-us-census-onthemap-emergency-management",
+    "data-us-census-american-community-survey-tables",
+    "data-us-census-county-business-patterns",
+    "data-us-census-tiger-line-boundaries-blocks"
+  ],
+  "schema_summary": "OD: w_geocode, h_geocode, S000, SA01-SA03, SE01-SE03, SI01-SI03; RAC/WAC: block geocode, C000, CA01-CA03, CE01-CE03, CNS01-CNS20 (NAICS sectors), race, ethnicity, education, sex, firm age and size (WAC)",
+  "sectors": [
+    "transport.road",
+    "transport.public_transit",
+    "transport.active_mobility",
+    "energy.electricity",
+    "transport.logistics_freight",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "agent_based",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "LODES version 8 on 2020 blocks (LODES7 2010 blocks, LODES5 2000 blocks); OD, RAC, WAC files; most states 2002-2023; modelled administrative data subject to nonsampling error",
+      "url": "https://lehd.ces.census.gov/data/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "File groups, gzip CSV, 22 years 2002-2023, variable availability by year, states without OD and WAC data, Puerto Rico not included, CNS01-CNS20 sector variables",
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES8/LODESTechDoc8.4.pdf"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "OnTheMap application over LODES with shapefile import and disclosure note",
+      "url": "https://onthemap.ces.census.gov/"
+    }
+  ],
+  "spatial_resolution": "2020 census block (home and work), with crosswalk to larger units",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "LODES",
+    "LEHD",
+    "commuting flows",
+    "OnTheMap",
+    "workplace",
+    "daytime population",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "2002-2023 (LODES8)",
+  "temporal_coverage_years": {
+    "end": 2023,
+    "start": 2002
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "LEHD Origin-Destination Employment Statistics (LODES) and OnTheMap",
+  "type": "data",
+  "update_frequency": "annual"
+}

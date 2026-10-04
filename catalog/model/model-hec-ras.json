@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "HEC-RAS home",
+      "url": "https://www.hec.usace.army.mil/software/hec-ras/"
+    },
+    {
+      "kind": "portal",
+      "label": "HEC-RAS downloads",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.hec.usace.army.mil/software/hec-ras/download.aspx"
+    },
+    {
+      "kind": "docs",
+      "label": "HEC-RAS features",
+      "url": "https://www.hec.usace.army.mil/software/hec-ras/features.aspx"
+    },
+    {
+      "kind": "docs",
+      "label": "Levee overtopping and breaching (user manual)",
+      "url": "https://www.hec.usace.army.mil/confluence/rasdocs/rasum/latest/advanced-features-for-unsteady-flow-routing/levee-overtopping-and-breaching"
+    }
+  ],
+  "access_note": "Free download; HEC gives no user support to non-USACE users.",
+  "access_restrictions": "none",
+  "citation": "U.S. Army Corps of Engineers, Hydrologic Engineering Center. HEC-RAS River Analysis System, version 7.0.1. Davis, CA.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hec ras river analysis system",
+    "url": "https://hec.usace.army.mil/software/hec-ras"
+  },
+  "description": "HEC-RAS is the U.S. Army Corps of Engineers' river and floodplain hydraulics program. It computes one-dimensional steady water surface profiles and one- and two-dimensional unsteady flow over full networks of natural and constructed channels, moveable-bed sediment transport, water temperature and quality, and, in recent versions, stormwater pipe networks. Its unsteady flow engine includes dam-break analysis, levee overtopping and breaching, pumping stations, navigation dam operations and pressurised flow, and RAS Mapper produces inundation maps and animations; the 1D and 2D solvers are coupled so that a levee breach can spill from a river reach into a 2D floodplain. The Hydrologic Engineering Center built it for USACE flood-risk work and makes it available to the public: the distribution policy says use is not restricted and outsiders may use it without charge, though HEC gives no support to non-USACE users. It is site-independent and used worldwide. The current release on 26 September 2026 is 7.0.1 for Windows 10 and 11, also packaged with Linux compute engines, with a 2025 beta and archived versions back to 6.x; source code is not published. Caveats: Windows-only interface, closed source, and results depend on terrain and roughness data supplied by the user. Simulation uses: flood hazard mapping, dam-break and levee-breach emergency planning, flood-defence design and capacity planning, and climate adaptation studies. It is the usual tool for inundation behind structures in the National Levee Database and National Inventory of Dams, and it complements SWMM (model-epa-swmm) for urban drainage.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "HEC-RAS river analysis system USACE 2D flood levee breach modelling",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://www.hec.usace.army.mil/software/hec-ras/",
+  "id": "model-hec-ras",
+  "inputs": [
+    "River and floodplain geometry (cross sections, 2D flow-area meshes, terrain)",
+    "Boundary conditions (flow and stage hydrographs), hydraulic structures (bridges, culverts, weirs, gates, pumps, levees, dams)",
+    "Sediment and water quality parameters"
+  ],
+  "language": [
+    "not_stated"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Proprietary freeware (USACE distribution policy; use not restricted, no charge)",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "HEC-RAS River Analysis System",
+  "notes": "Implementation language not stated by HEC; recorded as unknown. 1D/2D coupling for levee breach from the HEC user manual page summary returned by web search.",
+  "outputs": [
+    "Water surface profiles, depths, velocities and hydrographs",
+    "Inundation maps and animations (RAS Mapper)",
+    "Dam-break and levee-breach flood results, sediment and water temperature results"
+  ],
+  "provider": "U.S. Army Corps of Engineers, Hydrologic Engineering Center (CEIWR-HEC)",
+  "related_ids": [
+    "data-usace-national-levee-database",
+    "data-usace-national-inventory-of-dams",
+    "model-epa-swmm"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "climate_adaptation",
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "capabilities incl. stormwater pipe networks; 2025 beta; no phone/email support to non-USACE",
+      "url": "https://www.hec.usace.army.mil/software/hec-ras/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "7.0.1 Windows and Windows+Linux packages; archived 6.x; distribution terms",
+      "url": "https://www.hec.usace.army.mil/software/hec-ras/download.aspx"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "steady, 1D/2D unsteady, sediment, water quality; dam break, levee breaching and overtopping, pumping stations",
+      "url": "https://www.hec.usace.army.mil/software/hec-ras/features.aspx"
+    }
+  ],
+  "tags": [
+    "river hydraulics",
+    "1D 2D unsteady flow",
+    "dam break",
+    "levee breach",
+    "inundation mapping",
+    "sediment transport",
+    "USACE"
+  ],
+  "title_en": "Physical model for dams and flood defences and stormwater drainage",
+  "type": "model",
+  "validated_on": []
+}

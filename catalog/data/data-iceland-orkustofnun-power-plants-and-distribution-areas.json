@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Orkustofnun WMS",
+      "url": "https://gis.is/geoserver/orkustofnun/wms?request=getcapabilities"
+    },
+    {
+      "kind": "docs",
+      "label": "Orkustofnun",
+      "url": "https://orkustofnun.is/"
+    },
+    {
+      "kind": "docs",
+      "label": "Distribution areas metadata",
+      "url": "https://gatt.natt.is/geonetwork/srv/ice/catalog.search#/metadata/226bceaf-84dd-46e9-92d7-3f9f921f5834"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IS"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "iceland power plants and electricity distribution areas orkustofnun gis layers",
+    "url": "https://gis.is/geoserver/orkustofnun/wfs?request=getcapabilities"
+  },
+  "description": "The National Energy Authority of Iceland (Orkustofnun) publishes its energy GIS layers through a shared GeoServer and the national metadata catalogue. Contents: a power plant layer of 707 features, each with plant name, owner (such as Landsvirkjun), plant type (hydro, geothermal, fuel, wind), installed capacity, turbine type, commissioning year, decommissioning status and coordinates; electricity distribution areas for the five distribution companies (Veitur, Orkubú Vestfjarða, HS Veitur, Norðurorka and RARIK), 109 polygons, with RARIK and Orkubú Vestfjarða split into rural, urban and core areas as in their tariffs; energy forecast regions; licences issued by the authority; and a borehole database for geothermal and groundwater wells. Producer: Orkustofnun. Coverage: all of Iceland, including small private hydro plants. Format and access: WMS and WFS services on gis.is (GML, GeoJSON, shapefile output) with ISO metadata in the national GeoNetwork. Free; the metadata asks users to cite the source. Caveats: the transmission grid itself is not in these layers (Landsnet publishes its own maps), capacities are nameplate values, and field names are in Icelandic. Simulation uses: a generation fleet inventory for Icelandic power system and hydro or geothermal supply models, and distribution areas to link outages or tariffs to places, for example in volcanic or storm scenarios. Related records: the Landsvirkjun glacier melt hydropower case (case_study-iceland-landsvirkjun-glacier-melt-hydropower) and the IS 50V topographic database (data-iceland-is50v-topographic-database).",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source is-nma-natt-is: provider pages read (round 2 register piece)",
+      "route": "R10",
+      "source": "is-nma-natt-is"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "gml",
+    "geojson",
+    "shapefile"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://gis.is/geoserver/orkustofnun/wfs?request=getcapabilities",
+  "id": "data-iceland-orkustofnun-power-plants-and-distribution-areas",
+  "languages": [
+    "is"
+  ],
+  "licence": "free use with source attribution (metadata: geta þarf heimilda)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://gatt.natt.is/geonetwork/srv/ice/catalog.search#/metadata/226bceaf-84dd-46e9-92d7-3f9f921f5834"
+    ]
+  },
+  "maturity": "active",
+  "name": "Iceland power plants and electricity distribution areas (Orkustofnun GIS layers)",
+  "provider": "Orkustofnun (National Energy Authority of Iceland; now part of Umhverfis- og orkustofnun)",
+  "related_ids": [
+    "case_study-iceland-landsvirkjun-glacier-melt-hydropower",
+    "data-iceland-is50v-topographic-database"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Raforkudreifing metadata: five distribution companies, tariff areas, services, cite source",
+      "url": "https://gatt.natt.is/geonetwork/srv/api/records/226bceaf-84dd-46e9-92d7-3f9f921f5834/formatters/xml"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "707 power plants; fields name, owner, type, installed capacity, turbine, commissioning year",
+      "url": "https://gis.is/geoserver/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=orkustofnun:gisvirkjun&count=1&outputFormat=application/json"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "orkustofnun workspace: boreholes, licences, energy forecast areas, distribution, plants",
+      "url": "https://gis.is/geoserver/wfs?service=WFS&version=2.0.0&request=GetCapabilities"
+    }
+  ],
+  "tags": [
+    "Iceland",
+    "power plants",
+    "hydropower",
+    "geothermal",
+    "distribution areas"
+  ],
+  "title_en": "Iceland power plants and electricity distribution areas (Orkustofnun GIS layers)",
+  "type": "data"
+}

@@ -1,0 +1,87 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource landing page",
+      "url": "https://github.com/philiprt/gesla-dataset"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1002/gdj3.174"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "",
+    "name": "gesladataset python reader",
+    "url": "https://github.com/philiprt/gesla-dataset"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "The GeslaDataset maintainer publishes a Python class that loads GESLA sea-level observations from local files or the University of Hawaii ERDDAP service. Single records become pandas data frames with metadata, while multiple records become xarray datasets. Documented selection methods cover station identifiers, countries, nearby gauges, boxes and polygons, including dateline handling and time ranges. Geographic and temporal coverage follow the selected GESLA records. The source and an example notebook are freely available under MIT licensing. Server-side time filtering avoids requesting an entire archive, which is useful when preparing inputs for coastal-flood or port-operability simulations. The reader complements the GESLA observations and retains quality flags for user decisions. Dependency versions are specified, but other environments may require adjustments. A limitation is that loading observations does not resolve station-datum differences or validate every recorded value; no execution was tested.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G3-Q0481: 10.1002/gdj3.174 availability",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/philiprt/gesla-dataset",
+  "id": "platform-gesla-python-reader",
+  "interfaces": [
+    "code_library",
+    "other"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-24",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GeslaDataset Python reader",
+  "notes": "G3 G3-0362. Draft only. No resource files downloaded or software executed.  Language: Python.",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "GeslaDataset maintainer",
+  "related_ids": [],
+  "sectors": [
+    "water.dams_flood_defences",
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or article availability. Simulation uses are reviewer interpretation.",
+      "url": "https://github.com/philiprt/gesla-dataset"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or article availability. Simulation uses are reviewer interpretation.",
+      "url": "https://doi.org/10.1002/gdj3.174"
+    }
+  ],
+  "tags": [],
+  "title_en": "GeslaDataset Python class for GESLA sea-level observations",
+  "type": "platform"
+}

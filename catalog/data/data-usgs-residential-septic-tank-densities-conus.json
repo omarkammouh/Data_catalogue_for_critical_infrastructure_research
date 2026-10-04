@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "ScienceBase data release (CSV and Parquet)",
+      "url": "https://www.sciencebase.gov/catalog/item/6734c572d34e6fbce7b5c09a"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usgs estimated densities of residential septic tanks across the conterminous united states",
+    "url": "https://sciencebase.gov/catalog/item/6734c572d34e6fbce7b5c09a"
+  },
+  "description": "This USGS data release estimates where homes in the conterminous United States rely on septic tanks, not sewers, and how densely. Thresholds that predict septic or sewer service were derived from 1990s census data on wastewater disposal and land cover and applied to the 2020 Census and 2019 National Land Cover Database, giving high, medium and low classes for each census block group. Within septic areas, individual tanks were located from Microsoft and FEMA building footprints and HIFLD parcels, then summarised as tanks per square kilometre by HUC12 watershed, NHDPlus catchment and block group because the parcel data are restricted; a supplementary layer flags block groups with incomplete parcels. It was published on ScienceBase in January 2025 as CSV and Parquet files, free of charge. Caveats: septic presence is predicted, not observed, and densities are low where parcel data are missing. Simulation uses: separating sewered from onsite wastewater for treatment capacity planning and for flood exposure of septic systems. Related records: the Clean Watersheds Needs Survey (data-epa-clean-watersheds-needs-survey-2022) and HydroWASTE (data-hydrowaste).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"wastewater\" AND \"census\"",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "csv",
+    "parquet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.sciencebase.gov/catalog/item/6734c572d34e6fbce7b5c09a",
+  "id": "data-usgs-residential-septic-tank-densities-conus",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public Domain (USGS data release)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "USGS estimated densities of residential septic tanks across the conterminous United States",
+  "notes": "Public-domain licence assumed from USGS data release policy.",
+  "provider": "US Geological Survey",
+  "related_ids": [
+    "data-epa-clean-watersheds-needs-survey-2022",
+    "data-hydrowaste"
+  ],
+  "schema_summary": "septic tank count per km2 by HUC12, NHD catchment and block group; high, medium and low sewer or septic classes per block group; parcel completeness flag",
+  "sectors": [
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "method, scales, classes, building footprints, HIFLD parcels, completeness layer, publication 2025-01-14, files, originators",
+      "url": "https://www.sciencebase.gov/catalog/item/6734c572d34e6fbce7b5c09a?format=json"
+    }
+  ],
+  "spatial_resolution": "HUC12 watersheds, NHDPlus V2.1 catchments and 2020 census block groups",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "septic systems",
+    "onsite wastewater",
+    "sewer service areas",
+    "United States",
+    "HUC12"
+  ],
+  "temporal_coverage": "2019-2021 inputs (2020 Census, 2019 NLCD, building footprints)",
+  "temporal_resolution": "none (single estimate)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "USGS estimated densities of residential septic tanks across the conterminous United States",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

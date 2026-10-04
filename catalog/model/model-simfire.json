@@ -1,0 +1,139 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/mitrefireline/simfire"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://mitrefireline.github.io/simfire/"
+    },
+    {
+      "kind": "repo",
+      "label": "SimHarness (reinforcement learning harness)",
+      "url": "https://github.com/mitrefireline/simharness"
+    },
+    {
+      "kind": "repo",
+      "label": "BurnMD (historical fire data)",
+      "url": "https://github.com/mitrefireline/burnmd"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "SimFire documentation (https://mitrefireline.github.io/simfire/)",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "simfire",
+    "repo": "github.com/mitrefireline/simfire",
+    "url": "https://mitrefireline.github.io/simfire"
+  },
+  "description": "SimFire is a Python wildfire spread simulator that implements fire spread models, including the Rothermel surface fire spread model, and displays them with PyGame. It simulates fire growth over terrain, fuel and wind layers (with an optional computational fluid dynamics wind layer) and lets users place mitigations such as fire lines, so that firefighting strategies can be tested. MITRE built it for its Fireline project, where it is paired with SimHarness, a reinforcement learning harness that trains agents to fight fires, and BurnMD, which supplies historical fire data to the simulation. Coverage is any area for which terrain and fuel layers are available; the documented examples are in the western United States (near Julian, California, and Reno, Nevada), and resolution is the simulation grid. It is a Python package on GitHub (release 2.0.1) with API documentation, runnable as a game or as a module. Licence: Apache 2.0, free. Caveats: it is designed as an environment for research on automated firefighting, not as an operational forecasting tool, and its accuracy depends on the simplified spread model and inputs. Simulation uses: wildfire hazard exposure, emergency response planning and optimisation of mitigation placement. Related: ELMFIRE and Cell2Fire are other open wildfire spread models (catalogued as model-elmfire and model-cell2fire).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "wildfire simulator reinforcement learning (register services-simfire)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry SimFire",
+      "route": "R06",
+      "source": "services-simfire (register)"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://mitrefireline.github.io/simfire/",
+  "id": "model-simfire",
+  "inputs": [
+    "Terrain and fuel layers",
+    "Wind (including a CFD wind layer option)",
+    "Configuration YAML",
+    "Historical fire data through BurnMD"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-11-19",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "SimFire",
+  "outputs": [
+    "Simulated fire spread over time",
+    "Effect of mitigations (fire lines, wet lines)"
+  ],
+  "provider": "MITRE Corporation (MITRE Fireline project)",
+  "related_ids": [
+    "model-elmfire",
+    "model-cell2fire"
+  ],
+  "repository": "https://github.com/mitrefireline/simfire",
+  "runs_on": [],
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "PyGame simulator of fire spread models incl. Rothermel; part of MITRE Fireline with BurnMD and SimHarness; examples near Julian CA and Reno NV",
+      "url": "https://raw.githubusercontent.com/mitrefireline/simfire/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Documentation: managers for fire and mitigation, CFD wind layer, terrain, layers",
+      "url": "https://mitrefireline.github.io/simfire/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Apache License 2.0",
+      "url": "https://raw.githubusercontent.com/mitrefireline/simfire/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: tags up to 2.0.1",
+      "url": "https://github.com/mitrefireline/simfire"
+    }
+  ],
+  "tags": [
+    "wildfire",
+    "Rothermel",
+    "PyGame",
+    "reinforcement learning",
+    "firefighting",
+    "mitigation"
+  ],
+  "title_en": "Wildfire spread simulation with fire spread models and mitigations for any area",
+  "type": "model",
+  "validated_on": []
+}

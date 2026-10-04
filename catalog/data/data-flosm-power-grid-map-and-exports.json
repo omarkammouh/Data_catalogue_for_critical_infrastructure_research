@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "WMS",
+      "url": "https://www.flosm.org/en/powergrid-wms.html"
+    },
+    {
+      "kind": "viewer",
+      "label": "Power grid map",
+      "url": "https://www.flosm.org/en/powergrid.html"
+    },
+    {
+      "kind": "portal",
+      "label": "Data exports (paid)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.flosm.org/en/powergrid-export.html"
+    },
+    {
+      "kind": "docs",
+      "label": "About the power grid map",
+      "url": "https://www.flosm.org/en/powergridinfo.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "freemium",
+  "data_family": [
+    "system_description",
+    "crowdsourced_public_reports"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "flosm power grid map openstreetmap electricity grids with substation detail wms and paid country exports",
+    "url": "https://flosm.org/en/powergrid.html"
+  },
+  "description": "FLOSM's power grid theme map shows the world's electricity grids from high to low voltage, with substations and power plants, all taken from OpenStreetMap data. Many substations are shown in detail with power transformers, busbars and circuit breakers. Lines are coloured by voltage band: seven maximum voltage ratings from 220 to 765 kV, three high voltage ratings from 50 to 115 kV, three medium voltage ratings from 3 to 30 kV, two low voltage ratings, two DC bands and other lines mostly without a voltage; underground, underwater and indoor cables are dashed, and the European traction power grid is shown separately. Coverage: global, as complete as OpenStreetMap is in each place. Format and access: an interactive map and a WMS service; data exports per country as GeoPackage or shapefile, containing everything visible in the map, are charged at 390 euros net per country, ordered by email. Licence: OpenStreetMap contributors, Open Database License (ODbL 1.0). Caveats: the free map is for viewing; completeness and voltage tags depend on volunteer mapping; the WMS terms were not read. Simulation uses: grid topology and substation layouts for network flow and cascading failure models, especially where operators publish no grid maps. Related records: Open Infrastructure Map (data-open-infrastructure-map) is a free view of the same OpenStreetMap power data, and MapYourGrid (data-mapyourgrid-osm-grid-mapping-initiative) works to complete it.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source energy-flosm-power-grid: provider pages read (round 2 register piece)",
+      "route": "R15",
+      "source": "energy-flosm-power-grid"
+    }
+  ],
+  "formats": [
+    "geopackage",
+    "shapefile",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.flosm.org/en/powergrid.html",
+  "id": "data-flosm-power-grid-map-and-exports",
+  "languages": [
+    "en"
+  ],
+  "licence": "ODbL-1.0 (OpenStreetMap contributors)",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "FLOSM power grid map: OpenStreetMap electricity grids with substation detail, WMS and paid country exports",
+  "provider": "FLOSM (123map)",
+  "related_ids": [
+    "data-open-infrastructure-map",
+    "data-mapyourgrid-osm-grid-mapping-initiative"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Global grids high to low voltage, substations with transformers, busbars, breakers; voltage bands; dashed cables; European traction power grid",
+      "url": "https://www.flosm.org/en/powergridinfo.html"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Exports GeoPackage or Shape, 390 EUR net per country, contact info@123map.de; licence OSM contributors ODbL 1.0",
+      "url": "https://www.flosm.org/en/powergrid-export.html"
+    }
+  ],
+  "tags": [
+    "power grid",
+    "OpenStreetMap",
+    "substations",
+    "transmission lines"
+  ],
+  "temporal_coverage": "current OpenStreetMap",
+  "title_en": "FLOSM power grid map: OpenStreetMap electricity grids with substation detail, WMS and paid country exports",
+  "type": "data"
+}

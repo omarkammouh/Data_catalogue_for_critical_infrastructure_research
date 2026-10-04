@@ -1,0 +1,143 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Submarine Cable Map",
+      "url": "https://www.submarinecablemap.com/"
+    },
+    {
+      "kind": "api",
+      "label": "Cable routes (GeoJSON)",
+      "url": "https://www.submarinecablemap.com/api/v3/cable/cable-geo.json"
+    },
+    {
+      "kind": "api",
+      "label": "Landing points (GeoJSON)",
+      "url": "https://www.submarinecablemap.com/api/v3/landing-point/landing-point-geo.json"
+    },
+    {
+      "kind": "api",
+      "label": "Cable list (JSON); details at /api/v3/cable/<id>.json",
+      "url": "https://www.submarinecablemap.com/api/v3/cable/all.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "crs": "WGS 84",
+  "data_family": [
+    "system_description",
+    "planned_future_infrastructure",
+    "cross_border_flows",
+    "critical_facilities"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "submarine cable map",
+    "url": "https://submarinecablemap.com"
+  },
+  "description": "The Submarine Cable Map is a free, regularly updated interactive map from TeleGeography, a telecommunications research firm, of the world's active and planned submarine telecommunications cable systems and their landing points. For each cable it gives the name, route geometry, length, owners, suppliers, ready-for-service year, whether it is planned and a link to the system's website, and lists the landing points with city and country; each landing point lists the cables that land there. The map behind the viewer is served as JSON: on 26 September 2026 the API returned 709 cable systems, 730 cable route features and 1,925 landing points, for example 2Africa (45,000 km, ready for service 2024, owned by Bayobab, China Mobile, Meta, Orange, Telecom Egypt, Vodafone, WIOCC and center3, supplied by ASN). TeleGeography maintains it from operator and industry information so that the public can see how international connectivity is built. Coverage is global, at the level of cable systems and their landing stations, with approximate route lines. Access is free through the web viewer and its GeoJSON and JSON endpoints under /api/v3/, without registration; a reuse licence was not stated on the page read, and TeleGeography's detailed bandwidth and capacity data are sold separately. Caveats: routes are schematic, not surveyed seabed positions; capacity, fault and repair data are not included; planned systems can change or be cancelled. Simulation uses: international connectivity topology for network flow, cable-cut cascading failure and resilience analysis, and hazard exposure of landing stations to storm surge, earthquakes and tsunamis. Related records: PeeringDB and the PCH exchange directory for the onshore interconnection side.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.telecom:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "api"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.submarinecablemap.com/api/v3/cable/cable-geo.json",
+  "id": "data-telegeography-submarine-cable-map",
+  "languages": [
+    "en"
+  ],
+  "licence": "Free resource; reuse licence not stated on the page read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Submarine Cable Map",
+  "notes": "Licence for reuse of the map data not found on 2026-09-26.",
+  "provider": "TeleGeography",
+  "related_ids": [
+    "data-peeringdb",
+    "data-pch-ixp-directory",
+    "data-enisa-subsea-cables-what-is-at-stake-2023",
+    "model-nautilus-cross-layer-cartography-submarine-cables-ip-links"
+  ],
+  "schema_summary": "Cable: id, name, length, owners, suppliers, rfs, rfs_year, is_planned, url, landing_points[]; landing point: id, name, country, geometry",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience",
+    "hazard_exposure"
+  ],
+  "size": "709 cables, 1,925 landing points (API, 2026-09-26)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Free and regularly updated resource from TeleGeography (read in Chromium)",
+      "url": "https://www.submarinecablemap.com/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "709 cables",
+      "url": "https://www.submarinecablemap.com/api/v3/cable/all.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "730 route features",
+      "url": "https://www.submarinecablemap.com/api/v3/cable/cable-geo.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "1,925 landing points",
+      "url": "https://www.submarinecablemap.com/api/v3/landing-point/landing-point-geo.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Example fields: length, owners, suppliers, rfs, is_planned, url",
+      "url": "https://www.submarinecablemap.com/api/v3/cable/2africa.json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://www.submarinecablemap.com/"
+    }
+  ],
+  "spatial_resolution": "Schematic cable routes; landing points by city",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "submarine cables",
+    "landing stations",
+    "international connectivity",
+    "cable systems"
+  ],
+  "temporal_coverage": "Current and planned systems",
+  "title_en": "Submarine Cable Map",
+  "type": "data",
+  "update_frequency": "irregular"
+}

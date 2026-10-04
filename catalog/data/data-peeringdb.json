@@ -1,0 +1,143 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Web interface",
+      "url": "https://www.peeringdb.com/"
+    },
+    {
+      "kind": "api",
+      "label": "REST API",
+      "url": "https://www.peeringdb.com/api/"
+    },
+    {
+      "kind": "docs",
+      "label": "API specification",
+      "url": "https://docs.peeringdb.com/api_specs/"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation and historical data",
+      "url": "https://docs.peeringdb.com/"
+    },
+    {
+      "kind": "docs",
+      "label": "Acceptable use policy",
+      "url": "https://www.peeringdb.com/aup"
+    }
+  ],
+  "access_note": "Anonymous read access to the API; an account and API key are needed for authenticated requests and edits.",
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "interdependencies",
+    "critical_facilities",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "peeringdb",
+    "url": "https://peeringdb.com"
+  },
+  "description": "PeeringDB is the community database of internet interconnection: it lists internet exchange points with their locations, prefixes and participants, networks identified by autonomous system number with their peering policies, traffic levels and exchange and facility presences, interconnection facilities (colocation data centres) with addresses and coordinates, carriers and the organisations behind them. It was set up to help networks and peering coordinators arrange peering and now covers interconnection data for networks, clouds, services and enterprises; entries are maintained by the operators themselves and reviewed by volunteer committees, and the site says almost a third of all autonomous system numbers are registered. Coverage is worldwide; a guest query of the REST API on 26 September 2026 returned 1,328 exchanges, 35,480 networks and 5,877 facilities. Access is through the web interface, a documented REST API returning JSON (anonymous for reads, an API key for authenticated and write requests), IX-F JSON exports and open-source local-sync tools; historical snapshots are linked from the documentation. Use is free but bound by an acceptable use policy that prohibits commercial use of the data and unsolicited communications. Caveats: data are self-reported, so completeness and accuracy vary by operator and region; not every network or data centre registers, and the database describes where networks can interconnect, not actual traffic flows. Simulation uses: building interconnection graphs of exchanges, facilities and networks for network flow, cascading failure and resilience studies, and locating data-centre and exchange sites for hazard exposure. Related records: CAIDA AS relationships and topology data, the PCH and Euro-IX exchange directories and data-centre inventories.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.internet_exchange:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "api",
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.peeringdb.com/",
+  "id": "data-peeringdb",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "PeeringDB Acceptable Use Policy (free; no commercial use of the data)",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "PeeringDB",
+  "provider": "PeeringDB (volunteer-run non-profit)",
+  "related_ids": [
+    "case_study-cost-of-peering-ixp-versus-ip-transit-global-evidence",
+    "case_study-isoc-pulse-ix-br-sao-paulo-ixp-outage-simulation",
+    "case_study-isoc-pulse-ixp-power-substation-dependency-simulation",
+    "model-power-grids-internet-resilience-grid-failure-zones-netwattzap"
+  ],
+  "schema_summary": "Objects org, net (ASN, policy, traffic), ix (city, country, prefixes), ixlan, netixlan, fac (address, lat/lon), netfac, ixfac, carrier, poc",
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience",
+    "hazard_exposure"
+  ],
+  "size": "1,328 exchanges, 35,480 networks, 5,877 facilities (API, 2026-09-26)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, scope beyond peering, one third of ASNs, acceptable use policy no commercial use",
+      "url": "https://www.peeringdb.com/about"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "REST API, JSON, guest access, API keys",
+      "url": "https://docs.peeringdb.com/api_specs/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Documentation index incl. historical data, IX-F JSON, open source",
+      "url": "https://docs.peeringdb.com/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Guest API counts on 2026-09-26: 35,480 net; ix 1,328; fac 5,877",
+      "url": "https://www.peeringdb.com/api/net?fields=id"
+    }
+  ],
+  "spatial_resolution": "Facility addresses and coordinates; exchange city",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "IXP",
+    "peering",
+    "autonomous system",
+    "colocation",
+    "interconnection",
+    "BGP"
+  ],
+  "temporal_coverage": "Current state, with historical snapshots",
+  "temporal_resolution": "Continuous updates",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Internet exchanges and data centres data",
+  "type": "data",
+  "update_frequency": "real_time"
+}

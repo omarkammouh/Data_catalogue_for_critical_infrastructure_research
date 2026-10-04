@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://terrapower.github.io/armi/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/terrapower/armi"
+    },
+    {
+      "kind": "repo",
+      "label": "ARMI plugin directory",
+      "url": "https://github.com/terrapower/armi-plugin-directory"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "armi advanced reactor modeling interface terrapower",
+    "repo": "github.com/terrapower/armi",
+    "url": "https://github.com/terrapower/armi"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "ARMI, the Advanced Reactor Modeling Interface, is an open-source Python framework that gives nuclear reactor design teams a software model of a reactor and a hub-and-spoke mechanism for coupling physics kernels. It is maintained by TerraPower LLC, a nuclear technology development company, according to the README read on 2026-09-26. The framework covers the reactor data model, the execution of analysis methodologies, parameter sweeps that run thousands of perturbed cases in parallel on clusters, and utilities for reactor development; coverage is not tied to one reactor type or country. Access is by cloning the GitHub repository and installing with pip under Python 3.9 or later, with documentation, an example gallery and a plugin directory; the latest tag seen with git was 0.6.4. The code is free under the Apache-2.0 licence. Caveats: the README states that ARMI does not come with a full selection of physics kernels, so neutronics, thermal hydraulics and fuel performance solvers must be acquired or developed as plugins, and many documented use cases need functionality outside the open framework. Simulation uses are design optimisation and sensitivity studies of reactor cores, and a digital twin style model that links plant parameters to the physics codes run against it. Related records: model-openmc and platform-moose-multiphysics-framework are open physics codes that can sit behind such a framework.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review https://www-pub.iaea.org/MTCD/publications/PDF/p15792-DOC-010-496_web.pdf (IAEA Technical Reports Series 496 (2025), review)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/terrapower/armi",
+  "id": "platform-armi-advanced-reactor-modeling-interface",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ARMI - Advanced Reactor Modeling Interface (TerraPower)",
+  "open_source": true,
+  "platform_kind": [
+    "coupling_framework",
+    "modelling_suite"
+  ],
+  "provider": "TerraPower LLC",
+  "related_ids": [
+    "model-openmc",
+    "platform-moose-multiphysics-framework"
+  ],
+  "sectors": [
+    "energy.nuclear"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README (purpose, TerraPower maintenance, physics kernels not included, Python 3.9+, links)",
+      "url": "https://raw.githubusercontent.com/terrapower/armi/HEAD/README.rst"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Apache-2.0 LICENSE and tags to 0.6.4 read with git ls-remote and raw files",
+      "url": "https://github.com/terrapower/armi"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2026-10-01)",
+      "url": "https://terrapower.github.io/armi"
+    },
+    {
+      "accessed": "2026-10-02",
+      "note": "Follow-up check: landing page replaced by the provider page that holds the data (basis: git clone 2026-10-02)",
+      "url": "https://github.com/terrapower/armi"
+    }
+  ],
+  "supported_sectors": [
+    "energy.nuclear"
+  ],
+  "tags": [
+    "nuclear reactors",
+    "reactor design",
+    "framework",
+    "Python",
+    "TerraPower",
+    "open source"
+  ],
+  "title_en": "ARMI - Advanced Reactor Modeling Interface (TerraPower)",
+  "type": "platform"
+}

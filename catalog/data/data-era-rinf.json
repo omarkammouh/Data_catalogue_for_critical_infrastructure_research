@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "RINF page and documents",
+      "url": "https://www.era.europa.eu/domains/registers/rinf_en"
+    },
+    {
+      "kind": "portal",
+      "label": "RINF application",
+      "note": "self-registration required",
+      "url": "https://rinf.era.europa.eu/"
+    },
+    {
+      "kind": "download",
+      "label": "RINF border points (CSV)",
+      "url": "https://www.era.europa.eu/sites/default/files/2025-03/rinf_border_points.csv"
+    },
+    {
+      "kind": "docs",
+      "label": "RINF terms of use",
+      "url": "https://www.era.europa.eu/system/files/2022-11/rinf_terms_of_use_en.pdf"
+    }
+  ],
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "standards_ontologies",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "register of infrastructure rinf",
+    "url": "https://era.europa.eu/domains/registers/rinf_en"
+  },
+  "description": "The Register of Infrastructure (RINF) is the EU register of the characteristics and capabilities of the static railway network: for every operational point (such as stations, junctions and border points) and section of line it records the values of the network parameters set by the common specifications, with data validity dates, and lets users view each point or section in detail, list those on a user-defined route, and run a Route Compatibility Check of whether a vehicle can run between two operational points. Each Member State must publish its register under Directive (EU) 2016/797, compiled by a national registration entity from infrastructure manager files, and the European Union Agency for Railways runs the web application as single entry point under Implementing Regulation (EU) 2019/777. Coverage is the EU Member States and associated countries at the level of operational points and sections of lines. Data are exchanged as XML against the RINF XSD schema with a look-up value table and application guide 3.1.0; searches and exports in several formats are free after self-registration and acceptance of the RINF terms of use, and a list of border points is a direct CSV download. Caveats: the quality depends on national submissions, and exports for route compatibility need certificates. RINF supplies rail network topology and capacity attributes for network flow, capacity planning and interoperability studies, and relates to the ERA vocabulary and knowledge graph and to the railML exchange format catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.rail",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry",
+      "route": "R08",
+      "source": "transport-era-ontology-rinf"
+    }
+  ],
+  "formats": [
+    "xml",
+    "csv"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://www.era.europa.eu/domains/registers/rinf_en",
+  "id": "data-era-rinf",
+  "languages": [
+    "en"
+  ],
+  "licence": "RINF terms of use (ERA)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://rinf.era.europa.eu/"
+    ]
+  },
+  "maturity": "active",
+  "name": "Register of Infrastructure (RINF)",
+  "notes": "The RINF application host (rinf.era.europa.eu) and the ERA data-interop host did not answer from this environment on 2026-09-26; facts come from the ERA pages above.",
+  "provider": "European Union Agency for Railways (ERA), with national registration entities of the Member States",
+  "regions": [
+    "European Union"
+  ],
+  "related_ids": [
+    "data-railml"
+  ],
+  "sectors": [
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "operational points and sections of lines; Route Compatibility Check; Regulation 2019/777 as amended 2023/1694; application guide 3.1.0; XSD; border points CSV",
+      "url": "https://www.era.europa.eu/domains/registers/rinf_en"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Directive 2016/797 Article 49; self-registration; search, export, certificates; national registration entities and IM users",
+      "url": "https://www.era.europa.eu/system/files/2022-11/rinf_terms_of_use_en.pdf"
+    }
+  ],
+  "spatial_resolution": "operational points and sections of line",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "railway infrastructure register",
+    "interoperability",
+    "EU",
+    "route compatibility"
+  ],
+  "temporal_coverage": "current register with data validity dates",
+  "title_en": "Register of Infrastructure (RINF)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "ESP-r source (ESP-rCommunity)",
+      "url": "https://github.com/ESP-rCommunity/ESP-rSource"
+    },
+    {
+      "kind": "download",
+      "label": "ESRU ESP-r applications page",
+      "url": "https://www.esru.strath.ac.uk/applications/esp-r/"
+    }
+  ],
+  "access_note": "The ESRU page returned 403 here; facts come from the source repository. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "esp r dynamic building performance simulation program",
+    "repo": "github.com/esp-rcommunity/esp-rsource",
+    "url": "https://github.com/ESP-rCommunity/ESP-rSource"
+  },
+  "description": "ESP-r is a dynamic building performance simulation program developed by an international consortium led from the University of Strathclyde's Energy Systems Research Unit and supported by a user mailing list. Its simulation engine (bps) writes a binary results database that a separate tool (res) post-processes, and can also export XML and CSV when the libxml2 library is available. It installs from source with an Install script, preferably on Linux, and has also been built on Cygwin, MSYS2 and macOS; a precompiled Ubuntu 18.04 installation is offered from ESRU. The repository's version file reads V13.3.15 of 14 October 2022, and its latest commit, adding a Dockerfile, is from 4 February 2023. Coverage: generic. Access: free source and binaries. Licence: GNU GPL version 2 or later. Caveats: installation expects a writable /opt/esp-r directory and compiler set-up, and the ESRU site was not reachable here. Simulation uses: detailed thermal, energy and plant simulation of buildings. Related records: EnergyPlus and obFMU.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell model:built_environment.buildings:physical, written before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/ESP-rCommunity/ESP-rSource",
+  "id": "model-esp-r",
+  "inputs": [
+    "Building and plant model descriptions",
+    "Climate files"
+  ],
+  "language": [
+    "fortran",
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-02-04",
+  "licence": "GPL-2.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.esru.strath.ac.uk/applications/esp-r/"
+    ]
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "ESP-r: dynamic building performance simulation program",
+  "outputs": [
+    "Dynamic thermal, energy and plant results (binary database, optional XML and CSV)"
+  ],
+  "provider": "Energy Systems Research Unit (ESRU), University of Strathclyde, and an international consortium",
+  "related_ids": [
+    "model-energyplus",
+    "model-lbnl-obfmu-occupant-behavior",
+    "data-climate-onebuilding-tmyx-weather-files",
+    "data-weathershift-future-weather-files",
+    "data-cibse-weather-data-sets"
+  ],
+  "repository": "https://github.com/ESP-rCommunity/ESP-rSource",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Readme (licence, obtaining, requirements, features), Version file, last commit (read with git)",
+      "url": "https://github.com/ESP-rCommunity/ESP-rSource"
+    }
+  ],
+  "tags": [
+    "ESP-r",
+    "building simulation",
+    "Strathclyde",
+    "ESRU",
+    "GPL",
+    "dynamic simulation"
+  ],
+  "title_en": "ESP-r: dynamic building performance simulation program",
+  "type": "model"
+}

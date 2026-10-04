@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "CRAN package page",
+      "url": "https://CRAN.R-project.org/package=NetworkRiskMeasures"
+    },
+    {
+      "kind": "paper",
+      "label": "DebtRank paper",
+      "url": "https://doi.org/10.1038/srep00541"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1038/srep00541",
+    "name": "networkriskmeasures r package debtrank and related financial network risk measures",
+    "url": "https://cran.r-project.org/package=NetworkRiskMeasures"
+  },
+  "description": "NetworkRiskMeasures is an R package on CRAN that implements risk measures for financial networks, including DebtRank, impact susceptibility, impact diffusion and impact fluidity. DebtRank, introduced in a 2012 Scientific Reports paper, measures the systemic impact of a node through feedback centrality on the network of financial exposures; its first application used data on the 1.2 trillion dollar Federal Reserve emergency loans of 2008 to 2010 and found that 22 institutions formed a strongly connected core. Version 0.1.7 was published on 4 May 2025 under GPL-3, with a reference manual, binaries for Windows and macOS, and a source repository on GitHub; it depends on Matrix and imports expm, ggplot2 and dplyr, and is listed in the CRAN Finance task view. Use is global. Access is free through CRAN. Caveats: users must supply the exposure network, which for banks is usually confidential, and the package offers measures, not a full behavioural model. For simulation it computes contagion and systemic importance on interbank or other exposure networks, which can also represent supply or infrastructure dependencies. Related catalogue records include the OFR Bank Systemic Risk Monitor and the BIS locational banking statistics.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: financial system models and payment simulators",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://CRAN.R-project.org/package=NetworkRiskMeasures",
+  "id": "model-networkriskmeasures-debtrank",
+  "inputs": [
+    "exposure matrix between institutions",
+    "capital buffers",
+    "initial shocks"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "NetworkRiskMeasures R package (DebtRank and related financial network risk measures)",
+  "outputs": [
+    "DebtRank and impact measures per node",
+    "contagion losses"
+  ],
+  "provider": "Carlos Cinelli and Thiago Cristiano Silva",
+  "sectors": [
+    "industry.financial"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description, version, date, licence and dependencies read 2026-09-26",
+      "url": "https://cran.r-project.org/package=NetworkRiskMeasures"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "DebtRank abstract read 2026-09-26",
+      "url": "https://www.nature.com/articles/srep00541"
+    }
+  ],
+  "tags": [
+    "DebtRank",
+    "systemic risk",
+    "contagion"
+  ],
+  "title_en": "NetworkRiskMeasures R package (DebtRank and related financial network risk measures)",
+  "type": "model"
+}

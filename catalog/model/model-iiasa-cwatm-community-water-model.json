@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "CWatM documentation",
+      "url": "https://cwatm.iiasa.ac.at/"
+    },
+    {
+      "kind": "repo",
+      "label": "CWatM source code (GitHub, GPL-3.0)",
+      "url": "https://github.com/iiasa/CWatM"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "community water model cwatm",
+    "repo": "github.com/iiasa/cwatm",
+    "url": "https://cwatm.iiasa.ac.at"
+  },
+  "description": "IIASA's Water Security group produced the Community Water Model (CWatM), an open-source hydrological model that simulates the water cycle daily at global and local scales, historically and into the future, and assesses water supply, demand and environmental needs, including water management and human influence, and accounts for how future water demands evolve. The code is in Python, with a Windows executable and a draft GUI; water transfers between reservoirs are set in an Excel file, and outputs record the input versions and settings. Coverage is global at 30 arcminutes, with regional set-ups such as the Danube Water Balance version. The model is free to download from GitHub under GPL-3.0, with documentation and a 30 arcminute input set. Caveats: the tests cannot run on GitHub because of the size of the meteorological data, and water quality and hydro-economic modules are still planned. Simulation uses: water supply and demand scenarios for capacity planning and climate adaptation of water supply and irrigation. Related records: global gridded sectoral water use (data-global-gridded-monthly-sectoral-water-use-1971-2010) and Tethys US water demand (data-tethys-conus-gridded-water-demand-1980-2100).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "water gap walk: Community Water Model CWatM (IIASA)",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought",
+    "flood",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://github.com/iiasa/CWatM",
+  "id": "model-iiasa-cwatm-community-water-model",
+  "inputs": [
+    "Meteorological forcing, land cover and model input maps (a 30 arcminute global input set is in the CWatM-Earth-30min repository), settings file, water transfer rules in an Excel file"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-21",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Community Water Model (CWatM)",
+  "outputs": [
+    "Daily water cycle variables such as discharge (netCDF), water supply and demand, with the input versions and settings stored in the output metadata"
+  ],
+  "provider": "IIASA Water Security group",
+  "related_ids": [
+    "data-global-gridded-monthly-sectoral-water-use-1971-2010",
+    "data-tethys-conus-gridded-water-demand-1980-2100"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "water.drinking_water",
+    "water.irrigation",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "daily water cycle at global and local scales, supply, demand, environmental needs, open source, planned water quality and hydro-economy, IIASA group",
+      "url": "https://cwatm.iiasa.ac.at/1_introduction.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GPL-3.0, Python, Windows executable, draft GUI, water transfer via Excel, FAIR metadata in outputs, 30 arcmin input repository, tests need large meteo data",
+      "url": "https://github.com/iiasa/CWatM"
+    }
+  ],
+  "tags": [
+    "CWatM",
+    "IIASA",
+    "global hydrological model",
+    "water demand",
+    "water supply",
+    "reservoirs",
+    "open source"
+  ],
+  "title_en": "Physical model for drinking water, irrigation and dams and flood defences",
+  "type": "model"
+}

@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Download",
+      "note": "download page linked from the record homepage (2026-10-01); found on https://www.cs.bu.edu/brite/",
+      "url": "https://www.cs.bu.edu/brite/download.html"
+    },
+    {
+      "kind": "portal",
+      "label": "Project page",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.cs.bu.edu/brite/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Medina A., Lakhina A., Matta I., Byers J. (2001) BRITE: an approach to universal topology generation. MASCOTS.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "brite boston university representative internet topology generator",
+    "repo": "cs.bu.edu/brite",
+    "url": "https://cs.bu.edu/brite"
+  },
+  "description": "BRITE is a universal topology generator that produces synthetic Internet-like topologies at the router level, the autonomous-system level or both in a hierarchy. It implements several generation models, including Waxman random graphs and Barabási-Albert preferential attachment, with node placement in a plane, bandwidth and delay assignment on links, and exports to the input formats of network simulators such as ns-2, SSFNet, JavaSim and OMNeT++. It was built at Boston University to support research that depends on a realistic understanding of the large-scale structure of the Internet's physical topology; the developers no longer support it, but questions can still go to the brite-users mailing list. Coverage: synthetic graphs of any size the user sets, not tied to real geography. Format and access: Java and C++ implementations with a graphical interface, downloaded from the project page; free of charge for research use. Caveats: unmaintained since the 2000s; its models predate current understanding of Internet topology; outputs are synthetic and must not be read as real networks. Simulation uses: synthetic benchmark topologies for network flow, capacity planning, cascading-failure and resilience experiments. Related records: CAIDA ITDK and AS relationships give measured topologies, SNDlib gives real backbone instances, and CloudSim can load BRITE files.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for model:digital.internet_exchange:network",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.cs.bu.edu/brite/",
+  "id": "model-brite",
+  "inputs": [
+    "model choice and parameters (nodes, degree, placement)"
+  ],
+  "language": [
+    "java",
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Free for research (no explicit licence stated on the project page)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "model_kind": [
+    "network"
+  ],
+  "name": "BRITE Boston university Representative Internet Topology gEnerator",
+  "notes": "Project page read 2026-09-26 (no longer supported; Java and C++; export to SSFNet and JavaSim). Waxman and Barabási-Albert models, OMNeT++ export and citation from recall.",
+  "outputs": [
+    "synthetic router-level and AS-level topologies with bandwidth and delay"
+  ],
+  "provider": "Boston University (Alberto Medina, Anukool Lakhina, Ibrahim Matta, John Byers)",
+  "related_ids": [
+    "data-caida-internet-topology-data-kit",
+    "data-caida-as-relationships",
+    "platform-ns-3"
+  ],
+  "repository": "https://www.cs.bu.edu/brite/",
+  "runs_on": [],
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "project page",
+      "url": "https://www.cs.bu.edu/brite/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://www.cs.bu.edu/brite/"
+    }
+  ],
+  "tags": [
+    "topology generator",
+    "synthetic networks",
+    "Waxman",
+    "Barabási-Albert"
+  ],
+  "title_en": "BRITE Boston university Representative Internet Topology gEnerator",
+  "type": "model",
+  "validated_on": []
+}

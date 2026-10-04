@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "DistAIX project page (FEIN Aachen)",
+      "url": "https://www.fein-aachen.org/en/projects/distaix/"
+    },
+    {
+      "kind": "repo",
+      "label": "DistAIX source code (RWTH GitLab)",
+      "url": "https://git.rwth-aachen.de/acs/public/simulation/DistAIXFramework/distaix"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "distaix distributed agent based simulation of cyber physical power distribution systems",
+    "repo": "git.rwth-aachen.de/acs/public/simulation/distaixframework/distaix",
+    "url": "https://fein-aachen.org/en/projects/distaix"
+  },
+  "description": "DistAIX (Distributed Agent-based SImulation of CompleX Power Systems) is a simulator for cyber-physical power distribution systems from the Institute for Automation of Complex Power Systems at RWTH Aachen University. The FEIN Aachen project page says it models the electrical system, distributed control and decision making as agents, and simulates the communication between them, using high performance computing to scale up. It is built on RepastHPC with MPI, stores results with Cassandra, PostgreSQL and Protocol Buffers, can connect to other applications through VILLASnode gateways, and takes scenarios converted from the Common Information Model with CIMverter. A separate DistAIX Scenario Generator in Python builds new grid scenarios from existing grids. Coverage: electrical distribution grids with their controllers and communication links. Format and access: source code and documentation (installation, configuration, execution guides) on the RWTH Aachen GitLab server, which answered the cloud with a bot check, so the repository itself was not read. Licence: GNU General Public License v3.0 (G-PST Open Tools Portal). Caveats: activity dates and releases were not read. Simulation uses: large-scale agent-based studies of distribution grids with distributed control and communication, including the effect of communication failures on grid operation. Related records: CIM++ (platform-cimpp-libcimpp-cim-cgmes-deserialiser), from the same institute, reads the CIM models such scenarios start from.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source gpst-open-tools: provider pages read (round 2 register piece)",
+      "route": "R06",
+      "source": "gpst-open-tools"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.fein-aachen.org/en/projects/distaix/",
+  "id": "model-distaix-agent-based-power-distribution-simulator",
+  "inputs": [
+    "distribution grid scenario (CIM via CIMverter)",
+    "agent behaviour and control settings",
+    "communication network settings"
+  ],
+  "language": [
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "not_stated",
+  "model_kind": [
+    "agent_based",
+    "network"
+  ],
+  "name": "DistAIX: distributed agent-based simulation of cyber-physical power distribution systems",
+  "outputs": [
+    "time series of grid states",
+    "agent and communication results in databases"
+  ],
+  "provider": "Institute for Automation of Complex Power Systems (ACS), RWTH Aachen University",
+  "related_ids": [
+    "platform-cimpp-libcimpp-cim-cgmes-deserialiser"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "RepastHPC, MPI, Cassandra, PostgreSQL, Protocol Buffers, VILLASnode, CIMverter; scenario generator; RWTH GitLab",
+      "url": "https://www.fein-aachen.org/en/projects/distaix/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Distribution modelling; RWTH Aachen; GPL-3.0; Python and C++",
+      "url": "https://opentools.globalpst.org/tools/distaix"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Anubis bot check from the cloud; not read",
+      "url": "https://git.rwth-aachen.de/acs/public/simulation/DistAIXFramework/distaixweb/-/raw/master/README.md"
+    }
+  ],
+  "tags": [
+    "agent-based",
+    "co-simulation",
+    "cyber-physical",
+    "distribution grid",
+    "HPC"
+  ],
+  "title_en": "DistAIX: distributed agent-based simulation of cyber-physical power distribution systems",
+  "type": "model"
+}

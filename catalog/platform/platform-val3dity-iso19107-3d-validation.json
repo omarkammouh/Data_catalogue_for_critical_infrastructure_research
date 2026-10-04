@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/tudelft3d/val3dity"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://val3dity.rtfd.io/"
+    },
+    {
+      "kind": "viewer",
+      "label": "Web application",
+      "url": "http://geovalidation.bk.tudelft.nl/val3dity/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1186/s40965-018-0043-x",
+    "name": "val3dity",
+    "repo": "github.com/tudelft3d/val3dity",
+    "url": "https://github.com/tudelft3d/val3dity"
+  },
+  "deployment": [
+    "desktop",
+    "hosted_service"
+  ],
+  "description": "val3dity validates 3D geometries against the international standard ISO 19107. It works like PostGIS ST_IsValid but for 3D primitives, checking that a MultiSurface, CompositeSurface, Solid, MultiSolid or CompositeSolid respects the standard's definition. Inner rings in polygons and cavities in solids are supported; only planar and linear primitives are allowed, with no curves or spheres. Accepted inputs are CityJSON, CityJSON Sequences, IndoorGML, JSON-FG, OBJ, OFF and tu3djson, and for CityJSON and IndoorGML it adds format-specific tests such as overlap between parts of a building or validation of the IndoorGML navigation graph. It runs as a command-line tool, installed with Homebrew on macOS or compiled with CGAL, Eigen and GEOS on Linux, and as a web application from TU Delft; documentation is on Read the Docs, and the method is described in an open journal paper. It is developed by the 3D Geoinformation Research Group at TU Delft. Licence and cost: GPL-3.0, free. Caveats: it reports geometric errors but does not repair them. For building work it is a data preparation step that keeps 3D city and BIM-derived models fit for wind, solar, flood and energy simulation, where invalid solids make meshing and volume calculations fail. It relates to the catalogued CityGML resources list.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "assistant recall, written down before searching: buildings models, platforms and case studies known before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/tudelft3d/val3dity",
+  "id": "platform-val3dity-iso19107-3d-validation",
+  "interfaces": [
+    "command_line",
+    "web_app"
+  ],
+  "interoperability": [
+    "Reads CityJSON, CityJSON Sequences, IndoorGML, JSON-FG, OBJ, OFF and tu3djson"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-26",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "val3dity",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "3D Geoinformation Research Group, Delft University of Technology",
+  "related_ids": [
+    "data-awesome-citygml-open-semantic-3d-city-models"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "README: purpose, ISO19107 primitives, accepted formats, CLI install, web app, docs, DOI 10.1186/s40965-018-0043-x",
+      "url": "https://raw.githubusercontent.com/tudelft3d/val3dity/master/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "GNU General Public License version 3",
+      "url": "https://raw.githubusercontent.com/tudelft3d/val3dity/master/LICENSE"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings"
+  ],
+  "tags": [
+    "3D validation",
+    "CityJSON",
+    "IndoorGML",
+    "ISO 19107",
+    "geometry",
+    "r2-fresh-built-environment"
+  ],
+  "title_en": "Val3dity validates 3d geometries against iso 19107",
+  "type": "platform"
+}

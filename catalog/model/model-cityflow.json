@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/cityflow-project/CityFlow"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://cityflow.readthedocs.io/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cityflow",
+    "repo": "github.com/cityflow-project/cityflow",
+    "url": "https://cityflow.readthedocs.io"
+  },
+  "description": "CityFlow is a microscopic traffic simulator built as a multi-agent reinforcement learning environment for large-scale city traffic. It simulates each vehicle, supports flexible definitions of road networks and traffic flows, and exposes a Python interface so that learning agents can control traffic signals; its authors report that its multithreaded design is much faster than SUMO for city-wide scenarios. It is published by the CityFlow project on GitHub under the Apache-2.0 licence and is free; the repository has no release tags and its last commit is from August 2025, so it is maintained only sporadically. The simulator is location independent and takes JSON road network and flow files, which converters build from SUMO or OpenStreetMap networks. Caveats: it focuses on signalised road traffic, has no public transport or pedestrian models, and documentation is limited to the read the docs site. It is used for signal control optimisation and agent-based studies of congestion, and it relates to SUMO, which it is benchmarked against.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.road",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry",
+      "route": "R06",
+      "source": "transport-cityflow"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://cityflow.readthedocs.io/",
+  "id": "model-cityflow",
+  "inputs": [
+    "road network JSON",
+    "vehicle flow JSON"
+  ],
+  "language": [
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-08-19",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "agent_based"
+  ],
+  "name": "CityFlow",
+  "outputs": [
+    "vehicle states",
+    "lane and intersection statistics"
+  ],
+  "provider": "CityFlow project (cityflow-project on GitHub)",
+  "related_ids": [
+    "model-sumo"
+  ],
+  "repository": "https://github.com/cityflow-project/CityFlow",
+  "runs_on": [],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "optimisation",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "multi-agent RL environment; microscopic; faster than SUMO per authors",
+      "url": "https://raw.githubusercontent.com/cityflow-project/CityFlow/master/README.rst"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Apache License 2.0",
+      "url": "https://raw.githubusercontent.com/cityflow-project/CityFlow/master/LICENSE.txt"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: no tags; last commit 2025-08-19",
+      "url": "https://github.com/cityflow-project/CityFlow"
+    }
+  ],
+  "tags": [
+    "traffic signal control",
+    "reinforcement learning",
+    "microscopic simulation"
+  ],
+  "title_en": "Cityflow: microscopic traffic simulator for large-scale city traffic",
+  "type": "model",
+  "validated_on": []
+}

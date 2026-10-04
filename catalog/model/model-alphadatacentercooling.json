@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/wfzheng/AlphaDataCenterCooling"
+    },
+    {
+      "kind": "paper",
+      "label": "Applied Energy article",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S030626192402484X"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Wu S., Zheng W., Wang Z., Chen G., Yang P., Yue S., Li D., Wu Y. (2025) AlphaDataCenterCooling: A virtual testbed for evaluating operational strategies in data center cooling plants. Applied Energy 380, 125100.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "alphadatacentercooling virtual testbed",
+    "repo": "github.com/wfzheng/alphadatacentercooling",
+    "url": "https://github.com/wfzheng/AlphaDataCenterCooling"
+  },
+  "description": "AlphaDataCenterCooling is an open virtual testbed for developing and evaluating operational strategies for the cooling plant of a data centre. The plant, with chillers, cooling towers, pumps and heat exchangers, is modelled in Modelica after a real facility and exported as a Functional Mock-up Unit; a neural network supplies pump pressure-head relations, and the simulation runs as a Docker service wrapped in the Farama Gymnasium interface so that rule-based, model predictive and reinforcement learning controllers can be tested against the same plant. The model was calibrated and validated with a year of historical operating data from a real data centre cooling system, according to the authors. It was published in Applied Energy in 2025 by Wu, Zheng, Wang, Chen, Yang, Yue, Li and Wu, with Zhe Wang of the Hong Kong University of Science and Technology as contact. Coverage: one chilled-water cooling plant driven by weather and IT load inputs, not a specific named location. Format and access: FMU, Python code and Docker set-up on GitHub; free to download, but the repository states no licence. Caveats: the missing licence limits reuse; the reference facility is not identified; only the cooling plant is modelled, not IT load or the electrical system. Simulation uses: optimisation of chiller and tower control, digital-twin testing of control changes before deployment, and exposure of cooling capacity to extreme heat. Related records: SustainDC offers a reduced-order RL benchmark, and the Modelica Buildings library provides component models.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "data center case study testbed (Crossref literature sweep for case_study:digital.data_centres:testbed_demonstration; follow-up of 10.1016/j.softx.2026.103073)",
+      "route": "R07",
+      "source": "crossref"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "DCOPTEST unified virtual testbed data center cooling systems SoftwareX github",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "extreme_heat"
+  ],
+  "homepage": "https://github.com/wfzheng/AlphaDataCenterCooling",
+  "id": "model-alphadatacentercooling",
+  "inputs": [
+    "weather",
+    "IT cooling load",
+    "control set points"
+  ],
+  "language": [
+    "modelica",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-01-07",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.sciencedirect.com/science/article/abs/pii/S030626192402484X"
+    ]
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "AlphaDataCenterCooling virtual testbed",
+  "notes": "README summarised via fetch on 2026-09-26 (9 commits); no LICENSE file at the repository root (404). Found while following up the DCOPTEST Crossref hit, whose own code was not found.",
+  "outputs": [
+    "plant energy use",
+    "supply temperatures and flows",
+    "controller rewards"
+  ],
+  "provider": "Hong Kong University of Science and Technology (Zhe Wang) and co-authors",
+  "related_ids": [
+    "data-eu-data-centre-energy-performance-database",
+    "model-sustaindc",
+    "model-greencloud"
+  ],
+  "repository": "https://github.com/wfzheng/AlphaDataCenterCooling",
+  "runs_on": [],
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "digital_twin",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README",
+      "url": "https://github.com/wfzheng/AlphaDataCenterCooling"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: article",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S030626192402484X"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://github.com/wfzheng/AlphaDataCenterCooling/blob/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.elsevier.com/legal/elsevier-website-terms-and-conditions"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2025-01-07)",
+      "url": "https://github.com/wfzheng/AlphaDataCenterCooling"
+    }
+  ],
+  "tags": [
+    "data centre cooling",
+    "Modelica",
+    "FMU",
+    "Gymnasium",
+    "virtual testbed"
+  ],
+  "title_en": "AlphaDataCenterCooling: Virtual testbed for cooling plant strategies",
+  "type": "model",
+  "validated_on": [
+    "one year of operating data from a real data centre cooling plant (unnamed)"
+  ]
+}

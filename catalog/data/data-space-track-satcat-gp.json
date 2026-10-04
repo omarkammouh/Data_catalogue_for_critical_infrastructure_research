@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Space-Track.org",
+      "url": "https://www.space-track.org/"
+    },
+    {
+      "kind": "api",
+      "label": "API documentation",
+      "url": "https://www.space-track.org/documentation"
+    }
+  ],
+  "access_note": "A free account that accepts the Space-Track user agreement is needed; API use is rate limited.",
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "catalogues_registries",
+    "historical_events"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "space track org satellite catalogue satcat and orbital elements gp",
+    "url": "https://space-track.org"
+  },
+  "description": "Space-Track.org publishes the public satellite catalogue (SATCAT) and orbital element sets for man-made Earth-orbiting objects tracked by the 18th Space Defense Squadron, which analyses Space Surveillance Network data to maintain the catalogue. The GP class lists the newest SGP4 element set for each object, GP_History holds over 138 million historical element sets, and other classes cover decay predictions and conjunction data messages for operators; the typical minimum tracked size is about 10 centimetres. It exists primarily for spaceflight safety, serving satellite owners and operators. Coverage is all publicly releasable objects in Earth orbit since the start of the space age. Data are accessible through a web interface and a REST API that returns OMM in XML or KVN, JSON, CSV, HTML, and the legacy TLE and 3LE formats; a free account is required and the API is throttled to fewer than 30 requests a minute and 300 an hour, with per-class download limits. Caveats: classified objects are omitted, TLE format cannot hold catalogue numbers above 99,999, element sets are approximate and meant for SGP4, and accounts can be suspended for over-use. It serves orbital debris and collision risk, re-entry and satellite infrastructure exposure analysis; related records are the UCS Satellite Database, CelesTrak and DONKI.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "satellite catalogue orbital elements",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "xml",
+    "other",
+    "api",
+    "csv",
+    "domain_model_file"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather",
+    "technological_failure"
+  ],
+  "homepage": "https://www.space-track.org/",
+  "id": "data-space-track-satcat-gp",
+  "languages": [
+    "en"
+  ],
+  "licence": "Space-Track.org user agreement (free account; redistribution terms set in the agreement)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Space-Track.org satellite catalogue (SATCAT) and orbital elements (GP)",
+  "notes": "The home page returned little text to the reader; the user agreement was not opened on 2026-09-26, so the redistribution terms are not described.",
+  "provider": "18th Space Defense Squadron (18 SDS), US Space Force, via Space-Track.org",
+  "related_ids": [],
+  "schema_summary": "NORAD catalogue number, international designator, object type, owner, launch and decay dates, orbital elements, epoch",
+  "sectors": [
+    "cross_cutting.space",
+    "digital.satellite_positioning",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "API, rate limits, GP and GP_History (138 million elsets), SATCAT, CDM, decay, formats, 18 SDS, 10 cm minimum size, Alpha-5",
+      "url": "https://www.space-track.org/documentation"
+    }
+  ],
+  "tags": [
+    "satellite catalogue",
+    "TLE",
+    "orbital elements",
+    "space debris",
+    "conjunctions"
+  ],
+  "temporal_coverage": "1957 to present",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1957
+  },
+  "temporal_resolution": "element sets updated several times daily per object",
+  "temporal_resolution_class": "hourly",
+  "title_en": "Space-Track.org satellite catalogue (SATCAT) and orbital elements (GP)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

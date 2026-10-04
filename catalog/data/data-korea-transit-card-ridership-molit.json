@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Usage summary file (data.go.kr)",
+      "url": "https://www.data.go.kr/data/15122740/fileData.do"
+    },
+    {
+      "kind": "api",
+      "label": "Route daily usage API (data.go.kr)",
+      "url": "https://www.data.go.kr/data/15142062/openapi.do"
+    },
+    {
+      "kind": "portal",
+      "label": "STCIS dashboard",
+      "url": "https://stcis.go.kr/wps/dashBoard.do"
+    }
+  ],
+  "access_note": "The summary file downloads without an account; the API needs a data.go.kr account and an automatically approved key.",
+  "access_restrictions": "registration",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "KR"
+  ],
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "korea public transport ridership from transit card big data molit stcis",
+    "url": "https://data.go.kr/data/15122740/fileData.do"
+  },
+  "description": "The Korean Ministry of Land, Infrastructure and Transport publishes public transport ridership derived from nationwide transit card records through the public data portal. A summary file gives trip volumes by region, user type, stop and route, split into single and transfer trips, with trends by time of day; a REST API returns daily passenger volumes per route, aggregated by day, month and year, to support analysis of congestion, headways, route optimisation and demand-based service planning. The data come from the Transit Card Big Data Integrated Information System (STCIS) and are maintained by the ministry's public transport welfare division under the Act on the Support and Promotion of Mass Transit. Coverage is national. The summary is an XLSX file, first registered in September 2023 and updated automatically (last June 2025); the route API, registered in February 2025 and revised in April 2026, serves JSON and XML. Both are free with no restriction on use; the API needs a portal account and an automatically approved key with 1,000 calls a day for development. Caveats: the figures are aggregates, not individual trips, the documentation is in Korean, the spatial and temporal extents are not stated on the portal, and the STCIS site itself could not be reached from this environment. The data support network flow and capacity planning of bus and metro services and complement city ridership data such as the Istanbul and Argentine smart card records catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "대중교통 공공데이터 데이터셋",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "json",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.data.go.kr/data/15122740/fileData.do",
+  "id": "data-korea-transit-card-ridership-molit",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "licence": "Korea public data, no restriction on use (이용허락범위 제한 없음)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.data.go.kr/data/15122740/fileData.do"
+    ]
+  },
+  "maturity": "active",
+  "name": "Korea public transport ridership from transit card big data (MOLIT, STCIS)",
+  "provider": "Ministry of Land, Infrastructure and Transport (MOLIT), Republic of Korea, from the Smart Card Transportation Information System (STCIS)",
+  "related_ids": [
+    "data-istanbul-hourly-public-transport-ridership",
+    "data-argentina-sube-transactions"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "국토교통부_대중교통 이용현황요약; 생활교통복지과; legal basis 대중교통의 육성 및 이용촉진에 관한 법률; collected from stcis.go.kr; automatic updates; description (region, user type, stop, route, single and transfer trips, time of day); XLSX; registered 2023-09-13, modified 2025-06-30; free; no restriction",
+      "url": "https://www.data.go.kr/data/15122740/fileData.do"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "국토교통부_노선별 이용량: daily route volumes, daily/monthly/annual aggregates; REST JSON+XML; 133 applications; registered 2025-02-24, modified 2026-04-21; free; no restriction; auto approval; dev traffic 1,000",
+      "url": "https://www.data.go.kr/data/15142062/openapi.do"
+    }
+  ],
+  "spatial_resolution": "region, stop and route",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "transit card",
+    "smart card",
+    "ridership",
+    "Korea",
+    "STCIS"
+  ],
+  "temporal_resolution": "hourly profiles; daily, monthly and annual route totals",
+  "temporal_resolution_class": "hourly",
+  "title_en": "Korea public transport ridership from transit card big data (MOLIT, STCIS)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/nhsx/ambulance-DES"
+    },
+    {
+      "kind": "viewer",
+      "label": "Example animated process map",
+      "url": "https://mbfons.github.io/ambulance-DES/Output/20221103_A_ppt/map-absolute_crep1id5_2022-11-09_self.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "NHSX ambulance-DES repository (https://github.com/nhsx/ambulance-DES)",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ambulance handover discrete event simulation ambulance des",
+    "repo": "github.com/nhsx/ambulance-des",
+    "url": "https://github.com/nhsx/ambulance-DES"
+  },
+  "description": "Ambulance-DES is a prototype discrete event simulation of an ambulance service and its handover to hospital emergency departments, built to study why handover delays raise ambulance response times. It represents calls, on-duty vehicles and crews, and each job cycle from allocation through travel, treatment, conveyance, handover and clearance as queues, so that a user can test resourcing interventions and changes in demand, job cycle times or vehicle capacity and see the effect on ambulances queueing at hospital, calls waiting and response times. The NHSX analytics unit (now NHS England Transformation Directorate) published it in 2022 in the context of urgent and emergency care pressures in England; its context charts use NHS England ambulance quality indicators and situation reports. Coverage is a stylised single hospital and ambulance service (example: 180 calls per day and 23 vehicles) that a user can reparameterise for any service; resolution is the individual call and vehicle. It is R code using the simmer package, with bupaR process mining of the event logs, run from an RStudio project on GitHub. Licence: MIT, free. Caveats: the repository is labelled experimental and not government policy, uses mostly fixed parameters with a lognormal handover time, and has not been updated since 2022. Simulation uses: emergency response and capacity planning of ambulance fleets and emergency departments. Related records: none catalogued yet; similar discrete event models of emergency medical services include JEMSS in the register.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ambulance discrete event simulation NHS (register services-ambulance-des-nhs)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry",
+      "route": "R06",
+      "source": "services-ambulance-des-nhs (register)"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/nhsx/ambulance-DES",
+  "id": "model-ambulance-des-nhsx",
+  "inputs": [
+    "Call demand per day",
+    "Number of on-duty ambulances",
+    "Job cycle time components",
+    "Handover time distribution at the emergency department"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-01-16",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://mbfons.github.io/ambulance-DES/Output/20221103_A_ppt/map-absolute_crep1id5_2022-11-09_self.html"
+    ]
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "discrete_event"
+  ],
+  "name": "Ambulance handover discrete event simulation (ambulance-DES)",
+  "outputs": [
+    "Ambulances queueing at hospital",
+    "Calls queued",
+    "Call response times",
+    "Event logs for process mining"
+  ],
+  "provider": "NHSX / NHS England Transformation Directorate analytics unit (Martina Fonseca)",
+  "related_ids": [],
+  "repository": "https://github.com/nhsx/ambulance-DES",
+  "runs_on": [],
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Context, problem statement, R simmer implementation, bupaR, example setups, experimental status, not government policy",
+      "url": "https://raw.githubusercontent.com/nhsx/ambulance-DES/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT, copyright 2022 Martina Fonseca",
+      "url": "https://raw.githubusercontent.com/nhsx/ambulance-DES/HEAD/LICENSE"
+    }
+  ],
+  "tags": [
+    "ambulance",
+    "discrete event simulation",
+    "handover delay",
+    "response time",
+    "emergency department",
+    "simmer",
+    "NHS"
+  ],
+  "title_en": "Ambulance handover discrete event simulation (ambulance-DES)",
+  "type": "model",
+  "validated_on": []
+}

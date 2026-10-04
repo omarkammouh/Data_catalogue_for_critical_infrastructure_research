@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo_Bucharest_v1.4_Aligned_Reproducibility_Package.zip (1 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/22685023/files/Zenodo_Bucharest_v1.4_Aligned_Reproducibility_Package.zip?download=1"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo reproducibility package v1.4 (CSV, Python, figures)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/records/22685023"
+    },
+    {
+      "kind": "paper",
+      "label": "Data (MDPI) article, 2026",
+      "url": "https://doi.org/10.3390/data11090249"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "RO"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "hazards",
+    "vulnerability_fragility"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.22685023",
+    "name": "bucharest flood footprint population proxy and hospital accessibility disruption screening 104 hexagons zenodo",
+    "url": "doi:10.5281/zenodo.22685023"
+  },
+  "description": "This small table shows, for 104 hexagonal districts of Bucharest, how many residents sit inside a flood footprint and how much longer it takes to reach a hospital when flooded roads are cut. The producers are Hossein Hassani, Leila Marvian Mashhad and Nadejda Komendantova, who released it with an article in the journal Data in 2026. Each unit carries population, flooded share and mean depth, earthquake ground acceleration, counts of hospitals, fire stations and schools, baseline and disrupted travel times to hospital, a flag for lost hospital access, and composite risk and priority scores; after the flood scenario 100 units stay connected and 4 are cut off. A variable dictionary, sensitivity tables and a deterministic Python script reproduce the ranking analyses. The package is available as a free download from Zenodo under the Creative Commons Attribution 4.0 licence. Caveats: only derived values are archived, and the flood depth threshold, road closure rules, routing settings and the hexagon geometries themselves were not kept, so the spatial layer must be rebuilt. Simulation uses: a benchmark for flood exposure of hospital access and for prioritising emergency service planning in a flood-prone capital. Related records: the Spain census-tract hospital accessibility data (data-spain-hospital-accessibility-census-tracts) apply a similar travel-time approach.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Open-data framework flood footprint and hospital accessibility, Bucharest (Data 2026)",
+      "route": "R22",
+      "source": "google-search"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "flood footprint hospital Bucharest",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "csv",
+    "source_code",
+    "image",
+    "document"
+  ],
+  "geographic_scope": "city",
+  "hazards": [
+    "flood",
+    "earthquake"
+  ],
+  "homepage": "https://doi.org/10.5281/zenodo.22685023",
+  "id": "data-bucharest-flood-hospital-accessibility-screening",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Bucharest flood-footprint population proxy and hospital accessibility disruption screening (104 hexagons, Zenodo)",
+  "provider": "Hossein Hassani, Leila Marvian Mashhad and Nadejda Komendantova",
+  "regions": [
+    "Bucharest"
+  ],
+  "related_ids": [
+    "data-spain-hospital-accessibility-census-tracts"
+  ],
+  "schema_summary": "bucharest_screening_results.csv with 104 hexagonal analytical units: area, seismic PGA, population, flooded cell counts and share, mean flood depth, flood severity index, counts of fire stations, hospitals and schools, baseline and flood-disrupted travel time to hospital, hospital access lost flag, travel time increase, normalised indicators and systemic risk and service-priority scores; variable dictionary (59 variables), summary metrics, shortlist threshold sensitivity, reproducibility boundary table, deterministic reproduce_analysis.py",
+  "sectors": [
+    "services.healthcare",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Zenodo record 'Evidence-Aware Open Data Repository for Flood-Footprint Population Proxy and Hospital Accessibility Screening in Bucharest', published 2026-09-10, CC BY 4.0, creators Hassani, Marvian Mashhad and Komendantova; one ZIP (1.0 MB); derived analytical tables, flood-footprint screening outputs, hospital accessibility scenario indicators, ranking and sensitivity results; states it does not reconstruct the original raw-data-to-routing workflow",
+      "url": "https://zenodo.org/api/records/22685023"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "ZIP listing read in memory: data/bucharest_screening_results.csv (105 lines, columns including flood_exposure_pct, mean_flood_depth_m, facility_hospital, facility_fire_station, baseline_hospital_time_min, disrupted_hospital_time_min, hospital_access_lost), VARIABLE_DICTIONARY.csv, analysis summary (104 hexagons, 100 connected and 4 disconnected after the flood scenario), threshold sensitivity, reproducibility boundary, reproduce_analysis.py, figures, LaTeX tables; limitations list missing flood depth threshold, road closure rules and polygon geometry",
+      "url": "https://zenodo.org/api/records/22685023/files/Zenodo_Bucharest_v1.4_Aligned_Reproducibility_Package.zip/content"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Crossref: 'An Open-Data Framework for Screening Flood-Footprint Population Proxies and Potential Hospital Accessibility Disruption', Data (MDPI), 2026",
+      "url": "https://api.crossref.org/works/10.3390/data11090249"
+    }
+  ],
+  "spatial_resolution": "104 hexagonal units covering Bucharest",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospital accessibility",
+    "urban flooding",
+    "Bucharest",
+    "critical facilities",
+    "travel time",
+    "screening"
+  ],
+  "temporal_coverage": "Single flood scenario (study published 2026)",
+  "temporal_resolution": "Static",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Bucharest flood-footprint population proxy and hospital accessibility disruption screening (104 hexagons, Zenodo)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

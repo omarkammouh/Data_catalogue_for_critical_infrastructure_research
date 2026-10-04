@@ -1,0 +1,146 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Geoportal catalogue search",
+      "url": "https://geoportal.cl/geoportal/catalog"
+    },
+    {
+      "kind": "portal",
+      "label": "Category Instalaciones y edificaciones",
+      "url": "https://geoportal.cl/geoportal/catalog?categories%5B%5D=structure&action=search"
+    },
+    {
+      "kind": "docs",
+      "label": "CSW catalogue service (pycsw)",
+      "url": "https://geoportal.cl/csw"
+    },
+    {
+      "kind": "docs",
+      "label": "IDE Chile (spatial data infrastructure)",
+      "url": "https://www.ide.cl/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CL"
+  ],
+  "crs": "EPSG:4326 for many layers",
+  "data_family": [
+    "critical_facilities",
+    "system_description",
+    "emergency_management",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "geoportal de chile ide chile national catalogue of state geospatial layers including critical facilities public works and emergency layers",
+    "url": "https://geoportal.cl/geoportal/catalog"
+  },
+  "description": "The Geoportal de Chile is the single access point to the geospatial data and services of the Chilean State, run by IDE Chile (the national spatial data infrastructure, formerly SNIT). On 28 September 2026 its catalogue listed 844 territorial data items from public bodies, with categories such as Instalaciones y edificaciones (facilities and buildings), Redes de energía y servicios básicos, Transporte, Aguas continentales and Planificación y catastro. Infrastructure-relevant layers found through its CSW include the national fire station register (Catastro Nacional de Cuarteles de Bomberos), police stations, health establishments 2026 (MINSAL), schools and nurseries (MINEDUC, JUNJI, Integra), the MOP public works, roads, hydraulic works and monitoring station layers, energy infrastructure, the SERNAGEOMIN tailings register, telecom antennas under the towers law, reservoirs, social housing and informal settlements (MINVU), and emergency layers from July 2026 such as water and power supply cut zones, shelters and the health network status. Coverage is national, with some regional layers; resolution is feature level. Format and access: OGC services (WMS and layers), shapefiles and PDF or XLS files, each with an ISO metadata record; the catalogue is harvestable through CSW (pycsw) at geoportal.cl/csw. Licence: not stated site-wide; users are asked to cite the providing institution named in each metadata record, and older mirrors on datos.gob.cl carry CC BY. Free. Caveats: download links mirrored on datos.gob.cl in 2024 now return 404, layer dates vary, and emergency layers are snapshots. Simulation uses: critical facility inventories for exposure and emergency response, network and asset layers for road and water systems, and event layers for validating outage and recovery models. Related records: Chile MOP GeoMOP, the INE Censo 2024 dwelling services table and the Chile public infrastructure project portfolio.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "package_search q=edificaciones (round 2 cloud worklist re-check of datos.gob.cl)",
+      "route": "R02",
+      "source": "datos.gob.cl CKAN API"
+    },
+    {
+      "date": "2026-09-28",
+      "query": "GetRecords AnyText like structure",
+      "route": "R04",
+      "source": "geoportal.cl CSW"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "shapefile",
+    "document",
+    "spreadsheet",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://geoportal.cl/geoportal/catalog",
+  "id": "data-chile-geoportal-ide-national-geospatial-catalogue",
+  "languages": [
+    "es"
+  ],
+  "last_updated": "2026",
+  "licence": "Not stated site-wide; cite the providing institution (per the geoportal notice); datos.gob.cl mirrors CC-BY",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Geoportal de Chile (IDE Chile): national catalogue of State geospatial layers, including critical facilities, public works and emergency layers",
+  "notes": "Round 2 cloud worklist: found through the datos.gob.cl entry 'Categoría Geoespacial: Instalaciones y edificaciones' while resolving a round 1 built-environment failure row for datos.gob.cl. Individual layers are not catalogued separately yet.",
+  "provider": "Infraestructura de Datos Geoespaciales de Chile (IDE Chile), Secretaría Ejecutiva SNIT, Ministerio de Bienes Nacionales",
+  "related_ids": [
+    "data-chile-mop-geomop",
+    "data-ine-chile-censo-2024-dwelling-basic-services-by-comuna",
+    "data-chile-pnip-2025-2055-project-portfolio"
+  ],
+  "sectors": [
+    "built_environment.critical_facilities",
+    "cross_cutting.multi_sector",
+    "transport.road",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "844 territorial data items; categories with counts (Instalaciones y edificaciones 47); formats SHP, PDF, XLS; notice asking users to cite the providing institution",
+      "url": "https://geoportal.cl/geoportal/catalog?categories%5B%5D=structure&action=search"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "pycsw 2.6.1; 77 records match 'structure'; titles include Catastro Nacional de Cuarteles de Bomberos, Establecimientos de Salud 2026, Infraestructura de Energía, Catastro de Relaves 2025, water and power cut zones (July 2026)",
+      "url": "https://geoportal.cl/csw?service=CSW&version=2.0.2&request=GetRecords&typeNames=csw:Record&resultType=results&elementSetName=summary&maxRecords=60&constraintLanguage=CQL_TEXT&constraint=csw:AnyText%20like%20%27%25structure%25%27"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "IDE Chile: Geoportal de Chile is the single access point to State geospatial data and services, with an OGC-conformant metadata catalogue",
+      "url": "https://www.ide.cl/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "datos.gob.cl mirror (modified 2024-06-05, cc-by) lists seven shapefile links to geoportal downloads; those links answered 404 on 2026-09-28",
+      "url": "https://datos.gob.cl/api/3/action/package_show?id=categoria-geoespacial-instalaciones-y-edificaciones"
+    }
+  ],
+  "spatial_resolution": "Feature level (points and lines per facility or asset)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "spatial data infrastructure",
+    "critical facilities",
+    "fire stations",
+    "health facilities",
+    "emergency layers",
+    "CSW",
+    "Chile"
+  ],
+  "temporal_coverage": "Layers dated from about 2013 to 2026",
+  "temporal_resolution": "none",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Geoportal de Chile (IDE Chile): national catalogue of State geospatial layers, including critical facilities, public works and emergency layers",
+  "type": "data",
+  "update_frequency": "varies"
+}

@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/VSainteuf/pastis-benchmark"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/VSainteuf/pastis-benchmark/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "calibration_validation",
+    "vegetation_land_cover"
+  ],
+  "data_kind": [
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pastis crop segmentation benchmark",
+    "repo": "github.com/vsainteuf/pastis-benchmark",
+    "url": "https://github.com/VSainteuf/pastis-benchmark"
+  },
+  "description": "PASTIS is the satellite-image time-series benchmark published by Vivien Sainte Fare Garnot and Loic Landrieu for crop parcel segmentation. The optical dataset contains 2,433 patches, each 128 by 128 pixels at 10 metre resolution, with 124,422 annotated parcels and 18 crop classes. Coverage is selected French agricultural areas of roughly 4,000 square kilometres, with variable-length Sentinel-2 image sequences and five spatial folds. Public dataset access is free under CC-BY-4.0; the accompanying PyTorch benchmark code uses MIT. A limitation is that observation counts vary between patches and the classification setting is regional. The repository flags a panoptic-metric issue in its later radar-optical benchmark, which users should resolve before comparing published scores. PASTIS can calibrate parcel and crop maps used in irrigation-demand or food-supply simulations, complementing the yield-focused CY-Bench (data-cy-bench-subnational-crop-yield-benchmark). Its 2021 paper describes the optical benchmark, and the repository documents loaders, padding and training. No imagery, labels or weights were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "vsainteuf/pastis-benchmark linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "image",
+    "domain_model_file",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://github.com/VSainteuf/pastis-benchmark",
+  "id": "data-pastis-crop-segmentation",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-08-20",
+  "licence": "Dataset: CC-BY-4.0; repository code: MIT",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "PASTIS crop segmentation benchmark",
+  "notes": "G7 G7-0711. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability.  Cited as: Sainte Fare Garnot and Landrieu (2021). Panoptic segmentation of satellite image time series with convolutional temporal attention networks. ICCV. arXiv:2107.07933..",
+  "provider": "Vivien Sainte Fare Garnot and Loic Landrieu",
+  "related_ids": [
+    "data-cy-bench-subnational-crop-yield-benchmark"
+  ],
+  "sectors": [
+    "industry.agriculture",
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for VSainteuf/pastis-benchmark: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/vsainteuf/pastis-benchmark"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/vsainteuf/pastis-benchmark/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Dataset identity and CC-BY-4.0 rights.",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.5012942"
+    }
+  ],
+  "spatial_resolution": "10 m; 128 x 128 pixel patches",
+  "spatial_resolution_class": "10m_to_100m",
+  "tags": [],
+  "temporal_coverage": "Acquisition dates supplied per image sequence",
+  "temporal_resolution": "Varies by observation or experiment",
+  "temporal_resolution_class": "varies",
+  "title_en": "PASTIS crop segmentation benchmark",
+  "type": "data"
+}

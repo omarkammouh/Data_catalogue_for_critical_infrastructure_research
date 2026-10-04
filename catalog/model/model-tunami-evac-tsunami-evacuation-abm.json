@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/erick2307/TUNAMI-EVAC"
+    },
+    {
+      "kind": "download",
+      "label": "Version 2.0.0 (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.22306109"
+    },
+    {
+      "kind": "paper",
+      "label": "Mas et al. 2015 (Pure and Applied Geophysics)",
+      "url": "https://doi.org/10.1007/s00024-015-1105-y"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Mas, E. (2026). TUNAMI-EVAC v2.0.0. Zenodo. doi:10.5281/zenodo.22306109",
+  "continents": [
+    "asia",
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "JP",
+    "PE",
+    "ID",
+    "TH"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.22306109",
+    "name": "tunami evac agent based tsunami evacuation model",
+    "repo": "github.com/erick2307/tunami-evac",
+    "url": "https://github.com/erick2307/TUNAMI-EVAC"
+  },
+  "description": "TUNAMI-EVAC is a NetLogo agent-based model for tsunami evacuation analysis, in which evacuee agents decide when to depart and move to safe areas while simulated tsunami inundation spreads over the study area. It reads a spatial database of the study area and a sequence of tsunami inundation rasters (301 rasters in the bundled example), uses Rayleigh-distributed decision times and A* pathfinding, and writes evacuation records and snapshots. The original model was developed by Erick Mas in 2012 during a PhD at Tohoku University and has been applied to the 2011 Great East Japan tsunami and to case studies in Peru, Indonesia and Thailand, as described in papers from 2012 to 2015 and the bundled PhD thesis. Version 2.0.0, released on 4 September 2026 on Zenodo and GitHub under the MIT licence, migrates the model to NetLogo 7.0.4 and rewrites pathfinding, which is about 45 times faster in the release benchmark while the evacuation records are unchanged. The package is about 195 MB with the bundled SpatialDB and TsunamiDB. Caveats: each agent's Rayleigh mean is drawn randomly between two parameters, which the changelog flags for review, and new sites need their own inundation rasters. It supports agent-based emergency response and evacuation planning for coastal communities; a related record is the CHIME hurricane evacuation model.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "TUNAMI-EVAC (green agent_based)",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "tsunami"
+  ],
+  "homepage": "https://github.com/erick2307/TUNAMI-EVAC",
+  "id": "model-tunami-evac-tsunami-evacuation-abm",
+  "inputs": [
+    "spatial database of roads and shelters",
+    "tsunami inundation rasters",
+    "population and decision-time parameters"
+  ],
+  "language": [
+    "agent_based_language"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-04",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based"
+  ],
+  "name": "TUNAMI-EVAC agent-based tsunami evacuation model",
+  "outputs": [
+    "evacuation records per agent",
+    "counts of evacuated and remaining agents",
+    "snapshots and animations"
+  ],
+  "provider": "Tohoku University (Erick Mas)",
+  "related_ids": [
+    "model-chime-abm-hurricane-evacuation"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "transport.road",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "v2.0.0, 2026-09-04, MIT, Erick Mas, Tohoku University; keywords agent-based model, tsunami evacuation; 194.6 MB zip",
+      "url": "https://zenodo.org/api/records/22306109"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "NetLogo ABM for tsunami evacuation; developed 2012 PhD at Tohoku; v2 on NetLogo 7.0.4; bundled SpatialDB, TsunamiDB, Astar, Rayleigh; publications 2012 Japan, 2013 and 2014 Peru, 2015 Indonesia, Thailand, Japan, Peru; MIT LICENSE",
+      "url": "https://raw.githubusercontent.com/erick2307/TUNAMI-EVAC/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "migration to .nlogox; A* rewrite ~45.4x faster; identical records; 42 SpatialDB files and 301 tsunami rasters unchanged; Rayleigh mean drawn between u and ETA planned for review",
+      "url": "https://raw.githubusercontent.com/erick2307/TUNAMI-EVAC/HEAD/CHANGELOG.md"
+    }
+  ],
+  "tags": [
+    "tsunami",
+    "evacuation",
+    "agent-based model",
+    "NetLogo",
+    "2011 Great East Japan earthquake"
+  ],
+  "title_en": "TUNAMI-EVAC agent-based tsunami evacuation model",
+  "type": "model"
+}

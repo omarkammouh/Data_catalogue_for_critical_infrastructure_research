@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/m-mirz/grid-bench"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/m-mirz/grid-bench/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "grid bench power flow solver benchmark",
+    "repo": "github.com/m-mirz/grid-bench",
+    "url": "https://github.com/m-mirz/grid-bench"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "grid-bench is a reproducible harness for comparing AC power-flow solvers on common grid cases. Its README names ten tool setups, an independent residual oracle, MATPOWER and CGMES inputs, adapter code and container-based run commands. Users select a solver and cases; the harness runs the import and solve path and reports correctness, elapsed time and memory use. Cases include synthetic and published transmission benchmarks, not one operating grid. The repository states Apache-2.0 licensing. A limitation is that published timing depends on machine, software versions and importer behaviour, while convergence on a benchmark does not establish field performance. The harness can help select and test a grid simulation engine before using it for electricity or interdependency studies. Existing catalogue solver records may be among the tools it compares, but this repository supplies a distinct evaluation workflow. No container image, model file or result archive was downloaded. Geographic coverage follows each selected benchmark case; the harness itself does not cover an operating national grid. The related model-matpower catalogue record is one of the power-flow tools evaluated.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "power grid benchmark",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/m-mirz/grid-bench",
+  "id": "platform-grid-bench-power-flow",
+  "interfaces": [
+    "code_library",
+    "other",
+    "command_line"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "grid-bench power-flow solver benchmark",
+  "notes": "G7 G7-1969. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "modelling_suite"
+  ],
+  "provider": "grid-bench contributors",
+  "related_ids": [
+    "model-matpower"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for m-mirz/grid-bench: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=power+grid+benchmark&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/m-mirz/grid-bench/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Grid-bench: reproducible harness for AC power-flow solver comparison",
+  "type": "platform"
+}

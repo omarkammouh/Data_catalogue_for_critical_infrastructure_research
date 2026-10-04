@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "PyPI darkgreybox",
+      "url": "https://pypi.org/project/darkgreybox/"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub czagoni/darkgreybox",
+      "url": "https://github.com/czagoni/darkgreybox"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "darkgreybox data driven rc equivalent building thermal models",
+    "repo": "github.com/czagoni/darkgreybox",
+    "url": "https://github.com/czagoni/darkgreybox"
+  },
+  "description": "DarkGreyBox builds and fits resistance-capacitance equivalent thermal models of existing buildings from measured data. Many competing model structures are set up in configurable pipelines and fitted, and the best ones are kept using selection rules inspired by genetic algorithms, which the author presents as a way round the usual weaknesses of classical grey-box fitting. The models stay easy for people to read and slot into other modelling frameworks, which the README contrasts with black-box machine learning models. It depends on lmfit, pandas and joblib, and ships tutorials. Coverage: any building with indoor temperature and heating data. Access: free on GitHub and PyPI (release 0.3.2). Licence: MIT in the LICENSE file, while a README badge shows GPL v3, so reusers should check with the author. Caveats: the last commit is from March 2024; single-zone models do not capture room-level differences. Simulation uses are compact building thermal models for heating control, demand flexibility and indoor temperature drift during heating outages. Related records: thermal-rc-toolbox, the Grey Brick calibrated RC models dataset and EnergyPlus.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "building thermal network model reduced-order RC model open source python grey-box",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/czagoni/darkgreybox",
+  "id": "model-darkgreybox",
+  "inputs": [
+    "Measured indoor temperature and heating power time series",
+    "Outdoor temperature and other weather inputs"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-03-01",
+  "licence": "MIT (LICENSE file; the README badge says GPL v3)",
+  "licence_type": [
+    "copyleft_code",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "DarkGreyBox: data-driven RC-equivalent building thermal models",
+  "outputs": [
+    "Fitted RC-equivalent thermal model parameters",
+    "Indoor temperature predictions for control and forecasting"
+  ],
+  "provider": "Csaba Zagoni",
+  "related_ids": [
+    "model-thermal-rc-toolbox",
+    "data-grey-brick-buildings-calibrated-rc-models",
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/czagoni/darkgreybox",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "README read; HEAD commit of 1 March 2024 and MIT LICENSE read through git. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+      "url": "https://raw.githubusercontent.com/czagoni/darkgreybox/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "version 0.3.2 and author read",
+      "url": "https://pypi.org/pypi/darkgreybox/json"
+    }
+  ],
+  "tags": [
+    "grey-box",
+    "RC model",
+    "building thermal model",
+    "lmfit",
+    "Python",
+    "data-driven"
+  ],
+  "title_en": "DarkGreyBox resistance-capacitance equivalent thermal models of existing buildings",
+  "type": "model"
+}

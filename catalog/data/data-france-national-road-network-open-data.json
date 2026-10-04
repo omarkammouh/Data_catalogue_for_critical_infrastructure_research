@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Bornage du réseau routier national",
+      "url": "https://www.data.gouv.fr/datasets/bornage-du-reseau-routier-national"
+    },
+    {
+      "kind": "api",
+      "label": "Real-time traffic state (non-conceded network)",
+      "url": "https://www.data.gouv.fr/datasets/etat-de-circulation-en-temps-reel-sur-le-reseau-national-routier-non-concede"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (CSV)",
+      "note": "Checked 2026-10-01: returns text/csv directly.",
+      "url": "http://tipi.bison-fute.gouv.fr/bison-fute-ouvert/publicationsDIR/QTV-DIR/refDir.csv"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (XML)",
+      "note": "Checked 2026-10-01: returns application/xml directly.",
+      "url": "http://tipi.bison-fute.gouv.fr/bison-fute-ouvert/publicationsDIR/QTV-DIR/qtvDir.xml"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "system_description",
+    "sensor_realtime_streams",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "france national road network rrn open data reference datasets and real time traffic state",
+    "url": "https://data.gouv.fr/datasets/bornage-du-reseau-routier-national"
+  },
+  "description": "France's national road network, the motorways and trunk roads of national or European interest managed by the State's interdepartmental road directorates (DIR) or by motorway concession companies, is described by a set of open reference datasets from the Ministry of Ecological Transition on data.gouv.fr: reference points (bornage) with Lambert-93 coordinates, road name, reference point, department, concession status, distance and carriageway side; road links; hierarchy and classification; road managers; interchanges of the conceded network; junctions of the non-conceded network; road type; road width; lanes per carriageway; level crossings; and steep gradients, most updated annually and compatible with the INSPIRE road transport theme. Alongside, the national access point transport.data.gouv.fr with Bison Futé publishes the real-time traffic state of the non-conceded network (average speeds and flows, traffic around major cities, and the counting station reference) and road events in DATEX II. Coverage is national. The reference data are free under the Licence Ouverte and the real-time feeds under Licence Ouverte 2.0, available to download as files or DATEX II XML feeds. Caveats: real-time traffic covers only the non-conceded network, and the reference datasets are separate files that must be joined by road and reference point. They support network flow, criticality and hazard exposure analysis of French trunk roads and real-time digital twins. They complement DATEX II and are related to the Cerema traffic data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "bornage du réseau routier national",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "other_vector",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.data.gouv.fr/datasets/bornage-du-reseau-routier-national",
+  "id": "data-france-national-road-network-open-data",
+  "languages": [
+    "fr"
+  ],
+  "last_updated": "2025-07-22",
+  "licence": "Licence Ouverte",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "France national road network (RRN) open data (reference datasets and real-time traffic state)",
+  "provider": "Ministère de la Transition écologique; Bison Futé and transport.data.gouv.fr",
+  "related_ids": [
+    "data-datex-ii-standard"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "MTE; fr-lo; annual; updated 2025-07-22; INSPIRE-compatible; Lambert93 XYZ; attributes route, pr, depPr, concessionPr, abs, cote",
+      "url": "https://www.data.gouv.fr/api/1/datasets/bornage-du-reseau-routier-national/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MTE datasets: bornage, hiérarchisation, classification, liaisons, gestionnaires, échangeurs concédé, carrefours non concédé, nature des routes, largeur, voies par chaussée, passages à niveau, fortes pentes",
+      "url": "https://www.data.gouv.fr/api/1/datasets/?q=reseau+routier+national&page_size=20"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "real-time traffic state of non-conceded RRN by transport.data.gouv.fr with Bison Futé; lov2; continuous; DIR and SCA management; resources speeds and flows XML, traffic around major cities, counting station reference CSV, DATEX II notes",
+      "url": "https://www.data.gouv.fr/api/1/datasets/?q=etat+de+circulation+temps+reel+reseau+national&page_size=5"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): added 2 verified direct data link(s) from the provider's resource list. Verified: http://tipi.bison-fute.gouv.fr/bison-fute-ouvert/publicationsDIR/QTV-D -> verified by fetch during the check; http://tipi.bison-fute.gouv.fr/bison-fute-ouvert/publicationsDIR/QTV-D -> verified by fetch during the check",
+      "url": "http://tipi.bison-fute.gouv.fr/bison-fute-ouvert/publicationsDIR/QTV-DIR/refDir.csv"
+    }
+  ],
+  "spatial_resolution": "reference points, links and counting stations",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "France",
+    "national roads",
+    "reference points",
+    "real-time traffic",
+    "Bison Futé"
+  ],
+  "temporal_coverage": "current network; real time",
+  "title_en": "France national road network (RRN) open data (reference datasets and real-time traffic state)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

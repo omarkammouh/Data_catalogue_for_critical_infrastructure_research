@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "Article in The Journal of Navigation 75(2)",
+      "url": "https://doi.org/10.1017/S0373463321000953"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "paid",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1017/s0373463321000953",
+    "name": "ais map matching heuristics for inland waterway freight trips usace erdc and university of arkansas",
+    "url": "https://cambridge.org/core/journals/journal-of-navigation/article/abs/inland-waterway-network-mapping-of-ais-data-for-freight-transportation-planning/645706D5C8D2779175E1E4C79E8EFA5D"
+  },
+  "description": "This model is a set of map-matching heuristics that turn Automatic Identification System (AIS) vessel positions into trips on an inland waterway network, so that waterborne freight can be represented in freight travel demand models. The authors, from the US Army Corps of Engineers Engineer Research and Development Center and the University of Arkansas, note that freight demand models rarely represent non-truck modes in enough detail for multimodal investment and policy evaluation. The heuristics detect stops by time, duration and location. They were trained on the inspection of 3,820 AIS trajectories and evaluated on a 747-mile inland waterway network where AIS data represent 88% of vessel activity; validation showed 84.0% accuracy in detecting stops at ports and 83.5% in identifying trips crossing locks. The map-matched trips can generate origin-destination matrices and time impedances, and the authors state the methods transfer to other waterways and port systems. Access: article in The Journal of Navigation (2022). Licence and cost: subscription access; no code release is named on the abstract page. Caveats: parameters are tuned to one network and AIS coverage. It supports network flow and capacity planning models of inland freight. It relates to the NOAA AIS vessel density data, the USACE waterborne commerce ports and the Freight Analysis Framework in the catalogue.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "inland waterway vessel AIS data open river traffic dataset Danube OR Rhine OR Mississippi barge tracking",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://www.cambridge.org/core/journals/journal-of-navigation/article/abs/inland-waterway-network-mapping-of-ais-data-for-freight-transportation-planning/645706D5C8D2779175E1E4C79E8EFA5D",
+  "id": "model-ais-inland-waterway-trip-map-matching",
+  "inputs": [
+    "AIS vessel positions (timestamped latitude and longitude) and an inland waterway network with ports and locks"
+  ],
+  "language": [
+    "not_stated"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Article access by subscription; method described in the paper",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network",
+    "statistical"
+  ],
+  "name": "AIS map-matching heuristics for inland waterway freight trips (USACE ERDC and University of Arkansas)",
+  "outputs": [
+    "Map-matched vessel trips with stops at ports and lock crossings, usable for origin-destination matrices and time impedances"
+  ],
+  "provider": "Magdalena Asborno, Sarah Hernandez, Kenneth Mitchell and Manzi Yves (USACE ERDC Coastal and Hydraulics Laboratory; University of Arkansas)",
+  "regions": [
+    "Arkansas"
+  ],
+  "related_ids": [
+    "data-noaa-ais-vessel-density",
+    "data-usace-principal-ports-waterborne-commerce",
+    "data-freight-analysis-framework"
+  ],
+  "sectors": [
+    "transport.inland_waterways",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "abstract, affiliations, 3,820 trajectories, 747 miles, 88%, accuracies",
+      "url": "https://www.cambridge.org/core/journals/journal-of-navigation/article/abs/inland-waterway-network-mapping-of-ais-data-for-freight-transportation-planning/645706D5C8D2779175E1E4C79E8EFA5D"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "authors, 2022, closed access",
+      "url": "https://api.openalex.org/works/doi:10.1017/S0373463321000953"
+    }
+  ],
+  "tags": [
+    "AIS",
+    "map matching",
+    "inland waterways",
+    "freight demand model",
+    "locks",
+    "r2-fresh-transport"
+  ],
+  "title_en": "AIS map-matching heuristics for inland waterway freight trips (USACE ERDC and University of Arkansas)",
+  "type": "model"
+}

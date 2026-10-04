@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/eeveetza/Py1546"
+    },
+    {
+      "kind": "docs",
+      "label": "Recommendation ITU-R P.1546",
+      "url": "https://www.itu.int/rec/R-REC-P.1546/en"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "py1546 python implementation of recommendation itu r p 1546 6",
+    "repo": "github.com/eeveetza/py1546",
+    "url": "https://github.com/eeveetza/Py1546"
+  },
+  "description": "Py1546 is a Python implementation of Recommendation ITU-R P.1546-6, the ITU method for point-to-area field strength predictions for terrestrial services between 30 MHz and 4,000 MHz, widely used in broadcast planning and frequency coordination between countries. The method interpolates from empirical propagation curves by frequency, distance, effective transmitter height and time percentage, with corrections for terrain clearance angle, receiver height, clutter, mixed land and sea paths and location variability. The README states that this version corresponds to the reference code approved by ITU-R Working Party 3K and published on the Study Group 3 software, data and validation web page as a digital supplement to the Recommendation. The main function returns field strength and basic transmission loss from nine required arguments (frequency, time percentage, effective height, receiver height, clutter height, area type, path distances, path types and path information), with optional arguments for location variability, power and terrain heights. Coverage: any terrestrial path worldwide. Format and access: Python source installed from GitHub with pip, with validation profiles and results, free under a permissive licence written for the code. Caveats: an empirical statistical method, less accurate than path-specific methods for a given terrain; the user supplies path data. Simulation uses: broadcast and mobile coverage estimates for capacity planning, interference studies, and quick hazard exposure checks of transmitter coverage. Related records: Py1812 implements the path-specific method, and the FCC propagation curves are the US counterpart.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ITU-R P.1546 implementation open source software broadcast field strength prediction code",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/eeveetza/Py1546",
+  "id": "model-py1546",
+  "inputs": [
+    "frequency and time percentage",
+    "effective transmitter height and receiver height",
+    "path distances and types (land, sea)"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-08-19",
+  "licence": "Permissive licence written for the code (modification and redistribution allowed)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "Py1546: Python implementation of Recommendation ITU-R P.1546-6",
+  "notes": "README and licence read from raw GitHub and author profile read via fetch on 2026-09-26. Correction list is from recall of the Recommendation.",
+  "outputs": [
+    "field strength",
+    "basic transmission loss"
+  ],
+  "provider": "Ivica Stevanovic (Swiss Federal Office of Communications, OFCOM), GitHub user eeveetza; reference version approved by ITU-R Working Party 3K",
+  "related_ids": [
+    "data-itu-r-dbsg3-propagation-databanks",
+    "data-fmlist-fmscan-broadcast-transmitter-database",
+    "data-ofcom-broadcast-transmitter-parameters",
+    "model-py1812",
+    "model-itu-r-p-1546",
+    "model-itu-r-p-1812",
+    "platform-tvws-universal-scanning-gui-tool"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "digital.broadcasting",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README",
+      "url": "https://raw.githubusercontent.com/eeveetza/Py1546/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "author profile",
+      "url": "https://github.com/eeveetza"
+    }
+  ],
+  "tags": [
+    "ITU-R P.1546",
+    "propagation curves",
+    "broadcast planning",
+    "field strength",
+    "frequency coordination"
+  ],
+  "title_en": "Py1546: Python implementation of Recommendation ITU-R P.1546-6",
+  "type": "model",
+  "validated_on": [
+    "ITU-R validation profiles"
+  ]
+}

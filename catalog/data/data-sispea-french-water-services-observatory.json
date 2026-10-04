@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Hub'Eau service indicators API",
+      "url": "https://hubeau.eaufrance.fr/page/api-indicateurs-services"
+    },
+    {
+      "kind": "portal",
+      "label": "Open data downloads (annual service data, service areas, organising bodies, tariffs)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.services.eaufrance.fr/pro/telechargement"
+    },
+    {
+      "kind": "docs",
+      "label": "SISPEA guide (PDF)",
+      "url": "https://www.services.eaufrance.fr/cms/uploads/Guide_Sispea_VF_ce11c9ddf7.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "General leaflet (PDF)",
+      "url": "https://www.services.eaufrance.fr/cms/uploads/Plaquette_generale_VF_1_44fc2b74ed.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "service_performance",
+    "economic_financial",
+    "system_description",
+    "governance_regulation",
+    "condition_ageing"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sispea national observatory of water and sanitation services france",
+    "url": "https://services.eaufrance.fr"
+  },
+  "description": "SISPEA is the national observatory of public drinking water and sanitation services in France, run by the French Biodiversity Office to give an overall view of how services are organised and perform, to guide national water policy and to inform users. Local authorities, their contractors and operators enter data each year, and since January 2025 SISPEA is also the single tool for the technical data used to modulate water agencies' drinking water performance levy. The open data section offers the full set of validated data: annual data for each drinking water, collective sanitation and non-collective sanitation service, including service and works descriptions, descriptive and performance indicators and the variables that compute them; the commune composition of every service for mapping; the organising authorities; and annual tariffs. Files span 2008 to 2026 as XLS or ODS, roughly 10 MB per year for drinking water, regenerated every weekend. Reuse falls under the Etalab Licence Ouverte for public information, at no cost. Caveats: reporting is self-declared and incomplete for small services, and the latest years fill in as the campaign progresses. Simulation uses: parameterising leakage, network renewal, service reliability and cost in drinking water and sewer models, comparing service performance and optimising investments. Related records: Hub'Eau (data-hubeau-french-water-data-apis) exposes the indicators by API; comparable national benchmarking sets are Australia's National Performance Report (data-bom-national-performance-report-urban-water) and Brazil's SNIS (data-brazil-snis-sanitation-information-system).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: SISPEA observatory of water and sanitation services (OFB) (FR, benchmarking_body) https://www.services.eaufrance.fr/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "formats": [
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.services.eaufrance.fr/",
+  "id": "data-sispea-french-water-services-observatory",
+  "languages": [
+    "fr"
+  ],
+  "licence": "Licence Ouverte (Etalab)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "SISPEA: national observatory of water and sanitation services (France)",
+  "notes": "Example indicators named in the schema summary follow the SISPEA indicator set; check the guide for exact definitions.",
+  "provider": "Office français de la biodiversité (OFB)",
+  "related_ids": [
+    "data-hubeau-french-water-data-apis",
+    "data-france-collective-sanitation-portal-wwtp",
+    "data-bom-national-performance-report-urban-water",
+    "data-brazil-snis-sanitation-information-system",
+    "data-spain-sinac-national-drinking-water-information-system"
+  ],
+  "schema_summary": "For each drinking water, collective sanitation and non-collective sanitation service: description, works (for drinking water and collective sanitation), descriptive and performance indicators and the variables used to compute them (for example network yield, loss index, renewal rate, compliance, prices); commune composition of services; organising bodies; tariffs",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience",
+    "optimisation"
+  ],
+  "size": "about 10 MB per year for drinking water and 8 to 9 MB for collective sanitation (XLS)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "mission, data entry campaigns, 2025 levy reform role",
+      "url": "https://www.services.eaufrance.fr/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "datasets, years 2008-2026, file sizes, weekly regeneration, Licence Ouverte",
+      "url": "https://www.services.eaufrance.fr/pro/telechargement"
+    }
+  ],
+  "spatial_resolution": "water service, treatment works and commune (service composition by commune)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "France",
+    "benchmarking",
+    "performance indicators",
+    "water utilities",
+    "sanitation",
+    "water prices",
+    "network losses",
+    "OFB"
+  ],
+  "temporal_coverage": "2008 to 2026 (latest years partly filled)",
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "SISPEA: national observatory of water and sanitation services (France)",
+  "type": "data",
+  "update_frequency": "weekly"
+}

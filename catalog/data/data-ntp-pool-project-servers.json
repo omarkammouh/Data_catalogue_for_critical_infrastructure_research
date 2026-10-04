@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "NTP Pool site",
+      "url": "https://www.ntppool.org/en/"
+    },
+    {
+      "kind": "portal",
+      "label": "Zone pages",
+      "url": "https://www.ntppool.org/zone"
+    },
+    {
+      "kind": "api",
+      "label": "Pool-wide history of active servers (JSON)",
+      "url": "https://www.ntppool.org/zone/@.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "system_description",
+    "service_performance"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ntp pool project pool ntp org active time servers by zone and their monitoring history",
+    "url": "https://ntppool.org/en"
+  },
+  "description": "The NTP Pool is a large virtual cluster of volunteer time servers that gives Network Time Protocol service to hundreds of millions of systems and is the default time source of most major Linux distributions and many network appliances. On 26 September 2026 the site counted 6,285 active servers: 123 in Africa, 607 in Asia, 3,899 in Europe, 1,312 in North America, 260 in Oceania and 100 in South America, with 3,896 IPv4 and 2,390 IPv6 servers in the global zone. Each continent and country zone page gives the number of active servers now and 1, 7, 14, 60 and 180 days and 1, 3 and 6 years ago, and each server page shows its score from the pool's monitoring over time. Coverage: worldwide, by continent and country zone. Format and access: web pages and per-server score logs, free; the system's source code is public. Caveats: volunteer servers, so coverage is uneven, thin in Africa and South America; counts are of servers, not of clients; monitoring scores reflect the pool's monitors. Simulation uses: the spread and redundancy of internet time sources by country for timing resilience studies, such as losing GNSS-disciplined servers in a region. Related records: data-nist-internet-time-service-servers is a national service; data-bipm-circular-t-utc-time-scale gives the reference time scales.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "NTP Pool Project (cited in doi:10.6028/nist.tn.2189); candidate crossref-67296ae1ae on the integrator's must-have list (musthave/digital.csv)",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "formats": [
+    "web_page",
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.ntppool.org/en/",
+  "id": "data-ntp-pool-project-servers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "es",
+    "ja",
+    "zh"
+  ],
+  "last_updated": "2026-09",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NTP Pool Project (pool.ntp.org): active time servers by zone and their monitoring history",
+  "notes": "Home page and global zone page read on 2026-09-26 (server counts by continent, IPv4 and IPv6 history); the site is translated into about 40 languages, of which a few are listed. The CSV score logs and the 2003 start year are from recall.",
+  "provider": "NTP Pool Project (Ask Bjørn Hansen and contributors)",
+  "related_ids": [],
+  "sectors": [
+    "digital.satellite_positioning",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience"
+  ],
+  "size": "6,285 active servers (September 2026)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "home page",
+      "url": "https://www.ntppool.org/en/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "zone page",
+      "url": "https://www.ntppool.org/zone"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://www.ntppool.org/en/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.ntppool.org/tos.html"
+    }
+  ],
+  "spatial_resolution": "country zone and server",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "NTP",
+    "time servers",
+    "volunteer network",
+    "timing"
+  ],
+  "temporal_coverage": "counts back 6 years; project since 2003",
+  "temporal_resolution": "daily counts; monitoring scores per check",
+  "temporal_resolution_class": "daily",
+  "title_en": "NTP Pool Project (pool.ntp.org): active time servers by zone and their monitoring history",
+  "type": "data",
+  "update_frequency": "real_time"
+}

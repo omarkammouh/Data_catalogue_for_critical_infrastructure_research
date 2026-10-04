@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "url": "https://github.com/orailix/ride"
+    },
+    {
+      "kind": "docs",
+      "label": "Silver dataset (Hugging Face)",
+      "url": "https://huggingface.co/datasets/orailix/ride-silver"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (arXiv)",
+      "url": "https://arxiv.org/abs/2606.05070"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "BE"
+  ],
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "event_record",
+    "time_series",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ride open dataset and benchmark for train delay prediction on the belgian railway network",
+    "url": "https://github.com/orailix/ride"
+  },
+  "description": "RIDE is an open dataset and benchmark for train delay prediction built at national scale on the Belgian railway network. It covers 94.5 million train events, 3.6 million journeys and 35.7 million weather records from 2023 to 2025, organised as a layered pipeline from raw railway and weather sources to a reusable relational Silver release (train events, journeys, railway infrastructure and weather) and Gold benchmark releases with fixed train and test snapshots in tabular, sequential, graph and graph-event forms, in Lite and Standard tiers. A unified evaluation protocol reports MAE and RMSE by prediction horizon and delay change; the authors compared non-learning, statistical and deep learning models and found graph neural networks best on average. It was published by Clément Elliker and co-authors in an arXiv paper of June 2026. Coverage is national (Belgium). The datasets are free under CC BY 4.0 on Hugging Face as Parquet, and the code is on GitHub under the MIT licence. Caveats: it is a research benchmark derived from operator and weather sources, and the period ends in 2025. RIDE supports delay propagation and resilience analysis of rail networks and weather impact studies. It complements the Infrabel open data and the PKP Intercity delay dataset catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "railway traffic volumes operations performance open data",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "parquet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/orailix/ride",
+  "id": "data-ride-belgian-train-delay-benchmark",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-04",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "RIDE, open dataset and benchmark for train delay prediction on the Belgian railway network",
+  "provider": "Clément Elliker, Mathis Le Bail, Clément Mantoux, Jesse Read and Sonia Vanier (orailix)",
+  "related_ids": [
+    "data-infrabel-open-data",
+    "data-pkp-intercity-train-delays"
+  ],
+  "sectors": [
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "submitted 3 June 2026; Belgian railway network; 94.5M train events, 3.6M journeys, 35.7M weather records 2023-2025; intermediate relational dataset and model-ready benchmark; GNN best",
+      "url": "https://arxiv.org/abs/2606.05070"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Silver, Gold (Lite, Standard; tabular, sequential, GNN, graph-event), evaluation protocol, benchmark",
+      "url": "https://raw.githubusercontent.com/orailix/ride/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "cc-by-4.0, parquet, modified 2026-06-04",
+      "url": "https://huggingface.co/api/datasets/orailix/ride-silver"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License for code",
+      "url": "https://raw.githubusercontent.com/orailix/ride/main/LICENSE"
+    }
+  ],
+  "spatial_resolution": "train events at stations",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "train delays",
+    "Belgium",
+    "benchmark",
+    "graph neural networks",
+    "weather"
+  ],
+  "temporal_coverage": "2023 to 2025",
+  "title_en": "RIDE, open dataset and benchmark for train delay prediction on the Belgian railway network",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

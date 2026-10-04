@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Paavo WFS (layers pno_tilasto_2022 to 2026)",
+      "url": "https://geo.stat.fi/geoserver/postialue/wfs?service=WFS&request=GetCapabilities"
+    },
+    {
+      "kind": "portal",
+      "label": "Paavo statistical database (PxWeb)",
+      "url": "https://stat.fi/en/services/statistical-data-services/statistical-databases/paavo"
+    },
+    {
+      "kind": "docs",
+      "label": "Open data and interfaces, licence",
+      "url": "https://stat.fi/en/services/statistical-data-services/open-data-and-interfaces"
+    },
+    {
+      "kind": "docs",
+      "label": "Metadata in the Finnish spatial data catalogue",
+      "url": "https://www.paikkatietohakemisto.fi/geonetwork/srv/api/records/ade7a36e-3beb-4e3d-821e-0652037e80f9?language=eng"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FI"
+  ],
+  "data_family": [
+    "reference_context",
+    "system_description",
+    "social_vulnerability_equity",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "tabular",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "statistics finland paavo open statistics by postal code area population buildings and dwellings workplaces with boundaries wfs",
+    "url": "https://stat.fi/en/services/statistical-data-services/geographic-data/geographic-data-by-postal-code-area"
+  },
+  "description": "Paavo is Statistics Finland's open dataset of key statistics by postal code area, delivered with the postal code area polygons. Each annual edition gives, for every area, population by sex and five-year age groups, education, income of inhabitants and households, household size and life stage, tenure of dwellings, counts of buildings (total, residential, other), dwellings, average dwelling floor area and dwellings in small houses and in blocks of flats, workplaces by industry (among them energy supply, water supply and waste, and transport) and the main activity of inhabitants. Statistics Finland publishes it for decision-making, planning, research and business location. Coverage: all postal code areas of Finland; the WFS publishes layers for 2022 to 2026. Format and access: a GeoServer WFS on geo.stat.fi returning GeoJSON or shapefile-compatible features, and a PxWeb database with CSV, XLSX and JSON-stat output, without registration. Licence: CC BY 4.0, free with the source mentioned. Caveats: postal code areas differ in size and change between years, and values are masked with -1 where an area is too small to publish; building attributes are counts, not individual buildings. Simulation uses: exposure of population, dwellings and workplaces by small area, demand allocation and socio-economic vulnerability indicators. Related records: the Statistics Finland 1 km population grid, the Statistics Denmark dwelling tables and GHSL.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:FI:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "geojson",
+    "shapefile",
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://stat.fi/en/services/statistical-data-services/geographic-data/geographic-data-by-postal-code-area",
+  "id": "data-statistics-finland-paavo-postal-code-area-statistics",
+  "languages": [
+    "fi",
+    "sv",
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Statistics Finland Paavo, open statistics by postal code area (population, buildings and dwellings, workplaces) with boundaries, WFS",
+  "provider": "Statistics Finland (Tilastokeskus)",
+  "related_ids": [
+    "data-statistics-finland-population-grid-1km",
+    "data-statistics-denmark-register-housing-tables-statbank",
+    "data-copernicus-ghsl-built-up-population"
+  ],
+  "schema_summary": "population by sex and age, education, income of inhabitants and households, household size and life stage, tenure (owner, rented, other), buildings (total, other, residential), dwellings, average floor area, dwellings in small houses and in blocks of flats, workplaces by industry (including energy, water supply, transport), main activity",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Paavo: population structure, education, income, housing, workplaces, life stage, main activity; formats ESRI Shapefile, GeoJSON; WFS geo.stat.fi/geoserver/postialue/wfs",
+      "url": "https://stat.fi/en/services/statistical-data-services/geographic-data/geographic-data-by-postal-code-area"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Attributes read: he_ (population), te_ (households, tenure), ra_raky, ra_asrak, ra_asunn, ra_as_kpa, ra_pt_as, ra_kt_as (buildings, dwellings), tp_ workplaces by industry incl. tp_d_ener, tp_e_vesi, tp_h_kulj",
+      "url": "https://geo.stat.fi/geoserver/postialue/wfs?service=WFS&request=DescribeFeatureType&typeName=postialue:pno_tilasto_2026"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "CC BY 4.0 for open data; PxWeb API formats",
+      "url": "https://stat.fi/en/services/statistical-data-services/open-data-and-interfaces"
+    }
+  ],
+  "spatial_resolution": "postal code area (3,018 areas in 2026) with polygon boundaries",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "Finland",
+    "postal code areas",
+    "buildings",
+    "dwellings",
+    "workplaces",
+    "WFS",
+    "register-based statistics"
+  ],
+  "temporal_coverage": "annual editions; WFS layers for 2022 to 2026",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2022
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Statistics Finland Paavo, open statistics by postal code area (population, buildings and dwellings, workplaces) with boundaries, WFS",
+  "type": "data",
+  "update_frequency": "annual"
+}

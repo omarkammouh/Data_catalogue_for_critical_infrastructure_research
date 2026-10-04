@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Dashboard",
+      "url": "https://ioda.inetintel.cc.gatech.edu/"
+    },
+    {
+      "kind": "api",
+      "label": "HTTP API v2",
+      "url": "https://api.ioda.inetintel.cc.gatech.edu/v2/"
+    },
+    {
+      "kind": "docs",
+      "label": "About",
+      "url": "https://ioda.inetintel.cc.gatech.edu/about"
+    },
+    {
+      "kind": "api",
+      "label": "IODA API, country entities (example query)",
+      "url": "https://api.ioda.inetintel.cc.gatech.edu/v2/entities/query?entityType=country&limit=2"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "service_performance",
+    "recovery_restoration",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ioda internet outage detection and analysis",
+    "url": "https://ioda.inetintel.cc.gatech.edu"
+  },
+  "description": "IODA (Internet Outage Detection and Analysis) monitors the connectivity of internet infrastructure worldwide and tracks the severity of disruptions, from minor to major outages, in near real time. It combines several independent signals, listed by its API on 26 September 2026: BGP (visible /24 address blocks), active probing of /24 blocks (up blocks, loss and latency), the Merit Network Telescope (unique source addresses of unsolicited traffic), Google Transparency Report traffic (raw, normalised and forecast), Mozilla telemetry and upstream-delay measures. Signals are aggregated at country, subnational region and network (autonomous system) level, and an alert system flags abnormal drops. IODA was originally developed at CAIDA, UC San Diego, with NSF, DHS S&T, Open Technology Fund and other funding, and is now run by the Internet Intelligence Lab at Georgia Tech to provide trusted, granular open measurement data for research, policy, media and advocacy; IPinfo supplies the geolocation. Access is through the web dashboard, reports and a free HTTP API (v2) returning JSON time series, events and alerts, with no account needed. The API states that the data are copyright Georgia Tech Research Corporation with all rights reserved, so reuse terms should be confirmed with the team. Caveats: signals are proxies for connectivity, each with blind spots (for example telescope traffic depends on infected hosts, BGP misses outages inside networks that stay announced), and geolocation assigns address blocks to places imperfectly. Simulation uses: timing and extent of historical internet outages caused by power cuts, cable cuts, disasters and shutdowns, for calibrating recovery, cascading-failure and emergency-response models. Related records: RIPE RIS and RouteViews BGP archives and RIPE Atlas measurements.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.internet_exchange:historical_events",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "api"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://ioda.inetintel.cc.gatech.edu/",
+  "id": "data-ioda-internet-outage-detection",
+  "languages": [
+    "en"
+  ],
+  "licence": "Copyright Georgia Tech Research Corporation, all rights reserved (as stated by the API); free public access",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "IODA: Internet Outage Detection and Analysis",
+  "notes": "Reuse terms uncertain: the API carries an all-rights-reserved notice.",
+  "provider": "Internet Intelligence Lab, Georgia Institute of Technology",
+  "related_ids": [
+    "data-ripe-ris",
+    "data-routeviews",
+    "data-ripe-atlas",
+    "case_study-iberian-blackout-2025-internet-exchange-points-traffic-bgp-data-centre",
+    "case_study-iran-internet-shutdowns-autumn-2022-technical-report"
+  ],
+  "schema_summary": "Datasources gtr, gtr-norm, gtr-sarima, merit-nt, bgp, ping-slash24, ping-slash24-loss, ping-slash24-latency, upstream-delay-*, mozilla; entities country, region, asn; events and alerts",
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Mission, country/subnational/AS levels, alerts, funding, CAIDA origin, Georgia Tech, IPInfo geolocation (read in Chromium)",
+      "url": "https://ioda.inetintel.cc.gatech.edu/about"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Datasource list and copyright notice",
+      "url": "https://api.ioda.inetintel.cc.gatech.edu/v2/datasources/"
+    }
+  ],
+  "spatial_resolution": "Country, subnational region, autonomous system",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "internet outage",
+    "shutdown",
+    "BGP",
+    "active probing",
+    "network telescope",
+    "disruption"
+  ],
+  "temporal_resolution": "Minutes (signal-dependent)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "IODA: Internet Outage Detection and Analysis",
+  "type": "data",
+  "update_frequency": "real_time"
+}

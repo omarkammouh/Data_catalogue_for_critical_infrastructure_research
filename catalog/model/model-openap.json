@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Handbook",
+      "url": "https://openap.dev/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/TUDelft-CNS-ATM/openap"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/openap/"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper",
+      "url": "https://doi.org/10.3390/aerospace7080104"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.3390/aerospace7080104",
+    "name": "openap open aircraft performance model and toolkit",
+    "repo": "github.com/tudelft-cns-atm/openap",
+    "url": "https://openap.dev"
+  },
+  "description": "OpenAP is an open-source aircraft performance model and Python toolkit for air transportation studies and simulations. It computes thrust, drag, fuel flow and emissions for common commercial aircraft and engines, determines flight phases and generates synthetic trajectories, using aircraft data from open literature, engine data mainly from the ICAO emissions databank, drag polars derived from open data, fuel models derived from the Acropole model and a kinematic model (WRAP) learned from surveillance data. It is developed at TU Delft and described in Sun, Hoekstra and Ellerbroek (2020, Aerospace). It is aircraft-level and location independent, so it applies to flights anywhere once trajectories are known. The package is on PyPI (version 2.6.2 of 22 September 2026) and GitHub under the LGPL-3.0, free, with a handbook at openap.dev and an add-on for BADA users. Caveats: coverage is limited to aircraft types with open data, the models are simplified relative to proprietary BADA, and accuracy depends on the input trajectory. OpenAP is used to estimate fuel burn and emissions in air traffic flow, capacity, optimisation and climate studies, often on OpenSky trajectories, and is integrated in the BlueSky simulator, both catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.aviation",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry",
+      "route": "R06",
+      "source": "transport-openap"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://openap.dev/",
+  "id": "model-openap",
+  "inputs": [
+    "aircraft type",
+    "flight trajectory or flight phase parameters",
+    "engine type"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-22",
+  "licence": "LGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "OpenAP: Open Aircraft Performance Model and Toolkit",
+  "outputs": [
+    "thrust",
+    "drag",
+    "fuel flow",
+    "emissions",
+    "synthetic trajectories"
+  ],
+  "provider": "TU Delft (TUDelft-CNS-ATM group; Junzi Sun, Jacco Hoekstra, Joost Ellerbroek)",
+  "related_ids": [],
+  "repository": "https://github.com/TUDelft-CNS-ATM/openap",
+  "runs_on": [],
+  "sectors": [
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "model data sources, packages, handbook openap.dev, citation Sun et al. 2020",
+      "url": "https://raw.githubusercontent.com/TUDelft-CNS-ATM/openap/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 2.6.2 uploaded 2026-09-22; LGPLv3",
+      "url": "https://pypi.org/pypi/openap/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "OpenAP paper, Aerospace, 2020",
+      "url": "https://api.crossref.org/works/10.3390/aerospace7080104"
+    }
+  ],
+  "tags": [
+    "aircraft performance",
+    "fuel consumption",
+    "aviation emissions",
+    "Python"
+  ],
+  "title_en": "OpenAP: Open Aircraft Performance Model and Toolkit",
+  "type": "model",
+  "validated_on": []
+}

@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "pytsa on GitHub",
+      "url": "https://github.com/nikpau/pytsa"
+    },
+    {
+      "kind": "download",
+      "label": "pytsa-ais on PyPI",
+      "url": "https://pypi.org/project/pytsa-ais/"
+    },
+    {
+      "kind": "paper",
+      "label": "Ocean Engineering 2024, article 119092",
+      "url": "https://doi.org/10.1016/j.oceaneng.2024.119092"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Paulig, N., Okhrin, O. (2024) An open-source framework for data-driven trajectory extraction from AIS data - the alpha-method. Ocean Engineering 119092",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pytsa the alpha method for trajectory extraction from raw ais data",
+    "repo": "github.com/nikpau/pytsa",
+    "url": "https://github.com/nikpau/pytsa"
+  },
+  "description": "pytsa (Python Trajectory Search Agent) implements the alpha-method, an open-source, data-driven framework for decoding raw Automatic Identification System (AIS) messages and extracting clean vessel trajectories. It was published by Niklas Paulig and Ostap Okhrin of Technische Universität Dresden in Ocean Engineering in 2024. Because AIS data suffer from technical inaccuracies and incomplete seafarer compliance, the method uses manoeuvrability-dependent quantile (alpha) thresholds to split, filter and assess trajectories, and the authors report that it robustly extracts long, uninterrupted tracks. The package also gives an interface to observe target ships and their state around a given time and position, aimed at simulation studies and at validating path following and collision avoidance with real traffic. Coverage: any AIS source; input must be daily CSV files of dynamic or static message types. Access: Python package pytsa-ais on PyPI (version 2.3.15, Python 3.10 or later) with source on GitHub. Licence and cost: GPL-3.0, free; the paper is CC BY-NC-ND. Caveats: strict input file conventions, and thresholds tuned on the authors' study areas may need adjustment. It supports network flow and digital twin models of vessel traffic by preparing trajectories. It works with AIS data such as NOAA Marine Cadastre and Danish DMA AIS and complements MovingPandas in the catalogue.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "ship collision risk model open source AIS near miss maritime traffic safety python",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/nikpau/pytsa",
+  "id": "model-pytsa-alpha-method-ais-trajectory-extraction",
+  "inputs": [
+    "Raw AIS records as daily CSV files (dynamic message types 1, 2, 3, 18 and static type 5)"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "pytsa, the alpha-method for trajectory extraction from raw AIS data",
+  "outputs": [
+    "Decoded messages, clean interpolated vessel trajectories, trajectory quality assessments, target ship states around a given position and time"
+  ],
+  "provider": "Technische Universität Dresden and ScaDS.AI (Niklas Paulig, Ostap Okhrin)",
+  "related_ids": [
+    "data-noaa-marine-cadastre-ais",
+    "data-denmark-dma-ais-data",
+    "platform-movingpandas"
+  ],
+  "repository": "https://github.com/nikpau/pytsa",
+  "sectors": [
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "abstract and highlights, authors, CC BY-NC-ND",
+      "url": "https://api.openalex.org/works/doi:10.1016/j.oceaneng.2024.119092"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "README: purpose, functions, input conventions; LICENSE GPL-3.0",
+      "url": "https://github.com/nikpau/pytsa"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "version 2.3.15, Python >=3.10",
+      "url": "https://pypi.org/project/pytsa-ais/"
+    }
+  ],
+  "tags": [
+    "AIS",
+    "trajectory extraction",
+    "data cleaning",
+    "maritime safety",
+    "Python",
+    "r2-fresh-transport"
+  ],
+  "title_en": "Pytsa, the alpha-method for trajectory extraction from raw AIS data",
+  "type": "model"
+}

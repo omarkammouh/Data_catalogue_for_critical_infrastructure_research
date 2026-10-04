@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "dsgrid page",
+      "url": "https://www.nlr.gov/analysis/dsgrid"
+    },
+    {
+      "kind": "repo",
+      "label": "dsgrid source",
+      "url": "https://github.com/dsgrid/dsgrid"
+    },
+    {
+      "kind": "download",
+      "label": "NLR data catalogue submission",
+      "url": "https://data.nlr.gov/submissions/97"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/dsgrid/dsgrid/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nlr dsgrid demand side grid toolkit bottom up hourly us electricity load by county sector and end use",
+    "repo": "github.com/dsgrid/dsgrid",
+    "url": "https://nlr.gov/analysis/dsgrid"
+  },
+  "description": "dsgrid is the National Laboratory of the Rockies (formerly NREL) demand-side grid toolkit for building electricity load data sets at high temporal, geographic, sectoral and end-use resolution for power system analysis. Contents: a bottom-up method that combines detailed sector models (ResStock for homes, ComStock for commercial buildings, TEMPO for transportation including county-level light-duty EV charging, and industrial energy methods) to give hourly load time series by subsector, end use and US county, each typically covering a full historical or future model year; the sector models also give other fuel use such as natural gas. Load data are time-synchronised with solar and wind data sets, and dsgrid-flex turns device-level load into aggregated flexibility resources for managed charging studies. Producer: NLR Energy Systems Analysis. Coverage: United States, by county. Format and access: open source code on GitHub (dsgrid and project repositories such as the Standard Scenarios TEMPO project) and data sets on the NLR data catalogue. Licence (read on 2026-09-29): BSD-3-Clause. Caveats: projections inherit sector model assumptions; data sets are large. Simulation uses: county-level hourly demand for capacity expansion and production cost models, electrification and demand response scenarios. Related records: model-resstock, model-comstock, model-reeds.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source energy-nlr-models-tools: provider pages read (round 2 register piece)",
+      "route": "R06",
+      "source": "energy-nlr-models-tools"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.nlr.gov/analysis/dsgrid",
+  "id": "model-nlr-dsgrid-demand-side-grid-toolkit-county-hourly-load",
+  "inputs": [
+    "sector model outputs (ResStock, ComStock, TEMPO, industry)",
+    "scenario assumptions for efficiency and electrification"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-31",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid"
+  ],
+  "name": "NLR dsgrid (Demand-Side Grid Toolkit): bottom-up hourly US electricity load by county, sector and end use",
+  "outputs": [
+    "hourly load by county, subsector and end use",
+    "flexibility resource representations (dsgrid-flex)"
+  ],
+  "provider": "National Laboratory of the Rockies (NLR, formerly NREL)",
+  "related_ids": [
+    "model-resstock",
+    "model-comstock",
+    "model-reeds",
+    "model-pypsa"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "page read; links github.com/dsgrid/dsgrid and data.nlr.gov/submissions/97",
+      "url": "https://www.nlr.gov/analysis/dsgrid"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Licence read by the wave 1 integrator (LICENSE file of the repository); replaces \"open source (licence not read)\".",
+      "url": "https://github.com/dsgrid/dsgrid"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for dsgrid/dsgrid: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/dsgrid/dsgrid"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/dsgrid/dsgrid/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://dsgrid.github.io/dsgrid/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Wave 1 integrator dedupe: merged duplicate record platform-dsgrid (#19) into this record; its sources and extra access links were kept here.",
+      "url": "https://www.nlr.gov/analysis/dsgrid"
+    }
+  ],
+  "tags": [
+    "NLR",
+    "load profiles",
+    "demand modelling",
+    "electrification"
+  ],
+  "title_en": "NLR dsgrid (Demand-Side Grid Toolkit): bottom-up hourly US electricity load by county, sector and end use",
+  "type": "model"
+}

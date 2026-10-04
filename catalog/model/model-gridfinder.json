@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/gridfinder/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/carderne/gridfinder"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gridfinder",
+    "repo": "github.com/carderne/gridfinder",
+    "url": "https://github.com/carderne/gridfinder"
+  },
+  "description": "gridfinder is a Python model that estimates the layout of electricity distribution grids where no map exists. It uses night-time lights imagery as an indicator of settlements with grid electricity access, then computes a minimum spanning tree connecting those points with a many-to-many variant of Dijkstra's algorithm, using existing road networks as the cost function; the algorithm was adapted from work published by Facebook Research. It was written by Chris Arderne. The method is location-independent and has been demonstrated on Uganda, and the repository includes the input data for a test run for Burundi. Inputs are VIIRS night-time light composites and OpenStreetMap highway data, for example from the HOT Export Tool or Geofabrik. It is installed from PyPI (last release April 2024) or GitHub, with an example notebook, under the MIT licence at no cost. Caveats: only road networks are used as cost at present, although the README notes that slope or terrain could be added, some operating systems need an extra spatial index library, and there has been no release since April 2024. Simulation uses are building approximate network models for network flow and electrification planning in data-poor countries. Related records: none linked on the provider's pages read on the day.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry gridfinder",
+      "route": "R30",
+      "source": "energy-gridfinder"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/carderne/gridfinder",
+  "id": "model-gridfinder",
+  "inputs": [
+    "VIIRS night-time lights monthly and annual composites",
+    "OpenStreetMap highway data"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-04-16",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network",
+    "statistical"
+  ],
+  "name": "gridfinder",
+  "outputs": [
+    "Estimated medium-voltage grid network lines"
+  ],
+  "provider": "Chris Arderne and contributors",
+  "related_ids": [],
+  "repository": "https://github.com/carderne/gridfinder",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Method (night lights, minimum spanning tree, many-to-many Dijkstra, roads as cost, adapted from Facebook); inputs VIIRS and OSM; Uganda illustration; Burundi test data; pip install; libspatialindex note",
+      "url": "https://raw.githubusercontent.com/carderne/gridfinder/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT, Chris Arderne 2018",
+      "url": "https://raw.githubusercontent.com/carderne/gridfinder/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Latest upload 2024-04-16; first 2019-02-25",
+      "url": "https://pypi.org/pypi/gridfinder/json"
+    }
+  ],
+  "tags": [
+    "grid mapping",
+    "night-time lights",
+    "VIIRS",
+    "OpenStreetMap",
+    "electrification"
+  ],
+  "title_en": "Python model estimating layout of electricity distribution grids using night time lights imagery",
+  "type": "model",
+  "validated_on": [
+    "Test run data for Burundi included in the repository"
+  ]
+}

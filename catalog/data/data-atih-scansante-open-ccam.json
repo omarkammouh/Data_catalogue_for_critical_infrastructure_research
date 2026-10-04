@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Open CCAM data files (establishment, region, France)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.scansante.fr/opendata/pmsi-mco/ccam"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "open ccam atih scansante acute care hospital procedures by establishment region and france from the pmsi",
+    "url": "https://scansante.fr/open-ccam-2025"
+  },
+  "description": "Open CCAM shows how often each medical and surgical procedure is performed in every French hospital doing acute medicine, surgery and obstetrics, and how long the patients concerned stay. It is published by ATIH, the national agency that manages the hospital discharge database (PMSI), on its ScanSanté statistics site. Coverage is all public and private establishments reporting to the PMSI for acute care, with one data file per level: establishment, region and France. For each procedure code of the French classification of medical procedures (CCAM), the files give the number of stays, sessions and ambulatory stays in which it was performed, the mean length of those stays and the number of times it was carried out. The files are free and available to download from the ScanSanté open data page. Caveats: counts below eleven are masked, with extra cells suppressed so they cannot be deduced, procedure codes need the CCAM nomenclature to interpret, and ScanSanté is moving to a new platform so addresses may change. Simulation uses: estimating operating theatre and procedure demand by hospital, and setting length-of-stay parameters for surgical capacity and patient flow models. Related records: the DREES SAE (data-drees-sae-hospital-annual-statistics) gives the beds and equipment of the same establishments, and the US HCUP databases (data-ahrq-hcup-hospital-utilization-databases) are a comparable discharge source.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: ATIH ScanSanté (FR, health_regulator_data_institute)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "not_stated"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://www.scansante.fr/open-ccam-2025",
+  "id": "data-atih-scansante-open-ccam",
+  "languages": [
+    "fr"
+  ],
+  "licence": "ATIH open data terms",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Open CCAM (ATIH ScanSanté): acute-care hospital procedures by establishment, region and France from the PMSI",
+  "provider": "Agence technique de l'information sur l'hospitalisation (ATIH), ScanSanté",
+  "related_ids": [
+    "data-drees-sae-hospital-annual-statistics",
+    "data-ahrq-hcup-hospital-utilization-databases"
+  ],
+  "schema_summary": "Per CCAM procedure code and establishment (with regional and national summary tables of the same structure): number of stays or sessions and ambulatory stays in which the procedure was performed, mean length of those stays, and number of times the procedure was performed; counts below 11 masked with secondary suppression",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "MCO actes CCAM par établissements (Open CCAM): by CCAM procedure code, indicators at establishment, region and national level, each with a downloadable data file; number of stays, sessions and ambulatory stays with the procedure, mean length of these stays, number of times the procedure was performed; counts under 11 masked and secondary suppression applied; ScanSanté moving to a new Data Avancé platform",
+      "url": "https://www.scansante.fr/opendata/pmsi-mco/ccam"
+    }
+  ],
+  "spatial_resolution": "Hospital establishment",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospital procedures",
+    "PMSI",
+    "CCAM",
+    "length of stay",
+    "France",
+    "ATIH"
+  ],
+  "temporal_coverage": "Annual PMSI years",
+  "temporal_resolution": "Annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Open CCAM (ATIH ScanSanté): acute-care hospital procedures by establishment, region and France from the PMSI",
+  "type": "data",
+  "update_frequency": "annual"
+}

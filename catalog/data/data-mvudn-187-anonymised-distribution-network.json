@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/sparktostar/MVUDN-187"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "demand_operation",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "network_topology",
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "mvudn 187 anonymised multivoltage urban distribution test data",
+    "repo": "github.com/sparktostar/mvudn-187",
+    "url": "https://github.com/sparktostar/MVUDN-187"
+  },
+  "description": "MVUDN-187 is a partially released test dataset derived from an urban electricity-distribution network. The repository owner publishes anonymised connectivity for 187 buses spanning 110, 35 and 10 kV, preserving supply relationships between voltage levels. Separate spreadsheets provide typical-day load and photovoltaic profiles at thirty-minute resolution. The documentation says these profiles were statistically derived from historical operation and normalised to per-unit values. Additional material describes ranges for resistance, reactance, R/X ratios, load and PV capacity. Geographic coverage is one undisclosed urban network; actual locations, original observation dates and equipment identifiers are withheld. Public topology, normalised series and documentation are available free under CC BY 4.0, explicitly stated in the Chinese README document. A limitation is that this release does not contain exact device capacities or original operating measurements. It supports comparable algorithm tests, not precise reconstruction of the real utility. Simulation uses include restoration, topology analysis and time-series power-flow experiments. It relates to model-pandapower as a potential solver after format conversion, without a verified importer. Only the small documentation files and repository metadata were read; spreadsheets were not downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "load profiles dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "document"
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://github.com/sparktostar/MVUDN-187",
+  "id": "data-mvudn-187-anonymised-distribution-network",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "last_updated": "2026-09-11",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "MVUDN-187 anonymised multivoltage urban distribution test data",
+  "notes": "G8; G8-0153. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Companion paper named in documentation: 面向极端灾害的跨电压等级城市配电网多资源协同恢复方法 [Multi-resource coordinated restoration of multivoltage urban distribution networks under extreme disasters]. Author list, publication venue and DOI were not established..",
+  "provider": "Repository owner sparktostar; underlying utility not disclosed",
+  "related_ids": [
+    "model-pandapower"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/sparktostar/MVUDN-187/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/sparktostar/MVUDN-187"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Public/restricted data distinction, per-unit profiles, CC BY 4.0 and paper title.",
+      "url": "https://github.com/sparktostar/MVUDN-187/blob/main/Readme.docx"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "187 nodes, voltage levels, parameter ranges and limits of anonymised data.",
+      "url": "https://github.com/sparktostar/MVUDN-187/blob/main/%E6%95%B0%E6%8D%AE%E6%8F%8F%E8%BF%B0.docx"
+    }
+  ],
+  "spatial_resolution": "Anonymised 187-bus urban network; actual location withheld.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Typical-day profiles derived from undisclosed historical periods.",
+  "temporal_resolution": "30 minutes for normalised load and PV.",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "MVUDN-187 anonymised multivoltage urban distribution test data",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

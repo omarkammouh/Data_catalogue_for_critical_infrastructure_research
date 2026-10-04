@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "WFS service (nfs_sistop_ekstern_prod)",
+      "url": "https://maps.kystverket.cloudgis.no/enterprise/services/PROD/nfs_sistop_ekstern_prod/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+    },
+    {
+      "kind": "portal",
+      "label": "Geonorge catalogue entry",
+      "url": "https://kartkatalog.geonorge.no/metadata/94b8c392-e2c8-426a-8dbe-ae828049a1df"
+    },
+    {
+      "kind": "docs",
+      "label": "OSM wiki import page (Norwegian seamarks)",
+      "url": "https://wiki.openstreetmap.org/wiki/Import/Catalogue/Seamark_import_for_Norway"
+    },
+    {
+      "kind": "api",
+      "label": "WFS GetFeature: navigation lights (Lys)",
+      "url": "https://maps.kystverket.cloudgis.no/enterprise/services/PROD/nfs_sistop_ekstern_prod/MapServer/WFSServer?service=WFS&version=2.0.0&request=GetFeature&typeNames=nfs_sistop_ekstern_prod:Lys&count=2"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NO"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "kystverket navigation installations norway lights fixed marks floating marks racons and signs along the coast",
+    "url": "https://maps.kystverket.cloudgis.no/enterprise/services/PROD/nfs_sistop_ekstern_prod/MapServer/WFSServer?count=2&request=GetFeature&service=WFS&typeNames=nfs_sistop_ekstern_prod%3ALys&version=2.0.0"
+  },
+  "description": "The national register of navigation aids along the Norwegian coast, published as open data. Contents: the catalogue entry says Kystverket administers a system of navigation aids made up of installations run by Kystverket, by municipal ports and by private owners, giving visual and electronic signals to help careful mariners. The WFS service read on 29 September 2026 exposed layers for lights (7,744 features), fixed sea marks (13,559), floating marks (1,959), sector lines (29,375) and sector areas, leading lines for lights and marks, racons (90), signs (853) and a layer named IB (3,019). The OpenStreetMap wiki records an earlier import of Kystverket's beacons, buoys, lights and notice marks, including offshore oil and gas platforms and Svalbard. Producer: Kystverket. Coverage: Norway's coast. Format and access: GML download through Geonorge plus WFS and WMS services; open data. Licence: Norwegian Licence for Open Government Data (NLOD) 2.0. Caveats: the entry says the aim is sensible marking of the fairway as resources allow, not marking every hazard; metadata date 2020, data continuously updated. Simulation uses: the navigation infrastructure layer for maritime traffic, port access and coastal hazard models. Related records: the Kystverket real-time AIS record covers ship movements in the same waters.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source osm-wiki: provider pages read (round 2 register piece)",
+      "route": "R48",
+      "source": "osm-wiki"
+    }
+  ],
+  "formats": [
+    "gml",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://maps.kystverket.cloudgis.no/enterprise/services/PROD/nfs_sistop_ekstern_prod/MapServer/WFSServer?service=WFS&version=2.0.0&request=GetFeature&typeNames=nfs_sistop_ekstern_prod:Lys&count=2",
+  "id": "data-kystverket-navigasjonsinstallasjoner-norway-lights-buoys-beacons-racons",
+  "languages": [
+    "no"
+  ],
+  "licence": "Norwegian Licence for Open Government Data (NLOD) 2.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Kystverket navigation installations (Norway): lights, fixed marks, floating marks, racons and signs along the coast",
+  "provider": "Kystverket (Norwegian Coastal Administration)",
+  "related_ids": [
+    "data-kystverket-open-real-time-ais-norway"
+  ],
+  "sectors": [
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Geonorge metadata: description, open data, NLOD 2.0, GML",
+      "url": "https://kartkatalog.geonorge.no/api/getdata/94b8c392-e2c8-426a-8dbe-ae828049a1df"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "WFS capabilities: 10 layers; GetFeature hits counts per layer",
+      "url": "https://maps.kystverket.cloudgis.no/enterprise/services/PROD/nfs_sistop_ekstern_prod/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "OSM wiki import plan: scope of Kystverket seamark data",
+      "url": "https://wiki.openstreetmap.org/wiki/Import/Catalogue/Seamark_import_for_Norway"
+    },
+    {
+      "accessed": "2026-10-02",
+      "note": "Follow-up check: landing page replaced by the provider page that holds the data (basis: fetched 2026-10-02)",
+      "url": "https://maps.kystverket.cloudgis.no/enterprise/services/PROD/nfs_sistop_ekstern_prod/MapServer/WFSServer?service=WFS&version=2.0.0&request=GetFeature&typeNames=nfs_sistop_ekstern_prod:Lys&count=2"
+    }
+  ],
+  "tags": [
+    "navigation aids",
+    "lighthouses",
+    "buoys",
+    "Kystverket",
+    "Geonorge"
+  ],
+  "title_en": "Kystverket navigation installations (Norway): lights, fixed marks, floating marks, racons and signs along the coast",
+  "type": "data"
+}

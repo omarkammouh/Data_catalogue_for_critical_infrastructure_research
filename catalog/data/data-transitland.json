@@ -1,0 +1,139 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Website and global transit map",
+      "url": "https://www.transit.land/"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation (APIs, plans, datasets)",
+      "url": "https://www.transit.land/documentation"
+    },
+    {
+      "kind": "api",
+      "label": "REST API",
+      "note": "API key required; free plan with rate limits",
+      "url": "https://transit.land/api/v2/rest/"
+    },
+    {
+      "kind": "repo",
+      "label": "Transitland Atlas feed registry",
+      "url": "https://github.com/transitland/transitland-atlas"
+    }
+  ],
+  "access_note": "API key needed for all APIs; GraphQL and routing are paid; datasets free for non-commercial use.",
+  "access_restrictions": "registration",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "freemium",
+  "data_family": [
+    "system_description",
+    "demand_operation",
+    "catalogues_registries",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "network_topology",
+    "time_series",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "transitland",
+    "url": "https://transit.land"
+  },
+  "description": "Transitland is an open directory and archive of public transport data: operators, GTFS and GTFS Realtime feeds for bus, train, subway and ferry services worldwide, with a versioned snapshot stored every time a feed is fetched, so historical schedules and service changes can be queried. It is operated by Interline Technologies and powered by the Transitland Atlas, a community-maintained catalogue of feed URLs and operators on GitHub that anyone can extend by pull request and that is released under a CC-BY licence. Coverage is global, strongest in North America and Europe; country-wide datasets of stops and routes cover more than 600,000 United States and 180,000 Canadian stops. Access: the website and global transit map are free; the REST API and vector tiles need an API key on a free plan with rate limits or a paid plan; the GraphQL and routing APIs are paid; datasets in CSV or GeoJSONL are free for non-commercial use; the Atlas is a DMFR JSON repository with Onestop IDs. Caveats: API terms and plans change, feeds are only as good as operators publish them, and some products are in beta. Transitland serves network flow, accessibility and capacity planning studies that need current or historical timetables; it complements the Mobility Database (a parallel feed registry catalogued here) and uses the GTFS standard.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.public_transit",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry",
+      "route": "R11",
+      "source": "transitland"
+    }
+  ],
+  "formats": [
+    "transit_feed",
+    "api",
+    "other_vector",
+    "csv",
+    "geojson",
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.transit.land/",
+  "id": "data-transitland",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY (Transitland Atlas); API and datasets under Transitland terms",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://transit.land/api/v2/rest/"
+    ]
+  },
+  "maturity": "active",
+  "name": "Transitland",
+  "provider": "Interline Technologies (operator of Transitland) with the community-maintained Transitland Atlas",
+  "related_ids": [
+    "data-mobility-database",
+    "data-gtfs-specification"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "feed archive, realtime feeds, datasets 600,000+ US and 180,000+ Canadian stops, Atlas",
+      "url": "https://www.transit.land/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "product table: keys, free/paid, datasets free for non-commercial use; v1 API shut down",
+      "url": "https://www.transit.land/documentation"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "open catalog of feeds and operators; now released under the CC-BY license",
+      "url": "https://raw.githubusercontent.com/transitland/transitland-atlas/master/README.md"
+    }
+  ],
+  "spatial_resolution": "individual stops and route geometries",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "GTFS",
+    "feed archive",
+    "transit API",
+    "Onestop ID"
+  ],
+  "temporal_coverage": "archive of fetched feed versions, continuously extended",
+  "title_en": "Public transport and railways data",
+  "type": "data",
+  "update_frequency": "real_time"
+}

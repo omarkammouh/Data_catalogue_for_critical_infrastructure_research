@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/SunPower/pvfactors"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/SunPower/pvfactors/blob/master/README.rst"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pvfactors photovoltaic irradiance model",
+    "repo": "github.com/sunpower/pvfactors",
+    "url": "https://github.com/SunPower/pvfactors"
+  },
+  "description": "pvfactors is SunPower's Python model for calculating irradiance on photovoltaic-array surfaces using two-dimensional geometry and view factors. It accounts for reflection between surfaces and separates contributions to front and rear irradiance. Inputs include solar angles, direct and diffuse irradiance, panel orientation, row dimensions, spacing and ground albedo; outputs are time-series irradiance components and geometric visualisations. Coverage is a user-defined array and input period. Public source and examples are free under BSD-3-Clause. A limitation is the two-dimensional geometric representation and dependence on supplied weather, albedo and array assumptions; irradiance calculations alone do not establish electrical output or degradation. Users must connect the results to appropriate photovoltaic performance models. pvfactors can support bifacial-array and shading simulations for electricity infrastructure, complementary to PyPSA (model-pypsa) for energy-system studies. The README provides a complete multi-row example and references its 2017 photovoltaic-conference model. No weather series or installation archive was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "sunpower/pvfactors linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/SunPower/pvfactors",
+  "id": "model-pvfactors",
+  "inputs": [
+    "Solar and irradiance time series",
+    "Array geometry and albedo"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-03-03",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "pvfactors photovoltaic irradiance model",
+  "notes": "G7 G7-0739. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Front and rear surface irradiance"
+  ],
+  "provider": "SunPower and pvfactors contributors",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/SunPower/pvfactors",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for SunPower/pvfactors: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/sunpower/pvfactors"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/sunpower/pvfactors/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for electricity",
+  "type": "model"
+}

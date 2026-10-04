@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/croyla/pmpml-gtfs"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "IN"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pmpml pune gtfs generation pipeline",
+    "repo": "github.com/croyla/pmpml-gtfs",
+    "url": "https://github.com/croyla/pmpml-gtfs"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "The PMPML GTFS pipeline assembles public-transport feed tables for Pune from the Apli-PMPML application API. The maintainer croyla publishes Python scripts for fetching routes, stops, schedules and polylines, together with generated standard and compatibility-adjusted ZIP feeds. The workflow writes agency, route, trip, stop-time, shape and calendar tables. It removes stops more than ten kilometres from a route, groups nearby stops within a configurable distance and estimates intermediate timing using configured speed assumptions. Its spatial scope is the source PMPML network; service dates and stop-level resolution depend on each API retrieval. The software is free under MIT-0. Separate rights in upstream transit data are not established by that software licence. API availability and access configuration are operational dependencies, and the compatibility step merges direction or route variants that some consuming systems handle differently. Simulation uses include preparing bus-network and timetable inputs for accessibility or passenger-routing experiments. It relates to data-gtfs-specification and model-opentripplanner. The review checked documentation and published file paths, but did not call the transit API or execute the generator.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "gtfs dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://github.com/croyla/pmpml-gtfs",
+  "id": "platform-pmpml-pune-gtfs-pipeline",
+  "interfaces": [
+    "command_line",
+    "code_library"
+  ],
+  "interoperability": [
+    "GTFS Schedule",
+    "API JSON",
+    "ZIP"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-05",
+  "licence": "MIT-0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "PMPML Pune GTFS generation pipeline",
+  "notes": "G8; G8-0075. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "croyla",
+  "regions": [
+    "Pune"
+  ],
+  "related_ids": [
+    "data-gtfs-specification",
+    "model-opentripplanner"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/croyla/pmpml-gtfs/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/croyla/pmpml-gtfs"
+    }
+  ],
+  "tags": [],
+  "title_en": "Pmpml gtfs pipeline for pune public-transport feed tables",
+  "type": "platform"
+}

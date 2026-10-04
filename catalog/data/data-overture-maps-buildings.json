@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Buildings guide",
+      "url": "https://docs.overturemaps.org/guides/buildings/"
+    },
+    {
+      "kind": "download",
+      "label": "Getting data: Explorer, overturemaps Python client, DuckDB over cloud GeoParquet",
+      "url": "https://docs.overturemaps.org/getting-data/"
+    },
+    {
+      "kind": "portal",
+      "label": "Overture Maps Foundation",
+      "url": "https://overturemaps.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "overture maps buildings theme",
+    "url": "https://docs.overturemaps.org/getting-data"
+  },
+  "description": "The Overture Maps buildings theme is a global dataset of building footprints and building parts compiled by conflating open sources, with the goal of covering all the world's buildings. It is produced by the Overture Maps Foundation for visualisation in 2D and 3D, data enrichment through stable GERS identifiers, and spatial analysis. OpenStreetMap is the primary, highest-priority source; Esri Community Maps, authoritative national and municipal data such as Spain's Instituto Geografico Nacional and the City of Vancouver, and machine-learned roofprints from Microsoft, Google Open Buildings and an East Asian dataset fill the gaps. Building parts come from OpenStreetMap only. Coverage is global. Access is through the Explorer website, the overturemaps Python client, and SQL over cloud-hosted GeoParquet with DuckDB. Licence: ODbL, because OpenStreetMap is included; every other source must be ODbL-compatible. Free. Caveats: machine-learned sources include false detections, which Overture filters by size and shape; features taller than 900 metres or in water are excluded; attributes vary with the source. Simulation uses are exposure for hazard and resilience analysis and base geometry for city digital twins. Related records: Microsoft Global ML Building Footprints, Google Open Buildings and OpenStreetMap buildings, which it conflates.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R30",
+      "source": "built_environment-overture-maps-buildings"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "geojson",
+    "web_page"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://docs.overturemaps.org/getting-data/",
+  "id": "data-overture-maps-buildings",
+  "languages": [
+    "en"
+  ],
+  "licence": "ODbL-1.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Overture Maps buildings theme",
+  "provider": "Overture Maps Foundation",
+  "related_ids": [
+    "data-tailte-eireann-hvd-buildings-and-building-groups"
+  ],
+  "schema_summary": "building and building_part feature types; GERS ID; has_parts; height and levels where sources provide them",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Theme description, feature types, sources and conflation priority, ODbL licence, filtering rules, GERS",
+      "url": "https://docs.overturemaps.org/guides/buildings/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Explorer, Python client, DuckDB over cloud GeoParquet (s3 us-west-2)",
+      "url": "https://docs.overturemaps.org/getting-data/"
+    }
+  ],
+  "spatial_resolution": "Individual building footprints and building parts",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "building footprints",
+    "conflation",
+    "GERS",
+    "GeoParquet",
+    "OpenStreetMap"
+  ],
+  "temporal_resolution": "none (periodic releases)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Overture Maps buildings theme",
+  "type": "data"
+}

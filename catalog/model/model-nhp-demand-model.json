@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Model code",
+      "url": "https://github.com/The-Strategy-Unit/nhp_model"
+    },
+    {
+      "kind": "download",
+      "label": "Release v6.0.0 (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.22794190"
+    },
+    {
+      "kind": "docs",
+      "label": "Project information site",
+      "url": "https://connect.strategyunitwm.nhs.uk/nhp/project_information/"
+    },
+    {
+      "kind": "docs",
+      "label": "One-page model explainer",
+      "url": "https://connect.strategyunitwm.nhs.uk/nhp_model_explainer/"
+    },
+    {
+      "kind": "portal",
+      "label": "Former landing page (description or portal)",
+      "url": "https://www.strategyunitwm.nhs.uk/new-hospital-programme-demand-model"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.22794190",
+    "name": "new hospital programme demand and capacity model nhs strategy unit",
+    "repo": "github.com/the-strategy-unit/nhp_model",
+    "url": "https://strategyunitwm.nhs.uk/new-hospital-programme-demand-model"
+  },
+  "description": "This model forecasts how much hospital activity a local health system in England will need to handle in the future, so that the NHS can size the new hospitals it is building. The producer is the Strategy Unit, an NHS analytics team, which built it for the national New Hospital Programme as a nationally consistent method. It is a Monte Carlo simulation: starting from national Hospital Episode Statistics, it applies uncertain assumptions about population growth, changing patterns of care and activity that could be avoided or moved out of hospital, and produces ranges of future inpatient, outpatient and emergency activity and the capacity they imply. Coverage is England. The Python code is available free on GitHub and Zenodo under the MIT licence, with companion tools for setting inputs and exploring outputs and a public explainer. Caveats: the producers say it is hard to run outside their infrastructure because it needs processed national patient data, synthetic data are still being prepared, and parameters should be set with care together with local partners. Simulation uses: long-term hospital capacity planning, testing how demographic change or shifts in care models alter bed needs, and providing baseline demand for resilience studies. Related records: patientflow (model-patientflow) forecasts short-term bed demand, and the KHP patient flow simulator (model-khp-patient-flow-simulator) models hospital flows.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hospital demand model",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.22794190",
+  "id": "model-nhp-demand-model",
+  "inputs": [
+    "Processed Hospital Episode Statistics for England (via the nhp_data repository)",
+    "Scenario parameters for demographic growth, changes in activity and potentially mitigable activity, set with the nhp_inputs tool"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "New Hospital Programme demand and capacity model (NHS Strategy Unit)",
+  "outputs": [
+    "Monte Carlo distributions of future inpatient, outpatient and emergency department activity",
+    "Implied bed and other capacity requirements, explored with the nhp_outputs tool"
+  ],
+  "provider": "The Strategy Unit (NHS Midlands and Lancashire), for the NHS New Hospital Programme",
+  "regions": [
+    "England"
+  ],
+  "related_ids": [
+    "model-patientflow",
+    "model-khp-patient-flow-simulator"
+  ],
+  "repository": "https://github.com/The-Strategy-Unit/nhp_model",
+  "runs_on": [
+    "Python 3.12 or 3.13",
+    "Docker"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creator The Strategy Unit; MIT; published 2026-09-16; release v6.0.0 of github.com/The-Strategy-Unit/nhp_model; a nationally consistent demand model using Monte Carlo simulation to forecast future demand for healthcare",
+      "url": "https://zenodo.org/api/records/22794190"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Shallow clone: last commit 2026-09-25; readme: New Hospital Programme demand and capacity modelling tool; companion repositories nhp_inputs, nhp_outputs, nhp_data; uses national Hospital Episode Statistics; hard to run externally without Strategy Unit data and infrastructure; synthetic data in progress; contact the Strategy Unit to use existing infrastructure; parameters should be set with care with system partners; pyproject name nhp-model, Python >=3.12,<3.14; Dockerfile",
+      "url": "https://github.com/The-Strategy-Unit/nhp_model"
+    }
+  ],
+  "tags": [
+    "hospital demand",
+    "capacity planning",
+    "Monte Carlo",
+    "NHS",
+    "New Hospital Programme",
+    "Hospital Episode Statistics"
+  ],
+  "title_en": "New Hospital Programme demand and capacity model (NHS Strategy Unit)",
+  "type": "model",
+  "validated_on": [
+    "Used by NHS trusts in the New Hospital Programme to plan new hospital schemes"
+  ]
+}

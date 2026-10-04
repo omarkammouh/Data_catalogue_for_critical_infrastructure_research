@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/irena-flextool/flextool"
+    },
+    {
+      "kind": "docs",
+      "label": "IRENA FlexTool page",
+      "url": "https://www.irena.org/energytransition/Energy-System-Models-and-Data/IRENA-FlexTool"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "irena flextool",
+    "repo": "github.com/irena-flextool/flextool",
+    "url": "https://irena.org/energytransition/Energy-System-Models-and-Data/IRENA-FlexTool"
+  },
+  "description": "IRENA FlexTool is an energy and power system model for understanding the role of variable power generation in future energy systems, performing both capacity expansion planning and operational planning so that the flexibility needs of systems with high shares of wind and solar can be assessed. The software is copyright of the International Renewable Energy Agency and its citation file lists developers at VTT Technical Research Centre of Finland, led by Juha Kiviluoma. It is location independent: the modelled system, from one country to a region, is defined in the user's input data. The current version 4 builds and pre-processes the model in pure Python, not the earlier GLPSOL-based text processing, scales the optimisation problem automatically before it reaches the HiGHS solver and is noticeably faster; code is on GitHub (version 4.0.4, Python 3.11 or newer) under the GNU Lesser General Public Licence version 3 or later, free of charge. Caveats: the former master branch is deprecated and no longer updated, so existing installations must migrate to the main branch with a fresh parallel install, and IRENA's own web page was protected against scripted reading when checked. Simulation uses are capacity planning and optimisation of flexibility in systems with variable renewables. Related records: it compares with model-spineopt and model-pypsa.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry IRENA FlexTool",
+      "route": "R06",
+      "source": "energy-irena-flextool"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.irena.org/energytransition/Energy-System-Models-and-Data/IRENA-FlexTool",
+  "id": "model-irena-flextool",
+  "inputs": [
+    "Energy system description of units",
+    "nodes",
+    "connections",
+    "demand and variable generation profiles"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-21",
+  "licence": "LGPL-3.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.irena.org/energytransition/Energy-System-Models-and-Data/IRENA-FlexTool"
+    ]
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "IRENA FlexTool",
+  "notes": "IRENA's page (irena.org) answered with a bot-protection challenge on 2026-09-26; facts come from the GitHub repository.",
+  "outputs": [
+    "Capacity expansion results",
+    "Operational dispatch and flexibility indicators"
+  ],
+  "provider": "International Renewable Energy Agency (IRENA), developed with VTT Technical Research Centre of Finland",
+  "related_ids": [
+    "model-spineopt",
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/irena-flextool/flextool",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, capacity expansion and operational planning, v4 pure Python build, automatic scaling, HiGHS, master branch deprecated",
+      "url": "https://raw.githubusercontent.com/irena-flextool/flextool/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Copyright IRENA 2018-2022; LGPL v3 or later",
+      "url": "https://raw.githubusercontent.com/irena-flextool/flextool/HEAD/LICENSE.txt"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Authors Juha Kiviluoma, Arttu Tupala and others, VTT",
+      "url": "https://raw.githubusercontent.com/irena-flextool/flextool/HEAD/CITATION.cff"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 4.0.4; Python >=3.11",
+      "url": "https://raw.githubusercontent.com/irena-flextool/flextool/HEAD/pyproject.toml"
+    }
+  ],
+  "tags": [
+    "flexibility",
+    "variable renewables",
+    "capacity expansion",
+    "IRENA",
+    "VTT"
+  ],
+  "title_en": "Irena flextool: energy and power system model for variable generation",
+  "type": "model",
+  "validated_on": []
+}

@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository with manual",
+      "note": "Docs folder holds the user manual and a paper draft under review",
+      "url": "https://github.com/marcusnobrega-eng/DRAIN-LID"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "drain lid darcy richards infiltration model for low impact development",
+    "url": "https://github.com/marcusnobrega-eng/DRAIN-LID"
+  },
+  "description": "DRAIN-LID is a MATLAB model that solves the one-dimensional mixed-form Richards equation to simulate vertical water movement, infiltration, evaporation and drainage in nature-based low impact development systems such as permeable pavements, green roofs and bioretention cells. Marcus Nobrega Gomes Junior develops it as an open source project with a user manual and a scientific paper draft under review. It couples a modular forcing engine (rainfall, Hargreaves or user evapotranspiration, SCS-CN runoff from an upstream catchment, user hydrographs), ponding logic that switches boundary conditions at saturation, orifice and spillway drainage structures and pollutant forcing, with built-in benchmarks against Hydrus-1D and experiments. Coverage is a single device or site. Format and access: a public repository with scenario configurations; outputs go to Excel, plots and animations. Licence: not stated in the README text; free to download. Caveats: it is one-dimensional, needs MATLAB, and is recent research code. It supports design and climate adaptation of green-blue stormwater infrastructure. Related catalogue records are SWMMLIDopt, which optimises where such measures go, and the BGS Infiltration SuDS Map for site screening.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "green infrastructure stormwater model low impact development simulation tool open source",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://github.com/marcusnobrega-eng/DRAIN-LID",
+  "id": "model-drain-lid-richards-infiltration",
+  "inputs": [
+    "Rainfall or hydrograph forcing",
+    "Potential evapotranspiration (Hargreaves or user input)",
+    "Upstream runoff (SCS-CN)",
+    "Van Genuchten soil parameters",
+    "Orifice and spillway settings"
+  ],
+  "language": [
+    "matlab"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-03",
+  "licence": "Not stated in the README text (a licence badge links to a file that could not be read)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "DRAIN-LID: Darcy-Richards infiltration model for low impact development",
+  "outputs": [
+    "Pressure head, water content and flux time series by node",
+    "Infiltration, ponding and drainage outflow",
+    "Performance metrics and plots"
+  ],
+  "provider": "Marcus Nobrega Gomes Junior (open source MATLAB project)",
+  "related_ids": [
+    "model-swmmlidopt-lid-placement-optimisation",
+    "data-bgs-infiltration-suds-map"
+  ],
+  "sectors": [
+    "cross_cutting.green_blue",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "README: equations, capabilities, structure, outputs, documentation",
+      "url": "https://raw.githubusercontent.com/marcusnobrega-eng/DRAIN-LID/HEAD/README.md"
+    }
+  ],
+  "tags": [
+    "green roofs",
+    "bioretention",
+    "permeable pavement",
+    "Richards equation"
+  ],
+  "title_en": "DRAIN-LID: Darcy-Richards infiltration model for low impact development",
+  "type": "model"
+}

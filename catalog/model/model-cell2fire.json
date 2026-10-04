@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/cell2fire/Cell2Fire"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation (work in progress)",
+      "url": "https://cell2fire.readthedocs.io/"
+    },
+    {
+      "kind": "paper",
+      "label": "Pais et al. (2021), Frontiers in Forests and Global Change",
+      "url": "https://doi.org/10.3389/ffgc.2021.692706"
+    },
+    {
+      "kind": "repo",
+      "label": "C2FK, a more actively maintained fork",
+      "url": "https://github.com/fire2a/C2FK"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Pais, C., Carrasco, J., Martell, D.L., Weintraub, A., Woodruff, D.L. (2021). Cell2Fire: A Cell-Based Forest Fire Growth Model to Support Strategic Landscape Management Planning. Frontiers in Forests and Global Change 4. https://doi.org/10.3389/ffgc.2021.692706",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.3389/ffgc.2021.692706",
+    "name": "cell2fire",
+    "repo": "github.com/cell2fire/cell2fire",
+    "url": "https://github.com/cell2fire/Cell2Fire"
+  },
+  "description": "Cell2Fire is a cell-based forest and wildland landscape fire spread simulator. The landscape is partitioned into many homogeneous cells, each with its own fuel, weather, fuel moisture and topography; fire spread within a cell is assumed elliptical and driven by spread rates from an independent fire behaviour model such as the Canadian Forest Fire Behavior Prediction (FBP) System. Cristobal Pais, Jaime Carrasco, David Martell, David L. Woodruff and Andres Weintraub built it to support strategic landscape management planning, such as locating fuel treatments, and published it in Frontiers in Forests and Global Change (2021). Coverage is any landscape supplied as a grid; resolution is the cell size of the input instance. It uses parallel computation to run large numbers of simulations quickly and includes statistical, graphical and spatial analysis of projected fire growth and burn probability. It is C++ and Python source code on GitHub, built with make, Boost and Eigen, with example instances and work-in-progress documentation on Read the Docs. Licence: GNU GPL v3, free. Caveats: the authors state it is for research use only with no warranty, installation needs C++ familiarity, and a more actively maintained fork (C2FK) exists. Simulation uses: wildfire hazard exposure of landscapes and the infrastructure in them, and optimisation of fuel management. Related: ELMFIRE, another open wildfire spread model (catalogued as model-elmfire).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "cell-based wildfire growth simulator (register services-cell2fire)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry Cell2Fire",
+      "route": "R06",
+      "source": "services-cell2fire (register)"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://github.com/cell2fire/Cell2Fire",
+  "id": "model-cell2fire",
+  "inputs": [
+    "Landscape grid of homogeneous cells with fuel, weather, fuel moisture and topography",
+    "Ignition points",
+    "Weather streams"
+  ],
+  "language": [
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-14",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "Cell2Fire",
+  "outputs": [
+    "Fire growth grids over time",
+    "Burn probability and statistics from many simulations",
+    "Plots and spatial analyses"
+  ],
+  "provider": "Cristobal Pais, Jaime Carrasco, David Martell, David L. Woodruff and Andres Weintraub",
+  "related_ids": [
+    "model-elmfire"
+  ],
+  "repository": "https://github.com/cell2fire/Cell2Fire",
+  "runs_on": [],
+  "sectors": [
+    "services.emergency_services",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Authors, research-use disclaimer, cell-based elliptical spread, parallel runs, fork C2FK, citation, requirements",
+      "url": "https://raw.githubusercontent.com/cell2fire/Cell2Fire/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU GPL version 3",
+      "url": "https://raw.githubusercontent.com/cell2fire/Cell2Fire/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: tags v0.1, v0.11",
+      "url": "https://github.com/cell2fire/Cell2Fire"
+    }
+  ],
+  "tags": [
+    "wildfire spread",
+    "cell-based",
+    "Canadian FBP",
+    "burn probability",
+    "fuel treatment",
+    "landscape planning"
+  ],
+  "title_en": "Cell2fire cell-based forest wildland landscape fire spread simulator",
+  "type": "model",
+  "validated_on": []
+}

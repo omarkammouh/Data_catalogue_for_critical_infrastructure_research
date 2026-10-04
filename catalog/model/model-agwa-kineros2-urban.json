@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "AGWApro source code",
+      "url": "https://github.com/ARS-SWRC/agwa"
+    },
+    {
+      "kind": "portal",
+      "label": "AGWA downloads",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.tucson.ars.ag.gov/agwa/downloads/"
+    },
+    {
+      "kind": "docs",
+      "label": "AGWA website",
+      "url": "https://www.tucson.ars.ag.gov/agwa/"
+    },
+    {
+      "kind": "paper",
+      "label": "AGWA Urban and KINEROS2 paper (Frontiers in Built Environment 2018)",
+      "url": "https://doi.org/10.3389/fbuil.2018.00058"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Korgaonkar, Y., Guertin, D. P., Goodrich, D. C., Unkrich, C., Kepner, W. G., Burns, I. S. (2018). Modeling Urban Hydrology and Green Infrastructure Using the AGWA Urban Tool and the KINEROS2 Model. Frontiers in Built Environment. doi:10.3389/fbuil.2018.00058",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.3389/fbuil.2018.00058",
+    "name": "agwa automated geospatial watershed assessment with kineros2 and the agwa urban tool",
+    "repo": "github.com/ars-swrc/agwa",
+    "url": "https://tucson.ars.ag.gov/agwa"
+  },
+  "description": "AGWA is a GIS-based hydrologic modelling tool that uses commonly available GIS layers to parameterise, run and visualise watershed runoff and erosion models, and its AGWA Urban tool applies the KINEROS2 model to urban hydrology and green infrastructure. It covers small watersheds to basins, supporting KINEROS2, RHEM and SWAT; KINEROS2 includes an urban element with nine overland flow components for built land cover, and the AGWA Urban paper validated it on a residential subdivision in Arizona and compared retention basins, permeable driveways and rainwater harvesting cisterns. It was developed from the early 2000s by the USDA-ARS Southwest Watershed Research Center with the US EPA Office of Research and Development, the University of Arizona and the University of Wyoming; AGWApro 0.5 Beta for ArcGIS Pro is maintained as Python code on GitHub. Licence (read on the provider page on 2026-09-28): CC0-1.0. Access is free of charge. Caveats: AGWA runs inside Esri ArcGIS software, and KINEROS2 is event oriented. It supports runoff and flood analysis of green infrastructure scenarios, post-fire watershed assessment and climate adaptation planning; a related record is the GIFMod green infrastructure model.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "urban GI watershed tool (green physical)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "wildfire"
+  ],
+  "homepage": "https://www.tucson.ars.ag.gov/agwa/",
+  "id": "model-agwa-kineros2-urban",
+  "inputs": [
+    "DEM",
+    "soils",
+    "land cover",
+    "precipitation from user input or NOAA precipitation frequency data"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-08-14",
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "AGWA (Automated Geospatial Watershed Assessment) with KINEROS2 and the AGWA Urban tool",
+  "outputs": [
+    "runoff volumes and peak flows",
+    "erosion and sediment yield",
+    "maps of results in GIS"
+  ],
+  "provider": "USDA-ARS Southwest Watershed Research Center, with US EPA and the University of Arizona",
+  "related_ids": [
+    "model-gifmod-green-infrastructure-flexible-model"
+  ],
+  "sectors": [
+    "cross_cutting.green_blue",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "GIS-based hydrologic modelling tool; RHEM, KINEROS2, KINEROS-OPUS, SWAT2000, SWAT2005; AGWA 1.5 ArcView, 2.x ArcGIS 9, 3.x ArcGIS 10; AGWApro V0.5Beta on SWRC GitHub; post-fire assessments; page updated 2024-08-14",
+      "url": "https://www.tucson.ars.ag.gov/agwa/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "ArcPy/Python toolbox; AGWApro 0.5 beta; USDA-ARS SWRC and University of Arizona; developed early 2000s with EPA ORD Landscape Ecology Branch, University of Arizona, University of Wyoming; NOAA precipitation frequency; pre and post fire; no LICENSE file (404)",
+      "url": "https://raw.githubusercontent.com/ARS-SWRC/agwa/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "AGWA Urban and KINEROS2; urban element with nine overland flow components; validated on residential subdivision in Arizona with 47 events; scenarios retention basins, permeable driveways, cisterns; 2018 Frontiers in Built Environment",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC6748391&format=json&resultType=core"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): CC0-1.0 (basis: licence file in the GitHub repository)",
+      "url": "https://github.com/ARS-SWRC/agwa/blob/main/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://api.crossref.org/works/10.3389/fbuil.2018.00058"
+    }
+  ],
+  "tags": [
+    "KINEROS2",
+    "AGWA",
+    "watershed modelling",
+    "urban hydrology",
+    "green infrastructure",
+    "ArcGIS"
+  ],
+  "title_en": "AGWA (Automated Geospatial Watershed Assessment) with KINEROS2 and the AGWA Urban tool",
+  "type": "model"
+}

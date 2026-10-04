@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/zhub-code/sdnic-ics-dataset"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "cyber_control",
+    "synthetic_benchmark",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.21839517",
+    "name": "sdnic synchronized water pressure process and network benchmark",
+    "repo": "github.com/zhub-code/sdnic-ics-dataset",
+    "url": "https://github.com/zhub-code/sdnic-ics-dataset"
+  },
+  "description": "This repository publishes synchronized water-pressure process and network records for industrial-control intrusion-detection research. Its own dataset document describes two normal sessions and eight attack scenarios, with process CSV columns for Unix time, scaled pressure, valve state, pump state and labels. Packet captures record Modbus/TCP traffic, and the documentation explains joining process readings and per-second network statistics. The synthetic or testbed-scale pressure loop has no stated real-world location or calendar observation period. Current GitHub files are publicly available under CC BY 4.0. The linked Zenodo archive is restricted and lists no public files, so GitHub is the verified access route. A limitation is inconsistent metadata: the overview claims ten paired sessions, but the table and tree omit an A1 process CSV; reported row counts also exceed stated seconds in several nominally one-second sessions. Those discrepancies were not resolved by downloading data. Simulation uses include validating cross-layer monitoring against known process and communication disturbances. It complements data-tennessee-eastman-process-anomaly-detection with network captures and a smaller water-control process. Detection rules and field definitions are published, but neither tools nor attacks were executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "industrial benchmark dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "domain_model_file"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/zhub-code/sdnic-ics-dataset",
+  "id": "data-sdnic-water-pressure-process-network-benchmark",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-07",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "SDNIC synchronized water-pressure process and network benchmark",
+  "notes": "G8; G8-0351. G8; own metadata and documentation checked. Data files, archives and software execution were not inspected. Simulation uses are curator interpretations.  Cited as: Azeez and Katzenbeisser (2026), Synchronized Process-Network Datasets for Wireless Attacks in SDN-Enabled Industrial Control Systems, as cited by the repository. The supplied DOI identifies a Zenodo software archive, not verified proceedings publication..",
+  "provider": "zhub-code; Muhammed Adekunle Azeez and Stefan Katzenbeisser",
+  "related_ids": [
+    "data-tennessee-eastman-process-anomaly-detection"
+  ],
+  "sectors": [
+    "water.drinking_water",
+    "industry.manufacturing_chemical",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/zhub-code/sdnic-ics-dataset/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/zhub-code/sdnic-ics-dataset"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Column definitions, session exceptions and conflicting counts.",
+      "url": "https://github.com/zhub-code/sdnic-ics-dataset/blob/main/docs/dataset_description.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Archive is restricted with CC BY 4.0 metadata; current public GitHub route is used.",
+      "url": "https://zenodo.org/api/records/21839517"
+    }
+  ],
+  "spatial_resolution": "One water-pressure control testbed, location unstated.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Ten experimental sessions; calendar dates unstated. Zenodo release 2026-08-07.",
+  "temporal_resolution": "Documentation states one-second joins; row-count/duration discrepancies remain.",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "SDNIC synchronized water-pressure process and network benchmark",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

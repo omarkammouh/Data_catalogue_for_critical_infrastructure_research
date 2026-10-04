@@ -1,0 +1,133 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Health service statistics API (JGP)",
+      "url": "https://api.nfz.gov.pl/app-stat-api-jgp/"
+    },
+    {
+      "kind": "api",
+      "label": "Pharmacy reimbursement statistics API",
+      "url": "https://api.nfz.gov.pl/app-stat-api-ra/"
+    },
+    {
+      "kind": "api",
+      "label": "Drug programme statistics API",
+      "url": "https://api.nfz.gov.pl/app-stat-api-pl/"
+    },
+    {
+      "kind": "api",
+      "label": "Chemotherapy statistics API",
+      "url": "https://api.nfz.gov.pl/app-stat-api-ch/"
+    },
+    {
+      "kind": "viewer",
+      "label": "Statystyki NFZ portal",
+      "url": "https://statystyki.nfz.gov.pl/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "PL"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nfz statistics portal poland hospital services by drg jgp and other product catalogues pharmacy reimbursement by territory drug programmes and chemotherapy with apis",
+    "url": "https://statystyki.nfz.gov.pl"
+  },
+  "description": "The NFZ Statistics portal publishes what Poland's public health insurer pays for: hospital and specialist services, reimbursed medicines in pharmacies, drug programmes and chemotherapy. It is run by the Narodowy Fundusz Zdrowia (NFZ), the National Health Fund that finances publicly funded care in Poland. Hospital activity is shown for the JGP catalogue, the Polish diagnosis-related groups, and for separate, radiotherapy and highly specialised services, in general, settlement, medical and cross-sectional views. Pharmacy statistics give numbers of packages and values of reimbursed medicines by product, ATC group and the area where the pharmacy is located. Drug programme and chemotherapy statistics give patients and reimbursement by active substance, sex and age group. The data are free on the portal and available to download through four public APIs. Caveats: figures are statistical values and not financial reports, the API host blocked automated requests from this environment so responses were not checked, and the spatial detail depends on each view. Simulation uses: setting hospital demand by diagnosis group and region for capacity models, and tracking medicine distribution through pharmacies by area. Related records: the Romanian DRG hospital indicators (data-inmss-romania-drg-hospital-indicators) and the French DREES hospital statistics (data-drees-sae-hospital-annual-statistics) are comparable sources.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: NFZ statystyki (PL, health_regulator_data_institute)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "json",
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://statystyki.nfz.gov.pl/",
+  "id": "data-nfz-poland-health-service-statistics",
+  "languages": [
+    "en",
+    "pl"
+  ],
+  "licence": "NFZ terms (no licence named on the page)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NFZ Statistics portal (Poland): hospital services by DRG (JGP) and other product catalogues, pharmacy reimbursement by territory, drug programmes and chemotherapy, with APIs",
+  "provider": "Narodowy Fundusz Zdrowia (NFZ, National Health Fund), Poland",
+  "related_ids": [
+    "data-inmss-romania-drg-hospital-indicators",
+    "data-drees-sae-hospital-annual-statistics"
+  ],
+  "schema_summary": "Health service statistics in general, settlement, medical and cross-sectional views for products of the JGP (Polish DRG), separate services, services for summing, radiotherapy and highly specialised services catalogues; pharmacy reimbursement as package counts and values by medicinal product, ATC group and territorial area of the dispensing pharmacy; drug programme and chemotherapy statistics as patient numbers and reimbursement by active substance, sex and age group",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Portal presents NFZ data: health service statistics (general, settlement, medical, cross-sectional) for JGP, separate services, services to sum, radiotherapy and highly specialised services; pharmacy reimbursement statistics (packages and values by medicinal product, ATC group and territorial area of pharmacies); drug programme and chemotherapy statistics (patients and reimbursement by active substance, sex and age group); data are statistical values, not financial information; downloadable through four APIs at api.nfz.gov.pl",
+      "url": "https://statystyki.nfz.gov.pl/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "API host answered with an Incapsula bot challenge from this environment; API responses not read",
+      "url": "https://api.nfz.gov.pl/app-stat-api-jgp/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://statystyki.nfz.gov.pl/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://api.nfz.gov.pl/app-stat-api-jgp/"
+    }
+  ],
+  "spatial_resolution": "Varies by view (territorial area of the pharmacy for reimbursement statistics)",
+  "spatial_resolution_class": "varies",
+  "tags": [
+    "hospital activity",
+    "DRG",
+    "JGP",
+    "pharmacy reimbursement",
+    "Poland",
+    "API"
+  ],
+  "temporal_coverage": "Not stated on the page read",
+  "temporal_resolution": "Not stated on the page read",
+  "temporal_resolution_class": "not_stated",
+  "title_en": "NFZ Statistics portal (Poland): hospital services by DRG (JGP) and other product catalogues, pharmacy reimbursement by territory, drug programmes and chemotherapy, with APIs",
+  "type": "data",
+  "update_frequency": "irregular"
+}

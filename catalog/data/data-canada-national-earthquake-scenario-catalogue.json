@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Scenario catalogue repository (FINISHED scenarios with CSV results)",
+      "url": "https://github.com/OpenDRR/earthquake-scenarios"
+    },
+    {
+      "kind": "viewer",
+      "label": "RiskProfiler web viewer",
+      "url": "https://riskprofiler.ca/"
+    },
+    {
+      "kind": "docs",
+      "label": "Geological Survey of Canada Open File 8806 (user guide)",
+      "url": "https://doi.org/10.4095/328364"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CA"
+  ],
+  "data_family": [
+    "scenarios_projections",
+    "vulnerability_fragility",
+    "hazards",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "tabular",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "canada s national earthquake scenario catalogue opendrr riskprofiler",
+    "repo": "github.com/opendrr/earthquake-scenarios",
+    "url": "https://github.com/OpenDRR/earthquake-scenarios"
+  },
+  "description": "Canada's National Earthquake Scenario Catalogue sets out what credible hypothetical earthquakes would do to Canadian communities: the expected shaking, damage to buildings, casualties, economic losses and other consequences, reported at roughly the scale of Census dissemination areas. Each finished scenario has a summary with a map and links to its result tables, and the catalogue is also shown in the RiskProfiler web viewer. The producer is the Geological Survey of Canada's Public Safety Geoscience Program at Natural Resources Canada, which builds the scenarios with the OpenQuake engine from the national seismic hazard, building exposure and vulnerability models and documents them in Open File 8806. Coverage is earthquake-prone regions of Canada; the repository holds 23 finished scenario summaries with CSV, GeoJSON and GeoPackage results. Data are free on GitHub under the Open Government Licence - Canada, stored with Git LFS, and can be browsed without download in RiskProfiler. Caveats: only shaking damage to buildings and their occupants is modelled, not critical infrastructure, vehicles or secondary hazards such as landslides, tsunami or fire following; results represent typical conditions, carry large uncertainty and must not be used for individual buildings. Simulation uses: exercise design and response planning for emergency services, estimating casualties and displaced people that hospitals and shelters must absorb, and input to cascading infrastructure models. Related records: the USGS ShakeMap scenario catalogue (data-usgs-shakemap-scenario-catalog) plays the same role in the United States.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "earthquake scenario catalogue emergency management planning open data",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geojson",
+    "geopackage",
+    "document",
+    "image"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "earthquake"
+  ],
+  "homepage": "https://github.com/OpenDRR/earthquake-scenarios",
+  "id": "data-canada-national-earthquake-scenario-catalogue",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-02-21",
+  "licence": "Open Government Licence - Canada",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Canada's National Earthquake Scenario Catalogue (OpenDRR, RiskProfiler)",
+  "notes": "Deep check A4 (2026-10-01) corrected: last_updated .",
+  "provider": "Geological Survey of Canada, Public Safety Geoscience Program (Natural Resources Canada)",
+  "related_ids": [
+    "data-usgs-shakemap-scenario-catalog"
+  ],
+  "schema_summary": "Per hypothetical earthquake scenario (magnitude, fault or source): shaking, building damage, casualties, economic loss and other consequences at the approximate scale of Census dissemination areas, computed with the OpenQuake engine from national hazard, exposure and vulnerability models",
+  "sectors": [
+    "services.emergency_services",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose (planning and emergency management), content (shaking, damage, loss, consequences at dissemination area scale; buildings only), GSC Public Safety Geoscience Program, FINISHED directory, OpenQuake, Git LFS, acceptable use and uncertainties, Open Government Licence - Canada, citation Hobbs, Journeay and Rotheram 2021 (Open File 8806)",
+      "url": "https://raw.githubusercontent.com/OpenDRR/earthquake-scenarios/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Shallow clone without LFS content: last commit 2024-02-21; FINISHED holds 23 scenario summaries, 157 CSV, 2 GeoJSON and a geopackages folder",
+      "url": "https://github.com/OpenDRR/earthquake-scenarios"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "RiskProfiler viewer answered 200",
+      "url": "https://riskprofiler.ca/"
+    }
+  ],
+  "spatial_resolution": "Census dissemination areas (approximate)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "earthquake scenarios",
+    "emergency management",
+    "building damage",
+    "casualties",
+    "OpenQuake",
+    "Canada",
+    "OpenDRR"
+  ],
+  "temporal_coverage": "Hypothetical scenarios (catalogue updated 2022; repository commits to 2024)",
+  "temporal_resolution": "Single event per scenario",
+  "temporal_resolution_class": "event",
+  "title_en": "Canada's National Earthquake Scenario Catalogue (OpenDRR, RiskProfiler)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

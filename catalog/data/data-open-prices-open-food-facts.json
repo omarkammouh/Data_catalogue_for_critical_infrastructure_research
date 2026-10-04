@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Open Prices web app",
+      "url": "https://prices.openfoodfacts.org/"
+    },
+    {
+      "kind": "api",
+      "label": "REST API documentation",
+      "url": "https://prices.openfoodfacts.org/api/docs"
+    },
+    {
+      "kind": "api",
+      "label": "API statistics",
+      "url": "https://prices.openfoodfacts.org/api/v1/stats"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "crowdsourced_public_reports",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "tabular",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "open prices crowdsourced product prices with receipts and shop locations open food facts",
+    "url": "https://prices.openfoodfacts.org"
+  },
+  "description": "Open Prices is a crowdsourced database of prices paid for food and other products in shops around the world, run by the Open Food Facts non-profit association. Contributors enter prices through the web app or a mobile app, usually with a photo of the price tag or receipt as proof, and each price is linked to a product barcode or a category and to a shop location. On 29 September 2026 the public statistics endpoint reported 318,462 prices, 7,409 shop locations in 124 countries, 125,156 proofs, 8,069 contributors and 92 currencies, with prices from 16 different years, most of them community-entered and about 48,000 from consumption records. The data are free to query online through a documented REST API with pagination, alongside the web interface. Caveats: coverage follows where volunteers shop, so it is dense in some European countries and thin elsewhere; prices are not a statistical sample; and the licence for the price data is not stated on the pages read (the wider Open Food Facts databases use the Open Database Licence). Simulation uses: shop-level price observations for food supply disruption and price shock models, and a shop location list for access analysis. Related records: the WFP Global Food Prices database (data-wfp-global-food-prices) and the World Bank Real Time Food Prices (data-worldbank-real-time-food-prices) are official market price series.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "crowdsourced food price reporting platform open data mobile",
+      "route": "R22",
+      "source": "web-search"
+    },
+    {
+      "date": "2026-09-29",
+      "query": "real-time food market prices API daily feed open data wholesale",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "api"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://prices.openfoodfacts.org/",
+  "id": "data-open-prices-open-food-facts",
+  "languages": [
+    "en"
+  ],
+  "licence": "Not stated on the pages read",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Open Prices: crowdsourced product prices with receipts and shop locations (Open Food Facts)",
+  "provider": "Open Food Facts (non-profit association)",
+  "related_ids": [
+    "data-wfp-global-food-prices",
+    "data-worldbank-real-time-food-prices"
+  ],
+  "schema_summary": "Price, currency, date, product barcode or category, shop location (OpenStreetMap-based), proof image and contributor",
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "API statistics 2026-09-29: price, location, country, proof, user, currency and year counts, community and consumption split",
+      "url": "https://prices.openfoodfacts.org/api/v1/stats"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "API price record structure (product code, location, proof)",
+      "url": "https://prices.openfoodfacts.org/api/v1/prices?size=1"
+    }
+  ],
+  "spatial_resolution": "Shop location",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "food prices",
+    "crowdsourcing",
+    "retail"
+  ],
+  "temporal_coverage": "Prices dated over 16 calendar years, mostly recent",
+  "temporal_resolution": "Per price observation",
+  "temporal_resolution_class": "event",
+  "title_en": "Open Prices: crowdsourced product prices with receipts and shop locations (Open Food Facts)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

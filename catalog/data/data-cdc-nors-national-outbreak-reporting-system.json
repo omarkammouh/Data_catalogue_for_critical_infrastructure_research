@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Data portal (CSV, JSON, Socrata API)",
+      "url": "https://data.cdc.gov/Foodborne-Waterborne-and-Related-Diseases/NORS/5xkq-dg7x"
+    },
+    {
+      "kind": "api",
+      "label": "Socrata API endpoint",
+      "url": "https://data.cdc.gov/resource/5xkq-dg7x.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "historical_events",
+    "health_impacts"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cdc national outbreak reporting system nors public data foodborne waterborne and enteric disease outbreaks in the united states 1971 onwards",
+    "url": "https://data.cdc.gov/Foodborne-Waterborne-and-Related-Diseases/NORS/5xkq-dg7x"
+  },
+  "description": "This dataset is the public extract of the National Outbreak Reporting System, the web-based system through which local, state and territorial health departments in the United States report to CDC all waterborne disease outbreaks and enteric outbreaks spread by food, environmental contact, infected persons or animals, or unknown routes. CDC publishes it on its open data portal. Each of about 66,700 rows is one outbreak, with year, month, state, primary mode of transmission, etiology and serotype or genotype, confirmation status, setting, numbers of illnesses, hospitalisations and deaths, the implicated food and contaminated ingredient with its IFSAC food category, water exposure and water type, and animal type. Coverage is national from 1971 to 2023, and the table was last refreshed in December 2024. Data can be browsed or exported as CSV or JSON through the Socrata API, free and in the public domain as a US government work. Caveats: reporting depends on health department capacity and varies by state and year, outbreaks are counted, not individual cases, and the extract omits exact locations and establishment names. Simulation uses: building event histories of food and water contamination for food supply and water system disruption scenarios, estimating health impacts and hospital demand from outbreaks, and calibrating supply chain contamination models. Related records: the openFDA drug shortages data (data-openfda-drug-shortages) cover another healthcare supply disruption.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "food safety incidents database foodborne outbreaks surveillance data open NORS",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.cdc.gov/Foodborne-Waterborne-and-Related-Diseases/NORS/5xkq-dg7x",
+  "id": "data-cdc-nors-national-outbreak-reporting-system",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (US government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CDC National Outbreak Reporting System (NORS) public data: foodborne, waterborne and enteric disease outbreaks in the United States, 1971 onwards",
+  "provider": "US Centers for Disease Control and Prevention (CDC), from local, state and territorial health departments",
+  "related_ids": [
+    "data-openfda-drug-shortages"
+  ],
+  "sectors": [
+    "services.food_supply",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Socrata metadata: name NORS; description web-based platform for reporting to CDC by local, state and territorial health departments of waterborne and enteric outbreaks; attribution CDC; licence Public Domain U.S. Government; rows updated 2024-12-20; 19 columns year to animal type",
+      "url": "https://data.cdc.gov/api/views/5xkq-dg7x.json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "API query: years 1971 to 2023, 66,713 rows",
+      "url": "https://data.cdc.gov/resource/5xkq-dg7x.json?$select=min(year),max(year),count(*)"
+    }
+  ],
+  "spatial_resolution": "State",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "foodborne outbreaks",
+    "waterborne outbreaks",
+    "food safety",
+    "CDC"
+  ],
+  "temporal_coverage": "1971 to 2023",
+  "temporal_resolution": "Outbreak (month)",
+  "temporal_resolution_class": "monthly",
+  "title_en": "CDC National Outbreak Reporting System (NORS) public data: foodborne, waterborne and enteric disease outbreaks in the United States, 1971 onwards",
+  "type": "data",
+  "update_frequency": "irregular"
+}

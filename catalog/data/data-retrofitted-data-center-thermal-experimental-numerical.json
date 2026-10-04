@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo dataset",
+      "url": "https://doi.org/10.5281/zenodo.7035829"
+    },
+    {
+      "kind": "paper",
+      "label": "Data in Brief article",
+      "url": "https://doi.org/10.1016/j.dib.2022.108587"
+    },
+    {
+      "kind": "paper",
+      "label": "Open-source CFD model paper (Open Research Europe)",
+      "url": "https://doi.org/10.12688/openreseurope.14579.1"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "TR"
+  ],
+  "data_family": [
+    "calibration_validation",
+    "sensor_realtime_streams",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1016/j.dib.2022.108587",
+    "name": "numerical and experimental dataset for a retrofitted air cooled data centre istanbul",
+    "url": "doi:10.5281/zenodo.7035829"
+  },
+  "description": "This dataset gives measured and simulated air temperatures in a small working data centre, so that computational fluid dynamics (CFD) models of data-centre cooling can be checked against real measurements. Published in Data in Brief in 2022 by Mustafa Kuzay and co-authors from Turkish engineering firms and Eskisehir Osmangazi University, it covers a four-rack air-cooled facility at the Radius Solution Center in Istanbul before and after a retrofit of its airflow design. Experimental data are exhaust temperature profiles from 11 sensors at the rear of the racks, recorded at 0.1 Hz over two-hour periods with the racks running at 2 kW; numerical data are complete OpenFOAM cases, with mesh, boundary and initial conditions and turbulence settings, for the original and retrofitted designs. The simulations match the measurements with maximum errors of 1.1 and 1.6 degrees Celsius and mean errors of about 0.5 degrees. The same group described the open-source OpenFOAM model and four cooling efficiency metrics in Open Research Europe in 2022. Coverage: one small facility, two configurations. Format and access: CSV measurements and OpenFOAM case files on Zenodo, free under CC BY 4.0. Caveats: very small room at low load; short measurement periods; results may not scale to large halls. Simulation uses: validation and calibration of CFD and surrogate thermal models for data-centre digital twins, and benchmark cases for cooling failure and hot-spot studies. Related records: the CINECA Marconi telemetry and Kasetsart energy meter data give operational measurements at larger scale.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "open data center telemetry dataset rack inlet temperature power sensors cooling system time series public dataset",
+      "route": "R22",
+      "source": "web-search"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "data center thermal CFD model validation benchmark dataset measured temperatures synthetic data centre reference design open",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "other"
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://doi.org/10.5281/zenodo.7035829",
+  "id": "data-retrofitted-data-center-thermal-experimental-numerical",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Numerical and experimental dataset for a retrofitted air-cooled data centre (Istanbul)",
+  "notes": "PubMed Central article read via fetch on 2026-09-26 (authors, repository, licence, contents, errors); Open Research Europe paper details from a fetch of its OUCI index page. Measurement year assumed from publication.",
+  "provider": "Design and Simulation Technologies Inc. and Eskisehir Osmangazi University, with Radius Solution Center and Lande (Mustafa Kuzay, Aras Dogan, Ender Demirel and co-authors)",
+  "related_ids": [],
+  "schema_summary": "time, sensor id and height, exhaust temperature; OpenFOAM geometry, mesh, boundary conditions and results",
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "optimisation"
+  ],
+  "size": "11 sensors, two configurations",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "article text",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9508504/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "companion model paper",
+      "url": "https://ouci.dntb.gov.ua/en/works/4E2eEGAl/"
+    }
+  ],
+  "spatial_resolution": "rack rear sensor positions; CFD mesh",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "CFD",
+    "OpenFOAM",
+    "data centre cooling",
+    "validation",
+    "temperature measurements"
+  ],
+  "temporal_coverage": "two-hour measurement runs (2022)",
+  "temporal_resolution": "10 seconds (0.1 Hz)",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Numerical and experimental dataset for a retrofitted air-cooled data centre (Istanbul)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

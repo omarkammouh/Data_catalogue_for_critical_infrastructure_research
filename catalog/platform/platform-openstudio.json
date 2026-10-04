@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "OpenStudio SDK repository",
+      "url": "https://github.com/NatLabRockies/OpenStudio"
+    },
+    {
+      "kind": "portal",
+      "label": "OpenStudio home, downloads and documentation",
+      "url": "https://openstudio.net/"
+    },
+    {
+      "kind": "portal",
+      "label": "Building Component Library (moved to bcl.nlr.gov)",
+      "url": "https://bcl.nlr.gov"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openstudio",
+    "repo": "github.com/natlabrockies/openstudio",
+    "url": "https://openstudio.net"
+  },
+  "deployment": [
+    "desktop",
+    "own_server",
+    "hosted_service"
+  ],
+  "description": "OpenStudio is a cross-platform collection of software tools for whole-building energy modelling with EnergyPlus and daylight analysis with Radiance. Its core is the OpenStudio SDK and command-line interface, which give a stable, version-controlled programming interface to EnergyPlus with language bindings in Ruby, Python and C#, space-type abstractions, and scripted model transformations called Measures shared through the Building Component Library. Graphical front ends are the OpenStudio Application, the SketchUp plug-in and the Parametric Analysis Tool, now maintained by the OpenStudio Coalition; geometry can be imported from gbXML and IFC. The U.S. Department of Energy funds it as its main vehicle for EnergyPlus work, developed at the National Laboratory of the Rockies (formerly NREL). It is generic in coverage: any building type and location with a weather file. SDK 3.11.0 was released in January 2026 for Windows, macOS and Linux. Licence: open source under a BSD-style licence, free of charge; OpenStudio is a registered trademark of the Alliance for Energy Innovation. Caveats: the Building Component Library moved to bcl.nlr.gov in 2026 and old links break; model quality depends on the Measures and inputs used. Simulation uses are HVAC sizing and capacity planning, retrofit optimisation and scenario analysis at building and stock scale. Related records: EnergyPlus (the engine it drives), NREL ResStock and ComStock and URBANopt, which are built on OpenStudio.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell platform:built_environment.buildings:modelling_suite",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R06",
+      "source": "built_environment-openstudio"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://openstudio.net/",
+  "hosted_models": [
+    "model-energyplus",
+    "Radiance"
+  ],
+  "id": "platform-openstudio",
+  "interfaces": [
+    "code_library",
+    "command_line",
+    "desktop_gui"
+  ],
+  "interoperability": [
+    "EnergyPlus IDF",
+    "gbXML import",
+    "IFC import",
+    "OSM model format"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "BSD-3-Clause (OpenStudio licence)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OpenStudio",
+  "notes": "SDK tag v3.11.0 commit dated 2026-01-15 (shallow fetch). GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "open_source": true,
+  "platform_kind": [
+    "modelling_suite"
+  ],
+  "provider": "Alliance for Energy Innovation / National Laboratory of the Rockies (NLR, formerly NREL) for DOE; OpenStudio Coalition for the graphical applications",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description of SDK, CLI, GUIs, OpenStudio Coalition, gbXML and IFC import, 3.11.0 release news, BCL move to bcl.nlr.gov, trademark",
+      "url": "https://openstudio.net/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD-style licence, copyright 2008-2026 Alliance for Energy Innovation",
+      "url": "https://raw.githubusercontent.com/NatLabRockies/OpenStudio/master/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: tag v3.11.0, commit 2026-01-15",
+      "url": "https://github.com/NatLabRockies/OpenStudio"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings"
+  ],
+  "tags": [
+    "building energy modelling",
+    "EnergyPlus",
+    "Radiance",
+    "Measures",
+    "SDK",
+    "BCL"
+  ],
+  "title_en": "OpenStudio cross-platform software tools for whole-building energy modelling",
+  "type": "platform"
+}

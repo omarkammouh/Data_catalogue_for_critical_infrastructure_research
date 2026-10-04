@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Community repository (current development)",
+      "url": "https://github.com/anuga-community/anuga_core"
+    },
+    {
+      "kind": "repo",
+      "label": "Geoscience Australia repository",
+      "url": "https://github.com/GeoscienceAustralia/anuga_core"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://anuga.readthedocs.io/en/latest/"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package anuga",
+      "url": "https://pypi.org/project/anuga/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "ANUGA repository README (Geoscience Australia and Australian National University, 2004 onwards)",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "anuga shallow water flood and tsunami model",
+    "repo": "github.com/anuga-community/anuga_core",
+    "url": "https://github.com/anuga-community/anuga_core"
+  },
+  "description": "ANUGA is open-source software that solves the two-dimensional shallow water equations and is used in particular to model floods and tsunamis, including dam-break flows and inundation behind or around flood defences. It represents the study area as a mesh of triangular cells and uses a finite-volume scheme, so wetting and drying, complex terrain and hydraulic structures can be simulated. Geoscience Australia and the Mathematical Sciences Institute of the Australian National University created it; a community of volunteers now develops and maintains it, with the most up-to-date Python 3 version in the anuga-community repository and a mirror at Geoscience Australia (a Python 2.7 branch remains for legacy users). It is a Python 3 package with C and Cython extensions and an optional Fortran extension, installable from PyPI (version 4.0.1 of 17 September 2026) or conda-forge, or run in a preconfigured cloud workspace; documentation is on Read the Docs. The PyPI record gives the Apache-2.0 licence and it is free of charge. It is site-independent: users supply elevation, boundary conditions and structures for any location. Caveats: building a good mesh and calibrating roughness need expertise, and large domains need parallel runs. Simulation uses: flood and dam-break hazard exposure, tsunami inundation, emergency planning and climate adaptation of flood defences and urban drainage. It is an open alternative to HEC-RAS 2D (model-hec-ras) for two-dimensional inundation modelling.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "dam break inundation model open source software",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "tsunami",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://github.com/anuga-community/anuga_core",
+  "id": "model-anuga",
+  "inputs": [
+    "Triangular mesh of the study area built from elevation data",
+    "Boundary conditions, inflows, rainfall and initial water levels",
+    "Structures such as culverts, weirs and breaches (operators)"
+  ],
+  "language": [
+    "python",
+    "c_cpp",
+    "fortran"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-17",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "ANUGA shallow water flood and tsunami model",
+  "notes": "Triangular mesh and finite-volume method from the ANUGA description returned by web search (ResearchGate abstract); inputs and outputs are indicative from the README and assistant knowledge of the package.",
+  "outputs": [
+    "Time series of water depth, stage and momentum over the mesh (inundation extents)"
+  ],
+  "provider": "Geoscience Australia and the Australian National University; maintained by the ANUGA community",
+  "related_ids": [
+    "model-hec-ras"
+  ],
+  "repository": "https://github.com/anuga-community/anuga_core",
+  "runs_on": [],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "shallow water, tsunamis and floods, Python 3 with C/Cython/Fortran, GA and ANU, community maintained, repositories, conda-forge, Codespaces",
+      "url": "https://raw.githubusercontent.com/anuga-community/anuga_core/main/README.rst"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 4.0.1 uploaded 2026-09-17, Apache-2.0",
+      "url": "https://pypi.org/pypi/anuga/json"
+    }
+  ],
+  "tags": [
+    "shallow water equations",
+    "finite volume",
+    "unstructured mesh",
+    "flood inundation",
+    "dam break",
+    "tsunami",
+    "Geoscience Australia"
+  ],
+  "title_en": "ANUGA shallow water flood and tsunami model",
+  "type": "model",
+  "validated_on": []
+}

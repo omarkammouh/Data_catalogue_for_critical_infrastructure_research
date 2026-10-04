@@ -1,0 +1,131 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Market products and prices web service",
+      "url": "https://halfiyatlaripublicdata.ibb.gov.tr/swagger/ui/index"
+    },
+    {
+      "kind": "viewer",
+      "label": "Agricultural Services Department statistics pages",
+      "url": "https://tarim.ibb.istanbul/tr/istatistik.html"
+    },
+    {
+      "kind": "portal",
+      "label": "Tonnage data of IMM fruit and vegetable markets (XLSX)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.ibb.gov.tr/dataset/ibb-hal-tonajlari-veri-seti"
+    },
+    {
+      "kind": "portal",
+      "label": "Bayrampaşa and Ataşehir markets vehicle entry numbers (XLSX)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.ibb.gov.tr/dataset/ibb-bayrampasa-atasehir-halleri-toplam-arac-giris-sayilari"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "TR"
+  ],
+  "data_family": [
+    "demand_operation",
+    "supply_chains_logistics"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "istanbul metropolitan municipality fruit and vegetable wholesale markets monthly tonnage by market and product vehicle entries by class and daily prices api",
+    "url": "https://data.ibb.gov.tr/dataset/ibb-hal-tonajlari-veri-seti"
+  },
+  "description": "These datasets describe the flow of fresh fruit and vegetables through Istanbul's two municipal fruit and vegetable wholesale markets, Bayrampaşa and Ataşehir. They are published by Istanbul Metropolitan Municipality (IMM) through its open data portal and its Agricultural Services Department. Monthly series from January 2021 give the tonnes of fruit and of vegetables entering each market, and yearly files for 2023 to 2025 split the tonnage by product and month. A matching series counts the vehicles entering each market every month by class, from cars and vans to trucks and articulated lorries. A web service returns daily wholesale prices by product and market type, and the department's pages show prices back to 2004. The data are free under the IMM Open Data License and available to download as Excel files or through the price service. Caveats: tonnage and vehicle series are monthly totals, not per delivery, the origin of the produce is not in the files read, and older years exist only as web pages. Simulation uses: setting daily and seasonal inflows for urban food distribution models, testing the loss of one market or its access roads after an earthquake, and linking truck arrivals to freight traffic. Related records: the FAOSTAT food balances (data-faostat) give national supply context, and the German food supply balances (data-ble-food-supply-balances-germany) are a national counterpart.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: İBB Tarımsal Hizmetler, hal fiyatları (TR, wholesale_market)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "json"
+  ],
+  "geographic_scope": "city",
+  "hazards": [],
+  "homepage": "https://data.ibb.gov.tr/dataset/ibb-hal-tonajlari-veri-seti",
+  "id": "data-ibb-istanbul-wholesale-market-flows",
+  "languages": [
+    "en"
+  ],
+  "licence": "Istanbul Metropolitan Municipality Open Data License",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Istanbul Metropolitan Municipality fruit and vegetable wholesale markets: monthly tonnage by market and product, vehicle entries by class, and daily prices API",
+  "provider": "İstanbul Büyükşehir Belediyesi (IMM), Tarımsal Hizmetler Dairesi Başkanlığı",
+  "related_ids": [
+    "data-faostat",
+    "data-ble-food-supply-balances-germany"
+  ],
+  "schema_summary": "Market tonnage: month, year, fruit and vegetable tonnes for Ataşehir and Bayrampaşa markets (monthly from January 2021); product tonnage files per market for 2023 to 2025 with one row per product and monthly columns plus total. Vehicle entries: month, year and entries by class (car, jeep-minibus-pickup, truck-bus, van, articulated lorry) for each market from January 2021. Prices web service: product categories, market types, units, products, prices by day and by market type. Statistics pages: daily, monthly and yearly prices for fruit, vegetables and imported products since 2004",
+  "sectors": [
+    "services.food_supply",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "CKAN metadata: monthly tonnage of fruits and vegetables entering IMM markets; licence IMM Open Data License; created 3 November 2021, modified 12 February 2026; six XLSX resources (combined Bayrampaşa-Ataşehir series; product-based tonnages 2023, 2024 and 2025 per market). Combined file read in memory: sheet Sayfa1, 60 data rows from month 1 of 2021, columns month, year, Ataşehir fruit, Ataşehir vegetables, Bayrampaşa fruit, Bayrampaşa vegetables. 2025 Bayrampaşa product file: about 93 product rows with monthly columns and total",
+      "url": "https://data.ibb.gov.tr/dataset/ibb-hal-tonajlari-veri-seti"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Total vehicle entry numbers of the Bayrampaşa and Ataşehir markets; modified 3 April 2026; XLSX read in memory: sheet Data, 60 data rows from January 2021, entries by vehicle class for each market",
+      "url": "https://data.ibb.gov.tr/dataset/ibb-bayrampasa-atasehir-halleri-toplam-arac-giris-sayilari"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Web service returning all product categories, market types, unit types, products, prices by day, by day and market type, and by product id",
+      "url": "https://data.ibb.gov.tr/dataset/hal-urunleri-ve-fiyatlari-web-servisi"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Statistics of the European and Anatolian side market branches: tonnages (2013-2026 pages), prices (daily, monthly, yearly; fruit, vegetables, imported; 2004-2026), vehicle entry counts by truck, van and lorry (2013-2026), fish market prices",
+      "url": "https://tarim.ibb.istanbul/tr/istatistik.html"
+    }
+  ],
+  "spatial_resolution": "Wholesale market (two markets)",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "wholesale market",
+    "fruit and vegetables",
+    "food logistics",
+    "truck arrivals",
+    "Istanbul"
+  ],
+  "temporal_coverage": "January 2021 to 2025 (tonnage and vehicles); prices since 2004 on the statistics pages",
+  "temporal_resolution": "Monthly (tonnage, vehicles); daily (prices)",
+  "temporal_resolution_class": "daily",
+  "title_en": "Istanbul Metropolitan Municipality fruit and vegetable wholesale markets: monthly tonnage by market and product, vehicle entries by class, and daily prices API",
+  "type": "data",
+  "update_frequency": "monthly"
+}

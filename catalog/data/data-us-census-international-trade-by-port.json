@@ -1,0 +1,137 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "USA Trade Online",
+      "note": "free account",
+      "url": "https://usatradeonline.census.gov/"
+    },
+    {
+      "kind": "api",
+      "label": "International trade APIs (monthly, 2010 onward; port and HS datasets)",
+      "note": "API key required",
+      "url": "https://www.census.gov/data/developers/data-sets/international-trade.html"
+    },
+    {
+      "kind": "portal",
+      "label": "Former landing page (no data on the page itself)",
+      "url": "https://www.census.gov/foreign-trade/index.html"
+    }
+  ],
+  "access_note": "USA Trade Online needs a free account; the Census Data API needs a free key.",
+  "access_restrictions": "registration",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "cross_border_flows",
+    "supply_chains_logistics",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "u s international trade statistics by port and commodity usa trade online and the international trade api",
+    "url": "https://census.gov/foreign-trade/index.html"
+  },
+  "description": "The U.S. Census Bureau's International Trade program is the official source of U.S. export and import statistics. Two routes expose them at a level useful for infrastructure studies. USA Trade Online is a free online tool for current and historical export and import data by commodity, country, state, district and port, relaunched in 2026 as USA Trade Online: Reimagined. The Census Data API's monthly international trade datasets (January 2010 to present) include exports and imports by port and Harmonized System code, giving for each customs port or district the value shipped in total and by vessel and air, with shipping weights, alongside tables by NAICS, SITC, state and end use. Coverage: all U.S. customs districts and ports of entry and exit; monthly data updated on the day of each press release, with annual revisions published with April statistics. Access: USA Trade Online (free account) and the Census Data API (timeseries/intltrade, free key); free and public domain. Caveats: values and weights only, not vessel counts or container volumes; port attribution follows the customs port of clearance, which may differ from the physical gateway, and low-value shipments are estimated. Simulation uses: port and airport freight flows by commodity for maritime and air cargo network models, port disruption impact analysis, and calibration of freight origin-destination models. Related records: BTS Port Performance Freight Statistics, the Freight Analysis Framework, the Commodity Flow Survey and the USACE waterway network.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; Data Tools list, entry USA Trade Online; All Surveys and Programs, International Trade Program",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): api.census.gov/data.json dataset list, group timeseries/intltrade (36 datasets)",
+      "route": "R35",
+      "source": "census-data-api"
+    }
+  ],
+  "formats": [
+    "api",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/foreign-trade/data/index.html",
+  "id": "data-us-census-international-trade-by-port",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "U.S. international trade statistics by port and commodity (USA Trade Online and the international trade API)",
+  "notes": "The free account requirement of USA Trade Online and the shipping weight fields are from the Bureau's tool and API descriptions; the reimagined site is JavaScript-only and its login page was not walked.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-bts-port-performance-freight-statistics",
+    "data-freight-analysis-framework",
+    "data-commodity-flow-survey",
+    "data-usace-national-waterway-network"
+  ],
+  "schema_summary": "Port or district, HS commodity, country, month; total, vessel and air value; shipping weight; year-to-date values",
+  "sectors": [
+    "transport.maritime_ports",
+    "transport.aviation",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Official source of export/import statistics; USA Trade Online: Reimagined launch; recent releases",
+      "url": "https://www.census.gov/foreign-trade/index.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Monthly datasets January 2010 to present, updated on release day, April revisions; exports and imports by port and HS with vessel and air values",
+      "url": "https://www.census.gov/data/developers/data-sets/international-trade.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Free tool for current and historical export and import data (Data Tools list)",
+      "url": "https://www.census.gov/data/data-tools/usa-trade-online.html"
+    }
+  ],
+  "spatial_resolution": "Customs port and district",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "international trade",
+    "ports",
+    "imports",
+    "exports",
+    "HS codes",
+    "USA Trade Online",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "January 2010 to present (API); longer history in USA Trade Online",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2010
+  },
+  "temporal_resolution": "monthly",
+  "temporal_resolution_class": "monthly",
+  "title_en": "U.S. international trade statistics by port and commodity (USA Trade Online and the international trade API)",
+  "type": "data",
+  "update_frequency": "daily"
+}

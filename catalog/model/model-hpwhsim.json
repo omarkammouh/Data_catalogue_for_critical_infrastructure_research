@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/bigladder/HPWHsim"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/bigladder/HPWHsim/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hpwhsim heat pump water heater simulation",
+    "repo": "github.com/bigladder/hpwhsim",
+    "url": "https://github.com/bigladder/HPWHsim"
+  },
+  "description": "HPWHsim is the open-source heat-pump water-heater model maintained in Big Ladder Software's repository. It simulates storage-tank and heat-source behaviour for use within whole-house calculations. Inputs include tank and heater definitions, inlet and ambient temperatures, water draws, demand-response modes and step duration. Outputs include tank-node and outlet temperatures, heater energy input and output, runtime and standby losses, with CSV reporting functions. Geographic coverage is configurable; equipment settings and user-selected time steps determine the application. Public C++ source is free under BSD-3-Clause. A limitation is that the model does not aggregate its own outputs across an enclosing simulation's time steps. The repository's build README also gives older Windows and Visual Studio requirements, while its bundled class reference describes version 1.3.0, so compatibility with newer build environments needs checking. HPWHsim can supply domestic-hot-water demand and flexibility calculations complementary to EnergyPlus (model-energyplus). Its API documents both equipment presets and custom tank configuration. No binaries, equipment data archive or annual simulation results were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "bigladder/hpwhsim linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/bigladder/HPWHsim",
+  "id": "model-hpwhsim",
+  "inputs": [
+    "Water draws and inlet temperatures",
+    "Tank and heat-source parameters",
+    "Ambient temperatures and demand-response commands"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-19",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "HPWHsim heat-pump water-heater simulation",
+  "notes": "G7 G7-0682. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Tank and outlet temperatures",
+    "Heat-source energy and runtime",
+    "Standby losses"
+  ],
+  "provider": "Big Ladder Software and HPWHsim contributors",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/bigladder/HPWHsim",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for bigladder/HPWHsim: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/bigladder/hpwhsim"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/bigladder/hpwhsim/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Bundled version 1.3.0 API: inputs, outputs and demand-response modes.",
+      "url": "https://api.github.com/repos/bigladder/hpwhsim/contents/doc/Doxygen/html/class_h_p_w_h.html"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for buildings",
+  "type": "model"
+}

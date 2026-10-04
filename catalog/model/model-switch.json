@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/switch-model/switch"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/switch-model/"
+    },
+    {
+      "kind": "paper",
+      "label": "Switch 2.0 paper (SoftwareX)",
+      "url": "https://doi.org/10.1016/j.softx.2019.100251"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Johnston, J., Henriquez-Auba, R., Maluenda, B., Fripp, M. (2019). Switch 2.0: A modern platform for planning high-renewable power systems. SoftwareX 10. doi:10.1016/j.softx.2019.100251",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1016/j.softx.2019.100251",
+    "name": "switch power system planning model",
+    "repo": "github.com/switch-model/switch",
+    "url": "https://switch-model.org"
+  },
+  "description": "Switch is an open-source power system planning model for designing and studying future power systems with large shares of renewable energy, storage and demand response. It optimises investment in renewable and conventional generation, battery and hydrogen storage, hydro and other assets over multiple investment periods, based on how they would be operated during chronologically sequenced hours of sample days, to find the least-cost system that meets policy goals such as carbon or renewable energy targets. The project is led by Matthias Fripp, with the Switch 2.0 platform described by Johnston, Henriquez-Auba, Maluenda and Fripp in SoftwareX (2019). The model is modular and location independent: any region can be modelled by preparing CSV input files, and the repository ships example models. It is a Python package on PyPI (version 2.0.9.post0, March 2025) with source on GitHub, released under the Apache 2.0 licence free of charge. Caveats: the last PyPI release dates from March 2025 and the default branch had no newer commit in the Software Heritage archive of August 2026, so development is slower than in some alternatives, and a separate solver is needed. Simulation uses are capacity planning and optimisation for decarbonisation \"what if\" studies. Related records: it compares with model-genx, model-gridpath and model-pypsa.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry Switch",
+      "route": "R06",
+      "source": "energy-switch"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "http://switch-model.org",
+  "id": "model-switch",
+  "inputs": [
+    "CSV input files per module (generation projects",
+    "storage",
+    "loads",
+    "fuel costs",
+    "transmission)",
+    "Sample days of hourly data for future periods"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-03-30",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "Switch power system planning model",
+  "outputs": [
+    "Least-cost investment plan per period",
+    "Hourly dispatch",
+    "Costs and emissions"
+  ],
+  "provider": "Switch project (Matthias Fripp and contributors)",
+  "related_ids": [
+    "model-genx",
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/switch-model/switch",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, investment periods and sample days, modular platform, SoftwareX paper",
+      "url": "http://switch-model.org"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 2, examples directory, CSV inputs, modules",
+      "url": "https://raw.githubusercontent.com/switch-model/switch/HEAD/README"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Apache License 2.0",
+      "url": "https://raw.githubusercontent.com/switch-model/switch/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 2.0.9.post0 uploaded 2025-03-30; first release 2017-04-18",
+      "url": "https://pypi.org/pypi/switch_model/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Switch 2.0 paper metadata: Johnston, Henriquez-Auba, Maluenda, Fripp, SoftwareX 10, 2019",
+      "url": "https://api.crossref.org/works/10.1016/j.softx.2019.100251"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Visit 2026-08-18; head commit 2025-03-29",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/switch-model/switch/visit/latest/"
+    }
+  ],
+  "tags": [
+    "capacity expansion",
+    "renewable integration",
+    "Pyomo",
+    "Python"
+  ],
+  "title_en": "Switch power system planning model",
+  "type": "model",
+  "validated_on": [
+    "Example models in the repository (for example 3zone_toy)"
+  ]
+}

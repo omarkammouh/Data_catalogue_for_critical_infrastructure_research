@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "London Datastore dataset page (incident and mobilisation files)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.london.gov.uk/dataset/london-fire-brigade-incident-records-em8xy"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "historical_events",
+    "demand_operation",
+    "service_performance",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "london fire brigade incident records and mobilisation records london datastore",
+    "url": "https://data.london.gov.uk/dataset/london-fire-brigade-incident-records-em8xy"
+  },
+  "description": "This dataset records every incident attended by the London Fire Brigade since 1 January 2009, together with a companion file of mobilisations that lists each fire engine sent to each incident. It is published by the London Fire Brigade through the Greater London Authority's London Datastore to support transparency and local analysis. Coverage is the 33 London boroughs, with one row per incident giving date and time, incident group and type (fire, special service, false alarm), property category, borough and ward, a coarsened location, the first and second pump attendance times and the number of pumps and pump hours; the mobilisation file adds the station each appliance came from and its turnout and travel times. Both files are refreshed every month and are free to download as zipped CSV or Excel under the UK Open Government Licence. Caveats: exact addresses are suppressed for dwellings, older years are split into separate files, and attendance times cover only fire engines, not specialist appliances or the London Ambulance Service. Simulation uses: calibrating fire station location and emergency response models, estimating demand by hour and area, and testing station closure or resilience scenarios. Related records: the England fire incident-level datasets (data-england-fire-incident-level-datasets) give the national counterpart and the San Francisco fire and EMS calls (data-sf-fire-ems-calls-for-service) a comparable city feed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "recall: emergency services stations, incidents and response",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-28",
+      "query": "data.gov.uk CKAN package_search: fire and rescue incidents",
+      "route": "R02",
+      "source": "data.gov.uk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "archive"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://data.london.gov.uk/dataset/london-fire-brigade-incident-records-em8xy",
+  "id": "data-london-fire-brigade-incident-records",
+  "languages": [
+    "en"
+  ],
+  "licence": "Open Government Licence v3.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "London Fire Brigade incident records and mobilisation records (London Datastore)",
+  "provider": "London Fire Brigade (LFB), published on the London Datastore (Greater London Authority)",
+  "regions": [
+    "Greater London"
+  ],
+  "related_ids": [
+    "data-england-fire-incident-level-datasets",
+    "data-sf-fire-ems-calls-for-service"
+  ],
+  "schema_summary": "Incident number, date and time, incident group and type, property category, borough and ward, first and second pump attendance times, number of pumps and pump hours; mobilisations with station, turnout and travel times",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "details of every incident attended by the LFB since 1 January 2009; main zip file of incidents; mobilisation data; both datasets updated every month",
+      "url": "https://data.london.gov.uk/dataset/london-fire-brigade-incident-records-em8xy"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "data.gov.uk mirror: UK Open Government Licence; every incident responded to since January 2009, when, where and type of incident",
+      "url": "https://ckan.publishing.service.gov.uk/api/action/package_show?id=london-fire-brigade-incident-records"
+    }
+  ],
+  "spatial_resolution": "Borough, ward and coarsened location",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "fire",
+    "incidents",
+    "response times",
+    "London",
+    "mobilisation"
+  ],
+  "temporal_coverage": "2009 to present",
+  "temporal_resolution": "Per incident (timestamped)",
+  "temporal_resolution_class": "event",
+  "title_en": "London Fire Brigade incident records and mobilisation records (London Datastore)",
+  "type": "data",
+  "update_frequency": "monthly"
+}

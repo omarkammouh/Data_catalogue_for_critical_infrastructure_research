@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/aleanamathew-prog/Waitwise"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "waitwise nhs referral to treatment wait data pipeline",
+    "repo": "github.com/aleanamathew-prog/waitwise",
+    "url": "https://github.com/aleanamathew-prog/Waitwise"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "WaitWise ingests NHS England referral-to-treatment waiting statistics and organisation records, joins provider and specialty codes, geocodes 552 providers and stores monthly wait snapshots. The public site states a fifteen-month window from April 2025 to June 2026 and explains that median wait describes the current queue, not an individual patient’s predicted wait. The repository documents refresh commands, data-quality checks and suppression handling. Code is MIT and free; underlying NHS and postcode information carries Open Government Licence 3.0 and related source rights. Coverage is England at provider, specialty and month level, with straight-line distances, not travel times. A limitation is that the repository currently mixes NHS and independent providers without a sector marker, and the official NHS page returned an automated anti-bot challenge during this check. Simulation use includes preparing service-choice and capacity constraints. It complements data-cms-provider-data-hospitals with English wait times. No ingestion was executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "topic:open-data hospital",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/aleanamathew-prog/Waitwise",
+  "id": "platform-waitwise-nhs-rtt-provider-preparation",
+  "interfaces": [
+    "code_library",
+    "file_exchange"
+  ],
+  "interoperability": [],
+  "language": [
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-10",
+  "licence": "MIT code; NHS public-sector source data under OGL-3.0 and stated component rights.",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "WaitWise NHS referral-to-treatment wait-data pipeline",
+  "notes": "G8; G8-0633. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: WaitWise repository documentation. NHS England referral-to-treatment statistics are the input; no separate research paper identified..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "WaitWise project author",
+  "regions": [
+    "England"
+  ],
+  "related_ids": [
+    "data-cms-provider-data-hospitals"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/aleanamathew-prog/Waitwise/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/aleanamathew-prog/Waitwise"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Live page states fifteen-month data window and median-wait interpretation.",
+      "url": "https://waitwise-tau.vercel.app/"
+    }
+  ],
+  "tags": [],
+  "title_en": "WaitWise NHS referral-to-treatment wait-data pipeline 552 providers",
+  "type": "platform"
+}

@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/17859234"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/17859234"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Repository metadata and README independently inspected; code not executed.",
+      "url": "https://github.com/IMMM-SFA/cerf_data_centers"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.17859234",
+    "name": "cerf dc a python package to evaluate the feasibility and costs of data center siting options",
+    "repo": "github.com/immm-sfa/cerf_data_centers",
+    "url": "https://zenodo.org/records/17859234"
+  },
+  "description": "The IMMM-SFA team publishes CERF-DC, a Python tool for siting data centres against geospatial constraints and costs. Zenodo archives version 1.0.0 under BSD 3-Clause and links the public repository. The README describes rasters for land cost, electricity tariffs, property tax and suitability, with user-defined minimum campus size and power needs in YAML. A command-line or Python call selects candidate grid-cell clusters and exports site costs and attributes as a GeoDataFrame or GeoJSON. This model supports capacity-planning simulations that compare future data-centre locations and grid-interconnection assumptions. No related catalogue record explicitly covers this package. Coverage is whichever region and cost layers the user supplies, not a fixed global siting recommendation. A limitation is that input raster quality and cost assumptions determine feasibility; environmental permits and actual interconnection approval are not guaranteed. The package was not installed and no suggested site was verified.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "title:(\"data centre\" OR \"data center\" OR \"colocation\" OR \"cloud region\" OR \"availability zone\" OR \"server farm\" OR \"hyperscale data centre\" OR \"edge data centre\" OR \"data centre location\" OR \"data centre capacity\" OR \"IT load\" OR \"power usage effectiveness\" OR \"PUE\" OR \"cooling\" OR \"data centre outage\" OR \"data centre map\" OR \"data centre inventory\" OR \"rack\" OR \"facility tier\" OR \"data centre energy use\" OR \"data centre water use\" OR \"backup generator\" OR \"UPS\")",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://zenodo.org/records/17859234",
+  "id": "model-cerf-dc-data-centre-geospatial-siting-costs",
+  "inputs": [
+    "Regional cost and suitability rasters",
+    "Campus size, power and interconnection parameters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-12-08",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "economic"
+  ],
+  "name": "CERF-DC: A Python package to evaluate the feasibility and costs of data center siting options",
+  "notes": "G6 item G6-1663. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "outputs": [
+    "Candidate sites with component costs and attributes"
+  ],
+  "provider": "Mongird, Kendall; Vernon, Chris R.",
+  "related_ids": [
+    "case_study-uk-gis-mcda-data-centre-siting-assessment",
+    "platform-datacentergym-physics-grounded-scheduling-simulator"
+  ],
+  "repository": "https://github.com/IMMM-SFA/cerf_data_centers",
+  "sectors": [
+    "digital.data_centres",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/17859234"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence bsd-3-clause, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/17859234"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "README and BSD-3-Clause repository metadata inspected; CLI, Python API and YAML inputs described.",
+      "url": "https://github.com/IMMM-SFA/cerf_data_centers"
+    }
+  ],
+  "tags": [],
+  "title_en": "CERF-DC: A Python package to evaluate the feasibility and costs of data center siting options",
+  "type": "model"
+}

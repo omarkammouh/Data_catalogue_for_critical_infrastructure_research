@@ -1,0 +1,137 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "data.public.lu dataset Recensement 2021 - Logement (6 LUSTAT tables)",
+      "url": "https://data.public.lu/fr/datasets/population-et-emploi-recensement-de-la-population-recensement-2021-logement/"
+    },
+    {
+      "kind": "viewer",
+      "label": "LUSTAT table B1707 dwellings by building type, occupancy, canton and commune",
+      "url": "https://lustat.statec.lu/vis?df[ds]=ds-release&vw=tb&df[ag]=LU1&df[id]=DSD_CENSUS_NB_LOG_CLA@DF_B1707"
+    },
+    {
+      "kind": "api",
+      "label": "SDMX REST data B1707 (CSV with Accept application/vnd.sdmx.data+csv)",
+      "url": "https://lustat.statec.lu/rest/data/LU1,DSD_CENSUS_NB_LOG_CLA@DF_B1707/all"
+    },
+    {
+      "kind": "api",
+      "label": "SDMX REST data B1706 dwellings by building type, period of construction and tenure",
+      "url": "https://lustat.statec.lu/rest/data/LU1,DSD_CENSUS_NB_LOG_CLA@DF_B1706/all"
+    },
+    {
+      "kind": "api",
+      "label": "data.public.lu API record of the dataset",
+      "url": "https://data.public.lu/api/1/datasets/67d5f88efbf8aa0d76be0ef2/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "LU"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "statec luxembourg census 2021 housing tables dwellings by building type and occupancy by canton and commune by period of construction rooms and occupants in lustat with sdmx api cc0",
+    "url": "https://data.public.lu/fr/datasets/population-et-emploi-recensement-de-la-population-recensement-2021-logement"
+  },
+  "description": "STATEC, Luxembourg's statistics institute, publishes the 2021 population census in its LUSTAT database, a .Stat Suite platform, and lists each table on the national portal data.public.lu under a CC0 licence. The housing dataset has six tables: living quarters by canton and commune; conventional dwellings by occupancy status and type of building for each canton and commune; dwellings by type of building, period of construction and tenure; and three tables on rooms, ownership and occupants. The wider census dataset adds place of work tables and historic housing indicators from 1864 to 2021. Coverage is national: table B1707 returned 263,671 conventional dwellings, with 115 geography codes. Format and access: free, no registration; the SDMX REST API returns CSV or XML for each dataflow, and the LUSTAT viewer allows downloads. Licence: CC0 as stated on data.public.lu. Caveats: no water, sewer, heating or energy variables in the 2021 census tables; period of construction is national only in table B1706; commuting flows between communes are not among the published tables. Simulation uses: commune level dwelling stock by building type and occupancy for exposure and demand allocation, and building age for retrofit and vulnerability models. Related records: the Iceland census 2021 dwelling tables and the Lithuania census 2021 dwelling amenities API.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:LU:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "analysis_package_file",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.public.lu/fr/datasets/population-et-emploi-recensement-de-la-population-recensement-2021-logement/",
+  "id": "data-statec-luxembourg-census-2021-dwellings-by-commune-lustat-sdmx",
+  "languages": [
+    "fr",
+    "en",
+    "de"
+  ],
+  "last_updated": "2025-03-15",
+  "licence": "CC0 (cc-zero on data.public.lu)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "STATEC Luxembourg Census 2021 housing tables (dwellings by building type and occupancy by canton and commune, by period of construction, rooms and occupants) in LUSTAT with SDMX API, CC0",
+  "provider": "STATEC, Institut national de la statistique et des études économiques du Grand-Duché de Luxembourg",
+  "related_ids": [
+    "data-statistics-iceland-census-2021-dwellings-and-household-cars-by-small-area",
+    "data-statistics-lithuania-census-2021-dwelling-amenities-sdmx-api"
+  ],
+  "schema_summary": "Six tables: B1711 living quarters by canton and commune; B1707 conventional dwellings by occupancy status (occupied, not occupied, unknown), building type (residential with one, two or three or more dwellings, non residential) and commune; B1706 by building type, construction period (before 1919 to 2016 and later) and tenure; B1708 to B1710 by rooms, ownership and occupants. SDMX dimensions include GEO, TYPE_BUILD_DWE, OCC_STATUS_CONV, CONSTR_PERIOD_DWE, TIME_PERIOD",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: 11 STATEC census datasets, cc-zero",
+      "url": "https://data.public.lu/api/1/datasets/?q=recensement"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: six housing tables",
+      "url": "https://data.public.lu/api/1/datasets/67d5f88efbf8aa0d76be0ef2/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: 3,220 rows, 115 geography codes, total 263,671",
+      "url": "https://lustat.statec.lu/rest/data/LU1,DSD_CENSUS_NB_LOG_CLA@DF_B1707/all"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: construction periods, GEO not split",
+      "url": "https://lustat.statec.lu/rest/data/LU1,DSD_CENSUS_NB_LOG_CLA@DF_B1706/all"
+    }
+  ],
+  "spatial_resolution": "country, cantons and communes (115 geography codes in table B1707)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "Luxembourg",
+    "census 2021",
+    "dwellings",
+    "commune",
+    "SDMX",
+    "CC0",
+    "LUSTAT"
+  ],
+  "temporal_coverage": "census 2021",
+  "temporal_coverage_years": {
+    "end": 2021,
+    "start": 2021
+  },
+  "temporal_resolution": "single census",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "STATEC Luxembourg Census 2021 housing tables (dwellings by building type and occupancy by canton and commune, by period of construction, rooms and occupants) in LUSTAT with SDMX API, CC0",
+  "type": "data"
+}

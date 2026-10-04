@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/mobidata-bw/gtfs-validator-metrics-service"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "gtfs validator metrics service",
+    "repo": "github.com/mobidata-bw/gtfs-validator-metrics-service",
+    "url": "https://github.com/mobidata-bw/gtfs-validator-metrics-service"
+  },
+  "deployment": [
+    "own_server"
+  ],
+  "description": "MobiData BW publishes a service that checks GTFS Schedule feeds and exposes validator results as monitoring metrics. Its README shows how to run the container, supply public feed URLs through a Prometheus multi-target probe and scrape the resulting metrics. The service uses the official MobilityData GTFS validator and reports through Prometheus or OpenTelemetry; it is licensed EUPL-1.2. It does not itself provide route or timetable data. A user supplies a feed URL, so geographic and temporal coverage come from that feed. The repository includes a container build and tests, but this review only inspected the README and file tree. It did not run the service or test the stated metrics against a real feed. A transport modeller could use the quality signal before importing timetables, and monitor whether a regularly refreshed feed begins to fail validation. That role is input checking, not route simulation. Related catalogue resource data-gtfs-specification defines the format that the service checks. Its metrics should be interpreted alongside the validator’s rule set and cannot establish whether schedules match actual operation.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "gtfs dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/mobidata-bw/gtfs-validator-metrics-service",
+  "id": "platform-mobidata-gtfs-validator-metrics-service",
+  "interfaces": [
+    "web_api",
+    "other"
+  ],
+  "interoperability": [
+    "GTFS Schedule",
+    "Prometheus",
+    "OpenTelemetry"
+  ],
+  "language": [
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "EUPL-1.2",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GTFS validator metrics service",
+  "notes": "G8; G8-0775. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: MobiData BW. gtfs-validator-metrics-service repository documentation, accessed 2026-09-28..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "MobiData BW",
+  "related_ids": [
+    "data-gtfs-specification"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/mobidata-bw/gtfs-validator-metrics-service/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/mobidata-bw/gtfs-validator-metrics-service"
+    }
+  ],
+  "tags": [],
+  "title_en": "GTFS validator metrics service: checks GTFS feeds and exposes validator results",
+  "type": "platform"
+}

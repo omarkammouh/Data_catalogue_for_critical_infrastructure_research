@@ -1,0 +1,152 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "ResStock source code and input probability distributions",
+      "url": "https://github.com/NatLabRockies/resstock"
+    },
+    {
+      "kind": "portal",
+      "label": "ResStock home, data viewer and documentation links",
+      "url": "https://resstock.nlr.gov/"
+    },
+    {
+      "kind": "portal",
+      "label": "ResStock datasets (metadata and annual results, timeseries)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://resstock.nlr.gov/datasets"
+    },
+    {
+      "kind": "docs",
+      "label": "Overview paper (NLR report 89850)",
+      "url": "https://www.nlr.gov/docs/fy24osti/89850.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "National Laboratory of the Rockies. ResStock. https://resstock.nlr.gov/",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "resstock",
+    "repo": "github.com/natlabrockies/resstock",
+    "url": "https://resstock.nlr.gov"
+  },
+  "description": "ResStock is the U.S. Department of Energy's model of the residential building stock, developed and maintained by the National Laboratory of the Rockies (formerly NREL). It samples representative dwellings from a housing stock characteristics database of probability distributions and simulates each with physics-based OpenStudio and EnergyPlus models on high-performance computers, so that states, municipalities, utilities and manufacturers can see which upgrades save the most energy and money. Coverage is the United States circa 2018, now including Alaska and Hawaii, with annual and 15-minute results for weather years 2012 and 2018; the 2025 Release 1 datasets (October and November 2025) include 28 measure packages with electric vehicles, demand flexibility and electric panel estimates. Access: published datasets, an online data viewer, and open source code with its input distributions on GitHub. Licence: the code is under a BSD-style licence; datasets are free. Caveats: results are statistical representations, not models of real addresses; the March 2024 release computed bills incorrectly, as its page warns. Simulation uses are stock-level capacity planning of electrification, retrofit optimisation and climate scenarios. Related records: ComStock (commercial counterpart), End-Use Load Profiles for the U.S. Building Stock (dataset calibrated with it), OpenStudio and EnergyPlus.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:scenarios_projections",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R17",
+      "source": "built_environment-resstock"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://resstock.nlr.gov/",
+  "id": "model-resstock",
+  "inputs": [
+    "Housing stock characteristics probability distributions (vintage, fuel, envelope, HVAC, location)",
+    "Weather files (TMY3, AMY 2012, AMY 2018)",
+    "Energy efficiency and electrification measure packages"
+  ],
+  "language": [
+    "other"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-11",
+  "licence": "BSD-3-Clause (code); datasets published openly by DOE",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "ResStock",
+  "notes": "Code tag v3.4.0 commit 2024-12-02; dataset releases up to November 2025 (AMY 2012). Validation claim from the OEDI End-Use Load Profiles page, which says the EULPs were created by calibrating ResStock and ComStock with measured datasets. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "outputs": [
+    "Annual and 15-minute end-use energy by sampled dwelling",
+    "Savings by upgrade package",
+    "Utility bills and electric panel estimates"
+  ],
+  "provider": "National Laboratory of the Rockies (NLR, formerly NREL) for the U.S. Department of Energy",
+  "related_ids": [
+    "data-end-use-load-profiles-us-building-stock",
+    "data-eia-recs",
+    "data-eia-cbecs",
+    "data-doe-lbnl-building-performance-database",
+    "model-stochastic-occupant-behaviour-simulator-resstock"
+  ],
+  "repository": "https://github.com/NatLabRockies/resstock",
+  "runs_on": [
+    "platform-openstudio",
+    "model-energyplus"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, DOE model maintained by NLR, data viewer, source code and input distributions public",
+      "url": "https://resstock.nlr.gov/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "2025 Release 1 (Oct/Nov 2025), 28 packages, Hawaii and Alaska, EVs; 2024 release bill error warning",
+      "url": "https://resstock.nlr.gov/datasets"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD-style licence, Alliance for Energy Innovation 2016-2026",
+      "url": "https://raw.githubusercontent.com/NatLabRockies/resstock/develop/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "EULPs calibrated from ResStock and ComStock",
+      "url": "https://data.openei.org/submissions/4520"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: tag v3.4.0, commit 2024-12-02",
+      "url": "https://github.com/NatLabRockies/resstock"
+    }
+  ],
+  "tags": [
+    "building stock model",
+    "residential",
+    "electrification",
+    "load profiles",
+    "US"
+  ],
+  "title_en": "Resstock: residential building stock energy upgrade simulation",
+  "type": "model",
+  "validated_on": [
+    "End-Use Load Profiles project calibration against measured data"
+  ]
+}

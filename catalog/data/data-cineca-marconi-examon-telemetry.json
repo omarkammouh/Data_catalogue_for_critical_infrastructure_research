@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "M100 dataset part 1 (Zenodo)",
+      "url": "https://zenodo.org/records/7588815"
+    },
+    {
+      "kind": "portal",
+      "label": "M100 time-aggregated data",
+      "url": "https://zenodo.org/records/7541722"
+    },
+    {
+      "kind": "portal",
+      "label": "Marconi A2 thermal data (HazardNet)",
+      "url": "https://zenodo.org/records/10050368"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IT"
+  ],
+  "data_family": [
+    "demand_operation",
+    "sensor_realtime_streams",
+    "condition_ageing"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.7588815",
+    "name": "cineca marconi100 m100 and marconi a2 whole system telemetry from examon",
+    "url": "https://zenodo.org/records/7588815"
+  },
+  "description": "Researchers of the University of Bologna and CINECA, the Italian supercomputing centre, publish telemetry collected by the ExaMon monitoring infrastructure from two Tier-0 supercomputers. The M100 dataset covers the whole Marconi100 system from March 2020 to September 2022 in twelve parts (about 400 GB): internal data of more than 980 compute nodes (core loads, temperatures, frequencies, memory operations, CPU power, fan speeds, GPU use) and system-wide data on the liquid cooling plant, air conditioning, power supply units, workload manager and jobs, system alerts and weather, with a time-aggregated part for anomaly detection. A second dataset gives inlet and outlet temperatures and power of 3,312 Marconi A2 nodes for 2019, prepared for the HazardNet thermal hazard prediction framework. Coverage: CINECA, Casalecchio di Reno (Bologna), Italy. Format and access: Parquet archives on Zenodo, free of charge under CC BY 4.0. Caveats: one HPC centre; very large; metric names need the documentation. Simulation uses: power, cooling and thermal behaviour of a large computing facility for data centre digital twins, thermal hazard and failure prediction, and demand on the power grid. Related records: SURF Lisa and the UCC 2023 cloud data centre logs; OpenDC simulates data centres.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Zenodo data harvest of the digital piece; candidate zenodo-ea8d8422f9, read in full on second reading",
+      "route": "R03",
+      "source": "zenodo"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "Zenodo data harvest of the digital piece; candidate zenodo-56e9278524, read in full on second reading",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "parquet"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "extreme_heat",
+    "technological_failure"
+  ],
+  "homepage": "https://zenodo.org/records/7588815",
+  "id": "data-cineca-marconi-examon-telemetry",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-10-27",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "CINECA Marconi100 (M100) and Marconi A2 whole-system telemetry from ExaMon",
+  "notes": "Zenodo search for the M100 series (12 parts, 2023-01-31) and records 7588815 and 10050368 read 2026-09-26. The Parquet format and the facility location are from recall of the M100 ExaData paper, not read here.",
+  "provider": "CINECA and University of Bologna (Andrea Borghesi, Andrea Bartolini, Luca Benini and colleagues)",
+  "related_ids": [],
+  "schema_summary": "per plugin and metric: timestamp, node, value (CPU, GPU, memory, power, temperatures, fans); cooling and power plant sensors; job table; alerts; weather",
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "capacity_planning",
+    "resilience"
+  ],
+  "size": "about 400 GB (M100) and 1 GB (Marconi A2)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "M100 description",
+      "url": "https://zenodo.org/api/records/7588815"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Marconi A2 thermal data",
+      "url": "https://zenodo.org/api/records/10050368"
+    }
+  ],
+  "spatial_resolution": "node, rack and facility plant",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "supercomputer",
+    "telemetry",
+    "ExaMon",
+    "cooling",
+    "CINECA"
+  ],
+  "temporal_coverage": "2019 (Marconi A2); 2020-03 to 2022-09 (M100)",
+  "temporal_coverage_years": {
+    "end": 2022,
+    "start": 2019
+  },
+  "temporal_resolution": "seconds to minutes by plugin",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "CINECA Marconi100 (M100) and Marconi A2 whole-system telemetry from ExaMon",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

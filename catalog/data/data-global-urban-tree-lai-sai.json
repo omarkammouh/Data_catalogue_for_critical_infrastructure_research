@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Dataset (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.14709655"
+    },
+    {
+      "kind": "repo",
+      "label": "Model code",
+      "url": "https://github.com/tungwz/RF_LAI"
+    },
+    {
+      "kind": "paper",
+      "label": "Data descriptor (Scientific Data 2025)",
+      "url": "https://doi.org/10.1038/s41597-025-04729-y"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "vegetation_land_cover",
+    "imagery_remote_sensing"
+  ],
+  "data_kind": [
+    "raster",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "global urban tree leaf and stem area index dataset for urban climate modelling",
+    "repo": "github.com/tungwz/rf_lai",
+    "url": "doi:10.5281/zenodo.14709655"
+  },
+  "description": "This dataset gives monthly leaf area index and stem area index for urban trees worldwide, filling the gap left by satellite products such as MODIS that mask urban pixels, so urban canopy models can represent tree effects. It covers all urban areas globally from 2000 to 2022 at 500 m resolution, with aggregated versions at 0.05 and 0.5 degrees, and was derived with a random forest model trained on reprocessed MODIS leaf area index, meteorological variables and tree height data, validated with a correlation of 0.85 against site reference maps. It was produced by Wenzong Dong, Hua Yuan, Yongjiu Dai and co-authors and described in Scientific Data in March 2025. The data are available for download from Zenodo (version 3, July 2024) as three tar.gz archives of yearly NetCDF files, about 2.3 GB for the 500 m set, under CC BY 4.0 and free of charge, with model code on GitHub. Caveats: values are model estimates at 500 m, too coarse for street-level tree planning. It is useful as vegetation input for urban climate and land surface models used in heat and climate adaptation studies of green infrastructure; a related record is the enhanced US urban tree canopy cover dataset.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "urban tree LAI (green vegetation land cover)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "extreme_heat"
+  ],
+  "homepage": "https://doi.org/10.5281/zenodo.14709655",
+  "id": "data-global-urban-tree-lai-sai",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-07-29",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Global urban tree leaf and stem area index dataset for urban climate modelling",
+  "notes": "Reference: Dong, W. et al. (2025). A global urban tree leaf area index dataset for urban climate modeling. Scientific Data 12. doi:10.1038/s41597-025-04729-y",
+  "provider": "Wenzong Dong, Hua Yuan, Yongjiu Dai and co-authors, on Zenodo",
+  "related_ids": [
+    "data-usgs-enhanced-urban-tree-canopy-cover-us"
+  ],
+  "sectors": [
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Global urban tree LAI/SAI dataset for urban climate modeling; 2024-07-29; version 3; CC BY 4.0; global_15s.tar.gz 2.27 GB, global_0.05, global_0.5; 500 m; 2000-2022; netCDF4 monthly",
+      "url": "https://zenodo.org/api/records/14709655"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "published 2025-03-12; R 0.85 vs site reference maps; code github.com/tungwz/RF_LAI",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11897131/fullTextXML"
+    }
+  ],
+  "tags": [
+    "leaf area index",
+    "urban trees",
+    "urban canopy model",
+    "MODIS",
+    "random forest",
+    "NetCDF"
+  ],
+  "temporal_coverage": "2000 to 2022, monthly",
+  "temporal_coverage_years": {
+    "end": 2022,
+    "start": 2000
+  },
+  "title_en": "Global urban tree leaf and stem area index dataset for urban climate modelling",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "TIGER/Line 2025 FTP: EDGES, FACES, ADDRFEAT, ADDR, ADDRFN, FEATNAMES folders",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/"
+    },
+    {
+      "kind": "docs",
+      "label": "2025 technical documentation, chapter 4 (linear features, faces)",
+      "url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc_Ch4.pdf"
+    },
+    {
+      "kind": "docs",
+      "label": "2025 technical documentation, chapter 5 (relationship files)",
+      "url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc_Ch5.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "crs": "NAD83 geographic (EPSG:4269)",
+  "data_family": [
+    "system_description",
+    "reference_context"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "tiger line shapefiles all lines edges topological faces address range features and feature names",
+    "url": "https://www2.census.gov/geo/tiger/TIGER2025/EDGES"
+  },
+  "description": "These TIGER/Line layers of the U.S. Census Bureau expose the topology of its MAF/TIGER database. All Lines (EDGES, county files) holds every topological edge: roads, railroads, hydrography, other linear features and non-visible boundaries, each with a unique TLID, left and right face identifiers, feature flags (road, rail, hydrography, other) and a special passage flag for bridges, fords, tunnels, pedestrianised and restricted roads. Topological Faces (FACES) are the polygons with all geocodes, including 2020 and current block codes. Address Range Feature files (ADDRFEAT) give the geometry and attributes of all unsuppressed potential address ranges and ZIP codes along street edges; relationship files carry address ranges (ADDR), address range to feature names (ADDRFN), all feature names (FEATNAMES) and face links to landmarks, water and military areas. Coverage: the 50 states, the District of Columbia and Puerto Rico (no address ranges for the Island Areas); annual vintages, 2025 released 23 September 2025. Format and access: county zip files of shapefiles and dBase tables on the FTP site; free and public domain. Caveats: address ranges are potential ranges, not actual addresses, and single-address ranges are suppressed under Title 13; attributes are split across files that users must join. Simulation uses: building routable multimodal networks with bridge and tunnel flags, joining network edges to blocks for demand allocation, and address geocoding of assets. Related records: TIGER/Line road and rail layers (subsets of the edges), the Census Geocoder, TIGER boundaries and blocks, and OpenStreetMap-based road networks.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; TIGER/Line 2025 technical documentation (partly covered by data-us-census-tiger-line-roads-rails)",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "other"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www2.census.gov/geo/tiger/TIGER2025/EDGES/",
+  "id": "data-us-census-tiger-line-edges-faces-address-ranges",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-09-23",
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "TIGER/Line Shapefiles: All Lines (edges), topological faces, address range features and feature names",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-tiger-line-roads-rails",
+    "platform-us-census-geocoder",
+    "data-us-census-tiger-line-boundaries-blocks",
+    "data-us-census-tiger-line-hydrography"
+  ],
+  "schema_summary": "EDGES: TLID, TFIDL, TFIDR, MTFCC, ROADFLG, RAILFLG, HYDROFLG, OLFFLG, PASSFLG; ADDRFEAT: LFROMHN, LTOHN, RFROMHN, RTOHN, ZIPL, ZIPR; FACES: TFID and all geocodes",
+  "sectors": [
+    "transport.road",
+    "transport.rail",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "2025 TIGER/Line Shapefiles released 2025-09-23; legal boundaries as of 2025-01-01; no demographic data but linkable codes",
+      "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "2025 technical documentation chapter 3: list of legal and statistical entities, feature shapefiles, relationship files, nation/state/county file extents",
+      "url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc_Ch3.pdf"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Sections 4.12 Linear features (All Lines, PASSFLG values, feature flags), 4.12.5 Address ranges, 4.21 Topological faces",
+      "url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc_Ch4.pdf"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Chapter 5 relationship files: address ranges, ZIP codes, feature names, face relationships, Title 13 suppression",
+      "url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc_Ch5.pdf"
+    }
+  ],
+  "spatial_resolution": "Vector edges and faces, county-based files",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "TIGER/Line",
+    "topology",
+    "edges",
+    "address ranges",
+    "bridges",
+    "tunnels",
+    "geocoding",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "Annual vintages since 2007 (2025 current)",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2007
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "TIGER/Line Shapefiles: All Lines (edges), topological faces, address range features and feature names",
+  "type": "data",
+  "update_frequency": "annual"
+}

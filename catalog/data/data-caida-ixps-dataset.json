@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Public data directory",
+      "url": "https://publicdata.caida.org/datasets/ixps/"
+    },
+    {
+      "kind": "docs",
+      "label": "Dataset description and methodology",
+      "url": "https://www.caida.org/catalog/datasets/ixps/"
+    },
+    {
+      "kind": "docs",
+      "label": "Resource catalogue entry",
+      "url": "https://catalog.caida.org/dataset/ixps"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "system_description",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "caida internet exchange points ixps dataset",
+    "url": "https://caida.org/catalog/datasets/ixps"
+  },
+  "description": "The CAIDA IXPs dataset lists internet exchange points with their locations, the facilities (data centres) where they are present, their peering prefixes and the member networks (autonomous systems) connected to them. CAIDA builds it by merging PeeringDB, Hurricane Electric and Packet Clearing House listings, keeping only active entries, matching duplicates by shared prefixes and near-identical names, and geocoding cities with GeoNames; earlier releases also used Wikipedia and BGP looking glasses. Files are JSON Lines: ixs.jsonl for exchanges (with PCH and PeeringDB identifiers), facilities.jsonl with street address, coordinates and CLLI code, ix-facilities.jsonl linking the two, ix-asns.jsonl with the IP addresses each member uses at each exchange, organizations.jsonl and locations.jsonl. Coverage: worldwide, with dated snapshots in yearly folders from 2018 to 2026 (monthly folders for 2026) and a corrected v2 series from 2019. Format and access: JSONL files from CAIDA's public data server, free under the CAIDA Acceptable Use Agreement, which requires citation and reporting of publications. Caveats: inherits the gaps of its sources, notably exchanges in developing regions that do not report to PeeringDB; facility locations for non-PeeringDB exchanges are city-level placeholders. Simulation uses: building interconnection graphs that place exchanges in facilities and cities, hazard exposure of exchange sites, and network flow models of peering. Related records: PeeringDB and the PCH IXP directory are its sources, and the Euro-IX IXP database draws on exchanges' own exports.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "list of internet exchange points registry dataset download IXP locations members open data",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "json"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.caida.org/catalog/datasets/ixps/",
+  "id": "data-caida-ixps-dataset",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09",
+  "licence": "CAIDA Acceptable Use Agreement for publicly accessible datasets",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CAIDA Internet eXchange Points (IXPs) dataset",
+  "notes": "Dataset page and public directory README read with curl on 2026-09-26 (sources, methodology, file layout, 2026 monthly folders).",
+  "provider": "Center for Applied Internet Data Analysis (CAIDA), University of California San Diego",
+  "related_ids": [
+    "data-intertubes-us-long-haul-fibre-topology"
+  ],
+  "schema_summary": "exchanges (ids, names, city, country, prefixes, sources), facilities (address, coordinates, CLLI), exchange-facility links, member AS addresses, organisations, locations",
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "size": "not stated",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "methodology and file formats",
+      "url": "https://www.caida.org/catalog/datasets/ixps/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "directory listing and README",
+      "url": "https://publicdata.caida.org/datasets/ixps/"
+    }
+  ],
+  "spatial_resolution": "facility address and coordinates, city for exchanges",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "internet exchange points",
+    "IXP",
+    "PeeringDB",
+    "facilities",
+    "peering"
+  ],
+  "temporal_coverage": "2018 to 2026 snapshots",
+  "temporal_resolution": "periodic snapshots (monthly folders in 2026)",
+  "temporal_resolution_class": "monthly",
+  "title_en": "CAIDA Internet eXchange Points (IXPs) dataset",
+  "type": "data",
+  "update_frequency": "monthly"
+}

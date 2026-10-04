@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/MarvinLer/pypownet"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/MarvinLer/pypownet/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pypownet cascading failure grid simulator",
+    "repo": "github.com/marvinler/pypownet",
+    "url": "https://github.com/MarvinLer/pypownet"
+  },
+  "description": "pypownet is its contributors' Python simulator for operating electrical networks under time-varying generation and demand. It computes AC or DC load flow and iteratively disconnects overloaded lines to represent cascading failures. Users provide grid parameters, injection time series, maintenance or hazard schedules and controller actions; outputs include network observations, rewards and evolving power-flow states. Geographic coverage, network size and fixed time step are configurable. Public source and usage instructions are free under LGPL-3.0. A limitation is that its cascade mechanism uses repeated steady-state load flows, not detailed transient protection dynamics, and parts of the installation documentation reference older Python, Octave and MATPOWER versions. The renderer is limited to official example cases. pypownet can evaluate grid switching and resilience policies, complementary to PyPSA (model-pypsa). Its reinforcement-learning interface supports node splitting and line-status actions with configurable rewards. No grid dataset, container image or simulation was downloaded or executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "marvinler/pypownet linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/MarvinLer/pypownet",
+  "id": "model-pypownet",
+  "inputs": [
+    "Grid topology and injections",
+    "Maintenance and hazard schedules",
+    "Switching actions"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-07-15",
+  "licence": "LGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network"
+  ],
+  "name": "pypownet cascading-failure grid simulator",
+  "notes": "G7 G7-0736. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Network states and rewards",
+    "Cascading outage sequences"
+  ],
+  "provider": "pypownet contributors",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/MarvinLer/pypownet",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for MarvinLer/pypownet: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/marvinler/pypownet"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/marvinler/pypownet/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Network model for electricity",
+  "type": "model"
+}

@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "National parks (CSV)",
+      "url": "https://www.data.go.kr/data/15133028/fileData.do"
+    },
+    {
+      "kind": "download",
+      "label": "Provincial parks (CSV)",
+      "url": "https://www.data.go.kr/data/15133036/fileData.do"
+    },
+    {
+      "kind": "download",
+      "label": "County parks (CSV)",
+      "url": "https://www.data.go.kr/data/15133040/fileData.do"
+    },
+    {
+      "kind": "api",
+      "label": "Mountain-area mobile communications finder (API)",
+      "url": "https://www.data.go.kr/data/15067860/openapi.do"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "KR"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "kca mobile base stations in mountain areas national provincial and county parks and mountain mobile coverage finder api south korea",
+    "url": "https://data.go.kr/data/15133028/fileData.do"
+  },
+  "description": "The Korea Communications Agency, which manages radio stations and the spectrum map service, publishes the radio stations set up for mobile communication service in mountainous areas of South Korea. Three files cover national parks, provincial parks and county parks; each row gives the park name, the use (3G, 4G or 5G), the address, and longitude and latitude, and the national park file has 9,059 rows. An open API, the mountain-area mobile communications finder, returns radio station data for a designated mountain area or around a user's location, intended to help hikers and rescuers know where mobile service can be expected. Coverage: mountain parks across South Korea. Format and access: CSV files and XML or JSON through the national public data portal, free, with no restriction on use stated. Caveats: the files are one-off extracts registered in August 2024 and refreshed as needed; they show station locations, not modelled coverage; operator names are not included. Simulation uses: mountain rescue and wildfire scenarios that need to know where mobile service is available, and exposure of remote sites to landslides or fire. Related records: the KCA radio station inspection data give national counts of base stations, and the Korea 5G quality evaluation gives measured service.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "data.go.kr search for base stations (기지국)",
+      "route": "R10",
+      "source": "organisations.csv:KR:digital:spectrum_agency"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.data.go.kr/data/15133028/fileData.do",
+  "id": "data-kca-mountain-area-mobile-base-stations",
+  "languages": [
+    "ko"
+  ],
+  "last_updated": "2026-09",
+  "licence": "No restriction on use (data.go.kr)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.data.go.kr/data/15133036/fileData.do"
+    ]
+  },
+  "maturity": "active",
+  "name": "KCA mobile base stations in mountain areas (national, provincial and county parks) and mountain mobile coverage finder API (South Korea)",
+  "notes": "Dataset pages read via fetch on 2026-09-26 (columns, rows, licence, dates). access_restrictions 'registration' reflects the API key needed for the open API; file downloads may not need it. The hiker and rescuer purpose is inferred from the API description.",
+  "provider": "Korea Communications Agency (KCA, 한국방송통신전파진흥원)",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "size": "9,059 rows (national parks)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "national parks dataset page",
+      "url": "https://www.data.go.kr/data/15133028/fileData.do"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search results",
+      "url": "https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=%EC%82%B0%EC%95%85%EC%A7%80%EC%97%AD+%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0"
+    }
+  ],
+  "spatial_resolution": "individual station coordinates",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "base stations",
+    "mountains",
+    "national parks",
+    "search and rescue",
+    "South Korea"
+  ],
+  "temporal_coverage": "extract of August 2024",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "KCA mobile base stations in mountain areas (national, provincial and county parks) and mountain mobile coverage finder API (South Korea)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository with data files",
+      "url": "https://github.com/etas/SynCAN"
+    },
+    {
+      "kind": "paper",
+      "label": "CANet paper, IEEE Access 2020",
+      "url": "https://ieeexplore.ieee.org/document/9044377"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "cyber_control",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1109/access.2020.2982544",
+    "name": "syncan synthetic can bus intrusion detection dataset",
+    "repo": "github.com/etas/syncan",
+    "url": "https://github.com/etas/SynCAN"
+  },
+  "description": "SynCAN (Synthetic CAN Bus Data) is a benchmark dataset for evaluating and comparing intrusion detection systems for the controller area network (CAN) bus of vehicles in the signal space. It contains a training set, split into four zip files, and six test sets; every file lists a label (normal or intrusion), one of ten message identifiers, a time stamp in milliseconds and up to four decoded signal values per identifier. The training data contain no intrusions, so detectors are trained unsupervised and tested on normal and attack scenarios. It was released by researchers at ETAS and Bosch as supplementary material to the CANet paper in IEEE Access (2020). Coverage: synthetic signals, not tied to a vehicle model or country. Access: CSV files in the public GitHub repository. Licence and cost: free to download; the repository has no licence file, so reuse terms are unclear beyond the request to cite the paper. Caveats: the signals are synthetic and anonymised, so the physical meaning of each signal is not given, and results may not transfer to real vehicles. It serves cyber-physical resilience studies of road vehicles and connected transport, for example testing how an attack on in-vehicle networks propagates, and complements the CAN-MIRGU real-vehicle attack dataset catalogued in this pass.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "vehicle CAN bus intrusion dataset automotive cyber attack open dataset railway maritime cyber",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/etas/SynCAN",
+  "id": "data-syncan-synthetic-can-bus-intrusion-detection-dataset",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-04-21",
+  "licence": "not stated in the repository (no licence file); cite the CANet paper",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://github.com/etas/SynCAN",
+      "https://ieeexplore.ieee.org/document/9044377"
+    ]
+  },
+  "maturity": "stale",
+  "name": "SynCAN synthetic CAN bus intrusion detection dataset",
+  "provider": "ETAS GmbH / Robert Bosch GmbH researchers (Hanselmann, Strauss, Dormann, Ulmer)",
+  "related_ids": [
+    "data-can-mirgu-can-bus-attack-dataset-from-moving-vehicles"
+  ],
+  "schema_summary": "Label, ID (id1 to id10), Time in ms, Signal1_of_ID to Signal4_of_ID",
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: benchmark for CAN IDS; training set of four zips and six test sets; columns; citation of CANet, IEEE Access 2020; no licence file found in repository",
+      "url": "https://raw.githubusercontent.com/etas/SynCAN/master/README.md"
+    }
+  ],
+  "tags": [
+    "CAN bus",
+    "intrusion detection",
+    "vehicle cyber security",
+    "synthetic",
+    "r2-fresh-transport"
+  ],
+  "temporal_resolution": "message level, millisecond time stamps",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "SynCAN synthetic CAN bus intrusion detection dataset",
+  "type": "data"
+}

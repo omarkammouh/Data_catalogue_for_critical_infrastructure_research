@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "CAF locations by speed tier (Socrata API)",
+      "url": "https://opendata.usac.org/resource/99nv-p7fk.json"
+    },
+    {
+      "kind": "api",
+      "label": "CAF disbursements and locations (Socrata API)",
+      "url": "https://opendata.usac.org/resource/hghw-69cg.json"
+    },
+    {
+      "kind": "viewer",
+      "label": "USAC open data portal",
+      "url": "https://opendata.usac.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "planned_future_infrastructure",
+    "economic_financial",
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usac connect america fund deployment data locations deployed and obligated by speed tier and support disbursed by study area united states",
+    "url": "https://opendata.usac.org"
+  },
+  "description": "The Universal Service Administrative Company administers the US Universal Service Fund for the Federal Communications Commission and publishes its program data on a Socrata open data portal. Two datasets track rural broadband built with High Cost support. The first gives, for each study area code, state, holding company, carrier, fund and filing year from 2014 to 2025, the obligated speed tier, the milestone percentage and location obligation, and the locations deployed in the year and cumulatively (21,235 rows). Speed tiers run from 1 Mbps/256 kbps and 4/1 and 10/1 Mbps up to 25/3, 100/20 and 1 Gbps/500 Mbps. Funds include model-based ACAM and ACAM II, CAF Phase II and the CAF II auction, the Rural Digital Opportunity Fund (RDOF), CAF-BLS, the Alaska Plan, Rural Broadband Experiments, and the Puerto Rico and US Virgin Islands fixed funds. The second gives support disbursed in the year and cumulatively with locations deployed (14,593 rows). Both were updated in August 2026. The portal also holds E-Rate, Rural Health Care, Lifeline and Emergency Connectivity Fund data. Coverage: United States and territories, by carrier study area. Format and access: Socrata API (SoQL), CSV and JSON, free, public domain. Caveats: study areas are carrier service territories, not census geographies; locations are carrier-reported through the HUBB portal and may later be verified or revised; location-level coordinates are not in these files. Simulation uses: pace and speed of subsidised rural deployment, and dollars per location, for broadband expansion scenarios. Related records: the FCC Form 477 fixed broadband deployment data and the NaNDA broadband availability by tract give coverage outcomes.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "USAC open data portal listing",
+      "route": "R02",
+      "source": "organisations.csv:US:digital:broadband_mapping"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://opendata.usac.org/",
+  "id": "data-usac-connect-america-fund-deployment",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08",
+  "licence": "Public Domain",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "USAC Connect America Fund deployment data: locations deployed and obligated by speed tier and support disbursed, by study area (United States)",
+  "notes": "Socrata view metadata and SoQL aggregate queries (row counts, filing-year range, fund and speed-tier counts) read on 2026-09-26. The HUBB reporting source is from recall and was not checked on the portal.",
+  "provider": "Universal Service Administrative Company (USAC)",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "size": "21,235 and 14,593 rows",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "dataset metadata",
+      "url": "https://opendata.usac.org/api/views/99nv-p7fk.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "dataset metadata",
+      "url": "https://opendata.usac.org/api/views/hghw-69cg.json"
+    }
+  ],
+  "spatial_resolution": "carrier study area; state",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "Connect America Fund",
+    "RDOF",
+    "rural broadband",
+    "subsidies",
+    "universal service",
+    "United States"
+  ],
+  "temporal_coverage": "filing years 2014 to 2025",
+  "temporal_resolution": "annual filing year",
+  "temporal_resolution_class": "annual",
+  "title_en": "USAC Connect America Fund deployment data: locations deployed and obligated by speed tier and support disbursed, by study area (United States)",
+  "type": "data",
+  "update_frequency": "annual"
+}

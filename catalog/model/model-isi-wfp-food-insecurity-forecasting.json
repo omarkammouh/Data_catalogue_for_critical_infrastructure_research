@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository (code, data pipelines)",
+      "url": "https://github.com/pietro-foini/ISI-WFP"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Reports article (2023)",
+      "url": "https://doi.org/10.1038/s41598-023-29700-y"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "BF",
+    "CM",
+    "ML",
+    "NG",
+    "SY",
+    "YE"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "isi wfp food insecurity forecasting model gradient boosted forecasts of insufficient food consumption up to 30 days ahead burkina faso cameroon mali nigeria syria yemen",
+    "repo": "github.com/pietro-foini/isi-wfp",
+    "url": "https://github.com/pietro-foini/ISI-WFP"
+  },
+  "description": "This model forecasts, up to a month ahead, what share of people in each province of six fragile countries will not eat enough, so that food assistance can be positioned before a crisis deepens. It was built by Pietro Foini, Michele Tizzoni, Giulia Martini, Daniela Paolotti and Elisa Omodei at the ISI Foundation with the World Food Programme and published in Scientific Reports in 2023. Coverage is Burkina Faso, Cameroon, Mali, three north-eastern states of Nigeria, Syria and Yemen, using the daily remote-monitoring series behind WFP's HungerMap. Gradient boosted regression trees take past food consumption and coping indicators with conflict fatalities, cereal prices, rainfall, vegetation anomalies and the Ramadan calendar, and the repository also holds correlation and permutation-entropy analyses of how forecastable each series is. The Python code and data pipelines are available as a free download from GitHub under the MIT licence, with a conda environment file. Caveats: forecasts rest on phone-survey data with possible sampling bias, horizons are short, and the repository has not been updated since publication. Simulation uses: an early-warning layer that feeds food supply disruption and humanitarian response models with expected changes in need. Related records: the Harmonized Food Insecurity Dataset (data-harmonized-food-insecurity-dataset) supplies comparable sub-national indicators.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Forecasting transitions in the state of food security with machine learning github code data",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "continental",
+  "hazards": [
+    "drought",
+    "physical_attack_sabotage"
+  ],
+  "homepage": "https://github.com/pietro-foini/ISI-WFP",
+  "id": "model-isi-wfp-food-insecurity-forecasting",
+  "inputs": [
+    "WFP daily prevalence of insufficient food consumption (Food Consumption Score) and crisis coping (reduced Coping Strategy Index) by first-level administrative unit",
+    "ACLED conflict fatalities",
+    "Monthly cereal and tuber prices in local currency",
+    "Rainfall, rainfall anomalies, NDVI and NDVI anomalies",
+    "Ramadan calendar, population, area, centroids and waterways by administrative unit"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-03-23",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "ISI-WFP food insecurity forecasting model: gradient-boosted forecasts of insufficient food consumption up to 30 days ahead (Burkina Faso, Cameroon, Mali, Nigeria, Syria, Yemen)",
+  "outputs": [
+    "Forecasts of the prevalence of insufficient food consumption up to 30 days ahead by administrative unit",
+    "Correlation and permutation-entropy analyses of forecastability"
+  ],
+  "provider": "Pietro Foini, Michele Tizzoni, Giulia Martini, Daniela Paolotti and Elisa Omodei (ISI Foundation with the UN World Food Programme)",
+  "related_ids": [
+    "data-harmonized-food-insecurity-dataset"
+  ],
+  "repository": "https://github.com/pietro-foini/ISI-WFP",
+  "runs_on": [
+    "Python with the conda environment.yml"
+  ],
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Repository for 'On the forecastability of food insecurity': gradient boosted regression trees forecasting insufficient food consumption trends up to 30 days ahead in Burkina Faso, Cameroon, Mali, Nigeria, Syria and Yemen from food consumption observations plus conflict, weather and market price data; folders Data Sources, Dataset time-series, Correlations, Permutation Entropy, Time-series Forecasting, packages; environment.yml; MIT licence; 330 commits",
+      "url": "https://github.com/pietro-foini/ISI-WFP"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Data Sources README: WFP Food Consumption Score and reduced Coping Strategy Index daily time series plus market prices, conflicts, population, rainfall and vegetation, Ramadan and geospatial data at administrative level",
+      "url": "https://raw.githubusercontent.com/pietro-foini/ISI-WFP/master/Data%20Sources/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Scientific Reports 13, 2793 (2023), read via Europe PMC: data availability 'The data and code used to generate the results reported in this study are available in a public GitHub repository'; predictors include ACLED fatalities, cereal and tuber prices, rainfall and NDVI and their anomalies, Ramadan; Nigeria limited to Adamawa, Borno and Yobe",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10038988/"
+    }
+  ],
+  "tags": [
+    "food insecurity",
+    "forecasting",
+    "World Food Programme",
+    "gradient boosting",
+    "early warning",
+    "HungerMap"
+  ],
+  "title_en": "ISI-WFP food insecurity forecasting model: gradient-boosted forecasts of insufficient food consumption up to 30 days ahead (Burkina Faso, Cameroon, Mali, Nigeria, Syria, Yemen)",
+  "type": "model",
+  "validated_on": [
+    "Out-of-sample forecasts against WFP remote-monitoring time series in the six countries"
+  ]
+}

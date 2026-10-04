@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code, dataset card and connectors",
+      "url": "https://github.com/ma-abdellaoui/OpenRelief"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "north_america",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openrelief explainable district level food security ipc phase forecasting",
+    "repo": "github.com/ma-abdellaoui/openrelief",
+    "url": "https://github.com/ma-abdellaoui/OpenRelief"
+  },
+  "description": "OpenRelief forecasts the Integrated Food Security Phase Classification (IPC) phase of districts three months ahead from six months of history, and pairs each forecast with explanations an analyst can inspect. It combines 21 monthly channels, including food security indices, shipping activity from IMF PortWatch, conflict events from ACLED, CHIRPS rainfall and WFP staple food prices, with a time-series language model (OpenTSLM) fine-tuned to produce the forecast together with evidence, hypotheses and proposed actions. The provider is the OpenRelief project on GitHub, built for the Aionic and ETH Agentic Systems Lab Temporal AI Challenge. Coverage is the districts reported by FEWS NET; the prepared set holds 13,798 examples split into training, validation and test sets. The code, dataset card and reusable data connectors are on GitHub under the MIT licence, with a world-map web front end. Caveats: this is a young competition project whose README tracks a submission checklist and current status, forecasts come from a large model that must be served separately, IPC outlooks are themselves projections, and upstream data carry their own licences. Simulation uses: early warning inputs for food assistance planning, and scenario tests of how port disruption or price spikes shift food security phases. Related records: the harmonised food insecurity dataset (data-harmonized-food-insecurity-dataset) holds the phase history, and WFP global food prices (data-wfp-global-food-prices) provides the price channel.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "food security forecasting machine learning open source IPC",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought"
+  ],
+  "homepage": "https://github.com/ma-abdellaoui/OpenRelief",
+  "id": "model-openrelief",
+  "inputs": [
+    "FEWS NET IPC phase history (six months)",
+    "Food security indices",
+    "IMF PortWatch shipping",
+    "ACLED conflict events",
+    "CHIRPS rainfall",
+    "WFP staple food prices"
+  ],
+  "language": [
+    "python",
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-16",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "OpenRelief: explainable district-level food security (IPC phase) forecasting",
+  "outputs": [
+    "IPC phase forecast three months ahead per district",
+    "Text explanations, hypotheses and proposed actions for analysts"
+  ],
+  "provider": "OpenRelief project (ma-abdellaoui on GitHub)",
+  "regions": [],
+  "related_ids": [
+    "data-harmonized-food-insecurity-dataset",
+    "data-wfp-global-food-prices"
+  ],
+  "repository": "https://github.com/ma-abdellaoui/OpenRelief",
+  "runs_on": [
+    "Python",
+    "Web front end (JSX)"
+  ],
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "District-level FEWS NET IPC phase forecasting three months ahead from six months of history; channels (indices, shipping, conflict, rainfall, prices); OpenTSLM; 13,798 prepared examples; connectors for PortWatch, ACLED, WFP prices, CHIRPS; built for the Aionic / ETH Agentic Systems Lab Temporal AI Challenge",
+      "url": "https://raw.githubusercontent.com/ma-abdellaoui/OpenRelief/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License",
+      "url": "https://raw.githubusercontent.com/ma-abdellaoui/OpenRelief/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Shallow clone: last commit 2026-09-16, Python back end and JSX front end",
+      "url": "https://github.com/ma-abdellaoui/OpenRelief"
+    }
+  ],
+  "tags": [
+    "food security",
+    "IPC",
+    "FEWS NET",
+    "forecasting",
+    "explainable AI",
+    "time series language model"
+  ],
+  "title_en": "OpenRelief: explainable district-level food security (IPC phase) forecasting",
+  "type": "model",
+  "validated_on": []
+}

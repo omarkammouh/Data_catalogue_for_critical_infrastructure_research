@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/YingyiLiu/HAMS"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/YingyiLiu/HAMS/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Liu (2019). HAMS: A Frequency-Domain Preprocessor for Wave-Structure Interactions: Theory, Development, and Application. Journal of Marine Science and Engineering 7, 81.",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hams wave structure interaction solver",
+    "repo": "github.com/yingyiliu/hams",
+    "url": "https://github.com/YingyiLiu/HAMS"
+  },
+  "description": "HAMS is Yingyi Liu's Fortran 90 program for frequency-domain analysis of wave interactions with floating or submerged marine structures. It uses boundary integral equations within potential-flow theory and accepts triangular or quadrilateral panel meshes. Inputs are structure geometry, water depth and wave conditions; outputs include hydrodynamic coefficients, wave-excitation forces, motion response operators and free-surface elevations. Geographic application is unrestricted by a supplied site, while panel size and frequency choices define numerical resolution. Source is free under Apache-2.0, with theory references and example material. A limitation is that potential-flow assumptions do not represent all viscous or strongly nonlinear phenomena, and mesh quality affects accuracy. HAMS can prepare hydrodynamic models for offshore-energy and port simulations. OpenFOAM (model-openfoam) provides related CFD methods with different assumptions. No mesh, model archive or executable was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "yingyiliu/hams linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/YingyiLiu/HAMS",
+  "id": "model-hams",
+  "inputs": [
+    "Panel mesh, water depth and wave conditions"
+  ],
+  "language": [
+    "fortran"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-06-03",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "HAMS wave-structure interaction solver",
+  "notes": "G7 G7-0982. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Hydrodynamic coefficients and wave forces",
+    "Motion response operators and free-surface elevation"
+  ],
+  "provider": "Yingyi Liu and HAMS contributors",
+  "related_ids": [
+    "model-openfoam"
+  ],
+  "repository": "https://github.com/YingyiLiu/HAMS",
+  "sectors": [
+    "energy.electricity",
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for YingyiLiu/HAMS: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/yingyiliu/hams"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/yingyiliu/hams/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Hams frequency domain wave interaction program",
+  "type": "model"
+}

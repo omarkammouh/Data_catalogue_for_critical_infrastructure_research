@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "SILVER source code (GitLab)",
+      "url": "https://gitlab.com/sesit/silver"
+    },
+    {
+      "kind": "docs",
+      "label": "Canadian energy modelling hub inventory entry",
+      "url": "https://cme-emh.ca/inventory-model/silver/?lang=en"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "silver strategic integration of large capacity variable energy resources electricity dispatch model",
+    "repo": "gitlab.com/sesit/silver",
+    "url": "https://gitlab.com/sesit/silver"
+  },
+  "description": "SILVER (Strategic Integration of Large-capacity Variable Energy Resources) is a scenario-based electricity system model from the SESIT group at the University of Victoria. The G-PST Open Tools Portal says it explores trade-offs among balancing strategies for grids with high shares of variable renewable energy, optimising asset dispatch for a user-defined system that specifies demand response availability, generation, storage and transmission. The README describes a generic, object-oriented Python network optimisation tool, tested with Python 3.9.16, split into four stages: input processing, a price-setting optimal power flow, unit commitment and a real-time optimal power flow; the last three loop over each commitment period in the chosen time range, with linear programmes solved for each hour. Coverage: any user-defined electricity system; example inputs for one scenario ship with the repository. Format and access: Python source on GitLab (sesit/silver) with a user manual PDF in the repository; the repository showed activity on 28 September 2026. Licence: MIT (portal). Caveats: the user manual was not read, and the solver requirements are not stated in the README. Simulation uses: hourly dispatch, unit commitment and power flow studies for systems with high wind and solar shares, including storage and demand response. Related records: COPPER (model-copper-canadian-electricity-capacity-expansion) plans capacity for the same group's Canadian studies, and IDEA (platform-idea-energy-transition-dashboard) visualises SILVER outputs.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source gpst-open-tools: provider pages read (round 2 register piece)",
+      "route": "R06",
+      "source": "gpst-open-tools"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://gitlab.com/sesit/silver",
+  "id": "model-silver-variable-renewable-electricity-dispatch",
+  "inputs": [
+    "generation, storage and transmission assets",
+    "demand and demand response availability",
+    "configuration of time range"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network"
+  ],
+  "name": "SILVER: Strategic Integration of Large-capacity Variable Energy Resources (electricity dispatch model)",
+  "outputs": [
+    "unit commitment",
+    "optimal power flow results",
+    "prices and costs"
+  ],
+  "provider": "Sustainable Energy Systems Integration and Transitions (SESIT) group, University of Victoria",
+  "related_ids": [
+    "model-copper-canadian-electricity-capacity-expansion",
+    "platform-idea-energy-transition-dashboard"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Scenario-based model; balancing strategies for high VRE; University of Victoria; MIT; Python",
+      "url": "https://opentools.globalpst.org/tools/silver"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Four stages; Python 3.9.16; user manual PDF; configVariables.ini",
+      "url": "https://gitlab.com/sesit/silver/-/raw/main/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "last_activity_at 2026-09-28",
+      "url": "https://gitlab.com/api/v4/projects/sesit%2Fsilver"
+    }
+  ],
+  "tags": [
+    "unit commitment",
+    "optimal power flow",
+    "variable renewables",
+    "dispatch"
+  ],
+  "title_en": "SILVER: Strategic Integration of Large-capacity Variable Energy Resources (electricity dispatch model)",
+  "type": "model"
+}

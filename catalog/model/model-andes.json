@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/CURENT/andes"
+    },
+    {
+      "kind": "portal",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/andes/"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://docs.andes.app/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "andes",
+    "repo": "github.com/curent/andes",
+    "url": "https://docs.andes.app"
+  },
+  "description": "ANDES is an open-source Python package for power system modelling and simulation, and the dynamic simulation engine of the CURENT Large-scale Testbed. It offers five analysis routines, Newton-Raphson power flow, time-domain transient stability simulation with an implicit trapezoidal method, eigenvalue analysis, continuation power flow for voltage stability limits and state estimation, and a library of more than one hundred dynamic models including synchronous generators, governors, exciters, stabilisers, second-generation renewable models and distributed energy resources, defined symbolically. The package is written and maintained by Hantao Cui with contributors. It is location independent: cases are loaded from PSS/E RAW and DYR files or its own formats for any system. It is distributed on PyPI and conda-forge (version 2.0.0, March 2026, Python 3.11 or newer) with source on GitHub and documentation at docs.andes.app, under the GNU GPL version 3 or later at no cost. Caveats: electromagnetic transient simulation is not among its listed routines, so such studies need tools such as model-dpsim, and model fidelity depends on the dynamic data supplied. Simulation uses are network flow, transient stability and cascading failure analysis for resilience studies. Related records: it complements model-pandapower for steady state and model-dpsim for electromagnetic transients.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry ANDES and CURENT Large-scale Testbed",
+      "route": "R06",
+      "source": "energy-andes-curent"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://docs.andes.app/",
+  "id": "model-andes",
+  "inputs": [
+    "PSS/E RAW and DYR case files",
+    "ANDES xlsx and JSON case files"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-12",
+  "licence": "GPL-3.0-or-later",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "ANDES",
+  "outputs": [
+    "Power flow solution",
+    "Time-domain trajectories",
+    "Eigenvalues",
+    "Voltage stability limits",
+    "State estimates"
+  ],
+  "provider": "Hantao Cui and contributors; CURENT Large-scale Testbed",
+  "related_ids": [
+    "model-pandapower",
+    "model-dpsim",
+    "platform-cyber-physical-testbed-wide-area-control-open-source-utk",
+    "platform-python-dynamic-rms-simulator-wampac-prototyping-ntnu"
+  ],
+  "repository": "https://github.com/CURENT/andes",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Five analysis routines, over 100 dynamic models, PSS/E case loading, pip and conda install",
+      "url": "https://raw.githubusercontent.com/CURENT/andes/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Copyright 2015-2026 Hantao Cui; GPL version 3 or later",
+      "url": "https://raw.githubusercontent.com/CURENT/andes/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 2.0.0 uploaded 2026-03-12; Python >=3.11",
+      "url": "https://pypi.org/pypi/andes/json"
+    }
+  ],
+  "tags": [
+    "transient stability",
+    "eigenvalue analysis",
+    "PSS/E",
+    "Python",
+    "CURENT"
+  ],
+  "title_en": "ANDES: Python package for power system modelling and simulation",
+  "type": "model",
+  "validated_on": [
+    "IEEE 14-bus and other test cases"
+  ]
+}

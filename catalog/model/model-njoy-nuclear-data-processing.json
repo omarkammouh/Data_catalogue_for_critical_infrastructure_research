@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "NJOY home page (versions, components, licence)",
+      "url": "https://www.njoy21.io/"
+    },
+    {
+      "kind": "docs",
+      "label": "NJOY2016 page",
+      "url": "https://www.njoy21.io/NJOY2016/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "njoy nuclear data processing code njoy2016 njoy21 los alamos national laboratory",
+    "url": "https://njoy21.io"
+  },
+  "description": "NJOY is the nuclear data processing code developed at Los Alamos National Laboratory, which turns evaluated nuclear data into libraries that reactor physics and shielding codes use. The home page read on 2026-09-26 describes two managed versions: NJOY2016, the main workhorse still maintained in Fortran, and NJOY21, a C++ wrapper around NJOY2016 with an input parser. Modernisation now follows a component approach with C++ and Python interfaces, and the ENDFtk and ACEtk format components are already available. Coverage is general, for any evaluated library in ENDF format. NJOY2016, NJOY21 and the modern components are free under the BSD 3-clause licence, with LANL code designation LA-CC-15-092, and support is by email to the development team. Caveats: the monolithic structure of legacy NJOY makes quick questions and intermediate results hard to reach, as the page itself notes, and processed libraries need verification before use. Simulation uses are preparing the cross-section libraries on which reactor physics, safety and fuel cycle calculations depend, including the physics core of digital twin work. Related records: model-openmc and model-dragon-donjon-reactor-physics-codes are transport codes that consume processed nuclear data, and model-pyne-nuclear-engineering-toolkit offers nuclear data utilities in Python.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review https://www-pub.iaea.org/MTCD/publications/PDF/p15792-DOC-010-496_web.pdf (IAEA Technical Reports Series 496 (2025), review)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.njoy21.io/",
+  "id": "model-njoy-nuclear-data-processing",
+  "inputs": [
+    "evaluated nuclear data files (ENDF)"
+  ],
+  "language": [
+    "fortran",
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "NJOY nuclear data processing code (NJOY2016, NJOY21, Los Alamos National Laboratory)",
+  "outputs": [
+    "application libraries such as ACE files for transport codes"
+  ],
+  "provider": "Los Alamos National Laboratory",
+  "related_ids": [
+    "model-openmc",
+    "model-dragon-donjon-reactor-physics-codes",
+    "model-pyne-nuclear-engineering-toolkit"
+  ],
+  "sectors": [
+    "energy.nuclear"
+  ],
+  "simulation_uses": [
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Home page (NJOY2016, NJOY21, component modernisation, ENDFtk, ACEtk, BSD 3-clause, LA-CC-15-092, support email)",
+      "url": "https://www.njoy21.io/"
+    }
+  ],
+  "tags": [
+    "nuclear data",
+    "ENDF",
+    "ACE libraries",
+    "Los Alamos National Laboratory",
+    "open source"
+  ],
+  "title_en": "NJOY nuclear data processing code (NJOY2016, NJOY21, Los Alamos National Laboratory)",
+  "type": "model"
+}

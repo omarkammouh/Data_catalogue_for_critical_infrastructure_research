@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Approved establishments as at 1 September 2026 (CSV)",
+      "url": "https://fsaopendata.blob.core.windows.net/opendatacatalog/Approved-Establishments-01-09-26.csv"
+    },
+    {
+      "kind": "portal",
+      "label": "Dataset page with monthly snapshots since January 2018",
+      "url": "https://data.food.gov.uk/catalog/datasets/1e61736a-2a1a-4c6a-b8b1-e45912ebc8e3"
+    },
+    {
+      "kind": "docs",
+      "label": "EU technical specification for food establishment lists",
+      "url": "https://food.ec.europa.eu/system/files/2022-10/biosafety_fh_eu_food_establishments-techspecs_en.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "supply_chains_logistics",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fsa approved food establishments england and wales monthly list of slaughterhouses cutting plants cold stores and other plants handling products of animal origin",
+    "url": "https://data.food.gov.uk/catalog/datasets/1e61736a-2a1a-4c6a-b8b1-e45912ebc8e3"
+  },
+  "description": "This list names every plant in England and Wales approved to slaughter animals or to cut, store, process or pack meat, fish, milk, eggs and other products of animal origin, the critical middle stage of the food supply chain between farms and shops. It is published by the Food Standards Agency, which approves these premises under the retained European hygiene regulation 853/2004. Monthly snapshots are kept from January 2018, with about 5,300 establishments in the September 2026 list; Northern Ireland and Scotland have been listed separately since May 2022. Each row gives the approval number, trading name, address and postcode, country, and the activities approved in each product section, such as slaughterhouse, cutting plant, cold store, meat products, fishery products or dairy processing. Every monthly file is available as a free CSV download under the Open Government Licence. Caveats: there are no coordinates, capacities or throughputs, a site with several activities appears once with coded columns, and plants handling only plant-based foods are not listed. Simulation uses: building the processing and cold storage layer of meat and dairy supply chain network models, testing the loss of a large abattoir or cold store, and screening plants against flood or power outage hazards. Related records: the FSA food hygiene ratings (data-fsa-food-hygiene-rating-scheme) cover retail and catering outlets, and USDA cold storage statistics (data-usda-nass-cold-storage) give a US view of refrigerated stocks.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Food Standards Agency (GB, food_safety_agency)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://data.food.gov.uk/catalog/datasets/1e61736a-2a1a-4c6a-b8b1-e45912ebc8e3",
+  "id": "data-fsa-approved-food-establishments",
+  "languages": [
+    "en"
+  ],
+  "licence": "Open Government Licence v3.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "FSA approved food establishments (England and Wales): monthly list of slaughterhouses, cutting plants, cold stores and other plants handling products of animal origin",
+  "provider": "Food Standards Agency (FSA)",
+  "related_ids": [
+    "data-fsa-food-hygiene-rating-scheme",
+    "data-usda-nass-cold-storage"
+  ],
+  "schema_summary": "Approval number, trading name, address lines, town, postcode, country, all activities, and one column per section of Regulation (EC) 853/2004 annex III (general activity such as cold store, domestic ungulate meat, poultry meat, farmed and wild game, minced meat, meat products, live bivalve molluscs, fishery products, milk and dairy, eggs and others) with the activity codes (slaughterhouse, cutting plant, cold store, processing plant)",
+  "sectors": [
+    "services.food_supply",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Approved Food Establishments in England and Wales: full list of establishments approved to handle, prepare or produce products of animal origin under Regulation (EC) 853/2004; monthly snapshot as of the 1st of each month since January 2018; UK-wide before May 2022, Northern Ireland and Scotland now listed separately; modified 1 September 2026; Open Government Licence v3; CSV per month",
+      "url": "https://data.food.gov.uk/catalog/datasets/1e61736a-2a1a-4c6a-b8b1-e45912ebc8e3"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: about 5,340 lines; columns AppNo, TradingName, Address1 to Address3, Town, Postcode, Country, All_Activities and one column per Part A section (general activity, domestic ungulate meat, poultry, farmed game, wild game, minced meat, meat products, live bivalve molluscs, fishery products and others); example cold store, cutting plant and mince meat establishment in Smethwick",
+      "url": "https://fsaopendata.blob.core.windows.net/opendatacatalog/Approved-Establishments-01-09-26.csv"
+    }
+  ],
+  "spatial_resolution": "Establishment address (postcode)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "slaughterhouses",
+    "cutting plants",
+    "cold stores",
+    "food processing",
+    "approved premises",
+    "FSA"
+  ],
+  "temporal_coverage": "Monthly snapshots January 2018 to September 2026",
+  "temporal_resolution": "Monthly",
+  "temporal_resolution_class": "monthly",
+  "title_en": "FSA approved food establishments (England and Wales): monthly list of slaughterhouses, cutting plants, cold stores and other plants handling products of animal origin",
+  "type": "data",
+  "update_frequency": "monthly"
+}

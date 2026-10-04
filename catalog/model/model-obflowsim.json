@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/misken/obflowsim"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/misken/obflowsim/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "obflowsim obstetric patient flow model",
+    "repo": "github.com/misken/obflowsim",
+    "url": "https://github.com/misken/obflowsim"
+  },
+  "description": "obflowsim is developed by the repository's healthcare simulation team as a configurable SimPy model of obstetric patient flow. The documented pre-release supports stationary Poisson arrivals, repeating weekly scheduled arrivals, selected length-of-stay distributions and serial patient routes. Inputs are YAML scenario settings, patient arrival processes, unit capacities and experiment controls; outputs are patient and unit summaries, stop logs and occupancy-change logs. Coverage is a configured service network, not a particular hospital, and run length, warm-up and replications are selected by the user. Source is free under MIT. A limitation is that blocking-related stay adjustments and realistic discharge timing are explicitly not implemented; proposed next-generation features should not be assumed present on the main branch. The model can support hospital capacity and process simulations. The existing SimPy healthcare DES collection (model-simpy-streamlit-healthcare-des) provides related examples. No patient records or executable model archive was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"patient flow\" simulation fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/misken/obflowsim",
+  "id": "model-obflowsim",
+  "inputs": [
+    "YAML patient-flow and capacity configuration",
+    "Arrival and length-of-stay assumptions"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-07-09",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "discrete_event"
+  ],
+  "name": "obflowsim obstetric patient-flow model",
+  "notes": "G7 G7-1036. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Patient and unit summaries",
+    "Occupancy and patient-stop logs"
+  ],
+  "provider": "Mark Isken and obflowsim research contributors",
+  "related_ids": [
+    "model-simpy-streamlit-healthcare-des"
+  ],
+  "repository": "https://github.com/misken/obflowsim",
+  "sectors": [
+    "services.healthcare",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for misken/obflowsim: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=%22patient+flow%22+simulation+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/misken/obflowsim/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Discrete-event simulation for healthcare and critical facilities",
+  "type": "model"
+}

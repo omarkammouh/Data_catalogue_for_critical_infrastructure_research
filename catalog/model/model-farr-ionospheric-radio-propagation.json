@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Version 1.0.0 and manual (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.14025871"
+    },
+    {
+      "kind": "repo",
+      "label": "GitLab repository",
+      "url": "https://gitlab.com/longleywj/farr/"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (Frontiers 2025)",
+      "url": "https://doi.org/10.3389/fspas.2025.1521497"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Green, A., Longley, W., Oppenheim, M., Young, M. (2025). An open source code for modeling radio wave propagation in Earth's ionosphere. Frontiers in Astronomy and Space Sciences. doi:10.3389/fspas.2025.1521497",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.3389/fspas.2025.1521497",
+    "name": "farr finite difference time domain code for radio propagation in the ionosphere",
+    "repo": "gitlab.com/longleywj/farr",
+    "url": "https://gitlab.com/longleywj/farr"
+  },
+  "description": "FARR (Finite-difference time-domain ARRay) is an open-source, high-performance code that models radio wave propagation in collisional, magnetised plasmas such as the Earth's ionosphere by solving Maxwell's equations directly. Because it solves for all vector field quantities, it captures polarisation, finite-bandwidth wave packets and interaction with multi-scale ionospheric irregularities, including scintillation from refractive and diffractive processes, in regimes where geometric optics does not apply. Suggested uses include coupling to external ionospheric density models, quantifying HF and VHF scintillation and simulating radar backscatter. It covers user-defined ionospheric domains, not a fixed region, and it was validated against WKB predictions for O, X, R and L modes and compared with an HF pulse reflecting from the bottomside ionosphere. It was developed at Boston University and described by Green, Longley, Oppenheim and Young in Frontiers in Astronomy and Space Sciences (4 February 2025, CC BY 4.0); version 1.0.0 with its manual was archived on Zenodo on 1 November 2024 under GPL-3.0-or-later, and the latest code is on GitLab, where the authors ask researchers to consult the licensing statement. Caveats: the paper presents validation cases and planned uses, not operational products. It supports hazard exposure analysis of space weather effects on HF communication, radar and satellite links; a related record is the CPSSM GNSS scintillation simulator.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ionospheric radio propagation code (space simulation engine)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://gitlab.com/longleywj/farr/",
+  "id": "model-farr-ionospheric-radio-propagation",
+  "inputs": [
+    "ionospheric plasma density and magnetic field",
+    "collision frequencies",
+    "antenna or source configuration"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-11-01",
+  "licence": "GPL-3.0-or-later (Zenodo release)",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "FARR finite-difference time-domain code for radio propagation in the ionosphere",
+  "outputs": [
+    "time-domain electromagnetic fields",
+    "wave amplitudes and propagation paths",
+    "scintillation effects"
+  ],
+  "provider": "Boston University (Green, Longley, Oppenheim and Young)",
+  "related_ids": [
+    "model-cpssm-gnss-scintillation-simulator"
+  ],
+  "sectors": [
+    "cross_cutting.space",
+    "digital.telecom",
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "FARR open source FDTD code for collisional magnetised plasmas; polarisation, finite bandwidth; multi-scale irregularities; scintillation; coupling to density models, HF/VHF scintillation, radar backscatter; validated against WKB; published 2025-02-04; CC BY 4.0; authors Green, Longley, Oppenheim, Young",
+      "url": "https://api.crossref.org/works/10.3389/fspas.2025.1521497"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Boston University; consult licensing statement on GitLab; free educational use; data availability doi:10.5281/zenodo.14025871; gitlab.com/longleywj/farr",
+      "url": "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2025.1521497/full"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "supporting code; 2024-11-01; GPL-3.0-or-later; farr-v1.0.0.zip and farr-manual.pdf; Alexander Green, Boston University",
+      "url": "https://zenodo.org/api/records/14025871"
+    }
+  ],
+  "tags": [
+    "FDTD",
+    "ionosphere",
+    "radio propagation",
+    "HF",
+    "scintillation",
+    "plasma"
+  ],
+  "title_en": "FARR finite-difference time-domain code for radio propagation in the ionosphere",
+  "type": "model"
+}

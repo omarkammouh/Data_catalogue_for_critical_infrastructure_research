@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/macroenergy/Dolphyn.jl"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/macroenergy/Dolphyn.jl/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "He et al. DOLPHYN: decision optimization for low-carbon power and hydrogen networks. https://github.com/macroenergy/Dolphyn.jl",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "dolphyn electricity hydrogen planning model",
+    "repo": "github.com/macroenergy/dolphyn.jl",
+    "url": "https://github.com/macroenergy/Dolphyn.jl"
+  },
+  "description": "DOLPHYN is the developer team's Julia model for joint investment and operation across electricity and hydrogen supply chains. It combines GenX electricity modelling with hydrogen production, storage, transport and use, capturing electricity-to-hydrogen and hydrogen-to-power links. Inputs are CSV system data and YAML settings; outputs include least-cost infrastructure choices and operational results. Coverage and time resolution are configurable. Documented examples include hourly one-year New England systems and a North Sea 2030 scenario. Source is free under GPL-2.0 and includes the open HiGHS solver. A limitation is its single-stage investment formulation; biofuel and carbon-capture supply chains are described as extensions under development. The model supports coordinated grid and hydrogen-infrastructure planning. PyPSA (model-pypsa) offers related sector-coupling analysis. The README reports differing solver support, so example runtimes were not treated as independently verified performance.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "macroenergy/dolphyn.jl linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/macroenergy/Dolphyn.jl",
+  "id": "model-dolphyn",
+  "inputs": [
+    "CSV system and demand data",
+    "YAML sector, policy and solver settings"
+  ],
+  "language": [
+    "julia"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-09-05",
+  "licence": "GPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "optimisation",
+    "network",
+    "economic"
+  ],
+  "name": "DOLPHYN electricity-hydrogen planning model",
+  "notes": "G7 G7-1184. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Least-cost investments and electricity-hydrogen operation"
+  ],
+  "provider": "DOLPHYN contributors at NYU, MIT and Peking University",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/macroenergy/Dolphyn.jl",
+  "sectors": [
+    "energy.electricity",
+    "energy.gas_hydrogen"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for macroenergy/Dolphyn.jl: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/macroenergy/dolphyn.jl"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/macroenergy/dolphyn.jl/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Optimisation model for electricity and gas and hydrogen",
+  "type": "model"
+}

@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Healthcare facility locations (CSV)",
+      "url": "https://data.chhs.ca.gov/dataset/healthcare-facility-locations"
+    },
+    {
+      "kind": "download",
+      "label": "Bed types and counts (CSV)",
+      "url": "https://data.chhs.ca.gov/dataset/healthcare-facility-bed-types-and-counts"
+    },
+    {
+      "kind": "download",
+      "label": "Licensed facility crosswalk",
+      "url": "https://data.chhs.ca.gov/dataset/licensed-facility-crosswalk"
+    },
+    {
+      "kind": "viewer",
+      "label": "Map of health care facilities",
+      "url": "https://go.cdii.ca.gov/cdph-facilities"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "system_description",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "california licensed and certified healthcare facility listing and bed types and counts",
+    "url": "https://data.chhs.ca.gov/dataset/healthcare-facility-locations"
+  },
+  "description": "These two linked data sets list every operational healthcare facility licensed by the California Department of Public Health or certified by Medicare and Medicaid, and the beds each one holds. The facility listing gives the facility identifier, name, licence type (more than 30 types, from general acute care hospitals and skilled nursing facilities to clinics and home health agencies), status, address, county and coordinates; the bed file gives each facility's bed types and capacities, with a county summary for general acute care hospitals. The producer is the Licensing and Certification Program of the California Department of Public Health, extracting from its Electronic Licensing Management System, published on the California Health and Human Services Open Data Portal. Coverage is the State of California at facility level, refreshed monthly. Files are CSV with data dictionaries, free without registration, under the portal's terms of use; no licence is named. Caveats: coordinates can be missing until the next monthly refresh, facility identifiers differ from those of the Department of Health Care Access and Information and need the published crosswalk, and licensed beds are not staffed or available beds. Simulation uses: a facility-level inventory of inpatient and long-term care capacity for earthquake, wildfire and flood exposure analysis, evacuation and surge planning. Related records: HCAI hospital utilisation and financial data (data-hcai-hospital-utilization-and-financial) adds occupancy and services.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "California licensed healthcare facility bed types and counts",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "archive"
+  ],
+  "geographic_scope": "regional",
+  "hazards": [],
+  "homepage": "https://data.chhs.ca.gov/dataset/healthcare-facility-locations",
+  "id": "data-california-licensed-healthcare-facilities-and-beds",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-16",
+  "licence": "not stated (CHHS portal: 'No License Provided'; use subject to the CHHS Terms of Use, commercial uses need approval)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "California licensed and certified healthcare facility listing and bed types and counts",
+  "provider": "California Department of Public Health (CDPH), Center for Health Care Quality, Licensing and Certification Program (CalHHS Open Data Portal)",
+  "related_ids": [
+    "data-hcai-hospital-utilization-and-financial"
+  ],
+  "schema_summary": "Facility listing: facility ID (FACID), name, type (more than 30 licence types), status, address, county, latitude and longitude, licence and certification details, DATA_DATE; bed file: bed type and capacity per facility, plus a county summary of general acute care hospital beds; across-time summary",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description (ELMS, more than 30 facility types, monthly geographic update), resources",
+      "url": "https://data.chhs.ca.gov/api/3/action/package_show?id=healthcare-facility-locations"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Bed types and capacities, county GACH bed file, monthly update, FACID link",
+      "url": "https://data.chhs.ca.gov/api/3/action/package_show?id=healthcare-facility-bed-types-and-counts"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "CalHHS Open Data Portal terms of use",
+      "url": "https://data.chhs.ca.gov/pages/terms"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated (CHHS portal: 'No License Provided'; use subject to the CHHS Terms of Use, commercial uses need approval) (basis: data.chhs.ca.gov dataset page)",
+      "url": "https://data.chhs.ca.gov/api/3/action/package_show?id=healthcare-facility-locations"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://data.chhs.ca.gov/dataset/healthcare-facility-locations"
+    }
+  ],
+  "spatial_resolution": "Individual facility (geocoded)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "health facilities",
+    "hospital beds",
+    "licensing",
+    "California",
+    "skilled nursing",
+    "clinics"
+  ],
+  "temporal_coverage": "Current operational facilities, with an across-time summary",
+  "temporal_resolution": "Monthly snapshot",
+  "temporal_resolution_class": "monthly",
+  "title_en": "California licensed and certified healthcare facility listing and bed types and counts",
+  "type": "data",
+  "update_frequency": "daily"
+}

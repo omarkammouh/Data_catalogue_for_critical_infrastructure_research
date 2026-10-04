@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/dynawo/dynawo"
+    },
+    {
+      "kind": "download",
+      "label": "Releases and binaries",
+      "url": "https://github.com/dynawo/dynawo/releases"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "dynawo",
+    "repo": "github.com/dynawo/dynawo",
+    "url": "https://dynawo.org"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "Dynawo is a hybrid C++ and Modelica open-source suite of time-domain simulation tools for power systems. It provides DynaFlow for steady-state calculations, DynaWaltz for long-term voltage stability and DynaSwing for short-term (transient) stability, all sharing Modelica component models solved by a C++ engine, so that studies can share both data and modelling choices. The project was launched by RTE, the French transmission system operator, which holds the copyright of the code, to cope with power system dynamics changed by power electronics, renewables, HVDC links and complex automata. It is location independent: users supply network and dynamic model files for any system, and the repository ships validated test cases such as the IEEE 14-bus system. Binaries, Docker images and source are distributed through GitHub releases (latest tag v1.7.0), with Linux and Windows builds and documentation in the release assets, under the Mozilla Public License 2.0 at no cost. Caveats: the README explains that general Modelica tools are not efficient enough for large-scale simulation, which is why Dynawo pairs its Modelica library with its own C++ solver, and Linux builds are tested only on CentOS and Debian-based distributions. Simulation uses are network flow, stability and cascading failure analysis for resilience studies. Related records: it belongs to the same open-source ecosystem as platform-powsybl, whose IIDM grid model it uses through the iidm4cpp library.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry Dynawo",
+      "route": "R06",
+      "source": "energy-dynawo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "http://dynawo.org",
+  "hosted_models": [
+    "DynaFlow (steady state)",
+    "DynaWaltz (long-term stability)",
+    "DynaSwing (short-term stability)"
+  ],
+  "id": "platform-dynawo",
+  "interfaces": [
+    "command_line",
+    "file_exchange",
+    "other"
+  ],
+  "interoperability": [
+    "Modelica",
+    "IIDM network format"
+  ],
+  "language": [
+    "modelica"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-18",
+  "licence": "MPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Dynawo",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "RTE (Réseau de Transport d'Électricité) and the Dynawo contributors",
+  "related_ids": [
+    "platform-powsybl"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "About: hybrid C++/Modelica suite; motivation; DynaFlow, DynaWaltz, DynaSwing; examples; copyright RTE; v1.7.0 documentation",
+      "url": "https://raw.githubusercontent.com/dynawo/dynawo/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Mozilla Public License 2.0",
+      "url": "https://raw.githubusercontent.com/dynawo/dynawo/HEAD/LICENSE.txt"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Visit 2026-09-22; head commit 2026-09-18",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/dynawo/dynawo/visit/latest/"
+    }
+  ],
+  "supported_sectors": [
+    "energy.electricity"
+  ],
+  "tags": [
+    "dynamic simulation",
+    "stability",
+    "Modelica",
+    "RTE",
+    "time domain"
+  ],
+  "title_en": "Simulation software for electricity",
+  "type": "platform"
+}

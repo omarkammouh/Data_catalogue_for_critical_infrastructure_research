@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/22941343"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/22941343"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Repository metadata and README independently inspected; code not executed.",
+      "url": "https://github.com/paulinelemenkova/python-multicriteria-zonation"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.22941343",
+    "name": "python multicriteria zonation python workflow for multi criteria landslide susceptibility zonation ahp weighted linear combination quantile classification",
+    "repo": "github.com/paulinelemenkova/python-multicriteria-zonation",
+    "url": "https://zenodo.org/records/22941343"
+  },
+  "description": "Polina Lemenkova and Abdullah Can Zülfikar publish a scripted landslide-susceptibility zonation workflow. Zenodo archives version 1.0.1 under MIT and links an MIT-licensed repository. Python combines analytic-hierarchy weights, raster reclassification, weighted linear combination and quantile classes with GRASS GIS, GDAL and GMT. The repository describes slope, drainage, lithology, faults and rainfall factors. Its zonation rasters can feed road, settlement and utility landslide-exposure scenarios. No related catalogue record explicitly covers this implementation. Coverage depends on user-supplied geospatial layers and chosen study boundary, not a continuously updated hazard map. A limitation is that expert pairwise weights, class breaks and input resolution can change the final zones; susceptibility is not an event probability or engineering slope-stability test. Neither archive nor dependencies were installed, and no map or consistency ratio was recalculated.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "title:(\"hazard map\" OR \"flood map\" OR \"seismic hazard\" OR \"wind hazard\" OR \"storm surge\" OR \"wildfire risk\" OR \"landslide susceptibility\" OR \"drought index\" OR \"heatwave\" OR \"hazard footprint\" OR \"return period\" OR \"intensity measure\" OR \"hazard layer\" OR \"extreme event scenario\" OR \"multi-hazard\" OR \"flood extent\" OR \"inundation depth\" OR \"peak ground acceleration\" OR \"tsunami inundation\" OR \"volcanic hazard\" OR \"cyclone track\" OR \"hail\" OR \"ice storm\" OR \"sea level rise\" OR \"coastal erosion\" OR \"subsidence hazard\") AND (\"infrastructure\" OR \"electricity\" OR \"power grid\" OR \"water supply\" OR \"wastewater\" OR \"stormwater\" OR \"transport\" OR \"railway\" OR \"road network\" OR \"telecommunication\" OR \"building\" OR \"hospital\" OR \"emergency response\" OR \"waste management\" OR \"food supply\" OR \"manufacturing\" OR \"mining\" OR \"flood\" OR \"drought\" OR \"earthquake\")",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "landslide"
+  ],
+  "homepage": "https://zenodo.org/records/22941343",
+  "id": "model-ahp-landslide-susceptibility-zonation-grass-gdal-gmt",
+  "inputs": [
+    "Slope, terrain, drainage, lithology, fault and rainfall layers",
+    "Pairwise criterion weights"
+  ],
+  "language": [
+    "python",
+    "other"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-24",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "python-multicriteria-zonation: Python workflow for multi-criteria landslide susceptibility zonation (AHP, weighted linear combination, quantile classification)",
+  "notes": "G6 item G6-1947. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "outputs": [
+    "Weighted susceptibility raster and classes"
+  ],
+  "provider": "Lemenkova, Polina (Istanbul Technical University, Institute of Earthquake Engineering and Disaster Management)",
+  "related_ids": [],
+  "repository": "https://github.com/paulinelemenkova/python-multicriteria-zonation",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/22941343"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence mit-license, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/22941343"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README and MIT metadata inspected for factors, methods and GIS dependencies.",
+      "url": "https://github.com/paulinelemenkova/python-multicriteria-zonation/blob/main/README.md"
+    }
+  ],
+  "tags": [],
+  "title_en": "Python-multicriteria-zonation: Python workflow for multi-criteria landslide susceptibility zonation (AHP, weighted linear combination, quantile classification)",
+  "type": "model"
+}

@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/timflow-org/timflow"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/timflow-org/timflow/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Bakker (2013). Semi-analytic modeling of transient multi-layer flow with TTim. https://doi.org/10.1007/s10040-013-0975-2. Steady method: https://doi.org/10.1016/S0022-1694(02)00319-0",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "timflow multi layer groundwater model",
+    "repo": "github.com/timflow-org/timflow",
+    "url": "https://github.com/timflow-org/timflow"
+  },
+  "description": "timflow is the project's Python model for groundwater flow through multiple aquifers and leaky layers. It combines the earlier TimML and TTim packages into steady and transient analytic-element modules. Inputs define aquifer properties and analytic elements; outputs are groundwater head, flow and inter-aquifer leakage evaluated at chosen locations and times. The transient calculation solves in the Laplace domain and numerically converts back to time. Coverage is the specified aquifer system, without a fixed geographic extent or observation period. MIT source is free through GitHub and PyPI. A limitation is that model assumptions and selected elements must represent the aquifer adequately; semi-analytic calculations are not field observations. The package supports groundwater-supply and drainage simulations. FEHM (model-fehm) provides a related numerical alternative. The README documents Python 3.11 or later and cites the underlying steady and transient methods.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "timflow-org/timflow linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/timflow-org/timflow",
+  "id": "model-timflow",
+  "inputs": [
+    "Aquifer and leaky-layer properties",
+    "Analytic elements and time settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-18",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "timflow multi-layer groundwater model",
+  "notes": "G7 G7-1152. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Groundwater head, flow and leakage"
+  ],
+  "provider": "timflow development team",
+  "related_ids": [
+    "model-fehm"
+  ],
+  "repository": "https://github.com/timflow-org/timflow",
+  "sectors": [
+    "water.drinking_water",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for timflow-org/timflow: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/timflow-org/timflow"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/timflow-org/timflow/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for drinking water and stormwater drainage",
+  "type": "model"
+}

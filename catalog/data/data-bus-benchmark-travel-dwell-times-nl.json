@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Dataset (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.20413215"
+    },
+    {
+      "kind": "repo",
+      "label": "Processing code (GitHub)",
+      "url": "https://github.com/urbanAIthi/bus-benchmark"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "data_family": [
+    "demand_operation",
+    "synthetic_benchmark",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.20413215",
+    "name": "benchmark dataset for bus travel and dwell time prediction netherlands",
+    "url": "https://zenodo.org/records/20413215"
+  },
+  "description": "This benchmark gives bus travel times between consecutive stops, dwell times at stops and vehicle trajectories derived from three years of automated vehicle location (AVL) records of the Dutch public transport network, so that machine learning methods for bus travel and dwell time prediction can be compared on common data. Excerpts are sampled by local administrative unit (LAU) to represent rural areas and small and large cities, and every row carries the LAU, service day, line, trip and route, stop identifiers with WGS 84 coordinates, and ISO 8601 timestamps; a methodology for computing metrics reproducibly comes with it. It was built by researchers of Technische Hochschule Ingolstadt from KV6 vehicle logs in the unofficial Dutch public transport archive of Adriaan van Natijne (CC BY 4.0), funded through the Ingolstadt transit authority VGI, and presented at IEEE ITSC 2025. Coverage is national for the Netherlands, at stop and trip level in the sampled LAUs. The data are free on Zenodo under CC BY 4.0 (version 2 of 29 May 2026: travel_time.zip 3.1 GB, dwell_time.zip 2.3 GB, trajectory.zip 9.5 GB), with the processing code on GitHub under MIT. Caveats: service days follow GTFS rules, not calendar days, stop locations are estimated as geometric medians, and version 2 changed how invalid segments are dropped. The data support calibration of transit simulation, network flow and capacity planning studies of bus operations, and relate to the GTFS specification and the 25-city public transport networks catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "public transport bus metro scenarios projections synthetic benchmark dataset",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "other_vector"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://zenodo.org/records/20413215",
+  "id": "data-bus-benchmark-travel-dwell-times-nl",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-29",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Benchmark dataset for bus travel and dwell time prediction (Netherlands)",
+  "provider": "Technische Hochschule Ingolstadt (Alexander Horn, Philip-Roman Adam, Stefanie Schmidtner)",
+  "related_ids": [
+    "data-gtfs-specification",
+    "data-kujala-public-transport-networks-25-cities"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "title, creators (TH Ingolstadt), CC BY 4.0, version v2 of 2026-05-29, abstract (three years of AVL data, rural/urban/small/large city excerpts), v2 changelog, files dwell_time.zip 2,316 MB, trajectory.zip 9,488 MB, travel_time.zip 3,121 MB",
+      "url": "https://zenodo.org/api/records/20413215"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "IEEE ITSC 2025; van Natijne archive CC BY 4.0; VGI newMIND funding; KV6 processing steps; CSV schema (lau, date, line, trip, route, stops, WKT, ISO 8601); MIT licence 2026",
+      "url": "https://raw.githubusercontent.com/urbanAIthi/bus-benchmark/main/README.md"
+    }
+  ],
+  "spatial_resolution": "bus stops and inter-stop segments in sampled LAUs",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "bus",
+    "travel time",
+    "dwell time",
+    "AVL",
+    "benchmark",
+    "Netherlands"
+  ],
+  "temporal_coverage": "three years of AVL records (years not stated on the pages read)",
+  "temporal_resolution": "individual stop events and trajectory points",
+  "temporal_resolution_class": "event",
+  "title_en": "Benchmark dataset for bus travel and dwell time prediction (Netherlands)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,139 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "EcoWaterMon GDK exceedance map",
+      "url": "http://monitoring.davr.gov.ua/EcoWaterMon/GDKMap/Index"
+    },
+    {
+      "kind": "viewer",
+      "label": "EcoWaterMon monitoring map",
+      "url": "http://monitoring.davr.gov.ua/EcoWaterMon/MapEcoWaterMon/Index"
+    },
+    {
+      "kind": "api",
+      "label": "Monitoring API (Swagger)",
+      "url": "http://api.monitoring.davr.gov.ua/swagger/index.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Current water situation reviews",
+      "url": "https://www.davr.gov.ua/aktualna-vodna-situaciya-v-osnovnih-richkovih-basejnah"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "UA"
+  ],
+  "crs": "EPSG:4326 coordinates",
+  "data_family": [
+    "environmental_impact",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "davr ecowatermon surface water quality monitoring posts and norm exceedances in ukraine s river basins",
+    "url": "https://monitoring.davr.gov.ua"
+  },
+  "description": "EcoWaterMon is the surface water monitoring portal of the State Agency of Water Resources of Ukraine (DAVR). Its map shows the monitoring posts sampled by the agency's basin laboratories and flags exceedances of maximum permissible concentrations (GDK) at each post. Each result gives the post name, river basin, laboratory, latitude and longitude, control date and the measured values of indicators such as BOD5, suspended solids and dissolved oxygen, with the norm and the exceedance ratio. The agency's website also publishes regular reviews of the current water situation in the main river basins. Coverage is national across Ukraine's river basin districts; resolution is the individual monitoring post and sampling date. Format and access: an interactive web map, a JSON result endpoint behind the map (GDKMap/GetResult) and an API documented with Swagger at api.monitoring.davr.gov.ua; no bulk download was seen. Licence: not stated on the pages read. Free. Caveats: the portal dates from 2017, the interface and indicator names are in Ukrainian, the number of posts sampled over time was not checked, and only exceedance-oriented views were read. Simulation uses: water quality inputs for river and water supply risk assessment, pollution event records for hazard exposure, and calibration of basin water quality models. Related records: the FreshWater Watch citizen science water quality dataset offers comparable point measurements elsewhere.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "organisation walk retry (round 2 cloud worklist, round 1 failure row)",
+      "route": "R10",
+      "source": "davr.gov.ua"
+    }
+  ],
+  "formats": [
+    "json",
+    "web_page",
+    "image"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "http://monitoring.davr.gov.ua/",
+  "id": "data-ukraine-davr-surface-water-quality-monitoring",
+  "languages": [
+    "uk"
+  ],
+  "licence": "Not stated",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "http://api.monitoring.davr.gov.ua/swagger/index.html"
+    ],
+    "dead_since": "2026-10-01",
+    "unverified": [
+      "http://monitoring.davr.gov.ua/",
+      "http://monitoring.davr.gov.ua/EcoWaterMon/GDKMap/Index",
+      "http://monitoring.davr.gov.ua/EcoWaterMon/MapEcoWaterMon/Index",
+      "https://www.davr.gov.ua/aktualna-vodna-situaciya-v-osnovnih-richkovih-basejnah"
+    ]
+  },
+  "maturity": "active",
+  "name": "DAVR EcoWaterMon: surface water quality monitoring posts and norm exceedances in Ukraine's river basins",
+  "notes": "Round 2 cloud worklist: round 1 cross-cutting could not reach davr.gov.ua (organisation walk); it answered on 2026-09-28 and links the monitoring portal.",
+  "provider": "State Agency of Water Resources of Ukraine (DAVR)",
+  "related_ids": [
+    "data-freshwater-watch-citizen-science-water-quality"
+  ],
+  "sectors": [
+    "water",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "agency home page with links to the monitoring portal and water situation reviews",
+      "url": "https://davr.gov.ua/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "GDK exceedance map; the GetResult endpoint returns JSON with post, basin, laboratory, coordinates, control date, BOD5, suspended solids, oxygen, norms and exceedance ratios; (c) 2017",
+      "url": "http://monitoring.davr.gov.ua/EcoWaterMon/GDKMap/Index"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Swagger page of the monitoring API",
+      "url": "http://api.monitoring.davr.gov.ua/swagger/index.html"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "current water situation in the main river basins",
+      "url": "https://www.davr.gov.ua/aktualna-vodna-situaciya-v-osnovnih-richkovih-basejnah"
+    }
+  ],
+  "spatial_resolution": "Monitoring post (point)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "water quality",
+    "surface water",
+    "monitoring posts",
+    "river basins",
+    "Ukraine"
+  ],
+  "temporal_coverage": "Not stated; portal since 2017",
+  "temporal_resolution": "Per sampling date",
+  "temporal_resolution_class": "event",
+  "title_en": "DAVR EcoWaterMon: surface water quality monitoring posts and norm exceedances in Ukraine's river basins",
+  "type": "data",
+  "update_frequency": "irregular"
+}

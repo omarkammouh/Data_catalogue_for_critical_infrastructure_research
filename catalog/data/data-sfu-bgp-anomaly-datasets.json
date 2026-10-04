@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "IEEE DataPort",
+      "url": "https://ieee-dataport.org/open-access/border-gateway-protocol-routing-records-reseaux-ip-europeens-ripe-and-bcnet"
+    },
+    {
+      "kind": "docs",
+      "label": "SFU project page",
+      "url": "http://www.sfu.ca/~ljilja/cnl/projects/BGP_datasets/index.html"
+    }
+  ],
+  "access_note": "free IEEE account needed to download",
+  "access_restrictions": "registration",
+  "continents": [
+    "europe",
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CA",
+    "RU"
+  ],
+  "data_family": [
+    "historical_events",
+    "security_threat",
+    "interdependencies"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.21227/98aa-sh66",
+    "name": "bgp anomaly datasets from ripe and bcnet routing records simon fraser university",
+    "url": "https://ieee-dataport.org/open-access/border-gateway-protocol-routing-records-reseaux-ip-europeens-ripe-and-bcnet"
+  },
+  "description": "Researchers at Simon Fraser University's Communication Networks Laboratory publish labelled Border Gateway Protocol datasets for detecting routing anomalies. They extracted 37 features per minute from BGP update messages collected at the RIPE route collector rrc04 (AS 513) for five-day windows around five events: the WannaCrypt ransomware of May 2017, the Moscow power blackout of May 2005, the Slammer worm of January 2003, Nimda of September 2001 and Code Red I of July 2001, and added regular traffic from RIPE and from BCNET, the research network of British Columbia. Each window covers the event day and two days on either side, labelled as anomalous or regular. Coverage: one collector and one Canadian regional network, 2001 to 2017. Format and access: CSV on IEEE DataPort (open access, free of charge with a free IEEE account) under Creative Commons Attribution, with a project page at SFU. Caveats: features, not raw updates; few events; labels mark whole periods. Simulation uses: training and testing detectors of routing disruptions, and studying how a power blackout (Moscow 2005) shows up in interdomain routing as an interdependency signal. Related records: RIPE RIS and RouteViews hold the raw BGP data; BGPStream processes it; IODA detects outages.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "DataCite data harvest of the digital piece; candidate datacite-953d0a988a, read in full on second reading",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "cyber_attack",
+    "technological_failure"
+  ],
+  "homepage": "https://ieee-dataport.org/open-access/border-gateway-protocol-routing-records-reseaux-ip-europeens-ripe-and-bcnet",
+  "id": "data-sfu-bgp-anomaly-datasets",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-05-03",
+  "licence": "Creative Commons Attribution",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "BGP anomaly datasets from RIPE and BCNET routing records (Simon Fraser University)",
+  "notes": "IEEE DataPort page read 2026-09-26 (authors, events, dates, last update 2021-05-03, CSV); DataCite record read in the harvest.",
+  "provider": "Communication Networks Laboratory, Simon Fraser University (Ljiljana Trajkovic, Zhida Li, Ana Laura Gonzalez Rios)",
+  "related_ids": [],
+  "schema_summary": "per minute: 37 features (announcements, withdrawals, AS path lengths and edit distances, duplicates, implicit withdrawals), label",
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience"
+  ],
+  "size": "small",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "abstract and metadata",
+      "url": "https://ieee-dataport.org/open-access/border-gateway-protocol-routing-records-reseaux-ip-europeens-ripe-and-bcnet"
+    }
+  ],
+  "spatial_resolution": "route collector",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "BGP",
+    "routing anomalies",
+    "worms",
+    "blackout",
+    "machine learning"
+  ],
+  "temporal_coverage": "2001 to 2017 (five-day windows)",
+  "temporal_coverage_years": {
+    "end": 2017,
+    "start": 2001
+  },
+  "temporal_resolution": "one minute",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "BGP anomaly datasets from RIPE and BCNET routing records (Simon Fraser University)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

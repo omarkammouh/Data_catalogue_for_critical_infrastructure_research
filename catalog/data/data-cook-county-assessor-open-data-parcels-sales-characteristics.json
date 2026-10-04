@@ -1,0 +1,146 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Parcel universe (Socrata API nj4t-kc8j)",
+      "url": "https://datacatalog.cookcountyil.gov/resource/nj4t-kc8j.json"
+    },
+    {
+      "kind": "portal",
+      "label": "Assessed values 1999 to present (uzyt-m557)",
+      "url": "https://datacatalog.cookcountyil.gov/d/uzyt-m557"
+    },
+    {
+      "kind": "portal",
+      "label": "Parcel sales (wvhk-k5uv)",
+      "url": "https://datacatalog.cookcountyil.gov/d/wvhk-k5uv"
+    },
+    {
+      "kind": "portal",
+      "label": "Single and multi-family improvement characteristics (x54s-btds)",
+      "url": "https://datacatalog.cookcountyil.gov/d/x54s-btds"
+    },
+    {
+      "kind": "portal",
+      "label": "All Assessor datasets on the portal",
+      "url": "https://datacatalog.cookcountyil.gov/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "economic_financial",
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cook county assessor s office open data parcel universe assessed values sales and building characteristics",
+    "url": "https://datacatalog.cookcountyil.gov/Property-Taxation/Assessor-s-Open-Data/gzdr-q7c4"
+  },
+  "description": "The Cook County Assessor's Office, which values property in Chicago and the rest of Cook County, Illinois, publishes its assessment data on the county open data portal. The core datasets are the parcel universe (124 columns of geographic, governmental and spatial attributes per parcel and year), assessed land, building and total values from 1999 to the present, parcel sales (2,686,086 rows, no longer pre-filtered by deed type or price since October 2023), and single and multi-family improvement characteristics (44 columns such as building age, square footage, rooms, construction and basement type). Related tables cover residential condominium units, commercial valuation data, appeals, building permits, parcel addresses, proximity measures, tax-exempt parcels and neighbourhood boundaries, with archived earlier versions. Coverage: all parcels in Cook County. Access: Socrata pages with CSV export and a JSON API, free. Licence: no licence is stated in the metadata read. Caveats: Parcel Index Numbers must be zero-padded to 14 digits; characteristics are the office's valuation records, not surveyed conditions. Simulation uses are parcel-level building exposure and replacement value inputs for flood and heat risk models and housing market studies. Related records: the CCAO residential valuation model code, and the FEMA USA Structures footprints.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: Cook County Assessor's Office homepage",
+      "route": "R10",
+      "source": "organisations.csv:US:built_environment:tax_assessor"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://datacatalog.cookcountyil.gov/Property-Taxation/Assessor-s-Open-Data/gzdr-q7c4",
+  "id": "data-cook-county-assessor-open-data-parcels-sales-characteristics",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Cook County Assessor's Office open data: parcel universe, assessed values, sales and building characteristics",
+  "provider": "Cook County Assessor's Office (Illinois), on the Cook County open data portal",
+  "regions": [
+    "Cook County, Illinois"
+  ],
+  "related_ids": [
+    "model-ccao-residential-avm",
+    "data-fema-usa-structures"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "List of current and archived Assessor datasets on the portal",
+      "url": "https://api.us.socrata.com/api/catalog/v1?domains=datacatalog.cookcountyil.gov&q=assessor&limit=40"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Parcel universe metadata: 124 columns, PIN padding note, no licence field",
+      "url": "https://datacatalog.cookcountyil.gov/api/views/nj4t-kc8j.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Assessed values 1999 to present, 19 columns",
+      "url": "https://datacatalog.cookcountyil.gov/api/views/uzyt-m557.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Parcel sales, filtering change of 31 October 2023; 2,686,086 rows counted",
+      "url": "https://datacatalog.cookcountyil.gov/api/views/wvhk-k5uv.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Improvement characteristics, 44 columns, rows updated September 2026",
+      "url": "https://datacatalog.cookcountyil.gov/api/views/x54s-btds.json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://datacatalog.cookcountyil.gov/stories/s/Assessor-s-Open-Data/gzdr-q7c4"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.cookcountyil.gov/terms-use"
+    }
+  ],
+  "tags": [
+    "property assessment",
+    "parcels",
+    "building characteristics",
+    "sales",
+    "Chicago",
+    "Cook County"
+  ],
+  "temporal_coverage": "1999 to present",
+  "title_en": "Cook County Assessor's Office open data: parcel universe, assessed values, sales and building characteristics",
+  "type": "data"
+}

@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/tufts-ml/aced-hmm-hospitalized-patient-trajectory-model"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/tufts-ml/aced-hmm-hospitalized-patient-trajectory-model/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Visani et al. (2021). Approximate Bayesian Computation for an Explicit-Duration Hidden Markov Model of COVID-19 Hospital Trajectories. MLHC. https://arxiv.org/abs/2105.00773",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "aced hmm hospital patient trajectory model",
+    "repo": "github.com/tufts-ml/aced-hmm-hospitalized-patient-trajectory-model",
+    "url": "https://github.com/tufts-ml/aced-hmm-hospitalized-patient-trajectory-model"
+  },
+  "description": "ACED-HMM is a probabilistic hospital patient-trajectory model published by the Tufts machine-learning research team. Its explicit-duration hidden Markov formulation represents recovering or declining patients moving through general wards, intensive care and mechanical ventilation. Users provide aggregated daily admissions and resource counts in CSV, with JSON priors and configuration. Approximate Bayesian computation fits parameter distributions, and forecasting scripts produce daily census counts, uncertainty summaries and evaluation metrics. The repository includes fitted results for four US states and two UK hospitals from the 2020–2021 pandemic period, while the model can be configured for other systems. Public Python/Cython source and environment instructions are free under MIT. A limitation is that the quick fitting example stops after 25 steps and is explicitly not converged; the authors recommend multiple fitting runs. Aggregate resource forecasts do not establish individual patient prognosis or current clinical suitability. The resource supports healthcare-capacity simulation and pandemic demand scenarios, complementing model-simpy-streamlit-healthcare-des. Its MLHC 2021 article describes the model and inference method. No patient data or fitted-model files were downloaded.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "\"hospital\" simulation created:2021-01-01..2021-12-31",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://github.com/tufts-ml/aced-hmm-hospitalized-patient-trajectory-model",
+  "id": "model-aced-hmm-hospital-trajectories",
+  "inputs": [
+    "Daily admissions and hospital counts in CSV",
+    "JSON priors and settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-12-06",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical",
+    "discrete_event"
+  ],
+  "name": "ACED-HMM hospital patient-trajectory model",
+  "notes": "G7 G7-0394. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Daily forecast CSVs",
+    "Posterior parameter JSON",
+    "Uncertainty and error summaries"
+  ],
+  "provider": "Tufts machine-learning research team",
+  "related_ids": [
+    "model-simpy-streamlit-healthcare-des"
+  ],
+  "repository": "https://github.com/tufts-ml/aced-hmm-hospitalized-patient-trajectory-model",
+  "sectors": [
+    "services.healthcare",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for tufts-ml/aced-hmm-hospitalized-patient-trajectory-model: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=%22hospital%22+simulation+created%3A2021-01-01..2021-12-31&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/tufts-ml/aced-hmm-hospitalized-patient-trajectory-model/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Statistical model for healthcare and critical facilities",
+  "type": "model"
+}

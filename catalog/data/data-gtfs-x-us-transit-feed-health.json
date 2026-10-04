@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/GTFS-X/gtfs-feed-health"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "catalogues_registries",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "us transit agency gtfs feed health exports",
+    "repo": "github.com/gtfs-x/gtfs-feed-health",
+    "url": "https://github.com/GTFS-X/gtfs-feed-health"
+  },
+  "description": "GTFS-X publishes agency-level metadata about the availability and technical condition of United States public-transit feeds. The pipeline joins the fiscal-year 2024 NTD agency roster to FTA feed links, Mobility Database matches and its own service-calendar checks. The inspected manifest describes 2,238 rows generated on 5 August 2026. CSV and JSON exports record agency identifiers, source feed URLs, service-end provenance, fetch errors, validator counts and status values of ok, expired, invalid or none. Separate fields distinguish agency matches from national GTFS-Flex feed counts. Public exports and code are free under MIT; regenerating the Mobility Database stage requires separately configured access, which was not used. A failed live check can leave an older registry capture as the fallback, so expiry and validation status must be interpreted alongside provenance and error fields. The documented monthly refresh schedule does not prove every run succeeded. Simulation uses include choosing and auditing timetable inputs and studying gaps in transit data availability, not measuring service reliability. The collection relates to data-fta-national-transit-database and data-mobility-database.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "gtfs dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/GTFS-X/gtfs-feed-health",
+  "id": "data-gtfs-x-us-transit-feed-health",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-05",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "US transit agency GTFS feed-health exports",
+  "notes": "G8; G8-0078. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "provider": "GTFS-X",
+  "related_ids": [
+    "data-fta-national-transit-database",
+    "data-mobility-database"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/GTFS-X/gtfs-feed-health/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/GTFS-X/gtfs-feed-health"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Status semantics, stale fallback and source-provenance fields.",
+      "url": "https://github.com/GTFS-X/gtfs-feed-health/blob/main/docs/SCHEMA.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Metadata-only export timestamp, roster year and row count.",
+      "url": "https://github.com/GTFS-X/gtfs-feed-health/blob/main/exports/manifest.json"
+    }
+  ],
+  "spatial_resolution": "One row per matched US NTD agency; agency and state fields.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "2024 NTD roster; inspected export generated 2026-08-05.",
+  "temporal_resolution": "Snapshot of feed status; documented monthly refresh.",
+  "temporal_resolution_class": "monthly",
+  "title_en": "US transit agency GTFS feed-health exports",
+  "type": "data",
+  "update_frequency": "monthly"
+}

@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Production instance",
+      "url": "https://tasks.hotosm.org/"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub hotosm/tasking-manager",
+      "url": "https://github.com/hotosm/tasking-manager"
+    },
+    {
+      "kind": "api",
+      "label": "Tasking Manager API",
+      "url": "https://tasking-manager-production-api.hotosm.org/api/v2/system/statistics/"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hot tasking manager",
+    "url": "https://tasks.hotosm.org"
+  },
+  "deployment": [
+    "hosted_service",
+    "own_server"
+  ],
+  "description": "The Tasking Manager is the web application HOT and many other groups use to coordinate volunteer mapping in OpenStreetMap: an area of interest is split into small tasks, mappers claim and map them, and validators review them for quality. It drives much of the building and road mapping done after disasters and for development projects. When read, its statistics endpoint reported 18,360 projects, about 6.09 million tasks mapped and 561,177 mappers in total. Coverage: projects worldwide. Access: free web application, with an OpenStreetMap login needed to map, and a public API; the code is open for anyone to run their own instance. Licence: BSD 2-Clause for the code; the mapped data are OpenStreetMap data under ODbL. Caveats: it coordinates mapping, not holding data, so completeness depends on each project; the latest release seen was v5.6.1 of 3 September 2026. Simulation uses are rapid building footprint and critical facility mapping before and after disasters, which feeds exposure and damage models. Related records: OpenStreetMap, HOT country exports on HDX, HOT disaster response mapping and MapSwipe.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "OpenStreetMap buildings completeness crowdsourced building mapping dataset HOT",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://tasks.hotosm.org/",
+  "id": "platform-hot-tasking-manager",
+  "interfaces": [
+    "web_app",
+    "web_api"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-03",
+  "licence": "BSD 2-Clause (code)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "HOT Tasking Manager",
+  "open_source": true,
+  "platform_kind": [
+    "cloud_service"
+  ],
+  "provider": "Humanitarian OpenStreetMap Team (HOT)",
+  "related_ids": [
+    "data-openstreetmap",
+    "data-hotosm-country-exports-hdx",
+    "data-hot-disaster-response-mapping-hdx",
+    "platform-mapswipe"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "projects, tasks mapped and mappers read",
+      "url": "https://tasking-manager-production-api.hotosm.org/api/v2/system/statistics/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "tag v5.6.1 fetched with git for its date; README and BSD 2-Clause LICENSE.md read. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+      "url": "https://github.com/hotosm/tasking-manager"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings",
+    "built_environment.critical_facilities"
+  ],
+  "tags": [
+    "OpenStreetMap",
+    "humanitarian mapping",
+    "crowdsourcing",
+    "task coordination",
+    "HOT",
+    "disaster response"
+  ],
+  "title_en": "The tasking manager: web application for coordinating volunteer mapping inopenstreetmap",
+  "type": "platform"
+}

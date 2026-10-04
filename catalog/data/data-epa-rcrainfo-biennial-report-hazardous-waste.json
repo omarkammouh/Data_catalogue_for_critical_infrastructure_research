@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Envirofacts REST service, table rcra.br_reporting (JSON)",
+      "url": "https://data.epa.gov/efservice/rcra.br_reporting/1:1/JSON"
+    },
+    {
+      "kind": "viewer",
+      "label": "RCRAInfo search (Envirofacts)",
+      "url": "https://enviro.epa.gov/envirofacts/rcrainfo/search"
+    },
+    {
+      "kind": "docs",
+      "label": "Envirofacts data and developer services",
+      "url": "https://www.epa.gov/enviro/envirofacts-data-developer-services"
+    },
+    {
+      "kind": "docs",
+      "label": "Previous landing page (describes the resource; the data are at the new landing page)",
+      "url": "https://www.epa.gov/enviro/rcrainfo-overview"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "supply_chains_logistics",
+    "critical_facilities",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "tabular",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "us epa rcrainfo biennial report data hazardous waste generated and managed by every large generator and treatment storage and disposal facility",
+    "url": "https://epa.gov/enviro/rcrainfo-overview"
+  },
+  "description": "The RCRAInfo Biennial Report data record how much hazardous waste each large generator in the United States produces, and how and where it is treated, stored, recycled or disposed of, facility by facility. They come from RCRAInfo, the national system the US Environmental Protection Agency keeps under the Resource Conservation and Recovery Act, fed by state environmental agencies from the reports handlers must file. Each row describes a waste stream at a handler identified by EPA ID, name, address and county, with the waste codes and description, tons generated and tons managed, the management method and whether it was handled on site or shipped to another facility; the RCRAInfo search adds handler identification and location, permit and closure status, compliance and cleanup information. The data are free and available through the Envirofacts REST web services as JSON, CSV or XML, through the RCRAInfo search and query builder, and as downloads. Caveats: not every hazardous waste handler files a biennial report, waste codes need the federal and state code lists, and table names in the web services must be taken from the data model. Simulation uses: building the network of hazardous waste flows from generators to treatment and disposal facilities, estimating facility capacity use, and screening facilities against flood or hurricane hazards. Related records: the GAO study of climate risk to these facilities (case_study-gao-hazardous-waste-tsdf-climate-risk) uses the same facility universe, and the Basel Convention reporting (data-basel-convention-national-reporting) covers international movements.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit follow-up: US EPA Envirofacts (US, environment_agency_permit_register)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv",
+    "api",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://data.epa.gov/efservice/rcra.br_reporting/1:1/JSON",
+  "id": "data-epa-rcrainfo-biennial-report-hazardous-waste",
+  "languages": [
+    "en"
+  ],
+  "licence": "US Government work (public domain)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "US EPA RCRAInfo Biennial Report data: hazardous waste generated and managed by every large generator and treatment, storage and disposal facility",
+  "provider": "US Environmental Protection Agency, Office of Resource Conservation and Recovery (RCRAInfo)",
+  "related_ids": [
+    "case_study-gao-hazardous-waste-tsdf-climate-risk",
+    "data-basel-convention-national-reporting"
+  ],
+  "schema_summary": "Biennial Report rows per handler, waste stream and report cycle: handler ID and name, location street, city, state, ZIP and county, activity location, generator status, form (GM or WR) and form code, waste description, federal and state waste codes, generation tons, managed tons, management method and location (on site or off site) and inclusion flags for the National Biennial Report",
+  "sectors": [
+    "services.waste",
+    "industry.manufacturing_chemical"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "RCRAInfo: national program management and inventory system about hazardous waste handlers; generators, transporters, treaters, storers and disposers report to state agencies, which pass information to EPA; governed by RCRA as amended in 1984; search for handler identification and location, TSDF permit and closure status, compliance and cleanup; Query Builder and data model links",
+      "url": "https://www.epa.gov/enviro/rcrainfo-overview"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "REST call returned a Biennial Report record with activity_location, br_form, county_code and name, description ('HAZ WASTE SOLID NOS'), federal_waste_codes, form_code, generation_tons, handler_id and name, location fields, managed_tons, management_location ONSITE and further fields",
+      "url": "https://data.epa.gov/efservice/rcra.br_reporting/1:1/JSON"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Envirofacts web services (REST and SOAP), data downloads, data model and metadata search, refresh schedule",
+      "url": "https://www.epa.gov/enviro/envirofacts-data-developer-services"
+    }
+  ],
+  "spatial_resolution": "Facility (address and county)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hazardous waste",
+    "RCRA",
+    "Biennial Report",
+    "treatment storage disposal facilities",
+    "US EPA"
+  ],
+  "temporal_coverage": "Biennial report cycles (records back to the 2000s)",
+  "temporal_resolution": "Two-yearly",
+  "temporal_resolution_class": "annual",
+  "title_en": "US EPA RCRAInfo Biennial Report data: hazardous waste generated and managed by every large generator and treatment, storage and disposal facility",
+  "type": "data",
+  "update_frequency": "other"
+}

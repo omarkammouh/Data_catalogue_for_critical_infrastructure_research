@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource",
+      "url": "https://github.com/DEDDIAG/deddiag-loader"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-021-00963-2"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "deddiag python data loader",
+    "url": "https://github.com/DEDDIAG/deddiag-loader"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "The DEDDIAG Python loader retrieves domestic appliance measurements and event annotations from a PostgreSQL instance containing the DEDDIAG dataset. The Rosenheim research team documents a command-line overview, labelled NumPy output and Python objects for selecting measurements and annotations by item and time interval. GitHub and PyPI provide the package, and the own README and repository metadata explicitly state MIT with free access. Its source dataset covers 15 German homes at 1 Hz, but actual retrieval coverage follows the imported records and requested interval. The loader can prepare calibration and benchmarking inputs for appliance-demand simulations, complementing datasets such as data-uk-dale-domestic-appliance-level-electricity. A caveat is that it requires the DEDDIAG database layout and is not documented as a universal reader for other smart-meter collections. Expanded or labelled outputs must retain the dataset's missing-data and annotation conventions. Only metadata and examples were inspected; no database connection was created and the package was not installed or executed.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "G1-Q-TITLE-ENERGY-01; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/DEDDIAG/deddiag-loader",
+  "id": "platform-deddiag-python-loader",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "interoperability": [
+    "PostgreSQL",
+    "pandas",
+    "NumPy"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-07-15",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "DEDDIAG Python data loader",
+  "notes": "G1 G1-0149. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-17.json. Related-resource uses are not tested interfaces. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Technical University of Applied Sciences Rosenheim",
+  "related_ids": [
+    "data-uk-dale-domestic-appliance-level-electricity"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/DEDDIAG/deddiag-loader"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/DEDDIAG/deddiag-loader/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-021-00963-2"
+    }
+  ],
+  "supported_sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "tags": [],
+  "title_en": "Domestic appliance measurements and event annotations from PostgreSQL",
+  "type": "platform"
+}

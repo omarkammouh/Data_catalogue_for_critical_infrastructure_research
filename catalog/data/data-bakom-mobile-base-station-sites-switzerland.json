@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "STAC collection",
+      "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bakom.standorte-mobilfunkanlagen"
+    },
+    {
+      "kind": "download",
+      "label": "GeoJSON",
+      "url": "https://data.geo.admin.ch/ch.bakom.standorte-mobilfunkanlagen/standorte-mobilfunkanlagen/standorte-mobilfunkanlagen_2056.json"
+    },
+    {
+      "kind": "viewer",
+      "label": "map.geo.admin.ch",
+      "url": "https://map.geo.admin.ch/?topic=funksender&lang=en&layers=ch.bakom.standorte-mobilfunkanlagen"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "data_family": [
+    "system_description",
+    "equipment_specifications",
+    "telecom_coverage_spectrum",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "swiss mobile base station locations bakom geodata",
+    "url": "https://map.geo.admin.ch?lang=en&layers=ch.bakom.standorte-mobilfunkanlagen&topic=funksender"
+  },
+  "description": "The Swiss Federal Office of Communications (BAKOM) publishes the location of every mobile phone base station in operation in Switzerland with an effective radiated power of at least one watt, extracted regularly from its licensing database and shown on the federal geoportal. For each station the layer gives the operator and station name (Swisscom, Sunrise or Salt), the technologies used from 2G to 5G, the ERP power class (very low up to 6 W, low up to 500 W, medium up to 5,000 W, high above 5,000 W), whether the installation is outdoor, indoor or in a tunnel, whether adaptive antennas are in use, and the date of the site data sheet submitted for the permit. Press reports cite more than 22,000 antenna sites in operation in February 2026, about 13,000 of them with 5G. Coverage: Switzerland, current network. Format and access: GeoJSON in the Swiss LV95 grid from data.geo.admin.ch (about 27 MB), per-technology datasets on opendata.swiss, WMS and the map.geo.admin.ch viewer; free of charge under the geo.admin.ch terms with source attribution. Caveats: positions and power are classed, not exact; no sector azimuths or heights; the STAC entry labels the licence proprietary. Simulation uses: exposure of mobile sites to floods, landslides and storms, power backup and restoration planning per site, and network models of radio access redundancy. Related records: the BAKOM broadband atlas maps resulting coverage, the Swiss NIS exposure monitoring measures fields from these sites, and the German BNetzA EMF database is the neighbouring counterpart.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "BAKOM Mobilfunkanlagen Standorte Übersichtskarte Daten Download Leistungsklasse adaptive Antennen opendata",
+      "route": "R22",
+      "source": "web-search"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "Mobilfunkantennen Standorte Schweiz Karte BAKOM Swisscom Sunrise Salt Antennen Leistungsklasse geo.admin",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://map.geo.admin.ch/?topic=funksender&lang=en&layers=ch.bakom.standorte-mobilfunkanlagen",
+  "id": "data-bakom-mobile-base-station-sites-switzerland",
+  "languages": [
+    "de",
+    "fr",
+    "it",
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "Free of charge under the geo.admin.ch terms of use (fair use, source attribution); STAC entry lists the licence as proprietary",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-02",
+    "dead": [
+      "https://www.bakom.admin.ch/de/bakom/de/home/frequenzen-antennen/standorte-von-sendeanlagen/erlaeuterungen-zur-uebersichtskarte.html"
+    ],
+    "dead_since": "2026-09-27"
+  },
+  "maturity": "active",
+  "name": "Swiss mobile base station locations (BAKOM geodata)",
+  "notes": "REST layer attributes and STAC metadata read by API on 2026-09-26; size from a header request. Site counts from search result summaries of press and comparison sites, not checked against BAKOM.",
+  "provider": "Federal Office of Communications (BAKOM / OFCOM Switzerland), published through geo.admin.ch",
+  "related_ids": [],
+  "schema_summary": "station name and operator, technologies (2G to 5G), ERP power class, installation type (outdoor, indoor, tunnel), adaptive antennas, site data sheet date",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "network_flow"
+  ],
+  "size": "about 27 MB GeoJSON",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "attributes",
+      "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bakom.standorte-mobilfunkanlagen"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: site counts",
+      "url": "https://www.handy-abovergleich.ch/en/ratgeber/mobilfunkantennen-schweiz-standorte-karte-und-anzahl/"
+    }
+  ],
+  "spatial_resolution": "site (point)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "mobile base stations",
+    "5G",
+    "antenna sites",
+    "Switzerland",
+    "geodata"
+  ],
+  "temporal_coverage": "current operating sites",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Swiss mobile base station locations (BAKOM geodata)",
+  "type": "data",
+  "update_frequency": "daily"
+}

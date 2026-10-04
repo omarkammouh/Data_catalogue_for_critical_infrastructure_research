@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo archive",
+      "url": "https://doi.org/10.5281/zenodo.21802243"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/USEPA/WMLCI"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.21802243",
+    "name": "wmlci us epa waste management life cycle inventory model assembler and calculator brightway based update of warm",
+    "repo": "github.com/usepa/wmlci",
+    "url": "https://github.com/USEPA/WMLCI"
+  },
+  "description": "WMLCI is being developed by the US Environmental Protection Agency to update how the Waste Reduction Model (WARM) Excel tool is produced, with a transparent, reproducible and editable model that can be updated quickly when new data are released. It prepares life cycle inventory data, imports them into the Brightway LCA framework, applies impact assessment methods such as IPCC global warming potentials from the Federal LCA Commons, and calculates results for selected materials and waste management pathways; it can also assess other impacts such as TRACI smog formation. Coverage: United States national averages; at present it reproduces three WARM processes: landfilling of food waste, combustion of mixed plastics and recycling of mixed plastics. Methods are defined in YAML files: v16 replicates the v16 Excel tool, wmlci_pilot updates the inventories and uses IPCC AR6 factors, and wmlci_pilot_smog adds waste-to-energy air emissions from SwolfPy. Format and access: Python package on GitHub, archived on Zenodo; results are CSV files of scenario scores broken down by contributing activity; free. Licence: MIT, read from the repository licence file. Caveats: early coverage of only three pathways; results depend on the Federal LCA Commons data. Simulation uses: emissions of waste treatment options for planning waste infrastructure under climate targets. Related records: WARM (model-epa-warm-waste-reduction-model) is the tool it updates, and it builds on Brightway (platform-brightway-lca) and SwolfPy (model-swolfpy).",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source services-epa-waste-models: provider pages read (round 2 register piece)",
+      "route": "R06",
+      "source": "services-epa-waste-models"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/USEPA/WMLCI",
+  "id": "model-epa-wmlci-waste-management-life-cycle-inventory",
+  "inputs": [
+    "life cycle inventory data (Federal LCA Commons)",
+    "method definitions in YAML",
+    "material and waste management pathway selection"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-26",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "WMLCI: US EPA Waste Management Life Cycle Inventory model assembler and calculator (Brightway-based update of WARM)",
+  "outputs": [
+    "scenario-level LCIA scores (GWP, smog) as CSV broken down by activity"
+  ],
+  "provider": "US Environmental Protection Agency (EPA)",
+  "related_ids": [
+    "model-epa-warm-waste-reduction-model",
+    "platform-brightway-lca",
+    "model-swolfpy"
+  ],
+  "repository": "https://github.com/USEPA/WMLCI",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Update of WARM approach; Brightway; IPCC GWP from Federal LCA Commons; TRACI smog; 3 processes; methods v16, wmlci_pilot, wmlci_pilot_smog (SwolfPy); CSV outputs; Zenodo DOI",
+      "url": "https://raw.githubusercontent.com/USEPA/WMLCI/main/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "MIT License, 2025 U.S. EPA",
+      "url": "https://raw.githubusercontent.com/USEPA/WMLCI/main/LICENSE"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2026-08-26)",
+      "url": "https://doi.org/10.5281/zenodo.21802243"
+    }
+  ],
+  "tags": [
+    "life cycle assessment",
+    "waste management",
+    "WARM",
+    "Brightway"
+  ],
+  "title_en": "WMLCI: US EPA Waste Management Life Cycle Inventory model assembler and calculator (Brightway-based update of WARM)",
+  "type": "model"
+}

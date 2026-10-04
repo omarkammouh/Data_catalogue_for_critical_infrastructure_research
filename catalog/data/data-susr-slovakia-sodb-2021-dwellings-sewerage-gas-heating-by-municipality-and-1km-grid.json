@@ -1,0 +1,168 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "SODB 2021 dwellings extended results (report finder with CSV downloads)",
+      "url": "https://www.scitanie.sk/en/dwellings/extended-results"
+    },
+    {
+      "kind": "download",
+      "label": "RV_B_15 dwellings by type of house and type of sewerage system (ZIP of CSV by state, area, region, district, municipality)",
+      "url": "https://www.scitanie.sk/themes/web-sodb/assets/public/disem/extreports/RV_B_15_EN.zip"
+    },
+    {
+      "kind": "download",
+      "label": "RV_B_14 dwellings by type of house and gas connection (ZIP of CSV)",
+      "url": "https://www.scitanie.sk/themes/web-sodb/assets/public/disem/extreports/RV_B_14_EN.zip"
+    },
+    {
+      "kind": "download",
+      "label": "RV_B_09 dwellings by type of house and type of heating (ZIP of CSV)",
+      "url": "https://www.scitanie.sk/themes/web-sodb/assets/public/disem/extreports/RV_B_09_EN.zip"
+    },
+    {
+      "kind": "download",
+      "label": "RV_B_06 dwellings by type of house and piped water (ZIP of CSV)",
+      "url": "https://www.scitanie.sk/themes/web-sodb/assets/public/disem/extreports/RV_B_06_EN.zip"
+    },
+    {
+      "kind": "docs",
+      "label": "Dwellings feature service (NUTS3, LAU1, LAU2 layers and 1 km grid layer 9)",
+      "url": "https://gis.scitanie.sk/server/rest/services/Hosted/Byty_Dwellings/FeatureServer"
+    },
+    {
+      "kind": "viewer",
+      "label": "Census geospatial site for dwellings",
+      "url": "https://gis.scitanie.sk/portal/apps/sites/#/dwellings"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "SK"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "statistical office of the slovak republic 2021 population and housing census sodb 2021 dwelling tables on sewerage system gas connection piped water and heating by municipality with a 1 km grid of dwellings as an arcgis feature service",
+    "url": "https://scitanie.sk/en/dwellings/extended-results"
+  },
+  "description": "The Statistical Office of the Slovak Republic ran the 2021 Population and Housing Census (SODB 2021) and publishes extended results for dwellings as downloadable report packages. Each package holds CSV files for the whole country, areas, regions, districts and every municipality and urban part, cross-classifying dwellings by type of house with one equipment variable: type of sewerage system, gas connection, type of heating, energy source for heating or piped water. Nationally 1,559,500 of 2,235,586 dwellings were connected to the public sewage system, 536,667 used a cesspool and 88,934 had no sewage; 1,701,466 had a gas connection. A companion ArcGIS feature service gives dwelling counts by region, district and municipality and a 1 km grid with 49,969 cells split into family houses and residential buildings. Format and access: free ZIP downloads and a public REST service with query support. Licence: not stated on the pages read. Caveats: the report finder needs JavaScript, so the ZIP links were read from its script; small categories include not stated values. Simulation uses: dwelling demand on gas, sewer and water networks by municipality, and the grid for exposure overlays. Related records: the Czech census 2021 open data on houses and dwellings and the Hungary census 2022 dwelling equipment series.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:SK:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "ogc_map_service",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.scitanie.sk/en/dwellings/extended-results",
+  "id": "data-susr-slovakia-sodb-2021-dwellings-sewerage-gas-heating-by-municipality-and-1km-grid",
+  "languages": [
+    "sk",
+    "en"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Statistical Office of the Slovak Republic 2021 Population and Housing Census (SODB 2021) dwelling tables on sewerage system, gas connection, piped water and heating by municipality, with a 1 km grid of dwellings as an ArcGIS feature service",
+  "provider": "Statistical Office of the Slovak Republic (ŠÚ SR)",
+  "related_ids": [
+    "data-czso-census-2021-open-data-houses-and-dwellings",
+    "data-ksh-hungary-census-2022-dwelling-equipment-and-heating-series-by-county"
+  ],
+  "schema_summary": "Each report ZIP holds semicolon CSV files at five levels (SR, OL area, KR region, OK district, OB municipality) with codes and names of each level, type of house (family house, residential building, mobile house, institutional and other), the equipment variable (type of sewerage system: public sewer, private treatment plant, cesspool, none, not stated; gas connection yes/no; type of heating; piped water) and an absolute count. Grid layer: cell code, dwellings in family houses, dwellings in residential buildings, dwellings total, polygon geometry",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "energy.gas_hydrogen",
+    "energy.district_heating_cooling",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: census home page with totals and links",
+      "url": "https://www.scitanie.sk/en"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: indicator list and report script with ZIP paths",
+      "url": "https://www.scitanie.sk/en/dwellings/extended-results"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: five CSV files, national totals summed",
+      "url": "https://www.scitanie.sk/themes/web-sodb/assets/public/disem/extreports/RV_B_15_EN.zip"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: national gas connection totals",
+      "url": "https://www.scitanie.sk/themes/web-sodb/assets/public/disem/extreports/RV_B_14_EN.zip"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: layer list, grid fields and cell count",
+      "url": "https://gis.scitanie.sk/server/rest/services/Hosted/Byty_Dwellings/FeatureServer"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://www.scitanie.sk/en/dwellings/extended-results"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://gis.scitanie.sk/server/rest/services/Hosted/Byty_Dwellings/FeatureServer"
+    }
+  ],
+  "spatial_resolution": "state, areas, regions, districts and 2,927 municipalities or urban parts in the CSV files; 49,969 inhabited 1 km grid cells in the feature service",
+  "spatial_resolution_class": "1km_to_10km",
+  "tags": [
+    "census",
+    "Slovakia",
+    "SODB 2021",
+    "sewerage",
+    "gas connection",
+    "heating",
+    "1 km grid",
+    "municipality",
+    "ArcGIS"
+  ],
+  "temporal_coverage": "census reference date 1 January 2021",
+  "temporal_coverage_years": {
+    "end": 2021,
+    "start": 2021
+  },
+  "temporal_resolution": "single census",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Statistical Office of the Slovak Republic 2021 Population and Housing Census (SODB 2021) dwelling tables on sewerage system, gas connection, piped water and heating by municipality, with a 1 km grid of dwellings as an ArcGIS feature service",
+  "type": "data"
+}

@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/tudelft3d/City4CFD"
+    },
+    {
+      "kind": "docs",
+      "label": "Wiki documentation",
+      "url": "https://github.com/tudelft3d/City4CFD/wiki"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "city4cfd",
+    "repo": "github.com/tudelft3d/city4cfd",
+    "url": "https://github.com/tudelft3d/City4CFD"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "City4CFD, short for City for CFD, is a tool that automatically reconstructs detailed 3D city geometries tailored to microscale urban flow simulations. It builds a terrain from a point cloud, imprints surfaces such as green areas, water and roads, and reconstructs buildings from several sources: 2D polygons combined with a point cloud, extrusion of footprints carrying height or floor number, or import of existing building models. Reconstruction from point clouds and polygons can be done at LoD2.2, LoD1.3 and LoD1.2, with a complexity factor to tune detail, and it builds on the roofer library. The output is watertight, with buildings and surfaces joined into the terrain, and the tool can define the zone of influence and domain boundaries automatically or by hand. Point clouds are read as LAS/LAZ, TXT/XYZ or PLY, polygons in GDAL formats, and geometry as OBJ, STL and other formats. It is developed by the 3D Geoinformation Research Group at TU Delft and documented in a wiki. Licence and cost: AGPL-3.0, free. Caveats: it prepares geometry only, so the flow solver and the wind or heat analysis are run in separate CFD software. It suits wind comfort, pollutant dispersion and heat studies of streets and squares.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "assistant recall, written down before searching: buildings models, platforms and case studies known before searching",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/tudelft3d/City4CFD",
+  "id": "platform-city4cfd-3d-city-reconstruction-for-urban-flow",
+  "interfaces": [
+    "command_line",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "Point clouds in LAS/LAZ, TXT/XYZ or PLY",
+    "2D polygons in GDAL-supported formats",
+    "existing geometry as OBJ, STL and others"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-28",
+  "licence": "AGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "City4CFD",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "3D Geoinformation Research Group, Delft University of Technology",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "README: purpose, terrain and building reconstruction, LoD levels, roofer, data formats, TU Delft 3D geoinformation group",
+      "url": "https://raw.githubusercontent.com/tudelft3d/City4CFD/master/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "GNU Affero General Public License version 3",
+      "url": "https://raw.githubusercontent.com/tudelft3d/City4CFD/master/LICENSE"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings",
+    "built_environment.public_space"
+  ],
+  "tags": [
+    "CFD",
+    "3D city model",
+    "LoD2",
+    "urban wind",
+    "point cloud",
+    "r2-fresh-built-environment"
+  ],
+  "title_en": "City4CFD: automatic reconstruction of 3D city geometries for urban flow",
+  "type": "platform"
+}

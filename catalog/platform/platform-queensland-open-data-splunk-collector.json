@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/aaron-g-stone/Queensland-Government-Open-Data-Add-on-for-Splunk"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "queensland open data ckan collector for splunk",
+    "repo": "github.com/aaron-g-stone/queensland-government-open-data-add-on-for-splunk",
+    "url": "https://github.com/aaron-g-stone/Queensland-Government-Open-Data-Add-on-for-Splunk"
+  },
+  "deployment": [
+    "own_server",
+    "hosted_service"
+  ],
+  "description": "This community Splunk add-on collects public CKAN DataStore tables as JSON events. Its README lists eight Queensland presets covering public hospitals, hospital performance, road crashes, schools and other locations. It documents field selection, field-name normalisation, paging and scheduled polling, with a default daily interval and a configurable range of 300 to 604800 seconds. Each run ingests a complete snapshot, not changes since the last run, so repeated records must be interpreted with their collection time. Historical coverage and spatial precision depend on each selected source dataset. The root repository is free under GPL-3.0; its packaged licence placeholder is empty. Running it requires Splunk Enterprise or Cloud, whose licence and deployment costs are separate. A limitation is conflicting documentation: the overview advertises other CKAN portals while the configuration table calls the Queensland base URL read-only. Simulation uses include maintaining facility and transport input tables for capacity and disruption analysis. It complements data-aihw-myhospitals-api for Australian health-service inputs but is not an official government or Splunk product. Installation and ingestion were not tested.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"hospital\" dataset created:2026-01-01..2026-09-27",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://github.com/aaron-g-stone/Queensland-Government-Open-Data-Add-on-for-Splunk",
+  "id": "platform-queensland-open-data-splunk-collector",
+  "interfaces": [
+    "desktop_gui",
+    "code_library"
+  ],
+  "interoperability": [
+    "CKAN DataStore Action API",
+    "JSON",
+    "Splunk"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-31",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Queensland Open Data CKAN collector for Splunk",
+  "notes": "G8; G8-0342. G8; public documentation and file-tree metadata only. No dataset or archive downloaded and no code run. Licence unknown where the repository does not state one.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "aaron-g-stone repository maintainer",
+  "regions": [
+    "Queensland"
+  ],
+  "related_ids": [
+    "data-aihw-myhospitals-api"
+  ],
+  "sectors": [
+    "services.healthcare",
+    "transport.road",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/aaron-g-stone/Queensland-Government-Open-Data-Add-on-for-Splunk/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/aaron-g-stone/Queensland-Government-Open-Data-Add-on-for-Splunk"
+    }
+  ],
+  "tags": [],
+  "title_en": "Queensland Open Data CKAN collector for Splunk",
+  "type": "platform"
+}

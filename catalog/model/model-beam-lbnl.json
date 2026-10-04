@@ -1,0 +1,142 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code and wiki",
+      "url": "https://github.com/LBNL-UCB-STI/beam"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "http://beam-lbnl.readthedocs.io/en/latest/about.html"
+    },
+    {
+      "kind": "paper",
+      "label": "Framework report (arXiv)",
+      "url": "https://arxiv.org/abs/2308.02073"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Laarabi H., Needell Z., Waraich R., Poliziani C., Wenzel T. et al. (2023). BEAM: The Modeling Framework for Behavior, Energy, Autonomy & Mobility. arXiv:2308.02073",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "beam behavior energy autonomy and mobility transport model",
+    "url": "https://github.com/LBNL-UCB-STI/beam"
+  },
+  "description": "BEAM (Behavior, Energy, Autonomy and Mobility) is an open-source, large-scale, high-resolution agent-based transport model developed at Lawrence Berkeley National Laboratory with collaborators from other Department of Energy national laboratories and the private and public sectors. Built on MATSim with extensive changes, it uses the actor model of computation for multithreaded within-day simulation of interacting agents, with on-demand mobility, mode choice, parking selection and discretionary trip planning, and it approximates dynamic user equilibrium across its agents' choices. It can read road networks, transit systems, synthetic populations and plans exported from MATSim models, or build a model from free public data, and it links to activity-based demand models, vehicle energy models and power grid models. It reports traffic congestion, mode share, energy use and emissions across a region; a New York City case study demonstrates its scale. It is generic and can be set up for any region. The code is on GitHub under the GPL v3 licence, written in Scala and Java, with a wiki and online documentation. Caveats: it needs substantial computing resources and data preparation, and its outputs depend on the synthetic population and network supplied. It supports agent-based and network flow studies, capacity planning of transport and charging infrastructure and coupling with grid models. It builds on MATSim.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "BEAM LBNL",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "BEAM modeling framework",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/LBNL-UCB-STI/beam",
+  "id": "model-beam-lbnl",
+  "inputs": [
+    "road network",
+    "transit system",
+    "synthetic population and plans",
+    "vehicle and energy parameters"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-24",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "network"
+  ],
+  "name": "BEAM behavior, energy, autonomy and mobility transport model",
+  "outputs": [
+    "traffic congestion",
+    "mode share",
+    "energy use",
+    "emissions",
+    "trajectories"
+  ],
+  "provider": "Lawrence Berkeley National Laboratory with collaborators from DOE national laboratories",
+  "related_ids": [
+    "model-matsim"
+  ],
+  "repository": "https://github.com/LBNL-UCB-STI/beam",
+  "runs_on": [],
+  "sectors": [
+    "transport.road",
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "LBNL with DOE labs and others; built on MATSim; multithreaded within-day simulation; features; MATSim inputs; links to other models; docs and wiki",
+      "url": "https://raw.githubusercontent.com/LBNL-UCB-STI/beam/develop/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GPL v3; copyright 2024 Regents of the University of California (LBNL) and Alliance for Sustainable Energy",
+      "url": "https://raw.githubusercontent.com/LBNL-UCB-STI/beam/develop/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "actor model; outputs congestion, mode share, energy, emissions; New York City case study",
+      "url": "https://arxiv.org/abs/2308.02073"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Gradle build with java-library and scalafmt plugins",
+      "url": "https://raw.githubusercontent.com/LBNL-UCB-STI/beam/develop/build.gradle"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Round 2 spot-check re-read of the provider's pages; fixed citation, last_updated, maturity, repository.",
+      "url": "https://github.com/LBNL-UCB-STI/beam"
+    }
+  ],
+  "tags": [
+    "agent-based",
+    "MATSim",
+    "energy",
+    "ride-hailing",
+    "emissions",
+    "LBNL"
+  ],
+  "title_en": "BEAM behavior, energy, autonomy and mobility transport model",
+  "type": "model",
+  "validated_on": []
+}

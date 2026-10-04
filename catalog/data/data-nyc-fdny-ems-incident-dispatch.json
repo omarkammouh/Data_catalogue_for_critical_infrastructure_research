@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "SODA API (JSON)",
+      "url": "https://data.cityofnewyork.us/resource/76xm-jjuj.json"
+    },
+    {
+      "kind": "portal",
+      "label": "NYC Open Data dataset page",
+      "url": "https://data.cityofnewyork.us/Public-Safety/EMS-Incident-Dispatch-Data/76xm-jjuj"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "historical_events",
+    "demand_operation",
+    "service_performance",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nyc ems incident dispatch data fdny ems computer aided dispatch",
+    "url": "https://data.cityofnewyork.us/Public-Safety/EMS-Incident-Dispatch-Data/76xm-jjuj"
+  },
+  "description": "This dataset contains one record per emergency medical services incident created in the Fire Department of New York City's EMS computer aided dispatch system, from the moment a call is entered until the incident is closed. It is published by the FDNY on the NYC Open Data portal under the city's open data law. Each record gives the incident identifier and timestamp, the initial and final call type and severity level, the times of first assignment, activation, arrival on scene, transport to hospital and hospital arrival, dispatch, travel and total response seconds with validity flags, the disposition and whether the incident was held, reopened or transferred. Coverage is the five boroughs from 2005 onwards, with millions of rows, and the table is updated a few times a year. Data are free through the Socrata SODA API or as CSV and JSON exports; NYC Open Data terms of use apply. Caveats: to protect patient privacy under HIPAA, exact locations are withheld and incidents are aggregated to zip code, dispatch area, police precinct and council district, and the call-type codes need the FDNY data dictionary. Simulation uses: calibrating ambulance demand and response-time models, testing station and deployment plans, and analysing surge during storms and heat waves. Related records: the companion FDNY Fire Incident Dispatch Data (data-nyc-fdny-fire-incident-dispatch) and the NEMSIS research dataset (data-nemsis-research-dataset) for national EMS records.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "recall: emergency services stations, incidents and response",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "api",
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://data.cityofnewyork.us/Public-Safety/EMS-Incident-Dispatch-Data/76xm-jjuj",
+  "id": "data-nyc-fdny-ems-incident-dispatch",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-15",
+  "licence": "NYC Open Data terms of use (free public use)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NYC EMS Incident Dispatch Data (FDNY EMS computer aided dispatch)",
+  "provider": "Fire Department of New York City (FDNY), published on NYC Open Data",
+  "regions": [
+    "New York City"
+  ],
+  "related_ids": [
+    "data-nyc-fdny-fire-incident-dispatch",
+    "data-nemsis-research-dataset"
+  ],
+  "schema_summary": "Incident id and datetime, initial and final call type and severity, assignment, activation, on-scene, to-hospital and hospital-arrival times, dispatch, travel and response seconds with validity flags, disposition, borough and administrative districts",
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Socrata metadata: attribution FDNY; created 2016-10-18; rows updated 2026-07-15; description on EMS CAD data and HIPAA aggregation; 31 columns including INCIDENT_RESPONSE_SECONDS_QY and FIRST_HOSP_ARRIVAL_DATETIME",
+      "url": "https://data.cityofnewyork.us/api/views/76xm-jjuj.json"
+    }
+  ],
+  "spatial_resolution": "Zip code, dispatch area, precinct and district (no exact location)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "EMS",
+    "ambulance",
+    "dispatch",
+    "response times",
+    "New York City"
+  ],
+  "temporal_coverage": "2005 to present",
+  "temporal_resolution": "Per incident (timestamped)",
+  "temporal_resolution_class": "event",
+  "title_en": "NYC EMS Incident Dispatch Data (FDNY EMS computer aided dispatch)",
+  "type": "data",
+  "update_frequency": "several_per_year"
+}

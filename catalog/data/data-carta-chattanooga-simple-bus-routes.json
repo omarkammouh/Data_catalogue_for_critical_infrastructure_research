@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Public route GeoJSON",
+      "url": "https://gocarta.s3.us-east-2.amazonaws.com/public/data/simple_bus_routes/v1/data.lines.geojson"
+    },
+    {
+      "kind": "download",
+      "label": "Public route CSV",
+      "url": "https://gocarta.s3.us-east-2.amazonaws.com/public/data/simple_bus_routes/v1/data.csv"
+    },
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/gocarta/dataops-simple-bus-routes"
+    },
+    {
+      "kind": "docs",
+      "label": "Output metadata",
+      "url": "https://gocarta.s3.us-east-2.amazonaws.com/public/data/simple_bus_routes/v1/meta.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "carta chattanooga simple bus routes",
+    "repo": "github.com/gocarta/dataops-simple-bus-routes",
+    "url": "https://github.com/gocarta/dataops-simple-bus-routes"
+  },
+  "description": "CARTA publishes a simplified view of its Chattanooga bus and shuttle routes through a GitHub data pipeline. The pipeline reads CARTA’s official GTFS feed and emits a route table in CSV, GeoJSON, JSON and JSON Lines at public S3 addresses. The README lists route id, name, display colour and stroke as fields; its GeoJSON output provides line geometry for mapping. CARTA says the pipeline runs daily, while the underlying GTFS feed changes every several months. The public CSV and GeoJSON addresses answered HTTP 200 during this review, but their bodies were not read, so current feature counts and dates remain unverified. GitHub labels the repository CC0-1.0; the S3 output files do not state a separate licence in the inspected README. The data describe routes, not stop times, frequencies or live vehicle positions. A transport modeller could use the geometries for a high-level network or service-area scenario, then obtain full GTFS for timetables. Related catalogue resource data-gtfs-specification defines the full format that the pipeline simplifies. No download or route-quality test was performed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "gtfs dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geojson",
+    "json"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://github.com/gocarta/dataops-simple-bus-routes",
+  "id": "data-carta-chattanooga-simple-bus-routes",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-02-27",
+  "licence": "CC0-1.0 in pipeline repository; separate licence terms for the public S3 outputs were not stated.",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CARTA Chattanooga simple bus routes",
+  "notes": "G8; G8-0773. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: CARTA. dataops-simple-bus-routes repository documentation, accessed 2026-09-28..",
+  "provider": "CARTA",
+  "regions": [
+    "Chattanooga, Tennessee"
+  ],
+  "related_ids": [
+    "data-gtfs-specification"
+  ],
+  "schema_summary": "Route identifier, route name, display colour and stroke; GeoJSON lines locate routes.",
+  "sectors": [
+    "transport.public_transit",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/gocarta/dataops-simple-bus-routes/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/gocarta/dataops-simple-bus-routes"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own transit-agency homepage confirms CARTA identity and Chattanooga service.",
+      "url": "https://www.gocarta.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Public object answered HTTP 200; response body was not read.",
+      "url": "https://gocarta.s3.us-east-2.amazonaws.com/public/data/simple_bus_routes/v1/data.csv"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Public object answered HTTP 200; response body was not read.",
+      "url": "https://gocarta.s3.us-east-2.amazonaws.com/public/data/simple_bus_routes/v1/data.lines.geojson"
+    }
+  ],
+  "spatial_resolution": "CARTA bus and shuttle routes around Chattanooga, Tennessee.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Pipeline README says daily refresh; underlying CARTA GTFS changes every several months. Exact latest data timestamp was not read.",
+  "temporal_resolution": "One bus or shuttle route per feature, with route id, name and display colour.",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "CARTA Chattanooga simple bus routes",
+  "type": "data",
+  "update_frequency": "daily"
+}

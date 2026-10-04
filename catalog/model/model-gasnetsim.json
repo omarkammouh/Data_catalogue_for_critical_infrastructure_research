@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code (Jülich GitLab)",
+      "url": "https://jugit.fz-juelich.de/iek-10/public/simulation/gasnetsim"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/GasNetSim/"
+    },
+    {
+      "kind": "paper",
+      "label": "OSMSES 2022 paper",
+      "url": "https://doi.org/10.1109/OSMSES54027.2022.9769148"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1109/osmses54027.2022.9769148",
+    "name": "gasnetsim steady state gas network simulation with gas mixture compositions and hydrogen injection",
+    "repo": "jugit.fz-juelich.de/iek-10/public/simulation/gasnetsim",
+    "url": "https://jugit.fz-juelich.de/iek-10/public/simulation/gasnetsim"
+  },
+  "description": "GasNetSim is an open-source Python package from the IEK-10 institute at Forschungszentrum Jülich for steady-state simulation of natural gas networks with different gas mixture compositions, so that the impacts of hydrogen injection on a gas network can be analysed. Users can modify the tool and plug in their own gas mixture modelling approaches; the README lists future work on gas storage units and dynamic network behaviour for short-term simulation. It builds on numpy, scipy, pandas, networkx, fluids, pint, Cantera and a bundled copy of the thermo package, and supports Python 3.9 to 3.12. The code is available on the Jülich GitLab under MPL-2.0, with releases on PyPI up to version 0.2.2 of March 2026, a Binder notebook, and repository activity on 20 September 2026; the method is described in a 2022 OSMSES paper by Lu, Pesch and Benigni. Coverage is any user-defined network. Caveats: the README says installation is currently from source in editable mode, dynamics and storage are not yet modelled, and no validation data are described. Simulation uses are hydrogen blending limits, pressure and gas quality in transmission and distribution networks within multi-energy system studies. Related records: model-multienergysystem-modelica-library models dynamic gas and heat networks.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "open source natural gas network simulation model transient gas flow hydrogen blending pipeline model software",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://jugit.fz-juelich.de/iek-10/public/simulation/gasnetsim",
+  "id": "model-gasnetsim",
+  "inputs": [
+    "gas network topology with pipes and nodes",
+    "gas mixture compositions and injections"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-20",
+  "licence": "MPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "network"
+  ],
+  "name": "GasNetSim - steady-state gas network simulation with gas mixture compositions and hydrogen injection",
+  "outputs": [
+    "steady-state pressures, flows and gas composition in the network"
+  ],
+  "provider": "Forschungszentrum Jülich, IEK-10 (Lu, Pesch, Benigni)",
+  "related_ids": [
+    "model-multienergysystem-modelica-library"
+  ],
+  "repository": "https://jugit.fz-juelich.de/iek-10/public/simulation/gasnetsim",
+  "runs_on": [],
+  "sectors": [
+    "energy.gas_hydrogen"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, hydrogen injection, future work, dependencies, Python versions, MPL-2.0, install from source, paper DOI",
+      "url": "https://jugit.fz-juelich.de/iek-10/public/simulation/gasnetsim/-/raw/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 0.2.2 released 2026-03-24, MPL-2.0, homepage",
+      "url": "https://pypi.org/pypi/gasnetsim/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Last activity 2026-09-20",
+      "url": "https://jugit.fz-juelich.de/api/v4/projects/iek-10%2Fpublic%2Fsimulation%2Fgasnetsim"
+    }
+  ],
+  "tags": [
+    "gas network",
+    "hydrogen blending",
+    "steady state",
+    "Python"
+  ],
+  "title_en": "GasNetSim - steady-state gas network simulation with gas mixture compositions and hydrogen injection",
+  "type": "model",
+  "validated_on": []
+}

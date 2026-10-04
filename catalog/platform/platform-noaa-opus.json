@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "OPUS upload page",
+      "url": "https://geodesy.noaa.gov/OPUS/"
+    },
+    {
+      "kind": "docs",
+      "label": "About OPUS",
+      "url": "https://geodesy.noaa.gov/OPUS/about.jsp"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opus noaa online positioning user service",
+    "url": "https://geodesy.noaa.gov/OPUS"
+  },
+  "deployment": [
+    "hosted_service"
+  ],
+  "description": "OPUS, the Online Positioning User Service of the US National Geodetic Survey, is a free web service that computes precise coordinates from a user's GPS data file and ties them to the National Spatial Reference System. Users upload dual-frequency GPS data with full-wavelength L1 and L2 carrier phase, in RINEX 2 or 3, compressed or many raw formats, recorded at intervals from 1 to 30 seconds, with the antenna type and antenna reference point height. OPUS-S handles static files of 2 to 48 hours and computes each position as the average of three single-baseline solutions from nearby Continuously Operating Reference Stations (CORS) with NGS's PAGES software; OPUS-RS handles rapid-static files of 15 minutes to 2 hours. Solutions come back by email with NAD 83(2011) and ITRF2014 coordinates, ellipsoid and GEOID18 orthometric heights, UTM and State Plane coordinates and accuracy estimates, and NGS says most positions are within a few centimetres. OPUS Projects lets surveyors submit whole surveys for review and publication, and OPUS Share publishes quality solutions. NGS has set 13 January 2027 as the deadline for OPUS Projects submissions to the current reference system before the new datums. Coverage: best within the United States and territories, where CORS are dense. Format and access: web upload, free. Caveats: GPS only and decimated to 30 seconds in OPUS-S; changes are coming with the 2022 datums. Simulation uses: precise positions of infrastructure assets and survey control for digital twins and hazard mapping. Related records: AUSPOS and CSRS-PPP are the Australian and Canadian services, and a comparison study tested all three.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "online GNSS post-processing service PPP CSRS-PPP AUSPOS OPUS cloud positioning service free",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://geodesy.noaa.gov/OPUS/",
+  "hosted_models": [
+    "PAGES static processing",
+    "RSGPS rapid-static processing"
+  ],
+  "id": "platform-noaa-opus",
+  "interfaces": [
+    "web_app",
+    "other"
+  ],
+  "interoperability": [
+    "RINEX",
+    "NOAA CORS Network",
+    "NAD 83 and ITRF"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026",
+  "licence": "US Government service; free",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OPUS: NOAA Online Positioning User Service",
+  "notes": "Upload page read with curl and About page read via fetch on 2026-09-26 (requirements, processing, outputs, 2027 deadline).",
+  "open_source": false,
+  "platform_kind": [
+    "cloud_service"
+  ],
+  "provider": "National Geodetic Survey (NGS), US National Oceanic and Atmospheric Administration",
+  "related_ids": [],
+  "sectors": [
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "page text",
+      "url": "https://geodesy.noaa.gov/OPUS/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "service description",
+      "url": "https://geodesy.noaa.gov/OPUS/about.jsp"
+    }
+  ],
+  "supported_sectors": [
+    "digital.satellite_positioning"
+  ],
+  "tags": [
+    "GNSS post-processing",
+    "geodesy",
+    "CORS",
+    "surveying",
+    "NSRS"
+  ],
+  "title_en": "GPS coordinate computation from GPS data files",
+  "type": "platform"
+}

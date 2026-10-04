@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Radio transmitter parameters",
+      "url": "https://www.ofcom.org.uk/tv-radio-and-on-demand/coverage-and-transmitters/radio-tech-parameters"
+    },
+    {
+      "kind": "download",
+      "label": "Digital TV transmitter details",
+      "url": "https://www.ofcom.org.uk/tv-radio-and-on-demand/coverage-and-transmitters/transmitter-frequency"
+    },
+    {
+      "kind": "portal",
+      "label": "data.gov.uk entry",
+      "url": "https://www.data.gov.uk/dataset/broadcast-radio-transmitters-technical-parameters"
+    }
+  ],
+  "access_note": "ofcom.org.uk refuses automated access (403) from this environment; open in a normal browser",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "system_description",
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ofcom broadcast transmitter technical parameters fm am dab and digital terrestrial tv",
+    "url": "https://ofcom.org.uk/tv-radio-and-on-demand/coverage-and-transmitters/radio-tech-parameters"
+  },
+  "description": "Ofcom, the UK communications regulator, publishes the technical parameters of all broadcast transmitters on air in the United Kingdom. The radio file (TxParams) lists every analogue VHF (FM) and MF (AM) transmitter and every DAB transmitter, including services on multiplexes, with in-use parameters for listeners and aerial installers and, for analogue services, the maximum parameters allowed by each licence, for interference and coverage planning calculations; it is refreshed as transmitters are added, modified or suppressed. A companion spreadsheet gives the current technical parameters of the digital terrestrial television (DTT) transmitter network (an XLSX of about 280 KB, updated 8 October 2024 according to a search snippet). Typical fields include site name, grid reference, frequency or channel, effective radiated power, antenna height and polarisation. Coverage: the United Kingdom. Format and access: XLSX and CSV downloads from the Ofcom website, free of charge under the Open Government Licence. Caveats: ofcom.org.uk refused automated access (403) from this environment on 26 September 2026, so the files were not opened; parameters, not measured coverage. Simulation uses: an inventory of broadcast sites with power and height for exposure of emergency broadcasting to storms and floods, and for coverage modelling. Related records: the UK Sitefinder base station database; the Indian CTI site list; FCC licence data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall data harvest of the digital piece; candidate assistant-recall-f1903d48ca, read in full on second reading",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "Ofcom TV and radio transmitter data download csv DTT DAB FM transmitter parameters",
+      "route": "R22",
+      "source": "web-search"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "CKAN package_search organization:office-of-communications q=transmitter",
+      "route": "R02",
+      "source": "data-gov-uk"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "storm_wind",
+    "flood"
+  ],
+  "homepage": "https://www.ofcom.org.uk/tv-radio-and-on-demand/coverage-and-transmitters/radio-tech-parameters",
+  "id": "data-ofcom-broadcast-transmitter-parameters",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-08",
+  "licence": "OGL-UK-3.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.ofcom.org.uk/tv-radio-and-on-demand/coverage-and-transmitters/radio-tech-parameters",
+      "https://www.ofcom.org.uk/tv-radio-and-on-demand/coverage-and-transmitters/transmitter-frequency"
+    ]
+  },
+  "maturity": "active",
+  "name": "Ofcom broadcast transmitter technical parameters (FM, AM, DAB and digital terrestrial TV)",
+  "notes": "data.gov.uk CKAN entries read 2026-09-26 (description of TxParams, OGL licence, metadata modified 2026-07-08, used as last_updated); the DTT file size and date are from a web search snippet; field list from recall. The Ofcom pages themselves refused access.",
+  "provider": "Ofcom (Office of Communications, UK)",
+  "related_ids": [
+    "data-acma-licensed-broadcasting-transmitter-data"
+  ],
+  "schema_summary": "site, grid reference, service or multiplex, frequency or channel, ERP (in use and maximum), antenna height, polarisation",
+  "sectors": [
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "size": "small",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "description and licence",
+      "url": "https://ckan.publishing.service.gov.uk/api/3/action/package_show?id=broadcast-radio-transmitters-technical-parameters"
+    }
+  ],
+  "spatial_resolution": "transmitter site",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "broadcast transmitters",
+    "FM",
+    "DAB",
+    "DTT",
+    "Ofcom"
+  ],
+  "temporal_coverage": "current transmitters",
+  "temporal_resolution": "snapshot, refreshed regularly",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Ofcom broadcast transmitter technical parameters (FM, AM, DAB and digital terrestrial TV)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,93 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/usgs/groundmotion-processing"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/usgs/groundmotion-processing/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usgs gmprocess ground motion processing",
+    "repo": "github.com/usgs/groundmotion-processing",
+    "url": "https://github.com/usgs/groundmotion-processing"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "gmprocess is a US Geological Survey Python workflow for parsing and processing earthquake ground-motion records. It turns raw strong-motion time series into processed traces and summary measures for analysis. Users provide records and processing configuration; outputs are corrected motions and calculated metrics for the stations and earthquakes chosen. Geographic coverage follows the stations and earthquakes in the input records. The GitHub repository is archived, and its README directs users to active development at a USGS GitLab address. The archived source and its licence file remain public; the licence states the Unlicense, releasing this code into the public domain. A limitation is that this GitHub version is frozen, so current bug fixes and processing guidance should be checked at the USGS successor before use. Another limitation is that processed motions are not a structural damage model on their own. The workflow can prepare earthquake inputs for bridge and building simulations. The related catalogue OpenSees model consumes structural loading but is a separate program. No earthquake data or software was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "usgs/groundmotion-processing provider README continuation",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/usgs/groundmotion-processing",
+  "id": "platform-usgs-gmprocess",
+  "interfaces": [
+    "code_library"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Unlicense",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "USGS gmprocess ground-motion processing",
+  "notes": "G7 G7-1622. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. The GitHub repository is archived; the README names https://code.usgs.gov/ghsc/esi/groundmotion-processing as the active successor. This draft covers the archived GitHub source only. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "US Geological Survey",
+  "related_ids": [
+    "model-opensees"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "transport.road",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for usgs/groundmotion-processing: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/usgs/groundmotion-processing"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/usgs/groundmotion-processing/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://api.github.com/repos/usgs/groundmotion-processing/license"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for buildings, road transport and dams and flood defences",
+  "type": "platform"
+}

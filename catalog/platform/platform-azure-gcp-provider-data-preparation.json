@@ -1,0 +1,88 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/felixsteinke/cloud-provider-dataset"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "azure and gcp cloud provider data preparation pipeline",
+    "repo": "github.com/felixsteinke/cloud-provider-dataset",
+    "url": "https://github.com/felixsteinke/cloud-provider-dataset"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This repository assembles structured cloud-provider inputs for comparing computing resources and environmental characteristics. Felix Steinke publishes Java web scrapers, a Maven build and CSV outputs for Microsoft Azure and Google Cloud Platform. Documented inputs cover machine specifications, CPU platforms, region availability, sustainability fact sheets, carbon-free energy, power-usage effectiveness and embodied-emission assumptions. Some tables are scraped directly, while others require copying an HTML table or manually matching facility names to cloud regions. Geographic coverage follows the providers’ regions worldwide; source vintages differ, and the documented carbon-free-energy query selects 2021. Public code uses AGPL 3.0 and is free to access. That software licence does not replace the conditions of the original provider tables or the Cloud Carbon Footprint assumptions. A limitation is incomplete matching between Google facilities and regions, with several unmatched US locations explicitly listed. Scraper compatibility with current provider pages was not tested. Simulation uses include preparing hardware and environmental parameters for cloud-workload placement and capacity scenarios. No related catalogue connector was established as a direct dependency. No package was installed, no scraper was run and no CSV payload was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"datacenter\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/felixsteinke/cloud-provider-dataset",
+  "id": "platform-azure-gcp-provider-data-preparation",
+  "interfaces": [
+    "command_line",
+    "code_library",
+    "other"
+  ],
+  "interoperability": [
+    "CSV",
+    "Azure documentation",
+    "GCP documentation",
+    "BigQuery"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-08-17",
+  "licence": "AGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Azure and GCP cloud-provider data preparation pipeline",
+  "notes": "G8; G8-0164. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Steinke, F. Cloud Provider Dataset. Repository documentation; no describing paper identified..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Felix Steinke",
+  "related_ids": [],
+  "sectors": [
+    "digital.data_centres",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/felixsteinke/cloud-provider-dataset/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/felixsteinke/cloud-provider-dataset"
+    }
+  ],
+  "tags": [],
+  "title_en": "Azure and GCP cloud-provider data preparation pipeline",
+  "type": "platform"
+}

@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "inertia source code",
+      "url": "https://github.com/G-PST/inertia"
+    },
+    {
+      "kind": "docs",
+      "label": "Package documentation",
+      "url": "https://g-pst.github.io/inertia/pkg/github.com/G-PST/inertia/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "g pst inertia monitoring framework real time power system inertia estimation go package",
+    "repo": "github.com/g-pst/inertia",
+    "url": "https://github.com/G-PST/inertia"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "The G-PST Inertia Monitoring Framework (inertia) is a Go package for real-time estimation of a power system's inertia, listed on the G-PST Open Tools Portal with NREL (now the National Laboratory of the Rockies) as developer. The README says it defines software interfaces for ingesting and reporting data in real time: unit commitment (H-constant) based estimation logic and data interfaces sit in its uc package, and PMU-based methods are planned. System integrators write deployment-specific ingestion code, for example for an energy management system or historian, that conforms to the data interfaces; results are then reported through the DataSink framework, which ships text and web visualisation sinks and accepts custom sinks, several at once. Coverage: any power system whose unit commitment data can be fed in. Format and access: Go source on GitHub (G-PST/inertia) with package documentation on GitHub Pages and a test workflow. Licence: BSD 3-Clause (portal); a LICENSE file is present in the repository. Caveats: only the unit commitment method is implemented; activity dates were not read. Simulation uses: monitoring falling system inertia as synchronous generation is replaced by inverter-based resources, as an input to frequency stability and operational resilience studies. Related records: PRAS (model-pras), also listed on the portal, assesses resource adequacy.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source gpst-open-tools: provider pages read (round 2 register piece)",
+      "route": "R06",
+      "source": "gpst-open-tools"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/G-PST/inertia",
+  "id": "platform-g-pst-inertia-monitoring-framework",
+  "interfaces": [
+    "code_library",
+    "other",
+    "web_app",
+    "file_exchange"
+  ],
+  "language": [
+    "rust_go"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-11-03",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "G-PST Inertia Monitoring Framework: real-time power system inertia estimation (Go package)",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "Global Power System Transformation Consortium (G-PST), developed by NREL",
+  "related_ids": [
+    "model-pras"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Go package for real-time inertia estimation; NREL; BSD-3-Clause",
+      "url": "https://opentools.globalpst.org/tools/inertia-monitor"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "uc package; PMU planned; DataSink; text and web sinks",
+      "url": "https://raw.githubusercontent.com/G-PST/inertia/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "200",
+      "url": "https://raw.githubusercontent.com/G-PST/inertia/HEAD/LICENSE"
+    }
+  ],
+  "tags": [
+    "inertia",
+    "frequency stability",
+    "real-time monitoring",
+    "unit commitment"
+  ],
+  "title_en": "G-PST Inertia Monitoring Framework: real-time power system inertia estimation (Go package)",
+  "type": "platform"
+}

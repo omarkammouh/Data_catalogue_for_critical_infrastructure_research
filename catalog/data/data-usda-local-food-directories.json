@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Directories website",
+      "url": "https://www.usdalocalfoodportal.com/"
+    },
+    {
+      "kind": "download",
+      "label": "Data sharing: CSV download and API",
+      "url": "https://www.usdalocalfoodportal.com/fe/datasharing/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "critical_facilities",
+    "supply_chains_logistics"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-09-28",
+  "dedupe_keys": {
+    "name": "usda local food directories farmers markets csas food hubs on farm markets and agritourism businesses united states",
+    "url": "https://usdalocalfoodportal.com"
+  },
+  "description": "This dataset is the set of national directories of local food outlets kept by the US Department of Agriculture's Agricultural Marketing Service, run through a cooperative agreement with Michigan State University. Five directories list farmers markets, community supported agriculture farms, food hubs, on-farm markets and agritourism businesses, each listing with its name, address, city, state, ZIP code, coordinates and website, as reported by the operators through USDA surveys. Coverage is the United States. Each directory can be downloaded whole as a delimited CSV file from the data sharing page, and a REST API returns JSON listings by state, ZIP code and radius, city, or point and radius up to 100 miles; the API needs a key requested from USDA. Data are free as a US government product. Caveats: listings are self-reported and uneven in completeness, markets open and close seasonally, and the directories do not give sales volumes or supply chains. Simulation uses: mapping short food supply chain nodes for food access and disruption scenarios, adding farmers markets and food hubs to food network models, and assessing local supply alternatives when long supply chains fail. Related records: the USDA SNAP retailer locator (data-usda-snap-retailer-locator) lists food retailers and FoodFlows (data-foodflows-us-county-food-flows) models county food flows.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "recall: food supply, markets and food security data",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.usdalocalfoodportal.com/fe/datasharing/",
+  "id": "data-usda-local-food-directories",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (US government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "maturity": "active",
+  "name": "USDA Local Food Directories: farmers markets, CSAs, food hubs, on-farm markets and agritourism businesses (United States)",
+  "provider": "USDA Agricultural Marketing Service, with Michigan State University",
+  "related_ids": [
+    "data-usda-snap-retailer-locator",
+    "data-foodflows-us-county-food-flows"
+  ],
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "CSV endpoint downloads the entire collection per directory; REST API with key applied from USDA; five directories agritourism, CSA, farmers market, food hub, on-farm market; queries by state, zip and radius (max 100 miles), city and state, x/y and radius; JSON with listing name, website, state, city, zipcode; cooperative agreement with Michigan State University and USDA AMS",
+      "url": "https://www.usdalocalfoodportal.com/fe/datasharing/"
+    }
+  ],
+  "spatial_resolution": "Point (address)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "farmers markets",
+    "food hubs",
+    "local food",
+    "CSA"
+  ],
+  "temporal_coverage": "Current listings",
+  "temporal_resolution": "Snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "USDA Local Food Directories: farmers markets, CSAs, food hubs, on-farm markets and agritourism businesses (United States)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

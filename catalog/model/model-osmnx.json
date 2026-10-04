@@ -1,0 +1,143 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://osmnx.readthedocs.io/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/gboeing/osmnx"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/osmnx/"
+    },
+    {
+      "kind": "paper",
+      "label": "Reference paper",
+      "url": "https://doi.org/10.1111/gean.70009"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Boeing, G. (2025). Modeling and Analyzing Urban Networks and Amenities with OSMnx. Geographical Analysis 57(4), 567-577. doi:10.1111/gean.70009",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1111/gean.70009",
+    "name": "osmnx",
+    "repo": "github.com/gboeing/osmnx",
+    "url": "https://osmnx.readthedocs.io"
+  },
+  "description": "OSMnx is a Python package to download, model, analyse and visualise street networks and other geospatial features from OpenStreetMap. With a single call it builds routable walking, driving or cycling networks as NetworkX graphs for any place name, polygon or bounding box, and it computes network statistics, shortest paths, travel times, elevation grades and building or amenity layers. It is developed by Geoff Boeing with contributors and released under the MIT licence on GitHub and PyPI (version 2.1.1, with commits in July 2026); the reference paper is Boeing (2025), Geographical Analysis 57(4), doi:10.1111/gean.70009. Coverage is global wherever OpenStreetMap is mapped, at the resolution of individual street segments and intersections. Caveats: results inherit OpenStreetMap's completeness and tagging, the Overpass API limits very large downloads, and it builds static graphs without traffic dynamics. It is widely used to build networks for network flow and accessibility models, resilience and cascading failure studies that remove edges or nodes, hazard exposure overlays and evacuation routing; it feeds models such as SUMO, UXsim and AequilibraE catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.road",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry",
+      "route": "R06",
+      "source": "transport-osmnx"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://osmnx.readthedocs.io/",
+  "id": "model-osmnx",
+  "inputs": [
+    "OpenStreetMap via the Overpass API",
+    "place names or polygons",
+    "optional elevation rasters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-31",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "OSMnx",
+  "outputs": [
+    "NetworkX street graphs",
+    "GeoPackage and GraphML files",
+    "network statistics",
+    "routes"
+  ],
+  "provider": "Geoff Boeing (developer) and contributors",
+  "related_ids": [
+    "model-sumo",
+    "model-uxsim",
+    "model-aequilibrae"
+  ],
+  "repository": "https://github.com/gboeing/osmnx",
+  "runs_on": [],
+  "sectors": [
+    "transport.road",
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "cascading_failure",
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "download, model, analyse, visualise street networks from OSM; citation Boeing 2025",
+      "url": "https://raw.githubusercontent.com/gboeing/osmnx/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License, 2016-2026 Geoff Boeing",
+      "url": "https://raw.githubusercontent.com/gboeing/osmnx/main/LICENSE.txt"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 2.1.1, MIT",
+      "url": "https://pypi.org/pypi/osmnx/json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: last commit 2026-07-31",
+      "url": "https://github.com/gboeing/osmnx"
+    }
+  ],
+  "tags": [
+    "OpenStreetMap",
+    "street network",
+    "NetworkX",
+    "Python"
+  ],
+  "title_en": "OSMnx downloads models analyses and visualises street networks and other geospatial features from OpenStreetMap",
+  "type": "model",
+  "validated_on": []
+}

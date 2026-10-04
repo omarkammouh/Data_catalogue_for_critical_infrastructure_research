@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "StatBank API table metadata, PEND100",
+      "url": "https://api.statbank.dk/v1/tableinfo/PEND100?lang=en"
+    },
+    {
+      "kind": "api",
+      "label": "Average commuting distance, AFSTA4",
+      "url": "https://api.statbank.dk/v1/tableinfo/AFSTA4?lang=en"
+    },
+    {
+      "kind": "docs",
+      "label": "StatBank API documentation and licence",
+      "url": "https://www.dst.dk/en/Statistik/hjaelp-til-statistikbanken/api"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DK"
+  ],
+  "data_family": [
+    "demand_operation",
+    "behavioural_social"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "statistics denmark employed persons by municipality of residence and area of workplace pend100 commuting matrix statbank api",
+    "url": "https://api.statbank.dk/v1/tableinfo/PEND100?lang=en"
+  },
+  "description": "PEND100 is Statistics Denmark's register-based commuting matrix: the number of employed persons at the end of November each year by municipality of residence and area (municipality) of workplace, split by sex, for 2008 to 2024. It belongs to the home-to-work commuting statistics, which Statistics Denmark says are comparable in their current form from 2008 onwards and measure commuting between place of residence and workplace within Denmark. Companion tables AFSTA4 and AFSTB4 give average commuting distances. Coverage: all Danish municipalities, with workplaces outside Denmark as a separate category in the destination list. Format and access: the StatBank API returns the table as JSON, CSV, PX or Excel without registration; the last update was on 18 November 2025. Licence: free commercial and non-commercial use with a source reference, which Statistics Denmark states corresponds to CC BY 4.0. Caveats: flows are between municipalities only, with no mode of transport, and distances and flows describe the workplace recorded for the job, not daily travel diaries. Simulation uses: origin-destination matrices for national and regional transport demand models, calibration of commuting in agent-based models and daytime population for exposure. Related records: the Statistics Denmark dwelling tables, the Czech census commuting flows and the US ACS commuting flows.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:DK:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv",
+    "analysis_package_file",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://api.statbank.dk/v1/tableinfo/PEND100?lang=en",
+  "id": "data-statistics-denmark-commuting-flows-pend100",
+  "languages": [
+    "da",
+    "en"
+  ],
+  "last_updated": "2025-11-18",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Statistics Denmark employed persons by municipality of residence and area of workplace (PEND100 commuting matrix, StatBank API)",
+  "provider": "Statistics Denmark (Danmarks Statistik)",
+  "related_ids": [
+    "data-statistics-denmark-register-housing-tables-statbank",
+    "data-czso-census-2021-commuting-between-municipalities",
+    "data-us-census-acs-commuting-flows"
+  ],
+  "schema_summary": "employed persons by municipality of residence, area of workplace, sex and year; companion tables AFSTA4 and AFSTB4 give average commuting distance",
+  "sectors": [
+    "transport.road",
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "agent_based",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Employed (end November) by municipality of residence (115), area of workplace (116), sex, time (17 years)",
+      "url": "https://api.statbank.dk/v1/tableinfo/PEND100?lang=en&format=JSON"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "PEND100 updated 2025-11-18, 2008-2024; AFSTA4, AFSTB4 average commuting distance 2024",
+      "url": "https://api.statbank.dk/v1/tables?lang=en&format=JSON"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Licence statement (CC 4.0 BY equivalent)",
+      "url": "https://www.dst.dk/en/Statistik/hjaelp-til-statistikbanken/api"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Home to work commuting 2024: commuting between residence and workplace within Denmark, comparable from 2008",
+      "url": "https://www.dst.dk/documentationofstatistics/fa8e16c7-361d-4d25-8f7c-d061d276fdbc"
+    }
+  ],
+  "spatial_resolution": "municipality of residence (115 codes) by area of workplace (116 codes)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "commuting",
+    "origin-destination",
+    "register-based",
+    "Denmark",
+    "StatBank API"
+  ],
+  "temporal_coverage": "end of November each year, 2008 to 2024",
+  "temporal_coverage_years": {
+    "end": 2024,
+    "start": 2008
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Statistics Denmark employed persons by municipality of residence and area of workplace (PEND100 commuting matrix, StatBank API)",
+  "type": "data",
+  "update_frequency": "annual"
+}

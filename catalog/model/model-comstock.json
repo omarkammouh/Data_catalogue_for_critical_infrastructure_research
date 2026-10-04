@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "ComStock source code",
+      "url": "https://github.com/NatLabRockies/ComStock"
+    },
+    {
+      "kind": "portal",
+      "label": "ComStock home, data viewer, datasets and documentation links",
+      "url": "https://comstock.nlr.gov/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "National Laboratory of the Rockies. ComStock. https://comstock.nlr.gov/",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "comstock",
+    "repo": "github.com/natlabrockies/comstock",
+    "url": "https://comstock.nlr.gov"
+  },
+  "description": "ComStock is the U.S. Department of Energy's model of the commercial building stock, developed and maintained by the National Laboratory of the Rockies (formerly NREL). It combines a commercial stock characteristics database with physics-based OpenStudio and EnergyPlus simulation on high-performance computers to estimate energy use and the savings potential of upgrades for segments of the stock, by building vintage, heating fuel, state and climate zone, for states, municipalities, utilities and manufacturers. Coverage is the United States commercial sector, with state-level results in an interactive website, published datasets and documentation on an external site; the source code is on GitHub, where release 2025-3 was tagged in December 2025. Licence: the code carries a BSD-style licence from the Alliance for Sustainable Energy; datasets are free. Caveats: results represent the stock statistically, not real buildings; the datasets page answered with a server error on 2026-09-26, so release details were not read that day. Simulation uses are stock-scale capacity planning of electrification and efficiency, retrofit optimisation and scenario analysis. Related records: ResStock (residential counterpart), End-Use Load Profiles for the U.S. Building Stock (calibrated with ComStock), OpenStudio and EnergyPlus.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:scenarios_projections",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry (seed)",
+      "route": "R17",
+      "source": "built_environment-comstock"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://comstock.nlr.gov/",
+  "id": "model-comstock",
+  "inputs": [
+    "Commercial stock characteristics database (building type, vintage, climate zone, systems)",
+    "Weather files",
+    "Upgrade measure packages"
+  ],
+  "language": [
+    "python",
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-12-01",
+  "licence": "BSD-3-Clause (code); datasets published openly by DOE",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "statistical"
+  ],
+  "name": "ComStock",
+  "notes": "comstock.nlr.gov/datasets answered HTTP 500 on 2026-09-26. Tag 2025-3 commit 2025-12-01. GitHub web pages and API are blocked in this environment; repository facts were read through raw.githubusercontent.com and git (ls-remote, shallow fetch of the tag for its commit date).",
+  "outputs": [
+    "Annual and timeseries energy by end use for sampled commercial buildings",
+    "Savings potential by segment and state"
+  ],
+  "provider": "National Laboratory of the Rockies (NLR, formerly NREL) for the U.S. Department of Energy",
+  "related_ids": [
+    "data-end-use-load-profiles-us-building-stock",
+    "data-eia-recs",
+    "data-eia-cbecs",
+    "data-doe-lbnl-building-performance-database"
+  ],
+  "repository": "https://github.com/NatLabRockies/ComStock",
+  "runs_on": [
+    "platform-openstudio",
+    "model-energyplus"
+  ],
+  "sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, DOE model maintained by NLR, data viewer and datasets",
+      "url": "https://comstock.nlr.gov/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "HTTP 500 (server error) on this date",
+      "url": "https://comstock.nlr.gov/datasets"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Licence header: ComStock, Copyright (c) 2025 Alliance for Sustainable Energy",
+      "url": "https://raw.githubusercontent.com/NatLabRockies/ComStock/main/LICENSE.txt"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: tag 2025-3, commit 2025-12-01",
+      "url": "https://github.com/NatLabRockies/ComStock"
+    }
+  ],
+  "tags": [
+    "building stock model",
+    "commercial buildings",
+    "load profiles",
+    "US"
+  ],
+  "title_en": "ComStock model of commercial building stock energy use",
+  "type": "model",
+  "validated_on": [
+    "End-Use Load Profiles project calibration against measured data"
+  ]
+}

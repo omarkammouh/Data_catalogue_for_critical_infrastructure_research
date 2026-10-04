@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/mesmo-dev/cobmo"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/mesmo-dev/cobmo/blob/develop/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Troitzsch and Hamacher (2020). Control-oriented Thermal Building Modelling. https://doi.org/10.36227/techrxiv.11923587",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cobmo control oriented building model",
+    "repo": "github.com/mesmo-dev/cobmo",
+    "url": "https://github.com/mesmo-dev/cobmo"
+  },
+  "description": "CoBMo is a Python building model maintained in the mesmo-dev repository for formulating model predictive control problems with linear, convex equations. It relates electricity use by thermal building systems to indoor climate, accounting for interactions with occupants, appliances and the environment. Implemented components cover thermal comfort and indoor air quality, with documented contributions for storage, ventilation and hydronic radiators. The repository provides simulation and optimisation examples and YAML configuration. Coverage is the user's building and control horizon, without a fixed national stock or measurement period. Source is public and free under MIT. Execution needs Python 3.9 and an optimisation solver such as Gurobi or CPLEX under separate terms. The README warns that interfaces may change, and the setup guide provides a tested environment as a fallback for dependency incompatibilities. A further limitation is that the linear formulation limits the physical behaviour represented. CoBMo supports building-load flexibility and control studies and complements detailed EnergyPlus simulation (model-energyplus) with a control-oriented representation. No solver or building case was run here.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:building-energy fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/mesmo-dev/cobmo",
+  "id": "model-cobmo",
+  "inputs": [
+    "Building and thermal-system parameters",
+    "Occupant and environmental inputs"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-09-03",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical",
+    "optimisation"
+  ],
+  "name": "CoBMo: Control-oriented Building Model",
+  "notes": "G7 G7-0050. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Electric load and indoor climate",
+    "Optimised controls"
+  ],
+  "provider": "mesmo-dev repository maintainers",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/mesmo-dev/cobmo",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for mesmo-dev/cobmo: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Abuilding-energy+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/mesmo-dev/cobmo/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Solver requirements, examples and dependency limitations.",
+      "url": "https://api.github.com/repos/mesmo-dev/cobmo/contents/docs/getting_started.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Software and paper citations; some older ventilation-paper scripts are not included.",
+      "url": "https://api.github.com/repos/mesmo-dev/cobmo/contents/docs/publications.md"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for buildings",
+  "type": "model",
+  "validated_on": []
+}

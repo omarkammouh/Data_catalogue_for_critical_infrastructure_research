@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/tRIBS-Model/tRIBS"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.06747"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/tRIBS-Model/tRIBS/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.21105/joss.06747",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.13324178",
+    "name": "tribs distributed hydrological model",
+    "url": "https://github.com/tribs-model/tribs"
+  },
+  "description": "tRIBS is the TIN-based Real-Time Integrated Basin Simulator, a continuous distributed hydrological model released by the tRIBS Model developers. It represents infiltration, soil and groundwater interactions, vegetation, snow and flow routing on a triangulated irregular network. Meteorological forcing and soil or vegetation information can come from station tables or raster products. Outputs include basin discharge, hydrological time series and spatial fields. The model supports water-supply and flood studies, including channel transmission losses and reservoir routing. Geographic coverage and simulation period are user-defined, and mesh detail can vary across the watershed. GitHub provides the C++ source free under MIT, with serial and parallel execution documented. A limitation is the need to prepare and check a consistent mesh, forcing and parameter set before use. The JOSS paper describes version 5.2; the current manual documents version 6.0, so reproducibility requires selecting a release. No directly related catalogue record was established. The model and benchmark data were not downloaded or executed.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "JOSS whole-index enumeration; 10.21105/joss.06747; G5-LOCAL-062;G5-LOCAL-079;G5-LOCAL-085;G5-LOCAL-089;G5-LOCAL-096;G5-LOCAL-100;G5-LOCAL-107",
+      "route": "R07",
+      "source": "metadata-review"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "tribshms/tribs linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/tRIBS-Model/tRIBS",
+  "id": "model-tribs",
+  "inputs": [
+    "Watershed mesh and terrain",
+    "Meteorological forcing and soil and vegetation parameters"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-01",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "tRIBS distributed hydrological model",
+  "notes": "G5 G5-0094. Software checked through metadata and documentation, without installation or execution. Geographic scope follows the documented application or software portability; it does not imply validation throughout that area. ",
+  "outputs": [
+    "Discharge and node or basin hydrological time series",
+    "Spatial hydrological fields"
+  ],
+  "provider": "tRIBS Model developers",
+  "related_ids": [],
+  "repository": "https://github.com/tRIBS-Model/tRIBS",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.drinking_water",
+    "water.irrigation"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Canonical public repository identity, MIT licence and C++ implementation.",
+      "url": "https://api.github.com/repos/tRIBS-Model/tRIBS"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Version, installation and documentation links.",
+      "url": "https://raw.githubusercontent.com/tRIBS-Model/tRIBS/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Current version 6.0 manual: processes, input representation, routing and outputs.",
+      "url": "https://tribshms.readthedocs.io/en/latest/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Paper describes version 5.2 and explicitly links repository and archive.",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.06747"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Published Summary read; forest tributaries, transmission loss and reservoir routing.",
+      "url": "https://raw.githubusercontent.com/openjournals/joss-papers/master/joss.06747/paper.jats/10.21105.joss.06747.jats"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for tRIBS-Model/tRIBS: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/tribshms/tribs"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/tribs-model/tribs/readme"
+    }
+  ],
+  "tags": [
+    "research software",
+    "JOSS"
+  ],
+  "title_en": "Physical model for dams and flood defences, drinking water and irrigation",
+  "type": "model"
+}

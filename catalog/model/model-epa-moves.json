@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/USEPA/EPA_MOVES_Model"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/USEPA/EPA_MOVES_Model/blob/master/readme.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "epa moves motor vehicle emission simulator",
+    "repo": "github.com/usepa/epa_moves_model",
+    "url": "https://github.com/USEPA/EPA_MOVES_Model"
+  },
+  "description": "MOVES is the US Environmental Protection Agency's motor-vehicle emission simulator. It estimates criteria pollutants, greenhouse gases and air toxics at national, county or project level from transport activity and model inputs. The repository contains source and required model-data components, with a graphical interface and command-line documentation. Geographic coverage and assumptions are oriented to US applications; time period and detail depend on the configured analysis. Public code is free under the GNU General Public License, whose version is not specified in the inspected licence file. Building the reviewed release requires MariaDB, Java and Go, with detailed database and environment setup. A limitation is that emission factors and input assumptions must match the fleet and application; the README links separate regulatory guidance, which was not assessed here. MOVES can translate transport scenarios into environmental impacts and complements network-flow modelling with model-sumo. This review concerns the software resource, not a regulatory approval. No installer, database dump or emissions run was obtained.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:USEPA",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/USEPA/EPA_MOVES_Model",
+  "id": "model-epa-moves",
+  "inputs": [
+    "Vehicle activity and fleet assumptions",
+    "Geography and time configuration"
+  ],
+  "language": [
+    "java",
+    "rust_go"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-11-14",
+  "licence": "GNU General Public License (version not stated in repository licence)",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "EPA MOVES motor-vehicle emission simulator",
+  "notes": "G7 G7-0560. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Mobile-source emission estimates"
+  ],
+  "provider": "US Environmental Protection Agency",
+  "related_ids": [
+    "model-sumo"
+  ],
+  "repository": "https://github.com/USEPA/EPA_MOVES_Model",
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for USEPA/EPA_MOVES_Model: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3AUSEPA&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/usepa/epa_moves_model/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository terms identify GNU General Public License despite unclassified GitHub licence metadata.",
+      "url": "https://api.github.com/repos/usepa/epa_moves_model/license"
+    }
+  ],
+  "tags": [],
+  "title_en": "EPA MOVES motor-vehicle emission simulator",
+  "type": "model"
+}

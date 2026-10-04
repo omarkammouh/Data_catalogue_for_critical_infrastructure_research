@@ -1,0 +1,114 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub",
+      "url": "https://github.com/Telecominfraproject/oopt-gnpy"
+    },
+    {
+      "kind": "portal",
+      "label": "v3.0 on Zenodo",
+      "url": "https://zenodo.org/records/22282953"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://gnpy.readthedocs.io/en/master/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.3458319",
+    "name": "gnpy optical route planning library gaussian noise model",
+    "repo": "github.com/telecominfraproject/oopt-gnpy",
+    "url": "https://gnpy.readthedocs.io"
+  },
+  "description": "GNPy is an open-source, community-developed Python library from the Telecom Infra Project's Open Optical and Packet Transport group for building route planning and optimisation tools for real mesh optical (DWDM) networks. It computes signal propagation along a light path with the Gaussian Noise model of fibre nonlinearity, with fibre and Raman fibre spans, EDFA and multiband amplifier models, ROADMs, transceivers and their receiver constraints, and reports generalised SNR, OSNR and Q-margin per channel, so feasibility of services on a network can be checked. Networks are described as JSON or Excel topologies with an equipment library, fully specified or partially designed for auto-design; scripts gnpy-transmission-example and gnpy-path-request run single paths or batches of service requests, and outputs follow YANG-compatible formats. Coverage: any optical network a user describes, with example networks. Format and access: Python package on PyPI and Docker images, source on GitHub under the BSD 3-Clause licence, documentation on Read the Docs; version 3.0 was released on Zenodo on 3 September 2026. Caveats: quality depends on equipment parameters, many of which are vendor-specific; it is a physical-layer planning tool, not a traffic simulator; v3.0 changed channel numbering. Simulation uses: capacity planning, optimisation of optical backbones and the effect of link or amplifier failures on reachable services. Related records: the PCFM optical link GSNR calculator and PASSION WDM planner are research tools on the same layer.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "zenodo software harvest of the digital piece; candidate zenodo-8fd094d625 (Zenodo record 22282953)",
+      "route": "R05",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://gnpy.readthedocs.io/",
+  "id": "model-gnpy",
+  "inputs": [
+    "network topology (JSON or Excel)",
+    "equipment library",
+    "service requests"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-03",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "network"
+  ],
+  "name": "GNPy: optical route planning library (Gaussian Noise model)",
+  "notes": "Zenodo v3.0 record and the Read the Docs contents page read 2026-09-26; git tags show v3.0.1 is the newest. The validation entry is from the documentation's publications section title, not checked paper by paper.",
+  "outputs": [
+    "GSNR, OSNR and Q-margin per channel",
+    "path feasibility",
+    "designed network"
+  ],
+  "provider": "Telecom Infra Project, Open Optical and Packet Transport group (OOPT PSE)",
+  "related_ids": [
+    "data-telegeography-submarine-cable-map",
+    "model-pcfm-optical-link-gsnr-calculator",
+    "model-sixgman"
+  ],
+  "repository": "https://github.com/Telecominfraproject/oopt-gnpy",
+  "runs_on": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "v3.0 release notes, licence, authors",
+      "url": "https://zenodo.org/api/records/22282953"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "documentation contents",
+      "url": "https://gnpy.readthedocs.io/en/master/"
+    }
+  ],
+  "tags": [
+    "optical network",
+    "DWDM",
+    "Gaussian noise model",
+    "route planning",
+    "Telecom Infra Project"
+  ],
+  "title_en": "GNPy: optical route planning library (Gaussian Noise model)",
+  "type": "model",
+  "validated_on": [
+    "comparisons with laboratory and field measurements reported in the project's publications"
+  ]
+}

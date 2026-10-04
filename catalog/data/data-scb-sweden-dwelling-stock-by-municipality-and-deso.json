@@ -1,0 +1,144 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "PxWeb API, dwelling stock tables (BO0104D)",
+      "url": "https://api.scb.se/OV0104/v1/doris/sv/ssd/BO/BO0104/BO0104D/"
+    },
+    {
+      "kind": "api",
+      "label": "Table BO0104T02, dwellings by region, building type and construction period",
+      "url": "https://api.scb.se/OV0104/v1/doris/sv/ssd/BO/BO0104/BO0104D/BO0104T02"
+    },
+    {
+      "kind": "api",
+      "label": "Table BO0104T01N2, dwellings by DeSO/RegSO 2025 and tenure",
+      "url": "https://api.scb.se/OV0104/v1/doris/sv/ssd/BO/BO0104/BO0104D/BO0104T01N2"
+    },
+    {
+      "kind": "download",
+      "label": "DeSO and RegSO boundaries and 1 km population grid (open geodata WFS)",
+      "url": "https://geodata.scb.se/geoserver/stat/wfs?service=wfs&version=1.1.0&request=GetCapabilities"
+    },
+    {
+      "kind": "docs",
+      "label": "Open data and API",
+      "url": "https://www.scb.se/vara-tjanster/oppna-data/pxwebapi/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "SE"
+  ],
+  "data_family": [
+    "system_description",
+    "reference_context",
+    "condition_ageing"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "scb sweden dwelling stock bostadsbestand by municipality and by deso regso small areas building type construction period and tenure",
+    "url": "https://api.scb.se/OV0104/v1/doris/sv/ssd/BO/BO0104/BO0104D"
+  },
+  "description": "Statistics Sweden publishes the number of dwellings in Sweden each year in its statistical database. The dwelling stock tables count dwellings by region and building type (one- or two-dwelling buildings, multi-dwelling buildings, other buildings) crossed with construction period in 12 bands, owner category, tenure, dwelling floor area, apartment type and special housing, for 312 regions (country, counties and municipalities) from 2013 to 2025 and for tenure back to 1990. Two further tables give dwellings by tenure for the small demographic and regional statistical areas, DeSO and RegSO: 9,523 regions for 2024 and 2025, and an earlier series for 2015 to 2023 on the 2018 and 2020 divisions. The tables were updated on 17 April 2026. DeSO and RegSO boundaries and a 1 km population grid are open geodata on SCB's WFS. Format and access: the PxWeb API returns JSON without registration; boundaries as GeoPackage through WFS. Licence: statistics and geodata in the statistical database and geodata platform are CC0 1.0; free. Caveats: small-area tables carry tenure only, not building age or type, the DeSO and RegSO divisions were redrawn for 2025, and the 1 km grid holds population, not dwellings. Simulation uses: municipal building stock by type and age for exposure and energy retrofit, and small-area dwelling counts for demand disaggregation. Related records: the SSB Norway dwelling stock and the Danish BBR building register.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:SE:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "json",
+    "geopackage"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://api.scb.se/OV0104/v1/doris/sv/ssd/BO/BO0104/BO0104D/",
+  "id": "data-scb-sweden-dwelling-stock-by-municipality-and-deso",
+  "languages": [
+    "sv",
+    "en"
+  ],
+  "last_updated": "2026-04-17",
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "SCB Sweden dwelling stock (bostadsbestånd) by municipality and by DeSO/RegSO small areas, building type, construction period and tenure",
+  "provider": "Statistiska centralbyrån (Statistics Sweden, SCB)",
+  "related_ids": [
+    "data-ssb-norway-dwelling-stock-statistics-by-municipality",
+    "data-denmark-bbr-building-and-dwelling-register",
+    "data-statistics-denmark-register-housing-tables-statbank"
+  ],
+  "schema_summary": "BO0104T02: region x building type (one- or two-dwelling, multi-dwelling, other) x construction period (12 bands from before 1931) x year; other tables by owner category, tenure, floor area, apartment type, special housing; BO0104T01N2: DeSO/RegSO 2025 x tenure (rental, tenant-owned, owner-occupied, not stated) for 2024-2025",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "9 dwelling tables, updated 2026-04-17",
+      "url": "https://api.scb.se/OV0104/v1/doris/sv/ssd/BO/BO0104/BO0104D/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "312 regions, 3 building types, 12 construction periods, years 2013-2025",
+      "url": "https://api.scb.se/OV0104/v1/doris/sv/ssd/BO/BO0104/BO0104D/BO0104T02"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "9,523 DeSO/RegSO regions, 4 tenure forms, 2024-2025",
+      "url": "https://api.scb.se/OV0104/v1/doris/sv/ssd/BO/BO0104/BO0104D/BO0104T01N2"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "1 km grid population only; WFS and GeoPackage",
+      "url": "https://www.scb.se/vara-tjanster/oppna-data/oppna-geodata/statistik-pa-rutor/"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Statistics and geodata in the database and geodata platform under CC0 1.0",
+      "url": "https://www.scb.se/vara-tjanster/oppna-data/pxwebapi/"
+    }
+  ],
+  "spatial_resolution": "country, counties and municipalities (312 regions); DeSO and RegSO small areas (9,523 regions in the 2025 table)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "Sweden",
+    "dwellings",
+    "building stock",
+    "DeSO",
+    "RegSO",
+    "construction period",
+    "tenure"
+  ],
+  "temporal_coverage": "2013 to 2025 for most tables; tenure from 1990; DeSO tables 2015 to 2025",
+  "temporal_coverage_years": {
+    "end": 2025,
+    "start": 1990
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "SCB Sweden dwelling stock (bostadsbestånd) by municipality and by DeSO/RegSO small areas, building type, construction period and tenure",
+  "type": "data"
+}

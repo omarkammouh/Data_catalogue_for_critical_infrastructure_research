@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitLab repository",
+      "url": "https://gitlab.com/pbarooah/ccwp_model"
+    },
+    {
+      "kind": "paper",
+      "label": "Guo and Barooah 2025, arXiv 2508.15649",
+      "url": "https://arxiv.org/abs/2508.15649"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "central chilled water plant simulator ccwp matlab and casadi model of a campus chilled water plant with thermal storage two chillers and two cooling towers",
+    "repo": "gitlab.com/pbarooah/ccwp_model",
+    "url": "https://gitlab.com/pbarooah/ccwp_model"
+  },
+  "description": "The Central Chilled Water Plant Simulator is a MATLAB model of a campus-style district cooling plant released on GitLab in 2025 by Prabir Barooah and Zhong Guo. The README and project data read on 2026-09-28 describe a plant made of an aggregate cooling load, representing many buildings as one air handling coil, a chilled water thermal storage tank, two chillers and two cooling towers, with a rule-based controller for closed-loop simulation and scripts for one-step simulation of the plant, the chillers and the towers; the model is set out in their 2025 arXiv paper on designing learning-based controllers. It needs MATLAB, tested on R2024b, and the CasADi optimisation toolbox, and ships example load and disturbance data for a few days. Coverage is a generic plant, not a specific site. Access is free under the MIT licence. Caveats: the plant layout is fixed at two chillers and two towers, and validation against real plant data was not read. It supports optimisation and digital twin studies of district cooling, such as training a reinforcement learning controller that shifts chiller load into storage during peak prices or heatwaves. No related record is catalogued for chilled water plant models.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "building energy simulation",
+      "route": "R05",
+      "source": "gitlab"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://gitlab.com/pbarooah/ccwp_model",
+  "id": "model-ccwp-central-chilled-water-plant-simulator",
+  "inputs": [
+    "aggregate cooling load",
+    "weather disturbances",
+    "control commands"
+  ],
+  "language": [
+    "matlab"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "optimisation"
+  ],
+  "name": "Central Chilled Water Plant Simulator (CCWP): MATLAB and CasADi model of a campus chilled water plant with thermal storage, two chillers and two cooling towers",
+  "outputs": [
+    "chiller, tower and storage states",
+    "energy use"
+  ],
+  "provider": "Prabir Barooah and Zhong Guo",
+  "sectors": [
+    "energy.district_heating_cooling",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "read: MIT licence, created 2025-08-11, last activity 2026-02-02",
+      "url": "https://gitlab.com/api/v4/projects/pbarooah%2Fccwp_model"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "read (README): simulates a CCWP with an aggregate cooling load (buildings aggregated into one AHU coil), a chilled water TES tank, two chillers and two cooling towers; rule-based controller for closed-loop simulation; model described in Guo and Barooah, A Central Chilled Water Plant Model for Designing Learning-Based Controllers, arXiv 2508.15649 (Aug 2025); MATLAB R2024b and CasADi; scripts simulateCCWP_withRBC.m, one-step simulation, chiller and cooling tower dynamics; intended for training RL agents for optimal control",
+      "url": "https://gitlab.com/pbarooah/ccwp_model"
+    }
+  ],
+  "tags": [
+    "chilled water",
+    "thermal energy storage",
+    "district cooling",
+    "reinforcement learning",
+    "CasADi"
+  ],
+  "title_en": "Central Chilled Water Plant Simulator (CCWP): MATLAB and CasADi model of a campus chilled water plant with thermal storage, two chillers and two cooling towers",
+  "type": "model"
+}

@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Deltares/pandamesh"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Deltares/pandamesh/blob/main/README.rst"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pandamesh",
+    "repo": "github.com/deltares/pandamesh",
+    "url": "https://github.com/Deltares/pandamesh"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "Pandamesh is a Deltares Python package that converts geospatial vector features into unstructured meshes. It accepts GeoPandas points, lines and polygons, checks geometric overlaps or intersections and calls either Triangle or Gmsh through their Python interfaces. Outputs are NumPy arrays containing vertex coordinates and face connectivity. Users choose geometry and target cell sizes, so the tool has global regional-domain applicability without a fixed observation period or model resolution. Public source and installation documentation are free under MIT; the external mesh generators retain their own licence terms. A specific limitation is that GeoPandas does not handle geometry that wraps around the world, so Pandamesh cannot generate spherical meshes. Input projection and geometry validity also matter for a usable grid. The package supports mesh preparation for hydraulic and geophysical models such as Delft3D FM (model-delft3d-fm), although direct format interchange was not tested. Its README distinguishes this two-dimensional preparation workflow from other tools offering three-dimensional operations.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:Deltares",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/Deltares/pandamesh",
+  "id": "platform-pandamesh",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "GeoPandas",
+    "NumPy",
+    "Gmsh",
+    "Triangle"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-03",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Pandamesh",
+  "notes": "G7 G7-0292. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Deltares",
+  "related_ids": [
+    "model-delft3d-fm"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Deltares/pandamesh: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3ADeltares&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/deltares/pandamesh/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for dams and flood defences and stormwater drainage",
+  "type": "platform"
+}

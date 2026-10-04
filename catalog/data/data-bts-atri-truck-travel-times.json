@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "BTS ATRI Freight Mobility Initiative: County-to-county truck travel times (2024) - Experim",
+      "note": "Direct link from the Socrata API, 2026-10-01",
+      "url": "https://data.bts.gov/api/views/uta5-4eu5/rows.csv?accessType=DOWNLOAD"
+    },
+    {
+      "kind": "api",
+      "label": "BTS ATRI Freight Mobility Initiative: County-to-county truck travel times (2024) - Experim",
+      "note": "Direct link from the Socrata API, 2026-10-01",
+      "url": "https://data.bts.gov/resource/uta5-4eu5.json"
+    },
+    {
+      "kind": "api",
+      "label": "BTS ATRI Freight Mobility Initiative: County-to-county truck travel time (2022) - Experime",
+      "note": "Direct link from the Socrata API, 2026-10-01",
+      "url": "https://data.bts.gov/api/views/d7b8-pmxm/rows.csv?accessType=DOWNLOAD"
+    },
+    {
+      "kind": "api",
+      "label": "BTS ATRI Freight Mobility Initiative: County-to-county truck travel time (2022) - Experime",
+      "note": "Direct link from the Socrata API, 2026-10-01",
+      "url": "https://data.bts.gov/resource/d7b8-pmxm.json"
+    },
+    {
+      "kind": "portal",
+      "label": "2024 county-to-county truck travel times",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.bts.gov/d/uta5-4eu5"
+    },
+    {
+      "kind": "portal",
+      "label": "2022 county-to-county truck travel times",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.bts.gov/d/d7b8-pmxm"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "supply_chains_logistics"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bts atri freight mobility initiative county to county truck travel times",
+    "url": "https://data.bts.gov/d/uta5-4eu5"
+  },
+  "description": "The BTS ATRI Freight Mobility Initiative publishes experimental estimates of the travel times experienced by freight trucks moving between every pair of counties in the United States. For each calendar year, GPS pings from a sample of about 300,000 trucks are parsed to find the elapsed time between a truck's sequential departure from one county and arrival in another, and the 25th, 50th and 75th percentile travel times in minutes are reported with the number of movements for each origin and destination county pair (FIPS code, state and county). Annual tables exist for 2018 to 2024; the 2024 table has 3,585,730 county pairs and the 2022 table 3,807,134. Coverage is national. The data are free and in the public domain on data.bts.gov, as CSV and JSON exports and an API. Caveats: the estimates are labelled experimental and rest on a sample of about 300,000 trucks, and they measure elapsed time between leaving one county and arriving in another, not driving time alone. The travel time matrices support freight network flow and accessibility models, calibration of truck routing, and baselines for disruption and resilience studies of the road freight network. They complement the Freight Analysis Framework and the Commodity Flow Survey.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "truck travel time",
+      "route": "R01",
+      "source": "socrata-discovery"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.bts.gov/d/uta5-4eu5",
+  "id": "data-bts-atri-truck-travel-times",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-06",
+  "licence": "Public Domain (US Government)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BTS ATRI Freight Mobility Initiative county-to-county truck travel times",
+  "notes": "Deep check A4 (2026-10-01) corrected: last_updated .",
+  "provider": "U.S. Department of Transportation, Bureau of Transportation Statistics (BTS), with the American Transportation Research Institute (ATRI)",
+  "related_ids": [
+    "data-freight-analysis-framework",
+    "data-commodity-flow-survey"
+  ],
+  "sectors": [
+    "transport.logistics_freight",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "2024: experimental; ~300,000 trucks GPS; percentiles; columns; public domain; 3,585,730 rows by count query",
+      "url": "https://data.bts.gov/api/views/uta5-4eu5.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "2022 table; 3,807,134 rows",
+      "url": "https://data.bts.gov/api/views/d7b8-pmxm.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "annual tables 2018, 2019, 2020, 2021, 2022, 2023, 2024",
+      "url": "https://api.us.socrata.com/api/catalog/v1?domains=data.bts.gov&q=freight%20mobility%20initiative"
+    }
+  ],
+  "spatial_resolution": "county pair",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "trucks",
+    "travel time",
+    "GPS",
+    "freight",
+    "county pairs",
+    "United States"
+  ],
+  "temporal_coverage": "2018 to 2024",
+  "title_en": "BTS ATRI Freight Mobility Initiative county-to-county truck travel times",
+  "type": "data",
+  "update_frequency": "annual"
+}

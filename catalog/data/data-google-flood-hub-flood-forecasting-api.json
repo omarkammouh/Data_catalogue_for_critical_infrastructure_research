@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Flood Forecasting API (waitlist)",
+      "url": "https://developers.google.com/flood-forecasting"
+    },
+    {
+      "kind": "viewer",
+      "label": "Flood Hub map",
+      "url": "https://sites.research.google/floods/"
+    },
+    {
+      "kind": "portal",
+      "label": "Inundation History dataset (Google Cloud Storage)",
+      "url": "https://console.cloud.google.com/storage/browser/flood-forecasting/inundation_history"
+    }
+  ],
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "google flood hub and flood forecasting api real time riverine flood forecasts with historical inundation and discharge datasets",
+    "url": "https://sites.research.google/floods"
+  },
+  "description": "Flood Hub is Google's public website of real-time riverine flood forecasts, and the Flood Forecasting API gives programmatic access to the same forecasts. Google publishes both, along with two historical datasets that support them. Coverage: forecasts for a list of countries linked from the API page (the list itself was not read); the Inundation History dataset records where water occurred worldwide from 1999 to 2020, and the Google Runoff Reanalysis and Reforecast (GRRR) dataset gives global river discharge estimates for 1980 to 2023. Format and access: the Flood Hub map on sites.research.google; a REST and RPC API (floodforecasting.googleapis.com) that requires joining a waitlist, approval by email, a Google Cloud project and an API key, verified with a colab notebook; the inundation history is in a public Google Cloud Storage bucket; free. Licence: the data exposed by the API are CC-BY-4.0 and offered at no charge. Caveats: the Flood Hub page renders by script and only shows a note that conditions are approximate and for information only, so users should check official sources; API access is a pilot behind a waitlist; forecast skill and gauge coverage vary by basin and were not assessed here. Simulation uses: flood warnings and discharge forecasts as hazard inputs for emergency response, hazard exposure of roads, power and water assets, and climate adaptation studies. Related records: GloFAS (data-glofas) is the Copernicus global flood forecasting system and GRDC (data-grdc-global-runoff-database) holds observed river discharge.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source water-google-floodhub: provider pages read (round 2 register piece)",
+      "route": "R16",
+      "source": "water-google-floodhub"
+    }
+  ],
+  "formats": [
+    "api",
+    "raster"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://sites.research.google/floods/",
+  "id": "data-google-flood-hub-flood-forecasting-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0 (API data)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Google Flood Hub and Flood Forecasting API: real-time riverine flood forecasts with historical inundation and discharge datasets",
+  "provider": "Google (Flood Forecasting team, Google Research)",
+  "related_ids": [
+    "data-glofas",
+    "data-grdc-global-runoff-database"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "API page (updated 2026-01-12): real-time riverine forecasts, also on Flood Hub; CC BY 4.0, no charge; waitlist, approval email, API key, enable API in Google Cloud project, colab check; Inundation History (1999-2020) and GRRR (1980-2023); coverage list of countries linked; pilot",
+      "url": "https://developers.google.com/flood-forecasting"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Script-rendered map; only the note that conditions are approximate and informational was read",
+      "url": "https://sites.research.google/floods/"
+    }
+  ],
+  "tags": [
+    "flood forecasting",
+    "river discharge",
+    "API",
+    "early warning"
+  ],
+  "temporal_coverage": "real-time forecasts; inundation history 1999-2020; GRRR discharge 1980-2023",
+  "title_en": "Google Flood Hub and Flood Forecasting API: real-time riverine flood forecasts with historical inundation and discharge datasets",
+  "type": "data"
+}

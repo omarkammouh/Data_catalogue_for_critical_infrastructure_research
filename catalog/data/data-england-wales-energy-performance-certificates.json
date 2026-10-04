@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Developer API (see guidance)",
+      "url": "https://get-energy-performance-data.communities.gov.uk/guidance"
+    },
+    {
+      "kind": "portal",
+      "label": "Get energy performance of buildings data (bulk CSV, GOV.UK One Login)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://get-energy-performance-data.communities.gov.uk/"
+    },
+    {
+      "kind": "docs",
+      "label": "Licensing restrictions",
+      "url": "https://get-energy-performance-data.communities.gov.uk/guidance/licensing-restrictions"
+    }
+  ],
+  "access_note": "Bulk downloads need a GOV.UK One Login account; address data may only be used for the purposes listed on the licensing page.",
+  "access_restrictions": "registration",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "demand_operation",
+    "system_description",
+    "condition_ageing",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "tabular",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "energy performance of buildings data england and wales domestic and non domestic epcs display energy certificates",
+    "url": "https://get-energy-performance-data.communities.gov.uk"
+  },
+  "description": "This MHCLG service provides bulk data from the energy performance registers of England and Wales: Energy Performance Certificates for domestic and non-domestic properties, and Display Energy Certificates for public buildings. Certificates are lodged by assessors when buildings are built, sold or let, and Display Energy Certificates show the measured energy use of public buildings; the service is aimed at researchers and product developers. Records include energy ratings, floor area and emissions, linked to addresses and Ordnance Survey UPRNs. Data cover certificates registered since 2012, including expired or replaced ones; earlier catalogue entries on data.gov.uk, such as local extracts of the 2008 to 2010 Display Energy Certificate register for some 40,000 public buildings, point to older releases. Coverage is England and Wales; Scotland has its own register. Access: bulk CSV downloads after signing in with GOV.UK One Login, and a developer API. Licence: Open Government Licence v3.0 except address fields, which Ordnance Survey and Royal Mail allow only for listed purposes. Caveats: certificates exist only where a trigger occurred, and assessments use standard assumptions, not metered use. Simulation uses are building stock energy and retrofit models, heat decarbonisation planning and exposure attributes. Related records: the Scotland Heat Map and the crossCert EPC benchmark buildings.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"building\" \"emissions\"",
+      "route": "R02",
+      "source": "data-gov-uk"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "\"building\" \"cost\"",
+      "route": "R02",
+      "source": "data-gov-uk"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "\"building\" \"condition\"",
+      "route": "R02",
+      "source": "data-gov-uk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://get-energy-performance-data.communities.gov.uk/",
+  "id": "data-england-wales-energy-performance-certificates",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "OGL-UK-3.0 for non-address fields; address fields under Ordnance Survey and Royal Mail terms for permitted purposes",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Energy Performance of Buildings data: England and Wales (domestic and non-domestic EPCs, Display Energy Certificates)",
+  "provider": "Ministry of Housing, Communities and Local Government (MHCLG)",
+  "regions": [
+    "England",
+    "Wales"
+  ],
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, three certificate types, England and Wales, since 2012, CSV and API, One Login",
+      "url": "https://get-energy-performance-data.communities.gov.uk/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "OGL v3.0 for non-address data including UPRNs; address data OS/Royal Mail permitted purposes",
+      "url": "https://get-energy-performance-data.communities.gov.uk/guidance/licensing-restrictions"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "DEC register 2008-2010: 40,000 public buildings over 1,000 m2, energy use, floorspace, emissions, ratings",
+      "url": "https://ckan.publishing.service.gov.uk/api/3/action/package_show?id=display-energy-certificate-data1"
+    }
+  ],
+  "spatial_resolution": "Individual certificates by address and UPRN",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "EPC",
+    "Display Energy Certificates",
+    "energy performance",
+    "England",
+    "Wales",
+    "MHCLG"
+  ],
+  "title_en": "Energy Performance of Buildings data: England and Wales (domestic and non-domestic EPCs, Display Energy Certificates)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

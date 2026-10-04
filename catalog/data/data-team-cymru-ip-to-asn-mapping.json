@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "WHOIS and DNS interfaces",
+      "url": "https://www.team-cymru.com/ip-asn-mapping"
+    },
+    {
+      "kind": "portal",
+      "label": "HTTPS lookup form",
+      "url": "https://v4.whois.cymru.com/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "system_description",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "team cymru ip to asn mapping service whois dns and https",
+    "url": "https://team-cymru.com/ip-asn-mapping"
+  },
+  "description": "Team Cymru runs a free community service that maps any IP address to its announced BGP prefix, origin autonomous system number (ASN), country code, regional internet registry and allocation date, and gives the name of the AS. Every interface reads the same BGP feeds, collected from more than 50 peers and refreshed every 4 hours. It can be queried over WHOIS on TCP port 43 (whois.cymru.com), including a bulk mode that takes thousands of addresses in one session (the page quotes about 10,000 addresses a minute), over DNS in the style of a blocklist query with zones for origin, IPv6 origin, peers and ASNs, and over HTTPS through a lookup form. Coverage: the global routing table seen by the service's peers, IPv4 and IPv6, current state only. Format and access: pipe-separated text answers from WHOIS and DNS TXT records, free, with no registration. Caveats: current mapping only, with no history; origin AS as seen by Team Cymru's peers, which can differ from other vantage points; a lookup service, not a downloadable table. Simulation uses: mapping measured IP paths, traces or outage reports to networks and countries, to build AS-level topologies for resilience and cascading failure studies of internet routing. Related records: data-routeviews and data-ripe-ris give the raw BGP tables with history; data-peeringdb gives interconnection facilities of each AS; data-caida-ark-topology-measurements gives traceroute paths that are often mapped to ASNs with this service.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "Team Cymru IP to ASN mapping (cited in doi:10.1145/1644893.1644934); candidate crossref-fe18d7306b on the integrator's must-have list (musthave/digital.csv)",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "formats": [
+    "plain_text"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.team-cymru.com/ip-asn-mapping",
+  "id": "data-team-cymru-ip-to-asn-mapping",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09",
+  "licence": "free community service (terms of Team Cymru)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Team Cymru IP to ASN mapping service (WHOIS, DNS and HTTPS)",
+  "notes": "Service page read on 2026-09-26 (feeds from 50+ peers, 4-hour refresh, interfaces, bulk speed, example outputs). No licence text was read beyond 'free, forever' as a community service.",
+  "provider": "Team Cymru, Inc.",
+  "related_ids": [],
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "size": "global routing table",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "service page",
+      "url": "https://www.team-cymru.com/ip-asn-mapping"
+    }
+  ],
+  "spatial_resolution": "IP prefix and AS",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "IP to ASN",
+    "BGP",
+    "WHOIS",
+    "DNS",
+    "autonomous systems"
+  ],
+  "temporal_coverage": "current routing table",
+  "temporal_resolution": "refreshed every 4 hours",
+  "temporal_resolution_class": "hourly",
+  "title_en": "Team Cymru IP to ASN mapping service (WHOIS, DNS and HTTPS)",
+  "type": "data",
+  "update_frequency": "sub_daily"
+}

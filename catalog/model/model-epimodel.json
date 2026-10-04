@@ -1,0 +1,142 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "CRAN package",
+      "url": "https://CRAN.R-project.org/package=EpiModel"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/EpiModel/EpiModel"
+    },
+    {
+      "kind": "docs",
+      "label": "Package documentation (pkgdown)",
+      "url": "https://epimodel.github.io/EpiModel/"
+    },
+    {
+      "kind": "paper",
+      "label": "Jenness et al. (2018), Journal of Statistical Software",
+      "url": "https://doi.org/10.18637/jss.v084.i08"
+    },
+    {
+      "kind": "portal",
+      "label": "Former landing page (description or portal)",
+      "url": "https://www.epimodel.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Jenness, S.M., Goodreau, S.M., Morris, M. (2018). EpiModel: An R Package for Mathematical Modeling of Infectious Disease over Networks. Journal of Statistical Software 84(8). https://doi.org/10.18637/jss.v084.i08",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.18637/jss.v084.i08",
+    "name": "epimodel",
+    "repo": "github.com/epimodel/epimodel",
+    "url": "https://epimodel.org"
+  },
+  "description": "EpiModel is an R package for simulating mathematical models of infectious disease dynamics. It offers three model classes: deterministic compartmental models, stochastic individual-contact models and stochastic network models, the last using exponential-family random graph models (ERGMs) from the Statnet suite to represent who contacts whom over time. Standard SI, SIR and SIS templates can be extended through an API to new diseases, interventions and population structures. The EpiModel project led by Samuel Jenness at Emory University develops it for research and teaching, described in the Journal of Statistical Software (2018) and taught in the Network Modeling for Epidemics course. Coverage is whatever population or network the user specifies, from small groups to national-scale synthetic networks; resolution is the individual in the stochastic classes. It is distributed on CRAN (version 2.6.2) with source on GitHub and full documentation on its pkgdown site. Licence: GNU GPL v3, free. Caveats: it models transmission, not health-system operations, so hospital capacity effects must be added by the user; network models need statistical expertise and substantial computing. Simulation uses: agent-based and network simulation of epidemics that drive demand on healthcare infrastructure during pandemics. Related: Covasim is a Python agent-based alternative focused on COVID-19 (catalogued as model-covasim).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "network epidemic model R package (register services-epimodel)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry EpiModel",
+      "route": "R06",
+      "source": "services-epimodel (register)"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://github.com/EpiModel/EpiModel",
+  "id": "model-epimodel",
+  "inputs": [
+    "Contact network or population structure",
+    "Transmission, recovery and demographic parameters"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-15",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network",
+    "agent_based",
+    "statistical"
+  ],
+  "name": "EpiModel",
+  "outputs": [
+    "Simulated epidemic trajectories",
+    "Network and individual-level infection histories"
+  ],
+  "provider": "EpiModel project (Samuel Jenness, Emory University, and co-developers)",
+  "related_ids": [
+    "model-covasim"
+  ],
+  "repository": "https://github.com/EpiModel/EpiModel",
+  "runs_on": [],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Model classes, ERGMs, templates, epimodel.org, JSS methods paper",
+      "url": "https://raw.githubusercontent.com/EpiModel/EpiModel/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 2.6.2 on CRAN, dependencies",
+      "url": "https://cran.r-project.org/web/packages/EpiModel/index.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GNU GPL version 3",
+      "url": "https://raw.githubusercontent.com/EpiModel/EpiModel/HEAD/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Samuel Jenness, PI, Emory University Rollins School of Public Health; Goodreau",
+      "url": "https://www.epimodel.org/team"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "JSS 2018 paper, authors Jenness, Goodreau, Morris",
+      "url": "https://api.crossref.org/works/10.18637/jss.v084.i08"
+    }
+  ],
+  "tags": [
+    "epidemic",
+    "infectious disease",
+    "network model",
+    "ERGM",
+    "statnet",
+    "SIR"
+  ],
+  "title_en": "EpiModel is an R package for simulating mathematical models of infectious disease dynamics",
+  "type": "model",
+  "validated_on": []
+}

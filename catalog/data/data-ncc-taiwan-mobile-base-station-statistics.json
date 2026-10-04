@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Base stations by township (data.gov.tw)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.gov.tw/dataset/41256"
+    },
+    {
+      "kind": "portal",
+      "label": "Base stations by county and operator (data.gov.tw)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.gov.tw/dataset/22592"
+    },
+    {
+      "kind": "portal",
+      "label": "Co-siting statistics (data.gov.tw)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.gov.tw/dataset/6877"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "TW"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "tabular",
+    "asset_inventory",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ncc mobile base station licence counts by township county and operator with co siting statistics taiwan",
+    "url": "https://data.gov.tw/dataset/41256"
+  },
+  "description": "Taiwan's National Communications Commission publishes counts of licensed mobile base stations on the national open data portal. Three datasets fit together. The first counts 4G and 5G base station licences for every township and district. The second counts them by county or city and by operator. The third is a small table of co-sited and shared base stations for 4G and 5G. Metadata was updated on 1 September 2026, and the series start in 2015 and 2016. The dataset notes record changes that affect time series: 2G service ended on 30 June 2017; from 31 December 2018 former 3G sites were relicensed as general 4G sites in a heterogeneous network; after the operator mergers at the end of 2023 (FarEasTone with Asia Pacific Telecom, Taiwan Mobile with Taiwan Star) the 3G signal closed on 30 June 2024, apart from some Chunghwa Telecom sites at airports, ports and remote areas; and from 31 December 2025 the 4G count excludes those former 3G sites. Coverage: all of Taiwan, by township and operator. Format and access: CSV, XLSX, ODS and JSON downloads, free under the Open Government Data License. Caveats: these are licence counts, not site coordinates or sector azimuths; the definition breaks noted above must be handled; the NCC file server refused automated requests from this environment, so the files were not checked. Simulation uses: township density of mobile sites as a proxy for network exposure to typhoons, earthquakes and landslides, and for operator redundancy after mergers. Related records: the KCA mobile base stations in mountain areas (South Korea), the Dutch Antenneregister and the FCC antenna structure registration give site-level comparisons.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "data.gov.tw catalogue, NCC datasets",
+      "route": "R12",
+      "source": "organisations.csv:TW:digital:ministry_regulator"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.gov.tw/dataset/41256",
+  "id": "data-ncc-taiwan-mobile-base-station-statistics",
+  "languages": [
+    "zh"
+  ],
+  "last_updated": "2026-09",
+  "licence": "Open Government Data License, version 1.0 (Taiwan)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NCC mobile base station licence counts by township, county and operator, with co-siting statistics (Taiwan)",
+  "notes": "Metadata read from the data.gov.tw catalogue export on 2026-09-26 (descriptions, fields, formats, licence, dates). Download URLs on api.ncc.gov.tw and www.ncc.gov.tw returned 403 to curl, so file contents and the snapshot dates in them were not checked.",
+  "provider": "National Communications Commission (NCC), Taiwan",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "size": "3 datasets",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "data.gov.tw catalogue export (datasets 41256, 22592, 6877)",
+      "url": "https://data.gov.tw/datasets/export/csv"
+    }
+  ],
+  "spatial_resolution": "township and district; county by operator",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "base stations",
+    "4G",
+    "5G",
+    "3G shutdown",
+    "townships",
+    "Taiwan"
+  ],
+  "temporal_coverage": "2015 to 2026",
+  "temporal_resolution": "periodic snapshots",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "NCC mobile base station licence counts by township, county and operator, with co-siting statistics (Taiwan)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

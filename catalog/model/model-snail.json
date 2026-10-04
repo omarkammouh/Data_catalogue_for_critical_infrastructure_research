@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/nismod/snail"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/nismod-snail/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "snail spatial networks impact assessment library",
+    "repo": "github.com/nismod/snail",
+    "url": "https://github.com/nismod/snail"
+  },
+  "description": "snail is a Python library for analysing the potential impacts of climate hazards and other perils on infrastructure networks, developed in the nismod organisation at the University of Oxford by Tom Russell and contributors. Its core functions split vector features (points, lines or polygons such as roads, rail lines, power lines or pipes) along the cells of a raster grid and attribute the cell values to each split segment, so that flood depths or wind speeds can be joined to network assets exactly; further functions apply damage curves, compute expected annual damages over return periods and support network analysis with igraph. It is installed from PyPI as nismod-snail (version 0.5.4, December 2024) or through conda, depends on geopandas, shapely, rasterio and python-igraph, and is released under the MIT licence at no cost, with tutorials in the repository. Caveats: it is a building block, not a full risk model, the damage curves and network data must be supplied by the user, and the version number signals an API that may still change. It serves hazard exposure, direct damage and resilience analysis of any network anywhere and is used inside the open-gira workflow, which is catalogued alongside it.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "network raster hazard intersection library",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "storm_wind",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://github.com/nismod/snail",
+  "id": "model-snail",
+  "inputs": [
+    "vector infrastructure networks",
+    "hazard rasters per return period",
+    "damage curves"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-08",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network",
+    "statistical"
+  ],
+  "name": "snail (spatial networks impact assessment library)",
+  "outputs": [
+    "split network segments with hazard values",
+    "damage and expected annual damage per asset",
+    "network graphs"
+  ],
+  "provider": "University of Oxford, Environmental Change Institute (nismod); Tom Russell and contributors",
+  "related_ids": [
+    "model-open-gira"
+  ],
+  "repository": "https://github.com/nismod/snail",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, pip install nismod-snail, dependencies, overlay_raster functions",
+      "url": "https://raw.githubusercontent.com/nismod/snail/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 0.5.4 uploaded 2024-12-17; MIT License, copyright 2020 Tom Russell and snail contributors",
+      "url": "https://pypi.org/pypi/nismod-snail/json"
+    }
+  ],
+  "tags": [
+    "raster-vector overlay",
+    "infrastructure networks",
+    "damage curves",
+    "Python"
+  ],
+  "title_en": "Snail (spatial networks impact assessment library)",
+  "type": "model",
+  "validated_on": []
+}

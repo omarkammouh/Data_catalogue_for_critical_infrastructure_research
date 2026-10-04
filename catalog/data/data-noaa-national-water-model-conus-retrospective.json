@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "AWS Open Data registry entry",
+      "url": "https://registry.opendata.aws/nwm-archive/"
+    },
+    {
+      "kind": "docs",
+      "label": "Data documentation (README)",
+      "url": "https://github.com/NOAA-Big-Data-Program/bdp-data-docs/blob/main/nwm/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "hazards",
+    "weather_observations",
+    "scenarios_projections"
+  ],
+  "data_kind": [
+    "time_series",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "noaa national water model conus retrospective simulations aws open data",
+    "url": "https://registry.opendata.aws/nwm-archive"
+  },
+  "description": "This dataset holds input and output from multi-decade retrospective simulations of the NOAA National Water Model, published on AWS by the NOAA Open Data Dissemination Program. Four versions are available for the continental US: version 3.0 covers 44 years from February 1979 to January 2023, version 2.1 covers February 1979 to December 2020, version 2.0 covers 1993 to 2018 and version 1.2 covers 1993 to 2017. Only version 3.0 also covers Alaska, Hawaii and Puerto Rico and the US Virgin Islands. Versions 3.0 and 2.1 use the Analysis of Record for Calibration forcing and versions 2.0 and 1.2 use NLDAS. Output is hourly for streamflow and 3-hourly for land surface fields, in NetCDF with a subset in Zarr. No streamflow data assimilation is used, and the output differs from the real-time operational model. Licence: open data with no restrictions. Coverage: national river network reaches and grid cells. Caveats: it is simulated, not observed, flow, and the v3.0 forcing files carry a mislabelled v2.1 metadata tag. It provides long baselines for flow frequency, flood exposure and reservoir or drainage design simulations, and is the data product of the National Water Model, which is related to the model record already catalogued.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "National Water Model NOAA open data AWS retrospective",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://registry.opendata.aws/nwm-archive/",
+  "id": "data-noaa-national-water-model-conus-retrospective",
+  "languages": [
+    "en"
+  ],
+  "licence": "Open Data; no restrictions on use",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NOAA National Water Model CONUS retrospective simulations (AWS Open Data)",
+  "provider": "NOAA Office of Water Prediction, distributed through the NOAA Open Data Dissemination Program and AWS",
+  "related_ids": [
+    "model-noaa-national-water-model"
+  ],
+  "schema_summary": "Streamflow, soil moisture, snowpack and other water budget variables with meteorological forcing inputs, by NWM version",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "registry page: four versions, periods, forcing, formats NetCDF and Zarr, no updates, open data licence",
+      "url": "https://registry.opendata.aws/nwm-archive/"
+    }
+  ],
+  "tags": [
+    "National Water Model",
+    "retrospective streamflow",
+    "flow frequency",
+    "AORC forcing",
+    "r2-fresh-water"
+  ],
+  "temporal_coverage": "1979 to 2023 for version 3.0; 1979 to 2020 for 2.1; 1993 to 2018 for 2.0",
+  "temporal_resolution": "hourly streamflow, 3-hourly land surface output",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "NOAA National Water Model CONUS retrospective simulations (AWS Open Data)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

@@ -1,0 +1,176 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "data.gov.au dataset",
+      "url": "https://data.gov.au/data/dataset/australias-submarine-telecommunication-cable-locations-20214"
+    },
+    {
+      "kind": "api",
+      "label": "WMS (CSIRO GeoServer)",
+      "url": "https://www.cmar.csiro.au/geoserver/becrc/wms"
+    },
+    {
+      "kind": "api",
+      "label": "WFS (CSIRO GeoServer)",
+      "url": "https://www.cmar.csiro.au/geoserver/becrc/wfs"
+    },
+    {
+      "kind": "docs",
+      "label": "ACMA",
+      "url": "https://www.acma.gov.au/"
+    },
+    {
+      "kind": "download",
+      "label": "PNG resource (Australian Ocean Data Network)",
+      "note": "answers 200 on 2026-10-01: file answers: image/png 1249 bytes",
+      "url": "https://licensebuttons.net/l/by/4.0/88x31.png"
+    },
+    {
+      "kind": "api",
+      "label": "WMS resource (Australian Ocean Data Network)",
+      "note": "answers 200 on 2026-10-01: OGC WMS capabilities, 1 layers/types",
+      "url": "https://www.cmar.csiro.au/geoserver/becrc/wms"
+    },
+    {
+      "kind": "api",
+      "label": "WFS resource (Australian Ocean Data Network)",
+      "note": "answers 200 on 2026-10-01: OGC WFS capabilities, 279 layers/types",
+      "url": "https://www.cmar.csiro.au/geoserver/becrc/wfs"
+    },
+    {
+      "kind": "portal",
+      "label": "Dataset page on data.gov.au (Australian Ocean Data Network)",
+      "note": "CKAN package lists 3 resources",
+      "url": "https://data.gov.au/data/dataset/australias-submarine-telecommunication-cable-locations-20211"
+    },
+    {
+      "kind": "portal",
+      "label": "Dataset page on data.gov.au (Australian Ocean Data Network)",
+      "note": "CKAN package lists 3 resources",
+      "url": "https://data.gov.au/data/dataset/australias-submarine-telecommunication-cable-locations-20214"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "data_family": [
+    "system_description",
+    "cross_border_flows",
+    "governance_regulation",
+    "hazards"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "australia s submarine telecommunication cable locations and protection zones 2021",
+    "url": "https://data.gov.au/data/dataset/australias-submarine-telecommunication-cable-locations-20214"
+  },
+  "description": "This dataset maps the submarine telecommunication cables inside Australia's three cable protection zones as they stood in 2021, from spreadsheets the Australian Communications and Media Authority provided to Geoscience Australia. ACMA declares protection zones over cables of national significance: two off Sydney, the Northern Sydney zone from Narrabeen Beach and the Southern Sydney zone from Tamarama and Clovelly beaches, protecting branches of the Australia Japan Cable and the Southern Cross Cable, and one off Perth from City Beach, protecting the SEA-ME-WE 3 cable to South East Asia, the Middle East and Western Europe. Each zone runs from the shore to a depth of 2,000 metres and one nautical mile either side of the cable, and the Sydney zones also include the area between adjacent cables; within them, activities that risk damaging cables, such as anchoring and some fishing, are prohibited or restricted, with penalties for damage. Coverage: the three protection zones, current as of 2021. Format and access: WMS and WFS services on the CSIRO GeoServer, listed on data.gov.au through the Australian Ocean Data Network, free; the portal gives the licence as not specified with a CC BY 4.0 badge. Caveats: only cables inside protection zones are included; newer cables landed after 2021 are missing. Simulation uses: hazard exposure of cable landings to anchors, fishing and coastal hazards, and network models of Australia's international connectivity. Related records: TeleGeography's submarine cable map covers all cables, and the ICPC works on cable protection.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "visit of submarine cable data on data.gov.au",
+      "route": "R10",
+      "source": "organisations.csv:AU:digital:subsea_cable_consortium"
+    },
+    {
+      "date": "2026-09-30",
+      "query": "CKAN package_search with infrastructure and hazard phrases in English and the national language",
+      "route": "R02",
+      "source": "South Australian Government Data Directory-ckan-api"
+    }
+  ],
+  "formats": [
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.gov.au/data/dataset/australias-submarine-telecommunication-cable-locations-20214",
+  "id": "data-australia-submarine-cable-protection-zones",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021",
+  "licence": "not stated (the data.gov.au entry says \"License Not Specified\")",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.acma.gov.au/",
+      "https://www.cmar.csiro.au/geoserver/becrc/wfs"
+    ]
+  },
+  "maturity": "active",
+  "name": "Australia's submarine telecommunication cable locations and protection zones (2021)",
+  "notes": "data.gov.au CKAN record read by API on 2026-09-26 (description, services, licence field). Services not queried. Example activities (anchoring, fishing) are general knowledge of protection zone rules, not read.",
+  "provider": "Australian Communications and Media Authority (ACMA), compiled by Geoscience Australia and served through the Australian Ocean Data Network (CSIRO)",
+  "related_ids": [
+    "data-ditrdcsa-data-sa"
+  ],
+  "schema_summary": "cable lines and protection zone boundaries (Northern Sydney, Southern Sydney, Perth)",
+  "sectors": [
+    "digital.telecom",
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "size": "three protection zones",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "dataset metadata",
+      "url": "https://data.gov.au/data/api/3/action/package_show?id=australias-submarine-telecommunication-cable-locations-20214"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated (the data.gov.au entry says \"License Not Specified\") (basis: data.gov.au dataset page)",
+      "url": "https://data.gov.au/data/api/3/action/package_show?id=australias-submarine-telecommunication-cable-locations-20214"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://data.gov.au/data/dataset/australias-submarine-telecommunication-cable-locations-20214"
+    },
+    {
+      "accessed": "2026-09-30",
+      "note": "South Australian Government Data Directory catalogue entry read through the CKAN API on 2026-09-30: title, description, tags, licence, formats, dates; the data files were not opened",
+      "url": "https://data.sa.gov.au/data/api/3/action/package_show?id=ff6403dc-875a-46bc-b9ac-114772148902"
+    },
+    {
+      "accessed": "2026-09-30",
+      "note": "South Australian Government Data Directory catalogue entry read through the CKAN API on 2026-09-30: title, description, tags, licence, formats, dates; the data files were not opened",
+      "url": "https://data.sa.gov.au/data/api/3/action/package_show?id=524a69aa-6305-4178-a42f-93d0ba7e5559"
+    }
+  ],
+  "spatial_resolution": "cable line within protection zones",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "submarine cables",
+    "protection zones",
+    "cable landing",
+    "ACMA",
+    "Australia",
+    "South Australian Government data directory (data.sa.gov.au), Australia",
+    "Infrastructure"
+  ],
+  "temporal_coverage": "as of 2021",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Australia's submarine telecommunication cable locations and protection zones (2021)",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

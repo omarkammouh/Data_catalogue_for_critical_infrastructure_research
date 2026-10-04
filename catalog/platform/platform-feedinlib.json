@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/oemof/feedinlib"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/oemof/feedinlib/blob/dev/README.rst"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "feedinlib weather to generation interfaces",
+    "repo": "github.com/oemof/feedinlib",
+    "url": "https://github.com/oemof/feedinlib"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "feedinlib is an oemof Python package connecting weather-data interfaces with wind and photovoltaic power models. It provides a reusable preparation layer for deriving generation inputs from meteorological information. Users supply weather and system-specific model settings; the output represents calculated renewable feed-in, not directly observed electricity generation. Geographic scope, sampling interval and study dates depend on the supplied weather source and selected model. Source and documentation are public and free under MIT, with PyPI and development installation instructions. The README warns that some dependencies cannot be installed through pip on Windows and need manual installation through tools such as conda or mamba. Model accuracy and weather-data suitability therefore require separate checks, and no generation calculation was reproduced in this review. The package can prepare wind and PV inputs for electricity-system studies such as PyPSA (model-pypsa). The first-review windpowerlib item mentions its origin in feedinlib, but it is a distinct library and does not cover the current weather-to-model interface package.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:oemof",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/oemof/feedinlib",
+  "id": "platform-feedinlib",
+  "interfaces": [
+    "code_library"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-12-02",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "feedinlib weather-to-generation interfaces",
+  "notes": "G7 G7-0279. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "oemof repository maintainers",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for oemof/feedinlib: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3Aoemof&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/oemof/feedinlib/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for electricity",
+  "type": "platform"
+}

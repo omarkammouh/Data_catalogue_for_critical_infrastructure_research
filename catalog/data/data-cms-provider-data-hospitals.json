@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Provider Data Catalog metastore API",
+      "url": "https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items"
+    },
+    {
+      "kind": "portal",
+      "label": "Hospital data sets",
+      "url": "https://data.cms.gov/provider-data/topics/hospitals"
+    },
+    {
+      "kind": "portal",
+      "label": "Timely and Effective Care - Hospital",
+      "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "service_performance",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cms provider data catalog hospitals care compare data sets",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals"
+  },
+  "description": "The CMS Provider Data Catalog publishes the data behind Medicare's Care Compare site. Its hospital theme holds 75 data sets. Hospital General Information lists every hospital registered with Medicare, with certification number, address, hospital type, ownership, whether it provides emergency services and an overall star rating; Timely and Effective Care gives process measures such as emergency department waiting and treatment times at hospital, state and national level; other sets cover complications and deaths, unplanned hospital visits, healthcare-associated infections, patient experience surveys, spending per beneficiary, payment programmes and Veterans Health Administration hospitals. The producer is the Centers for Medicare & Medicaid Services. Coverage is national at hospital level. Data download as CSV or through a JSON API with a public metastore, free without registration; no licence is named, as a federal work. Caveats: measures cover different rolling periods listed in a separate Measure Dates table, small hospitals often have suppressed values, and the hospital list has no bed counts or coordinates, which must be joined from cost reports or geocoded. Simulation uses: an authoritative list of hospitals with emergency departments for hazard exposure and access models, and emergency department timeliness measures to calibrate patient-flow and surge simulations. Related records: HCRIS cost reports (data-cms-hcris-cost-reports) add beds and utilisation, and HIFLD Open (data-hifld-open) adds geocoded hospital points.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "CMS Provider Data Catalog hospitals timely and effective care",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://data.cms.gov/provider-data/topics/hospitals",
+  "id": "data-cms-provider-data-hospitals",
+  "languages": [
+    "en"
+  ],
+  "licence": "U.S. federal government work (no licence stated in the catalogue; public domain inferred)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://data.cms.gov/provider-data/topics/hospitals",
+      "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+    ]
+  },
+  "maturity": "active",
+  "name": "CMS Provider Data Catalog: hospitals (Care Compare data sets)",
+  "provider": "Centers for Medicare & Medicaid Services (CMS), U.S. Department of Health and Human Services",
+  "related_ids": [
+    "data-cms-hcris-cost-reports",
+    "data-hifld-open"
+  ],
+  "schema_summary": "75 hospital data sets. Hospital General Information: every Medicare-registered hospital with CMS certification number, address, phone, hospital type, ownership, emergency services flag and overall star rating. Timely and Effective Care (hospital, state, national): measures including emergency department waiting and treatment times. Also complications and deaths, unplanned visits, healthcare-associated infections, patient survey, spending and Veterans Health Administration data",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "237 data sets in the catalogue, 75 under the Hospitals theme with identifiers and modified dates; Hospital General Information description",
+      "url": "https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://data.cms.gov/provider-data/topics/hospitals"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items"
+    }
+  ],
+  "spatial_resolution": "Individual hospital (address)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospitals",
+    "Care Compare",
+    "emergency department",
+    "wait times",
+    "hospital list",
+    "quality measures",
+    "Medicare"
+  ],
+  "temporal_coverage": "Rolling measurement periods (see the Measure Dates table)",
+  "temporal_resolution": "Measurement periods of one quarter to several years",
+  "temporal_resolution_class": "sub_annual",
+  "title_en": "CMS Provider Data Catalog: hospitals (Care Compare data sets)",
+  "type": "data",
+  "update_frequency": "several_per_year"
+}

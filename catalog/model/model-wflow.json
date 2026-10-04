@@ -1,0 +1,133 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://deltares.github.io/Wflow.jl/stable/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code (GitHub)",
+      "url": "https://github.com/Deltares/Wflow.jl"
+    },
+    {
+      "kind": "docs",
+      "label": "Changelog",
+      "url": "https://deltares.github.io/Wflow.jl/stable/changelog.html"
+    }
+  ],
+  "access_note": "Installed as a Julia package or as a compiled executable; no graphical user interface.",
+  "access_restrictions": "none",
+  "citation": "Deltares, Wflow.jl documentation and changelog",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "wflow jl distributed hydrological modelling framework",
+    "repo": "github.com/deltares/wflow.jl",
+    "url": "https://deltares.github.io/Wflow.jl/stable"
+  },
+  "description": "Wflow.jl is the distributed hydrological modelling framework of Deltares, written in Julia and released under the MIT licence since 2021. It simulates precipitation, interception, snow accumulation and melt, evapotranspiration, soil water, surface water, groundwater recharge and water demand and allocation on a grid, and computes all hydrological fluxes for every cell at each time step from gridded topography, soil, land use and climate data. Deltares says it has been applied worldwide for flood hazard, drought, climate change and land use studies, and positions it for data-scarce areas because it relies on open earth observation data. Version 1.0.0 came out in December 2025 and 1.0.4 on 24 July 2026, with reservoir fixes; it supports the Basic Model Interface for coupling, and a compiled executable is offered under Deltares terms. The earlier Python and PCRaster version is still available but no longer developed. Caveats: there is no graphical interface, model set-up needs preprocessing of global or local maps, and gridded parameters must be calibrated against observed discharge. Simulation uses: inflow forecasting for reservoirs and dams, water availability for irrigation and drinking water abstraction, drought and low-flow risk, flood hazard in upstream catchments, and climate and land use change scenarios. Related records: Delft-FEWS (platform-delft-fews) runs Wflow in operational forecasting, Delft3D FM (model-delft3d-fm) takes its discharges downstream, and AquaCrop (model-fao-aquacrop) models crop water use at field scale.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Deltares open source community portal (NL, open_source_community) https://oss.deltares.nl/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "drought"
+  ],
+  "homepage": "https://deltares.github.io/Wflow.jl/stable/",
+  "id": "model-wflow",
+  "inputs": [
+    "gridded topography",
+    "soil maps",
+    "land use",
+    "climate forcing (precipitation",
+    "temperature",
+    "evaporation)",
+    "reservoir and lake parameters",
+    "water demand data",
+    "TOML configuration"
+  ],
+  "language": [
+    "julia"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-24",
+  "licence": "MIT (source code since 2021); compiled executable under Deltares terms and conditions",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Wflow.jl distributed hydrological modelling framework",
+  "notes": "GitHub repository metadata could not be read (github.com refused from the cloud); the repository URL is the one linked from the documentation.",
+  "outputs": [
+    "river discharge",
+    "soil moisture",
+    "snow storage",
+    "evapotranspiration",
+    "groundwater recharge",
+    "reservoir storage and outflow",
+    "water allocation to users"
+  ],
+  "provider": "Deltares",
+  "related_ids": [
+    "model-delft3d-fm",
+    "platform-delft-fews",
+    "model-fao-aquacrop"
+  ],
+  "repository": "https://github.com/Deltares/Wflow.jl",
+  "runs_on": [],
+  "sectors": [
+    "water.irrigation",
+    "water.dams_flood_defences",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "processes, worldwide applications, MIT licence since 2021, executable under Deltares terms, Julia engine, no GUI, Python/PCRaster predecessor, Julia dependencies including BasicModelInterface",
+      "url": "https://deltares.github.io/Wflow.jl/stable/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "v1.0.0 on 2025-12-10, v1.0.4 on 2026-07-24 with reservoir fixes",
+      "url": "https://deltares.github.io/Wflow.jl/stable/changelog.html"
+    }
+  ],
+  "tags": [
+    "Wflow",
+    "Julia",
+    "distributed hydrology",
+    "rainfall-runoff",
+    "reservoirs",
+    "water allocation",
+    "drought",
+    "flood hazard",
+    "BMI",
+    "open source",
+    "Deltares"
+  ],
+  "title_en": "Wflow.jl distributed hydrological modelling framework",
+  "type": "model",
+  "validated_on": []
+}

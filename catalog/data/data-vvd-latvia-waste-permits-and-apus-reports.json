@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "APUS data for annual waste report No. 3 (CSV via API)",
+      "url": "https://data.gov.lv/dati/lv/dataset/apus-dati-gada-parskatam-par-atkritumiem-nr-3-atkritumi"
+    },
+    {
+      "kind": "portal",
+      "label": "Issued permits and licences (CSV files)",
+      "url": "https://data.gov.lv/dati/lv/dataset/izsniegtas-atlaujas-un-licences"
+    },
+    {
+      "kind": "portal",
+      "label": "VVD data sets in the Latvian open data portal",
+      "url": "https://data.gov.lv/dati/lv/organization/vvd"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "LV"
+  ],
+  "data_family": [
+    "system_description",
+    "governance_regulation",
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "valsts vides dienests open data latvia waste management permits collection sorting storage handling transport environmental permits and apus waste transport records for the annual waste report csv cc0",
+    "url": "https://data.gov.lv/dati/lv/dataset/izsniegtas-atlaujas-un-licences"
+  },
+  "description": "The State Environmental Service of Latvia (VVD) publishes its permit registers and waste reporting data as open data. The permits data set lists every waste management permit it has issued, split into collection, handling, sorting, storage and transport, together with category A, B and C environmental permits, combustion plants and other licences. A second data set comes from APUS, the national system in which every waste shipment is recorded, restructured to match the annual waste report form: part A lists reporting organisations and sites with registration numbers, address codes and whether they produce or manage waste, and parts B and C give the waste generated and managed. Coverage is national. All five VVD data sets are free and available to download as CSV under CC0, updated continuously, with the APUS files served through an API. Caveats: APUS figures are current at the time of access and change as reports are filed, sites are identified by address and cadastral codes, not coordinates, and documentation is in Latvian. Simulation uses: mapping Latvia's licensed waste collection and treatment operators, building waste flow networks from APUS transfers, and planning treatment capacity. Related records: the England waste operations permit register (data-ea-waste-operations-permit-register) is a comparable register, and Eurostat municipal waste (data-eurostat-env-wasmun) gives national totals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk (tier 2): Latvia VVD open data",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://data.gov.lv/dati/lv/dataset/izsniegtas-atlaujas-un-licences",
+  "id": "data-vvd-latvia-waste-permits-and-apus-reports",
+  "languages": [
+    "lv"
+  ],
+  "licence": "CC0 1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Valsts vides dienests open data (Latvia): waste management permits (collection, sorting, storage, handling, transport), environmental permits and APUS waste transport records for the annual waste report (CSV, CC0)",
+  "provider": "Valsts vides dienests (VVD, State Environmental Service of Latvia)",
+  "related_ids": [
+    "data-ea-waste-operations-permit-register",
+    "data-eurostat-env-wasmun"
+  ],
+  "schema_summary": "Permit files: waste management permits split into collection, handling, sorting, storage and transport, category A/B and C permits, combustion plants, subsoil licences and refrigerant licences; APUS report part A (report id, year, organisation and registration number, site id, address code, cadastral designation, operator status, waste producer, waste manager), parts B and C on waste generated and managed",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Five VVD data sets, all CC0 1.0: issued permits and licences (added 2020-01-29, updated 2026-07-28, continuous), energy communities, APUS data for annual waste report No. 3, APUS users, EIA decisions; formats CSV and XLSX",
+      "url": "https://data.gov.lv/dati/lv/organization/vvd"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Resources at registri.vvd.gov.lv/opendata: permits/grp.csv and grp/collect, handle, sort, store and transport CSVs (waste management permits), permits/ab.csv, c.csv, combustion plants, licences",
+      "url": "https://data.gov.lv/dati/lv/dataset/izsniegtas-atlaujas-un-licences"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "APUS (waste transport accounting system) data structured by annual report form No. 3 - Waste, current at time of access, reflecting waste flows handed over and received; parts A, B and C via apus-api.vvd.gov.lv; part A 2026 CSV header read in memory",
+      "url": "https://data.gov.lv/dati/lv/dataset/apus-dati-gada-parskatam-par-atkritumiem-nr-3-atkritumi"
+    }
+  ],
+  "spatial_resolution": "Individual operator and site (address code)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "waste permits",
+    "waste operators",
+    "Latvia",
+    "waste transport",
+    "open data"
+  ],
+  "temporal_coverage": "Current permits; APUS data for the reporting year (2026 file)",
+  "temporal_resolution": "Continuous",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Valsts vides dienests open data (Latvia): waste management permits (collection, sorting, storage, handling, transport), environmental permits and APUS waste transport records for the annual waste report (CSV, CC0)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

@@ -1,0 +1,93 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "DOE CODE record",
+      "url": "https://www.osti.gov/doecode/biblio/161295"
+    }
+  ],
+  "access_restrictions": "on_request",
+  "cost": "on_request",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "seismic contingency auto generator",
+    "url": "https://osti.gov/doecode/biblio/161295"
+  },
+  "description": "The Seismic Contingency Auto Generator turns earthquake scenarios into contingency lists that power grid solvers can run, linking seismic hazard to transmission outage studies. It is registered on DOE CODE by Idaho National Laboratory with Bjorn Vaagensmith, Chandrakanth Bolisetti and Akram Batikh as developers, released in June 2025. The code reads premade earthquake scenario XML files from the US Geological Survey together with power grid data, and writes a .con contingency file containing a user-chosen number of contingencies in which power transformers fail at random according to their likelihood of failure at the peak ground acceleration around each transformer. Failure likelihoods come from generic fragility curves for each transformer voltage class, derived from finite element modelling of several transformer designs; the abstract notes that finer design categories within a voltage class could be added later. Coverage is not tied to a place. The DOE CODE record lists it as closed source, so access is on request from INL, and cost and terms are not stated. Caveats: fragility curves are generic by voltage class, and only transformers are failed. Simulation uses are earthquake contingency analysis and seismic resilience studies of power grids. Related records: model-mouse-microreactor shares an INL developer.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid fragility curves",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake"
+  ],
+  "homepage": "https://www.osti.gov/doecode/biblio/161295",
+  "id": "model-inl-seismic-contingency-auto-generator",
+  "inputs": [
+    "USGS earthquake scenario XML files (ShakeMap)",
+    "power grid data with transformer locations and voltage classes"
+  ],
+  "language": [],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-06-20",
+  "licence": "proprietary (closed source; contact INL)",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "fragility"
+  ],
+  "name": "Seismic Contingency Auto Generator",
+  "outputs": [
+    "Contingency (.con) files with randomly failed transformers for power grid solvers"
+  ],
+  "provider": "Idaho National Laboratory (Bjorn Vaagensmith, Chandrakanth Bolisetti and Akram Batikh)",
+  "related_ids": [
+    "model-mouse-microreactor"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract, creators, INL, USGS XML, .con files, FEM-based fragility by voltage class",
+      "url": "https://api.datacite.org/dois/10.11578/dc.20250820.5"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Release date 2025-06-20, closed source",
+      "url": "https://www.osti.gov/doecode/biblio/161295"
+    }
+  ],
+  "tags": [
+    "earthquake",
+    "fragility curves",
+    "transformers",
+    "contingency analysis",
+    "ShakeMap",
+    "INL"
+  ],
+  "title_en": "Seismic contingency auto generator for earthquake scenarios",
+  "type": "model",
+  "validated_on": []
+}

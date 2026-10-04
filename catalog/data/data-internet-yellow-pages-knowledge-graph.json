@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Online IYP prototype (Neo4j)",
+      "url": "https://iyp.iijlab.net"
+    },
+    {
+      "kind": "download",
+      "label": "Daily database dumps",
+      "url": "https://archive.ihr.live/ihr/iyp/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/InternetHealthReport/internet-yellow-pages"
+    },
+    {
+      "kind": "docs",
+      "label": "Tutorial",
+      "url": "https://tutorial.iyp.ihr.live/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "interdependencies"
+  ],
+  "data_kind": [
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "internet yellow pages iyp knowledge graph of ases prefixes domains and their relationships",
+    "repo": "github.com/internethealthreport/internet-yellow-pages",
+    "url": "https://iyp.iijlab.net"
+  },
+  "description": "The Internet Yellow Pages (IYP) is a knowledge graph that joins dozens of public datasets about Internet resources, such as autonomous systems, IP prefixes, domain names, internet exchange points, facilities, organisations and countries, so they can be queried together. It is produced by the Internet Health Report team at the IIJ Research Laboratory with academic partners. Coverage: the global Internet, rebuilt from sources such as BGP data, RPKI, PeeringDB, registries, CAIDA and IHR datasets and popular domain rankings. Nodes and relationships encode facts like which AS originates a prefix, which ASes peer at an exchange, which country or organisation a resource belongs to, and dependency scores. Format and access: a public online Neo4j prototype queried with Cypher, a tutorial and gallery, and daily database dumps in a dated archive for local deployment with Docker Compose (about 100 GB of disk). Licence: the code is GPL-3.0 and data keep the terms of their original sources, which are listed per dataset. Caveats: facts inherit the errors and update lags of each source, and the full graph is large. Simulation uses: building network topology and dependency graphs of internet infrastructure for cascading failure and resilience analysis, for example which networks depend on one exchange or transit provider. Related records: the Internet Health Report (data-iij-internet-health-report) supplies AS hegemony and delay data to IYP, and CAIDA GeofeedWHOIS (data-caida-geofeedwhois) is another source of resource metadata.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source digital-internet-yellow-pages: provider pages read (round 2 register piece)",
+      "route": "R01",
+      "source": "digital-internet-yellow-pages"
+    }
+  ],
+  "formats": [
+    "database",
+    "other"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/InternetHealthReport/internet-yellow-pages",
+  "id": "data-internet-yellow-pages-knowledge-graph",
+  "languages": [
+    "en"
+  ],
+  "licence": "Code GPL-3.0; data under each source dataset's terms",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Internet Yellow Pages (IYP): knowledge graph of ASes, prefixes, domains and their relationships",
+  "provider": "Internet Health Report team, IIJ Research Laboratory",
+  "related_ids": [
+    "data-iij-internet-health-report",
+    "data-caida-geofeedwhois"
+  ],
+  "sectors": [
+    "digital.internet_exchange",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: knowledge database of Internet resources (ASNs, prefixes, domain names); online prototype iyp.iijlab.net; daily dumps at archive.ihr.live/ihr/iyp/YYYY/MM/DD; about 100 GB disk; GPL-3.0; last commit 2026-09-22",
+      "url": "https://raw.githubusercontent.com/InternetHealthReport/internet-yellow-pages/main/README.md"
+    }
+  ],
+  "tags": [
+    "knowledge graph",
+    "autonomous systems",
+    "BGP",
+    "Neo4j"
+  ],
+  "title_en": "Internet Yellow Pages (IYP): knowledge graph of ASes, prefixes, domains and their relationships",
+  "type": "data",
+  "update_frequency": "daily"
+}

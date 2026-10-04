@@ -1,0 +1,110 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "SWMF source (GitHub)",
+      "url": "https://github.com/SWMFsoftware/SWMF"
+    },
+    {
+      "kind": "repo",
+      "label": "BATS-R-US source",
+      "url": "https://github.com/SWMFsoftware/BATSRUS"
+    },
+    {
+      "kind": "viewer",
+      "label": "NOAA SWPC Geospace ground magnetic perturbation maps",
+      "url": "https://www.spaceweather.gov/products/geospace-ground-magnetic-perturbation-maps"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "space weather modeling framework swmf and noaa geospace model",
+    "repo": "github.com/swmfsoftware/swmf",
+    "url": "https://github.com/SWMFsoftware/SWMF"
+  },
+  "description": "The Space Weather Modeling Framework is a University of Michigan framework, with code copyrighted since 2002, that couples physics-based models of the Sun-to-Earth space environment, among them the BATS-R-US magnetohydrodynamic code for the solar corona and the magnetosphere. Its Geospace configuration, with BATS-R-US for the magnetosphere, the Ridley Ionosphere Model for ionospheric electrodynamics and the Rice Convection Model for the ring current, has run operationally at NOAA's Space Weather Prediction Center since October 2016, upgraded to version 2.0 in January 2021 with 1.9 million grid cells. Driven by upstream solar wind data, it outputs global and regional geomagnetic activity, including ground magnetic perturbation (delta B) maps on a five-by-five degree grid that grid operators use to judge whether disturbances may affect them. The Fortran source, with the SWMF_data and SWMFSOLAR repositories, is openly accessible online on GitHub under the Apache 2.0 licence at no cost and installs with Config.pl on Linux clusters with MPI. Caveats: it needs high-performance computing and expert set-up, ground fields are derived from modelled currents, and forecasts depend on real-time solar wind data. It supports geomagnetically induced current hazard exposure and operational forecasting for power grids, pipelines and satellites; related records are NASA CCMC, NOAA SWPC products, SuperMAG and OMNIWeb.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "space weather modeling framework open source",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://github.com/SWMFsoftware/SWMF",
+  "id": "model-swmf-space-weather-modeling-framework",
+  "inputs": [
+    "solar wind plasma and interplanetary magnetic field (L1)",
+    "solar magnetograms for solar configurations"
+  ],
+  "language": [
+    "fortran"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-01",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Space Weather Modeling Framework (SWMF) and NOAA Geospace model",
+  "notes": "The Center for Space Environment Modeling name is taken from the csem.engin.umich.edu link in the README; the Michigan project pages returned 403 or 502 on 2026-09-26.",
+  "outputs": [
+    "magnetosphere and ionosphere state",
+    "ground magnetic perturbations (delta B)",
+    "geomagnetic indices"
+  ],
+  "provider": "University of Michigan (Center for Space Environment Modeling)",
+  "related_ids": [],
+  "repository": "https://github.com/SWMFsoftware/SWMF",
+  "sectors": [
+    "cross_cutting.space",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README: University of Michigan 2002, repositories, Config.pl install, compilers, MPI",
+      "url": "https://raw.githubusercontent.com/SWMFsoftware/SWMF/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Apache 2.0 licence",
+      "url": "https://raw.githubusercontent.com/SWMFsoftware/SWMF/master/LICENSE.txt"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Geospace components BATS-R-US, RIM, RCM; operational October 2016, v1.5 November 2017, v2.0 January 2021, 1.9 million cells, 5x5 degree delta B grid",
+      "url": "https://www.swpc.noaa.gov/products/geospace-ground-magnetic-perturbation-maps"
+    }
+  ],
+  "tags": [
+    "space weather",
+    "magnetosphere",
+    "MHD",
+    "BATS-R-US",
+    "GIC"
+  ],
+  "title_en": "Space Weather Modeling Framework (SWMF) and NOAA Geospace model",
+  "type": "model"
+}

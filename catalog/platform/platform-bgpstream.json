@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "BGPStream website",
+      "url": "https://bgpstream.caida.org/"
+    },
+    {
+      "kind": "repo",
+      "label": "libbgpstream",
+      "url": "https://github.com/CAIDA/libbgpstream"
+    },
+    {
+      "kind": "repo",
+      "label": "pybgpstream",
+      "url": "https://github.com/CAIDA/pybgpstream"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bgpstream",
+    "repo": "github.com/caida/libbgpstream",
+    "url": "https://bgpstream.caida.org"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "BGPStream is an open-source software framework for analysing historical and real-time Border Gateway Protocol (BGP) measurement data. Its C library libBGPStream and command-line tool bgpreader give a single sorted stream of BGP updates and routing table dumps from collectors such as RouteViews and RIPE RIS, with filters by project, collector, prefix, peer, AS path and time; the PyBGPStream Python bindings and real-time data brokers let researchers build monitoring and analysis pipelines. It is developed by the Center for Applied Internet Data Analysis (CAIDA) at the University of California San Diego; the newest release tag is v2.3.0. Coverage: global Internet routing as seen by public collectors, from the early 2000s to near real time, at the resolution of individual BGP messages. Format and access: source tarballs and packages from the website and GitHub, reading MRT data over the Internet; free of charge under a BSD-style licence from the Regents of the University of California. Caveats: it processes data but stores none, so results depend on collector coverage and availability; very long historical queries are slow. Simulation uses: building event records of outages and hijacks for resilience and cascading-failure studies, network flow inputs for Internet topology models, and real-time monitoring for emergency response. Related records: RIPE RIS, RouteViews and CAIDA AS relationships are its data sources and companions, IODA uses it for outage detection, and C-BGP can replay its routes.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for platform:digital.internet_exchange:cloud_service",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://bgpstream.caida.org/",
+  "hosted_models": [],
+  "id": "platform-bgpstream",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "interoperability": [
+    "MRT",
+    "RouteViews and RIPE RIS archives",
+    "Kafka real-time streams"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-07",
+  "licence": "BSD-2-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BGPStream",
+  "notes": "README and LICENSE read from GitHub on 2026-09-26; licence text has the two BSD clauses (BSD-2-Clause). Filter list and Kafka streams from recall of the website documentation. platform_kind cloud_service follows the recall cell; it is a software framework plus data broker service.",
+  "open_source": true,
+  "platform_kind": [
+    "cloud_service"
+  ],
+  "provider": "CAIDA, UC San Diego",
+  "related_ids": [],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "cascading_failure",
+    "network_flow",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README, LICENSE, tags",
+      "url": "https://github.com/CAIDA/libbgpstream"
+    }
+  ],
+  "supported_sectors": [
+    "digital.internet_exchange"
+  ],
+  "tags": [
+    "BGP",
+    "routing data",
+    "MRT",
+    "real-time monitoring",
+    "CAIDA"
+  ],
+  "title_en": "Bgpstream c library and command-line tool",
+  "type": "platform"
+}

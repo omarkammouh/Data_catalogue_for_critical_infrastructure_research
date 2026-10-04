@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/trainhack/traingraph"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "traingraph openstreetmap railway graph extraction",
+    "repo": "github.com/trainhack/traingraph",
+    "url": "https://github.com/trainhack/traingraph"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "traingraph is a bundle of tools for extracting railway data from an OpenStreetMap dump and loading it into a PostgreSQL and PostGIS database as an abstract graph of nodes and edges. Step-by-step instructions build the database, Python scripts assemble paths and line strings, and a route finder returns the shortest path between two stations or coordinates as KML; the README points to a SQL dump built this way for the whole European rail network. It was written by the trainhack community on GitHub. Coverage: any area in the OSM dump; the prepared dump covers Europe. Access: source on GitHub; licence and cost: free to read, with no licence file found, so reuse terms are unclear. Caveats, stated in the README: stations are not graph nodes, so points within 80 m are patched in; depots, sidings and double tracks remain as separate edges; and the shortest path may not be a path a train could run, such as reversing at a Y junction. The code is old and unmaintained. It prepares rail network topology for network flow and cascading failure studies and builds on the OpenStreetMap and OpenRailwayMap data catalogued here.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "OpenStreetMap railway infrastructure extract Europe signals tracks dataset analysis tool",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://github.com/trainhack/traingraph",
+  "id": "platform-traingraph-osm-railway-graph",
+  "interfaces": [
+    "code_library",
+    "file_exchange"
+  ],
+  "interoperability": [
+    "OpenStreetMap dumps",
+    "PostGIS",
+    "KML route output"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated in the repository (no licence file found)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "traingraph, OpenStreetMap railway graph extraction",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "trainhack (GitHub organisation, hack event project)",
+  "related_ids": [
+    "data-openrailwaymap",
+    "data-openstreetmap"
+  ],
+  "sectors": [
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: OSM railway extraction into PostGIS graph; European SQL dump; route finder with KML; limitations on stations, sidings, double track and shortest paths; no licence file found",
+      "url": "https://raw.githubusercontent.com/trainhack/traingraph/master/README.md"
+    }
+  ],
+  "supported_sectors": [
+    "transport.rail"
+  ],
+  "tags": [
+    "railway network",
+    "OpenStreetMap",
+    "PostGIS",
+    "graph",
+    "r2-fresh-transport"
+  ],
+  "title_en": "Traingraph for railway data extraction",
+  "type": "platform"
+}

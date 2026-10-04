@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "Paper (arXiv)",
+      "url": "https://arxiv.org/abs/2112.12071"
+    },
+    {
+      "kind": "repo",
+      "label": "Population generation code",
+      "url": "https://github.com/matsim-melbourne/demand"
+    },
+    {
+      "kind": "repo",
+      "label": "Network generation code",
+      "url": "https://github.com/matsim-melbourne/network"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "atom activity based and agent based transport model of melbourne matsim melbourne",
+    "url": "https://arxiv.org/abs/2112.12071"
+  },
+  "description": "AToM (Activity-based and agent-based Transport model of Melbourne) is an open workflow for building a multi-modal agent-based and activity-based MATSim transport simulation of Greater Melbourne, with a detailed representation of walking and cycling alongside driving and public transport, and with mode choice calibrated for those four modes. Its synthetic population represents Melbourne's population from the 2016 Census, with daily activities and trips drawn from the Victorian travel survey (VISTA 2016-18), and its road network includes all public roads usable by the modelled modes, with active transport attributes. The authors compared outputs with observed mode shares, road volumes, travel times and distances. The code is published by RMIT University in the matsim-melbourne GitHub repositories: population generation in R (demand) and network generation in R with GDAL (network), both under the MIT licence. Coverage is regional (Greater Melbourne). Caveats: the population is a synthetic sample based on 2016 data, input data must be downloaded by the user following each repository's instructions, and running the simulation needs MATSim. The model supports agent-based studies of mode choice, road usage and network flow, and capacity planning for active transport infrastructure. It builds on MATSim.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "activity-based agent-based transport model Melbourne",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://arxiv.org/abs/2112.12071",
+  "id": "model-atom-melbourne-matsim",
+  "inputs": [
+    "census population",
+    "household travel survey (VISTA)",
+    "road network with active transport attributes"
+  ],
+  "language": [
+    "r",
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-07-26",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "agent_based"
+  ],
+  "name": "AToM activity-based and agent-based transport model of Melbourne (MATSim Melbourne)",
+  "outputs": [
+    "synthetic population and activity plans",
+    "MATSim network",
+    "simulated mode shares",
+    "road volumes and travel times"
+  ],
+  "provider": "RMIT University (MATSim Melbourne project)",
+  "related_ids": [
+    "model-matsim"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "transport.road",
+    "transport.active_mobility",
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "open workflow; four modes; mode choice calibration; Census 2016 and VISTA 2016-18; all public roads; comparison with mode share, road volume, travel time, distance",
+      "url": "https://arxiv.org/abs/2112.12071"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MATSim population for Melbourne from ABS 2016 census and VISTA-like activities; R with renv",
+      "url": "https://raw.githubusercontent.com/matsim-melbourne/demand/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "road network for active transport simulation models such as MATSim; R 4.2+ and GDAL; Jafari et al. 2022",
+      "url": "https://raw.githubusercontent.com/matsim-melbourne/network/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License, copyright 2023 RMIT University (same in demand repository)",
+      "url": "https://raw.githubusercontent.com/matsim-melbourne/network/master/LICENSE"
+    }
+  ],
+  "tags": [
+    "MATSim",
+    "Melbourne",
+    "active transport",
+    "walking",
+    "cycling",
+    "synthetic population"
+  ],
+  "title_en": "AToM activity-based and agent-based transport model of Melbourne (MATSim Melbourne)",
+  "type": "model",
+  "validated_on": [
+    "observed mode share",
+    "road volume",
+    "travel time and distance in Melbourne"
+  ]
+}

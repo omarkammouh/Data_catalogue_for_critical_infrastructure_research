@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "LMS public database files",
+      "url": "https://enterpriseefiling.fcc.gov/dataentry/public/tv/lmsDatabase.html"
+    },
+    {
+      "kind": "download",
+      "label": "CDBS public files (archive)",
+      "url": "https://transition.fcc.gov/Bureaus/MB/Databases/cdbs/filesizeCDBS.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Media Bureau public databases",
+      "url": "https://www.fcc.gov/media/media-bureau-public-databases"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "catalogues_registries",
+    "equipment_specifications",
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fcc media bureau broadcast station databases lms and legacy cdbs public files",
+    "url": "https://enterpriseefiling.fcc.gov/dataentry/public/tv/lmsDatabase.html"
+  },
+  "description": "The Federal Communications Commission's Media Bureau publishes the full public contents of its broadcast licensing databases as downloadable files, giving the technical and administrative record of every licensed US television, FM and AM station. The Consolidated Database System (CDBS) was used from 1999 for broadcast applications; television moved to the Licensing and Management System (LMS) in 2014, FM in 2019 and AM in 2023, and since 1 October 2023 the CDBS files are no longer updated, so current data come from the LMS public database files. The CDBS archive is a single zip of about 177 MB, or separate zipped tables, covering applications and parties, call-sign history, facilities, engineering data, AM antenna systems and towers, antenna makes and directional patterns, elevation patterns and digital television channel assignments and allotments, with a readme, code tables and an engineering data description. The LMS files carry the equivalent current tables. Coverage: all US full-power and many low-power broadcast stations, historical and current. Format and access: pipe-delimited text tables in zip files, free, updated daily for LMS. Caveats: complex relational structure with many codes; engineering data describe authorised, not measured, operation. Simulation uses: transmitter locations, powers, heights and antenna patterns for coverage and propagation models, exposure of broadcast sites to hazards and the dependence of emergency alerting on particular stations. Related records: the FCC antenna structure registration covers towers, and the TV post-auction coverage baseline gives computed coverage.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "FCC LMS CDBS broadcast station database download TV FM AM facility data engineering records",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "plain_text"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://enterpriseefiling.fcc.gov/dataentry/public/tv/lmsDatabase.html",
+  "id": "data-fcc-lms-cdbs-broadcast-station-databases",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026",
+  "licence": "US government work; public domain",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://enterpriseefiling.fcc.gov/dataentry/public/tv/lmsDatabase.html",
+      "https://www.fcc.gov/media/media-bureau-public-databases"
+    ]
+  },
+  "maturity": "active",
+  "name": "FCC Media Bureau broadcast station databases (LMS and legacy CDBS public files)",
+  "notes": "CDBS download index read with curl on 2026-09-26 (notice, file list, size). LMS transition dates from search result summaries; www.fcc.gov refuses automated fetches, so the LMS page was not read and its daily update is assumed.",
+  "provider": "US Federal Communications Commission, Media Bureau",
+  "related_ids": [
+    "data-acma-licensed-broadcasting-transmitter-data",
+    "data-nab-woods-poole-broadcast-economic-impact-study-2024"
+  ],
+  "schema_summary": "facilities, applications, parties, call signs, engineering data (power, height, coordinates), antenna systems and patterns, towers, DTV channel data",
+  "sectors": [
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "size": "about 177 MB zipped (CDBS)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "download index",
+      "url": "https://transition.fcc.gov/Bureaus/MB/Databases/cdbs/filesizeCDBS.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result: transition dates",
+      "url": "https://www.fcc.gov/media/radio/cdbs-database-public-files"
+    }
+  ],
+  "spatial_resolution": "transmitter site",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "broadcast licensing",
+    "FCC",
+    "TV stations",
+    "FM stations",
+    "antenna patterns"
+  ],
+  "temporal_coverage": "1999 to 2023 (CDBS); current (LMS)",
+  "temporal_resolution": "per application and facility",
+  "temporal_resolution_class": "event",
+  "title_en": "FCC Media Bureau broadcast station databases (LMS and legacy CDBS public files)",
+  "type": "data",
+  "update_frequency": "daily"
+}

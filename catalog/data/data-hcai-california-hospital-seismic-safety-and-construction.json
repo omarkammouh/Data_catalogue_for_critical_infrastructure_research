@@ -1,0 +1,155 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Seismic ratings and collapse probabilities (CSV and data dictionary)",
+      "url": "https://data.chhs.ca.gov/dataset/seismic-ratings-and-collapse-probabilities-of-california-hospitals"
+    },
+    {
+      "kind": "download",
+      "label": "Seismic compliance data by county for general acute care hospitals (CSV)",
+      "url": "https://data.chhs.ca.gov/dataset/seismic-compliance-data-by-county-for-general-acute-care-hospitals"
+    },
+    {
+      "kind": "download",
+      "label": "Seismic deadline extensions granted (CSV)",
+      "url": "https://data.chhs.ca.gov/dataset/seismic-deadline-extensions-granted-for-california-hospitals"
+    },
+    {
+      "kind": "download",
+      "label": "Total construction cost of healthcare projects (CSV)",
+      "url": "https://data.chhs.ca.gov/dataset/total-construction-cost-of-healthcare-projects"
+    },
+    {
+      "kind": "api",
+      "label": "CalHHS Open Data Portal CKAN API",
+      "url": "https://data.chhs.ca.gov/api/3/action/package_show?id=seismic-ratings-and-collapse-probabilities-of-california-hospitals"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "vulnerability_fragility",
+    "governance_regulation",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hcai california hospital seismic safety data building level structural and nonstructural ratings with hazus collapse probabilities county compliance deadline extensions and construction cost of healthcare projects",
+    "url": "https://data.chhs.ca.gov/dataset/seismic-ratings-and-collapse-probabilities-of-california-hospitals"
+  },
+  "description": "These open tables show how well each California hospital building would stand up to a strong earthquake, and how much hospital construction is under way. They are published by the Department of Health Care Access and Information, which enforces the state's hospital seismic safety law. The main file lists 4,694 buildings on 423 general acute care hospital campuses, each with its structural performance category from SPC 1 (significant collapse risk) to SPC 5, the probability of collapse estimated with HAZUS in 2007 and 2010, a nonstructural category for anchorage of equipment and systems, its status and the facility coordinates. Companion tables give county compliance with the 2020 and 2030 deadlines, the deadline extensions granted by statute, and biweekly totals of healthcare construction projects and their cost by county since September 2013. The data are free and available to download as CSV with data dictionaries or through the CKAN API. Caveats: no licence is named on the dataset pages, coordinates are for the facility, not each building, many ancillary structures carry no rating, and collapse probabilities come from 2007 and 2010 assessments. Simulation uses: scenario earthquake loss and bed-loss estimates for California hospitals, prioritising retrofit, and tracking how the hospital stock changes over time. Related records: the HCAI hospital utilization and financial data (data-hcai-hospital-utilization-and-financial) share the same facility identifiers.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hand-off to the services piece (integrator list handoffs/services.csv): California HCAI total construction cost of healthcare projects and seismic data",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "archive"
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "earthquake"
+  ],
+  "homepage": "https://data.chhs.ca.gov/dataset/seismic-ratings-and-collapse-probabilities-of-california-hospitals",
+  "id": "data-hcai-california-hospital-seismic-safety-and-construction",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-18",
+  "licence": "not stated (CHHS portal: 'No License Provided'; use subject to the CHHS Terms of Use, commercial uses need approval)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "HCAI California hospital seismic safety data: building-level structural and nonstructural ratings with HAZUS collapse probabilities, county compliance, deadline extensions, and construction cost of healthcare projects",
+  "provider": "California Department of Health Care Access and Information (HCAI, formerly OSHPD), Office of Statewide Hospital Planning and Development",
+  "regions": [
+    "California"
+  ],
+  "related_ids": [
+    "data-hcai-hospital-utilization-and-financial",
+    "data-hcai-california-emergency-department-capacity-and-encounters"
+  ],
+  "schema_summary": "Ratings file: County Code, Perm ID, Facility Name, City, Building Nbr, Building Name, Building Status, SPC Rating (1 to 5), 2007 and 2010 Hazus Score (probability of collapse, %), HCAI NPC Rating, AB 1882 Notice, Latitude, Longitude; extensions file adds the SPC and NPC extension columns by statute; county compliance file counts facilities, buildings and SPC 1, 2 and 3 to 5 buildings and facilities meeting the 2020 and 2030 requirements; construction file: County, Data Generation Date, project status, Total Costs, Number of Projects",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "CKAN search: seismic ratings and collapse probabilities (SPC and NPC ratings of all general acute care hospitals with probability of collapse in a significant earthquake from HAZUS), seismic compliance by county, and seismic deadline extensions granted; each with CSV, data dictionary and ZIP, modified 2026-09-18, no licence named",
+      "url": "https://data.chhs.ca.gov/api/3/action/package_search?q=seismic+compliance"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: 4,694 building rows across 423 facility ids; SPC values include 1 to 5 with s and D suffixes and N/A; building statuses include in service, proposed and under construction; columns as in the schema summary",
+      "url": "https://data.chhs.ca.gov/dataset/257fb4cd-7687-41b5-8ae9-0bc6e29aa28e/resource/8f804127-40f0-4b25-b303-982956c19b73/download/ca-hcai-seismic-ratings-and-collapse-probabilities-09172026.csv"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Data dictionary: SPC 1 significant risk of collapse to SPC 5 reasonably capable of providing services after a strong earthquake; HAZUS probability of collapse as a percentage; NPC rates anchorage and bracing of architectural, mechanical and electrical systems and equipment",
+      "url": "https://data.chhs.ca.gov/dataset/257fb4cd-7687-41b5-8ae9-0bc6e29aa28e/resource/c075b694-aa9c-4ed1-8991-a06099db16b1/download/datadictionary-seismic-ratings-and-collapse-probabilities.csv"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Total dollar value and number of projects in review, pending construction, under construction or in closure, aggregated by county once every two weeks since September 2013; CSV, dictionary and ZIP",
+      "url": "https://data.chhs.ca.gov/api/3/action/package_show?id=total-construction-cost-of-healthcare-projects"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated (CHHS portal: 'No License Provided'; use subject to the CHHS Terms of Use, commercial uses need approval) (basis: data.chhs.ca.gov dataset page)",
+      "url": "https://data.chhs.ca.gov/api/3/action/package_show?id=seismic-ratings-and-collapse-probabilities-of-california-hospitals"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://data.chhs.ca.gov/dataset/seismic-ratings-and-collapse-probabilities-of-california-hospitals"
+    }
+  ],
+  "spatial_resolution": "Hospital building (facility coordinates); county for compliance and construction totals",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospitals",
+    "seismic safety",
+    "collapse probability",
+    "HAZUS",
+    "SPC",
+    "NPC",
+    "California",
+    "construction"
+  ],
+  "temporal_coverage": "Current ratings; construction totals every two weeks since September 2013",
+  "temporal_resolution": "Snapshot (ratings); biweekly (construction)",
+  "temporal_resolution_class": "weekly",
+  "title_en": "HCAI California hospital seismic safety data: building-level structural and nonstructural ratings with HAZUS collapse probabilities, county compliance, deadline extensions, and construction cost of healthcare projects",
+  "type": "data",
+  "update_frequency": "irregular"
+}

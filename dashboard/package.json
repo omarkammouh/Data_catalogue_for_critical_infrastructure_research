@@ -1,0 +1,17 @@
+{
+  "name": "infrastructure-catalogue-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static, self-contained dashboard for the infrastructure simulation resource catalogue",
+  "scripts": {
+    "build": "python3 build.py",
+    "build:fixture": "python3 build.py --project tests/fixtures --out dist-test/index.html --date 2026-09-24 --allow-missing-pycountry",
+    "test": "npm run build:fixture && node tests/check_i18n.js dist-test/bundle.json && playwright test -c tests/playwright.config.js",
+    "test:props": "npm run build:fixture && python3 tests/test_filter_props.py --bundle dist-test/bundle.json",
+    "test:full": "node tests/full_catalogue.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.0",
+    "axe-core": "^4.13.0"
+  }
+}

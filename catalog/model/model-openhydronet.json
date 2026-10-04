@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/google-research/flood-forecasting"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/google-research/flood-forecasting/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Nearing et al. (2024). Global prediction of extreme floods in ungauged watersheds. https://doi.org/10.1038/s41586-024-07145-1. Current missing-input architecture: Gauch et al. (2025), https://hess.copernicus.org/articles/29/6221/2025/.",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openhydronet riverine flood forecasting",
+    "repo": "github.com/google-research/flood-forecasting",
+    "url": "https://github.com/google-research/flood-forecasting"
+  },
+  "description": "OpenHydroNet is Google Research's open implementation of the riverine forecasting architectures used in Google FloodHub. It extends NeuralHydrology with forecast-sequence models, including a masked mean-embedding LSTM and an earlier state-handoff LSTM. Inputs are catchment attributes, weather forcing, streamflow training targets and model configuration; outputs are discharge forecasts and evaluation metrics. The documented application is global river forecasting, while a trained configuration determines catchment coverage and forecast steps. Source is free under Apache-2.0, with training and evaluation instructions. External forcing and training datasets have separate terms. A limitation is that the repository is not an officially supported Google product, and local accuracy requires evaluation, especially where inputs are missing. Discharge forecasts can inform flood-risk analysis for water and transport assets; they are not inundation-depth maps. NeuralHydrology (platform-neuralhydrology) is the related parent software. No training data or checkpoint was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "google-research/flood-forecasting linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://github.com/google-research/flood-forecasting",
+  "id": "model-openhydronet",
+  "inputs": [
+    "Catchment attributes and weather forcing",
+    "Streamflow training targets and model configuration"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "OpenHydroNet riverine flood forecasting",
+  "notes": "G7 G7-0870. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Discharge forecasts",
+    "Forecast evaluation metrics"
+  ],
+  "provider": "Google Research",
+  "related_ids": [],
+  "repository": "https://github.com/google-research/flood-forecasting",
+  "sectors": [
+    "water.dams_flood_defences",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for google-research/flood-forecasting: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/google-research/flood-forecasting"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/google-research/flood-forecasting/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Statistical model for dams and flood defences and green and blue infrastructure",
+  "type": "model"
+}

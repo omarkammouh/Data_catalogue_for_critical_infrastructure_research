@@ -1,0 +1,140 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Hazus Python package",
+      "url": "https://github.com/nhrap-hazus/hazus"
+    },
+    {
+      "kind": "portal",
+      "label": "FEMA Map Service Center (download)",
+      "url": "https://msc.fema.gov/portal/resources/download"
+    },
+    {
+      "kind": "docs",
+      "label": "Hazus program page",
+      "url": "https://www.fema.gov/flood-maps/products-tools/hazus"
+    },
+    {
+      "kind": "docs",
+      "label": "Hazus documentation",
+      "url": "https://www.fema.gov/flood-maps/tools-resources/flood-map-products/hazus/documentation"
+    }
+  ],
+  "access_note": "Hazus runs inside Esri ArcGIS Pro, which must be licensed separately.",
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hazus fema natural hazard loss estimation",
+    "repo": "github.com/nhrap-hazus/hazus",
+    "url": "https://fema.gov/flood-maps/products-tools/hazus"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "Hazus is FEMA's program of software, data, methods and guidance for estimating risk from natural hazards. Its GIS-based desktop application, built on Esri ArcGIS Pro, contains flood, earthquake and hurricane models that estimate building damage, economic losses, displaced households, casualties, debris generation and other impacts of an event, using inventory information on buildings, infrastructure and population; FEMA supplies baseline inventory databases for every US state and territory. It is produced by FEMA so that emergency managers, planners and researchers can map potential impacts, communicate risk and support hazard mitigation planning by state, local, tribal and territorial governments. Coverage is the United States and its territories. The current release is Hazus 7.2, compatible with ArcGIS Pro 3.4 to 3.6, and Hazus 6.1 was withdrawn on 3 March 2026. The software and state databases are downloaded from the FEMA Map Service Center, with a user guide, documentation, training and email support; a separate open-source Hazus Python package under GPL v3 exposes some methods. Caveats: it needs a licensed ArcGIS Pro, the default inventories are generalised, and loss estimates carry large uncertainty. It serves hazard exposure, loss estimation, resilience and emergency response planning across buildings, lifelines and transport; related records are IN-CORE, OpenQuake, Delft-FIAT and USGS ComCat.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "natural hazard loss estimation software FEMA",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "earthquake",
+    "storm_wind",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://www.fema.gov/flood-maps/products-tools/hazus",
+  "hosted_models": [
+    "Hazus flood model",
+    "Hazus earthquake model",
+    "Hazus hurricane model"
+  ],
+  "id": "platform-hazus",
+  "interfaces": [
+    "desktop_gui"
+  ],
+  "interoperability": [
+    "Esri ArcGIS Pro geodatabases"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-08-04",
+  "licence": "Free US Government software (requires a commercial ArcGIS Pro licence); Python package GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.fema.gov/flood-maps/products-tools/hazus",
+      "https://www.fema.gov/flood-maps/tools-resources/flood-map-products/hazus/documentation"
+    ]
+  },
+  "maturity": "stale",
+  "name": "Hazus (FEMA natural hazard loss estimation)",
+  "notes": "The no-cost status and the MSC download URL are recalled; the FEMA page read on 2026-09-26 did not state the cost. The Python package README (read the same day) says it is in its infancy.",
+  "open_source": false,
+  "platform_kind": [
+    "modelling_suite",
+    "gis_environment"
+  ],
+  "provider": "US Federal Emergency Management Agency (FEMA)",
+  "related_ids": [],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "built_environment.buildings",
+    "built_environment.critical_facilities",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "program description, ArcGIS Pro base, Hazus 7.2 and ArcGIS Pro 3.4-3.6, 6.1 withdrawn 2026-03-03, outputs, users, state databases from MSC, support email (read with WebFetch; direct fetch blocked 403)",
+      "url": "https://www.fema.gov/flood-maps/products-tools/hazus"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "open-source Hazus Python package, GPL v3, not-for-profit use",
+      "url": "https://raw.githubusercontent.com/nhrap-hazus/hazus/master/README.md"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings",
+    "built_environment.critical_facilities",
+    "transport.road",
+    "energy.electricity",
+    "water.drinking_water"
+  ],
+  "tags": [
+    "loss estimation",
+    "FEMA",
+    "multi-hazard",
+    "ArcGIS",
+    "mitigation planning"
+  ],
+  "title_en": "Estimating risk from natural hazards",
+  "type": "platform"
+}

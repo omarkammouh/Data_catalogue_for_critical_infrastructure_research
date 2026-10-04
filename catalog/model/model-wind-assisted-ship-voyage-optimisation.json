@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Code and data (Mendeley Data)",
+      "url": "https://doi.org/10.17632/5ss54b9bwh"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (Ocean Engineering)",
+      "url": "https://doi.org/10.1016/j.oceaneng.2023.116065"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.17632/5ss54b9bwh",
+    "name": "wind assisted ship voyage optimisation model mason et al university of manchester",
+    "url": "doi:10.17632/5ss54b9bwh"
+  },
+  "description": "This Python model quantifies how voyage optimisation interacts with wind propulsion to cut fuel use and carbon emissions of ships. It splits simulations by month, route, ship type (wind-assisted with four Flettner rotors, or a reference ship without rotors) and simulation type (great-circle route or optimised voyage); loads ERA-Interim wind components filtered with GSHHS coastlines; builds a great-circle grid or a three-dimensional spatial grid; and uses a dynamic programming algorithm with land avoidance and NOAA ocean current data to compute fuel consumption on the outbound and return legs for every arrival time, then the saving of the wind-assisted ship relative to the reference at 12 knots. Panamax ship performance files for speeds of 8 to 13 knots and the results and figure data in Excel come with the code. It was published by James Mason at the University of Manchester with the Ocean Engineering paper by Mason, Larkin, Bullock, van der Kolk and Broderick (December 2023). The model applies to global shipping routes at voyage scale. Code and data are free on Mendeley Data under CC BY 4.0 (four versions from August 2022). Caveats: ship performance is given for one Panamax design, and the code is research software without packaging. The model supports optimisation of ship routing and speed and climate adaptation of shipping operations to wind conditions, alongside ship routing tools such as searoute, catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid emissions",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://doi.org/10.17632/5ss54b9bwh",
+  "id": "model-wind-assisted-ship-voyage-optimisation",
+  "inputs": [
+    "ERA-Interim wind fields",
+    "GSHHS coastlines",
+    "NOAA ocean currents",
+    "ship performance tables",
+    "routes and arrival times"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-12-28",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical",
+    "optimisation"
+  ],
+  "name": "Wind-assisted ship voyage optimisation model (Mason et al., University of Manchester)",
+  "outputs": [
+    "fuel consumption per voyage",
+    "fuel savings of wind-assisted ships",
+    "optimised routes"
+  ],
+  "provider": "The University of Manchester (James Mason and colleagues)",
+  "related_ids": [
+    "model-searoute"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "publisher The University of Manchester; creator James Mason; CC BY 4.0; issued 2022-08-08; data availability description (model steps, ERA-Interim, GSHHS, NOAA currents, dynamic programming, Panamax 8-13 knots, four Flettner rotors, results in Excel)",
+      "url": "https://api.datacite.org/dois/10.17632/5ss54b9bwh.4"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Ocean Engineering, December 2023, doi 10.1016/j.oceaneng.2023.116065; authors Mason, Larkin, Bullock, van der Kolk, Broderick",
+      "url": "https://api.crossref.org/works?query.title=Quantifying+voyage+optimisation+with+wind+propulsion"
+    }
+  ],
+  "tags": [
+    "wind propulsion",
+    "Flettner rotors",
+    "voyage optimisation",
+    "shipping emissions",
+    "dynamic programming"
+  ],
+  "title_en": "Wind-assisted ship voyage optimisation model (Mason et al., University of Manchester)",
+  "type": "model",
+  "validated_on": []
+}

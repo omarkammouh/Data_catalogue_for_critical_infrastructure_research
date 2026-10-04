@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "SSMD project page (FEIN Aachen)",
+      "url": "https://www.fein-aachen.org/en/projects/ssmd/"
+    },
+    {
+      "kind": "repo",
+      "label": "SSMD source code (RWTH GitLab)",
+      "url": "https://git.rwth-aachen.de/acs/public/simulation/ssmd"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ssmd state space linear model for distribution grids matlab",
+    "repo": "git.rwth-aachen.de/acs/public/simulation/ssmd",
+    "url": "https://fein-aachen.org/en/projects/ssmd"
+  },
+  "description": "SSMD (a state-space linear model for distribution grids) is MATLAB code from the Institute for Automation of Complex Power Systems at the E.ON Energy Research Center, RWTH Aachen University. The FEIN Aachen project page says it generates the state-space A and B matrices of electrical distribution grids, including inverters, loads and lines, with the slack bus chosen according to the grid type (conventional grid or microgrid). The matrices can be used for time simulations with user-defined inputs, disturbances, time step and duration, and a script reproduces the tests of the accompanying paper by Angioni, De Din, Ponci and Monti. Coverage: any distribution grid that the user describes. Format and access: MATLAB code on the RWTH Aachen public GitLab server, which answered the cloud with a bot check, so the repository was not read. Licence: GNU General Public License v3.0, with other licensing on request (project page); copyright 2018. Caveats: the page lists the paper as under review, and activity dates were not read. Simulation uses: small-signal and time-domain studies of inverter-rich distribution grids and microgrids. Related records: PV generator (model-rwth-pv-generator-realistic-pv-profiles), from the same institute, produces PV injection profiles for distribution grid simulations.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source gpst-open-tools: provider pages read (round 2 register piece)",
+      "route": "R06",
+      "source": "gpst-open-tools"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.fein-aachen.org/en/projects/ssmd/",
+  "id": "model-ssmd-state-space-linear-distribution-grid",
+  "inputs": [
+    "distribution grid lines, loads and inverters",
+    "slack bus choice",
+    "disturbances and simulation settings"
+  ],
+  "language": [
+    "matlab"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "not_stated",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "SSMD: state-space linear model for distribution grids (MATLAB)",
+  "outputs": [
+    "state-space A and B matrices",
+    "time-domain responses"
+  ],
+  "provider": "Institute for Automation of Complex Power Systems (ACS), RWTH Aachen University",
+  "related_ids": [
+    "model-rwth-pv-generator-realistic-pv-profiles"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "A and B matrices; inverter, loads, lines; slack bus; GPLv3; copyright 2018; paper under review",
+      "url": "https://www.fein-aachen.org/en/projects/ssmd/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Distribution modelling; RWTH Aachen; GPL-3.0; MATLAB",
+      "url": "https://opentools.globalpst.org/tools/ssmd"
+    }
+  ],
+  "tags": [
+    "state-space",
+    "microgrid",
+    "inverter",
+    "distribution grid",
+    "small-signal"
+  ],
+  "title_en": "SSMD: state-space linear model for distribution grids (MATLAB)",
+  "type": "model"
+}

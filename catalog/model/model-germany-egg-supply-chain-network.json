@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "FSKX model file (Zenodo)",
+      "url": "https://zenodo.org/records/5726216"
+    },
+    {
+      "kind": "portal",
+      "label": "Earlier FSKX software record with data cube (Zenodo, CC BY-NC 4.0)",
+      "url": "https://zenodo.org/records/6559800"
+    },
+    {
+      "kind": "paper",
+      "label": "Food Modelling Journal article (2021)",
+      "url": "https://doi.org/10.3897/fmj.2.74171"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.3897/fmj.2.74171.suppl1",
+    "name": "egg supply chain network model for germany fskx model object bfr",
+    "url": "doi:10.3897/fmj.2.74171"
+  },
+  "description": "This model estimates how chicken eggs move from farms through packing and processing to consumers across Germany's districts, so that the spread of a contaminated batch or a disruption in supply can be traced. The producers are Petra Ganas, Marcel Fuhrmann and Matthias Filter of the German Federal Institute for Risk Assessment, who published it in the Food Modelling Journal in 2021. It is a supply chain network model: the user chooses a type of actor in the chain as input, and the model returns estimated egg flows between NUTS-3 districts as a table together with a choropleth map of quantities. Coverage is Germany at district level. The model, its data and annotations are packaged as a single file following the Food Safety Knowledge Exchange (FSKX) standard, available as a free download from Zenodo under a CC0 public domain dedication, and it can run in the desktop FSK-Lab software or online. Caveats: flows are modelled from aggregate statistics, not observed shipments, it covers one commodity, and it needs the FSK tools to open. Simulation uses: tracing food safety incidents, estimating which regions depend on which producers, and testing supply disruption scenarios in food network models. Related records: the food shock trade model (model-global-food-shock-trade) works at international scale.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "egg supply chain network model Germany",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://doi.org/10.3897/fmj.2.74171",
+  "id": "model-germany-egg-supply-chain-network",
+  "inputs": [
+    "Selected supply chain actor (the model's input parameter)",
+    "Egg production, processing, trade and consumption data bundled in the FSKX file"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-05-20",
+  "licence": "CC0 1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "model_kind": [
+    "network"
+  ],
+  "name": "Egg supply chain network model for Germany (FSKX model object, BfR)",
+  "outputs": [
+    "Data frame of estimated chicken egg flows between German NUTS-3 districts",
+    "Choropleth map of product quantities"
+  ],
+  "provider": "Petra Ganas, Marcel Fuhrmann and Matthias Filter (German Federal Institute for Risk Assessment, BfR)",
+  "related_ids": [
+    "model-global-food-shock-trade"
+  ],
+  "runs_on": [
+    "FSK-Lab desktop software",
+    "FSK-Web online execution"
+  ],
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Supplementary material 1 of Ganas, Fuhrmann, Filter (2021) 'A network model of the egg supply chain in Germany implemented as a FSKX compliant object', Food Modelling Journal 2: e74171; creators at BfR, Berlin; CC0; published 2021-11-25; one file oo_604366.fskx (6.5 MB); model name ChickenEgg-SCNM",
+      "url": "https://zenodo.org/api/records/5726216"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Crossref abstract: predicts and visualises spatial commodity flow in the German egg supply chain; user selects the input parameter 'actor' to simulate supply chain scenarios; output is a data frame of chicken egg flows at NUTS-3 level and a choropleth map; provided as an annotated FSKX file that runs online or in the desktop FSK-Lab software; published 2021-11-17",
+      "url": "https://api.crossref.org/works/10.3897/fmj.2.74171"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Software record 'Predicting and visualising the egg supply chain network in Germany' by Ganas, Fuhrmann, Filter (BfR); CC BY-NC 4.0; published 2020-07-29, updated 2022-05-20; one FSKX file (43 MB); outputs NUTS-3 egg flow data frame and choropleth map; data from the modelled egg supply chain network data cube and Eurostat NUTS geodata",
+      "url": "https://zenodo.org/api/records/6559800"
+    }
+  ],
+  "tags": [
+    "egg supply chain",
+    "food flows",
+    "NUTS-3",
+    "FSKX",
+    "food safety",
+    "Germany"
+  ],
+  "title_en": "Egg supply chain network model for Germany (FSKX model object, BfR)",
+  "type": "model",
+  "validated_on": [
+    "Described in the Food Modelling Journal article"
+  ]
+}

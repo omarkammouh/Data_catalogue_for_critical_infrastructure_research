@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "RouteE page",
+      "url": "https://www.nlr.gov/transportation/route-energy-prediction-model"
+    },
+    {
+      "kind": "repo",
+      "label": "RouteE Powertrain",
+      "url": "https://github.com/NREL/routee-powertrain"
+    },
+    {
+      "kind": "repo",
+      "label": "RouteE Compass",
+      "url": "https://github.com/NREL/routee-compass"
+    },
+    {
+      "kind": "api",
+      "label": "RouteE API docs",
+      "url": "https://developer.nlr.gov/docs/transportation/routee-v3/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nlr routee powertrain and compass vehicle energy prediction over road links and energy aware routing",
+    "repo": "github.com/nrel/routee-powertrain",
+    "url": "https://nlr.gov/transportation/route-energy-prediction-model"
+  },
+  "description": "RouteE is the National Laboratory of the Rockies (formerly NREL) open source suite for vehicle energy estimation and energy-aware routing, made up of RouteE Powertrain, RouteE Compass and a simplified RouteE API. Contents: RouteE Powertrain is a Python package that predicts a vehicle's energy use over a route from congestion, speed, road type, lanes, grade and turns, with pretrained models for light-duty to heavy-duty trucks and transit buses (conventional, hybrid, battery electric and fuel cell) built from a million miles of drive-cycle data in NLR's Transportation Secure Data Center and FASTSim powertrain models; users can train their own. RouteE Compass, a Rust application with Python bindings, puts those predictions into network routing for any vehicle type. Producer: NLR Transportation and Mobility Research; the page notes a partnership with Google Maps on fuel-efficient routing launched in 2021 and work with transit and commercial fleets. Coverage: United States road networks and driving conditions. Format and access: open source code on GitHub (routee-powertrain, routee-compass) and API documentation on the NLR developer network. Licence (read on 2026-09-29): BSD-3-Clause (RouteE Powertrain and RouteE Compass). Caveats: pretrained models reflect US driving samples. Simulation uses: link-level energy costs for traffic and freight models, transit bus electrification route selection, corridor energy analysis and transit resilience planning. Related records: model-nlr-hive-highly-integrated-vehicle-ecosystem-fleet-charging-simulation and model-nlr-altrios.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source energy-nlr-models-tools: provider pages read (round 2 register piece)",
+      "route": "R06",
+      "source": "energy-nlr-models-tools"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.nlr.gov/transportation/route-energy-prediction-model",
+  "id": "model-nlr-routee-powertrain-compass-vehicle-energy-routing",
+  "inputs": [
+    "road network link attributes (speed, grade, lanes, turns)",
+    "vehicle powertrain type"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-11",
+  "licence": "BSD-3-Clause (RouteE Powertrain and RouteE Compass)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical",
+    "network"
+  ],
+  "name": "NLR RouteE (Powertrain and Compass): vehicle energy prediction over road links and energy-aware routing",
+  "outputs": [
+    "link and route energy consumption",
+    "energy-optimal routes"
+  ],
+  "provider": "National Laboratory of the Rockies (NLR, formerly NREL)",
+  "related_ids": [
+    "model-nlr-hive-highly-integrated-vehicle-ecosystem-fleet-charging-simulation",
+    "model-nlr-altrios"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.public_transit",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "page read; GitHub links routee-powertrain and routee-compass",
+      "url": "https://www.nlr.gov/transportation/route-energy-prediction-model"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Licence read by the wave 1 integrator (LICENSE files of both repositories); replaces \"open source (licence not read)\".",
+      "url": "https://github.com/NREL/routee-powertrain"
+    }
+  ],
+  "tags": [
+    "NLR",
+    "vehicle energy",
+    "eco-routing",
+    "FASTSim"
+  ],
+  "title_en": "NLR RouteE (Powertrain and Compass): vehicle energy prediction over road links and energy-aware routing",
+  "type": "model"
+}

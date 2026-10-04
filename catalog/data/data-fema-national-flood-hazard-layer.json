@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "NFHL map service (ArcGIS REST)",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer"
+    },
+    {
+      "kind": "portal",
+      "label": "Flood Map Service Center (downloads by state and county)",
+      "url": "https://msc.fema.gov/portal/advanceSearch"
+    },
+    {
+      "kind": "docs",
+      "label": "NFHL overview page",
+      "url": "https://www.fema.gov/flood-maps/national-flood-hazard-layer"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "hazards",
+    "planning_regulatory_documents"
+  ],
+  "data_kind": [
+    "raster",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fema national flood hazard layer nfhl",
+    "url": "https://fema.gov/flood-maps/national-flood-hazard-layer"
+  },
+  "description": "The National Flood Hazard Layer is FEMA's national compilation of digital flood hazard mapping for the United States. The public NFHL map service (version 2.9.0, NAD83 geographic coordinates) exposes 32 layers, including flood hazard zones, base flood elevations, levees, cross-sections, coastal transects and Letters of Map Revision. It is produced and maintained by FEMA. The data are available free through the FEMA Flood Map Service Center, which offers NFHL downloads by state and by county, and through the public ArcGIS REST map service; no licence is named on the pages read, and as US federal data it is generally free to reuse. Caveats: the layer shows mapped flood zones and elevations only where digital mapping is effective, not depth grids or future climate conditions, and map currency varies by county. It is the standard flood exposure layer for overlaying US infrastructure assets in hazard exposure and resilience analyses; a related record is the FEMA National Risk Index, which summarises risk by county and tract.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "FEMA National Flood Hazard Layer (handed over from another piece)",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "shapefile",
+    "esri_geodatabase",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://www.fema.gov/flood-maps/national-flood-hazard-layer",
+  "id": "data-fema-national-flood-hazard-layer",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (US federal data)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.fema.gov/flood-maps/national-flood-hazard-layer"
+    ]
+  },
+  "maturity": "active",
+  "name": "FEMA National Flood Hazard Layer (NFHL)",
+  "provider": "US Federal Emergency Management Agency (FEMA)",
+  "related_ids": [
+    "data-fema-national-risk-index"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "water.dams_flood_defences",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "NFHL MapServer current version 2.9.0; wkid 4269 NAD83; 32 layers incl. Flood Hazard Zones, Base Flood Elevations, Levees, Cross-Sections, LOMRs, Coastal Transects",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer?f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Flood Map Service Center; NFHL data by state and by county",
+      "url": "https://msc.fema.gov/portal/advanceSearch"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://msc.fema.gov/portal/advanceSearch"
+    }
+  ],
+  "tags": [
+    "flood maps",
+    "flood zones",
+    "base flood elevation",
+    "levees",
+    "United States"
+  ],
+  "temporal_coverage": "current effective flood maps, updated as revisions become effective",
+  "title_en": "FEMA National Flood Hazard Layer (NFHL)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

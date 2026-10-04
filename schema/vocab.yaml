@@ -1,0 +1,254 @@
+# Machine-readable vocabularies for the catalogue.
+# schema.md documents these; pipeline/validate.py checks that the two agree.
+# Every list is open: add a value here (with a one-line note) before using it in a record.
+# Added values are logged in docs/paper/decisions.md.
+
+version: 1
+updated: 2026-09-24
+
+types:
+  data: Datasets, information sources and documents describing infrastructure assets, networks, demand, hazards, vulnerability, performance and context
+  model: Existing analytical, numerical, statistical or agent-based models of infrastructure behaviour, published as code, packaged software or documented methods
+  platform: Simulation engines, co-simulation and coupling frameworks, digital-twin environments and modelling suites that host or run models
+  case_study: Documented real-world applications to infrastructure, such as a city's flood adaptation project, a national transport model in use or a resilience testbed, with place, purpose, hazards, outcome and the data, models and platforms used (added 2026-09-24, user decision)
+
+sectors:
+  energy:
+    label: Energy
+    sectors:
+      electricity: Generation, transmission, distribution, storage and markets
+      gas_hydrogen: Natural gas and hydrogen production, pipelines, storage, LNG terminals
+      oil_fuels: Oil and liquid fuels, refineries, pipelines, depots, filling stations
+      district_heating_cooling: District heating and cooling networks
+      nuclear: Nuclear facilities and fuel cycle
+  water:
+    label: Water
+    sectors:
+      drinking_water: Drinking water supply and treatment
+      wastewater: Wastewater and sewerage
+      stormwater_drainage: Stormwater and urban drainage
+      irrigation: Irrigation and agricultural water
+      dams_flood_defences: Dams, reservoirs, levees and flood defences
+  transport:
+    label: Transport
+    sectors:
+      road: Roads, bridges and tunnels
+      rail: Heavy rail, high speed, freight, urban rail and metro
+      public_transit: Bus, tram, ferries and other public transport
+      aviation: Airports and air navigation
+      maritime_ports: Ports and shipping
+      inland_waterways: Rivers and canals as transport
+      pipelines: Pipelines as a transport mode
+      active_mobility: Walking, cycling and micromobility networks
+      logistics_freight: Logistics hubs and freight terminals
+  digital:
+    label: Digital and communications
+    sectors:
+      telecom: Fixed, mobile, fibre backbone, submarine cables
+      data_centres: Data centres and cloud regions
+      satellite_positioning: Satellite communications and positioning systems
+      broadcasting: Broadcasting
+      internet_exchange: Internet exchange and routing infrastructure
+  built_environment:
+    label: Built environment
+    sectors:
+      buildings: Residential, commercial and industrial building stock
+      critical_facilities: Hospitals, schools, shelters, government and other critical facilities
+      public_space: Public spaces and urban form
+  services:
+    label: Health, safety and services
+    sectors:
+      healthcare: Healthcare systems and supply
+      emergency_services: Fire, police, ambulance, civil protection
+      waste: Waste management and recycling
+      food_supply: Food supply and cold chain
+  industry:
+    label: Economic and industrial
+    sectors:
+      manufacturing_chemical: Manufacturing and chemical facilities
+      mining_materials: Mining and raw materials
+      financial: Financial services infrastructure such as payment systems
+      agriculture: Agriculture as a dependent system
+  cross_cutting:
+    label: Cross-cutting
+    sectors:
+      space: Space infrastructure
+      green_blue: Green and blue infrastructure
+      multi_sector: Interdependent multi-sector systems
+
+data_families:
+  core:
+    system_description: Asset inventories and network topologies
+    demand_operation: Load profiles, traffic counts, consumption, generation, outage records, timetables
+    hazards: Floods, earthquakes, wind, heat, wildfire, sea level, terrain, land cover
+    vulnerability_fragility: Fragility and vulnerability curves, damage functions, restoration times
+    reference_context: Population, economic activity, boundaries, building stock, standards documents
+  events_lifecycle:
+    historical_events: Records of past failures and incidents
+    recovery_restoration: Repair timelines, crew mobilisation, restoration cost
+    condition_ageing: Asset age, inspection ratings, deterioration, maintenance histories
+    interdependencies: Which assets depend on which, across sectors
+  economy_society:
+    economic_financial: Costs, tariffs, outage costs, input-output tables, insurance loss data
+    governance_regulation: Ownership, operators, regulatory regimes, standards, obligations
+    behavioural_social: Evacuation behaviour, travel surveys, energy use behaviour, mobility traces
+    social_vulnerability_equity: Vulnerability indices, demographics by access to services, energy poverty
+    health_impacts: Mortality and morbidity linked to outages, heat, water contamination
+    security_threat: Conflict data, sabotage and theft incidents, geopolitical risk indices
+  flows_services:
+    supply_chains_logistics: Fuel, spare parts, freight flows, warehouse and port throughput
+    cross_border_flows: Interconnector flows, fuel imports, freight corridors
+    service_performance: Reliability indices, water losses, on-time performance, KPIs
+    critical_facilities: Hospitals, shelters, fire stations, data centres, water treatment, fuel depots as service points
+    emergency_management: Evacuation routes, shelter capacities, response plans, mutual aid
+  physical_setting:
+    resource_potential: Solar, wind, hydro, geothermal, biomass potential
+    weather_observations: Day-to-day temperature, wind, precipitation
+    subsurface_geotechnical: Soil, groundwater, liquefaction, permafrost, subsidence
+    vegetation_land_cover: Tree canopy near assets, wildfire fuels, land cover
+    space_weather: Geomagnetic storm records and forecasts
+    environmental_impact: Emissions factors, noise, water quality, ecological constraints
+    imagery_remote_sensing: Satellite and aerial imagery, LiDAR, night-time lights
+  assets_technology:
+    equipment_specifications: Transformer ratings, pipe materials, vehicle fleets, pump curves
+    distributed_flexible_resources: Rooftop solar, batteries, EV chargers, demand response, microgrids
+    planned_future_infrastructure: Project pipelines, network development plans, permits, decommissioning
+    telecom_coverage_spectrum: Coverage maps, fibre routes, spectrum allocations
+    cyber_control: Network architectures, protocol inventories, vulnerability catalogues, SCADA datasets
+  time_futures:
+    sensor_realtime_streams: SCADA-style feeds, traffic sensors, smart meter releases, gauges
+    scenarios_projections: Climate projections, population growth, transition pathways
+    synthetic_benchmark: Synthetic grids, test networks, benchmark cases, synthetic populations
+  meta:
+    standards_ontologies: Data models, exchange formats, ontologies
+    planning_regulatory_documents: Integrated resource plans, rate cases, resilience assessments
+    catalogues_registries: Other inventories of infrastructure data and models
+    calibration_validation: Paired measured and simulated results, benchmark results
+    crowdsourced_public_reports: 311 calls, outage maps, crowdsourced incident feeds
+
+data_kinds: [asset_inventory, network_topology, time_series, raster, tabular, survey, event_record, document, stream, imagery]
+
+# discrete_event added 2026-09-26 (round 1 services piece: queueing and patient-flow simulators such as SimPy were being filed as statistical).
+model_kinds: [physical, statistical, agent_based, network, optimisation, fragility, economic, hybrid, discrete_event]
+
+# data_preparation_tool added 2026-09-26 (round 1 energy piece: PowerGenome assembles GenX inputs from EIA, EPA and NREL data).
+platform_kinds: [simulation_engine, coupling_framework, digital_twin, gis_environment, cloud_service, modelling_suite, data_preparation_tool]
+
+# Purpose of a case study (record type case_study); added 2026-09-24. Open like every list.
+case_study_kinds:
+  risk_vulnerability_assessment: Assessing exposure, vulnerability or risk of infrastructure
+  adaptation_planning: Planning and prioritising adaptation or resilience measures
+  design_retrofit: Designing, sizing or retrofitting assets and networks
+  operations_control: Operational use in running a system, including forecast-based operation
+  emergency_response_evacuation: Emergency response, evacuation and crisis management
+  post_event_analysis: Analysis of an actual past event, failure or disaster
+  recovery_restoration: Recovery and restoration planning after disruption
+  investment_appraisal: Cost-benefit analysis, investment appraisal and climate-proofing of projects
+  policy_evaluation: Evaluation of policies, regulation or programmes
+  testbed_demonstration: Testbeds, pilots and demonstrations of methods or tools
+
+# Hazards a record addresses (optional on every type, expected on case studies); added 2026-09-24. Open.
+hazard_types:
+  flood: River and surface-water flooding
+  coastal_flood_storm_surge: Coastal flooding and storm surge
+  sea_level_rise: Sea level rise and coastal erosion
+  drought: Drought and water scarcity
+  extreme_heat: Heatwaves and high temperatures
+  cold_snow_ice: Cold spells, snow and ice
+  storm_wind: Windstorms, tropical cyclones and tornadoes
+  hail: Hail and hailstorms (added 2026-09-26, round 1 cross-cutting piece)
+  wildfire: Wildfire
+  earthquake: Earthquake
+  landslide: Landslides and subsidence
+  tsunami: Tsunami
+  volcanic: Volcanic activity
+  space_weather: Space weather and geomagnetic storms
+  cyber_attack: Cyber attacks
+  physical_attack_sabotage: Physical attack, sabotage and conflict
+  pandemic: Pandemics and epidemics
+  technological_failure: Technological and cascading failures without a natural trigger
+  multi_hazard_climate_change: Several hazards or climate change in general
+
+simulation_uses: [network_flow, cascading_failure, hazard_exposure, resilience, capacity_planning, agent_based, optimisation, digital_twin, emergency_response, climate_adaptation]
+
+maturity: [active, maintained, stale, archived, unknown]
+
+cost: [free, freemium, paid, on_request]
+
+access_restrictions: [none, registration, institutional, restricted, on_request]
+
+geographic_scope: [global, continental, national, regional, city, site]
+
+continents: [africa, asia, europe, north_america, south_america, oceania, antarctica]
+
+access_link_kinds: [download, api, repo, docs, paper, portal, viewer, contact]
+
+route_families:
+  portal_api: Machine harvest of open data portal and aggregator APIs
+  doi_graph: Research data repositories and DOI relations
+  code_registry: Code hosting and package indexes
+  literature: Literature databases, citation chasing, availability statements
+  crowdsourced: Volunteered and community data
+  operator: Operators, regulators, national agencies, IGOs
+  vendor: Commercial vendors, marketplaces, procurement
+  human_curated: Curated lists, wikis, communities, conferences, media
+  recall: The assistant's own recall, verified by fetch
+
+route_classes:
+  R01: {name: Registries of registries, family: portal_api, mode: A}
+  R02: {name: Government open data portals, family: portal_api, mode: A}
+  R03: {name: Research data repositories, family: doi_graph, mode: A}
+  R04: {name: Geospatial catalogues, family: portal_api, mode: A}
+  R05: {name: Code registries, family: code_registry, mode: A}
+  R06: {name: Model registries and modelling communities, family: human_curated, mode: M}
+  R07: {name: Literature databases, family: literature, mode: A}
+  R08: {name: Standards bodies and ontologies, family: human_curated, mode: M}
+  R09: {name: Intergovernmental bodies and development banks, family: operator, mode: A}
+  R10: {name: National agencies by sector and country, family: operator, mode: M}
+  R11: {name: Operators, family: operator, mode: A}
+  R12: {name: Regulator filings and planning documents, family: operator, mode: M}
+  R13: {name: Commercial data providers, family: vendor, mode: M}
+  R14: {name: Platform and model vendors, family: vendor, mode: M}
+  R15: {name: Crowdsourced and community data, family: crowdsourced, mode: A}
+  R16: {name: Hazard and risk science portals, family: portal_api, mode: A}
+  R17: {name: Benchmark and test-case collections, family: human_curated, mode: M}
+  R18: {name: Research programmes and project outputs, family: literature, mode: A}
+  R19: {name: Conferences and workshops, family: human_curated, mode: M}
+  R20: {name: Grey literature, family: literature, mode: M}
+  R21: {name: Non-English search, family: human_curated, mode: M}
+  R22: {name: Search engines, family: human_curated, mode: M}
+  R23: {name: Social channels and data-sharing platforms, family: crowdsourced, mode: A}
+  R24: {name: Catastrophe modelling and insurance ecosystem, family: vendor, mode: M}
+  R25: {name: Digital twin and smart city initiatives, family: human_curated, mode: M}
+  R26: {name: Theses and dissertations, family: literature, mode: A}
+  R27: {name: Data marketplaces, family: vendor, mode: A}
+  R28: {name: Structured knowledge and dataset markup, family: crowdsourced, mode: A}
+  R29: {name: Regional bodies, family: operator, mode: M}
+  R30: {name: Sector data hubs, family: human_curated, mode: A}
+  R31: {name: Mandatory reporting datasets, family: operator, mode: A}
+  R32: {name: Archives and historical sources, family: human_curated, mode: M}
+  R33: {name: Teaching and reference material, family: human_curated, mode: M}
+  R34: {name: Software directories and comparison pages, family: human_curated, mode: M}
+  R35: {name: API and stream directories, family: portal_api, mode: A}
+  R36: {name: Competitions and challenges, family: human_curated, mode: M}
+  R37: {name: Format-signature search, family: code_registry, mode: A}
+  R38: {name: Dependency and usage graphs, family: code_registry, mode: A}
+  R39: {name: Researcher and group profiles, family: literature, mode: M}
+  R40: {name: Model recall then verify, family: recall, mode: M}
+  R41: {name: Procurement and tender databases, family: vendor, mode: A}
+  R42: {name: Freedom-of-information disclosure logs, family: operator, mode: M}
+  R43: {name: Endpoint pattern discovery, family: portal_api, mode: A}
+  R44: {name: Regional platforms and infrastructures, family: portal_api, mode: A}
+  R45: {name: Media and talks, family: human_curated, mode: M}
+  R46: {name: Patents, family: vendor, mode: A}
+  R47: {name: Humanitarian and informal-infrastructure mapping, family: crowdsourced, mode: A}
+  R48: {name: Curated lists and community wikis, family: human_curated, mode: M}
+  R49: {name: Mailing lists forums and newsletters, family: human_curated, mode: A}
+  R50: {name: Cyber-physical and OT-security datasets and testbeds, family: human_curated, mode: M}
+  R51: {name: Space and space-weather portals, family: portal_api, mode: A}
+
+cell_status: [unswept, in_progress, swept, saturated, verified_empty, not_applicable]
+
+coverage_prior: [high, medium, low, not_applicable]
+
+candidate_status: [new, in_review, accepted, rejected, duplicate, needs_vocab]

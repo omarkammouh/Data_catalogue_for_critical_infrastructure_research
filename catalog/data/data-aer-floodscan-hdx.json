@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "hdx_floodscan_zonal_stats.xlsx (XLSX / 16.1 MB)",
+      "note": "Direct link from the the portal's CKAN API, 2026-10-01",
+      "url": "https://data.humdata.org/dataset/b704f489-6705-499a-b5f0-22eeb1184b0b/resource/b2108171-0a17-428f-9a28-7f3f7160d8f5/download/floodscan_readme.xlsx"
+    },
+    {
+      "kind": "download",
+      "label": "aer_floodscan_300s_SFED_90d.zip (GeoTIFF / 73.5 MB)",
+      "note": "Direct link from the the portal's CKAN API, 2026-10-01",
+      "url": "https://data.humdata.org/dataset/b704f489-6705-499a-b5f0-22eeb1184b0b/resource/7e76a4ae-57bd-40e0-acf9-a67def1e7f9b/download/baseline_zipped_file.zip"
+    },
+    {
+      "kind": "portal",
+      "label": "FloodScan on HDX",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.humdata.org/dataset/floodscan"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa"
+  ],
+  "cost": "free",
+  "countries": [
+    "BF",
+    "CM",
+    "CF",
+    "TD",
+    "ET",
+    "ML",
+    "MZ",
+    "NE"
+  ],
+  "data_family": [
+    "hazards",
+    "imagery_remote_sensing",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "raster",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "aer floodscan daily flood fraction and admin level zonal statistics hdx",
+    "url": "https://data.humdata.org/dataset/floodscan"
+  },
+  "description": "FloodScan uses satellite data to map and monitor floods daily so that current conditions can be compared with historical averages. The HDX dataset has two resources: a daily table of the average FloodScan Standard Flood Extent Depiction (SFED) flood fraction, from 0 to 100 percent, for first- and second-level administrative areas, with a historical day-of-year baseline and empirically estimated return periods; and a ZIP of daily gridded flood fraction for the last 90 days at about 10 km resolution (300 arcseconds), each file holding the SFED band and a baseline band. Baselines use the last ten years of data smoothed with an 11-day centred mean. The data come from AER's FloodScan, are modified and simplified by UN OCHA, and are published on the Humanitarian Data Exchange for a group of mainly African countries, updated weekly, as downloadable XLSX and GeoTIFF files under CC BY-IGO. Caveats: the open release carries only the last 90 days of gridded data, resolution is coarse, and flood fraction is not depth. It is useful for near-real-time hazard exposure monitoring, calibrating flood frequency in resilience studies and triggering emergency response; a related record is the FAO EVE flood monitoring system.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "FloodScan (space hazards)",
+      "route": "R04",
+      "source": "hdx"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "raster"
+  ],
+  "geographic_scope": "continental",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://data.humdata.org/dataset/floodscan",
+  "id": "data-aer-floodscan-hdx",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-IGO-3.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "AER FloodScan daily flood fraction and admin-level zonal statistics (HDX)",
+  "notes": "Country list shows the first eight countries listed on HDX; the entry lists more.",
+  "provider": "Atmospheric and Environmental Research (AER), with processing by UN OCHA",
+  "related_ids": [
+    "data-fao-eve-global-flood-monitoring"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "JANUS / AER; CC BY-IGO; frequency 7; countries bfa, cmr, caf, tcd, eth, mli, moz, ner...; SFED flood fraction; 11-day smoothing; baseline last 10 years; return period empirical; zonal stats admin 1 and 2 XLSX; 90-day GeoTIFF ~10 km 300 arcsec; modified and simplified by UN OCHA",
+      "url": "https://data.humdata.org/api/3/action/package_show?id=floodscan"
+    }
+  ],
+  "tags": [
+    "FloodScan",
+    "flood fraction",
+    "SFED",
+    "satellite flood monitoring",
+    "return period",
+    "OCHA"
+  ],
+  "temporal_coverage": "rolling last 90 days (grids); daily admin statistics with 10-year baseline",
+  "title_en": "AER FloodScan daily flood fraction and admin-level zonal statistics (HDX)",
+  "type": "data",
+  "update_frequency": "weekly"
+}

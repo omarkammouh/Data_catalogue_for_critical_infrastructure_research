@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/slacgismo/StatisticalClearSky"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/slacgismo/StatisticalClearSky/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "statisticalclearsky pv baseline estimator",
+    "repo": "github.com/slacgismo/statisticalclearsky",
+    "url": "https://github.com/slacgismo/StatisticalClearSky"
+  },
+  "description": "SLAC GISMo contributors developed StatisticalClearSky, which estimates the clear-sky output of a solar photovoltaic system using measured power alone. Its repository describes a generalized low-rank model that separates a cloudless baseline from weather-related deviations. A user supplies a sufficiently long plant power time series; outputs are an estimated clear-sky profile and model diagnostics for that system. Geographic coverage is the PV site represented in the input records. The README links a published method and examples, and GitHub metadata states BSD-2-Clause licensing. A limitation is that the method assumes enough variation to identify a baseline; outages, curtailment, clipping or persistent soiling may bias it. The estimate can calibrate generation assumptions and detect performance changes in electricity-system simulations. The related catalogue ERA5 record provides weather reanalysis, which this method does not require but can be used for external checks. No plant measurements or code archive was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "slacgismo/statisticalclearsky linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/slacgismo/StatisticalClearSky",
+  "id": "model-statistical-clear-sky",
+  "inputs": [
+    "PV system measured power time series"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-07-11",
+  "licence": "BSD-2-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "StatisticalClearSky PV baseline estimator",
+  "notes": "G7 G7-1644. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Estimated clear-sky PV production baseline"
+  ],
+  "provider": "SLAC GISMo contributors",
+  "related_ids": [
+    "data-era5-reanalysis"
+  ],
+  "repository": "https://github.com/slacgismo/StatisticalClearSky",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for slacgismo/StatisticalClearSky: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/slacgismo/statisticalclearsky"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/slacgismo/statisticalclearsky/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Statistical model for electricity",
+  "type": "model"
+}

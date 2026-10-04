@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/BDI-pathogens/OpenABM-Covid19"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Hinch R. et al. (2021) OpenABM-Covid19: an agent-based model for non-pharmaceutical interventions against COVID-19 including contact tracing, PLOS Computational Biology 17(7)",
+  "continents": [],
+  "cost": "free",
+  "countries": [],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openabm covid19 agent based model of the covid 19 epidemic with contact tracing",
+    "repo": "github.com/bdi-pathogens/openabm-covid19",
+    "url": "https://github.com/BDI-pathogens/OpenABM-Covid19"
+  },
+  "description": "OpenABM-Covid19 is an agent-based model that simulates the spread of Covid-19 through a city-sized population and the effect of interventions on infections, hospital admissions and deaths. It was developed by the Pathogen Dynamics group at the University of Oxford's Big Data Institute and used to evaluate digital contact-tracing apps. Individuals interact on networks representing households, workplaces and random contacts; infection passes along these contacts, disease progression is modelled per person including hospitalisation and critical care, and the model can represent testing, isolation, instantaneous app-based contact tracing and quarantine. It is generic in location: users set population structure, network parameters and intervention settings, with parameter and output dictionaries provided. The core is written in C with a Python interface, the code is on GitHub, and it is free under the GNU General Public License version 3. Caveats: the default parameters reflect the United Kingdom early in the pandemic, hospital capacity is not a constraint on care in the model, and running national populations takes substantial computing effort. Simulation uses: estimating hospital and intensive care demand under pandemic scenarios, testing how interventions protect health service capacity, and agent-based resilience studies of health systems. Related records: Covasim (model-covasim) is a comparable agent-based Covid model, and the CHIME hospital impact model (model-chime) converts epidemic curves into bed demand.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "recall: healthcare demand, pandemic and surge models",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://github.com/BDI-pathogens/OpenABM-Covid19",
+  "id": "model-openabm-covid19",
+  "inputs": [
+    "Population and household structure",
+    "Contact network parameters",
+    "Disease progression parameters",
+    "Intervention settings"
+  ],
+  "language": [
+    "c_cpp",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-10-09",
+  "licence": "GPL-3.0-only",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based"
+  ],
+  "name": "OpenABM-Covid19: agent-based model of the Covid-19 epidemic with contact tracing",
+  "outputs": [
+    "Infections over time",
+    "Hospital and critical care admissions",
+    "Deaths",
+    "Quarantine and tracing counts"
+  ],
+  "provider": "Oxford Big Data Institute Pathogen Dynamics group (BDI-pathogens), University of Oxford",
+  "related_ids": [
+    "model-covasim",
+    "model-chime"
+  ],
+  "repository": "https://github.com/BDI-pathogens/OpenABM-Covid19",
+  "runs_on": [],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "agent-based model to simulate spread of Covid-19 in a city and analyse passive and active interventions; networks of households, workplaces and random contacts; contact tracing and quarantine; parameter and output dictionaries",
+      "url": "https://raw.githubusercontent.com/BDI-pathogens/OpenABM-Covid19/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "GNU General Public License version 3",
+      "url": "https://raw.githubusercontent.com/BDI-pathogens/OpenABM-Covid19/master/LICENSE"
+    }
+  ],
+  "tags": [
+    "Covid-19",
+    "agent-based model",
+    "contact tracing",
+    "epidemic"
+  ],
+  "title_en": "OpenABM-Covid19: agent-based model of the Covid-19 epidemic with contact tracing",
+  "type": "model",
+  "validated_on": []
+}

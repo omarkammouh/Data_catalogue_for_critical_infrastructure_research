@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "One-month sample (ITS DataHub)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://datahub.transportation.gov/d/vxmm-9bi5"
+    },
+    {
+      "kind": "contact",
+      "label": "Full data request (ITS DataHub sandbox)",
+      "url": "https://its.dot.gov/data/data-request"
+    }
+  ],
+  "access_restrictions": "on_request",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "historical_events"
+  ],
+  "data_kind": [
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "new york city connected vehicle pilot data usdot its datahub",
+    "url": "https://its.dot.gov/pilots/pilots_nycdot.htm"
+  },
+  "description": "The New York City Connected Vehicle (CV) Pilot data record the warnings issued by aftermarket safety devices in equipped vehicles during the NYC CV pilot deployment. Each event record documents one application warning and includes the connected vehicle messages from a window before and after it: Basic Safety Messages from the host and target vehicles and, depending on the warning type, MAP, Signal Phase and Timing and Traveler Information messages, with binned time, location, road type, weather and speed condition fields. The public one-month sample on the ITS DataHub is flattened and has precise time, location and vehicle identifiers obfuscated; the full event data can be requested through the ITS DataHub sandbox. It was produced by NYC DOT and is published by the USDOT ITS Joint Program Office with the DOI 10.21949/1522485. Coverage is New York City, with temporal applicability from January 2021 for 12 months. Access: free on datahub.transportation.gov under CC BY 4.0 as stated in the metadata. Caveats: the public set is a sample with obfuscated fields. It supports connected vehicle safety analysis, testing of V2X digital twins and calibration of conflict models, and complements the NGSIM and TGSIM trajectory data catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"pedestrian\" AND \"precipitation\"",
+      "route": "R01",
+      "source": "socrata-discovery"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://www.its.dot.gov/pilots/pilots_nycdot.htm",
+  "id": "data-usdot-nyc-connected-vehicle-pilot",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "New York City Connected Vehicle Pilot data (USDOT ITS DataHub)",
+  "provider": "New York City Department of Transportation and USDOT ITS Joint Program Office",
+  "regions": [
+    "New York City"
+  ],
+  "related_ids": [
+    "data-ngsim-vehicle-trajectories",
+    "data-fhwa-tgsim-trajectories"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "one-month sample of flattened EVENT records, obfuscated; full data via ITS DataHub Sandbox request; BSM, MAP, SPaT, TIM; columns binned time, location, roadType, weather; citation NYCDOT 2021 DOI 10.21949/1522485; licence CC BY 4.0 in metadata; temporal applicability 2021-01/P12M; issued 2021-06-04; homepage its.dot.gov/pilots/pilots_nycdot.htm",
+      "url": "https://datahub.transportation.gov/api/views/vxmm-9bi5.json"
+    }
+  ],
+  "spatial_resolution": "binned location",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "connected vehicles",
+    "V2X",
+    "safety warnings",
+    "New York City",
+    "ITS DataHub"
+  ],
+  "temporal_coverage": "2021-01 to 2021-12",
+  "title_en": "New York City Connected Vehicle Pilot data (USDOT ITS DataHub)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

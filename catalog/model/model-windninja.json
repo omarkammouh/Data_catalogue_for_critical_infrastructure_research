@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/firelab/windninja"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/firelab/windninja/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Wagenbrenner et al. (2019). Development and evaluation of a Reynolds-Averaged Navier-Stokes solver in WindNinja for operational wildland fire applications. https://doi.org/10.3390/atmos10110672",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "windninja terrain adjusted wind model",
+    "repo": "github.com/firelab/windninja",
+    "url": "https://github.com/firelab/windninja"
+  },
+  "description": "WindNinja is the US Forest Service's diagnostic wind model for wildland-fire applications. It builds a three-dimensional mesh and adjusts an initial wind field for terrain using mass conservation, with optional momentum conservation and thermal parameterisations. Inputs are terrain and an estimated initial wind field; outputs are spatial wind fields for the configured area. Geographic coverage is set by the input terrain. The federal source is free and identified as public domain in the repository licence. A limitation is that the model assumes steady conditions and does not represent moisture, latent heat or all complex large-scale flows. The quality of the initial wind estimate remains important. WindNinja can provide wind inputs for wildfire exposure and emergency-response simulations around infrastructure. ERA5 (data-era5-reanalysis) is related weather context, not an automatically validated forcing choice. Public documentation and development papers were inspected; no forecast, terrain dataset or model execution was obtained.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "firelab/windninja linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "wildfire",
+    "storm_wind"
+  ],
+  "homepage": "https://github.com/firelab/windninja",
+  "id": "model-windninja",
+  "inputs": [
+    "Terrain mesh",
+    "Initial wind field",
+    "Solver settings"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "BSD-2-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "WindNinja terrain-adjusted wind model",
+  "notes": "G7 G7-0791. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Terrain-adjusted wind fields"
+  ],
+  "provider": "US Forest Service, Missoula Fire Sciences Laboratory",
+  "related_ids": [
+    "data-era5-reanalysis"
+  ],
+  "repository": "https://github.com/firelab/windninja",
+  "sectors": [
+    "services.emergency_services",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for firelab/windninja: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/firelab/windninja"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/firelab/windninja/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation: functionality, usage or licensing.",
+      "url": "https://ninjastorm.firelab.org/windninja/howdoes/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation: functionality, usage or licensing.",
+      "url": "https://ninjastorm.firelab.org/windninja/publications/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation: functionality, usage or licensing.",
+      "url": "https://api.github.com/repos/firelab/windninja/license"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for emergency services and green and blue infrastructure",
+  "type": "model"
+}

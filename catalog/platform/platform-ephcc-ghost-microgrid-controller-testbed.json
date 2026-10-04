@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code and models",
+      "url": "https://github.com/PowerSystemsHIL/EPHCC"
+    },
+    {
+      "kind": "portal",
+      "label": "DOE CODE record (GHOST)",
+      "url": "https://www.osti.gov/doecode/biblio/11462"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ghost and ephcc hardware in the loop models for testing microgrid controllers",
+    "repo": "github.com/powersystemshil/ephcc",
+    "url": "https://github.com/PowerSystemsHIL/EPHCC"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "GHOST (Grid Hardware Open Source Testbed) and the EPHCC repository provide real-time models and tools for testing commercial microgrid controllers in hardware-in-the-loop set-ups. The repository is maintained by the Electric Power HIL Controls Consortium with copyright held by the Massachusetts Institute of Technology, and the National Renewable Energy Laboratory registered GHOST in 2018 with Przemyslaw Koralewicz as developer after using it to procure a microgrid controller among competing vendors. Each controller was connected to an Opal-RT simulator running the same microgrid model with identical initial conditions and a 100-minute test sequence of disturbances in grid-connected and islanded modes, such as generator failures, storage trips, large load swings, high fault currents and loss of the swing bus. Recorded data are post-processed into performance scores for resilience, fuel use, grid interconnection, ancillary services and power quality. Tools include the Urban Banshee and a smaller remote microgrid model, test configuration and execution scripts, post-processing and an operator interface. Coverage is not tied to a place. The models are accessible on GitHub under the MIT licence at no cost. Caveats: Opal-RT hardware and Simulink are needed, the last commit was in 2018, and the README warns that models are at various stages of maturity. Simulation uses are benchmarking microgrid controllers against disturbances for resilience. Related records: data-certs-microgrid-test-bed gives field microgrid test data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid simulator",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/PowerSystemsHIL/EPHCC",
+  "hosted_models": [
+    "Urban Banshee microgrid real-time model",
+    "smaller remote microgrid model"
+  ],
+  "id": "platform-ephcc-ghost-microgrid-controller-testbed",
+  "interfaces": [
+    "cosimulation",
+    "code_library",
+    "file_exchange",
+    "other"
+  ],
+  "interoperability": [
+    "Opal-RT real-time simulators",
+    "hardware-in-the-loop controllers"
+  ],
+  "language": [
+    "matlab"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2018-07-24",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "GHOST and EPHCC - hardware-in-the-loop models for testing microgrid controllers",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine",
+    "digital_twin"
+  ],
+  "provider": "Electric Power HIL Controls Consortium (Massachusetts Institute of Technology) and National Renewable Energy Laboratory (Przemyslaw Koralewicz)",
+  "related_ids": [
+    "data-certs-microgrid-test-bed"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "digital_twin",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Overview, vision, maturity warning, MIT copyright",
+      "url": "https://raw.githubusercontent.com/PowerSystemsHIL/EPHCC/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT",
+      "url": "https://raw.githubusercontent.com/PowerSystemsHIL/EPHCC/HEAD/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GHOST abstract: procurement, 100-minute sequence, disturbances, KPIs, tools",
+      "url": "https://api.datacite.org/dois/10.11578/dc.20180522.1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Open source, release 2018-05-01, repository link",
+      "url": "https://www.osti.gov/doecode/biblio/11462"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Head commit 2018-07-24; tag BansheeBenchmark",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/PowerSystemsHIL/EPHCC/visit/latest/"
+    }
+  ],
+  "supported_sectors": [
+    "energy.electricity"
+  ],
+  "tags": [
+    "microgrid controller",
+    "hardware-in-the-loop",
+    "Opal-RT",
+    "Banshee",
+    "resilience testing"
+  ],
+  "title_en": "GHOST and EPHCC - hardware-in-the-loop models for testing microgrid controllers",
+  "type": "platform"
+}

@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/Gunjuzone/global_building_height_validation"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "NL",
+    "FR",
+    "CA",
+    "CN"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gba and globfp building height lidar validation workflow",
+    "repo": "github.com/gunjuzone/global_building_height_validation",
+    "url": "https://github.com/Gunjuzone/global_building_height_validation"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This Python workflow checks the accuracy of two global building-height products against LiDAR-derived height surfaces. City configurations name Amsterdam, Paris, Toronto and Hong Kong. The README describes per-building bias and error metrics, height-class stratification and bootstrap propagation of height error into city-scale volumetric stock uncertainty. The repository lists scripts, a configuration file and two supplementary result tables. A modeller could use the code to bound error in building-volume inputs before estimating urban material stocks or exposure. Raw LiDAR, GlobalBuildingAtlas and 3D Global Building Footprints layers are not included; users must obtain them under their own terms and set local paths. The README gives a bootstrap command for a filename absent from the tree, while a differently named bootstrap script is present. This review did not run either script or inspect table values. GitHub reports CC0-1.0 for this repository. Its measured evidence covers four named cities, so its error distributions should not automatically be transferred to another building stock. Related resources are the three separately obtained height and reference layers. For simulation, the resulting error bounds can guide sensitivity runs for building-stock volume, but they do not supply missing height observations.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "building footprints dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://github.com/Gunjuzone/global_building_height_validation",
+  "id": "platform-global-building-height-lidar-validation",
+  "interfaces": [
+    "command_line",
+    "code_library"
+  ],
+  "interoperability": [
+    "GeoPackage",
+    "GeoTIFF",
+    "CSV"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-07",
+  "licence": "CC0-1.0 for repository code and supplied supplementary tables; separate LiDAR, GBA and GloBFP input terms were not checked.",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "GBA and GloBFP building-height LiDAR validation workflow",
+  "notes": "G8; G8-0858. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Building Height Validation and Volumetric Uncertainty Analysis repository documentation, accessed 2026-09-28. Paper publication details not verified..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Global Building Height Validation study team",
+  "related_ids": [],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/Gunjuzone/global_building_height_validation/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/Gunjuzone/global_building_height_validation"
+    }
+  ],
+  "tags": [],
+  "title_en": "GBA and GloBFP building-height LiDAR validation workflow",
+  "type": "platform"
+}

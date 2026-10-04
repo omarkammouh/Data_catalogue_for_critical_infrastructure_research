@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/nvnsudharsan/SOLWEIG-GPU"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.09535"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.21105/joss.09535",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "solweig gpu urban thermal comfort model",
+    "url": "https://github.com/nvnsudharsan/solweig-gpu"
+  },
+  "description": "SOLWEIG-GPU is a standalone Python extension of the SOLWEIG urban radiation model. Its developers provide CPU and GPU execution for city-scale calculations of sky-view factor, shadows, mean radiant temperature and thermal-comfort indices. Inputs include building and terrain elevation rasters, vegetation height and meteorological forcing from UMEP text files, ERA5 or WRF. The current documentation states that temporal inputs have been tested only at hourly resolution. Output rasters are organized by tile, with time-varying variables stored in multiple bands. Spatial extent and resolution follow the input grids. Source code, command-line and Python interfaces are public and free under GPL-3.0. These outputs can compare heat exposure and green-infrastructure options. A limitation is dependence on morphology and forcing quality, with tile size constrained by GPU memory. The current repository includes features added after the original JOSS release. Existing platform-umep-urban-multi-scale-environmental-predictor contains the original SOLWEIG processor; model-shadewalk-urban-shade-coolest-route is a related shade-planning application. No model was executed.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "JOSS whole-index enumeration; 10.21105/joss.09535; G5-LOCAL-110",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/nvnsudharsan/SOLWEIG-GPU",
+  "id": "model-solweig-gpu",
+  "inputs": [
+    "Building and terrain elevation rasters",
+    "Vegetation height and optional land cover",
+    "Hourly meteorological forcing from UMEP text, ERA5 or WRF"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-02",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "SOLWEIG-GPU urban thermal-comfort model",
+  "notes": "G5 G5-0120. Software checked through metadata and documentation, without installation or execution. Geographic scope follows the documented application or software portability; it does not imply validation throughout that area. ",
+  "outputs": [
+    "Sky-view factor and shadows",
+    "Mean radiant temperature and thermal-comfort rasters"
+  ],
+  "provider": "SOLWEIG-GPU developers",
+  "related_ids": [
+    "platform-umep-urban-multi-scale-environmental-predictor",
+    "model-shadewalk-urban-shade-coolest-route"
+  ],
+  "repository": "https://github.com/nvnsudharsan/SOLWEIG-GPU",
+  "sectors": [
+    "built_environment.public_space",
+    "built_environment.buildings",
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Publisher article, explicit source-code and archived-code availability links.",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.09535"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own canonical repository and licence metadata.",
+      "url": "https://api.github.com/repos/nvnsudharsan/SOLWEIG-GPU"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own software description, installation, inputs and outputs.",
+      "url": "https://raw.githubusercontent.com/nvnsudharsan/SOLWEIG-GPU/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Publisher Summary read in memory.",
+      "url": "https://raw.githubusercontent.com/openjournals/joss-papers/master/joss.09535/paper.jats/10.21105.joss.09535.jats"
+    }
+  ],
+  "tags": [
+    "research software",
+    "JOSS"
+  ],
+  "title_en": "Physical model for public spaces, buildings and green and blue infrastructure",
+  "type": "model"
+}

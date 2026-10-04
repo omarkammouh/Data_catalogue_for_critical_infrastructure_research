@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "All 21 files (zip)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/api/records/17968967/files-archive"
+    },
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/slzhang-git/Norwegian-electricity-in-geographic-dataset"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1109/IEEEDATA.2026.3658039"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "NO"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation",
+    "resource_potential"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology",
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.17968967",
+    "name": "norwegian electricity in geographic dataset noregeo",
+    "repo": "github.com/slzhang-git/norwegian-electricity-in-geographic-dataset",
+    "url": "https://zenodo.org/records/17968967"
+  },
+  "description": "NoreGeo assembles geographic information about Norway’s electricity system for 2024. Zhang and co-authors combine grid infrastructure, power plants, renewable-resource indicators, municipal consumption and population context to support joint spatial analyses. The Zenodo record lists 21 CSV and GeoJSON files, including overhead and subsea line geometry, transformers, hydro facilities, wind installations and solar capacity. Electricity consumption is monthly by municipality, while spot prices are daily by market balance area. Asset and resource layers have different spatial detail, not a common raster resolution. The dataset is freely available from Zenodo under CC BY 4.0; the GitHub repository documents processing code under Apache-2.0. The concept DOI resolves to the inspected version record. A limitation is that GIS line segments and plant locations do not by themselves form a calibrated electrical network. Resource and demographic layers also have different source definitions that require reconciliation. Simulation uses include locating candidate assets, allocating demand and planning electricity capacity. NoreGeo complements model-pypsa-eur and data-nve-fram-open-power-market-dataset, although direct conversion or agreement with those resources was not tested.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "power grid dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://zenodo.org/records/17968967",
+  "id": "data-noregeo-norwegian-electricity-geographic-dataset",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-28",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Norwegian Electricity in Geographic Dataset (NoreGeo)",
+  "notes": "G8; G8-0014. The GitHub README points to concept DOI 10.5281/zenodo.16794603. The canonical version reviewed is 17968967. Dataset CC BY 4.0 differs from repository code Apache-2.0. Geometry is not assumed to be simulation-ready connectivity. ",
+  "provider": "Shiliang Zhang, Sabita Maharjan, Kai Strunz and Jan Christian Bryne",
+  "related_ids": [
+    "model-pypsa-eur",
+    "data-nve-fram-open-power-market-dataset"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/slzhang-git/Norwegian-electricity-in-geographic-dataset/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/slzhang-git/Norwegian-electricity-in-geographic-dataset"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Redirect target of concept-record API: identity, version DOI, CC BY 4.0, coverage, attribute descriptions and 21 file metadata entries. No data files retrieved.",
+      "url": "https://zenodo.org/api/records/17968967"
+    }
+  ],
+  "spatial_resolution": "Individual mapped assets, resource layers and municipalities; resolution differs by layer.",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "2024; inspected version published 2025-12-17.",
+  "temporal_resolution": "Monthly municipal consumption and daily market-area electricity prices; static asset layers.",
+  "temporal_resolution_class": "daily",
+  "title_en": "Norwegian Electricity in Geographic Dataset (NoreGeo)",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

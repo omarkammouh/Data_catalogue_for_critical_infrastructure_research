@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "GDACS events",
+      "url": "https://www.gdacs.org/Alerts/default.aspx"
+    },
+    {
+      "kind": "docs",
+      "label": "About and services",
+      "url": "https://www.gdacs.org/About/overview.aspx"
+    },
+    {
+      "kind": "docs",
+      "label": "GDACS guidelines (PDF)",
+      "url": "https://www.gdacs.org/Documents/GDACS%20Guidelines%202014_-_FINAL.PDF"
+    }
+  ],
+  "access_note": "The Virtual OSOCC coordination platform is restricted to registered disaster managers.",
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "sensor_realtime_streams",
+    "emergency_management",
+    "hazards"
+  ],
+  "data_kind": [
+    "stream",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "global disaster alert and coordination system gdacs",
+    "url": "https://gdacs.org"
+  },
+  "description": "GDACS is a cooperation framework between the United Nations and the European Commission that issues automatic alerts and impact estimates for sudden-onset disasters worldwide, namely earthquakes, tsunamis, tropical cyclones, floods, volcanic eruptions, droughts and forest fires, in the first hours after an event. The automatic hazard and impact estimates behind the alerts are produced by the European Commission Joint Research Centre (JRC); the UN Office for the Coordination of Humanitarian Affairs (OCHA) acts as secretariat and runs the restricted Virtual OSOCC coordination platform. Each event record contains a green, orange or red alert level, an estimate of exposed population, hazard parameters and links to maps and satellite products from UNOSAT and the Copernicus Emergency Management Service. Information is openly accessible on the website and through RSS and other standard feeds, so it can be integrated in other portals free of charge; the Virtual OSOCC needs registration. Caveats: the estimates are automatic and preliminary, impact on specific infrastructure assets is not modelled, and the event archive is organised for response, not for statistics. It is used for near-real-time emergency response, for hazard exposure triggers in digital twins and for collecting event footprints for calibration; it complements EM-DAT and the Copernicus rapid mapping products for historical and post-event analysis.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "global disaster alert system feed",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "xml",
+    "web_page",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake",
+    "tsunami",
+    "storm_wind",
+    "flood",
+    "volcanic",
+    "drought",
+    "wildfire"
+  ],
+  "homepage": "https://www.gdacs.org/",
+  "id": "data-gdacs",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0 (European Commission reuse policy: EU-owned content under CC BY 4.0 unless otherwise noted)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Global Disaster Alert and Coordination System (GDACS)",
+  "provider": "United Nations OCHA and European Commission Joint Research Centre (GDACS partnership)",
+  "related_ids": [],
+  "schema_summary": "event type, location, time, alert level, hazard severity, exposed population, related maps",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "UN-EC cooperation framework; notifications with JRC automatic estimates; Virtual OSOCC restricted; openly accessible via RSS and standard formats",
+      "url": "https://www.gdacs.org/About/overview.aspx"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): CC-BY-4.0 (European Commission reuse policy: EU-owned content under CC BY 4.0 unless otherwise noted) (basis: Commission legal notice)",
+      "url": "https://www.gdacs.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://commission.europa.eu/legal-notice_en"
+    }
+  ],
+  "spatial_resolution": "event footprint",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "disaster alerts",
+    "JRC",
+    "OCHA",
+    "UNOSAT",
+    "near real time"
+  ],
+  "temporal_coverage": "current and past events",
+  "temporal_resolution": "near real time",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Global Disaster Alert and Coordination System (GDACS)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

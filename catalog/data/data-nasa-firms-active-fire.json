@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "FIRMS overview",
+      "url": "https://www.earthdata.nasa.gov/data/tools/firms"
+    },
+    {
+      "kind": "portal",
+      "label": "FIRMS map and downloads",
+      "url": "https://firms.modaps.eosdis.nasa.gov/"
+    },
+    {
+      "kind": "viewer",
+      "label": "FIRMS US/Canada",
+      "url": "https://firms.modaps.eosdis.nasa.gov/usfs/map/"
+    }
+  ],
+  "access_note": "API requests use a free map key obtained from the FIRMS site.",
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "hazards",
+    "sensor_realtime_streams",
+    "historical_events",
+    "imagery_remote_sensing"
+  ],
+  "data_kind": [
+    "event_record",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nasa firms active fire and thermal hotspot data modis and viirs",
+    "url": "https://earthdata.nasa.gov/data/tools/firms"
+  },
+  "description": "The Fire Information for Resource Management System (FIRMS) distributes near-real-time active fire and thermal hotspot detections from MODIS (each point the centre of a 1 km pixel flagged as containing fire) and VIIRS (375 m pixels, from Suomi NPP, NOAA-20 and NOAA-21), with attributes such as detection time, brightness and confidence, plus satellite imagery and map services. It was developed in 2007 by the University of Maryland with NASA Applied Sciences and FAO funding and is operated by NASA's ESDIS project as part of LANCE to give fire managers timely satellite fire information; a FIRMS US/Canada service with the US Forest Service followed in 2021. Coverage is global, with data available within three hours of observation and some US and Canada detections in real time, and an archive going back to the MODIS era. Data are accessible online through the FIRMS map viewers, downloads and an API under NASA's full and open data policy, at no cost, with a requested acknowledgement. Caveats: detections mark fire pixels, not burned-area perimeters, clouds and smoke cause omissions, data are provided as is, and Suomi NPP deliveries stop on 1 November 2026. It supports wildfire hazard exposure and emergency response for power lines, roads and settlements; related records are EFFIS, GDACS and the Hansen Global Forest Change.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "near real time active fire data global",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv",
+    "shapefile",
+    "kml",
+    "api"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://www.earthdata.nasa.gov/data/tools/firms",
+  "id": "data-nasa-firms-active-fire",
+  "languages": [
+    "en"
+  ],
+  "licence": "NASA full and open data policy (acknowledgement requested)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NASA FIRMS active fire and thermal hotspot data (MODIS and VIIRS)",
+  "notes": "Download formats, the API map key and archive start years are recalled; the FIRMS download pages returned no readable text on 2026-09-26.",
+  "provider": "NASA Earth Science Data and Information System (ESDIS) project, LANCE",
+  "related_ids": [],
+  "schema_summary": "latitude, longitude, acquisition date and time, brightness, scan and track, confidence, fire radiative power, satellite",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "purpose, 3-hour latency, history 2007 UMD, ESDIS/LANCE, MODIS 1 km and VIIRS 375 m products, open data and acknowledgement, disclaimer, US/Canada 2021, Suomi NPP end 2026-11-01",
+      "url": "https://www.earthdata.nasa.gov/data/tools/firms"
+    }
+  ],
+  "spatial_resolution": "375 m (VIIRS), 1 km (MODIS)",
+  "spatial_resolution_class": "100m_to_1km",
+  "spatial_resolution_m": 375,
+  "tags": [
+    "active fire",
+    "wildfire",
+    "MODIS",
+    "VIIRS",
+    "LANCE",
+    "near real time"
+  ],
+  "temporal_coverage": "2000 to present (MODIS), 2012 to present (VIIRS)",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2000
+  },
+  "temporal_resolution": "per satellite overpass",
+  "temporal_resolution_class": "event",
+  "title_en": "NASA FIRMS active fire and thermal hotspot data (MODIS and VIIRS)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

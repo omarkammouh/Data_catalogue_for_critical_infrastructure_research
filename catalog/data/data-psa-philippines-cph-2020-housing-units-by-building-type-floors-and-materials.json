@@ -1,0 +1,146 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "OpenSTAT PxWeb folder 2020 Census of Population and Housing",
+      "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/1A/PO_2020"
+    },
+    {
+      "kind": "api",
+      "label": "0051A6DBNF0 occupied housing units by type of building and number of floors",
+      "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/1A/PO_2020/0051A6DBNF0.px"
+    },
+    {
+      "kind": "api",
+      "label": "0061A6DFAO0 occupied housing units by floor area and number of occupants",
+      "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/1A/PO_2020/0061A6DFAO0.px"
+    },
+    {
+      "kind": "api",
+      "label": "Table 1.28 occupied housing units by construction materials of outer walls and roof, 2020",
+      "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/1G/0281A2BOCM0.px"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "PH"
+  ],
+  "data_family": [
+    "system_description",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "psa philippines 2020 census of population and housing tables on occupied housing units by type of building number of floors floor area and outer wall and roof materials by province and highly urbanized city openstat pxweb api",
+    "url": "https://openstat.psa.gov.ph"
+  },
+  "description": "The Philippine Statistics Authority publishes the 2020 Census of Population and Housing in OpenSTAT, a PxWeb database with an open API. Its 2020 folder has tables on occupied housing units by type of building, by number of floors from one to eleven or more, and by floor area and number of occupants, plus households by tenure; a housing folder adds occupied housing units by construction materials of the outer walls and roof. Each table goes down to province and highly urbanized city, with 135 geographic values. Coverage is national: the API returned 25,191,610 occupied housing units in 2020, of which 19,990,317 had one floor, 4,261,607 two floors and 142,133 eleven floors or more. Format and access: free, no registration; the PxWeb API returns CSV, JSON or PX for a JSON query. The PSA main website returned a Cloudflare challenge (HTTP 403) from the cloud, so only OpenSTAT was read. Licence: not stated on the pages read. Caveats: no water, sanitation or electricity variables in the 2020 census tables in OpenSTAT; the 2024 census folder holds population and household counts by barangay only. Simulation uses: storey counts, building type and wall and roof materials by province for typhoon, flood and earthquake exposure models. Related records: the Philippines pre-disaster indicators and the typhoon Haima house damage priority index.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:PH:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "spreadsheet",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://openstat.psa.gov.ph/",
+  "id": "data-psa-philippines-cph-2020-housing-units-by-building-type-floors-and-materials",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://openstat.psa.gov.ph/"
+    ]
+  },
+  "maturity": "active",
+  "name": "PSA Philippines 2020 Census of Population and Housing tables on occupied housing units by type of building, number of floors, floor area and outer wall and roof materials by province and highly urbanized city (OpenSTAT PxWeb API)",
+  "provider": "Philippine Statistics Authority (PSA)",
+  "related_ids": [
+    "data-philippines-pre-disaster-indicators",
+    "data-510-typhoon-haima-house-damage-priority-index"
+  ],
+  "schema_summary": "PO_2020 tables: 0011 population and households; 0041 occupied housing units, households and household population by type of building; 0051 occupied housing units by type of building (single house, duplex, apartment or row house, condominium, other multi unit, commercial or industrial, institutional) and number of floors (1, 2, 3, 4, 5 to 10, 11 or more); 0061 by floor area and number of occupants; 0071 households by tenure; folder 1G table 1.28 by outer wall and roof materials",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: folders including 1A census folders 2010 to 2024 and 1G housing",
+      "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: six 2020 tables",
+      "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/1A/PO_2020"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: variables and national values",
+      "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/1A/PO_2020/0051A6DBNF0.px"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: Cloudflare challenge, HTTP 403",
+      "url": "https://psa.gov.ph/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/1A/PO_2020"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/1A/PO_2020/0051A6DBNF0.px"
+    }
+  ],
+  "spatial_resolution": "country, regions, provinces and highly urbanized cities (135 geographic values)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "Philippines",
+    "CPH 2020",
+    "housing units",
+    "number of floors",
+    "building materials",
+    "province",
+    "PxWeb"
+  ],
+  "temporal_coverage": "census 2020; the database also has folders for the 2010, 2015 and 2024 censuses",
+  "temporal_coverage_years": {
+    "end": 2020,
+    "start": 2020
+  },
+  "temporal_resolution": "single census",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "PSA Philippines 2020 Census of Population and Housing tables on occupied housing units by type of building, number of floors, floor area and outer wall and roof materials by province and highly urbanized city (OpenSTAT PxWeb API)",
+  "type": "data"
+}

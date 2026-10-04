@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/EcohydrologyTeam/ClearWater-riverine"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/EcohydrologyTeam/ClearWater-riverine/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "clearwater riverine two dimensional water quality transport",
+    "repo": "github.com/ecohydrologyteam/clearwater-riverine",
+    "url": "https://github.com/EcohydrologyTeam/ClearWater-riverine"
+  },
+  "description": "ClearWater-Riverine is a Python two-dimensional river and floodplain water-quality transport model from the US Army Engineer Research and Development Center. It carries heat and constituents by advection and diffusion on unstructured flow grids and can couple to ClearWater reaction modules. The README specifically reports temperature and nutrient modules connected to HEC-RAS-2D results. Users supply a hydraulic flow solution, grid, constituent conditions and simulation period; outputs are time-varying temperature or concentration fields for the chosen river reach. Geographic coverage, mesh and time step come from that hydraulic run. MIT-licensed source and examples are public, although the README says production installation instructions are still being written and currently points users to developer setup involving sibling repositories. A limitation is that the model assumes vertical homogeneity; stratified reservoirs or deep estuaries need another treatment. It supports water-quality and contaminant propagation studies. The catalogue's model-raven is a separate basin runoff model that could supply boundary flow, but no direct interface was checked. No river model was executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "ecohydrologyteam/clearwater-riverine linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/EcohydrologyTeam/ClearWater-riverine",
+  "id": "model-clearwater-riverine",
+  "inputs": [
+    "Unstructured hydraulic grid and flow fields",
+    "Heat or constituent boundaries and reaction settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-01",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "ClearWater-Riverine two-dimensional water-quality transport",
+  "notes": "G7 G7-1361. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Two-dimensional heat and constituent concentration fields"
+  ],
+  "provider": "US Army Engineer Research and Development Center Environmental Laboratory",
+  "related_ids": [
+    "model-raven"
+  ],
+  "repository": "https://github.com/EcohydrologyTeam/ClearWater-riverine",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.drinking_water",
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for EcohydrologyTeam/ClearWater-riverine: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/ecohydrologyteam/clearwater-riverine"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/ecohydrologyteam/clearwater-riverine/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for dams and flood defences, drinking water and wastewater",
+  "type": "model"
+}

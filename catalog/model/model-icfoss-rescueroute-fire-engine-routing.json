@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitLab repository (ICFOSS)",
+      "url": "https://gitlab.com/icfoss/gis_and_mapping/internship/fire-engine-optimal-route"
+    },
+    {
+      "kind": "repo",
+      "label": "Original repository",
+      "url": "https://gitlab.com/bg.sree1/fire-engine-optimal-route"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rescueroute open source gis web map for fire engine routing by vehicle size and road width icfoss",
+    "repo": "gitlab.com/icfoss/gis_and_mapping/internship/fire-engine-optimal-route",
+    "url": "https://gitlab.com/icfoss/gis_and_mapping/internship/fire-engine-optimal-route"
+  },
+  "description": "RescueRoute is a web map, built during a GIS and mapping internship at ICFOSS, that routes fire engines while taking account of their size and the width of the roads. Fire services can choose an engine from a menu, see fire stations as map markers, search for a destination by name or coordinates and get the best feasible route, with the travel time, the distance and any final stretch that the chosen engine cannot drive because the road is too narrow. The aim is to stop engines getting stuck partway to an emergency. The source is free to download from GitLab; GitLab detects a CC BY-SA 3.0 Germany licence, and the application runs in a browser, hosted with Node.js. Caveats: it is an internship project from 2024 with no reported deployment or validation, and its results depend on road width data being present in the map. Coverage is general. Simulation uses: checking which areas large fire appliances cannot reach, and adding vehicle constraints to fire service coverage models. Related records: the CFA emergency response times (data-cfa-emergency-response-times) show measured fire service performance.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "fire station location",
+      "route": "R05",
+      "source": "gitlab"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://gitlab.com/icfoss/gis_and_mapping/internship/fire-engine-optimal-route",
+  "id": "model-icfoss-rescueroute-fire-engine-routing",
+  "inputs": [
+    "Road network with road widths",
+    "Fire station locations",
+    "Fire engine type and size",
+    "Start and destination"
+  ],
+  "language": [
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "CC BY-SA 3.0 DE (as detected by GitLab)",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network",
+    "optimisation"
+  ],
+  "name": "RescueRoute: open-source GIS web map for fire engine routing by vehicle size and road width (ICFOSS)",
+  "outputs": [
+    "Feasible route for the chosen fire engine with travel time, distance and the part that the engine cannot reach"
+  ],
+  "provider": "ICFOSS GIS and mapping internship (repository forked from bg.sree1)",
+  "related_ids": [
+    "data-cfa-emergency-response-times"
+  ],
+  "repository": "https://gitlab.com/icfoss/gis_and_mapping/internship/fire-engine-optimal-route",
+  "runs_on": [
+    "Web browser; Node.js 16 or later for hosting"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README read in memory: RescueRoute is a web map that finds the optimal route between two points considering vehicle size and road width, for fire forces choosing a fire engine; searches places by name or coordinates, shows fire stations, selects fire engines, live location, computes optimal and feasible routes and shows travel time, distance and the remaining distance the engine cannot cover; Node.js v16 or above (Vite React); GitLab metadata: created 2024-08-14, forked from bg.sree1/fire-engine-optimal-route, licence Creative Commons Attribution Share Alike 3.0 Germany",
+      "url": "https://gitlab.com/icfoss/gis_and_mapping/internship/fire-engine-optimal-route"
+    }
+  ],
+  "tags": [
+    "fire engine",
+    "routing",
+    "road width",
+    "GIS",
+    "emergency response"
+  ],
+  "title_en": "RescueRoute: open-source GIS web map for fire engine routing by vehicle size and road width (ICFOSS)",
+  "type": "model",
+  "validated_on": []
+}

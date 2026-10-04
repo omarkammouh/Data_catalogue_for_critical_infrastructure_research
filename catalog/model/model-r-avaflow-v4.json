@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Resource page",
+      "url": "https://www.landslidemodels.org/r.avaflow/direct.php"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://gmd.copernicus.org/articles/18/9879/2025/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.5194/gmd-18-9879-2025",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "r avaflow v4 mass flow model",
+    "url": "https://landslidemodels.org/r.avaflow/direct.php"
+  },
+  "description": "r.avaflow v4 simulates landslides and interacting mass flows using one-phase or multi-phase representations. Martin Mergili, Shiva P. Pudasaini and contributors provide the C code, an online parameter guide and example simulations. Users supply terrain, release heights or hydrographs and material parameters for a configured site and raster resolution. Outputs include flow heights, velocities and derived impact indicators that can support infrastructure exposure analysis. The source header declares GPL-2.0-or-later and the code is free. Linux use integrates with GRASS GIS; a Windows variant uses essentially the same C solver. The paper archive additionally supplies study data and scripts under CC-BY-4.0. A limitation is version sensitivity: that archive contains revision 6, while the own guide recommends revision 7 after a GRASS compatibility fix. Terrain quality and release-surface definitions also affect results. The archive omits a copyrighted Köfels orthophoto. No directly related catalogue record was found, and no executable, archive or simulation was downloaded or run.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "GMD whole-index enumeration; 10.5194/gmd-18-9879-2025; G5-LOCAL-010;G5-LOCAL-040;G5-LOCAL-072;G5-LOCAL-079;G5-LOCAL-080;G5-LOCAL-081;G5-LOCAL-084;G5-LOCAL-085;G5-LOCAL-086;G5-LOCAL-089;G5-LOCAL-091;G5-LOCAL-093;G5-LOCAL-094;G5-LOCAL-095;G5-LOCAL-096;G5-LOCAL-097;G5-LOCAL-098;G5-LOCAL-099;G5-LOCAL-100;G5-LOCAL-101;G5-LOCAL-102;G5-LOCAL-103;G5-LOCAL-104;G5-LOCAL-105;G5-LOCAL-107;G5-LOCAL-110;G5-LOCAL-113",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "landslide",
+    "tsunami"
+  ],
+  "homepage": "https://www.landslidemodels.org/r.avaflow/direct.php",
+  "id": "model-r-avaflow-v4",
+  "inputs": [
+    "Elevation and release-height rasters or an input hydrograph",
+    "Material, friction and flow parameters"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-2.0-or-later (source header); accompanying study archive CC-BY-4.0",
+  "licence_type": [
+    "attribution",
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "not_stated",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "r.avaflow v4 mass-flow model",
+  "notes": "G5 G5-0192. Metadata and documentation only. No model runs, data downloads or article PDF downloads. ",
+  "outputs": [
+    "Flow height and velocity fields",
+    "Deposits, impact indicators and visualization outputs"
+  ],
+  "provider": "Martin Mergili, Shiva P. Pudasaini and r.avaflow contributors, University of Graz",
+  "related_ids": [],
+  "repository": "https://www.landslidemodels.org/r.avaflow/direct.php",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "transport.road",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Final Model description paper; abstract and availability read.",
+      "url": "https://gmd.copernicus.org/articles/18/9879/2025/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Abstract and availability read in memory.",
+      "url": "https://gmd.copernicus.org/articles/18/9879/2025/gmd-18-9879-2025.xml"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own manual: environments, inputs, outputs, revision warning and terrain sensitivity.",
+      "url": "https://www.landslidemodels.org/r.avaflow/direct.php"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own source header read in memory establishes authors, C implementation and GPL >=2.",
+      "url": "https://www.landslidemodels.org/r.avaflow/software/r.avaflow.40W.c"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own simulation package, revision 6, study scripts and omitted orthophoto; CC-BY-4.0.",
+      "url": "https://zenodo.org/api/records/14005917"
+    }
+  ],
+  "tags": [
+    "research software",
+    "GMD"
+  ],
+  "title_en": "Physical model for infrastructure systems, road transport and dams and flood defences",
+  "type": "model"
+}

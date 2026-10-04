@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Study code (intersecting near-optimal spaces)",
+      "url": "https://github.com/aleks-g/intersecting-near-opt-spaces"
+    },
+    {
+      "kind": "portal",
+      "label": "NIRD Research Data Archive landing page",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://archive.sigma2.no/dataset/2346FE44-17CC-49EF-96B2-F9850B14E13D"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (CSV)",
+      "note": "Checked 2026-10-01: returns text/csv directly.",
+      "url": "https://data.archive.sigma2.no/dataset/5c1be6cd-71a1-45a7-8b78-5f18bbbe5728/download/table_of_contents_10.11582_2022.00034.csv"
+    },
+    {
+      "kind": "download",
+      "label": "Direct download (JSON)",
+      "note": "Checked 2026-10-01: returns application/json directly.",
+      "url": "https://data.archive.sigma2.no/dataset/5c1be6cd-71a1-45a7-8b78-5f18bbbe5728/download/dataset_metadata_10.11582_2022.00034.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "data_family": [
+    "weather_observations",
+    "resource_potential"
+  ],
+  "data_kind": [
+    "raster",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "era5 weather data cutouts for pypsa eur 1980 to 2020 hourly energy relevant reanalysis variables for europe",
+    "repo": "github.com/aleks-g/intersecting-near-opt-spaces",
+    "url": "doi:10.11582/2022.00034"
+  },
+  "description": "This archived dataset holds ERA5 reanalysis cutouts prepared for the PyPSA-Eur European power system model, one for each weather year from 1980 to 2020. The authors, Aleksander Grochowicz and Koen van Greevenbroek at the University of Oslo, generated them for a study of weather-resilient European power systems through intersecting near-optimal spaces, and state they can be used generally with PyPSA-Eur. The cutouts span 32 to 72 degrees north (31 to 73 for 2007 because of a conversion error) and 13 degrees west to 35 degrees east at 0.25 degree and hourly resolution, with height, wind speed at 100 m, roughness, top-of-atmosphere, direct and diffuse solar influx, albedo, temperature, soil temperature and runoff. They were made with the atlite package, which calls the Copernicus API and converts reanalysis fields into variables for energy system models. The NIRD Research Data Archive landing page, published in 2022, makes them available for free download under the Copernicus licence for C3S products. Coverage is Europe. Caveats: the cutouts are fixed at the 2022 atlite format and the variable set above, and the 2007 file has a slightly larger extent. Simulation uses are 41 weather years of wind, solar and hydro inputs for multi-year capacity expansion, near-optimal alternatives and weather-resilience studies of the European grid. Related records: data-era5-reanalysis is the source reanalysis.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "space weather space weather",
+      "route": "R44",
+      "source": "b2find"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf",
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://doi.org/10.11582/2022.00034",
+  "id": "data-era5-cutouts-pypsa-eur-1980-2020",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022",
+  "licence": "Copernicus licence (C3S products)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "ERA5 weather data cutouts for PyPSA-Eur, 1980 to 2020 (hourly energy-relevant reanalysis variables for Europe)",
+  "provider": "University of Oslo (A. Grochowicz and K. van Greevenbroek), NIRD Research Data Archive",
+  "related_ids": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, extent, variables, atlite, Copernicus licence, authors, DOI",
+      "url": "https://archive.sigma2.no/dataset/2346FE44-17CC-49EF-96B2-F9850B14E13D"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Publisher Norstore Archive, 2022, formats",
+      "url": "https://api.datacite.org/dois/10.11582/2022.00034"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Links updated in the round-2 deep check (checker A2): added 2 verified direct data link(s) from the provider's resource list. Verified: https://data.archive.sigma2.no/dataset/5c1be6cd-71a1-45a7-8b78-5f18bbb -> verified by fetch during the check; https://data.archive.sigma2.no/dataset/5c1be6cd-71a1-45a7-8b78-5f18bbb -> verified by fetch during the check",
+      "url": "https://data.archive.sigma2.no/dataset/5c1be6cd-71a1-45a7-8b78-5f18bbbe5728/download/table_of_contents_10.11582_2022.00034.csv"
+    }
+  ],
+  "tags": [
+    "ERA5",
+    "PyPSA-Eur",
+    "atlite",
+    "weather years"
+  ],
+  "title_en": "ERA5 weather data cutouts for PyPSA-Eur, 1980 to 2020 (hourly energy-relevant reanalysis variables for Europe)",
+  "type": "data"
+}

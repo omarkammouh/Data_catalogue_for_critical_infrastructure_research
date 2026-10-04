@@ -1,0 +1,93 @@
+{
+  "id": "model-synth-traffic-abm",
+  "type": "model",
+  "name": "Example Traffic Agent Model",
+  "provider": "Example Mobility Foundation",
+  "description": "The Example Traffic Agent Model is an agent-based simulation of daily travel in a city: synthetic households choose modes and routes over a road and public transport network, and the model reports link loads, delays and mode shares. It is developed by the Example Mobility Foundation with a university partner to study disruptions such as bridge closures and transit strikes. It is generic and has been applied to three fictitious cities of one to four million inhabitants; scenarios run for a single day at one-second resolution. The code is Java, released on GitHub under the GPL-3.0 licence at no cost, with a Docker image for reproducible runs. Caveats: calibration requires a travel survey that many cities lack, and runs for large cities take several hours. Inputs are a road network, GTFS transit feeds and a synthetic population; outputs are link volumes, travel times and mode shares. Simulation uses include agent-based modelling, emergency response and resilience. It consumes the Example Transit Feed Registry feeds and is listed by the co-simulation framework as a compatible model.",
+  "homepage": "https://github.com/example-mobility/traffic-agent-model",
+  "access_links": [
+    {
+      "label": "Repository",
+      "url": "https://github.com/example-mobility/traffic-agent-model",
+      "kind": "repo"
+    },
+    {
+      "label": "Docs",
+      "url": "https://docs.example.org/traffic-agent-model/",
+      "kind": "docs"
+    }
+  ],
+  "licence": "GPL-3.0-only",
+  "cost": "free",
+  "access_restrictions": "none",
+  "sectors": [
+    "transport.road",
+    "transport.public_transit"
+  ],
+  "geographic_scope": "city",
+  "simulation_uses": [
+    "agent_based",
+    "emergency_response",
+    "resilience"
+  ],
+  "maturity": "active",
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-09-23",
+  "description_checked": "2026-09-23",
+  "related_ids": [
+    "data-synth-transit-feeds"
+  ],
+  "tags": [],
+  "sources": [
+    {
+      "url": "https://github.com/example-mobility/traffic-agent-model",
+      "accessed": "2026-09-23",
+      "note": "synthetic fixture"
+    }
+  ],
+  "discovery_routes": [
+    {
+      "route": "R05",
+      "source": "github-search",
+      "query": "traffic agent-based model",
+      "date": "2026-09-23"
+    },
+    {
+      "route": "R06",
+      "source": "comses-example",
+      "query": "traffic",
+      "date": "2026-09-23"
+    },
+    {
+      "route": "R19",
+      "source": "conference-tools",
+      "query": "agent-based transport tool track",
+      "date": "2026-09-23"
+    }
+  ],
+  "dedupe_keys": {
+    "url": "https://github.com/example-mobility/traffic-agent-model",
+    "repo": "github.com/example-mobility/traffic-agent-model",
+    "name": "example traffic agent model"
+  },
+  "languages": [
+    "en"
+  ],
+  "model_kind": [
+    "agent_based"
+  ],
+  "language": [
+    "Java"
+  ],
+  "inputs": [
+    "road network",
+    "GTFS feeds",
+    "synthetic population"
+  ],
+  "outputs": [
+    "link volumes",
+    "travel times",
+    "mode shares"
+  ],
+  "repository": "https://github.com/example-mobility/traffic-agent-model"
+}

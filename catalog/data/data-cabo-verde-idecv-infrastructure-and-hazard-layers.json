@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "INGT GeoServer WFS capabilities",
+      "url": "https://geoservicos-ingt.gov.cv/geoserver/ows?service=wfs&version=2.0.0&request=GetCapabilities"
+    },
+    {
+      "kind": "portal",
+      "label": "IDECV metadata catalogue (GeoNetwork)",
+      "url": "https://metadados-ingt.gov.cv/geonetwork/srv/fre/catalog.search#/home"
+    },
+    {
+      "kind": "viewer",
+      "label": "IDECV geoportal (Lizmap)",
+      "url": "https://geoportal-ingt.gov.cv/lizmap/lizmap/www/"
+    },
+    {
+      "kind": "download",
+      "label": "National roads layer (WFS GetFeature)",
+      "url": "https://geoservicos-ingt.gov.cv/geoserver/planimetria/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=planimetria%3Aestradas_nacionais"
+    },
+    {
+      "kind": "docs",
+      "label": "Description page (former landing page)",
+      "url": "https://ingt.gov.cv/ingt/Servi%C3%A7os/idecv/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa"
+  ],
+  "cost": "free",
+  "countries": [
+    "CV"
+  ],
+  "data_family": [
+    "system_description",
+    "hazards"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "idecv cabo verde national roads airports ports hydraulic infrastructure and hazard maps ingt geoserver",
+    "url": "https://geoservicos-ingt.gov.cv/geoserver/planimetria/ows?maxFeatures=1&request=GetFeature&service=WFS&typeName=planimetria%3Aestradas_nacionais&version=1.0.0"
+  },
+  "description": "The spatial data infrastructure of Cabo Verde (IDECV), run by the Instituto Nacional de Gestão do Território (INGT), publishes national layers through a GeoNetwork metadata catalogue (about 50 records), a Lizmap viewer and a GeoServer with WMS and WFS services. Contents: infrastructure layers for national roads (estradas nacionais, classified into first, second and third class by the places they connect, supplied by Infraestruturas de Cabo Verde), airports, ports, hydraulic infrastructure, schools and airport servitudes; hazard and susceptibility maps from the 2012 to 2016 risk reduction project (floods, volcanic and seismic hazard, slope movements, drought, forest fires, coastal and beach erosion); and reference layers for islands, municipalities, parishes, places, hydrographic basins, geology, agriculture, geodetic network and maritime zones, plus municipal plan layers (road network, technical networks). Coverage: all islands of Cabo Verde (hazard maps exclude Santa Luzia and islets); the roads record dates from 2023 to 2024. Format and access: WFS (GeoJSON, GML, Shapefile output) and WMS from geoservicos-ingt.gov.cv, metadata on metadados-ingt.gov.cv. Licence: Creative Commons Attribution 4.0, as stated in the metadata; free. Caveats: attributes were not inspected, and the hazard maps date from 2014. Simulation uses: road, port and airport networks with hazard layers for hazard exposure and resilience studies of a small island state. Related records: ARME's electronic communications indicators (data-arme-cabo-verde-electronic-communications-statistical-indicators) cover telecom.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source cv-nma-ingt-gov-cv: provider pages read (round 2 register piece)",
+      "route": "R10",
+      "source": "cv-nma-ingt-gov-cv"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "geojson",
+    "shapefile"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "volcanic",
+    "earthquake",
+    "drought",
+    "wildfire",
+    "landslide",
+    "sea_level_rise"
+  ],
+  "homepage": "https://geoservicos-ingt.gov.cv/geoserver/planimetria/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=planimetria%3Aestradas_nacionais&maxFeatures=1",
+  "id": "data-cabo-verde-idecv-infrastructure-and-hazard-layers",
+  "languages": [
+    "pt"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "IDECV Cabo Verde: national roads, airports, ports, hydraulic infrastructure and hazard maps (INGT GeoServer)",
+  "provider": "Instituto Nacional de Gestão do Território (INGT), Cabo Verde, with Infraestruturas de Cabo Verde",
+  "related_ids": [
+    "data-arme-cabo-verde-electronic-communications-statistical-indicators"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.aviation",
+    "transport.maritime_ports",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Estradas nacionais: road classes, INGT and Infraestruturas de Cabo Verde, CC BY 4.0, WFS link, dates 2023-2024",
+      "url": "https://metadados-ingt.gov.cv/geonetwork/srv/api/records/e46afc0e-645d-488c-a0e0-59438fc6f156/formatters/xml"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "flood hazard map 2014, project 2012-2016, CC BY 4.0",
+      "url": "https://metadados-ingt.gov.cv/geonetwork/srv/api/records/aa55480a-286f-4556-b43e-4e3ebf845c0c/formatters/xml"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "feature type list: infraestrutura (aeroportos, portos), hidrografia, riscos, planimetria, educacao",
+      "url": "https://geoservicos-ingt.gov.cv/geoserver/ows?service=wfs&version=2.0.0&request=GetCapabilities"
+    }
+  ],
+  "tags": [
+    "Cabo Verde",
+    "IDECV",
+    "INGT",
+    "national roads",
+    "hazard maps"
+  ],
+  "title_en": "IDECV Cabo Verde: national roads, airports, ports, hydraulic infrastructure and hazard maps (INGT GeoServer)",
+  "type": "data"
+}

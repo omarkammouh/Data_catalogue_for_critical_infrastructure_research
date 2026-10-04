@@ -1,0 +1,135 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Waterveiligheidsportaal open data services",
+      "url": "https://waterveiligheidsportaal.nl/data-services"
+    },
+    {
+      "kind": "api",
+      "label": "WFS GetCapabilities (NBPW, assessments, HWBP projects)",
+      "url": "https://geo.rijkswaterstaat.nl/services/ogc/wvp/ows/wfs?version=1.1.0&request=GetCapabilities&Service=WFS"
+    },
+    {
+      "kind": "docs",
+      "label": "NBPW metadata (Nationaal Georegister)",
+      "url": "https://nationaalgeoregister.nl/geonetwork/srv/api/records/9bc22d59-427f-45c9-9f55-7dbe3985a73c/formatters/xsl-view?portalLink=&view=advanced"
+    },
+    {
+      "kind": "docs",
+      "label": "NBPW page (Informatiehuis Water)",
+      "url": "https://www.ihw.nl/nationaal-basisbestand-primaire-waterkeringen"
+    }
+  ],
+  "access_note": "Open WMS/WFS and a REST API; the Waterveiligheidsportaal itself, where water boards submit assessments, needs login with two-factor authentication.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "data_family": [
+    "system_description",
+    "condition_ageing",
+    "vulnerability_fragility",
+    "planned_future_infrastructure",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "national primary flood defences base data and safety assessments nbpw waterveiligheidsportaal",
+    "url": "https://waterveiligheidsportaal.nl/data-services"
+  },
+  "description": "The national base data on primary flood defences (Nationaal Basisbestand Primaire Waterkeringen, NBPW) gives a national overview of where every primary flood defence in the Netherlands lies, covering dikes, dams, dunes and hydraulic structures, with attributes such as the legal safety standard. Informatiehuis Water manages it for the Ministry of Infrastructure and Water Management and publishes it through the Waterveiligheidsportaal, together with the results of the national safety assessment and the reinforcement projects of the Flood Protection Programme (HWBP). The open Rijkswaterstaat WFS holds 4 NBPW layers, 80 layers from the first assessment round with verdicts and failure probabilities per failure mechanism, such as piping, macro-stability, grass cover erosion, dune erosion and closure reliability of structures, per dike section and trajectory, and 6 HWBP project layers; a REST API is also offered. Georegister metadata states no use limitations and no access conditions, so the services are free to use, with a revision in December 2024. Caveats: the second assessment round started in 2023 and its results are still being added, field lists per layer were not read, and portal functions beyond the open services need login. Simulation uses: fragility of flood defences by failure mechanism for breach and cascading flood models, exposure of the areas the defences protect, prioritising reinforcement and climate adaptation of the defence system. Related record: LIWO flood maps (data-netherlands-liwo-flood-information) give the inundation scenarios for breaches of these defences.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Waterveiligheidsportaal (flood defence safety assessment portal) (NL, dam_safety_authority) https://waterveiligheidsportaal.nl/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge"
+  ],
+  "homepage": "https://waterveiligheidsportaal.nl/data-services",
+  "id": "data-netherlands-primary-flood-defences-nbpw",
+  "languages": [
+    "nl"
+  ],
+  "licence": "No use limitations and no access conditions (Nationaal Georegister metadata); IHW data policy applies",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "National primary flood defences base data and safety assessments (NBPW, Waterveiligheidsportaal)",
+  "notes": "Only the WFS capabilities document was read, no features were downloaded. The content of the 54 wvp layers was not checked.",
+  "provider": "Informatiehuis Water for the Ministry of Infrastructure and Water Management; served by Rijkswaterstaat",
+  "related_ids": [
+    "data-netherlands-liwo-flood-information"
+  ],
+  "schema_summary": "WFS groups: nbpw (4 layers: location of dikes, dams, dunes and structures with safety standards, dike trajectories), lbo1 (80 layers: assessment verdicts and failure probabilities per failure mechanism such as piping, macro-stability, grass cover erosion, dune erosion, structure height and closure reliability, per dike section and trajectory), lbo2 (1), hwbp (6: Flood Protection Programme reinforcement projects and subsidies for dike sections and structures), wvp (54), rest-api (2)",
+  "sectors": [
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "open data services: NBPW, assessment results (WBI, LBO-2 from 2023), HWBP projects; IHW data policy; 2FA for portal login",
+      "url": "https://waterveiligheidsportaal.nl/data-services"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "abstract, Informatiehuis Water, no use limitations, no access conditions, dates 2012-07-20 and 2024-12-15, WFS and WMS endpoints",
+      "url": "https://nationaalgeoregister.nl/geonetwork/srv/api/records/9bc22d59-427f-45c9-9f55-7dbe3985a73c/formatters/xml"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "capabilities document only: layer counts per namespace (hwbp 6, lbo1 80, lbo2 1, nbpw 4, rest-api 2, wvp 54) and layer names",
+      "url": "https://geo.rijkswaterstaat.nl/services/ogc/wvp/ows/wfs?version=1.1.0&request=GetCapabilities&Service=WFS"
+    }
+  ],
+  "spatial_resolution": "dike trajectories and dike sections (dijkvakken), plus point structures (kunstwerken)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "primary flood defences",
+    "dikes",
+    "dunes",
+    "dams",
+    "hydraulic structures",
+    "safety standards",
+    "failure probability",
+    "piping",
+    "macro-stability",
+    "HWBP",
+    "Netherlands"
+  ],
+  "temporal_coverage": "base data since 2012 (metadata creation), assessments from the first national round (LBO-1) and the second round started 2023 (LBO-2)",
+  "temporal_resolution": "none",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "National primary flood defences base data and safety assessments (NBPW, Waterveiligheidsportaal)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/mit-crpg/OpenMOC"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://mit-crpg.github.io/OpenMOC/"
+    },
+    {
+      "kind": "paper",
+      "label": "Reference paper (Annals of Nuclear Energy)",
+      "url": "http://www.sciencedirect.com/science/article/pii/S0306454913006634"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openmoc method of characteristics neutron transport code mit",
+    "repo": "github.com/mit-crpg/openmoc",
+    "url": "https://mit-crpg.github.io/OpenMOC"
+  },
+  "description": "OpenMOC is a neutron transport code that solves for the flux, power distribution and multiplication factor in a nuclear reactor with the deterministic method of characteristics, for fixed source and eigenvalue problems. The README read on 2026-09-26 says development began at MIT in 2012 in the Nuclear Science and Engineering Department, and that the project provides a Python package bound to C, C++ and CUDA source, with constructive solid geometry and 2D ray tracing for fully heterogeneous multi-group calculations. Coverage is general reactor geometries. Access is through the GitHub source and documentation site; the README badge points to version 0.4.0 on PyPI, while the latest git tag seen was v0.3.0. The code is free under the MIT licence (copyright 2012 to 2023, MIT and OpenMOC contributors). Caveats: the README still points to a retired continuous integration service and recent activity was not confirmed, so maintenance status is unknown; results need multi-group cross sections prepared elsewhere. Simulation uses are core flux and power calculations for reactor physics research and methods development, feeding safety analysis and digital twin physics cores. Related records: model-openmc is the Monte Carlo code from the same MIT group, and model-dragon-donjon-reactor-physics-codes also offers the method of characteristics.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review https://www-pub.iaea.org/MTCD/publications/PDF/p15792-DOC-010-496_web.pdf (IAEA Technical Reports Series 496 (2025), review)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://mit-crpg.github.io/OpenMOC/",
+  "id": "model-openmoc",
+  "inputs": [
+    "constructive solid geometry",
+    "multi-group cross sections"
+  ],
+  "language": [
+    "python",
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-07-19",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "http://www.sciencedirect.com/science/article/pii/S0306454913006634"
+    ]
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "OpenMOC method of characteristics neutron transport code (MIT)",
+  "outputs": [
+    "neutron flux and power distributions",
+    "multiplication factor"
+  ],
+  "provider": "MIT Computational Reactor Physics Group (Nuclear Science and Engineering Department)",
+  "related_ids": [
+    "model-openmc",
+    "model-dragon-donjon-reactor-physics-codes"
+  ],
+  "repository": "https://github.com/mit-crpg/OpenMOC",
+  "sectors": [
+    "energy.nuclear"
+  ],
+  "simulation_uses": [
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README (purpose, MOC method, Python with C/C++/CUDA, origin 2012, PyPI badge 0.4.0)",
+      "url": "https://raw.githubusercontent.com/mit-crpg/OpenMOC/develop/README.rst"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT licence, copyright 2012-2023; tags to v0.3.0 read with git ls-remote",
+      "url": "https://raw.githubusercontent.com/mit-crpg/OpenMOC/develop/LICENSE"
+    }
+  ],
+  "tags": [
+    "method of characteristics",
+    "neutron transport",
+    "reactor physics",
+    "MIT",
+    "open source"
+  ],
+  "title_en": "OpenMOC method of characteristics neutron transport code (MIT)",
+  "type": "model"
+}

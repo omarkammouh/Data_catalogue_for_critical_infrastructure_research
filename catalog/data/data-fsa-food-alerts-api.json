@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "API documentation",
+      "url": "https://data.food.gov.uk/food-alerts/ui/reference"
+    },
+    {
+      "kind": "api",
+      "label": "Alerts endpoint (JSON, CSV, GeoJSON, RDF, Turtle, HTML)",
+      "url": "https://data.food.gov.uk/food-alerts/id"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "service_performance",
+    "supply_chains_logistics",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "event_record",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fsa food alerts api allergy alerts product recalls and food alerts for action uk",
+    "url": "https://data.food.gov.uk/food-alerts/ui/reference"
+  },
+  "description": "The Food Alerts API publishes every food alert issued by the United Kingdom's Food Standards Agency: allergy alerts, product recall information notices and food alerts for action. The producer is the Food Standards Agency. Coverage is national, from January 2018 to the present, and the latest alert read today was created on 25 September 2026. Each alert gives an identifier, title, type, status, created and modified dates, the business reporting it, the problem such as Salmonella or an undeclared allergen, and the affected products, with a link to the public notice. The data are available through a free REST API as JSON, CSV, GeoJSON, RDF, Turtle or web pages, under the Open Government Licence v3.0; earlier alerts are in the agency's data catalogue. Caveats: the service is labelled beta, alerts describe products and firms, not distribution routes or volumes, and GeoJSON output carries no meaningful locations for most alerts. Simulation uses: modelling how contamination events propagate through food supply chains, sizing recall workloads for local authorities, and calibrating the frequency of supply disruptions from safety failures. Related records: the openFDA food enforcement reports (data-openfda-food-enforcement) give the United States equivalent.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "food-alerts-wrapper",
+      "route": "R05",
+      "source": "pypi"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv",
+    "geojson",
+    "database",
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://data.food.gov.uk/food-alerts/ui/reference",
+  "id": "data-fsa-food-alerts-api",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2018-04-13",
+  "licence": "Open Government Licence v3.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "FSA Food Alerts API (allergy alerts, product recalls and food alerts for action, UK)",
+  "provider": "Food Standards Agency (United Kingdom)",
+  "related_ids": [
+    "data-openfda-food-enforcement"
+  ],
+  "schema_summary": "One item per alert: notation (for example FSA-PRIN-01-2018), title, created and modified dates, alert type (Allergy Alert, Product Recall Information Notice, Food Alert for Action), status, reporting business, problem (hazard or allergen), affected products, and a link to the alert page",
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "API documentation: current and recent food alerts (AA, PRIN, FAFA) from January 2018 onwards; beta but stable; historical alerts via the FSA data catalogue; REST GET with JSON, CSV and web pages; contact data@food.gov.uk",
+      "url": "https://data.food.gov.uk/food-alerts/ui/reference"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "meta: publisher Food Standards Agency, licence OGL 3, version 2.0.1, formats csv, geojson, html, json, rdf, ttl; first item FSA-PRIN-01-2018 created 2018-01-18",
+      "url": "https://data.food.gov.uk/food-alerts/id?_limit=1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Latest alert created 2026-09-25 (a Salmonella recall)",
+      "url": "https://data.food.gov.uk/food-alerts/id?_limit=1&_sort=-created"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Third-party Python wrapper (Epimorphics, 2020) that led to the API",
+      "url": "https://pypi.org/pypi/food-alerts-wrapper/json"
+    }
+  ],
+  "spatial_resolution": "National (alerts name businesses and products, not locations)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "food recall",
+    "allergy alert",
+    "food safety",
+    "food supply chain",
+    "UK"
+  ],
+  "temporal_coverage": "January 2018 to present",
+  "temporal_resolution": "Per alert (daily dates)",
+  "temporal_resolution_class": "daily",
+  "title_en": "FSA Food Alerts API (allergy alerts, product recalls and food alerts for action, UK)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

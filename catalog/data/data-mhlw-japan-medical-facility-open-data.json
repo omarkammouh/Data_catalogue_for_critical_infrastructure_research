@@ -1,0 +1,118 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Hospitals, facility table, 1 June 2026 (zipped CSV)",
+      "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip"
+    },
+    {
+      "kind": "viewer",
+      "label": "Medical Information Net (Navii) search",
+      "url": "https://www.iryou.teikyouseido.mhlw.go.jp/"
+    },
+    {
+      "kind": "portal",
+      "label": "Open data page (hospitals, clinics, dental clinics, maternity homes, pharmacies)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/newpage_43373.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "JP"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "medical information net open data japan every hospital clinic dental clinic maternity home and pharmacy with coordinates departments and opening hours twice yearly csv",
+    "url": "https://mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/newpage_43373.html"
+  },
+  "description": "This is Japan's national open register of medical facilities, taken from the Medical Information Net (Navii), which is built from the details that hospitals, clinics, dental clinics, maternity homes and pharmacies report. It is published by the Ministry of Health, Labour and Welfare (MHLW). The facility tables give each facility's identifier, official, short and English names, class, prefecture and municipality codes, address, latitude and longitude, website and regular closing days; companion tables give the departments and consultation hours of hospitals, clinics and dental clinics. The June 2026 hospital table lists about 7,700 hospitals. The files are free and available to download as zipped CSV under the Public Data License 1.0, with snapshots in June and December since August 2024. Caveats: only part of the information shown in Navii is released as open data, facilities report their own details, and codes need the definition document. Simulation uses: mapping hospitals and clinics against earthquake, tsunami and flood hazards, modelling travel-time access to care, and checking which facilities are open at a given hour after a disaster. Related records: the ambulance difficult transport cases (data-meshscope-ems-japan-difficult-transport-cases) cover emergency transport in Japan, and the Brazilian CNES register (data-cnes-brazil-health-establishments-api) and the US CMS provider data (data-cms-provider-data-hospitals) are comparable registers.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Medical Information Net (Navii) (JP, health_ministry_service)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/newpage_43373.html",
+  "id": "data-mhlw-japan-medical-facility-open-data",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public Data License version 1.0 (PDL1.0)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Medical Information Net open data (Japan): every hospital, clinic, dental clinic, maternity home and pharmacy with coordinates, departments and opening hours, twice-yearly CSV",
+  "provider": "Ministry of Health, Labour and Welfare (MHLW), Japan",
+  "related_ids": [
+    "data-meshscope-ems-japan-difficult-transport-cases",
+    "data-cnes-brazil-health-establishments-api",
+    "data-cms-provider-data-hospitals"
+  ],
+  "schema_summary": "Facility tables: ID, official name and reading, short name, English name, facility class, prefecture and municipality codes, address, latitude, longitude, website, regular closing days by weekday and week of month, holidays; companion tables of departments and consultation hours for hospitals, clinics and dental clinics; separate tables for maternity homes and pharmacies; a definition document explains codes",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Open data of the Medical Information Net: part of the data published for hospitals, clinics, dental clinics, maternity homes and pharmacies; releases as of 1 June 2026, 1 December 2025, 1 June 2025, 1 December 2024 and 1 August 2024; Public Data License 1.0 applies; CSV in UTF-8 with BOM; line breaks replaced by a marker; definition document linked",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/newpage_43373.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Read in memory: 7,716 lines including header; first row Sapporo Medical University Hospital with latitude 43.055405 and longitude 141.333497; columns as in the schema summary",
+      "url": "https://www.mhlw.go.jp/content/11121000/01-1_hospital_facility_info_20260601.csv.zip"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Navii search of all hospitals, clinics, dental clinics, maternity homes and pharmacies by location, opening time and medical function",
+      "url": "https://www.iryou.teikyouseido.mhlw.go.jp/"
+    }
+  ],
+  "spatial_resolution": "Individual facility (coordinates)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospitals",
+    "clinics",
+    "pharmacies",
+    "health facilities",
+    "Japan"
+  ],
+  "temporal_coverage": "Snapshots from 1 August 2024 to 1 June 2026",
+  "temporal_resolution": "Snapshot (twice yearly)",
+  "temporal_resolution_class": "annual",
+  "title_en": "Medical Information Net open data (Japan): every hospital, clinic, dental clinic, maternity home and pharmacy with coordinates, departments and opening hours, twice-yearly CSV",
+  "type": "data",
+  "update_frequency": "annual"
+}

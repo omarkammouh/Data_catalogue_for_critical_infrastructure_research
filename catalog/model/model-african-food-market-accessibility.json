@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Code and shared data",
+      "url": "https://github.com/robedamo/food_market_access"
+    },
+    {
+      "kind": "paper",
+      "label": "Unequal Journeys to Food Markets: Continental-Scale Evidence from Open Data in Africa (arXiv 2505.07913)",
+      "url": "https://arxiv.org/abs/2505.07913"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "continental scale food market accessibility model for africa open geospatial data",
+    "repo": "github.com/robedamo/food_market_access",
+    "url": "https://github.com/robedamo/food_market_access"
+  },
+  "description": "This model computes how easily people across Africa can reach food markets, using only open data. For any African country it clusters food shops and markets from OpenStreetMap and market locations from the World Food Programme, computes travel time from every pixel to each market over the Malaria Atlas Project motorised and walking friction surfaces, and derives three measures: travel time to the closest market, the number of markets reachable within a threshold, and an entropy measure of how evenly nearby markets are spread. The provider is Robert Benassai-Dalmau and co-authors, who report continental results in the preprint Unequal Journeys to Food Markets (arXiv 2505.07913, 2025). Coverage is continental Africa at raster resolution, country by country. The Python code and the shared data needed to reproduce the figures are on GitHub under the MIT licence; outputs are saved as pickled matrices, rasters and GeoJSON. Caveats: OpenStreetMap completeness varies between countries, informal markets are under-mapped, and travel speeds are fixed by the friction surfaces, not seasonal or disrupted conditions. Simulation uses: estimating how road cuts, floods or conflict raise travel time to food markets, and targeting food assistance where access is already poor. Related records: the Malaria Atlas Project travel time maps (data-map-travel-time-to-healthcare) provide the friction surfaces, and WFP global food prices (data-wfp-global-food-prices) lists the markets.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "continental food market accessibility Africa open data code",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "continental",
+  "hazards": [],
+  "homepage": "https://github.com/robedamo/food_market_access",
+  "id": "model-african-food-market-accessibility",
+  "inputs": [
+    "OpenStreetMap food shops and markets (Geofabrik extract)",
+    "WFP market locations",
+    "Malaria Atlas Project motorised and walking friction surfaces"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-13",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "Continental-scale food market accessibility model for Africa (open geospatial data)",
+  "outputs": [
+    "Travel time from every pixel to the nearest market (motorised and walking)",
+    "Number of markets within a travel time threshold",
+    "Entropy of market access, per country"
+  ],
+  "provider": "Robert Benassai-Dalmau and co-authors",
+  "regions": [],
+  "related_ids": [
+    "data-map-travel-time-to-healthcare",
+    "data-wfp-global-food-prices"
+  ],
+  "repository": "https://github.com/robedamo/food_market_access",
+  "runs_on": [
+    "Python"
+  ],
+  "sectors": [
+    "services.food_supply",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Citation (Benassai-Dalmau, Voukelatou, Schifanella, Fiandrino, Paolotti, Kalimeri, 2025), abstract, three accessibility metrics, scripts, data sources OSM, WFP and MAP friction surfaces, MIT licence",
+      "url": "https://raw.githubusercontent.com/robedamo/food_market_access/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License",
+      "url": "https://raw.githubusercontent.com/robedamo/food_market_access/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Shallow clone: last commit 2026-07-13, shared rasters, CSV and GeoJSON outputs",
+      "url": "https://github.com/robedamo/food_market_access"
+    }
+  ],
+  "tags": [
+    "food markets",
+    "accessibility",
+    "travel time",
+    "OpenStreetMap",
+    "WFP",
+    "Africa",
+    "food security"
+  ],
+  "title_en": "Continental-scale food market accessibility model for Africa (open geospatial data)",
+  "type": "model",
+  "validated_on": []
+}

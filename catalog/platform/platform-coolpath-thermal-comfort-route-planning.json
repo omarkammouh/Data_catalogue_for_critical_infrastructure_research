@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "arXiv 2602.02540",
+      "url": "https://arxiv.org/abs/2602.02540"
+    },
+    {
+      "kind": "repo",
+      "label": "SOLWEIG-GPU code",
+      "url": "https://github.com/nvnsudharsan/SOLWEIG-GPU"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "coolpath tool thermal comfort route planning for walking and cycling",
+    "repo": "github.com/nvnsudharsan/solweig-gpu",
+    "url": "https://arxiv.org/abs/2602.02540"
+  },
+  "deployment": [
+    "hosted_service"
+  ],
+  "description": "CoolPath Tool is a walking and cycling route planner that picks paths by thermal comfort, measured with the Universal Thermal Climate Index (UTCI), not by distance or time alone. It was built at The University of Texas at Austin by Aditya Patel, Naveen Sudharsan, Dev Niyogi and colleagues, with City of Austin staff, as part of the Austin Digital Twin and UT-City CoLab. City-scale UTCI maps are computed with a GPU version of the SOLWEIG radiation model, using buildings and trees mapped from satellite products and current weather; for an origin and destination the tool averages UTCI along candidate routes on the road network and recommends the coolest one that is still reasonably direct, often a much shadier path. Coverage: demonstrated for Austin, Texas, and described as transferable to other cities. Access: described in a 2026 arXiv paper; the SOLWEIG-GPU model is open source on GitHub, while the route planner itself was not found as a public release. Licence and cost: free to read, paper under CC BY-NC-SA 4.0. Caveats: the average UTCI along a route ignores exposure time, results depend on the land cover inputs, and the tool's public availability is unclear. It supports heat exposure analysis and climate adaptation of active travel. It complements UMEP, CoolWalks and ShadeWalk in the catalogue.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "heat exposure pedestrians cyclists shade map dataset urban walking routes extreme heat flooding bike paths",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "city",
+  "hazards": [
+    "extreme_heat"
+  ],
+  "homepage": "https://arxiv.org/abs/2602.02540",
+  "hosted_models": [
+    "SOLWEIG-GPU"
+  ],
+  "id": "platform-coolpath-thermal-comfort-route-planning",
+  "interfaces": [
+    "web_app"
+  ],
+  "interoperability": [
+    "UTCI raster maps",
+    "road network"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-02",
+  "licence": "Paper CC-BY-NC-SA-4.0; SOLWEIG-GPU open source on GitHub",
+  "licence_type": [
+    "non_commercial"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CoolPath Tool, thermal comfort route planning for walking and cycling",
+  "open_source": false,
+  "platform_kind": [
+    "cloud_service",
+    "digital_twin"
+  ],
+  "provider": "The University of Texas at Austin, UT-City CoLab and Austin Digital Twin, with the City of Austin (Patel, Sudharsan, Niyogi et al.)",
+  "regions": [
+    "Austin, Texas"
+  ],
+  "related_ids": [
+    "platform-umep-urban-multi-scale-environmental-predictor",
+    "model-coolwalks-shade-aware-routing",
+    "model-shadewalk-urban-shade-coolest-route",
+    "model-solweig-gpu"
+  ],
+  "sectors": [
+    "transport.active_mobility",
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "abstract: UTCI, SOLWEIG GPU, route selection, Austin case, Austin Digital Twin; CC BY-NC-SA 4.0",
+      "url": "https://arxiv.org/abs/2602.02540"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "GPU SOLWEIG implementation used by the tool",
+      "url": "https://github.com/nvnsudharsan/SOLWEIG-GPU"
+    }
+  ],
+  "supported_sectors": [
+    "transport.active_mobility"
+  ],
+  "tags": [
+    "UTCI",
+    "heat stress routing",
+    "Austin Digital Twin",
+    "SOLWEIG",
+    "r2-fresh-transport"
+  ],
+  "title_en": "CoolPath Tool, thermal comfort route planning for walking and cycling",
+  "type": "platform"
+}

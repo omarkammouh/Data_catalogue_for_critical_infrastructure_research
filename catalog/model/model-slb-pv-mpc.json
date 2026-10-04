@@ -1,0 +1,93 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/City-Syntax/SLB-PV-MPC"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/City-Syntax/SLB-PV-MPC/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "degradation aware second life battery building control",
+    "repo": "github.com/city-syntax/slb-pv-mpc",
+    "url": "https://github.com/City-Syntax/SLB-PV-MPC"
+  },
+  "description": "SLB-PV-MPC is the City-Syntax repository's model and reproducible workflow for operating second-life batteries in photovoltaic-equipped buildings. It combines an R–2RC equivalent-circuit model, state-of-health-dependent power limits, demand and PV forecasting, and day-ahead model-predictive control. Inputs include retired-cell parameters, building loads, weather and electricity prices; outputs are hourly battery-operation logs, degradation measures and lifecycle cost comparisons. The documented application uses five years from a German industrial facility, while time steps and settings can be adapted. Source is free under MIT. A limitation is that the economic results depend on cell condition, forecasts, price spreads and market assumptions; the reported savings are case results, not guaranteed performance. The workflow can support storage sizing and control studies. PyBaMM (platform-pybamm) offers related battery modelling. Notebook execution order and intermediate products are documented. No building measurements, battery tables or model weights were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"building energy\" simulation framework fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/City-Syntax/SLB-PV-MPC",
+  "id": "model-slb-pv-mpc",
+  "inputs": [
+    "Battery cell parameters, building load and weather",
+    "PV forecasts and day-ahead prices"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-06",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid",
+    "optimisation"
+  ],
+  "name": "Degradation-aware second-life battery building control",
+  "notes": "G7 G7-1033. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Hourly operation and degradation trajectories",
+    "Cost and sensitivity comparisons"
+  ],
+  "provider": "City-Syntax repository maintainers",
+  "related_ids": [
+    "platform-pybamm"
+  ],
+  "repository": "https://github.com/City-Syntax/SLB-PV-MPC",
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for City-Syntax/SLB-PV-MPC: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=%22building+energy%22+simulation+framework+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/city-syntax/slb-pv-mpc/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Model for operating second-life batteries",
+  "type": "model"
+}

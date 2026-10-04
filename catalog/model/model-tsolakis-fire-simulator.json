@@ -1,0 +1,94 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/ttsolakis/fire_simulator"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/ttsolakis/fire_simulator/blob/main/README.MD"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "raster cellular automata wildfire simulator",
+    "repo": "github.com/ttsolakis/fire_simulator",
+    "url": "https://github.com/ttsolakis/fire_simulator"
+  },
+  "description": "This wildfire simulator is developed by Anastasios Tsolakis as a Python package for fire spread on raster land-cover maps. It uses a cellular-automata representation and links vegetation classes to flammability, with Matplotlib visualisation. Inputs are a GeoTIFF land-cover raster and an ignition point selected on the map; outputs show the evolving burned area through the simulation. Geographic extent and cell size follow the selected raster; the README recommends the Copernicus 2020 10-m land-cover product but does not establish a calibrated physical time step. Source is free under MIT and installation instructions list rasterio and GDAL requirements. A limitation is that the documented simple spread rules and vegetation mapping do not establish predictive accuracy for operational wildfire response. The model can support exploratory hazard-exposure scenarios. GisFIRE (platform-gisfire) offers related wildfire data preparation and analysis. No land-cover map, animation or model archive was downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"wildfire spread\" simulator fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "wildfire"
+  ],
+  "homepage": "https://github.com/ttsolakis/fire_simulator",
+  "id": "model-tsolakis-fire-simulator",
+  "inputs": [
+    "GeoTIFF land-cover map",
+    "Ignition location"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-09-24",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Raster cellular-automata wildfire simulator",
+  "notes": "G7 G7-1038. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Simulated fire-spread states and visualisations"
+  ],
+  "provider": "Anastasios Tsolakis",
+  "related_ids": [
+    "platform-gisfire"
+  ],
+  "repository": "https://github.com/ttsolakis/fire_simulator",
+  "sectors": [
+    "cross_cutting.green_blue",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for ttsolakis/fire_simulator: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=%22wildfire+spread%22+simulator+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/ttsolakis/fire_simulator/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for green and blue infrastructure and emergency services",
+  "type": "model"
+}

@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/NatLabRockies/bifacialvf"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/NatLabRockies/bifacialvf/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Marion et al. (2017). A Practical Irradiance Model for Bifacial PV Modules. IEEE Photovoltaic Specialists Conference preprint; repository: https://github.com/natlabrockies/bifacialvf",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bifacialvf photovoltaic view factor model",
+    "repo": "github.com/natlabrockies/bifacialvf",
+    "url": "https://github.com/NatLabRockies/bifacialvf"
+  },
+  "description": "bifacialvf is the national laboratory's Python model of irradiance on rows of bifacial photovoltaic panels. It calculates front and rear view factors for a five-row array assumed infinite perpendicular to the rows, with options for an edge row or single row and single-axis tracking. Inputs are row geometry, ground reflectance, module settings and typical-meteorological-year weather; outputs include hourly irradiance profiles and optional yield effects from rear-side mismatch. The represented site and year follow the weather file. The README states BSD-3-Clause licensing and provides PyPI installation and notebook examples, although GitHub's automated licence classifier returns no standard SPDX result. A limitation is the infinite-row idealisation, which may not describe short or irregular arrays. bifacialvf can support photovoltaic-generation estimates for grid studies. It complements PVDeg and other solar component tools by focusing on irradiance geometry. No weather file or module data was obtained.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:NatLabRockies",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NatLabRockies/bifacialvf",
+  "id": "model-bifacialvf",
+  "inputs": [
+    "PV array geometry and ground reflectance",
+    "TMY weather and module parameters"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-22",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "bifacialvf photovoltaic view-factor model",
+  "notes": "G7 G7-1224. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Hourly front and rear irradiance and mismatch estimates"
+  ],
+  "provider": "National Laboratory of the Rockies bifacial PV contributors",
+  "related_ids": [],
+  "repository": "https://github.com/NatLabRockies/bifacialvf",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for NatLabRockies/bifacialvf: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3ANatLabRockies&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/natlabrockies/bifacialvf/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for electricity",
+  "type": "model"
+}

@@ -1,0 +1,140 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code (AmbulanceDeployment)",
+      "url": "https://github.com/joshua-ong/AmbulanceDeployment"
+    },
+    {
+      "kind": "paper",
+      "label": "OpenEMS preprint (arXiv 2201.11208)",
+      "url": "https://arxiv.org/abs/2201.11208"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.48550/arxiv.2201.11208",
+    "name": "openems two stage stochastic and robust ambulance location and routing package austin travis county ems",
+    "repo": "github.com/joshua-ong/ambulancedeployment",
+    "url": "https://github.com/joshua-ong/AmbulanceDeployment"
+  },
+  "description": "OpenEMS is an open-source pipeline for deciding where ambulances should wait and which calls they should serve, built with Austin-Travis County Emergency Medical Services in Texas. It turns historical calls into a grid of demand, computes travel distances from OpenStreetMap, solves two-stage stochastic and robust linear programs for ambulance stationing and routing, and replays historical calls through a simulation engine that logs each call, arrival on scene and arrival at hospital, with plots and a prototype interface for EMS managers. The provider is Joshua Ong, David Kulpanowski, Yangxinyu Xie, Evdokia Nikolova and Ngoc Mai Tran, who describe it in an arXiv preprint (2022). Coverage is Austin and Travis County, calibrated on the 246,809 calls served in 2019 and 2020 by 37 ambulances; the README explains how to replace the input files with another city's data. The Julia and Python code is on GitHub under the MIT licence, with Jupyter notebooks for each step. Caveats: the last commit was in January 2022, the interface is a prototype, travel times come from road distances, not traffic data, and the preprint reports a change in response time from optimal stationing that should be checked against its full text. Simulation uses: ambulance fleet sizing, station relocation and what-if tests of losing or adding a unit during a surge. Related records: JEMSS (model-jemss) is a Julia EMS simulator, and the NHS ambulance discrete-event model (model-ambulance-des-nhsx) covers a similar problem in England.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "OpenEMS ambulance stationing Austin-Travis County EMS github open source package",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "city",
+  "hazards": [],
+  "homepage": "https://github.com/joshua-ong/AmbulanceDeployment",
+  "id": "model-openems-ambulance-deployment",
+  "inputs": [
+    "Historical EMS calls (location and time)",
+    "Grid of neighbourhoods with adjacency and coverage",
+    "Hospitals and ambulance stations",
+    "OpenStreetMap travel distances"
+  ],
+  "language": [
+    "julia",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-01-04",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "optimisation",
+    "discrete_event"
+  ],
+  "name": "OpenEMS: two-stage stochastic and robust ambulance location and routing package (Austin-Travis County EMS)",
+  "outputs": [
+    "Optimal ambulance stationing and routing under stochastic and robust programs",
+    "Simulated event logs of calls, arrivals on scene and at hospital",
+    "Response time statistics and plots",
+    "Prototype GUI views"
+  ],
+  "provider": "Joshua Ong, David Kulpanowski, Yangxinyu Xie, Evdokia Nikolova and Ngoc Mai Tran, with Austin-Travis County EMS",
+  "regions": [
+    "Austin, Texas",
+    "Travis County, Texas"
+  ],
+  "related_ids": [
+    "model-jemss",
+    "model-ambulance-des-nhsx"
+  ],
+  "repository": "https://github.com/joshua-ong/AmbulanceDeployment",
+  "runs_on": [
+    "Julia",
+    "Python with Jupyter notebooks"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Authors, abstract: end-to-end pipeline with data handling, optimisation and calibrated simulation, built with ATCEMS; Austin case study",
+      "url": "https://arxiv.org/abs/2201.11208"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Link annotation to github.com/joshua-ong/AmbulanceDeployment found in the PDF (not saved)",
+      "url": "https://arxiv.org/pdf/2201.11208"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Austin EMS served 246,809 calls in 2019-2020 with 37 ambulances; preprocessing, OpenStreetMap distances, LP solvers, simulation engine (Julia or notebooks), plots, prototype GUI; how to swap in another city's data",
+      "url": "https://raw.githubusercontent.com/joshua-ong/AmbulanceDeployment/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License",
+      "url": "https://raw.githubusercontent.com/joshua-ong/AmbulanceDeployment/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Shallow clone: last commit 2022-01-04; Julia, notebooks and CSV inputs; one tag (DOI)",
+      "url": "https://github.com/joshua-ong/AmbulanceDeployment"
+    }
+  ],
+  "tags": [
+    "ambulance location",
+    "EMS",
+    "stochastic programming",
+    "robust optimisation",
+    "response time",
+    "Austin"
+  ],
+  "title_en": "OpenEMS: two-stage stochastic and robust ambulance location and routing package (Austin-Travis County EMS)",
+  "type": "model",
+  "validated_on": [
+    "Austin-Travis County EMS calls 2019-2020"
+  ]
+}

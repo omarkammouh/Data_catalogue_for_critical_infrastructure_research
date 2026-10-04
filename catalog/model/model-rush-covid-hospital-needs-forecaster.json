@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Data_And_Scripts.zip (2 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/5519874/files/Data_And_Scripts.zip?download=1"
+    },
+    {
+      "kind": "viewer",
+      "label": "Web application",
+      "url": "https://rush-covid19.herokuapp.com/"
+    },
+    {
+      "kind": "portal",
+      "label": "Data and scripts (Dryad, mirrored on Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/records/5519874"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5061/dryad.1ns1rn8rx",
+    "name": "rush covid 19 hospital needs forecasting application rush university medical center",
+    "url": "https://rush-covid19.herokuapp.com"
+  },
+  "description": "This web application forecasts how many COVID-19 patients a hospital in the United States will see and what beds, ventilators and protective equipment it will need. The producers are Kenneth Locey, Thomas Webb, Jawad Khan, Anuja Antony and Bala Hota at Rush University Medical Center in Chicago, who built it during the pandemic and published the model forms with data and scripts on Dryad. Coverage is any US hospital or region: users pick one of seven epidemic forecasting models, including SEIR models, adjust a large set of local parameters, and the tool converts predicted cases into visits, admissions, discharges and census using time lags, patient carry-over and length of stay. The application is available free in a web browser and still responds, and the scripts and data behind the published figures are a free download under the CC0 dedication. Caveats: built for 2020 and 2021 conditions, parameters need local calibration, the full application source is not in the deposit, and upkeep is uncertain. Simulation uses: converting epidemic scenarios into hospital bed, ventilator and supply demand for surge planning. Related records: CHIME (model-chime) is a comparable hospital impact model, and the French hospital incidence data (data-france-covid-hospital-incidence-contact-networks) give observed admissions for testing forecasts.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "forecast hospital needs COVID-19",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://zenodo.org/records/5519874",
+  "id": "model-rush-covid-hospital-needs-forecaster",
+  "inputs": [
+    "COVID-19 case forecasts from one of seven epidemic models",
+    "Hospital parameters such as length of stay, time lags and patient carry-over",
+    "Local testing and hospitalisation trends"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-09-21",
+  "licence": "CC0 1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical",
+    "hybrid"
+  ],
+  "name": "Rush COVID-19 hospital needs forecasting application (Rush University Medical Center)",
+  "outputs": [
+    "Forecast hospital visits, admissions and discharges",
+    "Beds, ventilators and personal protective equipment needed",
+    "Downloadable forecast tables"
+  ],
+  "provider": "Kenneth Locey, Thomas Webb, Jawad Khan, Anuja Antony and Bala Hota (Rush University Medical Center, Chicago)",
+  "related_ids": [
+    "model-chime",
+    "data-france-covid-hospital-incidence-contact-networks"
+  ],
+  "runs_on": [
+    "Web browser (Dash application)"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Dryad DOI 10.5061/dryad.1ns1rn8rx, CC0; creators Locey, Webb, Khan, Antony, Hota (Rush University Medical Center); published 2021-09-21; Data_And_Scripts.zip 2 MB used for Figure 1; application forecasts hospital visits, admits, discharges and needs for beds, ventilators and PPE by coupling COVID-19 predictions to models of time lags, patient carry-over and length of stay; users choose from seven COVID-19 models and customise parameters; keywords SEIR, patient census",
+      "url": "https://zenodo.org/api/records/5519874"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Application page responds (HTTP 200); a Plotly Dash application",
+      "url": "https://rush-covid19.herokuapp.com/"
+    }
+  ],
+  "tags": [
+    "COVID-19",
+    "hospital capacity",
+    "SEIR",
+    "ventilators",
+    "PPE",
+    "forecasting",
+    "Dash"
+  ],
+  "title_en": "Rush COVID-19 hospital needs forecasting application (Rush University Medical Center)",
+  "type": "model",
+  "validated_on": [
+    "Figure of model forms and results in the associated manuscript (Rush University Medical Center)"
+  ]
+}

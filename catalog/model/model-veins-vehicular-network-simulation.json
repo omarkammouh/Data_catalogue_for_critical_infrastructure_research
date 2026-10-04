@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Veins source code",
+      "url": "https://github.com/sommer/veins"
+    },
+    {
+      "kind": "portal",
+      "label": "Download and changelog",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "http://veins.car2x.org/download/"
+    },
+    {
+      "kind": "docs",
+      "label": "Veins website, tutorial and documentation",
+      "url": "http://veins.car2x.org/"
+    },
+    {
+      "kind": "paper",
+      "label": "Sommer, German and Dressler 2011, IEEE TMC",
+      "url": "http://dx.doi.org/10.1109/TMC.2010.133"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1109/tmc.2010.133",
+    "name": "veins open source vehicular network simulation framework coupling omnet and sumo",
+    "repo": "github.com/sommer/veins",
+    "url": "https://veins.car2x.org"
+  },
+  "description": "Veins is an open-source framework for simulating inter-vehicle communication, built by bidirectionally coupling two established simulators: the event-based network simulator OMNeT++ and the road traffic simulator SUMO. It was introduced by Christoph Sommer, Reinhard German and Falko Dressler in IEEE Transactions on Mobile Computing in 2011 and is maintained by the Veins project. Coverage: a generic model suite, not a region; it offers validated, computationally inexpensive models of radio shadowing by buildings and vehicles, an optional Veins_INET module for the INET framework, and works with external modules such as space_Veins for satellite-supported vehicular networks. Format and access: C++ and NED source for OMNeT++, downloadable releases (current 5.3.1, earlier 5.2 and 4.7.1) and an Instant Veins virtual machine, with a tutorial, documentation and FAQ on veins.car2x.org and development on GitHub; free. Licence: GPL-2.0-or-later unless a file states otherwise, with non-code parts also under CC-BY-SA-4.0 (README). Caveats: it needs matching OMNeT++ and SUMO versions, the bundled communication models were not read in the code or documentation, and it simulates communication, not road capacity itself. Simulation uses: studying how connected-vehicle messaging behaves under traffic, for cascading failure, emergency response and digital twin work on cooperative transport systems. Related records: Eclipse SUMO (model-sumo) provides the traffic, and Simu5G (model-simu5g) adds cellular 5G models on OMNeT++.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-veins: provider pages read (round 2 register piece)",
+      "route": "R50",
+      "source": "transport-veins"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "http://veins.car2x.org/",
+  "id": "model-veins-vehicular-network-simulation",
+  "inputs": [
+    "SUMO road network and traffic demand",
+    "building and obstacle geometry",
+    "communication application models"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-16",
+  "licence": "GPL-2.0-or-later (non-code parts also CC-BY-SA-4.0)",
+  "licence_type": [
+    "share_alike",
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "http://dx.doi.org/10.1109/TMC.2010.133"
+    ]
+  },
+  "maturity": "active",
+  "model_kind": [
+    "discrete_event",
+    "network"
+  ],
+  "name": "Veins: open-source vehicular network simulation framework coupling OMNeT++ and SUMO",
+  "outputs": [
+    "message delivery, delay and packet statistics",
+    "vehicle traffic states from the coupled SUMO run"
+  ],
+  "provider": "Christoph Sommer, Falko Dressler and contributors (Veins project)",
+  "related_ids": [
+    "model-sumo",
+    "model-simu5g"
+  ],
+  "repository": "https://github.com/sommer/veins",
+  "sectors": [
+    "transport.road",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "emergency_response",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Home: open source vehicular network simulation framework on OMNeT++ and SUMO; Veins_INET; space_Veins; Instant Veins VM; shadowing models for buildings and vehicles; citation Sommer, German, Dressler, IEEE TMC 10(1) 2011",
+      "url": "http://veins.car2x.org/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Veins 5.3.1 current; 5.2 with Instant Veins; 4.7.1 last of series 4; master on GitHub",
+      "url": "http://veins.car2x.org/download/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "README.txt licence: GPL-2.0-or-later unless stated, non-code parts GPL-2.0-or-later OR CC-BY-SA-4.0; last commit 2026-06-16",
+      "url": "https://github.com/sommer/veins"
+    }
+  ],
+  "tags": [
+    "V2X",
+    "vehicular networks",
+    "OMNeT++",
+    "co-simulation"
+  ],
+  "title_en": "Veins: open-source vehicular network simulation framework coupling OMNeT++ and SUMO",
+  "type": "model"
+}

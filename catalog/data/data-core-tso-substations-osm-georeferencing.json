@@ -1,0 +1,118 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "All 8 files (zip)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/api/records/13367535/files-archive"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo v0.2",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.13367535"
+    },
+    {
+      "kind": "portal",
+      "label": "JAO static grid model (source data)",
+      "url": "https://www.jao.eu/static-grid-model"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "AT",
+    "BE",
+    "CZ",
+    "DE",
+    "FR",
+    "HU",
+    "HR",
+    "LU",
+    "NL",
+    "PL",
+    "RO",
+    "SI",
+    "SK"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "georeferencing of core tso substations with openstreetmap",
+    "url": "doi:10.5281/zenodo.7805624"
+  },
+  "description": "This data set links the transmission grid components published by the Core region transmission system operators through the JAO static grid model (second release) to OpenStreetMap objects, giving georeferenced substations, transformers and lines. It was published on Zenodo by Oriol Raventós Morera, with version 0.2 released in August 2024. Substations were geolocated by extracting OpenStreetMap data with the DLR esy-osm-pbf and esy-osm-shape packages and matching substation names with fuzzy string matching, so the extra-high-voltage grid can be modelled with the operators' technical parameters and consistent coordinates. A PyPSA network is built from the table, with CSV files of buses, lines and transformers and of the components that were dropped, and a PDF documents the method. Coverage is Austria, Belgium, Czechia, Germany, France, Hungary, Croatia, Luxembourg, the Netherlands, Poland, Romania, Slovenia and Slovakia. Files are CSV tables and a PDF, downloadable from Zenodo under the Open Database License at no cost. Caveats: name matching can mislocate substations, and dropped components are listed separately. Simulation uses are power flow and capacity expansion models of the Core region transmission grid. Related records: data-gridkit-power-grid-extracts is another OpenStreetMap-based European grid.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid population",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "csv",
+    "document"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://doi.org/10.5281/zenodo.7805624",
+  "id": "data-core-tso-substations-osm-georeferencing",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-08-23",
+  "licence": "ODbL-1.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Georeferencing of CORE-TSO substations with OpenStreetMap",
+  "provider": "Oriol Raventós Morera",
+  "related_ids": [
+    "data-gridkit-power-grid-extracts"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract: 13 countries, JAO static grid model, esy-osm packages, fuzzy matching, PyPSA network, PDF; ODbL-1.0; version 0.2",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.13367535"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Published 2024-08-23, files buses, lines, transformers, dropped components, PDF",
+      "url": "https://zenodo.org/api/records/13367535"
+    }
+  ],
+  "tags": [
+    "Core region",
+    "JAO",
+    "transmission grid",
+    "OpenStreetMap",
+    "PyPSA",
+    "substations"
+  ],
+  "title_en": "Georeferencing of CORE-TSO substations with OpenStreetMap",
+  "type": "data"
+}

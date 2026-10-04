@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/LARIC-jw/georeferencing-ICOLD-dams-and-reservoirs"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "geodar dam georeferencing and reservoir matching scripts",
+    "repo": "github.com/laric-jw/georeferencing-icold-dams-and-reservoirs",
+    "url": "https://github.com/LARIC-jw/georeferencing-ICOLD-dams-and-reservoirs"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "These Python scripts implement the georeferencing and polygon-matching procedures used to construct GeoDAR. Jida Wang and collaborators provide forward and reverse geocoding, comparison with regional dam registers, quality-ranked selection of coordinates and retrieval of reservoir polygons from water masks. The documented matching proceeds with 500-metre and one-kilometre tolerances and aims at one dam per reservoir polygon. Inputs include the ICOLD World Register of Dams, regional inventories and water masks; an example uses Brazil’s 2017 dam-safety register. Geographic applicability is global, but dates and spatial accuracy follow the input registers and geocoding results. Code and CSV lookup tables are public and free under MIT. The workflow depends on separately licensed ICOLD inputs and Google Maps service access, whose potential costs are not covered by the software licence. A reverse-geocoding step is described but not supplied verbatim, and the authors do not guarantee a reservoir match for every dam. Simulation uses include preparing dam locations and reservoir-network inputs. It relates to data-geodar-georeferenced-global-dams-reservoirs and data-icold-world-register-of-dams. The README’s paper DOI has a pagination error; the verified publication DOI is recorded in the citation.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "\"dam\" dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/LARIC-jw/georeferencing-ICOLD-dams-and-reservoirs",
+  "id": "platform-geodar-dam-georeferencing-scripts",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "CSV",
+    "XLSX",
+    "Dam-point and water-mask spatial inputs"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-04-19",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "GeoDAR dam georeferencing and reservoir-matching scripts",
+  "notes": "G8; G8-0091. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Jida Wang and GeoDAR collaborators",
+  "related_ids": [
+    "data-geodar-georeferenced-global-dams-reservoirs",
+    "data-icold-world-register-of-dams"
+  ],
+  "sectors": [
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/LARIC-jw/georeferencing-ICOLD-dams-and-reservoirs/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/LARIC-jw/georeferencing-ICOLD-dams-and-reservoirs"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Previously checked this review day; correct paper identity and DOI.",
+      "url": "https://api.crossref.org/works/10.5194/essd-14-1869-2022"
+    }
+  ],
+  "tags": [],
+  "title_en": "Python scripts for georeferencing and polygon matching for reservoir polygons",
+  "type": "platform"
+}

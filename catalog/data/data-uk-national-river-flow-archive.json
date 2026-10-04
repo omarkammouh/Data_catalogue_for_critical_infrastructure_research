@@ -1,0 +1,160 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "NRFA API documentation (test service)",
+      "url": "https://nrfaapps.ceh.ac.uk/nrfa/nrfa-api.html"
+    },
+    {
+      "kind": "portal",
+      "label": "NRFA data search (map-based)",
+      "url": "https://nrfa.ceh.ac.uk/data/search"
+    },
+    {
+      "kind": "portal",
+      "label": "Peak Flow Dataset (version 15, WINFAP format)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://nrfa.ceh.ac.uk/peak-flow-dataset"
+    },
+    {
+      "kind": "docs",
+      "label": "Data types and formats",
+      "url": "https://nrfa.ceh.ac.uk/data/about-data/data-formats-types"
+    },
+    {
+      "kind": "docs",
+      "label": "NRFA data licence",
+      "url": "https://eidc.ceh.ac.uk/licences/nrfa-data-terms-and-conditions-for-api-access-to-time-series-data-and-metadata/"
+    }
+  ],
+  "access_note": "Downloads require accepting the click-through licence; the API has no controls at present but is labelled a test service.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "demand_operation",
+    "hazards",
+    "system_description"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "uk national river flow archive nrfa daily and peak river flows",
+    "url": "https://nrfa.ceh.ac.uk"
+  },
+  "description": "The UK National River Flow Archive (NRFA), hosted by the UK Centre for Ecology & Hydrology, is the country's main archive of daily and peak river flows. It holds daily, monthly and flood peak data from over 1,500 gauging stations run by the Environment Agency, Natural Resources Wales, SEPA and Northern Ireland's Rivers agency, plus station metadata and catchment information on land use, geology and climate, catchment rainfall, and naturalised flows where available. Time series download from a map-based search as CSV files with a station header, value and quality flag, or through a JSON API (station-ids, station-info and time-series services) that is still labelled a test service. The Peak Flow Dataset, version 15 released on 27 August 2026 with data to September 2025, packages annual maxima, peaks over threshold and catchment descriptors for the WINFAP flood frequency software. Use is free and royalty-free, commercial or not, under a click-through licence that requires the acknowledgement \"Data from the UK National River Flow Archive\" and bars re-hosting the data for download. Caveats: not every data type exists for every station, data change through rolling updates without notice, and API caching is limited to 30 days. Simulation uses: flood frequency estimation for dams, defences and drainage, drought and low-flow analysis for water supply, calibration of catchment and flood models, and hydropower yield. Related records: the Environment Agency real-time flood monitoring API (data-uk-ea-real-time-flood-monitoring-api).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: UK National River Flow Archive, UKCEH (GB, hydrological_service) https://nrfa.ceh.ac.uk/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "NRFA API web service documentation nrfaapps.ceh.ac.uk time series",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api",
+    "other"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "drought"
+  ],
+  "homepage": "https://nrfa.ceh.ac.uk/",
+  "id": "data-uk-national-river-flow-archive",
+  "languages": [
+    "en"
+  ],
+  "licence": "NRFA click-through licence: non-exclusive, royalty-free, commercial and non-commercial use with acknowledgement ('Data from the UK National River Flow Archive'); no redistribution for download without agreement",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "UK National River Flow Archive (NRFA) daily and peak river flows",
+  "notes": "No data were downloaded or requested from the API.",
+  "provider": "UK Centre for Ecology & Hydrology (UKCEH), with data from the Environment Agency, Natural Resources Wales, SEPA and the Department for Infrastructure Rivers (Northern Ireland)",
+  "related_ids": [
+    "data-uk-ea-real-time-flood-monitoring-api"
+  ],
+  "schema_summary": "station metadata (type, location, key characteristics) and catchment information (land use, geology, climate); gauged daily and monthly flows in m3/s, catchment daily rainfall in mm, naturalised flows and runoff where available; CSV files carry a station header block then date, value and an optional quality flag; peak flow files hold AMAX, POT and catchment descriptors",
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.drinking_water",
+    "water.irrigation",
+    "water.wastewater",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "primary archive, over 1500 gauging stations, daily, monthly and flood peak data",
+      "url": "https://nrfa.ceh.ac.uk/data/about-data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 15, released 27 August 2026, data to end of September 2025, AMAX, POT, catchment descriptors, WINFAP",
+      "url": "https://nrfa.ceh.ac.uk/peak-flow-dataset"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "test service, web services, station and catchment metadata, daily flows, no current controls",
+      "url": "https://nrfaapps.ceh.ac.uk/nrfa/nrfa-api.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "data types, units, CSV layout with flags",
+      "url": "https://nrfa.ceh.ac.uk/data/about-data/data-formats-types"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "royalty-free licence, acknowledgement, no redistribution for download, 30-day cache limit, data suppliers",
+      "url": "https://eidc.ceh.ac.uk/licences/nrfa-data-terms-and-conditions-for-api-access-to-time-series-data-and-metadata/"
+    }
+  ],
+  "spatial_resolution": "over 1,500 gauging stations and their catchments",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "river flow",
+    "streamflow",
+    "peak flows",
+    "flood frequency",
+    "WINFAP",
+    "gauging stations",
+    "catchment descriptors",
+    "UKCEH",
+    "NRFA",
+    "United Kingdom"
+  ],
+  "temporal_coverage": "station records vary; peak flow data extend to the end of September 2025 (version 15)",
+  "temporal_resolution": "daily and monthly flows; annual maxima (AMAX) and peaks over threshold (POT)",
+  "temporal_resolution_class": "daily",
+  "title_en": "UK National River Flow Archive (NRFA) daily and peak river flows",
+  "type": "data",
+  "update_frequency": "irregular"
+}

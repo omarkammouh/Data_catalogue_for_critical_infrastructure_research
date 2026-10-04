@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/usnistgov/ns3-oran"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/usnistgov/ns3-oran/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "O-RAN module model and case study (2023). Workshop on ns-3. https://doi.org/10.1145/3592149.3592157",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nist o ran module for ns 3",
+    "repo": "github.com/usnistgov/ns3-oran",
+    "url": "https://github.com/usnistgov/ns3-oran"
+  },
+  "description": "The NIST O-RAN module adds radio-access-network controller models to ns-3. It represents a near-real-time RAN Intelligent Controller, reporting endpoints, configurable logic modules and conflict mitigation, with SQLite storage for reports, commands and logs. Users define network nodes, reporting and controller logic; outputs include handover behaviour, packet-related observations and controller records. Coverage is globally configurable at simulated network scale, with timing determined by the ns-3 scenario. NIST source is free under its public-service software notice, requiring preservation of the notice and acknowledgement, while dependencies retain separate licences. A limitation is that the package models selected O-RAN behaviour, not complete protocol conformance, and supplied machine-learning handover models are explicitly demonstrations. The reviewed requirements include ns-3.42 and SQLite, with optional ONNX or PyTorch support. It supports telecom-control simulations on ns-3 (platform-ns-3). The README provides examples and a 2023 Workshop on ns-3 paper, and labels maintenance best-effort after feature completion. No network simulation or model weights were executed or downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:ns-3 fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/usnistgov/ns3-oran",
+  "id": "model-nist-ns3-oran",
+  "inputs": [
+    "ns-3 network scenario",
+    "Reporting and controller logic"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-26",
+  "licence": "NIST public-service software notice; third-party components retain their licences",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "NIST O-RAN module for ns-3",
+  "notes": "G7 G7-0623. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Handover and network behaviour",
+    "SQLite reports commands and logs"
+  ],
+  "provider": "NIST Communications Technology Laboratory",
+  "related_ids": [
+    "platform-ns-3",
+    "model-5g-lena-nr-ns3",
+    "model-leo-satellite-d2d-techno-economic-analysis-framework"
+  ],
+  "repository": "https://github.com/usnistgov/ns3-oran",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for usnistgov/ns3-oran: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Ans-3+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/usnistgov/ns3-oran/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "NIST notice permits use and modification with preservation and acknowledgement.",
+      "url": "https://api.github.com/repos/usnistgov/ns3-oran/license"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Separate PyTorch and ONNX Runtime licence notices.",
+      "url": "https://api.github.com/repos/usnistgov/ns3-oran/contents/THIRD_PARTY_LICENSES.md"
+    }
+  ],
+  "tags": [],
+  "title_en": "O-RAN module adding radio-access-network controller models to ns-3",
+  "type": "model"
+}

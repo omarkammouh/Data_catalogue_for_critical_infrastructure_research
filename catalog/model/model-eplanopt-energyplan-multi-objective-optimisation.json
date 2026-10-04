@@ -1,0 +1,88 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Eurac EPLANopt page",
+      "url": "https://www.eurac.edu/en/institutes-centers/institute-for-renewable-energy/tools-services/software-tools/eplanopt-optimization-tool-energy-scenarios"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "eplanopt multi objective evolutionary optimisation of energy scenarios coupling energyplan with deap eurac research",
+    "url": "https://eurac.edu/en/institutes-centers/institute-for-renewable-energy/tools-services/software-tools/eplanopt-optimization-tool-energy-scenarios"
+  },
+  "description": "EPLANopt is an optimisation layer for the EnergyPLAN energy system model, developed by Eurac Research's Institute for Renewable Energy in Bolzano during its RegEnMod regional energy modelling project. The tool page read on 2026-09-28 explains that it couples EnergyPLAN, Aalborg University's hourly, sector-coupled simulation model, with a multi-objective evolutionary algorithm from the Python library DEAP to search capacity expansion options, returning sets of best future energy mixes that trade off several objectives, together with the cost structure of current and future systems, hourly energy flows and exchanges, and the measures that every good solution shares or avoids. The page says the code is published on a public GitLab repository under the GNU Lesser General Public License, with consultancy offered by Eurac. Coverage is not fixed: it applies to whatever system the EnergyPLAN model describes. Access is free under the LGPL; the repository itself was not opened. Caveats: it needs a working EnergyPLAN model of the system studied, and genetic searches can be slow. It supports capacity planning and optimisation studies, such as finding least-cost, low-carbon mixes of wind, solar, heat pumps and storage for a region by 2050. Related records: EnergyPLAN and the IDA Climate Response 2045 scenario built with it.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "open source building energy optimization retrofit tool python multi-objective",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://www.eurac.edu/en/institutes-centers/institute-for-renewable-energy/tools-services/software-tools/eplanopt-optimization-tool-energy-scenarios",
+  "id": "model-eplanopt-energyplan-multi-objective-optimisation",
+  "inputs": [
+    "EnergyPLAN energy system model",
+    "technology costs",
+    "capacity bounds"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GNU LGPL (per the Eurac page)",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "physical"
+  ],
+  "name": "EPLANopt: multi-objective evolutionary optimisation of energy scenarios coupling EnergyPLAN with DEAP (Eurac Research)",
+  "outputs": [
+    "Pareto-optimal energy mixes",
+    "system costs and hourly energy flows"
+  ],
+  "provider": "Eurac Research, Institute for Renewable Energy (Bolzano); developed in the RegEnMod project",
+  "related_ids": [
+    "model-energyplan",
+    "case_study-ida-climate-response-2045-denmark-energyplan"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "energy.district_heating_cooling",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "read: EPLANopt is an optimisation for the EnergyPLAN software (Aalborg University); couples EnergyPLAN with a multi-objective evolutionary algorithm for capacity expansion; high temporal resolution and sector coupling; script running a genetic optimisation based on DEAP (Distributed Evolutionary Algorithms in Python); developed in the RegEnMod project; features best future energy mixes, current and future system costs and their structure, hourly energy flows and exchanges, must-haves and must-avoids of decarbonisation; licence GNU Lesser General Public License, published on a public GitLab repository; consultancy offered; contacts Matteo Prina, Wolfram Sparber",
+      "url": "https://www.eurac.edu/en/institutes-centers/institute-for-renewable-energy/tools-services/software-tools/eplanopt-optimization-tool-energy-scenarios"
+    }
+  ],
+  "tags": [
+    "EnergyPLAN",
+    "multi-objective optimisation",
+    "genetic algorithm",
+    "DEAP",
+    "energy scenarios"
+  ],
+  "title_en": "EPLANopt: multi-objective evolutionary optimisation of energy scenarios coupling EnergyPLAN with DEAP (Eurac Research)",
+  "type": "model"
+}

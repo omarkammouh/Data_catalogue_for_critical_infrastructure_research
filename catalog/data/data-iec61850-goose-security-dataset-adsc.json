@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/smartgridadsc/IEC61850SecurityDataset"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "cyber_control",
+    "security_threat"
+  ],
+  "data_kind": [
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "iec 61850 goose security dataset synthesised substation network traces for normal disturbance and attack scenarios",
+    "repo": "github.com/smartgridadsc/iec61850securitydataset",
+    "url": "https://github.com/smartgridadsc/IEC61850SecurityDataset"
+  },
+  "description": "This dataset, released with a 2019 IEEE SmartGridComm paper by Biswas and co-authors, holds synthesised network traces of IEC 61850 GOOSE communication in a substation. The modelled substation has four buses and 18 intelligent electronic devices, including line feeder, transformer feeder, bus and under-frequency load shedding IEDs, which multicast status every second. A normal trace is joined by three disturbance traces for busbar protection, breaker failure protection and under-frequency load shedding, each described step by step in the README. Attack traces, each of ten minutes and built from the normal trace, cover denial of service by flooding bogus frames, message suppression by injecting sequence or status numbers, and data manipulation by false current measurements, malicious breaker status and replay of old messages, plus a combined attack on one breaker. The PCAPNG files are free to download from GitHub, and the authors ask users to cite the paper; no licence file was seen. Coverage is one synthetic substation. Caveats: the data are simulated, not captured in a live substation, and the set dates from 2019. Simulation uses are training and testing intrusion detection and protection logic for substation automation digital twins. Related records: data-sandi-2024-substation-intrusion-detection is a newer IEC 61850 dataset; data-iec104-scada-ids-dataset covers IEC 104.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid SCADA cyber attack dataset ICS intrusion detection electricity substation IEC 61850",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "domain_model_file"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://github.com/smartgridadsc/IEC61850SecurityDataset",
+  "id": "data-iec61850-goose-security-dataset-adsc",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2019-08-23",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "IEC 61850 GOOSE security dataset - synthesised substation network traces for normal, disturbance and attack scenarios",
+  "provider": "smartgridadsc research group (paper authors Biswas, Tan, Zhu, Li, Mashima and Chen)",
+  "related_ids": [
+    "data-sandi-2024-substation-intrusion-detection",
+    "data-iec104-scada-ids-dataset"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Substation model, normal, disturbance and attack scenarios, attack table, ten-minute PCAP files, free download and citation",
+      "url": "https://raw.githubusercontent.com/smartgridadsc/IEC61850SecurityDataset/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://github.com/smartgridadsc/IEC61850SecurityDataset/blob/master/README.md"
+    }
+  ],
+  "tags": [
+    "IEC 61850",
+    "GOOSE",
+    "substation",
+    "cyber security",
+    "network traces"
+  ],
+  "title_en": "IEC 61850 GOOSE security dataset - synthesised substation network traces for normal, disturbance and attack scenarios",
+  "type": "data"
+}

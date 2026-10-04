@@ -1,0 +1,572 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/omarkammouh/Data_catalogue_for_critical_infrastructure_research/main/schema/record.schema.json",
+  "title": "Catalogue record",
+  "description": "One resource usable for infrastructure simulation. Enumerated values are checked against schema/vocab.yaml by pipeline/validate.py, which also checks description length and content. Field meanings are documented in schema.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "name",
+    "provider",
+    "description",
+    "homepage",
+    "access_links",
+    "licence",
+    "cost",
+    "access_restrictions",
+    "sectors",
+    "geographic_scope",
+    "simulation_uses",
+    "maturity",
+    "date_catalogued",
+    "date_verified",
+    "description_checked",
+    "discovery_routes",
+    "sources",
+    "dedupe_keys",
+    "languages"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(data|model|platform|case_study)-[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "data",
+        "model",
+        "platform",
+        "case_study"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2
+    },
+    "title_en": {
+      "type": "string",
+      "minLength": 2,
+      "description": "Descriptive English display title. The original resource title remains in name."
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 2
+    },
+    "description": {
+      "type": "string",
+      "minLength": 400
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri"
+    },
+    "access_links": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "url",
+          "kind"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "licence": {
+      "type": "string",
+      "minLength": 1
+    },
+    "licence_type": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Controlled form of licence for the dashboard filter (pipeline/vocab/vocabulary.yaml, added 2026-09-29); written by pipeline/vocab_map.py rewrite or by hand, and wins over the mapping"
+    },
+    "cost": {
+      "type": "string"
+    },
+    "access_restrictions": {
+      "type": "string"
+    },
+    "access_note": {
+      "type": "string"
+    },
+    "sectors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z_]+(\\.[a-z_]+)?$"
+      }
+    },
+    "geographic_scope": {
+      "type": "string"
+    },
+    "continents": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "countries": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z]{2}$"
+      }
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Named subnational areas or cities"
+    },
+    "simulation_uses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "maturity": {
+      "type": "string"
+    },
+    "last_updated": {
+      "type": "string",
+      "description": "ISO date or year of the resource itself"
+    },
+    "date_catalogued": {
+      "type": "string",
+      "format": "date"
+    },
+    "date_verified": {
+      "type": "string",
+      "format": "date"
+    },
+    "description_checked": {
+      "type": "string",
+      "format": "date"
+    },
+    "related_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Where the metadata came from: the pages read, with dates",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "accessed"
+        ],
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "accessed": {
+            "type": "string",
+            "format": "date"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "discovery_routes": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Every route class and source that found this record, with the query used",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "route",
+          "date"
+        ],
+        "properties": {
+          "route": {
+            "type": "string",
+            "pattern": "^R[0-9]{2}$"
+          },
+          "source": {
+            "type": "string"
+          },
+          "query": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    },
+    "dedupe_keys": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "doi": {
+          "type": "string"
+        },
+        "repo": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "languages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]{2,3}$"
+      }
+    },
+    "link_health": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "checked": {
+          "type": "string",
+          "format": "date"
+        },
+        "dead": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dead_since": {
+          "type": "string"
+        },
+        "dead_by_hand": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "URLs a person confirmed dead although they answer HTTP 200 (for example a JavaScript 'not found' page); the link checker keeps them in dead and never clears them"
+        },
+        "wayback": {
+          "type": "string"
+        },
+        "unverified": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "URLs of the record that produced no definitive result (alive or dead) at the last check, for example because the checking environment could not reach the host"
+        }
+      }
+    },
+    "data_family": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "data_kind": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "formats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "spatial_resolution": {
+      "type": "string"
+    },
+    "spatial_resolution_class": {
+      "type": "string",
+      "description": "Controlled form of spatial_resolution for the dashboard filter (pipeline/vocab/vocabulary.yaml, added 2026-09-29)"
+    },
+    "spatial_resolution_m": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Structured form of spatial_resolution for the range facet: finest ground resolution in metres, where the resource has one"
+    },
+    "temporal_coverage": {
+      "type": "string"
+    },
+    "temporal_coverage_years": {
+      "type": "object",
+      "description": "Structured form of temporal_coverage for the range facet: first and last year the resource covers; end null while it is still being extended",
+      "required": [
+        "start"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 1000,
+          "maximum": 2200
+        },
+        "end": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1000,
+          "maximum": 2200
+        }
+      }
+    },
+    "temporal_resolution": {
+      "type": "string"
+    },
+    "temporal_resolution_class": {
+      "type": "string",
+      "description": "Controlled form of temporal_resolution for the dashboard filter (pipeline/vocab/vocabulary.yaml, added 2026-09-29)"
+    },
+    "crs": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "size_bytes": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Structured form of size for the range facet: total size in bytes, as the provider states it"
+    },
+    "schema_summary": {
+      "type": "string"
+    },
+    "update_frequency": {
+      "type": "string"
+    },
+    "model_kind": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "language": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Programming languages"
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "validated_on": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "repository": {
+      "type": "string"
+    },
+    "citation": {
+      "type": "string"
+    },
+    "runs_on": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "platform_kind": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "hosted_models": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "interfaces": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "deployment": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "open_source": {
+      "type": "boolean"
+    },
+    "supported_sectors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "interoperability": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hazards": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Hazard types the resource addresses (vocab hazard_types)"
+    },
+    "case_study_kind": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "resources_used": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Record ids (or names when not catalogued) of the data, models and platforms the case study used"
+    },
+    "outcomes": {
+      "type": "string",
+      "description": "What the case study found or achieved"
+    },
+    "study_period": {
+      "type": "string",
+      "description": "When the study or project took place (year or range)"
+    },
+    "organisations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Organisations that carried out or commissioned the case study"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "data"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "data_family",
+          "data_kind",
+          "formats"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "model"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "model_kind",
+          "inputs",
+          "outputs"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "platform"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "platform_kind",
+          "interfaces",
+          "deployment",
+          "open_source"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "case_study"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "case_study_kind",
+          "outcomes",
+          "resources_used"
+        ]
+      }
+    }
+  ]
+}

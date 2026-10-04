@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Open-ET/openet-ssebop"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Open-ET/openet-ssebop/blob/main/README.rst"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "OpenET development team. SSEBop Earth Engine model implementation and references. https://github.com/Open-ET/openet-ssebop",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "openet ssebop evapotranspiration model",
+    "repo": "github.com/open-et/openet-ssebop",
+    "url": "https://github.com/Open-ET/openet-ssebop"
+  },
+  "description": "OpenET SSEBop is the OpenET team's Earth Engine implementation of the Operational Simplified Surface Energy Balance model. It contains Python routines that estimate daily actual evapotranspiration from land-surface temperature, air-temperature information and reference evapotranspiration. The principal output is an image of the reference-ET fraction, multiplied by reference ET to obtain actual water loss. Coverage and spatial detail follow the selected Landsat Collection 2 image and ancillary data; estimates represent daily conditions. Apache-2.0 source and example notebooks are free, while Earth Engine has separate account and service terms. A limitation is that the simplified model prescribes hot and cold bounds instead of solving every energy-balance term explicitly. The README also marks the implementation as unsupported development code. It supports irrigation and water-balance simulations. AIWUM (model-usgs-aiwum-2-aquaculture-irrigation-water-use-model) uses related SSEBop data, but does not cover this separate model implementation.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "open-et/openet-ssebop linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/Open-ET/openet-ssebop",
+  "id": "model-openet-ssebop",
+  "inputs": [
+    "Landsat surface temperature and reflectance",
+    "Air temperature and reference evapotranspiration"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-27",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "OpenET SSEBop evapotranspiration model",
+  "notes": "G7 G7-1137. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Daily evapotranspiration fraction and actual evapotranspiration images"
+  ],
+  "provider": "OpenET SSEBop development team",
+  "related_ids": [
+    "model-usgs-aiwum-2-aquaculture-irrigation-water-use-model"
+  ],
+  "repository": "https://github.com/Open-ET/openet-ssebop",
+  "sectors": [
+    "water.irrigation",
+    "industry.agriculture"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Open-ET/openet-ssebop: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/open-et/openet-ssebop"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/open-et/openet-ssebop/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for irrigation and agriculture",
+  "type": "model"
+}

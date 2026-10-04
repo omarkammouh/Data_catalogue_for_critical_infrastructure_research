@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Hydrology API reference",
+      "url": "https://environment.data.gov.uk/hydrology/doc/reference"
+    },
+    {
+      "kind": "api",
+      "label": "Stations endpoint",
+      "url": "https://environment.data.gov.uk/hydrology/id/stations"
+    },
+    {
+      "kind": "viewer",
+      "label": "Hydrology Data Explorer",
+      "url": "https://environment.data.gov.uk/hydrology/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "hazards",
+    "sensor_realtime_streams",
+    "weather_observations",
+    "environmental_impact",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "environment agency hydrology data explorer and hydrology api england river flow level rainfall groundwater and water quality time series",
+    "url": "https://environment.data.gov.uk/hydrology"
+  },
+  "description": "The Environment Agency Hydrology API, with its browser front end the Hydrology Data Explorer, gives access to historic and recent hydrological measurements from monitoring stations across England. The revised service is a substantial expansion over earlier releases. Coverage: England; nearly eight thousand monitoring stations and over four billion readings, with 15-minute and daily river flow (m3/s) and level (m), 15-minute and daily rainfall totals (mm), dipped and logged groundwater levels (mAOD), and 15-minute water quality sonde parameters (dissolved oxygen, turbidity, conductivity, temperature, pH, ammonium, nitrate, chlorophyll, blue-green algae and fluorescent dissolved organic matter). Stations are identified by a GUID-style station unique identifier, or a short code for water quality sites. Format and access: a REST linked-data API with an OpenAPI specification, returning JSON, CSV, HTML and RDF; readings calls have a soft limit of 100,000 rows and a hard limit of 2,000,000 rows per call, with a batch API for larger requests; free and without registration. Licence: Open Government Licence v3, as stated in every API response (API version 2.1.1 on the day read). Caveats: the provider asks bulk users to keep one request in flight and may block excessive use; logged groundwater mixes 15-minute and hourly intervals; the data quality flags were not examined. Simulation uses: observed flows, levels and rainfall for calibrating and validating flood, drought and drainage models, and for hazard exposure baselines. Related records: the real-time flood monitoring API (data-uk-ea-real-time-flood-monitoring-api) carries live readings and warnings, and the National River Flow Archive (data-uk-national-river-flow-archive) holds quality-controlled UK daily flows.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source water-ea-hydrology-api: provider pages read (round 2 register piece)",
+      "route": "R35",
+      "source": "water-ea-hydrology-api"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv",
+    "database",
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://environment.data.gov.uk/hydrology/",
+  "id": "data-ea-hydrology-data-explorer-api-england",
+  "languages": [
+    "en"
+  ],
+  "licence": "OGL-3.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Environment Agency Hydrology Data Explorer and Hydrology API (England): river flow, level, rainfall, groundwater and water quality time series",
+  "provider": "Environment Agency (England), Defra Data Services Platform",
+  "related_ids": [
+    "data-uk-ea-real-time-flood-monitoring-api",
+    "data-uk-national-river-flow-archive"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage",
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "API documentation: nearly 8,000 stations; parameter table; over four billion rows; 100,000 soft and 2,000,000 hard row limits; batch API; fair-use note; SUID identifiers; OGL 3 in meta block",
+      "url": "https://environment.data.gov.uk/hydrology/doc/reference"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Live response: publisher Environment Agency, licence OGL 3, version 2.1.1, formats csv/html/json/rdf",
+      "url": "https://environment.data.gov.uk/hydrology/id/stations?_limit=1"
+    }
+  ],
+  "tags": [
+    "hydrology",
+    "river flow",
+    "rainfall",
+    "groundwater",
+    "water quality",
+    "England",
+    "linked data API"
+  ],
+  "title_en": "Environment Agency Hydrology Data Explorer and Hydrology API (England): river flow, level, rainfall, groundwater and water quality time series",
+  "type": "data"
+}

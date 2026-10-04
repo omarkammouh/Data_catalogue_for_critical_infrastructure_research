@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/TheOceanCleanupAlgorithms/ADVECT"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/TheOceanCleanupAlgorithms/ADVECT/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "advect marine debris transport model",
+    "repo": "github.com/theoceancleanupalgorithms/advect",
+    "url": "https://github.com/TheOceanCleanupAlgorithms/ADVECT"
+  },
+  "description": "ADVECT is The Ocean Cleanup's particle-transport model for marine debris. It simulates two-dimensional surface transport or three-dimensional whole-ocean movement with current advection, wind drift, eddy diffusion and, in three dimensions, particle-dependent buoyancy and vertical mixing. Users provide environmental velocity fields, release positions and times, plus particle properties and numerical settings. Outputs describe simulated particle movement over a user-selected ocean domain and period. Public Python/OpenCL source and run instructions are free under MIT, with parallel processing on suitable CPUs or GPUs. A limitation is that neither kernel represents beaching: coastal movement is clipped at the model boundary, and sedimentation is also excluded. Hardware and OpenCL compatibility must be checked, while forcing resolution constrains trajectories. ADVECT can support simulations of waste transport and marine-cleanup planning, complementary to Delft3D FM (model-delft3d-fm) for hydrodynamic fields. The repository explains both numerical kernels and supplies runner examples. No forcing files, particle arrays or simulation outputs were downloaded.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "theoceancleanupalgorithms/advect linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/TheOceanCleanupAlgorithms/ADVECT",
+  "id": "model-advect-marine-debris",
+  "inputs": [
+    "Ocean and optional wind velocity fields",
+    "Particle releases and properties"
+  ],
+  "language": [
+    "python",
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-04-12",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "ADVECT marine-debris transport model",
+  "notes": "G7 G7-0587. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Simulated particle trajectories"
+  ],
+  "provider": "The Ocean Cleanup",
+  "related_ids": [
+    "model-delft3d-fm"
+  ],
+  "repository": "https://github.com/TheOceanCleanupAlgorithms/ADVECT",
+  "sectors": [
+    "services.waste",
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for TheOceanCleanupAlgorithms/ADVECT: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/theoceancleanupalgorithms/advect"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/theoceancleanupalgorithms/advect/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for waste management and ports and maritime transport",
+  "type": "model"
+}

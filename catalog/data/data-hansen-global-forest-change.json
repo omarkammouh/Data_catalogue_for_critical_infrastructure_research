@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "GLAD Global Forest Change app and downloads",
+      "url": "https://glad.earthengine.app/view/global-forest-change"
+    },
+    {
+      "kind": "docs",
+      "label": "Earth Engine catalogue entry",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2024_v1_12"
+    },
+    {
+      "kind": "paper",
+      "label": "Hansen et al. 2013",
+      "url": "https://doi.org/10.1126/science.1244693"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "vegetation_land_cover",
+    "imagery_remote_sensing",
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1126/science.1244693",
+    "name": "hansen global forest change umd v1 12",
+    "url": "https://glad.earthengine.app/view/global-forest-change"
+  },
+  "description": "The Global Forest Change dataset contains results of a time-series analysis of Landsat images characterising global forest extent and change: tree canopy cover for 2000 for vegetation taller than 5 m, annual stand-replacing forest loss with the year of loss, forest gain for 2000 to 2012, a data mask and reference Landsat composites for the first and last years. It is produced by M. C. Hansen and colleagues at the University of Maryland with Google, USGS and NASA, first published in Science in 2013, to give consistent high-resolution global forest monitoring. Version 1.12 covers 2000 to 2024 at about 30 m (1 arc-second) resolution worldwide. The data are available as an Earth Engine image and online through the GLAD web application with tile downloads, under a CC BY 4.0 licence, free of charge. Caveats: loss is gross stand-replacement disturbance, so degradation and regrowth after 2012 are not captured, and the algorithm has changed between versions, which affects trend comparisons. It feeds vegetation and land cover change analysis for green infrastructure, wildfire and landslide exposure and nature-based adaptation; related records are the Copernicus High Resolution Layer Tree Cover and Forests, Dynamic World, ESA WorldCover and i-Tree.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "global forest cover change dataset",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "raster",
+    "api",
+    "image"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "wildfire",
+    "landslide"
+  ],
+  "homepage": "https://glad.earthengine.app/view/global-forest-change",
+  "id": "data-hansen-global-forest-change",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Hansen Global Forest Change (UMD, v1.12)",
+  "notes": "The GeoTIFF tile download is from the GLAD app as recalled and was not opened on 2026-09-26.",
+  "provider": "University of Maryland GLAD laboratory with Google, USGS and NASA",
+  "related_ids": [],
+  "schema_summary": "treecover2000, loss, gain, lossyear, datamask, first and last composites",
+  "sectors": [
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "2000-2024, producers, bands and definitions, 30.92 m pixels, CC BY 4.0, Science 2013 citation, GLAD app",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2024_v1_12"
+    }
+  ],
+  "spatial_resolution": "about 30 m (1 arc-second)",
+  "spatial_resolution_class": "10m_to_100m",
+  "spatial_resolution_m": 30,
+  "tags": [
+    "forest loss",
+    "Landsat",
+    "UMD",
+    "GLAD",
+    "tree cover"
+  ],
+  "temporal_coverage": "2000 to 2024",
+  "temporal_coverage_years": {
+    "end": 2024,
+    "start": 2000
+  },
+  "temporal_resolution": "annual loss",
+  "temporal_resolution_class": "annual",
+  "title_en": "Hansen Global Forest Change (UMD, v1.12)",
+  "type": "data",
+  "update_frequency": "annual"
+}

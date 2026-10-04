@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/e2nIEE/pandapipes"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/pandapipes/"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://pandapipes.readthedocs.io"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pandapipes",
+    "repo": "github.com/e2niee/pandapipes",
+    "url": "https://pandapipes.org"
+  },
+  "description": "pandapipes is an open-source network calculation program for fluid systems, aimed at automated analysis of district heating and gas networks. Networks are held in a tabular data structure with standard type libraries and a fluid property library, and a pipe flow solver computes the network state; the developers report tests against the commercial STANET software and OpenModelica. It is developed by the Fraunhofer Institute for Energy Economics and Energy System Technology (IEE) in Kassel and the University of Kassel, and is closely related to their power system tool pandapower, with which it can be combined to analyse multi-energy networks or used stand-alone for gas or heat. The tool is location independent, not tied to any country, and applies to any gas or district heating network whose data the user supplies. It is installed with pip from PyPI (version 0.14.0, May 2026, Python 3.10 or newer), with source on GitHub and documentation on read-the-docs, under the BSD 3-Clause licence at no cost. Caveats: its developers motivate it by the scarcity of open multi-energy network tools, since most fluid network software is commercial, and coupling with pandapower for combined studies is offered through a separate environment, pandapowerpro. Simulation uses are network flow analysis of gas and heat networks and multi-energy optimisation studies. Related records: it complements model-pandapower and compares with model-gasmodels-jl.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry pandapipes",
+      "route": "R06",
+      "source": "energy-pandapipes"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.pandapipes.org",
+  "id": "model-pandapipes",
+  "inputs": [
+    "Tabular network of junctions",
+    "pipes",
+    "external grids",
+    "sinks",
+    "sources",
+    "compressors and heat exchangers",
+    "Fluid property library data"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "network"
+  ],
+  "name": "pandapipes",
+  "outputs": [
+    "Pressures",
+    "flows and temperatures of gas and district heating networks"
+  ],
+  "provider": "Fraunhofer Institute for Energy Economics and Energy System Technology (IEE) and University of Kassel",
+  "related_ids": [
+    "model-pandapower",
+    "model-gasmodels-jl"
+  ],
+  "repository": "https://github.com/e2nIEE/pandapipes",
+  "runs_on": [],
+  "sectors": [
+    "energy.gas_hydrogen",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Aimed at district heating and gas; pandas; related to pandapower; pandapowerpro coupling; STANET and OpenModelica tests; motivation",
+      "url": "https://www.pandapipes.org/about/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 0.14.0 uploaded 2026-05-26; BSD 3-clause, Fraunhofer IEE and University of Kassel; Python >=3.10",
+      "url": "https://pypi.org/pypi/pandapipes/json"
+    }
+  ],
+  "tags": [
+    "gas network",
+    "district heating",
+    "pipe flow",
+    "multi-energy",
+    "Python"
+  ],
+  "title_en": "Pandapipes is an open source network calculation program for fluid systems aimed at automated analysis of district heating and gas networks",
+  "type": "model",
+  "validated_on": [
+    "Comparison tests against STANET and OpenModelica"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "REST endpoint",
+      "url": "https://www.fsis.usda.gov/fsis/api/recall/v/1"
+    },
+    {
+      "kind": "docs",
+      "label": "Recall API page",
+      "url": "https://www.fsis.usda.gov/science-data/developer-resources/recall-api"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "historical_events",
+    "supply_chains_logistics"
+  ],
+  "data_kind": [
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usda fsis recall api meat poultry and egg product recalls and public health alerts as json",
+    "url": "https://fsis.usda.gov/science-data/developer-resources/recall-api"
+  },
+  "description": "The Food Safety and Inspection Service of the US Department of Agriculture publishes its recalls and public health alerts through a web interface for programs. The developer page read on 2026-09-28 explains that the Recall API returns recall and public health alert records in JSON with attribute-based queries, through a single REST endpoint that accepts GET requests only, with a linked document describing the input fields; the same section lists APIs for the directory of inspected establishments and for safe and suitable ingredients. FSIS regulates meat, poultry and egg products, so the recalls cover those foods. Coverage is the United States. Access is free; no licence or key requirement is stated. Caveats: the page dates from 2023, the record fields and history depth were not read, and recalls reflect food safety events, not supply disruptions as such. It supports food supply resilience studies, such as building a time series of contamination recalls to test how processing plant failures propagate through distribution. Related records: the UK Food Standards Agency alerts API and the German food warning service.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "foodborne outbreak database food recalls open data API food safety incidents",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "formats": [
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://www.fsis.usda.gov/science-data/developer-resources/recall-api",
+  "id": "data-usda-fsis-recall-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated on the page",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.fsis.usda.gov/fsis/api/recall/v/1",
+      "https://www.fsis.usda.gov/science-data/developer-resources/recall-api"
+    ]
+  },
+  "maturity": "active",
+  "name": "USDA FSIS Recall API: meat, poultry and egg product recalls and public health alerts as JSON",
+  "provider": "US Department of Agriculture, Food Safety and Inspection Service (FSIS)",
+  "related_ids": [
+    "data-fsa-food-alerts-api",
+    "data-lebensmittelwarnung-food-warnings-germany"
+  ],
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "read: FSIS makes recall and public health alert data available through an API; JSON with attribute-based querying; REST endpoint https://www.fsis.usda.gov/fsis/api/recall/v/1; GET only; documentation of input fields linked; related MPI API and Safe and Suitable Ingredients API; page last updated 7 Sep 2023",
+      "url": "https://www.fsis.usda.gov/science-data/developer-resources/recall-api"
+    }
+  ],
+  "tags": [
+    "food recalls",
+    "public health alerts",
+    "FSIS",
+    "API",
+    "food safety"
+  ],
+  "title_en": "USDA FSIS Recall API: meat, poultry and egg product recalls and public health alerts as JSON",
+  "type": "data",
+  "update_frequency": "irregular"
+}

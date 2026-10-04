@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Jupyter notebook and scenario data (Zenodo)",
+      "url": "https://zenodo.org/records/20101318"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.20101318",
+    "name": "equity aware ambulance dispatch after earthquakes multi period linear programming model with shelby county scenario data",
+    "url": "doi:10.5281/zenodo.20101318"
+  },
+  "description": "This model plans how ambulances should carry casualties to hospitals in the first hours after a large earthquake so that no neighbourhood is left without service while as many lives as possible are saved. The producer is Himadri Sen Gupta of Colorado State University Pueblo, who deposited the code and scenario data with an article on equity-aware ambulance dispatch. It is a multi-period linear programme that maximises casualty throughput weighted by survival chances, subject to ambulance time budgets and hospital capacity, with a max-min constraint guaranteeing a minimum service rate in every zone. Coverage is a realistic earthquake scenario for Shelby County, Tennessee, which includes Memphis, with 201 zones, eight hospitals and 3,618 casualties, tested over twenty random casualty realisations; the deposit reports a treatment rate of about 29 percent. The Jupyter notebook with data is available as a free download from Zenodo under the Creative Commons Attribution 4.0 licence. Caveats: one scenario region, a deterministic travel network, and results depend on the solver and scenario casualty model. Simulation uses: planning mass casualty transport and hospital surge after earthquakes, and testing how equity rules change who gets care. Related records: OpenEMS (model-openems-ambulance-deployment) and JEMSS (model-jemss) simulate everyday ambulance operations, and the USGS ShakeMap scenario catalogue (data-usgs-shakemap-scenario-catalog) provides earthquake scenarios.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ambulance dispatch model earthquake",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "earthquake"
+  ],
+  "homepage": "https://doi.org/10.5281/zenodo.20101318",
+  "id": "model-equity-aware-ambulance-dispatch-earthquakes",
+  "inputs": [
+    "Casualties by zone and severity from an earthquake scenario (201 zones, 3,618 casualties)",
+    "Ambulance time budgets and travel times",
+    "Capacity of eight hospitals"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-09",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "Equity-aware ambulance dispatch after earthquakes: multi-period linear programming model with Shelby County scenario data",
+  "outputs": [
+    "Casualty transport and admission plan by period",
+    "Treatment rate overall and by zone under a minimum-service equity constraint",
+    "Survival-weighted throughput"
+  ],
+  "provider": "Himadri Sen Gupta (Colorado State University Pueblo)",
+  "regions": [
+    "Shelby County, Tennessee"
+  ],
+  "related_ids": [
+    "model-openems-ambulance-deployment",
+    "model-jemss",
+    "data-usgs-shakemap-scenario-catalog"
+  ],
+  "runs_on": [
+    "Jupyter with a linear programming solver"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creator Gupta (Colorado State University Pueblo); CC BY 4.0; published 2026-05-09, updated 2026-07-18; shelby_ambulance_paper_2025.ipynb 0.3 MB; multi-period LP for post-earthquake casualty transport and hospital admission; max-min geographic equity constraint ensuring minimum service rates across zones; maximises survival-weighted throughput subject to ambulance-time budgets and hospital capacity; Shelby County scenario with 201 zones, eight hospitals and 3,618 casualties; stress-tested across twenty casualty replicates; about 29% treatment rate",
+      "url": "https://zenodo.org/api/records/20101318"
+    }
+  ],
+  "tags": [
+    "ambulance dispatch",
+    "earthquake",
+    "equity",
+    "linear programming",
+    "casualty transport",
+    "Memphis"
+  ],
+  "title_en": "Equity-aware ambulance dispatch after earthquakes: multi-period linear programming model with Shelby County scenario data",
+  "type": "model",
+  "validated_on": [
+    "Twenty casualty realisations of a Shelby County earthquake scenario"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource",
+      "url": "https://github.com/Helmholtz-AI-Energy/TBBRDet"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-023-02140-z"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "tbbrdet thermal bridge detection tools",
+    "url": "https://github.com/Helmholtz-AI-Energy/TBBRDet"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "Karlsruhe Institute of Technology and collaborators publish TBBRDet for detecting thermal bridges on building rooftops from aerial images. The repository provides dataset loading, training configurations and experiment scripts for Detectron2 and MMDetection, with separate environment instructions. It links both processed TBBR images and the larger original RGB/thermal image collection. Python source is free under BSD-3-Clause. Its documented application covers Karlsruhe imagery from 2019, while a new application would require compatible images and labels. Detected defects can help prepare envelope-condition inputs for retrofit simulations alongside model-energyplus after physical calibration. A caveat is that the instructions use specific older PyTorch, CUDA and detection-library versions and require users to set local paths. A successful detector also does not quantify heat loss by itself. The documentation was inspected, but dependencies, pretrained weights and training runs were not downloaded or executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G1-Q-BACKFILL-ENERGY-04; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/Helmholtz-AI-Energy/TBBRDet",
+  "id": "platform-tbbrdet-thermal-bridge-detection",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "interoperability": [
+    "Detectron2",
+    "MMDetection",
+    "PyTorch",
+    "NumPy",
+    "COCO JSON"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-07-31",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "TBBRDet thermal-bridge detection tools",
+  "notes": "G1 G1-0261. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-24.json. Related-resource uses are not tested interfaces. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Karlsruhe Institute of Technology and collaborators",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/Helmholtz-AI-Energy/TBBRDet"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/Helmholtz-AI-Energy/TBBRDet/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-023-02140-z"
+    }
+  ],
+  "supported_sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for electricity and buildings",
+  "type": "platform"
+}

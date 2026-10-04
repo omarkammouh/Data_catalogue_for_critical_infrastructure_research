@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "OS Downloads API product entry",
+      "url": "https://api.os.uk/downloads/v1/products/LIDS"
+    },
+    {
+      "kind": "portal",
+      "label": "OS Data Hub downloads",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://osdatahub.os.uk/downloads/open/LIDS"
+    },
+    {
+      "kind": "docs",
+      "label": "Product documentation",
+      "url": "https://docs.os.uk/os-downloads/products/buildings-and-infrastructure-portfolio/os-open-linked-identifiers"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "system_description",
+    "standards_ontologies"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "os open linked identifiers uprn usrn and toid relationships",
+    "url": "https://ordnancesurvey.co.uk/products/os-open-linked-identifiers"
+  },
+  "description": "OS Open Linked Identifiers gives the authoritative relationships between Unique Property Reference Numbers (UPRNs), Unique Street Reference Numbers (USRNs) and Topographic Identifiers (TOIDs) across Great Britain, so that data keyed on one identifier can be joined to another. It is published by Ordnance Survey, which extracts the relationships from AddressBase Premium and OS MasterMap Highways Networks and makes them open; the product page says it is updated every six weeks, and the release read was 2026-08. The product has 11 relationship tables, for example address to building outline, address to street and road link to OS Open Roads, supplied as CSV join tables for loading into a database; topographic areas are limited to building outlines and road surfaces. Coverage: Great Britain. Access: OS Data Hub download or the OS Downloads API; the address-to-street table alone is about 918 MB zipped. Licence: free to use for everyone per the product page. Caveats: it holds identifiers only, so attributes come from the linked OS or address products. Simulation uses: joining building, address and street data in exposure and service-access models. Related records: the England and Wales EPC records and the HSE National Population Database.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"building\" \"validation\"",
+      "route": "R02",
+      "source": "data-gov-uk"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.ordnancesurvey.co.uk/products/os-open-linked-identifiers",
+  "id": "data-os-open-linked-identifiers",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08",
+  "licence": "Free to use for everyone (OS product page); licence name not shown on the pages read",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OS Open Linked Identifiers (UPRN, USRN and TOID relationships)",
+  "provider": "Ordnance Survey",
+  "related_ids": [],
+  "schema_summary": "11 join tables linking BLPU UPRN, Street USRN, RoadLink and Road TOID, TopographicArea TOID and OS Open Roads GUIDs",
+  "sectors": [
+    "built_environment.buildings",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Description, feature list, coverage GB, CSV format",
+      "url": "https://docs.os.uk/os-downloads/products/buildings-and-infrastructure-portfolio/os-open-linked-identifiers"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Source products, 11 relationships, join tables",
+      "url": "https://docs.os.uk/os-downloads/products/buildings-and-infrastructure-portfolio/os-open-linked-identifiers/os-open-linked-identifiers-overview"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Release 2026-08, 11 CSV zip files and sizes",
+      "url": "https://api.os.uk/downloads/v1/products/LIDS/downloads"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Updated every six weeks, free to use for everyone (rendered page)",
+      "url": "https://www.ordnancesurvey.co.uk/products/os-open-linked-identifiers"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "data.gov.uk entry and resource links",
+      "url": "https://ckan.publishing.service.gov.uk/api/3/action/package_show?id=os-open-linked-identifiers"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): only a site copyright notice on this page (© 2026 Ordnance Survey Limited)",
+      "url": "https://www.ordnancesurvey.co.uk/products/os-open-linked-identifiers"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.ordnancesurvey.co.uk/legal"
+    }
+  ],
+  "spatial_resolution": "Individual addresses, streets, road links and topographic features",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "UPRN",
+    "USRN",
+    "TOID",
+    "identifiers",
+    "Ordnance Survey",
+    "Great Britain"
+  ],
+  "temporal_resolution": "Updated every six weeks (release 2026-08 read)",
+  "temporal_resolution_class": "weekly",
+  "title_en": "OS Open Linked Identifiers (UPRN, USRN and TOID relationships)",
+  "type": "data"
+}

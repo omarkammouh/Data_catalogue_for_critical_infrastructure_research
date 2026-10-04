@@ -1,0 +1,202 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code and releases",
+      "url": "https://github.com/GMLC-TDC/HELICS"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://docs.helics.org/en/latest/"
+    },
+    {
+      "kind": "download",
+      "label": "Python bindings (PyPI)",
+      "url": "https://pypi.org/project/helics/"
+    },
+    {
+      "kind": "docs",
+      "label": "Tools with HELICS support",
+      "url": "https://github.com/GMLC-TDC/HELICS/blob/main/docs/references/Tools_using_HELICS.md"
+    },
+    {
+      "kind": "paper",
+      "label": "Reference paper",
+      "url": "https://doi.org/10.1109/ACCESS.2024.3363615"
+    },
+    {
+      "kind": "portal",
+      "label": "Project website",
+      "url": "https://helics.org/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "helics",
+    "repo": "github.com/gmlc-tdc/helics",
+    "url": "https://helics.org"
+  },
+  "deployment": [
+    "desktop",
+    "own_server",
+    "hosted_service"
+  ],
+  "description": "HELICS is an open-source co-simulation framework that lets separate simulators, called federates, exchange data and stay synchronised in time so that together they act as one federation. It simulates nothing itself; it couples existing tools, from two on a laptop to more than 100,000 on supercomputers or the cloud, with both event-driven and time-series stepping. It began as the core software of the Grid Modernization Laboratory Consortium project on integrated transmission, distribution and communication simulation, funded by the U.S. Department of Energy, and its copyright is held by Battelle (PNNL), Lawrence Livermore National Security and the Alliance for Energy Innovation (NREL). The core is modern C++ (C++20, the minimum since 3.7.0) with bindings for Python, C, Java, MATLAB, Octave, Simulink and Julia (nim and C# experimental), runs on Linux, Windows and macOS, and ships helper apps such as brokers, players, recorders and connectors. Tools with HELICS support include GridLAB-D, OpenDSS (via OpenDSSDirect.py and PyDSS), GridDyn, MATPOWER, PSS/E, PowerWorld, SAInt, ns-3, OMNeT++, GasModels.jl, BEAM and POLARIS, spanning electricity, gas, communications, buildings and transport; the documentation also names water and weather among its domains. Source, releases (version 3.7.0, changelog dated 2026-08-25 and released on GitHub on 2026-09-09) and documentation are on GitHub and docs.helics.org; Python bindings are on PyPI and conda. The licence is BSD-3-Clause and use is free. Caveats: it is location independent and only as good as the federates coupled; integration of a new tool requires scripting or source access, and the tool list marks several integrations as under development. It serves cascading failure, resilience, digital twin and network flow studies across interdependent sectors. Related records: OpenDSS (platform-opendss) is one of its supported federates.",
+  "description_checked": "2026-09-24",
+  "discovery_routes": [
+    {
+      "date": "2026-09-23",
+      "query": "DOE co-simulation framework for transmission-distribution-communication HELICS",
+      "route": "R40",
+      "source": "assistant recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/GMLC-TDC/HELICS",
+  "hosted_models": [
+    "platform-opendss",
+    "GridLAB-D",
+    "GridDyn",
+    "PSST",
+    "MATPOWER",
+    "InterPSS",
+    "PSLF",
+    "PSS/E",
+    "PowerWorld",
+    "SAInt",
+    "PYPOWER",
+    "FESTIV",
+    "PLEXOS",
+    "ns-3",
+    "OMNeT++",
+    "NGFAST",
+    "GasModels.jl",
+    "GAMS",
+    "JuMP",
+    "BEAM",
+    "POLARIS",
+    "Opal-RT",
+    "RTDS",
+    "CYME"
+  ],
+  "id": "platform-helics",
+  "interfaces": [
+    "code_library",
+    "cosimulation",
+    "desktop_gui",
+    "command_line"
+  ],
+  "interoperability": [
+    "HELICS federate API",
+    "ns-3 module",
+    "OpenDSSDirect.py",
+    "GridLAB-D HELICS connection"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-09",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "HELICS (Hierarchical Engine for Large-scale Infrastructure Co-Simulation)",
+  "notes": "Audit 2026-09-24: re-read on helics.org, the documentation home page at docs.helics.org, the repository README, LICENSE, CHANGELOG, CMake file and tools list, PyPI, Crossref and git tags. All round-1 statements were confirmed: co-simulation of federates, two to 100,000+ simulators, event-driven and time-series simulation, C++20, GMLC project 1.4.15 funded by DOE OE and EERE, copyright holders, BSD-3-Clause, tools and their 'under development' status, version 3.7.0 (changelog 2026-08-25; tag commit 2026-09-09), Python bindings on PyPI still at 3.6.1 (2025-02-28), and the IEEE Access paper (volume 12, pages 24325-24347, 2024). Added: Octave, Simulink, experimental nim and C# bindings, and the water and weather domains named in the documentation.",
+  "open_source": true,
+  "platform_kind": [
+    "coupling_framework"
+  ],
+  "provider": "GMLC-TDC consortium (PNNL, LLNL, NREL and partner U.S. national laboratories), U.S. Department of Energy",
+  "related_ids": [
+    "platform-opendss"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "energy.gas_hydrogen",
+    "digital.telecom",
+    "transport.road",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "resilience",
+    "digital_twin",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-24",
+      "note": "Purpose, TDC scale target, general citation Hardy et al., IEEE Access, doi 10.1109/ACCESS.2024.3363615",
+      "url": "https://helics.org/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Cross-platform, event-driven and time-series, C++20, bindings, GMLC project 1.4.15 (DOE OE and EERE), domains incl. natural gas, water, weather, transportation; copyright 2017-2026",
+      "url": "https://docs.helics.org/en/latest/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Federates and federations; 2 to 100,000+ simulators; language APIs incl. Octave, Simulink, experimental nim and C#; helper apps",
+      "url": "https://raw.githubusercontent.com/GMLC-TDC/HELICS/main/README.md"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "BSD 3-Clause; Battelle, LLNS, Alliance for Energy Innovation",
+      "url": "https://raw.githubusercontent.com/GMLC-TDC/HELICS/main/LICENSE"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "3.7.0 dated 2026-08-25; C++20 now the minimum standard",
+      "url": "https://raw.githubusercontent.com/GMLC-TDC/HELICS/main/CHANGELOG.md"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Tools with support; MATPOWER, InterPSS, PLEXOS and OMNeT++ integrations under development",
+      "url": "https://raw.githubusercontent.com/GMLC-TDC/HELICS/main/docs/references/Tools_using_HELICS.md"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "git tags; tag v3.7.0 commit dated 2026-09-09",
+      "url": "https://github.com/GMLC-TDC/HELICS"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Python bindings 3.6.1 uploaded 2025-02-28",
+      "url": "https://pypi.org/pypi/helics/json"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "IEEE Access 12, 24325-24347, 2024; five authors",
+      "url": "https://api.crossref.org/works/10.1109/ACCESS.2024.3363615"
+    }
+  ],
+  "supported_sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "energy.gas_hydrogen",
+    "digital.telecom",
+    "transport.road",
+    "built_environment.buildings"
+  ],
+  "tags": [
+    "co-simulation",
+    "federates",
+    "transmission-distribution-communication",
+    "GMLC",
+    "cyber-physical"
+  ],
+  "title_en": "HELICS (Hierarchical Engine for Large-scale Infrastructure Co-Simulation)",
+  "type": "platform"
+}

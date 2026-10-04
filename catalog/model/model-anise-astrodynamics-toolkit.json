@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository",
+      "note": "Rust library, Python bindings, GUI and CLI",
+      "url": "https://github.com/nyx-space/anise"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "anise attitude navigation instrument spacecraft ephemeris toolkit",
+    "repo": "github.com/nyx-space/anise",
+    "url": "https://github.com/nyx-space/anise"
+  },
+  "description": "ANISE is a toolkit for space mission design and operations that reads SPICE kernels and computes positions, reference frame transformations and orientations of spacecraft and celestial bodies. It is developed by Nyx Space, led by Christopher Rabotin, as a thread-safe, parallel alternative to the NAIF SPICE toolkit, and the README reports that it was used through the operations of the Firefly Blue Ghost lunar lander. The repository includes the Rust library, Python bindings, a graphical inspector for kernel files and a command-line tool for inspection, test data download and kernel conversion. Coverage is any mission, from Earth orbit to interplanetary. Format and access: open source code in a public repository with packaged releases. Licence: MPL-2.0; free. Caveats: it covers geometry and ephemerides, not force-model propagation, which Nyx provides, and validation is against SPICE, not independent truth. It supports planning and optimisation of satellite constellations and ground coverage as inputs to space infrastructure studies. Related catalogue records are the Nyx spaceflight dynamics toolkit and the SPICE observation geometry toolkit.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "spacecraft mission simulation software open source attitude orbit Basilisk alternatives",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/nyx-space/anise",
+  "id": "model-anise-astrodynamics-toolkit",
+  "inputs": [
+    "SPICE kernels (SPK, BPC, PCK)",
+    "Planetary and spacecraft ephemerides"
+  ],
+  "language": [
+    "rust_go",
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "MPL-2.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "ANISE (Attitude, Navigation, Instrument, Spacecraft, Ephemeris) toolkit",
+  "outputs": [
+    "Positions, frames and orientations",
+    "Ephemeris queries in any time scale"
+  ],
+  "provider": "Nyx Space (Christopher Rabotin)",
+  "related_ids": [
+    "model-nyx-spaceflight-dynamics",
+    "platform-spice-observation-geometry-toolkit"
+  ],
+  "repository": "https://github.com/nyx-space/anise",
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "README: purpose, features, validation, components, MPL-2.0 licence (github.com refuses the cloud session)",
+      "url": "https://raw.githubusercontent.com/nyx-space/anise/HEAD/README.md"
+    }
+  ],
+  "tags": [
+    "astrodynamics",
+    "SPICE alternative",
+    "ephemeris"
+  ],
+  "title_en": "ANISE (Attitude, Navigation, Instrument, Spacecraft, Ephemeris) toolkit",
+  "type": "model",
+  "validated_on": [
+    "NAIF SPICE (over 100,000 queries on DE440)"
+  ]
+}

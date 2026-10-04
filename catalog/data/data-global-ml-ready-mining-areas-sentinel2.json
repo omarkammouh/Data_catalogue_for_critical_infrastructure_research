@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "mining_area_data.zip (35.6 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/14195737/files/mining_area_data.zip?download=1"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo record",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://zenodo.org/records/14195737"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "imagery_remote_sensing",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.14195737",
+    "name": "global ml ready dataset for mining areas in sentinel 2 satellite images 1 210 sites",
+    "url": "doi:10.5281/zenodo.14195737"
+  },
+  "description": "A machine learning dataset of Sentinel-2 images with mining area masks and bounding boxes for 1,210 mining sites worldwide, for detection and semantic segmentation. The Zenodo record says the ground-truth masks come from the Maus et al. (2022) and Tang et al. (2023) global mining polygon datasets and were checked by hand for alignment with the Sentinel-2 image dates; three mask variants are given (Maus only, n=1,090; Tang only, n=817; and a preferred mask per site, n=1,210). Each tile is a 2048 by 2048 pixel Sentinel-2 image with metadata on mine type (surface, placer, underground, brine and evaporation) and scale (artisanal or industrial). Version 1.0.0 was published on 21 November 2024 by Simon Jasansky, Victor Maus, Mirela Popa and Anna Wilbik as one zip file of about 36 MB, under CC BY-SA 4.0. Caveats: the share-alike licence applies to derivatives, and masks inherit the limits of the two source polygon sets. For simulation it gives training data to update global mining footprints between releases of the source inventories. Related catalogue records include the Maus global mining polygons and MineNetCD.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((mine OR mines OR mining OR tailings OR quarry OR quarries OR smelter) AND (satellite OR \"remote sensing\" OR imagery OR Sentinel OR Landsat OR LiDAR OR UAV))",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((mine OR mines OR mining OR tailings OR quarry OR quarries OR smelter) AND (satellite OR \"remote sensing\" OR imagery OR Sentinel OR Landsat OR LiDAR OR UAV))",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "archive"
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.14195737",
+  "id": "data-global-ml-ready-mining-areas-sentinel2",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-11-21",
+  "licence": "CC BY-SA 4.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Global ML-ready dataset for mining areas in Sentinel-2 satellite images (1,210 sites)",
+  "provider": "Simon Jasansky, Mirela Popa, Anna Wilbik (Maastricht University) and Victor Maus (Vienna University of Economics and Business), via Zenodo",
+  "sectors": [
+    "industry.mining_materials"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "size": "about 36 MB",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "creators, affiliations, version, file, size and licence read 2026-09-26",
+      "url": "https://zenodo.org/api/records/14195737"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "description and source datasets read 2026-09-26",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.14195737"
+    }
+  ],
+  "spatial_resolution": "Sentinel-2 (10 m), 2048 by 2048 pixel tiles",
+  "spatial_resolution_class": "10m_to_100m",
+  "tags": [
+    "mining areas",
+    "Sentinel-2",
+    "segmentation",
+    "machine learning",
+    "global"
+  ],
+  "temporal_coverage": "Sentinel-2 scenes matched to mask dates",
+  "temporal_resolution": "single date per site",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Global ML-ready dataset for mining areas in Sentinel-2 satellite images (1,210 sites)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

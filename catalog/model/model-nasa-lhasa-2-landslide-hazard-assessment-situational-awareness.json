@@ -1,0 +1,95 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "NASA Software Catalog entry",
+      "url": "https://software.nasa.gov/software/GSC-18595-1"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/nasa/lhasa"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [],
+  "cost": "free",
+  "countries": [],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nasa lhasa 2 0 landslide hazard assessment for situational awareness global machine learning nowcast of rainfall triggered landslide hazard and exposure",
+    "repo": "github.com/nasa/lhasa",
+    "url": "https://software.nasa.gov/software/GSC-18595-1"
+  },
+  "description": "LHASA 2.0 is NASA Goddard Space Flight Center's global landslide hazard model, released as open source through the NASA Software Catalog (case GSC-18595-1). Contents: a new version of the Landslide Hazard Assessment for Situational Awareness that uses the XGBoost machine-learning model with new parameters and new landslide inventories, bringing dynamic variables together with additional static variables to represent landslide hazard globally and dynamically; global rainfall forecasts are being evaluated to provide a one to three day forecast of potential landslide activity, and recent seismicity and burned areas are being considered as factors that precondition slopes or change how they respond to later rainfall. Producer: NASA Goddard; the catalogue lists version 2.0 for Linux. Coverage: global. Format and access: open source code linked from the catalogue entry. Licence: NASA open source release. Caveats: the catalogue text describes the forecast and seismicity components as under evaluation, and hazard estimates from a global statistical model cannot resolve individual slopes. Simulation uses: screening roads, rail lines and pipelines for landslide exposure during heavy rain, triggering emergency response scenarios, and hazard inputs for network resilience studies. Related records: NASA RHEAS (model-nasa-rheas-regional-hydrologic-extremes-assessment-system) is another NASA hazard framework in the catalogue.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source nasa-software: provider pages read (round 2 register piece)",
+      "route": "R05",
+      "source": "nasa-software"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://software.nasa.gov/software/GSC-18595-1",
+  "id": "model-nasa-lhasa-2-landslide-hazard-assessment-situational-awareness",
+  "inputs": [
+    "satellite precipitation (IMERG) and soil moisture",
+    "static susceptibility layers and landslide inventories"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "NASA open source release",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://github.com/nasa/lhasa"
+    ]
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "NASA LHASA 2.0 (Landslide Hazard Assessment for Situational Awareness): global machine-learning nowcast of rainfall-triggered landslide hazard and exposure",
+  "outputs": [
+    "daily landslide hazard nowcasts",
+    "population and road exposure estimates"
+  ],
+  "provider": "NASA Goddard Space Flight Center",
+  "related_ids": [
+    "model-nasa-rheas-regional-hydrologic-extremes-assessment-system"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "GSC-18595-1, Open Source, LHASA 2.0 description (XGBoost, dynamic variables, 1-3 day forecast evaluation), Linux, sw_url github.com/nasa/lhasa",
+      "url": "https://software.nasa.gov/searchapi/multi/aw/software/0/20/Landslide%20Hazard%20Assessment"
+    }
+  ],
+  "tags": [
+    "NASA",
+    "landslides",
+    "hazard nowcast",
+    "XGBoost"
+  ],
+  "title_en": "NASA LHASA 2.0 (Landslide Hazard Assessment for Situational Awareness): global machine-learning nowcast of rainfall-triggered landslide hazard and exposure",
+  "type": "model"
+}

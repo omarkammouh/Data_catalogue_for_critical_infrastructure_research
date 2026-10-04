@@ -1,0 +1,85 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/Amirfrf/lstm-anomaly-detection"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "skab lstm time window preparation and diagnostic dashboard",
+    "repo": "github.com/amirfrf/lstm-anomaly-detection",
+    "url": "https://github.com/Amirfrf/lstm-anomaly-detection"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This repository prepares water-pump sensor windows and trains a separate LSTM autoencoder for each of 34 SKAB anomaly experiments. The author uses ten time steps and eight sensor channels per window, then converts reconstruction errors, thresholds and sensor observations into files served by a FastAPI backend and React dashboard. The documented source is the external SKAB CSV collection, obtained through kagglehub. Code is free under MIT; any source-data terms remain separate. Coverage is the SKAB testbed, not new field observations, and acquisition dates and sampling interval are not stated in this pipeline’s README. A limitation is that per-experiment models and a chosen threshold make the displayed metrics dependent on the training split and operating condition. Simulation uses include testing fault-observation displays and monitoring decisions for a water-circulation model. It complements data-nasa-prognostics-data-repository with an executable window-processing workflow. The SKAB source itself is already prepared in G8-0142. No data or models were downloaded or executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "industrial benchmark dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://github.com/Amirfrf/lstm-anomaly-detection",
+  "id": "platform-skab-lstm-window-dashboard-pipeline",
+  "interfaces": [
+    "code_library",
+    "web_api",
+    "other"
+  ],
+  "interoperability": [],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-14",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "SKAB LSTM time-window preparation and diagnostic dashboard",
+  "notes": "G8; G8-0579. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Amirfrf repository author",
+  "related_ids": [
+    "data-nasa-prognostics-data-repository"
+  ],
+  "sectors": [
+    "water.drinking_water",
+    "industry.manufacturing_chemical"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/Amirfrf/lstm-anomaly-detection/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/Amirfrf/lstm-anomaly-detection"
+    }
+  ],
+  "tags": [],
+  "title_en": "SKAB LSTM time-window preparation and diagnostic dashboard",
+  "type": "platform"
+}

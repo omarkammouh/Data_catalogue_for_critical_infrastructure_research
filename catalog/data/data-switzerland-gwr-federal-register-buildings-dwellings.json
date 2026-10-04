@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "geo.admin.ch API and WMS for the GWR layer",
+      "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bfs.gebaeude_wohnungs_register"
+    },
+    {
+      "kind": "viewer",
+      "label": "map.geo.admin.ch layer ch.bfs.gebaeude_wohnungs_register",
+      "url": "https://map.geo.admin.ch/?layers=ch.bfs.gebaeude_wohnungs_register"
+    },
+    {
+      "kind": "portal",
+      "label": "GWR public data offer (housing-stat.ch)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.housing-stat.ch/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "data_family": [
+    "system_description",
+    "condition_ageing"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "federal register of buildings and dwellings gwr regbl switzerland",
+    "url": "https://housing-stat.ch"
+  },
+  "description": "The Federal Register of Buildings and Dwellings (Gebäude- und Wohnungsregister, GWR) is the Swiss Federal Statistical Office's register of buildings and dwellings in Switzerland, built from the 2000 census data and kept up to date since; its ordinance was fully revised on 1 July 2017. The public layer on geo.admin.ch carries 79 attributes, among them the federal building, entrance and dwelling identifiers (EGID, EDID, EWID), the parcel identifier EGRID, construction year and period, building class and category, number of floors and dwellings, footprint area and volume, energy reference area, heat and hot-water generators and their energy sources, civil defence shelters, demolition year, and the area and rooms of each dwelling. Coverage: all of Switzerland. Access: downloads from housing-stat.ch, the map.geo.admin.ch layer with API and WMS, free; the layer showed data as of 25 September 2026. Licence: public level A data may be used without restriction. Caveats: the fields shown are the public level A subset of the register, and the map layer can lag the register by up to 48 hours. Simulation uses are building-level exposure, heating system and energy source inputs for hazard, energy transition and urban digital twin models. Related records: swissBUILDINGS3D, the Sonnendach roof solar layer and the Danish BBR register.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: Bundesamt für Statistik, Gebäude- und Wohnungsregister (GWR) homepage",
+      "route": "R10",
+      "source": "organisations.csv:CH:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bfs.gebaeude_wohnungs_register",
+  "id": "data-switzerland-gwr-federal-register-buildings-dwellings",
+  "languages": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "last_updated": "2026-09-25",
+  "licence": "Public level A data may be used without restriction",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Federal Register of Buildings and Dwellings (GWR / RegBL), Switzerland",
+  "provider": "Federal Statistical Office (FSO / BFS), Switzerland",
+  "related_ids": [
+    "data-swissbuildings3d-swisstopo",
+    "data-swiss-sonnendach-roof-solar-suitability",
+    "data-denmark-bbr-building-and-dwelling-register"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "capacity_planning",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "GWR home: register of buildings and dwellings, Census 2000 origin, ordinance revised 1 July 2017, public data offer",
+      "url": "https://www.housing-stat.ch/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Layer metadata: 79 fields listed, data status 25.09.2026, up to 48 h delay, level A public data usable without restriction, WMS, Geobasisdatensatz 9.1",
+      "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bfs.gebaeude_wohnungs_register"
+    }
+  ],
+  "tags": [
+    "building register",
+    "dwellings",
+    "Switzerland",
+    "EGID",
+    "heating systems",
+    "GWR",
+    "RegBL"
+  ],
+  "temporal_coverage": "Built from Census 2000 data and updated continuously since",
+  "title_en": "Federal Register of Buildings and Dwellings (GWR / RegBL), Switzerland",
+  "type": "data"
+}

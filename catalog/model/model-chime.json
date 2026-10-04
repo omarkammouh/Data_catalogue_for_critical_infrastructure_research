@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code (active development)",
+      "url": "https://github.com/CodeForPhilly/chime"
+    },
+    {
+      "kind": "viewer",
+      "label": "Hosted web application",
+      "url": "https://penn-chime.phl.io/"
+    },
+    {
+      "kind": "docs",
+      "label": "User documentation",
+      "url": "https://code-for-philly.gitbook.io/chime/"
+    },
+    {
+      "kind": "docs",
+      "label": "Developer documentation",
+      "url": "https://codeforphilly.github.io/chime/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Predictive Healthcare at Penn Medicine, CHIME (https://github.com/CodeForPhilly/chime)",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "chime covid 19 hospital impact model for epidemics",
+    "repo": "github.com/codeforphilly/chime",
+    "url": "https://penn-chime.phl.io"
+  },
+  "description": "CHIME (COVID-19 Hospital Impact Model for Epidemics) helps hospitals and public health officials understand hospital capacity needs during an epidemic. From a regional population, the current number of hospitalised patients and an assumed doubling time or level of social distancing, it runs a standard SIR (susceptible, infected, recovered) model and converts infections into daily new and running totals (census) of inpatient hospitalisations, ICU admissions and patients requiring ventilation, using user-set hospitalisation rates, lengths of stay and the hospital's market share. Predictive Healthcare at Penn Medicine created it in March 2020 and Code for Philly took over development; the README states that epidemiologists at the Perelman School of Medicine validated the model. Coverage is any hospital or health region the user parameterises; resolution is one region and one day. It is Python code on GitHub (latest tag v1.1.5) with a Streamlit web application that still answers at penn-chime.phl.io, and user and developer documentation. Licence: MIT, free. Caveats: the SIR structure is deliberately simple and designed for COVID-19; development stopped after 2020, so it is stale and parameters must be updated by the user. Simulation uses: surge capacity planning of hospital beds, ICUs and ventilators, and emergency response to a pandemic. Related: COVID-19 Scenarios and Covasim model the same hospital demand with richer epidemic dynamics (catalogued as model-covid19-scenarios and model-covasim).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hospital capacity epidemic model (register services-chime)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry CHIME",
+      "route": "R06",
+      "source": "services-chime (register)"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://penn-chime.phl.io/",
+  "id": "model-chime",
+  "inputs": [
+    "Regional population",
+    "Current hospitalised COVID-19 patients",
+    "Doubling time or social distancing",
+    "Hospitalisation, ICU and ventilator rates and lengths of stay",
+    "Hospital market share"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-03-01",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "CHIME (COVID-19 Hospital Impact Model for Epidemics)",
+  "outputs": [
+    "Daily new and census inpatient hospitalisations",
+    "ICU admissions",
+    "Patients requiring ventilation"
+  ],
+  "provider": "Predictive Healthcare, Penn Medicine (University of Pennsylvania), with Code for Philly",
+  "related_ids": [
+    "model-covid19-scenarios",
+    "model-covasim"
+  ],
+  "repository": "https://github.com/CodeForPhilly/chime",
+  "runs_on": [],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, SIR model, outputs, validation by epidemiologists, moved from pennsignals, documentation links",
+      "url": "https://raw.githubusercontent.com/CodeForPhilly/chime/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT, copyright 2020 Trustees of the University of Pennsylvania",
+      "url": "https://raw.githubusercontent.com/CodeForPhilly/chime/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: latest tag v1.1.5",
+      "url": "https://github.com/CodeForPhilly/chime"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Streamlit application answered 200",
+      "url": "https://penn-chime.phl.io/"
+    }
+  ],
+  "tags": [
+    "COVID-19",
+    "hospital capacity",
+    "SIR",
+    "ICU",
+    "ventilators",
+    "surge planning"
+  ],
+  "title_en": "CHIME (COVID-19 Hospital Impact Model for Epidemics)",
+  "type": "model",
+  "validated_on": []
+}

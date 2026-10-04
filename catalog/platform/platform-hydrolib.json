@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Deltares/HYDROLIB"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Deltares/HYDROLIB/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hydrolib hydrodynamic workflow tools",
+    "repo": "github.com/deltares/hydrolib",
+    "url": "https://github.com/Deltares/HYDROLIB"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "HYDROLIB is a Python package developed by Deltares and partner organisations for preparing, running and analysing hydrodynamic modelling workflows. It builds on HYDROLIB-core file interfaces and includes the D-HyDAMO model generator, Profile Optimizer, inundation analysis and case-management tools. Inputs include D-HYDRO models, profile definitions, meteorological scenarios and model outputs; results include revised model cases and flood-arrival or water-level-rise characteristics. Coverage is configurable, with several tools designed around Dutch data conventions and D-HYDRO practice. Public source and examples are free under LGPL-3.0, distinct from HYDROLIB-core's MIT licence. A limitation is that inundation and case-management tools remain under development. The documented profile optimizer changes the bottom width of one non-branching stream; repeated cross-section identifiers can unintentionally change multiple locations. HYDROLIB supports flood-defence and drainage simulations using Delft3D FM (model-delft3d-fm), and requires a suitable model and solver setup. Its documentation gives example workflows and explicit restrictions. No model files, example data or solver binaries were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:Deltares",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://github.com/Deltares/HYDROLIB",
+  "id": "platform-hydrolib",
+  "interfaces": [
+    "code_library",
+    "file_exchange"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-22",
+  "licence": "LGPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "HYDROLIB hydrodynamic workflow tools",
+  "notes": "G7 G7-0684. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool",
+    "modelling_suite"
+  ],
+  "provider": "Deltares and HYDROLIB partner organisations",
+  "related_ids": [
+    "model-delft3d-fm"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Deltares/HYDROLIB: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3ADeltares&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/deltares/hydrolib/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Tool inventory and distinct package licences.",
+      "url": "https://deltares.github.io/HYDROLIB/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Flood-arrival and rise-rate outputs; development status.",
+      "url": "https://deltares.github.io/HYDROLIB/HydroLogic_Inundation_Toolbox/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Scenario and precipitation workflows; development status.",
+      "url": "https://deltares.github.io/HYDROLIB/case_management_tools/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Supported profile optimization and limits.",
+      "url": "https://deltares.github.io/HYDROLIB/Profileoptimizer/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for dams and flood defences and stormwater drainage",
+  "type": "platform"
+}

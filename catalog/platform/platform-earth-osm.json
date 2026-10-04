@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "PyPI package page",
+      "url": "https://pypi.org/project/earth-osm/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "note": "Linked from PyPI; not opened from this session",
+      "url": "https://github.com/pypsa-meets-earth/earth-osm"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "earth osm",
+    "repo": "github.com/pypsa-meets-earth/earth-osm",
+    "url": "https://pypi.org/project/earth-osm"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "earth-osm is a Python package and command-line tool that downloads, filters, cleans and exports infrastructure features from OpenStreetMap, for example power lines and substations, for any country or region, including planet-wide extraction and historical snapshots at a target date. It is produced by the PyPSA meets Earth initiative to assemble open grid inputs for the PyPSA-Earth energy system model, and the extractor is generic enough to prepare other infrastructure layers. Coverage is global because it reads Geofabrik OpenStreetMap extracts by default or the live Overpass API; resolution and completeness are those of OpenStreetMap in each region. Output format is CSV and GeoJSON files, and access is through pip or conda install, a Python API and a CLI. Licence: MIT; the tool is free, while the extracted data stay under the ODbL of OpenStreetMap. Caveats: OpenStreetMap completeness varies strongly between countries, the cleaning step is marked as coming soon on the package page, and version 3.0.2 (6 November 2025) was the release read. It serves network flow, capacity planning and hazard exposure studies by producing asset and line inventories. Related catalogue records are OSM-flex and OSMnx, which extract OpenStreetMap features and street networks for similar preparation work.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "OpenStreetMap infrastructure extraction tool python critical infrastructure networks from OSM",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/pypsa-meets-earth/earth-osm",
+  "id": "platform-earth-osm",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "interoperability": [
+    "OpenStreetMap PBF (Geofabrik)",
+    "Overpass API",
+    "CSV",
+    "GeoJSON"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-11-06",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "earth-osm",
+  "notes": "Round 2 fresh pass cross-cutting; covers the unswept cell platform:cross_cutting.multi_sector:data_preparation_tool.",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "PyPSA meets Earth (pypsa-meets-earth)",
+  "related_ids": [
+    "platform-osm-flex",
+    "model-osmnx",
+    "data-openstreetmap"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Package page: description, features, MIT licence, release 3.0.2 of 2025-11-06, maintainer pypsa-meets-earth",
+      "url": "https://pypi.org/project/earth-osm/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "PyPI JSON metadata: licence and project URLs",
+      "url": "https://pypi.org/pypi/earth-osm/json"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for pypsa-meets-earth/earth-osm: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/pypsa-meets-earth/earth-osm"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/pypsa-meets-earth/earth-osm/readme"
+    }
+  ],
+  "supported_sectors": [
+    "energy.electricity",
+    "cross_cutting.multi_sector"
+  ],
+  "tags": [
+    "openstreetmap",
+    "extraction",
+    "pypsa-earth"
+  ],
+  "title_en": "Earth-osm downloads filters cleans exports infrastructure features from OpenStreetMap",
+  "type": "platform"
+}

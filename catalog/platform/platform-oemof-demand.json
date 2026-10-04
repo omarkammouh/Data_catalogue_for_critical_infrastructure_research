@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/oemof/oemof-demand"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/oemof/oemof-demand/blob/dev/README.rst"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "oemof demand load profile generator",
+    "repo": "github.com/oemof/oemof-demand",
+    "url": "https://github.com/oemof/oemof-demand"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "oemof-demand is the oemof developer group's Python package for turning annual electricity and heat consumption into demand profiles. Its documented methods include BDEW standard profiles, VDI4655 profiles and industrial demand patterns. Inputs specify annual totals, calendar and building or customer classes, with temperatures used for heat demand. Outputs are scaled time series suitable for energy simulations. Electrical BDEW profiles have 15-minute resolution and derive from German measurements; geographic transfer requires checking whether those patterns represent the proposed location. The heat method includes temperature dependence and weekday factors. Source is free under MIT with package installation and API examples. A limitation is that these representative profiles do not replace measured operation of a particular building or industrial process. The outputs can support electricity and heating capacity studies. PyPSA (model-pypsa) is a related model that consumes demand time series. No demand files were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:oemof",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/oemof/oemof-demand",
+  "id": "platform-oemof-demand",
+  "interfaces": [
+    "code_library"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "oemof-demand load-profile generator",
+  "notes": "G7 G7-1076. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "oemof developer group",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "sectors": [
+    "energy.electricity",
+    "energy.district_heating_cooling",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for oemof/oemof-demand: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3Aoemof&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/oemof/oemof-demand/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Provider documentation or licence inspected for this draft.",
+      "url": "https://oemof-demand.readthedocs.io/en/latest/bdew.html"
+    }
+  ],
+  "tags": [],
+  "title_en": "Data preparation software for electricity, district heating and cooling and buildings",
+  "type": "platform"
+}

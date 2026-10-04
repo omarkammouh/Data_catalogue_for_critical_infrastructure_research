@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "comma2k19 repository and download links",
+      "url": "https://github.com/commaai/comma2k19"
+    },
+    {
+      "kind": "repo",
+      "label": "Laika GNSS library",
+      "url": "https://github.com/commaai/laika"
+    },
+    {
+      "kind": "portal",
+      "label": "Academic Torrents (about 100 GB)",
+      "url": "http://academictorrents.com/details/65a2fbc964078aff62076ff4e103f18b951c5ddb"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "behavioural_social"
+  ],
+  "data_kind": [
+    "time_series",
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "comma2k19 33 hours of california highway commute with camera raw gnss imu and can data",
+    "repo": "github.com/commaai/comma2k19",
+    "url": "https://github.com/commaai/comma2k19"
+  },
+  "description": "comma2k19 is an open driving dataset of 33 hours of commuting on California's Interstate 280, recorded with commodity sensors to support positioning and mapping research. It was produced by comma.ai, the maker of the openpilot driver assistance system, and released with Laika, an open-source GNSS processing library. Coverage: a 20 km stretch of highway between San Jose and San Francisco, split into 2,019 one-minute segments published in 2018. Each segment holds road-facing camera video, phone-grade GPS, raw GNSS measurements, 9-axis IMU and thermometer readings, and all CAN bus messages from the car read through a comma panda, plus pose estimates (position and orientation) in a global frame computed with a tightly coupled INS, GNSS and vision optimiser; the authors report Laika positions about 40 percent more accurate than the recording GNSS module. Format and access: about 100 GB downloadable through Academic Torrents in 10 GB chunks, with HEVC video, raw Cap'n Proto logs and processed NumPy arrays per segment, with Python notebooks and tools for reading the logs; free. Licence: MIT. Caveats: a single road corridor and vehicle set-up, highway driving only, and no object annotations, so it suits positioning and vehicle dynamics work, not perception benchmarks. Simulation uses: real vehicle speed and CAN traces for calibrating road traffic and vehicle models in digital twin work, and GNSS error studies for satellite positioning resilience. Related records: the Caltrans Performance Measurement System (data-caltrans-pems) gives loop detector traffic on the same California highways, and Argoverse (data-argoverse-autonomous-driving-hd-maps) is an urban driving dataset.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-comma2k19: provider pages read (round 2 register piece)",
+      "route": "R17",
+      "source": "transport-comma2k19"
+    }
+  ],
+  "formats": [
+    "image",
+    "domain_model_file",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://github.com/commaai/comma2k19",
+  "id": "data-comma2k19-highway-driving-dataset",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-07-19",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "comma2k19: 33 hours of California highway commute with camera, raw GNSS, IMU and CAN data",
+  "provider": "comma.ai",
+  "related_ids": [
+    "data-caltrans-pems",
+    "data-argoverse-autonomous-driving-hd-maps"
+  ],
+  "sectors": [
+    "transport.road",
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: over 33 hours of commute on California 280, 2019 one-minute segments on 20 km between San Jose and San Francisco; EON road camera, GPS, thermometers, 9-axis IMU, raw GNSS, CAN via grey panda; Laika 40% more accurate; pose estimates; MIT licence; last commit 2025-07-19; about 100 GB via Academic Torrents; per segment raw_log.bz2 (capnp), video.hevc, processed_log and global_pos NumPy arrays; citation year 2018",
+      "url": "https://raw.githubusercontent.com/commaai/comma2k19/master/README.md"
+    }
+  ],
+  "tags": [
+    "driving dataset",
+    "GNSS",
+    "CAN bus",
+    "highway"
+  ],
+  "temporal_coverage": "Published 2018; 33 hours in 2,019 one-minute segments",
+  "title_en": "Comma2k19: 33 hours of California highway commute with camera, raw GNSS, IMU and CAN data",
+  "type": "data"
+}

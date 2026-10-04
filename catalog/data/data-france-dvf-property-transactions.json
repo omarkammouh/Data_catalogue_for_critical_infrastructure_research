@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "DGFiP yearly files (pipe-separated text)",
+      "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres"
+    },
+    {
+      "kind": "download",
+      "label": "Geolocated DVF (CSV per department and commune)",
+      "url": "https://files.data.gouv.fr/geo-dvf/latest/csv/"
+    },
+    {
+      "kind": "viewer",
+      "label": "DVF map application",
+      "url": "https://app.dvf.etalab.gouv.fr/"
+    },
+    {
+      "kind": "docs",
+      "label": "Cerema DV3F (enriched version for public bodies)",
+      "url": "https://datafoncier.cerema.fr/dv3f"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "economic_financial"
+  ],
+  "data_kind": [
+    "tabular",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "demandes de valeurs foncieres dvf french property transactions raw and geolocated",
+    "url": "https://data.gouv.fr/datasets/demandes-de-valeurs-foncieres"
+  },
+  "description": "DVF lists the property sales recorded in France's land publication services, published as open data by the tax administration (DGFiP) under a 2018 decree to make land and housing markets transparent. The data come from notarial deeds and cadastral information and cover the last five years; each line is a disposition within a sale with date, nature, price, address, cadastral parcel, type of premises, built floor area, number of main rooms and land area and use. Coverage: metropolitan France and overseas departments except Alsace, Moselle and Mayotte. Access: yearly pipe-separated files updated twice a year, with a notice and conditions of use; data.gouv.fr also publishes a normalised geolocated version (UTF-8 CSV, parcel identifiers, WGS84 coordinates, files per department or commune) and a map application. Cerema's DV3F, which enriches DVF with the land files from 2010, is available to public bodies on request. Licence: Licence Ouverte v2.0 with DGFiP conditions; free. Caveats: reuse must not allow re-identification of persons or indexing by search engines, and one sale spans several lines grouped by a mutation identifier that is not stable between releases. Simulation uses are market value inputs for loss, relocation and investment appraisal models. Related records: the Cerema Fichiers fonciers and Cartofriches.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation walk: DGFiP Demandes de valeurs foncières (DVF) homepage",
+      "route": "R10",
+      "source": "organisations.csv:FR:built_environment:tax_assessor"
+    }
+  ],
+  "formats": [
+    "plain_text",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres",
+  "id": "data-france-dvf-property-transactions",
+  "languages": [
+    "fr"
+  ],
+  "last_updated": "2026-05-18",
+  "licence": "Licence Ouverte v2.0 with DGFiP conditions of use (no re-identification of persons, no indexing by external search engines)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres"
+    ]
+  },
+  "maturity": "active",
+  "name": "Demandes de valeurs foncières (DVF): French property transactions, raw and geolocated",
+  "provider": "Direction générale des finances publiques (DGFiP); geolocated version by data.gouv.fr (Etalab)",
+  "related_ids": [
+    "data-cerema-fichiers-fonciers-land-files",
+    "data-cerema-cartofriches-brownfield-sites"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "DGFiP dataset: decree 2018-1350, personal data obligations, five-year scope, excluded areas, yearly files 2021-2025 updated 2026-04-05, semiannual",
+      "url": "https://www.data.gouv.fr/api/1/datasets/5c4ae55a634f4117716d5656/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Geolocated DVF: normalisation, parcel ids, WGS84 geocoding, files per department or commune, schema",
+      "url": "https://www.data.gouv.fr/api/1/datasets/5cc1b94a634f4165e96436c1/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "DV3F: DVF enriched with land files, January 2010 to December 2025 (version 2026-1), access request on the portal",
+      "url": "https://datafoncier.cerema.fr/dv3f"
+    }
+  ],
+  "tags": [
+    "property transactions",
+    "land values",
+    "DVF",
+    "France",
+    "housing market"
+  ],
+  "temporal_coverage": "Last five years (2021 to 2025 in the current release)",
+  "title_en": "Real estate valuation requests (DVF): French property transactions, raw and geolocated",
+  "type": "data"
+}

@@ -1,0 +1,138 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Census 2021 open data product (all datasets, data and JSON schema)",
+      "url": "https://csu.gov.cz/produkty/vysledky-scitani-2021-otevrena-data"
+    },
+    {
+      "kind": "download",
+      "label": "Example, occupied houses by water supply connection and house type (CSV)",
+      "url": "https://csu.gov.cz/docs/107508/1487525f-bf20-1b13-54ab-0b2667c7e45e/sldb2021_obydomy_druh_vodovod.csv?version=1.0"
+    },
+    {
+      "kind": "docs",
+      "label": "Open data documentation",
+      "url": "https://csu.gov.cz/vysledky-scitani-2021-otevrena-data-dokumentace"
+    },
+    {
+      "kind": "portal",
+      "label": "Population and occupied dwellings for the smallest units (ZSJ)",
+      "url": "https://csu.gov.cz/produkty/pocty-obyvatel-a-obydlenych-bytu-ze-scitani-2021-i-za-nejmensi-uzemni-jednotky"
+    },
+    {
+      "kind": "docs",
+      "label": "Terms of use of CZSO data",
+      "url": "https://csu.gov.cz/podminky_pro_vyuzivani_a_dalsi_zverejnovani_statistickych_udaju_csu"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CZ"
+  ],
+  "data_family": [
+    "system_description",
+    "condition_ageing",
+    "reference_context"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "czech census 2021 open data sldb 2021 occupied houses and dwellings by structure age utilities and heating down to municipality",
+    "url": "https://csu.gov.cz/produkty/vysledky-scitani-2021-otevrena-data"
+  },
+  "description": "The Czech Statistical Office publishes the results of the 2021 Population and Housing Census (SLDB 2021) as a set of open CSV datasets, each with a JSON schema. The housing part is detailed. Occupied houses are counted by house type together with the number of dwellings, ownership, construction period, material of the load-bearing walls, connection to the public sewer, gas and water mains, lift, heating method and number of above-ground storeys, and a later dataset gives their average age. Occupied dwellings are counted by tenure, rooms, floor area, occupants, kitchen, gas and water connection, prevailing heating method and main heating energy, sewage disposal, position in the house, and construction or reconstruction period. Most tables are given for the state, regions, districts, administrative districts of municipalities with extended powers, every municipality and city districts; population and occupied dwelling counts also exist for basic settlement units (ZSJ). The CZSO produces the census under Czech law and the EU census regulation. Format and access: UTF-8 comma-separated CSV files downloadable without registration from the product page, released between 2022 and December 2024. Licence: CC BY 4.0 per CZSO terms, free. Caveats: the tables describe occupied houses and dwellings only for most items, and each characteristic has a \"not ascertained\" (nezjištěno) category that can be sizeable. Simulation uses: municipality-level building stock by structure and age for flood and seismic exposure, utility connection and heating mix for energy and water network planning. Related records: the Czech census commuting flows, the Zensus 2022 grid for Germany and the Austrian housing census.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:CZ:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://csu.gov.cz/produkty/vysledky-scitani-2021-otevrena-data",
+  "id": "data-czso-census-2021-open-data-houses-and-dwellings",
+  "languages": [
+    "cs"
+  ],
+  "last_updated": "2024-12-06",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Czech Census 2021 open data (SLDB 2021), occupied houses and dwellings by structure, age, utilities and heating down to municipality",
+  "provider": "Czech Statistical Office (Český statistický úřad, ČSÚ)",
+  "related_ids": [
+    "data-czso-census-2021-commuting-between-municipalities",
+    "data-zensus-2022-grid-cells-buildings-dwellings",
+    "data-austria-housing-census-buildings-dwellings-by-district"
+  ],
+  "schema_summary": "occupied houses by house type crossed with number of dwellings, ownership, construction period, load-bearing wall material, sewer, gas and water connection, lift, heating, above-ground storeys, average age; occupied dwellings by tenure, rooms, floor area, persons, kitchen, gas, water, heating type and main heating energy, sewage disposal, construction or reconstruction period, wall material",
+  "sectors": [
+    "built_environment.buildings",
+    "water.drinking_water",
+    "water.wastewater",
+    "energy.gas_hydrogen",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Product 170359-23: CSV with JSON schemas; dataset list read (houses by dwellings, ownership, period, wall material, sewer, gas, water, lift, heating, storeys; dwellings by tenure, rooms, area, gas, water, heating, energy, sewage, period, material; average age 2024-12-06)",
+      "url": "https://csu.gov.cz/produkty/vysledky-scitani-2021-otevrena-data"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "CZSO statistical information on csu.gov.cz licensed CC BY 4.0",
+      "url": "https://csu.gov.cz/podminky_pro_vyuzivani_a_dalsi_zverejnovani_statistickych_udaju_csu"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Long format: value, indicator, category, territory code and type (obec), sldb_datum 2021-03-26, category Nezjištěno present",
+      "url": "https://csu.gov.cz/docs/107508/1487525f-bf20-1b13-54ab-0b2667c7e45e/sldb2021_obydomy_druh_vodovod.csv?version=1.0"
+    }
+  ],
+  "spatial_resolution": "state, cohesion region, region, district, administrative district of municipality with extended powers, municipality, city district; population and occupied dwellings also for basic settlement units (ZSJ)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "census",
+    "Czechia",
+    "building stock",
+    "dwellings",
+    "heating",
+    "water supply",
+    "sewer",
+    "gas"
+  ],
+  "temporal_coverage": "census reference date 26 March 2021",
+  "temporal_coverage_years": {
+    "end": 2021,
+    "start": 2021
+  },
+  "temporal_resolution": "none (census snapshot)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Czech Census 2021 open data (SLDB 2021), occupied houses and dwellings by structure, age, utilities and heating down to municipality",
+  "type": "data"
+}

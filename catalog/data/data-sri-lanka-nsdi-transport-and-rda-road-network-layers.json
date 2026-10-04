@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Transport MapServer (REST, query enabled)",
+      "url": "https://gisapps.nsdi.gov.lk/server/rest/services/SLNSDI/Transport/MapServer"
+    },
+    {
+      "kind": "api",
+      "label": "RDA road network MapServer",
+      "url": "https://gisapps.nsdi.gov.lk/server/rest/services/SLNSDI/RDA/MapServer"
+    },
+    {
+      "kind": "viewer",
+      "label": "NSDI geoportal",
+      "url": "https://geoportal.nsdi.gov.lk/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "LK"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sri lanka nsdi transport layers rda national road and expressway network railway lines airports and road classes",
+    "url": "https://gisapps.nsdi.gov.lk/server/rest/services/SLNSDI/Transport/MapServer"
+  },
+  "description": "The Sri Lanka National Spatial Data Infrastructure (NSDI) publishes transport map services on its public ArcGIS Server. Contents: the Transport service has 17 layers, among them 2,040 railway line features, 8 airports, helicopter pads and runways, 174 expressway segments, 3,399 class A main road and 7,394 class B main road segments, 27,273 secondary and minor road segments, jeep tracks, footpaths, road rights of way and interchanges; the separate RDA service from the Road Development Authority carries the national road network (845 features), the expressway network and interchanges. Producer: the Survey Department's NSDI unit, with the RDA layers from the Road Development Authority. Coverage: the whole island. Format and access: ArcGIS MapServer services with query capability, so features can be exported as JSON or GeoJSON through the REST query endpoint; the NSDI geoportal shows them on a map and metadata is in the NSDI catalogue. Licence: no licence is stated on the services. Caveats: the road classes follow the Survey Department topographic data, not a routable network, so connectivity needs checking; update dates are not shown in the service description. Simulation uses: road and rail network models for accessibility and evacuation, exposure of national roads to floods and landslides, and freight corridor studies. Related records: the NSDI utilities and communications layers (data-sri-lanka-nsdi-utilities-communications-electricity-water-sewer-layers) come from the same server.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source lk-sdi-nsdi-gov-lk: provider pages read (round 2 register piece)",
+      "route": "R04",
+      "source": "lk-sdi-nsdi-gov-lk"
+    }
+  ],
+  "formats": [
+    "ogc_map_service",
+    "json",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://gisapps.nsdi.gov.lk/server/rest/services/SLNSDI/Transport/MapServer",
+  "id": "data-sri-lanka-nsdi-transport-and-rda-road-network-layers",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "not_stated",
+  "name": "Sri Lanka NSDI transport layers: RDA national road and expressway network, railway lines, airports and road classes",
+  "provider": "Survey Department of Sri Lanka (National Spatial Data Infrastructure) and Road Development Authority",
+  "related_ids": [
+    "data-sri-lanka-nsdi-utilities-communications-electricity-water-sewer-layers"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.rail",
+    "transport.aviation"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "17 layers; feature counts from returnCountOnly queries",
+      "url": "https://gisapps.nsdi.gov.lk/server/rest/services/SLNSDI/Transport/MapServer?f=json"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "RDA national road network 845 features, expressway network 5",
+      "url": "https://gisapps.nsdi.gov.lk/server/rest/services/SLNSDI/RDA/MapServer?f=json"
+    }
+  ],
+  "tags": [
+    "Sri Lanka",
+    "NSDI",
+    "RDA",
+    "road network",
+    "railway",
+    "expressway"
+  ],
+  "title_en": "Sri Lanka NSDI transport layers: RDA national road and expressway network, railway lines, airports and road classes",
+  "type": "data"
+}

@@ -1,0 +1,247 @@
+# Controlled vocabularies for the dashboard filters for the public catalogue.
+#
+# Why: the free-text record fields behind several filters had grown to thousands of spellings of the same
+# few ideas ("not stated", "Not stated.", "not established", "unknown", "not stated on the page read" ...).
+# Each filter below gets a short list of values that do not overlap and are not synonyms of each other.
+# Every raw value found in the records is mapped to these values in <field>.csv next to this file.
+#
+# One word per meaning, the same in every filter:
+#   not_stated  the value was looked for and the source does not give it, or the source could not be read.
+#               It absorbs "unknown", "unclear", "not established", "not specified", "not read", "none stated",
+#               blank strings and every "not stated on the page ..." variant. No filter has a separate
+#               "unknown" value.
+#   varies      the source gives different values for different parts of the resource (per dataset, per
+#               layer, per item) and no single value for the whole.
+#   other       the source gives a value that is clear but fits no listed value. When a value lands in
+#               "other" often, it is a signal to add a value here, not to force a fit.
+#   A field that does not apply to a resource is simply absent; it gets no "not applicable" value, except
+#   where "does not apply" is itself a useful fact (spatial resolution: non_spatial; time step: snapshot).
+#
+# Layout: field -> {record_field, target, facet, label, values: {value: [label, definition]}}.
+#   record_field  the field in the record files that holds the raw text
+#   target        the field the normalised value goes to: the same field when the raw text is only a variant
+#                 of a category, or a new field when the raw text keeps detail the category loses
+#   multi         true when a record can carry several values (a record with code under MIT and data under
+#                 CC BY carries both "permissive_code" and "attribution")
+
+licence:
+  record_field: licence
+  target: licence_type
+  multi: true
+  label: Licence type
+  values:
+    public_domain: [Public domain, "No rights reserved: CC0, PDDL, the Unlicense, government works placed in the public domain (such as U.S. federal works)."]
+    attribution: ["Open, credit required", "Free reuse including commercial use, only credit required: CC BY, ODC-By, open government licences (OGL, Licence Ouverte, Datenlizenz Deutschland, NLOD) and provider licences with the same terms."]
+    share_alike: ["Open, share alike", "Free reuse including commercial use, but derived data must carry the same licence: CC BY-SA, ODbL."]
+    non_commercial: [Non-commercial only, "Reuse allowed for non-commercial, research or education use only: CC BY-NC (any variant, including NC-ND and NC-SA) and provider terms that say academic or research use only."]
+    no_derivatives: [No modified versions, "Redistribution allowed, including commercially, but no modified versions: CC BY-ND."]
+    permissive_code: ["Open-source code, free reuse", "Open-source software licence without copyleft: MIT, BSD, Apache, ISC, zlib, Boost, Python."]
+    copyleft_code: ["Open-source code, derivatives stay open", "Open-source software licence whose derived works must stay open: GPL, LGPL, AGPL, MPL, EPL, EUPL, CeCILL."]
+    provider_terms: [Provider's own terms of use, "The provider's own terms of use or data policy, not a standard licence, allowing use under stated conditions (for example citation, no redistribution)."]
+    proprietary: [Proprietary, "All rights reserved, a commercial or subscription licence, freeware under an end-user licence, or use only with the owner's permission."]
+    other: [Other, "A licence statement that is clear but fits none of the values above."]
+    varies: [Varies by item, "Each dataset, layer or item has its own licence and none is stated for the whole resource."]
+    not_stated: [Not stated, "No licence or terms found on the pages read, or the pages could not be read. A bare site copyright notice counts here, as the licence and links pass decided on 2026-09-28."]
+
+licence_name:
+  record_field: licence
+  target: licence_name
+  multi: true
+  label: Standard licence
+  # Only recognised standard licences get a value; versions are folded (CC BY 3.0 and CC BY 4.0 are both "CC BY"),
+  # because the version is kept in the record text and a filter by version splits one licence into near-synonyms.
+  values:
+    CC0: [CC0, Creative Commons Zero public-domain dedication.]
+    PDDL: [ODC PDDL, Open Data Commons Public Domain Dedication and Licence.]
+    Unlicense: [Unlicense, The Unlicense public-domain dedication for software.]
+    US-Gov-PD: [U.S. government work, "A work of the U.S. federal government, public domain in the United States."]
+    CC-BY: [CC BY, "Creative Commons Attribution, any version."]
+    CC-BY-SA: [CC BY-SA, "Creative Commons Attribution-ShareAlike, any version."]
+    CC-BY-NC: [CC BY-NC, "Creative Commons Attribution-NonCommercial, any version."]
+    CC-BY-NC-SA: [CC BY-NC-SA, "Creative Commons Attribution-NonCommercial-ShareAlike, any version."]
+    CC-BY-ND: [CC BY-ND, "Creative Commons Attribution-NoDerivatives, any version."]
+    CC-BY-NC-ND: [CC BY-NC-ND, "Creative Commons Attribution-NonCommercial-NoDerivatives, any version."]
+    ODC-By: [ODC-By, Open Data Commons Attribution Licence.]
+    ODbL: [ODbL, Open Data Commons Open Database Licence.]
+    OGL-UK: [UK Open Government Licence, "UK Open Government Licence, any version."]
+    OGL-Canada: [Open Government Licence Canada, "Open Government Licence Canada, including provincial versions."]
+    Etalab: [Licence Ouverte (Etalab), "French Licence Ouverte / Open Licence, versions 1 and 2."]
+    DL-DE: [Datenlizenz Deutschland, "German Data Licence, attribution or zero variant."]
+    NLOD: [NLOD, Norwegian Licence for Open Government Data.]
+    MIT: [MIT, MIT licence and MIT-0.]
+    BSD: [BSD, "BSD licences, 0-, 2- and 3-clause."]
+    Apache: [Apache, "Apache License, any version."]
+    ISC: [ISC, ISC licence.]
+    GPL: [GPL, "GNU General Public License, any version, only or or-later."]
+    LGPL: [LGPL, "GNU Lesser General Public License, any version."]
+    AGPL: [AGPL, "GNU Affero General Public License, any version."]
+    MPL: [MPL, "Mozilla Public License, any version."]
+    EPL: [EPL, "Eclipse Public License, any version."]
+    EUPL: [EUPL, "European Union Public Licence, any version."]
+    CeCILL: [CeCILL, "CeCILL licences, any variant."]
+    AFL: [AFL, Academic Free License.]
+    BSL: [Boost, Boost Software License.]
+    Zlib: [zlib, zlib licence.]
+    CDLA: [CDLA, Community Data License Agreement (permissive or sharing).]
+
+formats:
+  record_field: formats
+  target: formats
+  multi: true
+  label: Format
+  values:
+    csv: [CSV or TSV, "Delimited text tables: CSV, TSV, semicolon-separated files."]
+    spreadsheet: [Spreadsheet, "Excel (XLSX, XLS), OpenDocument (ODS) and other workbook files."]
+    json: [JSON, "JSON files, including JSON-stat and JSON Lines, but not GeoJSON."]
+    xml: [XML, "XML files and schemas (XSD), other than GML and domain XML listed elsewhere."]
+    plain_text: [Plain text, "TXT and fixed-width ASCII files whose structure is not stated."]
+    geojson: [GeoJSON, GeoJSON and TopoJSON vector files.]
+    shapefile: [Shapefile, Esri shapefile.]
+    geopackage: [GeoPackage, OGC GeoPackage.]
+    kml: [KML or KMZ, Google Earth KML and KMZ.]
+    gml: [GML or CityGML, "OGC GML, CityGML and INSPIRE GML."]
+    esri_geodatabase: [Esri geodatabase, "File geodatabase, personal geodatabase, layer and map packages."]
+    other_vector: [Other map vector formats, "Other vector GIS files: MapInfo TAB and MIF, GPX, OSM PBF and OSM XML, FlatGeobuf, vector tiles."]
+    raster: [Raster grid, "Georeferenced raster files: GeoTIFF, Cloud Optimized GeoTIFF, ASCII grid, ERDAS IMG, JPEG 2000, DEM files."]
+    netcdf_hdf: ["NetCDF, HDF or GRIB", "Multidimensional scientific arrays: NetCDF, HDF4, HDF5, GRIB, Zarr."]
+    parquet: [Parquet or Arrow, "Columnar files: Parquet, GeoParquet, Arrow, Feather."]
+    database: [Database or linked data, "Database files, dumps and linked-data stores: SQLite, SQL dumps, PostgreSQL or PostGIS, Access MDB, RDF and Turtle."]
+    analysis_package_file: [Statistics software file, "Files in an analysis package's own format: Stata, SPSS, SAS, R data, MATLAB MAT, PC-Axis PX, SDMX."]
+    domain_model_file: [Simulation tool file, "Input or output files of a specific simulation tool or instrument: EnergyPlus IDF and EPW, EPANET INP, MATPOWER, PSS/E RAW, OpenDSS, RINEX, PCAP, GraphML."]
+    cad_bim_3d: ["CAD, BIM or 3D model", "CAD, BIM and 3D files: IFC, DWG, DXF, Revit, OBJ, glTF, 3D Tiles, CityJSON, LAS and LAZ point clouds."]
+    transit_feed: [Public transport feed, "Public transport feeds: GTFS, GTFS Realtime, NeTEx, SIRI."]
+    api: [Web API, "Data served through a programming interface rather than a file: REST, JSON or GraphQL APIs, Socrata, CKAN, SPARQL, OData, MQTT."]
+    ogc_map_service: [Online map service, "Map and feature services: OGC WMS, WFS, WMTS, WCS, OGC API, ArcGIS REST map and feature services."]
+    web_page: [Web page or viewer, "Content seen in a browser rather than downloaded: HTML pages and tables, web maps, dashboards, online databases."]
+    document: [Document, "Reports and documentation: PDF, Word, Markdown, README, slides."]
+    image: ["Image, audio or video", "Pictures, charts, audio and video that are not georeferenced rasters: PNG, JPEG, SVG, maps as pictures, MP4, WAV."]
+    source_code: [Source code, "Scripts, packages and notebooks: Python, R, Julia, MATLAB code, Jupyter notebooks."]
+    software_package: [Software package, "Installable programs: executables, installers, containers, virtual machine images."]
+    archive: [Compressed archive, "ZIP, RAR, 7z or TAR archives whose contents are not stated."]
+    other: [Other, A stated format that fits none of the values above.]
+    not_stated: [Not stated, The format is not stated or could not be read.]
+
+update_frequency:
+  record_field: update_frequency
+  target: update_frequency
+  multi: false
+  label: Update frequency
+  values:
+    real_time: [Continuous (real time), "Continuously or within minutes: live feeds, streams, near real time."]
+    sub_daily: [Several times a day, "Hourly or several times a day, but not continuously."]
+    daily: [Daily, Once a day or on working days.]
+    weekly: [Weekly, Once a week or a few times a month.]
+    monthly: [Monthly, Once a month.]
+    several_per_year: [Several times a year, "Quarterly, half-yearly or a few times a year."]
+    annual: [Annual, Once a year.]
+    multi_year: [Every few years, "Every two to ten years, such as census cycles."]
+    irregular: [Irregular, "Updated, but without a fixed schedule: versioned releases, as needed, periodic."]
+    not_updated: [Never updated (one-off), "A one-off release, a static or historical dataset, or discontinued."]
+    other: [Other, A stated frequency that fits none of the values above.]
+    varies: [Varies, Different parts are updated at different rates.]
+    not_stated: [Not stated, The update frequency is not stated or could not be read.]
+
+temporal_resolution:
+  record_field: temporal_resolution
+  target: temporal_resolution_class
+  multi: false
+  label: Time step
+  values:
+    sub_hourly: [Under one hour, "Seconds to minutes: 1 s, 1 min, 15 min."]
+    hourly: [Hourly, "One hour up to less than a day, such as 3- or 6-hourly."]
+    daily: [Daily, One value per day.]
+    weekly: [Weekly, One value per week.]
+    monthly: [Monthly, One value per month.]
+    sub_annual: [Quarterly or seasonal, "Quarterly, seasonal or half-yearly."]
+    annual: [Annual, "One value per year, including financial years."]
+    multi_year: [Every few years, "Every two or more years, such as census rounds."]
+    event: [One record per event, "One record per event, incident, test or trip, not on a fixed step."]
+    snapshot: [Single point in time, "One point in time or no time dimension: static, cross-sectional, a single census."]
+    other: [Other, A stated time step that fits none of the values above.]
+    varies: [Varies, Different parts use different time steps.]
+    not_stated: [Not stated, The time step is not stated or could not be read.]
+
+spatial_resolution:
+  record_field: spatial_resolution
+  target: spatial_resolution_class
+  multi: false
+  label: Spatial resolution
+  values:
+    under_10m: [Under 10 m, "Grid cells or accuracy finer than 10 metres (including map scales larger than 1:20,000)."]
+    10m_to_100m: [10 to 100 m, "Grid cells from 10 up to 100 metres."]
+    100m_to_1km: [100 m to 1 km, "Grid cells from 100 metres up to 1 kilometre (about 30 arc-seconds)."]
+    1km_to_10km: [1 to 10 km, "Grid cells from 1 up to 10 kilometres (about 5 arc-minutes)."]
+    over_10km: [Over 10 km, "Grid cells of 10 kilometres or more (0.1 degree and coarser)."]
+    asset: [Individual assets or sites, "One feature per asset, site or event: buildings, facilities, stations, road segments, coordinates."]
+    local_units: [Municipalities and districts, "Small areas below the region: municipalities, counties, districts, census tracts, postcodes, zones."]
+    regional_units: [States and provinces, "States, provinces or regions within a country."]
+    national: [Whole country, "One value per country, operator or border."]
+    other: [Other, A stated resolution that fits none of the values above.]
+    varies: [Varies, Several resolutions in one resource.]
+    non_spatial: [Not spatial, The resource has no spatial dimension.]
+    not_stated: [Not stated, The spatial resolution is not stated or could not be read.]
+
+language:
+  record_field: language
+  target: language
+  multi: true
+  label: Programming language
+  values:
+    python: [Python, "Python, including Cython and Jupyter notebooks in Python."]
+    r: [R, R.]
+    julia: [Julia, Julia.]
+    matlab: [MATLAB, "MATLAB, Simulink and GNU Octave."]
+    c_cpp: [C or C++, "C, C++, CUDA and OpenCL."]
+    java: ["Java, Scala or Kotlin", "Java, Scala, Kotlin and other JVM languages."]
+    javascript: [JavaScript, "JavaScript and TypeScript."]
+    fortran: [Fortran, Fortran.]
+    dotnet: [C# or .NET, "C#, Visual Basic and other .NET languages."]
+    rust_go: [Rust or Go, "Rust and Go."]
+    modelica: [Modelica, Modelica.]
+    optimisation_language: [Optimisation modelling language, "Algebraic modelling languages: GAMS, AMPL, GMPL, OPL."]
+    agent_based_language: [Agent-based modelling language, "NetLogo, GAML (GAMA), Repast, AnyLogic."]
+    spreadsheet: [Spreadsheet, "Excel formulas and VBA."]
+    other: [Other, A stated language that fits none of the values above.]
+    not_stated: [Not stated, "The language is not stated, could not be read, or only a packaged application is described."]
+
+interfaces:
+  record_field: interfaces
+  target: interfaces
+  multi: true
+  label: Interface
+  values:
+    desktop_gui: [Desktop or mobile app, "A graphical program installed on a computer, phone or tablet."]
+    web_app: [Web application, "Used in a web browser: web GUI, web dashboard, online tool."]
+    command_line: [Command line, "Run from a terminal or with scripts calling the program."]
+    code_library: [Code library, "Called from code: Python, R, Julia, Java or C++ packages and APIs, notebooks."]
+    web_api: [Web API, "Called over a network: REST, HTTP, GraphQL, MQTT, WebSocket."]
+    cosimulation: [Model-coupling standard, "Coupling standards: FMI, HELICS, HLA, mosaik."]
+    file_exchange: [Input and output files, "Driven by configuration or data files (YAML, JSON, CSV, domain input files)."]
+    other: [Other, A stated interface that fits none of the values above.]
+    not_stated: [Not stated, The interface is not stated or could not be read.]
+
+deployment:
+  record_field: deployment
+  target: deployment
+  multi: true
+  label: Deployment
+  values:
+    desktop: [Own computer, "Installed and run on the user's own computer (Windows, macOS, Linux). A code library installed with pip, conda, CRAN or npm and run on the user's own computer counts here."]
+    own_server: [Your own server or cluster, "Self-hosted on the user's server, containers, on premises or HPC."]
+    hosted_service: [Run online by the provider, "Run by the provider or a cloud platform and used online: web, cloud, SaaS."]
+    mobile_embedded: [Mobile or embedded, "Phones, headsets, edge or embedded devices."]
+    other: [Other, A stated deployment that fits none of the values above.]
+    not_stated: [Not stated, The deployment is not stated or could not be read.]
+
+maturity:
+  record_field: maturity
+  target: maturity
+  multi: false
+  label: Maturity
+  # Proposed change: "active" and "maintained" had no written difference and were used interchangeably,
+  # so they are one value; "unknown" becomes "not_stated" like every other filter.
+  values:
+    active: [Active, "Still developed or maintained: updated in the last two years or declared maintained. A dated paper, report or data deposit with no upkeep is active while its last release or update is less than two years old."]
+    stale: [Inactive (no update for 2+ years), "Still available but not updated for more than two years. A dated paper, report or data deposit with no upkeep counts here once its last release or update is more than two years old."]
+    archived: [Archived or withdrawn, "Withdrawn, frozen, discontinued or superseded."]
+    not_stated: [Not stated, "The maturity could not be determined from the source, and the record gives no last update date to decide it from."]

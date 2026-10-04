@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "WZDx specification repository",
+      "url": "https://github.com/usdot-jpo-ode/wzdx"
+    },
+    {
+      "kind": "portal",
+      "label": "Maricopa County WZDx feed sample (ITS DataHub)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://datahub.transportation.gov/d/wd94-wugt"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "standards_ontologies",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "stream",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "work zone data exchange wzdx specification and feeds",
+    "url": "https://github.com/usdot-jpo-ode/wzdx"
+  },
+  "description": "The Work Zone Data Exchange (WZDx) specification lets road owners and operators publish harmonised data on work zones for third-party use, so that navigation applications, vehicle makers and automated driving systems can see construction and other road work. It defines GeoJSON feeds with JSON schemas: a Work Zone Feed of road events such as lane closures and detours, produced by state and local transportation departments, and a Device Feed of field devices deployed in work zones, with their location, status and live data; related feeds for restrictions, crashes, disasters and strong winds are defined under the Transportation Data Exchange. Version 4.2 dates from February 2023. Sample feeds are archived on the USDOT ITS DataHub, for example the Maricopa County regional WZDx v1.1 feed sample of 2019, released under a Creative Commons public domain dedication, with a continuously updating archive in the ITS Work Zone Data Sandbox. Coverage is US agencies that publish WZDx feeds. Access: the specification is free on GitHub, and feeds are published by individual agencies. Caveats: feed coverage and quality vary by agency, and older samples use superseded versions. It supports real-time road network digital twins, capacity loss from work zones and disruption-aware routing, and complements the TfL and Trafikverket real-time records catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"freight\" AND \"planned\"",
+      "route": "R01",
+      "source": "socrata-discovery"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/usdot-jpo-ode/wzdx",
+  "id": "data-usdot-wzdx-work-zone-data-exchange",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2019-11-22",
+  "licence": "CC0-1.0 for the ITS DataHub sample; specification terms in the repository",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Work Zone Data Exchange (WZDx) specification and feeds",
+  "provider": "US Department of Transportation, ITS Joint Program Office",
+  "related_ids": [
+    "data-tfl-unified-api",
+    "data-sweden-trafikverket-open-api"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "WZDx spec; GeoJSON feeds with JSON schemas; Work Zone Feed and Device Feed; producers DOTs; consumers mapping companies, CAVs; TDx for restrictions, crashes, disasters, winds; release v4.2 Feb 2023",
+      "url": "https://raw.githubusercontent.com/usdot-jpo-ode/wzdx/main/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Maricopa County Regional WZDx v1.1 feed sample; MCDOT; 2019; CC0 1.0; ITS WorkZone Data Sandbox archive",
+      "url": "https://datahub.transportation.gov/api/views/wd94-wugt.json"
+    }
+  ],
+  "spatial_resolution": "road event",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "work zones",
+    "WZDx",
+    "road events",
+    "USDOT",
+    "GeoJSON"
+  ],
+  "temporal_coverage": "real time; samples from 2019",
+  "title_en": "Work Zone Data Exchange (WZDx) specification and feeds",
+  "type": "data",
+  "update_frequency": "real_time"
+}

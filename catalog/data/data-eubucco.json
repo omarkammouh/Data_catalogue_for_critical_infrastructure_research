@@ -1,0 +1,165 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Code",
+      "url": "https://github.com/ai4up/eubucco"
+    },
+    {
+      "kind": "portal",
+      "label": "Download by NUTS region (Parquet, GPKG, SHP)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://eubucco.com/data/download"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation (access, schema, licence)",
+      "url": "https://docs.eubucco.com/latest/"
+    },
+    {
+      "kind": "paper",
+      "label": "Data Descriptor, Scientific Data 2023 (v0.1)",
+      "url": "https://www.nature.com/articles/s41597-023-02040-2"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "AT",
+    "BE",
+    "BG",
+    "HR",
+    "CY",
+    "CZ",
+    "DK",
+    "EE",
+    "FI",
+    "FR",
+    "DE",
+    "GR",
+    "HU",
+    "IE",
+    "IT",
+    "LV",
+    "LT",
+    "LU",
+    "MT",
+    "NL",
+    "PL",
+    "PT",
+    "RO",
+    "SK",
+    "SI",
+    "ES",
+    "SE",
+    "NO",
+    "CH",
+    "GB"
+  ],
+  "data_family": [
+    "system_description",
+    "condition_ageing",
+    "reference_context"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1038/s41597-023-02040-2",
+    "name": "eubucco european building stock characteristics in a common and open database",
+    "url": "https://eubucco.com"
+  },
+  "description": "EUBUCCO is a scientific database of individual building footprints for more than 322 million buildings in the 27 European Union countries, Norway, Switzerland and the United Kingdom, assembled from 55 open datasets: government registries (62.2 percent), OpenStreetMap (17.4 percent) and Microsoft building footprints (20.4 percent). It is developed at the Potsdam Institute for Climate Impact Research and TU Berlin, funded by the Climate Change Center Berlin Brandenburg and the Horizon Europe CircEUlar project, to give urban-sustainability research a harmonised basis for energy-system modelling, climate and hazard risk assessment and urban morphology. Attributes are building type and subtype, height, floors and construction year, each marked as ground truth, merged or estimated by machine learning, with uncertainty estimates. Access: version 0.2 files by NUTS region as Parquet, GeoPackage or Shapefile, a command-line bulk download from S3-compatible storage, and versioned Zenodo snapshots. Licence: ODbL 1.0, except sources for Prague (CC BY-SA) and Abruzzo (CC BY-NC), which can be filtered out. Free. Caveats: attribute completeness differs by country and source, and estimated values carry uncertainty. Simulation uses are building-stock exposure, energy demand modelling and adaptation studies. Related records: Microsoft Global ML Building Footprints and OpenStreetMap buildings (inputs), Overture Maps buildings.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall for cell data:built_environment.buildings:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "geopackage",
+    "shapefile"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://eubucco.com/",
+  "id": "data-eubucco",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-24",
+  "licence": "ODbL-1.0 (Prague sources CC-BY-SA, Abruzzo CC-BY-NC)",
+  "licence_type": [
+    "non_commercial",
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "EUBUCCO (European building stock characteristics in a common and open database)",
+  "provider": "Potsdam Institute for Climate Impact Research (PIK) and Technical University Berlin (group of Felix Creutzig)",
+  "related_ids": [],
+  "schema_summary": "Footprint, height, floors, building type and subtype, construction year; provenance per attribute (ground truth, merged, estimated) with uncertainty",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, 55 sources, attributes, 30 countries, team, funding, citation",
+      "url": "https://eubucco.com/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "322+ million buildings, source shares, attribute provenance classes, S3/Parquet access, CLI and Zenodo",
+      "url": "https://docs.eubucco.com/latest/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "ODbL v1.0 with Prague CC-BY-SA and Abruzzo CC-BY-NC exceptions",
+      "url": "https://docs.eubucco.com/latest/license/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Download by NUTS region in Parquet, GPKG, SHP; versions v0.2 and v0.1",
+      "url": "https://eubucco.com/data/download/v0.2"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Data Descriptor v0.1, Scientific Data 2023",
+      "url": "https://api.crossref.org/works/10.1038/s41597-023-02040-2"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2026-07-24)",
+      "url": "https://github.com/ai4up/eubucco"
+    }
+  ],
+  "spatial_resolution": "Individual building footprints, partitioned by NUTS region",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "building stock",
+    "Europe",
+    "construction year",
+    "height",
+    "building type"
+  ],
+  "temporal_resolution": "none (versioned releases v0.1, v0.2)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "EUBUCCO (European building stock characteristics in a common and open database)",
+  "type": "data"
+}

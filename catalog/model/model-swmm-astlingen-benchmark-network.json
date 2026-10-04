@@ -1,0 +1,87 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "SWMM Astlingen model files",
+      "url": "https://github.com/open-toolbox/SWMM-Astlingen"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "astlingen benchmark sewer network as an epa swmm model with real time control rules",
+    "repo": "github.com/open-toolbox/swmm-astlingen",
+    "url": "https://github.com/open-toolbox/SWMM-Astlingen"
+  },
+  "description": "This repository provides the Astlingen benchmark urban drainage network as a ready-to-run EPA SWMM model, together with alternative real-time control rules, for testing how controlled throttles and storage affect combined sewer behaviour. It is published by the open-toolbox account on GitHub. Coverage: a single synthetic benchmark catchment called Astlingen, with four rain gauges supplied as one-year rainfall time series (Erft 1 to 4) and a backdrop picture of the network. Format and access: an Astlingen_SWMM.inp input file that runs directly with the base case of locally controlled throttle settings, and an EFD_Control.txt file with a second set of real-time control rules that can be pasted into the SWMM editor in place of the base rules, which the readme says can be adapted for other simple control schemes; free download from GitHub. Licence: not stated (no licence file in the repository). Caveats: the readme is short and does not describe the network size, the origin of the benchmark or the meaning of EFD, the rain files and backdrop use relative paths that may need reloading, and the repository has not changed since January 2020. Simulation uses: testing real-time control and capacity of combined sewer systems under rainfall, for capacity planning, optimisation and climate adaptation of urban drainage. Related records: EPA SWMM (model-epa-swmm) is the engine that runs the model.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source water-swmm-astlingen: provider pages read (round 2 register piece)",
+      "route": "R17",
+      "source": "water-swmm-astlingen"
+    }
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://github.com/open-toolbox/SWMM-Astlingen",
+  "id": "model-swmm-astlingen-benchmark-network",
+  "inputs": [
+    "SWMM network (Astlingen_SWMM.inp)",
+    "one-year rainfall series for four gauges",
+    "real-time control rules"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-01-08",
+  "licence": "not stated",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Astlingen benchmark sewer network as an EPA SWMM model with real-time control rules",
+  "outputs": [
+    "SWMM flows, storage and overflow results"
+  ],
+  "provider": "open-toolbox (GitHub account)",
+  "related_ids": [
+    "model-epa-swmm"
+  ],
+  "repository": "https://github.com/open-toolbox/SWMM-Astlingen",
+  "sectors": [
+    "water.wastewater",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository tree: Astlingen_SWMM.inp, EFD_Control.txt, four rain files 1-4Astlingen_Erft*.txt, astingen.jpg, Readme.txt (base case throttle control; EFD control rules; relative paths); no licence file; last commit 2020-01-08",
+      "url": "https://github.com/open-toolbox/SWMM-Astlingen"
+    }
+  ],
+  "tags": [
+    "urban drainage",
+    "real-time control",
+    "benchmark",
+    "SWMM"
+  ],
+  "title_en": "Astlingen benchmark sewer network as an EPA SWMM model with real-time control rules",
+  "type": "model"
+}

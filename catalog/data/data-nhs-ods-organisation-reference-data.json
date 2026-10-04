@@ -1,0 +1,140 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Organisation Reference Data (ORD) API",
+      "url": "https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations"
+    },
+    {
+      "kind": "portal",
+      "label": "ODS Data Search and Export (searches and predefined reports)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.odsdatasearchandexport.nhs.uk/"
+    },
+    {
+      "kind": "docs",
+      "label": "Reference Data Catalogue",
+      "url": "https://www.odsdatasearchandexport.nhs.uk/referenceDataCatalogue/index.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Organisation Data Service (NHS England Digital)",
+      "url": "https://digital.nhs.uk/services/organisation-data-service"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "catalogues_registries",
+    "critical_facilities",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nhs organisation data service ods england reference data on nhs trusts hospital sites gp practices and other health and care organisations with roles relationships and addresses via api and exports",
+    "url": "https://odsdatasearchandexport.nhs.uk"
+  },
+  "description": "The Organisation Data Service is the authoritative register of the organisations that make up the NHS in England, from NHS trusts and their hospital sites to GP practices, pharmacies and commissioners, used as reference data across health information systems. It is run by NHS England. The Organisation Reference Data API returns, for each organisation, its ODS code, name, status, operational and legal start and end dates, full address with Unique Property Reference Number, the roles it holds and its relationships to parent bodies, and can list organisations by role. The Data Search and Export service offers searches, predefined reports and exports, refreshed every night, together with a geographic search of healthcare boundaries by postcode. Coverage is England's health and care organisations, current and closed. The data are free and available through the API without registration and as exports to download from the search service. Caveats: records hold addresses, not coordinates, so sites must be geocoded, capacity such as beds is not part of the reference data, and the licence terms are on NHS England pages that could not be read from this environment. Simulation uses: building the list of hospital sites and practices for exposure analysis, tracing which sites belong to which trust when modelling service disruption, and linking operational statistics by ODS code. Related records: the NHS trust classification for England (data-nhs-trust-classification-england) uses the same codes.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hand-off to the services piece (integrator list handoffs/services.csv): NHS ODS organisation data",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations",
+  "id": "data-nhs-ods-organisation-reference-data",
+  "languages": [
+    "en"
+  ],
+  "licence": "NHS England terms (the ODS service pages on digital.nhs.uk were blocked from this environment and not read)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://digital.nhs.uk/services/organisation-data-service"
+    ]
+  },
+  "maturity": "active",
+  "name": "NHS Organisation Data Service (ODS, England): reference data on NHS trusts, hospital sites, GP practices and other health and care organisations, with roles, relationships and addresses, via API and exports",
+  "provider": "NHS England, Organisation Data Service (ODS)",
+  "regions": [
+    "England"
+  ],
+  "related_ids": [
+    "data-nhs-trust-classification-england"
+  ],
+  "schema_summary": "Organisation: name, OrgId (ODS code), status, record class, last change date, operational and legal start and end dates, address (lines, town, postcode, country, UPRN), roles (for example RO197 NHS trust) with dates and status, relationships to parent organisations; list queries by primary role and other filters",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "ORD API answered JSON: list of NHS trusts with name, OrgId, status, record class, postcode, last change date, primary role and link",
+      "url": "https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations?Limit=2&PrimaryRoleId=RO197"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Organisation record: operational and legal dates, address lines, town, postcode, country and UPRN, roles with dates, relationships",
+      "url": "https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations/G6V2S"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "ODS Data Search and Export: health and social care organisation details and GP practitioner details, geographic search of local authority and healthcare boundaries by postcode, export of search results and predefined reports, refreshed at 2am each night; link to the Reference Data Catalogue",
+      "url": "https://www.odsdatasearchandexport.nhs.uk/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://www.odsdatasearchandexport.nhs.uk/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations"
+    }
+  ],
+  "spatial_resolution": "Organisation and site (address, UPRN)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "NHS",
+    "health organisations",
+    "hospital sites",
+    "GP practices",
+    "reference data",
+    "England"
+  ],
+  "temporal_coverage": "Current and historical organisations with start and end dates",
+  "temporal_resolution": "Daily refresh",
+  "temporal_resolution_class": "daily",
+  "title_en": "NHS Organisation Data Service (ODS, England): reference data on NHS trusts, hospital sites, GP practices and other health and care organisations, with roles, relationships and addresses, via API and exports",
+  "type": "data",
+  "update_frequency": "daily"
+}

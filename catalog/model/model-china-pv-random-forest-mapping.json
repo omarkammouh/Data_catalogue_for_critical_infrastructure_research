@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "PV classification code for Google Earth Engine (JavaScript)",
+      "note": "verified with git ls-remote on 2026-10-01 (the GitHub web page itself is blocked from this sandbox)",
+      "url": "https://github.com/MrSuperNiu/PV_ScientificData_Classification_Code"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-024-02994-x"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Scientific Data. 10.1038/s41597-024-02994-x",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "china photovoltaic mapping random forest classifier",
+    "url": "https://github.com/MrSuperNiu/PV_ScientificData_Classification_Code"
+  },
+  "description": "The China photovoltaic mapping research team publishes a Google Earth Engine classifier for mapping ground-mounted solar installations. The JavaScript source computes spectral indices, texture and terrain features from Sentinel-2 and ALOS inputs, then trains a random forest and checks an independent point split. It also applies a morphological filter to the classified image. Source access is public and free under MIT. The supplied example covers imagery from February to May 2020 within a user-defined region in China. Classification outputs can prepare photovoltaic asset locations for simulations alongside data-global-power-plant-database. A caveat is that the script expects imported boundary and training geometries that are absent from the GitHub tree. Sampling uses a 30-metre scale, which must be distinguished from the accompanying ten-metre map product. No Earth Engine execution or accuracy check was performed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "G1-Q-BACKFILL-ENERGY-08; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/MrSuperNiu/PV_ScientificData_Classification_Code",
+  "id": "model-china-pv-random-forest-mapping",
+  "inputs": [
+    "Sentinel-2 imagery",
+    "ALOS elevation",
+    "area boundary",
+    "photovoltaic and other training polygons"
+  ],
+  "language": [
+    "javascript"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-11-09",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "China photovoltaic mapping random-forest classifier",
+  "notes": "G1 G1-0359. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-28.json. Related-resource uses are not tested interfaces. ",
+  "outputs": [
+    "Photovoltaic classification raster",
+    "confusion matrix",
+    "accuracy statistics"
+  ],
+  "provider": "China photovoltaic mapping research team",
+  "related_ids": [
+    "data-global-power-plant-database"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/MrSuperNiu/PV_ScientificData_Classification_Code"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/MrSuperNiu/PV_ScientificData_Classification_Code/contents/PV_Classification_Code_GEE.js"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-024-02994-x"
+    }
+  ],
+  "tags": [],
+  "title_en": "China photovoltaic mapping random-forest classifier",
+  "type": "model"
+}

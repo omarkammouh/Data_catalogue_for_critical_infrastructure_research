@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/ARTIST-Association/ARTIST"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://artist.readthedocs.io/en/latest/"
+    },
+    {
+      "kind": "download",
+      "label": "PyPI package artist-csp",
+      "url": "https://pypi.org/project/artist-csp/"
+    },
+    {
+      "kind": "download",
+      "label": "Version 2.0.0 archive (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.21804530"
+    },
+    {
+      "kind": "paper",
+      "label": "Nature Communications paper",
+      "url": "https://doi.org/10.1038/s41467-024-51019-z"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "M. Pargmann, J. Ebert, M. Götz et al., Automatic heliostat learning for in situ concentrating solar power plant metrology with differentiable ray tracing, Nature Communications 15, 6997, 2024",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1038/s41467-024-51019-z",
+    "name": "artist ai enhanced differentiable ray tracer for irradiation prediction in solar tower digital twins",
+    "repo": "github.com/artist-association/artist",
+    "url": "https://github.com/ARTIST-Association/ARTIST"
+  },
+  "description": "ARTIST is an open-source differentiable ray tracer for solar tower power plants, built on the PyTorch machine-learning framework in Python. It is developed by researchers at the Karlsruhe Institute of Technology and the German Aerospace Center, who hold the copyright, to bring gradient-based optimisation and digital twins to concentrating solar power. Using automatic differentiation and GPU computation with smooth NURBS descriptions of heliostats, it calibrates heliostat kinematics from receiver flux measurements, reconstructs mirror surfaces from calibration images, predicts flux density on the receiver, and optimises heliostat aim points across a field; the framework is meant to extend to towers and receivers. The method is location-independent and applies to any heliostat field with the needed data. It installs from PyPI as artist-csp for Python 3.10 or later, with documentation on Read the Docs, and version 2.0.0 (August 2026) is archived on Zenodo under the MIT licence at no cost. Caveats: the current implementation focuses on heliostat reconstruction and alignment, and it needs plant calibration data to be useful. Simulation uses are digital twins and flux optimisation of solar tower plants. Related records: none linked on the provider's pages read on the day.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "nuclear power plant digital twin",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/ARTIST-Association/ARTIST",
+  "id": "model-artist-solar-tower",
+  "inputs": [
+    "Heliostat field and kinematic descriptions",
+    "Calibration focal spot images",
+    "Receiver flux measurements"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-05",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "hybrid"
+  ],
+  "name": "ARTIST - AI-enhanced differentiable ray tracer for irradiation prediction in solar tower digital twins",
+  "outputs": [
+    "Reconstructed heliostat surfaces",
+    "Flux density predictions on the receiver",
+    "Optimised heliostat alignment"
+  ],
+  "provider": "Karlsruhe Institute of Technology (KIT) and German Aerospace Center (DLR)",
+  "related_ids": [],
+  "repository": "https://github.com/ARTIST-Association/ARTIST",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, PyTorch, NURBS, calibration, surface reconstruction, flux optimisation, PyPI artist-csp, Python 3.10+, Nature Communications paper",
+      "url": "https://raw.githubusercontent.com/ARTIST-Association/ARTIST/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT, copyright KIT and DLR",
+      "url": "https://raw.githubusercontent.com/ARTIST-Association/ARTIST/HEAD/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators, version 2.0.0",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.21804530"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Published 2026-08-05, MIT",
+      "url": "https://zenodo.org/api/records/21804530"
+    }
+  ],
+  "tags": [
+    "concentrating solar power",
+    "solar tower",
+    "heliostat",
+    "ray tracing",
+    "PyTorch",
+    "digital twin"
+  ],
+  "title_en": "ARTIST - AI-enhanced differentiable ray tracer for irradiation prediction in solar tower digital twins",
+  "type": "model",
+  "validated_on": [
+    "In situ heliostat data reported in the Nature Communications paper"
+  ]
+}

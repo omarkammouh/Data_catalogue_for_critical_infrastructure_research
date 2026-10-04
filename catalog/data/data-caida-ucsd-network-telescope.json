@@ -1,0 +1,126 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Network Telescope project",
+      "url": "https://www.caida.org/projects/network_telescope/"
+    },
+    {
+      "kind": "portal",
+      "label": "RSDoS attack metadata (IMPACT)",
+      "url": "https://www.impactcybertrust.org/dataset_view?idDataset=1159"
+    },
+    {
+      "kind": "docs",
+      "label": "RSDoS 2015 to 2017 (CAIDA catalog)",
+      "url": "https://catalog.caida.org/dataset/2017_imc_rsdos_targets"
+    }
+  ],
+  "access_note": "vetted researchers request access; a few samples are public",
+  "access_restrictions": "registration",
+  "continents": [
+    "europe",
+    "north_america",
+    "south_america",
+    "asia",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "security_threat",
+    "historical_events"
+  ],
+  "data_kind": [
+    "event_record",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ucsd network telescope datasets darknet traffic dos backscatter attack metadata",
+    "url": "https://caida.org/projects/network_telescope"
+  },
+  "description": "The UCSD Network Telescope, run by CAIDA at UC San Diego, is a passive monitoring system on a globally routed but lightly used /9 and /10 IPv4 block allocated by Amateur Radio Digital Communications, about 1/256 of all IPv4 addresses. After legitimate traffic is filtered out, it sees internet background radiation: scanning, worm propagation, misconfiguration and backscatter from denial-of-service attacks with spoofed sources. CAIDA derives datasets from it, including daily Randomly and Uniformly Spoofed Denial-of-Service (RSDoS) attack metadata from 2008 (one CSV of attack vectors per day with target address, attack statistics, geolocation and BGP metadata), aggregated RSDoS metadata, FlowTuple samples, darknet scanner lists, the real-time telescope feed and historical event sets such as the Witty worm and Conficker. Coverage: global, since 2003 for some sets. Format and access: CSV, FlowTuple and pcap files; some public samples are free of charge, most data is released to vetted researchers under CAIDA agreements, and older sets are on the IMPACT portal. Caveats: only spoofed-source attacks leave backscatter; the telescope sees traffic to unused space, not attacks on specific infrastructure operators. Simulation uses: frequency and size distributions of denial-of-service attacks and scanning for cyber threat models of digital infrastructure. Related records: IODA uses the telescope signal to detect outages; CAIDA Ark topology datasets.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "DataCite data harvest of the digital piece; candidate datacite-574874df22, read in full on second reading",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "DataCite data harvest of the digital piece; candidate datacite-5c47e86925, read in full on second reading",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "DataCite data harvest of the digital piece; candidate datacite-b028963242, read in full on second reading",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "csv",
+    "domain_model_file"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://www.caida.org/projects/network_telescope/",
+  "id": "data-caida-ucsd-network-telescope",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-01-29",
+  "licence": "CAIDA and IMPACT data use agreements",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "UCSD Network Telescope datasets (darknet traffic, DoS backscatter attack metadata)",
+  "notes": "Project page read 2026-09-26 (description, list of derived datasets, page modified 2025-01-29, used as last_updated); IMPACT and CAIDA DataCite records of the RSDoS datasets read in the harvest. Which sets are public was not checked set by set.",
+  "provider": "CAIDA (Center for Applied Internet Data Analysis), University of California San Diego",
+  "related_ids": [],
+  "schema_summary": "RSDoS attack vector: target IP, start and end, packets, ports, protocols, maximum packet rate, country, AS",
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "size": "large (packet archives); daily CSV files small",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "telescope, filtering, datasets list",
+      "url": "https://www.caida.org/projects/network_telescope/"
+    }
+  ],
+  "spatial_resolution": "IP address with geolocation and origin AS",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "network telescope",
+    "darknet",
+    "denial of service",
+    "backscatter",
+    "internet background radiation"
+  ],
+  "temporal_coverage": "2003 onwards (RSDoS metadata from 2008)",
+  "temporal_coverage_years": {
+    "start": 2003
+  },
+  "temporal_resolution": "daily files; packet level",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "UCSD Network Telescope datasets (darknet traffic, DoS backscatter attack metadata)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

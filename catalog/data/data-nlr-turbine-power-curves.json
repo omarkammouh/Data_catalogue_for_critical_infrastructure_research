@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/NatLabRockies/turbine-models"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/NatLabRockies/turbine-models/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "equipment_specifications",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nlr wind turbine power curve archive",
+    "repo": "github.com/natlabrockies/turbine-models",
+    "url": "https://github.com/NatLabRockies/turbine-models"
+  },
+  "description": "The NLR wind-turbine power-curve archive publishes tabular performance curves and key specifications for commonly used turbine models. National laboratory maintainers organise the repository into distributed, offshore and onshore wind categories. CSV files provide power curves and, where available, thrust, power-coefficient and thrust-coefficient curves. Each turbine filename is intended to correspond to a documentation page, and a Python package with usage examples provides programmatic access. This is an equipment-level reference collection, not a geographically complete inventory of installed turbines. Curve provenance and vintage vary by model, and the README does not establish one observation period or sampling interval. Public files and helper software are free under BSD-3-Clause. Missing thrust or coefficient curves remain a limitation, so users must inspect the documentation for their chosen turbine before filling gaps. The tables can parameterise wind-generation and plant-performance simulations and supply generation assumptions to energy-system studies using PyPSA (model-pypsa). No curve files were downloaded or numerical entries checked in this metadata review.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:NatLabRockies",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NatLabRockies/turbine-models",
+  "id": "data-nlr-turbine-power-curves",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-03",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NLR wind-turbine power-curve archive",
+  "notes": "G7 G7-0264. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "provider": "National Laboratory of the Rockies and contributors",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for NatLabRockies/turbine-models: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3ANatLabRockies&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/natlabrockies/turbine-models/readme"
+    }
+  ],
+  "spatial_resolution": "Turbine model, not geographic assets",
+  "spatial_resolution_class": "non_spatial",
+  "tags": [],
+  "temporal_coverage": "Varies by turbine; common vintage not stated",
+  "temporal_resolution": "Static characteristic curves",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "NLR wind-turbine power-curve archive",
+  "type": "data"
+}

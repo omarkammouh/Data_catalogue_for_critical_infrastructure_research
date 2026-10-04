@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Traffic page (Japanese)",
+      "url": "https://www.jpix.ad.jp/ix/technical/traffic.php"
+    },
+    {
+      "kind": "download",
+      "label": "Tokyo 24-hour incoming traffic graph (PNG)",
+      "url": "https://jpixtrafficgraph.s3.ap-northeast-1.amazonaws.com/TOTAL.In.png"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "JP"
+  ],
+  "data_family": [
+    "demand_operation",
+    "reference_context",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "time_series",
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "jpix internet exchange traffic graphs tokyo osaka and fukuoka",
+    "url": "https://jpix.ad.jp/ix/technical/traffic.php"
+  },
+  "description": "JPIX, one of Japan's main commercial internet exchanges, headquartered in the KDDI Otemachi building in Tokyo, publishes traffic graphs for the backplanes of its exchanges in the Tokyo metropolitan area, Osaka and Fukuoka. The technical information page shows, for each region, the incoming and outgoing traffic over the last 24 hours in bits per second, a short-term chart of the daily maximum, average and minimum traffic, and a long-term chart of daily maximum and minimum traffic, which together show how traffic at the exchange has grown over the years. The charts are PNG images refreshed automatically from a cloud storage bucket, and the page sits alongside JPIX's network configuration, customer list and partner list. Coverage: JPIX exchanges in Tokyo, Osaka and Fukuoka, with long-term history in the long chart. Format and access: web page with PNG charts, free; no numbers are offered for download. Caveats: images only, so values must be read off the charts; totals for one exchange operator, not for all of Japan, where JPNAP, BBIX and others also operate. Simulation uses: diurnal and long-term demand profiles for interconnection capacity planning, and a reference for traffic shifts during events such as earthquakes. Related records: the 2011 Japan earthquake case studies traffic in an ISP, IX.br and Euro-IX publish comparable statistics.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "インターネットエクスチェンジ IX トラフィック 統計 JPIX JPNAP BBIX 障害 災害 データ",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "image"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.jpix.ad.jp/ix/technical/traffic.php",
+  "id": "data-jpix-traffic-graphs",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "licence": "Copyright JPIX; free to view",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "JPIX internet exchange traffic graphs (Tokyo, Osaka and Fukuoka)",
+  "notes": "Page read with curl on 2026-09-26 (Japanese; chart titles and image URLs). The 5-minute resolution of the 24-hour chart is assumed; the start year of the long chart was not checked.",
+  "provider": "JPIX (Japan Internet Exchange Co., Ltd., a KDDI group company)",
+  "related_ids": [],
+  "schema_summary": "traffic in and out (bit/s) for Tokyo, Osaka and Fukuoka; daily maximum, average and minimum",
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "size": "not applicable",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "page text and image links",
+      "url": "https://www.jpix.ad.jp/ix/technical/traffic.php"
+    }
+  ],
+  "spatial_resolution": "exchange region",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "internet exchange",
+    "traffic statistics",
+    "Japan",
+    "JPIX",
+    "KDDI"
+  ],
+  "temporal_coverage": "last 24 hours plus long-term daily history",
+  "temporal_resolution": "5-minute (24-hour chart, assumed) and daily",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "JPIX internet exchange traffic graphs (Tokyo, Osaka and Fukuoka)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

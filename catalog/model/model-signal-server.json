@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Original repository (history)",
+      "url": "https://github.com/Cloud-RF/Signal-Server"
+    },
+    {
+      "kind": "repo",
+      "label": "Maintained fork (W3AXL)",
+      "url": "https://github.com/W3AXL/Signal-Server"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Farrant A. Signal-Server, CloudRF, 2011-2023.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "signal server",
+    "repo": "github.com/cloud-rf/signal-server",
+    "url": "https://github.com/Cloud-RF/Signal-Server"
+  },
+  "description": "Signal-Server is an open-source radio-frequency propagation engine that computes point-to-point path loss and area coverage for transmitters, derived from SPLAT! 1.3 and extended for multi-threaded server use with several propagation models (among them ITM/Longley-Rice, ITWOM, Hata, COST231, SUI, ECC33, Ericsson and free-space), high-resolution terrain and land-cover clutter. It was developed from 2011 by Alex Farrant to power the RFSignal app, which became the commercial CloudRF service; CloudRF maintained it until 2023 and now keeps the repository only as history, pointing users to community forks such as W3AXL/Signal-Server (updated 2025). Coverage: anywhere with SRTM or other elevation tiles, at the resolution of the terrain data (down to 1 arc-second or finer LIDAR). Format and access: C++ source built with CMake on Linux, run from the command line with parameters for antenna, frequency and model; free of charge under the GNU GPL version 2. Caveats: the original repository is unmaintained and forks vary in quality; results depend on terrain and clutter inputs; no graphical interface. Simulation uses: coverage and hazard exposure analysis of mobile, broadcast and emergency radio networks, capacity planning of new sites, and resilience assessment when sites fail. Related records: forked from SPLAT!, uses the NTIA Irregular Terrain Model among others, and can be fed with OpenCelliD or regulator transmitter locations.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for model:digital.telecom:physical",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/Cloud-RF/Signal-Server",
+  "id": "model-signal-server",
+  "inputs": [
+    "transmitter location and antenna parameters",
+    "elevation tiles",
+    "clutter data"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-08-28",
+  "licence": "GPL-2.0-only",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Signal-Server",
+  "notes": "README read 2026-09-26: CloudRF no longer maintains or uses the software and lists forks. Propagation model list checked against the W3AXL fork README (-pm option: ITM, LOS, Hata, ECC33, SUI, COST-Hata, FSPL, ITWOM, Ericsson, plane earth, Egli, soil).",
+  "outputs": [
+    "coverage rasters",
+    "path loss and received signal levels"
+  ],
+  "provider": "CloudRF (Alex Farrant), now community forks",
+  "related_ids": [
+    "data-fcc-lms-cdbs-broadcast-station-databases",
+    "data-fcc-antenna-structure-registration",
+    "data-itu-r-dbsg3-propagation-databanks",
+    "model-splat",
+    "model-ntia-itm"
+  ],
+  "repository": "https://github.com/Cloud-RF/Signal-Server",
+  "runs_on": [],
+  "sectors": [
+    "digital.telecom",
+    "digital.broadcasting"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning",
+    "resilience",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README via raw.githubusercontent.com",
+      "url": "https://github.com/Cloud-RF/Signal-Server"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "fork README, propagation model option",
+      "url": "https://github.com/W3AXL/Signal-Server"
+    }
+  ],
+  "tags": [
+    "radio propagation",
+    "coverage prediction",
+    "SPLAT! fork",
+    "CloudRF"
+  ],
+  "title_en": "Signal-server radio frequency propagation engine",
+  "type": "model",
+  "validated_on": []
+}

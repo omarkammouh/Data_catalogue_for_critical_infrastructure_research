@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "BlackMarblePy repository (PyPI: blackmarblepy)",
+      "url": "https://github.com/worldbank/blackmarblepy"
+    },
+    {
+      "kind": "repo",
+      "label": "BlackMarbleR repository (CRAN: blackmarbler)",
+      "url": "https://github.com/worldbank/blackmarbler"
+    },
+    {
+      "kind": "docs",
+      "label": "World Bank Data Blog introduction (12 February 2024)",
+      "url": "https://blogs.worldbank.org/en/opendata/illuminating-insights-harnessing-nasas-black-marble-r-and-python-packages"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "blackmarblepy and blackmarbler world bank packages for nasa black marble nighttime lights",
+    "url": "https://github.com/worldbank/blackmarblepy"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "BlackMarblePy and BlackMarbleR are World Bank packages for Python and R that turn NASA Black Marble nighttime lights into analysis-ready data. They download every tile from the NASA LAADS DAAC that covers a region of interest for daily, monthly or yearly products, convert the HDF5 files to georeferenced rasters, remove low-quality pixels such as cloud-affected ones and mosaic them, and can aggregate lights to administrative or other polygons over time. Robert Marty and Gabriel Stefanini Vicente of the World Bank wrote them and introduced them on the Data Blog in February 2024, citing uses for power outages, disaster impacts and recovery, urbanisation and conflict. Format and access: BlackMarblePy on PyPI returning xarray datasets with plotting helpers, and BlackMarbleR on CRAN, version 0.2.6, with raster and extraction functions; both need a free NASA Earthdata bearer token. Licence: MIT; free. Caveats: lights are a proxy, affected by moonlight, snow and clouds, and outage detection needs a baseline. They support hazard exposure and resilience studies that track electricity loss and restoration after disasters. Related catalogue records are NASA Black Marble and the Puerto Rico restoration assessment that used Black Marble data.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "night lights VIIRS power outage recovery dataset Black Marble disaster",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/worldbank/blackmarblepy",
+  "id": "platform-world-bank-blackmarble-py-r-packages",
+  "interfaces": [
+    "code_library"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-29",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "BlackMarblePy and BlackMarbleR: World Bank packages for NASA Black Marble nighttime lights",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "World Bank (Robert Marty, Gabriel Stefanini Vicente)",
+  "related_ids": [
+    "data-nasa-black-marble-night-lights",
+    "case_study-puerto-rico-maria-electricity-restoration-night-lights"
+  ],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Blog: authors, date, purpose, uses",
+      "url": "https://blogs.worldbank.org/en/opendata/illuminating-insights-harnessing-nasas-black-marble-r-and-python-packages"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "README and LICENSE read raw: features, MIT, Zenodo DOI 10.5281/zenodo.10667907",
+      "url": "https://github.com/worldbank/blackmarblepy"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "README and DESCRIPTION read raw: CRAN, version 0.2.6, bearer token, MIT",
+      "url": "https://github.com/worldbank/blackmarbler"
+    }
+  ],
+  "tags": [
+    "nighttime lights",
+    "power outages",
+    "VIIRS",
+    "Black Marble"
+  ],
+  "title_en": "BlackMarblePy and BlackMarbleR: World Bank packages for NASA Black Marble nighttime lights",
+  "type": "platform"
+}

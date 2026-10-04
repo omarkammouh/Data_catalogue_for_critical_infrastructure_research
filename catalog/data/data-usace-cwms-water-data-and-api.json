@@ -1,0 +1,123 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "USACE Water Data map",
+      "url": "https://water.usace.army.mil/"
+    },
+    {
+      "kind": "api",
+      "label": "CWMS Data API (CDA)",
+      "url": "https://cwms-data.usace.army.mil/cwms-data/"
+    },
+    {
+      "kind": "docs",
+      "label": "CDA documentation",
+      "url": "https://cwms-data-api.readthedocs.io/latest"
+    },
+    {
+      "kind": "repo",
+      "label": "cwms-data-api source code",
+      "url": "https://github.com/USACE/cwms-data-api"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "system_description"
+  ],
+  "data_kind": [
+    "time_series",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usace water data and the cwms data api cda corps water management system time series for dams rivers and gages",
+    "repo": "github.com/usace/cwms-data-api",
+    "url": "https://water.usace.army.mil"
+  },
+  "description": "USACE Water Data is the U.S. Army Corps of Engineers' public site for mapping and viewing water management data at the dams, rivers, stream gages and other sites the Corps operates, and the CWMS Data API (CDA) is the REST service that exposes the underlying Corps Water Management System database. Both are run by USACE. Coverage: the United States; the API lists 68 Corps offices, from headquarters and divisions to districts and research laboratories such as the Coastal and Hydraulics Laboratory, and serves time series (regular and irregular, with parameters, intervals and durations), recent values, profiles, location levels and related data by office and location. Format and access: public REST endpoints at cwms-data.usace.army.mil returning JSON, with documentation on Read the Docs and client libraries for Java, JavaScript, Jython and Python; write access needs keys and assigned office roles; the API server code is open on GitHub; free. Licence: the API code is MIT (copyright U.S. Federal Government); data are US government works (terms not stated on the pages read). Caveats: the Water Data site renders by script and only its description was read, some data can be embargoed or filtered by office policy, and queries need exact office, location and time series identifiers. Simulation uses: observed reservoir levels, releases, river stages and flows for hydraulic model boundary conditions, emergency response, hazard exposure and capacity planning of flood control and navigation infrastructure. Related records: the National Inventory of Dams (data-usace-national-inventory-of-dams) describes the dams whose operations CWMS records.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source water-usace-water-management: provider pages read (round 2 register piece)",
+      "route": "R11",
+      "source": "water-usace-water-management"
+    }
+  ],
+  "formats": [
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "drought"
+  ],
+  "homepage": "https://water.usace.army.mil/",
+  "id": "data-usace-cwms-water-data-and-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "US government data (terms not stated); API code MIT",
+  "licence_type": [
+    "permissive_code",
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "USACE Water Data and the CWMS Data API (CDA): Corps Water Management System time series for dams, rivers and gages",
+  "provider": "U.S. Army Corps of Engineers (USACE)",
+  "related_ids": [
+    "data-usace-national-inventory-of-dams"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "transport.inland_waterways"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Meta description: map and visualise dams, rivers, streamgages and other critical sites managed by USACE; page script-rendered",
+      "url": "https://water.usace.army.mil/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Public JSON list of 68 offices (types DIS, FOA, HQ, MSC, MSCR, UNK); timeseries/recent answered with an argument error, not an auth error",
+      "url": "https://cwms-data.usace.army.mil/cwms-data/offices"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Docs: time series endpoints, profiles, location levels, authorization keys, office roles, client libraries Java/JavaScript/Jython/Python, embargo and office filtering",
+      "url": "https://cwms-data-api.readthedocs.io/latest"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Java 11, Oracle CWMS database; LICENSE.md MIT, U.S. Federal Government 2012-2019; last commit 2026-09-28",
+      "url": "https://raw.githubusercontent.com/USACE/cwms-data-api/develop/README.md"
+    }
+  ],
+  "tags": [
+    "reservoir operations",
+    "stream gages",
+    "USACE",
+    "REST API"
+  ],
+  "title_en": "USACE Water Data and the CWMS Data API (CDA): Corps Water Management System time series for dams, rivers and gages",
+  "type": "data"
+}

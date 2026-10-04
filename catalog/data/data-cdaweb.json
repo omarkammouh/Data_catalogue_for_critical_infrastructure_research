@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Direct file access",
+      "url": "https://cdaweb.gsfc.nasa.gov/pub/"
+    },
+    {
+      "kind": "api",
+      "label": "CDAS RESTful web services",
+      "url": "https://cdaweb.gsfc.nasa.gov/WebServices/REST/"
+    },
+    {
+      "kind": "portal",
+      "label": "CDAWeb interface",
+      "url": "https://cdaweb.gsfc.nasa.gov/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "space_weather",
+    "imagery_remote_sensing",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "time_series",
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "coordinated data analysis web cdaweb",
+    "url": "https://cdaweb.gsfc.nasa.gov/WebServices/REST"
+  },
+  "description": "CDAWeb contains selected public, non-solar heliophysics data from current and past NASA and partner missions and projects, including ACE, DSCOVR, Wind, Cluster, DMSP, geosynchronous investigations, ground-based investigations, balloons, small satellites and the OMNI combined data, among many others. It is run by NASA's Space Physics Data Facility to support coordinated multi-mission, multi-instrument analysis; many datasets are updated regularly, even daily, and only the latest version is preserved. Coverage spans the space age at the native resolution of each instrument. Data are accessible through the web interface, which can subset and merge data sets by date and variable, create uniformly time-binned data, and make plots in PDF, PS and PNG, through direct access to the files on the SPDF archive, and through the CDAS RESTful web services API, with data served mainly as CDF files. Access is free and open. Caveats: services are down for maintenance on the Wednesday of the first full workweek each month, near-real-time Wind services were discontinued in March 2026, and dataset metadata vary by mission. It supports space weather hazard characterisation for satellites, power grids and communications, and event reconstruction; related records are OMNI, DONKI, the NASA CCMC and the NOAA SWPC products.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "heliophysics mission data archive",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf",
+    "plain_text",
+    "image",
+    "document"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://cdaweb.gsfc.nasa.gov/WebServices/REST/",
+  "id": "data-cdaweb",
+  "languages": [
+    "en"
+  ],
+  "licence": "NASA public data (open; acknowledgement requested)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Coordinated Data Analysis Web (CDAWeb)",
+  "notes": "Output of ASCII listings is from the CDAWeb documentation as recalled and should be confirmed.",
+  "provider": "NASA Goddard Space Flight Center, Space Physics Data Facility (SPDF)",
+  "related_ids": [],
+  "schema_summary": "mission, instrument, dataset, variables with ISTP metadata",
+  "sectors": [
+    "cross_cutting.space",
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "scope, mission list, maintenance days, IMAP data, Wind NRT discontinued 2026-03-09, subsetting and plot formats",
+      "url": "https://cdaweb.gsfc.nasa.gov/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "CDAS RESTful web services; SOAP retired March 2024",
+      "url": "https://cdaweb.gsfc.nasa.gov/WebServices/REST/"
+    }
+  ],
+  "tags": [
+    "heliophysics",
+    "magnetosphere",
+    "SPDF",
+    "NASA",
+    "CDF"
+  ],
+  "temporal_coverage": "space age to present (mission-dependent)",
+  "temporal_resolution": "instrument native",
+  "temporal_resolution_class": "other",
+  "title_en": "Coordinated Data Analysis Web (CDAWeb)",
+  "type": "data",
+  "update_frequency": "daily"
+}

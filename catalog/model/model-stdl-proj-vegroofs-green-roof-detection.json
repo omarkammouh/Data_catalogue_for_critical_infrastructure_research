@@ -1,0 +1,117 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Machine learning scripts",
+      "url": "https://github.com/swiss-territorial-data-lab/proj-vegroofs"
+    },
+    {
+      "kind": "repo",
+      "label": "Deep learning scripts",
+      "url": "https://github.com/swiss-territorial-data-lab/proj-vegroofs-DL"
+    },
+    {
+      "kind": "docs",
+      "label": "Technical documentation",
+      "note": "CC BY-SA 4.0",
+      "url": "https://tech.stdl.ch/PROJ-VEGROOFS/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "stdl proj vegroofs detection and classification of green roofs from aerial imagery cantons of zurich and geneva",
+    "url": "https://tech.stdl.ch/PROJ-VEGROOFS"
+  },
+  "description": "PROJ-VEGROOFS detects green roofs and classifies their vegetation type from national aerial imagery, so that cantons can map where roofs already provide cooling, rain capture and habitat. The Swiss Territorial Data Lab ran it from November 2023 at the request of the cantons of Zürich and Geneva, with swisstopo, ExoLabs and Uzufly, publishing results on 7 November 2024 and 3 March 2025. Coverage is two study areas around Geneva and Zürich, using 10 cm SWISSIMAGE RS images from 2022 and 2023 and building footprints labelled by the cantons. A random forest plus logistic regression on pixel statistics reached a recall of 0.87 for green roofs and an F1-score of 0.85; an adapted DeepLabV3 classifier separates bare, terrace, spontaneous, extensive, lawn and intensive roofs with recalls from 0.50 to 0.91. Format and access: documentation online and scripts on GitHub. Licence: documentation CC BY-SA 4.0; machine learning scripts MIT (read on 2026-09-29); the deep learning repository has no licence file; free. Caveats: trained on Swiss imagery and canton labels. It supports green roof inventories for climate adaptation and urban digital twins. Related catalogue records are Roofpedia and Modified-Roofpedia.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "green roof potential map rooftop suitability open data city dataset download",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "extreme_heat",
+    "flood"
+  ],
+  "homepage": "https://tech.stdl.ch/PROJ-VEGROOFS/",
+  "id": "model-stdl-proj-vegroofs-green-roof-detection",
+  "inputs": [
+    "SWISSIMAGE RS 10 cm RGB and near-infrared aerial imagery",
+    "Cadastral building footprints labelled by the cantons"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-09-30",
+  "licence": "Documentation CC-BY-SA-4.0; machine learning scripts MIT",
+  "licence_type": [
+    "share_alike",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "STDL PROJ-VEGROOFS: detection and classification of green roofs from aerial imagery (cantons of Zürich and Geneva)",
+  "outputs": [
+    "Green or bare roof per building",
+    "Roof vegetation class: bare, terrace, spontaneous, extensive, lawn, intensive"
+  ],
+  "provider": "Swiss Territorial Data Lab (STDL) with the cantons of Zürich and Geneva, swisstopo, ExoLabs and Uzufly",
+  "regions": [
+    "Canton of Geneva",
+    "Canton of Zürich"
+  ],
+  "related_ids": [
+    "data-roofpedia-green-solar-roofs",
+    "model-modified-roofpedia-bern-green-roof-potential"
+  ],
+  "sectors": [
+    "cross_cutting.green_blue",
+    "built_environment.buildings",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "climate_adaptation",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Documentation: authors, dates, data, methods, metrics, licence, script links",
+      "url": "https://tech.stdl.ch/PROJ-VEGROOFS/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Licence read by the wave 1 integrator (LICENSE file of proj-vegroofs is MIT; the proj-vegroofs-DL repository has no LICENSE file on main); replaces \"Documentation CC-BY-SA-4.0; code licence not read\".",
+      "url": "https://raw.githubusercontent.com/swiss-territorial-data-lab/proj-vegroofs/main/LICENSE"
+    }
+  ],
+  "tags": [
+    "green roofs",
+    "aerial imagery",
+    "machine learning",
+    "Switzerland"
+  ],
+  "title_en": "STDL PROJ-VEGROOFS: detection and classification of green roofs from aerial imagery (cantons of Zürich and Geneva)",
+  "type": "model"
+}

@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/manrs-tools/MANRS-IXP-validation-tool"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "asia",
+    "north_america",
+    "south_america",
+    "africa",
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "manrs ixp validation tool for route server rpki filtering",
+    "repo": "github.com/manrs-tools/manrs-ixp-validation-tool",
+    "url": "https://github.com/manrs-tools/MANRS-IXP-validation-tool"
+  },
+  "description": "The MANRS IXP validation tool checks whether an internet exchange point's route servers filter routes in line with Action 1 of the MANRS programme for exchanges, which asks exchanges to prevent the spread of incorrect routing information. It reads the routes held by a route server, either from an MRT RIB dump file or from the APIs of the Alice-LG or Bird's Eye looking glasses that many exchanges publish, and validates each route against RPKI data supplied as a ROA JSON file, for example from the RIPE NCC validator or rpki-client. It then prints statistics and details of any RPKI-invalid prefixes found, and in verbose mode reports every route with its validation status; a route server that follows Action 1 should hold no invalid routes. The tool was developed by DashCare for the MANRS project of the Internet Society and is written in Python 3.9 or later. Coverage: any exchange with a public looking glass or RIB dump. Format and access: Python source on GitHub, free; the licence was not shown on the repository page. Caveats: tests only RPKI origin validity, not IRR filtering or other parts of the MANRS actions; results are a snapshot at run time. Simulation uses: measuring how well route servers contain hijacks and leaks, as input to routing-security resilience scenarios. Related records: the MANRS routing security initiative case describes the programme, and ARouteServer builds filtering configurations.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "IXP route server RPKI filtering statistics routing security MANRS IXP programme compliance data",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/manrs-tools/MANRS-IXP-validation-tool",
+  "id": "model-manrs-ixp-validation-tool",
+  "inputs": [
+    "MRT RIB dump or Alice-LG or Bird's Eye API",
+    "ROA JSON file"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-10",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "MANRS IXP validation tool for route-server RPKI filtering",
+  "notes": "Repository page read via fetch on 2026-09-26 (purpose, inputs, outputs, language, 26 commits, developer).",
+  "outputs": [
+    "statistics and list of RPKI-invalid routes"
+  ],
+  "provider": "MANRS (Mutually Agreed Norms for Routing Security), Internet Society; developed by DashCare",
+  "related_ids": [
+    "data-peeringdb",
+    "data-euro-ix-ixp-database",
+    "model-arouteserver",
+    "platform-ixp-manager"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "repository page",
+      "url": "https://github.com/manrs-tools/MANRS-IXP-validation-tool"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://github.com/manrs-tools/MANRS-IXP-validation-tool/blob/main/README.md"
+    }
+  ],
+  "tags": [
+    "MANRS",
+    "RPKI",
+    "route server",
+    "routing security",
+    "IXP"
+  ],
+  "title_en": "MANRS IXP validation tool for route-server RPKI filtering",
+  "type": "model",
+  "validated_on": []
+}

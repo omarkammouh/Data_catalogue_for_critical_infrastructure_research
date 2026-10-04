@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Open Data Golemio API documentation",
+      "url": "https://api.golemio.cz/docs/public-openapi/"
+    },
+    {
+      "kind": "docs",
+      "label": "OpenAPI specification (JSON)",
+      "url": "https://api.golemio.cz/docs/static/output-gateway/openapi-public.json"
+    },
+    {
+      "kind": "repo",
+      "label": "Waste collection module source (GitLab)",
+      "url": "https://gitlab.com/operator-ict/golemio/code/modules/waste-collection"
+    }
+  ],
+  "access_restrictions": "registration",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "data_family": [
+    "critical_facilities",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "golemio open data api prague data platform sorted waste stations bulky waste containers waste collection yards medical institutions and municipal police stations",
+    "repo": "gitlab.com/operator-ict/golemio/code/modules/waste-collection",
+    "url": "https://golemio.cz/data"
+  },
+  "description": "Golemio is the data platform of the City of Prague, run by the city company Operátor ICT, and its Open Data API gives programmatic access to many city data sets, including several on services infrastructure. For waste, it lists the city's sorted waste collection stations with their containers by material (glass, paper, plastics, metals, beverage cartons, electrical waste, edible fats and oils) and coded emptying frequencies, the locations of bulky waste containers and the waste collection yards; stations can be filtered by district, accessibility and whether they are monitored. Other routes list medical institutions and municipal police stations, alongside transport, energy and environmental data. Access is free but needs an API key generated on the Golemio site, with rate limits of 20 requests per 8 seconds and up to 10,000 records per request; the data are available as JSON, and the platform's source code is open on GitLab. Caveats: the documentation marks individual routes as open data, not stating one licence, some detail such as fill levels is not described in the public specification, and only Prague is covered. Coverage is the city of Prague. Simulation uses: locating waste and emergency facilities for hazard exposure and service coverage studies of a European capital. Related records: the Czech hospital load data (data-czech-covid-hospital-load) cover healthcare capacity nationally.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "waste collection",
+      "route": "R05",
+      "source": "gitlab"
+    }
+  ],
+  "formats": [
+    "api",
+    "geojson"
+  ],
+  "geographic_scope": "city",
+  "hazards": [],
+  "homepage": "https://golemio.cz/data",
+  "id": "data-golemio-prague-open-api-waste-and-city-services",
+  "languages": [
+    "en"
+  ],
+  "licence": "Open data (routes marked Open Data in the API documentation); module source code under MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Golemio Open Data API (Prague data platform): sorted waste stations, bulky waste containers, waste collection yards, medical institutions and municipal police stations",
+  "provider": "Operátor ICT, a.s. (Golemio, Prague data platform)",
+  "related_ids": [
+    "data-czech-covid-hospital-load"
+  ],
+  "schema_summary": "REST endpoints /v2/sortedwastestations (stations with containers by trash type: tinted and clear glass, electric waste, metals, beverage cartons, paper, plastics, edible fats and oils, multicommodity; cleaning frequency codes; filters by location, district, accessibility and monitored stations), /v1/bulky-waste/stations, /v2/wastecollectionyards, /v2/medicalinstitutions, /v2/municipalpolicestations, among 60 paths covering air quality, parking, energy and other city data",
+  "sectors": [
+    "services.waste",
+    "services.healthcare",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Page read in memory (Czech): Golemio is provided as open source software; data published openly where possible; Golemio Open API gives developers and analysts data from the Golemio data platform, for example on transport, waste management and the environment; Prague open data catalogue at opendata.praha.eu also carries Golemio data",
+      "url": "https://golemio.cz/data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "OpenAPI specification read in memory: Open Data Golemio API 1.0.0 for the Golemio Prague Data Platform; tokens generated at api.golemio.cz/api-keys and sent in the X-Access-Token header; up to 10,000 rows per request with limit and offset; default rate 20 requests per 8 seconds; 60 paths including /v2/sortedwastestations (trash type table and cleaning frequency codes; parameters latlng, range, districts, accessibility, limit, offset, onlyMonitored), /v1/bulky-waste/stations, /v2/wastecollectionyards, /v2/medicalinstitutions and /v2/municipalpolicestations; an unauthenticated request returned HTTP 401",
+      "url": "https://api.golemio.cz/docs/static/output-gateway/openapi-public.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GitLab project metadata read: @golemio/waste-collection module by Operator ICT, MIT licence, last activity 2026-09-25",
+      "url": "https://gitlab.com/operator-ict/golemio/code/modules/waste-collection"
+    }
+  ],
+  "spatial_resolution": "Station or facility (point)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "Prague",
+    "Golemio",
+    "waste containers",
+    "collection yards",
+    "open API",
+    "city data platform"
+  ],
+  "temporal_coverage": "Current",
+  "temporal_resolution": "Current state",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Golemio Open Data API (Prague data platform): sorted waste stations, bulky waste containers, waste collection yards, medical institutions and municipal police stations",
+  "type": "data",
+  "update_frequency": "real_time"
+}

@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/architecture-building-systems/RC_BuildingSimulator"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/architecture-building-systems/RC_BuildingSimulator/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Jayathissa et al. (2017). Optimising building net energy demand with dynamic BIPV shading. Applied Energy 202, 726–735.",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "5r1c rc building simulator",
+    "repo": "github.com/architecture-building-systems/rc_buildingsimulator",
+    "url": "https://github.com/architecture-building-systems/RC_BuildingSimulator"
+  },
+  "description": "The RC Building Simulator is a five-resistance, one-capacitance building model published by the Architecture and Building Systems group at ETH Zürich. Its Python workflow represents a zone, windows, energy supply and emission systems, then calculates heat and lighting demand from weather, solar gains, occupancy and internal gains. Outputs include heating and cooling demand, system electricity or fuel use and zone, surface and thermal-mass temperatures. Coverage is globally configurable for a chosen building, with the guide illustrating hourly simulation and an 8,760-hour annual loop. Public source is free under an amended MIT licence that additionally requires a research reference to the ETH group. A limitation is the reduced thermal representation and the age of the installation guidance; users must check dependencies and suitability for complex buildings. It can support rapid building-demand simulations, complementary to the more detailed EnergyPlus model (model-energyplus). The README cites the 2017 dynamic BIPV-shading study, and its wiki provides a complete first simulation. No weather file or building model was downloaded.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "architecture-building-systems/rc_buildingsimulator linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/architecture-building-systems/RC_BuildingSimulator",
+  "id": "model-rc-building-simulator",
+  "inputs": [
+    "EPW weather",
+    "Zone window and system parameters",
+    "Occupancy and internal gains"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-03-07",
+  "licence": "MIT amended with required research reference to ETH Architecture and Building Systems",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "5R1C RC Building Simulator",
+  "notes": "G7 G7-0601. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Hourly heat and lighting demand",
+    "System energy and zone temperatures"
+  ],
+  "provider": "ETH Zürich Architecture and Building Systems",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/architecture-building-systems/RC_BuildingSimulator",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for architecture-building-systems/RC_BuildingSimulator: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/architecture-building-systems/rc_buildingsimulator"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/architecture-building-systems/rc_buildingsimulator/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Amended MIT includes an additional research-reference requirement.",
+      "url": "https://api.github.com/repos/architecture-building-systems/rc_buildingsimulator/license"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Worked hourly model: EPW weather, zone/window inputs, energy and temperature outputs.",
+      "url": "https://github.com/architecture-building-systems/RC_BuildingSimulator/wiki/10min-guide-to-your-first-simulation"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for buildings",
+  "type": "model"
+}

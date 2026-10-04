@@ -1,0 +1,170 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/pandapower/"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/e2nIEE/pandapower"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://pandapower.readthedocs.io/"
+    },
+    {
+      "kind": "docs",
+      "label": "Changelog",
+      "url": "https://github.com/e2nIEE/pandapower/blob/develop/CHANGELOG.rst"
+    },
+    {
+      "kind": "paper",
+      "label": "Citing pandapower",
+      "url": "https://www.pandapower.org/references/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Thurner, L., Scheidler, A., Schäfer, F., Menke, J., Dollichon, J., Meier, F., Meinecke, S., Braun, M. (2018). pandapower: An Open-Source Python Tool for Convenient Modeling, Analysis, and Optimization of Electric Power Systems. IEEE Transactions on Power Systems 33(6), 6510-6521. doi:10.1109/TPWRS.2018.2829021",
+  "cost": "free",
+  "date_catalogued": "2026-09-23",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pandapower",
+    "repo": "github.com/e2niee/pandapower",
+    "url": "https://pandapower.org"
+  },
+  "description": "pandapower is an open-source Python program for the automated analysis and optimisation of electric power systems. It is a joint development of the Department for Sustainable Electrical Energy Systems (e2n) at the University of Kassel and the Department for Distribution System Operation at the Fraunhofer Institute for Energy Economics and Energy System Technology (IEE) in Kassel. Networks are held as pandas tables of buses, lines, transformers, switches, loads, generators, storage and controllers; the package implements balanced and three-phase power flow with an improved Newton-Raphson solver, optimal power flow, short-circuit calculation to IEC 60909, state estimation, contingency analysis, time series simulation, topology search, grid equivalents, protection and plotting. Alternative solvers include PYPOWER, PowerGridModel, lightsim2grid and PowerModels.jl, and HELMpy when installed separately; converters read MATPOWER and PYPOWER cases, CIM CGMES, PowerFactory exports and, since version 3.5.0 (July 2026), OpenDSS feeders, imported as balanced positive-sequence networks. It is generic and location independent, applicable to any network for which parameters exist. Distribution is through PyPI (version 3.5.5, 22 September 2026, Python 3.10 or newer), the GitHub repository, pandapower.org and read-the-docs documentation, under the BSD-3-Clause licence at no cost. Caveats: it is a steady-state tool without electromagnetic transients, and the SimBench benchmark grids and load profiles recommended for realistic studies are a separate package. Simulation uses are network flow, contingency and cascading failure analysis, capacity planning, optimisation and resilience studies. Related records: it imports feeders from OpenDSS, catalogued here as platform-opendss.",
+  "description_checked": "2026-09-24",
+  "discovery_routes": [
+    {
+      "date": "2026-09-23",
+      "query": "open-source Python power system analysis tool pandapower",
+      "route": "R40",
+      "source": "assistant recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.pandapower.org/",
+  "id": "model-pandapower",
+  "inputs": [
+    "Network element tables (bus, line, trafo, switch, load, sgen, gen, storage, controllers)",
+    "MATPOWER / PYPOWER case files",
+    "OpenDSS feeder scripts (from_opendss)",
+    "CIM CGMES profiles",
+    "PowerFactory exports",
+    "JSON, Excel and SQL network files",
+    "Time series profiles"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-22",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "network",
+    "optimisation"
+  ],
+  "name": "pandapower",
+  "notes": "Audit 2026-09-24: re-read on pandapower.org (home, About, References), the read-the-docs index (3.5.5 documentation), the develop-branch README, LICENSE and CHANGELOG, PyPI and Crossref. Corrections to round 1: the reference paper, cited from recall before, is now confirmed on the provider's References page and in Crossref (volume 33, issue 6, pages 6510-6521, November 2018); HELMpy is no longer a direct dependency and must be installed separately (changelog); the OpenDSS converter added in 3.5.0 (2026-07-06) imports balanced positive-sequence networks. The develop changelog lists 3.5.4 as its latest dated entry while PyPI carries 3.5.5 of 2026-09-22.",
+  "outputs": [
+    "Bus voltages and angles",
+    "Branch loadings and losses",
+    "OPF dispatch and costs",
+    "Short-circuit currents",
+    "State estimates",
+    "Contingency results",
+    "Time series results"
+  ],
+  "provider": "University of Kassel (e2n) and Fraunhofer IEE",
+  "related_ids": [
+    "platform-opendss"
+  ],
+  "repository": "https://github.com/e2nIEE/pandapower",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "capacity_planning",
+    "optimisation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-24",
+      "note": "Purpose, pip install, power flow, OPF, state estimation, short circuit, topology; BSD licence",
+      "url": "https://www.pandapower.org/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Modelling and analysis features: three-phase, IEC 60909 short circuit, state estimation, PowerFactory, grid equivalents",
+      "url": "https://www.pandapower.org/about/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Citing pandapower: Thurner et al., IEEE Transactions on Power Systems 33(6), 6510-6521, Nov. 2018",
+      "url": "https://www.pandapower.org/references/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "DOI metadata: title, eight authors, volume 33, issue 6, pages 6510-6521, 2018-11",
+      "url": "https://api.crossref.org/works/10.1109/TPWRS.2018.2829021"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "pandapower 3.5.5 documentation contents: power flow, contingency analysis, OPF, short circuit, state estimation, controllers, time series, grid equivalents, topology, converters, protection",
+      "url": "https://pandapower.readthedocs.io/en/latest/"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Solvers (Newton-Raphson, PYPOWER, PowerGridModel, lightsim2grid, PowerModels.jl); MATPOWER/PYPOWER format; SimBench and pandapipes",
+      "url": "https://raw.githubusercontent.com/e2nIEE/pandapower/develop/README.rst"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "BSD 3-Clause; copyright 2016-2026 University of Kassel, Fraunhofer IEE, contributors",
+      "url": "https://raw.githubusercontent.com/e2nIEE/pandapower/develop/LICENSE"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "3.5.0 (2026-07-06) adds from_opendss (balanced positive-sequence); HELMpy added then dependency removed; CGMES and PowerFactory converters",
+      "url": "https://raw.githubusercontent.com/e2nIEE/pandapower/develop/CHANGELOG.rst"
+    },
+    {
+      "accessed": "2026-09-24",
+      "note": "Version 3.5.5 uploaded 2026-09-22T09:57; requires Python >=3.10; project URLs",
+      "url": "https://pypi.org/pypi/pandapower/json"
+    }
+  ],
+  "tags": [
+    "power flow",
+    "optimal power flow",
+    "short circuit",
+    "state estimation",
+    "distribution grid",
+    "Python",
+    "pandas"
+  ],
+  "title_en": "Pandapower is an open source Python program for the automated analysis and optimisation of electric power systems",
+  "type": "model",
+  "validated_on": [
+    "Bundled test networks in pandapower.networks",
+    "SimBench benchmark grids (separate package)"
+  ]
+}

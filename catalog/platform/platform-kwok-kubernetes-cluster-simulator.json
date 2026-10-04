@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "kubernetes-sigs/kwok repository",
+      "url": "https://github.com/kubernetes-sigs/kwok"
+    },
+    {
+      "kind": "docs",
+      "label": "KWOK documentation",
+      "url": "https://kwok.sigs.k8s.io/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "kwok kubernetes without kubelet cluster simulator",
+    "repo": "github.com/kubernetes-sigs/kwok",
+    "url": "https://kwok.sigs.k8s.io"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "KWOK, short for Kubernetes WithOut Kubelet, is a toolkit for simulating clusters of thousands of nodes in seconds on a laptop. It has two tools: kwok, which simulates the lifecycle of fake nodes, pods and other Kubernetes API resources, and kwokctl, a command-line tool that creates and manages clusters whose nodes are simulated by kwok. The documentation states that it can reliably maintain 1,000 nodes and 100,000 pods, creates about 20 nodes or pods per second, works with any Kubernetes-compliant client such as kubectl and helm, and lets users configure node types, labels, taints, capacities, conditions and pod behaviours. Unlike kubemark it simulates only node behaviour and so needs very little memory, and unlike kind it does not run real pods. Producer: the Kubernetes SIGs community. Coverage: generic, not tied to any site. Access: pre-built container images or binaries, run with Docker, Podman or Nerdctl, and a public repository. Licence and cost: Apache-2.0 and free. Caveats: pods are not real, so it cannot model application performance, and power or cooling behaviour is out of scope. It suits scheduler and autoscaler experiments, capacity planning of cloud clusters that run in data centres, and resilience tests of control-plane behaviour under large scale. It is a general simulation engine like the network simulator platform-ns-3, though for compute clusters, not networks.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "assistant recall, written down before searching: data centres, satellite positioning, broadcasting, internet exchange resources",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/kubernetes-sigs/kwok",
+  "id": "platform-kwok-kubernetes-cluster-simulator",
+  "interfaces": [
+    "command_line",
+    "code_library"
+  ],
+  "language": [
+    "rust_go"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Apache-2.0 (repository page read)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "KWOK (Kubernetes WithOut Kubelet) cluster simulator",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "Kubernetes SIGs (KWOK project)",
+  "related_ids": [
+    "platform-ns-3"
+  ],
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "KWOK purpose, tools, scale figures, differences with kubemark and kind, portability and flexibility",
+      "url": "https://kwok.sigs.k8s.io/"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "repository page: Apache-2.0 licence, Go",
+      "url": "https://github.com/kubernetes-sigs/kwok"
+    }
+  ],
+  "supported_sectors": [
+    "digital.data_centres"
+  ],
+  "tags": [
+    "Kubernetes",
+    "cluster simulation",
+    "cloud scheduling",
+    "r2-fresh-digital"
+  ],
+  "title_en": "KWOK (Kubernetes WithOut Kubelet) cluster simulator",
+  "type": "platform"
+}

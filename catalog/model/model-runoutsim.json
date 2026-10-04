@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/jngtz/runoutSIM"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://gmd.copernicus.org/articles/19/5709/2026/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.5194/gmd-19-5709-2026",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.17306039",
+    "name": "runoutsim landslide runout and connectivity",
+    "url": "https://github.com/jngtz/runoutsim"
+  },
+  "description": "runoutSIM is an R package from Jason Goetz and collaborators for regional landslide runout and connectivity calculations. It combines random-walk routing with the Perla two-parameter friction model and provides tools for parameter searches and parallel execution. Inputs include a terrain raster, source locations and optional receiving features such as roads or rivers. Spatial coverage and cell size follow the user domain; the own tutorial uses a 12.5-metre terrain grid and 73 mapped runouts in the Rio Olivares basin in Chile. Its results can support screening of infrastructure exposure and landslide connections to river networks. The code and version 1.0 archive are free under MIT, with sf and terra used for spatial objects. A limitation is that the tutorial requires a projected UTM coordinate system and appropriately prepared terrain. The example inventory does not establish performance for every landslide process or region. No directly related catalogue record was found. Documentation and file identities were inspected without downloading the example rasters or running R.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "GMD whole-index enumeration; 10.5194/gmd-19-5709-2026; G5-LOCAL-040;G5-LOCAL-047;G5-LOCAL-079;G5-LOCAL-080;G5-LOCAL-081;G5-LOCAL-085;G5-LOCAL-086;G5-LOCAL-089;G5-LOCAL-096;G5-LOCAL-100;G5-LOCAL-103;G5-LOCAL-113",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "landslide"
+  ],
+  "homepage": "https://github.com/jngtz/runoutSIM",
+  "id": "model-runoutsim",
+  "inputs": [
+    "Elevation raster and landslide source locations",
+    "Friction and random-walk parameters",
+    "Optional road, river or other connectivity features"
+  ],
+  "language": [
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-10",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid"
+  ],
+  "name": "runoutSIM landslide runout and connectivity",
+  "notes": "G5 G5-0193. Metadata and documentation only. No model runs, data downloads or article PDF downloads. ",
+  "outputs": [
+    "Landslide runout paths and velocity estimates",
+    "Connectivity measures and parameter-search results"
+  ],
+  "provider": "Jason Goetz and collaborators, Wilfrid Laurier University",
+  "related_ids": [],
+  "repository": "https://github.com/jngtz/runoutSIM",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "transport.road",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Final Model description paper; abstract and availability read.",
+      "url": "https://gmd.copernicus.org/articles/19/5709/2026/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Abstract and availability read in memory.",
+      "url": "https://gmd.copernicus.org/articles/19/5709/2026/gmd-19-5709-2026.xml"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository identity.",
+      "url": "https://api.github.com/repos/jngtz/runoutSIM"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own package functions and R usage.",
+      "url": "https://github.com/jngtz/runoutSIM/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own v1.0 archive and MIT licence.",
+      "url": "https://zenodo.org/api/records/17306039"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own documented Chile example, grid resolution, source/runout count and UTM requirement.",
+      "url": "https://jngtz.github.io/runoutSIM/articles/runoutSIM_basic_intro.html"
+    }
+  ],
+  "tags": [
+    "research software",
+    "GMD"
+  ],
+  "title_en": "RunoutSIM landslide runout and connectivity tools",
+  "type": "model"
+}

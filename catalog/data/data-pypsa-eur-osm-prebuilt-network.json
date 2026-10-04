@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "All 6 files (zip)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/api/records/18619025/files-archive"
+    },
+    {
+      "kind": "download",
+      "label": "All 5 files (zip)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/api/records/13358976/files-archive"
+    },
+    {
+      "kind": "portal",
+      "label": "Network version 0.3 (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.13358976"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "network_topology",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "prebuilt electricity network for pypsa eur based on openstreetmap data",
+    "url": "doi:10.5281/zenodo.12799201"
+  },
+  "description": "This data set is a topologically connected model of the European high-voltage grid, from 200 kV to 750 kV, built from OpenStreetMap data for use in the PyPSA-Eur energy system model. It was published by Bobby Xiong, Fabian Neumann and Tom Brown. Data were retrieved through the Overpass API, lines and links with incomplete, missing or ambiguous electrical parameters were cleaned heuristically, and substations within 5 km of each other were merged into single buses, so connectedness takes priority over exact substation location. OpenStreetMap identifiers of lines, cables and links are kept so each element can be traced back to the map. Files give buses, lines, links, transformers and converters as CSV tables. Coverage is the European transmission grid. The data are on Zenodo (version 0.3, September 2024) under the Open Database License 1.0 at no cost. Caveats: parameters are heuristic where map tags are missing, and bus aggregation shifts locations, so the network is a model, not an operator record. Simulation uses are power flow and capacity expansion studies of the European grid in PyPSA-Eur and other models. Related records: none linked on the provider's pages read on the day.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid reliability",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://doi.org/10.5281/zenodo.12799201",
+  "id": "data-pypsa-eur-osm-prebuilt-network",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-02-12",
+  "licence": "ODbL-1.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Prebuilt electricity network for PyPSA-Eur based on OpenStreetMap data",
+  "notes": "Deep check A4 (2026-10-01) corrected: last_updated .",
+  "provider": "Bobby Xiong, Fabian Neumann and Tom Brown (PyPSA-Eur developers)",
+  "related_ids": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Contents, 200-750 kV, Overpass, heuristic cleaning, 5 km aggregation, OSM IDs, ODbL, v0.3",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.13358976"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Published 2024-08-22, updated 2024-09-02; buses, transformers, converters, lines, links CSV",
+      "url": "https://zenodo.org/api/records/13358976"
+    }
+  ],
+  "tags": [
+    "PyPSA-Eur",
+    "OpenStreetMap",
+    "Europe",
+    "transmission grid",
+    "network model"
+  ],
+  "title_en": "Prebuilt electricity network for PyPSA-Eur based on OpenStreetMap data",
+  "type": "data"
+}

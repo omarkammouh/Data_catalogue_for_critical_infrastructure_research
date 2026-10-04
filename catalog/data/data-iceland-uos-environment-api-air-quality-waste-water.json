@@ -1,0 +1,154 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "API index",
+      "url": "https://api.ust.is/"
+    },
+    {
+      "kind": "api",
+      "label": "Air quality stations (JSON)",
+      "url": "https://api.ust.is/aq/a/getStations"
+    },
+    {
+      "kind": "docs",
+      "label": "Waste API",
+      "url": "https://api.ust.is/urgangur"
+    },
+    {
+      "kind": "docs",
+      "label": "Water API",
+      "url": "https://api.ust.is/vatn"
+    },
+    {
+      "kind": "api",
+      "label": "Air quality endpoints",
+      "url": "https://api.ust.is/aq"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IS"
+  ],
+  "data_family": [
+    "environmental_impact",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "api ust is umhverfis og orkustofnun iceland air quality stations and hourly measurements municipal waste quantities by treatment and industry and water framework directive monitoring",
+    "url": "https://api.ust.is"
+  },
+  "description": "API.ust.is is the public interface for programs of Iceland's Environment and Energy Agency, Umhverfis- og orkustofnun. The pages read on 2026-09-28 describe four services. The air quality service returns hourly measurements for the past day or a chosen date, refreshed about 17 minutes past each hour with a flag for verified values, and a station list; that list holds 71 stations, 30 of them run by industrial networks at aluminium and silicon plants, with coordinates, activity dates back to 1986 and pollutants such as nitrogen dioxide, particulates, sulphur dioxide and hydrogen sulphide. The waste service gives registered waste in tonnes by year, treatment category, waste category mapped to Eurostat classes, municipality and industry. The water service returns Water Framework Directive monitoring sites and measurements, and a fourth section lists public consultations. Coverage is Iceland. Access is free JSON with no key requirement seen; no licence is stated on the pages. Caveats: the documentation is brief and mostly Icelandic, and waste figures depend on operator registration. It supports environmental and capacity studies, such as relating municipal waste flows to treatment capacity or checking air quality around industrial plants and roads. No related Icelandic record is catalogued.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Umhverfis- og orkustofnun (IS, environment_agency_permit_register) https://uos.is/",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://api.ust.is/",
+  "id": "data-iceland-uos-environment-api-air-quality-waste-water",
+  "languages": [
+    "is",
+    "en"
+  ],
+  "licence": "not stated on the API pages",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "API.ust.is (Umhverfis- og orkustofnun, Iceland): air quality stations and hourly measurements, municipal waste quantities by treatment and industry, and Water Framework Directive monitoring",
+  "provider": "Umhverfis- og orkustofnun (Environment and Energy Agency of Iceland)",
+  "related_ids": [
+    "data-imo-iceland-hydrometric-network",
+    "data-fjarskiptastofa-iceland-coverage-masts-and-fibre-layers"
+  ],
+  "sectors": [
+    "services.waste",
+    "cross_cutting.green_blue",
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "read: API.ust.is with sections air quality (station information and measurement download), consultation (issues since October 2021), waste disposal (waste amounts and treatment, municipalities, waste and treatment categories), water framework directive (water measurements)",
+      "url": "https://api.ust.is/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "read: getLatest and getCurrent (hourly values of past 24 hours, updated about 17 minutes past the hour, verification flag 1 verified or 3 unverified), getDate (hourly values for a date), getStations (station information in JSON)",
+      "url": "https://api.ust.is/aq"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "read: 71 stations with local id, municipality, activity begin and end (earliest 1986-03-26), network name (including industrial networks of aluminium and silicon plants), classification (33 background, 30 industrial, 8 traffic), area class, coordinates, parameters such as NO2, PM10, PM2.5, SO2, H2S and metals in PM10",
+      "url": "https://api.ust.is/aq/a/getStations"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "read: industries (ISAT2008 plus households), treatment categories, registrations in tonnes by year, treatment, waste category, municipality and industry, yearly sums, municipalities, waste categories mapped to Eurostat",
+      "url": "https://api.ust.is/urgangur"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "read: average and maximum measurements, quality element measurements, priority substances, monitoring sites and monitoring types",
+      "url": "https://api.ust.is/vatn"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "sections: air quality stations and measurements, consultations since October 2021, waste amounts by municipality and category, water measurements",
+      "url": "https://api.ust.is/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "waste endpoints: tonnes by year, treatment, waste category, municipality and ISAT2008 industry; municipality and category lists",
+      "url": "https://api.ust.is/urgangur"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "water endpoints: average and maximum measurements, quality elements, priority substances, monitoring sites and types, units",
+      "url": "https://api.ust.is/vatn"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Wave 1 integrator dedupe: merged duplicate record data-iceland-ust-open-api-air-waste-water (#23) into this record; its sources and extra access links were kept here.",
+      "url": "https://api.ust.is/"
+    }
+  ],
+  "tags": [
+    "air quality",
+    "waste statistics",
+    "Water Framework Directive",
+    "Iceland",
+    "API"
+  ],
+  "temporal_coverage": "air quality stations active from 1986",
+  "temporal_resolution": "hourly (air quality); yearly (waste)",
+  "temporal_resolution_class": "hourly",
+  "title_en": "API.ust.is (Uhmferfis- og orkustofnun, Iceland): air quality stations and hourly measurements, municipal waste quantities by treatment and industry, and Water Framework Directive monitoring",
+  "type": "data",
+  "update_frequency": "real_time"
+}

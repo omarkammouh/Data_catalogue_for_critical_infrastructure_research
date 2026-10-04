@@ -1,0 +1,108 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Mobilfunk-Monitoring map",
+      "url": "https://gigabitgrundbuch.bund.de/GIGA/DE/MobilfunkMonitoring/start.html"
+    },
+    {
+      "kind": "portal",
+      "label": "Downloads (CSV, GeoPackage, XLSX, PDF)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://gigabitgrundbuch.bund.de/GIGA/DE/MobilfunkMonitoring/Downloads/start.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "telecom_coverage_spectrum",
+    "service_performance"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bundesnetzagentur mobilfunk monitoring mobile coverage by operator and technology on a 100 m grid germany",
+    "url": "https://gigabitgrundbuch.bund.de/GIGA/DE/MobilfunkMonitoring/start.html"
+  },
+  "description": "The Mobilfunk-Monitoring is the Bundesnetzagentur's official map and dataset of mobile network coverage in Germany, part of the federal Gigabit-Grundbuch information portal. It shows coverage reported by the four public network operators, Telekom Deutschland, Vodafone, Telefónica Germany and 1&1 Mobilfunk, for 2G, 4G (LTE) and 5G, with 5G shown both in all variants and as 5G standalone, on the 100 by 100 metre grid of the Federal Agency for Cartography and Geodesy (BKG), about 38 million grid cells. The agency collects the data twice a year; in June 2026 about 97.8 per cent of the area had 4G, 96.2 per cent 5G and over 98 per cent mobile broadband. Downloads for June 2026 include the full mobile data as CSV (101 MB) and by technology as GeoPackage (1.3 GB), broadband mobile data (GeoPackage, 45 MB), statistics by operator (PDF) and down to municipality level (XLSX), a summary report, and areas with a deficit in coverage (XLSX and GeoPackage); the page also links fixed broadband availability data from the Breitbandatlas and grid-level fixed coverage figures. Coverage: all of Germany. Format and access: CSV, GeoPackage, XLSX and PDF downloads, free, with attribution to the Bundesnetzagentur. Caveats: coverage is modelled by operators, not measured; the portal refused automated requests, so details come from a fetched summary. Simulation uses: mapping which areas depend on which operators and technologies, estimating populations cut off when sites fail, and finding white spots for emergency communications. Related records: the German Breitbandatlas covers fixed broadband, the BNetzA EMF database gives site locations, and Breitbandmessung gives measured quality.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "visit of the Gigabit-Grundbuch mobile monitoring pages",
+      "route": "R02",
+      "source": "organisations.csv:DE:digital:broadband_mapping"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geopackage",
+    "spreadsheet",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://gigabitgrundbuch.bund.de/GIGA/DE/MobilfunkMonitoring/start.html",
+  "id": "data-bnetza-mobilfunk-monitoring",
+  "languages": [
+    "de"
+  ],
+  "last_updated": "2026-06",
+  "licence": "Free reuse with attribution ©Bundesnetzagentur",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Bundesnetzagentur Mobilfunk-Monitoring: mobile coverage by operator and technology on a 100 m grid (Germany)",
+  "notes": "Map and downloads pages refused curl (web application firewall); both read via fetch on 2026-09-26 (operators, technologies, grid, coverage shares, half-yearly collection, file list with sizes and dates, attribution). Start date of the monitoring was not checked.",
+  "provider": "Bundesnetzagentur (Federal Network Agency, Germany), in the Gigabit-Grundbuch",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "resilience"
+  ],
+  "size": "CSV 101 MB; GeoPackage by technology 1.3 GB",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "start page via fetch",
+      "url": "https://gigabitgrundbuch.bund.de/GIGA/DE/MobilfunkMonitoring/start.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "downloads page via fetch",
+      "url": "https://gigabitgrundbuch.bund.de/GIGA/DE/MobilfunkMonitoring/Downloads/start.html"
+    }
+  ],
+  "spatial_resolution": "100 m grid cells (BKG grid); municipality statistics",
+  "spatial_resolution_class": "100m_to_1km",
+  "tags": [
+    "mobile coverage",
+    "5G",
+    "white spots",
+    "100 m grid",
+    "Germany"
+  ],
+  "temporal_coverage": "half-yearly snapshots, latest June 2026",
+  "temporal_resolution": "half-yearly",
+  "temporal_resolution_class": "sub_annual",
+  "title_en": "Bundesnetzagentur Mobilfunk-Monitoring: mobile coverage by operator and technology on a 100 m grid (Germany)",
+  "type": "data",
+  "update_frequency": "several_per_year"
+}

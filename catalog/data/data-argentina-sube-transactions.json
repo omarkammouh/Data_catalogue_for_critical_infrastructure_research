@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Dataset page (datos.transporte.gob.ar)",
+      "url": "https://datos.transporte.gob.ar/dataset/sube-cantidad-de-transacciones-usos-por-fecha"
+    },
+    {
+      "kind": "api",
+      "label": "CKAN API",
+      "url": "https://datos.transporte.gob.ar/api/3/action/package_show?id=sube-cantidad-de-transacciones-usos-por-fecha"
+    },
+    {
+      "kind": "portal",
+      "label": "Transport open data portal",
+      "url": "https://datos.transporte.gob.ar/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "AR"
+  ],
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sube smart card transactions by day and line argentina",
+    "url": "https://datos.transporte.gob.ar/dataset/sube-cantidad-de-transacciones-usos-por-fecha"
+  },
+  "description": "This dataset counts the daily uses of SUBE, Argentina's national contactless fare card, recorded by validators on the SUBE network. Each row gives the date, operating company, line, whether the line is in the Buenos Aires metropolitan area (AMBA), mode (bus, underground, train or boat), jurisdiction (national, provincial, municipal or city), province, municipality, the number of transactions and a flag for preliminary values. It is published by the national Secretariat of Transport on its open data portal (48 datasets), compiled by the National Directorate of Technological Development; companion datasets give the number of cards used per day and monthly operations in the metropolitan region. Coverage is every SUBE city and province, with one CSV file per year from 2020; the 2026 file had 435,920 rows up to 24 September 2026, so it is refreshed almost daily. Files download freely without registration and are also listed through the portal's CKAN API, under CC BY 4.0. Caveats: counts are card taps per line and day, not trips or origin-destination pairs; recent days are preliminary; line names vary between operators. The data support demand analysis, capacity planning and resilience studies of bus, rail and underground services (for example ridership through strikes, fare changes or floods) and complement national GTFS feeds listed in the Mobility Database catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "transporte público datos abiertos conjunto de datos",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://datos.transporte.gob.ar/dataset/sube-cantidad-de-transacciones-usos-por-fecha",
+  "id": "data-argentina-sube-transactions",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "SUBE smart card transactions by day and line (Argentina)",
+  "provider": "Secretaría de Transporte de la Nación, Argentina (Dirección Nacional de Desarrollo Tecnológico)",
+  "related_ids": [
+    "data-mobility-database"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.rail"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "title; organisation Secretaría de Transporte; author Dirección Nacional de Desarrollo Tecnológico; CC BY 4.0; created 2022-04-01, modified 2026-04-08; yearly CSV 2020 to 2026",
+      "url": "https://datos.transporte.gob.ar/api/3/action/package_show?id=sube-cantidad-de-transacciones-usos-por-fecha"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "read in memory: columns DIA_TRANSPORTE, NOMBRE_EMPRESA, LINEA, AMBA, TIPO_TRANSPORTE, JURISDICCION, PROVINCIA, MUNICIPIO, CANTIDAD, DATO_PRELIMINAR; 435,920 rows; last day 2026-09-24; modes COLECTIVO, LANCHAS, SUBTE, TREN",
+      "url": "https://archivos-datos.transporte.gob.ar/upload/Dat_Ab_Usos/dat-ab-usos-2026.csv"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "portal has 48 datasets; SUBE companions (cards per day, per day in AMBA, operations per month in RMBA)",
+      "url": "https://datos.transporte.gob.ar/api/3/action/package_search?q=SUBE&rows=10"
+    }
+  ],
+  "spatial_resolution": "line, with province and municipality",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "smart card",
+    "SUBE",
+    "ridership",
+    "Buenos Aires",
+    "Argentina"
+  ],
+  "temporal_coverage": "2020 to present",
+  "temporal_resolution": "daily",
+  "temporal_resolution_class": "daily",
+  "title_en": "SUBE smart card transactions by day and line (Argentina)",
+  "type": "data",
+  "update_frequency": "daily"
+}

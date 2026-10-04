@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Aqueduct Floods tool",
+      "url": "https://www.wri.org/applications/aqueduct/floods/"
+    },
+    {
+      "kind": "portal",
+      "label": "File download page",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://aqueduct.wridata.org/AqueductFloods20/index.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Technical note",
+      "url": "https://www.wri.org/publication/aqueduct-floods-methodology"
+    },
+    {
+      "kind": "portal",
+      "label": "Original landing page",
+      "url": "https://www.wri.org/data/aqueduct-floods-hazard-maps"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "hazards",
+    "scenarios_projections"
+  ],
+  "data_kind": [
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "aqueduct floods hazard maps",
+    "url": "https://wri.org/data/aqueduct-floods-hazard-maps"
+  },
+  "description": "The Aqueduct Floods Hazard Maps give global riverine and coastal inundation depth in metres for a set of flood return periods, produced by the World Resources Institute (WRI) and partners for the Aqueduct Floods risk tool, which also offers risk and cost-benefit analysis of dike protection. Scenarios are a historical baseline and future projections for 2030, 2050 and 2080 under RCP 4.5 and RCP 8.5; riverine maps are run with five climate models (NorESM1-M, GFDL-ESM2M, HadGEM2-ES, IPSL-CM5A-LR, MIROC-ESM-CHEM) and coastal maps with and without land subsidence. Files are single-band 32-bit float GeoTIFFs, one per parameter combination, with -9999 as no-data, listed with a data dictionary on a standalone download page; version 2 of 20 October 2020 corrected a bias-correction error in the riverine maps, so earlier downloads should be replaced. The WRI data catalogue lists a Creative Commons Attribution licence and the files are free. Caveats: flood defences are not in the hazard maps, the global grid is coarse for local design, and the CMIP5-era scenarios predate the SSP projections. The maps serve hazard exposure analysis of infrastructure networks, climate adaptation and resilience studies, and are used alongside the GIRI and CISI datasets in this catalogue.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "global flood hazard maps return period",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "raster"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood",
+    "coastal_flood_storm_surge",
+    "sea_level_rise",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://aqueduct.wridata.org/AqueductFloods20/index.html",
+  "id": "data-aqueduct-floods-hazard-maps",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-10-20",
+  "licence": "CC-BY-4.0 (WRI catalogue states Creative Commons Attribution)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "dead": [
+      "https://datasets.wri.org/dataset/aqueduct-floods-hazard-maps"
+    ],
+    "dead_since": "2026-09-27",
+    "unverified": [
+      "https://www.wri.org/applications/aqueduct/floods/"
+    ]
+  },
+  "maturity": "stale",
+  "name": "Aqueduct Floods Hazard Maps",
+  "provider": "World Resources Institute (WRI)",
+  "related_ids": [],
+  "schema_summary": "inundation depth (m) per return period, scenario, climate model and subsidence option",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Dataset page: riverine and coastal flood risk, projections 2030, 2050, 2080, cost-benefit of dikes",
+      "url": "https://www.wri.org/data/aqueduct-floods-hazard-maps"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 2 of 2020-10-20, GeoTIFF inundation depth, scenarios, GCMs, subsidence, changelog",
+      "url": "https://aqueduct.wridata.org/AqueductFloods20/index.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Licence Creative Commons Attribution; format and scenario description",
+      "url": "https://datasets.wri.org/api/3/action/package_show?id=aqueduct-floods-hazard-maps"
+    }
+  ],
+  "spatial_resolution": "global grid (see technical note)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "flood hazard",
+    "inundation depth",
+    "return period",
+    "RCP 4.5",
+    "RCP 8.5",
+    "WRI Aqueduct"
+  ],
+  "temporal_coverage": "baseline, 2030, 2050, 2080",
+  "temporal_resolution": "Snapshot (no time step)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Aqueduct Floods Hazard Maps",
+  "type": "data",
+  "update_frequency": "irregular"
+}

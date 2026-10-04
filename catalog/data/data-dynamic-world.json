@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Earth Engine catalogue entry",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1"
+    },
+    {
+      "kind": "paper",
+      "label": "Dynamic World paper",
+      "url": "https://doi.org/10.1038/s41597-022-01307-4"
+    }
+  ],
+  "access_note": "Earth Engine access needs a Google account registered for Earth Engine.",
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "vegetation_land_cover",
+    "imagery_remote_sensing"
+  ],
+  "data_kind": [
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1038/s41597-022-01307-4",
+    "name": "dynamic world near real time 10 m land use and land cover",
+    "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1"
+  },
+  "description": "Dynamic World contains near-real-time land use and land cover predictions at 10 m resolution for every Sentinel-2 L1C image with 35 percent cloud cover or less, from 27 June 2015 to the present, giving per-pixel probabilities for nine classes (water, trees, grass, flooded vegetation, crops, shrub and scrub, built area, bare ground, snow and ice) plus a label band of the most likely class. It is produced by Google in partnership with the World Resources Institute and the National Geographic Society, to give a continuously updated global land cover record. Coverage is global over land with a revisit of two to five days depending on latitude. Images are accessible as an Earth Engine image collection named after the matching Sentinel-2 scenes; the dataset is licensed CC BY 4.0 with a required attribution and contains modified Copernicus Sentinel data, free of charge. Caveats: each prediction comes from a single image, so classes defined by change over time, such as crops, can have low top-1 probabilities, bright arid surfaces and sunglint are confused, and users are advised to mask by probability threshold. It serves mapping of green and blue infrastructure, urban expansion and flooded vegetation for hazard exposure and climate adaptation studies; related records are ESA WorldCover, the Copernicus Urban Atlas, the JRC Global Surface Water and the Hansen Global Forest Change.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "near real time global land cover 10 m",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "api",
+    "image",
+    "raster"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1",
+  "id": "data-dynamic-world",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Dynamic World near-real-time 10 m land use and land cover",
+  "notes": "The Earth Engine registration requirement and GeoTIFF export are from general Earth Engine practice. The paper DOI is from the catalogue citation, which was cut off in the text read.",
+  "provider": "Google, with the World Resources Institute and National Geographic Society",
+  "related_ids": [],
+  "schema_summary": "probability bands for nine classes and a label band",
+  "sectors": [
+    "cross_cutting.green_blue",
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "availability 2015-06-27 to present, producer WRI and Google, nine classes, 10 m, cloud threshold, caveats, CC BY 4.0 attribution",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1"
+    }
+  ],
+  "spatial_resolution": "10 m",
+  "spatial_resolution_class": "10m_to_100m",
+  "spatial_resolution_m": 10,
+  "tags": [
+    "land cover",
+    "Sentinel-2",
+    "near real time",
+    "Google Earth Engine",
+    "WRI"
+  ],
+  "temporal_coverage": "2015-06-27 to present",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 2015
+  },
+  "temporal_resolution": "per Sentinel-2 scene (2 to 5 days)",
+  "temporal_resolution_class": "varies",
+  "title_en": "Dynamic World near-real-time 10 m land use and land cover",
+  "type": "data",
+  "update_frequency": "real_time"
+}

@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/skababji/PowerDataset_V1"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "powerdataset v1 electrical measurement dataset generator",
+    "repo": "github.com/skababji/powerdataset_v1",
+    "url": "https://github.com/skababji/PowerDataset_V1"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "PowerDataset_V1 generates electrical measurements and corresponding network states for data-driven power-system modelling. Samer Kababji publishes Python functions and notebooks that vary loads in a pandapower test network, run power flow and export selected quantities. Outputs include clean measurements, noisy measurements and ground-truth states, joined by a scenario identifier. The tool can also construct a DC measurement matrix in the selected measurement order. Coverage is determined by the input test grid; the README reports testing only on IEEE 118 buses. Scenarios are independent snapshots, not an observed calendar time series. CSV outputs use documented bus and line naming conventions, and angles are in radians instead of pandapower’s usual degrees. The public GitHub code uses the MIT licence and is free to obtain. Users configure the measurement template and load distribution before generation. Repeated clean rows are intentional inputs to noise experiments and should not be mistaken for independent observations. Simulation uses include state-estimation benchmarks, measurement-noise studies and surrogate training. The tool directly uses model-pandapower; this review did not execute its notebooks or verify numerical results.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "power grid dataset",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/skababji/PowerDataset_V1",
+  "id": "platform-powerdataset-v1-electrical-measurements",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "pandapower network objects",
+    "CSV"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2021-08-27",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "PowerDataset_V1 electrical measurement dataset generator",
+  "notes": "G8; G8-0015. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Repository documentation. No describing paper identified in the inspected metadata..",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Samer Kababji",
+  "related_ids": [
+    "model-pandapower"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/skababji/PowerDataset_V1/blob/master/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/skababji/PowerDataset_V1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository tree metadata confirms notebooks, source functions and measurement template; no dataset payloads downloaded.",
+      "url": "https://api.github.com/repos/skababji/PowerDataset_V1/git/trees/master?recursive=1"
+    }
+  ],
+  "tags": [],
+  "title_en": "PowerDataset: V1 electrical measurement dataset generator",
+  "type": "platform"
+}

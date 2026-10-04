@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Cycle 2 hazard map service (ArcGIS REST, query enabled)",
+      "url": "https://gis.rowater.ro/server/rest/services/Aparare/Hazard_Ciclul_2/MapServer"
+    },
+    {
+      "kind": "api",
+      "label": "Cycle 1 hazard map service (ArcGIS REST)",
+      "url": "https://gis.rowater.ro/server/rest/services/Hazard_Ciclul_I/MapServer"
+    },
+    {
+      "kind": "viewer",
+      "label": "Hazard maps cycles 1 and 2 (portal web experience)",
+      "url": "https://gis.rowater.ro/portal/apps/experiencebuilder/experience/?id=1a50f514f25b441086b01664e1044452"
+    },
+    {
+      "kind": "viewer",
+      "label": "Revised hazard and risk maps viewer (inundatii.ro)",
+      "url": "https://harticiclul2.inundatii.ro/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "RO"
+  ],
+  "data_family": [
+    "hazards"
+  ],
+  "data_kind": [
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "romania flood hazard maps floods directive cycles 1 and 2 apele romane gis portal",
+    "url": "https://gis.rowater.ro/server/rest/services/Aparare/Hazard_Ciclul_2/MapServer/2/query?f=json&returnCountOnly=true&where=1%3D1"
+  },
+  "description": "The Romanian National Administration Apele Române publishes the flood hazard maps of the first and second cycles of the EU Floods Directive on its public GIS portal, as an ArcGIS web experience and as map and vector tile services. The cycle 2 map service has four layers: 10-year, 100-year, 100-year with climate change and 1,000 or 500-year flood hazard, and it allows map, query and data operations; cycle 1 hazard is a separate service. The portal also links a revision viewer of cycle 1 and 2 hazard and risk maps. Coverage is Romania. The services are free to view and query without login. Caveats: the portal states no licence and the services carry no description or copyright text, so terms of reuse must be asked of ANAR; the layer names are the only schema read. Simulation uses: flood exposure of water, drainage and other infrastructure and adaptation planning. Related records: the Romanian national dam register (data-romania-rebar-national-dam-register) and Luxembourg flood hazard maps (data-luxembourg-flood-and-heavy-rainfall-hazard-maps).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Administrația Națională Apele Române (RO, river_restoration_body) https://rowater.ro/",
+      "route": "R18",
+      "source": "cross-cutting-organisation-walk"
+    }
+  ],
+  "formats": [
+    "kml",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://gis.rowater.ro/server/rest/services/Aparare/Hazard_Ciclul_2/MapServer/2/query?where=1%3D1&returnCountOnly=true&f=json",
+  "id": "data-romania-anar-flood-hazard-maps",
+  "languages": [
+    "ro"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Romania flood hazard maps, Floods Directive cycles 1 and 2 (Apele Române GIS portal)",
+  "provider": "Administrația Națională Apele Române (ANAR)",
+  "related_ids": [
+    "data-romania-rebar-national-dam-register",
+    "data-luxembourg-flood-and-heavy-rainfall-hazard-maps"
+  ],
+  "schema_summary": "cycle 2 layers HZ_10, HZ_100, HZ_100CC and HZ_1000_500 (flood extents by return period, with a climate-change 100-year layer); cycle 1 layers in a separate service",
+  "sectors": [
+    "water.dams_flood_defences"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "public hazard items: map services cycle 1 and 2, vector tiles, web experience, revision viewer link",
+      "url": "https://gis.rowater.ro/portal/sharing/rest/search?q=title:hazard%20owner:gisadmin&num=20&f=json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "layers HZ_10, HZ_100, HZ_100CC, HZ_1000_500; capabilities Query, Map, Data; no description or copyright",
+      "url": "https://gis.rowater.ro/server/rest/services/Aparare/Hazard_Ciclul_2/MapServer?f=json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://gis.rowater.ro/portal/apps/experiencebuilder/experience/?id=1a50f514f25b441086b01664e1044452"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://gis.rowater.ro/server/rest/services/Aparare/Hazard_Ciclul_2/MapServer"
+    }
+  ],
+  "tags": [
+    "flood hazard maps",
+    "Floods Directive",
+    "Romania",
+    "return periods",
+    "ArcGIS REST"
+  ],
+  "title_en": "Romania flood hazard maps, Floods Directive cycles 1 and 2 (Apele Române GIS portal)",
+  "type": "data",
+  "update_frequency": "multi_year"
+}

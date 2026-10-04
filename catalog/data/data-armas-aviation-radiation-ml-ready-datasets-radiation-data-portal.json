@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "ARMAS public data archive (Space Environment Technologies)",
+      "note": "Per-flight files and dose-rate images",
+      "url": "https://sol.spacenvironment.net/ARMAS/Archive/"
+    },
+    {
+      "kind": "portal",
+      "label": "ML-ready datasets (static, 1-hour and 24-hour time series; version 2)",
+      "note": "Version 1 datasets also listed",
+      "url": "https://dmlab.cs.gsu.edu/rdp/ml-dataset.html"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper describing the datasets (arXiv 2602.07108)",
+      "note": "arXiv non-exclusive licence",
+      "url": "https://arxiv.org/abs/2602.07108"
+    },
+    {
+      "kind": "download",
+      "label": "ARMAS archive: L1-L4 data text files (directory listing of 1,307 files)",
+      "url": "https://sol.spacenvironment.net/ARMAS/Archive/ARMAS_dirIP_Report_UUID_YMDhms_L1L4_data_txts/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "health_impacts",
+    "space_weather",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "armas aviation radiation measurements ml ready effective dose rate datasets and radiation data portal",
+    "url": "https://dmlab.cs.gsu.edu/rdp/ml-dataset.html"
+  },
+  "description": "These datasets pair 92,476 in-flight effective dose rate measurements from 589 aircraft flights with the space weather conditions at the time, ready for machine learning that nowcasts radiation at aviation altitudes. The ARMAS experiment of Space Environment Technologies made the measurements from 2013 to 2023, and Georgia State University's DMLab, with NASA Ames and Langley researchers, added NAIRAS model nowcasts, GOES X-ray and proton fluxes, OMNIWeb solar wind, neutron monitor counts, geomagnetic indices and sunspot number, then split flights into training, validation and test partitions. Coverage is worldwide flight routes. Format and access: three versions (static, 1-hour and 24-hour histories) on the Radiation Data Portal, with per-flight files in the ARMAS archive. Licence: not stated on the pages read, and free to download. Caveats: measurements come from one instrument family on a limited set of flights, and the test accuracy is only slightly better than physics models. It supports hazard exposure and resilience studies of space weather effects on aircrew, passengers and avionics. Related catalogue records are the BoM World Data Centre for Space Weather and the Aalto-1 RADMON radiation monitor.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "space weather radiation dose aircrew astronauts dataset open data flight crew exposure measurements archive",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "other",
+    "image"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://dmlab.cs.gsu.edu/rdp/ml-dataset.html",
+  "id": "data-armas-aviation-radiation-ml-ready-datasets-radiation-data-portal",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025",
+  "licence": "Data licence not stated on the pages read (software on the portal is GNU GPL)",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ARMAS aviation radiation measurements: ML-ready effective dose rate datasets and Radiation Data Portal",
+  "provider": "Georgia State University DMLab (Kempton, Sadykov, Kitiashvili and colleagues) with Space Environment Technologies, NASA Ames and NASA Langley; ARMAS experiment of Space Environment Technologies",
+  "related_ids": [
+    "data-bom-world-data-centre-space-weather",
+    "data-aalto-1-radmon-radiation-monitor"
+  ],
+  "schema_summary": "92,476 effective dose rate measurements from 589 flights with NAIRAS model nowcasts, GOES soft X-ray and proton flux, OMNIWeb solar wind, neutron monitor counts, geomagnetic indices and sunspot number, in train, validation and test partitions",
+  "sectors": [
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "Portal page: dataset versions, authors, software licence",
+      "url": "https://dmlab.cs.gsu.edu/rdp/ml-dataset.html"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Full text: ARMAS data, flights, features, partitions, source archives",
+      "url": "https://arxiv.org/html/2602.07108"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Archive directory listing",
+      "url": "https://sol.spacenvironment.net/ARMAS/Archive/"
+    }
+  ],
+  "tags": [
+    "ARMAS",
+    "aviation radiation",
+    "nowcasting",
+    "machine learning ready"
+  ],
+  "temporal_coverage": "June 2013 to December 2023 (589 flights)",
+  "temporal_coverage_years": {
+    "end": 2023,
+    "start": 2013
+  },
+  "temporal_resolution": "Measurements per flight; geospace features at 5-minute or 1-hour cadence",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "ARMAS aviation radiation measurements: ML-ready effective dose rate datasets and Radiation Data Portal",
+  "type": "data"
+}

@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Public data directory",
+      "url": "https://publicdata.caida.org/datasets/as-relationships/"
+    },
+    {
+      "kind": "docs",
+      "label": "README",
+      "url": "https://publicdata.caida.org/datasets/as-relationships/README.txt"
+    },
+    {
+      "kind": "docs",
+      "label": "Acceptable Use Agreement",
+      "url": "https://www.caida.org/about/legal/aua/public_aua/"
+    },
+    {
+      "kind": "paper",
+      "label": "AS Relationships, Customer Cones, and Validation (IMC 2013)",
+      "url": "http://www.caida.org/publications/papers/2013/asrank/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "interdependencies"
+  ],
+  "data_kind": [
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "caida as relationships dataset",
+    "url": "https://caida.org/catalog/datasets/as-relationships"
+  },
+  "description": "The CAIDA AS Relationships Dataset gives inferred business relationships between pairs of autonomous systems (ASes), the networks that make up the internet: whether one is the transit provider of the other or whether they peer. It is produced by CAIDA at the University of California San Diego, because relationships determine routing policies and so constrain the paths traffic can take, which matters for robustness, traffic engineering and realistic simulation of interdomain routing. The serial-1 series infers relationships from public BGP data with the method of the IMC 2013 paper 'AS Relationships, Customer Cones, and Validation' and also provides each AS's provider-peer customer cone and the BGP paths used; serial-2 adds links inferred from Ark traceroutes and multilateral peering at exchanges. Coverage is the global AS-level internet; serial-1 files run monthly from January 1998 and serial-2 from December 2015, with the September 2026 files posted on 5 September 2026, plus an IPv6 'stable' series. Files are bzip2-compressed text (one AS pair and relationship code per line) on publicdata.caida.org, free to download without an account. Use is governed by CAIDA's Acceptable Use Agreement for publicly accessible datasets, which requires citation and notifying CAIDA of publications. Caveats: relationships are inferred, not reported, and some complex or hybrid relationships are simplified; the 2020-02 and 2020-03 files were withdrawn because of errors. Simulation uses: constructing policy-compliant AS graphs for network flow, cascading failure and resilience analysis of interdomain routing. Related records: CAIDA's Internet Topology Data Kit, PeeringDB and BGP collectors such as RouteViews and RIPE RIS.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.internet_exchange:system_description",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "plain_text"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.caida.org/catalog/datasets/as-relationships/",
+  "id": "data-caida-as-relationships",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-05",
+  "licence": "CAIDA Acceptable Use Agreement for publicly accessible datasets",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "CAIDA AS Relationships Dataset",
+  "notes": "2020-02 and 2020-03 files withdrawn by CAIDA because of calculation errors.",
+  "provider": "CAIDA (Center for Applied Internet Data Analysis, UC San Diego)",
+  "related_ids": [
+    "data-caida-internet-topology-data-kit",
+    "data-peeringdb"
+  ],
+  "schema_summary": "<provider-as>|<customer-as>|-1 or <peer-as>|<peer-as>|0; serial-2 adds source (bgp, mlp); customer cone files",
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose and uses of AS relationships; customer cone definition",
+      "url": "https://www.caida.org/catalog/datasets/as-relationships/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "serial-1 and serial-2 methods; 2020-02/03 withdrawn; AUA and citation",
+      "url": "https://publicdata.caida.org/datasets/as-relationships/README.txt"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Files from 19980101 to 20260901 (posted 2026-09-05)",
+      "url": "https://publicdata.caida.org/datasets/as-relationships/serial-1/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Files from 20151201 to 20260901",
+      "url": "https://publicdata.caida.org/datasets/as-relationships/serial-2/"
+    }
+  ],
+  "tags": [
+    "autonomous systems",
+    "AS relationships",
+    "BGP",
+    "customer cone",
+    "AS topology"
+  ],
+  "temporal_coverage": "serial-1 monthly from 1998-01; serial-2 from 2015-12",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1998
+  },
+  "temporal_resolution": "Monthly",
+  "temporal_resolution_class": "monthly",
+  "title_en": "CAIDA AS Relationships Dataset",
+  "type": "data",
+  "update_frequency": "monthly"
+}

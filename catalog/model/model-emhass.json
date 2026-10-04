@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/davidusb-geek/emhass"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/davidusb-geek/emhass/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "emhass residential energy optimisation",
+    "repo": "github.com/davidusb-geek/emhass",
+    "url": "https://github.com/davidusb-geek/emhass"
+  },
+  "description": "EMHASS is a Python energy-management model maintained by David Hernandez Torres and contributors for residential households. It uses linear programming to schedule flexible loads, solar generation and battery storage against electricity prices and user settings. Home Assistant integration connects the optimisation to household time series, while linked guides document installation, usage and automation. Outputs are daily device schedules that can be inspected or used by a separately configured control system. Coverage is global and household-specific, with time resolution and planning horizon chosen through configuration, not a common observation dataset. Public source and package documentation are free under MIT. A limitation is that schedules depend on forecast quality, device constraints and household configuration; the README does not establish realised savings or safe control for every device. The resource can support demand-response and storage-operation experiments, complementing power-system models such as PyPSA (model-pypsa). The review concerns the reusable optimisation code and its documented interface. No home system was connected, device controlled or model run performed.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "davidusb-geek/emhass linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/davidusb-geek/emhass",
+  "id": "model-emhass",
+  "inputs": [
+    "Household electricity and PV series",
+    "Prices",
+    "Battery and flexible-load settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-27",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "EMHASS residential energy optimisation",
+  "notes": "G7 G7-0418. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Optimised device schedules"
+  ],
+  "provider": "David Hernandez Torres and EMHASS contributors",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/davidusb-geek/emhass",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for davidusb-geek/emhass: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/davidusb-geek/emhass"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/davidusb-geek/emhass/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Optimisation model for electricity",
+  "type": "model"
+}

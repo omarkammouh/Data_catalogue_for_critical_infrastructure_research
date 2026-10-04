@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "C-BGP site",
+      "url": "https://c-bgp.sourceforge.net/"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub (lvanbever)",
+      "url": "https://github.com/lvanbever/cbgp"
+    },
+    {
+      "kind": "paper",
+      "label": "TOTEM workshop slides",
+      "url": "https://totem.info.ucl.ac.be/presentations/workshop_20060328/C-BGP.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Quoitin B., Uhlig S. (2005) Modeling the routing of an Autonomous System with C-BGP. IEEE Network 19(6).",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "c bgp bgp routing solver",
+    "repo": "github.com/lvanbever/cbgp",
+    "url": "https://c-bgp.sourceforge.net"
+  },
+  "description": "C-BGP is an efficient solver for the Border Gateway Protocol (BGP), the protocol used to exchange routing information between networks in the Internet. It computes the outcome of the BGP decision process in networks of many routers, taking into account router configurations, externally received BGP routes and the network topology, and supports the complete decision process, import and export filters, route reflection and experimental attributes such as redistribution communities, configured through a Cisco-like command-line interface. It was written by Bruno Quoitin at the IP Networking Lab of Université catholique de Louvain in Belgium for research on interdomain routing and for ISP operators who want to assess the effect of logical and topological changes on their routing tables. Coverage: from single ISP networks to Internet-scale AS-level topologies loaded by the user. Format and access: C source on SourceForge and GitHub mirrors, built on Linux; free of charge under the GNU GPL (some libraries LGPL) for research and education. Caveats: development largely stopped in the 2010s; it computes steady-state routing, not packet timing; realistic inputs require BGP feeds and topologies. Simulation uses: network flow and resilience analysis of Internet routing, cascading effects of link or peering failures, and what-if planning for operators. Related records: CAIDA AS relationships, RIPE RIS and RouteViews give inputs, and BGPStream processes the same BGP data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for model:digital.internet_exchange:network",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "C-BGP BGP routing solver Bruno Quoitin",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://c-bgp.sourceforge.net/",
+  "id": "model-c-bgp",
+  "inputs": [
+    "router-level or AS-level topology",
+    "BGP configurations and policies",
+    "external BGP routes (MRT dumps)"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2013-09-15",
+  "licence": "GPL-3.0 (COPYING in GitHub mirror; spec file says GPL/LGPL)",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://c-bgp.sourceforge.net/"
+    ]
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "network"
+  ],
+  "name": "C-BGP BGP routing solver",
+  "notes": "c-bgp.sourceforge.net and sourceforge.net answered 403 to the shell on 2026-09-26; description from search snippets and the GitHub mirror (COPYING, cbgp.spec). Citation from recall.",
+  "outputs": [
+    "converged BGP routing tables",
+    "paths and reachability"
+  ],
+  "provider": "Bruno Quoitin (UCLouvain, later University of Mons); community forks",
+  "related_ids": [
+    "data-caida-as-relationships",
+    "data-ripe-ris",
+    "data-routeviews",
+    "model-bgpy"
+  ],
+  "repository": "https://github.com/lvanbever/cbgp",
+  "runs_on": [],
+  "sectors": [
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "COPYING and spec file",
+      "url": "https://github.com/lvanbever/cbgp"
+    }
+  ],
+  "tags": [
+    "BGP",
+    "interdomain routing",
+    "routing solver",
+    "what-if analysis"
+  ],
+  "title_en": "C-BGP border gateway protocol solver",
+  "type": "model",
+  "validated_on": []
+}

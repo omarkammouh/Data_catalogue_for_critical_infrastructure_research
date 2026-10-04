@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/djgroen/flee"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://flee.readthedocs.io/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Flee documentation, Literature / cite us (https://flee.readthedocs.io/)",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "flee",
+    "repo": "github.com/djgroen/flee",
+    "url": "https://flee.readthedocs.io"
+  },
+  "description": "Flee is an agent-based modelling toolkit for simulating the movement of individuals across geographical locations, used mainly to forecast the movements of forcibly displaced persons fleeing conflict towards towns and refugee camps. Agents move over a location graph of conflict zones, towns and camps connected by routes of known length, following movement rules that respond to conflict events, distance and camp capacity; extensions add food security from IPC data, weather coupling and multiscale coupling of micro and macro models. Derek Groen's group at Brunel University London develops it, with funding from the EU Horizon 2020 projects HiDALGO and VECMA, and its publications validate it against historical refugee arrivals. Coverage is any region for which a location graph and conflict data are built; resolution is the individual agent and one day. It is Python code on GitHub (release tags up to v3.1, v3.2 beta) with MPI parallelism and the FabFlee plugin for automated input construction and remote execution on supercomputers. Licence: BSD-style (Brunel University London), free. Caveats: building a location graph and calibrating movement rules for a new conflict is substantial work, and forecasts depend on conflict scenarios. Simulation uses: agent-based forecasting of displacement for emergency response planning, including the capacity of camps and of the food, health and shelter services that receive displaced people. Related records: none catalogued yet; IPC food security data is listed in the register.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "agent-based forced displacement model (register services-flee)",
+      "route": "R40",
+      "source": "assistant recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry Flee",
+      "route": "R06",
+      "source": "services-flee (register)"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "multi_hazard_climate_change"
+  ],
+  "homepage": "https://flee.readthedocs.io/",
+  "id": "model-flee",
+  "inputs": [
+    "Location graph of conflict zones, towns and camps with route lengths",
+    "Conflict event data",
+    "Camp capacities",
+    "Simulation settings (movement rules)",
+    "Optionally IPC food security data and weather"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-25",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "network"
+  ],
+  "name": "Flee",
+  "outputs": [
+    "Numbers of displaced persons per location over time",
+    "Camp arrivals"
+  ],
+  "provider": "Derek Groen and contributors, Brunel University London",
+  "related_ids": [],
+  "repository": "https://github.com/djgroen/flee",
+  "runs_on": [],
+  "sectors": [
+    "services.emergency_services",
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Agent-based toolkit for movement of forcibly displaced persons; parallel MPI tests; HiDALGO and VECMA funding",
+      "url": "https://raw.githubusercontent.com/djgroen/flee/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Documentation index: camp capacity, location graphs, FabFlee, IPC food security data, weather coupling, multiscale",
+      "url": "https://flee.readthedocs.io/en/latest/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD-style licence, copyright 2015-2017 Brunel University London",
+      "url": "https://raw.githubusercontent.com/djgroen/flee/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git ls-remote: tags up to v3.1 and v3.2b",
+      "url": "https://github.com/djgroen/flee"
+    }
+  ],
+  "tags": [
+    "forced displacement",
+    "refugees",
+    "agent-based",
+    "camp capacity",
+    "FabFlee",
+    "HiDALGO",
+    "VECMA"
+  ],
+  "title_en": "Agent-based modelling toolkit for simulating movement of individuals",
+  "type": "model",
+  "validated_on": [
+    "Historical refugee arrivals in conflict cases documented in the Flee publications"
+  ]
+}

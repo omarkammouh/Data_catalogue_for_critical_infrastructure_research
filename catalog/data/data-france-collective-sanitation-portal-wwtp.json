@@ -1,0 +1,137 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Export of wastewater treatment plants (CSV or GeoJSON, by year, basin, region, department and size band)",
+      "url": "https://assainissement.developpement-durable.gouv.fr/pages/data/basededonneesteu.php"
+    },
+    {
+      "kind": "api",
+      "label": "SANDRE WFS download service, layer sa:SysTraitementEauxUsees",
+      "url": "https://services.sandre.eaufrance.fr/geo/odp?REQUEST=getCapabilities&service=WFS&VERSION=2.0.0"
+    },
+    {
+      "kind": "api",
+      "label": "SANDRE WMS viewing service",
+      "url": "http://services.sandre.eaufrance.fr/geo/odp"
+    },
+    {
+      "kind": "docs",
+      "label": "Portal site map and statistics",
+      "url": "https://www2.assainissement.developpement-durable.gouv.fr/pages/data/plansite.php"
+    }
+  ],
+  "access_note": "The portal says reuse of the data files is subject to the legal notice of the sanitation domain; site texts are under Etalab Open Licence 2.0 unless stated otherwise.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "system_description",
+    "service_performance",
+    "governance_regulation",
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "portail de l assainissement collectif stations de traitement des eaux usees roseau eru database france",
+    "url": "https://assainissement.developpement-durable.gouv.fr/pages/data/basededonnee.php"
+  },
+  "description": "The French collective sanitation portal publishes the national database of urban wastewater systems (the ERU database, filled in by the water police services through the ROSEAU application) for metropolitan France and the overseas departments. The Ministry of Ecological Transition's water and biodiversity directorate runs it to report on compliance of treatment plants and collection systems with the Urban Waste Water Directive and national rules. Exports list each wastewater treatment plant and its agglomeration with capacity, size band, location by basin, region and department, and compliance for equipment, performance and dry-weather collection, for data years 2015 to 2024; further exports cover storm overflows and spread sewage sludge. Data can be downloaded free as pipe-delimited CSV or GeoJSON, or read through SANDRE WFS and WMS services (layer sa:SysTraitementEauxUsees). Licence: site texts are under Etalab Open Licence 2.0, and reuse of the data is subject to the portal's legal notice. Caveats: the ministry warns that some information is still being acquired, plants in agglomerations under 2,000 population equivalent are much less reliable, and indicators changed in 2023 from national to full regulatory compliance, so series are not directly comparable. Simulation uses: siting and sizing treatment assets, linking plants to catchments and flood hazards, and sewer network and capacity models. Related records: the European UWWTD treatment plant data (data-uwwtd-treatment-plants), HydroWASTE (data-hydrowaste) and England's storm overflow returns (data-ea-edm-storm-overflows-annual-returns).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "portail assainissement collectif ROSEAU données stations de traitement des eaux usées téléchargement",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geojson",
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://assainissement.developpement-durable.gouv.fr/pages/data/basededonnee.php",
+  "id": "data-france-collective-sanitation-portal-wwtp",
+  "languages": [
+    "fr"
+  ],
+  "licence": "Etalab-2.0 for site texts; data reuse subject to the portal's legal notice",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Portail de l'assainissement collectif: stations de traitement des eaux usées (ROSEAU / ERU database, France)",
+  "notes": "ROSEAU as the collection tool is from the search result summary and the portal's history; the pages read name the ERU database. data.gouv.fr could not be reached to check a mirror.",
+  "provider": "Ministère de la Transition écologique, Direction de l'eau et de la biodiversité (France)",
+  "regions": [
+    "metropolitan France",
+    "overseas departments"
+  ],
+  "related_ids": [
+    "data-uwwtd-treatment-plants",
+    "data-hydrowaste",
+    "data-ea-edm-storm-overflows-annual-returns",
+    "data-sandre-autosurveillance-assainissement-exchange-scenario"
+  ],
+  "schema_summary": "Per treatment plant and agglomeration: capacity in population equivalent, size band, basin, region and department, and compliance status for equipment, performance and dry-weather collection under the Urban Waste Water Directive; separate exports for storm overflows and spread sludge",
+  "sectors": [
+    "water.wastewater",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "download page: plants, storm overflows, spread sludge; CSV and GeoJSON; SANDRE WMS and WFS layer; under-2,000 EH reliability warning; ERU database; Etalab 2.0 for site texts",
+      "url": "https://assainissement.developpement-durable.gouv.fr/pages/data/basededonnee.php"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "export form: years 2015-2024, filters by compliance, basin, region, department, size band; pipe delimiter; 2023 indicator change",
+      "url": "https://assainissement.developpement-durable.gouv.fr/pages/data/basededonneesteu.php"
+    }
+  ],
+  "spatial_resolution": "individual treatment plants and sanitation agglomerations",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "France",
+    "wastewater treatment plants",
+    "collective sanitation",
+    "ERU",
+    "ROSEAU",
+    "Urban Waste Water Directive",
+    "compliance",
+    "storm overflows",
+    "sewage sludge",
+    "SANDRE"
+  ],
+  "temporal_coverage": "annual data years 2015-2024 selectable",
+  "temporal_coverage_years": {
+    "end": 2024,
+    "start": 2015
+  },
+  "temporal_resolution": "annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Collective sanitation portal: wastewater treatment stations (ROSEAU / ERU database, France)",
+  "type": "data",
+  "update_frequency": "annual"
+}

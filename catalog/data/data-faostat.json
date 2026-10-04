@@ -1,0 +1,146 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Bulk download catalogue (datasets_E.json)",
+      "url": "https://bulks-faostat.fao.org/production/datasets_E.json"
+    },
+    {
+      "kind": "portal",
+      "label": "FAOSTAT home",
+      "url": "https://www.fao.org/faostat/en/"
+    },
+    {
+      "kind": "portal",
+      "label": "FAOSTAT data",
+      "url": "https://www.fao.org/faostat/en/#data"
+    },
+    {
+      "kind": "portal",
+      "label": "FAO data catalogue: trade",
+      "url": "https://data.apps.fao.org/catalog/dataset/faostat-trade"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "economic_financial",
+    "cross_border_flows",
+    "supply_chains_logistics"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "faostat food and agriculture statistics",
+    "url": "https://fao.org/faostat/en"
+  },
+  "description": "FAOSTAT is the statistics database of the Food and Agriculture Organization of the United Nations, compiled by FAO's Statistics Division from national reports and estimates. It gives free access to food and agriculture data for over 245 countries and territories and all FAO regional groupings, from 1961 to the most recent year available, and presents food security in the context of the 2030 Agenda. Domains include agricultural production, crops and livestock trade, food security indicators, and consumer and producer prices. For food supply the key domains are the food balance sheets, which give for each country, commodity and year the production, imports, exports, stock changes and use as food, feed, seed, losses and processing with per capita supply; the supply utilization accounts behind them; and the detailed trade matrix of bilateral import and export quantities and values between reporting and partner countries by commodity. Data are free through the web interface, an API Developer Portal with documentation and sample queries, and zipped CSV bulk files (69 bulk datasets; the trade matrix alone is about 411 MB), under a Creative Commons Attribution licence as the FAO data catalogue lists it for the trade domain. Caveats: values are national aggregates with no sub-national detail, many are FAO estimates or imputations, bilateral mirror flows disagree, and food balances follow a new methodology from 2010, which limits long comparisons. Simulation uses: national production, trade and food supply series for food-system shocks and climate impact scenarios, global food trade networks for shock propagation and cascading failure models, and import dependence for food supply resilience. Related records include USDA NASS Quick Stats, EarthStat, the AMIS Market Monitor and the WFP global food prices.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: agricultural statistics, crop maps and farm structure",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "FAOSTAT detailed trade matrix food balances",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "api",
+    "csv"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.fao.org/faostat/en/",
+  "id": "data-faostat",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "FAOSTAT food and agriculture statistics",
+  "provider": "Food and Agriculture Organization of the United Nations (FAO), Statistics Division",
+  "related_ids": [
+    "data-usda-nass-quick-stats",
+    "data-earthstat",
+    "data-amis-market-monitor",
+    "data-wfp-global-food-prices",
+    "data-usda-nass-cold-storage",
+    "data-fao-food-loss-and-waste-database"
+  ],
+  "schema_summary": "indicators by country, commodity and year; Food Balances (FBS, from 2010, and historic FBSH): per country, item and year production, imports, exports, stock variation, food, feed, losses, per capita supply; Supply Utilization Accounts (SCL); Trade: detailed trade matrix (TM) of bilateral import and export quantities and values by reporter, partner and item; crops and livestock trade (TCL), trade indices; Food Security indicators (FS); consumer and producer prices",
+  "sectors": [
+    "industry.agriculture",
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "climate_adaptation",
+    "network_flow",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "coverage, years, API portal read 2026-09-26 (rendered with Chromium)",
+      "url": "https://www.fao.org/faostat/en/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "69 bulk datasets with update dates: FBS 2025-10-28, SCL 2025-11-01, TM 2025-12-23 (411 MB), TCL 2026-07-24, FS 2026-07-21",
+      "url": "https://bulks-faostat.fao.org/production/datasets_E.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "FAO data catalogue entry for FAOSTAT trade, licence cc-by",
+      "url": "https://data.apps.fao.org/catalog/api/3/action/package_show?id=faostat-trade"
+    }
+  ],
+  "spatial_resolution": "country and region (bilateral country pairs for the trade matrix)",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "agriculture statistics",
+    "FAO",
+    "food security",
+    "food balance sheets",
+    "trade matrix",
+    "bilateral trade",
+    "food supply",
+    "imports",
+    "stocks"
+  ],
+  "temporal_coverage": "1961 to latest year; food balances on the new methodology from 2010",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1961
+  },
+  "temporal_resolution": "annual (prices monthly)",
+  "temporal_resolution_class": "monthly",
+  "title_en": "FAOSTAT food and agriculture statistics",
+  "type": "data",
+  "update_frequency": "irregular"
+}

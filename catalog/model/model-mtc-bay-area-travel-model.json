@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Travel Model One",
+      "url": "https://github.com/BayAreaMetro/travel-model-one"
+    },
+    {
+      "kind": "repo",
+      "label": "Travel Model Two",
+      "url": "https://github.com/BayAreaMetro/travel-model-two"
+    },
+    {
+      "kind": "portal",
+      "label": "MTC home page",
+      "url": "http://bayareametro.gov/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "mtc travel model one and two regional weekday travel demand model of the san francisco bay area",
+    "repo": "github.com/bayareametro/travel-model-one",
+    "url": "https://github.com/BayAreaMetro/travel-model-one"
+  },
+  "description": "Travel Model One is the regional travel demand model that the Metropolitan Transportation Commission (MTC), the transport planning agency for the nine-county San Francisco Bay Area, uses to simulate typical weekday travel for its long-range plans such as Plan Bay Area. MTC publishes the software, scripts and detailed model results so others can run the model or reuse its outputs. Coverage: the nine Bay Area counties, with versions 0.3, 0.4, 0.5, 0.6, 1.5 and 1.6 kept in separate branches (1.6 is current) and a successor, Travel Model Two, developed in a separate repository with the Python tool tm2py. The model represents households and their daily travel choices and assigns the resulting trips to the highway and transit networks, producing flows, travel times and accessibility for scenario years. Format and access: scripts, control files and documentation on GitHub; published results and inputs linked from the repository; free, though some model steps require licensed commercial software. Licence: no licence file is published; MTC's disclaimer says users are responsible for their own conclusions and may not imply MTC review. Caveats: running the model needs substantial computing and set-up, and its behaviour is calibrated to Bay Area survey data. Simulation uses: network flow and capacity planning studies of Bay Area roads and transit, and demand inputs for resilience scenarios such as earthquake or sea level disruptions. Related records: ActivitySim (model-activitysim) is the open activity-based framework shared by US regional agencies, and the HayWired lifeline exposure data (data-haywired-lifeline-collocation-multi-hazard-exposure) covers the same region's infrastructure.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-bay-area-metro: provider pages read (round 2 register piece)",
+      "route": "R11",
+      "source": "transport-bay-area-metro"
+    }
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://github.com/BayAreaMetro/travel-model-one",
+  "id": "model-mtc-bay-area-travel-model",
+  "inputs": [
+    "household and land use forecasts by zone",
+    "highway and transit networks",
+    "scenario policies and projects"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-04",
+  "licence": "Not stated (no licence file); MTC disclaimer applies",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "network"
+  ],
+  "name": "MTC Travel Model One and Two: regional weekday travel demand model of the San Francisco Bay Area",
+  "outputs": [
+    "trips by mode and time of day",
+    "link flows and travel times",
+    "accessibility and summary metrics"
+  ],
+  "provider": "Metropolitan Transportation Commission (MTC), San Francisco Bay Area",
+  "related_ids": [
+    "model-activitysim",
+    "data-haywired-lifeline-collocation-multi-hazard-exposure"
+  ],
+  "repository": "https://github.com/BayAreaMetro/travel-model-one",
+  "sectors": [
+    "transport.road",
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: MTC maintains a simulation model of typical weekday travel for regional planning; software, scripts and detailed results public; versions 0.3 to 1.6 in branches; Travel Model Two in another repository; no LICENSE file; last commit 2026-09-04",
+      "url": "https://raw.githubusercontent.com/BayAreaMetro/travel-model-one/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Travel Model Two repository; no LICENSE file; last commit 2025-09-29 pointing to tm2py-utils",
+      "url": "https://raw.githubusercontent.com/BayAreaMetro/travel-model-two/main/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "MTC is the transportation planning, financing and coordinating agency for the nine-county San Francisco Bay Area",
+      "url": "http://bayareametro.gov/"
+    }
+  ],
+  "tags": [
+    "travel demand model",
+    "San Francisco Bay Area",
+    "regional planning"
+  ],
+  "title_en": "MTC Travel Model One and Two: regional weekday travel demand model of the San Francisco Bay Area",
+  "type": "model"
+}

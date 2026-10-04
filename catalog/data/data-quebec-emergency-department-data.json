@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "CSV (Donnees_cumulatives_Urgence.csv)",
+      "url": "https://www.msss.gouv.qc.ca/professionnels/statistiques/documents/urgences/Donnees_cumulatives_Urgence.csv"
+    },
+    {
+      "kind": "docs",
+      "label": "Variable list and methodological notes (PDF, French)",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/b7e297c3-ff0f-4e11-bc0f-2add3cffdd76/resource/84aa0e43-2890-4ce8-92bb-bfc00ad05456/download/listevariables_notesmetho_urgencecumul_20231221.pdf"
+    },
+    {
+      "kind": "portal",
+      "label": "Données Québec listing",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/fichier-cumulatif-des-donnees-des-urgences"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CA"
+  ],
+  "data_family": [
+    "service_performance",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fichier cumulatif des donnees des urgences quebec emergency department indicators by facility",
+    "url": "https://donneesquebec.ca/recherche/dataset/fichier-cumulatif-des-donnees-des-urgences"
+  },
+  "description": "This file gives emergency department activity and waiting indicators for every hospital emergency department in Quebec, Canada. The producer is the Quebec Ministry of Health and Social Services, which compiles it from the common emergency department database (Banque de données communes des urgences). Coverage is provincial, per facility, with regional and provincial totals, cumulated from 1 April to the latest validated period of the current financial year and for the same period of the four previous years; provincial visits were about 1.36 million in 2022-2023 and 1.32 million in 2023-2024 for the period shown. Each row gives total visits, patients aged 75 and over, mental health patients, mean length of stay and delay before physician care, split between ambulatory and stretcher patients, with counts of stretcher stays over 24 and 48 hours. The file is available as a single CSV download from Données Québec, updated each financial period, free under the Creative Commons Attribution 4.0 licence, with a French variable list and methodological notes. Caveats: figures are cumulative, not daily, the documentation is in French only, and the real-time occupancy shown on the ministry's website is not part of this file. Simulation uses: calibrating emergency department demand and stretcher capacity, identifying overloaded departments that cannot absorb surges, and regional hospital resilience assessments. Related records: the California hospital utilisation data (data-hcai-hospital-utilization-and-financial) give comparable facility figures in the United States.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "shinkenplugins.plugins.emergency_rooms_quebec",
+      "route": "R05",
+      "source": "pypi"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "urgences",
+      "route": "R02",
+      "source": "services-donnees-quebec"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "regional",
+  "hazards": [],
+  "homepage": "https://www.donneesquebec.ca/recherche/dataset/fichier-cumulatif-des-donnees-des-urgences",
+  "id": "data-quebec-emergency-department-data",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-13",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Fichier cumulatif des données des urgences (Quebec emergency department indicators by facility)",
+  "provider": "Ministère de la Santé et des Services sociaux du Québec (MSSS)",
+  "related_ids": [
+    "data-hcai-hospital-utilization-and-financial"
+  ],
+  "schema_summary": "One row per financial year, cumulative period and facility (installation) with health region (RSS), establishment and permit number: total visits, patients aged 75 and over, mental health patients, mean length of stay, patients seen and delay to physician care; the same split for ambulatory patients and stretcher patients, with stretcher stays over 24 and 48 hours",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "MSSS; CC BY 4.0; created 2023-12-21, modified 2026-09-13; monthly; indicators from 1 April to the last validated period of the current financial year plus the four previous years, per installation; source Banque de données communes des urgences (BDCU)",
+      "url": "https://www.donneesquebec.ca/recherche/api/3/action/package_show?id=fichier-cumulatif-des-donnees-des-urgences"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "First rows read in memory: header of 27 columns, provincial totals for 2022-2023 (1,364,024 visits) and 2023-2024 (1,316,559 visits)",
+      "url": "https://www.msss.gouv.qc.ca/professionnels/statistiques/documents/urgences/Donnees_cumulatives_Urgence.csv"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Monitoring plugin (2016) checking stretcher occupancy in Quebec hospitals, which led to the MSSS data",
+      "url": "https://pypi.org/pypi/shinkenplugins.plugins.emergency_rooms_quebec/json"
+    }
+  ],
+  "spatial_resolution": "Individual emergency departments (installations), with regional and provincial totals",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "emergency department",
+    "urgences",
+    "stretcher occupancy",
+    "length of stay",
+    "Quebec",
+    "BDCU"
+  ],
+  "temporal_coverage": "Current financial year to date and the same period of the four previous financial years",
+  "temporal_resolution": "Cumulative by financial period",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Fichier cumulatif des données des urgences (Quebec emergency department indicators by facility)",
+  "type": "data",
+  "update_frequency": "monthly"
+}

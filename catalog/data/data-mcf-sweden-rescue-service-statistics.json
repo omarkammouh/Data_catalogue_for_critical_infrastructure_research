@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "PxWeb API",
+      "url": "https://statistik.mcf.se/PXWeb/api/v1/sv/PxData/START"
+    },
+    {
+      "kind": "portal",
+      "label": "Statistikverktyg för bränder och olyckor (PxWeb)",
+      "url": "https://statistik.mcf.se"
+    },
+    {
+      "kind": "docs",
+      "label": "Statistics on rescue service interventions (summary and quality notes)",
+      "url": "https://www.mcf.se/sv/amnesomraden/skydd-mot-olyckor-och-farliga-amnen/stod-till-kommunal-raddningstjanst/statistik-och-larande-fran-olyckor/statistik-raddningstjanstens-insatser/"
+    },
+    {
+      "kind": "portal",
+      "label": "Original landing page",
+      "url": "https://www.mcf.se/sv/verktyg--tjanster/statistikverktyg-for-brander-och-olyckor/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "SE"
+  ],
+  "data_family": [
+    "demand_operation",
+    "historical_events",
+    "health_impacts"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "swedish rescue service statistics mcf formerly msb municipal rescue service call outs by type municipality month weekday and hour since 1998 and fire deaths pxweb and api",
+    "url": "https://mcf.se/sv/verktyg--tjanster/statistikverktyg-for-brander-och-olyckor"
+  },
+  "description": "This statistics service gives the national record of every call-out by Sweden's municipal rescue services, about 110,000 a year, together with fire deaths. It is run by the Swedish civil defence agency MCF, formerly MSB, from the incident reports that each rescue service must file after an intervention. Tables cover all incidents and assignments, split by overall type (accidents, first aid while awaiting an ambulance, help to ambulance or police), by municipality, month, weekday, hour and year from 1998 to 2025, and detailed groups for building and dwelling fires, vehicle and vessel fires, forest and land fires, road traffic accidents and drowning, plus fire deaths by setting. The tables are free in a PxWeb statistics tool and available to download through the PxWeb API as JSON; reuse is allowed with the agency named as source. Caveats: data are aggregated counts, not incident-level records, the table groups read do not include response times, and the agency publishes notes on the quality of the intervention statistics that should be read first. Simulation uses: setting demand for rescue service capacity models by hour and municipality, and measuring surges from forest fires, storms or floods. Related records: the Nordic Fire Statistics (data-nordic-fire-statistics) compare Sweden with its neighbours, and the Scottish fire statistics (data-sfrs-fire-stations-and-incident-statistics) are a similar national source.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Myndigheten för civilt försvar (formerly MSB), statistics (SE, emergency_service)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "json",
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "wildfire",
+    "flood",
+    "storm_wind",
+    "technological_failure"
+  ],
+  "homepage": "https://statistik.mcf.se/PXWeb/api/v1/sv/PxData/START",
+  "id": "data-mcf-sweden-rescue-service-statistics",
+  "languages": [
+    "en"
+  ],
+  "licence": "Free reuse with attribution (Källa: Myndigheten för civilt försvar)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Swedish rescue service statistics (MCF, formerly MSB): municipal rescue service call-outs by type, municipality, month, weekday and hour since 1998, and fire deaths (PxWeb and API)",
+  "provider": "Myndigheten för civilt försvar (MCF, formerly MSB), Sweden",
+  "related_ids": [
+    "data-nordic-fire-statistics",
+    "data-sfrs-fire-stations-and-incident-statistics"
+  ],
+  "schema_summary": "Table groups: A1-A4 fire deaths (total, in dwellings, in other buildings, outside buildings); B1 all incidents and assignments (B10 number of incidents by overall assignment type, municipality, month, weekday, hour and year 1998-2025; B11-B14 accidents by event type, activity or dwelling type and place, per 1,000 inhabitants, by damage outcome, and incidents without risk of damage); B2 building fires; B3 dwelling fires; B4 vehicle and vessel fires; B5 forest and land fires; B6 road traffic accidents; B7 drowning",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Statistics tool for rescue service interventions and fire deaths; tables, charts and texts may be copied and spread with source attribution; municipal rescue services document about 100,000 interventions per year in incident reports collected under MSBFS 2021:5; last reviewed 22 April 2026",
+      "url": "https://www.mcf.se/sv/verktyg--tjanster/statistikverktyg-for-brander-och-olyckor/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "About 115,000 incidents and assignments a year; 2025: about 109,300, of which 89,000 occurred or suspected accidents (46,000 accidents and near misses), about 11,600 first aid while awaiting ambulance (IVPA) and 8,600 other assignments; sections on building, dwelling, vehicle, forest fires, road accidents and drowning",
+      "url": "https://www.mcf.se/sv/amnesomraden/skydd-mot-olyckor-och-farliga-amnen/stod-till-kommunal-raddningstjanst/statistik-och-larande-fran-olyckor/statistik-raddningstjanstens-insatser/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "PxWeb API answers; groups A (fire deaths A1-A4) and B (B1-B7); B10 metadata lists variables uppdragstypId and kommun (municipality codes), with month, weekday, hour and year 1998-2025",
+      "url": "https://statistik.mcf.se/PXWeb/api/v1/sv/PxData/START"
+    }
+  ],
+  "spatial_resolution": "Municipality",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "fire and rescue",
+    "call-outs",
+    "fire deaths",
+    "forest fires",
+    "Sweden",
+    "PxWeb"
+  ],
+  "temporal_coverage": "1998 to 2025",
+  "temporal_resolution": "Hour of day, weekday, month and year",
+  "temporal_resolution_class": "hourly",
+  "title_en": "Swedish rescue service statistics (MCF, formerly MSB): municipal rescue service call-outs by type, municipality, month, weekday and hour since 1998, and fire deaths (PxWeb and API)",
+  "type": "data",
+  "update_frequency": "annual"
+}

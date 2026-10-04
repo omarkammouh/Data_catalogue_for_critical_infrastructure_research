@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/NREL/virtual-battery-aggregator"
+    },
+    {
+      "kind": "portal",
+      "label": "DOE CODE record",
+      "url": "https://www.osti.gov/doecode/biblio/60841"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "virtual battery aggregator for distributed energy resource management systems",
+    "repo": "github.com/nrel/virtual-battery-aggregator",
+    "url": "https://github.com/NREL/virtual-battery-aggregator"
+  },
+  "description": "The Virtual Battery Aggregator is a Python code base that lets a distributed energy resource management system (DERMS) treat many small batteries as one virtual battery. It was released in 2021 by the National Renewable Energy Laboratory, with Michael Blonsky and Yashen Lin as developers, for the FAST-DERMS project, because grid operators on feeders with many distributed resources need a single aggregated model to plan central controls. The code aggregates a set of resources that can be described by a generalised battery model, builds the virtual battery model, and disaggregates a desired virtual setpoint into power setpoints for each device; functions cover initialisation, aggregation, dispatch and parameter updates. It is designed to plug into co-simulation frameworks with building, DER and distribution models, and an example runs it with OCHRE battery models. Coverage is not tied to a place. The code is accessible on GitHub under the BSD 3-Clause licence at no cost and installs with pip. Caveats: the last commit was in January 2022, there are no tagged releases, and it holds algorithms only, with no grid data. Simulation uses are testing DER aggregation and dispatch strategies in distribution co-simulation. Related records: platform-opendss-wrapper comes from the same NREL team.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid simulation model",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/NREL/virtual-battery-aggregator",
+  "id": "model-virtual-battery-aggregator",
+  "inputs": [
+    "Parameters of distributed batteries or battery-like DERs",
+    "Virtual power setpoint from central grid control"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-01-19",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "Virtual Battery Aggregator for distributed energy resource management systems",
+  "outputs": [
+    "Aggregated virtual battery model",
+    "Power setpoints for individual DERs"
+  ],
+  "provider": "National Renewable Energy Laboratory (Michael Blonsky and Yashen Lin)",
+  "related_ids": [
+    "platform-opendss-wrapper"
+  ],
+  "repository": "https://github.com/NREL/virtual-battery-aggregator",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "FAST-DERMS, OCHRE, functions, pip, BSD-3",
+      "url": "https://raw.githubusercontent.com/NREL/virtual-battery-aggregator/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract, creators, NREL",
+      "url": "https://api.datacite.org/dois/10.11578/dc.20210712.1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Open source, release 2021-06-23, GitHub link",
+      "url": "https://www.osti.gov/doecode/biblio/60841"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Head commit 2022-01-19",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/NREL/virtual-battery-aggregator/visit/latest/"
+    }
+  ],
+  "tags": [
+    "DERMS",
+    "virtual battery",
+    "aggregation",
+    "distributed energy resources",
+    "NREL",
+    "FAST-DERMS"
+  ],
+  "title_en": "Virtual Battery Aggregator for distributed energy resource management systems",
+  "type": "model",
+  "validated_on": []
+}

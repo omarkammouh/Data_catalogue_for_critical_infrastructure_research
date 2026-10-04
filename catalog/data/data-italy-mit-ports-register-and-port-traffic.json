@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Anagrafica dei porti (CSV)",
+      "url": "https://dati.mit.gov.it/catalog/dataset/porti"
+    },
+    {
+      "kind": "portal",
+      "label": "Traffico merci e passeggeri nei porti (CSV)",
+      "url": "https://dati.mit.gov.it/catalog/dataset/traffico-merci-passeggeri-porti"
+    },
+    {
+      "kind": "portal",
+      "label": "dati.gov.it entry",
+      "url": "https://www.dati.gov.it/view-dataset/dataset?id=72d632e5-56d9-4d00-810e-89c24002943f"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IT"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "italian ports register 351 ports with un locode and coordinates and cargo and passenger traffic in the main ports 2014 2017 ministry of infrastructure and transport",
+    "url": "https://dati.mit.gov.it/catalog/dataset/porti"
+  },
+  "description": "Two open datasets from the Italian Ministry of Infrastructure and Transport describe the country's seaports. Contents: a register of 351 ports with an internal id, UN/LOCODE, name, locality, type of administration (national or territorial), flags for ports of national importance by administrative competence and of national economic relevance, special cases, and latitude and longitude for 220 of them; it covers the 58 ports of national importance plus other ports that handle ships of 300 gross tonnage or more and report arrivals and departures to the EU SafeSeaNet system. A companion table gives, per main port and year from 2014 to 2017, cargo by type (containers, liquid bulk, dry bulk, ro-ro and other), goods loaded and unloaded, and passengers embarked and disembarked, with coordinates. Producer: the ministry, from information supplied by the Harbour Master offices (Capitanerie di Porto) and the Port System Authorities. Coverage: Italy's coastal and island ports. Format and access: CSV files with JSON and PDF metadata on the ministry's CKAN catalogue, harvested by dati.gov.it. Licence: CC BY 4.0. Free. Caveats: the register's files date from 2022, a third of ports lack coordinates, the traffic table stops in 2017 and some cells are marked not available. Simulation uses: port nodes and throughput for maritime freight and ferry network models, port disruption and coastal hazard exposure studies, and linking ports to road and rail networks. Related records: the ANAS road graph (data-anas-italy-road-graph) and the ministry's open data portal (data-italy-mit-open-data).",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source it-portal-dati-gov-it: provider pages read (round 2 register piece)",
+      "route": "R02",
+      "source": "it-portal-dati-gov-it"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://dati.mit.gov.it/catalog/dataset/porti",
+  "id": "data-italy-mit-ports-register-and-port-traffic",
+  "languages": [
+    "it"
+  ],
+  "last_updated": "2022-03-04",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://dati.mit.gov.it/catalog/dataset/porti"
+    ]
+  },
+  "maturity": "stale",
+  "name": "Italian ports register (351 ports with UN/LOCODE and coordinates) and cargo and passenger traffic in the main ports, 2014-2017 (Ministry of Infrastructure and Transport)",
+  "provider": "Ministero delle Infrastrutture e dei Trasporti (Italian Ministry of Infrastructure and Transport), with data from the Harbour Master offices and Port System Authorities",
+  "related_ids": [
+    "data-anas-italy-road-graph",
+    "data-italy-mit-open-data"
+  ],
+  "sectors": [
+    "transport.maritime_ports",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "description: 351 ports, 58 of national importance, SafeSeaNet criterion; CC BY 4.0",
+      "url": "https://www.dati.gov.it/opendata/api/3/action/package_show?id=porti"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "CSV read: 351 rows, 220 with coordinates, 55 flagged rilievo nazionale",
+      "url": "https://dati.mit.gov.it/catalog/dataset/porti"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "traffic CSV 2014-2017 by cargo type and passengers",
+      "url": "https://www.dati.gov.it/opendata/api/3/action/package_show?id=traffico-merci-passeggeri-porti"
+    }
+  ],
+  "tags": [
+    "Italy",
+    "ports",
+    "UN/LOCODE",
+    "port traffic",
+    "SafeSeaNet"
+  ],
+  "title_en": "Italian ports register (351 ports with UN/LOCODE and coordinates) and cargo and passenger traffic in the main ports, 2014-2017 (Ministry of Infrastructure and Transport)",
+  "type": "data"
+}

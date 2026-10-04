@@ -1,0 +1,100 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "DT-GM repository",
+      "url": "https://github.com/SiLab-group/DigitalTwin_GenevaMotorway"
+    },
+    {
+      "kind": "paper",
+      "label": "Kušić, Schumann and Ivanjko 2023",
+      "url": "https://doi.org/10.1016/j.aei.2022.101858"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "CH"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "doi": "10.1016/j.aei.2022.101858",
+    "name": "dt gm sumo digital twin of the geneva motorway fed by real time swiss traffic counter data",
+    "repo": "github.com/silab-group/digitaltwin_genevamotorway",
+    "url": "https://github.com/SiLab-group/DigitalTwin_GenevaMotorway"
+  },
+  "description": "DT-GM is a digital twin of a motorway section around Geneva built in the SUMO traffic simulator, in which minute-by-minute flows from roadside traffic counters drive the simulation in real time. It was developed by Krešimir Kušić and René Schumann at the SiLab group with Edouard Ivanjko of the University of Zagreb, and published in Advanced Engineering Informatics (2023) and at the ELMAR 2022 symposium. Coverage: the Geneva motorway in Switzerland. The repository provides the SUMO network and scenario files, Python code that pulls live counter data from the Federal Roads Office (FEDRO) through the Open Data Platform Mobility Switzerland, stores it in a local SQL database and injects it through SUMO calibrators, and a second scenario that generates dynamic flows from a real workday dataset with minute resolution; outputs compare measured and simulated flows in spreadsheets. Format and access: SUMO XML files, Python scripts and Excel outputs on GitHub, free; live data need a free registration on the Swiss open data platform. Licence: GPL-3.0. Caveats: the calibration depends on the SUMO step length and the EIDM car-following settings described in the README, unrealistic volumes can destabilise the flow model, and the network covers one corridor. Simulation uses: a worked example of a real-time road digital twin for network flow monitoring and capacity planning, and a base for testing incident and resilience scenarios on motorways. Related records: SUMO (platform-sumo) runs the model, and opentransportdata.swiss (data-opentransportdata-swiss) supplies the counter data.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-dt-gm-geneva-motorway: provider pages read (round 2 register piece)",
+      "route": "R25",
+      "source": "transport-dt-gm-geneva-motorway"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://github.com/SiLab-group/DigitalTwin_GenevaMotorway",
+  "id": "model-dt-gm-geneva-motorway-digital-twin",
+  "inputs": [
+    "SUMO network of the Geneva motorway",
+    "real-time or recorded minute traffic counts (FEDRO via ODPMS)"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-02-25",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "hybrid"
+  ],
+  "name": "DT-GM: SUMO digital twin of the Geneva motorway fed by real-time Swiss traffic counter data",
+  "outputs": [
+    "simulated flows and speeds",
+    "comparison of measured and simulated flows"
+  ],
+  "provider": "SiLab, HES-SO Valais-Wallis (Krešimir Kušić, René Schumann) with the University of Zagreb (Edouard Ivanjko)",
+  "related_ids": [
+    "platform-sumo",
+    "data-opentransportdata-swiss"
+  ],
+  "repository": "https://github.com/SiLab-group/DigitalTwin_GenevaMotorway",
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: SUMO digital twin of the Geneva motorway; scenario I real-time simulation of minute traffic data from FEDRO via ODPMS (registration needed), SQL database, Python; scenario II dynamic flow generation from workday data; citations Kušić, Schumann, Ivanjko (AEI 2023; ELMAR 2022); GPL-3.0; last commit 2025-02-25",
+      "url": "https://raw.githubusercontent.com/SiLab-group/DigitalTwin_GenevaMotorway/main/README.md"
+    }
+  ],
+  "tags": [
+    "digital twin",
+    "SUMO",
+    "motorway",
+    "real-time"
+  ],
+  "title_en": "DT-GM: SUMO digital twin of the Geneva motorway fed by real-time Swiss traffic counter data",
+  "type": "model"
+}

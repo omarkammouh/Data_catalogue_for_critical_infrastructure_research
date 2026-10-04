@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo record",
+      "url": "https://zenodo.org/records/21941319"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "url": "https://github.com/MostafaGalal1/agriedge"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [],
+  "cost": "free",
+  "data_family": [
+    "cyber_control",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.21941319",
+    "name": "agriedge leakage free precision agriculture iiot intrusion detection benchmark rebuilt from edge iiotset",
+    "repo": "github.com/mostafagalal1/agriedge",
+    "url": "doi:10.5281/zenodo.21941319"
+  },
+  "description": "A benchmark of industrial IoT traffic for precision agriculture, rebuilt from the raw per-device captures of Edge-IIoTset with a single parser. The Zenodo record says the curated Edge-IIoTset subsets carry a serialisation artefact, where missing protocol fields are written as 0 in normal captures and 0.0 in attack captures, so four columns reveal the label on their own; after the rebuild no column separates the classes at better than 0.6179 single-column accuracy. The table has 1,276,122 rows and 53 columns: 49 protocol features stored as text, an attack label (751,559 normal and 524,563 attack rows), 15 attack types, 19 source devices and a source layer (perception, actuation or adversary). It warns that random splits overstate performance, since a random forest falls from 0.9988 to 0.5083 balanced accuracy when the Modbus gateway is held out. Version 1.0.0 was published on 15 August 2026 as a downloadable Parquet file of 38.4 MB with a README, under the MIT licence, with code on GitHub; the source data are free for academic use. Coverage is one testbed. Caveats: derived data, and the upstream licence limits use. For simulation it tests attack detection on farm sensors and actuators before modelling cyber disruption of irrigation or machinery. A related catalogue record is the Farm-Flow AG-IoT intrusion detection dataset.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((crop OR crops OR agricultural OR agriculture OR farm OR farms OR livestock OR cropland) AND (SCADA OR \"industrial control\" OR cyber OR cybersecurity OR ICS OR intrusion))",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "titles.title:((crop OR crops OR agricultural OR agriculture OR farm OR farms OR livestock OR cropland) AND (SCADA OR \"industrial control\" OR cyber OR cybersecurity OR ICS OR intrusion))",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "parquet",
+    "document"
+  ],
+  "geographic_scope": "site",
+  "hazards": [
+    "cyber_attack"
+  ],
+  "homepage": "https://doi.org/10.5281/zenodo.21941319",
+  "id": "data-agriedge-precision-agriculture-iiot-intrusion-benchmark",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-15",
+  "licence": "MIT (benchmark file); upstream Edge-IIoTset free for academic use",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "AgriEdge - leakage-free precision agriculture IIoT intrusion detection benchmark rebuilt from Edge-IIoTset",
+  "provider": "Mostafa M. Galal (Alexandria University), via Zenodo",
+  "regions": [
+    "not stated on the page read (testbed)"
+  ],
+  "sectors": [
+    "industry.agriculture",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "cascading_failure"
+  ],
+  "size": "38.4 MB",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "creator, affiliation, version, files, sizes, keywords and licence read 2026-09-26",
+      "url": "https://zenodo.org/api/records/21941319"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "description, shape, class counts, caveats and upstream source read 2026-09-26",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.21941319"
+    }
+  ],
+  "spatial_resolution": "packet and device",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "intrusion detection",
+    "IIoT",
+    "Modbus",
+    "benchmark integrity",
+    "Edge-IIoTset",
+    "precision agriculture"
+  ],
+  "temporal_coverage": "not stated on the page read",
+  "temporal_resolution": "per packet record",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "AgriEdge - leakage-free precision agriculture IIoT intrusion detection benchmark rebuilt from Edge-IIoTset",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

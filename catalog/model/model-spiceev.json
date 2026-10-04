@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/rl-institut/spice_ev"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/rl-institut/spice_ev/blob/dev/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "spiceev charging event simulator",
+    "repo": "github.com/rl-institut/spice_ev",
+    "url": "https://github.com/rl-institut/spice_ev"
+  },
+  "description": "SpiceEV is the Reiner Lemoine Institute's program for simulating individual electric-vehicle charging events and alternative charging strategies. A scenario defines vehicles, trips, charging stations, grid connectors, power limits and prices, with optional stationary batteries. Outputs are time series for vehicle batteries, charger power, connector load and electricity costs. Spatial coverage is a fleet or charging site defined by the user, and time resolution follows the scenario input. MIT-licensed Python source and documentation are available freely, with JSON and CSV input examples. The README says some strategies allow only one grid connector, so a network of multiple depots may need separate runs or another configuration. The tool does not model traffic congestion or the electrical feeder in full. SpiceEV can prepare charging demand and test flexibility for transport and power-grid simulations. The catalogue's model-pypsa can represent wider energy-network operation, but no coupling was checked. No fleet scenario was executed here.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "rl-institut/spice_ev linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/rl-institut/spice_ev",
+  "id": "model-spiceev",
+  "inputs": [
+    "Vehicle trips, chargers, connectors, prices and strategy settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-20",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "agent_based",
+    "physical"
+  ],
+  "name": "SpiceEV charging-event simulator",
+  "notes": "G7 G7-1303. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Charging and battery-load time series"
+  ],
+  "provider": "Reiner Lemoine Institute",
+  "related_ids": [
+    "model-pypsa"
+  ],
+  "repository": "https://github.com/rl-institut/spice_ev",
+  "sectors": [
+    "transport.road",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for rl-institut/spice_ev: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/rl-institut/spice_ev"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/rl-institut/spice_ev/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Agent-based model for road transport and electricity",
+  "type": "model"
+}

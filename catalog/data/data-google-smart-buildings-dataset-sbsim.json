@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Smaller zip of building sb1 data",
+      "url": "https://storage.googleapis.com/gresearch/smart_buildings_dataset/tabular_data/sb1.zip"
+    },
+    {
+      "kind": "repo",
+      "label": "sbsim repository (Apache-2.0)",
+      "url": "https://github.com/google/sbsim"
+    },
+    {
+      "kind": "portal",
+      "label": "TensorFlow Datasets smart_buildings",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.tensorflow.org/datasets/catalog/smart_buildings"
+    },
+    {
+      "kind": "paper",
+      "label": "arXiv 2410.03756",
+      "url": "https://arxiv.org/abs/2410.03756"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "demand_operation",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "google smart buildings dataset and control suite sbsim real telemetry calibrated simulator and rl benchmark",
+    "url": "https://github.com/google/sbsim"
+  },
+  "description": "The Smart Buildings Control Suite from Google is an open HVAC control benchmark with real telemetry from commercial office buildings, a lightweight data-driven simulator per building and a physically informed neural network building model, compatible with the Gym interface. The arXiv paper (2024, revised 2025) describes six years of telemetric data from 11 buildings across climates, management systems and sizes; the repository README describes six years of data from three buildings released so far. TensorFlow Datasets serves building sb1 as yearly splits 2019 to 2024 (about 105,000 five-minute examples per full year, 11 GB download, 87 GB prepared) with device actions, observations, rewards and occupancy, and a smaller zip is on Google Cloud Storage. The code includes a calibrated simulator and a soft actor-critic reinforcement learning demo notebook. Coverage: Google office buildings (locations not stated). Access: free code and data downloads. Licence: code under Apache 2.0; no data licence stated on the pages read. Caveats: the number of released buildings differs between paper and repository, and the TFDS citation entry was still a placeholder when read. Simulation uses: training and benchmarking HVAC control, reinforcement learning and model predictive control that scale across buildings. Related records: AlphaBuilding and the RICO test cell dataset.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "smart building sensor dataset occupancy HVAC time series open data",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "formats": [
+    "other",
+    "csv",
+    "source_code"
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://github.com/google/sbsim",
+  "id": "data-google-smart-buildings-dataset-sbsim",
+  "languages": [
+    "en"
+  ],
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Google Smart Buildings dataset and control suite (sbsim): real telemetry, calibrated simulator and RL benchmark",
+  "provider": "Google (Judah Goldfeder, John Sipple and co-authors)",
+  "related_ids": [
+    "data-lbnl-alphabuilding-synthetic-operation-dataset",
+    "data-sintef-rico-hvac-test-cell-time-series"
+  ],
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract, authors, TFDS and Gym statements",
+      "url": "https://arxiv.org/abs/2410.03756"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Data releases, downloads, documentation",
+      "url": "https://raw.githubusercontent.com/google/sbsim/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Apache 2.0",
+      "url": "https://raw.githubusercontent.com/google/sbsim/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Splits, sizes, features, page updated 2025-03-14",
+      "url": "https://www.tensorflow.org/datasets/catalog/smart_buildings"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): Apache-2.0 (basis: licence file in the GitHub repository)",
+      "url": "https://github.com/google/sbsim/blob/copybara_push/LICENSE"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.tensorflow.org/datasets/catalog/smart_buildings"
+    }
+  ],
+  "tags": [
+    "HVAC control",
+    "reinforcement learning",
+    "benchmark",
+    "Google",
+    "office buildings",
+    "telemetry"
+  ],
+  "temporal_coverage": "2019 to 2024 (building sb1 splits)",
+  "temporal_resolution": "5 minutes",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Google Smart Buildings dataset and control suite (sbsim): real telemetry, calibrated simulator and RL benchmark",
+  "type": "data"
+}

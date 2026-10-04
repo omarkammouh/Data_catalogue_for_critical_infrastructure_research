@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "SAE administrative bases (SAS-CSV 7z per year, with variable dictionaries)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/707_bases-administratives-sae/information/"
+    },
+    {
+      "kind": "portal",
+      "label": "SAE statistical bases (non-response treated)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/708_bases-statistiques-sae/information/"
+    },
+    {
+      "kind": "portal",
+      "label": "Critical care beds by establishment (derived from SAE)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/lits-de-reanimation-de-soins-intensifs-et-de-surveillance-continue-en-france0/information/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "system_description",
+    "critical_facilities",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "statistique annuelle des etablissements de sante sae drees beds places equipment staff and activity of every public and private health establishment in france",
+    "url": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/707_bases-administratives-sae/information"
+  },
+  "description": "The SAE is France's compulsory annual census of every public and private hospital and clinic, recording how many beds, places, pieces of equipment and staff each one has and how much care it delivers. It is run by DREES, the statistics directorate of the French health ministry, which validates each establishment's declarations. Coverage is exhaustive for health establishments in France, with annual survey files up to 2025; the questionnaire was redesigned for the 2013 data, so earlier years are not always comparable. Each thematic form becomes a file keyed by establishment, covering activity (stays and days) and resources by discipline, including emergency departments, intensive and critical care, maternity and psychiatry. Two versions are available as free downloads under the Licence Ouverte: administrative bases with the declarations as validated, and statistical bases in which missing answers are imputed, each with variable dictionaries and documentation, and DREES derives ready tables such as critical care beds by establishment. Caveats: files are organised by form, not as one table, come as compressed archives with SAS and CSV versions, and definitions change between years. Simulation uses: building the hospital capacity layer of health system and surge models, checking critical care bed supply for pandemic or mass casualty scenarios, and mapping facilities exposed to floods or heat. Related records: the DREES emergency department series (data-drees-emergency-department-daily-visits-2017-2023) gives daily demand, and the Italian hospital bed data (data-italy-hospital-beds-by-structure-2010-2017) is a comparable national inventory.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: DREES (FR, health_regulator_data_institute)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "analysis_package_file",
+    "csv",
+    "spreadsheet",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/707_bases-administratives-sae/information/",
+  "id": "data-drees-sae-hospital-annual-statistics",
+  "languages": [
+    "en"
+  ],
+  "licence": "Licence Ouverte v2.0 (Etalab)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Statistique annuelle des établissements de santé (SAE, DREES): beds, places, equipment, staff and activity of every public and private health establishment in France",
+  "provider": "Direction de la recherche, des études, de l'évaluation et des statistiques (DREES), French Ministry of Health",
+  "related_ids": [
+    "data-drees-emergency-department-daily-visits-2017-2023",
+    "data-italy-hospital-beds-by-structure-2010-2017"
+  ],
+  "schema_summary": "One file per thematic form (bordereau) and year, keyed by establishment: activity (stays and days of hospitalisation) and production factors (beds, places, equipment, staff) by discipline, including emergency, critical care (intensive care, resuscitation, continuous monitoring), obstetrics and psychiatry; administrative bases hold validated declarations, statistical bases add treatment of total and partial non-response; variable lists and documentation per year",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Bases administratives SAE: the SAE is an exhaustive, compulsory administrative survey and the main source of data on all health establishments in France; administrative bases return establishments' declarations as validated with DREES, one file per thematic form; Licence Ouverte v2.0; modified 23 July 2026; 55 attachments including SAE 2025 base administrative documentation, SAS-CSV 7z formats and variable dictionary by form",
+      "url": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/707_bases-administratives-sae/information/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Bases statistiques SAE: administrative bases improved by treating total and partial non-response, intended for statistical studies; Licence Ouverte v2.0; modified 3 November 2025",
+      "url": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/708_bases-statistiques-sae/information/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Critical care beds of health establishments in France, produced from the SAE statistical bases; SAE describes each year the activity of public and private establishments (stays, days) and their production factors (beds, places, equipment, staff); survey redesigned for 2013 data; latest edition covers 2024; about 15,100 records; updated each year after the late-October release",
+      "url": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/lits-de-reanimation-de-soins-intensifs-et-de-surveillance-continue-en-france0/information/"
+    }
+  ],
+  "spatial_resolution": "Health establishment (geographic entity)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "hospital beds",
+    "critical care",
+    "health establishments",
+    "hospital capacity",
+    "France",
+    "SAE",
+    "DREES"
+  ],
+  "temporal_coverage": "Survey years to 2025 (redesigned in 2013)",
+  "temporal_resolution": "Annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "Annual statistics of health establishments (SAE, DREES): beds, places, equipment, staff and activity of every public and private health establishment in France",
+  "type": "data",
+  "update_frequency": "annual"
+}

@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "NCEI hazards overview",
+      "url": "https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes"
+    },
+    {
+      "kind": "portal",
+      "label": "HazEL search tool",
+      "url": "https://www.ngdc.noaa.gov/hazel/view/hazards/earthquake/search"
+    },
+    {
+      "kind": "api",
+      "label": "HazEL web service (earthquakes)",
+      "url": "https://www.ngdc.noaa.gov/hazel/hazard-service/api/v1/earthquakes"
+    },
+    {
+      "kind": "paper",
+      "label": "Significant Earthquake Database citation",
+      "url": "https://doi.org/10.7289/V5TD9V7K"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "historical_events",
+    "hazards",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.7289/v5td9v7k",
+    "name": "ncei global historical hazard databases significant earthquakes tsunamis volcanic eruptions",
+    "url": "https://ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes"
+  },
+  "description": "NOAA NCEI and the co-located World Data Service for Geophysics maintain three linked historical hazard databases: the Significant Earthquake Database of destructive earthquakes from 2150 BC to the present that caused about 1 million dollars of damage or more, ten or more deaths, magnitude 7.5 or greater, intensity X or greater, or a tsunami; the Global Historical Tsunami Database of events from 2000 BC in the Atlantic, Indian and Pacific Oceans and the Mediterranean and Caribbean Seas, with runup observations; and the Significant Volcanic Eruption Database of more than 800 eruptions. Each event carries location, magnitude or intensity, deaths, injuries, damage and houses destroyed or damaged, with links between related events. NCEI compiles them to support research, planning, response and mitigation. Data are accessible through the Hazardous Event Lookup (HazEL) search tool, its JSON web service, an interactive map, an image database and a tsunami travel time map, free as US Government data with a requested citation (doi:10.7289/V5TD9V7K for earthquakes). Caveats: early records are sparse and uncertain, damage is often given only as order-of-magnitude codes, and inclusion criteria bias the set toward damaging events. It supports historical event analysis, hazard exposure and loss model calibration for infrastructure; related records are USGS ComCat, EM-DAT and DesInventar.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "historical significant earthquakes tsunamis database",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "api",
+    "csv",
+    "web_page"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "earthquake",
+    "tsunami",
+    "volcanic"
+  ],
+  "homepage": "https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes",
+  "id": "data-ncei-global-historical-hazards",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "1972",
+  "licence": "Public domain (US Government work; citation requested)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NCEI global historical hazard databases (significant earthquakes, tsunamis, volcanic eruptions)",
+  "notes": "CSV export from HazEL is recalled; the HazEL pages need JavaScript and were not readable on 2026-09-26, but the JSON service answered.",
+  "provider": "NOAA National Centers for Environmental Information (NCEI) and the co-located World Data Service for Geophysics",
+  "related_ids": [],
+  "schema_summary": "date, location name, latitude, longitude, depth, magnitude, intensity, deaths, injuries, damage order, houses destroyed and damaged, linked tsunami or volcano ids",
+  "sectors": [
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "WDS co-location, purpose, access tools, HazEL",
+      "url": "https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "criteria, 2150 BC, DOI citation, products",
+      "url": "https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes/earthquakes"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "2000 BC, oceans and seas covered",
+      "url": "https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes/tsunamis"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "over 800 significant eruptions, attributes",
+      "url": "https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes/volcanoes"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "JSON fields: deaths, injuries, damage order, houses destroyed, tsunami link",
+      "url": "https://www.ngdc.noaa.gov/hazel/hazard-service/api/v1/earthquakes?minYear=2023&maxYear=2023"
+    }
+  ],
+  "tags": [
+    "historical earthquakes",
+    "tsunami database",
+    "volcanic eruptions",
+    "NOAA NCEI",
+    "HazEL"
+  ],
+  "temporal_coverage": "2150 BC to present (earthquakes); 2000 BC to present (tsunamis)",
+  "temporal_resolution": "per event",
+  "temporal_resolution_class": "event",
+  "title_en": "NCEI global historical hazard databases (significant earthquakes, tsunamis, volcanic eruptions)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

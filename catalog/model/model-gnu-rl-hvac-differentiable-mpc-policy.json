@@ -1,0 +1,86 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/INFERLab/Gnu-RL"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Chen, B., Cai, Z. and Bergés, M. (2019). Gnu-RL: A Precocial Reinforcement Learning Solution for Building HVAC Control Using a Differentiable MPC Policy. ACM BuildSys, 316–325.",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gnu rl differentiable mpc hvac control policy",
+    "repo": "github.com/inferlab/gnu-rl",
+    "url": "https://github.com/INFERLab/Gnu-RL"
+  },
+  "description": "The Gnu-RL repository publishes code for a building HVAC control policy that combines imitation learning with a differentiable model-predictive-control layer and later reinforcement-learning updates. Its README says the agent first learns from historical controller data, then improves through interaction with a building environment. The public tree lists agent code, a demonstration notebook, stored result arrays and model weights. The publisher documents Gym-Eplus, EnergyPlus, model files and weather files as dependencies, including a manual year setting in an older wrapper; the review did not install or run them. The repository carries an MIT licence. Coverage is the documented building HVAC experiment and its supplied model and weather setup, not a survey of buildings. Its reported energy and comfort performance comes from the cited experiment and was not reproduced here. Simulation use includes testing learned HVAC control against a building-energy environment or using the code as a benchmark policy, after supplying compatible building and weather inputs. It complements model-energyplus as a controller layered on a building simulator, not a replacement physical building model. A caveat is that historic software versions and external wrappers may impede direct reproduction on a current installation.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "curated Awesome AI-Based Building Energy Optimization README: public datasets and tools",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "site",
+  "homepage": "https://github.com/INFERLab/Gnu-RL",
+  "id": "model-gnu-rl-hvac-differentiable-mpc-policy",
+  "inputs": [
+    "Historical HVAC controller observations",
+    "Building state and weather inputs",
+    "Gym-Eplus and EnergyPlus model configuration"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-12-18",
+  "licence": "MIT for repository code and published results; external dependencies and input data have separate terms.",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "hybrid"
+  ],
+  "name": "Gnu-RL differentiable-MPC HVAC control policy",
+  "notes": "G8; G8-0707. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations. ",
+  "outputs": [
+    "HVAC control actions",
+    "Simulated energy and thermal-comfort results"
+  ],
+  "provider": "Bingqing Chen and INFERLab collaborators",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/INFERLab/Gnu-RL",
+  "sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/INFERLab/Gnu-RL/blob/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/INFERLab/Gnu-RL"
+    }
+  ],
+  "tags": [],
+  "title_en": "Building HVAC control policy with imitation learning and differentiable MPC",
+  "type": "model"
+}

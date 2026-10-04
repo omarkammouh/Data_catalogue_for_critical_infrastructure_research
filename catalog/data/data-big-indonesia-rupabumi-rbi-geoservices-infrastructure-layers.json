@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "RBI basemap service (890 layers)",
+      "url": "https://geoservices.big.go.id/rbi/rest/services/BASEMAP/Rupabumi_Indonesia/MapServer"
+    },
+    {
+      "kind": "api",
+      "label": "Building footprints FeatureServer (Sulawesi 1:5,000)",
+      "url": "https://geoservices.big.go.id/rbi/rest/services/DATABASE/tapakbangunan/FeatureServer"
+    },
+    {
+      "kind": "api",
+      "label": "Transport and utility services (1:25,000)",
+      "url": "https://geoservices.big.go.id/rbi/rest/services/TRANSPORTASIDANUTILITAS"
+    },
+    {
+      "kind": "viewer",
+      "label": "RBI availability index",
+      "url": "https://www.big.go.id/indekspetarbi/"
+    },
+    {
+      "kind": "portal",
+      "label": "Ina-Geoportal",
+      "url": "https://tanahair.indonesia.go.id/portal-web/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "ID"
+  ],
+  "data_family": [
+    "system_description",
+    "reference_context"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rupabumi indonesia rbi base map services from big transport utilities buildings and public facilities arcgis rest 1 5 000 to 1 1 000 000",
+    "url": "https://geoservices.big.go.id/rbi/rest/services"
+  },
+  "description": "Badan Informasi Geospasial, Indonesia's national mapping agency, serves its Rupabumi Indonesia (RBI) topographic base data through a public ArcGIS REST server. Contents: the Rupabumi Indonesia basemap service (2019 edition, 1:5,000 to 1:1,000,000) with 890 layers including roads, railways, ports and airports, utility points such as electricity transmission towers, drinking water towers and treatment plants, fuel depots, filling stations, culverts and street lights, plus boundaries and place names; folders of 1:25,000 regional packages (Aceh, Lampung, Kalimantan, Sulawesi, Papua, Riau and Jambi, 2013 to 2018) split into transport, utility and buildings and public facilities themes; and a building footprint service from 1:5,000 mapping of Sulawesi (2026) with 710,239 polygons. Producer: BIG's Directorate of Topographic Mapping. Coverage: Indonesia; 1:25,000 and 1:5,000 detail exists only for some regions, shown on the RBI availability index dashboard. Format and access: ArcGIS map and feature services with query support; the national geoportal Ina-Geoportal and BIG's product pages offer viewing and ordered downloads. Free to view and query; the services carry BIG copyright and no open licence. Caveats: many regional packages are map services only, so bulk extraction needs paging through queries, layer names are in Indonesian, and editions vary from 2013 to 2026. Simulation uses: national road, rail and utility point layers for exposure and accessibility studies in Indonesia, and building footprints for earthquake and tsunami exposure in Sulawesi. Related records: none yet in the catalogue for Indonesian national base mapping.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "register source id-nma-big-go-id: provider pages read (round 2 register piece)",
+      "route": "R10",
+      "source": "id-nma-big-go-id"
+    }
+  ],
+  "formats": [
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://geoservices.big.go.id/rbi/rest/services",
+  "id": "data-big-indonesia-rupabumi-rbi-geoservices-infrastructure-layers",
+  "languages": [
+    "id"
+  ],
+  "licence": "BIG copyright (no open licence stated)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Rupabumi Indonesia (RBI) base map services from BIG: transport, utilities, buildings and public facilities (ArcGIS REST, 1:5,000 to 1:1,000,000)",
+  "provider": "Badan Informasi Geospasial (BIG), Indonesia",
+  "related_ids": [],
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "transport.road",
+    "energy.electricity",
+    "water.drinking_water",
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "25 folders incl. TRANSPORTASI, TRANSPORTASIDANUTILITAS, BANGUNANDANFASUM, DATABASE, BASEMAP",
+      "url": "https://geoservices.big.go.id/rbi/rest/services?f=json"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "Basemap Rupabumi Indonesia 2019, 1:5,000 to 1:1,000,000, 890 layers incl. utility points",
+      "url": "https://geoservices.big.go.id/rbi/rest/services/BASEMAP/Rupabumi_Indonesia/MapServer?f=json"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "count 710239; layer rbi5k_sulawesi_2026 tapakbangunan",
+      "url": "https://geoservices.big.go.id/rbi/rest/services/DATABASE/tapakbangunan/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json"
+    }
+  ],
+  "tags": [
+    "Indonesia",
+    "Rupabumi",
+    "RBI",
+    "base map",
+    "building footprints"
+  ],
+  "title_en": "Rupabumi Indonesia (RBI) base map services from BIG transport, utilities, buildings and public facilities (ArcGIS REST, 1 5,000 to 1 1,000,000)",
+  "type": "data"
+}

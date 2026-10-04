@@ -1,0 +1,142 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "PyPI package",
+      "url": "https://pypi.org/project/pypsa/"
+    },
+    {
+      "kind": "download",
+      "label": "PyPSA/PyPSA-v1.3.0.zip (10.2 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/22013221/files/PyPSA/PyPSA-v1.3.0.zip?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/PyPSA/PyPSA"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo software DOI",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.3946412"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://docs.pypsa.org"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Brown, T., Hörsch, J., Schlachtberger, D. (2018). PyPSA: Python for Power System Analysis. Journal of Open Research Software 6(1). doi:10.5334/jors.188",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "doi": "10.5334/jors.188",
+    "name": "pypsa python for power system analysis",
+    "repo": "github.com/pypsa/pypsa",
+    "url": "https://pypsa.org"
+  },
+  "description": "PyPSA is an open-source Python framework for optimising and simulating power and multi-carrier energy systems. It implements economic dispatch with unit commitment, linear optimal power flow in meshed AC-DC networks with optional loss approximations, security-constrained optimal power flow under N-1 line outages, single and multi-period capacity expansion planning, two-stage stochastic optimisation, modelling to generate alternatives, sector coupling (heat, hydrogen, electric vehicles, synthetic fuels) and full non-linear Newton-Raphson power flow. Maintenance is led by the Department of Digital Transformation in Energy Systems at the Technical University of Berlin with funding from the German Research Foundation; earlier versions were developed at the Karlsruhe Institute of Technology and FIAS. The framework is generic and location independent: users supply network components and time series for any country or region, from a district to a continent, at any temporal resolution. It is distributed as a package on PyPI (version 1.3.0, August 2026, Python 3.11 or newer) and conda-forge, with source code on GitHub and documentation at docs.pypsa.org, under the MIT licence and free of charge. Caveats: its documented features are steady-state power flow and optimisation, with no dynamic stability or transient simulation listed, and optimisation runs need a solver (HiGHS is installed by default; GLPK, CBC or commercial solvers such as Gurobi can be used). Simulation uses are capacity planning, optimisation, network flow and resilience studies of transmission and distribution grids. Related records: it underlies model-pypsa-eur and complements model-pandapower, which can exchange networks with it.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry PyPSA community",
+      "route": "R06",
+      "source": "energy-pypsa"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://pypsa.org/",
+  "id": "model-pypsa",
+  "inputs": [
+    "Network components (buses",
+    "lines",
+    "links",
+    "transformers",
+    "generators",
+    "storage units",
+    "stores",
+    "loads)",
+    "Time series of demand and renewable availability",
+    "Technology cost and efficiency assumptions"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-02",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network",
+    "physical"
+  ],
+  "name": "PyPSA (Python for Power System Analysis)",
+  "outputs": [
+    "Least-cost dispatch and unit commitment",
+    "Optimal capacity expansion",
+    "Linearised and non-linear power flows",
+    "Line loadings and nodal prices",
+    "Energy balance statistics"
+  ],
+  "provider": "PyPSA contributors; maintenance led by the Department of Digital Transformation in Energy Systems, Technical University of Berlin",
+  "related_ids": [
+    "model-pandapower"
+  ],
+  "repository": "https://github.com/PyPSA/PyPSA",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity",
+    "energy.gas_hydrogen",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "optimisation",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Features: ED, LOPF, SCLOPF, capacity expansion; free and open source",
+      "url": "https://pypsa.org/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Feature list, maintenance by TU Berlin ENSYS, DFG grant 528775426, earlier KIT and FIAS; Zenodo DOI 10.5281/zenodo.3946412",
+      "url": "https://raw.githubusercontent.com/PyPSA/PyPSA/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version 1.3.0 uploaded 2026-08-19; first release 2016-01-31; MIT licence; Python >=3.11",
+      "url": "https://pypi.org/pypi/pypsa/json"
+    }
+  ],
+  "tags": [
+    "energy system optimisation",
+    "capacity expansion",
+    "optimal power flow",
+    "unit commitment",
+    "sector coupling",
+    "Python"
+  ],
+  "title_en": "PyPSA (Python for Power System Analysis)",
+  "type": "model",
+  "validated_on": [
+    "Bundled example networks (pypsa.examples)"
+  ]
+}

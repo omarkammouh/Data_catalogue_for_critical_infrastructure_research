@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Storm Events Database",
+      "url": "https://www.ncei.noaa.gov/access/storm-events-database/"
+    },
+    {
+      "kind": "download",
+      "label": "Bulk CSV files",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/"
+    },
+    {
+      "kind": "docs",
+      "label": "Export format description (PDF)",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/Storm-Data-Export-Format.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "historical_events",
+    "hazards"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "noaa ncei storm events database",
+    "url": "https://ncei.noaa.gov/access/storm-events-database"
+  },
+  "description": "The Storm Events Database of NOAA's National Centers for Environmental Information records high-intensity storms, rare or unusual weather phenomena and other significant weather events in the United States, compiled from National Weather Service Storm Data reports. Each event record gives begin and end date, time and location (state, county or zone, latitude and longitude), event type, direct and indirect injuries and deaths, property and crop damage estimates, magnitude, flood cause, tornado F or EF scale, length and width, and episode and event narratives, with separate fatality and location files. Coverage starts in 1950; the bulk files run by year from 1950 to 2026, and NCEI states that early years hold only tornadoes, later years also hail and thunderstorm wind, and all 48 event types from 1996. The files are refreshed regularly (the 2026 file was dated 18 September 2026). Data are accessible online at no cost through the search interface and as gzip-compressed CSV files over HTTPS, as a US federal product. Caveats: damage figures are estimates reported by forecast offices, event type coverage changes over time, and early records are incomplete. It supports historical event analysis and hazard exposure of power, transport and water infrastructure to floods, storms, heat, cold and wildfire; related records are the NCEI global historical hazards, IBTrACS and EM-DAT.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "NCEI Storm Events Database 48 event types 1996 1950 tornado documentation",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "flood",
+    "storm_wind",
+    "extreme_heat",
+    "cold_snow_ice",
+    "wildfire",
+    "coastal_flood_storm_surge",
+    "drought",
+    "hail"
+  ],
+  "homepage": "https://www.ncei.noaa.gov/access/storm-events-database/",
+  "id": "data-noaa-storm-events-database",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (US federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NOAA NCEI Storm Events Database",
+  "notes": "The event-type periods (tornado only 1950-1954; tornado, hail and wind 1955-1995; 48 types from 1996) come from NCEI page text shown in a web search on 2026-09-26, as the database pages render only with JavaScript. Public-domain status is recalled.",
+  "provider": "NOAA National Centers for Environmental Information (NCEI), from National Weather Service Storm Data",
+  "related_ids": [],
+  "schema_summary": "BEGIN/END date and time, STATE, CZ_NAME, EVENT_TYPE, INJURIES/DEATHS direct and indirect, DAMAGE_PROPERTY, DAMAGE_CROPS, MAGNITUDE, FLOOD_CAUSE, TOR_F_SCALE, BEGIN/END_LAT/LON, EPISODE and EVENT narratives",
+  "sectors": [
+    "cross_cutting.multi_sector",
+    "energy.electricity",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "NCEI severe weather page: Storm Events Database description",
+      "url": "https://www.ncei.noaa.gov/products/severe-weather"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Bulk directory: details, fatalities and locations files by year 1950-2026; 2026 file dated 2026-09-18; CSV header read",
+      "url": "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/"
+    }
+  ],
+  "tags": [
+    "severe weather",
+    "storm events",
+    "damage",
+    "United States",
+    "NCEI"
+  ],
+  "temporal_coverage": "1950 to present",
+  "temporal_coverage_years": {
+    "end": null,
+    "start": 1950
+  },
+  "temporal_resolution": "per event",
+  "temporal_resolution_class": "event",
+  "title_en": "NOAA NCEI Storm Events Database",
+  "type": "data",
+  "update_frequency": "monthly"
+}

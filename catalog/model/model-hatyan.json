@@ -1,0 +1,90 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Deltares/hatyan"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Deltares/hatyan/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hatyan harmonic tidal analysis",
+    "repo": "github.com/deltares/hatyan",
+    "url": "https://github.com/Deltares/hatyan"
+  },
+  "description": "Hatyan is a Python package developed by Deltares for Rijkswaterstaat for harmonic tidal analysis and prediction. It builds on an earlier Fortran implementation and includes methods for deriving high and low water extremes. Users supply water-level time series and analysis settings, then obtain tidal predictions and associated extreme-water information. Coverage is globally configurable, while the documented institutional application concerns Dutch water management; observation periods and output sampling are user-selected. Public source, pip installation, tutorials and an API reference are free under GPL-3.0. A limitation is that harmonic analysis represents the tidal components supported by the input record and does not by itself predict every meteorological surge or nonstationary change. It is also a dependency of the separately published Kenmerkende Waarden workflow. Hatyan can prepare boundary conditions or comparison series for coastal and waterway simulations, complementary to Delft3D FM (model-delft3d-fm). The repository provides an archived software DOI. This review did not retrieve water-level observations or calculate a tide prediction.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "org:Deltares",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/Deltares/hatyan",
+  "id": "model-hatyan",
+  "inputs": [
+    "Water-level series",
+    "Harmonic analysis settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-26",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Hatyan harmonic tidal analysis",
+  "notes": "G7 G7-0575. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Tidal predictions",
+    "High and low water extremes"
+  ],
+  "provider": "Deltares for Rijkswaterstaat",
+  "related_ids": [
+    "model-delft3d-fm"
+  ],
+  "repository": "https://github.com/Deltares/hatyan",
+  "sectors": [
+    "transport.inland_waterways"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Deltares/hatyan: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=org%3ADeltares&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/deltares/hatyan/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physical model for inland waterways",
+  "type": "model"
+}

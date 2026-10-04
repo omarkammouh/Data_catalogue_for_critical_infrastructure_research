@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Real-time data (SIRI, GTFS-RT)",
+      "url": "https://developer.entur.no/open-data/realtime"
+    },
+    {
+      "kind": "portal",
+      "label": "Timetable data (NeTEx, GTFS)",
+      "url": "https://developer.entur.no/open-data/timetable"
+    },
+    {
+      "kind": "portal",
+      "label": "Stop place data",
+      "url": "https://developer.entur.no/open-data/stops"
+    },
+    {
+      "kind": "docs",
+      "label": "Open services (Journey Planner, Geocoder, Mobility)",
+      "url": "https://developer.entur.no/docs/open-services"
+    },
+    {
+      "kind": "docs",
+      "label": "Former landing page (description)",
+      "url": "https://developer.entur.no/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NO"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "network_topology",
+    "stream",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "entur open data norway s national public transport register netex gtfs timetables stop places siri and gtfs rt real time",
+    "url": "https://developer.entur.no"
+  },
+  "description": "Entur operates Norway's national register of all public transport and publishes its data and journey planning services openly. Entur AS is the state-owned company that collects timetables and real-time data from about 60 public transport operators, from city buses and ferries to trains and flights. Coverage: all of Norway, all modes of scheduled public transport, with data by county and operator. Timetable dumps are published daily at permanent URLs as NeTEx (the official Norwegian profile and the most complete format) and as basic and extended GTFS; stop place dumps from the national stop registry give quays, stop places and their unique identifiers; real-time feeds cover estimated timetables, vehicle monitoring and situation exchange in SIRI 2.0 (XML and SIRI Lite REST) and GTFS-Realtime trip updates, vehicle positions and service alerts. Open services add a geocoder, the Journey Planner v3 GraphQL API, a shared mobility API for bikes and scooters and a vehicle positions API. Format and access: downloads and APIs free without a partnership agreement, requiring only a client name header; partner services such as sales and ticketing need an agreement. Licence: NLOD (Norwegian Licence for Open Government Data). Caveats: GTFS exports lack some NeTEx information, not all operators yet submit full NeTEx, and real-time coverage differs by operator. Simulation uses: complete national transit network topology and live operations for network flow, digital twin and emergency response models. Related records: the GTFS specification (data-gtfs-specification) and GBFS (data-gbfs-specification) define two of the published formats.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source transport-entur: provider pages read (round 2 register piece)",
+      "route": "R02",
+      "source": "transport-entur"
+    }
+  ],
+  "formats": [
+    "transit_feed",
+    "xml",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://developer.entur.no/open-data/stops",
+  "id": "data-entur-norway-national-public-transport-data",
+  "languages": [
+    "en"
+  ],
+  "licence": "NLOD (Norwegian Licence for Open Government Data)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Entur open data: Norway's national public transport register (NeTEx/GTFS timetables, stop places, SIRI and GTFS-RT real time)",
+  "provider": "Entur AS (Norwegian state-owned company for public transport data and ticketing)",
+  "related_ids": [
+    "data-gtfs-specification",
+    "data-gbfs-specification"
+  ],
+  "sectors": [
+    "transport.public_transit",
+    "transport.rail",
+    "transport.maritime_ports"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Entur operates the national registry for all public transport in Norway, collecting data from 60 operators; open and free",
+      "url": "https://developer.entur.no/open-data"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Daily timetable dumps with permanent URLs as NeTEx or GTFS (basic and extended); licence NLOD",
+      "url": "https://developer.entur.no/open-data/timetable"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "SIRI 2.0 (XML, Lite REST) and GTFS-RT; SIRI ET, VM, SX and GTFS-RT trip updates, vehicle positions, alerts by codespace",
+      "url": "https://developer.entur.no/open-data/realtime"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Open services free without partnership: Geocoder, Journey Planner v3 GraphQL, Mobility, Vehicle Positions; ET-Client-Name header required",
+      "url": "https://developer.entur.no/docs/open-services"
+    }
+  ],
+  "tags": [
+    "Norway",
+    "public transport",
+    "NeTEx",
+    "SIRI",
+    "GTFS"
+  ],
+  "title_en": "Entur open data: Norway's national public transport register (NeTEx/GTFS timetables, stop places, SIRI and GTFS-RT real time)",
+  "type": "data",
+  "update_frequency": "real_time"
+}

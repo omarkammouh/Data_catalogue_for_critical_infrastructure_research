@@ -1,0 +1,125 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Broadband availability by speed class",
+      "url": "https://ekarta.hakom.hr/server/rest/services/DOSTUPNOST_SPP/Dostupnost_SPP/FeatureServer"
+    },
+    {
+      "kind": "api",
+      "label": "Coverage maps (folder)",
+      "url": "https://ekarta.hakom.hr/server/rest/services/MAPE_POKRIVANJA"
+    },
+    {
+      "kind": "api",
+      "label": "Statistics by county and municipality",
+      "url": "https://ekarta.hakom.hr/server/rest/services/STATISTIKA/Statistika/FeatureServer"
+    },
+    {
+      "kind": "api",
+      "label": "Universal service availability",
+      "url": "https://ekarta.hakom.hr/server/rest/services/USO_DOSTUPNOST/USO_DOSTUPNOST/FeatureServer"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "HR"
+  ],
+  "data_family": [
+    "telecom_coverage_spectrum",
+    "service_performance",
+    "crowdsourced_public_reports"
+  ],
+  "data_kind": [
+    "tabular",
+    "raster"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hakom broadband availability by speed class mobile coverage maps and user measurements croatia arcgis services",
+    "url": "https://ekarta.hakom.hr/server/rest/services/DOSTUPNOST_SPP/Dostupnost_SPP/FeatureServer"
+  },
+  "description": "The Croatian Regulatory Authority for Network Industries publishes its broadband mapping as ArcGIS services on its e-karta GIS server. The broadband availability service has seven polygon layers by maximum available speed class, from under 2 Mbit/s through 30 to 100 Mbit/s (25,281 polygons in that class) and 100 to 300 and 300 Mbit/s to 1 Gbit/s up to 1 to 10 Gbit/s, each with the operators present and their number. Coverage map services give voice and data service coverage by operator and technology, coverage rasters, measured values, and crowdsourced user measurements with time, download, upload, ping, received signal level, device and location, split by operator (A1, HT) and generation from 2G to 5G. Further services give universal service availability, county and municipality statistics, and county graphs. Coverage: Croatia. Format and access: ArcGIS REST feature and map services (JSON, GeoJSON), free; no licence was stated in the service metadata. Caveats: availability comes from operator reporting; the user measurement layers returned no features to a count query and may be filtered or empty; layer update dates were not exposed. Simulation uses: speed-class availability polygons as a baseline for rural broadband gaps and service loss scenarios after earthquakes, which struck Zagreb and Petrinja in 2020. Related records: the HAKOM transmitter list gives the sites behind the coverage; the Digital Decade DESI indicators give Croatia's national coverage figures.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "e-karta REST directory",
+      "route": "R02",
+      "source": "organisations.csv:HR:digital:broadband_mapping"
+    }
+  ],
+  "formats": [
+    "json",
+    "geojson"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://ekarta.hakom.hr/server/rest/services/DOSTUPNOST_SPP/Dostupnost_SPP/FeatureServer",
+  "id": "data-hakom-broadband-availability-and-coverage-maps",
+  "languages": [
+    "hr"
+  ],
+  "last_updated": "2026",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "HAKOM broadband availability by speed class, mobile coverage maps and user measurements (Croatia, ArcGIS services)",
+  "notes": "ArcGIS REST directory, layer lists, fields and counts read on 2026-09-26. The 2020 Zagreb and Petrinja earthquakes are added as context from recall.",
+  "provider": "Croatian Regulatory Authority for Network Industries (HAKOM)",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "size": "25,281 polygons in the 30 to 100 Mbit/s class alone",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "service directory",
+      "url": "https://ekarta.hakom.hr/server/rest/services/?f=pjson"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "availability layers",
+      "url": "https://ekarta.hakom.hr/server/rest/services/DOSTUPNOST_SPP/Dostupnost_SPP/FeatureServer?f=json"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://ekarta.hakom.hr/server/rest/services/DOSTUPNOST_SPP/Dostupnost_SPP/FeatureServer"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://ekarta.hakom.hr/server/rest/services/MAPE_POKRIVANJA"
+    }
+  ],
+  "spatial_resolution": "polygons; points (user measurements); county and municipality",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "broadband availability",
+    "coverage maps",
+    "speed tests",
+    "universal service",
+    "Croatia"
+  ],
+  "temporal_coverage": "current",
+  "temporal_resolution": "snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "HAKOM broadband availability by speed class, mobile coverage maps and user measurements (Croatia, ArcGIS services)",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

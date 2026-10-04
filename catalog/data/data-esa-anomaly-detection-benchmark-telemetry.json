@@ -1,0 +1,152 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo dataset",
+      "url": "https://doi.org/10.5281/zenodo.12528696"
+    },
+    {
+      "kind": "repo",
+      "label": "GitHub code",
+      "url": "https://github.com/kplabs-pl/ESA-ADB"
+    },
+    {
+      "kind": "paper",
+      "label": "Paper (arXiv 2406.17826)",
+      "url": "https://arxiv.org/abs/2406.17826"
+    },
+    {
+      "kind": "docs",
+      "label": "ESA announcement",
+      "url": "https://esoc.esa.int/esa-releases-building-block-open-database-satellite-anomalies"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository and documentation",
+      "url": "https://github.com/esa/anomaly-dataset"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [],
+  "data_family": [
+    "condition_ageing",
+    "historical_events",
+    "calibration_validation",
+    "sensor_realtime_streams",
+    "synthetic_benchmark"
+  ],
+  "data_kind": [
+    "time_series",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "esa anomaly detection benchmark esa adb annotated satellite telemetry",
+    "repo": "github.com/kplabs-pl/esa-adb",
+    "url": "doi:10.5281/zenodo.12528696"
+  },
+  "description": "ESA-ADB is the first large, real-world dataset of satellite housekeeping telemetry with anomalies marked by the engineers who operate the spacecraft, released in 2024 by the European Space Agency's operations centre with Airbus Defence and Space and the Polish firm KP Labs under ESA's artificial intelligence for automation roadmap. The ESA Anomalies Dataset holds about 31 GB of multivariate telemetry from three ESA missions, anonymised, with curated annotations of events; two missions form the benchmark, which reports 844 annotated events of which 148 are classed as anomalies. The benchmark adds an evaluation pipeline and metrics designed with operators so that machine learning detectors are judged by what matters in operations, such as timely alarms and few false positives, and the accompanying paper, first posted in June 2024 and revised in August 2025, compares existing detection methods on it. Coverage: three ESA missions over several years of operations. Format and access: data on Zenodo and code on GitHub, free and publicly available. Caveats: missions and channels are anonymised, so physical interpretation is limited; annotations reflect one agency's practice. Simulation uses: training and testing anomaly detectors for satellite operations, failure and degradation models of spacecraft subsystems, and digital twins of satellite fleets. Related records: the NOAA satellite anomaly archive and Seradata record anomalies across many operators without telemetry.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "satellite anomaly database on-orbit failures dataset space weather spacecraft anomalies open data",
+      "route": "R22",
+      "source": "web-search"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "satellite anomaly database (space historical events)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "other",
+    "domain_model_file"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "technological_failure"
+  ],
+  "homepage": "https://doi.org/10.5281/zenodo.12528696",
+  "id": "data-esa-anomaly-detection-benchmark-telemetry",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-04-17",
+  "licence": "CC-BY-3.0-IGO (as stated in the GitHub repository)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ESA Anomaly Detection Benchmark (ESA-ADB): annotated satellite telemetry",
+  "notes": "ESA announcement and arXiv abstract read via fetch on 2026-09-26; event counts from a search result summary. File formats and licence not checked on Zenodo.",
+  "provider": "European Space Agency, European Space Operations Centre, with Airbus Defence and Space and KP Labs (Krzysztof Kotowski and co-authors)",
+  "related_ids": [
+    "data-noaa-ncei-satellite-anomalies"
+  ],
+  "schema_summary": "anonymised telemetry channels and telecommands with timestamps; annotation tables of events and anomalies",
+  "sectors": [
+    "digital.satellite_positioning",
+    "cross_cutting.space"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "resilience"
+  ],
+  "size": "about 31 GB; 844 annotated events, 148 anomalies",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "announcement",
+      "url": "https://esoc.esa.int/esa-releases-building-block-open-database-satellite-anomalies"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "paper abstract",
+      "url": "https://arxiv.org/abs/2406.17826"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "first large-scale real-life satellite telemetry dataset with curated anomaly annotations from three ESA missions; 18-month project by Airbus Defence and Space, KP Labs and ESOC; A2I roadmap; 2024-06-25; v1.0; three zip files 11.6 GB",
+      "url": "https://zenodo.org/api/records/12528696"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "links to Zenodo data, arXiv paper, KP Labs code, Kaggle competition; LICENSE CC BY 3.0 IGO",
+      "url": "https://raw.githubusercontent.com/esa/anomaly-dataset/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "examples of anomalies (power regulator switch-off, video processing unit reset, attitude disturbances); approx. 31 GB from 3 ESA missions; anomalies curated and annotated",
+      "url": "https://esoc.esa.int/esa-releases-building-block-open-database-satellite-anomalies"
+    }
+  ],
+  "spatial_resolution": "spacecraft",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "satellite telemetry",
+    "anomaly detection",
+    "ESA",
+    "machine learning",
+    "benchmark",
+    "machine learning benchmark",
+    "ESOC",
+    "mission operations"
+  ],
+  "temporal_coverage": "several years of mission operations (anonymised)",
+  "temporal_resolution": "telemetry sampling of each channel",
+  "temporal_resolution_class": "other",
+  "title_en": "ESA Anomaly Detection Benchmark (ESA-ADB): annotated satellite telemetry",
+  "type": "data",
+  "update_frequency": "irregular"
+}

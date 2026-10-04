@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Server list",
+      "url": "https://tf.nist.gov/tf-cgi/servers.cgi"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "critical_facilities"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nist internet time service its server list locations and status",
+    "url": "https://tf.nist.gov/tf-cgi/servers.cgi"
+  },
+  "description": "The NIST Internet Time Service distributes UTC(NIST) over the internet through the Network Time Protocol (NTP), with the older DAYTIME (TCP port 13) and TIME (TCP port 37) protocols kept for legacy clients. The server page lists every server with its name, IPv4 or IPv6 address, location and status, ordered from north to south and east to west within the United States, such as the time-a-g to time-f-g servers at NIST Gaithersburg, Maryland, the time-a-wwv to time-e-wwv servers at radio station WWV in Fort Collins, Colorado, and the time-a-b to time-e-b servers in Boulder, Colorado, plus servers that answer only authenticated NTP. The generic name time.nist.gov resolves to all servers in turn. Coverage: the NIST server fleet in the United States, current state. Format and access: an HTML table, free, with a mailing list for status changes. Caveats: a service directory, not a measurement series; the page warns against hard-coding one server; server counts change. Simulation uses: an inventory of national time distribution points for studies of how networks keep time when GNSS timing fails. Related records: data-ntp-pool-project-servers is the volunteer alternative; data-bipm-circular-t-utc-time-scale gives the offset of UTC(NIST) from UTC; data-nist-tn-2189-critical-infrastructure-gps-timing discusses GPS timing dependence.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "NIST Internet Time Service servers (cited in doi:10.6028/nist.tn.2189); candidate crossref-a4a8992991 on the integrator's must-have list (musthave/digital.csv)",
+      "route": "R07",
+      "source": "crossref"
+    }
+  ],
+  "formats": [
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://tf.nist.gov/tf-cgi/servers.cgi",
+  "id": "data-nist-internet-time-service-servers",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09",
+  "licence": "public domain (US Government)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NIST Internet Time Service (ITS): server list, locations and status",
+  "notes": "Server page read on 2026-09-26 (protocol notes, server names, addresses, sites, status column). The server count is approximate from the table.",
+  "provider": "National Institute of Standards and Technology (NIST), Time and Frequency Division",
+  "related_ids": [],
+  "sectors": [
+    "digital.satellite_positioning",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience"
+  ],
+  "size": "about 30 server addresses",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "server list",
+      "url": "https://tf.nist.gov/tf-cgi/servers.cgi"
+    }
+  ],
+  "spatial_resolution": "server site",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "NTP",
+    "time distribution",
+    "UTC(NIST)",
+    "time servers"
+  ],
+  "temporal_coverage": "current",
+  "temporal_resolution": "not applicable",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "NIST Internet Time Service (ITS): server list, locations and status",
+  "type": "data",
+  "update_frequency": "irregular"
+}

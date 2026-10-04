@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Open test search API",
+      "url": "https://www.netztest.at/RMBTStatisticServer/opentests/search?max_results=10"
+    },
+    {
+      "kind": "viewer",
+      "label": "RTR-NetTest",
+      "url": "https://www.netztest.at/"
+    },
+    {
+      "kind": "portal",
+      "label": "data.gv.at entry",
+      "url": "https://www.data.gv.at/katalog/dataset/13a9f9d7-f013-4b12-a990-387714039247"
+    },
+    {
+      "kind": "docs",
+      "label": "RTR open data page",
+      "url": "https://www.rtr.at/de/tk/netztestopendata"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "AT"
+  ],
+  "data_family": [
+    "service_performance",
+    "crowdsourced_public_reports",
+    "telecom_coverage_spectrum",
+    "calibration_validation"
+  ],
+  "data_kind": [
+    "survey",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "rtr nettest open data crowdsourced internet speed tests in austria",
+    "url": "https://netztest.at"
+  },
+  "description": "RTR-NetTest is the crowdsourced broadband measurement tool of the Austrian regulator RTR: anyone can run a test from a browser or the mobile apps, and the results are published as open data so that users, operators and researchers can see the quality actually delivered by fixed and mobile networks. Each open test carries anonymous identifiers, the time, the measured download and upload speeds in kbit/s, the ping in milliseconds and, where the device supplies them, the location and radio details such as signal strength, network type and operator; a query of the open test search interface on 26 September 2026 returned a test made earlier that day in Styria with these fields. The data set was registered on the Austrian open data portal in February 2013 with a full export as a zip archive and a JSON search interface. The Austrian broadband atlas uses NetTest results to show average mobile speeds per network. Coverage: Austria (tests elsewhere are possible), 2013 to the present. Format and access: JSON search API with paging and a bulk export, free. Caveats: the bulk export link redirected to an address that returned HTTP 404 when checked; results depend on who chooses to test and where; the licence was not read. Simulation uses: service performance and its spatial variation, degradation during outages and events, and validation of coverage models. Related records: the Breitbandatlas uses these data, Ookla open tiles give a global comparison.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "visit of netztest.at and its data.gv.at entry",
+      "route": "R10",
+      "source": "organisations.csv:AT:digital:crowdsourced_coverage"
+    }
+  ],
+  "formats": [
+    "json",
+    "archive"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.data.gv.at/katalog/dataset/13a9f9d7-f013-4b12-a990-387714039247",
+  "id": "data-rtr-nettest-open-data",
+  "languages": [
+    "de"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "Open data (licence not read)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "RTR-NetTest open data: crowdsourced internet speed tests in Austria",
+  "notes": "Open test search API queried on 2026-09-26 (fields and a current test); data.gv.at hub record read (issued 2013-02-22, distributions). The zip export redirect to data.netztest.at returned 404. The size estimate from the cursor value is not verified; the Styria location is inferred from the coordinates.",
+  "provider": "RTR (Rundfunk und Telekom Regulierungs-GmbH), Austrian regulator for broadcasting and telecommunications",
+  "related_ids": [],
+  "schema_summary": "open test identifiers, time, latitude and longitude, download and upload kbit/s, ping ms, signal and network details",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "capacity_planning"
+  ],
+  "size": "tens of millions of tests (cursor values above 71 million)",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "API response",
+      "url": "https://www.netztest.at/RMBTStatisticServer/opentests/search?max_results=1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "portal metadata",
+      "url": "https://www.data.gv.at/api/hub/search/datasets/13a9f9d7-f013-4b12-a990-387714039247"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://www.netztest.at/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://m-cloud.netztest.at/RMBTStatisticServer/opentests/search?max_results=10?max_results=10"
+    }
+  ],
+  "spatial_resolution": "test location (where supplied)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "speed test",
+    "crowdsourced",
+    "mobile broadband",
+    "Austria",
+    "regulator"
+  ],
+  "temporal_coverage": "2013 to present",
+  "temporal_resolution": "per test",
+  "temporal_resolution_class": "event",
+  "title_en": "RTR-NetTest open data: crowdsourced internet speed tests in Austria",
+  "type": "data",
+  "update_frequency": "real_time"
+}

@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Extraction pipeline code",
+      "url": "https://github.com/sanjaybasu/dark-health-data"
+    },
+    {
+      "kind": "portal",
+      "label": "Zenodo (v0.4 release)",
+      "url": "https://zenodo.org/records/20715901"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "planning_regulatory_documents",
+    "social_vulnerability_equity",
+    "governance_regulation"
+  ],
+  "data_kind": [
+    "tabular",
+    "document"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.20715901",
+    "name": "hidden health data us non profit hospital community health needs assessment chna findings",
+    "repo": "github.com/sanjaybasu/dark-health-data",
+    "url": "doi:10.5281/zenodo.20715901"
+  },
+  "description": "This data set turns the Community Health Needs Assessments that US non-profit hospitals must publish into a searchable table of the needs each hospital found in its community and the strategies it plans in response. The producer is Sanjay Basu of the University of California, San Francisco and Waymark, through the Hidden Health Data pipeline, which finds public documents and extracts their contents with a large language model, checked by grounding, rule constraints, ensembles and a confidence gate. Coverage in release 0.4.8 is 2,622 documents covering 7,238 hospitals nationally, yielding about 618,000 identified community needs and 161,000 implementation strategies, each with its source and a trust score. The data are available as a free download from Zenodo under the CC0 dedication, with the pipeline code on GitHub under Apache 2.0. Caveats: the producer states that the extraction is preliminary and not yet independently validated, so users should filter on the trust score; the documents are narrative plans written for tax compliance and vary widely. Simulation uses: mapping where hospitals report unmet needs such as access, housing or heat to prioritise adaptation and service planning, and linking hospital plans to vulnerability indicators. Related records: the CMS hospital provider data (data-cms-provider-data-hospitals) and HCRIS cost reports (data-cms-hcris-cost-reports) describe the same hospitals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "hospital community health needs assessment",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "archive"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.20715901",
+  "id": "data-us-hospital-chna-hidden-health-data",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06-24",
+  "licence": "CC0 1.0 (data); Apache-2.0 (code)",
+  "licence_type": [
+    "public_domain",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Hidden Health Data: US non-profit hospital Community Health Needs Assessment (CHNA) findings",
+  "provider": "Sanjay Basu (University of California, San Francisco and Waymark)",
+  "related_ids": [
+    "data-cms-provider-data-hospitals",
+    "data-cms-hcris-cost-reports"
+  ],
+  "schema_summary": "One row per extracted item: identified community health need or implementation strategy, with the hospital, source document, full provenance and a quality or trust score",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creator Basu (UCSF; Waymark); CC0; published 2026-06-16; chna-v0.4.0.zip 117 MB; release v0.4.8 national crawl: 779,502 records from 2,622 source documents (7,238 hospitals), 618,048 identified community health needs and 161,454 implementation strategies; extracted with an LLM and a verification layer; every record has provenance and a trust score; AI-extracted, not yet independently validated; public-record documents only; compiled by github.com/sanjaybasu/dark-health-data",
+      "url": "https://zenodo.org/api/records/20715901"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Hidden Health Data pipeline discovers, extracts, validates and publishes public-health documents with LLM extraction and a provenance and QA contract; first release covered Medicaid External Quality Review reports",
+      "url": "https://raw.githubusercontent.com/sanjaybasu/dark-health-data/HEAD/README.md"
+    }
+  ],
+  "spatial_resolution": "Hospitals and their communities",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "community health needs assessment",
+    "non-profit hospitals",
+    "IRS 501(r)",
+    "LLM extraction",
+    "health equity",
+    "dark data"
+  ],
+  "temporal_coverage": "CHNA documents crawled up to 2026",
+  "temporal_resolution": "Per assessment cycle (three-yearly by law)",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "Hidden Health Data: US non-profit hospital Community Health Needs Assessment (CHNA) findings",
+  "type": "data",
+  "update_frequency": "irregular"
+}

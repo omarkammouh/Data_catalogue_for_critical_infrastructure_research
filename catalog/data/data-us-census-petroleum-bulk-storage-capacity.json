@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Economic Census APIs (ecnpetrfac, ecnpetrprod, ecnpetrstat, ecnpetrrec)",
+      "note": "API key required",
+      "url": "https://www.census.gov/data/developers/data-sets/economic-census.html"
+    },
+    {
+      "kind": "portal",
+      "label": "Economic Census data tables",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.census.gov/programs-surveys/economic-census/data/tables.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Census Data API dataset list",
+      "url": "https://api.census.gov/data.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "supply_chains_logistics"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "economic census petroleum bulk stations and terminals storage capacity by facility product and station type",
+    "url": "https://census.gov/data/developers/data-sets/economic-census.html"
+  },
+  "description": "These Economic Census subject tables of the U.S. Census Bureau describe the petroleum bulk storage held by wholesale petroleum bulk stations and terminals, a part of the fuel supply chain that few open datasets quantify. Four tables are published for the 2012 and 2017 censuses in the Census Data API: petroleum bulk storage capacity by type of facility and type of product, by type of product and storage capacity size, by type of station and type of product, and the primary method of receiving petroleum bulk liquid products (for example pipeline, tanker or barge, rail or truck). Coverage: the United States and, for some tables, states; census years 2012 and 2017, with the 2022 census released on a flow basis. Access: the Census Data API datasets ecnpetrfac, ecnpetrprod, ecnpetrstat and ecnpetrrec (free key required) and the Economic Census tables on data.census.gov; free and public domain. Caveats: aggregate capacity only, with no facility locations or names; values are suppressed where they would disclose a business, and only wholesale bulk stations and terminals are covered, not refineries or retail stations. Simulation uses: sizing regional fuel storage buffers and receiving modes in fuel supply and outage models, for example how long terminals could supply a region after a pipeline or port disruption, and calibrating fuel logistics networks. Related records: the Economic Census record for the rest of the census, EIA petroleum supply statistics and refinery capacity reports, and the Commodity Flow Survey for fuel shipments.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): api.census.gov/data.json dataset list, groups ecnpetr*",
+      "route": "R35",
+      "source": "census-data-api"
+    }
+  ],
+  "formats": [
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/data/developers/data-sets/economic-census.html",
+  "id": "data-us-census-petroleum-bulk-storage-capacity",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Economic Census: petroleum bulk stations and terminals, storage capacity by facility, product and station type",
+  "notes": "Receiving modes and barrels as unit are the usual categories of these tables; the table variables were not opened in this session, only their titles.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-economic-census",
+    "data-eia-petroleum-supply-and-prices",
+    "data-eia-refinery-capacity-report",
+    "data-commodity-flow-survey"
+  ],
+  "schema_summary": "Storage capacity (barrels) by facility type, product type, capacity size class and station type; receiving method shares",
+  "sectors": [
+    "energy.oil_fuels",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "resilience",
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Dataset titles and vintages for ecnpetrfac, ecnpetrprod, ecnpetrstat, ecnpetrrec (2012 and 2017); read in the snapshot internal metadata review and live",
+      "url": "https://api.census.gov/data.json"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "2022 Economic Census released on a flow basis; tables on data.census.gov",
+      "url": "https://www.census.gov/programs-surveys/economic-census/data/tables.html"
+    }
+  ],
+  "spatial_resolution": "National and state",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "petroleum",
+    "bulk storage",
+    "terminals",
+    "fuel supply",
+    "Economic Census",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "2012 and 2017 Economic Census",
+  "temporal_coverage_years": {
+    "end": 2017,
+    "start": 2012
+  },
+  "temporal_resolution": "every five years",
+  "temporal_resolution_class": "multi_year",
+  "title_en": "Economic Census: petroleum bulk stations and terminals, storage capacity by facility, product and station type",
+  "type": "data",
+  "update_frequency": "multi_year"
+}

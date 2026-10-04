@@ -1,0 +1,93 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/denoslab/AgentEvac"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/denoslab/AgentEvac/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "freemium",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "agentevac wildfire evacuation simulator",
+    "repo": "github.com/denoslab/agentevac",
+    "url": "https://github.com/denoslab/AgentEvac"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "AgentEvac is a Python simulator coupling SUMO road traffic with decision agents for wildfire evacuation. Its README documents package installation, interactive and headless runs, agent decision recording and replay, and options for warning and routing scenarios. Users supply a road network, hazard state, population agents and information conditions; outputs include departure timing, travel paths, exposure and travel-time measures. Geographic coverage depends on the supplied network and scenario. GitHub metadata states Apache-2.0 licensing for code. Running live decision agents requires a separate OpenAI API key and service, while recorded decisions can be replayed without those calls. A limitation is that the README's behavioural design and performance claims were not independently tested, and an LLM response is not observed evacuation behaviour. The platform can compare warning and route policies under wildfire road closures. The catalogue's SUMO model provides the traffic engine, while this repository adds agent decisions and hazard coupling. No network archive, API credential or simulation output was downloaded. The related catalogue record model-sumo describes the traffic engine, while AgentEvac adds evacuation decisions and hazard scenarios.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "wildfire evacuation",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/denoslab/AgentEvac",
+  "id": "platform-agentevac-wildfire",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-15",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "AgentEvac wildfire evacuation simulator",
+  "notes": "G7 G7-1990. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. Apache source is free; README says live decision agents require an external OpenAI API key, while replay can avoid calls. No service cost was verified. ",
+  "open_source": true,
+  "platform_kind": [
+    "coupling_framework",
+    "simulation_engine"
+  ],
+  "provider": "DenoS Lab AgentEvac contributors",
+  "related_ids": [
+    "model-sumo"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for denoslab/AgentEvac: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=wildfire+evacuation&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/denoslab/AgentEvac/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Model coupling software for emergency services and road transport",
+  "type": "platform"
+}

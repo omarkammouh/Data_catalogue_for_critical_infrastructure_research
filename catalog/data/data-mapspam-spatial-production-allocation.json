@@ -1,0 +1,139 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "MapSPAM data center",
+      "url": "https://www.mapspam.info/data/"
+    },
+    {
+      "kind": "download",
+      "label": "All 9 files (zip)",
+      "note": "Direct link from the Dataverse API, 2026-10-01",
+      "url": "https://dataverse.harvard.edu/api/access/dataset/:persistentId/?persistentId=doi:10.7910/DVN/SWPENT"
+    },
+    {
+      "kind": "portal",
+      "label": "SPAM 2020 on Harvard Dataverse",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.7910/DVN/SWPENT"
+    },
+    {
+      "kind": "portal",
+      "label": "Previous homepage",
+      "note": "general page the record pointed to before direct-link pass 2026-09-30",
+      "url": "https://www.mapspam.info/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "vegetation_land_cover",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.7910/dvn/swpent",
+    "name": "mapspam spatial production allocation model crop production data",
+    "url": "https://mapspam.info"
+  },
+  "description": "MapSPAM publishes the outputs of the Spatial Production Allocation Model of the International Food Policy Research Institute. The model uses a cross-entropy approach to spread crop statistics from countries and subnational provinces to grid cells, giving plausible estimates of where crops are grown. Output is at about 10 by 10 km grid-cell resolution with four variables: physical area, harvested area, production and yield. The data are split by rainfed and irrigated production system and the two combined. Coverage is global for SPAM 2020, with 46 crops (about 800,000 pixels and roughly 500 million records); it is also global for 2010, 2005 and 2000, and there is a Sub-Saharan Africa release for 2017 that adds value of production. Access is free: pre-packaged downloads are split by crop, production system, variable and format (CSV and GeoTIFF, plus DBF for older releases), regional bundles and country files. The data are archived on Harvard Dataverse; SPAM 2020 v2.2 was updated on 5 May 2026 (doi 10.7910/DVN/SWPENT). Use falls under the IFPRI Datasets Terms of Use, which treat the data as global public goods with unrestricted public access; the Dataverse record carries no separate licence field. Caveats: the grid values are modelled allocations, not observations, and releases for different years use different crop lists and methods. For simulation it gives the spatial exposure of crop production to floods, droughts and heat, and the production baseline for food-supply disruption studies. Related catalogue records include EarthStat, FAO GAEZ and FAOSTAT.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: agricultural statistics, crop maps and farm structure",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "csv",
+    "raster",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "drought",
+    "flood",
+    "extreme_heat"
+  ],
+  "homepage": "https://doi.org/10.7910/DVN/SWPENT",
+  "id": "data-mapspam-spatial-production-allocation",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-05",
+  "licence": "custom dataset terms (Harvard Dataverse custom licence)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.mapspam.info/",
+      "https://www.mapspam.info/data/"
+    ]
+  },
+  "maturity": "active",
+  "name": "MapSPAM Spatial Production Allocation Model crop production data",
+  "provider": "International Food Policy Research Institute (IFPRI)",
+  "schema_summary": "grid cell id and coordinates, country and admin units, per crop physical area, harvested area, production and yield by rainfed, irrigated and total",
+  "sectors": [
+    "industry.agriculture",
+    "water.irrigation"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "method summary read 2026-09-26 (rendered)",
+      "url": "https://www.mapspam.info/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "variables, crops, formats, releases and citation read 2026-09-26 (rendered)",
+      "url": "https://www.mapspam.info/data/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version release date and IFPRI terms of use",
+      "url": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/SWPENT"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): custom dataset terms (Harvard Dataverse custom licence) (basis: DataCite metadata (rightsList))",
+      "url": "https://api.datacite.org/dois/10.7910/dvn/swpent"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.mapspam.info/"
+    }
+  ],
+  "spatial_resolution": "about 10 km grid (5 arc-minutes)",
+  "spatial_resolution_class": "over_10km",
+  "tags": [
+    "crop maps",
+    "gridded agriculture",
+    "IFPRI"
+  ],
+  "temporal_coverage": "reference years 2000, 2005, 2010, 2017 (Sub-Saharan Africa) and 2020",
+  "temporal_coverage_years": {
+    "end": 2020,
+    "start": 2000
+  },
+  "temporal_resolution": "single reference years",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "MapSPAM Spatial Production Allocation Model crop production data",
+  "type": "data",
+  "update_frequency": "irregular"
+}

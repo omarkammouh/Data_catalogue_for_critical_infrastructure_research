@@ -1,0 +1,91 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/open-energy-transition/osm-powerplants"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/open-energy-transition/osm-powerplants/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "osm power plants extraction tool",
+    "repo": "github.com/open-energy-transition/osm-powerplants",
+    "url": "https://github.com/open-energy-transition/osm-powerplants"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "OSM Power Plants is Open Energy Transition's Python package for extracting mapped generation facilities from OpenStreetMap into a modelling-ready table. It parses fuel type, technology, capacity, coordinates and commissioning year, and writes rejected features with reason codes to CSV and GeoJSON for mapper review. Inputs are a country selection and live OSM power-plant tags; outputs are plant tables and optional rejection reports. Geographic coverage follows countries requested, while the data date is the OpenStreetMap extraction time, not a fixed series. The package is free under MIT terms through GitHub and PyPI, with command-line and Python examples in the README. The source OSM data have their own ODbL terms. A limitation is that plants without usable capacity or technology tags can be excluded; the rejection report makes those gaps visible. The generated inventory can supply generation units for power-capacity and hazard-exposure simulations. The catalogue's data-open-infrastructure-map is a related map of OSM assets, whereas this package produces structured plant inputs. No country extraction was run.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "open-energy-transition/osm-powerplants provider README continuation",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/open-energy-transition/osm-powerplants",
+  "id": "platform-osm-powerplants",
+  "interfaces": [
+    "code_library",
+    "command_line"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-01",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "OSM Power Plants extraction tool",
+  "notes": "G7 G7-1265. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Open Energy Transition",
+  "related_ids": [
+    "data-open-infrastructure-map"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub repository metadata for open-energy-transition/osm-powerplants: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/open-energy-transition/osm-powerplants"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/open-energy-transition/osm-powerplants/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "OSM Power Plants extraction tool",
+  "type": "platform"
+}

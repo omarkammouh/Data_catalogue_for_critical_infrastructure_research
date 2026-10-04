@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "paper",
+      "label": "arXiv abstract, doi 10.48550/arXiv.2607.09614",
+      "url": "https://arxiv.org/abs/2607.09614"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "https://doi.org/10.48550/arXiv.2607.09614",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-09-29",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.48550/arxiv.2607.09614",
+    "name": "inunda gpu native differentiable flood inundation solver",
+    "url": "https://arxiv.org/abs/2607.09614"
+  },
+  "description": "Inunda is a GPU-native, differentiable solver for high-resolution flood inundation, described in a July 2026 arXiv paper by Zhi Li. It solves the two-dimensional shallow water equations with a mass-conservative local-inertial scheme and runs multi-day events over millions of cells in minutes on a single GPU; because each operator supports automatic differentiation, parameters can be calibrated by gradient descent against gage observations. Three cases are shown: a Hurricane Harvey hindcast in Harris County, Texas, matching surveyed high-water marks with a mean absolute error of 0.67 m and a median gage Nash-Sutcliffe efficiency of +0.72 against +0.31 for the operational National Water Model version 3.0; a probabilistic forecast for the July 2025 Central Texas flash flood driven by an 18-member convection-allowing rainfall ensemble; and a post-fire flash flood in the Rio Ruidoso burn scar where calibration recovers the spatial field of saturated hydraulic conductivity. Coverage: any domain with terrain and forcing, demonstrated in Texas and New Mexico. Access: an open pipeline is claimed in the abstract; the code location and licence were not read; the paper is CC BY 4.0. Caveats: a very recent preprint, not yet peer reviewed. It supports rapid flood scenario, forecasting and calibration studies, and relates to the National Water Model record in the catalogue.",
+  "description_checked": "2026-09-29",
+  "discovery_routes": [
+    {
+      "date": "2026-09-29",
+      "query": "urban flood model open source hydrodynamic GPU sewer coupling",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://arxiv.org/abs/2607.09614",
+  "id": "model-inunda-gpu-differentiable-flood-inundation-solver",
+  "inputs": [
+    "Terrain, rainfall or flow forcing, gage observations for calibration"
+  ],
+  "language": [
+    "not_stated"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-10",
+  "licence": "not stated for the model code; the describing arXiv preprint is under the CC-BY-SA-4.0",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "hybrid"
+  ],
+  "name": "Inunda GPU-native differentiable flood inundation solver",
+  "outputs": [
+    "Two-dimensional water depth and extent over millions of cells",
+    "calibrated parameters such as saturated hydraulic conductivity"
+  ],
+  "provider": "Zhi Li (arXiv 2607.09614, July 2026)",
+  "related_ids": [
+    "model-noaa-national-water-model"
+  ],
+  "sectors": [
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-29",
+      "note": "abstract: GPU 2D SWE solver, differentiable, Harvey MAE 0.67 m, NSE 0.72 vs NWM 0.31, Central Texas ensemble, Ruidoso burn scar",
+      "url": "https://arxiv.org/abs/2607.09614"
+    },
+    {
+      "accessed": "2026-09-29",
+      "note": "licence re-check at wave 2 integration: licence read on the provider page",
+      "url": "https://arxiv.org/abs/2607.09614"
+    }
+  ],
+  "tags": [
+    "GPU",
+    "differentiable",
+    "shallow water equations",
+    "local-inertial",
+    "flood forecasting",
+    "r2-fresh-water"
+  ],
+  "title_en": "Inunda: gpu-native solver for flood inundation in harris county",
+  "type": "model",
+  "validated_on": [
+    "Hurricane Harvey 2017 in Harris County (MAE 0.67 m against high-water marks",
+    "median gage NSE +0.72), July 2025 Central Texas flash flood ensemble forecast, Rio Ruidoso burn scar"
+  ]
+}

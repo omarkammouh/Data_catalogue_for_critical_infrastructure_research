@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/SpaceNetLab/StarPerf_Simulator"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "asia"
+  ],
+  "cost": "free",
+  "countries": [
+    "CN"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "starperf network performance simulator for leo mega constellations",
+    "repo": "github.com/spacenetlab/starperf_simulator",
+    "url": "https://github.com/SpaceNetLab/StarPerf_Simulator"
+  },
+  "description": "StarPerf is a simulator for estimating the network performance of low Earth orbit mega-constellations such as Starlink and OneWeb, from SpaceNetLab at Tsinghua University. It generates a satellite network topology from a constellation design (orbital altitude, inclination, number of orbits and satellites per orbit), then evaluates area-to-area latency, throughput and other metrics as satellites move, and can scale space resources such as satellite numbers, link availability and capacity to explore designs that cannot easily be tested for real. Version 1.0 relied on MATLAB and AGI's STK for orbit computation, with presets and precomputed topologies for Starlink, OneWeb and Telesat. StarPerf 2.0 is written entirely in Python 3.10 or later without third-party orbit tools, adds three-dimensional visualisation with Cesium, traffic and energy consumption plugins, and security simulation that reproduces link-flooding and energy-drain attacks on satellite networks from NDSS 2025 and IWQoS 2023 papers. Coverage: software for any constellation. Format and access: Python source on GitHub, free under the BSD 2-Clause licence; the repository shows about 205 stars. Caveats: flow-level abstraction without detailed radio or packet effects; results depend on assumed ground stations and traffic. Simulation uses: capacity planning of constellations, network flow over moving topologies, and resilience to attacks and failures. Related records: Hypatia simulates at packet level, LeoEM reuses StarPerf's constellation stage, and OpenSN emulates satellite networks.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "卫星网络 仿真 开源 低轨星座 路由 仿真平台 StarPerf 模型",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/SpaceNetLab/StarPerf_Simulator",
+  "id": "model-starperf",
+  "inputs": [
+    "constellation parameters (altitude, inclination, orbits, satellites per orbit)",
+    "ground stations and traffic",
+    "attack or energy plugin settings"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "last_updated": "2025-12-11",
+  "licence": "BSD-2-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "StarPerf: network performance simulator for LEO mega-constellations",
+  "notes": "README of the master branch (version 1.0) read from raw GitHub and repository page (StarPerf 2.0, licence, stars) via fetch on 2026-09-26. Hewu Li as co-lead is from recall; the README names Zeqi Lai and a student contact.",
+  "outputs": [
+    "time-varying topology",
+    "latency, throughput and path metrics",
+    "3D visualisation"
+  ],
+  "provider": "Tsinghua University (Zeqi Lai, Hewu Li and colleagues, SpaceNetLab)",
+  "related_ids": [
+    "data-celestrak-gp-satcat",
+    "model-hypatia"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "digital.satellite_positioning",
+    "digital.telecom",
+    "digital.internet_exchange"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README (1.0)",
+      "url": "https://raw.githubusercontent.com/SpaceNetLab/StarPerf_Simulator/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "repository page (2.0)",
+      "url": "https://github.com/SpaceNetLab/StarPerf_Simulator"
+    }
+  ],
+  "tags": [
+    "mega-constellation",
+    "Starlink",
+    "network performance",
+    "LEO",
+    "satellite security"
+  ],
+  "title_en": "StarPerf: network performance simulator for LEO mega-constellations",
+  "type": "model",
+  "validated_on": []
+}

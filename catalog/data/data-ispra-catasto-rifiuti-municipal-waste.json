@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Annual municipal data in one CSV per year",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.catasto-rifiuti.isprambiente.it/index.php?pg=downloadComune"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "IT"
+  ],
+  "data_family": [
+    "demand_operation",
+    "service_performance"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ispra catasto rifiuti municipal waste production and separate collection for every italian municipality 2010 to 2024 and province 2001 to 2024",
+    "url": "https://catasto-rifiuti.isprambiente.it/index.php?pg=downloadComune"
+  },
+  "description": "The Catasto Rifiuti gives, for every one of Italy's municipalities, how much urban waste is produced each year and how much of it is collected separately for recycling, the reference source for local waste performance in Italy. It is maintained by ISPRA, the national environmental protection and research institute. Coverage is every municipality from 2010 to 2024 and every province from 2001 to 2024. The files give population, tonnes separately collected by fraction (organic, green, paper and cardboard, glass, wood, metal, plastic, electrical equipment, textiles, construction and demolition, street sweeping, bulky waste and others), unsorted waste, total urban waste and the separate collection rate. One CSV per year covering all municipalities is available as a free download, and the navigation pages offer tables by region, province and municipality. Caveats: rounding means CSV values can differ slightly from the web pages, and treatment destinations are not part of these tables. Simulation uses: setting municipal waste generation and collection splits in waste collection and treatment network models, and comparing municipalities to test collection policies. Related records: the Italian municipal waste cost panel (data-italy-municipal-solid-waste-cost-panel) uses similar municipal data, and Eurostat municipal waste (data-eurostat-env-wasmun) gives national totals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: ISPRA (IT, environment_agency_permit_register)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://www.catasto-rifiuti.isprambiente.it/index.php?pg=downloadComune",
+  "id": "data-ispra-catasto-rifiuti-municipal-waste",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "licence": "ISPRA terms (no licence named on the page)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ISPRA Catasto Rifiuti: municipal waste production and separate collection for every Italian municipality (2010 to 2024) and province (2001 to 2024)",
+  "provider": "Istituto Superiore per la Protezione e la Ricerca Ambientale (ISPRA), Catasto Nazionale Rifiuti",
+  "related_ids": [
+    "data-italy-municipal-solid-waste-cost-panel",
+    "data-eurostat-env-wasmun"
+  ],
+  "schema_summary": "Per municipality and year: ISTAT code, region, province, municipality, population, reference, tonnes by separately collected fraction (organic, green, paper and cardboard, glass, wood, metal, plastic, WEEE, textiles, selective, construction and demolition, street sweeping to recovery, bulky to recovery, other), total separate collection, bulky to disposal, unsorted, total urban waste, separate collection percentage; province-level series from 2001",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "CSV for 2024 read in memory: about 7,900 lines, columns IstatComune, Regione, Provincia, Comune, Popolazione, Dato riferito a, fractions in tonnes (umida, verde, carta e cartone, vetro, legno, metallo, plastica, RAEE, tessili, selettiva, C e D, pulizia stradale, ingombranti), Totale RD, Indifferenziato, Totale RU, Percentuale RD. Page: download of municipal data on urban waste production and separate collection: navigation pages allow CSV downloads to municipal detail; this page gives one CSV with the annual data of all municipalities, years 2010 to 2024; municipal detail 2010-2024, provincial detail 2001-2024; rounding may cause small differences from the navigation pages; last update 22 July 2026",
+      "url": "https://www.catasto-rifiuti.isprambiente.it/index.php?pg=downloadComune"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://www.catasto-rifiuti.isprambiente.it/index.php?pg=downloadComune"
+    }
+  ],
+  "spatial_resolution": "Municipality (comune)",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "municipal waste",
+    "separate collection",
+    "recycling",
+    "municipalities",
+    "Italy",
+    "ISPRA"
+  ],
+  "temporal_coverage": "2010 to 2024 by municipality; 2001 to 2024 by province",
+  "temporal_resolution": "Annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "ISPRA Catasto Rifiuti: municipal waste production and separate collection for every Italian municipality (2010 to 2024) and province (2001 to 2024)",
+  "type": "data",
+  "update_frequency": "annual"
+}

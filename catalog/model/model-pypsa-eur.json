@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code and workflow",
+      "url": "https://github.com/PyPSA/pypsa-eur"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://pypsa-eur.readthedocs.io/"
+    },
+    {
+      "kind": "docs",
+      "label": "Known limitations",
+      "url": "https://pypsa-eur.readthedocs.io/en/latest/limitations/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pypsa eur",
+    "repo": "github.com/pypsa/pypsa-eur",
+    "url": "https://pypsa-eur.readthedocs.io"
+  },
+  "description": "PyPSA-Eur is an open, sector-coupled optimisation model and model dataset of the European energy system at transmission network level. It covers the full ENTSO-E area and all energy sectors, including transport, heating, biomass, industry and agriculture, and besides the power grid it includes pipeline networks for gas, hydrogen, carbon dioxide and liquid fuels. The model is built entirely from open data by a Snakemake workflow and is designed to be imported into the PyPSA framework, and it suits both planning and operational studies. It has many contributors, with maintenance led by the Department of Digital Transformation in Energy Systems at the Technical University of Berlin; earlier versions were developed at the Karlsruhe Institute of Technology. Code and workflow are on GitHub (release v2026.09.0 per the citation file) under the MIT licence, with the README and documentation under CC-BY-4.0, free of charge. Caveats: the README states that the model is under active development, has several documented limitations that users should understand before use, and that its documentation remains somewhat patchy; known topics are tracked as GitHub issues. Simulation uses are capacity planning, optimisation and network flow studies of European electricity, gas, hydrogen and heat systems. Related records: it runs on model-pypsa and has a global counterpart in model-pypsa-earth.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry PyPSA community",
+      "route": "R06",
+      "source": "energy-pypsa"
+    }
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://pypsa-eur.readthedocs.io/",
+  "id": "model-pypsa-eur",
+  "inputs": [
+    "Open data retrieved and processed by a Snakemake workflow (grid",
+    "power plants",
+    "renewable potentials",
+    "demand)"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09",
+  "licence": "MIT (code); README and documentation CC-BY-4.0",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network"
+  ],
+  "name": "PyPSA-Eur",
+  "outputs": [
+    "PyPSA networks of the European energy system",
+    "Optimised capacities and dispatch"
+  ],
+  "provider": "PyPSA-Eur contributors; maintenance led by the Department of Digital Transformation in Energy Systems, Technical University of Berlin",
+  "related_ids": [
+    "model-pypsa",
+    "model-pypsa-earth"
+  ],
+  "repository": "https://github.com/PyPSA/pypsa-eur",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity",
+    "energy.gas_hydrogen",
+    "energy.oil_fuels",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Scope (ENTSO-E area, all sectors, pipelines), Snakemake from open data, for PyPSA; maintenance TU Berlin, earlier KIT; active development, limitations, patchy documentation; MIT licence",
+      "url": "https://raw.githubusercontent.com/PyPSA/pypsa-eur/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Version v2026.09.0; licence MIT; authors led by Tom Brown",
+      "url": "https://raw.githubusercontent.com/PyPSA/pypsa-eur/HEAD/CITATION.cff"
+    }
+  ],
+  "tags": [
+    "Europe",
+    "sector coupling",
+    "open data",
+    "Snakemake",
+    "PyPSA"
+  ],
+  "title_en": "Pypsa-eur: open sector-coupled european energy system model",
+  "type": "model",
+  "validated_on": []
+}

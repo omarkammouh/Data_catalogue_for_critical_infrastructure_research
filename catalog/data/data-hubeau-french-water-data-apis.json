@@ -1,0 +1,156 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "List of APIs",
+      "url": "https://hubeau.eaufrance.fr/page/apis"
+    },
+    {
+      "kind": "api",
+      "label": "Hydrometry API documentation and console",
+      "url": "https://hubeau.eaufrance.fr/page/api-hydrometrie"
+    },
+    {
+      "kind": "api",
+      "label": "Hydrometry OpenAPI description",
+      "url": "https://hubeau.eaufrance.fr/api/v2/hydrometrie/api-docs"
+    },
+    {
+      "kind": "api",
+      "label": "Water and sanitation service indicators API",
+      "url": "https://hubeau.eaufrance.fr/page/api-indicateurs-services"
+    },
+    {
+      "kind": "docs",
+      "label": "Terms of use",
+      "url": "https://hubeau.eaufrance.fr/page/conditions-generales"
+    },
+    {
+      "kind": "repo",
+      "label": "Issue tracker (GitHub)",
+      "url": "https://github.com/BRGM/hubeau"
+    }
+  ],
+  "access_note": "No registration or key is needed; users are asked to filter requests (by place, time, fields) and to prefer compressed responses.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "weather_observations",
+    "service_performance",
+    "demand_operation",
+    "environmental_impact",
+    "health_impacts",
+    "subsurface_geotechnical"
+  ],
+  "data_kind": [
+    "stream",
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "hub eau open apis of the french water information system",
+    "repo": "github.com/brgm/hubeau",
+    "url": "https://hubeau.eaufrance.fr"
+  },
+  "description": "Hub'Eau is the national set of open REST APIs that serves public data from France's water information system, published by BRGM as a lasting service of the eaufrance network. Thirteen APIs cover hydrometry, groundwater levels, river and groundwater quality, drinking water quality control results by commune, annual water abstractions, river temperature, visual flow observations on small rivers, coastal water monitoring, hydrobiology, fish surveys, pesticide sales and water and sanitation service indicators. The hydrometry API draws on the national HYDRO platform run by the Vigicrues central service: near real-time water levels and flows from about 5,000 stations recorded every 5 to 60 minutes and kept for one month, plus daily and monthly flows over the full record, back to 1900 at some of more than 4,200 stations. Other APIs report volumes such as 120 million drinking water analyses and 1.1 million annual abstraction volumes. Responses come as JSON, GeoJSON, CSV or XML, with no registration, and data are reusable under the Etalab Licence Ouverte, including commercially, with attribution. Caveats: real-time series are provisional and short, users must page and filter large queries, and coverage mirrors the underlying databases. Simulation uses: live feeds for flood and drought early warning and digital twins of rivers and supply systems, abstraction and quality inputs for drinking water and irrigation scenarios. Related records: the SISPEA observatory (data-sispea-french-water-services-observatory) behind the service indicators API and the French wastewater treatment portal (data-france-collective-sanitation-portal-wwtp).",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: Ministère de la Transition écologique, eaufrance water information system (OFB) (FR, ministry) https://www.eaufrance.fr/",
+      "route": "R10",
+      "source": "water-organisation-walk"
+    }
+  ],
+  "formats": [
+    "json",
+    "geojson",
+    "csv",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://hubeau.eaufrance.fr/",
+  "id": "data-hubeau-french-water-data-apis",
+  "languages": [
+    "fr"
+  ],
+  "licence": "Licence Ouverte (Etalab)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Hub'Eau: open APIs of the French water information system",
+  "provider": "BRGM (publisher of Hub'Eau) for the eaufrance water information system (SIE)",
+  "related_ids": [
+    "data-sispea-french-water-services-observatory",
+    "data-france-collective-sanitation-portal-wwtp"
+  ],
+  "schema_summary": "13 APIs: hydrometry (about 5,000 stations, water level H and discharge Q), piezometry (41 million measurements), river and groundwater quality, drinking water quality control results (120 million analyses), water abstractions (1.1 million annual volumes), river temperature, flow observations of small rivers, coastal waters, hydrobiology, fish, pesticide sales, water and sanitation service indicators; fields reference Sandre codes",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "water.irrigation",
+    "water.dams_flood_defences",
+    "water.stormwater_drainage"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "digital_twin",
+    "emergency_response",
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "list of 13 APIs with volumes",
+      "url": "https://hubeau.eaufrance.fr/page/apis"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "PHyC source, about 5,000 stations, 5 to 60 minute data kept one month, daily and monthly flows since 1900 for 4,200+ stations, endpoints in JSON, CSV, XML",
+      "url": "https://hubeau.eaufrance.fr/page/api-hydrometrie"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "service of eaufrance, CSV, JSON, GeoJSON",
+      "url": "https://hubeau.eaufrance.fr/page/a-propos"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "free, no registration, Etalab Licence Ouverte, BRGM GitHub for requests, filtering requested",
+      "url": "https://hubeau.eaufrance.fr/page/conditions-generales"
+    }
+  ],
+  "spatial_resolution": "station, sampling point, commune or service",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "France",
+    "eaufrance",
+    "API",
+    "hydrometry",
+    "groundwater levels",
+    "drinking water quality",
+    "water abstraction",
+    "real-time",
+    "Sandre"
+  ],
+  "temporal_coverage": "hydrometry real-time for the last month plus daily and monthly mean flows since 1900 for some of 4,200+ stations; other APIs vary",
+  "temporal_resolution": "5 to 60 minutes for real-time water levels and flows; daily and monthly derived values; annual for abstractions and service indicators",
+  "temporal_resolution_class": "sub_hourly",
+  "title_en": "Hub'Eau: open APIs of the French water information system",
+  "type": "data",
+  "update_frequency": "real_time"
+}

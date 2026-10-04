@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Dataset page on the national open data portal",
+      "url": "https://data.gouv.ci/datasets/recensement-de-la-population-ivoirienne"
+    },
+    {
+      "kind": "api",
+      "label": "Data Fair API (lines, aggregations, metadata)",
+      "url": "https://data.gouv.ci/data-fair/api/v1/datasets/recensement-de-la-population-ivoirienne"
+    },
+    {
+      "kind": "api",
+      "label": "Provider data page (follow-up search)",
+      "url": "https://data.gouv.ci/data-fair/api/v1/datasets/recensement-de-la-population-ivoirienne/lines?size=20"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa"
+  ],
+  "cost": "free",
+  "countries": [
+    "CI"
+  ],
+  "data_family": [
+    "behavioural_social"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cote d ivoire rgph 2021 final population and household counts by sub prefecture and commune data gouv ci",
+    "url": "https://data.gouv.ci/data-fair/api/v1/datasets/recensement-de-la-population-ivoirienne"
+  },
+  "description": "Côte d'Ivoire's national open data portal publishes the final overall results of the 2021 General Census of Population and Housing (RGPH 2021) as a table supplied by the National Institute of Statistics on 17 August 2022. For each of 519 sub-prefectures and communes, grouped by department, region and the 14 districts, it gives the number of men, women and ordinary households. Coverage is the whole country: the table sums to 15,344,989 men, 14,044,161 women and 5,616,487 households, and Abobo commune in Abidjan alone has 280,206 households. Format and access: a 1,557 row CSV behind a Data Fair API that returns lines, filtered queries and aggregates as JSON, with no registration. Licence: Licence Ouverte / Open Licence. Caveats: only three counts per area; housing conditions, water, electricity and amenities from the census are not in this table, and the statistics office site (now ANStat, anstat.ci) sits behind a bot check from the cloud, so the thematic reports were not read. Simulation uses: household counts as the demand base for water, power and waste service planning, and population by commune for exposure. Related records: the Meta electrical distribution grid maps for Africa.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "organisation walk (census-offices review): census pages, data portal and API of the national statistical office",
+      "route": "R10",
+      "source": "organisations.csv:CI:built_environment:housing_ministry_census"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://data.gouv.ci/data-fair/api/v1/datasets/recensement-de-la-population-ivoirienne",
+  "id": "data-cote-divoire-rgph-2021-population-and-households-by-sub-prefecture",
+  "languages": [
+    "fr"
+  ],
+  "licence": "Licence Ouverte / Open Licence (Etalab)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Côte d'Ivoire RGPH 2021 final population and household counts by sub-prefecture and commune (data.gouv.ci)",
+  "provider": "Institut National de la Statistique (INS, now ANStat), Côte d'Ivoire, published on data.gouv.ci",
+  "related_ids": [
+    "data-meta-electrical-distribution-grid-maps-africa"
+  ],
+  "schema_summary": "Long table of 1,557 rows: DISTRICT, REGION, DEPARTEMENT, SOUS-PREFECTURE OU COMMUNE, CATEGORIE (HOMME, FEMME, MENAGE), EFFECTIF",
+  "sectors": [
+    "built_environment.buildings",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Dataset page: supplied by INS 17/08/2022, Licence Ouverte, 1,557 records",
+      "url": "https://data.gouv.ci/datasets/recensement-de-la-population-ivoirienne"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Read: sums HOMME 15,344,989; FEMME 14,044,161; MENAGE 5,616,487",
+      "url": "https://data.gouv.ci/data-fair/api/v1/datasets/recensement-de-la-population-ivoirienne/values_agg?field=CATEGORIE&metric=sum&metric_field=EFFECTIF"
+    }
+  ],
+  "spatial_resolution": "519 sub-prefectures and communes, with department, region and district codes",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "census",
+    "Côte d'Ivoire",
+    "RGPH 2021",
+    "households",
+    "sub-prefecture",
+    "open data"
+  ],
+  "temporal_coverage": "RGPH 2021 enumeration, 8 November to 14 December 2021",
+  "temporal_coverage_years": {
+    "end": 2021,
+    "start": 2021
+  },
+  "temporal_resolution": "single census",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Côte d'Ivoire RGPH 2021 final population and household counts by sub-prefecture and commune (data.gouv.ci)",
+  "type": "data"
+}

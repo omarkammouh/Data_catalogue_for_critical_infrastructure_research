@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source and provider list (GitHub)",
+      "url": "https://github.com/mampfes/hacs_waste_collection_schedule"
+    },
+    {
+      "kind": "repo",
+      "label": "Copy on GitLab (cms/hacs_waste_collection_schedule)",
+      "url": "https://gitlab.com/cms/hacs_waste_collection_schedule"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania",
+    "asia",
+    "africa"
+  ],
+  "cost": "free",
+  "data_family": [
+    "demand_operation",
+    "catalogues_registries"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "waste collection schedule open source connectors to the waste collection calendars of about 3 800 service providers in 31 countries home assistant integration",
+    "repo": "github.com/mampfes/hacs_waste_collection_schedule",
+    "url": "https://github.com/mampfes/hacs_waste_collection_schedule"
+  },
+  "description": "Waste Collection Schedule is an open-source add-on for the Home Assistant home automation system that reads household waste collection dates from the web sites and calendar files of waste service providers. Its value for infrastructure studies is the provider list and the connectors themselves: the README lists about 3,800 entries, covering councils, municipal utilities and private collectors in 31 countries, from Australia and much of Europe to Canada, the United States, Japan, South Africa and Uruguay, each with a source module that returns collection dates by waste type for an address. Schedules are refreshed daily from the providers' sites or derived from their iCal files. The code is free to download from GitHub under the MIT licence, and a copy is also on GitLab. Caveats: it returns dates, not tonnages or routes, the connectors break when providers change their sites, some providers are listed more than once, and coverage is densest in Germany and other European countries. Coverage is multinational. Simulation uses: deriving collection frequencies and service patterns by area as inputs to waste collection and disruption models. Related records: the What a Waste global database (data-what-a-waste-global-database) supplies the quantities collected.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "waste collection",
+      "route": "R05",
+      "source": "gitlab"
+    }
+  ],
+  "formats": [
+    "source_code",
+    "other"
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://github.com/mampfes/hacs_waste_collection_schedule",
+  "id": "data-waste-collection-schedule-providers",
+  "languages": [
+    "en"
+  ],
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Waste Collection Schedule: open-source connectors to the waste collection calendars of about 3,800 service providers in 31 countries (Home Assistant integration)",
+  "provider": "mampfes and contributors (hacs_waste_collection_schedule)",
+  "related_ids": [
+    "data-what-a-waste-global-database"
+  ],
+  "schema_summary": "One source module per service provider that retrieves collection dates by waste type for an address, from provider web sites, ICS/iCal files or user-specified patterns; the README lists supported providers by country with their domains and a documentation page for each",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README read in memory: custom component for Home Assistant that retrieves waste collection schedules from a wide range of service providers; schedules updated daily from provider web sites, ICS/iCal files or user-specified dates; supported providers listed in sections for Australia, Austria, Belgium, Canada, Czech Republic, Denmark, Finland, France, Germany, Hungary, Iceland, Ireland, Italy, Japan, Liechtenstein, Lithuania, Luxembourg, Malta, Netherlands, New Zealand, Norway, Poland, Portugal, Slovakia, Slovenia, South Africa, Sweden, Switzerland, United Kingdom, United States and Uruguay (31 countries; 3,838 list entries counted in the README, some providers listed more than once); 3.0.0 pre-release reworks sources into declarative definitions with canonical waste types; MIT licence",
+      "url": "https://raw.githubusercontent.com/mampfes/hacs_waste_collection_schedule/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GitLab project metadata read: copy created 2026-04-13, MIT licence, description 'Home Assistant integration framework for (garbage collection) schedules'",
+      "url": "https://gitlab.com/api/v4/projects/cms%2Fhacs_waste_collection_schedule"
+    }
+  ],
+  "spatial_resolution": "Address or collection district",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "waste collection",
+    "collection schedules",
+    "Home Assistant",
+    "municipal waste",
+    "ICS"
+  ],
+  "temporal_coverage": "Current and upcoming collection dates",
+  "temporal_resolution": "Daily (collection dates)",
+  "temporal_resolution_class": "daily",
+  "title_en": "Waste Collection Schedule: open-source connectors to the waste collection calendars of about 3,800 service providers in 31 countries (Home Assistant integration)",
+  "type": "data",
+  "update_frequency": "daily"
+}

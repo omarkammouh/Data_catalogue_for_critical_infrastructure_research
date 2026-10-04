@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Zhiyu014/GNN-UDS"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Zhiyu014/GNN-UDS/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Zhang et al. (2024). Graph neural network-based surrogate modelling for real-time hydraulic prediction of urban drainage networks. Water Research 263, 122142. https://doi.org/10.1016/j.watres.2024.122142",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gnn uds urban drainage surrogate and control models",
+    "repo": "github.com/zhiyu014/gnn-uds",
+    "url": "https://github.com/Zhiyu014/GNN-UDS"
+  },
+  "description": "GNN-UDS provides graph-neural-network hydraulic surrogates and control experiments for urban drainage networks. The repository accompanies work by Zhang and colleagues on hydraulic prediction, model predictive control and reinforcement learning. Python commands generate labels with SWMM, train a surrogate, test rainfall events and run optimisation with either a physical or learned internal model. The main branch uses TensorFlow and a separate branch uses PyTorch. Documented examples include Shunqing, with 113 nodes, 131 conduits and 106 subcatchments covering 33.02 square kilometres, and Astlingen, with 30 nodes and ten years of rainfall records. Shunqing includes 148 synthetic storms lasting 6–24 hours. Public source and configuration files are free under GPL-3.0. Users need the specified learning libraries and SWMM interfaces; training and portability beyond the supplied networks require additional work. The README lists older pinned dependencies, and the presence of benchmark results does not establish field calibration for a new catchment. Outputs include hydraulic predictions, control settings and event-performance results. The models extend EPA SWMM (model-epa-swmm) for repeated drainage forecasting and control studies.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:swmm fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://github.com/Zhiyu014/GNN-UDS",
+  "id": "model-gnn-uds",
+  "inputs": [
+    "Drainage network and rainfall configurations",
+    "SWMM-generated training labels"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-16",
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "hybrid",
+    "optimisation"
+  ],
+  "name": "GNN-UDS urban drainage surrogate and control models",
+  "notes": "G7 G7-0027. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Hydraulic state predictions",
+    "Control settings and optimisation results"
+  ],
+  "provider": "ZHiyu014 repository maintainers",
+  "related_ids": [
+    "model-epa-swmm"
+  ],
+  "repository": "https://github.com/Zhiyu014/GNN-UDS",
+  "sectors": [
+    "water.stormwater_drainage",
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Zhiyu014/GNN-UDS: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aswmm+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/ZHiyu014/GNN-UDS/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "GNN-UDS urban drainage surrogate and control models",
+  "type": "model",
+  "validated_on": []
+}

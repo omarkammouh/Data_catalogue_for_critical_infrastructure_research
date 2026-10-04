@@ -1,0 +1,111 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo (XLSX samples)",
+      "url": "https://zenodo.org/records/18312567"
+    },
+    {
+      "kind": "paper",
+      "label": "Source article (Production journal)",
+      "url": "https://doi.org/10.1590/1806-9649-2022v29e4421"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "BR"
+  ],
+  "data_family": [
+    "synthetic_benchmark",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.18312567",
+    "name": "synthetic ambulance occurrence data and generator for the 30 largest cities of sao paulo state brazil campinas and sorocaba samples",
+    "url": "doi:10.5281/zenodo.18312567"
+  },
+  "description": "This deposit provides synthetic emergency calls for ambulance services in Campinas and Sorocaba, two of the largest cities in São Paulo state, Brazil, and points to a generator that produces similar data for the state's 30 largest municipalities. The producers are Rodrigo Gigante of Centro Universitário Facens with Anibal Tavares de Azevedo and Takaaki Ohishi of the State University of Campinas, building on their earlier article on ambulance location. Each call has a location and five time intervals: time between calls, dispatch, travel computed from the call's coordinates, time on scene and transport to hospital, and cleaning before the ambulance is free again. Calls follow a daily pattern, and users can choose among six probability distributions for the intervals. The two sample workbooks are available as a free download from Zenodo under the Creative Commons Attribution 4.0 licence, and the generator runs in Google Colab. Caveats: all data are synthetic, and the producers state that an AI tool (NotebookLM) was used to define the response flowchart and time distributions, so parameters should be checked against observed service data before use. Simulation uses: testing ambulance location and fleet size with discrete-event simulation. Related records: the Fez-Meknes ambulance data (data-fez-meknes-ambulance-deployment) and JEMSS (model-jemss) support the same kind of study.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ambulance location synthetic data",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "csv"
+  ],
+  "geographic_scope": "city",
+  "hazards": [],
+  "homepage": "https://doi.org/10.5281/zenodo.18312567",
+  "id": "data-sao-paulo-ambulance-occurrence-generator",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-01-20",
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Synthetic ambulance occurrence data and generator for the 30 largest cities of São Paulo state, Brazil (Campinas and Sorocaba samples)",
+  "provider": "Rodrigo Luiz Gigante (Centro Universitário Facens), Anibal Tavares de Azevedo and Takaaki Ohishi (Universidade Estadual de Campinas)",
+  "regions": [
+    "Campinas",
+    "Sorocaba",
+    "São Paulo state"
+  ],
+  "related_ids": [
+    "data-fez-meknes-ambulance-deployment",
+    "model-jemss"
+  ],
+  "schema_summary": "One row per synthetic call with location (latitude and longitude) and time markers T1 inter-arrival, T2 dispatch, T3 travel, T4 on-scene and transport to hospital, T5 cleaning and release; daily pattern 20% of calls 00:00 to 08:00, 35% 08:00 to 16:00, 45% 16:00 to 24:00; choice of normal, lognormal, gamma, exponential, triangular or uniform distributions",
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "optimisation",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Creators Gigante (Facens), Tavares de Azevedo and Ohishi (UNICAMP); CC BY 4.0; published 2026-01-20; files ocorrencias_campinas.xlsx and ocorrencias_sorocaba.xlsx (0.6 MB each); for DES of ambulance location and quantity; generated with the NotebookLM tool, used to define the response flowchart and time distributions; data for the 30 largest municipalities can be generated in Google Colab via the article link; time markers T1 to T5; daily demand pattern; derived from 10.1590/1806-9649-2022v29e4421",
+      "url": "https://zenodo.org/api/records/18312567"
+    }
+  ],
+  "spatial_resolution": "Call points within each city",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "ambulance location",
+    "discrete-event simulation",
+    "synthetic data",
+    "SAMU",
+    "São Paulo",
+    "EMS"
+  ],
+  "temporal_coverage": "Synthetic (published January 2026)",
+  "temporal_resolution": "Event level",
+  "temporal_resolution_class": "event",
+  "title_en": "Synthetic ambulance occurrence data and generator for the 30 largest cities of São Paulo state, Brazil (Campinas and Sorocaba samples)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

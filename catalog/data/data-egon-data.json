@@ -1,0 +1,132 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "data_bundle_egon_data.zip (20.1 GB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/16576506/files/data_bundle_egon_data.zip?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/openego/eGon-data"
+    },
+    {
+      "kind": "portal",
+      "label": "Input data bundle (Zenodo)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.10226008"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://egon-data.readthedocs.io/en/latest/"
+    }
+  ],
+  "access_note": "Running the pipeline needs PostgreSQL with PostGIS, osm2pgsql, Java and other tools, a Copernicus CDS key for ERA5 and an ENTSO-E API registration.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "DE"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation",
+    "scenarios_projections",
+    "distributed_flexible_resources"
+  ],
+  "data_kind": [
+    "network_topology",
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "egon data open data pipeline and data model for german energy system planning",
+    "repo": "github.com/openego/egon-data",
+    "url": "https://egon-data.readthedocs.io/en/latest"
+  },
+  "description": "eGon-data is an open, reproducible data processing pipeline that builds data models for energy system modelling of Germany, covering electricity transmission and distribution grid topologies, demands and demand curves, generation capacities and cross-sectoral flexibility such as gas, heat and electric mobility, at high spatial resolution. It was developed in the eGo_n research project by Flensburg University of Applied Sciences, the Reiner Lemoine Institut, Otto von Guericke University Magdeburg, the DLR Institute of Networked Energy Systems and Europa-Universitaet Flensburg, funded by the German ministry BMWK, to study sector coupling effects on the grid; its output feeds the grid optimisation tools eTraGo, eDisGo and ding0. Coverage is Germany with neighbouring countries, with scenarios such as eGon2035. The Python pipeline writes to a PostgreSQL database, uses an input data bundle archived on Zenodo, and is documented on Read the Docs, with version 2.0.0 released in August 2025. Code is AGPL-3.0-or-later and outputs are published under open licences, at no cost. Caveats: running it needs PostgreSQL, PostGIS, osm2pgsql, Java and API registrations for ERA5 and ENTSO-E data, and the data bundle is about 20 GB. Simulation uses are network flow and capacity planning for transmission and distribution grids. Related records: none linked on the provider's pages read on the day.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "power grid space weather",
+      "route": "R03",
+      "source": "datacite"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "power grid DER",
+      "route": "R03",
+      "source": "datacite"
+    }
+  ],
+  "formats": [
+    "database"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://zenodo.org/records/16576506",
+  "id": "data-egon-data",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-24",
+  "licence": "AGPL-3.0-or-later (code); input data bundle marked other-open with per-dataset licences",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "eGon-data - open data pipeline and data model for German energy system planning",
+  "provider": "eGo_n project consortium (Flensburg University of Applied Sciences, Reiner Lemoine Institut, Otto von Guericke University Magdeburg, DLR Institute of Networked Energy Systems, Europa-Universitaet Flensburg)",
+  "related_ids": [],
+  "sectors": [
+    "energy.electricity",
+    "energy.gas_hydrogen",
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, open_eGo heritage, eTraGo/ding0/eDisGo, consortium, BMWK FKZ 03EI1002, PostgreSQL interface, focus Germany, eGon2035",
+      "url": "https://egon-data.readthedocs.io/en/latest/about.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Changelog: 2.0.0 (2025-08-20), 1.0.0 (2025-05-15); last updated Sep 24, 2026",
+      "url": "https://egon-data.readthedocs.io/en/latest/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "AGPLv3+; prerequisites Docker/PostgreSQL, osm2pgsql, postgis, Java, CDS key, ENTSO-E registration",
+      "url": "https://raw.githubusercontent.com/openego/eGon-data/HEAD/README.rst"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Data bundle v1.0.0, 2025-07-29, other-open, 20,095,187,261 bytes; creator institutions",
+      "url": "https://zenodo.org/api/records/10226008"
+    }
+  ],
+  "tags": [
+    "Germany",
+    "sector coupling",
+    "data pipeline",
+    "grid model",
+    "eGo_n",
+    "open data"
+  ],
+  "title_en": "EGon-data - open data pipeline and data model for German energy system planning",
+  "type": "data"
+}

@@ -1,0 +1,116 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "OECD Data Explorer table",
+      "url": "https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_MUNW%40DF_MUNW&df%5Bag%5D=OECD.ENV.EPI"
+    },
+    {
+      "kind": "api",
+      "label": "SDMX API, CSV with labels",
+      "url": "https://sdmx.oecd.org/public/rest/data/OECD.ENV.EPI,DSD_MUNW@DF_MUNW,1.0/.A.MUNICIPAL.T?dimensionAtObservation=AllDimensions&format=csvfilewithlabels"
+    },
+    {
+      "kind": "docs",
+      "label": "Municipal waste indicator page",
+      "url": "https://www.oecd.org/en/data/indicators/municipal-waste.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "tabular",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "oecd municipal waste generation and treatment df munw by country since 1975",
+    "url": "https://data-explorer.oecd.org/vis?df%5Bag%5D=OECD.ENV.EPI&df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_MUNW%40DF_MUNW"
+  },
+  "description": "This OECD dataset is the main international time series of how much municipal waste countries generate and how they treat it. Published by the OECD Environment Directorate in its Data Explorer, it reports municipal waste generated, including household waste, and the amounts sent to recycling, composting, incineration with and without energy recovery, landfill and other recovery or disposal, in tonnes and per person. When read through the SDMX API, total generation covered 66 reporting areas, OECD members, several large partner economies and OECD and EU aggregates, for years from 1975 to 2024, with gaps by country. The data are free to view in the Data Explorer and available to download as CSV or Excel or through the API. Caveats: definitions of municipal waste differ between countries, early years are sparse, and treatment categories may not sum to generation. Coverage is mainly OECD and partner countries. Simulation uses: national waste generation and treatment baselines for landfill, incineration and recycling capacity planning and waste-sector emission scenarios. Related records: Eurostat's municipal waste statistics (data-eurostat-env-wasmun) give a comparable series for European countries.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have list from published reviews (integrator musthave/services.csv): OECD municipal waste statistics",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "analysis_package_file",
+    "spreadsheet"
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_MUNW%40DF_MUNW&df%5Bag%5D=OECD.ENV.EPI",
+  "id": "data-oecd-municipal-waste-generation-and-treatment",
+  "languages": [
+    "en"
+  ],
+  "licence": "OECD terms and conditions (CC BY 4.0 for OECD data)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.oecd.org/en/data/indicators/municipal-waste.html"
+    ]
+  },
+  "maturity": "active",
+  "name": "OECD municipal waste: generation and treatment (DF_MUNW), by country since 1975",
+  "provider": "OECD Environment Directorate (OECD.ENV.EPI)",
+  "related_ids": [
+    "data-eurostat-env-wasmun"
+  ],
+  "schema_summary": "SDMX dimensions: reference area, frequency, measure (municipal waste generated and treatment or disposal categories such as recycling, composting, incineration with and without energy recovery, landfill, other recovery and other disposal), unit (tonnes; also kg per person), time period, observation value and status",
+  "sectors": [
+    "services.waste"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "API response read in memory: 1,757 observations of total municipal waste generated in tonnes for 66 reference areas (OECD members, partner countries such as Argentina, Brazil, China, India, Indonesia and Saudi Arabia, and OECD and EU27 aggregates), years 1975 to 2024",
+      "url": "https://sdmx.oecd.org/public/rest/data/OECD.ENV.EPI,DSD_MUNW@DF_MUNW,1.0/.A.MUNICIPAL.T?dimensionAtObservation=AllDimensions&format=csvfilewithlabels"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Data Explorer view Waste - Municipal waste: generation and treatment (found with catalogue web search; the page renders by script); the result snippet describes amounts of municipal waste generated, including household waste, and the treatment and disposal method used",
+      "url": "https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_MUNW%40DF_MUNW&df%5Bag%5D=OECD.ENV.EPI"
+    }
+  ],
+  "spatial_resolution": "Country (plus OECD and EU aggregates)",
+  "spatial_resolution_class": "national",
+  "tags": [
+    "OECD",
+    "municipal waste",
+    "waste generation",
+    "recycling",
+    "landfill",
+    "incineration"
+  ],
+  "temporal_coverage": "1975 to 2024 (varies by country)",
+  "temporal_resolution": "Annual",
+  "temporal_resolution_class": "annual",
+  "title_en": "OECD municipal waste: generation and treatment (DF: MUNW), by country since 1975",
+  "type": "data",
+  "update_frequency": "annual"
+}

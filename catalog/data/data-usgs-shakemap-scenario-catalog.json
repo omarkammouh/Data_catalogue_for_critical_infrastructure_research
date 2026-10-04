@@ -1,0 +1,118 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Earthquake scenarios and catalogs",
+      "url": "https://www.usgs.gov/tools/earthquake-scenarios"
+    },
+    {
+      "kind": "portal",
+      "label": "Scenario FDSN event web service",
+      "url": "https://earthquake.usgs.gov/fdsnws/scenario/1/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "scenarios_projections",
+    "hazards",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "raster",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "usgs shakemap earthquake scenario catalogs bssc 2014 and others",
+    "url": "https://usgs.gov/tools/earthquake-scenarios"
+  },
+  "description": "The USGS earthquake scenario catalogs provide predicted shaking for hypothetical large earthquakes so that emergency managers, utilities and local governments can run exercises and plan for realistic events. Each scenario is a predictive ShakeMap with an assumed magnitude, location and, where known, fault rupture, and some scenarios also carry loss estimates from PAGER, ground failure estimates and other products. The producer is the U.S. Geological Survey Earthquake Hazards Program. Coverage is the United States: the authoritative 2017 collection of nearly 800 scenarios for the continental United States (the BSSC 2014 catalog) is derived from the 2014 National Seismic Hazard Model, and the scenario web service lists 1,255 scenarios across catalogs including newer 2023 hazard model and regional sets. Products are free and in the public domain, downloadable in several formats from each scenario page or through a GeoJSON event web service. Caveats: scenarios are plausible events, not forecasts, the catalogs differ in date and hazard model, and loss products exist only for some events. Simulation uses: shaking footprints for exercises, for estimating damage to hospitals, fire stations and lifelines, and as inputs to cascading infrastructure and emergency response models. Related records: Canada's National Earthquake Scenario Catalogue (data-canada-national-earthquake-scenario-catalogue) adds building damage and casualty estimates for Canada, and Geoscience Australia's scenario tool (data-ga-earthquake-scenario-selection) covers Australia.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "USGS earthquake scenarios ShakeMap scenario catalog planning",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "shapefile",
+    "kml"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "earthquake"
+  ],
+  "homepage": "https://www.usgs.gov/tools/earthquake-scenarios",
+  "id": "data-usgs-shakemap-scenario-catalog",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (USGS)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "USGS ShakeMap earthquake scenario catalogs (BSSC 2014 and others)",
+  "provider": "U.S. Geological Survey, Earthquake Hazards Program",
+  "related_ids": [
+    "data-canada-national-earthquake-scenario-catalogue",
+    "data-ga-earthquake-scenario-selection"
+  ],
+  "schema_summary": "Per scenario event: assumed magnitude, location and optional fault rupture geometry; ShakeMap ground motion and intensity products; for some events PAGER loss, ground failure and Did You Feel It scenario products; catalogs include bssc2014 and regional and legacy sets",
+  "sectors": [
+    "services.emergency_services",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "emergency_response",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose (training exercises for emergency response, utilities and local government; exposure of structures, lifelines, utilities and transport); 2017 collection of nearly 800 scenarios for the continental US from the 2014 NSHM (BSSC 2014 catalog); any format downloadable; legacy catalogs; related exercises; media public domain",
+      "url": "https://www.usgs.gov/tools/earthquake-scenarios"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Catalog list (adhoc, bssc2014, nshm23, regional and legacy sets) and product types (shakemap, losspager, ground-failure, dyfi, oaf, origin scenarios)",
+      "url": "https://earthquake.usgs.gov/fdsnws/scenario/1/application.json"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Count 1,255 scenarios in the service; bssc2014 alone 797",
+      "url": "https://earthquake.usgs.gov/fdsnws/scenario/1/count?format=geojson&starttime=1000-01-01&endtime=3000-01-01"
+    }
+  ],
+  "spatial_resolution": "ShakeMap grids for each scenario",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "earthquake scenarios",
+    "ShakeMap",
+    "exercises",
+    "emergency planning",
+    "PAGER",
+    "United States"
+  ],
+  "temporal_coverage": "Hypothetical events; BSSC 2014 set published 2017",
+  "temporal_resolution": "Single event per scenario",
+  "temporal_resolution_class": "event",
+  "title_en": "USGS ShakeMap earthquake scenario catalogs (BSSC 2014 and others)",
+  "type": "data",
+  "update_frequency": "irregular"
+}

@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/lanl-ansi/PowerModels.jl"
+    },
+    {
+      "kind": "paper",
+      "label": "Reference paper (PSCC 2018)",
+      "url": "https://doi.org/10.23919/PSCC.2018.8442948"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Coffrin, C., Bent, R., Sundar, K., Ng, Y., Lubin, M. (2018). PowerModels.jl: An Open-Source Framework for Exploring Power Flow Formulations. Power Systems Computation Conference (PSCC). doi:10.23919/PSCC.2018.8442948",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.23919/pscc.2018.8442948",
+    "name": "powermodels jl",
+    "repo": "github.com/lanl-ansi/powermodels.jl",
+    "url": "https://github.com/lanl-ansi/PowerModels.jl"
+  },
+  "description": "PowerModels.jl is a Julia/JuMP package for steady-state power network optimisation, designed to evaluate emerging power network formulations and algorithms on a common platform. It decouples problem specifications, namely power flow, optimal power flow, optimal transmission switching and transmission network expansion planning, from network formulations: AC in polar and rectangular coordinates, DC and LPAC approximations, SDP, SOC and QC relaxations and the current-voltage form, so that formulations can be compared on the same problems. It is developed at Los Alamos National Laboratory by the Advanced Network Science Initiative. The package is location independent and reads MATPOWER .m and PSS/E version 33 .raw network files for any transmission system. Code is on GitHub (version 0.21.6, commits to August 2026) under a BSD-style licence with LANL copyright, free of charge. Caveats: it addresses steady-state problems only, as its name states, and accepts only the MATPOWER and PSS/E v33 formats listed in its README. Simulation uses are network flow, optimisation and transmission expansion planning. Related records: model-gasmodels-jl applies the same design to gas networks.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry PowerModels.jl and LANL-ANSI packages",
+      "route": "R06",
+      "source": "energy-powermodels-jl"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/lanl-ansi/PowerModels.jl",
+  "id": "model-powermodels-jl",
+  "inputs": [
+    "MATPOWER .m case files",
+    "PSS/E v33 .raw files"
+  ],
+  "language": [
+    "julia"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-14",
+  "licence": "BSD-3-Clause (LANL copyright)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "network",
+    "physical"
+  ],
+  "name": "PowerModels.jl",
+  "outputs": [
+    "Power flow and optimal power flow solutions",
+    "Transmission switching and expansion decisions"
+  ],
+  "provider": "Los Alamos National Laboratory (LANL), Advanced Network Science Initiative (lanl-ansi)",
+  "related_ids": [
+    "model-gasmodels-jl"
+  ],
+  "repository": "https://github.com/lanl-ansi/PowerModels.jl",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Problem specifications, formulations, data formats; citation PSCC 2018 doi",
+      "url": "https://raw.githubusercontent.com/lanl-ansi/PowerModels.jl/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Copyright 2016 Los Alamos National Security; BSD-style redistribution conditions",
+      "url": "https://raw.githubusercontent.com/lanl-ansi/PowerModels.jl/HEAD/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 0.21.6",
+      "url": "https://raw.githubusercontent.com/lanl-ansi/PowerModels.jl/HEAD/Project.toml"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Visit 2026-09-08; head commit 2026-08-14",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/lanl-ansi/PowerModels.jl/visit/latest/"
+    }
+  ],
+  "tags": [
+    "optimal power flow",
+    "convex relaxations",
+    "Julia",
+    "JuMP",
+    "LANL"
+  ],
+  "title_en": "PowerModels.jl Julia/JuMP package for steady-state power network optimisation",
+  "type": "model",
+  "validated_on": []
+}

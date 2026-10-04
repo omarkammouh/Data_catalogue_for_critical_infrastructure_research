@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/lanl-ansi/PowerModelsGMD.jl"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "powermodelsgmd jl",
+    "repo": "github.com/lanl-ansi/powermodelsgmd.jl",
+    "url": "https://github.com/lanl-ansi/PowerModelsGMD.jl"
+  },
+  "description": "PowerModelsGMD.jl is an open-source Julia tool for evaluating the risks and mitigating the impacts of geomagnetic disturbances and E3 high-altitude electromagnetic pulse (HEMP) events on electrical power transmission networks. It computes geomagnetically induced currents from pre-determined geoelectric fields, taking the coupled line voltages as inputs, and solves quasi-dc line flow and ac power flow problems for a system subjected to these currents. It is developed at Los Alamos National Laboratory and builds directly on PowerModels.jl version 0.19 within the InfrastructureModels ecosystem, relying also on PowerModelsRestoration.jl and JuMP. The tool is location-independent and applies to any transmission network with the required GIC data. Code is on GitHub (version 1.1.1 in the manifest, last commit June 2025) under a BSD-style licence held by Triad National Security, at no cost. Caveats: it depends on specific older versions of its dependencies, such as PowerModels 0.19 where the current release is 0.21, and the geoelectric fields must be computed elsewhere. Simulation uses are hazard exposure of grids to space weather and electromagnetic pulse, network flow, resilience and mitigation optimisation. Related records: it extends model-powermodels-jl.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "register entry PowerModelsGMD.jl",
+      "route": "R05",
+      "source": "cross_cutting-powermodelsgmd"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "space_weather",
+    "physical_attack_sabotage"
+  ],
+  "homepage": "https://github.com/lanl-ansi/PowerModelsGMD.jl",
+  "id": "model-powermodelsgmd-jl",
+  "inputs": [
+    "Transmission network data with GIC parameters",
+    "Pre-determined geoelectric fields or coupled line voltages"
+  ],
+  "language": [
+    "julia"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-06-19",
+  "licence": "BSD-3-Clause (Triad National Security copyright)",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "optimisation",
+    "network"
+  ],
+  "name": "PowerModelsGMD.jl",
+  "outputs": [
+    "Geomagnetically induced currents",
+    "Quasi-dc and ac power flows under GIC",
+    "Mitigation decisions"
+  ],
+  "provider": "Los Alamos National Laboratory (LANL), Advanced Network Science Initiative (lanl-ansi)",
+  "related_ids": [
+    "model-powermodels-jl"
+  ],
+  "repository": "https://github.com/lanl-ansi/PowerModelsGMD.jl",
+  "runs_on": [],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow",
+    "resilience",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose GMD and E3 HEMP; quasi-dc and ac power flow; GIC from geoelectric fields; dependencies PowerModels v0.19, InfrastructureModels v0.7, PowerModelsRestoration v0.7, JuMP",
+      "url": "https://raw.githubusercontent.com/lanl-ansi/PowerModelsGMD.jl/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Copyright 2016 Triad National Security; LANL",
+      "url": "https://raw.githubusercontent.com/lanl-ansi/PowerModelsGMD.jl/HEAD/LICENSE.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "version 1.1.1",
+      "url": "https://raw.githubusercontent.com/lanl-ansi/PowerModelsGMD.jl/HEAD/Project.toml"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Visit 2026-07-04; head commit 2025-06-19",
+      "url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/lanl-ansi/PowerModelsGMD.jl/visit/latest/"
+    }
+  ],
+  "tags": [
+    "geomagnetic disturbance",
+    "GIC",
+    "HEMP",
+    "space weather",
+    "Julia"
+  ],
+  "title_en": "PowerModelsGMD.jl tool for geomagnetic disturbance and HEMP event impacts",
+  "type": "model",
+  "validated_on": []
+}

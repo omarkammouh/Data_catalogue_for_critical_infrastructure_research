@@ -1,0 +1,97 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource page",
+      "url": "https://github.com/xthames/swxg"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://openresearchsoftware.metajnl.com/articles/10.5334/jors.651"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "10.5334/jors.651",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "swxg multisite stochastic weather generator",
+    "url": "https://github.com/xthames/swxg"
+  },
+  "description": "swxg is a Python stochastic weather generator from Alexander B. Thames and contributors. It fits precipitation with hidden Markov models, represents precipitation-temperature dependence with copulas, and samples weather sequences for one or several sites. Inputs are timestamped observations with site locations. The generated series can be monthly or daily and of user-selected length, making them useful as forcing for water, energy and infrastructure hazard simulations. Spatial scope follows the observed sites, not a precompiled global grid. The source is free under MIT and lists its numerical dependencies. A limitation is sensitivity to record length and site count: the README warns when fewer than 30 years or more than 20 sites are used. Monthly inputs cannot supply daily outputs, and subdaily generation is not implemented. It complements hydrological and demand models by producing weather scenarios. The README still labels its JORS citation in review, although the journal landing page identifies the published paper. No sequences were generated.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "JORS whole-index enumeration; 10.5334/jors.651; G5-LOCAL-040",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/xthames/swxg",
+  "id": "model-swxg-weather",
+  "inputs": [
+    "Timestamped precipitation and temperature observations",
+    "One or more site locations"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-03-29",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "swxg multisite stochastic weather generator",
+  "notes": "G5 G5-0209. Software checked through metadata and documentation, without installation or execution. Geographic scope follows the documented application or software portability; it does not imply validation throughout that area. ",
+  "outputs": [
+    "Synthetic monthly or daily precipitation and temperature sequences"
+  ],
+  "provider": "Alexander B. Thames and swxg contributors",
+  "related_ids": [],
+  "repository": "https://github.com/xthames/swxg",
+  "sectors": [
+    "water.irrigation",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Abstract and published code availability/reference read.",
+      "url": "https://openresearchsoftware.metajnl.com/articles/10.5334/jors.651"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own repository identity and metadata.",
+      "url": "https://api.github.com/repos/xthames/swxg"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Own documented inputs, purpose, output and reuse constraints.",
+      "url": "https://github.com/xthames/swxg/blob/main/README.md"
+    }
+  ],
+  "tags": [
+    "research software",
+    "JORS"
+  ],
+  "title_en": "Swxg multisite stochastic weather generator",
+  "type": "model"
+}

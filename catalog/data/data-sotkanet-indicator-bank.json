@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Sotkanet REST API (indicator list)",
+      "url": "https://sotkanet.fi/rest/1.1/indicators"
+    },
+    {
+      "kind": "portal",
+      "label": "Sotkanet indicator bank",
+      "url": "https://sotkanet.fi/sotkanet/en/data"
+    },
+    {
+      "kind": "docs",
+      "label": "Data update status",
+      "url": "https://sotkanet.fi/sotkanet/fi/data/sources"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FI"
+  ],
+  "data_family": [
+    "service_performance",
+    "demand_operation",
+    "social_vulnerability_equity"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sotkanet statistics and indicator bank finland about 3 800 health and welfare indicators by municipality and wellbeing services county with rest api",
+    "url": "https://sotkanet.fi/sotkanet/fi/data"
+  },
+  "description": "Sotkanet is Finland's national bank of health and welfare indicators, gathering several thousand comparable series from registers and surveys in one place. It is run by THL, the Finnish Institute for Health and Welfare. Its API listed 3,797 indicators on the day read, covering population health and service use, including waiting times for primary care physicians and dentists against the statutory maximum times, hospital and bed-ward treatment periods, readmissions, and social care, with values by municipality, wellbeing services county and other regions and by year. Indicator descriptions give the source and definition. Data are free under the CC BY 4.0 licence, available through the web service and through an open REST API returning JSON. Caveats: indicator series start and stop as sources change (several waiting time indicators end between 2021 and 2024), regional units must be matched across years, and many indicators describe population health, not infrastructure. Simulation uses: setting regional demand and access indicators for healthcare capacity models, and tracking waiting times as a measure of service strain. Related records: the CIHI indicator library (data-cihi-indicator-library-and-data-tables) and the New Zealand health system quality dashboard (data-hqsc-health-system-quality-dashboard-and-atlas) are comparable national indicator services.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: THL, Sotkanet (FI, health_ministry_service)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "json",
+    "web_page"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://sotkanet.fi/sotkanet/fi/data",
+  "id": "data-sotkanet-indicator-bank",
+  "languages": [
+    "en",
+    "fi"
+  ],
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Sotkanet statistics and indicator bank (Finland): about 3,800 health and welfare indicators by municipality and wellbeing services county, with REST API",
+  "provider": "Terveyden ja hyvinvoinnin laitos (THL, Finnish Institute for Health and Welfare)",
+  "related_ids": [
+    "data-cihi-indicator-library-and-data-tables",
+    "data-hqsc-health-system-quality-dashboard-and-atlas"
+  ],
+  "schema_summary": "Indicator metadata (id, title in Finnish, English and Swedish, description, source, subjects); values by indicator, region (municipality, wellbeing services county and other groupings) and year; indicators include waiting times for primary care physician and dental visits, hospital and bed-ward care periods, readmissions, service use and population health",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Statistics and indicator bank: indicators can be listed by subgroup or subject keyword, with data descriptions; update status page; CC BY 4.0 licence link",
+      "url": "https://sotkanet.fi/sotkanet/fi/data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "REST API answered with 3,797 indicators, titles in fi, en and sv; titles include waiting time for elective primary care physician visits over 7 days and over 3 months, dental waiting times, re-admittance to bed ward care, bed ward treatment periods",
+      "url": "https://sotkanet.fi/rest/1.1/indicators"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "THL access to treatment statistics: primary and specialised care waiting times against statutory maximum times, therapy guarantee for children and young people, continuity of care; 2025 access to primary care within two weeks worsened",
+      "url": "https://thl.fi/data-ja-tilastot/hoitoon-paasy"
+    }
+  ],
+  "spatial_resolution": "Municipality and wellbeing services county",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "health indicators",
+    "waiting times",
+    "hospital care",
+    "welfare services",
+    "Finland",
+    "API"
+  ],
+  "temporal_coverage": "Varies by indicator",
+  "temporal_resolution": "Annual (varies by indicator)",
+  "temporal_resolution_class": "varies",
+  "title_en": "Sotkanet statistics and indicator bank (Finland): about 3,800 health and welfare indicators by municipality and wellbeing services county, with REST API",
+  "type": "data",
+  "update_frequency": "real_time"
+}

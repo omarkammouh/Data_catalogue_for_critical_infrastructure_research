@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Figshare collection (distribution paths, README, NDC processor, entity details)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.6084/m9.figshare.c.6879889.v1"
+    },
+    {
+      "kind": "paper",
+      "label": "Data descriptor (Scientific Data 2024)",
+      "url": "https://www.nature.com/articles/s41597-024-03534-3"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "supply_chains_logistics",
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "tabular",
+    "network_topology",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1038/s41597-024-03534-3",
+    "name": "tracing opioids across the us reconstructed pharmaceutical distribution paths from dea arcos 2006 2014",
+    "url": "doi:10.6084/m9.figshare.c.6879889.v1"
+  },
+  "description": "This data set traces how individual packages of controlled drugs, mainly opioids, moved through the United States pharmaceutical supply chain from manufacturers through distributors to about 300,000 pharmacies, hospitals and practitioners. The authors reconstructed 375 million complete distribution paths for 18,672 drug products from ARCOS, the Drug Enforcement Administration's database of about half a billion shipment records between registrants, which records only single hops. The producers are Ambra Amico, Luca Verginer and Frank Schweitzer, who describe it in Scientific Data (2024). Coverage is national, 2006 to 2014, covering more than 1,800 distributors and manufacturers. Each product has a JSONL file listing, for every path, the sequence of distributors by DEA number, the shipping dates and the quantity delivered, with supporting tables of entities and product codes; the collection on figshare includes the processing code and is released under CC0, as a 3.6 GB archive that expands to about 50 GiB. Caveats: paths in early 2006 are less reliable because starting stocks are unknown, the data stop in 2014, and only drugs reported to ARCOS are included. Simulation uses: network models of pharmaceutical distribution, tests of how the failure of a distributor or a disaster region cascades to hospital and pharmacy supply, and calibration of drug shortage models. Related records: openFDA food enforcement (data-openfda-food-enforcement) shows a comparable recall stream for food, and the CMS hospital provider data (data-cms-provider-data-hospitals) lists hospitals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "pharmaceutical supply chain dataset hospitals distribution network",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://doi.org/10.6084/m9.figshare.c.6879889.v1",
+  "id": "data-arcos-opioid-distribution-paths",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-07-13",
+  "licence": "CC0 (figshare files); article CC BY",
+  "licence_type": [
+    "public_domain",
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "archived",
+  "name": "Tracing Opioids Across the US: reconstructed pharmaceutical distribution paths from DEA ARCOS (2006-2014)",
+  "provider": "Ambra Amico, Luca Verginer and Frank Schweitzer (Scientific Data, 2024)",
+  "related_ids": [
+    "data-openfda-food-enforcement",
+    "data-cms-provider-data-hospitals"
+  ],
+  "schema_summary": "One JSONL file per drug product (NDC) with each reconstructed path: the sequence of distributors identified by DEA number from manufacturer to final buyer, the dates of each shipment and the quantity delivered; supporting tables of distribution entities and of NDC codes with active ingredients",
+  "sectors": [
+    "services.healthcare",
+    "transport.logistics_freight"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "cascading_failure",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Abstract (about 300,000 pharmacies, hospitals and practitioners; 375 million paths from half a billion ARCOS records 2006-2014); Data Records (18,672 NDC products, JSONL per product, path, dates, quantity; early 2006 less reliable); code on figshare",
+      "url": "https://www.nature.com/articles/s41597-024-03534-3"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Collection metadata: published 2024-07-05, authors, description (1,800+ distributors and manufacturers); five items",
+      "url": "https://api.figshare.com/v2/collections/6879889"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Distribution Path Dataset: CC0, processed.zip 3.6 GB, 49.7 GiB unzipped",
+      "url": "https://api.figshare.com/v2/articles/24306538"
+    }
+  ],
+  "spatial_resolution": "Individual registrants (manufacturers, distributors, pharmacies, hospitals, practitioners)",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "pharmaceutical supply chain",
+    "opioids",
+    "ARCOS",
+    "distribution network",
+    "pharmacies",
+    "hospitals"
+  ],
+  "temporal_coverage": "2006-2014",
+  "temporal_resolution": "Shipment dates (daily)",
+  "temporal_resolution_class": "daily",
+  "title_en": "Tracing Opioids Across the US: reconstructed pharmaceutical distribution paths from DEA ARCOS (2006-2014)",
+  "type": "data",
+  "update_frequency": "not_updated"
+}

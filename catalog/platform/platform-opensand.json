@@ -1,0 +1,119 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "OpenSAND",
+      "url": "https://www.opensand.org/"
+    },
+    {
+      "kind": "docs",
+      "label": "Overview",
+      "url": "https://www.opensand.org/overview.html"
+    },
+    {
+      "kind": "docs",
+      "label": "Net4Sat wiki",
+      "url": "https://wiki.net4sat.org/doku.php?id=opensand:index"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opensand satellite communication emulator",
+    "url": "https://opensand.org"
+  },
+  "deployment": [
+    "own_server"
+  ],
+  "description": "OpenSAND, formerly Platine, is an open-source tool that emulates an end-to-end satellite communication system, mainly DVB-S2 and DVB-RCS2, in real time. It supports transparent and regenerative satellites, mesh and star configurations, multi-spot and multi-gateway topologies, IPv4, IPv6 and Ethernet connectivity, an adaptive physical layer with simulated channel conditions, and MF-TDMA bandwidth sharing with DAMA and SCPC, and it can be interconnected with real equipment, other IP networks or the Internet. A configuration and supervision interface provides real-time and offline monitoring on a distributed platform. It was first developed by Thales Alenia Space within EU IST projects and CNES studies; the open-source community was created by CNES and Thales Alenia Space France, and it is maintained with Viveris Technologies. Coverage: generic satellite systems, not tied to a region; performance depends on the emulation hosts. Format and access: source and Linux packages from the project website and forge; free of charge under GNU GPLv3 or LGPLv3 depending on the component. Caveats: needs several Linux machines or containers; channel models are simplified; documentation is partly in the project wiki. Simulation uses: testing applications and protocols over satellite links, capacity planning of satellite backhaul, resilience of services under degraded channels, and emergency communications. Related records: SNS3 and NetSim simulate satellite systems, and ns-3 can be combined for hybrid terrestrial-satellite studies.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for platform:digital.satellite_positioning:simulation_engine",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "OpenSAND satellite emulator CNES Thales Alenia Space licence LGPL",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.opensand.org/",
+  "hosted_models": [
+    "DVB-S2 forward link",
+    "DVB-RCS2 return link",
+    "channel condition models"
+  ],
+  "id": "platform-opensand",
+  "interfaces": [
+    "desktop_gui",
+    "file_exchange",
+    "command_line"
+  ],
+  "interoperability": [
+    "IPv4, IPv6 and Ethernet",
+    "GSE encapsulation (libgse)"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-3.0 or LGPL-3.0 (per component)",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://wiki.net4sat.org/doku.php?id=opensand:index"
+    ]
+  },
+  "maturity": "active",
+  "name": "OpenSAND satellite communication emulator",
+  "notes": "Home page read 2026-09-26; history and licences from search results pointing to opensand.org/overview.html and the 2017 Ka conference paper.",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "CNES, Thales Alenia Space and Viveris Technologies",
+  "related_ids": [],
+  "sectors": [
+    "digital.satellite_positioning",
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "resilience",
+    "emergency_response",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "home page",
+      "url": "https://www.opensand.org/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "search result snippet: history and licences",
+      "url": "https://www.opensand.org/overview.html"
+    }
+  ],
+  "supported_sectors": [
+    "digital.satellite_positioning",
+    "digital.telecom"
+  ],
+  "tags": [
+    "satellite emulation",
+    "DVB-S2",
+    "DVB-RCS2",
+    "CNES"
+  ],
+  "title_en": "OpenSAND satellite communication emulator tool",
+  "type": "platform"
+}

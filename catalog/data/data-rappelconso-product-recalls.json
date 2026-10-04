@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "RappelConso V2 dataset (CSV, JSON, API)",
+      "url": "https://data.economie.gouv.fr/explore/dataset/rappelconso-v2-gtin-espaces/information/"
+    },
+    {
+      "kind": "api",
+      "label": "RSS feeds by category",
+      "url": "https://rappel.conso.gouv.fr/support/open-data"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "historical_events",
+    "governance_regulation",
+    "supply_chains_logistics"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-02",
+  "dedupe_keys": {
+    "name": "rappelconso v2 france every published consumer product recall notice mostly food with products gtin distributors risks and dates",
+    "url": "https://rappel.conso.gouv.fr/support/open-data"
+  },
+  "description": "RappelConso is France's single public register of product recalls, and its open dataset lists every recall notice with the product, where it was sold, who distributed it and why it was withdrawn; food accounts for most notices. It is published by the Ministry of the Economy's consumer protection directorate (DGCCRF) together with the food directorate (DGAL) and the energy and risk prevention directorates. The second version holds about 18,700 notices, updated daily, each with publication date, category and sub-category (for example dairy, meat or fish products), brand, barcode (GTIN), packaging, marketing dates, storage temperature, health mark, sales area, distributors, reason and risks, advice to consumers and the end of the recall procedure. The dataset is free and available to download in CSV or JSON, or through an API, under the Licence Ouverte, and RSS feeds follow new notices by category. Caveats: the notices are declared by businesses and vary in completeness, EU Safety Gate (RAPEX) alerts are not included, and the older version 1 dataset has been retired. Simulation uses: building event histories of food contamination and recall for food supply chain disruption models, and tracing how recalled products spread through distributor networks. Related records: openFDA food enforcement (data-openfda-food-enforcement), the UK FSA food alerts (data-fsa-food-alerts-api) and lebensmittelwarnung.de (data-lebensmittelwarnung-food-warnings-germany) are recall records in other countries.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: DGCCRF RappelConso (FR, food_safety_agency)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api",
+    "xml"
+  ],
+  "geographic_scope": "national",
+  "hazards": [],
+  "homepage": "https://data.economie.gouv.fr/explore/dataset/rappelconso-v2-gtin-espaces/information/",
+  "id": "data-rappelconso-product-recalls",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-10-02",
+  "licence": "Licence Ouverte v2.0 (Etalab)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "RappelConso V2 (France): every published consumer product recall notice, mostly food, with products, GTIN, distributors, risks and dates",
+  "provider": "Ministère de l'Économie (DGCCRF) with DGAL, DGEC and DGPR, France",
+  "related_ids": [
+    "data-openfda-food-enforcement",
+    "data-fsa-food-alerts-api",
+    "data-lebensmittelwarnung-food-warnings-germany"
+  ],
+  "schema_summary": "Per recall notice: publication date, notice number and version, legal nature, product category and sub-category, brand, models or references, product identification (GTIN), packaging, marketing start and end dates, storage temperature, health mark, geographic sales area, distributors, reason for recall, risks, health advice, consumer instructions, compensation, end date of the recall procedure, links to images, product and distributor lists, poster PDF and notice page",
+  "sectors": [
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "resilience",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "RappelConso open data page: RSS feeds general, by keyword and by category; food category 13,792 notices (dairy 3,282, meat 3,219, fish 1,160 and others); links to data.economie.gouv.fr and data.gouv.fr",
+      "url": "https://rappel.conso.gouv.fr/support/open-data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "RappelConso V2: list of recall notices published on RappelConso by DGCCRF, DGAL, DGEC and DGPR; GTIN column added 29 November 2024; replaces V1 at end of 2025; excludes the EU RAPEX data; Licence Ouverte v2.0; 18,699 records; modified 26 September 2026; fields date_publication, numero_fiche, categorie_produit, marque_produit, identification_produits, zone_geographique_de_vente, distributeurs, motif_rappel, risques_encourus and others",
+      "url": "https://data.economie.gouv.fr/explore/dataset/rappelconso-v2-gtin-espaces/information/"
+    }
+  ],
+  "spatial_resolution": "Sales area and distributor",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "product recalls",
+    "food recalls",
+    "GTIN",
+    "distributors",
+    "France",
+    "RappelConso"
+  ],
+  "temporal_coverage": "2021 to present (V1 replaced end of 2025)",
+  "temporal_resolution": "Event",
+  "temporal_resolution_class": "event",
+  "title_en": "RappelConso V2 (France): every published consumer product recall notice, mostly food, with products, GTIN, distributors, risks and dates",
+  "type": "data",
+  "update_frequency": "daily"
+}

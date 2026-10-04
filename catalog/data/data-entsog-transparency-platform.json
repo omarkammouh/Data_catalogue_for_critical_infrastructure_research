@@ -1,0 +1,129 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Transparency Platform",
+      "url": "https://transparency.entsog.eu/"
+    },
+    {
+      "kind": "api",
+      "label": "Transparency Platform API (v1)",
+      "url": "https://transparency.entsog.eu/api/v1/operators"
+    },
+    {
+      "kind": "viewer",
+      "label": "European Gas Flow dashboard",
+      "url": "https://gasdashboard.entsog.eu/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "data_family": [
+    "cross_border_flows",
+    "demand_operation",
+    "system_description",
+    "historical_events"
+  ],
+  "data_kind": [
+    "time_series",
+    "network_topology",
+    "event_record"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "entsog transparency platform and european gas flow dashboard gas transmission flows capacities and interruptions at interconnection points",
+    "url": "https://transparency.entsog.eu"
+  },
+  "description": "The ENTSOG Transparency Platform publishes operational data from European gas transmission system operators at interconnection points and other network points. Its open API, read on 26 September 2026 without a key, serves operators, interconnection points with their from and to systems, countries and balancing zones, and operational data such as daily physical flows, nominations and capacities, together with capacity management information such as unavailable capacities; the physical flow series read included the TAP entry point at Melendugno for 26 September 2026. The European Gas Flow dashboard, built by ENTSOG from this platform and GIE AGSI storage data, shows daily flows by supply corridor and risk group as defined in the EU security of supply Regulation 2017/1938, and storage stock against ENTSOG seasonal outlook simulations. Coverage is European transmission networks and their interconnections with non-EU countries. Data are free through the website, dashboard and API; no licence is stated on the pages read. Caveats: values are reported by TSOs, point locations on the dashboard map are indicative, and the API returns large paged results. Simulation uses are gas network flow models, supply disruption and security of supply studies. Related records: data-gie-agsi-alsi-gas-storage-lng-transparency covers storage and LNG, and data-scigrid-gas gives network topology.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "gas supply security LNG imports cross-border gas flows storage levels data AGSI transparency download",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "json",
+    "csv",
+    "spreadsheet",
+    "web_page"
+  ],
+  "geographic_scope": "continental",
+  "homepage": "https://transparency.entsog.eu/",
+  "id": "data-entsog-transparency-platform",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-26",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ENTSOG Transparency Platform and European Gas Flow dashboard - gas transmission flows, capacities and interruptions at interconnection points",
+  "provider": "European Network of Transmission System Operators for Gas (ENTSOG)",
+  "related_ids": [
+    "data-gie-agsi-alsi-gas-storage-lng-transparency",
+    "data-scigrid-gas",
+    "data-entsog-system-capacity-map-and-capacity-datasets"
+  ],
+  "sectors": [
+    "energy.gas_hydrogen"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Interconnection point fields (from/to system, country, balancing zone, operator)",
+      "url": "https://transparency.entsog.eu/api/v1/interconnections?limit=1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Daily physical flow, TAP Melendugno entry, period 2026-09-26",
+      "url": "https://transparency.entsog.eu/api/v1/operationaldatas?indicator=Physical%20Flow&limit=1&periodType=day"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Capacity management unavailable capacities endpoint",
+      "url": "https://transparency.entsog.eu/api/v1/cmpUnavailables?limit=1"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Dashboard sourced from ENTSOG TP and GIE AGSI; supply corridors and risk groups per Regulation 2017/1938; indicative locations",
+      "url": "https://gasdashboard.entsog.eu/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://transparency.entsog.eu/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://transparency.entsog.eu/api/v1/operators"
+    }
+  ],
+  "tags": [
+    "ENTSOG",
+    "gas flows",
+    "interconnection points",
+    "capacity",
+    "security of supply",
+    "Europe"
+  ],
+  "title_en": "ENTSOG Transparency Platform and European Gas Flow dashboard - gas transmission flows, capacities and interruptions at interconnection points",
+  "type": "data"
+}

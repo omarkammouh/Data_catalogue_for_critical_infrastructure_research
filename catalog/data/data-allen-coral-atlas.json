@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "viewer",
+      "label": "Allen Coral Atlas",
+      "url": "https://allencoralatlas.org/"
+    },
+    {
+      "kind": "docs",
+      "label": "Science and methods",
+      "url": "https://allencoralatlas.org/methods/"
+    },
+    {
+      "kind": "docs",
+      "label": "Download instructions (PDF)",
+      "url": "https://storage.googleapis.com/coral-atlas-static-files/resources-page-materials/Data_Download_Instructions.pdf"
+    },
+    {
+      "kind": "repo",
+      "label": "Tutorials on GitHub",
+      "url": "https://github.com/CoralMapping/tutorials"
+    }
+  ],
+  "access_note": "Downloads are made through the atlas after signing in with a free account, as described in the download instructions.",
+  "access_restrictions": "registration",
+  "cost": "free",
+  "data_family": [
+    "vegetation_land_cover",
+    "imagery_remote_sensing",
+    "environmental_impact"
+  ],
+  "data_kind": [
+    "raster",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "allen coral atlas",
+    "repo": "github.com/coralmapping/tutorials",
+    "url": "https://allencoralatlas.org/geoserver/coral-atlas/wfs?bbox=-175.4%2C-21.3%2C-175.0%2C-21.0%2CEPSG%3A4326&count=1&outputFormat=application%2Fjson&request=GetFeature&service=WFS&typeNames=coral-atlas%3Abenthic_data_verbose&version=2.0.0"
+  },
+  "description": "The Allen Coral Atlas maps and monitors the world's shallow coral reefs: geomorphic zone and benthic habitat maps (coral and algae, seagrass, sand, rubble, rock, microalgal mats), reef extent, satellite-derived bathymetry, turbidity, global seagrass extent and bleaching monitoring. It was conceived and funded by Paul Allen's Vulcan Inc. and is managed by Arizona State University with Planet, the Coral Reef Alliance and the University of Queensland, to support reef conservation and management. Maps are built from a global PlanetScope mosaic with image correction and field-verified training data; the benthic layer covers areas less than 10 m deep and the geomorphic layer less than 15 m. Data are accessible through the web atlas and can be downloaded by area, with published download instructions and a coding tutorial on GitHub. Maps, bathymetry and statistics are licensed CC BY 4.0, while the Planet satellite mosaic is CC BY-NC-SA 4.0; use is free. Caveats: coral and fleshy algae are merged into one class because they look alike in the imagery, and deeper reefs are not mapped. It serves coastal green and blue infrastructure mapping, wave attenuation and storm exposure studies for coastal assets; related records are the Global Mangrove Watch, WDPA and GLWD.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "global coral reef habitat map",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "geojson",
+    "raster"
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "coastal_flood_storm_surge",
+    "storm_wind"
+  ],
+  "homepage": "https://allencoralatlas.org/geoserver/coral-atlas/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=coral-atlas:benthic_data_verbose&count=1&outputFormat=application/json&bbox=-175.4,-21.3,-175.0,-21.0,EPSG:4326",
+  "id": "data-allen-coral-atlas",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-03-01",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "Allen Coral Atlas",
+  "notes": "The sign-in requirement, output formats and 5 m resolution are recalled, not read on 2026-09-26; check the download instructions.",
+  "provider": "Arizona State University Center for Global Discovery and Conservation Science, with Planet, the University of Queensland and partners",
+  "related_ids": [],
+  "schema_summary": "geomorphic zone class, benthic class, reef extent, bathymetry, turbidity, bleaching alerts",
+  "sectors": [
+    "cross_cutting.green_blue"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "climate_adaptation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "managers and partners, Vulcan funding, PlanetScope inputs, product list",
+      "url": "https://allencoralatlas.org/methods/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "download instructions, GitHub tutorial, licences CC BY 4.0 and Planet CC BY-NC-SA 4.0, depth limits, coral-algae class caveat",
+      "url": "https://allencoralatlas.org/resources/"
+    }
+  ],
+  "spatial_resolution": "about 5 m (PlanetScope)",
+  "spatial_resolution_class": "under_10m",
+  "tags": [
+    "coral reefs",
+    "benthic habitat",
+    "bathymetry",
+    "PlanetScope",
+    "ASU"
+  ],
+  "temporal_coverage": "mosaic from about 2018 onwards; monitoring products ongoing",
+  "temporal_resolution": "periodic monitoring",
+  "temporal_resolution_class": "other",
+  "title_en": "Green and blue infrastructure data",
+  "type": "data",
+  "update_frequency": "irregular"
+}

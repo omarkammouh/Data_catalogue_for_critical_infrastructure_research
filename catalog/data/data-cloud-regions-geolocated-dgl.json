@@ -1,0 +1,86 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository with per-provider data.csv",
+      "url": "https://github.com/dgl/cloud-regions"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "system_description",
+    "critical_facilities"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "cloud regions approximate locations of aws azure google cloud linode oracle and vultr regions",
+    "repo": "github.com/dgl/cloud-regions",
+    "url": "https://github.com/dgl/cloud-regions"
+  },
+  "description": "This community dataset gives the approximate geographic location of each public cloud region in a provider-independent format, so that cloud capacity can be placed on a map. It is maintained by David Leadbeater with contributions through pull requests. Coverage: global regions of Amazon Web Services, Microsoft Azure, Google Cloud Platform, Linode, Oracle and Vultr as of the last update. Each provider directory holds a data.csv with the provider's API region code, the provider's location name, a country code, and latitude and longitude from a geocoding helper, plus a fetch-list script that pulls the provider's current region list so new regions can be spotted. Format and access: CSV files on GitHub, with a Go tool that converts them to a GeoJSON feature collection; free download. Licence: no licence file is published, so reuse terms are unclear. Caveats: most regions point to a metropolitan area, not the actual data centre buildings, a few are editorial midpoints of regions spread over several sites, and the data were last updated in July 2022, so newer regions are missing. Simulation uses: coarse placement of hyperscale cloud capacity for cascading failure and hazard exposure studies of digital services. Related records: Oracle Public Cloud Regions (data-oracle-public-cloud-regions) is an official list for one provider, and the London heatwave outage case (case_study-london-heatwave-data-centre-outages-2022) shows why region locations matter.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "register source digital-cloud-regions-dgl: provider pages read (round 2 register piece)",
+      "route": "R15",
+      "source": "digital-cloud-regions-dgl"
+    }
+  ],
+  "formats": [
+    "csv",
+    "geojson"
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/dgl/cloud-regions",
+  "id": "data-cloud-regions-geolocated-dgl",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2022-07-20",
+  "licence": "Not stated (no licence file)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "name": "cloud-regions: approximate locations of AWS, Azure, Google Cloud, Linode, Oracle and Vultr regions",
+  "notes": "Deep check A4 (2026-10-01) corrected: last_updated .",
+  "provider": "David Leadbeater (dgl) and contributors, GitHub",
+  "related_ids": [
+    "data-oracle-public-cloud-regions",
+    "case_study-london-heatwave-data-centre-outages-2022"
+  ],
+  "sectors": [
+    "digital.data_centres"
+  ],
+  "simulation_uses": [
+    "cascading_failure",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "README: provider-independent approximate locations of cloud regions for AWS, Azure, GCP, Linode, Oracle, Vultr; data.csv per provider; geojson.go converter; no LICENSE file found; last commit 2022-07-20",
+      "url": "https://raw.githubusercontent.com/dgl/cloud-regions/main/README.md"
+    }
+  ],
+  "spatial_resolution": "Metropolitan area of each cloud region",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "cloud regions",
+    "data centres",
+    "hyperscale"
+  ],
+  "temporal_coverage": "Snapshot, last updated 2022-07-20",
+  "title_en": "Cloud-regions: approximate locations of AWS, Azure, Google Cloud, Linode, Oracle and Vultr regions",
+  "type": "data"
+}

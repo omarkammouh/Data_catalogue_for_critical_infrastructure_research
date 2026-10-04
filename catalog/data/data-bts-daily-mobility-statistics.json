@@ -1,0 +1,106 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Socrata dataset",
+      "url": "https://data.bts.gov/d/w96p-f2qv"
+    },
+    {
+      "kind": "docs",
+      "label": "BTS daily travel page",
+      "url": "https://www.bts.gov/daily-travel"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "demand_operation",
+    "behavioural_social"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "bts daily mobility statistics trips by distance",
+    "url": "https://data.bts.gov/d/w96p-f2qv"
+  },
+  "description": "The Daily Mobility Statistics give, for each day, the population staying at home and not staying at home and the number of trips in ten distance bands from under 1 mile to 500 miles or more, at national, state and county level in the United States. They are derived from a panel of several mobile device data providers, filtered for data quality and weighted at device and trip level to represent each state and county; a trip is a stay of over 10 minutes away from home, and counties with fewer than 50 sample devices on a day are not reported. The data were produced by the Maryland Transportation Institute and the Center for Advanced Transportation Technology Laboratory at the University of Maryland and are published by the Bureau of Transportation Statistics. Coverage is the United States, covering the COVID and post-COVID periods. Access: free on the BTS Socrata portal with an API, in the public domain; rows were last updated on 30 April 2024. Caveats: BTS labels the data experimental and not meeting all its quality standards. It supports demand modelling and disruption and recovery analysis of travel after shocks, and complements the National Household Travel Survey catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"public transport\" AND \"mobile coverage\"",
+      "route": "R01",
+      "source": "socrata-discovery"
+    }
+  ],
+  "formats": [
+    "csv",
+    "json",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://data.bts.gov/d/w96p-f2qv",
+  "id": "data-bts-daily-mobility-statistics",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-04-30",
+  "licence": "Public Domain (US Government)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.bts.gov/daily-travel"
+    ]
+  },
+  "maturity": "active",
+  "name": "BTS Daily Mobility Statistics (trips by distance)",
+  "provider": "US Bureau of Transportation Statistics with the Maryland Transportation Institute (University of Maryland)",
+  "related_ids": [
+    "data-nhts-national-household-travel-survey"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.public_transit",
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "attribution Maryland Transportation Institute and CATT Lab, University of Maryland; Public Domain US Government; rows updated 2024-04-30; columns staying/not staying at home, trips and 10 distance bands, state and county FIPS; experimental; <50 devices suppressed; trip = stay >10 min; update frequency R/P1W; publisher BTS",
+      "url": "https://data.bts.gov/api/views/w96p-f2qv.json"
+    }
+  ],
+  "spatial_resolution": "county",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "mobility",
+    "trips by distance",
+    "mobile device data",
+    "COVID",
+    "BTS"
+  ],
+  "temporal_coverage": "2019 onward (COVID and post-COVID)",
+  "title_en": "BTS Daily Mobility Statistics (trips by distance)",
+  "type": "data",
+  "update_frequency": "weekly"
+}

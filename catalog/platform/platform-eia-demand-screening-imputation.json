@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Resource",
+      "url": "https://github.com/truggles/EIA_Cleaned_Hourly_Electricity_Demand_Code"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Data descriptor",
+      "url": "https://doi.org/10.1038/s41597-020-0483-x"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.3737085",
+    "name": "eia hourly demand screening and mice imputation code",
+    "url": "https://github.com/truggles/EIA_Cleaned_Hourly_Electricity_Demand_Code"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "This preparation workflow screens and imputes hourly US electricity-demand observations before their use in power-system models. The Carnegie Institution for Science team publishes four notebook stages: query the EIA database, screen anomalies, apply Multiple Imputation by Chained Equations, and distribute results to balancing-authority and aggregate files. Python handles acquisition and distribution while R and the mice package perform imputation. GitHub and the Zenodo code archive state MIT, allowing free reuse. Coverage follows the input observations; the documented project cleaned the contiguous US series, not implementing an electricity simulator itself. It can prepare demand inputs for dispatch and capacity-planning models, comparable in purpose to the input series in data-re-europe. A caveat is that fresh acquisition requires an EIA API key and historical source values can change. The preserved companion Conda environment targets macOS 10.14.6; portability and current API compatibility were not tested. No software archive was downloaded or environment installed.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "G1-Q-TITLE-ENERGY-01; Scientific Data whole-venue article and repository trail",
+      "route": "R07",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://github.com/truggles/EIA_Cleaned_Hourly_Electricity_Demand_Code",
+  "id": "platform-eia-demand-screening-imputation",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "EIA API",
+    "Balancing-authority, regional and interconnection demand files"
+  ],
+  "language": [
+    "python",
+    "r"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-01-29",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "EIA hourly demand screening and MICE imputation code",
+  "notes": "G1 G1-0114. Metadata-only verification; no data files or software archives downloaded or executed. Comparison evidence: evidence/dedupe-batch-14.json. Related-resource uses are not tested interfaces. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Carnegie Institution for Science",
+  "related_ids": [
+    "data-re-europe"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/truggles/EIA_Cleaned_Hourly_Electricity_Demand_Code"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://api.github.com/repos/truggles/EIA_Cleaned_Hourly_Electricity_Demand_Code/readme"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://zenodo.org/api/records/3737085"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own resource metadata or documentation read today; supports identity, contents, coverage, formats or licence. Simulation uses and transfer caveats are reviewer interpretations.",
+      "url": "https://zenodo.org/api/records/3736784"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Describing article; abstract and data/code statements read to identify resource.",
+      "url": "https://doi.org/10.1038/s41597-020-0483-x"
+    }
+  ],
+  "supported_sectors": [
+    "energy.electricity"
+  ],
+  "tags": [],
+  "title_en": "EIA hourly demand screening and MICE imputation code",
+  "type": "platform"
+}

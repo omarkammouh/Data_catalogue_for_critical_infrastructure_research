@@ -1,0 +1,107 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/21813660"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/21813660"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Repository metadata and README independently inspected; code not executed.",
+      "url": "https://github.com/eajdiependaal/storage-emissions"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.21813660",
+    "name": "storage emissions transparent framework for assessing the emission impact of battery storage dispatch",
+    "repo": "github.com/eajdiependaal/storage-emissions",
+    "url": "https://zenodo.org/records/21813660"
+  },
+  "description": "Enzo Diependaal and colleagues publish storage-emissions, Python code that reconstructs an hourly marginal emission intensity from public market inputs and compares battery-dispatch rules. Zenodo and the linked repository identify Apache 2.0 code. The Netherlands case uses 2018–2025 day-ahead prices, a plant stack and fuel and carbon prices to compare greedy, profit, emission and lexicographic strategies for a 1 MW, 2 MWh battery. A configuration can be adapted to another bidding zone for dispatch simulation. No catalogue record explicitly covers this dispatch and emission trade-off model. A limitation is that three commodity-price series are licensed and absent from the repository; the README gives reconstruction and checking instructions. Marginal emission estimates depend on the plant stack and market assumptions, and reported outputs were not verified here. The code was not installed or run; the archived release and current repository may differ.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "title:(\"power grid\" OR \"electricity network\" OR \"transmission line\" OR \"overhead line\" OR \"underground cable\" OR \"HVDC\" OR \"interconnector\" OR \"substation\" OR \"transformer\" OR \"switchgear\" OR \"busbar\" OR \"circuit breaker\" OR \"feeder\" OR \"distribution network\" OR \"LV/MV network\" OR \"power plant\" OR \"generating unit\" OR \"wind farm\" OR \"solar farm\" OR \"battery storage\" OR \"pumped hydro\" OR \"microgrid\" OR \"smart meter\" OR \"load profile\" OR \"power flow\" OR \"unit commitment\" OR \"OPF\" OR \"contingency\" OR \"N-1\" OR \"SAIDI/SAIFI\" OR \"outage\" OR \"blackout\" OR \"grid code\" OR \"hosting capacity\" OR \"network development plan\")",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://zenodo.org/records/21813660",
+  "id": "model-storage-emissions-dutch-battery-dispatch-marginal-carbon",
+  "inputs": [
+    "Day-ahead prices",
+    "Plant stack",
+    "Fuel and carbon prices",
+    "Battery configuration"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-08-08",
+  "licence": "apache2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation",
+    "economic"
+  ],
+  "name": "storage-emissions: transparent framework for assessing the emission impact of battery storage dispatch",
+  "notes": "G6 item G6-1953. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance.  Temporal coverage: 2018 to 2025 Netherlands case.",
+  "outputs": [
+    "Hourly marginal emission intensity",
+    "Dispatch, revenue and emission comparisons"
+  ],
+  "provider": "Diependaal, Enzo A.J. (UiT The Arctic University of Norway; Rethink Zero B.V.); Boonman, Marien (Rethink Zero B.V.); Chiesa, Matteo (UiT The Arctic University of Norway)",
+  "related_ids": [],
+  "repository": "https://github.com/eajdiependaal/storage-emissions",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/21813660"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Zenodo deposited metadata: creators, publication date, licence apache2.0, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/21813660"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README and Apache-2.0 metadata inspected for inputs, five strategies and missing licensed commodity series.",
+      "url": "https://github.com/eajdiependaal/storage-emissions/blob/main/README.md"
+    }
+  ],
+  "tags": [],
+  "title_en": "Storage-emissions: transparent framework for assessing the emission impact of battery storage dispatch",
+  "type": "model"
+}

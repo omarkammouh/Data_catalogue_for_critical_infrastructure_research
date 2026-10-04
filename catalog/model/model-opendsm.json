@@ -1,0 +1,92 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/opendsm/opendsm"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/opendsm/opendsm/blob/master/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opendsm metered energy savings models",
+    "repo": "github.com/opendsm/opendsm",
+    "url": "https://github.com/opendsm/opendsm"
+  },
+  "description": "OpenDSM, formerly OpenEEmeter, is a Python library maintained by the OpenDSM community to estimate the effects of demand-side energy programmes. Statistical models fit historical metered consumption and predict counterfactual usage for comparison with observed post-intervention consumption. The repository documents daily, monthly billing and hourly models, including solar-aware energy-efficiency and demand-response variants. It also provides data-sufficiency checks, model serialisation and warnings. Geographic coverage depends on the supplied meter and temperature series; the README describes broader weather coverage as future work, so a global weather service is not implied. Public source and package-installation instructions are available free under Apache-2.0. A material caveat is that changing default settings or bypassing sufficiency checks produces results outside OpenDSM-compliant measurement. An experimental solar-installation feature and an unfinished demand-response update are explicitly distinguished from established methods. The models support building-retrofit evaluation and demand estimates for grid studies. They complement physical building simulation in EnergyPlus (model-energyplus), not reproducing its component-level heat balances.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "topic:building-energy fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/opendsm/opendsm",
+  "id": "model-opendsm",
+  "inputs": [
+    "Historical metered energy",
+    "Temperature series",
+    "Intervention and reporting periods"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-09-09",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "OpenDSM metered energy savings models",
+  "notes": "G7 G7-0036. Prepared draft only. Metadata review on 2026-09-27; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "outputs": [
+    "Counterfactual energy consumption",
+    "Avoided energy estimates and warnings"
+  ],
+  "provider": "OpenDSM community",
+  "related_ids": [
+    "model-energyplus"
+  ],
+  "repository": "https://github.com/opendsm/opendsm",
+  "sectors": [
+    "built_environment.buildings"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for opendsm/opendsm: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=topic%3Abuilding-energy+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/opendsm/opendsm/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "OpenDSM metered energy savings models",
+  "type": "model",
+  "validated_on": []
+}

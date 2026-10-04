@@ -1,0 +1,118 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Live XML feed",
+      "url": "https://nap.imet.gr/attiki-odos/attiki-odos.xml"
+    },
+    {
+      "kind": "portal",
+      "label": "data.gov.gr entry",
+      "url": "https://data.gov.gr/dataset/data-nap-gov-gr-traffic-data-from-vehicle-detection-sensors-in-attiki-odos"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GR"
+  ],
+  "data_family": [
+    "sensor_realtime_streams",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "stream",
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "attiki odos motorway traffic data from vehicle detection sensors",
+    "url": "https://data.gov.gr/dataset/data-nap-gov-gr-traffic-data-from-vehicle-detection-sensors-in-attiki-odos"
+  },
+  "description": "This dataset publishes live traffic data from about 600 vehicle detection sensors on the Attiki Odos, the tolled ring motorway of Athens. For each sensor it gives the unit id and status, occupancy in percent, traffic flow in vehicles per hour and speed in km/h, refreshed as one-minute data in an XML feed; sensor metadata come as an Excel file and the traffic metadata as a PDF. It is published by the motorway operator Attiki Odos through the Greek National Access Point for transport data and listed on data.gov.gr and the European data portal. Coverage is the Attiki Odos motorway in the Athens region. Access: the XML feed is free and returned current readings when read on 26 September 2026; the catalogue entries name no licence. Caveats: only current values are served, so a history must be built by polling, and no licence is stated. It supports real-time digital twins and incident monitoring of an urban motorway, calibration of traffic models with flow, speed and occupancy, and disruption analysis, and complements the DATEX II standard and the Thessaloniki open data hub catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"air traffic\" AND \"sensor\"",
+      "route": "R02",
+      "source": "data-europa-eu"
+    }
+  ],
+  "formats": [
+    "xml",
+    "spreadsheet",
+    "document"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://data.gov.gr/dataset/data-nap-gov-gr-traffic-data-from-vehicle-detection-sensors-in-attiki-odos",
+  "id": "data-greece-attiki-odos-vehicle-detection-traffic",
+  "languages": [
+    "en"
+  ],
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Attiki Odos motorway traffic data from vehicle detection sensors",
+  "provider": "Attiki Odos (motorway operator), via the Greek National Access Point",
+  "related_ids": [
+    "data-datex-ii-standard",
+    "data-certh-hit-thessaloniki-open-data-hub"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "600 VDS; VDS id and status, occupancy %, flow veh/h, speed km/h; resources VDS metadata xls, traffic metadata pdf, XML feed nap.imet.gr; publisher Attiki Odos; no licence given",
+      "url": "https://data.europa.eu/api/hub/search/datasets/031acf81-5a20-4fad-aae0-def7823c4e7e"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "oneMinuteData vdsData unitID, timestamp 2026-09-26T20:10:00, speed, trafficFlow, occupancy, status",
+      "url": "https://nap.imet.gr/attiki-odos/attiki-odos.xml"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "data.gov.gr entry; access rights public; licence_id null; NAP (Directive 2019/1024 cited)",
+      "url": "https://data.gov.gr/api/3/action/package_show?id=data-nap-gov-gr-traffic-data-from-vehicle-detection-sensors-in-attiki-odos"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://data.gov.gr/api/3/action/package_show?id=data-nap-gov-gr-traffic-data-from-vehicle-detection-sensors-in-attiki-odos"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://data.gov.gr/dataset/data-nap-gov-gr-traffic-data-from-vehicle-detection-sensors-in-attiki-odos"
+    }
+  ],
+  "spatial_resolution": "detector",
+  "spatial_resolution_class": "other",
+  "tags": [
+    "motorway",
+    "vehicle detection sensors",
+    "Athens",
+    "real-time traffic",
+    "Greece"
+  ],
+  "temporal_coverage": "current (one-minute data)",
+  "title_en": "Attiki Odos motorway traffic data from vehicle detection sensors",
+  "type": "data",
+  "update_frequency": "real_time"
+}

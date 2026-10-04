@@ -1,0 +1,137 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "API developer's guide",
+      "url": "https://ukhsa-dashboard.data.gov.uk/access-our-data"
+    },
+    {
+      "kind": "portal",
+      "label": "Bulk download of chart data (CSV or JSON zip)",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://ukhsa-dashboard.data.gov.uk/bulk-downloads"
+    },
+    {
+      "kind": "docs",
+      "label": "Swagger documentation",
+      "url": "https://api.ukhsa-dashboard.data.gov.uk/api/swagger"
+    },
+    {
+      "kind": "docs",
+      "label": "Metrics documentation",
+      "url": "https://ukhsa-dashboard.data.gov.uk/metrics-documentation"
+    },
+    {
+      "kind": "api",
+      "label": "UKHSA dashboard API, COVID-19 daily cases for England (example query)",
+      "url": "https://api.ukhsa-dashboard.data.gov.uk/themes/infectious_disease/sub_themes/respiratory/topics/COVID-19/geography_types/Nation/geographies/England/metrics/COVID-19_cases_casesByDay?page_size=2"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "GB"
+  ],
+  "data_family": [
+    "demand_operation",
+    "health_impacts",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ukhsa data dashboard api respiratory infection cases testing hospital admissions and icu admissions for the uk nations and english regions",
+    "url": "https://ukhsa-dashboard.data.gov.uk"
+  },
+  "description": "This dashboard and its API publish the weekly figures the UK Health Security Agency uses to track respiratory infections, including how many people with COVID-19, influenza or RSV are being admitted to hospital and to intensive care. It is run by the UK Health Security Agency, the executive agency of the Department of Health and Social Care responsible for infectious disease and other health threats. Coverage is the United Kingdom by nation, with regions and other geography types for England, from 2020 to the present, with an archive of the earlier COVID-19 dashboard. Metrics are grouped into headline, cases, testing, healthcare, deaths and vaccination categories; the healthcare ones give daily admissions, weekly admission rates per 100,000 and ICU or high-dependency admission rates. All data are available free under the Open Government Licence, through a documented REST API with Swagger pages or as a small bulk download of CSV or JSON. Caveats: most metrics describe infections, not hospital capacity, bed occupancy by trust is not included, and definitions change between seasons. Simulation uses: driving winter-pressure and pandemic hospital demand scenarios, and calibrating epidemic models that project admissions and ICU load. Related records: CHIME (model-chime) and Covasim (model-covasim) turn such series into hospital demand projections, and the California hospital data (data-california-covid19-hospital-capacity-by-county) is a comparable capacity series.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "organisation visit: UK Health Security Agency (GB, public_health_institute)",
+      "route": "R10",
+      "source": "services-organisation-walk"
+    }
+  ],
+  "formats": [
+    "api",
+    "csv"
+  ],
+  "geographic_scope": "national",
+  "hazards": [
+    "pandemic"
+  ],
+  "homepage": "https://ukhsa-dashboard.data.gov.uk/",
+  "id": "data-ukhsa-data-dashboard-api",
+  "languages": [
+    "en"
+  ],
+  "licence": "Open Government Licence v3.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "UKHSA data dashboard API: respiratory infection cases, testing, hospital admissions and ICU admissions for the UK nations and English regions",
+  "provider": "UK Health Security Agency (UKHSA)",
+  "related_ids": [
+    "model-chime",
+    "model-covasim",
+    "data-california-covid19-hospital-capacity-by-county"
+  ],
+  "schema_summary": "Hierarchical REST path theme / sub_theme / topic / geography_type / geography / metric; metrics per topic (COVID-19, influenza, RSV and others) in categories headline, cases, testing, healthcare, deaths and vaccinations, for example COVID-19_healthcare_admissionRollingMean, influenza_healthcare_hospitalAdmissionRateByWeek and influenza_healthcare_ICUHDUadmissionRateByWeek; paginated JSON",
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "API developer's guide (overview updated 21 March 2024): API to extract data shown on the dashboard; Swagger documentation; bulk download of chart data; COVID-19 archive downloads; Open Government Licence v3.0",
+      "url": "https://ukhsa-dashboard.data.gov.uk/access-our-data"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GET /themes/{theme}/sub_themes/{sub_theme}/topics/{topic}/geography_types/{geography_type}/geographies/{geography}/metrics/{metric}; example theme infectious_disease, sub_theme respiratory, topic COVID-19, geography type Nation, geography England",
+      "url": "https://ukhsa-dashboard.data.gov.uk/access-our-data/data-structure"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Healthcare category metrics: COVID-19 admissions 7-day rolling mean; influenza weekly hospital admission rate per 100,000 to any level of care including ICU and HDU; influenza weekly ICU or HDU admission rate; RSV admission rate",
+      "url": "https://ukhsa-dashboard.data.gov.uk/metrics-documentation?search=admission"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "All chart data downloadable as a zip of CSV or JSON, about 70 kB",
+      "url": "https://ukhsa-dashboard.data.gov.uk/bulk-downloads"
+    }
+  ],
+  "spatial_resolution": "Nation, region and other geography types",
+  "spatial_resolution_class": "regional_units",
+  "tags": [
+    "hospital admissions",
+    "ICU",
+    "COVID-19",
+    "influenza",
+    "RSV",
+    "UKHSA",
+    "API"
+  ],
+  "temporal_coverage": "2020 to present (COVID-19 archive separate)",
+  "temporal_resolution": "Daily and weekly",
+  "temporal_resolution_class": "daily",
+  "title_en": "UKHSA data dashboard API: respiratory infection cases, testing, hospital admissions and ICU admissions for the UK nations and English regions",
+  "type": "data",
+  "update_frequency": "weekly"
+}

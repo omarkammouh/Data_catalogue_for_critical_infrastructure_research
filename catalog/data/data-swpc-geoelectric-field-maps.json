@@ -1,0 +1,122 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "US-Canada-1D JSON files",
+      "url": "https://services.swpc.noaa.gov/json/lists/rgeojson/US-Canada-1D/"
+    },
+    {
+      "kind": "viewer",
+      "label": "Product page",
+      "url": "https://www.spaceweather.gov/products/geoelectric-field-models-1-minute"
+    },
+    {
+      "kind": "portal",
+      "label": "Previous address",
+      "note": "address that redirects to the current one (direct-link pass 2026-09-30)",
+      "url": "https://www.swpc.noaa.gov/products/geoelectric-field-models-1-minute"
+    },
+    {
+      "kind": "docs",
+      "label": "Electric power transmission impacts",
+      "url": "https://www.spaceweather.gov/impacts/electric-power-transmission"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US",
+    "CA"
+  ],
+  "data_family": [
+    "space_weather",
+    "hazards",
+    "sensor_realtime_streams"
+  ],
+  "data_kind": [
+    "raster",
+    "time_series",
+    "stream"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "noaa swpc geoelectric field models us canada 1d and empirical emtf 3d conus 1 minute maps",
+    "url": "https://swpc.noaa.gov/products/geoelectric-field-models-1-minute"
+  },
+  "description": "These near real-time maps give the geoelectric field in millivolts per kilometre induced at the ground during geomagnetic storms, a measure of the induction hazard to long conductors such as power lines, from which the induced current is estimated by integrating along the line. The US-Canada-1D model covers the lower 48 states and Canada up to 60 degrees latitude on a 0.5 degree grid, interpolating observatory magnetic data with Spherical Elementary Current Systems and convolving it with one-dimensional physiographic conductivity profiles (EPRI 2020 for the US, Trichtchenko et al. 2019 for Canada); the empirical EMTF 3D model, operational since fiscal year 2020, uses magnetotelluric transfer functions for the continental US where surveys exist and is recommended there. The product is a joint effort of NOAA SWPC and NRCan with the USGS and NASA CCMC, using USGS and NRCan observatories. Maps are accessible online on the SWPC page and as one-minute JSON files in the services.swpc.noaa.gov directory, free and public domain as US government data. Caveats: SWPC states the maps need further validation against measured fields or GIC, the 1D approximation can be substantially inaccurate in some regions, and it advises caution in operational mitigation without a validation study. It supports space weather hazard exposure and GIC simulation for power grids and pipelines; related records are NOAA SWPC products, INTERMAGNET and the WAPA neutral blocking device case study.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "SWPC geoelectric field models US Canada 1D 3D EMTF",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "json",
+    "image"
+  ],
+  "geographic_scope": "continental",
+  "hazards": [
+    "space_weather"
+  ],
+  "homepage": "https://www.spaceweather.gov/products/geoelectric-field-models-1-minute",
+  "id": "data-swpc-geoelectric-field-maps",
+  "languages": [
+    "en"
+  ],
+  "licence": "US federal government work (public domain)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NOAA SWPC Geoelectric Field Models (US-Canada 1D and empirical EMTF 3D CONUS), 1-minute maps",
+  "provider": "NOAA Space Weather Prediction Center with Natural Resources Canada, USGS geomagnetism and NASA CCMC",
+  "related_ids": [
+    "data-noaa-swpc-products",
+    "data-intermagnet",
+    "case_study-wapa-white-substation-gic-neutral-blocking-device"
+  ],
+  "sectors": [
+    "cross_cutting.space",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "digital_twin",
+    "cascading_failure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Definition, 1D model over lower 48 and Canada to 60 degrees at 0.5 degree, EMTF 3D model in operations FY2020, NOAA/NRCan/USGS/CCMC, EPRI 2020 and Trichtchenko 2019 conductivity, SECS, mV/km, validation caveats",
+      "url": "https://www.swpc.noaa.gov/products/geoelectric-field-models-1-minute"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Directory of one-minute Efield-US-Canada JSON files, latest 20260926T093330",
+      "url": "https://services.swpc.noaa.gov/json/lists/rgeojson/US-Canada-1D/"
+    }
+  ],
+  "spatial_resolution": "0.5 degree (US-Canada-1D)",
+  "spatial_resolution_class": "over_10km",
+  "tags": [
+    "geoelectric field",
+    "geomagnetically induced currents",
+    "magnetotellurics",
+    "EMTF",
+    "real time"
+  ],
+  "temporal_coverage": "near real time, one-minute cadence; recent files kept in the directory",
+  "title_en": "NOAA SWPC Geoelectric Field Models (US-Canada 1D and empirical EMTF 3D CONUS), 1-minute maps",
+  "type": "data",
+  "update_frequency": "real_time"
+}

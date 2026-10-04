@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Repository and documentation",
+      "url": "https://github.com/andreArtelt/A-Benchmark-for-Physics-informed-Machine-Learning-of-Chlorine-States-in-Water-Distribution-Networks"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1007/s42979-025-04008-y"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "physics informed chlorine state estimation benchmark",
+    "repo": "github.com/andreartelt/a-benchmark-for-physics-informed-machine-learning-of-chlorine-states-in-water-distribution-networks",
+    "url": "https://github.com/andreArtelt/A-Benchmark-for-Physics-informed-Machine-Learning-of-Chlorine-States-in-Water-Distribution-Networks"
+  },
+  "deployment": [
+    "desktop"
+  ],
+  "description": "These benchmark tools generate and load simulated chlorine concentrations, pipe flows and network topology for testing water-quality surrogate models. Hermes and co-authors publish Net1, Hanoi and CY-DBP scenarios with spike, periodic and random chlorine injections, plus versions with randomised demand. The documented construction yields 18,000 scenarios, although one README sentence contains an extra zero. Net1 and Hanoi scenarios span 30 days at 30-minute intervals. Spatial resolution is individual nodes and links in the three benchmark networks, not a surveyed service area. Python generation, loading and evaluation code is published on GitHub under the MIT licence with free access. The linked pCloud directory opened but displayed no downloadable files during this review. Users may therefore need to regenerate the benchmark. A material caveat is that all bulk and wall reaction coefficients are set to zero, despite broader wording about chlorine decay. Simulation uses include testing transport and mixing surrogates and checking concentration bounds. The benchmark extends demand patterns from data-leakdb and uses EPANET-related simulation tools, linking it conceptually to model-epanet. It does not validate nonzero chlorine-reaction behaviour.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "\"water distribution\" benchmark",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/andreArtelt/A-Benchmark-for-Physics-informed-Machine-Learning-of-Chlorine-States-in-Water-Distribution-Networks",
+  "id": "platform-chlorine-state-benchmark-tools",
+  "interfaces": [
+    "code_library"
+  ],
+  "interoperability": [
+    "EPyT-Flow",
+    "NetworkTopology"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-06-04",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Physics-informed chlorine-state estimation benchmark",
+  "notes": "G8; G8-0011. Scenario count follows the abstract and the documented 3 networks x 1000 x 3 injection types x 2 demand variants. One line says 18,0000. The linked data directory displayed no files, so the trusted resource is the generation and evaluation software, not a verified archive. Zero reaction coefficients are explicit; do not infer calibrated chlorine decay. ",
+  "open_source": true,
+  "platform_kind": [
+    "data_preparation_tool"
+  ],
+  "provider": "Luca Hermes, André Artelt, Stelios Vrachimis, Marios Polycarpou and Barbara Hammer",
+  "related_ids": [
+    "data-leakdb",
+    "model-epanet"
+  ],
+  "sectors": [
+    "water.drinking_water"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, documented contents, access, use and limits; README accessed through GitHub API.",
+      "url": "https://github.com/andreArtelt/A-Benchmark-for-Physics-informed-Machine-Learning-of-Chlorine-States-in-Water-Distribution-Networks/blob/main/README.md"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Own repository metadata and licence field; metadata only.",
+      "url": "https://api.github.com/repos/andreArtelt/A-Benchmark-for-Physics-informed-Machine-Learning-of-Chlorine-States-in-Water-Distribution-Networks"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Linked pCloud folder returned HTTP 200 but displayed no file entries. Data availability is not verified; this record covers the repository tools.",
+      "url": "https://filedn.com/lumBFq2P9S74PNoLPWtzxG4/A-Benchmark-for-Physics-informed-Deep-Learning-of-Chlorine-States-in-Water-Distribution-Networks/data"
+    }
+  ],
+  "tags": [],
+  "title_en": "Physics-informed chlorine-state estimation benchmark: 18,000 scenarios over 30 days",
+  "type": "platform"
+}

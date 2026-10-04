@@ -1,0 +1,130 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "CoolWalks_data.zip (183.7 MB)",
+      "note": "Direct link from the Zenodo API, 2026-10-01",
+      "url": "https://zenodo.org/records/11103149/files/CoolWalks_data.zip?download=1"
+    },
+    {
+      "kind": "repo",
+      "label": "Code on GitHub",
+      "url": "https://github.com/henrik-wolf/CoolWalks"
+    },
+    {
+      "kind": "portal",
+      "label": "Data on Zenodo",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://doi.org/10.5281/zenodo.11103149"
+    },
+    {
+      "kind": "paper",
+      "label": "Scientific Reports 15, 14911 (2025)",
+      "url": "https://doi.org/10.1038/s41598-025-97200-2"
+    },
+    {
+      "kind": "paper",
+      "label": "arXiv 2405.01225",
+      "url": "https://arxiv.org/abs/2405.01225"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Wolf, H., Vierø, A.R., Szell, M. (2025) CoolWalks for active mobility in urban street networks. Scientific Reports 15, 14911",
+  "continents": [
+    "europe",
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US",
+    "ES",
+    "NL"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.1038/s41598-025-97200-2",
+    "name": "coolwalks shade aware routing for walking in street networks",
+    "repo": "github.com/henrik-wolf/coolwalks",
+    "url": "https://github.com/henrik-wolf/CoolWalks"
+  },
+  "description": "CoolWalks is a route choice model and metric for walking in the shade of buildings, published by Henrik Wolf, Ane Rahbek Vierø and Michael Szell of the IT University of Copenhagen in Scientific Reports in 2025. A walker minimises a weighted length in which sunlit street segments count more by a sun avoidance parameter alpha; the CoolWalkability metric then measures how much shaded walking a network offers compared with the shortest path. The authors show analytically that a regular grid with constant building heights gives no benefit, and that real variation in street geometry and building heights does, with results that cluster locally and depend on how the network is mapped. Coverage: synthetic grids and real city networks built from OpenStreetMap building footprints, with shadows computed for a given sun position; it can be run for any city with footprint and height data. Access: Julia code on GitHub (DrWatson project), processed data on Zenodo and the open-access paper and arXiv preprint. Licence and cost: MIT licence, free. Caveats: only building shade is modelled, not trees or temperature, so it gives exposure opportunity, not thermal comfort, and missing building heights bias results. It serves climate adaptation of walking networks and heat exposure analysis. It relates to ShadeWalk, UMEP and OpenStreetMap records in the catalogue.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "heat exposure pedestrians cyclists shade map dataset urban walking routes extreme heat flooding bike paths",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "extreme_heat"
+  ],
+  "homepage": "https://github.com/henrik-wolf/CoolWalks",
+  "id": "model-coolwalks-shade-aware-routing",
+  "inputs": [
+    "Street network and building footprints with heights (OpenStreetMap or synthetic), sun position for a date and time, sun avoidance parameter alpha"
+  ],
+  "language": [
+    "julia"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-11-16",
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "CoolWalks, shade-aware routing for walking in street networks",
+  "outputs": [
+    "Shade-weighted shortest paths, CoolWalkability metric per network and per origin-destination pair, shaded street segment lengths"
+  ],
+  "provider": "IT University of Copenhagen, NERDS group (Wolf, Vierø, Szell)",
+  "related_ids": [
+    "model-shadewalk-urban-shade-coolest-route",
+    "data-openstreetmap",
+    "platform-umep-urban-multi-scale-environmental-predictor"
+  ],
+  "repository": "https://github.com/henrik-wolf/CoolWalks",
+  "sectors": [
+    "transport.active_mobility",
+    "built_environment.public_space"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "climate_adaptation",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "abstract, alpha parameter, CoolWalkability, grid results; journal reference Sci Rep 15 14911",
+      "url": "https://arxiv.org/abs/2405.01225"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Julia DrWatson project, MIT licence, Zenodo data DOI",
+      "url": "https://github.com/henrik-wolf/CoolWalks"
+    }
+  ],
+  "tags": [
+    "shade",
+    "route choice",
+    "urban heat",
+    "walkability",
+    "Julia",
+    "r2-fresh-transport"
+  ],
+  "title_en": "CoolWalks, shade-aware routing for walking in street networks",
+  "type": "model"
+}

@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/Orion-AI-Lab/S4A"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/Orion-AI-Lab/S4A/blob/main/README.md"
+    },
+    {
+      "kind": "paper",
+      "label": "Describing article",
+      "url": "https://doi.org/10.1109/JSTARS.2022.3164771"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "data_family": [
+    "calibration_validation",
+    "vegetation_land_cover"
+  ],
+  "data_kind": [
+    "imagery"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "sen4agrinet crop time series dataset",
+    "repo": "github.com/orion-ai-lab/s4a",
+    "url": "https://github.com/Orion-AI-Lab/S4A"
+  },
+  "description": "Sen4AgriNet is the National Observatory of Athens team's Sentinel-2 crop-classification and segmentation benchmark. It combines satellite observations with farmer-declared crop labels and parcel identifiers, using a harmonised crop taxonomy. Published configurations cover Catalonia in 2019 and 2020 and France in 2019. NetCDF files contain spectral-band time series, dates, crop masks and parcel masks; a documented PyTorch loader produces selected-band tensors and aggregated temporal windows. The author's public Hugging Face dataset card states MIT, with original LPIS sources under Open Data Commons Attribution. A limitation is that the hosted card leaves train-validation-test splits to users, while GitHub links optional scenario files; these choices must be fixed before comparison. The hosted viewer is disabled because its loader requires code execution. Sen4AgriNet can calibrate agricultural maps for irrigation and food-supply simulations, complementing CY-Bench (data-cy-bench-subnational-crop-yield-benchmark). Its 2022 paper describes the benchmark. The earlier rejection excluded reusable agricultural benchmarks under a narrower rule. No data or loader was downloaded or executed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "orion-ai-lab/s4a linked by protontypes/open-sustainable-technology",
+      "route": "R48",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "netcdf_hdf",
+    "domain_model_file",
+    "analysis_package_file"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://github.com/Orion-AI-Lab/S4A",
+  "id": "data-sen4agrinet",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2024-11-06",
+  "licence": "Dataset card and code: MIT; original LPIS sources: Open Data Commons Attribution",
+  "licence_type": [
+    "attribution",
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Sen4AgriNet crop time-series dataset",
+  "notes": "G7 G7-0717. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability. ",
+  "provider": "Orion Lab, National Observatory of Athens",
+  "related_ids": [
+    "data-cy-bench-subnational-crop-yield-benchmark"
+  ],
+  "sectors": [
+    "industry.agriculture",
+    "services.food_supply"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for Orion-AI-Lab/S4A: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/repos/orion-ai-lab/s4a"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/orion-ai-lab/s4a/readme"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Dataset scope, configurations, terms and upstream LPIS attribution requirements.",
+      "url": "https://huggingface.co/datasets/orion-ai-lab/S4A"
+    }
+  ],
+  "spatial_resolution": "Sentinel-2 image patches and parcel masks",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Catalonia 2019-2020; France 2019",
+  "temporal_resolution": "Varies by observation or experiment",
+  "temporal_resolution_class": "varies",
+  "title_en": "Sen4AgriNet crop time-series dataset",
+  "type": "data"
+}

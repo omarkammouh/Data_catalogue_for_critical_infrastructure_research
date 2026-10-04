@@ -1,0 +1,113 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/emvollmer/TPLDetect"
+    },
+    {
+      "kind": "portal",
+      "label": "Dissertation version archive (Zenodo)",
+      "url": "https://doi.org/10.5281/zenodo.19266091"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "tpldetect thermography based pipeline leak detection for district heating",
+    "repo": "github.com/emvollmer/tpldetect",
+    "url": "https://github.com/emvollmer/TPLDetect"
+  },
+  "description": "TPLDetect is open-source software that detects leaks in district heating pipelines by automatic analysis of drone-based thermal infrared imagery. It was written by Elena Vollmer and archived with her doctoral dissertation on thermography-based leak detection in district heating systems. The pipeline covers preprocessing (georeferencing, masking and temperature extraction), thermal anomaly detection with the transformer model TASeg, removal of false alarms with the CNN model TUFSeg, and post-processing and mapping of leak candidates. Inputs are thermal R.JPEG images such as from FLIR cameras, pipeline locations, and a LOD1 building model and terrain model, set through a YAML configuration. The method is location-independent. It is a Python package run through Docker or locally, tested on Ubuntu 22.04 with Python 3.10, and the dissertation version of March 2026 is archived on Zenodo under BSD-3-Clause at no cost. Caveats: only Python 3.10 is supported, the release mirrors a dissertation, and results depend on the flight and camera. Simulation uses are condition monitoring of heat networks and planning of repairs. Related records: data-uas-thermal-imagery-district-heating-leaks holds training data.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "district heating simulation model",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/emvollmer/TPLDetect",
+  "id": "model-tpldetect",
+  "inputs": [
+    "Thermal R.JPEG images from UAS flights",
+    "District heating pipeline locations",
+    "LOD1 building model and digital terrain model"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-04-22",
+  "licence": "BSD-3-Clause",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "statistical"
+  ],
+  "name": "TPLDetect - thermography-based pipeline leak detection for district heating",
+  "outputs": [
+    "Colour-coded map of potential leak locations"
+  ],
+  "provider": "Elena Vollmer",
+  "related_ids": [
+    "data-uas-thermal-imagery-district-heating-leaks"
+  ],
+  "repository": "https://github.com/emvollmer/TPLDetect",
+  "runs_on": [
+    "Docker",
+    "Ubuntu 22.04"
+  ],
+  "sectors": [
+    "energy.district_heating_cooling"
+  ],
+  "simulation_uses": [
+    "digital_twin",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Purpose, TASeg and TUFSeg, required inputs, YAML config, Docker, Ubuntu 22.04 and Python 3.10",
+      "url": "https://raw.githubusercontent.com/emvollmer/TPLDetect/HEAD/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "BSD-3-Clause, 2026, Elena Vollmer",
+      "url": "https://raw.githubusercontent.com/emvollmer/TPLDetect/HEAD/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Pipeline steps, dissertation title, v1.0-dissertation",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.19266091"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Published 2026-03-27, updated 2026-04-22",
+      "url": "https://zenodo.org/api/records/19266091"
+    }
+  ],
+  "tags": [
+    "district heating",
+    "leak detection",
+    "thermography",
+    "UAS",
+    "deep learning"
+  ],
+  "title_en": "TPLDetect - thermography-based pipeline leak detection for district heating",
+  "type": "model",
+  "validated_on": [
+    "Data sets of the associated dissertation and publications"
+  ]
+}

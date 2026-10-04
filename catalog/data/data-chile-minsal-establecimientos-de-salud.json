@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Establecimientos de salud vigentes (CSV)",
+      "url": "https://datos.gob.cl/dataset/3bf4cf7c-f638-4735-9a01-f65faae4beca/resource/2c44d782-3365-44e3-aefb-2c8b8363a1bc/download/establecimientos_20260929.csv"
+    },
+    {
+      "kind": "portal",
+      "label": "datos.gob.cl dataset (CSV and data dictionary)",
+      "url": "https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CL"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "chile health establishments register ministerio de salud deis establecimientos de salud",
+    "url": "https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes"
+  },
+  "description": "This dataset lists every health establishment in Chile, public and private, as registered by the Ministry of Health. The ministry's statistics department (DEIS) publishes it on the national open data portal. Each row is an establishment with its old and new codes, parent establishment, region, health service or regional health authority, ownership, type (hospital, primary care centre, mental health centre, mobile unit and others), level of care and complexity, municipality, street address, telephone, opening date, whether it has an emergency service and of which type, latitude and longitude, public or private system, operating status, and incorporation and closure dates. Coverage is national, and the file dated 22 September 2026 is refreshed about monthly. The data are free to download as a semicolon-separated CSV of about 2.5 MB with a PDF data dictionary, under a Creative Commons CCZero dedication. Caveats: the ministry notes that update automation is in progress, so dates and formats may change; beds, staff and equipment are not included; and some coordinates may be approximate. Simulation uses: placing hospitals, emergency services and primary care centres in earthquake, tsunami and wildfire exposure analyses for Chile, computing travel times to care, and building healthcare nodes for interdependency models. Related records: healthsites.io (data-healthsites-io) gives crowd-maintained facility points worldwide and the global travel time maps (data-global-travel-time-emergency-tertiary-hospitals) cover access to hospitals.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "datos abiertos establecimientos de salud georreferenciados registro nacional descarga",
+      "route": "R21",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "document"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes",
+  "id": "data-chile-minsal-establecimientos-de-salud",
+  "languages": [
+    "es"
+  ],
+  "last_updated": "2026-09-30",
+  "licence": "CC0-1.0",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Chile health establishments register (Ministerio de Salud, DEIS, Establecimientos de Salud)",
+  "provider": "Ministerio de Salud de Chile, Departamento de Estadísticas e Información de Salud (DEIS); published on datos.gob.cl",
+  "related_ids": [
+    "data-healthsites-io",
+    "data-global-travel-time-emergency-tertiary-hospitals"
+  ],
+  "sectors": [
+    "services.healthcare",
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "network_flow",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "CKAN: Establecimientos de Salud; Ministerio de Salud; CC0; created 2024-01-12, modified 2026-09-23; frequency 1m; resources EstablecimientosSalud.csv and Diccionario de datos PDF; note on update automation",
+      "url": "https://datos.gob.cl/api/3/action/package_show?id=establecimientos-de-salud-vigentes"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "CSV header read: codes, region, SEREMI/servicio de salud, pertenencia, tipo, nivel de atención, comuna, dirección, TieneServicioUrgencia, TipoUrgencia, Latitud, Longitud, estado, complejidad, fechas; 2,507,047 bytes",
+      "url": "https://datos.gob.cl/dataset/3bf4cf7c-f638-4735-9a01-f65faae4beca/resource/2c44d782-3365-44e3-aefb-2c8b8363a1bc/download/establecimientos_20260922.csv"
+    }
+  ],
+  "spatial_resolution": "Facility point",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "health facilities",
+    "Chile",
+    "emergency services",
+    "DEIS"
+  ],
+  "temporal_coverage": "Current register (file of 2026-09-22)",
+  "temporal_resolution": "Snapshot",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Chile health establishments register (Ministry of Health, DEIS, Health establishments)",
+  "type": "data",
+  "update_frequency": "monthly"
+}

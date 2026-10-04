@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "NYC Open Data dataset page",
+      "url": "https://data.cityofnewyork.us/Public-Safety/Fire-Incident-Dispatch-Data/8m42-w767"
+    },
+    {
+      "kind": "api",
+      "label": "SODA API (JSON)",
+      "url": "https://data.cityofnewyork.us/resource/8m42-w767.json"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "historical_events",
+    "demand_operation",
+    "service_performance",
+    "emergency_management"
+  ],
+  "data_kind": [
+    "event_record",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "nyc fire incident dispatch data fdny starfire computer aided dispatch",
+    "url": "https://data.cityofnewyork.us/Public-Safety/Fire-Incident-Dispatch-Data/8m42-w767"
+  },
+  "description": "This dataset contains one record per fire incident created in the Fire Department of New York City's Starfire computer aided dispatch system, from creation of the incident to its close. It is published by the FDNY on the NYC Open Data portal. Each record gives the Starfire incident identifier, date and time, alarm box borough, number and location, alarm source, alarm level and highest alarm level, incident classification and group (structural fire, non-structural fire, medical emergency, non-medical emergency), times of first assignment, activation and arrival on scene, dispatch, travel and total response seconds with validity flags, and the number of engines, ladders and other units assigned. Coverage is the five boroughs from 2005 onwards and the table is refreshed a few times a year. The data are free through the Socrata SODA API or as CSV and JSON exports under the NYC Open Data terms of use. Caveats: exact incident addresses are withheld and incidents are located only by alarm box, zip code and administrative districts, and response-time fields should be filtered on their validity flags. Simulation uses: calibrating fire station coverage and unit deployment models, measuring demand by alarm level and time, and planning for surge and station closures. Related records: the companion FDNY EMS Incident Dispatch Data (data-nyc-fdny-ems-incident-dispatch) and the London Fire Brigade incident records (data-london-fire-brigade-incident-records) as a comparable city feed.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "computer aided dispatch open data fire calls for service dataset city API",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "csv",
+    "api"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://data.cityofnewyork.us/Public-Safety/Fire-Incident-Dispatch-Data/8m42-w767",
+  "id": "data-nyc-fdny-fire-incident-dispatch",
+  "languages": [
+    "en"
+  ],
+  "licence": "NYC Open Data terms of use (free public use)",
+  "licence_type": [
+    "provider_terms"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NYC Fire Incident Dispatch Data (FDNY Starfire computer aided dispatch)",
+  "provider": "Fire Department of New York City (FDNY), published on NYC Open Data",
+  "regions": [
+    "New York City"
+  ],
+  "related_ids": [
+    "data-nyc-fdny-ems-incident-dispatch",
+    "data-london-fire-brigade-incident-records"
+  ],
+  "schema_summary": "Starfire incident id, datetime, alarm box borough, number and location, alarm source, alarm level, incident classification and group, assignment, activation and on-scene times, response seconds with validity flags, engines, ladders and other units assigned",
+  "sectors": [
+    "services.emergency_services"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Socrata metadata: attribution FDNY; created 2016-10-20; rows updated 2026-07-09; Starfire CAD description; columns include ALARM_BOX_NUMBER, HIGHEST_ALARM_LEVEL, INCIDENT_RESPONSE_SECONDS_QY, ENGINES_ASSIGNED_QUANTITY",
+      "url": "https://data.cityofnewyork.us/api/views/8m42-w767.json"
+    }
+  ],
+  "spatial_resolution": "Alarm box, zip code and administrative districts",
+  "spatial_resolution_class": "local_units",
+  "tags": [
+    "fire",
+    "dispatch",
+    "response times",
+    "New York City",
+    "alarm boxes"
+  ],
+  "temporal_coverage": "2005 to present",
+  "temporal_resolution": "Per incident (timestamped)",
+  "temporal_resolution_class": "event",
+  "title_en": "NYC Fire Incident Dispatch Data (FDNY Starfire computer aided dispatch)",
+  "type": "data",
+  "update_frequency": "several_per_year"
+}

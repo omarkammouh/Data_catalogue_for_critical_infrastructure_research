@@ -1,0 +1,96 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/theostath/Ambulance_Location_Eval"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ambulance location evaluation for patras greece double standard model gendreau laporte and semet as a mixed integer program in python",
+    "repo": "github.com/theostath/ambulance_location_eval",
+    "url": "https://github.com/theostath/Ambulance_Location_Eval"
+  },
+  "description": "This project evaluates where ambulances are stationed in the Municipality of Patras in Greece, using the Double Standard Model published by Gendreau, Laporte and Semet in 1997. The model places a limited fleet at candidate stations so that all demand is reached within a longer response time, a set share is reached within a shorter one, and as much weighted demand as possible is covered twice within the shorter time, giving a back-up when the nearest ambulance is busy. It is written in Python and solved as a mixed-integer program with pymprog and the free GLPK solver. The Patras case covers 125.4 square kilometres and about 171,000 residents in 2011, represented by 12 demand points and four stations or hospitals, and a command-line tool reproduces the headline coverage figures, with tests. The code is free to download from GitHub under the Apache-2.0 licence. Caveats: it is an individual project with a coarse demand representation, and its travel times and call weights come from the author's case study, not official EMS data. Coverage is one Greek city. Simulation uses: checking how well an existing station layout covers demand and where extra ambulances would add back-up coverage. Related records: the equity-constrained dispatching model (model-comses-equity-constrained-ems-dispatching) addresses how the located ambulances are then dispatched.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ambulance location",
+      "route": "R05",
+      "source": "software-heritage"
+    }
+  ],
+  "geographic_scope": "city",
+  "hazards": [],
+  "homepage": "https://github.com/theostath/Ambulance_Location_Eval",
+  "id": "model-patras-ambulance-location-double-standard-model",
+  "inputs": [
+    "Demand points with emergency call weights",
+    "Travel times from stations to points",
+    "Response-time thresholds, fleet size and per-station caps"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-05-16",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "optimisation"
+  ],
+  "name": "Ambulance location evaluation for Patras, Greece: Double Standard Model (Gendreau, Laporte and Semet) as a mixed-integer program in Python",
+  "outputs": [
+    "Number of ambulances per station",
+    "Single and double coverage of demand within the response thresholds"
+  ],
+  "provider": "theostath (GitHub)",
+  "related_ids": [
+    "model-comses-equity-constrained-ems-dispatching"
+  ],
+  "repository": "https://github.com/theostath/Ambulance_Location_Eval",
+  "runs_on": [
+    "Python (pymprog with the GLPK solver)"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "optimisation",
+    "emergency_response"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README read in memory: evaluates the existing ambulance station layout in the Municipality of Patras, Greece, with the Double Standard Model of Gendreau, Laporte and Semet (1997), solved as a mixed-integer program with pymprog (GLPK); background on US EMS Act coverage standards (95% within 10 minutes urban, 35 minutes rural); parameters and decision variables tabulated; case study 125.4 km2, 170,896 residents (2011), 12 points of interest and 4 stations/hospitals, total weighted demand 125; CLI reproducing headline coverage numbers, tests; LICENSE Apache 2.0",
+      "url": "https://raw.githubusercontent.com/theostath/Ambulance_Location_Eval/main/README.md"
+    }
+  ],
+  "tags": [
+    "ambulance location",
+    "double coverage",
+    "Patras",
+    "mixed-integer programming",
+    "EMS"
+  ],
+  "title_en": "Ambulance location evaluation for Patras, Greece: Double Standard Model (Gendreau, Laporte and Semet) as a mixed-integer program in Python",
+  "type": "model",
+  "validated_on": []
+}

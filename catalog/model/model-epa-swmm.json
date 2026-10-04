@@ -1,0 +1,121 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "EPA SWMM page: installers, source, manuals",
+      "url": "https://www.epa.gov/water-research/storm-water-management-model-swmm"
+    },
+    {
+      "kind": "repo",
+      "label": "SWMM solver source repository",
+      "url": "https://github.com/USEPA/Stormwater-Management-Model"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Rossman, L.A. and Simon, M.A. (2022). Storm Water Management Model User's Manual Version 5.2. U.S. EPA Office of Research and Development.",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "storm water management model swmm",
+    "repo": "github.com/usepa/stormwater-management-model",
+    "url": "https://epa.gov/water-research/storm-water-management-model-swmm"
+  },
+  "description": "SWMM is a dynamic rainfall-runoff and hydraulic-routing model for stormwater, combined and sanitary sewer systems and other urban drainage networks. It simulates single events or long continuous periods: runoff from subcatchments with pervious and impervious parts, snowmelt, infiltration and groundwater interflow, then routes it through networks of any size made of pipes, open channels, storage and treatment units, pumps, weirs, orifices and flow dividers, with kinematic or full dynamic wave routing that captures backwater, surcharge, reverse flow and surface ponding, and user-defined control rules. It also estimates pollutant buildup, wash-off and routing, and represents eight kinds of green infrastructure as low impact development controls. The U.S. Environmental Protection Agency's Office of Research and Development maintains it, having built version 5 with CDM Smith, to support stormwater objectives; it is used worldwide for planning, design and emergency response and is FEMA-approved for National Flood Insurance Program studies. It is site-independent. EPA offers Windows installers, the C computational engine, the interface source and manuals; the current release is 5.2.4 of August 2023, and the solver repository on GitHub states that the code is in the public domain, free of charge. Caveats: the climate adjustment add-in SWMM-CAT has not been maintained since March 2025; commercial packages (PCSWMM, InfoWorks ICM, XPSWMM) wrap or extend the engine. Simulation uses: drainage network flow, capacity planning and sizing, combined sewer overflow control, flood hazard and climate adaptation. It is EPA's sister model to EPANET (model-epanet) for pressurised networks.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "urban drainage stormwater model open source SWMM alternatives",
+      "route": "R22",
+      "source": "google-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [
+    "flood"
+  ],
+  "homepage": "https://www.epa.gov/water-research/storm-water-management-model-swmm",
+  "id": "model-epa-swmm",
+  "inputs": [
+    "SWMM INP project file describing subcatchments, conduits, nodes, storage units, pumps, weirs, orifices and controls",
+    "Rainfall and evaporation time series, dry-weather sanitary flow, groundwater and infiltration parameters",
+    "Pollutant buildup and wash-off parameters and green infrastructure (LID) controls"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-08-07",
+  "licence": "Public domain (U.S. Government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "Storm Water Management Model (SWMM)",
+  "notes": "The repository has no LICENSE file (404 on 2026-09-26); the public-domain statement is in its README. Commercial derivatives are separate platform candidates. Deep check A4 (2026-10-01) corrected: maturity .",
+  "outputs": [
+    "Runoff, flow, depth, surcharge and ponding in each conduit and node over time",
+    "Pollutant loads and concentrations",
+    "Maps, time-series graphs, profile plots and frequency statistics"
+  ],
+  "provider": "U.S. Environmental Protection Agency, Office of Research and Development",
+  "related_ids": [
+    "model-epanet",
+    "case_study-wuhan-qingshan-sponge-city-swmm-effectiveness-frontiers",
+    "model-rim2d-urban-pluvial-inundation-model-dresden",
+    "platform-flowsdt-galveston-geospatial-digital-twin-flood"
+  ],
+  "repository": "https://github.com/USEPA/Stormwater-Management-Model",
+  "runs_on": [],
+  "sectors": [
+    "water.stormwater_drainage",
+    "water.wastewater"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "climate_adaptation",
+    "emergency_response",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "capabilities, applications, SWMM 5.2.4 files dated 08/07/2023, CDM Smith, FEMA-approved, SWMM-CAT unmaintained since 2025-03-18",
+      "url": "https://www.epa.gov/water-research/storm-water-management-model-swmm"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "official source repository maintained by EPA ORD Cincinnati; C; released in the public domain",
+      "url": "https://raw.githubusercontent.com/USEPA/Stormwater-Management-Model/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "tags v5.2.1 to v5.2.4 read with git ls-remote",
+      "url": "https://github.com/USEPA/Stormwater-Management-Model"
+    }
+  ],
+  "tags": [
+    "stormwater",
+    "urban drainage",
+    "combined sewer",
+    "sanitary sewer",
+    "hydrology",
+    "hydraulics",
+    "green infrastructure",
+    "LID",
+    "SWMM5"
+  ],
+  "title_en": "Storm Water Management Model (SWMM)",
+  "type": "model",
+  "validated_on": []
+}

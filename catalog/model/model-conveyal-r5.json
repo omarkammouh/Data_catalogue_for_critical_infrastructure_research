@@ -1,0 +1,124 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source code",
+      "url": "https://github.com/conveyal/r5"
+    },
+    {
+      "kind": "docs",
+      "label": "Conveyal documentation",
+      "url": "https://docs.conveyal.com/"
+    }
+  ],
+  "access_restrictions": "none",
+  "citation": "Conway, M.W., Byrd, A., van Eggermond, M. (2018). Accounting for uncertainty and variation in accessibility metrics for public transport sketch planning. Journal of Transport and Land Use.",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "r5 rapid realistic routing on real world and reimagined networks conveyal",
+    "repo": "github.com/conveyal/r5",
+    "url": "https://github.com/conveyal/r5"
+  },
+  "description": "R5 is the routing engine of Conveyal Analysis, a web-based system for creating transport scenarios and evaluating them by cumulative-opportunities accessibility. It plans door-to-door trips at many departure times within a time window, so results reflect waiting and schedule variation, and applies lightweight patches to baseline networks to represent proposed changes. Networks are built from OpenStreetMap and GTFS; methods are described in Conway, Byrd and van der Linden (2017), Conway, Byrd and van Eggermond (2018, Journal of Transport and Land Use) and Conway and Stewart (2019) on fare constraints. It is developed by Conveyal LLC and published on GitHub under the MIT licence, free of charge; version 7.6 is the latest tag and development continued into August 2026. R5 is location independent and works at city or regional scale anywhere with OpenStreetMap and GTFS data. Caveats stated by the developers: Conveyal gives no technical support for third-party deployments, R5 is a component of a commercial system whose roadmap drives development, and it has no stable programming interface, so projects using it as a library may break with new releases. It is used for accessibility and equity analysis, scenario and capacity planning of transit networks, and disruption or resilience studies that compare access before and after a change; it consumes GTFS feeds such as those in the Mobility Database and relates to OpenTripPlanner, from which it originated as a separate engine.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.public_transit",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "register entry",
+      "route": "R06",
+      "source": "transport-r5-conveyal"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/conveyal/r5",
+  "id": "model-conveyal-r5",
+  "inputs": [
+    "OpenStreetMap",
+    "GTFS",
+    "scenario modifications",
+    "opportunity grids"
+  ],
+  "language": [
+    "java"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "MIT",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "network"
+  ],
+  "name": "R5: Rapid Realistic Routing on Real-world and Reimagined networks (Conveyal)",
+  "outputs": [
+    "travel time surfaces",
+    "cumulative opportunities accessibility indicators"
+  ],
+  "provider": "Conveyal LLC",
+  "related_ids": [
+    "model-opentripplanner",
+    "data-gtfs-specification",
+    "data-mobility-database"
+  ],
+  "repository": "https://github.com/conveyal/r5",
+  "runs_on": [],
+  "sectors": [
+    "transport.public_transit",
+    "transport.active_mobility",
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "routing engine for Conveyal; methods papers; no support for third-party deployments; no stable API",
+      "url": "https://raw.githubusercontent.com/conveyal/r5/dev/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "MIT License, Copyright 2020-2025 Conveyal LLC",
+      "url": "https://raw.githubusercontent.com/conveyal/r5/dev/LICENSE"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git: tags up to v7.6; last commit 2026-08-01",
+      "url": "https://github.com/conveyal/r5"
+    }
+  ],
+  "tags": [
+    "accessibility",
+    "routing",
+    "scenario planning",
+    "GTFS"
+  ],
+  "title_en": "R5: Rapid Realistic Routing on Real-world and Reimagined networks (Conveyal)",
+  "type": "model",
+  "validated_on": []
+}

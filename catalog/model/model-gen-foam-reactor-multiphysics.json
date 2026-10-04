@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "GeN-Foam documentation",
+      "url": "https://foam-for-nuclear.gitlab.io/GeN-Foam/"
+    },
+    {
+      "kind": "repo",
+      "label": "Archived GeN-Foam repository",
+      "url": "https://gitlab.com/foam-for-nuclear/GeN-Foam"
+    },
+    {
+      "kind": "repo",
+      "label": "foamForNuclear repository (active development)",
+      "url": "https://gitlab.com/foamForNuclear/foamForNuclear"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "gen foam multi physics reactor solver now developed in foamfornuclear",
+    "repo": "gitlab.com/foamfornuclear/foamfornuclear",
+    "url": "https://foam-for-nuclear.gitlab.io/GeN-Foam"
+  },
+  "description": "GeN-Foam is a multi-physics solver for nuclear reactor analysis built on OpenFOAM. The README read on 2026-09-26 says it solves, coupled or separately, neutronics (point kinetics, diffusion, adjoint diffusion, SP3 and discrete ordinates), one-phase thermal hydraulics in CFD and porous-medium form, two-phase porous-medium thermal hydraulics for sodium and water, sub-scale solid temperatures, and thermal mechanics whose deformations update the meshes. Coverage is mainly coarse-mesh analysis of reactor cores, with pin-by-pin models possible. The code is C++ on the ESI OpenCFD OpenFOAM distribution v2506, with online documentation, Doxygen pages, tutorials and lecture slides from an IAEA e-learning course; it is free under the GPL-3.0 licence. Caveats: the GeN-Foam repository is archived and no longer maintained, because development, maintenance and support moved to the foamForNuclear repository; the README also warns that users need Linux, OpenFOAM, C++ and multi-physics nuclear experience. Simulation uses are coupled transient and steady-state studies of reactor cores, for example for safety analysis of advanced reactors, and a physics core for digital twin work. Related records: model-offbeat-fuel-performance comes from the same group and is merging into foamForNuclear, and platform-moose-multiphysics-framework is another multiphysics framework used for reactors.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "must-have checklist: resources named in review https://www-pub.iaea.org/MTCD/publications/PDF/p15792-DOC-010-496_web.pdf (IAEA Technical Reports Series 496 (2025), review)",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://foam-for-nuclear.gitlab.io/GeN-Foam/",
+  "id": "model-gen-foam-reactor-multiphysics",
+  "inputs": [
+    "OpenFOAM meshes and dictionaries for core regions",
+    "cross sections and material properties"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "GPL-3.0",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical"
+  ],
+  "name": "GeN-Foam multi-physics reactor solver (now developed in foamForNuclear)",
+  "outputs": [
+    "neutron flux and power",
+    "temperatures, flows and deformations"
+  ],
+  "provider": "GeN-Foam developers (foam-for-nuclear group on GitLab)",
+  "related_ids": [
+    "model-offbeat-fuel-performance",
+    "platform-moose-multiphysics-framework"
+  ],
+  "repository": "https://gitlab.com/foamForNuclear/foamForNuclear",
+  "sectors": [
+    "energy.nuclear"
+  ],
+  "simulation_uses": [
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README (archive notice, move to foamForNuclear, solver capabilities, OpenFOAM v2506, documentation)",
+      "url": "https://gitlab.com/foam-for-nuclear/GeN-Foam/-/raw/master/README.md"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "GPL-3.0 licence and archived status of the repository",
+      "url": "https://gitlab.com/foam-for-nuclear/GeN-Foam"
+    }
+  ],
+  "tags": [
+    "OpenFOAM",
+    "multiphysics",
+    "reactor analysis",
+    "neutronics",
+    "thermal hydraulics",
+    "open source"
+  ],
+  "title_en": "GeN-Foam multi-physics reactor solver (now developed in foamForNuclear)",
+  "type": "model"
+}

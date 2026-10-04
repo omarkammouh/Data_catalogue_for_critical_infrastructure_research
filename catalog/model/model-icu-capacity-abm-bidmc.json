@@ -1,0 +1,115 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "GitHub repository",
+      "url": "https://github.com/c-maine/ICU_capacity_modelling_ABM"
+    },
+    {
+      "kind": "paper",
+      "label": "Submitted thesis (PDF in repository)",
+      "url": "https://github.com/c-maine/ICU_capacity_modelling_ABM/blob/master/Submitted_Thesis.pdf"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa",
+    "asia",
+    "europe",
+    "north_america",
+    "south_america",
+    "oceania"
+  ],
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "agent based model of intensive care unit capacity at beth israel deaconess medical center calibrated on mimic iii thesis code",
+    "repo": "github.com/c-maine/icu_capacity_modelling_abm",
+    "url": "https://github.com/c-maine/ICU_capacity_modelling_ABM"
+  },
+  "description": "This repository holds the code for a thesis that built an agent-based model of intensive care unit capacity at the Beth Israel Deaconess Medical Center. It uses MIMIC-III, a freely accessible critical care database published in Scientific Data in 2016, to estimate admission distributions for clusters of patients in each ICU, and machine learning models of length of stay capture how different groups of patients leave. The agent-based model then simulates admissions and discharges to show how the units fill up, with result graphs in a notebook. The repository is organised into data processing, admission distribution estimation, length-of-stay prediction, sepsis prediction and the model with its results, and the submitted thesis is included as a PDF. The code is free to download from GitHub. Caveats: users must obtain MIMIC-III themselves to rerun the data processing, the model represents one hospital, and no licence is stated. Coverage is one hospital in the United States. Simulation uses: testing how ICU capacity copes with changes in admissions, such as a surge, and linking patient-level predictions to capacity planning. Related records: the CDC NHSN hospital respiratory data (data-cdc-nhsn-hospital-respiratory-data) report ICU bed occupancy across US hospitals.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "ICU capacity",
+      "route": "R05",
+      "source": "software-heritage"
+    }
+  ],
+  "geographic_scope": "global",
+  "hazards": [],
+  "homepage": "https://github.com/c-maine/ICU_capacity_modelling_ABM",
+  "id": "model-icu-capacity-abm-bidmc",
+  "inputs": [
+    "MIMIC-III critical care records",
+    "Admission distributions per patient cluster and ICU",
+    "Length-of-stay predictions from machine learning models"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2020-08-26",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "agent_based",
+    "statistical"
+  ],
+  "name": "Agent-based model of intensive care unit capacity at Beth Israel Deaconess Medical Center, calibrated on MIMIC-III (thesis code)",
+  "outputs": [
+    "Simulated ICU occupancy and capacity use, with result graphs"
+  ],
+  "provider": "c-maine (GitHub); master's thesis",
+  "related_ids": [
+    "data-cdc-nhsn-hospital-respiratory-data"
+  ],
+  "repository": "https://github.com/c-maine/ICU_capacity_modelling_ABM",
+  "runs_on": [
+    "Jupyter"
+  ],
+  "sectors": [
+    "services.healthcare"
+  ],
+  "simulation_uses": [
+    "agent_based",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "README read in memory: agent-based model for ICU capacity modelling at the Beth Israel Deaconess Medical Center; final paper as Submitted_Thesis.pdf; data from MIMIC-III (Johnson et al., Scientific Data 2016); folders ABM_results (model, simulations, graphs), Admissions_dists_estimation (admission distribution parameters per patient cluster and ICU), Data_processing, LOS_prediction (machine learning models of patient outflow) and Sepsis_prediction; results notebook ABM_graphs_vF.ipynb; no licence file found",
+      "url": "https://raw.githubusercontent.com/c-maine/ICU_capacity_modelling_ABM/master/README.md"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://github.com/c-maine/ICU_capacity_modelling_ABM/blob/master/README.md"
+    },
+    {
+      "accessed": "2026-10-01",
+      "note": "Deep check A16 (round 2): last update date read from provider metadata (GitHub last commit 2020-08-26)",
+      "url": "https://github.com/c-maine/ICU_capacity_modelling_ABM"
+    }
+  ],
+  "tags": [
+    "ICU",
+    "capacity",
+    "agent-based",
+    "MIMIC-III",
+    "length of stay"
+  ],
+  "title_en": "Agent-based model of intensive care unit capacity at Beth Israel Deaconess Medical Center, calibrated on MIMIC-III (thesis code)",
+  "type": "model",
+  "validated_on": []
+}

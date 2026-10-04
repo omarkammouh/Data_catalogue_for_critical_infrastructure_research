@@ -1,0 +1,99 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Zenodo record (Parquet of about 9.9 GB and README)",
+      "url": "https://zenodo.org/records/21447587"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "africa"
+  ],
+  "cost": "free",
+  "countries": [
+    "NG"
+  ],
+  "crs": "EPSG:4326",
+  "data_family": [
+    "system_description",
+    "resource_potential",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.21357756",
+    "name": "nigeria national building footprints with energy typology and rooftop solar potential 71 6 million buildings",
+    "url": "https://zenodo.org/records/21447587"
+  },
+  "description": "This dataset lists every building in Nigeria, 71,550,072 in all, each with a footprint, an energy load archetype and usable roof area for rooftop solar. It was published on Zenodo on 20 July 2026 by Abdus-Samad Olanrewaju of Enerverge and the Polytechnic Institute Australia and Semirah Adebayo of RMIT University. Footprints come from Google Open Buildings (90.5 per cent) and Microsoft (3.1 per cent), plus 4,597,958 buildings (6.4 per cent) found by a SegFormer segmentation model over high-resolution imagery across all 774 local government areas. Each row gives centroid, area, H3 cell, state and local government area, height in metres, energy load group, detection confidence and a modelled demand tier. Version 2 fixed buildings assigned to same-named areas in the wrong state by using point-in-polygon matching. Coverage: all of Nigeria. Access: one Parquet file of about 9.9 GB with a README on Zenodo. Licence: Open Database Licence; free. Caveats: archetypes, heights and demand tiers are modelled; SegFormer detections can be filtered by the source column. Simulation uses: electricity demand, rooftop solar and building exposure models for Nigeria. Related records: the Nigerian residential archetypes and GlobalBuildingAtlas.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "\"building\" AND \"solar potential\"",
+      "route": "R03",
+      "source": "zenodo"
+    }
+  ],
+  "formats": [
+    "parquet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://zenodo.org/records/21447587",
+  "id": "data-nigeria-building-footprints-energy-typology-rooftop-solar",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-07-20",
+  "licence": "ODbL-1.0",
+  "licence_type": [
+    "share_alike"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Nigeria national building footprints with energy typology and rooftop solar potential (71.6 million buildings)",
+  "provider": "Abdus-Samad Olanrewaju (Enerverge) and Semirah Adebayo (RMIT University)",
+  "related_ids": [],
+  "schema_summary": "building_id, source (google, msft, inferred-segformer), lat, lon, area_m2, h3_9, state_code, lga_id, height_c (m), load_profile_group, building_confidence, demand_tier, usable roof area",
+  "sectors": [
+    "built_environment.buildings",
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "hazard_exposure"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Title, creators and affiliations, 2026-07-20, ODbL, files",
+      "url": "https://zenodo.org/api/records/21447587"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "Counts by source, version 2 LGA fix, demand tier, column table",
+      "url": "https://zenodo.org/api/records/21447587/files/README.md/content"
+    }
+  ],
+  "spatial_resolution": "Individual buildings with H3 resolution-9 cell",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "Nigeria",
+    "building footprints",
+    "rooftop solar",
+    "energy archetypes",
+    "SegFormer",
+    "Google Open Buildings"
+  ],
+  "temporal_resolution": "none (snapshot)",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Nigeria national building footprints with energy typology and rooftop solar potential (71.6 million buildings)",
+  "type": "data"
+}

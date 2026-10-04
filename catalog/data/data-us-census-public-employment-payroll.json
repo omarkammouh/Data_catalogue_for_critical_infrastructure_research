@@ -1,0 +1,147 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "2025 ASPEP Individual Unit Files (ZIP)",
+      "url": "https://www2.census.gov/programs-surveys/apes/tables/2025/2025_individual_unit_files.zip"
+    },
+    {
+      "kind": "api",
+      "label": "Public Sector: Public Employment and Payroll API (timeseries/govsemp)",
+      "note": "API key required",
+      "url": "https://api.census.gov/data/timeseries/govsemp.html"
+    },
+    {
+      "kind": "portal",
+      "label": "ASPEP data tables",
+      "note": "landing page that lists the download; the address itself does not return the file",
+      "url": "https://www.census.gov/programs-surveys/apes/data/tables.html"
+    },
+    {
+      "kind": "docs",
+      "label": "About ASPEP",
+      "url": "https://www.census.gov/programs-surveys/apes/about.html"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "recovery_restoration",
+    "economic_financial"
+  ],
+  "data_kind": [
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "annual survey of public employment payroll aspep state and local government employees by function",
+    "url": "https://census.gov/programs-surveys/apes.html"
+  },
+  "description": "The Annual Survey of Public Employment & Payroll (ASPEP) of the U.S. Census Bureau measures the number of state and local civilian government employees and their gross payroll for the month of March. Data give full-time, part-time and full-time equivalent employment and March payroll by government function, using 32 function codes that include highways, air transportation, sea and inland port facilities, sewerage, solid waste management, water supply, electric power, gas supply, transit, firefighters and police, for state governments, local governments and both, by state and for the nation. In March 2025 state and local governments employed 20.3 million people. Coverage: collected annually since 1957 except 1996, a full census in years ending 2 and 7 and a sample in between; tables on data.census.gov and in the API from 1992 to 2025 (2025 preliminary data released April 2026). Access: data.census.gov tables, individual unit files on the data tables page and the Public Sector: Public Employment and Payroll API (timeseries/govsemp, free key); free and public domain. Caveats: March payroll only; civilian employees only; sample years carry sampling error; functions follow the Government Finance and Employment Classification Manual and private utility staff are not included. Simulation uses: sizing public workforce available for operating and restoring water, sewer, highway, transit and utility systems, for example crew capacity assumptions in restoration and emergency response models. Related records: the government units listing, State and Local Government Finances and County Business Patterns for private sector employment.",
+  "description_checked": "2026-09-27",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk; entry Annual Survey of Public Employment & Payroll",
+      "route": "R10",
+      "source": "us-nso-census-gov"
+    },
+    {
+      "date": "2026-09-27",
+      "query": "Census Bureau product walk, round 1 review (US Census track): api.census.gov/data.json dataset list, timeseries/govsemp",
+      "route": "R35",
+      "source": "census-data-api"
+    }
+  ],
+  "formats": [
+    "spreadsheet",
+    "plain_text",
+    "api"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.census.gov/programs-surveys/apes.html",
+  "id": "data-us-census-public-employment-payroll",
+  "languages": [
+    "en"
+  ],
+  "licence": "Public domain (U.S. federal government work)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "Annual Survey of Public Employment & Payroll (ASPEP): state and local government employees by function",
+  "notes": "Function codes were read from the 2025 individual unit file technical documentation on 2026-09-27.",
+  "provider": "U.S. Census Bureau",
+  "related_ids": [
+    "data-us-census-government-units-special-districts",
+    "data-us-census-state-local-government-finances",
+    "data-us-census-county-business-patterns"
+  ],
+  "schema_summary": "Government function, level of government, state, full-time and part-time employees, FTE, March payroll",
+  "sectors": [
+    "water.drinking_water",
+    "water.wastewater",
+    "transport.road",
+    "transport.public_transit",
+    "energy.electricity",
+    "services.emergency_services",
+    "services.waste",
+    "cross_cutting.multi_sector"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "resilience",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Scope; 2025 preliminary data released April 2026; 20.3 million employees in March 2025",
+      "url": "https://www.census.gov/programs-surveys/apes.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Annual since 1957 except 1996, census in years ending 2 and 7, tables 1992 to current, govsemp API, individual unit files",
+      "url": "https://www.census.gov/programs-surveys/apes/about.html"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Dataset timeseries/govsemp, Public Sector: Public Employment and Payroll: 1992-2025",
+      "url": "https://api.census.gov/data.json"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Opened the ZIP: XLSX and fixed-width unit files; technical documentation lists 32 function codes (044 Highways, 080 Sewerage, 091 Water Supply, 092 Electric Power, 093 Gas Supply, 094 Transit, 024 Firefighters)",
+      "url": "https://www2.census.gov/programs-surveys/apes/tables/2025/2025_individual_unit_files.zip"
+    }
+  ],
+  "spatial_resolution": "Nation and state by level of government; individual units in unit files",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "public employment",
+    "government workforce",
+    "ASPEP",
+    "utility employees",
+    "Census Bureau"
+  ],
+  "temporal_coverage": "Annual since 1957 except 1996; tables and API 1992-2025",
+  "temporal_coverage_years": {
+    "end": 2025,
+    "start": 1992
+  },
+  "temporal_resolution": "annual (March reference month)",
+  "temporal_resolution_class": "monthly",
+  "title_en": "Annual Survey of Public Employment & Payroll (ASPEP): state and local government employees by function",
+  "type": "data",
+  "update_frequency": "annual"
+}

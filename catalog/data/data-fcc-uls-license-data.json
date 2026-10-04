@@ -1,0 +1,127 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "ULS complete files (example: microwave)",
+      "url": "https://data.fcc.gov/download/pub/uls/complete/l_micro.zip"
+    },
+    {
+      "kind": "download",
+      "label": "ULS daily files (example)",
+      "url": "https://data.fcc.gov/download/pub/uls/daily/l_am_mon.zip"
+    },
+    {
+      "kind": "portal",
+      "label": "ULS (FCC)",
+      "url": "https://www.fcc.gov/wireless/universal-licensing-system"
+    },
+    {
+      "kind": "api",
+      "label": "ULS 3650 MHz locations",
+      "url": "https://opendata.fcc.gov/d/euz5-46g2"
+    }
+  ],
+  "access_note": "www.fcc.gov refuses scripted access (403); the data.fcc.gov download files answer.",
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "governance_regulation",
+    "telecom_coverage_spectrum",
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "fcc universal licensing system uls licence and application data",
+    "url": "https://fcc.gov/wireless/universal-licensing-system"
+  },
+  "description": "The Universal Licensing System is the FCC's system for applications and licences in the wireless radio services, and its public data downloads give every licence and application in pipe-delimited files. Licence data cover services such as cellular, personal communications, advanced wireless services, the 700 MHz and 600 MHz bands, microwave point-to-point links, land mobile radio, paging, amateur and maritime, with licensee, call sign, frequencies, locations of transmitters and antennas, market areas and status dates; weekly complete files per service (for example the microwave file of about 211 MB) and daily transaction files are published. Coverage: the United States and territories, current and historical licences. Format and access: ZIP archives of pipe-delimited text on data.fcc.gov/download/pub/uls, plus online search and maps, free as US government data; the portal also lists ULS 3650 MHz base station locations. Caveats: the relational layout needs the FCC data dictionaries; licences show authorisation, not built sites; www.fcc.gov pages refuse scripted access. Simulation uses: spectrum holdings and microwave backhaul links as network topology for telecom, utility and public safety networks, and licensed site locations for hazard exposure. Related records: the FCC antenna structure registration gives towers, and ANFR and ISED give other national registers.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "FCC open data portal catalogue listing (opendata.fcc.gov, Socrata catalog API)",
+      "route": "R31",
+      "source": "digital-fcc-open-data"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for data:digital.telecom:governance_regulation",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "formats": [
+    "archive",
+    "csv",
+    "plain_text"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://www.fcc.gov/wireless/universal-licensing-system",
+  "id": "data-fcc-uls-license-data",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2018-12-19",
+  "licence": "US Government work (public domain)",
+  "licence_type": [
+    "public_domain"
+  ],
+  "link_health": {
+    "checked": "2026-10-01",
+    "unverified": [
+      "https://www.fcc.gov/wireless/universal-licensing-system"
+    ]
+  },
+  "maturity": "stale",
+  "name": "FCC Universal Licensing System (ULS) licence and application data",
+  "notes": "Portal catalogue description read 2026-09-26; download file sizes and dates from HTTP headers (not downloaded). Record types and service list from recall of the ULS data dictionary.",
+  "provider": "US Federal Communications Commission, Wireless Telecommunications Bureau",
+  "related_ids": [],
+  "schema_summary": "licence headers, entities, frequencies, locations, antennas, markets, application history (record types per service)",
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "hazard_exposure",
+    "capacity_planning"
+  ],
+  "size": "about 211 MB for the microwave complete file",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "Socrata catalogue metadata and row count read 2026-09-26",
+      "url": "https://api.us.socrata.com/api/catalog/v1?ids=x28i-i4z4"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "HTTP header only: size and last modified",
+      "url": "https://data.fcc.gov/download/pub/uls/complete/l_micro.zip"
+    }
+  ],
+  "spatial_resolution": "transmitter location or market area",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "spectrum licences",
+    "microwave links",
+    "wireless licences",
+    "call signs"
+  ],
+  "temporal_coverage": "current and historical licences",
+  "temporal_resolution": "daily and weekly files",
+  "temporal_resolution_class": "daily",
+  "title_en": "FCC Universal Licensing System (ULS) licence and application data",
+  "type": "data",
+  "update_frequency": "daily"
+}

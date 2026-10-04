@@ -1,0 +1,128 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Mobile coverage WMS",
+      "url": "https://geo.anacom.pt/server/services/publico/Rede_M%C3%B3vel/MapServer/WMSServer"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobile coverage on dados.gov.pt",
+      "url": "https://dados.gov.pt/pt/datasets/cobertura-da-rede-movel-de-comunicacoes-eletronicas/"
+    },
+    {
+      "kind": "portal",
+      "label": "Fixed coverage on dados.gov.pt",
+      "url": "https://dados.gov.pt/pt/datasets/cobertura-da-rede-fixa-de-comunicacoes-eletronicas/"
+    },
+    {
+      "kind": "portal",
+      "label": "Satellite coverage on dados.gov.pt",
+      "url": "https://dados.gov.pt/pt/datasets/cobertura-de-servicos-de-acesso-a-internet-por-satelite/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "PT"
+  ],
+  "data_family": [
+    "telecom_coverage_spectrum"
+  ],
+  "data_kind": [
+    "raster",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "anacom geo coverage data mobile 100 m grid fixed address level and satellite internet coverage in mainland portugal",
+    "url": "https://dados.gov.pt/pt/datasets/cobertura-da-rede-movel-de-comunicacoes-eletronicas"
+  },
+  "description": "ANACOM, Portugal's communications regulator, publishes the potential coverage of electronic communications networks in mainland Portugal on its GEO.ANACOM platform, based on information that operators report under Decree-Law 40/2022 and Ordinance 77/2023, validated, harmonised and integrated by ANACOM. Mobile coverage is given on a 100 by 100 metre grid, with coverage of voice, SMS and MMS and classes of maximum download speed for 3G, 4G and 5G. Fixed coverage is given at address level, with the access technologies available, including fibre (PON and point-to-point), coaxial cable (DOCSIS 3.0 and 3.1 or higher), copper with and without ADSL, and other technologies. Satellite internet access coverage is given as polygons of the operators' service areas with maximum download and upload speeds and peak-hour speeds. The three datasets were listed on the national open data portal in July 2026 with quarterly updates, each as a WMS service. Coverage: mainland Portugal. Format and access: WMS services on the GEO.ANACOM platform, free; licence not specified on the portal. Caveats: potential coverage reported by operators, not a guarantee of actual quality; only view services were listed, so bulk download was not confirmed; ANACOM's main website refused automated requests. Simulation uses: address and grid-level exposure to loss of fixed and mobile service, and areas depending on satellite access. Related records: the Spanish broadband coverage reports cover the neighbouring country, and the Bundesnetzagentur mobile monitoring uses a similar 100 m grid.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "dados.gov.pt search for ANACOM",
+      "route": "R02",
+      "source": "organisations.csv:PT:digital:broadband_mapping"
+    }
+  ],
+  "formats": [
+    "ogc_map_service"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://dados.gov.pt/pt/datasets/cobertura-da-rede-movel-de-comunicacoes-eletronicas/",
+  "id": "data-anacom-geo-coverage-portugal",
+  "languages": [
+    "pt"
+  ],
+  "last_updated": "2026-07",
+  "licence": "not stated (dados.gov.pt: 'Licença não especificada')",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ANACOM GEO coverage data: mobile (100 m grid), fixed (address level) and satellite internet coverage in mainland Portugal",
+  "notes": "dados.gov.pt API read on 2026-09-26 (descriptions, legal basis, resolution, update frequency, WMS links). anacom.pt returned 403. Madeira and Azores are not mentioned in the descriptions.",
+  "provider": "Autoridade Nacional de Comunicações (ANACOM), Portugal",
+  "related_ids": [],
+  "sectors": [
+    "digital.telecom"
+  ],
+  "simulation_uses": [
+    "hazard_exposure",
+    "resilience",
+    "capacity_planning"
+  ],
+  "size": "not stated",
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "mobile metadata",
+      "url": "https://dados.gov.pt/api/1/datasets/cobertura-da-rede-movel-de-comunicacoes-eletronicas/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "fixed metadata",
+      "url": "https://dados.gov.pt/api/1/datasets/cobertura-da-rede-fixa-de-comunicacoes-eletronicas/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "satellite metadata",
+      "url": "https://dados.gov.pt/api/1/datasets/cobertura-de-servicos-de-acesso-a-internet-por-satelite/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): not stated (dados.gov.pt: 'Licença não especificada') (basis: dados.gov.pt dataset page)",
+      "url": "https://dados.gov.pt/pt/datasets/cobertura-da-rede-movel-de-comunicacoes-eletronicas/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://dados.gov.pt/pt/datasets/cobertura-da-rede-fixa-de-comunicacoes-eletronicas/"
+    }
+  ],
+  "spatial_resolution": "100 m grid (mobile); address (fixed); service polygons (satellite)",
+  "spatial_resolution_class": "100m_to_1km",
+  "tags": [
+    "mobile coverage",
+    "fibre",
+    "satellite internet",
+    "100 m grid",
+    "Portugal"
+  ],
+  "temporal_coverage": "current (published July 2026)",
+  "temporal_resolution": "quarterly",
+  "temporal_resolution_class": "sub_annual",
+  "title_en": "ANACOM GEO coverage data: mobile (100 m grid), fixed (address level) and satellite internet coverage in mainland Portugal",
+  "type": "data",
+  "update_frequency": "several_per_year"
+}

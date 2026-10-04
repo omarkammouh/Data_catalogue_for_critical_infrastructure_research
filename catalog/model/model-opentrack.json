@@ -1,0 +1,120 @@
+{
+  "access_links": [
+    {
+      "kind": "docs",
+      "label": "Product page",
+      "url": "http://www.opentrack.ch/opentrack/opentrack_e/opentrack_e.html"
+    },
+    {
+      "kind": "contact",
+      "label": "Company and contact",
+      "url": "http://www.opentrack.ch/opentrack/company_e/company_e.html"
+    }
+  ],
+  "access_note": "Commercial licences from OpenTrack Railway Technology; prices are not published.",
+  "access_restrictions": "on_request",
+  "continents": [
+    "africa",
+    "antarctica",
+    "asia",
+    "europe",
+    "north_america",
+    "oceania",
+    "south_america"
+  ],
+  "cost": "paid",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "opentrack railway simulation",
+    "url": "https://opentrack.ch"
+  },
+  "description": "OpenTrack is a microscopic railway operations simulator that runs trains from a timetable over a detailed network under the constraints of the signalling system and computes train movements, running times, headways, delays and energy use. The network is a double-vertex graph whose edges carry length, gradient and speed limits per train category, with signals, switches, stations and routes; rolling stock is described by tractive effort curves, mass, length and adhesion, and timetables by arrival, departure, dwell and connection times. It supports single runs and Monte-Carlo runs with random initial and station delays, headway calculation, capacity analysis, timetable robustness, failure scenarios and signalling studies (block systems, moving block, CBTC, ETCS levels 1 to 3, PTC), and couples to OpenPowerNet for traction power supply. OpenTrack began in the mid-1990s as a research project at ETH Zurich and has been sold since 2006 by the spin-off OpenTrack Railway Technology to railways, suppliers, consultancies and universities. It is location independent, from single stations to national networks, and covers heavy, high-speed, freight, metro, tram, light rail and maglev systems. It is commercial software for Windows and macOS (native on Apple Silicon since January 2024), with an API and railML 1.0 and 2.2 import and export plus other railway formats; prices are not published. Caveats: results depend on detailed infrastructure and rolling stock data, and it models operations, not asset condition. OpenTrack is used for capacity planning and resilience of timetables, for example ProRail's yearly national timetable simulation, and relates to railML and OSRD catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.rail",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "železnice simulace model",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "http://www.opentrack.ch/",
+  "id": "model-opentrack",
+  "inputs": [
+    "railway network topology with gradients",
+    "speeds",
+    "signals and routes",
+    "rolling stock characteristics",
+    "timetables",
+    "delay distributions"
+  ],
+  "language": [],
+  "languages": [
+    "en"
+  ],
+  "licence": "proprietary (commercial licence)",
+  "licence_type": [
+    "proprietary"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "model_kind": [
+    "physical",
+    "network"
+  ],
+  "name": "OpenTrack railway simulation",
+  "outputs": [
+    "train movements and running times",
+    "train graphs and occupation diagrams",
+    "delay statistics",
+    "headways",
+    "energy consumption"
+  ],
+  "provider": "OpenTrack Railway Technology Ltd (ETH Zurich spin-off; offices in Zurich and Vienna)",
+  "related_ids": [
+    "data-railml",
+    "platform-osrd"
+  ],
+  "runs_on": [],
+  "sectors": [
+    "transport.rail",
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "capacity_planning",
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "introduction (ETH research project mid-1990s; users railways, supply industry, consultancies, universities); rail system types; tasks (capacity, headways, running time, timetable robustness with Monte-Carlo, signalling incl. CBTC, ETCS L1-L3, PTC, failures, energy, OpenPowerNet); data (double vertex graph, rolling stock, timetable); interfaces incl. railML 1.0 and 2.2; outputs (diagrams, train graphs, occupation diagrams, statistics); news Jan 2024 Apple Silicon version; OpenTrack API section",
+      "url": "http://www.opentrack.ch/opentrack/opentrack_e/opentrack_e.html"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "developed at ETH Zurich; company founded 2006 as ETH spin-off; offices Zurich and Vienna",
+      "url": "http://www.opentrack.ch/opentrack/company_e/company_e.html"
+    }
+  ],
+  "tags": [
+    "railway simulation",
+    "timetable robustness",
+    "capacity analysis",
+    "signalling",
+    "microscopic simulation"
+  ],
+  "title_en": "Physical model for railways and public transport",
+  "type": "model",
+  "validated_on": []
+}

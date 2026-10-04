@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Provider data page",
+      "url": "https://www.data.qld.gov.au/dataset/rural-fire-stations/resource/e09d0d06-b13e-4e52-b82d-1ce0cf05927c"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "data_family": [
+    "critical_facilities",
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-09-28",
+  "dedupe_keys": {
+    "name": "queensland rural fire station locations",
+    "url": "https://data.qld.gov.au/dataset/rural-fire-stations/resource/e09d0d06-b13e-4e52-b82d-1ce0cf05927c"
+  },
+  "description": "Queensland publishes a CSV of rural fire station locations with coordinates and address information. The official package metadata states that some rural brigades do not have a station, so the file is not a census of every brigade. It says the feed is uploaded automatically and available on the 22nd of each month; a GitHub locator app points to the resource and mirrors it as a local CSV. The provider declares CC BY 4.0 and public access without a stated charge. The current CSV link redirected to an S3 object and returned HTTP 200, but its body was deliberately not read. Portal resource metadata still carries a 2018 last-modified value while the package notes were updated in 2024, so actual file freshness is unverified. Coverage is Queensland station points, not staff rosters, vehicle counts, response times or dispatch availability. Simulation use includes placing rural-response facilities in an accessibility model, with road travel and brigade coverage added separately. It complements data-dfes-wa-fire-and-emergency-stations in a different Australian state. No CSV row or station count was inspected.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-28",
+      "query": "\"fire station\" dataset -> sachhm/qld-rfs-locator -> Queensland Rural Fire Stations provider",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://www.data.qld.gov.au/dataset/rural-fire-stations/resource/e09d0d06-b13e-4e52-b82d-1ce0cf05927c",
+  "id": "data-queensland-rural-fire-stations",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC BY 4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "maturity": "not_stated",
+  "name": "Queensland rural fire station locations",
+  "notes": "G8; G8-0673. Metadata and documentation checked. Data payloads and software execution were not tested. Simulation uses are curator interpretations.  Cited as: Queensland Fire Department. Rural Fire Service Queensland - Rural Fire Stations. Queensland Open Data Portal..",
+  "provider": "Queensland Fire Department",
+  "regions": [
+    "Queensland"
+  ],
+  "related_ids": [
+    "data-dfes-wa-fire-and-emergency-stations"
+  ],
+  "sectors": [
+    "services.emergency_services",
+    "built_environment.critical_facilities"
+  ],
+  "simulation_uses": [
+    "emergency_response",
+    "capacity_planning",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource identity and access checked on its own provider page, following a GitHub curated-list link.",
+      "url": "https://www.data.qld.gov.au/dataset/rural-fire-stations/resource/e09d0d06-b13e-4e52-b82d-1ce0cf05927c"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource name, format, coordinate/address description, monthly statement and stale last-modified field.",
+      "url": "https://www.data.qld.gov.au/api/3/action/resource_show?id=e09d0d06-b13e-4e52-b82d-1ce0cf05927c"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Resource URL returned HTTP 200 and redirected to provider S3 object; body not read.",
+      "url": "https://www.fire.qld.gov.au/opendata/RuralFireStations.csv"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "GitHub discovery locator and mirror; provider package is canonical.",
+      "url": "https://github.com/sachhm/qld-rfs-locator"
+    }
+  ],
+  "spatial_resolution": "Not stated.",
+  "spatial_resolution_class": "not_stated",
+  "tags": [],
+  "temporal_coverage": "Current resource as described by provider; actual file observation date not checked",
+  "temporal_resolution": "Station point locations; portal says availability on the 22nd of each month",
+  "temporal_resolution_class": "monthly",
+  "title_en": "Queensland rural fire station locations",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

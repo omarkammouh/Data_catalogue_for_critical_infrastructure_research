@@ -1,0 +1,139 @@
+{
+  "access_links": [
+    {
+      "kind": "download",
+      "label": "Releases",
+      "url": "https://www.nsnam.org/releases/"
+    },
+    {
+      "kind": "repo",
+      "label": "GitLab ns-3-dev",
+      "url": "https://gitlab.com/nsnam/ns-3-dev"
+    },
+    {
+      "kind": "docs",
+      "label": "Documentation",
+      "url": "https://www.nsnam.org/documentation/"
+    },
+    {
+      "kind": "docs",
+      "label": "About ns-3",
+      "url": "https://www.nsnam.org/about/"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ns 3 network simulator",
+    "repo": "gitlab.com/nsnam/ns-3-dev",
+    "url": "https://nsnam.org"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "ns-3 is a discrete-event network simulator for research and education, the most widely used open-source tool for simulating packet networks. It contains protocol and channel models for the Internet stack (IPv4, IPv6, TCP, routing), Wi-Fi, LTE and other cellular technologies, point-to-point and CSMA links, mobility models and energy models; release 3.48 (June 2026) added mobility support for low-earth-orbit satellite constellations, 6LoWPAN neighbour discovery and a Sionna RT ray-traced channel model. A real-time scheduler lets ns-3 run as a network emulator connected to real hosts, and real application and kernel code can be reused. It is produced by an open-source community coordinated by the ns-3 Consortium, with a new stable release about every three months and a companion ns-allinone bundle of about fifteen contributed extension modules. Coverage: generic, technology-level models with no geographic limitation. Format and access: C++ source with Python bindings, built with CMake on Linux and macOS, downloaded from the website or the GitLab repository; it is free of charge under the GNU GPLv2 licence. Caveats: simulations are packet-level and scale poorly to whole national networks without abstraction; model fidelity varies by module; there is no GUI apart from the NetAnim animator. Simulation uses: network flow and capacity planning of access and backbone networks, resilience and cascading-failure studies of communication networks, and co-simulation of communication with power or transport systems as part of a digital twin. Related records: OMNeT++, Mininet and Sionna are alternative or complementary tools; SNDlib and CAIDA topologies can supply network inputs.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "assistant recall, written down before searching: resources for platform:digital.telecom:simulation_engine",
+      "route": "R40",
+      "source": "assistant-recall"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://www.nsnam.org/",
+  "hosted_models": [
+    "LTE (LENA) module",
+    "Wi-Fi module",
+    "5G-LENA NR contributed module",
+    "mmWave contributed module",
+    "LEO satellite mobility"
+  ],
+  "id": "platform-ns-3",
+  "interfaces": [
+    "code_library",
+    "command_line",
+    "other"
+  ],
+  "interoperability": [
+    "PCAP traces",
+    "ASCII traces",
+    "HELICS co-simulation via third-party federates",
+    "Sionna RT channel"
+  ],
+  "language": [
+    "c_cpp"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2026-06",
+  "licence": "GPL-2.0-only",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "ns-3 network simulator",
+  "notes": "Version from the GitLab tags (ns-3.48 newest) and the nsnam.org news page, read 2026-09-26.",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "ns-3 Consortium and open-source community (nsnam)",
+  "related_ids": [
+    "data-3gpp-specifications",
+    "model-5g-lena-nr-ns3",
+    "platform-kwok-kubernetes-cluster-simulator"
+  ],
+  "sectors": [
+    "digital.telecom",
+    "digital.internet_exchange",
+    "digital.satellite_positioning"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning",
+    "resilience",
+    "cascading_failure",
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "about page",
+      "url": "https://www.nsnam.org/about/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "release news for ns-3.48",
+      "url": "https://www.nsnam.org/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "git tags via ls-remote",
+      "url": "https://gitlab.com/nsnam/ns-3-dev"
+    }
+  ],
+  "supported_sectors": [
+    "digital.telecom",
+    "digital.internet_exchange",
+    "digital.satellite_positioning"
+  ],
+  "tags": [
+    "discrete-event simulation",
+    "network simulator",
+    "LTE",
+    "Wi-Fi",
+    "LEO satellite",
+    "emulation"
+  ],
+  "title_en": "Simulation software for telecommunications, internet exchanges and satellite positioning",
+  "type": "platform"
+}

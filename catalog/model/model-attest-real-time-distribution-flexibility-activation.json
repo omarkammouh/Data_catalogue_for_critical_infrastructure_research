@@ -1,0 +1,105 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Zenodo landing page and file inventory",
+      "url": "https://zenodo.org/records/10055347"
+    },
+    {
+      "kind": "api",
+      "label": "Repository metadata",
+      "url": "https://zenodo.org/api/records/10055347"
+    },
+    {
+      "kind": "repo",
+      "label": "Code repository",
+      "note": "Repository metadata and README independently inspected; code not executed.",
+      "url": "https://github.com/ATTEST-project/ATTEST-WP-4.2-Ancillary-services-activation-in-real-time-operation-of-the-distribution-network"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-27",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "doi": "10.5281/zenodo.10055347",
+    "name": "attest t4 2 tool for ancillary services activation in real time operation of the distribution network",
+    "repo": "github.com/attest-project/attest-wp-4.2-ancillary-services-activation-in-real-time-operation-of-the-distribution-network",
+    "url": "https://zenodo.org/records/10055347"
+  },
+  "description": "Karlo Šepetanc, Mirna Gržanić and Tomislav Capuder at ICENT publish the ATTEST T4.2 tool for activating distribution-system flexibility in real time. It computes upward and downward activation for each device and writes decisions to an Excel workbook. Inputs include a MATPOWER network, PV production, expected device states, state-estimation results and activation requested from the transmission system. The October 2023 Zenodo archive is free under EUPL 1.2. Repository documentation specifies a batch-script entry point, Julia with PowerModels, DataFrames and XLSX, and AMPL with Ipopt. Those dependencies have separate installation and licensing requirements. Geographic coverage and time resolution depend on the configured network and current period. The tool supports ancillary-service and network-operation simulations. It consumes outputs from the related ATTEST tasks 4.1, 4.3 and 4.5, which must be supplied or replicated. No catalogue parent explicitly includes this implementation. Execution and optimisation feasibility remain unknown because the software was not run.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "title:(\"power grid\" OR \"electricity network\" OR \"transmission line\" OR \"overhead line\" OR \"underground cable\" OR \"HVDC\" OR \"interconnector\" OR \"substation\" OR \"transformer\" OR \"switchgear\" OR \"busbar\" OR \"circuit breaker\" OR \"feeder\" OR \"distribution network\" OR \"LV/MV network\" OR \"power plant\" OR \"generating unit\" OR \"wind farm\" OR \"solar farm\" OR \"battery storage\" OR \"pumped hydro\" OR \"microgrid\" OR \"smart meter\" OR \"load profile\" OR \"power flow\" OR \"unit commitment\" OR \"OPF\" OR \"contingency\" OR \"N-1\" OR \"SAIDI/SAIFI\" OR \"outage\" OR \"blackout\" OR \"grid code\" OR \"hosting capacity\" OR \"network development plan\")",
+      "route": "R03",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://zenodo.org/records/10055347",
+  "id": "model-attest-real-time-distribution-flexibility-activation",
+  "inputs": [
+    "MATPOWER network",
+    "PV profile",
+    "Expected flexibility states",
+    "State estimate",
+    "Transmission activation",
+    "Current period and flexible-device characteristics"
+  ],
+  "language": [
+    "matlab"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-10-30",
+  "licence": "EUPL-1.2",
+  "licence_type": [
+    "copyleft_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "stale",
+  "model_kind": [
+    "optimisation",
+    "network"
+  ],
+  "name": "ATTEST - T4.2 - Tool for ancillary services activation in real-time operation of the distribution network",
+  "notes": "G6 item G6-0133. Metadata-only draft. Simulation-use and type tags are reviewer classifications. File contents and software execution were not checked. Unknown maturity does not assert active maintenance. ",
+  "outputs": [
+    "Per-device upward and downward activation in Excel"
+  ],
+  "provider": "Šepetanc, Karlo (ICENT); Gržanić, Mirna (ICENT); Capuder, Tomislav (ICENT)",
+  "related_ids": [],
+  "repository": "https://github.com/ATTEST-project/ATTEST-WP-4.2-Ancillary-services-activation-in-real-time-operation-of-the-distribution-network",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "Resource identity, description, public file inventory and access status. Only metadata inspected.",
+      "url": "https://zenodo.org/records/10055347"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Zenodo deposited metadata: creators, publication date, licence eupl-1.2, identifiers and file names. The description distinguishes provider statements from proposed simulation uses.",
+      "url": "https://zenodo.org/api/records/10055347"
+    },
+    {
+      "accessed": "2026-09-27",
+      "note": "Repository README inspected for inputs, outputs, dependencies and citation.",
+      "url": "https://github.com/ATTEST-project/ATTEST-WP-4.2-Ancillary-services-activation-in-real-time-operation-of-the-distribution-network/blob/main/README.md"
+    }
+  ],
+  "tags": [],
+  "title_en": "ATTEST - T4.2 - Tool for ancillary services activation in real-time operation of the distribution network",
+  "type": "model"
+}

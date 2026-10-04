@@ -1,0 +1,89 @@
+{
+  "access_links": [
+    {
+      "kind": "repo",
+      "label": "Source repository",
+      "url": "https://github.com/PJLab-ADG/PCSim"
+    },
+    {
+      "kind": "docs",
+      "label": "Repository README",
+      "url": "https://github.com/PJLab-ADG/PCSim/blob/main/README.md"
+    }
+  ],
+  "access_restrictions": "none",
+  "cost": "free",
+  "date_catalogued": "2026-09-28",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "pcsim infrastructure lidar simulation",
+    "repo": "github.com/pjlab-adg/pcsim",
+    "url": "https://github.com/PJLab-ADG/PCSim"
+  },
+  "deployment": [
+    "desktop",
+    "own_server"
+  ],
+  "description": "PCSim is PJLab-ADG's CARLA-based software for simulating LiDAR observations and evaluating roadside sensor placement. It supplies sensor beam patterns, motion distortion, ghosting and rain-related components, with a vehicle-to-infrastructure evaluation workflow. Inputs are CARLA scenes, sensor types, positions and simulation settings; outputs include synthetic point clouds and perception-evaluation results. Geographic coverage is user-configured through the simulated road environment. Public source is free under Apache-2.0, with separate requirements for CARLA and external trained models. A limitation is that the README still labels the placement-optimisation code as forthcoming, so that feature is not established as reusable here. Simulated sensor effects also require checking against the intended hardware. PCSim can support roadside sensing and transport digital-twin simulations, complementary to SUMO (model-sumo). The repository cites ICRA and ICCV 2023 papers and documents build modifications. No simulator assets, point clouds or model weights were downloaded.",
+  "description_checked": "2026-09-28",
+  "discovery_routes": [
+    {
+      "date": "2026-09-27",
+      "query": "infrastructure simulation fork:false",
+      "route": "R05",
+      "source": "metadata-review"
+    }
+  ],
+  "geographic_scope": "global",
+  "homepage": "https://github.com/PJLab-ADG/PCSim",
+  "id": "platform-pcsim",
+  "interfaces": [
+    "code_library"
+  ],
+  "language": [
+    "python"
+  ],
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2025-06-12",
+  "licence": "Apache-2.0",
+  "licence_type": [
+    "permissive_code"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "PCSim infrastructure LiDAR simulation",
+  "notes": "G7 G7-0779. Prepared draft only. Metadata review on 2026-09-28; no models, data or archives downloaded. Related-resource comparisons are reviewer mappings, not tested interoperability.  Cited as: Cai et al. (2023). Analyzing Infrastructure LiDAR Placement with Realistic LiDAR Simulation Library. ICRA, 5581-5587. https://arxiv.org/abs/2211.15975.",
+  "open_source": true,
+  "platform_kind": [
+    "simulation_engine"
+  ],
+  "provider": "pjlab-adg contributors",
+  "related_ids": [
+    "model-sumo"
+  ],
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "digital_twin"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-27",
+      "note": "GitHub repository metadata for PJLab-ADG/PCSim: identity, public address, SPDX licence and programming language.",
+      "url": "https://api.github.com/search/repositories?q=infrastructure+simulation+fork%3Afalse&per_page=100&page=1"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Repository README: purpose, inputs, outputs, usage instructions and limitations. Software was not executed.",
+      "url": "https://api.github.com/repos/pjlab-adg/pcsim/readme"
+    }
+  ],
+  "tags": [],
+  "title_en": "Simulation software for road transport",
+  "type": "platform"
+}

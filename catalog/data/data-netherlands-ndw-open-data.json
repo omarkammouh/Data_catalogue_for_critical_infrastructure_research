@@ -1,0 +1,134 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Open data portal",
+      "url": "https://opendata.ndw.nu"
+    },
+    {
+      "kind": "docs",
+      "label": "NDW documentation",
+      "url": "https://docs.ndw.nu"
+    },
+    {
+      "kind": "docs",
+      "label": "Bicycle data product",
+      "url": "https://docs.ndw.nu/producten/fietsdata/"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "free",
+  "countries": [
+    "NL"
+  ],
+  "data_family": [
+    "demand_operation",
+    "system_description"
+  ],
+  "data_kind": [
+    "stream",
+    "time_series",
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-09-26",
+  "date_verified": "2026-10-01",
+  "dedupe_keys": {
+    "name": "ndw national road traffic data portal nationaal dataportaal wegverkeer netherlands",
+    "url": "https://opendata.ndw.nu"
+  },
+  "description": "NDW is the Dutch government organisation for mobility data: it receives traffic data from suppliers, builds traffic information products and delivers them to users. Its open data portal lists real-time files that are refreshed every few minutes, including travel times, speeds and intensities at measurement sites, the measurement site table as a shapefile, matrix signal and route information panel states, road works and event plans, bridge openings, temporary closures and speed limits, truck parking status, emission zones, charging point locations and tariffs, and traffic signs, plus historic data through the Dexter service and bicycle counts. It also manages the national road database (NWB) and road attributes (WKD). Coverage is national (Netherlands). Files are free to download without registration, mostly as DATEX II XML, with GeoJSON, CSV and shapefiles, and several APIs are documented on docs.ndw.nu; no licence is stated on the portal. Caveats: from 9 February 2027 the DATEX II v2.3 traffic files are replaced by v3 profiles, and documentation is mainly in Dutch. The data support traffic flow calibration, disruption and incident studies and digital twins of the road network. They complement the Nationaal Wegenbestand and the NDOV public transport data catalogued here.",
+  "description_checked": "2026-09-26",
+  "discovery_routes": [
+    {
+      "date": "2026-09-26",
+      "query": "recall: transport resources, transport.road",
+      "route": "R40",
+      "source": "assistant-recall"
+    },
+    {
+      "date": "2026-09-26",
+      "query": "fietsverkeer open data dataset",
+      "route": "R22",
+      "source": "web-search"
+    }
+  ],
+  "formats": [
+    "xml",
+    "geojson",
+    "csv",
+    "shapefile"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://opendata.ndw.nu",
+  "id": "data-netherlands-ndw-open-data",
+  "languages": [
+    "nl"
+  ],
+  "last_updated": "2026-01-19",
+  "licence": "not stated (no licence or terms statement on the provider pages read on 2026-09-28)",
+  "licence_type": [
+    "not_stated"
+  ],
+  "link_health": {
+    "checked": "2026-10-01"
+  },
+  "maturity": "active",
+  "name": "NDW national road traffic data portal (Nationaal Dataportaal Wegverkeer), Netherlands",
+  "provider": "Nationaal Dataportaal Wegverkeer (NDW), Netherlands",
+  "related_ids": [
+    "data-netherlands-nationaal-wegenbestand",
+    "data-netherlands-ndov-public-transport-data"
+  ],
+  "sectors": [
+    "transport.road",
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "digital_twin",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-09-26",
+      "note": "government organisation for mobility data; portfolios NDW, NTM, NWB",
+      "url": "https://www.ndw.nu/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "real-time file list with 2026-09-26 timestamps; DATEX II v2.3 to v3 migration by 9 Feb 2027; Dexter historic, Fiets; no licence text",
+      "url": "https://opendata.ndw.nu/"
+    },
+    {
+      "accessed": "2026-09-26",
+      "note": "receives data from suppliers, composes products; product and API list incl. Fiets API/CSV, emission zones API, charge points API, NWB, WKD",
+      "url": "https://docs.ndw.nu/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): no licence or terms statement found on this page",
+      "url": "https://opendata.ndw.nu/"
+    },
+    {
+      "accessed": "2026-09-28",
+      "note": "Licence check (round 2): page read for licence terms",
+      "url": "https://www.ndw.nu/service/copyright"
+    }
+  ],
+  "spatial_resolution": "measurement sites and road segments",
+  "spatial_resolution_class": "asset",
+  "tags": [
+    "DATEX II",
+    "traffic speeds",
+    "travel times",
+    "road works",
+    "Netherlands"
+  ],
+  "temporal_coverage": "real time with historic archive",
+  "title_en": "NDW national road traffic data portal, Netherlands",
+  "type": "data",
+  "update_frequency": "real_time"
+}
