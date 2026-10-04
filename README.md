@@ -1,5 +1,7 @@
 # Data catalogue for critical infrastructure research
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23143543.svg)](https://doi.org/10.5281/zenodo.23143543)
+
 Find data sources, models, simulation platforms and documented case studies for infrastructure research in one searchable catalogue.
 
 [Open the dashboard](https://omarkammouh.github.io/Data_catalogue_for_critical_infrastructure_research/) · [User guide](docs/user-guide.md) · [Download a release](https://github.com/omarkammouh/Data_catalogue_for_critical_infrastructure_research/releases) · [Contribute](CONTRIBUTING.md)

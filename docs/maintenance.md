@@ -25,7 +25,7 @@ Dashboard code updates are separate patches, reviewed against public changes. No
 
 Use semantic versions: a patch for corrections, a minor version for additions or compatible features, and a major version for incompatible schema or interface changes.
 
-1. Update `catalog/snapshot.json` with the capture date, version and computed record counts. Update `CITATION.cff`, `.zenodo.json` and the changelog to the same version. Refresh README counts from the records.
+1. Update `catalog/snapshot.json` with the capture date, version and computed record counts. Update `CITATION.cff`, `.zenodo.json` and the changelog to the same version. Remove the preceding release's top-level `doi` from `CITATION.cff` before tagging a new version; retain the concept identifier. Set the new version DOI after Zenodo publishes it. Refresh README counts from the records.
 2. Run `make validate test test-browser build release`. Inspect the complete dashboard at a project subpath and at phone width. Check the release download checksums.
 3. Review the proposed public tree and commit it. Tag the reviewed commit with `vX.Y.Z`. Do not move published tags or rewrite public history.
 4. Push the branch and tag. Confirm the Checks workflow succeeds. Run Publish dashboard on the reviewed version and verify the actual Pages site.

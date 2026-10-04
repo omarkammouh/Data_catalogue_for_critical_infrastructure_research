@@ -14,3 +14,11 @@ The release checks cover:
 The validator reports one warning for an unclassified licence-name string in the ApolloScape record. Its existing source statement is preserved; no licence is inferred from that warning.
 
 These checks test the released files and software. They do not establish that every linked resource is currently available or suitable for a particular research application. See [limitations](limitations.md).
+
+## Published release
+
+The [GitHub release](https://github.com/omarkammouh/Data_catalogue_for_critical_infrastructure_research/releases/tag/v1.0.0) is archived by [Zenodo](https://doi.org/10.5281/zenodo.23143543). The archived ZIP was downloaded and its checksum checked. All 64,714 archived files match the tagged Git tree, including every catalogue record and the dashboard source. The compressed JSON and CSV files downloaded from GitHub match the published SHA-256 checksums.
+
+The deployed Pages site passed the full-catalogue browser checks on 4 October 2026. All 16 reference queries matched and no browser errors were observed. The tested mobile detail view had no detected WCAG 2 A/AA or 2.1 AA violations. This automated check is limited to the tested view and does not certify the entire interface.
+
+DOI links were added to the citation guidance and website after archival. The `v1.0.0` tag remains fixed at `2c7392befac64d652ab0721bcf765502e38555e5`.
