@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse, copy, hashlib, json, re
 from pathlib import Path
 from datetime import datetime, timezone
+from credential_guard import check_record
 TYPES = ('data', 'model', 'platform', 'case_study')
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -19,6 +20,7 @@ def digest(value):
     return hashlib.sha256(encode(value)).hexdigest()
 
 def transform(record, policy):
+    check_record(record)
     record = copy.deepcopy(record)
     def walk(value, field):
         if isinstance(value, str):

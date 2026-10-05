@@ -29,3 +29,5 @@ Direct record edits are welcome. The maintainer reviews evidence, duplicate iden
 Keep changes focused and include a test when behaviour changes. Use clear English and concrete examples. Follow the [developer guide](docs/development.md). The [code of conduct](CODE_OF_CONDUCT.md) applies to issues and pull requests.
 
 By submitting a contribution, you confirm that you can share it under the applicable repository licence: MIT for code, and CC BY 4.0 for original catalogue content and documentation. Preserve third-party attribution and terms. Contributions retain their authorship in Git history.
+
+Do not include API keys, tokens or other credentials in resource URLs or metadata, even when a provider lists them publicly. Link to the dataset landing page or documented access instructions. Imports and release checks reject recognised credential patterns.

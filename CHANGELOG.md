@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Remove four transport-resource links containing embedded access keys. Dataset landing pages remain available.
+- Reject credential-shaped values during public checks, snapshot imports, site builds and release packaging.
+
 ## 1.0.0
 
 First public release of the Data catalogue for critical infrastructure research.

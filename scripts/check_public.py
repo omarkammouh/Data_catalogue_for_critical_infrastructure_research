@@ -3,10 +3,10 @@
 import json,re,sys,os
 from pathlib import Path
 import yaml
+from credential_guard import contains_credential
 ROOT=Path(__file__).resolve().parents[1]
 errors=[]
 IGNORE={'.git','.local','.venv','node_modules','__pycache__','.pytest_cache','dist','dist-test','build','test-results','playwright-report'}
-secret_patterns=[r'ghp_[A-Za-z0-9]{30,}',r'github_pat_[A-Za-z0-9_]{30,}',r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----']
 def public_files():
     for directory, folders, files in os.walk(ROOT):
         folders[:] = [x for x in folders if x not in IGNORE]
@@ -15,7 +15,7 @@ for p in public_files():
     if p.stat().st_size>99_000_000:errors.append(f'{p.relative_to(ROOT)}: exceeds Git file limit')
     if p.suffix in {'.png','.jpg','.woff2'}:continue
     text=p.read_text(errors='replace')
-    if any(re.search(pat,text) for pat in secret_patterns):errors.append(f'{p.relative_to(ROOT)}: possible credential')
+    if contains_credential(text):errors.append(f'{p.relative_to(ROOT)}: possible credential')
     if re.search(r'/(?:Users|home)/[A-Za-z0-9_.-]+/', re.sub(r'https?://[^\s\"<>]+', '', text)):errors.append(f'{p.relative_to(ROOT)}: local user path')
 meta=json.loads((ROOT/'.zenodo.json').read_text());citation=yaml.safe_load((ROOT/'CITATION.cff').read_text())
 if meta['title']!=citation['title'] or meta['version']!=citation['version']:errors.append('Citation metadata disagree')
