@@ -5,6 +5,11 @@
 - Remove four transport-resource links containing embedded access keys. Dataset landing pages remain available.
 - Reject credential-shaped values during public checks, snapshot imports, site builds and release packaging.
 
+## 1.0.0 archive correction, 5 October 2026
+
+- Remove the four keyed links from the published source history and tagged archive.
+- Replace the compressed exports, checksums and Zenodo ZIP while retaining all records and existing DOIs.
+
 ## 1.0.0
 
 First public release of the Data catalogue for critical infrastructure research.

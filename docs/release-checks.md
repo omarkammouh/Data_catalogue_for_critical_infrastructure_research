@@ -21,4 +21,6 @@ The [GitHub release](https://github.com/omarkammouh/Data_catalogue_for_critical_
 
 The deployed Pages site passed the full-catalogue browser checks on 4 October 2026. All 16 reference queries matched and no browser errors were observed. The tested mobile detail view had no detected WCAG 2 A/AA or 2.1 AA violations. This automated check is limited to the tested view and does not certify the entire interface.
 
-DOI links were added to the citation guidance and website after archival. The `v1.0.0` tag remains fixed at `2c7392befac64d652ab0721bcf765502e38555e5`.
+DOI links were added to the citation guidance and website after archival.
+
+On 5 October 2026, a security correction removed four direct resource links containing embedded access keys. The affected Git history was rewritten and `v1.0.0` now points to `d3171d4c616f6b6afec0420f027229b927ec997e`. This is an exceptional correction to the published tag. The JSON/CSV release downloads and checksums were replaced. Zenodo’s archive was corrected under the same version and concept DOIs. All 64,714 archived files match the corrected tag; all 64,625 records are retained. The corrected Git history and downloaded exports contain no matches for the four reported credential values. Obsolete GitHub commit URLs still serve the original files and require provider-side removal; this check does not establish that the credentials have been revoked.
