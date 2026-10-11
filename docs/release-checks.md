@@ -24,7 +24,9 @@ records and exports, and large filter lists create controls as needed.
 
 All 18 full-catalogue reference queries pass. The initial index is 58,413,402 bytes. The tested browser reports zero console errors and no detected accessibility violations in the phone-width detail view. The JSON and CSV downloads each contain all 68,670 unique IDs, pass the credential guard and match SHA256SUMS.
 
-Publication and archive verification are recorded after the release is published.
+The [GitHub release](https://github.com/omarkammouh/Data_catalogue_for_critical_infrastructure_research/releases/tag/v1.1.0) is published and archived by [Zenodo](https://doi.org/10.5281/zenodo.23294021). All 68,774 files in the downloaded Zenodo ZIP match the exact Git tree at tag `v1.1.0` (`7f3d999bf718e369e6722bc6be0b10b6bf3dc2a8`), including all 68,670 resource records. The archive checksum matches Zenodo's checksum, and the published JSON/CSV downloads match their checked SHA-256 values. No credential-pattern matches were found in the archive. The live Pages site passed all 18 reference queries with zero console errors. [Saved verification](releases/v1.1.0.json) records the archive and download hashes.
+
+The new version DOI was added to the current citation metadata after archival. This documentation update preserves the released records and software. Version 1.0.0 remains a separate fixed archive.
 
 ## Previous release checks
 

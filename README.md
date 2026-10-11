@@ -1,6 +1,6 @@
 # Data catalogue for critical infrastructure research
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23143542.svg)](https://doi.org/10.5281/zenodo.23143542)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23294021.svg)](https://doi.org/10.5281/zenodo.23294021)
 
 Find data sources, models, simulation platforms and documented case studies for infrastructure research in one searchable catalogue.
 
