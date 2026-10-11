@@ -10,7 +10,7 @@ validate:
 	$(PYTHON) scripts/check_public.py
 
 test:
-	$(PYTHON) -m pytest pipeline/tests scripts/tests dashboard/tests/test_catalogues.py dashboard/tests/test_data_resources.py -q
+	$(PYTHON) -m pytest pipeline/tests scripts/tests dashboard/tests/test_catalogues.py dashboard/tests/test_data_resources.py dashboard/tests/test_mobile.py -q
 	cd dashboard && npm run test:props
 
 test-browser:

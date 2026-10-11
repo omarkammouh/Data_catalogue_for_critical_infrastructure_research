@@ -3,11 +3,15 @@ const {chromium,expect}=require('@playwright/test');
 const fs=require('fs'),path=require('path'),http=require('http'),assert=require('assert');
 const root=path.resolve(__dirname,'../..'),dist=path.join(root,'dashboard/dist');
 const prefix='/Data_catalogue_for_critical_infrastructure_research/';
+const Engine=require('../src/engine.js');
 (async()=>{
  fs.mkdirSync(path.join(root,'.local'),{recursive:true});
  const html=fs.readFileSync(path.join(dist,'index.html'),'utf8');
  const parts=html.match(/data-src="([^"]+)"/)[1].split(' ');
- const bundle=JSON.parse(parts.map(x=>fs.readFileSync(path.join(dist,x),'utf8')).join(''));
+ const compact=html.includes('data-format="compact-v1"');
+ const bundle=compact?JSON.parse(fs.readFileSync(path.join(dist,parts[0]),'utf8')):JSON.parse(parts.map(x=>fs.readFileSync(path.join(dist,x),'utf8')).join(''));
+ if(compact){const rows=Engine.decodeCompactPart(bundle);for(const name of parts.slice(1))rows.push(...Engine.decodeCompactPart(JSON.parse(fs.readFileSync(path.join(dist,name),'utf8')),bundle));bundle.records=rows;}
+ const initialBytes=parts.reduce((n,x)=>n+fs.statSync(path.join(dist,x)).size,Buffer.byteLength(html));
  const currentSnapshot=path.join(root,'catalog/dashboard-snapshot.json');
  const snapshot=JSON.parse(fs.readFileSync(fs.existsSync(currentSnapshot)?currentSnapshot:path.join(root,'catalog/snapshot.json')));
  assert.equal(bundle.records.length,snapshot.records);
@@ -22,7 +26,7 @@ const prefix='/Data_catalogue_for_critical_infrastructure_research/';
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  const local=`http://127.0.0.1:${server.address().port}${prefix}`;
  const url=process.env.CATALOGUE_URL||local;
- const browser=await chromium.launch();
+ const browser=await chromium.launch({args:['--js-flags=--max-old-space-size=192']});
  const context=await browser.newContext({viewport:{width:1440,height:960},colorScheme:'light'});
  const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
  page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
@@ -33,6 +37,11 @@ const prefix='/Data_catalogue_for_critical_infrastructure_research/';
   assert.equal(await page.evaluate(()=>window.__catalogue.engine.size),snapshot.records);
   await expect(page.locator('#summary')).toContainText(snapshot.records.toLocaleString('en-US'));
   await page.locator('#app[data-text-index="ready"]').waitFor({timeout:180000});
+  const cdp=await context.newCDPSession(page);await cdp.send('Performance.enable');
+  const metrics=await cdp.send('Performance.getMetrics');
+  const heapBytes=metrics.metrics.find(m=>m.name==='JSHeapUsedSize').value;
+  if(compact){assert(initialBytes<70_000_000,'Initial index exceeds phone budget');assert(heapBytes<170_000_000,'Browser heap exceeds phone budget');}
+  assert.equal(await page.evaluate(()=>performance.getEntriesByType('resource').filter(e=>/records-[a-f0-9]+\.json/.test(e.name)).length),0,'No full-detail files fetched at startup');
   const cases=[];
   const catalogueRecords=bundle.records.filter(r=>r.data_resource_type==='data_catalogue');
   assert(catalogueRecords.length>0,'Data catalogue records are present');
@@ -67,8 +76,8 @@ const prefix='/Data_catalogue_for_critical_infrastructure_research/';
   assert.deepEqual(violations,[]);
   assert.deepEqual(errors,[]);
   // One failed part must not leave a partial catalogue on screen.
-  const broken=await context.newPage();await broken.route('**/catalogue-data-1.json',route=>route.fulfill({status:503,body:'Unavailable'}));await broken.goto(url);await expect(broken.locator('.state.error')).toBeVisible({timeout:60000});await expect(broken.getByRole('button',{name:'Reload',exact:true})).toBeVisible();assert.equal(await broken.locator('.card').count(),0);await broken.close();
-  queries.sort((a,b)=>a-b);const report={url,records:snapshot.records,data_catalogues:catalogueRecords.length,catalogue_groups:bundle.meta.catalogue_memberships?.catalogue_count,load_ms:loadMs,reference_queries:queries.length,query_median_ms:queries[Math.floor(queries.length/2)],query_max_ms:queries.at(-1),console_errors:errors,accessibility_violations:violations,checks:['Catalogue filters','URL reload','search','JSON export','record details','dark','mobile','missing chunk']};
+  const broken=await context.newPage();await broken.route('**/'+parts[0],route=>route.fulfill({status:503,body:'Unavailable'}));await broken.goto(url);await expect(broken.locator('.state.error')).toBeVisible({timeout:60000});await expect(broken.getByRole('button',{name:'Reload',exact:true})).toBeVisible();assert.equal(await broken.locator('.card').count(),0);await broken.close();
+  queries.sort((a,b)=>a-b);const report={url,records:snapshot.records,data_catalogues:catalogueRecords.length,catalogue_groups:bundle.meta.catalogue_memberships?.catalogue_count,initial_bytes:initialBytes,heap_bytes:heapBytes,load_ms:loadMs,reference_queries:queries.length,query_median_ms:queries[Math.floor(queries.length/2)],query_max_ms:queries.at(-1),console_errors:errors,accessibility_violations:violations,checks:['Catalogue filters','URL reload','search','JSON export','record details','dark','mobile','missing chunk','192 MB heap limit','deferred details']};
   fs.writeFileSync(path.join(root,'.local',process.env.CATALOGUE_URL?'live-browser.json':'full-browser.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
- }finally{await browser.close();server.close();}
+ }finally{await browser.close();server.closeAllConnections();server.close();}
 })().catch(e=>{console.error(e);process.exit(1)});

@@ -30,6 +30,6 @@ A release fixes a snapshot of the record files. Its record counts, capture date 
 
 ## Dashboard
 
-The dashboard derives filters from the released records and vocabularies. Values within one filter combine with OR by default, with an optional AND mode. Different filters combine with AND. An inverted index supports filtering and a trigram index supports text search. Shared URLs encode the selected filters and view.
+The dashboard derives filters from the released records and vocabularies. Values within one filter combine with OR by default, with an optional AND mode. Different filters combine with AND. An inverted index supports filtering. Text search uses substring and padded-trigram matching. The current hosted build stores searchable words in a shared dictionary and computes trigram matches per query, avoiding a large persistent text index on mobile devices. Full metadata loads on demand. Shared URLs encode the selected filters and view.
 
 The coverage view counts the records in the current selection. Multi-sector records may contribute to several counts. These counts describe this catalogue; they do not estimate the total population of resources that exists elsewhere.

@@ -54,6 +54,11 @@ facets and metadata as plain JSON, used by the tests and by anyone who wants
 the derived facets without the page). The build is deterministic: the same
 inputs produce byte-identical outputs.
 
+``--lazy-details --data-file NAME`` writes an HTTP-hosted compact index
+and content-addressed full-record batches. All entries remain searchable;
+complete metadata is fetched for record details and exports. Small offline
+and reference-test builds retain the default inline format.
+
 Usage: ``python3 build.py [--project DIR] [--schema-dir DIR] [--out FILE] [--data-file NAME] [--no-bundle]``.
 
 The build stops with a message, and a non-zero exit, when a record is malformed (not an object, no id or
@@ -87,6 +92,7 @@ sys.path.insert(0, str(HERE.parent / "pipeline"))
 import vocab_map  # noqa: E402  (the filter vocabularies and the mapping of raw values onto them)
 from catalogues import add_catalogues
 from data_resources import add_data_resource_types
+from mobile import compact_bundle
 DEFAULT_PROJECT = REPO_ROOT
 RECORD_TYPES = ("data", "model", "platform", "case_study")
 
@@ -673,7 +679,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--date", default=None, help="build date YYYY-MM-DD (default: today)")
     parser.add_argument("--allow-missing-pycountry", action="store_true", help="build even when pycountry is not installed (country and language filters then show bare codes; for fixture tests only)")
     parser.add_argument("--no-bundle", action="store_true", help="do not write bundle.json next to the page (it is 260 MB for the real catalogue)")
+    parser.add_argument("--lazy-details", action="store_true", help="load a compact search/filter index and fetch full records on demand (requires --data-file)")
     args = parser.parse_args(argv)
+    if args.lazy_details and not args.data_file:
+        parser.error('--lazy-details requires --data-file')
     if pycountry is None and not args.allow_missing_pycountry:
         raise SystemExit("pycountry is not installed, so the country and language filters would show bare codes such as DE and fr. "
                          "Install it with `pip install -r requirements.txt`, or pass --allow-missing-pycountry for a throw-away build.")
@@ -718,11 +727,15 @@ def main(argv: list[str] | None = None) -> int:
 
     # Split mode: the JSON text is cut into parts under 8 MB that the page joins before parsing.
     data_parts: list[tuple[str, str]] = []
-    if args.data_file:
+    data_names = []
+    if args.lazy_details:
+        _, data_parts, data_names = compact_bundle(bundle, TEXT_FIELDS, extract, args.data_file.removesuffix('.json'))
+    elif args.data_file:
         text = json.dumps(bundle, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
         stem = args.data_file.removesuffix(".json")
         size = 8_000_000
         data_parts = [(f"{stem}-{i + 1}.json", text[k:k + size]) for i, k in enumerate(range(0, len(text), size))]
+        data_names = [n for n, _ in data_parts]
 
     src = HERE / "src"
     template = (src / "template.html").read_text(encoding="utf-8")
@@ -732,7 +745,7 @@ def main(argv: list[str] | None = None) -> int:
         "I18N": (src / "i18n.js").read_text(encoding="utf-8"),
         "APP": (src / "app.js").read_text(encoding="utf-8"),
         "DATA": "" if args.data_file else json_for_html(bundle),
-        "DATA_SRC": f' data-src="{" ".join(n for n, _ in data_parts)}"' if data_parts else "",
+        "DATA_SRC": (f' data-src="{" ".join(data_names)}"' + (' data-format="compact-v1"' if args.lazy_details else '')) if data_parts else "",
         "BUILT": built,
     })
     out.parent.mkdir(parents=True, exist_ok=True)

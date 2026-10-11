@@ -4,7 +4,7 @@
 
 ## Search and select
 
-The initial load retrieves the full metadata snapshot. Progress shows how many parts have arrived. Keep the page open until results appear. A failed part produces an error with a reload control, so a partial catalogue is not presented as complete.
+The initial load retrieves a smaller index covering every entry. Progress shows how many parts have arrived. Keep the page open until results appear. A failed part produces an error with a reload control, so a partial catalogue is not presented as complete. Full descriptions and source details load when an entry is opened. Cards show a short description preview.
 
 Enter words in the search box to search names, English display titles, providers, descriptions and tags. Search tolerates small spelling differences. Use filters to narrow the result by type, infrastructure sector, country, licence, access conditions, format or another available property. Long lists can be searched within their filter.
 
@@ -26,7 +26,7 @@ The detail view supports copying a resource citation. Cite both the catalogue ve
 
 ## Export and coverage
 
-Export saves the current selection as CSV or JSON metadata, including filter information. Nested properties in CSV may be encoded as JSON. Whole-snapshot compressed downloads are available from [GitHub releases](https://github.com/omarkammouh/Data_catalogue_for_critical_infrastructure_research/releases).
+Export saves the current selection as CSV or JSON metadata, including filter information. The dashboard fetches complete metadata for the selected records before saving the file. Large selections can take longer and need more device memory. Narrow the selection on a phone. Nested properties in CSV may be encoded as JSON. Whole-snapshot compressed downloads are available from [GitHub releases](https://github.com/omarkammouh/Data_catalogue_for_critical_infrastructure_research/releases).
 
 The coverage view shows counts by resource type, sector and data family for the current selection. Records can belong to multiple sectors, so sector counts are not necessarily additive.
 

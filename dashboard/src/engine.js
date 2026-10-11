@@ -155,6 +155,10 @@
   }
 
   function extract(record, facet) {
+    if (record._facets && facet._column != null) {
+      const values = (record._packed ? facet._sets[record._facets[facet._column]] : record._facets[facet._column]) || [];
+      return facet.kind === 'range' ? values : values.map(i => String(facet.values[i].value));
+    }
     return applyTransform(walkPath(record, facet.path), facet.transform, facet);
   }
 
@@ -181,6 +185,46 @@
 
   /* ------------------------------------------------------------- sorting */
 
+  /** Decode one independent index part with shared dictionaries from part 1.
+   * All integer storage stays in typed columns. Inputs remain immutable. */
+  function decodeCompactPart(part, header) {
+    header = header || part;
+    function integers(text, length, delta, counts) {
+      const raw = typeof atob === 'function' ? atob(text) : Buffer.from(text, 'base64').toString('binary');
+      const out = new Uint32Array(length);
+      let n = 0, value = 0, shift = 0, row = 0, left = counts ? counts[0] : 0, previous = 0;
+      for (let i = 0; i < raw.length; i++) {
+        const byte = raw.charCodeAt(i);
+        value += (byte & 127) * (2 ** shift);
+        if (byte & 128) { shift += 7; if (shift > 28) throw new Error('Invalid catalogue integer'); continue; }
+        if (n >= length || value > 0xffffffff) throw new Error('Invalid catalogue column');
+        if (delta) {
+          while (left === 0 && row < counts.length) { left = counts[++row]; previous = 0; }
+          previous += value; out[n++] = previous; left--;
+        } else out[n++] = value;
+        value = 0; shift = 0;
+      }
+      if (n !== length || shift) throw new Error('Incomplete catalogue column');
+      return out;
+    }
+    const fields = header.card_fields, values = header.card_values, facets = header.facets;
+    if (!Array.isArray(part.records) || !fields || !values || !facets) throw new Error('Invalid catalogue index');
+    for (const facet of facets) facet._sets = header.facet_sets;
+    const counts = part.records.map(r => r[fields.length]);
+    const words = integers(part.word_codes, counts.reduce((a, b) => a + b, 0), true, counts);
+    const columns = integers(part.facet_codes, part.records.length * facets.length, false);
+    let offset = 0;
+    return part.records.map((row, i) => {
+      const r = {};
+      fields.forEach((field, k) => { if (values[row[k]] != null) r[field] = values[row[k]]; });
+      r._detail = row[fields.length + 1];
+      r._words = words.subarray(offset, offset + counts[i]); offset += counts[i];
+      r._facets = columns.subarray(i * facets.length, (i + 1) * facets.length);
+      r._packed = true;
+      return r;
+    });
+  }
+
   function sortKey(record, field) {
     if (field === "name") return normalise(record.title_en || record.name);
     if (field === "provider") return normalise(record.provider);
@@ -203,6 +247,7 @@
 
   function createEngine(records, facets, options) {
     const opts = options || {};
+    const searchWords = opts.searchWords || null;
     const n = records.length;
     const textFields = opts.textFields || ["title_en", "name", "provider", "description", "tags", "id", "notes", "regions"];
     const facetById = new Map();
@@ -272,13 +317,13 @@
      * codes (a window of three UTF-16 units of the text; a window whose middle unit is a space spans two words and is
      * skipped, which gives exactly the per-word padded trigrams of the earlier version), interned in an open-addressing
      * table, collected as (trigram, record) pairs and packed into one Int32Array per index at the end. */
-    let tCap = 1 << 18, tK1 = new Int32Array(tCap), tK2 = new Int32Array(tCap), tId = new Int32Array(tCap).fill(-1);
+    let tCap = searchWords ? 0 : 1 << 18, tK1 = new Int32Array(tCap), tK2 = new Int32Array(tCap), tId = new Int32Array(tCap).fill(-1);
     let triCount = 0;
     const triLast = [];            // id -> last record added (de-duplication)
-    let pT = new Int32Array(1 << 20), pR = new Int32Array(1 << 20), pN = 0; // (trigram id, record) pairs in record order
+    let pT = new Int32Array(searchWords ? 0 : 1 << 20), pR = new Int32Array(searchWords ? 0 : 1 << 20), pN = 0; // (trigram id, record) pairs in record order
     let postStart = null, postData = null; // CSR postings once the index is complete
     let textBuilt = 0;             // records indexed so far
-    let textDone = n === 0;
+    let textDone = n === 0 || !!searchWords;
 
     function triSlot(k1, k2) {
       let h = Math.imul(k1, -1640531535) ^ Math.imul(k2 + 0x2545F491, 0x85ebca6b);
@@ -400,6 +445,41 @@
 
     /* text */
 
+    // Shared words keep full descriptions, notes and tags searchable without
+    // allocating a catalogue-wide trigram-to-record index on the phone.
+    // For each query, OR the matching padded trigrams across a record's words.
+    // Repeated query trigrams retain separate bits, exactly as the old scorer.
+    function compactHits(tok, grams, hits, exact) {
+      const wordExact = new Uint8Array(searchWords.length);
+      if (grams.length <= 31) {
+        const wordBits = new Uint32Array(searchWords.length);
+        for (let w = 0; w < searchWords.length; w++) {
+          const word = searchWords[w], padded = ' ' + word + ' ';
+          wordExact[w] = word.includes(tok) ? 1 : 0;
+          let bits = 0;
+          for (let k = 0; k < grams.length; k++) if (padded.includes(grams[k])) bits |= 1 << k;
+          wordBits[w] = bits;
+        }
+        for (let i = 0; i < n; i++) {
+          let bits = 0;
+          for (const w of records[i]._words) { bits |= wordBits[w]; exact[i] |= wordExact[w]; }
+          let count = 0;
+          for (let b = bits >>> 0; b; b &= b - 1) count++;
+          hits[i] = count;
+        }
+      } else {
+        // Very long tokens cannot fit a bit mask. Scan only this query's words;
+        // this path still has bounded memory and preserves the same score.
+        const padded = searchWords.map(w => ' ' + w + ' ');
+        for (let w = 0; w < searchWords.length; w++) wordExact[w] = searchWords[w].includes(tok) ? 1 : 0;
+        for (let i = 0; i < n; i++) {
+          const words = records[i]._words;
+          exact[i] = words.some(w => wordExact[w]) ? 1 : 0;
+          hits[i] = grams.filter(g => words.some(w => padded[w].includes(g))).length;
+        }
+      }
+    }
+
     function textMatch(query) {
       // returns {mask, scores} or null when the query is empty
       const toks = tokens(query);
@@ -408,10 +488,12 @@
       const mask = fullMask();
       const scores = new Float64Array(n);
       const hits = new Int32Array(n);
+      const exact = searchWords ? new Uint8Array(n) : null;
       for (const tok of toks) {
         hits.fill(0);
         const grams = trigrams(tok);
-        for (const g of grams) {
+        if (searchWords) { exact.fill(0); compactHits(tok, grams, hits, exact); }
+        else for (const g of grams) {
           const p = postingsFor(g);
           if (p) for (let k = 0; k < p.length; k++) hits[p[k]]++;
         }
@@ -427,11 +509,11 @@
           if (!mask[i]) continue;
           let score = 0;
           if (short) {
-            score = texts[i].includes(tok) ? 1 : (hits[i] > 0 ? hits[i] / g : 0);
+            score = (searchWords ? exact[i] : texts[i].includes(tok)) ? 1 : (hits[i] > 0 ? hits[i] / g : 0);
           } else if (hits[i] >= g) {
             score = 1;
           } else if (hits[i] > 0) {
-            score = (hits[i] >= g - 2 && texts[i].includes(tok)) ? 1 : hits[i] / g;
+            score = (hits[i] >= g - 2 && (searchWords ? exact[i] : texts[i].includes(tok))) ? 1 : hits[i] / g;
           }
           if (score >= TEXT_THRESHOLD) scores[i] += score; else mask[i] = 0;
         }
@@ -568,5 +650,5 @@
     };
   }
 
-  return { createEngine, normalise, tokens, trigrams, extract, walkPath, applyTransform, SORTS, TEXT_THRESHOLD, NAME_BONUS };
+  return { createEngine, decodeCompactPart, normalise, tokens, trigrams, extract, walkPath, applyTransform, SORTS, TEXT_THRESHOLD, NAME_BONUS };
 }));

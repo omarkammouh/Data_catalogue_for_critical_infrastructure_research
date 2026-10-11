@@ -57,6 +57,48 @@
 
   let DATA, ENGINE, FACETS, RECORDS, META;
   const byId = new Map();
+  const detailCache = new Map(); // at most two small batches of full metadata
+  const detailPending = new Map();
+  const detailExpected = new Map();
+
+  async function fullBatch(part) {
+    if (detailCache.has(part)) {
+      const rows = detailCache.get(part);
+      detailCache.delete(part); detailCache.set(part, rows);
+      return rows;
+    }
+    if (detailPending.has(part)) return detailPending.get(part);
+    const promise = (async () => {
+      const src = META.detail_parts[part];
+      const response = await fetch(src);
+      if (!response.ok) throw new Error('Could not load entry details (' + response.status + ')');
+      const records = await response.json();
+      const expected = detailExpected.get(part);
+      if (!Array.isArray(records) || records.length !== expected.size ||
+          records.some(r => !r || !expected.has(r.id))) throw new Error('Incomplete entry details');
+      const rows = new Map(records.map(r => [r.id, r]));
+      if (rows.size !== expected.size) throw new Error('Duplicate entry details');
+      detailCache.set(part, rows);
+      while (detailCache.size > 2) detailCache.delete(detailCache.keys().next().value);
+      return rows;
+    })();
+    detailPending.set(part, promise);
+    try { return await promise; } finally { detailPending.delete(part); }
+  }
+
+  async function visitFullRecords(indices, visit) {
+    if (!META.detail_parts) { indices.forEach((i, position) => visit(RECORDS[i], position)); return; }
+    const groups = new Map();
+    indices.forEach((i, position) => {
+      const r = RECORDS[i];
+      if (!groups.has(r._detail)) groups.set(r._detail, []);
+      groups.get(r._detail).push([r.id, position]);
+    });
+    for (const [part, members] of groups) {
+      const rows = await fullBatch(part);
+      for (const [id, position] of members) visit(rows.get(id), position);
+    }
+  }
   const valueLabel = new Map(); // facetId -> Map(value -> label)
 
   /* -------------------------------------------------------------- state */
@@ -122,7 +164,7 @@
   function writeState(next, { replace = false } = {}) {
     state = next;
     const url = toQuery(state);
-    try { history[replace ? "replaceState" : "pushState"]({ s: state }, "", url); }
+    try { history[replace ? "replaceState" : "pushState"]({ s: state, fromApp: replace ? !!(history.state && history.state.fromApp) : true }, "", url); }
     catch (e) { /* some hosts refuse pushState; the page still works without it */ }
     update();
   }
@@ -266,31 +308,43 @@
       let id = "fv-" + facet.id + "-" + v.value.replace(/[^a-zA-Z0-9_-]/g, "_");
       for (let n = 2; usedIds.has(id); n++) id = "fv-" + facet.id + "-" + v.value.replace(/[^a-zA-Z0-9_-]/g, "_") + "-" + n;
       usedIds.add(id);
-      const input = h("input", { type: "checkbox", id, dataset: { facet: facet.id, value: v.value } });
-      input.addEventListener("change", () => toggleValue(facet.id, v.value, input.checked));
-      const count = h("span", { class: "count tabular", text: fmtInt(v.count) });
-      const label = h("label", { class: "value", for: id, title: v.note || null }, input, h("span", { class: "value-label", text: v.label }), count);
-      const li = h("li", { class: v.parent ? "child" : "parent", dataset: { value: v.value } });
-      let toggle = null;
-      if (children.has(v.value)) {
-        toggle = h("button", { type: "button", class: "tree-toggle", "aria-expanded": "false", "aria-label": t("Show the values under {value}", { value: v.label }) });
-        toggle.addEventListener("click", () => { const open = toggle.getAttribute("aria-expanded") !== "true"; toggle.setAttribute("aria-expanded", String(open)); for (const c of children.get(v.value)) rows.get(c).li.hidden = !open; });
-        li.append(h("div", { style: "display:flex;align-items:center;gap:2px" }, toggle, label));
-        label.style.flex = "1";
-      } else li.append(label);
-      if (v.parent) li.hidden = true;
-      rows.set(v.value, { li, input, count, label, base: v.count, labelText: v.label, value: v.value, note: v.note || "", hay: null, parent: v.parent, toggle, kids: children.get(v.value) || [] });
-      list.append(li);
+      rows.set(v.value, { id, facet, li: null, input: null, count: null, label: null, base: v.count, current: v.count, checked: false, zero: false, open: false, labelText: v.label, value: v.value, note: v.note || "", hay: null, parent: v.parent, toggle: null, kids: children.get(v.value) || [] });
     }
     const more = h("button", { type: "button", class: "link-button", hidden: true });
     let expanded = false;
-    more.addEventListener("click", () => { expanded = !expanded; applyFacetOrder(facet); });
+    let extra = 0;
+    const fewer = h('button', { type: 'button', class: 'link-button', hidden: true, text: t('Show fewer') });
+    more.addEventListener("click", () => { if (facet.values.length > DETACH_ABOVE) { extra += 200; expanded = true; } else expanded = !expanded; applyFacetOrder(facet); });
+    fewer.addEventListener('click', () => { expanded = false; extra = 0; applyFacetOrder(facet); });
     const none = h("p", { class: "facet-empty", hidden: true, text: t("No matching values") });
-    body.append(none, list, more);
+    body.append(none, list, more, fewer);
     panel.rows.set(facet.id, rows);
-    panel.facetEls.set(facet.id, { details, badge, list, more, none, search, sortBtn, allSwitch, isExpanded: () => expanded, setExpanded: v => { expanded = v; }, children, orderedAlpha: null, top: [], lastNeedle: "" });
+    panel.facetEls.set(facet.id, { details, badge, list, more, fewer, none, search, sortBtn, allSwitch, isExpanded: () => expanded, extra: () => extra, setExpanded: v => { expanded = v; extra = 0; }, children, orderedAlpha: null, top: [], lastNeedle: "" });
     applyFacetOrder(facet);
     return details;
+  }
+
+  function ensureFacetRow(r) {
+    if (r.li) return r.li;
+    const input = h('input', { type: 'checkbox', id: r.id, dataset: { facet: r.facet.id, value: r.value } });
+    input.addEventListener('change', () => toggleValue(r.facet.id, r.value, input.checked));
+    const count = h('span', { class: 'count tabular' });
+    const label = h('label', { class: 'value', for: r.id, title: r.note || null }, input, h('span', { class: 'value-label', text: r.labelText }), count);
+    const li = h('li', { class: r.parent ? 'child' : 'parent', dataset: { value: r.value } });
+    if (r.kids.length) {
+      r.toggle = h('button', { type: 'button', class: 'tree-toggle', 'aria-expanded': String(r.open), 'aria-label': t('Show the values under {value}', { value: r.labelText }) });
+      r.toggle.addEventListener('click', () => { r.open = !r.open; applyFacetOrder(r.facet); });
+      li.append(h('div', { style: 'display:flex;align-items:center;gap:2px' }, r.toggle, label)); label.style.flex = '1';
+    } else li.append(label);
+    Object.assign(r, { li, input, count, label });
+    refreshFacetRow(r);
+    return li;
+  }
+
+  function refreshFacetRow(r) {
+    if (!r.li) return;
+    r.count.textContent = fmtInt(r.current); r.input.checked = r.checked; r.input.disabled = r.zero;
+    r.label.classList.toggle('zero', r.zero); r.label.setAttribute('aria-disabled', String(r.zero));
   }
 
   /** Order the rows of one facet by catalogue count or A–Z; rows are moved in the DOM only when this order changes. */
@@ -301,7 +355,7 @@
     const big = top.length > DETACH_ABOVE; // applyFacetOrder attaches only the visible rows of these, in this order
     for (const [value, r] of top) {
       const kids = r.kids.map(k => [k, rows.get(k)]).sort(cmp);
-      if (!big) { el.list.append(r.li); for (const [, kr] of kids) el.list.append(kr.li); }
+      if (!big) { el.list.append(ensureFacetRow(r)); for (const [, kr] of kids) el.list.append(ensureFacetRow(kr)); }
       el.top.push({ value, r, kids });
     }
     el.orderedAlpha = alpha;
@@ -328,7 +382,7 @@
     for (const tok of tokens) if (!r.hay.includes(tok)) return false;
     return true;
   }
-  const setHidden = (node, hidden) => { if (node.hidden !== hidden) node.hidden = hidden; };
+  const setHidden = (node, hidden) => { if (node && node.hidden !== hidden) node.hidden = hidden; };
 
   /** Make `list` hold exactly `wanted`, in that order. A row with keyboard focus is never detached and re-attached (that would drop the focus). */
   function syncList(list, wanted) {
@@ -358,7 +412,8 @@
     const key = q.tokens.join(" ");
     const cleared = key === "" && el.lastNeedle !== ""; // a search that opened parent values closes them again when it is cleared
     if (key !== el.lastNeedle) { el.lastNeedle = key; el.setExpanded(false); }
-    const limit = searching ? SEARCH_SHOW_LIMIT : SHOW_MORE_AFTER;
+    const big = el.top.length > DETACH_ABOVE;
+    const limit = (searching ? SEARCH_SHOW_LIMIT : SHOW_MORE_AFTER) + (big ? el.extra() : 0);
     let shown = 0, matched = 0, hiddenByLimit = 0, anySelected = false;
     // Lists of thousands of rows (provider 26,153, regions, publishers) keep only the visible rows in the page: hiding or
     // showing 20,000 attached rows made the browser redo style work per row, and clearing a provider search after
@@ -370,32 +425,40 @@
       const selfMatch = !searching || rowMatches(r, q.tokens);
       let kidMatch = false, kidSelected = false;
       const kidHit = kids.map(([, kr]) => {
-        if (kr.input.checked) kidSelected = true;
+        if (kr.checked) kidSelected = true;
         const hit = !searching || rowMatches(kr, q.tokens);
         if (hit && searching) kidMatch = true;
         return hit;
       });
       const match = selfMatch || kidMatch;
-      const selected = r.input.checked || kidSelected;
+      const selected = r.checked || kidSelected;
       if (selected) anySelected = true;
       if (match) matched++;
       let visible = match || selected;
-      if (visible && !selected && !el.isExpanded() && shown >= limit) { visible = false; hiddenByLimit++; }
+      if (visible && !selected && (big || !el.isExpanded()) && shown >= limit) { visible = false; hiddenByLimit++; }
+      if (visible) ensureFacetRow(r);
       setHidden(r.li, !visible);
       if (visible) { shown++; if (attach) attach.push(r.li); }
       let openKids = false;
-      if (r.toggle) {
-        openKids = cleared ? kidSelected : (searching && kidMatch) || kidSelected || r.toggle.getAttribute("aria-expanded") === "true";
-        if (searching || kidSelected || cleared) r.toggle.setAttribute("aria-expanded", String(openKids));
+      if (r.kids.length) {
+        openKids = cleared ? kidSelected : (searching && kidMatch) || kidSelected || r.open;
+        r.open = openKids;
+        if (r.toggle) r.toggle.setAttribute("aria-expanded", String(openKids));
       }
       kids.forEach(([, kr], i) => {
-        setHidden(kr.li, !visible || !openKids || (searching && !selfMatch && !kidHit[i] && !kr.input.checked));
-        if (attach && visible) attach.push(kr.li);
+        const hidden = !visible || !openKids || (searching && !selfMatch && !kidHit[i] && !kr.checked);
+        if (!hidden) ensureFacetRow(kr);
+        setHidden(kr.li, hidden);
+        if (attach && !hidden) attach.push(kr.li);
       });
     }
-    if (attach) syncList(el.list, attach);
+    if (attach) {
+      syncList(el.list, attach);
+      for (const r of rows.values()) if (r.li && !el.list.contains(r.li)) Object.assign(r, { li: null, input: null, count: null, label: null, toggle: null });
+    }
     el.more.hidden = !(hiddenByLimit > 0 || (el.isExpanded() && matched > limit));
-    el.more.textContent = el.isExpanded() ? t("Show fewer") : t("Show {n} more", { n: hiddenByLimit });
+    el.more.textContent = !big && el.isExpanded() ? t("Show fewer") : t("Show {n} more", { n: big ? Math.min(200, hiddenByLimit) : hiddenByLimit });
+    if (big) { el.more.hidden = hiddenByLimit === 0; el.fewer.hidden = !el.isExpanded(); }
     el.none.hidden = !(searching && matched === 0);
     setHidden(el.details, globalTokens.length > 0 && !(q.byLabel || matched > 0 || anySelected));
   }
@@ -545,12 +608,8 @@
       const counts = result.counts[facet.id] || {};
       for (const [value, r] of rows) {
         const c = counts[value] || 0;
-        r.count.textContent = fmtInt(c);
-        r.input.checked = chosen.has(value);
-        const zero = c === 0 && !chosen.has(value);
-        r.input.disabled = zero;
-        r.label.classList.toggle("zero", zero);
-        r.label.setAttribute("aria-disabled", zero ? "true" : "false");
+        r.current = c; r.checked = chosen.has(value); r.zero = c === 0 && !r.checked;
+        refreshFacetRow(r);
       }
       el.badge.hidden = chosen.size === 0; el.badge.textContent = String(chosen.size);
       if (chosen.size) { activeFacets++; el.details.open = true; }
@@ -777,11 +836,28 @@
       : h("span", { class: "pill missing", title: t("Not in the catalogue"), text: v }));
   }
 
-  function renderDetail(host, id) {
-    const r = byId.get(id);
-    const back = h("button", { type: "button", class: "button", text: "← " + t("Back to results"), onclick: () => { if (history.state && history.length > 1 && cameFromApp) history.back(); else { const s = cloneState(); s.record = null; writeState(s); } } });
+  function renderDetail(host, id, full) {
+    const r = full || byId.get(id);
+    const back = h("button", { type: "button", class: "button", text: "← " + t("Back to results"), onclick: () => { if (history.state && history.state.fromApp && history.length > 1) history.back(); else { const s = cloneState(); s.record = null; writeState(s); } } });
     if (!r) {
       host.append(h("div", { class: "state error" }, h("h2", { text: t("Record not found") }), h("p", { text: t("No record with id “{id}” is in this build of the catalogue.", { id }) }), h("div", { class: "actions" }, back)));
+      return;
+    }
+    if (!full && META.detail_parts) {
+      const box = h('div', { class: 'state', role: 'status' },
+        h('h2', { text: displayTitle(r) }), h('p', { text: t('Loading the catalogue…') }), back);
+      host.append(box);
+      fullBatch(r._detail).then(rows => {
+        if (!box.isConnected || state.record !== id) return;
+        host.textContent = ''; renderDetail(host, id, rows.get(id));
+        const title = $('.detail-title', host); if (title) title.focus();
+      }).catch(err => {
+        if (!box.isConnected || state.record !== id) return;
+        box.classList.add('error'); box.setAttribute('role', 'alert');
+        box.replaceChildren(h('h2', { text: t('Something went wrong') }),
+          h('p', { text: String(err.message || err) }), back,
+          h('button', { type: 'button', class: 'button', text: t('Reload'), onclick: () => { host.textContent = ''; renderDetail(host, id); } }));
+      });
       return;
     }
     const labels = fid => valueLabel.get(fid) || new Map();
@@ -932,31 +1008,37 @@
   }
 
   function download(name, text, type) {
-    const blob = new Blob([text], { type });
+    const blob = new Blob(Array.isArray(text) ? text : [text], { type });
     const url = URL.createObjectURL(blob);
     const a = h("a", { href: url, download: name, style: "display:none" });
     document.body.append(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 2000);
   }
 
-  function exportJSON() {
+  async function exportJSON() {
     if (!lastResult) return;
-    const payload = { exported: new Date().toISOString(), catalogue_built: META.built, url: location.href, filters: describeFilters(), sort: lastResult.sort, dir: lastResult.dir, total: lastResult.total, records: lastResult.indices.map(i => RECORDS[i]) };
-    download("catalogue-export.json", JSON.stringify(payload, null, 2), "application/json");
-    toast(t("JSON export of {n} started", { n: fmtInt(lastResult.total) + " " + tn(lastResult.total, "record", "records") }));
+    const result = lastResult;
+    const payload = { exported: new Date().toISOString(), catalogue_built: META.built, url: location.href, filters: describeFilters(), sort: result.sort, dir: result.dir, total: result.total };
+    const parts = new Array(result.total);
+    await visitFullRecords(result.indices, (r, position) => { parts[position] = (position ? ',' : '') + JSON.stringify(r); });
+    download('catalogue-export.json', [JSON.stringify(payload).slice(0, -1) + ',"records":[', ...parts, ']}'], 'application/json');
+    toast(t("JSON export of {n} started", { n: fmtInt(result.total) + " " + tn(result.total, "record", "records") }));
   }
 
-  function exportCSV() {
+  async function exportCSV() {
     if (!lastResult) return;
+    const result = lastResult;
     const cols = ["id", "type", "title_en", "name", "provider", "homepage", "licence", "cost", "access_restrictions", "geographic_scope", "maturity", "date_catalogued", "date_verified", "last_updated"];
     for (const f of FACETS) if (f.kind !== "text" && f.kind !== "range" && !f.empty && f.path && !f.path.includes("[]") && !cols.includes(f.path)) cols.push(f.path);
     const esc = v => { const s = v == null ? "" : Array.isArray(v) ? v.join("; ") : typeof v === "object" ? JSON.stringify(v) : String(v); return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
     const lines = ["# Data catalogue for critical infrastructure research export, " + new Date().toISOString() + ", catalogue build " + META.built,
       "# filters: " + (describeFilters().length ? JSON.stringify(describeFilters()) : "none") + "; sort: " + lastResult.sort + " " + lastResult.dir + "; url: " + location.href,
       cols.map(esc).join(",")];
-    for (const i of lastResult.indices) lines.push(cols.map(c => esc(RECORDS[i][c])).join(","));
+    const rows = new Array(result.total);
+    await visitFullRecords(result.indices, (r, position) => { rows[position] = cols.map(c => esc(r[c])).join(','); });
+    lines.push(...rows);
     download("catalogue-export.csv", lines.join("\r\n") + "\r\n", "text/csv");
-    toast(t("CSV export of {n} started", { n: fmtInt(lastResult.total) + " " + tn(lastResult.total, "record", "records") }));
+    toast(t("CSV export of {n} started", { n: fmtInt(result.total) + " " + tn(result.total, "record", "records") }));
   }
 
   /* --------------------------------------------------------------- theme */
@@ -1004,7 +1086,6 @@
   /* ------------------------------------------------------------ keyboard */
 
   let lastFocusedResult = null;
-  let cameFromApp = false;
 
   function resultLinks() { return $$("#results [data-id]"); }
 
@@ -1094,10 +1175,18 @@
   }
 
   function boot(raw) {
-    DATA = JSON.parse(raw);
+    DATA = typeof raw === 'string' ? JSON.parse(raw) : raw;
     FACETS = DATA.facets; RECORDS = DATA.records; META = DATA.meta || {};
-    for (const r of RECORDS) byId.set(r.id, r);
-    ENGINE = CatalogueEngine.createEngine(RECORDS, FACETS, { textFields: META.text_fields });
+    if (META.counts && RECORDS.length !== META.counts.total) throw new Error('Incomplete catalogue index');
+    for (const r of RECORDS) {
+      if (byId.has(r.id)) throw new Error('Duplicate catalogue entry');
+      byId.set(r.id, r);
+      if (META.detail_parts) {
+        if (!detailExpected.has(r._detail)) detailExpected.set(r._detail, new Set());
+        detailExpected.get(r._detail).add(r.id);
+      }
+    }
+    ENGINE = CatalogueEngine.createEngine(RECORDS, FACETS, { textFields: META.text_fields, searchWords: DATA.search_words });
     ENGINE_NORMALISE = CatalogueEngine.normalise;
     translateVocabulary();
     I18N.apply();
@@ -1126,14 +1215,21 @@
     $("#rail-open").addEventListener("click", () => toggleRail(true));
     $("#rail-close").addEventListener("click", () => toggleRail(false));
     $("#export-toggle").addEventListener("click", () => toggleMenu("#export-menu"));
-    $("#export-csv").addEventListener("click", () => { toggleMenu("#export-menu", false); exportCSV(); });
-    $("#export-json").addEventListener("click", () => { toggleMenu("#export-menu", false); exportJSON(); });
+    let exporting = false;
+    const startExport = async action => {
+      toggleMenu('#export-menu', false);
+      if (exporting) return;
+      exporting = true; $('#export-toggle').disabled = true;
+      try { await action(); } catch (err) { toast(t('Something went wrong') + ': ' + err.message); }
+      finally { exporting = false; $('#export-toggle').disabled = false; }
+    };
+    $("#export-csv").addEventListener("click", () => startExport(exportCSV));
+    $("#export-json").addEventListener("click", () => startExport(exportJSON));
     $("#columns-toggle").addEventListener("click", () => toggleMenu("#columns-menu"));
     document.addEventListener("click", e => { for (const sel of ["#export-menu", "#columns-menu"]) { const m = $(sel); if (m && !m.contains(e.target)) toggleMenu(sel, false); } });
     $("#brand").addEventListener("click", e => { e.preventDefault(); writeState(emptyState()); });
     document.addEventListener("keydown", onKey);
     window.addEventListener("popstate", () => { state = readState(); update(); if (!state.record) restoreResultFocus(); else { const t = $(".detail-title"); if (t) t.focus(); } });
-    document.addEventListener("click", () => { cameFromApp = true; }, { capture: true, once: true });
 
     // first-visit orientation is decided by the inline script in the template before first paint; nothing to do here
     update();
@@ -1181,8 +1277,34 @@
     let fetched = 0;
     const progress = () => { if (wait) wait.textContent = I18N.t("Loading the catalogue… part {done} of {n}", { done: fetched, n: dataSrc.length }); };
     progress();
-    Promise.all(dataSrc.map(src => fetch(src).then(r => { if (!r.ok) throw new Error("could not load " + src + " (" + r.status + ")"); return r.text(); }).then(text => { fetched++; progress(); return text; })))
-      .then(parts => { if (wait) wait.textContent = I18N.t("Loading the catalogue…"); boot(parts.join("")); }).catch(err => showError(err, true));
+    if (dataEl.dataset.format === 'compact-v1') {
+      (async () => {
+        const response = await fetch(dataSrc[0]);
+        if (!response.ok) throw new Error('Could not load catalogue index (' + response.status + ')');
+        const bundle = await response.json(); fetched++; progress();
+        const batches = new Array(dataSrc.length); batches[0] = CatalogueEngine.decodeCompactPart(bundle);
+        delete bundle.records;
+        delete bundle.word_codes; delete bundle.facet_codes;
+        let next = 1;
+        const worker = async () => {
+          while (next < dataSrc.length) {
+            const i = next++;
+            const r = await fetch(dataSrc[i]);
+            if (!r.ok) throw new Error('Could not load catalogue index (' + r.status + ')');
+            const part = await r.json();
+            if (!Array.isArray(part.records)) throw new Error('Invalid catalogue index');
+            batches[i] = CatalogueEngine.decodeCompactPart(part, bundle); fetched++; progress();
+          }
+        };
+        await Promise.all([worker(), worker()]);
+        bundle.records = batches.flat();
+        delete bundle.card_values; delete bundle.card_fields; delete bundle.facet_sets;
+        boot(bundle);
+      })().catch(err => showError(err, true));
+    } else {
+      Promise.all(dataSrc.map(src => fetch(src).then(r => { if (!r.ok) throw new Error("could not load " + src + " (" + r.status + ")"); return r.text(); }).then(text => { fetched++; progress(); return text; })))
+        .then(parts => { if (wait) wait.textContent = I18N.t("Loading the catalogue…"); boot(parts.join("")); }).catch(err => showError(err, true));
+    }
   } else {
     try { boot(dataEl.textContent); } catch (err) { showError(err); }
   }

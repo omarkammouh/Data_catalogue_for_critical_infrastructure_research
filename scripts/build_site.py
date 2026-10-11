@@ -8,7 +8,7 @@ p=argparse.ArgumentParser();p.add_argument('--date');a=p.parse_args()
 subprocess.run([sys.executable,str(ROOT/'scripts/check_public.py')],check=True,cwd=ROOT)
 out=ROOT/'dashboard/dist'
 if out.exists():shutil.rmtree(out)
-cmd=[sys.executable,str(ROOT/'dashboard/build.py'),'--project',str(ROOT),'--out',str(out/'index.html'),'--data-file','catalogue-data','--no-bundle']
+cmd=[sys.executable,str(ROOT/'dashboard/build.py'),'--project',str(ROOT),'--out',str(out/'index.html'),'--data-file','catalogue-data','--no-bundle','--lazy-details']
 if a.date:cmd+=['--date',a.date]
 # Always build from record files, so a previous compilation cannot hide edits.
 compiled=ROOT/'catalog/catalog.json'
