@@ -12,6 +12,10 @@ Selecting several values in one filter normally accepts any of them. For example
 
 Applied filters appear as removable chips. Clear all returns to the whole catalogue. Browser back and forward restore earlier selections. Copy the browser address to share the selection; it refers to the currently hosted snapshot, which can change with later releases.
 
+The **Data resource** filter separates individual datasets, external data catalogues and information sources. Select **Data catalogue** to browse links to broader inventories. Those inventories can contain subjects outside this catalogue's scope.
+
+The **Catalogues** filter selects resources associated with a parent catalogue. A record can belong to several catalogues or have no known catalogue. Unassigned records remain searchable when this filter is unset. Membership does not establish complete coverage of the parent catalogue or current access to every resource.
+
 ## Read a record
 
 Use list or table view to browse results. Open a record to inspect its original title, description, provider, access links, source references and dates. The English heading helps discovery; the original title preserves the provider's name for the resource. An interface-language change does not translate every resource description.

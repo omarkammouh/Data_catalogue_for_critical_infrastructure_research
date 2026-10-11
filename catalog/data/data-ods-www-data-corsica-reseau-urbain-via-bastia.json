@@ -9,6 +9,11 @@
       "kind": "download",
       "label": "CSV export",
       "url": "https://www.data.corsica/api/explore/v2.1/catalog/datasets/reseau-urbain-via-bastia/exports/csv"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tdg-81624 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tdg-81624"
     }
   ],
   "access_restrictions": "none",
@@ -40,6 +45,12 @@
       "query": "Opendatasoft hub catalog export, title names an infrastructure element",
       "route": "R02",
       "source": "www.data.corsica-via-data.opendatasoft.com"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -74,7 +85,7 @@
   },
   "maturity": "active",
   "name": "GTFS-Réseau urbain Via Bastia",
-  "notes": "Harvested from the Opendatasoft hub catalogue (data.opendatasoft.com, source domain www.data.corsica) on 2026-09-29 as part of the third portal harvest.",
+  "notes": "Harvested from the Opendatasoft hub catalogue (data.opendatasoft.com, source domain www.data.corsica) on 2026-09-29 as part of the third portal harvest.\n\nMobility Database identity supplement (2026-10-07): 1 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Communauté d'Agglomération de Bastia",
   "related_ids": [
     "data-ods-www-data-corsica-portal"
@@ -87,9 +98,14 @@
   ],
   "sources": [
     {
-      "accessed": "2026-09-29",
-      "note": "data.corsica open data portal catalogue entry read through the Opendatasoft hub export on 2026-09-29: title, description, keywords, theme, licence, dates, features; the data files were not opened",
-      "url": "https://www.data.corsica/api/explore/v2.1/catalog/datasets/reseau-urbain-via-bastia"
+      "accessed": "2026-10-10",
+      "note": "Exact Opendatasoft hub descriptive resource metadata checked on 2026-10-10. The September 2026 harvester read hub metadata but generated a provider API citation. Original historical citation URL: https://www.data.corsica/api/explore/v2.1/catalog/datasets/reseau-urbain-via-bastia. Original accessed date: 2026-09-29. Original note (verbatim): data.corsica open data portal catalogue entry read through the Opendatasoft hub export on 2026-09-29: title, description, keywords, theme, licence, dates, features; the data files were not opened. Current reachable federated metadata citation only. The hub explicitly identifies the original provider host and dataset slug. Provider API recovery, current provider publication, September 2026 schema/count/licence/dates, data-file availability and byte/version equivalence are not established. This descriptor was checked on 2026-10-10, not on the original access date. Existing active homepage and CSV links are unchanged. The descriptor includes a struck-through 31 December 2022 validity statement and metadata processed in November 2025; current timetable validity and operating feed access are not established. Complete original source node (verbatim JSON): {\"accessed\":\"2026-09-29\",\"note\":\"data.corsica open data portal catalogue entry read through the Opendatasoft hub export on 2026-09-29: title, description, keywords, theme, licence, dates, features; the data files were not opened\",\"url\":\"https://www.data.corsica/api/explore/v2.1/catalog/datasets/reseau-urbain-via-bastia\"}",
+      "url": "https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/reseau-urbain-via-bastia%40datacorsica"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],
   "tags": [

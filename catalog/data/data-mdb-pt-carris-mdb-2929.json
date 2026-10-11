@@ -34,6 +34,16 @@
       "kind": "api",
       "label": "Provider endpoint of the real-time feed mdb-2930",
       "url": "https://gateway.carris.pt/gateway/gtfs/api/v2.11/GTFS/realtime/vehiclepositions"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1032 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-1032"
+    },
+    {
+      "kind": "portal",
+      "label": "CARRIS historical 2019 GTFS snapshot (ILU)",
+      "url": "https://zenodo.org/records/18829982"
     }
   ],
   "access_restrictions": "none",
@@ -55,19 +65,25 @@
     "stream"
   ],
   "date_catalogued": "2026-09-29",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-09",
   "dedupe_keys": {
     "name": "carris gtfs schedule and real time transit data",
     "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-2929"
   },
-  "description": "Carris: GTFS schedule and real-time transit data is a dataset listed in Mobility Database, a catalogue of GTFS and GTFS Realtime transit feeds, published or maintained by Carris. Public transport schedule data (routes, stops, trips and stop times in the General Transit Feed Specification) for Ajuda, Lisbon, Portugal, with real-time vehicle, trip or alert feeds. Coverage: Ajuda, Lisbon, Portugal. The Mobility Database lists 1 GTFS schedule feed and 2 GTFS Realtime feeds for this provider (Ajuda, Lisbon, Portugal). The schedule feeds declare these GTFS features: Location Types, Shapes. At least one feed is marked as published by the operator itself. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is not stated in the Mobility Database listing (licence field empty). Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support public transport network, accessibility and demand studies. Related record: the catalogue-level record data-mobility-database-mobilitydata.",
-  "description_checked": "2026-09-29",
+  "description": "Carris: GTFS schedule and real-time transit data is a dataset listed in Mobility Database, a catalogue of GTFS and GTFS Realtime transit feeds, published or maintained by Carris. Public transport schedule data (routes, stops, trips and stop times in the General Transit Feed Specification) for Ajuda, Lisbon, Portugal, with real-time vehicle, trip or alert feeds. Coverage: Ajuda, Lisbon, Portugal. The Mobility Database lists 1 GTFS schedule feed and 2 GTFS Realtime feeds for this provider (Ajuda, Lisbon, Portugal). The schedule feeds declare these GTFS features: Location Types, Shapes. At least one feed is marked as published by the operator itself. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is not stated in the Mobility Database listing (licence field empty). Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support public transport network, accessibility and demand studies. Related record: the catalogue-level record data-mobility-database-mobilitydata. An ILU catalogue deposit supplies a separate 2019 CARRIS GTFS snapshot originally collected from the discontinued Transporlis service. It is a historical route to stops, routes, trips, schedules and geometry; it is not asserted identical to the current feed or valid for present service. The native deposit states CC-BY 4.0 while the project metadata catalogue states CC0; the applicable snapshot licence remains unresolved.",
+  "description_checked": "2026-10-09",
   "discovery_routes": [
     {
       "date": "2026-09-29",
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -85,11 +101,14 @@
     "not_stated"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-09",
+    "unverified": [
+      "https://zenodo.org/records/18829982"
+    ]
   },
   "maturity": "active",
   "name": "Carris: GTFS schedule and real-time transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 1 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved. Historical ILU snapshot component added2026-10-09; no current-feed equivalence or service-operation assertion.",
   "provider": "Carris",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -107,6 +126,16 @@
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Native metadata and project 19747120 dataset metadata row reviewed; no GTFS values/archive read.",
+      "url": "https://zenodo.org/api/records/18829982"
     }
   ],
   "tags": [

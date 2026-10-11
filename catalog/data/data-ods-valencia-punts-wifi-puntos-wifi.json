@@ -1,14 +1,16 @@
 {
   "access_links": [
     {
-      "kind": "download",
-      "label": "CSV export",
-      "url": "https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/punts-wifi-puntos-wifi/exports/csv"
+      "kind": "api",
+      "label": "València open data GeoJSON resource",
+      "note": "Current provider dataset metadata lists this exact GeoJSON route; HEAD returned HTTP 200. This replaces the retired CSV export route; no response body was fetched.",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/Turismo/MapServer/200/query?where=1=1&outFields=*&f=geojson"
     },
     {
       "kind": "api",
-      "label": "Opendatasoft explore API record",
-      "url": "https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/punts-wifi-puntos-wifi"
+      "label": "València open data CKAN package metadata",
+      "note": "Current provider metadata route; exact dataset title and Ajuntament de València publisher checked on 2026-10-08.",
+      "url": "https://opendata.vlci.valencia.es/api/3/action/package_show?id=66a68351-aa61-42f3-8ae3-a6a4c924d164"
     },
     {
       "kind": "portal",
@@ -50,7 +52,7 @@
     "asset_inventory"
   ],
   "date_catalogued": "2026-09-29",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-08",
   "dedupe_keys": {
     "name": "punts wifi puntos wifi",
     "url": "https://valencia.opendatasoft.com/explore/dataset/punts-wifi-puntos-wifi"
@@ -85,7 +87,11 @@
     "attribution"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-08",
+    "dead": [
+      "https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/punts-wifi-puntos-wifi",
+      "https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/punts-wifi-puntos-wifi/exports/csv"
+    ]
   },
   "maturity": "active",
   "name": "Punts Wifi / Puntos Wifi",
@@ -102,9 +108,9 @@
   ],
   "sources": [
     {
-      "accessed": "2026-09-29",
-      "note": "Valencia open data portal catalogue entry read through the Opendatasoft hub export on 2026-09-29: title, description, keywords, theme, licence, dates, features; the data files were not opened",
-      "url": "https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/punts-wifi-puntos-wifi"
+      "accessed": "2026-10-08",
+      "note": "Current CKAN package metadata checked on 2026-10-08: exact dataset title, Ajuntament de València publisher and listed GeoJSON resource verified. No data resource was fetched.",
+      "url": "https://opendata.vlci.valencia.es/api/3/action/package_show?id=66a68351-aa61-42f3-8ae3-a6a4c924d164"
     },
     {
       "accessed": "2026-10-01",

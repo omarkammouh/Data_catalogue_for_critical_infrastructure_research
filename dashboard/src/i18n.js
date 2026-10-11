@@ -22,6 +22,7 @@
 
   const MESSAGES = {
     fr: {
+      "Catalogues": "Catalogues",
       "Skip to results": "Aller aux résultats",
       "Data catalogue for critical infrastructure research": "Data catalogue for critical infrastructure research", "Data catalogue for critical infrastructure research, home": "Data catalogue for critical infrastructure research, accueil",
       "Search the catalogue": "Rechercher dans le catalogue",
@@ -104,6 +105,7 @@
       "catalogue.status": "{n} fiches dans ce catalogue.",
     },
     de: {
+      "Catalogues": "Kataloge",
       "Skip to results": "Zu den Ergebnissen",
       "Data catalogue for critical infrastructure research": "Data catalogue for critical infrastructure research", "Data catalogue for critical infrastructure research, home": "Data catalogue for critical infrastructure research, Startseite",
       "Search the catalogue": "Katalog durchsuchen",
@@ -186,6 +188,7 @@
       "catalogue.status": "{n} Einträge in diesem Katalog.",
     },
     es: {
+      "Catalogues": "Catálogos",
       "Skip to results": "Ir a los resultados",
       "Data catalogue for critical infrastructure research": "Data catalogue for critical infrastructure research", "Data catalogue for critical infrastructure research, home": "Data catalogue for critical infrastructure research, inicio",
       "Search the catalogue": "Buscar en el catálogo",
@@ -277,6 +280,14 @@
    * Names that read the same in every language are listed in VOCAB_SAME (proper names, acronyms, formats).
    */
   const VOCAB = {
+    "View listed members": ["Voir les éléments répertoriés", "Aufgeführte Einträge anzeigen", "Ver elementos incluidos"],
+    "Data resource": ["Ressource de données", "Datenressource", "Recurso de datos"],
+    "Dataset": ["Jeu de données", "Datensatz", "Conjunto de datos"],
+    "Data catalogue": ["Catalogue de données", "Datenkatalog", "Catálogo de datos"],
+    "Information source": ["Source d’information", "Informationsquelle", "Fuente de información"],
+    "Not classified": ["Non classé", "Nicht klassifiziert", "Sin clasificar"],
+    "Open catalogue": ["Ouvrir le catalogue", "Katalog öffnen", "Abrir catálogo"],
+    "This links to an external catalogue. Its inventory may include resources outside our scope. A catalogue link does not mean that all its members are listed or checked here.": ["Ce lien ouvre un catalogue externe. Son inventaire peut inclure des ressources hors de notre périmètre. Le lien ne signifie pas que tous ses éléments sont répertoriés ou vérifiés ici.", "Dieser Link führt zu einem externen Katalog. Sein Bestand kann Ressourcen außerhalb unseres Umfangs enthalten. Der Link bedeutet nicht, dass alle Einträge hier aufgeführt oder geprüft sind.", "Este enlace abre un catálogo externo. Su inventario puede incluir recursos fuera de nuestro ámbito. El enlace no significa que todos sus elementos estén incluidos o revisados aquí."],
     "1 to 10 km": ["1 à 10 km", "1 bis 10 km", "1 a 10 km"],
     "10 to 100 m": ["10 à 100 m", "10 bis 100 m", "10 a 100 m"],
     "100 m to 1 km": ["100 m à 1 km", "100 m bis 1 km", "100 m a 1 km"],

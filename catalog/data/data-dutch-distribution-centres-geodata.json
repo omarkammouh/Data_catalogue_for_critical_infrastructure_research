@@ -27,13 +27,13 @@
     "asset_inventory"
   ],
   "date_catalogued": "2026-09-26",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-08",
   "dedupe_keys": {
     "name": "dutch distribution centres geodata logistics buildings 1980 2021 4tu researchdata",
     "url": "https://data.4tu.nl/datasets/61e28011-f96d-4b01-900e-15145b77ee59/2"
   },
-  "description": "This geodataset maps 26,951 logistics buildings in the Netherlands built before November 2021, with the business estates they sit in and the outline of the East-Southeast freight corridor, the busiest logistics area of the country. Logistics is defined broadly (trade, import, export, wholesale, transport and warehousing) and only buildings over 500 m2 are included, plus 4,533 large retail buildings on industrial sites and 782 buildings with logistics as a side activity. An earlier, partial version covers about 10,000 logistics buildings in the East-Southeast corridor measured between 1980 and 2020, showing that the building footprint quadrupled. The data were compiled by Merten Nefs for the Landscapes of Trade PhD research. Coverage is national for the Netherlands. The data are free under CC BY-SA 4.0 and available to download from 4TU.ResearchData (version 2, October 2023), with an interactive map with a timeline. Caveats: classification of buildings as logistics relies on the author's definition and sources, and the dataset is a research product without scheduled updates. It supports freight network flow and supply chain models that need the location and size of warehouses, and exposure analysis of logistics hubs. It complements the Netherlands CBS inland shipping freight statistics.",
-  "description_checked": "2026-09-26",
+  "description": "This geodataset maps 26,951 logistics buildings in the Netherlands built before November 2021, with their business estates and the East-Southeast freight-corridor outline. Merten Nefs compiled the resource with the collaborators named in the source. Logistics includes trade, import, export, wholesale, transport and warehousing. The inventory selects buildings above 500 square metres, adding 4,533 large retail buildings on industrial sites and 782 buildings with logistics co-activity. Manufacturing and recycling facilities are excluded unless a separate logistics company is registered. Native national-release metadata state time coverage of 1880-2021. The earlier corridor-only dataset remains a separate historical resource, and the source says the national dataset replaces it. Files include GeoPackage, shapefile, GeoJSON and CSV, with a PDF method. Access links and the CC BY-SA 4.0 licence are retained. LISA 2020 employment data determine building selection and the same function is assumed for 2021. Differences from LISA 2017 can be filtered using the Current attribute. A sample suggests approximately ten percent brownfield development and ninety percent greenfield development. The physical logistics locations and sizes can support the existing freight-flow and exposure uses; no simulation was reproduced. Geometry resolution, current file availability and classification accuracy were not independently checked.",
+  "description_checked": "2026-10-08",
   "discovery_routes": [
     {
       "date": "2026-09-26",
@@ -43,7 +43,11 @@
     }
   ],
   "formats": [
-    "other"
+    "geopackage",
+    "shapefile",
+    "geojson",
+    "csv",
+    "document"
   ],
   "geographic_scope": "national",
   "homepage": "https://data.4tu.nl/datasets/61e28011-f96d-4b01-900e-15145b77ee59/2",
@@ -56,10 +60,15 @@
     "share_alike"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-08",
+    "unverified": [
+      "https://data.4tu.nl/datasets/a4bd8536-a045-4d10-8d72-f8c430bf604e/2",
+      "https://data.4tu.nl/v2/articles/a4bd8536-a045-4d10-8d72-f8c430bf604e"
+    ]
   },
   "maturity": "active",
   "name": "Dutch Distribution Centres geodata (logistics buildings 1980-2021), 4TU.ResearchData",
+  "notes": "Native source title is Dutch Distribution Centres 2021 Geodata, DOI 10.4121/19361018.v2, UUID 61e28011-f96d-4b01-900e-15145b77ee59. Native Time coverage is 1880-2021. Prior catalogue coverage was 1980 to 2021; the unchanged historical source and link for the earlier corridor-only resource retain its separate identity. Original name and dedupe keys remain unchanged. Native DOI 10.4121/19361018.v2 is recorded as a source alias only; no DOI or dedupe identity field is replaced.",
   "provider": "Merten Nefs (TU Delft, Landscapes of Trade)",
   "related_ids": [
     "data-netherlands-cbs-inland-shipping-freight"
@@ -81,6 +90,11 @@
       "accessed": "2026-09-26",
       "note": "older partial version; about 10 thousand buildings in East-Southeast corridor 1980-2020; footprint quadrupled; interactive map; Landscapes of Trade PhD",
       "url": "https://data.4tu.nl/v2/articles/a4bd8536-a045-4d10-8d72-f8c430bf604e"
+    },
+    {
+      "accessed": "2026-10-08",
+      "note": "Full native member description, exact UUID/DOI/version, licence and selected custom fields read; no linked file body. Retrospective metadata field correction.",
+      "url": "https://data.4tu.nl/v2/articles/61e28011-f96d-4b01-900e-15145b77ee59"
     }
   ],
   "spatial_resolution": "individual buildings and business estates",
@@ -92,8 +106,8 @@
     "logistics",
     "freight corridor"
   ],
-  "temporal_coverage": "1980 to 2021",
-  "title_en": "Dutch Distribution Centres geodata (logistics buildings 1980-2021), 4TU.ResearchData",
+  "temporal_coverage": "1880-2021",
+  "title_en": "Netherlands logistics-building geodata for the national 2021 inventory",
   "type": "data",
   "update_frequency": "not_updated"
 }

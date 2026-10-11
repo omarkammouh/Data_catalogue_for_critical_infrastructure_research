@@ -7,8 +7,9 @@
     },
     {
       "kind": "api",
-      "label": "Provider endpoint of the real-time feed mdb-2924",
-      "url": "https://gtfs.kasznia.net/rt/pkpic.pb"
+      "label": "Publisher current PKP Intercity GTFS-RT endpoint (MKuran source)",
+      "note": "Native Kasznia feed publisher index explicitly labels old pkpic.pb PKP Intercity GTFS-RT deprecated and separately publishes current PKP Intercity GTFS-RT pkpicshim.pb. Same publisher/operator, protobuf GTFS-RT and realtime transit purpose, with documented source change from zbiorkom.live to mkuran.pl and Intercity announcements. Current endpoint HEAD/streamedGET200, zero bytes. Adopt operator-specific successor, not the broader all-Poland train feed. Actual trip/alert coverage or byte equivalence is not claimed.",
+      "url": "https://gtfs.kasznia.net/rt/pkpicshim.pb"
     }
   ],
   "access_restrictions": "none",
@@ -60,7 +61,10 @@
     "not_stated"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-01",
+    "dead": [
+      "https://gtfs.kasznia.net/rt/pkpic.pb"
+    ]
   },
   "maturity": "active",
   "name": "Polskie Koleje Państwowe Intercity (PKP Intercity): GTFS schedule and real-time transit data",
@@ -82,6 +86,11 @@
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Native Kasznia feed publisher index explicitly labels old pkpic.pb PKP Intercity GTFS-RT deprecated and separately publishes current PKP Intercity GTFS-RT pkpicshim.pb. Same publisher/operator, protobuf GTFS-RT and realtime transit purpose, with documented source change from zbiorkom.live to mkuran.pl and Intercity announcements. Current endpoint HEAD/streamedGET200, zero bytes. Adopt operator-specific successor, not the broader all-Poland train feed. Actual trip/alert coverage or byte equivalence is not claimed. Metadata and zero-body transport checks only.",
+      "url": "https://gtfs.kasznia.net/"
     }
   ],
   "tags": [

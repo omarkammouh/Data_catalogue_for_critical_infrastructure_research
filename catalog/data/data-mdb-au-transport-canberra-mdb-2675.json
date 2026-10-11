@@ -34,6 +34,11 @@
       "kind": "api",
       "label": "Provider endpoint of the real-time feed mdb-2677",
       "url": "https://transport.api.act.gov.au/gtfs/data/gtfs/v2/service-alerts.pb"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-936 (inactive)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-936"
     }
   ],
   "access_note": "At least one of the provider endpoints needs an API key or authentication header according to the listing.",
@@ -69,6 +74,12 @@
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -95,7 +106,7 @@
   },
   "maturity": "active",
   "name": "Transport Canberra: GTFS schedule and real-time transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 1 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Transport Canberra",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -112,6 +123,11 @@
     {
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],

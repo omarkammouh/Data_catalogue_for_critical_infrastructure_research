@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "ONS dataset and distribution list",
+      "url": "https://dados.ons.org.br/dataset/taxa_teif_teip_parametro"
+    },
+    {
+      "kind": "api",
+      "label": "ONS package metadata",
+      "note": "Metadata lists data-file URLs; no data files fetched.",
+      "url": "https://dados.ons.org.br/api/3/action/package_show?id=taxa_teif_teip_parametro"
+    },
+    {
+      "kind": "docs",
+      "label": "Provider JSON data dictionary",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/taxa_teif_teip_parametro/DicionarioDados_Taxa_Teifa_Teip_Parametro.json"
+    }
+  ],
+  "access_note": "Public metadata and available JSON dictionaries verified. Operational file access and row completeness were not tested.",
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "BR"
+  ],
+  "data_family": [
+    "service_performance"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-10-08",
+  "date_verified": "2026-10-08",
+  "dedupe_keys": {
+    "name": "taxas teifa e teip parametros",
+    "url": "https://dados.ons.org.br/dataset/taxa_teif_teip_parametro"
+  },
+  "description": "ONS publishes operating-hour parameters used to calculate equivalent forced and scheduled unavailability rates. The dictionary distinguishes plant and generating-unit identifiers, period, input type, parameter value and rate version. These inputs support reliability-rate reconstruction and plant-availability studies. They are calculation inputs, distinct from the published rate outcomes. Period length and unit-specific completeness must be checked before combining values. Coverage is generating plants and units in Brazil. The catalogue lists CSV, Excel and Parquet files; files are free under the provider's CC-BY terms, with no version specified. ONS requires attribution and disclosure of changes. Data contents were not downloaded; completeness is unknown, and published values may be revised. Related ONS TEIFa/TEIP rates provide the separately catalogued unavailability product.",
+  "description_checked": "2026-10-08",
+  "discovery_routes": [
+    {
+      "date": "2026-10-08",
+      "query": "Existing ONS entries -> complete 85-package catalogue -> exact and fuzzy duplicate review -> provider dictionaries.",
+      "route": "R06",
+      "source": "dados.ons.org.br"
+    }
+  ],
+  "formats": [
+    "csv",
+    "parquet",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://dados.ons.org.br/dataset/taxa_teif_teip_parametro",
+  "id": "data-ons-catalogue-taxa-teif-teip-parametro",
+  "languages": [
+    "pt"
+  ],
+  "last_updated": "2026-10-07",
+  "licence": "CC-BY (version not stated by provider)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-08"
+  },
+  "maturity": "unknown",
+  "name": "Taxas TEIFa E TEIP - Parâmetros",
+  "notes": "Native package UUID a5d91e3b-6b21-4a66-89f4-4017e4158c90.  Provider update schedule: Diariamento, as 12h e 19h. Metadata modification date is not the date of every observation. Simulation-use tags are curator assessments from the stated physical quantities. Distinct aggregation products can share underlying observations; this count does not imply independent measurements.",
+  "provider": "Operador Nacional do Sistema Elétrico (ONS)",
+  "regions": [],
+  "related_ids": [
+    "data-ons-taxas-teifa-e-teip"
+  ],
+  "schema_summary": "nom_usina: Nome da Usina; id_tipousina: Tipo da Usina; nom_unidadegeradora: Nome da Unidade Geradora; cod_ceg: Código Único do Empreendimento de Geração (CEG), estabelecido pela ANEEL; dat_periodo: Data do Período; nom_tpinsumo: Nome do Tipo de Insumo; val_parametro: Valor do Parâmetro; num_versao: Número da Versão da Taxa",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-08",
+      "note": "Exact package UUID, original title, description, distribution descriptors, licence and update metadata; continuation 31 inventory reused.",
+      "url": "https://dados.ons.org.br/api/3/action/package_search?rows=1000"
+    },
+    {
+      "accessed": "2026-10-08",
+      "note": "Dictionary field definitions read; no operational data rows obtained.",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/taxa_teif_teip_parametro/DicionarioDados_Taxa_Teifa_Teip_Parametro.json"
+    }
+  ],
+  "spatial_resolution": "generating plants and units",
+  "tags": [],
+  "temporal_coverage": "Provider distribution labels span 2020–2026; contents and continuity were not inspected.",
+  "temporal_resolution": "not established",
+  "title_en": "ONS Operating-Hour Inputs to Plant Unavailability Rates",
+  "type": "data",
+  "update_frequency": "sub_daily"
+}

@@ -44,7 +44,8 @@
     },
     {
       "kind": "portal",
-      "label": "open.canada.ca dataset page",
+      "label": "Former page (HTTP 404; replaced 2026-10-07): open.canada.ca dataset page",
+      "note": "Retained as dead-link history; see link_health and the homepage repair audit.",
       "url": "https://open.canada.ca/data/en/dataset/f462570a-5c2e-40f7-b713-8335faecf4b7"
     },
     {
@@ -61,6 +62,11 @@
       "kind": "portal",
       "label": "Bicycle network - City of Shawinigan",
       "url": "https://open.canada.ca/data/en/dataset/53fc8007-8fb0-4baf-a8a0-fd1d006893d2"
+    },
+    {
+      "kind": "portal",
+      "label": "Données Québec current dataset page",
+      "url": "https://donneesquebec.ca/recherche/dataset/03617e6934ea47fc8cbb86031835d060_1"
     }
   ],
   "access_restrictions": "none",
@@ -79,7 +85,7 @@
     "network_topology"
   ],
   "date_catalogued": "2026-09-30",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-07",
   "dedupe_keys": {
     "name": "bicycle network city of shawinigan",
     "url": "https://open.canada.ca/data/en/dataset/f462570a-5c2e-40f7-b713-8335faecf4b7"
@@ -101,7 +107,7 @@
     "shapefile"
   ],
   "geographic_scope": "regional",
-  "homepage": "https://open.canada.ca/data/en/dataset/f462570a-5c2e-40f7-b713-8335faecf4b7",
+  "homepage": "https://donneesquebec.ca/recherche/dataset/03617e6934ea47fc8cbb86031835d060_1",
   "id": "data-am-canada-bicycle-network-city-of-shawinigan",
   "languages": [
     "en"
@@ -112,7 +118,23 @@
     "attribution"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-07",
+    "dead": [
+      "https://open.canada.ca/data/en/dataset/f462570a-5c2e-40f7-b713-8335faecf4b7"
+    ],
+    "dead_since": "2026-10-07",
+    "unverified": [
+      "https://cartes.shawinigan.ca/server/rest/services/R%C3%A9seau_cyclable/FeatureServer/0/query?where=1=1&outFields=*&returnGeometry=true&f=geojson",
+      "https://geoweb.shawinigan.ca/arcgis/services/Open_Data/PistesCyclables_WFS/MapServer/WFSServer?&service=WFS&request=GetFeature&typename=Open_Data_PistesCyclables_WFS:Pistes_cyclables&outputFormat=CSV&srsname=urn:ogc:def:crs:EPSG::32188&crsname=urn:ogc:def:crs:EPSG::32188",
+      "https://geoweb.shawinigan.ca/arcgis/services/Open_Data/PistesCyclables_WFS/MapServer/WFSServer?&service=WFS&request=GetFeature&typename=Open_Data_PistesCyclables_WFS:Pistes_cyclables&outputFormat=GEOJSON&srsname=EPSG:4326&crsname=EPSG:4326",
+      "https://geoweb.shawinigan.ca/arcgis/services/Open_Data/PistesCyclables_WFS/MapServer/WFSServer?&service=WFS&request=GetFeature&typename=Open_Data_PistesCyclables_WFS:Pistes_cyclables&outputFormat=SHAPE+ZIP&srsname=urn:ogc:def:crs:EPSG::32188&crsname=urn:ogc:def:crs:EPSG::32188",
+      "https://open.canada.ca/data/en/dataset/53fc8007-8fb0-4baf-a8a0-fd1d006893d2",
+      "https://open.canada.ca/data/en/dataset/5afd394d-b6bb-4fd3-8eda-db071cdf2bd3",
+      "https://open.canada.ca/data/en/dataset/cc22af97-fe94-45d2-b892-9bb583a8f45b",
+      "https://www.donneesquebec.ca/recherche/dataset/5afd394d-b6bb-4fd3-8eda-db071cdf2bd3/resource/25d3466b-67e1-47d8-8e7e-77700001bfa1/download/piste_cyclable.zip",
+      "https://www.donneesquebec.ca/recherche/dataset/5afd394d-b6bb-4fd3-8eda-db071cdf2bd3/resource/5ac52321-f91e-441a-a305-a168f935de1f/download/piste_cyclable.csv",
+      "https://www.donneesquebec.ca/recherche/dataset/5afd394d-b6bb-4fd3-8eda-db071cdf2bd3/resource/c13f609b-e984-462d-aef2-4e46c4fa556a/download/pistescyclables.json"
+    ]
   },
   "maturity": "active",
   "name": "Bicycle network - City of Shawinigan",
@@ -135,6 +157,11 @@
       "accessed": "2026-09-30",
       "note": "open.canada.ca catalogue entry read through the CKAN API on 2026-09-30: title, description, tags, licence, formats, dates; the data files were not opened",
       "url": "https://open.canada.ca/data/en"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Current Données Québec dataset page checked on 2026-10-07. The page title is “Réseau cyclable - Ville de Shawinigan”; its current portal record maps to Open Government Portal identifier cc22af97-fe94-45d2-b892-9bb583a8f45b, already recorded among this grouped record’s related source pages. No data files were opened.",
+      "url": "https://donneesquebec.ca/recherche/dataset/03617e6934ea47fc8cbb86031835d060_1"
     }
   ],
   "tags": [

@@ -23,7 +23,8 @@
     {
       "kind": "download",
       "label": "Provider download of the schedule feed mdb-748",
-      "url": "https://exo.quebec/xdata/trains/google_transit.zip"
+      "note": "Verified replacement on 2026-10-09: The current first-party Exo open-data page explicitly publishes this current GTFS download for Trains - exo 11, exo 12, exo 13, exo 14, exo 15 et exo 16. The provider sector ID and GTFS archive purpose match the old /xdata route. It is a continuing schedule series, not a saved historical-year edition. Archive bytes were not read or compared.",
+      "url": "https://exo.quebec/uploads/ressources-telechargeables/a-propos/donnees-ouvertes/trains/google_transit.zip"
     },
     {
       "kind": "download",
@@ -39,6 +40,31 @@
       "kind": "api",
       "label": "Provider endpoint of the real-time feed mdb-3016",
       "url": "https://exo.chrono-saeiv.com/api/opendata/v1/TRAINS/tripupdate"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1333 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/mdb-1333"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1334 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/mdb-1334"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1335 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/mdb-1335"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tfs-128 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tfs-128"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tfs-129 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tfs-129"
     }
   ],
   "access_note": "At least one of the provider endpoints needs an API key or authentication header according to the listing.",
@@ -74,6 +100,12 @@
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -91,7 +123,10 @@
     "not_stated"
   ],
   "link_health": {
-    "checked": "2026-10-01",
+    "checked": "2026-10-09",
+    "dead": [
+      "https://exo.quebec/xdata/trains/google_transit.zip"
+    ],
     "unverified": [
       "https://exo.chrono-saeiv.com/api/opendata/v1/TRAINS/alert",
       "https://exo.chrono-saeiv.com/api/opendata/v1/TRAINS/tripupdate"
@@ -99,7 +134,7 @@
   },
   "maturity": "active",
   "name": "Exo: GTFS schedule and real-time transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 5 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Exo",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -116,6 +151,11 @@
     {
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],

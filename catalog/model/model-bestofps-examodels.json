@@ -8,9 +8,9 @@
     },
     {
       "kind": "docs",
-      "label": "Legacy ExaModels documentation (dead; retained for audit)",
-      "note": "Returned HTTP 404 on 2026-10-03. The current official repository README links to the stable documentation below.",
-      "url": "https://exanauts.github.io/ExaModels.jl/stable/"
+      "label": "Current ExaModels documentation (stable)",
+      "note": "Verified replacement on 2026-10-09. GitHub repository stable ID 620499981 resolves old exanauts owner to madsuite-org/ExaModels.jl. Existing primary README source evidence identifies current stable route; that route redirects to madsuite.org stable documentation, HTTP 200. Original URL retained in link_health.dead and original dated sources remain unchanged.",
+      "url": "https://madsuite.org/ExaModels.jl/stable/"
     },
     {
       "kind": "docs",
@@ -20,15 +20,9 @@
     },
     {
       "kind": "paper",
-      "label": "Invalid placeholder retained for audit (Paper 1)",
-      "note": "confirmed HTTP 404 on 2026-10-03. This malformed DOI placeholder is retained as link-history evidence; use the separate associated paper link at https://doi.org/10.1016/j.epsr.2024.110651.",
-      "url": "https://doi.org/1"
-    },
-    {
-      "kind": "paper",
-      "label": "Wrong-target DOI placeholder (HTTP 200; retained for audit)",
-      "note": "HTTP 200, but page inspection showed DOI Name Values for DOI 0 and handle 0.NA/0.NA, not the record's associated paper. Marked as a human-confirmed wrong target; the URL remains in the catalogue for audit and the associated paper DOI is separate. Use the separate associated paper link at https://doi.org/10.1016/j.epsr.2024.110651.",
-      "url": "https://doi.org/0"
+      "label": "Associated paper, publisher landing route",
+      "note": "Verified replacement on 2026-10-09. Crossref DOI 10.1016/j.epsr.2024.110651 binds Accelerating optimal power flow with GPUs: SIMD abstraction of nonlinear programs and condensed-space interior-point methods. Fresh DOI redirect binds exact Elsevier PII S0378779624005376 and returns HTTP 200 HTML. No article body downloaded. Original URL retained in link_health.dead and original dated sources remain unchanged.",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0378779624005376"
     },
     {
       "kind": "paper",
@@ -73,7 +67,7 @@
     "permissive_code"
   ],
   "link_health": {
-    "checked": "2026-10-03",
+    "checked": "2026-10-10",
     "dead": [
       "https://doi.org/0",
       "https://doi.org/1",
@@ -89,7 +83,7 @@
     "optimisation"
   ],
   "name": "ExaModels",
-  "notes": "Harvested from the best-of-ps list (projects.yaml and generated README) on 2026-09-29 at the user's request to include every entry of the related catalogues.",
+  "notes": "Harvested from the best-of-ps list (projects.yaml and generated README) on 2026-09-29 at the user's request to include every entry of the related catalogues. 2026-10-10 link repair: Wrong-target DOI placeholder replaced by the exact associated-paper link; original node preserved in the durable repair audit. Associated-paper landing reachability only. No paper body or PDF was read; no historic byte/version equivalence or operation claim. Existing explicit published/preprint version limits remain.",
   "outputs": [
     "As documented in the project repository or documentation; not read"
   ],
@@ -115,6 +109,11 @@
       "accessed": "2026-10-03",
       "note": "Current official repository README links to the stable and development documentation sites; the old documentation route returned HTTP 404.",
       "url": "https://raw.githubusercontent.com/madsuite-org/ExaModels.jl/main/README.md"
+    },
+    {
+      "accessed": "2026-10-10",
+      "note": "Exact associated-paper identity bound to registered DOI 10.1016/j.epsr.2024.110651. Fresh zero-body GET reached HTTP 200. Associated-paper landing reachability only. No paper body or PDF was read; no historic byte/version equivalence or operation claim. Existing explicit published/preprint version limits remain.",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0378779624005376"
     }
   ],
   "tags": [

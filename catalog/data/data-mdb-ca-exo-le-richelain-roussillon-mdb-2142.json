@@ -3,7 +3,8 @@
     {
       "kind": "download",
       "label": "Provider download of the schedule feed mdb-2142",
-      "url": "https://exo.quebec/xdata/lrrs/google_transit.zip"
+      "note": "Verified replacement on 2026-10-09: The current first-party Exo open-data page explicitly publishes this current GTFS download for Autobus - Secteur Le Richelain et Roussillon. The provider sector ID and GTFS archive purpose match the old /xdata route. It is a continuing schedule series, not a saved historical-year edition. Archive bytes were not read or compared.",
+      "url": "https://exo.quebec/uploads/ressources-telechargeables/a-propos/donnees-ouvertes/lrrs/google_transit.zip"
     },
     {
       "kind": "download",
@@ -14,6 +15,21 @@
       "kind": "portal",
       "label": "Mobility Database page of the schedule feed mdb-2142",
       "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-2142"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-746 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-746"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tfs-135 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tfs-135"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tfs-136 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tfs-136"
     }
   ],
   "access_restrictions": "none",
@@ -46,6 +62,12 @@
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -63,11 +85,14 @@
     "provider_terms"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-09",
+    "dead": [
+      "https://exo.quebec/xdata/lrrs/google_transit.zip"
+    ]
   },
   "maturity": "active",
   "name": "Exo Le Richelain / Roussillon: GTFS transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 3 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Exo Le Richelain / Roussillon",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -84,6 +109,11 @@
     {
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],

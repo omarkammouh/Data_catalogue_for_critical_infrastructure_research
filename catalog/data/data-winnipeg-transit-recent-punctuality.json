@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Provider catalogue entry",
+      "url": "https://data.winnipeg.ca/Transit/Recent-Transit-On-Time-Performance-Data/gp3k-am4u"
+    },
+    {
+      "kind": "api",
+      "label": "Dataset metadata",
+      "note": "Metadata response verified; no data rows or export bodies requested.",
+      "url": "https://data.winnipeg.ca/api/views/gp3k-am4u.json"
+    }
+  ],
+  "access_note": "Public metadata access verified; distribution usability not tested. Conflicting Canada/Winnipeg licence labels retained; resolve applicable provider terms before reuse.",
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CA"
+  ],
+  "data_family": [
+    "service_performance"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-10-08",
+  "date_verified": "2026-10-08",
+  "dedupe_keys": {
+    "name": "recent transit on time performance data",
+    "url": "https://data.winnipeg.ca/Transit/Recent-Transit-On-Time-Performance-Data/gp3k-am4u"
+  },
+  "description": "Winnipeg Transit publishes the most recent month of stop-departure observations from onboard computers and GPS. The schema contains scheduled time, stop, route, destination, location and departure deviation in seconds. Negative deviation means late and positive deviation means early. These observations can support calibration of transit travel and waiting-time models. The provider warns of missing records caused by transmission problems and erroneous records caused by GPS or other faults. The resource is a rolling recent view; the separately catalogued archive is an index of historical files. The exact temporal overlap between them is unverified, so they must not be concatenated without checking dates and event identities. Coverage follows the provider-described Winnipeg system. Public catalogue pages and JSON metadata are free to access. The standard licence field names the Canada Open Government Licence, while custom metadata names the Winnipeg licence. Their equivalence is unverified. Data rows and export bodies were not fetched; distribution usability remains unverified. Related Winnipeg Transit GTFS describes scheduled service.",
+  "description_checked": "2026-10-08",
+  "discovery_routes": [
+    {
+      "date": "2026-10-08",
+      "query": "Existing entries -> parent catalogue -> complete public metadata inventory -> individual member review.",
+      "route": "R06",
+      "source": "source-data.winnipeg.ca"
+    }
+  ],
+  "formats": [
+    "json",
+    "web_page"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://data.winnipeg.ca/Transit/Recent-Transit-On-Time-Performance-Data/gp3k-am4u",
+  "id": "data-winnipeg-transit-recent-punctuality",
+  "languages": [
+    "en"
+  ],
+  "licence": "See Terms of Use",
+  "licence_type": [
+    "conflicting"
+  ],
+  "link_health": {
+    "checked": "2026-10-08"
+  },
+  "maturity": "unknown",
+  "name": "Recent Transit On-Time Performance Data",
+  "notes": "Simulation use is curator-assigned from source-defined contents. Full-corpus exact comparison and targeted fuzzy/geographic review found no equivalent active record. Provider timestamps do not establish the date of every observation.",
+  "provider": "City of Winnipeg",
+  "regions": [
+    "Winnipeg, Manitoba"
+  ],
+  "related_ids": [
+    "data-mdb-ca-winnipeg-transit-mdb-717"
+  ],
+  "schema_summary": "Row ID; Stop Number; Route Number; Route Name; Route Destination; Day Type; Scheduled Time; Deviation; Location",
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "agent_based"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-08",
+      "note": "Original identity, provider description and native catalogue membership.",
+      "url": "https://data.winnipeg.ca/Transit/Recent-Transit-On-Time-Performance-Data/gp3k-am4u"
+    },
+    {
+      "accessed": "2026-10-08",
+      "note": "Exact native ID, field definitions and source licence; metadata GET and landing HEAD returned HTTP 200.",
+      "url": "https://data.winnipeg.ca/api/views/gp3k-am4u.json"
+    }
+  ],
+  "tags": [],
+  "temporal_coverage": "Provider-described coverage in description; full distribution interval unverified",
+  "temporal_resolution": "event",
+  "title_en": "Winnipeg Transit Recent Stop Departure Punctuality",
+  "type": "data",
+  "update_frequency": "daily"
+}

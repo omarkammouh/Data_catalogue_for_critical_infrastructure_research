@@ -9,30 +9,46 @@
       "kind": "portal",
       "label": "dati.gov.it dataset page",
       "url": "https://www.dati.gov.it/view-dataset?id=e98bb293-6e8d-45a5-973a-76ccd900c751"
+    },
+    {
+      "kind": "api",
+      "label": "Puglia exact lighting-consumption metadata",
+      "url": "https://dati.puglia.it/ckan/api/3/action/package_show?id=0e6c7fa2-4827-4dc7-9106-565e003d7131"
+    },
+    {
+      "kind": "download",
+      "label": "Consumi energetici  pubblica illuminazione  03/2018 - 03/2019 (CSV)",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vS1IZMTYubFDfeeEJTA7_4M1Qqf56N5fF6FoMdscrGFb53yP-KYDGG8pA9yXSkvn4VmRgKfIhNyT8y2/pub?gid=0&single=true&output=csv"
+    },
+    {
+      "kind": "download",
+      "label": "Consumi energetici  pubblica illuminazione  03/2018 - 03/2019 (XLSX)",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vS1IZMTYubFDfeeEJTA7_4M1Qqf56N5fF6FoMdscrGFb53yP-KYDGG8pA9yXSkvn4VmRgKfIhNyT8y2/pub?output=xlsx"
     }
   ],
-  "access_restrictions": "none",
+  "access_note": "Native national and regional metadata are public. Later file-use charges, detailed access conditions and current completeness remain unknown.",
+  "access_restrictions": "unknown",
   "continents": [
     "europe"
   ],
-  "cost": "free",
+  "cost": "unknown",
   "countries": [
     "IT"
   ],
   "data_family": [
-    "system_description"
+    "demand_operation"
   ],
   "data_kind": [
     "tabular"
   ],
   "date_catalogued": "2026-09-29",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-09",
   "dedupe_keys": {
     "name": "consumi energia elettrica pubblica illuminazione 03 2018 03 2019",
     "url": "https://dati.gov.it/view-dataset?id=e98bb293-6e8d-45a5-973a-76ccd900c751"
   },
-  "description": "Consumi Energia Elettrica Pubblica Illuminazione 03/2018 - 03/2019 is a dataset listed in Italian national open data portal, an open data portal, published or maintained by Regione Puglia. Consumo di energia elettrica della pubblica illuminazione relativo al periodo 03/2018-03/2019 calcolato in KWh rilasciato in CSV. Coverage: Regione Puglia. The portal files it under the publisher Regione Puglia. Its tags are consumi-elettrici, consumi-pubblica, energia-elettrica. It offers 2 resource(s) in CSV, XLSX. The portal shows 2026-09-29 as the last metadata change. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is CC-BY-4.0. Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support electricity network, generation and charging-infrastructure studies. Related record: the catalogue-level record data-ckan-it-portal.",
-  "description_checked": "2026-09-29",
+  "description": "The Municipality of Lecce publishes electricity consumption for its public-lighting system from March 2018 to March 2019, expressed in kWh. The national and Puglia listings share the exact municipal dataset GUID and the same CSV and spreadsheet distribution URLs, establishing that they describe one resource. The distributions are alternate representations and must not be counted twice. The source does not define meter-level geometry, temporal sampling within the stated period, circuit topology, lamp capacity or detailed schema. Coverage is the municipal lighting service in Lecce, Italy. The regional publisher is the municipality; the national portal records Regione Puglia as the harvesting source. Native metadata declares the CC BY 4.0 licence. Metadata are public, but later file-use costs and present completeness remain unverified. No specific simulation application is established, so the earlier capacity-planning label is removed. Related records describe the national catalogue and a separate Lecce lighting-consumption series for 2006–2012; continuity of definitions between periods is not established. No energy values or file bodies were read.",
+  "description_checked": "2026-10-09",
   "discovery_routes": [
     {
       "date": "2026-09-29",
@@ -45,7 +61,7 @@
     "csv",
     "spreadsheet"
   ],
-  "geographic_scope": "regional",
+  "geographic_scope": "city",
   "homepage": "https://www.dati.gov.it/view-dataset?id=e98bb293-6e8d-45a5-973a-76ccd900c751",
   "id": "data-ckan-it-consumi-energia-elettrica-pubblica-illuminazione-03-2018-03-2019",
   "languages": [
@@ -57,29 +73,35 @@
     "attribution"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-09",
+    "dead": [],
+    "unverified": []
   },
   "maturity": "active",
   "name": "Consumi Energia Elettrica Pubblica Illuminazione 03/2018 - 03/2019",
-  "notes": "Harvested from the dati.gov.it CKAN API on 2026-09-29 as part of the third portal harvest.",
-  "provider": "Regione Puglia",
+  "notes": "Harvested from the dati.gov.it CKAN API on 2026-09-29 as part of the third portal harvest. Source correction2026-10-09: municipality, scope, unknown use/cost and explicit native mirror identity verified without data bodies.",
+  "provider": "Comune di Lecce",
   "regions": [
-    "Regione Puglia"
+    "Lecce"
   ],
   "related_ids": [
-    "data-ckan-it-portal"
+    "data-ckan-it-portal",
+    "data-lecce-street-lighting-electricity-2006-2012"
   ],
   "sectors": [
     "energy.electricity"
   ],
-  "simulation_uses": [
-    "capacity_planning"
-  ],
+  "simulation_uses": [],
   "sources": [
     {
       "accessed": "2026-09-29",
       "note": "dati.gov.it catalogue entry read through the CKAN API on 2026-09-29: title, description, tags, licence, formats, dates; the data files were not opened",
       "url": "https://www.dati.gov.it/opendata/api/3/action/package_show?id=e98bb293-6e8d-45a5-973a-76ccd900c751"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Native municipal GUID http://dati.comune.lecce.it/dataset/75fa2c4e-0277-476b-a27a-46b5a67f18ab and both distribution URLs exactly match the national e98bb293 member; title/full description and municipal publisher checked.",
+      "url": "https://dati.puglia.it/ckan/api/3/action/package_show?id=0e6c7fa2-4827-4dc7-9106-565e003d7131"
     }
   ],
   "tags": [
@@ -88,6 +110,7 @@
     "consumi-pubblica",
     "energia-elettrica"
   ],
+  "temporal_coverage": "March2018–March2019, as labelled by the source",
   "title_en": "Electricity Consumption Public Lighting 03/2018 - 03/2019",
   "type": "data"
 }

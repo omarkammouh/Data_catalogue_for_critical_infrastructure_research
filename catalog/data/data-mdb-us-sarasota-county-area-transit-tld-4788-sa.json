@@ -31,6 +31,16 @@
       "label": "Direct download (PB)",
       "note": "Checked 2026-10-01: returns application/x-protobuf directly.",
       "url": "https://breezerider.tripsparkhost.com/gtfs/Realtime/GTFS_VehiclePositions.pb"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-327 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-327"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tld-351 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tld-351"
     }
   ],
   "access_restrictions": "none",
@@ -65,6 +75,12 @@
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -86,7 +102,7 @@
   },
   "maturity": "active",
   "name": "Sarasota County Area Transit: GTFS schedule and real-time transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 2 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Sarasota County Area Transit",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -109,6 +125,11 @@
       "accessed": "2026-10-01",
       "note": "Links updated in the round-2 deep check (checker A2): added 1 verified direct data link(s) from the provider's resource list. Verified: https://breezerider.tripsparkhost.com/gtfs/Realtime/GTFS_TripUpdates.p -> verified by fetch during the check; https://breezerider.tripsparkhost.com/gtfs/Realtime/GTFS_VehiclePositi -> verified by fetch during the check",
       "url": "https://breezerider.tripsparkhost.com/gtfs/Realtime/GTFS_TripUpdates.pb"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],
   "tags": [

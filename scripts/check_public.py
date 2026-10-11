@@ -20,5 +20,10 @@ for p in public_files():
 meta=json.loads((ROOT/'.zenodo.json').read_text());citation=yaml.safe_load((ROOT/'CITATION.cff').read_text())
 if meta['title']!=citation['title'] or meta['version']!=citation['version']:errors.append('Citation metadata disagree')
 if citation['version']!=json.loads((ROOT/'catalog/snapshot.json').read_text())['version']:errors.append('Snapshot version disagrees')
+current=ROOT/'catalog/dashboard-snapshot.json'
+if current.exists():
+    snapshot=json.loads(current.read_text())
+    counts={kind:len(list((ROOT/'catalog'/kind).glob('*.json'))) for kind in ('data','model','platform','case_study')}
+    if snapshot['records']!=sum(counts.values()) or snapshot['by_type']!=counts:errors.append('Current dashboard snapshot counts disagree with record files')
 if errors:print('\n'.join(errors));sys.exit(1)
 print('Public metadata and file checks passed')

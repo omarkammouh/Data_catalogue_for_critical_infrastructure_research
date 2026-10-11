@@ -14,6 +14,16 @@
       "kind": "download",
       "label": "Latest copy archived by the Mobility Database (mdb-2057)",
       "url": "https://files.mobilitydatabase.org/mdb-2057/latest.zip"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1037 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-1037"
+    },
+    {
+      "kind": "portal",
+      "label": "CP historical 2019 GTFS snapshot (ILU)",
+      "url": "https://zenodo.org/records/18830688"
     }
   ],
   "access_restrictions": "none",
@@ -33,19 +43,25 @@
     "tabular"
   ],
   "date_catalogued": "2026-09-29",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-09",
   "dedupe_keys": {
     "name": "cp comboios de portugal gtfs transit data",
     "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-2057"
   },
-  "description": "CP - Comboios de Portugal: GTFS transit data is a dataset listed in Mobility Database, a catalogue of GTFS and GTFS Realtime transit feeds, published or maintained by CP - Comboios de Portugal. Public transport schedule data (routes, stops, trips and stop times in the General Transit Feed Specification) for Cascais e Estoril, Lisbon, Portugal. Coverage: Cascais e Estoril, Lisbon, Portugal. The Mobility Database lists 1 GTFS schedule feed for this provider (Cascais e Estoril, Lisbon, Portugal). The schedule feeds declare these GTFS features: Headsigns, Location Types, Route Colors, Stops Wheelchair Accessibility, Trips Wheelchair Accessibility. At least one feed is marked as published by the operator itself. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is not stated in the Mobility Database listing (licence field empty). Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support public transport network, accessibility and demand studies. Related record: the catalogue-level record data-mobility-database-mobilitydata.",
-  "description_checked": "2026-09-29",
+  "description": "CP - Comboios de Portugal: GTFS transit data is a dataset listed in Mobility Database, a catalogue of GTFS and GTFS Realtime transit feeds, published or maintained by CP - Comboios de Portugal. Public transport schedule data (routes, stops, trips and stop times in the General Transit Feed Specification) for Cascais e Estoril, Lisbon, Portugal. Coverage: Cascais e Estoril, Lisbon, Portugal. The Mobility Database lists 1 GTFS schedule feed for this provider (Cascais e Estoril, Lisbon, Portugal). The schedule feeds declare these GTFS features: Headsigns, Location Types, Route Colors, Stops Wheelchair Accessibility, Trips Wheelchair Accessibility. At least one feed is marked as published by the operator itself. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is not stated in the Mobility Database listing (licence field empty). Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support public transport network, accessibility and demand studies. Related record: the catalogue-level record data-mobility-database-mobilitydata. An ILU catalogue deposit supplies a separate 2019 CP GTFS snapshot originally collected from the discontinued Transporlis service. It is a historical route to stops, routes, trips, schedules and geometry; it is not asserted identical to the current feed or valid for present service. The native agency-file boilerplate incorrectly names Lisbon Metro; provider identity follows the deposit title, creator and project metadata row, with file contents unverified.",
+  "description_checked": "2026-10-09",
   "discovery_routes": [
     {
       "date": "2026-09-29",
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -63,11 +79,11 @@
     "not_stated"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-09"
   },
   "maturity": "active",
   "name": "CP - Comboios de Portugal: GTFS transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 1 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved. Historical ILU snapshot component added2026-10-09; no current-feed equivalence or service-operation assertion.",
   "provider": "CP - Comboios de Portugal",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -85,6 +101,16 @@
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Native metadata and project 19747120 dataset metadata row reviewed; no GTFS values/archive read.",
+      "url": "https://zenodo.org/api/records/18830688"
     }
   ],
   "tags": [

@@ -2,8 +2,9 @@
   "access_links": [
     {
       "kind": "api",
-      "label": "Service (WFS_SRVC)",
-      "url": "https://opengis.csi.it/ws/cmtogis/cmto-01/cmtowmsniger/wfs_zone_omogenee"
+      "label": "Turin homogeneous zones WFS capabilities",
+      "note": "Verified link relocation on 2026-10-09. Official data.europa.eu and Torino GeoNetwork metadata identify the homogeneous zones of the Metropolitan City of Turin and describe the associated WFS service. Current WFS capabilities list feature type ms:Zone_omogenee titled Zone_omogenee. The old saved base URL has no WFS request parameters and returns 404. The capabilities route works and lists the expected feature type, but no GetFeature request was made.",
+      "url": "https://opengis.csi.it/ws/cmtogis/cmto-01/cmtowmsniger/wfs_zone_omogenee?SERVICE=WFS&REQUEST=GetCapabilities"
     },
     {
       "kind": "api",
@@ -61,7 +62,10 @@
     "not_stated"
   ],
   "link_health": {
-    "checked": "2026-10-01",
+    "checked": "2026-10-09",
+    "dead": [
+      "https://opengis.csi.it/ws/cmtogis/cmto-01/cmtowmsniger/wfs_zone_omogenee"
+    ],
     "unverified": [
       "https://opengis.csi.it/ws/cmtogis/cmto-01/cmtowmsniger/wfs_zone_omogenee",
       "https://opengis.csi.it/ws/cmtogis/cmto-01/cmtowmsniger/wms_zone_omogenee?service=WMS&request=GetCapabilities"

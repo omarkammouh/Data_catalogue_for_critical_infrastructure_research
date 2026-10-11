@@ -1,0 +1,98 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Provider catalogue entry",
+      "url": "https://data.winnipeg.ca/Transit/Transit-Pass-ups/mer2-irmb"
+    },
+    {
+      "kind": "api",
+      "label": "Dataset metadata",
+      "note": "Metadata response verified; no data rows or export bodies requested.",
+      "url": "https://data.winnipeg.ca/api/views/mer2-irmb.json"
+    }
+  ],
+  "access_note": "Public metadata access verified; distribution usability not tested. Conflicting Canada/Winnipeg licence labels retained; resolve applicable provider terms before reuse.",
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "CA"
+  ],
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "event_record"
+  ],
+  "date_catalogued": "2026-10-08",
+  "date_verified": "2026-10-08",
+  "dedupe_keys": {
+    "name": "transit pass ups",
+    "url": "https://data.winnipeg.ca/Transit/Transit-Pass-ups/mer2-irmb"
+  },
+  "description": "Winnipeg Transit publishes events where passengers could not board a bus. Operators log an event when a bus is full or a wheelchair user cannot be accommodated because of crowding or occupied wheelchair positions. The schema includes event identifiers, time, type, route, destination and location. These observations can support capacity and service-accessibility simulation. The provider states that updates occur daily, but the records depend on an operator pressing a button. Recorded coordinates locate the bus at that moment and may differ from the stop where the passenger was passed. The metadata does not establish complete reporting, the number of affected passengers per event or the duration of their subsequent wait. Coverage follows the provider-described Winnipeg system. Public catalogue pages and JSON metadata are free to access. The standard licence field names the Canada Open Government Licence, while custom metadata names the Winnipeg licence. Their equivalence is unverified. Data rows and export bodies were not fetched; distribution usability remains unverified. Related Winnipeg Transit GTFS describes scheduled service.",
+  "description_checked": "2026-10-08",
+  "discovery_routes": [
+    {
+      "date": "2026-10-08",
+      "query": "Existing entries -> parent catalogue -> complete public metadata inventory -> individual member review.",
+      "route": "R06",
+      "source": "source-data.winnipeg.ca"
+    }
+  ],
+  "formats": [
+    "json",
+    "web_page"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://data.winnipeg.ca/Transit/Transit-Pass-ups/mer2-irmb",
+  "id": "data-winnipeg-transit-pass-ups",
+  "languages": [
+    "en"
+  ],
+  "licence": "See Terms of Use",
+  "licence_type": [
+    "conflicting"
+  ],
+  "link_health": {
+    "checked": "2026-10-08"
+  },
+  "maturity": "unknown",
+  "name": "Transit Pass-ups",
+  "notes": "Simulation use is curator-assigned from source-defined contents. Full-corpus exact comparison and targeted fuzzy/geographic review found no equivalent active record. Provider timestamps do not establish the date of every observation.",
+  "provider": "City of Winnipeg",
+  "regions": [
+    "Winnipeg, Manitoba"
+  ],
+  "related_ids": [
+    "data-mdb-ca-winnipeg-transit-mdb-717"
+  ],
+  "schema_summary": "Pass-Up ID; Pass-Up Type; Time; Route Number; Route Name; Route Destination; Location",
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-08",
+      "note": "Original identity, provider description and native catalogue membership.",
+      "url": "https://data.winnipeg.ca/Transit/Transit-Pass-ups/mer2-irmb"
+    },
+    {
+      "accessed": "2026-10-08",
+      "note": "Exact native ID, field definitions and source licence; metadata GET and landing HEAD returned HTTP 200.",
+      "url": "https://data.winnipeg.ca/api/views/mer2-irmb.json"
+    }
+  ],
+  "tags": [],
+  "temporal_coverage": "Provider-described coverage in description; full distribution interval unverified",
+  "temporal_resolution": "event",
+  "title_en": "Winnipeg Transit Passenger Pass-Up Events",
+  "type": "data",
+  "update_frequency": "daily"
+}

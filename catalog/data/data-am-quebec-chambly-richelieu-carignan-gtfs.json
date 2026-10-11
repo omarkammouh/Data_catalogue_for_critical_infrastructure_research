@@ -13,14 +13,19 @@
     {
       "kind": "download",
       "label": "Direct download (ZIP)",
-      "note": "Checked 2026-10-01: returns application/x-zip-compressed directly.",
-      "url": "https://exo.quebec/xdata/citcrc/google_transit.zip"
+      "note": "Verified replacement on 2026-10-09: The current first-party Exo open-data page explicitly publishes this current GTFS download for Autobus - Secteur Chambly-Richelieu-Carignan. The provider sector ID and GTFS archive purpose match the old /xdata route. It is a continuing schedule series, not a saved historical-year edition. Archive bytes were not read or compared.",
+      "url": "https://exo.quebec/uploads/ressources-telechargeables/a-propos/donnees-ouvertes/citcrc/google_transit.zip"
     },
     {
       "kind": "download",
       "label": "Direct download (GTFS)",
-      "note": "Checked 2026-10-01: returns application/x-zip-compressed directly.",
-      "url": "http://www.exo.quebec/xdata/citcrc/google_transit.zip"
+      "note": "Verified replacement on 2026-10-09: The current first-party Exo open-data page explicitly publishes this current GTFS download for Autobus - Secteur Chambly-Richelieu-Carignan. The provider sector ID and GTFS archive purpose match the old /xdata route. It is a continuing schedule series, not a saved historical-year edition. Archive bytes were not read or compared.",
+      "url": "https://exo.quebec/uploads/ressources-telechargeables/a-propos/donnees-ouvertes/citcrc/google_transit.zip"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tfs-130 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tfs-130"
     }
   ],
   "access_restrictions": "none",
@@ -53,6 +58,12 @@
       "query": "CKAN package_search in English, Spanish, Portuguese and French; the title names an infrastructure element or a natural hazard",
       "route": "R02",
       "source": "Données Québec-ckan-api"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -70,11 +81,15 @@
     "attribution"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-09",
+    "dead": [
+      "http://www.exo.quebec/xdata/citcrc/google_transit.zip",
+      "https://exo.quebec/xdata/citcrc/google_transit.zip"
+    ]
   },
   "maturity": "stale",
   "name": "Autobus - Secteur Chambly-Richelieu-Carignan - Horaires et parcours planifiés (GTFS)",
-  "notes": "Harvested from the Données Québec CKAN API on 2026-09-30 in the Americas country search.",
+  "notes": "Harvested from the Données Québec CKAN API on 2026-09-30 in the Americas country search.\n\nMobility Database identity supplement (2026-10-07): 1 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Exo",
   "regions": [
     "Québec"
@@ -98,6 +113,11 @@
       "accessed": "2026-10-01",
       "note": "Links updated in the round-2 deep check (checker A2): added 2 verified direct data link(s) from the provider's resource list. Verified: https://exo.quebec/xdata/citcrc/google_transit.zip -> verified by fetch during the check; http://www.exo.quebec/xdata/citcrc/google_transit.zip -> verified by fetch during the check",
       "url": "https://exo.quebec/xdata/citcrc/google_transit.zip"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],
   "tags": [

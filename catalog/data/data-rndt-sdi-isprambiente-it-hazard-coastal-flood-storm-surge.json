@@ -50,20 +50,19 @@
     "IT"
   ],
   "data_family": [
-    "hazards",
-    "planned_future_infrastructure"
+    "reference_context"
   ],
   "data_kind": [
-    "network_topology"
+    "tabular"
   ],
   "date_catalogued": "2026-09-30",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-09",
   "dedupe_keys": {
     "name": "sdi isprambiente it coastal flood and storm surge hazard datasets",
     "url": "https://data.europa.eu/data/datasets/ispra_rm-01lineacosta2020_v2-0_dt?locale=en"
   },
-  "description": "sdi.isprambiente.it: coastal flood and storm surge hazard datasets is a collection of datasets listed in Italian Catalogue of metadata for Spatial Data, a catalogue harvested into the European data portal, published or maintained by sdi.isprambiente.it. Coverage: the area served by sdi.isprambiente.it. The listing groups 7 datasets under this publisher or service host whose titles are about coastal flood and storm surge hazard; the first few are linked and all are named in the audit file. Examples: Linea di costa 2020 v2.0 - Dataset; Linea di costa 2000 - View Service; Linea di costa 2006 - View Service; Linea di costa - View Service. Formats seen: WMS, WFS. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is not stated on the portal listing (dataset page not read). Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support hazard exposure and risk screening studies. Related record: the catalogue-level record data-eu-rndt.",
-  "description_checked": "2026-09-30",
+  "description": "The Italian Institute for Environmental Protection and Research (ISPRA) publishes national shoreline and coastal-defence mapping through its geospatial services. The existing seven dataset/service entries include shoreline editions, coastal-defence works and their download service. Five additional native views represent the backshore line in 2000, 2006 and 2020 and beach/coastal-strip geometry in 2000 and 2006. Their full metadata explicitly relates the service to shoreline change, defence works, bathymetry and seabed elevation. These complementary spatial layers can provide coastal-defence context for hazard exposure simulations; they do not supply flood probabilities or design loads. Coverage is the Italian coast, with edition years preserved in each member title. The new views declare public access under a CC BY 4.0 licence and expose map services; file availability and usage charges were not tested. Metadata dates are not treated as survey dates. No map, feature or data body was downloaded, so geometric accuracy, current completeness and the equivalence of individual editions remain unverified. Earlier source links and their seven components remain preserved. Related infrastructure inventories describe the assets whose exposure could be assessed.",
+  "description_checked": "2026-10-09",
   "discovery_routes": [
     {
       "date": "2026-09-30",
@@ -75,7 +74,7 @@
   "formats": [
     "ogc_map_service"
   ],
-  "geographic_scope": "regional",
+  "geographic_scope": "national",
   "hazards": [
     "coastal_flood_storm_surge"
   ],
@@ -85,7 +84,7 @@
     "it"
   ],
   "last_updated": "2023-11-08",
-  "licence": "not stated on the portal listing (dataset page not read)",
+  "licence": "not stated",
   "licence_type": [
     "not_stated"
   ],
@@ -93,14 +92,17 @@
     "checked": "2026-10-01"
   },
   "maturity": "stale",
-  "name": "sdi.isprambiente.it: coastal flood and storm surge hazard datasets",
-  "notes": "Collection of 7 datasets grouped into one record on 2026-09-30 (three or more datasets of one publisher or service host on one topic); the datasets are named in audit/eu-rndt.csv.",
-  "provider": "sdi.isprambiente.it",
+  "name": "Linea di costa, opere di difesa, retrospiaggia e fascia costiera",
+  "notes": "The five additional members belong to the same source-described coastal mapping service as the existing shoreline/defence components. This proposal does not replace or remove any earlier component.",
+  "provider": "Italian Institute for Environmental Protection and Research (ISPRA)",
+  "regions": [
+    "Italian coast"
+  ],
   "related_ids": [
     "data-eu-rndt"
   ],
   "sectors": [
-    "cross_cutting.multi_sector"
+    "water.dams_flood_defences"
   ],
   "simulation_uses": [
     "hazard_exposure"
@@ -110,6 +112,31 @@
       "accessed": "2026-09-30",
       "note": "Italian Catalogue of metadata for Spatial Data entries read through the European data portal search API on 2026-09-30: titles, descriptions, licences, dates and links; the data files were not opened",
       "url": "https://www.rndt.gov.it"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Additional exact native member; identity, full description, lineage/purpose and rights checked. No data body requested.",
+      "url": "https://geodati.gov.it/RNDT/csw?service=CSW&version=2.0.2&request=GetRecordById&elementSetName=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&id=ispra_rm%3A01Linearetrospiaggia2006_SV"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Additional exact native member; identity, full description, lineage/purpose and rights checked. No data body requested.",
+      "url": "https://geodati.gov.it/RNDT/csw?service=CSW&version=2.0.2&request=GetRecordById&elementSetName=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&id=ispra_rm%3A01Linearetrospiaggia2020_SV"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Additional exact native member; identity, full description, lineage/purpose and rights checked. No data body requested.",
+      "url": "https://geodati.gov.it/RNDT/csw?service=CSW&version=2.0.2&request=GetRecordById&elementSetName=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&id=ispra_rm%3A01Fasciacostiera2006_SV"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Additional exact native member; identity, full description, lineage/purpose and rights checked. No data body requested.",
+      "url": "https://geodati.gov.it/RNDT/csw?service=CSW&version=2.0.2&request=GetRecordById&elementSetName=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&id=ispra_rm%3A01Fasciacostiera2000_SV"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Additional exact native member; identity, full description, lineage/purpose and rights checked. No data body requested.",
+      "url": "https://geodati.gov.it/RNDT/csw?service=CSW&version=2.0.2&request=GetRecordById&elementSetName=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&id=ispra_rm%3A01Linearetrospiaggia2000_SV"
     }
   ],
   "tags": [
@@ -118,6 +145,6 @@
     "collection of datasets",
     "coastal_flood_storm_surge"
   ],
-  "title_en": "Sdi.isprambiente.it: coastal flood and storm surge hazard datasets",
+  "title_en": "ISPRA shoreline, coastal-defence and backshore mapping",
   "type": "data"
 }

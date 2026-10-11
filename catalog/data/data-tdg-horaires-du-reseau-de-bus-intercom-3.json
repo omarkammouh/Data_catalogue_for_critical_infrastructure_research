@@ -14,6 +14,11 @@
       "kind": "download",
       "label": "gtfs-open-data.zip",
       "url": "https://static.data.gouv.fr/resources/horaires-du-reseau-de-bus-intercom-3/20260916-151944/gtfs-20260916-171451-open-data.zip"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-2626 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-2626"
     }
   ],
   "access_restrictions": "none",
@@ -46,6 +51,12 @@
       "query": "transport.data.gouv.fr /api/datasets, all datasets",
       "route": "R02",
       "source": "transport.data.gouv.fr-api"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -69,7 +80,7 @@
   },
   "maturity": "active",
   "name": "Réseau urbain Intercom",
-  "notes": "Harvested from the transport.data.gouv.fr API (/api/datasets) on 2026-09-29 as part of the second portal harvest; the portal listing has no free-text description, so the description states only what the listing gives.",
+  "notes": "Harvested from the transport.data.gouv.fr API (/api/datasets) on 2026-09-29 as part of the second portal harvest; the portal listing has no free-text description, so the description states only what the listing gives.\n\nMobility Database identity supplement (2026-10-07): 1 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Communauté d'Agglomération du Grand Sénonais INTERCOM",
   "related_ids": [
     "data-france-transport-data-gouv-national-access-point"
@@ -86,6 +97,11 @@
       "accessed": "2026-09-29",
       "note": "transport.data.gouv.fr dataset list read through its API on 2026-09-29: title, type, publisher, licence, covered area, resources and dates; the files were not opened",
       "url": "https://transport.data.gouv.fr/api/datasets"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],
   "tags": [

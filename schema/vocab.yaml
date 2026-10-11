@@ -126,7 +126,13 @@ data_families:
     calibration_validation: Paired measured and simulated results, benchmark results
     crowdsourced_public_reports: 311 calls, outage maps, crowdsourced incident feeds
 
-data_kinds: [asset_inventory, network_topology, time_series, raster, tabular, survey, event_record, document, stream, imagery]
+data_resource_types:
+  dataset: Individual dataset or defined dataset group, including live feeds
+  data_catalogue: External inventory or curated list linking to multiple data resources, possibly with broader subjects or mixed resource types
+  information_source: Document or other information source without an established dataset representation
+  unknown: Saved metadata does not establish the resource classification
+
+data_kinds: [asset_inventory, network_topology, time_series, raster, tabular, survey, event_record, document, stream, imagery, unknown]
 
 # discrete_event added 2026-09-26 (round 1 services piece: queueing and patient-flow simulators such as SimPy were being filed as statistical).
 model_kinds: [physical, statistical, agent_based, network, optimisation, fragility, economic, hybrid, discrete_event]
@@ -169,15 +175,15 @@ hazard_types:
   technological_failure: Technological and cascading failures without a natural trigger
   multi_hazard_climate_change: Several hazards or climate change in general
 
-simulation_uses: [network_flow, cascading_failure, hazard_exposure, resilience, capacity_planning, agent_based, optimisation, digital_twin, emergency_response, climate_adaptation]
+simulation_uses: [network_flow, cascading_failure, hazard_exposure, resilience, capacity_planning, agent_based, optimisation, digital_twin, emergency_response, climate_adaptation, water_quality, energy_system_planning, building_energy_performance, port_sedimentation, transport_emissions, structural_design, communication_system_performance, building_hygrothermal_performance, demand_forecasting, life_cycle_assessment, condition_monitoring, power_quality]
 
 maturity: [active, maintained, stale, archived, unknown]
 
-cost: [free, freemium, paid, on_request]
+cost: [free, freemium, paid, on_request, unknown]
 
-access_restrictions: [none, registration, institutional, restricted, on_request]
+access_restrictions: [none, registration, institutional, restricted, on_request, unknown]
 
-geographic_scope: [global, continental, national, regional, city, site]
+geographic_scope: [global, continental, national, regional, city, site, unknown]
 
 continents: [africa, asia, europe, north_america, south_america, oceania, antarctica]
 

@@ -9,13 +9,29 @@
       "kind": "api",
       "label": "CKAN package metadata",
       "url": "https://www.dati.gov.it/opendata/api/3/action/package_show?id=9daf0704-8cd2-4762-8aa9-d0cde62f556b"
+    },
+    {
+      "kind": "api",
+      "label": "ANNCSU - Anagrafe Nazionale Numeri Civici e Strade Urbane - Comune di Copertino native metadata",
+      "url": "https://dati.puglia.it/ckan/api/3/action/package_show?id=2862fc12-aba1-4785-aae2-726d4beee9fa"
+    },
+    {
+      "kind": "download",
+      "label": "ANNCSU (CSV)",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRAvpMQ0kzO0rSmiHykrO2Dh2t7BtY3SiEypA186-QGHYFT9PoSaqNd9Am3q68nYt9aTwzVzqxnoBqo/pub?gid=0&single=true&output=csv"
+    },
+    {
+      "kind": "download",
+      "label": "ANNCSU (XLSX)",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRAvpMQ0kzO0rSmiHykrO2Dh2t7BtY3SiEypA186-QGHYFT9PoSaqNd9Am3q68nYt9aTwzVzqxnoBqo/pub?output=xlsx"
     }
   ],
-  "access_restrictions": "none",
+  "access_note": "Native metadata and format links supplied; actual content, validity and file-use costs unknown.",
+  "access_restrictions": "unknown",
   "continents": [
     "europe"
   ],
-  "cost": "free",
+  "cost": "unknown",
   "countries": [
     "IT"
   ],
@@ -26,13 +42,13 @@
     "tabular"
   ],
   "date_catalogued": "2026-09-29",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-09",
   "dedupe_keys": {
     "name": "anncsu anagrafe nazionale numeri civici e strade urbane comune di copertino",
     "url": "https://dati.gov.it/view-dataset?id=9daf0704-8cd2-4762-8aa9-d0cde62f556b"
   },
-  "description": "ANNCSU - Anagrafe Nazionale Numeri Civici e Strade Urbane - Comune di Copertino is a dataset listed in Italian national open data portal, an open data portal, published or maintained by Regione Puglia. File inserito nella piattaforma SISTER dell'Agenzia delle Entrate, conforme agli standard per l'ANNCSU. Coverage: Regione Puglia. The portal files it under the publisher Regione Puglia. Its tags are numeri-civici, strade, toponomastica. It offers 2 resource(s) in CSV, XLSX. The portal shows 2026-09-29 as the last metadata change. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is CC-BY-4.0. Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support traffic, parking and road network studies. Related record: the catalogue-level record data-ckan-it-portal.",
-  "description_checked": "2026-09-29",
+  "description": "Copertino publishes its ANNCSU register of street names and urban civic numbers. The native description states that the file was entered in the Italian Revenue Agency SISTER platform and conforms to ANNCSU standards. CSV and spreadsheet distributions describe the same register. Exact distribution URLs, original municipal resource URIs and matching source title bind the Puglia and national metadata records. The national holder field also names Copertino, correcting the earlier regional attribution. Actual street names, addresses, coordinates, geometry, network connectivity and completeness were not inspected. The declared licence is CC BY 4.0. Metadata are public, while file-use costs and present data validity remain unverified. No specific simulation method, related model or platform is identified. Source descriptions establish reference information about physical streets, without demonstrating traffic capacity or a network-flow application.",
+  "description_checked": "2026-10-09",
   "discovery_routes": [
     {
       "date": "2026-09-29",
@@ -45,7 +61,7 @@
     "csv",
     "spreadsheet"
   ],
-  "geographic_scope": "regional",
+  "geographic_scope": "city",
   "homepage": "https://www.dati.gov.it/view-dataset?id=9daf0704-8cd2-4762-8aa9-d0cde62f556b",
   "id": "data-ckan-it-anncsu-anagrafe-nazionale-numeri-civici-e-strade-urbane-comune-di",
   "languages": [
@@ -57,14 +73,16 @@
     "attribution"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-09",
+    "dead": [],
+    "unverified": []
   },
   "maturity": "active",
   "name": "ANNCSU - Anagrafe Nazionale Numeri Civici e Strade Urbane - Comune di Copertino",
-  "notes": "Harvested from the dati.gov.it CKAN API on 2026-09-29 as part of the third portal harvest.",
-  "provider": "Regione Puglia",
+  "notes": "Harvested from the dati.gov.it CKAN API on 2026-09-29 as part of the third portal harvest. Fresh national and Puglia metadata expose identical CSV/XLSX endpoints and original Copertino resource URIs, establishing an exact mirror. Correct native publisher and city scope; remove unsupported network_flow tag without inventing geometry.",
+  "provider": "Comune di Copertino",
   "regions": [
-    "Regione Puglia"
+    "Copertino"
   ],
   "related_ids": [
     "data-ckan-it-portal"
@@ -72,14 +90,17 @@
   "sectors": [
     "transport.road"
   ],
-  "simulation_uses": [
-    "network_flow"
-  ],
+  "simulation_uses": [],
   "sources": [
     {
       "accessed": "2026-09-29",
       "note": "dati.gov.it catalogue entry read through the CKAN API on 2026-09-29: title, description, tags, licence, formats, dates; the data files were not opened",
       "url": "https://www.dati.gov.it/opendata/api/3/action/package_show?id=9daf0704-8cd2-4762-8aa9-d0cde62f556b"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Exact native ID, full title/description and distribution descriptors read. No data rows or linked file bodies.",
+      "url": "https://dati.puglia.it/ckan/api/3/action/package_show?id=2862fc12-aba1-4785-aae2-726d4beee9fa"
     }
   ],
   "tags": [
@@ -88,6 +109,6 @@
     "strade",
     "toponomastica"
   ],
-  "title_en": "ANNCSU - National Registry of Civic Numbers and Urban Roads - Municipality of Copertino",
+  "title_en": "Copertino ANNCSU street-name and civic-number register",
   "type": "data"
 }

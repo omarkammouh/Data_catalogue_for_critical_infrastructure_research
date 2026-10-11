@@ -1,14 +1,16 @@
 {
   "access_links": [
     {
-      "kind": "portal",
-      "label": "City and County of Honolulu open data portal (data.honolulu.gov) dataset page",
-      "url": "https://data.honolulu.gov/d/igjd-6aqa"
+      "kind": "api",
+      "label": "Current official OTS Oahu bus stops layer metadata (ArcGIS)",
+      "note": "2026-10-10 link repair: Current official Oahu Transit Services Bus Stops layer, published through Honolulu HoLIS on ArcGIS. Platform and current publication differ from the original Socrata landing. Native metadata matches the exact Oahu-wide OTS-maintained bus-stop description and identifies stop identifier/name/coordinate fields. No formal original Socrata identifier crosswalk, historical edition/bytes or original schema equivalence is established. Descriptive metadata and zero-body HTML route checked only; data contents, current operational coverage, successful feature queries and CSV availability are unverified.",
+      "url": "https://services.arcgis.com/tNJpAOha4mODLkXz/ArcGIS/rest/services/Transportation/FeatureServer/1?f=pjson"
     },
     {
-      "kind": "api",
-      "label": "Socrata view metadata",
-      "url": "https://data.honolulu.gov/api/views/igjd-6aqa"
+      "kind": "portal",
+      "label": "Current official OTS Oahu bus stops layer landing (ArcGIS)",
+      "note": "2026-10-10 link repair: Current official Oahu Transit Services Bus Stops layer, published through Honolulu HoLIS on ArcGIS. Platform and current publication differ from the original Socrata landing. Native metadata matches the exact Oahu-wide OTS-maintained bus-stop description and identifies stop identifier/name/coordinate fields. No formal original Socrata identifier crosswalk, historical edition/bytes or original schema equivalence is established. Descriptive metadata and zero-body HTML route checked only; data contents, current operational coverage, successful feature queries and CSV availability are unverified.",
+      "url": "https://services.arcgis.com/tNJpAOha4mODLkXz/ArcGIS/rest/services/Transportation/FeatureServer/1"
     },
     {
       "kind": "download",
@@ -51,7 +53,7 @@
     "json"
   ],
   "geographic_scope": "city",
-  "homepage": "https://data.honolulu.gov/d/igjd-6aqa",
+  "homepage": "https://services.arcgis.com/tNJpAOha4mODLkXz/ArcGIS/rest/services/Transportation/FeatureServer/1",
   "id": "data-soc-data-honolulu-gov-bus-stops-igjd-6aqa",
   "languages": [
     "en"
@@ -62,11 +64,15 @@
     "not_stated"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-10",
+    "dead": [
+      "https://data.honolulu.gov/api/views/igjd-6aqa",
+      "https://data.honolulu.gov/d/igjd-6aqa"
+    ]
   },
   "maturity": "active",
   "name": "Bus Stops",
-  "notes": "Harvested from the Socrata discovery API on 2026-09-29 (source domain data.honolulu.gov) as part of the third portal harvest.",
+  "notes": "Harvested from the Socrata discovery API on 2026-09-29 (source domain data.honolulu.gov) as part of the third portal harvest. 2026-10-10 link repair: Current official Oahu Transit Services Bus Stops layer, published through Honolulu HoLIS on ArcGIS. Platform and current publication differ from the original Socrata landing. Native metadata matches the exact Oahu-wide OTS-maintained bus-stop description and identifies stop identifier/name/coordinate fields. No formal original Socrata identifier crosswalk, historical edition/bytes or original schema equivalence is established. Descriptive metadata and zero-body HTML route checked only; data contents, current operational coverage, successful feature queries and CSV availability are unverified.",
   "provider": "City and County of Honolulu",
   "regions": [
     "Honolulu"
@@ -85,6 +91,11 @@
       "accessed": "2026-09-29",
       "note": "City and County of Honolulu open data portal (data.honolulu.gov) catalogue entry read through the Socrata discovery API on 2026-09-29: title, description, category, tags, licence, dates; the data files were not opened",
       "url": "https://data.honolulu.gov/api/views/igjd-6aqa"
+    },
+    {
+      "accessed": "2026-10-10",
+      "note": "2026-10-10 link repair: Current official Oahu Transit Services Bus Stops layer, published through Honolulu HoLIS on ArcGIS. Platform and current publication differ from the original Socrata landing. Native metadata matches the exact Oahu-wide OTS-maintained bus-stop description and identifies stop identifier/name/coordinate fields. No formal original Socrata identifier crosswalk, historical edition/bytes or original schema equivalence is established. Descriptive metadata and zero-body HTML route checked only; data contents, current operational coverage, successful feature queries and CSV availability are unverified. Native descriptive metadata received fully below 512 KiB; exact layer landing checked with zero-body GET 200. No feature queries or CSV body obtained.",
+      "url": "https://services.arcgis.com/tNJpAOha4mODLkXz/ArcGIS/rest/services/Transportation/FeatureServer/1?f=pjson"
     }
   ],
   "tags": [

@@ -1,0 +1,102 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "GBFS auto-discovery endpoint",
+      "url": "https://sharedmobility.ch/v2/gbfs/2em_cars/gbfs?Authorization=gbfs@sharedmobility.ch"
+    },
+    {
+      "kind": "portal",
+      "label": "System website",
+      "url": "https://www.2em.ch"
+    },
+    {
+      "kind": "portal",
+      "label": "Official GBFS systems registry",
+      "url": "https://github.com/MobilityData/gbfs/blob/master/systems.csv"
+    }
+  ],
+  "access_note": "Registry metadata are publicly accessible. Feed-use charges and restrictions are unknown unless stated below. The Swiss feed endpoint requires the public Authorization query value listed by opendata.swiss.",
+  "access_restrictions": "unknown",
+  "cost": "unknown",
+  "countries": [
+    "CH"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "stream"
+  ],
+  "date_catalogued": "2026-10-07",
+  "date_verified": "2026-10-08",
+  "dedupe_keys": {
+    "name": "2em car sharing",
+    "url": "https://api.mobidata-bw.de/sharing/gbfs/v3/zem_ch/gbfs"
+  },
+  "description": "2EM Car Sharing is a shared-mobility system listed in the GBFS registry used by Mobility Database. Its listed geographic coverage is Switzerland, country code CH. The MobilityData registry listed System ID zem_ch and GBFS versions 2.3 and 3.0, but its Baden-Württemberg endpoint returned HTTP 404 in the 7 October check. The current Swiss shared-mobility GBFS service lists system 2em_cars. Its system_information metadata identifies 2EM Car Sharing and links to https://www.2em.ch, matching this record. The 2.3 auto-discovery endpoint returned HTTP 200 on 8 October. Station and vehicle feeds were not read. The registry does not state feed-use charges; the licence field retains any provider declaration found in system-information metadata. Station and vehicle data were not downloaded, and current operation or completeness is not established by a registry listing. The resource can provide shared-mobility supply inputs for transport accessibility, network and capacity studies when the relevant components are available. The related Mobility Database catalogue record documents the discovery source.",
+  "description_checked": "2026-10-08",
+  "discovery_routes": [
+    {
+      "date": "2026-10-07",
+      "query": "systems.csv row 111; System ID zem_ch",
+      "route": "R02",
+      "source": "mobility-database"
+    }
+  ],
+  "formats": [
+    "GBFS",
+    "JSON"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://www.2em.ch",
+  "id": "data-mdb-gbfs-zem-ch-9c7101c0",
+  "languages": [
+    "en"
+  ],
+  "licence": "Not stated in the registry or accessible system-information metadata",
+  "link_health": {
+    "checked": "2026-10-08",
+    "dead": [
+      "https://api.mobidata-bw.de/sharing/gbfs/v3/zem_ch/gbfs"
+    ],
+    "dead_since": "2026-10-07"
+  },
+  "maturity": "stale",
+  "name": "2EM Car Sharing",
+  "notes": "GBFS listing retained even where endpoint access failed. No historical observations or live station/vehicle data were obtained.",
+  "provider": "Operator not separately stated; system 2EM Car Sharing",
+  "regions": [
+    "Switzerland"
+  ],
+  "related_ids": [
+    "data-mobility-database-mobilitydata"
+  ],
+  "sectors": [
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-07",
+      "note": "Official inventory metadata; resource bodies were not downloaded.",
+      "url": "https://github.com/MobilityData/gbfs/blob/master/systems.csv"
+    },
+    {
+      "accessed": "2026-10-08",
+      "note": "Official Swiss GBFS resource listing. The current feed system_information metadata identifies system 2em_cars as 2EM Car Sharing and gives the same provider website as this record.",
+      "url": "https://opendata.swiss/en/dataset/standorte-und-verfugbarkeit-von-shared-mobility/resource/f2addfc0-71d1-4137-a0c5-9c644ed00a70"
+    }
+  ],
+  "tags": [
+    "Mobility Database",
+    "GBFS",
+    "zem_ch"
+  ],
+  "title_en": "2EM Car Sharing: GBFS shared-mobility feed for Switzerland",
+  "type": "data"
+}

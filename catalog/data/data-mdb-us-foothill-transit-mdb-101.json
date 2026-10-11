@@ -39,6 +39,16 @@
       "kind": "api",
       "label": "Provider endpoint of the real-time feed mdb-2229",
       "url": "https://foothill_3rdparty.rideralerts.com/myStop/GTFS-Realtime.ashx?&Type=VehiclePosition&serverid=0"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-105 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-105"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tfs-506 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tfs-506"
     }
   ],
   "access_restrictions": "none",
@@ -73,6 +83,12 @@
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -98,7 +114,7 @@
   },
   "maturity": "active",
   "name": "Foothill Transit: GTFS schedule and real-time transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 2 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Foothill Transit",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -115,6 +131,11 @@
     {
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],

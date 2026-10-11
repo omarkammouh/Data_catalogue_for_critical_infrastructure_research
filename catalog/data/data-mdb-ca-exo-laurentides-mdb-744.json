@@ -39,6 +39,31 @@
       "kind": "api",
       "label": "Provider endpoint of the real-time feed mdb-3028",
       "url": "https://exo.chrono-saeiv.com/api/opendata/v1/CITLA/tripupdate"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1181 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-1181"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1336 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/mdb-1336"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1337 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/mdb-1337"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1338 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/mdb-1338"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tfs-141 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tfs-141"
     }
   ],
   "access_note": "At least one of the provider endpoints needs an API key or authentication header according to the listing.",
@@ -74,6 +99,12 @@
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -99,7 +130,7 @@
   },
   "maturity": "active",
   "name": "Exo Laurentides: GTFS schedule and real-time transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 5 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Exo Laurentides",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -116,6 +147,11 @@
     {
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],

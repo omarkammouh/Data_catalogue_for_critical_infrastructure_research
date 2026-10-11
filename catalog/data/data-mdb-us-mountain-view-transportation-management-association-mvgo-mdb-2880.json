@@ -44,6 +44,31 @@
       "kind": "download",
       "label": "Provider link to the data (from the Mobility Database metadata)",
       "url": "https://mtma.tripshot.com/v1/gtfs/realtime/feed/mvgo?types=Alert"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-60 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-60"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1531 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/mdb-1531"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1532 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/mdb-1532"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1533 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/mdb-1533"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-2025 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-2025"
     }
   ],
   "access_restrictions": "none",
@@ -78,6 +103,12 @@
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -99,7 +130,7 @@
   },
   "maturity": "active",
   "name": "Mountain View Transportation Management Association (MVgo): GTFS schedule and real-time transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 5 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Mountain View Transportation Management Association (MVgo)",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -116,6 +147,11 @@
     {
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],

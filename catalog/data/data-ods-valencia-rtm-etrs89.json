@@ -1,19 +1,21 @@
 {
   "access_links": [
     {
-      "kind": "portal",
-      "label": "Valencia open data portal dataset page",
-      "url": "https://valencia.opendatasoft.com/explore/dataset/rtm_etrs89/"
+      "kind": "api",
+      "label": "València open data CKAN package metadata",
+      "note": "Current provider metadata route; exact dataset title and Ajuntament de València publisher checked on 2026-10-08.",
+      "url": "https://opendata.vlci.valencia.es/api/3/action/package_show?id=7f30ab6d-9547-4248-936f-2ab282fab321"
     },
     {
       "kind": "api",
-      "label": "Opendatasoft explore API record",
-      "url": "https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/rtm_etrs89"
+      "label": "València open data GeoJSON resource",
+      "note": "Current provider dataset metadata lists this exact GeoJSON route; HEAD returned HTTP 200. This replaces the retired CSV export route; no response body was fetched.",
+      "url": "https://geoportal.valencia.es/server/rest/services/OPENDATA/UrbanismoEInfraestructuras/MapServer/0/query?where=1=1&outFields=*&f=geojson"
     },
     {
-      "kind": "download",
-      "label": "CSV export",
-      "url": "https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/rtm_etrs89/exports/csv"
+      "kind": "portal",
+      "label": "Current Valencia open data dataset page",
+      "url": "https://opendata.vlci.valencia.es/dataset/xarxa-topografica-municipal-red-topografica-municipal"
     }
   ],
   "access_restrictions": "none",
@@ -31,10 +33,10 @@
     "tabular"
   ],
   "date_catalogued": "2026-09-29",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-08",
   "dedupe_keys": {
     "name": "rtm etrs89",
-    "url": "https://valencia.opendatasoft.com/explore/dataset/rtm_etrs89"
+    "url": "https://opendata.vlci.valencia.es/dataset/xarxa-topografica-municipal-red-topografica-municipal"
   },
   "description": "RTM_ETRS89 is a dataset listed in Valencia open data portal, an open data portal (Opendatasoft) of a city, published or maintained by Ayuntamiento de València. La red topográfica municipal consta de120 vértices aproximadamente, materializados en el terreno. En 2022 se ha revisado en su totalidad y se ha densificado para abarcar los nuevos desarrollos urbanísticos. A partir de este momento se actualiza anualmente.Los vértices se han observado por GNSS mediante el método estático. Comprende el término municipal. Coverage: Valencia. The portal files it under Urban planning and infraestructure. The portal shows 96 records. The portal shows 2022-09-27 as the last modification. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is https://creativecommons.org/licenses/by/4.0/. Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support public transport network, service and demand studies. Related record: the catalogue-level record data-ods-valencia-portal.",
   "description_checked": "2026-09-29",
@@ -52,7 +54,7 @@
     "spreadsheet"
   ],
   "geographic_scope": "city",
-  "homepage": "https://valencia.opendatasoft.com/explore/dataset/rtm_etrs89/",
+  "homepage": "https://opendata.vlci.valencia.es/dataset/xarxa-topografica-municipal-red-topografica-municipal",
   "id": "data-ods-valencia-rtm-etrs89",
   "languages": [
     "es"
@@ -63,7 +65,7 @@
     "attribution"
   ],
   "link_health": {
-    "checked": "2026-10-01",
+    "checked": "2026-10-08",
     "dead": [
       "https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/rtm_etrs89",
       "https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/rtm_etrs89/exports/csv",
@@ -86,9 +88,9 @@
   ],
   "sources": [
     {
-      "accessed": "2026-09-29",
-      "note": "Valencia open data portal catalogue entry read through the Opendatasoft hub export on 2026-09-29: title, description, keywords, theme, licence, dates, features; the data files were not opened",
-      "url": "https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/rtm_etrs89"
+      "accessed": "2026-10-08",
+      "note": "Current provider CKAN metadata identifies the same Red Topográfica Municipal in València; the title, Ajuntament de València publisher, municipal survey-point description, and ETRS89 coordinate field match the harvested RTM_ETRS89 record. Dataset resources were not fetched.",
+      "url": "https://opendata.vlci.valencia.es/api/3/action/package_show?id=7f30ab6d-9547-4248-936f-2ab282fab321"
     }
   ],
   "tags": [

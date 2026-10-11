@@ -1,9 +1,10 @@
 {
   "access_links": [
     {
-      "kind": "portal",
-      "label": "INSPIRE Discovery Service Slovakia",
-      "url": "https://zbgisws.skgeodesy.sk"
+      "kind": "api",
+      "label": "INSPIRE National Discovery Service Slovakia, CSW capabilities",
+      "note": "Verified on 2026-10-09. The Ministry of Environment current RPI provider page identifies its National Discovery Service and publishes service metadata UUID 8d19347e-1cfa-4f8b-bf55-b8bda4b52b93. Its published native metadata states discovery service and this exact CSW endpoint. Fresh HEAD200 and descriptive GetCapabilities200 identify Národná vyhľadávacia služba NIPI and the same Ministry provider. This repairs the intended national discovery service reference; no migration of the former ZBGIS host or equivalence of catalogue membership counts is claimed. Only capabilities metadata were checked, no catalogue member or dataset body obtained. Field-purpose correction: the homepage is the verified human RPI landing that explicitly identifies the National Discovery Service. This access link is the native CSW capabilities API endpoint.",
+      "url": "https://rpi.gov.sk/csw?service=CSW&version=2.0.2&request=GetCapabilities"
     }
   ],
   "access_restrictions": "none",
@@ -20,6 +21,7 @@
   "data_kind": [
     "tabular"
   ],
+  "data_resource_type": "data_catalogue",
   "date_catalogued": "2026-09-30",
   "date_verified": "2026-09-30",
   "dedupe_keys": {
@@ -41,7 +43,7 @@
     "json"
   ],
   "geographic_scope": "national",
-  "homepage": "https://zbgisws.skgeodesy.sk",
+  "homepage": "https://rpi.gov.sk/en/o-rpi-en",
   "id": "data-eu-csw-sk",
   "languages": [
     "sk"
@@ -51,6 +53,12 @@
   "licence_type": [
     "varies"
   ],
+  "link_health": {
+    "checked": "2026-10-09",
+    "dead": [
+      "https://zbgisws.skgeodesy.sk"
+    ]
+  },
   "maturity": "active",
   "name": "INSPIRE Discovery Service Slovakia",
   "notes": "Catalogue-level record for a portal whose infrastructure datasets were added on 2026-09-30 (audit file names the outcome of every dataset read).",
@@ -67,6 +75,21 @@
       "accessed": "2026-09-30",
       "note": "INSPIRE Discovery Service Slovakia listing read on 2026-09-30: name, link, section, tags and any blurb; the linked page itself was not opened",
       "url": "https://zbgisws.skgeodesy.sk"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "First-party human RPI landing GET200 identifies the Ministry of Environment National Discovery Service and links its native service metadata UUID 8d19347e-1cfa-4f8b-bf55-b8bda4b52b93. Evidence rpi-national-source.json.",
+      "url": "https://rpi.gov.sk/en/o-rpi-en"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Published native descriptive service metadata GET200 identifies Slovakia national discovery service, Ministry provider and exact CSW capabilities distribution. Evidence rpi-native-service.json.",
+      "url": "https://rpi.gov.sk/api/collection_record/8d19347e-1cfa-4f8b-bf55-b8bda4b52b93"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "HEAD200 and descriptive capabilities GET200 identify national NIPI discovery service and the Ministry provider. Only capabilities metadata checked; no member query or dataset body. Evidence rpi-csw-capabilities.json.",
+      "url": "https://rpi.gov.sk/csw?service=CSW&version=2.0.2&request=GetCapabilities"
     }
   ],
   "tags": [

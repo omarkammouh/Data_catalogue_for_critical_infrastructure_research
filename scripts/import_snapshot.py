@@ -47,6 +47,12 @@ def transform(record, policy):
         if not record['sources']: raise ValueError(f"{record['id']}: no public source remains")
     if policy.get('tag_patterns'):
         record['tags'] = [t for t in record.get('tags', []) if not any(re.search(p,t,re.I) for p in policy['tag_patterns'])]
+    health_prefixes = tuple(policy.get('excluded_link_health_prefixes', []))
+    if health_prefixes:
+        for field, value in record.get('link_health', {}).items():
+            if isinstance(value, list):
+                record['link_health'][field] = [item for item in value
+                    if not (isinstance(item, str) and item.startswith(health_prefixes))]
     return record
 
 def read_records(source, policy=None):

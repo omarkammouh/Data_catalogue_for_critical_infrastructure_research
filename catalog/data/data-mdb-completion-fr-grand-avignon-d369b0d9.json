@@ -1,0 +1,142 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Mobility Database tdg-9279 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tdg-9279"
+    },
+    {
+      "kind": "download",
+      "label": "Current official Orizo static GTFS (current series)",
+      "note": "Checked on 2026-10-10: official current static GTFS distribution for the same Orizo network. Descriptive provider metadata identifies the network and GTFS format; streamed GET returned HTTP 200 and application/zip with zero body bytes read. This replaces the retired provider endpoint as a current-series access link. Historical release byte identity and unchanged historical coverage are not established. The original deprecated feed and dated citations remain preserved.",
+      "url": "https://api.maas-fr.cityway.fr/dataflow/offre-tc/download?provider=ORIZO&dataFormat=GTFS&dataProfil=OPENDATA"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tdg-79823 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/tdg-79823"
+    },
+    {
+      "kind": "api",
+      "label": "Current provider GTFS-RT: GTFS RT du Réseau Orizo [trip updates]; metadata updated 2026-10-10T00:59:55.000000Z",
+      "note": "2026-10-10 link repair: Collective current provider GTFS-RT release for the same named network/operator and geography. The retired UUID has unknown original subtype; no one-to-one historical resource equivalence or byte equivalence is claimed. Each current endpoint is labelled by feature, operator sector and release date. Original deprecated inventory identity/status and citations must remain. HTTP200 headers do not establish usable current feed contents or operational validity.",
+      "url": "https://api.maas-fr.cityway.fr/dataflow/horaire-tc-tr/download?provider=ORIZO&dataFormat=gtfs-rt"
+    },
+    {
+      "kind": "api",
+      "label": "Current provider GTFS-RT: VM (Vehicle Monitoring) [vehicle positions]; metadata updated 2026-10-09T13:42:42.000000Z",
+      "note": "2026-10-10 link repair: Collective current provider GTFS-RT release for the same named network/operator and geography. The retired UUID has unknown original subtype; no one-to-one historical resource equivalence or byte equivalence is claimed. Each current endpoint is labelled by feature, operator sector and release date. Original deprecated inventory identity/status and citations must remain. HTTP200 headers do not establish usable current feed contents or operational validity.",
+      "url": "https://api.maas-fr.cityway.fr/dataflow/vehicule-tc-tr/download?provider=ORIZO&dataFormat=gtfs-rt"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tdg-83330 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tdg-83330"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-1878 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-1878"
+    },
+    {
+      "kind": "download",
+      "label": "Mobility Database feed archive (tdg-83330)",
+      "note": "The 2026-10-07 official Mobility Database inventory lists this archive as urls.latest for feed ID tdg-83330. The inventory marks the feed deprecated. HEAD returned HTTP 200 on 2026-10-08; no file body was fetched.",
+      "url": "https://files.mobilitydatabase.org/tdg-83330/latest.zip"
+    }
+  ],
+  "access_note": "Registry metadata are publicly accessible. Feed-use charges and restrictions are unknown unless stated below.",
+  "access_restrictions": "none",
+  "cost": "unknown",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "network_topology",
+    "tabular",
+    "stream"
+  ],
+  "date_catalogued": "2026-10-07",
+  "date_verified": "2026-10-07",
+  "dedupe_keys": {
+    "name": "grand avignon gtfs transit feeds",
+    "url": "https://mobilitydatabase.org/feeds/gtfs/tdg-9279"
+  },
+  "description": "This record groups 3 public transport feed listing(s) attributed to Grand Avignon in the official Mobility Database inventory. The recorded geographic coverage is CA du Grand Avignon (COGA), Les Angles, country code FR. The listing status counts on 2026-10-07 are 3 deprecated. Formats are GTFS, GTFS Realtime. GTFS schedule feeds describe transit services for network and timetable modelling; GTFS Realtime listings identify operational update feeds where present. Each retained feed has its own catalogue-page link and provider endpoint when supplied without embedded access parameters. Licence information is recorded from the inventory; feed-use costs are not stated. Authentication requirements follow the source fields. Inactive, deprecated, future and development listings must not be treated as currently operating services. The feed contents, service dates and completeness were not inspected. These metadata support selecting inputs for public transport network and capacity studies. The related Mobility Database record provides the parent catalogue and the distinction between registry metadata and underlying data.",
+  "description_checked": "2026-10-07",
+  "discovery_routes": [
+    {
+      "date": "2026-10-07",
+      "query": "All-status inventory completion; feed IDs tdg-9279, tdg-79823, tdg-83330",
+      "route": "R02",
+      "source": "mobility-database"
+    }
+  ],
+  "formats": [
+    "GTFS",
+    "GTFS Realtime"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://mobilitydatabase.org/feeds/gtfs/tdg-9279",
+  "id": "data-mdb-completion-fr-grand-avignon-d369b0d9",
+  "languages": [
+    "en"
+  ],
+  "licence": "Licence link supplied by registry: https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+  "link_health": {
+    "checked": "2026-10-10",
+    "dead": [
+      "https://www.data.gouv.fr/api/1/datasets/r/12f58bfe-41ba-48a9-9dc0-dae843a95fef",
+      "https://www.data.gouv.fr/api/1/datasets/r/556b9c3d-ec50-406b-9c22-7d37e0f6a15b",
+      "https://www.data.gouv.fr/api/1/datasets/r/68eddc46-b2f5-4396-a298-214c415f6984"
+    ]
+  },
+  "maturity": "archived",
+  "name": "Grand Avignon: GTFS transit feeds",
+  "notes": "Exact source rows and status/redirect relationships are retained in the Mobility Database completion audit dated 2026-10-07. Checked on 2026-10-10: official current static GTFS distribution for the same Orizo network. Descriptive provider metadata identifies the network and GTFS format; streamed GET returned HTTP 200 and application/zip with zero body bytes read. This replaces the retired provider endpoint as a current-series access link. Historical release byte identity and unchanged historical coverage are not established. The original deprecated feed and dated citations remain preserved. 2026-10-10 link repair: Collective current provider GTFS-RT release for the same named network/operator and geography. The retired UUID has unknown original subtype; no one-to-one historical resource equivalence or byte equivalence is claimed. Each current endpoint is labelled by feature, operator sector and release date. Original deprecated inventory identity/status and citations must remain. HTTP200 headers do not establish usable current feed contents or operational validity.",
+  "provider": "Grand Avignon",
+  "regions": [
+    "CA du Grand Avignon (COGA), Les Angles"
+  ],
+  "related_ids": [
+    "data-mobility-database-mobilitydata"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-07",
+      "note": "Official inventory metadata; resource bodies were not downloaded.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-10",
+      "note": "Checked on 2026-10-10: official current static GTFS distribution for the same Orizo network. Descriptive provider metadata identifies the network and GTFS format; streamed GET returned HTTP 200 and application/zip with zero body bytes read. This replaces the retired provider endpoint as a current-series access link. Historical release byte identity and unchanged historical coverage are not established. The original deprecated feed and dated citations remain preserved. Source identity evidence is saved in internal metadata review",
+      "url": "https://www.data.gouv.fr/api/1/datasets/?page_size=3&q=Grand%20Avignon"
+    },
+    {
+      "accessed": "2026-10-10",
+      "note": "Official published GTFS distribution checked by HEAD and streamed GET headers only: HTTP 200, application/zip, zero body bytes read. Current-series replacement; no dataset body or historical byte identity check.",
+      "url": "https://api.maas-fr.cityway.fr/dataflow/offre-tc/download?provider=ORIZO&dataFormat=GTFS&dataProfil=OPENDATA"
+    },
+    {
+      "accessed": "2026-10-10",
+      "note": "2026-10-10 link repair: Collective current provider GTFS-RT release for the same named network/operator and geography. The retired UUID has unknown original subtype; no one-to-one historical resource equivalence or byte equivalence is claimed. Each current endpoint is labelled by feature, operator sector and release date. Original deprecated inventory identity/status and citations must remain. HTTP200 headers do not establish usable current feed contents or operational validity. Native descriptive metadata received fully below512KiB; current distribution checked with zero-body GET200.",
+      "url": "https://transport.data.gouv.fr/api/datasets/5ae2e01d88ee381811e691b5"
+    }
+  ],
+  "tags": [
+    "Mobility Database"
+  ],
+  "title_en": "Public transport feeds for Grand Avignon (FR)",
+  "type": "data"
+}

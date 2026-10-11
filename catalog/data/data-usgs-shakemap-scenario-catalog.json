@@ -8,6 +8,7 @@
     {
       "kind": "portal",
       "label": "Scenario FDSN event web service",
+      "note": "Current USGS scenario API documentation GET200 on9October2026 explicitly binds this exact base and describes the FDSN methods. Documentation access recovered, without any event query or proof of scenario data contents.",
       "url": "https://earthquake.usgs.gov/fdsnws/scenario/1/"
     }
   ],
@@ -63,10 +64,11 @@
     "public_domain"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-10"
   },
   "maturity": "active",
   "name": "USGS ShakeMap earthquake scenario catalogs (BSSC 2014 and others)",
+  "notes": " 2026-10-10 link review: Original metadata route recovered. Native USGS application metadataGET200 actual catalogs/contributors/producttypes JSON object, not error envelope; bssc2014,nshm23,adhoc and scenario product categories match descriptive metadata purpose. Original source-route metadata recovery only, original dated citation facts retained; no distributions/scenario counts or payload records read.",
   "provider": "U.S. Geological Survey, Earthquake Hazards Program",
   "related_ids": [
     "data-canada-national-earthquake-scenario-catalogue",
@@ -90,13 +92,23 @@
     },
     {
       "accessed": "2026-09-26",
-      "note": "Catalog list (adhoc, bssc2014, nshm23, regional and legacy sets) and product types (shakemap, losspager, ground-failure, dyfi, oaf, origin scenarios)",
+      "note": "Catalog list (adhoc, bssc2014, nshm23, regional and legacy sets) and product types (shakemap, losspager, ground-failure, dyfi, oaf, origin scenarios) 2026-10-10 link review: Original metadata route recovered. Native USGS application metadataGET200 actual catalogs/contributors/producttypes JSON object, not error envelope; bssc2014,nshm23,adhoc and scenario product categories match descriptive metadata purpose. Original source-route metadata recovery only, original dated citation facts retained; no distributions/scenario counts or payload records read.",
       "url": "https://earthquake.usgs.gov/fdsnws/scenario/1/application.json"
     },
     {
       "accessed": "2026-09-26",
       "note": "Count 1,255 scenarios in the service; bssc2014 alone 797",
       "url": "https://earthquake.usgs.gov/fdsnws/scenario/1/count?format=geojson&starttime=1000-01-01&endtime=3000-01-01"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Current USGS scenario API documentation GET200 on9October2026 explicitly binds this exact base and describes the FDSN methods. Documentation access recovered, without any event query or proof of scenario data contents.",
+      "url": "https://earthquake.usgs.gov/fdsnws/scenario/1/"
+    },
+    {
+      "accessed": "2026-10-10",
+      "note": "2026-10-10 link review: Original metadata route recovered. Native USGS application metadataGET200 actual catalogs/contributors/producttypes JSON object, not error envelope; bssc2014,nshm23,adhoc and scenario product categories match descriptive metadata purpose. Original source-route metadata recovery only, original dated citation facts retained; no distributions/scenario counts or payload records read.",
+      "url": "https://earthquake.usgs.gov/fdsnws/scenario/1/application.json"
     }
   ],
   "spatial_resolution": "ShakeMap grids for each scenario",

@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "ONS dataset and distribution list",
+      "url": "https://dados.ons.org.br/dataset/descontinuado-dados-do-historico-de-despacho-de-energia-de-01-2021-a-09-2024"
+    },
+    {
+      "kind": "api",
+      "label": "ONS package metadata",
+      "note": "Metadata lists data-file URLs; no data files fetched.",
+      "url": "https://dados.ons.org.br/api/3/action/package_show?id=descontinuado-dados-do-historico-de-despacho-de-energia-de-01-2021-a-09-2024"
+    },
+    {
+      "kind": "docs",
+      "label": "Provider JSON data dictionary",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/hist_despacho_energia/DicionarioDados_Historico_Despacho_Energia_Ano2021a2024.json"
+    }
+  ],
+  "access_note": "Public metadata and available JSON dictionaries verified. Operational file access and row completeness were not tested.",
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "BR"
+  ],
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-10-08",
+  "date_verified": "2026-10-08",
+  "dedupe_keys": {
+    "name": "dados do historico de despacho de energia de janeiro 2021 a setembro 2024",
+    "url": "https://dados.ons.org.br/dataset/descontinuado-dados-do-historico-de-despacho-de-energia-de-01-2021-a-09-2024"
+  },
+  "description": "ONS publishes historical half-hourly generation values used when closing the daily operation programme from January 2021 to September 2024. The dictionary identifies programme date, submarket, plant type, plant code and name, dispatch interval and generation value. These scheduled quantities support retrospective dispatch studies. The archive is no longer updated. ONS warns that January to September 2024 can contain inconsistencies caused by changes to the participating-plant register. Coverage is generating plants and electricity submarkets in Brazil. The catalogue lists CSV and Parquet files; files are free under the provider's CC-BY terms, with no version specified. ONS requires attribution and disclosure of changes. Data contents were not downloaded; completeness is unknown, and published values may be revised. Related ONS generation-by-plant data provide a comparison series.",
+  "description_checked": "2026-10-08",
+  "discovery_routes": [
+    {
+      "date": "2026-10-08",
+      "query": "Existing ONS entries -> complete 85-package catalogue -> exact and fuzzy duplicate review -> provider dictionaries.",
+      "route": "R06",
+      "source": "dados.ons.org.br"
+    }
+  ],
+  "formats": [
+    "csv",
+    "parquet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://dados.ons.org.br/dataset/descontinuado-dados-do-historico-de-despacho-de-energia-de-01-2021-a-09-2024",
+  "id": "data-ons-catalogue-descontinuado-dados-do-historico-de-despacho-de-energia-de-01-2021-a-09-2024",
+  "languages": [
+    "pt"
+  ],
+  "last_updated": "2026-04-28",
+  "licence": "CC-BY (version not stated by provider)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-08"
+  },
+  "maturity": "archived",
+  "name": "Dados do Histórico de Despacho de Energia de Janeiro/2021 A Setembro/2024",
+  "notes": "Native package UUID 92cbbfa1-361c-4331-b01e-9f789a6ebc16.  Metadata modification date is not the date of every observation. Simulation-use tags are curator assessments from the stated physical quantities. Distinct aggregation products can share underlying observations; this count does not imply independent measurements.",
+  "provider": "Operador Nacional do Sistema Elétrico (ONS)",
+  "regions": [],
+  "related_ids": [
+    "data-ons-geracao-por-usina-em-base-horaria"
+  ],
+  "schema_summary": "dat_pdp: Data de Referência da Programação Diária; cod_submercado: Código do Submercado; sgl_tipousina: Sigla do Tipo da Usina; cod_usinapdp: Código da Usina no PDP; nom_usinapdp: Nome da Usina no PDP; num_intdespa: Intervalo de Geração; val_despasup: Valor de Geração – Supervisão",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-08",
+      "note": "Exact package UUID, original title, description, distribution descriptors, licence and update metadata; continuation 31 inventory reused.",
+      "url": "https://dados.ons.org.br/api/3/action/package_search?rows=1000"
+    },
+    {
+      "accessed": "2026-10-08",
+      "note": "Dictionary field definitions read; no operational data rows obtained.",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/hist_despacho_energia/DicionarioDados_Historico_Despacho_Energia_Ano2021a2024.json"
+    }
+  ],
+  "spatial_resolution": "generating plants and electricity submarkets",
+  "tags": [],
+  "temporal_coverage": "January 2021–September 2024, provider-described historical interval.",
+  "temporal_resolution": "30 minutes",
+  "title_en": "ONS Historical Half-Hourly Dispatch Programme, 2021–September 2024",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

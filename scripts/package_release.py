@@ -3,6 +3,7 @@
 import csv,gzip,hashlib,io,json
 from pathlib import Path
 from import_snapshot import read_records
+from snapshot import snapshot_path
 ROOT=Path(__file__).resolve().parents[1]
 def build(root=ROOT):
     records,_=read_records(root); rows=[records[k] for k in sorted(records)]
@@ -14,7 +15,7 @@ def build(root=ROOT):
         # Prevent spreadsheet formula execution when opening CSV exports.
         row={k:("'"+v if isinstance(v,str) and v.startswith(('=','+','-','@','\t','\r')) else v) for k,v in row.items()}
         w.writerow(row)
-    payloads={'catalogue.json.gz':json.dumps({'snapshot':json.loads((root/'catalog/snapshot.json').read_text()),'records':rows},ensure_ascii=False,sort_keys=True,separators=(',',':')).encode(),'catalogue.csv.gz':stream.getvalue().encode()}
+    payloads={'catalogue.json.gz':json.dumps({'snapshot':json.loads(snapshot_path(root).read_text()),'records':rows},ensure_ascii=False,sort_keys=True,separators=(',',':')).encode(),'catalogue.csv.gz':stream.getvalue().encode()}
     for name,data in payloads.items():(out/name).write_bytes(gzip.compress(data,mtime=0))
     (out/'SHA256SUMS').write_text(''.join(hashlib.sha256((out/name).read_bytes()).hexdigest()+'  '+name+'\n' for name in sorted(payloads)))
     print(f'Packaged {len(rows)} records in {out}')

@@ -85,6 +85,8 @@ HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent
 sys.path.insert(0, str(HERE.parent / "pipeline"))
 import vocab_map  # noqa: E402  (the filter vocabularies and the mapping of raw values onto them)
+from catalogues import add_catalogues
+from data_resources import add_data_resource_types
 DEFAULT_PROJECT = REPO_ROOT
 RECORD_TYPES = ("data", "model", "platform", "case_study")
 
@@ -105,7 +107,7 @@ EXCLUDED_FIELDS = frozenset({
     # Prose, names or record references that became "Other" facets with thousands of one-off values
     # (tags alone had 15,000); they are shown in the detail view, and tags are searched by the text box.
     "tags", "inputs", "outputs", "outcomes", "resources_used", "hosted_models", "runs_on", "validated_on",
-    "organisations", "study_period", "temporal_coverage", "interoperability", "crs",
+    "organisations", "study_period", "temporal_coverage", "interoperability", "crs", "catalogue_membership_evidence", "data_resource_type_basis", "catalogue_index_id",
 })
 
 #: Fields the free-text facet searches, in the order they are concatenated.
@@ -119,6 +121,8 @@ TEXT_FIELDS = ("title_en", "name", "provider", "description", "tags", "id", "not
 #: ``hierarchy`` names the vocabulary hierarchy (parents and children).
 FACET_TABLE: list[dict[str, Any]] = [
     {"id": "type", "label": "Type", "kind": "multi", "group": "Scope", "path": "type", "vocab": "types"},
+    {"id": "data_resource_type", "label": "Data resource", "kind": "multi", "group": "Scope", "path": "data_resource_type", "vocab": "data_resource_types"},
+    {"id": "catalogues", "label": "Catalogues", "kind": "multi", "group": "Scope", "path": "catalogues"},
     {"id": "sectors", "label": "Sector", "kind": "hierarchy", "group": "Scope", "path": "sectors", "hierarchy": "sectors"},
     {"id": "supported_sectors", "label": "Supported sectors", "kind": "hierarchy", "group": "Scope", "path": "supported_sectors", "hierarchy": "sectors"},
     {"id": "data_family", "label": "Data family", "kind": "hierarchy", "group": "Classification", "path": "data_family", "hierarchy": "data_families"},
@@ -521,13 +525,15 @@ def discover_extra_fields(records: Iterable[dict[str, Any]], known_paths: set[st
     return rows
 
 
-def build_facets(records: list[dict[str, Any]], vocab: dict[str, Any], open_end: int | None = None) -> list[dict[str, Any]]:
+def build_facets(records: list[dict[str, Any]], vocab: dict[str, Any], open_end: int | None = None, catalogue_labels: dict[str, str] | None = None) -> list[dict[str, Any]]:
     """Facet definitions with value lists and counts over the whole catalogue.
 
     ``open_end`` (the build year) closes a ``year_span`` whose end is null (still running).
     """
     rows = [dict(r) for r in FACET_TABLE]
     for r in rows:
+        if r['id'] == 'catalogues':
+            r['value_labels'] = catalogue_labels or {}
         if r.get("transform") == "year_span" and open_end is not None:
             r["open_end"] = open_end
     known_paths = {r["path"].split(".")[0].rstrip("[]") for r in rows if "path" in r}
@@ -686,8 +692,10 @@ def main(argv: list[str] | None = None) -> int:
     add_filter_vocabularies(vocab)
     records, header = load_records(project)
     records = [tidy_whitespace(vocab_map.apply_to_record(r)) for r in records]
+    records = add_data_resource_types(records)
+    records, catalogue_labels, catalogue_summary = add_catalogues(records)
     built = args.date or dt.date.today().isoformat()
-    facets = build_facets(records, vocab, open_end=int(built[:4]))
+    facets = build_facets(records, vocab, open_end=int(built[:4]), catalogue_labels=catalogue_labels)
 
     meta = {
         "built": built,
@@ -698,6 +706,8 @@ def main(argv: list[str] | None = None) -> int:
         "record_types": list(RECORD_TYPES),
         "counts": {"total": len(records), "by_type": {t: sum(1 for r in records if r.get("type") == t) for t in RECORD_TYPES}},
         "text_fields": list(TEXT_FIELDS),
+        "catalogues": catalogue_labels,
+        "catalogue_memberships": catalogue_summary,
         "panel_groups": list(PANEL_GROUP_ORDER),
         "sector_groups": {g: (LABELS.get("sectors", {}).get(g) or b.get("label") or humanise(g)) for g, b in (vocab.get("sectors") or {}).items()},
         "family_groups": {g: label_for("data_families", g) for g in (vocab.get("data_families") or {})},

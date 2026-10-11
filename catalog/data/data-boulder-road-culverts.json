@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "County catalogue entry",
+      "url": "https://opendata-bouldercounty.hub.arcgis.com/datasets/bouldercounty::culverts"
+    },
+    {
+      "kind": "api",
+      "label": "ArcGIS layer metadata",
+      "note": "Metadata GET returned HTTP 200; no feature query or distribution body fetched.",
+      "url": "https://amsagsprod1-bouldercounty.msappproxy.net/server/rest/services/PW/publicCulverts/FeatureServer/0?f=pjson"
+    }
+  ],
+  "access_note": "Public catalogue and layer metadata verified; data export usability not tested. ",
+  "access_restrictions": "none",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory"
+  ],
+  "date_catalogued": "2026-10-08",
+  "date_verified": "2026-10-08",
+  "dedupe_keys": {
+    "name": "culverts",
+    "url": "https://opendata-bouldercounty.hub.arcgis.com/datasets/bouldercounty::culverts"
+  },
+  "description": "Boulder County publishes a line inventory of culverts. The linked layer covers county-owned roads and Parks and Open Space properties, which is broader than the road-only scope described in the DCAT feed. Public Works and Parks and Open Space maintain the inventory. The schema defines culvert shape and material, wall types, width and height in inches, barrel count, load rating, road location, ownership and maintenance. These attributes can support culvert and drainage simulation, subject to checking hydraulic boundary conditions and geometry. The feed says replaced assets are retained; the active-versus-archived distinction must be checked before treating all records as operating infrastructure. No feature values were inspected. Coverage is limited to the provider-described county infrastructure. Public catalogue and layer metadata are free to access. The catalogue supplies CC BY 4.0 licensing. ArcGIS layer metadata and the landing page returned HTTP 200. Export bodies and feature rows were not downloaded; distribution usability remains unverified. Related records cover other infrastructure layers in this county catalogue. The county overview has inconsistent licence wording; this record preserves the explicit layer-feed licence URL.",
+  "description_checked": "2026-10-08",
+  "discovery_routes": [
+    {
+      "date": "2026-10-08",
+      "query": "Existing Colorado catalogue entry -> county fire-station mirror attribution -> native county catalogue -> full public inventory.",
+      "route": "R06",
+      "source": "county-boulder-open-data"
+    }
+  ],
+  "formats": [
+    "json",
+    "web_page"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://opendata-bouldercounty.hub.arcgis.com/datasets/bouldercounty::culverts",
+  "id": "data-boulder-road-culverts",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-08"
+  },
+  "maturity": "unknown",
+  "name": "Culverts",
+  "notes": "ArcGIS item 588e0f31381240f2899997eff4c686c0, layer 0. Simulation role is curator-assigned from source-described physical infrastructure, not a claimed demonstrated application. Whole-service and layer identities remain distinct. Full-corpus exact comparison and targeted fuzzy/geographic review precede adoption.",
+  "provider": "Boulder County",
+  "regions": [
+    "Boulder County, Colorado"
+  ],
+  "related_ids": [],
+  "schema_summary": "OBJECTID; Culvert Shape; Culvert Material; Inlet Wall; Inlet Wall Material; Outlet Wall; Outlet Wall Material; Width in Inches; Height in Inches; Number of Barrels; Load Rating; ROW Location; Crosses; MS4 Permit Area; 2010 Urbanized Area; 2020 Urban Area; Street Name; County Road Number; BC Department; Owned By; Maintained By; Maintenance Agreement; Comments; Former Structure ID(s); Shape.STLength(); GlobalID",
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-08",
+      "note": "Exact ArcGIS item and layer identity linked by the county DCAT feed and reconciled to the complete public site search inventory.",
+      "url": "https://opendata-bouldercounty.hub.arcgis.com/datasets/bouldercounty::culverts"
+    },
+    {
+      "accessed": "2026-10-08",
+      "note": "Layer name, native ID, geometry, description and field definitions. No feature rows fetched.",
+      "url": "https://amsagsprod1-bouldercounty.msappproxy.net/server/rest/services/PW/publicCulverts/FeatureServer/0?f=pjson"
+    },
+    {
+      "accessed": "2026-10-08",
+      "note": "Original title, licence, publisher and distribution descriptors; conflicts retained in description.",
+      "url": "https://opendata-bouldercounty.hub.arcgis.com/api/feed/dcat-us/1.1.json"
+    }
+  ],
+  "spatial_resolution": "Polyline infrastructure geometry; positional accuracy not independently verified",
+  "spatial_resolution_class": "asset",
+  "tags": [],
+  "temporal_coverage": "Full observation interval not established",
+  "temporal_resolution": "none",
+  "temporal_resolution_class": "snapshot",
+  "title_en": "Boulder County Culvert Inventory",
+  "type": "data",
+  "update_frequency": "not_stated"
+}

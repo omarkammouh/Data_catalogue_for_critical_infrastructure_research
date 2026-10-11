@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Native dataset page",
+      "url": "https://www.data.act.gov.au/d/mgzi-6f8j"
+    },
+    {
+      "kind": "api",
+      "label": "Native view metadata and field definitions",
+      "url": "https://www.data.act.gov.au/api/views/mgzi-6f8j"
+    }
+  ],
+  "access_restrictions": "none",
+  "continents": [
+    "oceania"
+  ],
+  "cost": "free",
+  "countries": [
+    "AU"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series",
+    "tabular",
+    "network_topology"
+  ],
+  "date_catalogued": "2026-10-08",
+  "date_verified": "2026-10-08",
+  "dedupe_keys": {
+    "name": "traffic route stats",
+    "url": "https://data.act.gov.au/d/mgzi-6f8j"
+  },
+  "description": "Roads ACT publishes historical route definitions and traffic-flow statistics for the Australian Capital Territory. The native description states that the archive samples a real-time source every five minutes, although that source updates every 30 seconds. The schema names route identifier, route name, primary road, route length, start and end description, interval start, speed, delay, excess delay, travel time and line geometry. Access is through the ACT public Socrata catalogue and JSON API; native metadata declares CC BY 4.0. The last data-update timestamp is in December 2023, so the stated sampling interval does not establish continuing updates. Caveats: no traffic observations were downloaded, and exact historical coverage, numerical units and missing-value rates were not checked. Route geometry and speed or delay fields can support traffic-network calibration once their units and coverage are verified. Related resource: the separately catalogued Traffic Links Stats describes link-level observations; route and link scopes remain distinct.",
+  "description_checked": "2026-10-08",
+  "discovery_routes": [
+    {
+      "date": "2026-10-08",
+      "query": "Backtracking existing Traffic Links Stats to full ACT catalogue; native route-statistics member",
+      "route": "R02",
+      "source": "www.data.act.gov.au-via-socrata-discovery-api"
+    }
+  ],
+  "formats": [
+    "json",
+    "api"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://www.data.act.gov.au/d/mgzi-6f8j",
+  "id": "data-act-traffic-route-statistics-mgzi-6f8j",
+  "languages": [
+    "en"
+  ],
+  "last_updated": "2023-12-20",
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-08"
+  },
+  "maturity": "unknown",
+  "name": "Traffic Route Stats",
+  "notes": "The source links to realtime-traffic documentation. No live endpoint or operational observation was requested. Route statistics differ from the existing link-level series.",
+  "provider": "Roads ACT",
+  "regions": [
+    "Australian Capital Territory"
+  ],
+  "related_ids": [
+    "data-soc-data-act-gov-au-portal",
+    "data-soc-data-act-gov-au-traffic-links-stats-jn4p-azhb"
+  ],
+  "schema_summary": "startenddescription, name, length, id, delay, primaryroadname, speed, intervalstart, datastatus, excessdelay, tt, line",
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [
+    "network_flow"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-08",
+      "note": "Exact native ID and title, description, schema, CC_40_BY licence and data-update timestamp. No rows fetched.",
+      "url": "https://www.data.act.gov.au/api/views/mgzi-6f8j"
+    }
+  ],
+  "spatial_resolution": "Route line geometry; positional accuracy not established",
+  "tags": [
+    "traffic routes",
+    "traffic delay",
+    "ACT"
+  ],
+  "temporal_coverage": "Historical archive; exact observation start and end not checked",
+  "temporal_resolution": "Five-minute archive samples, according to source description",
+  "title_en": "ACT historical traffic-route geometry, speed and delay statistics",
+  "type": "data",
+  "update_frequency": "Five-minute sampling stated; continuing updates not established"
+}

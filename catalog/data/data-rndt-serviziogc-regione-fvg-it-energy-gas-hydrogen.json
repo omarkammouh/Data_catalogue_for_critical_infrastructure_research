@@ -24,6 +24,11 @@
       "kind": "api",
       "label": "Service data query on RIFIUTI:BDAD",
       "url": "https://serviziogc.regione.fvg.it/geoserver/RIFIUTI/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=RIFIUTI:BDAD&count=1"
+    },
+    {
+      "kind": "api",
+      "label": "Native waste-facility siting metadata",
+      "url": "https://geodati.gov.it/RNDT/csw?service=CSW&version=2.0.2&request=GetRecordById&elementSetName=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&id=r_friuve%3Am10762-cc-i11196"
     }
   ],
   "access_restrictions": "none",
@@ -35,19 +40,20 @@
     "IT"
   ],
   "data_family": [
-    "system_description"
+    "planning_regulatory_documents",
+    "governance_regulation"
   ],
   "data_kind": [
-    "asset_inventory"
+    "tabular"
   ],
   "date_catalogued": "2026-09-30",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-09",
   "dedupe_keys": {
-    "name": "serviziogc regione fvg it gas datasets",
+    "name": "criteri localizzativi regionali degli impianti di recupero e smaltimento dei rifiuti",
     "url": "https://data.europa.eu/data/datasets/r_friuve-m10762-cc-i11156?locale=en"
   },
-  "description": "serviziogc.regione.fvg.it: gas datasets is a collection of datasets listed in Italian Catalogue of metadata for Spatial Data, a catalogue harvested into the European data portal, published or maintained by serviziogc.regione.fvg.it. Coverage: the area served by serviziogc.regione.fvg.it. The listing groups 3 datasets under this publisher or service host whose titles are about gas; the first few are linked and all are named in the audit file. Examples: Recupero energetico di biogas da digestione anaerobica o da discarica . Formats seen: WMS, WFS. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is not stated on the portal listing (dataset page not read). Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support energy network and generation-capacity studies. Related record: the catalogue-level record data-eu-rndt.",
-  "description_checked": "2026-09-30",
+  "description": "The Autonomous Region of Friuli Venezia Giulia, Waste Management and Contaminated Sites Service publishes geographic criteria for identifying suitable and unsuitable locations for waste-recovery and disposal facilities. The native catalogue contains 241 metadata representations covering 81 operation codes, including recycling, treatment, landfills, incineration and energy recovery. They describe the same regional siting-criteria programme, with operation-specific layers and downloadable Shapefiles or WMS/WFS access. Access is free under Creative Commons Attribution 4.0; the metadata date is 28 August 2024. These constraints can support waste-infrastructure location and capacity-planning simulations. They do not constitute an inventory of operating gas networks or prove that facilities have been built. Three previously grouped biogas entries are representations of one operation layer within this larger suite. Current legal applicability, spatial accuracy and suitability calculations were not independently verified. The related RNDT catalogue supplies the native metadata; no linked features or archives were retrieved.",
+  "description_checked": "2026-10-09",
   "discovery_routes": [
     {
       "date": "2026-09-30",
@@ -57,6 +63,7 @@
     }
   ],
   "formats": [
+    "shapefile",
     "ogc_map_service"
   ],
   "geographic_scope": "regional",
@@ -66,22 +73,25 @@
     "it"
   ],
   "last_updated": "2024-08-28",
-  "licence": "not stated on the portal listing (dataset page not read)",
+  "licence": "CC-BY-4.0",
   "licence_type": [
-    "not_stated"
+    "attribution"
   ],
   "link_health": {
     "checked": "2026-10-01"
   },
-  "maturity": "stale",
-  "name": "serviziogc.regione.fvg.it: gas datasets",
-  "notes": "Collection of 3 datasets grouped into one record on 2026-09-30 (three or more datasets of one publisher or service host on one topic); the datasets are named in audit/eu-rndt.csv.",
-  "provider": "serviziogc.regione.fvg.it",
+  "maturity": "unknown",
+  "name": "Criteri localizzativi regionali degli impianti di recupero e smaltimento dei rifiuti",
+  "notes": "Adopted expansion of the existing three-entry BDAD group to the source-defined regional waste-facility siting suite. The same 241 native records contain 81 operation codes; common full descriptions, publisher, metadata date, rights and RIFIUTI workspace establish grouping. Preserve prior links and source receipts. Existing UUID/record identity is retained. Original gas classification and three-member scope are superseded by full native siting-criteria descriptions; historical links and record ID remain unchanged.",
+  "provider": "Autonomous Region of Friuli Venezia Giulia, Waste Management and Contaminated Sites Service",
+  "regions": [
+    "Friuli Venezia Giulia"
+  ],
   "related_ids": [
     "data-eu-rndt"
   ],
   "sectors": [
-    "energy.gas_hydrogen"
+    "services.waste"
   ],
   "simulation_uses": [
     "capacity_planning"
@@ -91,13 +101,20 @@
       "accessed": "2026-09-30",
       "note": "Italian Catalogue of metadata for Spatial Data entries read through the European data portal search API on 2026-09-30: titles, descriptions, licences, dates and links; the data files were not opened",
       "url": "https://www.rndt.gov.it"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Full native metadata describes the waste-facility siting criteria. All241 native members were individually identity-checked; no data files or features retrieved.",
+      "url": "https://geodati.gov.it/RNDT/csw?service=CSW&version=2.0.2&request=GetRecordById&elementSetName=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&id=r_friuve%3Am10762-cc-i11196"
     }
   ],
+  "spatial_resolution": "Geographic siting-criteria layers; feature scale and accuracy not independently established",
   "tags": [
     "Italian Catalogue of metadata for Spatial Data",
-    "gas",
-    "collection of datasets"
+    "collection of datasets",
+    "waste-facility siting criteria"
   ],
-  "title_en": "Serviziogc.regione.fvg.it: gas datasets",
+  "temporal_coverage": "Metadata dated 2024-08-28; current legal applicability unverified",
+  "title_en": "Friuli Venezia Giulia waste-recovery and disposal facility siting criteria",
   "type": "data"
 }

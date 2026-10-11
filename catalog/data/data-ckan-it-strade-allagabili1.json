@@ -14,31 +14,37 @@
       "kind": "download",
       "label": "ZIP file listed by the provider on dati.gov.it",
       "url": "https://livornosit.ldpgis.it/metarepo2/api/datasets/strade_allagabili/download"
+    },
+    {
+      "kind": "api",
+      "label": "Strade Allagabili native metadata",
+      "url": "https://livornosit.ldpgis.it/metarepo2/api/datasets/strade_allagabili/download-metadata"
     }
   ],
+  "access_note": "Native metadata states CC BY 4.0 and no public-access limitation; distribution availability and costs remain unverified.",
   "access_restrictions": "none",
   "continents": [
     "europe"
   ],
-  "cost": "free",
+  "cost": "unknown",
   "countries": [
     "IT"
   ],
   "data_family": [
+    "hazards",
     "system_description"
   ],
   "data_kind": [
-    "asset_inventory",
-    "tabular"
+    "asset_inventory"
   ],
   "date_catalogued": "2026-09-29",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-09",
   "dedupe_keys": {
     "name": "strade allagabili",
     "url": "https://dati.gov.it/view-dataset?id=a879fa3c-e7b4-4648-a627-3aa8ce54e05e"
   },
-  "description": "Strade Allagabili is a dataset listed in Italian national open data portal, an open data portal, published or maintained by Regione Toscana. Dataset contenente le strade soggette ad allagamento. Coverage: Regione Toscana. The portal files it under the publisher Regione Toscana. Its tags are comune-di-livorno. It offers 7 resource(s) in GEOJSON, GML, KML, RDF, SHP. The portal shows 2026-09-26 as the last metadata change. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is CC-BY-4.0. Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support traffic, parking and road network studies. Related record: the catalogue-level record data-ckan-it-portal.",
-  "description_checked": "2026-09-29",
+  "description": "The Municipality of Livorno publishes a geographic layer identifying roads subject to flooding. Its native metadata places the layer under the municipal civil-protection plan and identifies the municipality as the source, correcting the regional-portal attribution in the earlier catalogue description. The complete description and lineage both state that the data concern flood-prone roads. This provides road-specific hazard exposure information; it does not establish a complete routable network or traffic-flow model. No flood depth, event probability, return period, closure duration or damage estimate is supplied by the inspected descriptive fields. The source lists Shapefile, GeoJSON, GML and KML representations and states CC BY 4.0 with no public-access limitation. The native metadata date is March 2016; the later national-portal modification date describes harvesting and does not establish a newer road survey. Related civil-protection metadata separately describes monitored underpasses and locations for receiving or sheltering evacuees. Those components are retained in a related planning resource and are not counted as additions to this road layer. Current road condition, completeness, download availability and charges remain unverified. No feature, map, archive or dataset body was read.",
+  "description_checked": "2026-10-09",
   "discovery_routes": [
     {
       "date": "2026-09-29",
@@ -48,15 +54,13 @@
     }
   ],
   "formats": [
+    "shapefile",
     "geojson",
     "gml",
-    "kml",
-    "database",
-    "shapefile",
-    "archive"
+    "kml"
   ],
-  "geographic_scope": "regional",
-  "homepage": "https://livornosit.ldpgis.it/metarepo2/api/datasets/strade_allagabili/download",
+  "geographic_scope": "city",
+  "homepage": "https://livornosit.ldpgis.it/metarepo2/api/datasets/strade_allagabili/download-metadata",
   "id": "data-ckan-it-strade-allagabili1",
   "languages": [
     "it"
@@ -71,31 +75,38 @@
   },
   "maturity": "active",
   "name": "Strade Allagabili",
-  "notes": "Harvested from the dati.gov.it CKAN API on 2026-09-29 as part of the third portal harvest.",
-  "provider": "Regione Toscana",
+  "notes": "Harvested from the dati.gov.it CKAN API on 2026-09-29 as part of the third portal harvest. Exact original ZIP distribution URL matches the native Livorno member. Native metadata establishes municipal ownership and flood-prone road scope. Prior portal identifiers and links are preserved.",
+  "provider": "Municipality of Livorno",
   "regions": [
-    "Regione Toscana"
+    "Municipality of Livorno"
   ],
   "related_ids": [
-    "data-ckan-it-portal"
+    "data-ckan-it-portal",
+    "data-livorno-civil-protection-evacuation-assets"
   ],
   "sectors": [
     "transport.road"
   ],
   "simulation_uses": [
-    "network_flow"
+    "hazard_exposure"
   ],
   "sources": [
     {
       "accessed": "2026-09-29",
       "note": "dati.gov.it catalogue entry read through the CKAN API on 2026-09-29: title, description, tags, licence, formats, dates; the data files were not opened",
       "url": "https://www.dati.gov.it/opendata/api/3/action/package_show?id=a879fa3c-e7b4-4648-a627-3aa8ce54e05e"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Exact native identity and source-defined class/hierarchy, complete description, lineage, licence and distribution descriptors verified; metadata only.",
+      "url": "https://livornosit.ldpgis.it/metarepo2/api/datasets/strade_allagabili/download-metadata"
     }
   ],
   "tags": [
     "Italian national open data portal",
     "comune-di-livorno"
   ],
-  "title_en": "Seable Roads",
+  "temporal_coverage": "Native metadata dated 2016-03-15; observation dates not established",
+  "title_en": "Livorno flood-prone road locations",
   "type": "data"
 }

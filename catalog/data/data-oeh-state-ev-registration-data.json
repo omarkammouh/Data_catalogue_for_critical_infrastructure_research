@@ -7,8 +7,9 @@
     },
     {
       "kind": "download",
-      "label": "Colorado EV registrations (csv, Atlas EV Hub)",
-      "url": "https://www.atlasevhub.com/public/dmv/CO_EV_Registrations_03.csv"
+      "label": "Colorado EV registrations, current provider CSV (September 2026 snapshot; October 2026 filename)",
+      "note": "2026-10-10 link repair: Current Atlas EV Hub Colorado state registration CSV publication replaces retired March-named CSV access. Primary native descriptive table identifies Colorado Energy Office, ZIP-code aggregation, monthly updates and snapshot September1,2026; current published filename contains10_2026. This is a current series release; original historical snapshot values, retained historical rows, schema and byte continuity are not established. Native zero-body GET returns200 text/csv. No CSV contents read. All original catalogue identity, dates, provider and licence fields remain preserved.",
+      "url": "https://www.atlasevhub.com/public/dmv/CO_EV_Registrations_10_2026.csv"
     },
     {
       "kind": "portal",
@@ -73,11 +74,14 @@
     "share_alike"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-10",
+    "dead": [
+      "https://www.atlasevhub.com/public/dmv/CO_EV_Registrations_03.csv"
+    ]
   },
   "maturity": "active",
   "name": "State EV Registration Data",
-  "notes": "Harvested from the Open Energy Hub (ORNL) listing (Opendatasoft explore API) on 2026-09-29 as part of the second portal harvest.",
+  "notes": "Harvested from the Open Energy Hub (ORNL) listing (Opendatasoft explore API) on 2026-09-29 as part of the second portal harvest. 2026-10-10 link repair: Current Atlas EV Hub Colorado state registration CSV publication replaces retired March-named CSV access. Primary native descriptive table identifies Colorado Energy Office, ZIP-code aggregation, monthly updates and snapshot September1,2026; current published filename contains10_2026. This is a current series release; original historical snapshot values, retained historical rows, schema and byte continuity are not established. Native zero-body GET returns200 text/csv. No CSV contents read. All original catalogue identity, dates, provider and licence fields remain preserved.",
   "provider": "Oak Ridge National Laboratory for the U.S. DOE Office of Electricity",
   "related_ids": [
     "data-oeh-open-data-portal"
@@ -93,6 +97,11 @@
       "accessed": "2026-09-29",
       "note": "Open Energy Hub (ORNL) catalogue record read through the explore API on 2026-09-29: title, description, keywords, licence, dates, features; the data files were not opened",
       "url": "https://openenergyhub.ornl.gov/api/explore/v2.1/catalog/datasets/state-ev-registration-data"
+    },
+    {
+      "accessed": "2026-10-10",
+      "note": "2026-10-10 link repair: Current Atlas EV Hub Colorado state registration CSV publication replaces retired March-named CSV access. Primary native descriptive table identifies Colorado Energy Office, ZIP-code aggregation, monthly updates and snapshot September1,2026; current published filename contains10_2026. This is a current series release; original historical snapshot values, retained historical rows, schema and byte continuity are not established. Native zero-body GET returns200 text/csv. No CSV contents read. All original catalogue identity, dates, provider and licence fields remain preserved. Native descriptive metadata received fully below512KiB; current distribution checked with zero-body GET200.",
+      "url": "https://www.atlasevhub.com/market-data/state-ev-registration-data/"
     }
   ],
   "tags": [

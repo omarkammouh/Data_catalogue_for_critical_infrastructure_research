@@ -12,13 +12,15 @@
     },
     {
       "kind": "api",
-      "label": "Provider endpoint of the real-time feed mdb-1445",
-      "url": "http://apps2.saskatoon.ca/app/data/Vehicle/VehiclePositions.pb"
+      "label": "Provider GTFS-RT vehicle-position endpoint",
+      "note": "City developer page explicitly publishes Saskatoon vehicle positions on saskprdtmgtfs.sasktrpcloud.com. Current Transitland descriptor gives the exact VehiclePositions.pb route under this host; exact endpoint HEAD200 with zero body. Same city/operator, protobuf GTFS-RT and vehicle-position purpose as old apps2 endpoint. Payload contents and freshness not read.",
+      "url": "https://saskprdtmgtfs.sasktrpcloud.com/TMGTFSRealTimeWebService/Vehicle/VehiclePositions.pb"
     },
     {
       "kind": "api",
-      "label": "Provider endpoint of the real-time feed mdb-1446",
-      "url": "http://apps2.saskatoon.ca/app/data/Alert/Alerts.pb"
+      "label": "Provider GTFS-RT service-alert endpoint",
+      "note": "City developer page explicitly publishes Saskatoon service alerts on saskprdtmgtfs.sasktrpcloud.com. Current Transitland descriptor gives the exact Alerts.pb route under this host; exact endpoint HEAD200 with zero body. Same city/operator, protobuf GTFS-RT and service-alert purpose as old apps2 endpoint. Payload contents and freshness not read.",
+      "url": "https://saskprdtmgtfs.sasktrpcloud.com/TMGTFSRealTimeWebService/Alert/Alerts.pb"
     },
     {
       "kind": "portal",
@@ -39,6 +41,11 @@
       "kind": "portal",
       "label": "Mobility Database page of the real-time feed mdb-1447",
       "url": "https://mobilitydatabase.org/feeds/gtfs_rt/mdb-1447"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-716 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-716"
     }
   ],
   "access_restrictions": "none",
@@ -73,6 +80,12 @@
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -91,6 +104,10 @@
   ],
   "link_health": {
     "checked": "2026-10-01",
+    "dead": [
+      "http://apps2.saskatoon.ca/app/data/Alert/Alerts.pb",
+      "http://apps2.saskatoon.ca/app/data/Vehicle/VehiclePositions.pb"
+    ],
     "unverified": [
       "http://apps2.saskatoon.ca/app/data/Alert/Alerts.pb",
       "http://apps2.saskatoon.ca/app/data/Vehicle/VehiclePositions.pb"
@@ -98,7 +115,7 @@
   },
   "maturity": "active",
   "name": "Saskatoon Transit: GTFS schedule and real-time transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 1 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Saskatoon Transit",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -116,6 +133,21 @@
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "City developer page explicitly publishes Saskatoon service alerts on saskprdtmgtfs.sasktrpcloud.com. Current Transitland descriptor gives the exact Alerts.pb route under this host; exact endpoint HEAD200 with zero body. Same city/operator, protobuf GTFS-RT and service-alert purpose as old apps2 endpoint. Payload contents and freshness not read. Metadata and zero-body transport checks only.",
+      "url": "https://www.saskatoon.ca/moving-around/transit/open-data-saskatoon-transit"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "City developer page explicitly publishes Saskatoon vehicle positions on saskprdtmgtfs.sasktrpcloud.com. Current Transitland descriptor gives the exact VehiclePositions.pb route under this host; exact endpoint HEAD200 with zero body. Same city/operator, protobuf GTFS-RT and vehicle-position purpose as old apps2 endpoint. Payload contents and freshness not read. Metadata and zero-body transport checks only.",
+      "url": "https://www.saskatoon.ca/moving-around/transit/open-data-saskatoon-transit"
     }
   ],
   "tags": [

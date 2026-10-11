@@ -29,6 +29,11 @@
       "label": "PID open data page",
       "note": "landing page that lists the download; the address itself does not return the file",
       "url": "https://pid.cz/en/opendata/"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database mdb-860 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-860"
     }
   ],
   "access_restrictions": "none",
@@ -62,6 +67,12 @@
       "query": "železnice otevřená data datová sada",
       "route": "R22",
       "source": "web-search"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -85,6 +96,7 @@
   },
   "maturity": "active",
   "name": "Prague Integrated Transport (PID) open data, timetables, stops and real-time vehicle positions",
+  "notes": "Mobility Database identity supplement (2026-10-07): 1 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Prague Integrated Transport (PID), ROPID",
   "related_ids": [
     "data-gtfs-specification",
@@ -103,6 +115,11 @@
       "accessed": "2026-09-26",
       "note": "for analysts and developers; GTFS all lines 14 days daily 4:00-4:30; GTFS-RT or Golemio API; stop list XML/JSON/XSD daily; sales points; RSS; Prague opendata portal and Golemio; CC-BY; preview without warranty; stops only in use",
       "url": "https://pid.cz/en/opendata/"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],
   "spatial_resolution": "stops and vehicle positions",

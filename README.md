@@ -18,16 +18,18 @@ The catalogue is a contribution to the research community. Its purpose is to red
 
 ## What is included
 
-The version 1.0.0 snapshot contains **64,625 resource records**:
+The current dashboard snapshot, captured on 11 October 2026, contains **68,670 resource records**:
 
 | Type | Records |
 |---|---:|
-| Data and information sources | 57,723 |
-| Models | 3,185 |
-| Simulation platforms | 2,231 |
-| Case studies | 1,486 |
+| Data and information sources | 61,318 |
+| Models | 3,466 |
+| Simulation platforms | 2,288 |
+| Case studies | 1,598 |
 
-Coverage spans energy, water, transport, digital infrastructure, the built environment, services, industry and cross-cutting infrastructure topics. See [snapshot metadata](catalog/snapshot.json) for the capture date and [methods](docs/methods.md) for scope and inclusion criteria.
+Coverage spans energy, water, transport, digital infrastructure, the built environment, services, industry and cross-cutting infrastructure topics. See [current snapshot metadata](catalog/dashboard-snapshot.json) for the capture date and [methods](docs/methods.md) for scope and inclusion criteria.
+
+The archived v1.0.0 release contains 64,625 records. Its [snapshot metadata](catalog/snapshot.json) and DOI identify that fixed release. The hosted dashboard is updated independently from the release archive.
 
 This repository contains **metadata**, including source links, descriptions, access conditions and citations. Obtain the underlying resources from their providers. Some resources require registration, permission or payment.
 

@@ -1,0 +1,112 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Mobility Database tdg-83674 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tdg-83674"
+    },
+    {
+      "kind": "download",
+      "label": "Current official Loire ferry network static GTFS (current series)",
+      "note": "Checked on 2026-10-10: official current static GTFS distribution for the same Loire ferry network network. Descriptive provider metadata identifies the network and GTFS format; streamed GET returned HTTP 200 and application/zip with zero body bytes read. This replaces the retired provider endpoint as a current-series access link. Historical release byte identity and unchanged historical coverage are not established. The original deprecated feed and dated citations remain preserved. The provider labels this release GTFS 2026.",
+      "url": "https://data.loire-atlantique.fr/api/v2/catalog/datasets/224400028_horaires-bacs-loire-en-loire-atlantique-gtfs/alternative_exports/gtfs_bac_loire2026_zip"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tdg-83727 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tdg-83727"
+    },
+    {
+      "kind": "download",
+      "label": "Mobility Database feed archive (tdg-83727)",
+      "note": "The 2026-10-07 official Mobility Database inventory lists this archive as urls.latest for feed ID tdg-83727. The inventory marks the feed deprecated. HEAD returned HTTP 200 on 2026-10-08; no file body was fetched.",
+      "url": "https://files.mobilitydatabase.org/tdg-83727/latest.zip"
+    }
+  ],
+  "access_note": "Registry metadata are publicly accessible. Feed-use charges and restrictions are unknown unless stated below.",
+  "access_restrictions": "none",
+  "cost": "unknown",
+  "countries": [
+    "FR"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "network_topology",
+    "tabular"
+  ],
+  "date_catalogued": "2026-10-07",
+  "date_verified": "2026-10-07",
+  "dedupe_keys": {
+    "name": "departement de loire atlantique gtfs transit feeds",
+    "url": "https://mobilitydatabase.org/feeds/gtfs/tdg-83674"
+  },
+  "description": "This record groups 2 public transport feed listing(s) attributed to Département de Loire-Atlantique in the official Mobility Database inventory. The recorded geographic coverage is Indre, Loire-Atlantique, country code FR. The listing status counts on 2026-10-07 are 2 deprecated. Formats are GTFS. GTFS schedule feeds describe transit services for network and timetable modelling; GTFS Realtime listings identify operational update feeds where present. Each retained feed has its own catalogue-page link and provider endpoint when supplied without embedded access parameters. Licence information is recorded from the inventory; feed-use costs are not stated. Authentication requirements follow the source fields. Inactive, deprecated, future and development listings must not be treated as currently operating services. The feed contents, service dates and completeness were not inspected. These metadata support selecting inputs for public transport network and capacity studies. The related Mobility Database record provides the parent catalogue and the distinction between registry metadata and underlying data.",
+  "description_checked": "2026-10-07",
+  "discovery_routes": [
+    {
+      "date": "2026-10-07",
+      "query": "All-status inventory completion; feed IDs tdg-83674, tdg-83727",
+      "route": "R02",
+      "source": "mobility-database"
+    }
+  ],
+  "formats": [
+    "GTFS"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://mobilitydatabase.org/feeds/gtfs/tdg-83674",
+  "id": "data-mdb-completion-fr-departement-de-loire-atlantique-c8c51c5f",
+  "languages": [
+    "en"
+  ],
+  "licence": "Licence link supplied by registry: https://www.data.gouv.fr/pages/legal/licences/etalab-2.0",
+  "link_health": {
+    "checked": "2026-10-10",
+    "dead": [
+      "https://www.data.gouv.fr/api/1/datasets/r/b04f2bcc-a99c-4d45-a22a-b61f491c30ad",
+      "https://www.data.gouv.fr/api/1/datasets/r/daebfad5-7273-4637-b897-88308b2d96d7"
+    ]
+  },
+  "maturity": "archived",
+  "name": "Département de Loire-Atlantique: GTFS transit feeds",
+  "notes": "Exact source rows and status/redirect relationships are retained in the Mobility Database completion audit dated 2026-10-07. Checked on 2026-10-10: official current static GTFS distribution for the same Loire ferry network network. Descriptive provider metadata identifies the network and GTFS format; streamed GET returned HTTP 200 and application/zip with zero body bytes read. This replaces the retired provider endpoint as a current-series access link. Historical release byte identity and unchanged historical coverage are not established. The original deprecated feed and dated citations remain preserved. The provider labels this release GTFS 2026.",
+  "provider": "Département de Loire-Atlantique",
+  "regions": [
+    "Indre, Loire-Atlantique"
+  ],
+  "related_ids": [
+    "data-mobility-database-mobilitydata"
+  ],
+  "sectors": [
+    "transport.public_transit"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-07",
+      "note": "Official inventory metadata; resource bodies were not downloaded.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-10",
+      "note": "Checked on 2026-10-10: official current static GTFS distribution for the same Loire ferry network network. Descriptive provider metadata identifies the network and GTFS format; streamed GET returned HTTP 200 and application/zip with zero body bytes read. This replaces the retired provider endpoint as a current-series access link. Historical release byte identity and unchanged historical coverage are not established. The original deprecated feed and dated citations remain preserved. The provider labels this release GTFS 2026. Source identity evidence is saved in internal metadata review",
+      "url": "https://www.data.gouv.fr/api/1/datasets/?page_size=3&q=Bacs%20Loire"
+    },
+    {
+      "accessed": "2026-10-10",
+      "note": "Official published GTFS distribution checked by HEAD and streamed GET headers only: HTTP 200, application/zip, zero body bytes read. Current-series replacement; no dataset body or historical byte identity check.",
+      "url": "https://data.loire-atlantique.fr/api/v2/catalog/datasets/224400028_horaires-bacs-loire-en-loire-atlantique-gtfs/alternative_exports/gtfs_bac_loire2026_zip"
+    }
+  ],
+  "tags": [
+    "Mobility Database"
+  ],
+  "title_en": "Public transport feeds for Département de Loire-Atlantique (FR)",
+  "type": "data"
+}

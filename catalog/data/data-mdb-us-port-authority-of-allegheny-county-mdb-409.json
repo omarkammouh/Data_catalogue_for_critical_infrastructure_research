@@ -22,8 +22,9 @@
     },
     {
       "kind": "download",
-      "label": "Provider download of the schedule feed mdb-409",
-      "url": "https://www.portauthority.org/developerresources/GTFS.zip"
+      "label": "Historical GTFS copy archived by Mobility Database (mdb-409-202607080039)",
+      "note": "Exact Mobility Database mdb-409 descriptor binds old Port Authority producer URI to archived202607080039 ZIP and service rangeOct19,2025-Oct25,2026. Archive HEAD200. New rideprt exact provider routes remain404, so adopt clearly labelled dated archive, not claimed current provider recovery.",
+      "url": "https://files.mobilitydatabase.org/mdb-409/mdb-409-202607080039/mdb-409-202607080039.zip"
     },
     {
       "kind": "download",
@@ -39,6 +40,11 @@
       "kind": "api",
       "label": "Provider endpoint of the real-time feed mdb-1712",
       "url": "https://truetime.portauthority.org/gtfsrt-train/trips"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tfs-274 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tfs-274"
     }
   ],
   "access_restrictions": "none",
@@ -73,6 +79,12 @@
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -90,11 +102,14 @@
     "provider_terms"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-01",
+    "dead": [
+      "https://www.portauthority.org/developerresources/GTFS.zip"
+    ]
   },
   "maturity": "active",
   "name": "Port Authority of Allegheny County: GTFS schedule and real-time transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 1 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Port Authority of Allegheny County",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -112,6 +127,16 @@
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Exact Mobility Database mdb-409 descriptor binds old Port Authority producer URI to archived202607080039 ZIP and service rangeOct19,2025-Oct25,2026. Archive HEAD200. New rideprt exact provider routes remain404, so adopt clearly labelled dated archive, not claimed current provider recovery. Descriptive metadata and zero-body distribution/header checks only.",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-409"
     }
   ],
   "tags": [

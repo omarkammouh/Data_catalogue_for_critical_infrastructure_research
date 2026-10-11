@@ -9,13 +9,23 @@
       "kind": "api",
       "label": "portal metadata (API)",
       "url": "https://open.alberta.ca/api/3/action/package_show?id=e71d45e4-84ad-49b9-a8ec-d46e430dd557"
+    },
+    {
+      "kind": "portal",
+      "label": "CUDC exact 74D Waterways sheet metadata",
+      "url": "https://data.urbandatacentre.ca/en/catalogue/ab-gda-39d209c4-9ea2-445d-80dc-d85d7c1c1eaa"
+    },
+    {
+      "kind": "api",
+      "label": "Native sheet descriptive metadata",
+      "url": "https://data.urbandatacentre.ca/api/3/action/package_show?id=fcc05361-ab2f-4bdc-a346-1fc616758828"
     }
   ],
   "access_restrictions": "none",
   "continents": [
     "north_america"
   ],
-  "cost": "free",
+  "cost": "unknown",
   "countries": [
     "CA"
   ],
@@ -23,16 +33,16 @@
     "system_description"
   ],
   "data_kind": [
-    "asset_inventory"
+    "document"
   ],
   "date_catalogued": "2026-09-30",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-09",
   "dedupe_keys": {
     "name": "74d waterways provincial access topographic map series",
     "url": "https://open.alberta.ca/dataset/e71d45e4-84ad-49b9-a8ec-d46e430dd557"
   },
-  "description": "74D Waterways - Provincial Access/Topographic Map Series is a dataset listed in Alberta open data portal, an open data portal, published or maintained by Environment and Parks. This series of 1:250 000 scale colour maps covers the provincial extent of Alberta and is comprised of 50 maps that are individually named using the National Topographic System (NTS) map sheet identifier. Coverage: Alberta. The portal files it under the publisher Environment and Parks. Its tags are -ALBERTA, -CANADA, 1-250-000-SCALE-MAPS, ALBERTA-TOWNSHIP-SYSTEM, ATS. It offers 2 resource(s) in HTML, XML. The portal shows 2026-09-06 as the last update. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is Open Government Licence - Alberta. Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support inland waterway and lock studies. Related record: the catalogue-level record data-am-alberta-portal.",
-  "description_checked": "2026-09-30",
+  "description": "This entry represents the 74D Waterways sheet of Alberta’s Provincial Access/Topographic Map Series, a 50-sheet colour map series at 1:250,000 scale. The native Alberta source ID and explicit Canadian mirror establish the sheet identity. The source identifies major roads, railways, municipalities, hydrography, the Alberta Township System, selected administrative features and contours at 50 m intervals. Waterways is the sheet name; the description does not establish inland-waterway operation or lock data. Native time-span fields say 2006, without a precise survey date. The current CUDC resource descriptors point to HTML/XML metadata pages. Earlier Canadian metadata listed PDF as well; no PDF body has been checked. The mapped road and rail assets establish infrastructure scope. Coordinate reference system, numerical accuracy and current operating status are unspecified. Geographic coverage is within Alberta. Related map components retain their native catalogue identities. The native packages list Open Government Licence - Alberta and unrestricted access, but isopen is false. Actual file access and any cost are unverified. Distribution metadata mainly points to HTML/XML descriptive pages; these are not machine-readable infrastructure geometries. No map, PDF, image, archive or dataset body was fetched. Specific simulation uses are not stated.",
+  "description_checked": "2026-10-09",
   "discovery_routes": [
     {
       "date": "2026-09-30",
@@ -59,9 +69,9 @@
   "link_health": {
     "checked": "2026-10-01"
   },
-  "maturity": "active",
+  "maturity": "not_stated",
   "name": "74D Waterways - Provincial Access/Topographic Map Series",
-  "notes": "Harvested from the open.alberta.ca CKAN API on 2026-09-30 in the Americas country search.",
+  "notes": "Harvested from the open.alberta.ca CKAN API on 2026-09-30 in the Americas country search. Source refinement 2026-10-09: corrected title-inferred inland-waterways/network-flow claims; both existing mirror identities retained without deletion. Original sheet scope retained; separate Canadian record now carries the series grouping.",
   "provider": "Environment and Parks",
   "regions": [
     "Alberta"
@@ -70,18 +80,24 @@
     "data-am-alberta-portal"
   ],
   "sectors": [
-    "transport.inland_waterways"
+    "transport.road",
+    "transport.rail"
   ],
-  "simulation_uses": [
-    "network_flow"
-  ],
+  "simulation_uses": [],
   "sources": [
     {
       "accessed": "2026-09-30",
       "note": "open.alberta.ca catalogue entry read through the CKAN API on 2026-09-30: title, description, tags, licence, formats, dates; the data files were not opened",
       "url": "https://open.alberta.ca/api/3/action/package_show?id=e71d45e4-84ad-49b9-a8ec-d46e430dd557"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Native descriptive metadata establishes source-defined series component and exact Alberta/Canadian identity. No map body fetched.",
+      "url": "https://data.urbandatacentre.ca/api/3/action/package_show?id=fcc05361-ab2f-4bdc-a346-1fc616758828"
     }
   ],
+  "spatial_resolution": "1:250,000 map scale; contours at 50 m intervals",
+  "spatial_resolution_class": "not_stated",
   "tags": [
     "Alberta open data portal",
     "-ALBERTA",
@@ -89,6 +105,10 @@
     "1-250-000-SCALE-MAPS",
     "ALBERTA-TOWNSHIP-SYSTEM"
   ],
-  "title_en": "74D Waterways - Provincial Access/Topographic Map Series",
-  "type": "data"
+  "temporal_coverage": "Native time-span fields say 2006; individual survey dates unstated",
+  "temporal_resolution": "not_stated",
+  "temporal_resolution_class": "not_stated",
+  "title_en": "74D Waterways sheet, Alberta Provincial Access/Topographic Map Series",
+  "type": "data",
+  "update_frequency": "not_stated"
 }

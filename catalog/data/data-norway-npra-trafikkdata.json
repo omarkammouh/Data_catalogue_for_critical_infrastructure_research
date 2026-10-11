@@ -17,7 +17,7 @@
     },
     {
       "kind": "api",
-      "label": "Trafikkdata GraphQL API (POST {\"query\":\"{ trafficRegistrationPoints { id name } }\"})",
+      "label": "Trafikkdata GraphQL API (POST required; response contents unverified)",
       "url": "https://trafikkdata-api.atlas.vegvesen.no/"
     }
   ],
@@ -68,10 +68,11 @@
     "attribution"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-10"
   },
   "maturity": "stale",
   "name": "Trafikkdata, Norwegian road traffic counts (Statens vegvesen)",
+  "notes": "Link review, 10 October 2026: the unchanged Trafikkdata GraphQL endpoint returns HTTP200 application/json to the documented POST method. The native Statens vegvesen resource descriptor binds this exact API URL. The earlier GET404 is preserved in the audit and does not establish failure of POST access. The header-only check requested only GraphQL type metadata and read zero response bytes; response semantics, traffic data contents and API query validity were not verified. Other frontend/API links in this record were not rechecked by this method review.",
   "provider": "Statens vegvesen (Norwegian Public Roads Administration)",
   "related_ids": [
     "data-norway-nvdb-national-road-database",
@@ -95,6 +96,11 @@
       "accessed": "2026-09-26",
       "note": "speed data export",
       "url": "https://trafikkdata.atlas.vegvesen.no/fartsdata"
+    },
+    {
+      "accessed": "2026-10-10",
+      "note": "Link review, 10 October 2026: the unchanged Trafikkdata GraphQL endpoint returns HTTP200 application/json to the documented POST method. The native Statens vegvesen resource descriptor binds this exact API URL. The earlier GET404 is preserved in the audit and does not establish failure of POST access. The header-only check requested only GraphQL type metadata and read zero response bytes; response semantics, traffic data contents and API query validity were not verified. Other frontend/API links in this record were not rechecked by this method review.",
+      "url": "https://dataut.vegvesen.no/dataset/trafikkdata/resource/968a10a7-f704-4cd7-9795-de69e8cad2bc"
     }
   ],
   "spatial_resolution": "counting station and lane",

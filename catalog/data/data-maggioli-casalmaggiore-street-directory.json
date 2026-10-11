@@ -1,0 +1,109 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "Native dataset metadata",
+      "url": "https://www.opendata.maggioli.cloud/api/3/action/package_show?id=a35ca614-c7ce-40cc-b73e-c7f9b96d203c"
+    },
+    {
+      "kind": "portal",
+      "label": "Provider dataset page",
+      "url": "https://www.opendata.maggioli.cloud/dataset/a35ca614-c7ce-40cc-b73e-c7f9b96d203c"
+    },
+    {
+      "kind": "download",
+      "label": "CSV distribution listed by the provider",
+      "note": "Native metadata lists this CSV. HTTP HEAD reached the route; no file body or download integrity was checked.",
+      "url": "https://www.opendata.maggioli.cloud/dataset/a35ca614-c7ce-40cc-b73e-c7f9b96d203c/resource/dda36f1f-e9bc-48b1-b4f6-2caf5b84f8b8/download/comune-di-casalmaggiore-elenco-delle-aree-di-circolazione.csv"
+    }
+  ],
+  "access_note": "The package and CSV distribution declare CC BY 4.0. The source marks distribution access PUBLIC.",
+  "access_restrictions": "none",
+  "continents": [
+    "europe"
+  ],
+  "cost": "unknown",
+  "countries": [
+    "IT"
+  ],
+  "data_family": [
+    "system_description"
+  ],
+  "data_kind": [
+    "asset_inventory",
+    "tabular"
+  ],
+  "date_catalogued": "2026-10-09",
+  "date_verified": "2026-10-09",
+  "dedupe_keys": {
+    "name": "comune di casalmaggiore elenco delle aree di circolazione",
+    "url": "https://opendata.maggioli.cloud/api/3/action/package_show?id=a35ca614-c7ce-40cc-b73e-c7f9b96d203c"
+  },
+  "description": "Comune di Casalmaggiore publishes this tabular list of circulation areas through the Maggioli open data catalogue. Native field metadata lists five columns: Codvia, Specie, Descrizione, Cap and Comune. These identify a street reference table with codes, classification labels, descriptions, postcodes and municipalities. Coverage follows the publishing municipality; geographic completeness has not been checked. The source offers one CSV distribution. The package and CSV distribution declare CC BY 4.0. Metadata is publicly readable, but the reviewed source does not state a charge for obtaining or using the file. The inspected schema provides no coordinates or road-link connectivity. A documented simulation application is not supplied, so no simulation method is assigned. The declared update frequency is annual; its operation has not been independently verified. Accuracy, completeness and individual field values remain unverified. Related-resource links are not supplied by the source. No dataset rows or download body were read.",
+  "description_checked": "2026-10-09",
+  "discovery_routes": [
+    {
+      "date": "2026-10-09",
+      "query": "Exact full-description family plus individual complete title/UUID and native field metadata",
+      "route": "R22",
+      "source": "it-maggioli-opendata"
+    }
+  ],
+  "formats": [
+    "csv"
+  ],
+  "geographic_scope": "city",
+  "homepage": "https://www.opendata.maggioli.cloud/api/3/action/package_show?id=a35ca614-c7ce-40cc-b73e-c7f9b96d203c",
+  "id": "data-maggioli-casalmaggiore-street-directory",
+  "languages": [
+    "it"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-09",
+    "dead": [],
+    "unverified": []
+  },
+  "maturity": "unknown",
+  "name": "Comune di Casalmaggiore - Elenco delle aree di circolazione",
+  "notes": "All five schema fields were obtained from read-only datastore_info metadata; no table rows were requested. The exact package metadata had returned HTTP 200 with matching ID, title and description. All home/access routes returned HTTP 200 to final HEAD checks; file contents and download integrity remain unverified.",
+  "provider": "Comune di Casalmaggiore",
+  "regions": [
+    "Casalmaggiore"
+  ],
+  "related_ids": [],
+  "schema_summary": "Native field types: Codvia (text), Specie (text), Descrizione (text), Cap (text), Comune (text). No coordinate or road-link topology fields in the native datastore schema.",
+  "sectors": [
+    "transport.road"
+  ],
+  "simulation_uses": [],
+  "sources": [
+    {
+      "accessed": "2026-10-09",
+      "note": "Exact native UUID, title, description, publisher, rights and CSV distribution metadata matched the saved catalogue member.",
+      "url": "https://www.opendata.maggioli.cloud/api/3/action/package_show?id=a35ca614-c7ce-40cc-b73e-c7f9b96d203c"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Read-only POST with resource id dda36f1f-e9bc-48b1-b4f6-2caf5b84f8b8 returned matching table id and five field definitions. No data rows requested. Later endpoint observations returned HTTP 503.",
+      "url": "https://www.opendata.maggioli.cloud/api/3/action/datastore_info"
+    }
+  ],
+  "spatial_resolution": "Named circulation areas in the publishing municipality; no geometry fields in inspected table metadata",
+  "spatial_resolution_class": "not_stated",
+  "tags": [
+    "Italy",
+    "street-directory",
+    "Maggioli",
+    "catalogue-first"
+  ],
+  "temporal_coverage": "Observation dates are not established; native metadata update dates are not treated as asset observation dates",
+  "temporal_resolution": "not stated",
+  "temporal_resolution_class": "not_stated",
+  "title_en": "Casalmaggiore street reference directory",
+  "type": "data",
+  "update_frequency": "annual"
+}

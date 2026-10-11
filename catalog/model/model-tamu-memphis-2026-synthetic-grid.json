@@ -1,0 +1,101 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "Provider case description and download form",
+      "note": "Email field required for the download form; no form submitted or archive fetched.",
+      "url": "https://electricgrids.engr.tamu.edu/memphis2026/"
+    },
+    {
+      "kind": "portal",
+      "label": "Electric Grid Test Case Repository",
+      "url": "https://electricgrids.engr.tamu.edu/electric-grid-test-cases/"
+    }
+  ],
+  "access_note": "The exact case page returned HTTP 200 to GET and HEAD. Provider download form requires an email field; download access was not exercised.",
+  "access_restrictions": "registration",
+  "citation": "Provider cites J. Baek and A. B. Birchfield, Dynamic performance design and validation in large, IBR-heavy synthetic grids, Energies 18(15), July 2025. Paper not independently reviewed.",
+  "continents": [
+    "north_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "US"
+  ],
+  "date_catalogued": "2026-10-08",
+  "date_verified": "2026-10-08",
+  "dedupe_keys": {
+    "name": "memphis 2026 synthetic case",
+    "url": "https://electricgrids.engr.tamu.edu/memphis2026"
+  },
+  "description": "Texas A&M University provides a synthetic electricity-grid model for the greater Memphis region and the New Madrid Seismic Area, developed for the DOE All-Hazards project. Its geographic coverage extends from 34 to 38 degrees north and from 88 to 92 degrees west. It describes 11,186 MW of peak load in four areas, 63 generating plants with 188 units, and 19,628 MW of combined nameplate capacity derived from the 2024 EIA-860 report. The network contains 974 AC transmission lines and 407 transformers. Dynamic models support stability analysis. The provider states that the network was designed for N-1 AC power-flow contingency security; that claim was not independently tested here. The case supports power-flow and resilience studies, but it does not represent the actual Memphis grid. The catalogue describes it as approximately 1,000 buses. The case page provides a download form with a required email field. Texas A&M permits free commercial and non-commercial use under its stated terms and encourages citation. The specific file formats and archive contents remain unverified because no model files were downloaded. Related cases are available through the Texas A&M Electric Grid Test Case Repository.",
+  "description_checked": "2026-10-08",
+  "discovery_routes": [
+    {
+      "date": "2026-10-08",
+      "query": "Backtrack 35 existing TAMU entries to the full case index; compare 58 provider links against active and earlier candidates.",
+      "route": "R06",
+      "source": "electricgrids.engr.tamu.edu"
+    }
+  ],
+  "geographic_scope": "regional",
+  "hazards": [
+    "earthquake"
+  ],
+  "homepage": "https://electricgrids.engr.tamu.edu/memphis2026/",
+  "id": "model-tamu-memphis-2026-synthetic-grid",
+  "inputs": [
+    "Supplied synthetic network topology, generating-unit parameters and load allocation; scenario changes are user inputs."
+  ],
+  "languages": [
+    "en"
+  ],
+  "licence": "Custom free-use terms; commercial and non-commercial use permitted",
+  "link_health": {
+    "checked": "2026-10-08",
+    "unverified": []
+  },
+  "maturity": "unknown",
+  "model_kind": [
+    "network",
+    "physical"
+  ],
+  "name": "Memphis 2026 Synthetic Case",
+  "notes": "Catalogued as an existing network model because the resource defines a synthetic network with power-flow and dynamic models. No archive was downloaded and its individual file formats are unknown. The geographic footprint includes a seismic area; no earthquake damage or recovery model is established by the page. No equivalence is inferred between other TAMU case families.",
+  "outputs": [
+    "AC power-flow and contingency responses; dynamic stability responses when used with a compatible simulator."
+  ],
+  "provider": "Texas A&M University",
+  "regions": [
+    "Greater Memphis region",
+    "New Madrid Seismic Area"
+  ],
+  "related_ids": [
+    "data-tamu-electric-grid-test-cases"
+  ],
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "resilience"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-08",
+      "note": "Primary case-page metadata read through web tool and HTTP GET 200, including geographic bounds, network size, capacities, dynamics and access terms; provider claims retained as such.",
+      "url": "https://electricgrids.engr.tamu.edu/memphis2026/"
+    },
+    {
+      "accessed": "2026-10-08",
+      "note": "Current catalogue links the case and describes approximately 1000 buses; root HTTP GET 200.",
+      "url": "https://electricgrids.engr.tamu.edu/electric-grid-test-cases/"
+    }
+  ],
+  "tags": [],
+  "title_en": "Memphis and New Madrid Synthetic Electricity Grid, 2026",
+  "type": "model",
+  "validated_on": [
+    "Provider states N-1 AC power-flow contingency security and dynamics tuning using Baek and Birchfield (2025). No execution or independent validation performed."
+  ]
+}

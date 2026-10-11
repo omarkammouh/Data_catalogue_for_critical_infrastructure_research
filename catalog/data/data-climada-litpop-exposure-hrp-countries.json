@@ -3,7 +3,8 @@
     {
       "kind": "api",
       "label": "CLIMADA Data API",
-      "url": "https://climada.ethz.ch/data-types/"
+      "note": "Current CLIMADA APIv1 data-type metadata list. This verifies route availability and identity, not dataset contents.",
+      "url": "https://climada.ethz.ch/data-api/v1/data_type/"
     },
     {
       "kind": "portal",
@@ -62,7 +63,7 @@
     "attribution"
   ],
   "link_health": {
-    "checked": "2026-10-01",
+    "checked": "2026-10-09",
     "dead": [
       "https://climada.ethz.ch/data-types/"
     ],
@@ -86,6 +87,11 @@
       "accessed": "2026-09-26",
       "note": "Method, 4 km, HRP countries, admin1 files, caveats (resolution, Syria), Eberenz et al. 2020 and ETH archive DOI, cc-by, created 2024-01-10, modified 2025-09-02",
       "url": "https://data.humdata.org/api/3/action/package_show?id=climada-litpop-dataset"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Official ETH CLIMADA OpenAPIv1 documentation publishes GET/data-api/v1/data_type/ as List Data Types, matching the failed /data-types/ metadata-list API purpose. Fresh streamedGETheaders200, no dataset query or body; other exact LitPopdataset links unchanged.",
+      "url": "https://climada.ethz.ch/data-api/v1/data_type/"
     }
   ],
   "spatial_resolution": "4 km grid, summarised to first-level administrative units on HDX",

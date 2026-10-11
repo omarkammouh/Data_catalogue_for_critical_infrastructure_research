@@ -34,6 +34,11 @@
       "kind": "download",
       "label": "https://gbfs.partners.fifteen.eu/gbfs/2.2/caen/en/station_status.json",
       "url": "https://gbfs.partners.fifteen.eu/gbfs/2.2/caen/en/station_status.json"
+    },
+    {
+      "kind": "api",
+      "label": "Current GBFS auto-discovery endpoint",
+      "url": "https://gbfs.partners.fifteen.eu/gbfs/2.2/caen/en/gbfs.json"
     }
   ],
   "access_restrictions": "none",
@@ -66,6 +71,12 @@
       "query": "transport.data.gouv.fr /api/datasets, all datasets",
       "route": "R02",
       "source": "transport.data.gouv.fr-api"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -91,7 +102,7 @@
   },
   "maturity": "active",
   "name": "VLS Vélolib CU Caen la Mer (Twisto)",
-  "notes": "Harvested from the transport.data.gouv.fr API (/api/datasets) on 2026-09-29 as part of the second portal harvest; the portal listing has no free-text description, so the description states only what the listing gives.",
+  "notes": "Harvested from the transport.data.gouv.fr API (/api/datasets) on 2026-09-29 as part of the second portal harvest; the portal listing has no free-text description, so the description states only what the listing gives.\n\nMobility Database identity supplement (2026-10-07): 1 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Twisto",
   "related_ids": [
     "data-france-transport-data-gouv-national-access-point"
@@ -113,6 +124,11 @@
       "accessed": "2026-10-01",
       "note": "Deep check A16 (round 2): last update date read from the Opendatasoft data_processed field (twisto-caen.opendatasoft.com)",
       "url": "https://transport.data.gouv.fr/datasets/liste-des-stations-velolib-et-disponibilite-en-temps-reel-4"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://github.com/MobilityData/gbfs/blob/master/systems.csv"
     }
   ],
   "tags": [

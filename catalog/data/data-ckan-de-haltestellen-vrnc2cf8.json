@@ -3,7 +3,8 @@
     {
       "kind": "portal",
       "label": "GovData dataset page",
-      "url": "https://ckan.govdata.de/dataset/haltestellen-vrnc2cf8"
+      "note": "Current same-resource GovData route verified 2026-10-09; replaced a 404 legacy route. Historic URL retained in link_health.dead.",
+      "url": "https://ckan.govdata.de/dataset/haltestellen-vrn"
     },
     {
       "kind": "api",
@@ -48,7 +49,7 @@
     "geopackage"
   ],
   "geographic_scope": "regional",
-  "homepage": "https://ckan.govdata.de/dataset/haltestellen-vrnc2cf8",
+  "homepage": "https://ckan.govdata.de/dataset/haltestellen-vrn",
   "id": "data-ckan-de-haltestellen-vrnc2cf8",
   "languages": [
     "de"
@@ -59,7 +60,11 @@
     "not_stated"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-09",
+    "dead": [
+      "https://ckan.govdata.de/dataset/haltestellen-vrnc2cf8"
+    ],
+    "dead_since": "2026-10-09"
   },
   "maturity": "active",
   "name": "Haltestellen VRN",
@@ -82,6 +87,11 @@
       "accessed": "2026-09-29",
       "note": "GovData catalogue entry read through the CKAN API on 2026-09-29: title, description, tags, licence, formats, dates; the data files were not opened",
       "url": "https://ckan.govdata.de/api/3/action/package_show?id=4f45cc13-713e-476e-b537-22502a60de04"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Link repair: Exact title match. Current CKAN metadata names VRN as publisher and links to the VRN Open Data source for DIVA stops, matching the saved record subject. The current harvested CKAN package UUID differs from the older record UUID; title, source and subject agree. Replacement answered HTTP 200 to HEAD without reading a response body. Earlier metadata source URLs retain their historical meaning.",
+      "url": "https://ckan.govdata.de/dataset/haltestellen-vrn"
     }
   ],
   "tags": [

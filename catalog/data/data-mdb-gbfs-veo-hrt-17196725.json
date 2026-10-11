@@ -1,0 +1,103 @@
+{
+  "access_links": [
+    {
+      "kind": "api",
+      "label": "GBFS auto-discovery endpoint",
+      "url": "https://cluster-prod.veoride.com/api/shares/name/hrt/gbfs"
+    },
+    {
+      "kind": "portal",
+      "label": "System website",
+      "url": "https://www.veoride.com"
+    },
+    {
+      "kind": "portal",
+      "label": "Official GBFS systems registry",
+      "url": "https://github.com/MobilityData/gbfs/blob/master/systems.csv"
+    },
+    {
+      "kind": "api",
+      "label": "Provider system-information metadata",
+      "url": "https://cluster-prod.veoride.com/api/shares/name/hrt/gbfs/system_information"
+    }
+  ],
+  "access_note": "Registry metadata are publicly accessible. Feed-use charges and restrictions are unknown unless stated below.",
+  "access_restrictions": "unknown",
+  "cost": "unknown",
+  "countries": [
+    "US"
+  ],
+  "data_family": [
+    "system_description",
+    "demand_operation"
+  ],
+  "data_kind": [
+    "stream"
+  ],
+  "date_catalogued": "2026-10-07",
+  "date_verified": "2026-10-07",
+  "dedupe_keys": {
+    "name": "veo hartford",
+    "url": "https://cluster-prod.veoride.com/api/shares/name/hrt/gbfs"
+  },
+  "description": "Veo Hartford is a shared-mobility system listed in the GBFS registry used by Mobility Database. Its listed geographic coverage is Hartford, CT, country code US. The registry System ID is veo-hrt, and the listed GBFS versions are 2.2. The registry names the system but does not separately establish its legal operator. The discovery metadata advertise available-vehicle status. The JSON auto-discovery endpoint links to the system's published components. Auto-discovery returned HTTP 200 during the metadata check. The registry does not state feed-use charges; the licence field retains any provider declaration found in system-information metadata. Station and vehicle data were not downloaded, and current operation or completeness is not established by a registry listing. The resource can provide shared-mobility supply inputs for transport accessibility, network and capacity studies when the relevant components are available. The related Mobility Database catalogue record documents the discovery source.",
+  "description_checked": "2026-10-07",
+  "discovery_routes": [
+    {
+      "date": "2026-10-07",
+      "query": "systems.csv row 1514; System ID veo-hrt",
+      "route": "R02",
+      "source": "mobility-database"
+    }
+  ],
+  "formats": [
+    "GBFS",
+    "JSON"
+  ],
+  "geographic_scope": "regional",
+  "homepage": "https://www.veoride.com",
+  "id": "data-mdb-gbfs-veo-hrt-17196725",
+  "languages": [
+    "en"
+  ],
+  "licence": "Not stated in the registry or accessible system-information metadata",
+  "link_health": {
+    "checked": "2026-10-07"
+  },
+  "maturity": "unknown",
+  "name": "Veo Hartford",
+  "notes": "GBFS listing retained even where endpoint access failed. No historical observations or live station/vehicle data were obtained.",
+  "provider": "Operator not separately stated; system Veo Hartford",
+  "regions": [
+    "Hartford, CT"
+  ],
+  "related_ids": [
+    "data-mobility-database-mobilitydata"
+  ],
+  "sectors": [
+    "transport.active_mobility"
+  ],
+  "simulation_uses": [
+    "network_flow",
+    "capacity_planning"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-07",
+      "note": "Official inventory metadata; resource bodies were not downloaded.",
+      "url": "https://github.com/MobilityData/gbfs/blob/master/systems.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Selected descriptive system fields only; station and vehicle observations were not obtained.",
+      "url": "https://cluster-prod.veoride.com/api/shares/name/hrt/gbfs/system_information"
+    }
+  ],
+  "tags": [
+    "Mobility Database",
+    "GBFS",
+    "veo-hrt"
+  ],
+  "title_en": "Veo Hartford: GBFS shared-mobility feed for Hartford, CT",
+  "type": "data"
+}

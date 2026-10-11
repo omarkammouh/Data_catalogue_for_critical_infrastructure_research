@@ -3,12 +3,12 @@
     {
       "kind": "download",
       "label": "CSV export",
-      "url": "https://oddc-datacorsica.opendatasoft.com/api/explore/v2.1/catalog/datasets/aeroports/exports/csv"
+      "url": "https://data.corsica/api/explore/v2.0/catalog/datasets/aeroports/exports/csv"
     },
     {
       "kind": "api",
-      "label": "Opendatasoft explore API record",
-      "url": "https://oddc-datacorsica.opendatasoft.com/api/explore/v2.1/catalog/datasets/aeroports"
+      "label": "Data Corsica dataset metadata (Data Fair)",
+      "url": "https://data.corsica/data-fair/api/v1/datasets/wh8nsqanzdy96f4hjg8-lffz"
     },
     {
       "kind": "portal",
@@ -38,7 +38,7 @@
     "asset_inventory"
   ],
   "date_catalogued": "2026-09-29",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-08",
   "dedupe_keys": {
     "name": "aeroports",
     "url": "https://oddc-datacorsica.opendatasoft.com/explore/dataset/aeroports"
@@ -73,7 +73,16 @@
     "attribution"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-08",
+    "dead": [
+      "https://oddc-datacorsica.opendatasoft.com/api/explore/v2.1/catalog/datasets/aeroports/exports/csv",
+      "https://oddc-datacorsica.opendatasoft.com/api/explore/v2.1/catalog/datasets/aeroports"
+    ],
+    "dead_since": "2026-10-08",
+    "unverified": [
+      "https://data.corsica/explore/dataset/aeroports/",
+      "https://oddc-datacorsica.opendatasoft.com/api/explore/v2.1/catalog/datasets/aeroports"
+    ]
   },
   "maturity": "stale",
   "name": "Aéroports",
@@ -98,6 +107,16 @@
       "accessed": "2026-10-01",
       "note": "relink pass: data.corsica dataset page answers 200 with the dataset's own title (an unknown slug answers 404); CSV export answers 200",
       "url": "https://data.corsica/explore/dataset/aeroports/"
+    },
+    {
+      "accessed": "2026-10-08",
+      "note": "Current official Data Corsica dataset page; title and description matched saved record metadata. Page HTML metadata only was read; no data file or rows were opened.",
+      "url": "https://data.corsica/datasets/aeroports"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Link repair: Current official Data Corsica metadata retains the source slug, title/subject, Corsica coverage, exact record count 4 and original modification date 2012-05-23. Original source filename/origin and descriptions bind the same resource; Data Fair metadata replaces ODS catalogue metadata purpose. No data or file bodies read. Metadata preserves original dataset identity/date/count; not byte-equivalence or current infrastructure condition proof. Original source URL retained as historical provenance: https://oddc-datacorsica.opendatasoft.com/api/explore/v2.1/catalog/datasets/aeroports",
+      "url": "https://data.corsica/data-fair/api/v1/datasets/wh8nsqanzdy96f4hjg8-lffz"
     }
   ],
   "tags": [

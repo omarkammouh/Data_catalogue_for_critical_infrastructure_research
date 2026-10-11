@@ -23,8 +23,9 @@ What is checked, per record (each check names the record file and the field):
    in ``runs_on``, ``hosted_models`` and ``resources_used``, must resolve to an existing record.
 5. **Consistency**: homepage, access-link and source URLs that are not
    well-formed absolute http(s) URLs are errors (``common.is_http_url``: no
-   whitespace, a valid host and port; the schema's ``format: uri`` is not
-   enforced because no URI format checker is installed). Warnings: dedupe keys
+   whitespace, a valid host and port). The schema's ``http-url`` format uses
+   the same rule, including saved Unicode paths and API URL templates.
+   Warnings: dedupe keys
    that are not in normalised form; type-specific fields on the wrong type;
    dates out of order; a route family that the vocabulary does not know.
 
@@ -230,7 +231,9 @@ class Validator:
         self.paths = paths
         self.vocab = load_vocab(paths)
         self.schema = load_record_schema(paths)
-        self.validator = jsonschema.Draft202012Validator(self.schema, format_checker=jsonschema.Draft202012Validator.FORMAT_CHECKER)
+        format_checker = jsonschema.FormatChecker()
+        format_checker.checks("http-url")(is_http_url)
+        self.validator = jsonschema.Draft202012Validator(self.schema, format_checker=format_checker)
         self.strict_description = strict_description
         self.issues: list[Issue] = []
         self.records: list[RecordFile] = []
@@ -298,6 +301,9 @@ class Validator:
                 if not v.is_sector(value):
                     self.error(rel, field, f"sector {value!r} is not a group or group.sector in vocab.yaml")
         self._check_enum(rel, data, "data_family", v.data_families)
+        self._check_enum(rel, data, "data_resource_type", v.data_resource_types, list_field=False)
+        if "data_resource_type" in data and data.get("type") != "data":
+            self.error(rel, "data_resource_type", "only data records have a data resource type")
         self._check_enum(rel, data, "data_kind", v.data_kinds)
         self._check_enum(rel, data, "model_kind", v.model_kinds)
         self._check_enum(rel, data, "platform_kind", v.platform_kinds)

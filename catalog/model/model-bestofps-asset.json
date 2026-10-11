@@ -8,15 +8,9 @@
     },
     {
       "kind": "paper",
-      "label": "Invalid placeholder retained for audit (Paper 1)",
-      "note": "confirmed HTTP 404 on 2026-10-03. This malformed DOI placeholder is retained as link-history evidence; use the separate associated paper link at https://doi.org/10.1109/PESGM52009.2025.11225841.",
-      "url": "https://doi.org/1"
-    },
-    {
-      "kind": "paper",
-      "label": "Wrong-target DOI placeholder (HTTP 200; retained for audit)",
-      "note": "HTTP 200, but page inspection showed DOI Name Values for DOI 0 and handle 0.NA/0.NA, not the record's associated paper. Marked as a human-confirmed wrong target; the URL remains in the catalogue for audit and the associated paper DOI is separate. Use the separate associated paper link at https://doi.org/10.1109/PESGM52009.2025.11225841.",
-      "url": "https://doi.org/0"
+      "label": "Associated paper, institutional publication metadata",
+      "note": "Verified replacement on 2026-10-09. Exact citation_doi 10.1109/PESGM52009.2025.11225841, title and authors match registered Crossref work and source-listed paper_id. Original URL retained in link_health.dead and original dated sources remain unchanged.",
+      "url": "https://research-hub.nlr.gov/en/publications/application-of-the-extra-element-theorem-for-grid-strength-analys/"
     },
     {
       "kind": "paper",
@@ -61,7 +55,7 @@
     "permissive_code"
   ],
   "link_health": {
-    "checked": "2026-10-03",
+    "checked": "2026-10-10",
     "dead": [
       "https://doi.org/0",
       "https://doi.org/1"
@@ -77,7 +71,7 @@
     "optimisation"
   ],
   "name": "ASSET",
-  "notes": "Harvested from the best-of-ps list (projects.yaml and generated README) on 2026-09-29 at the user's request to include every entry of the related catalogues.",
+  "notes": "Harvested from the best-of-ps list (projects.yaml and generated README) on 2026-09-29 at the user's request to include every entry of the related catalogues. 2026-10-10 link repair: Wrong-target DOI placeholder replaced by the exact associated-paper link; original node preserved in the durable repair audit. Associated-paper landing reachability only. No paper body or PDF was read; no historic byte/version equivalence or operation claim. Existing explicit published/preprint version limits remain.",
   "outputs": [
     "As documented in the project repository or documentation; not read"
   ],
@@ -98,6 +92,11 @@
       "accessed": "2026-10-03",
       "note": "best-of-ps listing read on 2026-09-29: name, link, section, tags and any blurb; the linked page itself was not opened. Its paper_id was rechecked against the provider's current projects.yaml on 2026-10-03.",
       "url": "https://github.com/ps-wiki/best-of-ps/blob/main/projects.yaml"
+    },
+    {
+      "accessed": "2026-10-10",
+      "note": "Exact associated-paper identity bound to registered DOI 10.1109/pesgm52009.2025.11225841. Fresh zero-body GET reached HTTP 200. Associated-paper landing reachability only. No paper body or PDF was read; no historic byte/version equivalence or operation claim. Existing explicit published/preprint version limits remain.",
+      "url": "https://research-hub.nlr.gov/en/publications/application-of-the-extra-element-theorem-for-grid-strength-analys/"
     }
   ],
   "tags": [

@@ -9,36 +9,50 @@
       "kind": "api",
       "label": "CKAN package metadata",
       "url": "https://www.dati.gov.it/opendata/api/3/action/package_show?id=ba682568-edfc-4753-87db-c0a3689d0aa5"
+    },
+    {
+      "kind": "api",
+      "label": "Traffico aeroportuale pugliese a partire dal 2000 metadata and distribution links",
+      "url": "http://www.opendataipres.it/api/3/action/package_show?id=63acb96f-21a7-4a47-8381-65705fbebf91"
     }
   ],
-  "access_restrictions": "none",
+  "access_note": "The native catalogue metadata is publicly accessible. Native Creative Commons Attribution is unversioned; the national mirror labels the record CC BY 4.0. No data distribution body was inspected, and no file-use charge is established.",
+  "access_restrictions": "unknown",
   "continents": [
     "europe"
   ],
-  "cost": "free",
+  "cost": "unknown",
   "countries": [
     "IT"
   ],
   "data_family": [
-    "system_description"
+    "demand_operation",
+    "service_performance"
   ],
   "data_kind": [
+    "time_series",
     "tabular"
   ],
   "date_catalogued": "2026-09-29",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-09",
   "dedupe_keys": {
     "name": "traffico aeroportuale pugliese a partire dal 2000",
     "url": "https://dati.gov.it/view-dataset?id=ba682568-edfc-4753-87db-c0a3689d0aa5"
   },
-  "description": "Traffico aeroportuale pugliese a partire dal 2000 is a dataset listed in Italian national open data portal, an open data portal, published or maintained by Regione Puglia. I dati si riferiscono al numero totale di aeromobili, al numero dei passeggeri e alla quantità totale delle merci (espresse in tonnellate) in arrivo e in partenza dai principali aeroporti pugliesi a partire dal 2000 sino al 2025. I dati sono forniti dalla Società di Gestione aeroportuale. Coverage: Regione Puglia. The portal files it under the publisher Regione Puglia. Its tags are cargo, movimenti, passeggeri, traffico-aereo. It offers 3 resource(s) in CSV, HTML, XLSX. The portal shows 2026-09-29 as the last metadata change. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is CC-BY-4.0. Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support traffic, parking and road network studies. Related record: the catalogue-level record data-ckan-it-portal.",
-  "description_checked": "2026-09-29",
+  "description": "Fondazione IPRES publishes puglia airport aircraft, passenger and freight traffic, 2000–2025. The source reports total aircraft movements, passenger counts and freight tonnes arriving and departing at the main Puglia airports for 2000–2025. Airport management companies supply the data. The workbook descriptor reaches 2025 and the CSV descriptor reaches 2024, so identical coverage across formats is not assumed. Coverage is the Puglia region of Italy. The native catalogue provides CSV and spreadsheet distributions, with some linked visualisations. These alternative representations remain one resource; file contents and data rows were not inspected. The native licence is Creative Commons Attribution without a stated version. The national metadata mirror specifies version 4.0; the native statement remains unversioned. Metadata access is public, while file-use charges and restrictions are not established. Completeness and numerical accuracy are unverified. No specific simulation use is assigned. Related national and regional catalogue representations are treated as the same publication only where their exact source identities match.",
+  "description_checked": "2026-10-09",
   "discovery_routes": [
     {
       "date": "2026-09-29",
       "query": "CKAN package_search with infrastructure phrases, title names an infrastructure element",
       "route": "R02",
       "source": "dati.gov.it-ckan-api"
+    },
+    {
+      "date": "2026-10-09",
+      "query": "Complete saved native inventory title/full-description review and national-mirror identity crosswalk",
+      "route": "R22",
+      "source": "it-ipres-opendata"
     }
   ],
   "formats": [
@@ -53,7 +67,7 @@
     "it"
   ],
   "last_updated": "2026-09-29",
-  "licence": "CC-BY-4.0",
+  "licence": "CC-BY (version not stated)",
   "licence_type": [
     "attribution"
   ],
@@ -62,25 +76,29 @@
   },
   "maturity": "active",
   "name": "Traffico aeroportuale pugliese a partire dal 2000",
-  "notes": "Harvested from the dati.gov.it CKAN API on 2026-09-29 as part of the third portal harvest.",
-  "provider": "Regione Puglia",
+  "notes": "Harvested from the dati.gov.it CKAN API on 2026-09-29 as part of the third portal harvest. Native IPRES metadata and the national source GUID prove the same airport-traffic resource. The former road-sector tag and inferred road-network-flow use were corrected to aviation with unknown specific simulation use. Earlier national metadata sources and access links remain intact. Native and mirror licence wording is preserved explicitly.",
+  "provider": "Fondazione Istituto Pugliese di Ricerche Economiche e Sociali (IPRES)",
   "regions": [
     "Regione Puglia"
   ],
   "related_ids": [
     "data-ckan-it-portal"
   ],
+  "schema_summary": "The source reports total aircraft movements, passenger counts and freight tonnes arriving and departing at the main Puglia airports for 2000–2025. Airport management companies supply the data. The workbook descriptor reaches 2025 and the CSV descriptor reaches 2024, so identical coverage across formats is not assumed. Exact table fields and data rows were not inspected.",
   "sectors": [
-    "transport.road"
+    "transport.aviation"
   ],
-  "simulation_uses": [
-    "network_flow"
-  ],
+  "simulation_uses": [],
   "sources": [
     {
       "accessed": "2026-09-29",
       "note": "dati.gov.it catalogue entry read through the CKAN API on 2026-09-29: title, description, tags, licence, formats, dates; the data files were not opened",
       "url": "https://www.dati.gov.it/opendata/api/3/action/package_show?id=ba682568-edfc-4753-87db-c0a3689d0aa5"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Exact native CKAN UUID 63acb96f-21a7-4a47-8381-65705fbebf91, full title/description, publisher, licence and individual distribution descriptors verified. National mirror crosswalk proves exact source GUID, title, full description and distribution identities. No file body read.",
+      "url": "http://www.opendataipres.it/api/3/action/package_show?id=63acb96f-21a7-4a47-8381-65705fbebf91"
     }
   ],
   "tags": [
@@ -90,6 +108,7 @@
     "passeggeri",
     "traffico-aereo"
   ],
-  "title_en": "Apulian airport traffic from 2000",
+  "temporal_coverage": "2000–2025; the CSV descriptor ends in 2024",
+  "title_en": "Puglia airport aircraft, passenger and freight traffic, 2000–2025",
   "type": "data"
 }

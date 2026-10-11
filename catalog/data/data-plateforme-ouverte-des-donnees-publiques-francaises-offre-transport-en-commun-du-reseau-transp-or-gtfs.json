@@ -20,6 +20,21 @@
       "label": "Direct download",
       "note": "Checked 2026-10-01: returns application/octet-stream directly.",
       "url": "https://proxy.transport.data.gouv.fr/resource/transpor-gtfs-rt-vehicle-position"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tdg-74201 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tdg-74201"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tdg-79299 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tdg-79299"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tdg-79359 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tdg-79359"
     }
   ],
   "access_restrictions": "none",
@@ -50,6 +65,12 @@
       "query": "multilingual title search of the catalogue",
       "route": "R02",
       "source": "data.europa.eu-hub-search-api"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -80,7 +101,7 @@
   },
   "maturity": "active",
   "name": "Offre transport en commun du réseau Transp'Or (GTFS)",
-  "notes": "Found by the Europe country search on 2026-09-30: title in the original language names an infrastructure element or a natural hazard.",
+  "notes": "Found by the Europe country search on 2026-09-30: title in the original language names an infrastructure element or a natural hazard.\n\nMobility Database identity supplement (2026-10-07): 3 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Transp'Or - Pays de l'Or Agglomération",
   "regions": [
     "Transp'Or - Pays de l'Or Agglomération"
@@ -104,6 +125,11 @@
       "accessed": "2026-10-01",
       "note": "Links updated in the round-2 deep check (checker A2): added 1 verified direct data link(s) from the provider's resource list. Verified: https://proxy.transport.data.gouv.fr/resource/transpor-gtfs-rt-vehicle -> verified by fetch during the check",
       "url": "https://proxy.transport.data.gouv.fr/resource/transpor-gtfs-rt-vehicle-position"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],
   "tags": [

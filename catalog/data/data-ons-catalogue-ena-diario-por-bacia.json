@@ -1,0 +1,104 @@
+{
+  "access_links": [
+    {
+      "kind": "portal",
+      "label": "ONS dataset and distribution list",
+      "url": "https://dados.ons.org.br/dataset/ena-diario-por-bacia"
+    },
+    {
+      "kind": "api",
+      "label": "ONS package metadata",
+      "note": "Metadata lists data-file URLs; no data files fetched.",
+      "url": "https://dados.ons.org.br/api/3/action/package_show?id=ena-diario-por-bacia"
+    },
+    {
+      "kind": "docs",
+      "label": "Provider JSON data dictionary",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/ena_bacia_di/DicionarioDados_EnaPorBacia.json"
+    }
+  ],
+  "access_note": "Public metadata and available JSON dictionaries verified. Operational file access and row completeness were not tested.",
+  "access_restrictions": "none",
+  "continents": [
+    "south_america"
+  ],
+  "cost": "free",
+  "countries": [
+    "BR"
+  ],
+  "data_family": [
+    "demand_operation"
+  ],
+  "data_kind": [
+    "time_series"
+  ],
+  "date_catalogued": "2026-10-08",
+  "date_verified": "2026-10-08",
+  "dedupe_keys": {
+    "name": "ena diario por bacia",
+    "url": "https://dados.ons.org.br/dataset/ena-diario-por-bacia"
+  },
+  "description": "ONS publishes daily natural inflow energy (ENA) aggregated by hydro-energy basin. Gross ENA converts natural reservoir inflows into producible electricity using productivity at 65% of useful storage. Storable ENA deducts spilled flows. The dictionary includes gross and storable values and percentages relative to long-term means. ONS identifies energy studies and marginal-operation-cost projection as uses. These indicators support hydrothermal dispatch modelling. This is a computed energy indicator, not raw flow. Other ENA groupings aggregate the same underlying system and must not be counted as independent measurements. The dictionary field names end in mwmed but their descriptions state MWmês. The unit conflict is retained and requires clarification before numerical use. Coverage is hydro-energy basin groups in Brazil. The catalogue lists CSV, Excel and Parquet files; files are free under the provider's CC-BY terms, with no version specified. ONS requires attribution and disclosure of changes. Data contents were not downloaded; completeness is unknown, and published values may be revised. Related ONS generation-by-plant data provide a comparison series.",
+  "description_checked": "2026-10-08",
+  "discovery_routes": [
+    {
+      "date": "2026-10-08",
+      "query": "Existing ONS entries -> complete 85-package catalogue -> exact and fuzzy duplicate review -> provider dictionaries.",
+      "route": "R06",
+      "source": "dados.ons.org.br"
+    }
+  ],
+  "formats": [
+    "csv",
+    "parquet",
+    "spreadsheet"
+  ],
+  "geographic_scope": "national",
+  "homepage": "https://dados.ons.org.br/dataset/ena-diario-por-bacia",
+  "id": "data-ons-catalogue-ena-diario-por-bacia",
+  "languages": [
+    "pt"
+  ],
+  "last_updated": "2026-10-07",
+  "licence": "CC-BY (version not stated by provider)",
+  "licence_type": [
+    "attribution"
+  ],
+  "link_health": {
+    "checked": "2026-10-08"
+  },
+  "maturity": "unknown",
+  "name": "ENA Diário por Bacia",
+  "notes": "Native package UUID a0ec7472-1da3-4bb5-b501-5bfd2fdf26a8. The dictionary field names end in mwmed but their descriptions state MWmês. The unit conflict is retained and requires clarification before numerical use. Provider update schedule: Diariamento, as 12h e 19h. Metadata modification date is not the date of every observation. Simulation-use tags are curator assessments from the stated physical quantities. Distinct aggregation products can share underlying observations; this count does not imply independent measurements.",
+  "provider": "Operador Nacional do Sistema Elétrico (ONS)",
+  "regions": [],
+  "related_ids": [
+    "data-ons-geracao-por-usina-em-base-horaria"
+  ],
+  "schema_summary": "nom_bacia: Nome curto da Bacia Hidro-Energética; ena_data: Dia observado da medida; ena_bruta_bacia_mwmed: Valor de ENA bruta por Bacia na unidade de medida MWmês.; ena_bruta_bacia_percentualmlt: Valor de ENA bruta por Bacia em percentual por média de longo termo-MLT (%); ena_armazenavel_bacia_mwmed: Valor de ENA armazenável por Bacia na unidade de medida MWmês; ena_armazenavel_bacia_percentualmlt: Valor de ENA armazenável por Bacia em percentual por média de longo termo-MLT (%)",
+  "sectors": [
+    "energy.electricity"
+  ],
+  "simulation_uses": [
+    "optimisation"
+  ],
+  "sources": [
+    {
+      "accessed": "2026-10-08",
+      "note": "Exact package UUID, original title, description, distribution descriptors, licence and update metadata; continuation 31 inventory reused.",
+      "url": "https://dados.ons.org.br/api/3/action/package_search?rows=1000"
+    },
+    {
+      "accessed": "2026-10-08",
+      "note": "Dictionary field definitions read; no operational data rows obtained.",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/ena_bacia_di/DicionarioDados_EnaPorBacia.json"
+    }
+  ],
+  "spatial_resolution": "hydro-energy basin groups",
+  "tags": [],
+  "temporal_coverage": "Provider distribution labels span 2000–2026; contents and continuity were not inspected.",
+  "temporal_resolution": "daily",
+  "title_en": "ONS Daily Natural Inflow Energy by Hydro-Energy Basin",
+  "type": "data",
+  "update_frequency": "sub_daily"
+}

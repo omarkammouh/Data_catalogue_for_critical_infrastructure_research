@@ -1,61 +1,80 @@
 raw_value,records,mapped,rule
-annual,295,annual,keyword
+annual,299,annual,keyword
+unknown,258,not_stated,not_stated
+not_stated,249,other,fallback_other
+not stated,186,not_stated,not_stated
+none,122,snapshot,keyword
 ,121,not_stated,not_stated
-Annual,117,annual,keyword
+Annual,118,annual,keyword
 not applicable,115,snapshot,keyword
-none,102,snapshot,keyword
-not established,89,not_stated,not_stated
+Not stated,109,not_stated,not_stated
+not established,96,not_stated,not_stated
+Not established at file level,81,not_stated,not_stated
+Not stated.,77,not_stated,not_stated
 Snapshot,76,snapshot,keyword
-Unknown,63,not_stated,not_stated
+Unknown,69,not_stated,not_stated
 Not fully established,52,not_stated,not_stated
-Not stated.,51,not_stated,not_stated
+daily,49,daily,keyword
+monthly,49,monthly,keyword
 single census,45,snapshot,keyword
-monthly,43,monthly,keyword
+Hourly,43,hourly,keyword
 snapshot,43,snapshot,keyword
+Snapshot geometry or attributes; observation cadence not stated.,42,snapshot,keyword
+15 minutes,40,sub_hourly,keyword
 quarterly,39,sub_annual,keyword
-15 minutes,36,sub_hourly,keyword
-Hourly,36,hourly,keyword
-daily,36,daily,keyword
-Daily,32,daily,keyword
-hourly,32,hourly,keyword
+hourly,37,hourly,keyword
+Daily,33,daily,keyword
+Monthly,32,monthly,keyword
 not stated on the page read,32,not_stated,not_stated
-Monthly,31,monthly,keyword
+Sampling interval not stated,29,not_stated,not_stated
+Not stated beyond the source-named annual publications or service calendars,28,not_stated,not_stated
 Not established from the reviewed metadata,27,not_stated,not_stated
-event,21,event,keyword
+event,26,event,keyword
 none (census snapshot),21,snapshot,keyword
 static,21,snapshot,keyword
 Not applicable,20,snapshot,keyword
+Snapshot geometry and attributes; observation cadence not stated.,20,snapshot,keyword
 Not stated in inspected repository metadata,17,not_stated,not_stated
+Cross-sectional survey; trip timing and table resolution not independently checked.,16,snapshot,keyword
 decennial census,16,multi_year,keyword
-Not specified in the reviewed metadata,15,not_stated,not_stated
+1 minute,15,sub_hourly,keyword
+Not stated unless explicitly described,15,not_stated,not_stated
+Source-defined step described above; otherwise not stated,15,not_stated,not_stated
 census years,15,multi_year,keyword
 per event,15,event,keyword
-1 minute,14,sub_hourly,keyword
+Not specified in the reviewed metadata,14,not_stated,not_stated
 single snapshot,14,snapshot,keyword
 Event,12,event,keyword
+Sampling interval unknown,11,not_stated,not_stated
 Snapshot (no time step),11,snapshot,keyword
 Static,11,snapshot,keyword
+Time step not stated,11,not_stated,not_stated
+monthly and annual,11,monthly,keyword
 not stated on the page,11,not_stated,not_stated
 1 hour,10,hourly,keyword
+No measurement interval established,10,event,keyword
 Weekly,10,weekly,keyword
 none (snapshot),10,snapshot,keyword
+weekly,10,weekly,keyword
 1 second,9,sub_hourly,keyword
 census every ten years,9,multi_year,keyword
-monthly and annual,9,monthly,keyword
-weekly,9,weekly,keyword
-Not stated,8,not_stated,not_stated
 5 minutes,7,sub_hourly,keyword
+Model time step unknown,7,not_stated,not_stated
 Monthly and annual,7,monthly,keyword
 none (static),7,snapshot,keyword
+Annual series or source-named reference years; not applicable to the undated service classification,6,annual,keyword
+Hourly series.,6,hourly,keyword
+Model and measurement time steps not stated,6,event,keyword
 Release snapshots and event/asset attributes; not operational telemetry.,6,event,keyword
 census every five years,6,multi_year,keyword
 10 minutes,5,sub_hourly,keyword
+30 minutes,5,sub_hourly,keyword
 Annual (financial year),5,annual,keyword
 Cross-sectional,5,snapshot,keyword
 Varies by observation or experiment,5,varies,keyword
 event level,5,event,keyword
-not stated,5,not_stated,not_stated
 1 day,4,daily,keyword
+Dated inventory; no measurement interval established,4,event,keyword
 Monthly and quarterly,4,monthly,keyword
 Per incident (timestamped),4,event,keyword
 Quarterly,4,sub_annual,keyword
@@ -72,10 +91,13 @@ Annual (fiscal year),3,annual,keyword
 Daily snapshot,3,daily,keyword
 Frequency-domain station summaries,3,other,fallback_other
 Modelled summer conditions; 04:00 nighttime and 14:00 daytime fields,3,other,fallback_other
+No time series or timestep stated,3,snapshot,keyword
+Not stated uniformly across streams,3,not_stated,not_stated
 Single event per scenario,3,event,keyword
 Single survey,3,event,keyword
 Single survey round,3,multi_year,keyword
 Static (2026),3,snapshot,keyword
+Time step not specified,3,not_stated,not_stated
 Weekly and monthly,3,weekly,keyword
 census about every five years,3,multi_year,keyword
 census about every ten years,3,multi_year,keyword
@@ -90,18 +112,22 @@ semi-annual,3,sub_annual,keyword
 10 seconds,2,sub_hourly,keyword
 2 m grid,2,other,fallback_other
 2019 snapshot,2,snapshot,keyword
-30 minutes,2,sub_hourly,keyword
 5 seconds,2,sub_hourly,keyword
 Annual (marketing year),2,annual,keyword
 Annual and monthly,2,monthly,keyword
+Annual classifications and adjacent-year change pairs,2,annual,keyword
 Annual list,2,annual,keyword
 Annual reporting,2,annual,keyword
 Annual.,2,annual,keyword
 "Before, during and after one flood",2,other,fallback_other
 Daily county aggregates,2,daily,keyword
+Each recorded signal spans 0.25 ms according to provider; sampling rate not independently established.,2,sub_hourly,keyword
+Event-specific reporting and update timestamps where stated; regular cadence not stated.,2,event,keyword
 Frequency and horizontal rotation angle,2,other,fallback_other
 Hourly to daily,2,hourly,keyword
 Not specified,2,not_stated,not_stated
+Not stated in native description,2,not_stated,not_stated
+One file is labelled hourly; scenario time aggregation not stated,2,hourly,keyword
 One-off survey,2,event,keyword
 Per study,2,event,keyword
 Per survey,2,event,keyword
@@ -162,6 +188,7 @@ varies by chart,2,varies,keyword
 0.1 to 0.2 s,1,sub_hourly,keyword
 1 Hz (processed),1,sub_hourly,keyword
 1 Hz circuit data,1,sub_hourly,keyword
+1 Hz icing forces; 300 Hz static forces; 1000 Hz pressure,1,sub_hourly,keyword
 1 Hz.,1,sub_hourly,keyword
 1 and 15 minutes for different variables,1,sub_hourly,keyword
 "1 hour, 30 minutes, 15 minutes or 5 minutes, depending on meter",1,varies,keyword
@@ -175,7 +202,9 @@ varies by chart,2,varies,keyword
 1 quarter,1,sub_annual,keyword
 1 s and 30 s,1,sub_hourly,keyword
 1 s and 30 s sampling,1,sub_hourly,keyword
+1 second and 10 minutes in different components,1,sub_hourly,keyword
 1 second to 1 minute,1,sub_hourly,keyword
+1 second; files span 15 minutes,1,sub_hourly,keyword
 1 to 10 minutes,1,sub_hourly,keyword
 1 to 30 s observations; hourly and daily files,1,sub_hourly,keyword
 1 to 5 seconds,1,sub_hourly,keyword
@@ -198,10 +227,13 @@ varies by chart,2,varies,keyword
 10 seconds (0.1 Hz),1,sub_hourly,keyword
 10 seconds (links),1,sub_hourly,keyword
 10 seconds in raw measurements; resampled outputs also supplied,1,sub_hourly,keyword
+"10 seconds, as stated by the provider",1,sub_hourly,keyword
 "10,000 samples; sampling interval not stated in repository landing metadata",1,not_stated,not_stated
 10-day,1,daily,keyword
+10-minute SCADA; atmospheric sampling varies,1,varies,keyword
 10-minute and 60-minute files,1,sub_hourly,keyword
 10-minute blocks; exact block total and date limits need reconciliation.,1,sub_hourly,keyword
+10-minute energy; hourly or daily weather,1,sub_hourly,keyword
 "10-minute, 15-minute, hourly, daily, monthly or annual by series.",1,varies,keyword
 "10-minute, weather year 2016",1,sub_hourly,keyword
 10-second electricity; 15-minute internal environment,1,sub_hourly,keyword
@@ -209,6 +241,7 @@ varies by chart,2,varies,keyword
 10-year,1,multi_year,keyword
 10-year intervals,1,multi_year,keyword
 100 Hz,1,sub_hourly,keyword
+1000 Hz instrument channels; 200 Hz optical measurements,1,sub_hourly,keyword
 15 Hz,1,sub_hourly,keyword
 15 min orbits; 30 s to 5 min clocks,1,sub_hourly,keyword
 15 minutes (occupancy and indoor); hourly (outdoor); 1 January to 31 December 2013,1,sub_hourly,keyword
@@ -229,6 +262,7 @@ varies by chart,2,varies,keyword
 15-minute records when mean wind exceeded 10 mph,1,sub_hourly,keyword
 16 kHz audio,1,sub_hourly,keyword
 16 to 25 frames per second,1,sub_hourly,keyword
+1minute,1,other,fallback_other
 "2,768 synchronized frames per sensor; rate not established.",1,not_stated,not_stated
 2-3 updates per day,1,daily,keyword
 2-second original logs; derived result intervals vary,1,varies,keyword
@@ -247,6 +281,7 @@ varies by chart,2,varies,keyword
 "2021, annual and seasonal products",1,sub_annual,keyword
 24-hour power profiles,1,hourly,keyword
 25 Hz frames,1,sub_hourly,keyword
+2minutes for2022 series,1,other,fallback_other
 3 hours,1,hourly,keyword
 3 minutes,1,sub_hourly,keyword
 "3,600 s records per test",1,sub_hourly,keyword
@@ -273,6 +308,7 @@ varies by chart,2,varies,keyword
 5 minutes to daily; annual reports,1,sub_hourly,keyword
 "5 minutes, 30 minutes, 1 hour",1,sub_hourly,keyword
 5 seconds (PIR 10 seconds),1,sub_hourly,keyword
+5 seconds; timestamps in UTC,1,sub_hourly,keyword
 5 to 60 minutes for real-time water levels and flows; daily and monthly derived values; annual for abstractions and service indicators,1,sub_hourly,keyword
 5 years,1,annual,keyword
 "5-minute (24-hour chart, assumed) and daily",1,sub_hourly,keyword
@@ -337,12 +373,14 @@ Annual snapshot,1,annual,keyword
 Annual snapshots,1,annual,keyword
 Annual statistics (1970-2025 depending on source),1,varies,keyword
 Annual summer rasters and annual country indicators,1,annual,keyword
+Annual survey conducted between May and August; exact observation dates not stated,1,annual,keyword
 Annual tariffs by consumption profile.,1,annual,keyword
 Annual to multi-year,1,multi_year,keyword
 Annual totals,1,annual,keyword
 Annual totals and sector-dependent hourly patterns,1,hourly,keyword
 Annual updates,1,annual,keyword
 Annual with selected monthly scaling factors,1,monthly,keyword
+"Annual, seasonal and representative-week outputs; underlying simulation time step unknown",1,weekly,keyword
 "Annual, with monthly, quarterly or weekly values for some facilities",1,weekly,keyword
 Annual; some monthly and hourly,1,hourly,keyword
 Approximately 30 minutes,1,sub_hourly,keyword
@@ -352,12 +390,14 @@ Area-storage-depth profiles,1,other,fallback_other
 Assessment cycle,1,multi_year,keyword
 Assessment round,1,multi_year,keyword
 Asynchronous events and simultaneous frames; about 80 minutes of field sequences.,1,sub_hourly,keyword
+Average hourly relative electricity profile; other demand time steps unverified,1,hourly,keyword
 Awards and annual fiscal observations; varies by table.,1,varies,keyword
 Biweekly at some locations; single visits at others,1,weekly,keyword
 Building-level assessment,1,other,fallback_other
 Building-level labels and images,1,other,fallback_other
 Call level,1,event,keyword
 Call records aggregated by the authors,1,event,keyword
+Capacity expansion: 96 seasonal time slices per year; operations: 8760 hourly slices,1,hourly,keyword
 "Case-dependent, unknown from registry metadata",1,event,keyword
 Catchment attributes and annual maximum discharge statistics,1,annual,keyword
 Catchment nutrient loads and annual yields,1,annual,keyword
@@ -453,12 +493,14 @@ Event (unit records); annual (web tool),1,annual,keyword
 Event and sub-daily records,1,daily,keyword
 Event and trip records,1,event,keyword
 Event dates,1,event,keyword
+Event dates and scheduled occurrences,1,event,keyword
 Event dates per permit,1,event,keyword
 Event hydrographs and steady-state inundation scenarios,1,event,keyword
 Event image pairs and water masks,1,event,keyword
 Event level,1,event,keyword
 Event level; 5-minute resource logs,1,sub_hourly,keyword
 Event records with dates,1,event,keyword
+Event registration timestamps,1,event,keyword
 "Event start and end dates, 2017-2021",1,event,keyword
 Event times; annual lists,1,annual,keyword
 Event timestamps,1,event,keyword
@@ -478,6 +520,7 @@ Fifteen minutes,1,sub_hourly,keyword
 Fires of 2018 to 2025,1,annual,keyword
 Fiscal year,1,annual,keyword
 Five minutes.,1,sub_hourly,keyword
+"Five-minute archive samples, according to source description",1,sub_hourly,keyword
 Five-minute city files and hourly aggregate package,1,sub_hourly,keyword
 Five-minute to hourly,1,sub_hourly,keyword
 Five-year history; selected residential products decadal,1,multi_year,keyword
@@ -488,6 +531,7 @@ Five-yearly (survey years),1,multi_year,keyword
 Flood-day indicators,1,daily,keyword
 Four mapped epochs,1,multi_year,keyword
 Four nonannual epochs,1,multi_year,keyword
+Frame interval and within-session timing not stated,1,not_stated,not_stated
 Frequency 5 s; imbalance 30 min; CO2 15 min; others vary.,1,varies,keyword
 "Full and small sets of component, road, path, user-map and demand-point JSON files.",1,other,fallback_other
 Full-scale time series; sample interval not checked,1,other,fallback_other
@@ -505,7 +549,6 @@ Historical capacity-price observations; interval not established.,1,not_stated,n
 Historical inventory snapshot,1,snapshot,keyword
 Historical model timesteps,1,other,fallback_other
 Historical six-monthly collection over five years,1,monthly,keyword
-"Hour of day, day of week (annual)",1,hourly,keyword
 "Hour of day, weekday, month and year",1,hourly,keyword
 Hourly UTCI and UTS; daily thermal stress duration,1,hourly,keyword
 Hourly activity; static network versions,1,hourly,keyword
@@ -534,16 +577,19 @@ Hourly wind and generation; monthly statistics,1,hourly,keyword
 Hourly within scenario years,1,hourly,keyword
 "Hourly, 1 July 2006 to 21 July 2009",1,hourly,keyword
 "Hourly, 2015 to 2017",1,hourly,keyword
+"Hourly, 8,760 records",1,hourly,keyword
 "Hourly, documented GMT+8 convention.",1,hourly,keyword
 "Hourly, monthly and annual",1,hourly,keyword
 "Hourly, with daily, monthly, seasonal and annual statistics",1,hourly,keyword
 "Hourly; 2020, 2050 and 2080 typical years and heatwave scenarios",1,hourly,keyword
 Hourly; 8736 steps per synthetic year,1,hourly,keyword
+Hourly; 8760-hour and 8784-hour profile layouts,1,hourly,keyword
 Hourly; daily and monthly integrated products also listed,1,hourly,keyword
 Hourly; hydro daily,1,hourly,keyword
 Hourly; monthly additions,1,hourly,keyword
 Hydrogeological unit polygons and linear features,1,other,fallback_other
 Identifier crosswalk; source observations have separate hourly/monthly/annual resolutions,1,hourly,keyword
+Image frame interval not stated,1,not_stated,not_stated
 Image samples,1,other,fallback_other
 Incident,1,event,keyword
 Incident level,1,event,keyword
@@ -568,6 +614,7 @@ Individual water-body polygons,1,event,keyword
 Input-dependent; not verified from archive payload,1,not_stated,not_stated
 Instrument-specific time sampling,1,varies,keyword
 Inventory snapshot,1,snapshot,keyword
+Irregular building/grant observations; interval not stated,1,event,keyword
 Irregular samples; mean 35 days,1,daily,keyword
 Irregular samples; mean 62 days,1,daily,keyword
 January to April 2026,1,annual,keyword
@@ -602,12 +649,15 @@ Monthly additions and commissioning trends; live extraction date varies.,1,varie
 Monthly and annual energy; daily indoor and outdoor; half-hourly for January and July 2020,1,hourly,keyword
 Monthly and daily; limited hourly windows,1,hourly,keyword
 Monthly and weekly,1,weekly,keyword
+Monthly consumption and annual management indicators,1,monthly,keyword
 Monthly consumption per station,1,monthly,keyword
 Monthly dates per event,1,monthly,keyword
 Monthly evaluation series and selected annual calibration series,1,monthly,keyword
 Monthly flux estimates,1,monthly,keyword
 Monthly forecasts,1,monthly,keyword
+Monthly fuel sales; annual/coarser covariates repeated across finer dates/locations,1,monthly,keyword
 "Monthly index at 1, 3, 6, 12 and 24 month scales",1,monthly,keyword
+Monthly listed inventories,1,monthly,keyword
 Monthly market prices; seasonal classifications; varies,1,varies,keyword
 Monthly municipal consumption and daily market-area electricity prices; static asset layers.,1,daily,keyword
 Monthly patient counts by waiting-list category.,1,monthly,keyword
@@ -632,22 +682,29 @@ Near real time (RSS updated every minute per the listing),1,sub_hourly,keyword
 Near real-time,1,sub_hourly,keyword
 "Nine multifamily building archetypes across five renovation states, with measure-level costs and simulated effects.",1,other,fallback_other
 Not applicable to static network inputs,1,snapshot,keyword
+Not applicable to stock/design tables,1,snapshot,keyword
 Not applicable: scaling coefficients,1,snapshot,keyword
 Not stated in inspected README.,1,not_stated,not_stated
 Not stated in inspected public metadata.,1,not_stated,not_stated
 Not stated in the reviewed metadata,1,not_stated,not_stated
 Not stated on the inspected deposit landing page,1,not_stated,not_stated
 Not stated on the page read,1,not_stated,not_stated
+Not stated uniformly across sensors or sessions,1,not_stated,not_stated
 One 2016 classification,1,annual,keyword
+One GPS product resampled at 100 milliseconds; other streams unspecified,1,sub_hourly,keyword
 One New York City ZIP code per row; 311 rows.,1,other,fallback_other
 One adult emergency-department visit per row.,1,other,fallback_other
+One archive is labelled hourly; model time aggregation unknown,1,hourly,keyword
 "One bus or shuttle route per feature, with route id, name and display colour.",1,snapshot,keyword
+One file is labelled hourly; model time aggregation unknown,1,hourly,keyword
 "One funded address or location per record, with availability test status.",1,snapshot,keyword
 One minute,1,sub_hourly,keyword
+One minute for heating/AHU/room data; daily chiller electricity,1,sub_hourly,keyword
 One minute for utility meters; hourly weather,1,sub_hourly,keyword
 One minute; 360 samples.,1,sub_hourly,keyword
 One month per year,1,monthly,keyword
 One or two minutes; hourly companion,1,sub_hourly,keyword
+One position stream resampled at 100 milliseconds; other streams unspecified,1,sub_hourly,keyword
 One published classification; no time series stated,1,snapshot,keyword
 One ranked record per airport.,1,snapshot,keyword
 One ranked record per carrier.,1,snapshot,keyword
@@ -664,6 +721,8 @@ One static population surface,1,snapshot,keyword
 One survey response per record; no continuous monitoring.,1,sub_hourly,keyword
 One survey wave,1,snapshot,keyword
 One to fifteen minutes depending on subset,1,varies,keyword
+One-minute averages; original 50 Hz measurements on request,1,sub_hourly,keyword
+One-minute resolution stated for underlying source; augmentation timing not separately documented,1,sub_hourly,keyword
 One-minute sampling aggregated to fifteen-minute means; UTC.,1,sub_hourly,keyword
 One-second,1,sub_hourly,keyword
 One-second electricity and one-minute irradiation estimates,1,sub_hourly,keyword
@@ -674,6 +733,7 @@ Orthophoto of 2020,1,annual,keyword
 Outbreak (month),1,monthly,keyword
 PLC history record,1,other,fallback_other
 PLC scan event,1,event,keyword
+Packet captures and extracted flow records; fixed sampling step unknown,1,sub_hourly,keyword
 Packet level,1,sub_hourly,keyword
 Packet-level captures,1,sub_hourly,keyword
 Past earthquake events,1,event,keyword
@@ -710,6 +770,7 @@ Per test (continuous),1,sub_hourly,keyword
 Per transaction,1,event,keyword
 Per tweet or image,1,event,keyword
 Per-facility changes; no measured demand interval.,1,event,keyword
+Per-meter and per-year values in overview; numeric intervals not stated in public description,1,event,keyword
 Per-meter pandas frequency field; timestamps in local time.,1,event,keyword
 Per-packet events and selected per-packet CSV fields.,1,sub_hourly,keyword
 Per-packet observations; time-unit convention not explicitly documented.,1,sub_hourly,keyword
@@ -747,13 +808,17 @@ Reports collected since about 1960,1,annual,keyword
 Reservoir and catchment attributes plus time series,1,other,fallback_other
 Resource-level metadata.,1,other,fallback_other
 Response,1,other,fallback_other
+Restriction start/end and daily windows,1,daily,keyword
 Road segment,1,other,fallback_other
 "Route, stop and stop-time level where provided in GTFS; timetables are explicitly unreliable.",1,other,fallback_other
+Sample interval unspecified,1,not_stated,not_stated
 Sample locations and repeated validation sets,1,other,fallback_other
 Sample points along four designed paths and one random-roaming set.,1,other,fallback_other
 Sampling interval not established from the inspected documentation.,1,not_stated,not_stated
 Sampling interval not stated in inspected README.,1,not_stated,not_stated
+Sampling steps unknown; extreme validation scenarios last six hours,1,hourly,keyword
 Satellite water-level observations and monthly area/storage series,1,monthly,keyword
+Scenario horizon,1,event,keyword
 Scenario windows,1,event,keyword
 Scenario years,1,event,keyword
 Scenario years to the model horizon,1,event,keyword
@@ -761,6 +826,7 @@ Scenario-based,1,event,keyword
 Scenario-dependent time steps,1,event,keyword
 Scenario-specific building/EV inputs and weather time steps; exact output granularity was not checked.,1,event,keyword
 Scenario-specific maximum depth and depth-velocity product,1,event,keyword
+Scheduled event date/time,1,event,keyword
 Scheduled trips and stop times; accuracy limitations documented.,1,event,keyword
 Schema releases,1,snapshot,keyword
 Seconds,1,sub_hourly,keyword
@@ -815,6 +881,7 @@ Snapshot as of September 2022,1,snapshot,keyword
 Snapshot at 30 June 2012,1,snapshot,keyword
 Snapshot editions,1,snapshot,keyword
 Snapshot from 2015 imagery,1,snapshot,keyword
+Snapshot geometry and attributes; cadence not stated.,1,snapshot,keyword
 Snapshot of 2016 plans,1,snapshot,keyword
 Snapshot of a daily-updated list,1,daily,keyword
 Snapshot of feed status; documented monthly refresh.,1,monthly,keyword
@@ -865,17 +932,25 @@ Survey round,1,multi_year,keyword
 Survey rounds,1,multi_year,keyword
 Ten minutes.,1,sub_hourly,keyword
 Ten seconds; fifteen-minute aggregate also supplied,1,sub_hourly,keyword
+Ten-minute and derived hourly,1,sub_hourly,keyword
+Ten-minute field summaries; synthetic test observations,1,sub_hourly,keyword
 Test records,1,event,keyword
 Thirty-minute customer demand profiles.,1,sub_hourly,keyword
+Three hours; 364-day stylised weather years with 2912 time steps,1,hourly,keyword
 "Three past events (2011, 2018, 2018)",1,event,keyword
+Time of day (annual attendance statistics),1,daily,keyword
 Time periods of the day,1,daily,keyword
 Time step not established in inspected repository metadata,1,not_stated,not_stated
 Time step not stated in inspected metadata; country-level series.,1,not_stated,not_stated
+Time-sample spacing not stated,1,not_stated,not_stated
 Timestamped per-base-station fingerprints; fixed interval not stated.,1,not_stated,not_stated
+Timestamped samples; sampling interval not stated,1,not_stated,not_stated
 "Timestamped vehicle detections, packaged in one daily Parquet file per day.",1,daily,keyword
 Today and 50 years ahead,1,annual,keyword
+Trajectories approximately 30 Hz; other components have different structure,1,sub_hourly,keyword
 Twice yearly cycles,1,annual,keyword
 Two daily forecast cycles; hourly lead times 0–21 h,1,hourly,keyword
+Two dated survey snapshots.,1,event,keyword
 Two epochs: 2008-2009 and 2015,1,multi_year,keyword
 Two pre-flood and one post-flood acquisitions per event,1,event,keyword
 Two snapshots,1,snapshot,keyword
@@ -885,7 +960,9 @@ Two survey rounds a year,1,multi_year,keyword
 Two-month side-by-side experiment,1,monthly,keyword
 Two-yearly,1,annual,keyword
 Typically 15 minutes,1,sub_hourly,keyword
+Underlying output every 10 minutes; summaries vary,1,varies,keyword
 Unknown from landing-page metadata,1,not_stated,not_stated
+Unknown sampling step; each session transmits ten minutes of video,1,not_stated,not_stated
 Updated as Members change entries,1,other,fallback_other
 Updated every six weeks (release 2026-08 read),1,weekly,keyword
 Updated periodically,1,other,fallback_other
@@ -907,7 +984,9 @@ Weekly or monthly by series,1,varies,keyword
 Weekly to monthly,1,weekly,keyword
 "Weekly, monthly and annual",1,weekly,keyword
 Weekly; SPEI timescales 0.5–48 months,1,weekly,keyword
+Within-year profiles; time-step duration not specified,1,annual,keyword
 Year of urbanisation or green recovery,1,annual,keyword
+Year-comparison layers; source event resolution not stated,1,event,keyword
 about 15 minutes,1,sub_hourly,keyword
 "about 15 minutes (35,036 readings per sensor in one year)",1,sub_hourly,keyword
 "about twice yearly, later annual",1,annual,keyword
@@ -1050,7 +1129,6 @@ continuous (timestamped entries),1,sub_hourly,keyword
 continuously updated,1,sub_hourly,keyword
 crop growing season,1,sub_annual,keyword
 crop season,1,sub_annual,keyword
-cross-sectional,1,snapshot,keyword
 daily (8 AM observation),1,daily,keyword
 daily (electricity),1,daily,keyword
 daily (live); monthly (downloads),1,daily,keyword
@@ -1109,7 +1187,6 @@ five-yearly reference dates; annual for the yearly results,1,multi_year,keyword
 five-yearly rolling census,1,multi_year,keyword
 five-yearly snapshots,1,multi_year,keyword
 flow level; 10-minute to daily aggregates in TimeSeries24,1,sub_hourly,keyword
-follow-up waves,1,multi_year,keyword
 follows source releases,1,snapshot,keyword
 fortnightly,1,weekly,keyword
 fortnightly (BR IFIC),1,weekly,keyword
@@ -1129,6 +1206,7 @@ hourly (collected every five minutes),1,sub_hourly,keyword
 "hourly (reservoirs, in principle updated daily); 10 minutes (water levels)",1,sub_hourly,keyword
 hourly dispatch,1,hourly,keyword
 hourly during heating season,1,hourly,keyword
+hourly electricity; daily weather,1,hourly,keyword
 hourly for typical days,1,hourly,keyword
 "hourly profiles; daily, monthly and annual route totals",1,hourly,keyword
 hourly steady-state scenarios,1,hourly,keyword

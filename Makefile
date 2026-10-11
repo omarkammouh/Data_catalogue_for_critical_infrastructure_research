@@ -1,5 +1,5 @@
 PYTHON ?= python3
-DATE ?= $(shell $(PYTHON) -c "import json; print(json.load(open('catalog/snapshot.json'))['captured_at'][:10])")
+DATE ?= $(shell $(PYTHON) -c "import json,sys; sys.path.insert(0,'scripts'); from snapshot import snapshot_path; print(json.load(open(snapshot_path('.')))['captured_at'][:10])")
 .PHONY: install validate test test-browser build serve release
 install:
 	$(PYTHON) -m pip install -r requirements.txt
@@ -10,7 +10,7 @@ validate:
 	$(PYTHON) scripts/check_public.py
 
 test:
-	$(PYTHON) -m pytest pipeline/tests scripts/tests -q
+	$(PYTHON) -m pytest pipeline/tests scripts/tests dashboard/tests/test_catalogues.py dashboard/tests/test_data_resources.py -q
 	cd dashboard && npm run test:props
 
 test-browser:

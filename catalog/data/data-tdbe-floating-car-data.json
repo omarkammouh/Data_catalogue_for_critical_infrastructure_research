@@ -9,15 +9,21 @@
       "kind": "api",
       "label": "Floating Car Data",
       "url": "https://be-mobile.com/solutions"
+    },
+    {
+      "kind": "portal",
+      "label": "CAMBER provider pointer and access conditions",
+      "url": "https://zenodo.org/records/21335488"
     }
   ],
-  "access_restrictions": "none",
+  "access_restrictions": "on_request",
   "continents": [
     "europe"
   ],
-  "cost": "free",
+  "cost": "paid",
   "countries": [
-    "BE"
+    "BE",
+    "NL"
   ],
   "data_family": [
     "reference_context"
@@ -27,25 +33,31 @@
     "asset_inventory"
   ],
   "date_catalogued": "2026-09-29",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-09",
   "dedupe_keys": {
     "name": "floating car data",
     "url": "https://transportdata.be/dataset/floating-car-data"
   },
-  "description": "Floating Car Data is a dataset listed in transportdata.be, a national access point for transport data, published or maintained by Be-Mobile. FCD or Floating Car Data is the label for GPS positions that are received from so called FCD providers. The GPS data is mapped onto the digital map and provided as feed for various Be-Mobile applications. For instance, the data can be aggregated per map segment to calculate the occurrence of jams. Coverage: Belgium (see the dataset page for the exact area). The portal lists 1 resource in MSG_HTTP. The data standards named are other. The national access point types are RTTI. The portal shows 2025-07-08 as the last metadata change. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is notspecified. Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support mobility and network studies. Related record: the catalogue-level record data-transportdata-be-national-access-point.",
-  "description_checked": "2026-09-29",
+  "description": "Be-Mobile supplies map-matched GPS observations from connected vehicles for traffic monitoring, route planning and historical mobility analysis. Its national access-point metadata describes Belgian and Dutch coverage and a one-minute update frequency; the CAMBER pointer describes a wider European feed concentrated in the Benelux and three years of retained data without fixed start or end dates. FlowCheck uses the historical observations for route, segment, origin-destination and map analyses. These sources establish the same provider-level resource, not an identical geographic extract. Access is commercial: fresh provider-supplied registry metadata says fee required and closed licence, while the CAMBER record is restricted and offers access on request. Its CC BY4.0 deposit declaration is not assumed to license the underlying commercial feed. No feed values were read. Observation counts, export schemas and product-specific terms remain unknown. The data support network flow and capacity planning; related resource is the Belgian national access point.",
+  "description_checked": "2026-10-09",
   "discovery_routes": [
     {
       "date": "2026-09-29",
       "query": "transportdata.be CKAN package_search, all packages",
       "route": "R02",
       "source": "transportdata.be-ckan-api"
+    },
+    {
+      "date": "2026-10-09",
+      "query": "Native member to existing provider-feed identity comparison",
+      "route": "R03",
+      "source": "zenodo-community:camber"
     }
   ],
   "formats": [
     "other"
   ],
-  "geographic_scope": "national",
+  "geographic_scope": "regional",
   "homepage": "https://transportdata.be/dataset/floating-car-data",
   "id": "data-tdbe-floating-car-data",
   "languages": [
@@ -54,16 +66,19 @@
     "nl"
   ],
   "last_updated": "2025",
-  "licence": "notspecified",
+  "licence": "Provider closed commercial licence; terms on request",
   "licence_type": [
-    "other"
+    "proprietary"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-09",
+    "unverified": [
+      "https://zenodo.org/records/21335488"
+    ]
   },
   "maturity": "active",
   "name": "Floating Car Data",
-  "notes": "Harvested from the transportdata.be CKAN API on 2026-09-29 as part of the second portal harvest.",
+  "notes": "Harvested from the transportdata.be CKAN API on 2026-09-29 as part of the second portal harvest. Fresh metadata corrects the earlier free/open assertion. Registry coverage and CAMBER broader feed coverage remain distinct; no exact extract equivalence claimed.",
   "provider": "Be-Mobile",
   "related_ids": [
     "data-transportdata-be-national-access-point"
@@ -80,6 +95,16 @@
       "accessed": "2026-09-29",
       "note": "transportdata.be CKAN package record read on 2026-09-29: title, description, publisher, licence, resources, standards; the data were not opened",
       "url": "https://transportdata.be/api/3/action/package_show?id=floating-car-data"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Fresh primary CKAN metadata confirms same provider, GPS/FlowCheck function, isopen=false and resource fee-required/closed licence. No data feed read.",
+      "url": "https://transportdata.be/api/3/action/package_show?id=floating-car-data"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "CAMBER pointer gives access on request and broader European/Benelux coverage; deposit CC BY declaration is not inferred to cover commercial data.",
+      "url": "https://zenodo.org/api/records/21335488"
     }
   ],
   "tags": [

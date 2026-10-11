@@ -226,7 +226,7 @@
     const labels = new Map();
     for (const v of facet.values) labels.set(v.value, v.label);
     valueLabel.set(facet.id, labels);
-    const openByDefault = ["type", "sectors", "data_family", "model_kind", "platform_kind", "case_study_kind"].includes(facet.id);
+    const openByDefault = ["type", "data_resource_type", "sectors", "data_family", "model_kind", "platform_kind", "case_study_kind"].includes(facet.id);
     const details = h("details", { class: "facet", open: openByDefault, dataset: { facet: facet.id } });
     const badge = h("span", { class: "badge", hidden: true });
     const summary = h("summary", null, h("span", { class: "facet-label", text: t(facet.label) }), badge);
@@ -667,7 +667,7 @@
 
   /** The written label of a facet value (labels.yaml via build.py), else the humanised value. */
   function vlabel(fid, v) { const m = valueLabel.get(fid); return (m && m.get(String(v))) || humanise(String(v)); }
-  function typePill(r) { return h("span", { class: "pill type-" + r.type, text: vlabel("type", r.type) }); }
+  function typePill(r) { return h("span", { class: "pill type-" + r.type, text: r.type === "data" && r.data_resource_type && r.data_resource_type !== "unknown" ? vlabel("data_resource_type", r.data_resource_type) : vlabel("type", r.type) }); }
   function displayTitle(r) { return r.title_en || r.name; }
   function originalTitle(r) {
     return r.title_en ? h("p", { class: "original-title" }, t("Original title") + ": ", h("span", { dir: "auto", text: r.name })) : null;
@@ -769,7 +769,7 @@
     return humanise(l);
   }
 
-  const DETAIL_SKIP = new Set(["id", "type", "name", "title_en", "provider", "description", "homepage", "access_links", "sources", "discovery_routes", "related_ids", "dedupe_keys", "link_health", "date_verified", "date_catalogued", "description_checked", "runs_on", "validated_on", "hosted_models"]);
+  const DETAIL_SKIP = new Set(["id", "type", "name", "title_en", "provider", "description", "homepage", "access_links", "sources", "discovery_routes", "related_ids", "catalogue_membership_evidence", "dedupe_keys", "link_health", "date_verified", "date_catalogued", "description_checked", "runs_on", "validated_on", "hosted_models"]);
 
   function crossLinks(values) {
     return (values || []).map(v => byId.has(v)
@@ -792,11 +792,16 @@
       originalTitle(r),
       h("p", { class: "detail-sub" }, typePill(r), " ", r.provider),
       h("div", { class: "detail-actions", style: "margin-top:12px" },
-        r.homepage ? h("a", { class: "button primary", href: r.homepage, target: "_blank", rel: "noopener noreferrer", text: t("Open homepage"), title: deadLinks.has(r.homepage) ? t("dead at the last check") : null }) : null,
+        r.homepage ? h("a", { class: "button primary", href: r.homepage, target: "_blank", rel: "noopener noreferrer", text: t(r.data_resource_type === "data_catalogue" ? "Open catalogue" : "Open homepage"), title: deadLinks.has(r.homepage) ? t("dead at the last check") : null }) : null,
         r.homepage && deadLinks.has(r.homepage) ? h("span", { class: "pill attention", text: t("Homepage dead at the last check") }) : null,
         h("button", { type: "button", class: "button", text: t("Copy citation"), onclick: () => copyText(citation(r), t("Citation copied")) }),
         h("button", { type: "button", class: "button", text: t("Copy JSON"), onclick: () => copyText(JSON.stringify(r, null, 2), t("Record JSON copied")) }),
         h("button", { type: "button", class: "button", text: t("Copy link"), onclick: () => copyText(location.href, t("Link copied")) }))));
+    if (r.catalogue_index_id && (META.catalogues || {})[r.catalogue_index_id]) {
+      const members = cloneState(); members.record = null; members.facets = { catalogues: { values: [r.catalogue_index_id], all: false } }; members.order = ["catalogues"];
+      box.append(h("a", { class: "button", href: toQuery(members), text: t("View listed members"), onclick: e => { e.preventDefault(); writeState(members); } }));
+    }
+    if (r.data_resource_type === "data_catalogue") box.append(h("p", { class: "prose", text: t("This links to an external catalogue. Its inventory may include resources outside our scope. A catalogue link does not mean that all its members are listed or checked here.") }));
     box.append(h("section", null, h("h2", { text: t("Description") }), h("p", { class: "prose", text: r.description || "" })));
     box.append(h("section", null, h("h2", { text: t("Access") }), h("div", { class: "link-buttons" },
       (r.access_links || []).map(l => h("a", { class: "button" + (deadLinks.has(l.url) ? " dead" : ""), href: l.url, target: "_blank", rel: "noopener noreferrer", title: l.note || null }, l.label || l.url, " ", h("span", { class: "kind", text: l.kind || "" }), deadLinks.has(l.url) ? h("span", { class: "pill attention", text: t("dead at the last check"), title: t("The last link check found this address gone (404 or 410); it is kept so the record can be repaired") }) : null)))));
@@ -1145,15 +1150,13 @@
     sel.addEventListener("change", () => { I18N.set(sel.value, true); location.reload(); });
   }
 
-  /** Display the size of the loaded snapshot. */
+  /** Show the number of records in the current dashboard. */
   function renderStatus() {
     const el = $("#foot-status");
     if (!el) return;
     const n = RECORDS.length;
     if (!n) { el.textContent = ""; return; }
-    const checked = RECORDS.filter(r => r.description_checked).length;
-    el.textContent = t("catalogue.status", { checked: fmtInt(checked), n: fmtInt(n) });
-
+    el.textContent = t("catalogue.status", { n: fmtInt(n) });
   }
 
   /** Build the search index in small slices after the first paint (audit 2026-09-26: building it before the

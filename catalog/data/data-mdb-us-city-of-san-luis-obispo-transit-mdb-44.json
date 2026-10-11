@@ -7,13 +7,19 @@
     },
     {
       "kind": "download",
-      "label": "Provider download of the schedule feed mdb-44",
-      "url": "https://app.mecatran.com/urb/ws/feed/c2l0ZT1zbG90cmFuc2l0O2NsaWVudD1zZWxmO2V4cGlyZT07dHlwZT1ndGZzO2tleT0zZTMwMzM1OTRiMTE2NzA0N2IxNjQwNjA0ZjQwMGMzMzdiM2E1MTQ0"
+      "label": "Historical GTFS copy archived by Mobility Database (mdb-44-202603280107)",
+      "note": "Exact Mobility Database mdb-44 descriptor binds old Mecatran producer URI to City of San Luis Obispo Transit and publishes version202603280107. That exact archived GTFS ZIP HEAD200. Adopt labelled historical copy, not a claimed restored current provider endpoint.",
+      "url": "https://files.mobilitydatabase.org/mdb-44/mdb-44-202603280107/mdb-44-202603280107.zip"
     },
     {
       "kind": "download",
       "label": "Latest copy archived by the Mobility Database (mdb-44)",
       "url": "https://files.mobilitydatabase.org/mdb-44/latest.zip"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database tfs-709 (deprecated)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/tfs-709"
     }
   ],
   "access_restrictions": "none",
@@ -46,6 +52,12 @@
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -71,7 +83,7 @@
   },
   "maturity": "active",
   "name": "City of San Luis Obispo Transit: GTFS transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 1 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "City of San Luis Obispo Transit",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -89,6 +101,16 @@
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Exact Mobility Database mdb-44 descriptor binds old Mecatran producer URI to City of San Luis Obispo Transit and publishes version202603280107. That exact archived GTFS ZIP HEAD200. Adopt labelled historical copy, not a claimed restored current provider endpoint. Descriptive metadata and zero-body distribution/header checks only.",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-44"
     }
   ],
   "tags": [

@@ -11,7 +11,13 @@ types:
   model: Model
   platform: Platform
   case_study: Case study
+data_resource_types:
+  dataset: Dataset
+  data_catalogue: Data catalogue
+  information_source: Information source
+  unknown: Not classified
 data_kinds:
+
   asset_inventory: Asset inventory
   network_topology: Network topology
   time_series: Time series
@@ -22,6 +28,7 @@ data_kinds:
   document: Document
   stream: Live data stream
   imagery: Imagery
+  unknown: Not stated
 model_kinds:
   physical: Physical process
   statistical: Statistical
@@ -82,6 +89,18 @@ simulation_uses:
   digital_twin: Digital twin
   emergency_response: Emergency response
   climate_adaptation: Climate adaptation
+  structural_design: Structural design
+  communication_system_performance: Communication system performance
+  building_hygrothermal_performance: Building heat and moisture performance
+  demand_forecasting: Infrastructure demand forecasting
+  life_cycle_assessment: Infrastructure life-cycle assessment
+  water_quality: Water quality
+  energy_system_planning: Energy system planning
+  building_energy_performance: Building energy performance
+  port_sedimentation: Port sedimentation
+  transport_emissions: Transport emissions
+  condition_monitoring: Condition monitoring
+  power_quality: Power quality
 geographic_scope:
   global: Global
   continental: Continental
@@ -89,6 +108,7 @@ geographic_scope:
   regional: Regional (part of a country)
   city: City
   site: Single site
+  unknown: Not stated
 continents:
   africa: Africa
   asia: Asia
@@ -102,12 +122,14 @@ cost:
   freemium: Free with paid tiers
   paid: Paid
   on_request: On request
+  unknown: Unknown
 access_restrictions:
   none: No restriction
   registration: Registration
   institutional: Institution login
   restricted: Restricted by the owner
   on_request: On request
+  unknown: Unknown
 maturity:
   active: Active
   maintained: Maintained

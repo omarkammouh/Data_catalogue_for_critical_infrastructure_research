@@ -14,6 +14,11 @@
       "kind": "docs",
       "label": "GTFS specification",
       "url": "https://gtfs.org"
+    },
+    {
+      "kind": "portal",
+      "label": "GBFS systems metadata registry",
+      "url": "https://github.com/MobilityData/gbfs/blob/master/systems.csv"
     }
   ],
   "access_restrictions": "none",
@@ -27,13 +32,13 @@
     "tabular"
   ],
   "date_catalogued": "2026-09-29",
-  "date_verified": "2026-10-01",
+  "date_verified": "2026-10-07",
   "dedupe_keys": {
-    "name": "mobility database catalogue of gtfs and gtfs realtime feeds",
+    "name": "mobility database gtfs gtfs realtime and gbfs catalogue",
     "url": "https://mobilitydatabase.org"
   },
-  "description": "Mobility Database (catalogue of GTFS and GTFS Realtime feeds) is a catalogue listed in Mobility Database, a catalogue of GTFS and GTFS Realtime transit feeds, published or maintained by MobilityData. MobilityData's open catalogue of public transport feeds lists 3,736 active GTFS schedule and GTFS Realtime feeds from 2,287 providers in more than 100 countries, with the location of each feed, its provider, the URL of the feed, its licence link and the GTFS features it uses. Coverage: more than 100 countries, with the United States, France and Japan the largest. Feeds are re-downloaded and validated by the Mobility Database, which stores the latest copy of each feed. It is reached through the links recorded on this page, with the catalogue entry as the discovery route. Access is free of charge and open. The licence is set per feed (most feeds carry an open licence link). Caveats: this record was written from the catalogue listing only, so the linked page was not opened, its contents and current availability were not checked, and the description may lag the source. It can support public transport network and demand studies. Related record: the catalogue-level record data-mobility-database-mobilitydata.",
-  "description_checked": "2026-09-29",
+  "description": "Mobility Database is a global catalogue maintained by MobilityData. Its public inventories, read on 7 October 2026, list 6,591 GTFS and GTFS Realtime transit feeds and 1,540 GBFS shared-mobility entries. Transit rows include 4,684 active feeds; inactive, deprecated, future and development listings are retained with separate statuses. The GBFS inventory has no equivalent operating-status column. The metadata identify providers or systems, locations, feed endpoints and selected authentication or licence information. The website and CSV inventories are publicly accessible, while API access requires an account. Underlying feed licences, restrictions and costs depend on their providers. Researchers can use the catalogue to find timetable, transport-network and shared-mobility inputs for infrastructure simulation. A listing does not establish that an endpoint works, that a service is operating, or that every data field is current. Our records may group several feeds under one provider or dataset; the completion ledger preserves each source row and any predecessor relationship. Related resource records retain their individual access links. No transit archives or station and vehicle observations were downloaded for this metadata collection.",
+  "description_checked": "2026-10-07",
   "discovery_routes": [
     {
       "date": "2026-09-29",
@@ -53,7 +58,7 @@
     "en"
   ],
   "last_updated": "2026",
-  "licence": "set per feed (most feeds carry an open licence link)",
+  "licence": "Underlying feed licences vary by provider; consult each listing and provider terms",
   "licence_type": [
     "attribution"
   ],
@@ -61,12 +66,13 @@
     "checked": "2026-10-01"
   },
   "maturity": "active",
-  "name": "Mobility Database (catalogue of GTFS and GTFS Realtime feeds)",
-  "notes": "Catalogue-level record for the feeds added on 2026-09-29 (audit/mdb.csv names the outcome of every feed).",
+  "name": "Mobility Database (GTFS, GTFS Realtime and GBFS catalogue)",
+  "notes": "Catalogue-level metadata refreshed from the official FAQ and public inventories on 2026-10-07. Feed-row reconciliation: internal metadata review Counts refer to the saved inventory snapshots, not a continuous synchronisation.",
   "provider": "MobilityData",
   "related_ids": [],
   "sectors": [
-    "transport.public_transit"
+    "transport.public_transit",
+    "transport.active_mobility"
   ],
   "simulation_uses": [
     "network_flow",
@@ -75,9 +81,19 @@
   ],
   "sources": [
     {
-      "accessed": "2026-09-29",
-      "note": "Mobility Database listing read on 2026-09-29: name, link, section, tags and any blurb; the linked page itself was not opened",
+      "accessed": "2026-10-07",
+      "note": "Scope, public inventory routes and API account requirement.",
+      "url": "https://mobilitydatabase.org/faq"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Transit listing identities, counts and source statuses.",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "GBFS system identities, endpoints, versions and authentication declarations.",
+      "url": "https://github.com/MobilityData/gbfs/blob/master/systems.csv"
     }
   ],
   "tags": [
@@ -85,6 +101,6 @@
     "catalogue",
     "GTFS"
   ],
-  "title_en": "Mobility Database (catalogue of GTFS and GTFS Realtime feeds)",
+  "title_en": "Mobility Database: global transit and shared-mobility feed catalogue",
   "type": "data"
 }

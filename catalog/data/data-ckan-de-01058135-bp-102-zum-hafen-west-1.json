@@ -3,7 +3,8 @@
     {
       "kind": "portal",
       "label": "GovData dataset page",
-      "url": "https://ckan.govdata.de/dataset/01058135_bp_102_zum_hafen_west_1"
+      "note": "Current same-resource GovData route verified 2026-10-09; replaced a 404 legacy route. Historic URL retained in link_health.dead.",
+      "url": "https://ckan.govdata.de/dataset/01058135_bp_102_zum_hafen_west_191196"
     },
     {
       "kind": "api",
@@ -46,7 +47,7 @@
     "document"
   ],
   "geographic_scope": "regional",
-  "homepage": "https://ckan.govdata.de/dataset/01058135_bp_102_zum_hafen_west_1",
+  "homepage": "https://ckan.govdata.de/dataset/01058135_bp_102_zum_hafen_west_191196",
   "id": "data-ckan-de-01058135-bp-102-zum-hafen-west-1",
   "languages": [
     "de"
@@ -57,7 +58,11 @@
     "not_stated"
   ],
   "link_health": {
-    "checked": "2026-10-01"
+    "checked": "2026-10-09",
+    "dead": [
+      "https://ckan.govdata.de/dataset/01058135_bp_102_zum_hafen_west_1"
+    ],
+    "dead_since": "2026-10-09"
   },
   "maturity": "active",
   "name": "01058135_BP_102_Zum_Hafen_West_1",
@@ -80,6 +85,11 @@
       "accessed": "2026-09-29",
       "note": "GovData catalogue entry read through the CKAN API on 2026-09-29: title, description, tags, licence, formats, dates; the data files were not opened",
       "url": "https://ckan.govdata.de/api/3/action/package_show?id=504dd4da-c905-423e-949c-5d2dace69ce7"
+    },
+    {
+      "accessed": "2026-10-09",
+      "note": "Link repair: Exact title and description text match the saved listing; metadata identifies the Rendsburg planning record and publishes WMS/WFS services for plan name Zum Hafen-West. Current CKAN package UUID differs from the old harvested record UUID, so this is a current-record route candidate, not a proven UUID continuity chain. Current route is exact-title/content match, but the CKAN record UUID changed and the old source UUID could not be read through package_show (403). Replacement answered HTTP 200 to HEAD without reading a response body. Earlier metadata source URLs retain their historical meaning.",
+      "url": "https://ckan.govdata.de/dataset/01058135_bp_102_zum_hafen_west_191196"
     }
   ],
   "tags": [

@@ -372,6 +372,10 @@ class Vocab:
 
     # -- kinds and other lists ---------------------------------------------
     @property
+    def data_resource_types(self) -> list[str]:
+        return self.list("data_resource_types")
+
+    @property
     def data_kinds(self) -> list[str]:
         return self.list("data_kinds")
 
@@ -476,6 +480,7 @@ class Vocab:
             "sectors (groups)": list(self.sector_groups.keys()),
             "sectors": [s.split(".", 1)[1] for s in self.sectors],
             "data_families": self.data_families,
+            "data_resource_types": self.data_resource_types,
             "data_kinds": self.data_kinds,
             "model_kinds": self.model_kinds,
             "platform_kinds": self.platform_kinds,
@@ -869,7 +874,12 @@ def derived_dedupe_keys(data: dict[str, Any]) -> dict[str, str]:
 
 
 def effective_dedupe_keys(data: dict[str, Any]) -> dict[str, str]:
-    """Explicit ``dedupe_keys`` (normalised again, defensively) merged over derived ones."""
+    """Explicit keys merged over derived ones, excluding reviewed supporting links.
+
+    ``dedupe_keys.exclude`` names keys whose source establishes a supporting
+    catalogue or publication role, not the identity of this resource. Exclusion
+    applies to both explicit and derived values; source URLs remain unchanged.
+    """
     keys = derived_dedupe_keys(data)
     explicit = data.get("dedupe_keys") or {}
     if isinstance(explicit, dict):
@@ -881,6 +891,11 @@ def effective_dedupe_keys(data: dict[str, Any]) -> dict[str, str]:
             keys["repo"] = normalise_repo(explicit["repo"]) or keys.get("repo", "")
         if explicit.get("name"):
             keys["name"] = normalise_name(explicit["name"]) or keys.get("name", "")
+        excluded = explicit.get("exclude", [])
+        if isinstance(excluded, list):
+            for key in excluded:
+                if key in {"url", "doi", "repo"}:
+                    keys.pop(key, None)
     return {k: v for k, v in keys.items() if v}
 
 

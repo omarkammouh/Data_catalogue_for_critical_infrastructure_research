@@ -9,6 +9,11 @@
       "kind": "download",
       "label": "Donkey Republic Westhoek GBFS feed",
       "url": "https://stables.donkey.bike/api/public/gbfs/2/donkey_westhoek/gbfs"
+    },
+    {
+      "kind": "api",
+      "label": "Current GBFS auto-discovery endpoint",
+      "url": "https://stables.donkey.bike/api/public/gbfs/3.0/donkey_westhoek/gbfs.json"
     }
   ],
   "access_restrictions": "none",
@@ -39,6 +44,12 @@
       "query": "transportdata.be CKAN package_search, all packages",
       "route": "R02",
       "source": "transportdata.be-ckan-api"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -62,7 +73,7 @@
   },
   "maturity": "active",
   "name": "Donkey Republic Westhoek",
-  "notes": "Harvested from the transportdata.be CKAN API on 2026-09-29 as part of the second portal harvest.",
+  "notes": "Harvested from the transportdata.be CKAN API on 2026-09-29 as part of the second portal harvest.\n\nMobility Database identity supplement (2026-10-07): 1 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "Donkey Republic",
   "related_ids": [
     "data-transportdata-be-national-access-point"
@@ -79,6 +90,11 @@
       "accessed": "2026-09-29",
       "note": "transportdata.be CKAN package record read on 2026-09-29: title, description, publisher, licence, resources, standards; the data were not opened",
       "url": "https://transportdata.be/api/3/action/package_show?id=donkey-republic-westhoek"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
+      "url": "https://github.com/MobilityData/gbfs/blob/master/systems.csv"
     }
   ],
   "tags": [

@@ -14,6 +14,21 @@
       "kind": "download",
       "label": "Latest copy archived by the Mobility Database (odpt-TakasakiCity-yosiibus)",
       "url": "https://files.mobilitydatabase.org/odpt-TakasakiCity-yosiibus/latest.zip"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database odpt-TakasakiCity-yosiibus-sa (active)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/odpt-TakasakiCity-yosiibus-sa"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database odpt-TakasakiCity-yosiibus-tu (active)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/odpt-TakasakiCity-yosiibus-tu"
+    },
+    {
+      "kind": "portal",
+      "label": "Mobility Database odpt-TakasakiCity-yosiibus-vp (active)",
+      "url": "https://mobilitydatabase.org/feeds/gtfs_rt/odpt-TakasakiCity-yosiibus-vp"
     }
   ],
   "access_restrictions": "none",
@@ -46,6 +61,12 @@
       "query": "Mobility Database feeds_v2.csv, feeds with status active",
       "route": "R02",
       "source": "mobilitydatabase.org-feeds_v2.csv"
+    },
+    {
+      "date": "2026-10-07",
+      "query": "Identity supplement; detailed per-feed evidence in completion ledger 2026-10-07",
+      "route": "R02",
+      "source": "mobility-database"
     }
   ],
   "formats": [
@@ -67,7 +88,7 @@
   },
   "maturity": "active",
   "name": "高崎市: GTFS transit data",
-  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.",
+  "notes": "Built from the Mobility Database feed list (feeds_v2.csv) on 2026-09-29 as part of the second portal harvest; all active feeds of one provider are grouped in one record.\n\nMobility Database identity supplement (2026-10-07): 3 additional feed or predecessor listing(s) are linked explicitly. Historical description counts refer to the original import. Current source statuses and redirect relationships are retained in the dated completion ledger; no feed contents were retrieved.",
   "provider": "高崎市",
   "related_ids": [
     "data-mobility-database-mobilitydata"
@@ -84,6 +105,11 @@
     {
       "accessed": "2026-09-29",
       "note": "Mobility Database feed catalogue (feeds_v2.csv) read on 2026-09-29: provider, location, feed URLs, licence link, features, status; the feeds were not downloaded",
+      "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
+    },
+    {
+      "accessed": "2026-10-07",
+      "note": "Identity supplement from current official inventory and, where applicable, provider discovery metadata.",
       "url": "https://files.mobilitydatabase.org/feeds_v2.csv"
     }
   ],

@@ -8,7 +8,8 @@ const prefix='/Data_catalogue_for_critical_infrastructure_research/';
  const html=fs.readFileSync(path.join(dist,'index.html'),'utf8');
  const parts=html.match(/data-src="([^"]+)"/)[1].split(' ');
  const bundle=JSON.parse(parts.map(x=>fs.readFileSync(path.join(dist,x),'utf8')).join(''));
- const snapshot=JSON.parse(fs.readFileSync(path.join(root,'catalog/snapshot.json')));
+ const currentSnapshot=path.join(root,'catalog/dashboard-snapshot.json');
+ const snapshot=JSON.parse(fs.readFileSync(fs.existsSync(currentSnapshot)?currentSnapshot:path.join(root,'catalog/snapshot.json')));
  assert.equal(bundle.records.length,snapshot.records);
  const server=http.createServer((req,res)=>{
   const pathname=new URL(req.url,'http://localhost').pathname;
@@ -33,6 +34,12 @@ const prefix='/Data_catalogue_for_critical_infrastructure_research/';
   await expect(page.locator('#summary')).toContainText(snapshot.records.toLocaleString('en-US'));
   await page.locator('#app[data-text-index="ready"]').waitFor({timeout:180000});
   const cases=[];
+  const catalogueRecords=bundle.records.filter(r=>r.data_resource_type==='data_catalogue');
+  assert(catalogueRecords.length>0,'Data catalogue records are present');
+  cases.push({state:{facets:{data_resource_type:{values:['data_catalogue'],all:false}},text:'',sort:'name',dir:'asc'},ids:catalogueRecords.map(r=>r.id).sort()});
+  const catalogueId=bundle.records.find(r=>(r.catalogues||[]).length)?.catalogues[0];
+  assert(catalogueId,'Catalogue membership is present');
+  cases.push({state:{facets:{catalogues:{values:[catalogueId],all:false}},text:'',sort:'name',dir:'asc'},ids:bundle.records.filter(r=>(r.catalogues||[]).includes(catalogueId)).map(r=>r.id).sort()});
   for(const type of ['data','model','platform','case_study'])for(const country of ['', 'NL','DE','US']){
    const facets={type:{values:[type],all:false}};if(country)facets.countries={values:[country],all:false};
    const ids=bundle.records.filter(r=>r.type===type&&(!country||(r.countries||[]).includes(country))).map(r=>r.id).sort();
@@ -42,6 +49,11 @@ const prefix='/Data_catalogue_for_critical_infrastructure_research/';
   for(const c of cases){const result=await page.evaluate(state=>{const r=window.__catalogue.engine.query(state);return {ids:r.ids,ms:r.ms};},c.state);assert.deepEqual(result.ids.sort(),c.ids);queries.push(result.ms);}
   fs.mkdirSync(path.join(root,'docs/images'),{recursive:true});
   if(!process.env.CATALOGUE_URL)await page.screenshot({animations:'disabled',path:path.join(root,'docs/images/dashboard.png')});
+  const dataFacet=page.locator('details[data-facet="data_resource_type"]');
+  if(!(await dataFacet.evaluate(el=>el.open)))await dataFacet.locator('summary').click();
+  await dataFacet.locator('input[data-value="data_catalogue"]').check();
+  await expect(page.locator('#summary')).toContainText(`${catalogueRecords.length.toLocaleString('en-US')} of ${snapshot.records.toLocaleString('en-US')}`);
+  assert(new URL(page.url()).searchParams.get('data_resource_type')==='data_catalogue');
   await page.goto(url+'?type=model&sectors=energy.electricity');await page.locator('#app[data-state="ready"]').waitFor({timeout:180000});
   const expected=await page.locator('#summary').innerText();await page.reload();await page.locator('#app[data-state="ready"]').waitFor({timeout:180000});assert.equal(await page.locator('#summary').innerText(),expected);
   await page.locator('#q').fill('pandapower');await page.locator('#q').press('Enter');await expect(page.locator('.card').first()).toBeVisible();
@@ -56,7 +68,7 @@ const prefix='/Data_catalogue_for_critical_infrastructure_research/';
   assert.deepEqual(errors,[]);
   // One failed part must not leave a partial catalogue on screen.
   const broken=await context.newPage();await broken.route('**/catalogue-data-1.json',route=>route.fulfill({status:503,body:'Unavailable'}));await broken.goto(url);await expect(broken.locator('.state.error')).toBeVisible({timeout:60000});await expect(broken.getByRole('button',{name:'Reload',exact:true})).toBeVisible();assert.equal(await broken.locator('.card').count(),0);await broken.close();
-  queries.sort((a,b)=>a-b);const report={url,records:snapshot.records,load_ms:loadMs,reference_queries:queries.length,query_median_ms:queries[Math.floor(queries.length/2)],query_max_ms:queries.at(-1),console_errors:errors,accessibility_violations:violations,checks:['URL reload','search','JSON export','record details','dark','mobile','missing chunk']};
+  queries.sort((a,b)=>a-b);const report={url,records:snapshot.records,data_catalogues:catalogueRecords.length,catalogue_groups:bundle.meta.catalogue_memberships?.catalogue_count,load_ms:loadMs,reference_queries:queries.length,query_median_ms:queries[Math.floor(queries.length/2)],query_max_ms:queries.at(-1),console_errors:errors,accessibility_violations:violations,checks:['Catalogue filters','URL reload','search','JSON export','record details','dark','mobile','missing chunk']};
   fs.writeFileSync(path.join(root,'.local',process.env.CATALOGUE_URL?'live-browser.json':'full-browser.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
  }finally{await browser.close();server.close();}
 })().catch(e=>{console.error(e);process.exit(1)});

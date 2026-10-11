@@ -73,3 +73,9 @@ def test_conflicted_apply_writes_no_record(tmp_path):
 def test_urls_keep_resource_identity_while_tracking_is_removed():
  a={'id':'data-example','sources':[{'url':'https://example.org/sandbox/test?resource=2&utm_source=ref#section'}]}
  assert transform(a,{'strip_tracking_parameters':True})['sources'][0]['url']=='https://example.org/sandbox/test?resource=2#section'
+
+def test_internal_health_references_are_omitted_without_changing_provider_outcomes():
+ original={'id':'data-example','link_health':{'dead':['https://example.org/internal/review','https://provider.org/resource'],'checked':'2026-10-11'}}
+ public=transform(original,{'excluded_link_health_prefixes':['https://example.org/internal/']})
+ assert public['link_health']=={'dead':['https://provider.org/resource'],'checked':'2026-10-11'}
+ assert len(original['link_health']['dead'])==2
