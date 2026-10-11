@@ -580,7 +580,6 @@ test.describe("dashboard skeleton", () => {
     test("no view scrolls sideways at 320 px, in every language, also with text at 200% (round 2 re-check, 2026-10-02)", async ({ browser }) => {
       const ctx = await browser.newContext({ viewport: { width: 320, height: 568 } });
       const page = await ctx.newPage();
-      await page.addInitScript(() => { try { localStorage.setItem("catalogue.helpSeen", "true"); } catch (e) { /* storage unavailable */ } });
       await page.goto(URL);
       for (const lang of ["en", "de", "fr", "es"]) {
         await page.evaluate(l => { localStorage.setItem("catalogue.lang", JSON.stringify(l)); }, lang);
@@ -602,7 +601,7 @@ test.describe("dashboard skeleton", () => {
 
     test("export menu follows the menu keys and Esc closes the help panel (round 2 check, 2026-10-01)", async ({ page }) => {
       await open(page);
-      await page.locator("#help-dismiss").click(); // first visit shows the panel
+      await expect(page.locator("#help-toggle")).toHaveAttribute("aria-expanded", "false");
       await expect(page.locator("#help-panel")).toBeHidden();
       await page.locator("#help-toggle").focus();
       await page.keyboard.press("Enter");
@@ -610,6 +609,10 @@ test.describe("dashboard skeleton", () => {
       await page.keyboard.press("Escape");
       await expect(page.locator("#help-panel")).toBeHidden();
       await expect(page.locator("#help-toggle")).toBeFocused();
+      await page.locator("#help-toggle").click();
+      await page.locator("#help-dismiss").click();
+      await expect(page.locator("#help-panel")).toBeHidden();
+      await expect(page.locator("#help-toggle")).toHaveAttribute("aria-expanded", "false");
       await page.locator("#export-toggle").focus();
       await page.keyboard.press("Enter");
       await page.keyboard.press("ArrowDown");
@@ -628,7 +631,7 @@ test.describe("dashboard skeleton", () => {
       const page = await ctx.newPage();
       await page.goto(URL);
       await page.waitForSelector('#app[data-state="ready"]');
-      await page.locator("#help-dismiss").click().catch(() => {});
+      await expect(page.locator("#help-panel")).toBeHidden();
       await page.locator("#rail-open").click();
       await page.waitForFunction(() => !!document.activeElement.closest("#rail")); // focus moves into the sheet
       for (let i = 0; i < 40; i++) {

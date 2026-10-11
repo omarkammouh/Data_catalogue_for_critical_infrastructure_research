@@ -20,7 +20,7 @@
   const SEARCH_SHOW_LIMIT = 60;      // matches listed at once while a filter search is active (providers number in the tens of thousands)
   const FACET_SEARCH_MIN_VALUES = 6; // facets with fewer values are short enough to read; the all-filters box still finds them
   const DEBOUNCE_ABOVE = 2000;       // lists longer than this wait for a pause in typing
-  const STORAGE = { theme: "catalogue.theme", help: "catalogue.helpSeen", columns: "catalogue.columns" };
+  const STORAGE = { theme: "catalogue.theme", columns: "catalogue.columns" };
   const SORT_LABELS = { relevance: "Relevance", name: "Name", provider: "Provider", date_catalogued: "Date catalogued", date_verified: "Links checked", last_updated: "Last updated" };
   const VIEWS = ["list", "table", "coverage"];
 
@@ -1210,7 +1210,7 @@
     for (const b of $$("#view-switch .seg")) b.addEventListener("click", () => { const s = cloneState(); s.view = b.dataset.view; s.record = null; s.page = 1; writeState(s); });
     $("#theme-toggle").addEventListener("click", cycleTheme);
     $("#help-toggle").addEventListener("click", () => { const p = $("#help-panel"); p.hidden = !p.hidden; $("#help-toggle").setAttribute("aria-expanded", String(!p.hidden)); });
-    $("#help-dismiss").addEventListener("click", () => { $("#help-panel").hidden = true; $("#help-toggle").setAttribute("aria-expanded", "false"); store(STORAGE.help, true); });
+    $("#help-dismiss").addEventListener("click", () => { $("#help-panel").hidden = true; $("#help-toggle").setAttribute("aria-expanded", "false"); });
     $("#clear-all-rail").addEventListener("click", clearAll);
     $("#rail-open").addEventListener("click", () => toggleRail(true));
     $("#rail-close").addEventListener("click", () => toggleRail(false));
@@ -1231,7 +1231,6 @@
     document.addEventListener("keydown", onKey);
     window.addEventListener("popstate", () => { state = readState(); update(); if (!state.record) restoreResultFocus(); else { const t = $(".detail-title"); if (t) t.focus(); } });
 
-    // first-visit orientation is decided by the inline script in the template before first paint; nothing to do here
     update();
     scheduleTextIndex();
     window.__catalogue = { engine: ENGINE, state: () => state, result: () => lastResult };
