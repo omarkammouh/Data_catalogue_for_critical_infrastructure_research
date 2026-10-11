@@ -1,0 +1,9 @@
+# InfraData website logo
+
+The current mark shows an infrastructure skyline connected to data nodes. The master artwork is [assets/infradata-v2.png](assets/infradata-v2.png). The header uses the 192-pixel copy. The browser bookmark uses 32 pixels, Apple bookmarks use 180 pixels, and the web manifest provides 192- and 512-pixel icons. Both dashboard builders copy the assets beside the page. Versioned filenames refresh previously cached icons.
+
+Created with the built-in image-generation tool on 11 October 2026. PNG sizes were derived with Sharp without changing the artwork. The former letter-I mark was rejected by the user and removed from the maintained files.
+
+## Generation prompt
+
+Create a single finished app icon for InfraData, a research catalogue of critical infrastructure datasets, models and simulation platforms. A square icon, flat vector-like graphic, sophisticated and extremely legible at 32 pixels. Solid deep blue background close to #1f66bd extending to all four edges, no outer margins, no mockup. In the centre, one unified bold white symbol combining a small city/infrastructure skyline (three simple building silhouettes of different heights, a clear tall central building, only two or three large blue window cutouts) above a small connected data grid in light cyan. The buildings and three data nodes below must read as one coherent infrastructure-data emblem, not separate decorative illustrations. Limit to white, deep blue and light cyan. Thick simple shapes, generous negative space, symmetrical balanced composition, no tiny lines, no gradients, no shadows, no text, no letters, no watermark. Keep the entire symbol comfortably within central 70 percent of the square so it survives phone home-screen corner masking. Professional research tool, not a game or real estate company. Output only the icon.
