@@ -1,7 +1,7 @@
 /* Optional aggregate visitor statistics. This is a public site identifier, never an API key. */
 (() => {
   "use strict";
-  const SITE_TOKEN = ""; // Cloudflare Web Analytics token from this site's installation snippet.
+  const SITE_TOKEN = "d3d4977236244543af85376d89567fb8"; // Cloudflare Web Analytics token from this site's installation snippet.
   const SITE_HOST = "omarkammouh.github.io";
   const SITE_PATH = "/Data_catalogue_for_critical_infrastructure_research/";
 

@@ -2,6 +2,10 @@
 
 The dashboard supports Cloudflare Web Analytics for aggregate visits and page views, countries, referral sites, device types and browsers. Statistics are viewed privately in the owner's Cloudflare account. This does not identify visitors by name or email. Counts start after activation; older visits cannot be reconstructed by this integration. Browser blocking and privacy preferences can reduce the recorded totals.
 
+## Account and configuration
+
+The public site identifier is configured. Statistics are available only to the owner through the Cloudflare account, under Web Analytics. The catalogue remains publicly accessible.
+
 ## Activation
 
 In Cloudflare, open **Web Analytics**, add `omarkammouh.github.io` as a site and copy the public site token from its JavaScript installation snippet. Put that 32-character token in `SITE_TOKEN` in `src/analytics.js`, in both maintained repositories, then rebuild and publish. This public identifier belongs in the browser; do not use a Cloudflare API key or API access token. An empty token disables analytics completely.

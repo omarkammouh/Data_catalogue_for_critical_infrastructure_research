@@ -2,7 +2,7 @@
 
 ## Website updates after 1.1.0
 
-- Prepare optional Cloudflare visitor statistics. Disabled until the site token is configured; local and offline copies do not report visits.
+- Enable anonymous Cloudflare statistics for visits, countries, devices and referral sites on the public catalogue. Local and offline copies do not report visits; browser privacy preferences are respected.
 
 - Fix mobile filter scrolling by bounding the panel to the viewport, including portrait and landscape layouts.
 
