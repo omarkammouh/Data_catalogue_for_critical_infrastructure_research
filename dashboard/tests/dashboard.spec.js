@@ -644,6 +644,32 @@ test.describe("dashboard skeleton", () => {
       await ctx.close();
     });
 
+    test("phone filters scroll to the last group in portrait and landscape", async ({ browser }) => {
+      const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+      const page = await ctx.newPage();
+      await open(page);
+      for (const size of [{ width: 390, height: 844 }, { width: 844, height: 390 }]) {
+        await page.setViewportSize(size);
+        await page.locator("#rail-open").click();
+        const rail = page.locator("#rail");
+        await expect(rail).toBeVisible();
+        const dimensions = await rail.evaluate(el => ({ height: el.clientHeight, content: el.scrollHeight, viewport: innerHeight }));
+        expect(dimensions.height).toBeLessThanOrEqual(dimensions.viewport);
+        expect(dimensions.content).toBeGreaterThan(dimensions.height);
+        await page.mouse.move(size.width / 2, size.height / 2);
+        await page.mouse.wheel(0, 10000);
+        await expect.poll(() => rail.evaluate(el => el.scrollTop)).toBeGreaterThan(100);
+        const last = rail.locator("details[data-facet]").last();
+        await expect(last.locator("summary")).toBeInViewport();
+        await last.locator("summary").click();
+        await expect(last).toHaveAttribute("open", "");
+        await last.locator("summary").click();
+        await page.keyboard.press("Escape");
+        await expect(page.locator("#rail-open")).toHaveAttribute("aria-expanded", "false");
+      }
+      await ctx.close();
+    });
+
     test("every id in the page is unique, so a value's label ticks that value and no other (round 2 check, 2026-10-01)", async ({ page }) => {
       await open(page);
       const dup = await page.evaluate(() => { const c = {}; for (const e of document.querySelectorAll("[id]")) c[e.id] = (c[e.id] || 0) + 1; return Object.entries(c).filter(([, n]) => n > 1).map(([k]) => k); });

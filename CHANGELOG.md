@@ -2,6 +2,8 @@
 
 ## Website updates after 1.1.0
 
+- Fix mobile filter scrolling by bounding the panel to the viewport, including portrait and landscape layouts.
+
 - Keep the welcome instructions closed on first visit. Open help only when the visitor selects the question-mark button.
 
 - Add a visible GitHub link in the dashboard header and an explicit public repository link in the footer.

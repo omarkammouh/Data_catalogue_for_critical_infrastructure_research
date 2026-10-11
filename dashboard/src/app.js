@@ -1144,7 +1144,7 @@
     rail.classList.toggle("open", open);
     setBehindSheet(open && SHEET_WIDTH.matches);
     $("#rail-open").setAttribute("aria-expanded", String(open));
-    // the sheet becomes visible on the next frame (its visibility is transitioned), and an element cannot take focus before that
+    // Allow the sheet to open before moving keyboard focus into its search field.
     if (open) { const first = $("#filter-search") || $("#facets input, #facets button, #facets summary"); setTimeout(() => { if (first) first.focus(); }, 40); } else $("#rail-open").focus();
   }
 
