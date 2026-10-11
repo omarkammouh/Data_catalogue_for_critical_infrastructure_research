@@ -2,7 +2,7 @@
 
 ## Import a local snapshot
 
-Imports are deliberate operations. They do not run on a schedule and do not change the source directory.
+Imports are deliberate operations. They do not run on a schedule and do not change the source directory. Prepare catalogue and shared dashboard changes in the maintained source first, then review and import the public metadata here. Keep the reviewed transformation policy with that source. Reconcile every resource ID and check shared code before a release.
 
 ```sh
 python scripts/import_snapshot.py --source /path/to/source

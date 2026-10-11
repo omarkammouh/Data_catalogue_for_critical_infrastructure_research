@@ -1,4 +1,34 @@
-# Version 1.0.0 checks
+# Version 1.1.0 checks
+
+The release contains 68,670 records: 61,318 data records, 3,466 models, 2,288
+platforms and 1,598 case studies. It includes 467 searchable data catalogue links.
+All resource IDs match the maintained source, and the reviewed public metadata
+policy preserves resource identity while omitting private working references.
+
+Checks cover schema and vocabulary consistency, stable identities, cross-record
+references, conflict-aware imports, public-file hygiene, compact and full search
+and filter equivalence, details and exports. The full dashboard is tested at a
+project subpath, at phone width and with a 192 MB JavaScript heap limit. These
+browser checks do not reproduce a physical phone's memory limit.
+
+Validation reports zero errors and 12 inherited warnings for licence labels,
+URL normalization and historical verification dates. All 136 Python tests and
+54 browser tests pass, with one browser test skipped. All 403 fixture reference
+filter states agree. These checks do not establish that every provider link works,
+that external catalogue coverage is complete or that each resource is suitable
+for a particular simulation. See [limitations](limitations.md).
+
+Version 1.1.0 replaces the initial full-record loading with a compact index of
+about 58 MB. All entries remain searchable. Full metadata loads for individual
+records and exports, and large filter lists create controls as needed.
+
+All 18 full-catalogue reference queries pass. The initial index is 58,413,402 bytes. The tested browser reports zero console errors and no detected accessibility violations in the phone-width detail view. The JSON and CSV downloads each contain all 68,670 unique IDs, pass the credential guard and match SHA256SUMS.
+
+Publication and archive verification are recorded after the release is published.
+
+## Previous release checks
+
+### Version 1.0.0 checks
 
 The release contains 64,625 records: 57,723 data records, 3,185 models, 2,231 platforms and 1,486 case studies. Counts are computed from the individual JSON files and agree with the dashboard and downloads.
 

@@ -1,6 +1,6 @@
 # Data catalogue for critical infrastructure research
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23143543.svg)](https://doi.org/10.5281/zenodo.23143543)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23143542.svg)](https://doi.org/10.5281/zenodo.23143542)
 
 Find data sources, models, simulation platforms and documented case studies for infrastructure research in one searchable catalogue.
 
@@ -29,7 +29,7 @@ The current dashboard snapshot, captured on 11 October 2026, contains **68,670 r
 
 Coverage spans energy, water, transport, digital infrastructure, the built environment, services, industry and cross-cutting infrastructure topics. See [current snapshot metadata](catalog/dashboard-snapshot.json) for the capture date and [methods](docs/methods.md) for scope and inclusion criteria.
 
-The archived v1.0.0 release contains 64,625 records. Its [snapshot metadata](catalog/snapshot.json) and DOI identify that fixed release. The hosted dashboard is updated independently from the release archive.
+Version 1.1.0 contains the same 68,670 records as the current dashboard. Its [snapshot metadata](catalog/snapshot.json) identifies the release. Earlier versions remain available in the release history.
 
 This repository contains **metadata**, including source links, descriptions, access conditions and citations. Obtain the underlying resources from their providers. Some resources require registration, permission or payment.
 

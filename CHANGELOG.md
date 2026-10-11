@@ -1,6 +1,14 @@
 # Changelog
 
-## Unreleased
+## 1.1.0, 11 October 2026
+
+- Refresh the catalogue to 68,670 resources, a net increase of 4,045 since version 1.0.0.
+- Add the Data resource filter, with 467 data catalogue links, and catalogue membership groups.
+- Include the latest reviewed metadata corrections and approved exclusions.
+- Reduce initial dashboard data to about 58 MB. Load full metadata on demand for details and exports.
+- Create large filter controls only as needed and preserve all search words.
+- Keep the private working catalogue and public export connected through a checked import policy.
+
 
 - Remove four transport-resource links containing embedded access keys. Dataset landing pages remain available.
 - Reject credential-shaped values during public checks, snapshot imports, site builds and release packaging.
