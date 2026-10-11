@@ -664,7 +664,7 @@ def json_for_html(obj: Any) -> str:
 def assemble(template: str, parts: dict[str, str]) -> str:
     page = template
     for key, value in parts.items():
-        marker = "/*@" + key + "@*/" if key in ("STYLES", "ENGINE", "I18N", "APP") else "<!--@" + key + "@-->"
+        marker = "/*@" + key + "@*/" if key in ("STYLES", "ENGINE", "I18N", "APP", "ANALYTICS") else "<!--@" + key + "@-->"
         if marker not in page:
             raise SystemExit(f"template lacks marker {marker}")
         page = page.replace(marker, value)
@@ -745,6 +745,7 @@ def main(argv: list[str] | None = None) -> int:
         "ENGINE": (src / "engine.js").read_text(encoding="utf-8"),
         "I18N": (src / "i18n.js").read_text(encoding="utf-8"),
         "APP": (src / "app.js").read_text(encoding="utf-8"),
+        "ANALYTICS": (src / "analytics.js").read_text(encoding="utf-8"),
         "DATA": "" if args.data_file else json_for_html(bundle),
         "DATA_SRC": (f' data-src="{" ".join(data_names)}"' + (' data-format="compact-v1"' if args.lazy_details else '')) if data_parts else "",
         "BUILT": built,

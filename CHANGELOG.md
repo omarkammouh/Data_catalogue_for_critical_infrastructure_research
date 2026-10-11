@@ -2,6 +2,8 @@
 
 ## Website updates after 1.1.0
 
+- Prepare optional Cloudflare visitor statistics. Disabled until the site token is configured; local and offline copies do not report visits.
+
 - Fix mobile filter scrolling by bounding the panel to the viewport, including portrait and landscape layouts.
 
 - Keep the welcome instructions closed on first visit. Open help only when the visitor selects the question-mark button.
