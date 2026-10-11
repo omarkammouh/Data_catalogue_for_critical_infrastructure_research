@@ -2,6 +2,8 @@
 
 ## Website updates after 1.1.0
 
+- Add a visible GitHub link in the dashboard header and an explicit public repository link in the footer.
+
 - Add the InfraData network mark to the header, browser bookmarks and home-screen icons. The catalogue is unchanged; these website assets are not part of the fixed 1.1.0 archive.
 
 ## 1.1.0, 11 October 2026
