@@ -1,5 +1,9 @@
 # Changelog
 
+## Website updates after 1.1.0
+
+- Add the InfraData network mark to the header, browser bookmarks and home-screen icons. The catalogue is unchanged; these website assets are not part of the fixed 1.1.0 archive.
+
 ## 1.1.0, 11 October 2026
 
 - Refresh the catalogue to 68,670 resources, a net increase of 4,045 since version 1.0.0.

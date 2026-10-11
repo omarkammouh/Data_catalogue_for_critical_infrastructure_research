@@ -74,6 +74,7 @@ import csv
 import datetime as dt
 import json
 import re
+import shutil
 import sys
 from collections import Counter
 from pathlib import Path
@@ -750,6 +751,10 @@ def main(argv: list[str] | None = None) -> int:
     })
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(page, encoding="utf-8")
+    # Keep bookmark and home-screen icons beside the page, including subpath hosting.
+    for asset in sorted((HERE / "assets").iterdir()):
+        if asset.is_file():
+            shutil.copyfile(asset, out.parent / asset.name)
     for name, part in data_parts:
         (out.parent / name).write_text(part, encoding="utf-8")
     if not args.no_bundle:
